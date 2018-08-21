@@ -1,5 +1,9 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/FrameXML/UI.xsd">
-	<Script file="us_emerald-dream.lua"/>
-	<Script file="us_zuljin.lua"/>
+	<Script file="eu_argent-dawn.lua"/>
+	<Script file="eu_argent-dawn_h.lua"/>
+	<Script file="eu_draenor.lua"/>
+	<Script file="eu_draenor_h.lua"/>
+	<Script file="eu_moonglade.lua"/>
+	<Script file="eu_moonglade_h.lua"/>
 	<Script file="xx_global.lua"/>
 </Ui>
