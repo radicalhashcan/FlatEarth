@@ -29897,5 +29897,6 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [142228]="Shandris Feathermoon|",
 [142232]="Shandris Feathermoon|",
 [142285]="San'layn Neophyte|",
+[134408]="Foreman Jethek|",
 
 } end)
