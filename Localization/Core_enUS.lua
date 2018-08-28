@@ -791,7 +791,7 @@ If you're new to the guides, or have only started using them on this character, 
 
 
 	-- Renamed to Inventory Management
-	['opt_group_gold'] = "Gold & Auctions",							['opt_group_gold_desc'] = "",
+	['opt_group_gold'] = "Gold and Auctions",							['opt_group_gold_desc'] = "",
 		['opt_goldimport'] = "Import",				['opt_goldimport_desc'] = "Import desc",
 
 

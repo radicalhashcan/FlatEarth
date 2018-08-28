@@ -1030,7 +1030,7 @@ GOALTYPES['skill'] = {
 	end,
 	iscomplete = function(self)
 		local skill = ZGV.Professions:GetSkill(self.skill)
-		return skill and skill.level>=self.skilllevel,skill and skill.max>=self.skilllevel
+		return skill and (skill.level or 0)>=self.skilllevel,skill and (skill.max or 0)>=self.skilllevel
 	end,
 	gettext = function(self) return L["stepgoal_skill"]:format(COLOR_ITEM(ZGV.Professions.LocaleSkills[self.skill]),self.skilllevel) end,
 }

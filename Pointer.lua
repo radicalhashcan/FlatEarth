@@ -4854,7 +4854,12 @@ function Pointer:ShowSet(waypath,name)
 					icon=point.icon or self.Icons.greendot
 				end
 				point:SetIcon(icon)
-				if (k%50==0) and Pointer.showset_timer and coroutine.running() then coroutine.yield() end
+				if (k%50==0) and Pointer.showset_timer and coroutine.running() then
+					local tp1=debugprofilestop()
+					coroutine.yield()
+					local tp2=debugprofilestop()
+					t1 = t1+(tp2-tp1)
+				end
 			end
 		end
 

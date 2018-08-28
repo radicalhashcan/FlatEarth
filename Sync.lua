@@ -596,21 +596,27 @@ function Sync:Init()
 			.__END
 	end
 	ZGV:AddMessageHandler("ZGV_GOAL_COMPLETED",function(_,step,goal)
-		self:Debug("GOAL_COMPLETED: %d %d",step,goal)
-		self:AnnounceStatus()
+		if self:IsEnabled() then
+			self:Debug("GOAL_COMPLETED: %d %d",step,goal)
+			self:AnnounceStatus()
+		end
 	end)
 	ZGV:AddMessageHandler("ZGV_STEP_CHANGED",function()
-		if ZGV.db.profile.share_fakeparty>0 then
-			ZGV:ScheduleTimer(function() self:FakePartyGenerator() end,1.0)
-		end
-		self:AnnounceStatus()
-		if self:IsMaster() and self:IsInGroup() then
-			self:BroadcastStepContents()
+		if self:IsEnabled() then
+			if ZGV.db.profile.share_fakeparty>0 then
+				ZGV:ScheduleTimer(function() self:FakePartyGenerator() end,1.0)
+			end
+			self:AnnounceStatus()
+			if self:IsMaster() and self:IsInGroup() then
+				self:BroadcastStepContents()
+			end
 		end
 	end)
 	ZGV:AddMessageHandler("ZGV_GOAL_PROGRESS",function(_,step,goal)
-		self:Debug("GOAL_PROGRESS: %d %d",step,goal)
-		self:AnnounceStatus()
+		if self:IsEnabled() then
+			self:Debug("GOAL_PROGRESS: %d %d",step,goal)
+			self:AnnounceStatus()
+		end
 	end)
 	self:UpdateButtonColor()
 	self:Activate()

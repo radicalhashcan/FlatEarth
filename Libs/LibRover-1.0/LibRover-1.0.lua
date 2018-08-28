@@ -3189,27 +3189,27 @@ do
 				local prevnode
 				for i=2,#results do
 					local node=results[i]
-					if node.type=="taxi" and not first_taxi then --These don't connect like most taxi nodes.
-						first_taxi=i
-					elseif node.link.mode~="taxi" and node.link.mode~="ferry" then -- we've reached this node NOT by taxi. It could be another taxi, but we don't care.
+					if first_taxi and node.link.mode~="taxi" and node.link.mode~="ferry" then -- we've reached this node NOT by taxi. It could be another taxi, but we don't care.
 						-- Assuming a path will NEVER end on a taxi.
-						if first_taxi then
-							prevnode.taxiFinal=true
-							local assigned
-							for j=i-2,first_taxi,-1 do  -- walk backwards, assigning destination
-								if results[j].type=="taxi" then -- sanity
-									results[j].taxiDestination=prevnode
-									assigned=true
-								end
-							end
-							if not assigned then
-								Lib:Debug("&lr_taxifinal WTF? No taxi destination assigned? Was at #%d, first_taxi was #%s of results, destination was %s. Bad results stored in LibRover.BADRESULTS",i,first_taxi,tostring(prevnode))
-								Lib.BADRESULTS=RESULTS
-							else
-								Lib:Debug("&lr_taxifinal Detected taxi from %d to %d, destination %s, operator %s.",first_taxi,i-1,prevnode:tostring(),prevnode.taxioperator)
+						-- prevnode is our final taxi, we're on a node after that.
+						prevnode.taxiFinal=true
+						local assigned
+						for j=i-2,first_taxi,-1 do  -- walk backwards, assigning destination
+							if results[j].type=="taxi" then -- sanity
+								results[j].taxiDestination=prevnode
+								assigned=true
 							end
 						end
+						if assigned then
+							Lib:Debug("&lr_taxifinal Detected taxi from %d to %d, destination %s, operator %s.",first_taxi,i-1,prevnode:tostring(),prevnode.taxioperator)
+						else
+							Lib:Debug("&lr_taxifinal WTF? No taxi destination assigned? Was at #%d, first_taxi was #%s of results, destination was %s. Bad results stored in LibRover.BADRESULTS",i,first_taxi,tostring(prevnode))
+							Lib.BADRESULTS=RESULTS
+						end
 						first_taxi=nil
+					end
+					if not first_taxi and node.type=="taxi" and (node.link.mode=="walk" or node.link.mode=="fly") then --These don't connect like most taxi nodes.
+						first_taxi=i
 					end
 					prevnode=node
 				end
@@ -4024,7 +4024,7 @@ do
 
 			if not Lib.ready then return end
 
-			if event=="ADDON_LOADED" and arg1=="Blizzard_FlightMap" then
+			if event=="ADDON_LOADED" and arg1=="Blizzard_FlightMap" then Lib.DebugHighlightHooked = true
 				FlightMapFrame:HookScript("OnShow",function() Lib:HighlightFlightMapDestination() end)
 			end
 
@@ -4169,9 +4169,11 @@ do
 		end
 
 		function Lib:HighlightFlightMapDestination()
+			if Lib.DebugHighlight then print("HighlightFlightMapDestination starting") end
 			local taxiframe = FlightMapFrame
-			local glow = taxiframe.LibRover_glow
+			local glow = FlightMapFrame.LibRover_glow
 			if not glow then
+				if Lib.DebugHighlight then print("HFMD set up glow") end
 				glow = CreateFrame("Frame", nil, taxiframe)
 				glow:SetSize(48,48)
 				glow:SetFrameLevel(5)
@@ -4204,14 +4206,17 @@ do
 			if Lib.RESULTS and
 			not (Lib.extradata and Lib.extradata.waypoint and Lib.extradata.waypoint.type=="way" and not ZGV.db.profile.enable_viewer)  -- do NOTHING if current path was guide-driven.
 			then
+				if Lib.DebugHighlight then print("HFMD route valid") end
 				for k,node in ipairs(Lib.RESULTS) do
 					if node and node.type=="taxi" and (node.taxiFinal or (node.taxioperator=="argusportal" and node.a_b__c_d=="taxi_argusportal__taxi_argusportal")) then -- dirty hack - highlight if it is last node, or layover point when using argus portals
+						if Lib.DebugHighlight then print("HFMD found node %d for highlight",node.taxinodeID) end
 						local mapicon,pin
 						for pin,_ in pairs(FlightMapFrame.pinPools.FlightMap_FlightPointPinTemplate.activeObjects) do
 							local pintaxiNodeData = pin.taxiNodeData
 							local myTaxiNode = pintaxiNodeData and pintaxiNodeData.nodeID
 
 							if myTaxiNode==node.taxinodeID then 
+								if Lib.DebugHighlight then print("HFMD found pin %d for highlight",myTaxiNode) end
 								local myTaxiIndex = pintaxiNodeData and pintaxiNodeData.slotIndex
 								mapicon=pin
 								if ZGV.db.profile.autotaxi and myTaxiIndex and not IsAltKeyDown() then
@@ -4357,6 +4362,7 @@ do
 			tinsert(menu,{ text = "View zone info",  notCheckable=true, func=function() local sp=Lib.maxspeedinzone[mapid] ZGV:ShowDump("Speeds in zone (run,swim,fly):\n"..ZGV:Serialize(sp)) end })
 			tinsert(menu,{ text = "Debug bad nodes?",  checked=LibRover.debug_badnodes, func=function() LibRover.debug_badnodes = not LibRover.debug_badnodes end })
 			tinsert(menu,{ text = "Subzones:",  notCheckable=true, disabled=not subzones_src, hasArrow=not not subzones_src, menuList = subzones_menu, keepShownOnClick=true })
+			tinsert(menu,{ text = "Test Flight Whistle", notCheckable=true, func=function() Lib.TaxiWhistlePredictor:PredictWhistle() Lib.TaxiWhistlePredictor:AnnouncePrediction() end })
 
 			EasyFork(menu,Lib.debugmenu,nil,0,0,"MENU",10)
 			UIDropDownFork_SetWidth(Lib.debugmenu, 300)
@@ -4828,7 +4834,7 @@ do
 
 			function TWP:AnnouncePrediction()
 				if not self.taxidists_thiszone or not self.predicted_taxi then print("Make a prediction first.") return end
-				print(("Expected Flight Master Whistle destinations from |cff88ffff%s/%d %.1f,%.1f|r:"):format(ZGV.GetMapNameByID(self.pm),self.pf,self.px*100,self.py*100))
+				print(("Expected Flight Master Whistle destinations from |cff88ffff%s/%d %d,%d|r:"):format(ZGV.GetMapNameByID(self.pm),self.pf,self.px*100,self.py*100))
 				if self.pm==747 then print("(You're in Dreamgrove. Get ready to be whistled to somewhere in Highmountain...)") end
 				for i=1,3 do
 					if i>#self.taxidists_thiszone then break end
@@ -4844,6 +4850,13 @@ do
 				end
 
 				print(("Predicted destination: |cffffff88%s|r."):format(self.predicted_taxi.name))
+
+				if self:IsOnValidMap() then
+					print("Whistle check: passed. Your whistle should be functional here.")
+				else
+					print("Whistle check: |cffff8888FAILED!|r You're not in a whistlable zone, or you haven't unlocked the whistle.")
+					if not GetItemInfo(141605) then print("Actually, you don't HAVE the whistle!") end
+				end
 				--print("(see ZGV.TaxiWhistle.last_taxi_list for a full list)")
 			end
 
@@ -4875,7 +4888,7 @@ do
 				TWP:CatchEvent(event,...)
 			end
 
-			local valid_maps_broken = {
+			local valid_maps_legion = {
 				[630]=true,	-- Azsuna
 				[650]=true,	-- Highmountain
 				[634]=true,	-- Stormheim
@@ -4883,15 +4896,15 @@ do
 				[680]=true,	-- Suramar
 				[750]=true,	-- Thunder Totem
 				[739]=true,	-- Trueshot Lodge
-				[641]=true,	-- Val\'sharah
+				[641]=true,	-- Val'sharah
 				[646]=true,	-- Broken Shore
 			}
 			local valid_maps_argus = {
 				[830]=true,	-- Krokuun	
-				[882]=true,	-- Mac\'Aree
+				[882]=true,	-- Mac'Aree
 				[885]=true,	-- Antoran Wastes
 			}
-			local valid_maps_battle = {
+			local valid_maps_bfa = {
 				[1161]=true,	-- Boralus
 				[896]=true,	-- Drustvar
 				[942]=true,	-- Stormsong Valley
@@ -4906,9 +4919,9 @@ do
 
 			function TWP:IsOnValidMap()  -- check if whistle can be used here. moved from data_items.
 				local m=ZGV.CurrentMapID
-				if valid_maps_broken[m] then return true end
+				if valid_maps_legion[m] then return true end
 				if valid_maps_argus[m] and IsQuestFlaggedCompleted(38995) then return true end
-				if valid_maps_battle[m] and (IsQuestFlaggedCompleted(52450) or IsQuestFlaggedCompleted(51916)) then return true end
+				if valid_maps_bfa[m] and (IsQuestFlaggedCompleted(52450) or IsQuestFlaggedCompleted(51916)) then return true end
 				return false
 			end
 

@@ -295,13 +295,19 @@ function GuideMenu:CreateFrames()
 		.__END
 		MF.FooterVersion = CHAIN(MF.Footer:CreateFontString())
 			:SetFont(FONTBOLD,12)
-			:SetText("Version:")
+			:SetText("VER:")
 		.__END
 
 		MF.FooterVersionVal = CHAIN(MF.Footer:CreateFontString())
 			:SetPoint("LEFT",MF.FooterVersion ,"RIGHT",5,0)
 			:SetFont(FONT,12)
 			:SetText(ZGV.version)
+		.__END
+		
+		MF.FooterCredits = CHAIN(MF.Footer:CreateFontString())
+			:SetPoint("LEFT",MF.FooterVersionVal ,"RIGHT",210,0)
+			:SetFont(FONT,12)
+			:SetText("Provided by Guidemaster & 911sky")
 		.__END
 		
 		MF.FooterSettingsButton = CHAIN(CreateFrame("Button",nil,MF.Footer))
