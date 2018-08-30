@@ -2316,11 +2316,11 @@ do
 				for i,data in ipairs(self.extradata.multiple_ends) do
 					local node = LibRover_Node:New(data)
 					node.type="end"
-					AddNode(node)
+					AddNode(node,true) -- don't link endpoints, it's end-pointless
 					limit=limit-1
 					if limit%10==0 then
 						local t2=debugprofilestop()
-						if t2-t1>50 then yield("PENDING") t1=t2 end
+						if t2-t1>20 then yield("PENDING") t1=t2 end
 					end
 					if limit<0 then break end
 				end
@@ -2432,6 +2432,8 @@ do
 
 			self:Debug("&lr_calc StepForever: initialized, proceeding")
 
+			local _,timeslot
+
 			repeat
 				code,ret = self:StepPath()
 				if not code then code="ERROR" end
@@ -2441,7 +2443,7 @@ do
 					--assert(ret.type=="end","Success with type "..ret.type.."? wtf?")
 					if not self.success_endnode then
 						self.success_endnode=ret
-						yield(code)
+						_,timeslot = yield(code)
 					else
 						-- keep quiet. We know the result already, this happening again means we found ANOTHER end node. Ignore it, we only care for the first.
 						code="PENDING"
@@ -2450,8 +2452,10 @@ do
 				elseif code=="END" then
 					-- ?
 				else
-					yield(code)
+					_,timeslot = yield(code)
 				end
+
+				-- timeslot unused... yet.
 
 				safe=safe+1  if (safe>10000) then print "FAAAAIL!" return end
 			until code=="END" or code=="ERROR" -- it can also be PENDING, SUCCESS or TIMEOUT.
@@ -3633,12 +3637,11 @@ do
 				time_slot = self.pathfinding_speed_override or ZGV.db.profile.pathfinding_speed or 1
 				--if fps>60 then time_slot = time_slot + (fps-60)*0.1 end
 				
-				self:Debug("FPS %.2f, speed %.2fms, slot %.2fms",fps,self.pathfinding_speed_override or ZGV.db.profile.pathfinding_speed or 0.001,time_slot)
-
 				-- overrides for time slot
 				if InCombatLockdown() or self.low_priority then time_slot=1 end  -- force SLOW updates in combat, still 1ms is a pretty chunk of time.
 				if Lib.debug_totaltime then time_slot=5000 end
 
+				self:Debug("FPS %.2f, speed %.2fms, slot %.2fms",fps,self.pathfinding_speed_override or ZGV.db.profile.pathfinding_speed or 0.001,time_slot)
 
 				time_slot_remaining=time_slot
 
@@ -3647,6 +3650,7 @@ do
 				local debug_time_all_1 = debugprofilestop()
 
 				local hardlimit=10000
+				local calcloops=0
 				while time_slot_remaining>=0 and self.calculating do
 					--perframethrot = perframethrot - self:StepPath()
 					local slot_time=debugprofilestop()
@@ -3688,7 +3692,11 @@ do
 
 					hardlimit=hardlimit-1
 					if hardlimit<0 then break end
+
+					calcloops=calcloops+1
 				end
+
+				-- Lib:Debug("Calc done, %d loops.",calcloops)
 
 				debug_time_all_1=debugprofilestop()-debug_time_all_1
 
@@ -3769,6 +3777,8 @@ do
 				if perframethrot<0 or not self.calculating then perframethrot=0 end
 
 				lastupdate = 0
+
+				self:Debug("Done.")
 
 			elseif self.updating and not self.delayed_by_taxi and not InCombatLockdown() and lbm and not ZGV.db.profile.disable_travel_updates then
 

@@ -584,25 +584,33 @@ function Sync:Init()
 				elseif event=="GROUP_ROSTER_UPDATE" then
 					self:ResetPartyStatus()
 					if self:IsInGroup() then
-						self:AnnounceStatus()
-						self:RequestPartyStatus()
-					end
-					if self:IsMaster() then
-						self:BroadcastStepContents()
-						self:RequestSlaveMode() -- For new members. Existing slaves should ignore this.
+						if (self:IsMaster() or self:IsSlave()) then
+							self:AnnounceStatus()
+							self:RequestPartyStatus()
+						end
+						if self:IsMaster() then
+							self:BroadcastStepContents()
+							self:RequestSlaveMode() -- For new members. Existing slaves should ignore this.
+						end
 					end
 				end
 			end)
 			.__END
 	end
-	ZGV:AddMessageHandler("ZGV_GOAL_COMPLETED",function(_,step,goal)
-		if self:IsEnabled() then
+	ZGV:AddMessageHandler("ZGV_GOAL_COMPLETED",function(_,_,step,goal)
+		if self:IsMaster() or self:IsSlave() then
 			self:Debug("GOAL_COMPLETED: %d %d",step,goal)
 			self:AnnounceStatus()
 		end
 	end)
-	ZGV:AddMessageHandler("ZGV_STEP_CHANGED",function()
-		if self:IsEnabled() then
+	ZGV:AddMessageHandler("ZGV_GOAL_UNCOMPLETED",function(_,_,step,goal)
+		if self:IsMaster() or self:IsSlave() then
+			self:Debug("GOAL_UNCOMPLETED: %d %d",step,goal)
+			self:AnnounceStatus()
+		end
+	end)
+	ZGV:AddMessageHandler("ZGV_STEP_CHANGED",function(_,_,step)
+		if self:IsMaster() or self:IsSlave() then
 			if ZGV.db.profile.share_fakeparty>0 then
 				ZGV:ScheduleTimer(function() self:FakePartyGenerator() end,1.0)
 			end
@@ -612,8 +620,8 @@ function Sync:Init()
 			end
 		end
 	end)
-	ZGV:AddMessageHandler("ZGV_GOAL_PROGRESS",function(_,step,goal)
-		if self:IsEnabled() then
+	ZGV:AddMessageHandler("ZGV_GOAL_PROGRESS",function(_,_,step,goal)
+		if self:IsMaster() or self:IsSlave() then
 			self:Debug("GOAL_PROGRESS: %d %d",step,goal)
 			self:AnnounceStatus()
 		end

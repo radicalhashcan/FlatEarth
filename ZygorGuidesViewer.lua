@@ -1861,7 +1861,7 @@ function ZGV:TryToCompleteStep(force)
 	local confirmfound = false
 	wipe(goalsneedanimating)
 	local step = self.CurrentStep
-	for i,goal in ipairs(step.goals) do
+	for i,goal in ipairs(step.goals) do  if goal:IsCompleteable() then
 		local iscomplete,ispossible,done,needed = goal:IsComplete()
 		if iscomplete and not self.recentlyCompletedGoals[goal] then
 			self.recentlyCompletedGoals[goal] = true
@@ -1876,7 +1876,7 @@ function ZGV:TryToCompleteStep(force)
 		end
 
 		if self.recentGoalProgress[goal]==nil then self.recentGoalProgress[goal]=done end
-		if self.recentGoalProgress[goal]~=done then
+		if self.recentGoalProgress[goal]~=done and (goal.action~="goto" or (self.recentGoalProgress[goal]==1 ~= done==1)) then  -- announce and animate anything BUT a goto.
 			goal.dirtytext=true
 			goalsneedanimating[goal]=true
 			self:SendMessage("ZGV_GOAL_PROGRESS",step.num,i)
@@ -1887,7 +1887,7 @@ function ZGV:TryToCompleteStep(force)
 			confirmfound = true
 			if goal.status == "complete" then confirmcompleted = true end
 		end
-	end
+	end end
 	if confirmfound and confirmcompleted ~= true then completing = false end
 
 	if self.pause or self.db.profile.dontprogress then

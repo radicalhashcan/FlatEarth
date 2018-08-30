@@ -623,7 +623,7 @@ data.basenodes.transit = {
 		"Dazar'alor/1 74.04,69.94 <subtype:cityportal> -to- Orgrimmar/2 48.28,64.53 {fac:H} {mode:PORTAL} {title:Click the Portal to Orgrimmar Inside the Building} {cond:ZGV.InPhase('bfa')}",
 
 		-- Orgrimmar - Durotar, Kalimdor - Zuldazar, Zandalar -to- Hall of Ancient Paths --
-		"Orgrimmar/2 47.47,60.05 <subtype:cityportal> -to- Dazar'alor/1 68.28,64.58 {fac:H} {mode:PORTAL} {title:Click the Portal to Zuldazar Inside the Building} {cond:ZGV.InPhase('bfa')}",
+		"Orgrimmar/2 47.47,60.05 <subtype:cityportal> -to- Dazar'alor/1 68.28,64.58 {fac:H} {mode:PORTAL} {title:Click the Portal to Zuldazar Inside the Cleft of Shadow} {cond:ZGV.InPhase('bfa')}",
 
 		-- Hall of Ancient Paths - Zuldazar, Zandalar -to- Thunder Bluff - Mulgore, Kalimdor --
 		"Dazar'alor/1 73.60,77.38 <subtype:cityportal> -to- Thunder Bluff/0 22.21,16.87 {fac:H} {mode:PORTAL} {title:Click the Portal to Thunder Bluff Inside the Building} {cond:ZGV.InPhase('bfa')}",

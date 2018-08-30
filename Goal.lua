@@ -2560,6 +2560,7 @@ function Goal:IsComplete()
 		local iscomplete,ispossible,numdone,numneeded,comment,isbad = GOAL.iscomplete(self)
 		numdone,numneeded = norm_nums(numdone,numneeded)
 		if not numdone and not numneeded then  numdone,numneeded = iscomplete and 1 or 0,1  end
+		if iscomplete and numneeded==1 then numdone=1 end
 		return
 			iscomplete,
 			ispossible or self.future or fallthrough_ispossible,
@@ -3746,7 +3747,7 @@ function Goal:SaveStickyComplete()
 end
 
 function Goal:IsInlineTravel()
-	return self.x and self.action=='goto'
+	return self.x and self.action=='goto' and not self.force_complete
 	 --and self.text
 	 and not self.questid and not self.npcid  -- basic form...
 end

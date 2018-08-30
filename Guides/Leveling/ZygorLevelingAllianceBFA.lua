@@ -291,23 +291,16 @@ step
 label "Intro_Scenario"
 Find General Hammond Clay |goto Ruins of Lordaeron/0 51.55,18.80 < 10 |q 51795
 step
-Follow the path |goto 49.10,27.11 < 7 |walk
-Continue following the path |goto 48.46,32.39 < 7 |only if walking
-Follow the path |goto 48.06,37.86 < 7 |only if walking
-Follow the path |goto 48.15,44.06 < 7 |only if walking
-Follow the path |goto 48.45,47.84 < 7 |only if walking
 Watch the dialogue
 |tip Follow General Hammond Clay as we walks.
 Follow Hammond Clay to Brill |scenariogoal 1/37049 |goto Ruins of Lordaeron/0 47.50,50.40 |q 51795
 step
-Follow the path |goto 48.39,48.24 < 7 |only if walking
 Find Genn Greymane |goto 46.96,51.07 < 10 |q 51795
 step
 Watch the dialogue
 |tip Follow Genn Greymane as he walks.
 Charge the Battlefield with Genn |scenariostage 1 |goto 48.13,53.51 |q 51795
 step
-Follow the path |goto 48.27,54.06 < 7 |only if walking
 kill Goblin Shredder##134015 |goto 48.35,57.60 |scenariobonus 2/39783 |q 51795
 step
 Kill enemies around this area
@@ -334,8 +327,6 @@ step
 Watch the dialogue
 Fall Back with King Anduin Wrynn |scenariostage 6 |q 51795
 step
-Follow the path |goto 42.13,71.48 < 7 |only if walking
-Continue following the path |goto 42.88,72.40 < 7 |only if walking
 Watch the dialogue
 Kill enemies around this area
 Assist Jaina |scenariogoal 7/37297 |goto 43.19,73.53 |q 51795
@@ -349,7 +340,7 @@ step
 kill Windseeker Durja##126612
 Defeat Durja |scenariostage 8 |goto 42.09,81.08 |q 51795
 step
-Follow the path |goto 42.11,81.46 < 7 |only if walking
+Follow the path |goto 42.11,81.46 < 10 |only if walking
 Watch the dialogue
 |tip Follow Anduin Wrynn as he walks.
 Follow King Anduin |scenariostage 9 |goto 42.63,85.96 |q 51795
@@ -366,7 +357,7 @@ step
 Watch the dialogue
 clicknpc Gnomish Gyrocopter##126795
 |tip They look like metal helicopters hovering low to the ground around this area.
-Ride in the Gnomish Gyrocopter |invehicle |goto 48.69,89.11 |q 51795
+Ride in the Gnomish Gyrocopter |invehicle |goto 49.02,88.72 |q 51795
 step
 Watch the dialogue
 Use the Gyrocopter to Pursue Sylvanas |scenariostage 12 |goto 48.62,72.66 |q 51795
@@ -377,12 +368,8 @@ kill High Overlord Saurfang##129179
 Watch the dialogue
 Confront High Overlord Saurfang |scenariostage 13 |goto 48.11,74.23 |q 51795
 step
-Cross the bridge |goto 48.09,74.78 < 7 |only if walking
-Follow the path |goto 48.29,75.69 < 7 |only if walking
-Enter the building |goto 48.71,76.64 < 5 |walk
-Run down the stairs |goto 48.50,77.29 < 5 |walk
-Follow the path |goto 48.09,77.65 < 5 |walk
 Watch the dialogue
+|tip Inside the building.
 |tip Follow Anduin Wrynn as he walks.
 Confront Sylvanas Windrunner |scenarioend |goto 48.10,78.26 |q 51795
 step
@@ -396,7 +383,7 @@ step
 click Portal to Uldum
 Take the Portal to Uldum to Get Closer to Silithus |q 52946/1 |goto 75.24,20.49
 step
-Reach Silithus |q 52946/2 |goto Silithus/0 79.39,73.20
+Reach Silithus |q 52946/2 |goto Silithus/0 42.22,44.27
 step
 talk Magni Bronzebeard##142322
 turnin A Dying World##52946 |goto 42.22,44.27
@@ -407,8 +394,6 @@ Use the Device in Silithus to Travel to the Chamber of the Heart |q 51211/1 |got
 step
 Travel to the Chamber of Heart |goto Chamber Of Heart/0 50.12,30.35 < 10 |noway |c |q 51211
 step
-Run up the stairs |goto 50.28,43.78 < 5 |walk
-Follow the path |goto 50.25,48.90 < 5 |walk
 click Titan Console
 |tip Inside the building.
 Choose _(View events that led to Azeroth's wound)_
@@ -444,7 +429,6 @@ talk Magni Bronzebeard##136907
 turnin Infusing the Heart##52428 |goto 50.14,53.75
 accept To Matters at Hand##51403 |goto 50.14,53.75
 step
-Follow the path |goto 50.57,48.70 < 5 |walk
 click Teleport Pad
 |tip Inside the building.
 Return to Stormwind |q 51403/1 |goto goto 50.12,30.40
@@ -453,7 +437,7 @@ talk Halford Wyrmbane##142930
 turnin The Speaker's Imperative##51403 |goto Stormwind City/0 27.64,21.29
 accept Tides of War##46727 |goto Stormwind City/0 27.64,21.29
 step
-Enter the building |goto 80.62,37.86 < 5 |walk
+Enter the building |goto 80.62,37.86 < 10 |walk
 Watch the dialogue
 |tip Inside the building.
 Attend the War Council |q 46727/1 |goto 85.04,32.65
@@ -468,8 +452,7 @@ talk Anduin Wrynn##120756
 turnin Tides of War##46727 |goto 85.30,32.28
 accept The Nation of Kul Tiras##46728 |goto 85.30,32.28
 step
-Follow the path |goto 83.83,34.05 < 5 |walk
-Leave the building |goto 80.66,37.83 < 3 |walk
+Leave the building |goto 80.66,37.83 < 10 |walk
 talk Lady Jaina Proudmoore##120590 |goto 22.80,24.69
 Tell her _"I'm ready to set sail!"_
 Speak with Lady Jaina Proudmoore |goto Boralus/0 65.57,50.74 < 50 |noway |c |q 46728 |or |next "Kul_Tiras_Intro_Quests"
