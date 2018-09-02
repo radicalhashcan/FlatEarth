@@ -451,6 +451,9 @@ ZGV.Quest_Cache_Ally = {
 ["PETSMOUNTS\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Teldrassil Hippogryph"] = {
 	{ids="53616,53617,53619,52256,53621,52072,52197,52973,52974,52975,52977,52234,52116,52242,53310,52058,52245,52060,53622,52062,53551,52279,52257,52240"},
 },
+["PETSMOUNTS\\Mounts\\Ground Mounts\\Reputation Mounts\\Dark Iron Core Hound"] = {
+	{ids="51813"},
+},
 ["ACHIEVEMENTS\\Collections\\Appearances\\Legion\\Accessor-Eyes"] = {
 	{ids="8560,8561,8544,8562,8559",step_only="Warrior"},
 	{ids="8630,8655,8628,8629,8627",step_only="Paladin"},
@@ -11624,6 +11627,21 @@ ZGV.Quest_Cache_Horde = {
 ["LEVELING\\Battle for Azeroth (110-120)\\Scouting Reports\\Wolf's Den (Tiragarde Sound)"] = {
 	{ids="52005,52127"},
 },
+["LEVELING\\Battle for Azeroth (110-120)\\Scouting Reports\\Hillcrest Pasture (Stormsong Valley)"] = {
+	{ids="52478,52479"},
+},
+["LEVELING\\Battle for Azeroth (110-120)\\Scouting Reports\\Mudfisher Cove (Drustvar)"] = {
+	{ids="52313,52314"},
+},
+["LEVELING\\Battle for Azeroth (110-120)\\Scouting Reports\\Stonefist Watch (Tiragarde Sound)"] = {
+	{ids="52221,52222"},
+},
+["LEVELING\\Battle for Azeroth (110-120)\\Scouting Reports\\Stonetusk Watch (Stormsong Valley)"] = {
+	{ids="52776,52777"},
+},
+["LEVELING\\Battle for Azeroth (110-120)\\Scouting Reports\\Windfall Cavern (Stormsong Valley)"] = {
+	{ids="52319,52320"},
+},
 ["LEVELING\\Battle for Azeroth (110-120)\\Heart of Azeroth\\Heart of Azeroth Empowerment"] = {
 	{ids="50973,53405"},
 },
@@ -16446,7 +16464,7 @@ ZGV.Quest_Cache = {
 	includes = {"BFA_Choose_World_Quests","BFA_World_Quest_Emissaries"},
 },
 ["DAILIES\\Battle for Azeroth\\Tiragarde Sound World Quests"] = {
-	{ids="51050,52375,52377,52379,52383,52387,52389,51017,52405,51021,51023,51025,51027,51029,51031,51033,51035,51037,51043,52368,50984,51049,51051,52378,52417,50998,52356,52388,52416,52392,52331,52333,52363,52340,52339,52404,52355,50992,51024,51026,51028,51030,51032,51034,51036,52423,51040,51042,51044,51046,51048,50983"},
+	{ids="52375,52377,52379,52389,52340,52405,51021,51023,51025,51027,51029,51031,51033,51035,52423,52368,50984,52376,50992,50998,52392,52331,52333,52339,52404,51024,51026,51028,51030,51032,51034,52416,52417,52363,52378,51017,50983,52356,52355"},
 	includes = {"BFA_Choose_World_Quests","BFA_World_Quest_Emissaries"},
 },
 ["DAILIES\\Battle for Azeroth\\Vol'dun World Quests"] = {
@@ -16454,7 +16472,7 @@ ZGV.Quest_Cache = {
 	includes = {"BFA_Choose_World_Quests","BFA_World_Quest_Emissaries"},
 },
 ["DAILIES\\Battle for Azeroth\\Zuldazar World Quests"] = {
-	{ids="52408,51014,52348,52349,52350,52398,51013,52420,52421,52395,51010,52394,50999,51000,52425,52335,52336,52409,52369,52342,51038,52341,52373,52374,52358,52359"},
+	{ids="52373,52383,50999,52387,52395,52336,52342,52409,52348,52350,52358,51037,51039,51041,51043,51045,51047,51049,52374,52382,52384,51000,52388,52398,52394,51010,52335,51014,51013,52341,52425,52408,52359,52349,52421,51051,51046,52420,51036,51038,51040,51042,51044,52369,51048,51050"},
 	includes = {"BFA_Choose_World_Quests","BFA_World_Quest_Emissaries"},
 },
 ["GOLD\\Farming\\Gold Ore"] = {

@@ -481,7 +481,6 @@ clicknpc Flynn Fairwind##121239
 Watch the dialogue
 Punch Flynn |q 47098/1 |goto 46.63,45.52
 step
-Follow the path |goto 45.43,43.81 < 5 |walk
 click Cell Block Lever
 |tip Inside the building.
 Watch the dialogue
@@ -491,7 +490,6 @@ click Equipment Locker##213651
 |tip Inside the building.
 Recover the Equipment |q 47098/3 |goto 46.95,44.47
 step
-Follow the path |goto 45.54,43.32 < 5 |walk
 kill Block Warden Carmine##124024 |q 47098/4 |goto 40.28,54.77
 |tip Inside the building.
 step
@@ -499,33 +497,19 @@ click Glittering Gunpowder
 |tip Inside the building.
 collect Glittering Gunpowder##160326 |q 47098/5 |goto 43.57,54.08
 step
-Follow the path |goto 42.10,50.92 < 5 |walk
-Cross the bridge |goto 43.02,46.30 < 5 |walk
-Follow the path |goto 40.67,43.24 < 5 |walk
 click Cell Block Gate
 |tip Inside the building.
 Watch the dialogue
 Open the Cell Block Gate |q 47098/6 |goto 43.09,36.95
 step
-Follow the path |goto 43.20,36.79 < 5 |walk
-Run down the stairs |goto 44.58,35.82 < 5 |walk
-Run down the stairs |goto 48.23,39.60 < 5 |walk
-Run down the stairs |goto 49.34,42.11 < 5 |walk
-Follow the path |goto 47.92,43.91 < 5 |c |q 47098
-step
-Follow the path |goto 47.18,43.29 < 5 |walk
-Continue following the path |goto 44.19,41.76 < 5 |walk
+Run down the stairs |goto 44.58,35.82 < 10 |walk
+Follow the path |goto 47.92,43.91 < 10 |walk
 Enter the Sewers |q 47098/7 |goto 39.10,51.40
 |tip Inside the building.
 step
-Follow the path |goto 38.07,54.60 < 3 |walk
-Continue following the path |goto 42.46,58.80 < 3 |walk
-Continue following the path |goto 49.13,45.34 < 3 |walk
-Leave the tunnel |goto 51.12,47.46 < 3 |walk
-Follow the path |goto 54.13,49.22 < 7 |only if walking
-Continue following the path |goto 60.47,48.84 < 7 |only if walking
-Continue following the path |goto 63.13,44.77 < 7 |only if walking
-Continue following the path |goto 64.44,34.51 < 7 |only if walking
+Follow the path |goto 38.00,54.68 < 10
+Leave the tunnel |goto 51.12,47.46 < 10 |walk
+Follow the path |goto 62.12,48.11 < 15 |only if walking
 clicknpc Getaway Boat##124030
 Board the Getaway Boat |q 47098/8 |goto 60.98,26.32
 step
@@ -537,29 +521,18 @@ talk Taelia##121235
 turnin Out Like Flynn##47098 |goto 75.70,23.59
 accept Get Your Bearings##47099 |goto 75.70,23.59
 step
-Follow the path |goto 74.17,23.71 < 5 |only if walking
 Watch the dialogue
 Visit the Ferry Dock |q 47099/1 |goto 74.25,24.58
 step
-Follow the path |goto 74.17,22.68 < 5 |only if walking
-Run up the stairs |goto 73.75,21.73 < 3 |c |q 47099
-step
-Follow the path |goto 73.79,22.80 < 5 |only if walking
-Run up the stairs |goto 74.95,23.02 < 5 |only if walking
-Cross the bridge |goto 75.82,22.76 < 3 |only if walking
-Enter the building |goto 75.57,19.08 < 5 |walk
+Run up the stairs |goto 73.74,21.70 < 10 |only if walking
+Run up the stairs |goto 74.97,22.98 < 10 |only if walking
+Enter the building |goto 75.57,19.08 < 10 |walk
 Watch the dialogue
 |tip Inside the building.
 Visit the Tradewinds Counting House |q 47099/2 |goto 75.57,17.92
 step
-Leave the building |goto 75.57,19.08 < 3 |walk
-Follow the path |goto 74.95,19.62 < 5 |only if walking
-Run up the stairs |goto 74.54,18.54 < 5 |only if walking
-Run up the stairs |goto 74.62,17.59 < 5 |only if walking
-Follow the path |goto 75.12,17.14 < 5 |only if walking
-Continue following the path |goto 74.37,15.36 < 5 |only if walking
-Run up the stairs |goto 73.46,14.16 < 5 |only if walking
-Enter the building |goto 73.55,13.71 < 5 |walk
+Run up the stairs |goto 74.55,18.45 < 10 |only if walking
+Enter the building |goto 73.55,13.71 < 10 |walk
 Watch the dialogue
 |tip Inside the building.
 Visit the Snug Harbor Tavern |q 47099/3 |goto 73.63,13.05
@@ -568,8 +541,6 @@ talk Wesley Rockhold##135153
 |tip Inside the building.
 home The Snug Harbor |goto 74.12,12.68 |q 47189 |future
 step
-Leave the building |goto 73.50,13.71 < 3 |walk
-Follow the path |goto 70.40,16.56 < 7 |only if walking
 Watch the dialogue
 Visit the Flight Master |q 47099/4 |goto 67.14,15.35
 step
@@ -581,16 +552,10 @@ talk Taelia
 turnin Get Your Bearings##47099
 accept The Old Knight##46729
 step
-Follow the path |goto 68.05,15.55 < 7 |only if walking
-Jump down here |goto 70.28,17.55 < 5 |only if walking
-Run up the stairs |goto 69.12,21.23 < 5 |only if walking
-Enter the building |goto 68.83,21.11 < 5 |walk
-Follow the path |goto 67.80,20.90 < 5 |walk
-Run down the stairs |goto 67.43,21.35 < 5 |walk
+Enter the building |goto 68.83,21.11 < 10 |walk
 Watch the dialogue
 Find Cyrus Crestfall |q 46729/1 |goto 67.08,23.47
 step
-Run down the stairs |goto 67.39,22.88 < 3 |walk
 talk Cyrus Crestfall##122370
 |tip Inside the building.
 Choose _<Shake his hand.>_
@@ -618,24 +583,14 @@ talk Cyrus Crestfall##122370
 |tip Inside the building.
 turnin Ferry Pass##52128 |goto 68.01,21.89
 step
-Run up the stairs |goto 67.55,22.92 < 3 |walk
-Run up the stairs |goto 67.22,22.59 < 3 |walk
-Follow the path |goto 67.43,21.40 < 3 |walk
-Follow the path |goto 67.84,20.73 < 5 |walk
-Leave the building |goto 68.79,21.11 < 3 |walk
-Follow the path |goto 69.54,20.49 < 7 |only if walking
-Enter the building |goto 70.40,17.68 < 5 |walk
+Leave the building |goto 68.79,21.11 < 10 |walk
+Enter the building |goto 70.40,17.68 < 10 |walk
 talk 7th Legion Magus##137066
 |tip Inside the building.
 Tell her _"The local authority has given us permission to open portals here."_
 Speak with the 7th Legion Magus |q 47186/1 |goto 70.74,16.31
 step
-Leave the building |goto 70.40,17.68 < 3 |walk
-Run up the stairs |goto 69.12,21.23 < 5 |only if walking
-Enter the building |goto 68.83,21.11 < 5 |walk
-Follow the path |goto 67.80,20.90 < 5 |walk
-Run down the stairs |goto 67.43,21.35 < 5 |walk
-Run down the stairs |goto 67.39,22.88 < 3 |walk
+Enter the building |goto 68.83,21.11 < 10 |walk
 talk Taelia##121235
 |tip Inside the building.
 turnin Sanctum of the Sages##47186 |goto  68.17,21.97
@@ -6547,18 +6502,6 @@ talk Taelia##121235
 |tip Inside the building.
 accept The Missing Fleet##47952 |goto Boralus/0 68.17,21.97
 step
-Run up the stairs |goto 67.51,22.92 < 3 |walk
-Run up the stairs |goto 67.22,22.59 < 3 |walk
-Follow the path |goto 67.43,21.35 < 3 |walk
-Follow the path |goto 67.76,20.86 < 5 |walk
-Leave the building |goto 68.79,21.15 < 3 |walk
-Follow the path |goto 70.33,18.85 < 7 |only if walking
-Continue following the path |goto 71.61,18.11 < 7 |only if walking
-Continue following the path |goto 74.29,18.86 < 7 |only if walking
-Continue following the path |goto 75.82,22.10 < 5 |only if walking
-Run down the stairs |goto 75.67,22.91 < 5 |only if walking
-Follow the path |goto 74.95,23.12 < 5 |only if walking
-Jump down here |goto 74.35,23.88 < 5 |only if walking
 talk Will Melborne##135064
 Tell him _"We need a ferry to the Stormsong Monastery."_
 Charter a Ferry to Stormsong Monastery |q 47952/1 |goto 74.17,24.80
@@ -6566,34 +6509,18 @@ step
 Watch the dialogue
 Travel to Stormsong Monastery |goto 65.20,68.70 < 10 |c |notravel |q 47952
 step
-_Next to you:_
-talk Taelia
-turnin The Missing Fleet##47952
-accept Searching for Answers##51487
+talk Taelia##137866
+turnin The Missing Fleet##47952 |goto 65.36,68.99
+accept Searching for Answers##51487 |goto 65.36,68.99
 step
-Run up the stairs |goto 65.35,69.17 < 5 |only if walking
-Follow the path up |goto 65.40,70.69 < 7 |only if walking
-Follow the path |goto 66.91,73.13 < 7 |only if walking
 talk Sister Adrianna##133974
 Ask her _"Can you tell me anything about the missing fleet?"_
 Question Sister Adrianna |q 51487/1 |goto 68.44,74.23
 step
-Follow the path |goto 67.39,75.22 < 7 |only if walking
-Follow the path |goto 64.48,78.86 < 7 |only if walking
-Run up the stairs |goto 63.61,79.10 < 5 |only if walking
-Follow the path |goto 62.50,80.25 < 5 |only if walking
-Run down the stairs |goto 62.17,80.74 < 5 |only if walking
-Follow the path |goto 61.59,81.60 < 5 |only if walking
-Follow the path |goto 59.80,84.72 < 7 |only if walking
-Run up the stairs |goto 60.15,85.44 < 5 |only if walking
 talk Brother Darrel##133976
 Ask him _"Can you tell me anything about the missing fleet?"_
 Question Brother Darrel |q 51487/2 |goto 60.49,85.25
 step
-Follow the path |goto 60.28,85.89 < 5 |only if walking
-Follow the path |goto 62.10,87.07 < 5 |only if walking
-Continue following the path |goto 64.70,85.69 < 5 |only if walking
-Continue following the path |goto 65.74,84.80 < 5 |only if walking
 talk Sister Celicia##134033
 Ask her _"Can you tell me anything about the missing fleet?"_
 Question Sister Celicia |q 51487/3 |goto 66.18,84.97
@@ -6603,22 +6530,15 @@ talk Taelia
 turnin Searching for Answers##51487
 accept Archived Knowledge##51488
 step
-Follow the path |goto 66.40,83.16 < 5 |only if walking
-Follow the path |goto 66.31,81.70 < 5 |only if walking
-Follow the path |goto 67.67,80.27 < 5 |only if walking
 talk Brother Alen##133951
 Ask him _"Can you tell me anything about the missing fleet?"_
 Question Brother Alen |q 51488/1 |goto 68.40,81.49
 step
-Run down the stairs |goto 68.70,82.04 < 5 |only if walking
-Follow the path |goto 68.13,82.38 < 5 |only if walking
-Run down the stairs |goto 66.97,80.39 < 3 |c |q 51488
-step
-Run down the stairs |goto 66.71,80.98 < 3 |walk
-Follow the path |goto Tiragarde Sound/0 73.56,39.47 < 3 |only if walking
+Run down the stairs |goto 66.97,80.35 < 10 |only if walking
 Watch the dialogue
 |tip Follow Brother Alen as he walks.
 Follow Brother Alen into the Archives |q 51488/2 |goto Tiragarde Sound/0 73.72,39.54
+|tip Downstairs inside the building.
 step
 Watch the dialogue
 |tip Downstairs inside the building.
@@ -6633,21 +6553,12 @@ talk Taelia
 turnin Archived Knowledge##51488
 accept Time to Leave##51489
 step
-Run up the stairs |goto Tiragarde Sound/0 73.56,39.48 < 3 |walk
-Run up the stairs |goto Boralus/0 66.70,80.77 < 3 |walk
-Follow the path |goto 67.03,80.34 < 3 |c |q 51489
+Leave the building |goto Boralus/0 66.97,80.36 < 10 |walk
+Locate Galeheart |goto 71.78,78.90 < 10 |c |q 51489
+|tip At the top of the tower.
 step
-Run up the stairs |goto 68.34,82.51 < 5 |only if walking
-Follow the path |goto 69.01,81.38 < 5 |only if walking
-Follow the path down |goto 69.88,80.14 < 5 |only if walking
-Follow the path down |goto 70.56,78.57 < 5 |only if walking
-Run up the stairs |goto 71.84,78.49 < 5 |only if walking
-Follow the path |goto 72.02,79.14 < 3 |only if walking
-Run up the stairs |goto 72.56,79.09 < 3 |c |q 51489
-step
-Follow the path up |goto 72.53,78.36 < 3 |only if walking
-Run up the stairs |goto 72.04,78.22 < 3 |only if walking
 clicknpc Galeheart##137978
+|tip At the top of the tower.
 Watch the dialogue
 Begin Flying to Stormsong Valley |goto 71.78,78.90 > 30 |c |q 51489
 step
