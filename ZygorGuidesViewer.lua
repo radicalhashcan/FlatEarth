@@ -777,6 +777,9 @@ local function _StartupThread()
 
 	
 	self:SendMessage("ZGV_GUIDES_PARSED", "done")
+	
+	self:Print(L['welcome_guides']:format(#self.registeredguides),false,"force")
+	self:Print("Provided by: |cffffff88The 911 Files",false,"force")
 
 	self:Print(L['welcome_guides']:format(#self.registeredguides),false,"force")
 
@@ -6430,6 +6433,13 @@ function ZGV.InPhase(phasename)
 		local qa=ZGV.questsbyid[46728]
 		local qh=ZGV.questsbyid[50769]
 		return (PlayerCompletedQuest(46728) or qa and qa.inlog) or (PlayerCompletedQuest(50769) or qh and qh.inlog)
+	elseif phasename=="oldarathi" then
+		return C_Map.GetMapArtID(14)==15
+	elseif phasename=="newarathi" then
+		return C_Map.GetMapArtID(14)==1137
+	elseif phasename=="newarathicontrolled" then
+		local state = C_ContributionCollector.GetState(11)
+		return C_Map.GetMapArtID(14)==1137 and (state==2 or state==3)
 	end
 end
 
