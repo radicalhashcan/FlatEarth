@@ -64,12 +64,25 @@ function Appraiser:GetInventoryItems(refresh)
 	end
 end
 
-function Appraiser:GetInventoryAuctions()
-	if Appraiser.ActiveSellingItem and Appraiser.RawDataTable[Appraiser.ActiveSellingItem.itemid] then
+local auction_cache = {}
+local auction_cache_time = {}
+function Appraiser:GetInventoryAuctions(cached)
+	if cached then
+		ZGV:Debug("&appraiser Using cached auctions")
+		if Appraiser.ActiveSellingItem and auction_cache[Appraiser.ActiveSellingItem.link] then
+			Appraiser.InventoryAuctions = {}
+			for i,v in pairs(auction_cache[Appraiser.ActiveSellingItem.link]) do
+				Appraiser:AddItemToInventoryAuctions(v)
+			end
+		end
+	elseif Appraiser.ActiveSellingItem and Appraiser.RawDataTable[Appraiser.ActiveSellingItem.itemid] then
+		ZGV:Debug("&appraiser Using live auctions")
 		Appraiser.InventoryAuctions = {}
 		for i,v in pairs(Appraiser.RawDataTable[Appraiser.ActiveSellingItem.itemid]) do
 			Appraiser:AddItemToInventoryAuctions(v)
 		end
+		auction_cache[Appraiser.ActiveSellingItem.link] = Appraiser.RawDataTable[Appraiser.ActiveSellingItem.itemid]
+		auction_cache_time[Appraiser.ActiveSellingItem.link] = time()
 		Appraiser:Update()
 	end	
 end
@@ -222,21 +235,7 @@ function Appraiser:AddItemToInventory(bag,slot)
 end
 
 function Appraiser:UpdateItemInInventory(item)
-	local truecount = GetItemCount(item.link)
-	if item.itemid > 1000000000 then -- battle pet, need spoonfeeding since GetItemCount(link) does not work for pets
-		truecount = 0
-		for bag=0, NUM_BAG_SLOTS do
-			for slot=1, GetContainerNumSlots(bag) do
-				local _, count, _, _, _, _, baglink = GetContainerItemInfo(bag, slot)
-				if item.link == baglink then
-					truecount = truecount + count
-				end
-			end
-		end
-	end
-
-	item.count = truecount
-
+	item.count = Appraiser.GetTrueItemCount(item)
 	
 	local price,unit_price,empty = ZGVG:GetSellPrice(item.itemid,item.count)
 	item.price = price
@@ -255,18 +254,8 @@ function Appraiser:RefreshSellingItem()
 	for ii,item in ipairs(self.InventoryItems) do 
 		if item.link == self.LastSellingItem then
 			item.active = true
-			local truecount = GetItemCount(item.link)
-			if item.itemid > 1000000000 then -- battle pet, need spoonfeeding since GetItemCount(link) does not work for pets
-				truecount = 0
-				for bag=0, NUM_BAG_SLOTS do
-					for slot=1, GetContainerNumSlots(bag) do
-						local _, count, _, _, _, _, baglink = GetContainerItemInfo(bag, slot)
-						if item.link == baglink then
-							truecount = truecount + count
-						end
-					end
-				end
-			end
+			local truecount = Appraiser.GetTrueItemCount(item)
+
 			if Appraiser.ActiveSellingItem and truecount ~= Appraiser.ActiveSellingItem.count then
 				item.count = truecount
 				Appraiser.ActiveSellingItem.count = truecount
@@ -404,7 +393,14 @@ function Appraiser:ActivateSellItem(item,automatic)
 		item.active = true
 		self:SetSellHistoricalLabels()
 		self:SetSellFields()
-		self:SearchForItem(item)
+
+		if (not IsShiftKeyDown()) and (auction_cache[Appraiser.ActiveSellingItem.link] and (time()-auction_cache_time[Appraiser.ActiveSellingItem.link]<self.OutdatedTime)) then
+			self.ActiveSearch = nil
+			self.ActiveSearchName = nil
+			Appraiser:GetInventoryAuctions("cached")
+		else
+			self:SearchForItem(item)
+		end
 	--[[
 	else
 		ClickAuctionSellItemButton()
@@ -491,6 +487,7 @@ function Appraiser:SetUndercutToAuction(row)
 end
 
 function Appraiser:UpdateStackFields()
+	if not self.ActiveSellingItem then return end
 	self.Inventory_Frame.stacksize:SetText(self.ActiveSellingItem.stacksize)
 	self.Inventory_Frame.stackcount:SetText(self.ActiveSellingItem.stackcount)
 	self.needToRetooltip=true
@@ -498,6 +495,7 @@ function Appraiser:UpdateStackFields()
 end
 
 function Appraiser:UpdateStackCountsFromFields()
+	if not self.ActiveSellingItem then return end
 	Appraiser.ActiveSellingItem.stacksize = tonumber(Appraiser.Inventory_Frame.stacksize:GetText()) or 1
 	Appraiser.ActiveSellingItem.stackcount = tonumber(Appraiser.Inventory_Frame.stackcount:GetText()) or 1
 	self.needToRetooltip=true
@@ -559,7 +557,7 @@ function Appraiser:SetMaxStackSize()
 	local item = Appraiser.ActiveSellingItem
 	if not item then return end
 	local _,_,maxstack = Appraiser:GetMaxSellStack(item)
-	local invcount = GetItemCount(item.itemid)
+	local invcount = Appraiser.GetTrueItemCount(item)
 	if IsShiftKeyDown() then
 		if item.stacksize==maxstack then
 			item.stacksize=invcount
@@ -578,7 +576,7 @@ end
 function Appraiser:SetMaxStackCount()
 	local item = Appraiser.ActiveSellingItem
 	if not item then return end
-	local invcount = GetItemCount(item.itemid)
+	local invcount = Appraiser.GetTrueItemCount(item)
 	item.stackcount=max(1,floor(invcount/item.stacksize))
 	if item.stackcount==1 and item.stacksize>invcount then self:SetMaxStackSize() end
 	self:UpdateStackFields()
@@ -675,9 +673,9 @@ function Appraiser:SetSellHistoricalLabels()
 
 	trend = ZGV.Gold.servertrends and ZGV.Gold.servertrends.items[itemid]
 	if trend then
-		histlow = ZGV.GetMoneyString(trend.p_lo*countForSellCalc,3) or "unknown"
-		histmed = ZGV.GetMoneyString(trend.p_md*countForSellCalc,3) or "unknown"
-		histhigh = ZGV.GetMoneyString(trend.p_hi*countForSellCalc,3) or "unknown"
+		histlow = ZGV.GetMoneyString(trend.p_lo*countForSellCalc) or "unknown"
+		histmed = ZGV.GetMoneyString(trend.p_md*countForSellCalc) or "unknown"
+		histhigh = ZGV.GetMoneyString(trend.p_hi*countForSellCalc) or "unknown"
 		demand = trend.sold or trend.q_md or (trend.q_lo + trend.q_hi)/2
 		estval = ZGV.GetMoneyString(selling_price) or "unknown"
 	else
@@ -758,6 +756,8 @@ function Appraiser:UpdateSellPriceFields()
 	Appraiser.Inventory_Frame.buyoutgold:SetText(buy_price_gold)
 	Appraiser.Inventory_Frame.buyoutsilver:SetText(buy_price_silver)
 	Appraiser.Inventory_Frame.buyoutcopper:SetText(buy_price_copper)
+
+	Appraiser:UpdateAuctionCost()
 end
 
 function Appraiser:GetSellPriceForStacksize(mode)
@@ -807,7 +807,7 @@ function Appraiser:StartAuction()
 	if not Appraiser.ActiveSellingItem then return end
 
 	local stack_size, stack_count = Appraiser:GetUserSellStack(Appraiser.ActiveSellingItem)
-	if stack_size*stack_count>Appraiser.GetTrueItemCount(Appraiser.ActiveSellingItem.itemid,Appraiser.ActiveSellingItem.link) then  ZGV:Print(("You don't have %d of %s in your bags."):format(stack_size*stack_count,Appraiser.ActiveSellingItem.name))  return  end  -- this should never be reached, actually.
+	if stack_size*stack_count>Appraiser.GetTrueItemCount(Appraiser.ActiveSellingItem) then  ZGV:Print(("You don't have %d of %s in your bags."):format(stack_size*stack_count,Appraiser.ActiveSellingItem.name))  return  end  -- this should never be reached, actually.
 	Appraiser.SellingInProgress = true
 
 	local selling_price_buy,selling_price_bid = Appraiser:GetSellPriceForStacksize("stack")
@@ -855,8 +855,8 @@ end
 function Appraiser:UpdateAuctionCost(stacksize,stackcount)
 	if not Appraiser.ActiveSellingItem then return end
 
-	if not stacksize then stacksize = tonumber(Appraiser.Inventory_Frame.stacksize:GetText()) end
-	if not stackcount then stackcount = tonumber(Appraiser.Inventory_Frame.stackcount:GetText()) end
+	if not stacksize then stacksize = min(1,tonumber(Appraiser.Inventory_Frame.stacksize:GetText()) or 1) end
+	if not stackcount then stackcount = min(1,tonumber(Appraiser.Inventory_Frame.stackcount:GetText()) or 1) end
 	local auction_time = Appraiser.Inventory_Frame.durationdropdown:GetCurrentSelectedItemValue()
 	local selling_price_buy,selling_price_bid = Appraiser:GetSellPriceForStacksize("unit")
 
@@ -865,12 +865,18 @@ function Appraiser:UpdateAuctionCost(stacksize,stackcount)
 
 	local deposit
 	if GetAuctionDeposit then
-		deposit = GetAuctionDeposit(auction_time,selling_price_bid,selling_price_buy,stacksize,stackcount)
+		deposit = GetAuctionDeposit(auction_time,selling_price_bid*stacksize,selling_price_buy*stacksize,stacksize,stackcount)
 	else
 		deposit = CalculateAuctionDeposit(auction_time)
 	end
 
-	Appraiser.Inventory_Frame.aucpostfee:SetText("Deposit: "..ZGV.GetMoneyString(deposit or 0))
+	if deposit>GetMoney() then
+		Appraiser.DepositValid = false
+		Appraiser.Inventory_Frame.aucpostfee:SetText("|cffff0000Deposit: "..ZGV.GetMoneyString(deposit or 0))
+	else
+		Appraiser.DepositValid = true
+		Appraiser.Inventory_Frame.aucpostfee:SetText("Deposit: "..ZGV.GetMoneyString(deposit or 0))
+	end
 
 	Appraiser.LastAuctionTime = auction_time
 end

@@ -2,6 +2,8 @@ assert (ZygorGuidesViewer,"Zygor Guides Viewer not loaded properly!")
 
 local ZGV=ZygorGuidesViewer
 
+ZGV.MapCoords = {}
+
 function ZGV.GetPlayerPosition()
 	local map = C_Map.GetBestMapForUnit("player")
 	if not map then return 0,0,0 end
@@ -21,16 +23,23 @@ end
 local Enum_Continent = Enum.UIMapType.Continent
 local Enum_Dungeon = Enum.UIMapType.Dungeon
 local Enum_Orphan = Enum.UIMapType.Orphan
+local Enum_Micro = Enum.UIMapType.Micro
+local Enum_Zone = Enum.UIMapType.Zone
+local Enum_Orphan = Enum.UIMapType.Orphan
 
 local force_maptype={
-	[427]=3,[582]=3,[590]=3,[622]=3,[624]=3,[750]=3,[747]=3,[1182]=3, -- these zones have mapType==6, let's correct it to zone
-	[626]=5,[627]=5,[628]=5,[629]=5, -- Dalaran L is a micro, not a dungeon
-	[125]=5,[126]=5, -- Dalaran is a micro, not a dungeon
-	[499]=5,[500]=5, -- Deeprun Tram 
-	[86]=5, -- Cleft of Shadow is a micro, not a dungeon.
-	[179]=6, -- Gilneas is an orphan (its submaps: 202,180,181,182,275 will obey)
-	[1183]=5, -- Thornheart is a micro, not a dungeon.
-	[1167]=5, [1166]=5, -- Zanchul in Dazar'alor are micro maps, not dungeon.
+	[427]=Enum_Zone,[582]=Enum_Zone,[590]=Enum_Zone,[622]=Enum_Zone,[624]=Enum_Zone,[750]=Enum_Zone,[747]=Enum_Zone,[1182]=Enum_Zone, -- these zones have mapType==6, let's correct it to zone
+	[626]=Enum_Micro,[627]=Enum_Micro,[628]=Enum_Micro,[629]=Enum_Micro, -- Dalaran L is a micro, not a dungeon
+	[125]=Enum_Micro,[126]=Enum_Micro, -- Dalaran is a micro, not a dungeon
+	[499]=Enum_Micro,[500]=Enum_Micro, -- Deeprun Tram 
+	[86]=Enum_Micro, -- Cleft of Shadow is a micro, not a dungeon.
+	[179]=Enum_Orphan, -- Gilneas is an orphan (its submaps: 202,180,181,182,275 will obey)
+	[1183]=Enum_Micro, -- Thornheart is a micro, not a dungeon.
+	[1167]=Enum_Micro, [1166]=Enum_Micro, -- Zanchul in Dazar'alor are micro maps, not dungeon.
+	[830]=Enum_Continent,[882]=Enum_Continent,[885]=Enum_Continent,
+	[1349]=Enum_Micro,[1350]=Enum_Micro,[1351]=Enum_Micro, -- Tol Dagor Scenario
+	[1361]=Enum_Micro, -- Old Ironforge, setting to micro, not dungeon.
+	[948]=Enum_Orphan, -- The Maelstrom is an orphan
 }
 local ZGV_mapcache = {}
 function ZGV.GetMapInfo(mapid)
@@ -38,6 +47,7 @@ function ZGV.GetMapInfo(mapid)
 	local mapdata = ZGV_mapcache[mapid]
 	if mapdata then return mapdata end
 	ZGV_mapcache[mapid] = C_Map.GetMapInfo(mapid)
+	if not ZGV_mapcache[mapid] then return end
 	
 	local forced_type=force_maptype[mapid]
 	if forced_type then ZGV_mapcache[mapid].mapType=forced_type end
@@ -59,6 +69,19 @@ function ZGV.GetMapContinent(mapID)
 	end
 	return mapID,"Unknown continent"
 end
+
+function ZGV.GetMapChildren(mapID,resultsArray)
+	resultsArray = resultsArray or {}
+	local mapInfo = ZGV.GetMapInfo(mapID);
+	if not mapInfo then return resultsArray end
+
+	for i,cData in pairs(C_Map.GetMapChildrenInfo(mapID)) do
+		resultsArray[cData.mapID] = true
+		ZGV.GetMapChildren(cData.mapID,resultsArray)
+	end
+	return resultsArray
+end
+
 
 function ZGV.GetCurrentMapID() 
 	local currentmap = C_Map.GetBestMapForUnit("player")
@@ -148,11 +171,30 @@ local MAPDATA=MAPDATA
 
 local function GetMAPDATAFromGWP()
 	for i=1,2000 do repeat
+		if MAPDATA[i] then break end
+		if not LibRover.data.FloorByID[i] then break end
+
 		local _,d1=GWP(i,{x=0,y=0})
 		local _,d2=GWP(i,{x=1,y=1})
 		if not d1 then break end
 		MAPDATA[i]={_,d1.y,d1.x,d1.y-d2.y,d1.x-d2.x} -- WTF? Does GWPFMP mix its x and y !?
 	until true end
+end
+
+local function CloneHBDMap(src,dst,force,changes)
+	local srct=ZGV.HBD.mapData[src]  if not srct then return end
+	local dstt=ZGV.HBD.mapData[dst]  if dstt and not force then return end
+	dstt={}  ZGV.HBD.mapData[dst]=dstt
+	for k,v in pairs(srct) do dstt[k]=v end
+	if changes then for k,v in pairs(changes) do dstt[k]=v end end
+end
+local function ForceHBDMapUpdate(id)
+	local data = C_Map.GetMapInfo(id)
+	if data then ZGV.HBD.processMap(id,data) end
+end
+local function FixHBD()
+	CloneHBDMap(543,1170,false)
+	ForceHBDMapUpdate(1333)
 end
 local function GetMAPDATAFromHBD()
 	for i=1,2000 do repeat
@@ -162,16 +204,14 @@ local function GetMAPDATAFromHBD()
 	until true end
 end
 local function FixMAPDATA() 
-	MAPDATA[1022]=MAPDATA[939] -- expedition maps, clone sizes from Tropical Isle 8.0
-	MAPDATA[1032]=MAPDATA[939]
-	MAPDATA[1033]=MAPDATA[939]
-	MAPDATA[1034]=MAPDATA[939]
-	MAPDATA[1035]=MAPDATA[939]
-	MAPDATA[1036]=MAPDATA[939]
-	MAPDATA[1037]=MAPDATA[939]
-	MAPDATA[1036]=MAPDATA[939]
+	-- expedition maps are now properly filled with GWP data
+
+	MAPDATA[1170]=MAPDATA[1170] or MAPDATA[543]  -- Gorgrond - Mag'har scenario
 end
-GetMAPDATAFromHBD()
+
+FixHBD() -- fix what HBD is breaking
+GetMAPDATAFromHBD() -- grab data based on translation functions
+GetMAPDATAFromGWP() -- fill missing data using GetWorldPosFromMapPos calculations
 FixMAPDATA()
 
 local function HBDmaptest(n)
@@ -191,15 +231,25 @@ local function HBDuse(id)
 	MAPDATA[id]={dh.instance,dh[4],dh[3],dh[1],dh[2]}
 end
 
+function ZGV.MapCoords.FixKrasang(map,x,y) -- 8.1 broke Krasang wilds, no blizzard fix in sight. Ugly hack so that at least pointer will work
+	if map~=418 then return x,y end -- just in case
+
+	x = x*0.9291553 + 0.01775749
+	y = y*0.9308228 + 0.06090176
+	return x,y
+end
+
 local sqrt=math.sqrt
-function Mdist(map1,x1,y1,map2,x2,y2)
+function ZGV.MapCoords.Mdist(map1,x1,y1,map2,x2,y2)
 	local dx,dy
 	local dm1=MAPDATA[map1]
+	if not dm1 then return nil end
 	if map1==map2 then  -- same map
 		dx = ((x1-x2)*dm1[4]) -- should be x2-x1, of course, but world coords are inane.
 		dy = ((y1-y2)*dm1[5])
 	else
 		local dm2=MAPDATA[map2]
+		if not dm2 then return nil end
 		if dm1[1]~=dm2[1] then return nil end  -- diff continent
 		local gx1 = dm1[2]-dm1[4]*x1
 		local gy1 = dm1[3]-dm1[5]*y1
@@ -209,6 +259,17 @@ function Mdist(map1,x1,y1,map2,x2,y2)
 		dy = gy2-gy1
 	end
 	return sqrt(dx*dx+dy*dy),dx,dy
+end
+local Mdist = ZGV.MapCoords.Mdist
+
+local PI2=PI*2
+local atan2=math.atan2
+function ZGV.MapCoords.Mangle(...)
+	local dist,dx,dy = Mdist(...)
+	if not dx then return nil,nil end
+	local angle = atan2(-dx,dy)
+	if angle>0 then angle = PI2-angle else angle=-angle end
+	return angle,dist
 end
 
 local cosmicMapData = {}
@@ -251,13 +312,15 @@ end
 MAPDATA_XLT = {}
 local MXLT=MAPDATA_XLT
 local abs,unpack=abs,unpack
-function Mxlt(map1,x,y,map2,oob_ok)
+function ZGV.MapCoords.Mxlt(map1,x,y,map2,oob_ok)
 	if map1==map2 then return x,y end
 
 	if map2==947 --[[AZEROTH--]] then
-		return ZGV.HBD:GetAzerothWorldMapCoordinatesFromWorld(ZGV.HBD:GetWorldCoordinatesFromZone(x,y,map1))
+		local x,y,zone = ZGV.HBD:GetWorldCoordinatesFromZone(x,y,map1)
+		return ZGV.HBD:GetAzerothWorldMapCoordinatesFromWorld(x,y,zone,true)
 	elseif map2==946 --[[COSMIC--]] then
-		return GetCosmicWorldMapCoordinatesFromWorld(ZGV.HBD:GetWorldCoordinatesFromZone(x,y,map1))
+		local x,y,zone = ZGV.HBD:GetWorldCoordinatesFromZone(x,y,map1)
+		return GetCosmicWorldMapCoordinatesFromWorld(x,y,zone,true)
 	end
 
 	-- ((o1+w1*x)-o2)/w2  =  (o1 + w1*x - o2) / w2  =  (o1-o2)/w2 + (w1/w2)*x
@@ -298,8 +361,9 @@ function Mxlt(map1,x,y,map2,oob_ok)
 	if x2<0 or x2>1 or y2<0 or y2>1 and not oob_ok then return false end
 	return x2,y2
 end
+local Mxlt = ZGV.MapCoords.Mxlt
 
-function Mxlt_test()
+function ZGV.MapCoords.Mxlt_test()
 	-- 1000000 times:
 	--  debugprofilestop() = 140
 	--  nop() = 130
@@ -383,3 +447,154 @@ function FIXMAPZOOM()
 end
 
 --WorldMapFrame:GetCanvasContainer():SetMouseWheelZoomMode(MAP_CANVAS_MOUSE_WHEEL_ZOOM_BEHAVIOR_SMOOTH)
+
+function ZGV:ShowMapButtons()
+	if not WorldMapFrame then return end
+	if ZGV.MapButtonFrame then return end
+
+	--if not ZGV.DEV then return end  --devwall
+
+	ZGV.MapButtonFrame = ZGV.ChainCall(CreateFrame("FRAME","ZygorWorldMapMenu",WorldMapFrame.BorderFrame))
+		:SetPoint("TOPRIGHT",WorldMapFrame.BorderFrame.MaximizeMinimizeFrame,"TOPLEFT",10,0)
+		:SetSize(50,50)
+		:SetBackdrop({bgFile="Interface\\Minimap\\MiniMap-TrackingBorder"})--,tile=true, tileSize=50})
+		:SetFrameLevel(610)
+		:Show()
+	.__END
+
+	ZGV.MapButton = ZGV.ChainCall(CreateFrame("Button", "ZygorPoiMapButton" , ZGV.MapButtonFrame))
+		:SetSize(20,20)
+		:SetPoint("TOPLEFT", ZGV.MapButtonFrame, "TOPLEFT", 5, -5)
+		:SetBackdrop({bgFile=ZGV.DIR.."\\Skins\\zglogo-back"})
+		:SetNormalTexture(ZGV.DIR.."\\Skins\\zglogo")
+		:SetFrameLevel(611)
+		:SetScript("OnClick", function() ZGV:ShowMapMenu() end)
+		:Show()
+	.__END
+	ZGV.MapButton:GetNormalTexture():SetTexCoord(0,0,0,1/4 , 1,0,1,1/4)
+end
+
+ZGV:ShowMapButtons()
+
+local POI_TYPES = {
+	[1] = {keyword="rare",display="Rares"},
+	[2] = {keyword="treasure",display="Treasures"},
+	}
+
+function ZGV:ShowMapMenu()
+	local L=ZGV.L
+	local self=ZGV.MapButtonFrame 
+	if not self.menu then self.menu = CreateFrame("FRAME",self:GetName().."Menu",self,"UIDropDownForkTemplate") end
+	UIDropDownFork_SetAnchor(self.menu, 0, 0, "BOTTOMLEFT", self, "BOTTOMRIGHT")
+	local menu = {}
+
+	if ZGV.db.profile.poienabled then 
+		tinsert(menu,{
+				text = L['opt_poidisable'],
+				tooltipTitle = L['opt_poidisable'],
+				tooltipText = L['opt_poidisable_desc'],
+				tooltipOnButton=1,
+				func = function() ZGV:SetOption("Poi","poienabled off") ZGV.Poi:ChangeState(false) end,
+				notCheckable=0,
+			})
+		local poiTypeList = {}
+		for i=1,#POI_TYPES do
+			local keyword,display = POI_TYPES[i].keyword,POI_TYPES[i].display
+			if ZGV.Poi.OwnedTypes[keyword] then
+				tinsert(poiTypeList,
+						{ text = display,
+						keepShownOnClick=true, 
+						checked = function() return not ZGV.db.profile.hideguide[keyword] end, 
+						func = function() 
+							if ZGV.db.profile.hideguide[keyword] then
+								ZGV.db.profile.hideguide[keyword] = nil
+							else
+								ZGV.db.profile.hideguide[keyword] = true
+							end
+							ZGV.Poi:ChangeState(true) 
+							UIDropDownFork_Refresh(self.menu) 
+						end }
+				)
+			end
+		end
+
+		tinsert(menu,{
+				text = L['opt_poishow'],
+				tooltipTitle = L['optpoishow_'],
+				tooltipText = L['opt_poishow__desc'],
+				hasArrow = true,
+				menuList = poiTypeList,
+				notCheckable=1,
+			})
+
+
+		tinsert(menu,{
+				text = L['opt_poitype'],
+				tooltipTitle = L['opt_poitype'],
+				tooltipText = L['opt_poitype_desc'],
+				hasArrow = true,
+				menuList = {
+					{ text = L['opt_poitype_quick'], 
+					keepShownOnClick=true, 
+					checked = function() return (ZGV.db.profile.poitype==1) end, 
+					func = function() 
+						ZGV.db.profile.poitype=1 
+						ZGV.Poi:ChangeState(true) 
+						UIDropDownFork_Refresh(self.menu) 
+					end },
+					{ text = L['opt_poitype_complete'], 
+					keepShownOnClick=true, 
+					checked = function() return (ZGV.db.profile.poitype==2) end, 
+					func = function() 
+						ZGV.db.profile.poitype=2 
+						ZGV.Poi:ChangeState(true) 
+						UIDropDownFork_Refresh(self.menu) 
+					end },
+				},
+				notCheckable=1,
+			})
+		tinsert(menu,{
+				text = L['opt_poioptions'],
+				tooltipTitle = L['opt_poioptions'],
+				tooltipText = L['opt_poioptions_desc'],
+				tooltipOnButton=1,
+				func = function() ZGV:OpenOptions("poi") end,
+				notCheckable=0,
+			})
+	else
+		tinsert(menu,{
+				text = L['opt_poienabled'],
+				tooltipTitle = L['opt_poienabled'],
+				tooltipText = L['opt_poienabled_desc'],
+				tooltipOnButton=1,
+				func = function() ZGV:SetOption("Poi","poienabled on") ZGV.Poi:ChangeState(true) end,
+				notCheckable=0,
+			})
+		tinsert(menu,{
+				text = L['opt_poioptions'],
+				tooltipTitle = L['opt_poioptions'],
+				tooltipText = L['opt_poioptions_desc'],
+				tooltipOnButton=1,
+				func = function() ZGV:OpenOptions("poi") end,
+				notCheckable=0,
+			})
+	end
+
+	tinsert(menu,
+			{ text = "Show world quest planner",
+			checked = function() return ZGV.db.profile.worldquestenable end, 
+			func = function() 
+				ZGV.db.profile.worldquestenable = not ZGV.db.profile.worldquestenable
+				if ZGV.db.profile.worldquestenable then
+					ZGV.WorldQuests.DisplayFrame:Show()
+				else
+					ZGV.WorldQuests.DisplayFrame:Hide()
+				end
+				ZGV.WorldQuests.needToUpdate = true
+				ZGV.WorldQuests.useCache = false
+			end }
+	)
+
+	EasyFork(menu,self.menu,nil,0,0,"MENU",false)
+	UIDropDownFork_SetWidth(self.menu, 300)
+end

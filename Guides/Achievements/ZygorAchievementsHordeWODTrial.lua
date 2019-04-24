@@ -3,7 +3,294 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("AchievementsHWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Jungle Treasure Hunter/Master",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Draenor Explorer",{
+condition_end=function() return achieved(8935) end,
+achieveid={8935},
+description="Earn the following Draenor exploration achievements:\n\nExplore Frostfire Ridge\nExplore Gorgrond\n"..
+"Explore Spires of Arak\nExplore Shadowmoon Valley\nExplore Talador\nExplore Nagrand",
+},[[
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Shadowmoon Valley" 1-11
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Talador" 1-15
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Gorgrond" 1-14
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Frostfire Ridge" 1-15
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Spires of Arak" 1-17
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Nagrand" 1-15
+step
+_Congratulations!_
+You Earned the "Draenor Explorer" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explore Shadowmoon Valley",{
+condition_end=function() return achieved(8938) end,
+achieveid={8938},
+description="Explore Shadowmoon Valley, revealing the following covered areas of the world map:\n\n Anguish Fortress\n"..
+"Elodor\nGloomshade Grove\nKarabor\nThe Shimmer Moor\nIsle of Shadows\nDarktide Roost\nEmbaari Village\n"..
+"Gul'var\nShaz'gul\nSocrethar's Rise",
+},[[
+step
+Explore Socrethar's Rise |achieve 8938/10 |goto Shadowmoon Valley D 42.9,69.9
+step
+Explore Shaz'gul |achieve 8938/8 |goto 40.0,66.0
+step
+Explore Isle of Shadows |achieve 8938/11 |goto 40.1,79.2
+step
+Explore Darktide Roost |achieve 8938/2 |goto 61.1,78.1
+step
+Explore The Shimmer Moor |achieve 8938/9 |goto 58.7,58.3
+step
+Explore Karabor |achieve 8938/7 |goto 61.2,45.3
+step
+Explore Elodor |achieve 8938/3 |goto 52.3,26.7
+step
+Explore Gloomshade Grove |achieve 8938/5 |goto 40.3,26.5
+step
+Explore Embaari Village |achieve 8938/4 |goto 38.6,33.4
+step
+Explore Anguish Fortress |achieve 8938/1 |goto 32.2,23.6
+step
+Explore Gul'var |achieve 8938/6 |goto 20.5,13.6
+step
+|achieve 8938
+step
+_Congratulations!_
+You Earned the "Explore Shadowmoon Valley" Achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explore Talador",{
+condition_end=function() return achieved(8940) end,
+achieveid={8940},
+description="Explore Talador, revealing the following covered areas of the world map:\n\n Duskfall Island\n"..
+"Aruuna\nFort Wrynn\nGul'rok\nOrunai Coast\nShattrath City\nTomb of Lights\nAnchorite's Sojourn\n"..
+"Zangarra\nAuchindoun\nCourt of Souls\nGordal Fortress\nThe Path of Glory\nTelmor\nTuurem",
+},[[
+step
+Explore Anchorite's Sojourn |achieve 8940/10 |goto Talador 76.7,56.6
+step
+Explore Duskfall Island |achieve 8940/3 |goto 71.6,57.7
+step
+Explore Tomb of Lights |achieve 8940/13 |goto 58.9,64.8
+step
+Explore Auchindoun |achieve 8940/2 |goto 54.6,69.6
+step
+Explore Gordal Fortress |achieve 8940/6 |goto 67.7,68.8
+step
+Explore Telmor |achieve 8940/12 |goto 50.6,86.7
+step
+Explore Gul'rok |achieve 8940/7 |goto 38.5,79.3
+step
+Explore Court of Souls |achieve 8940/4 |goto 40.0,60.1
+step
+Explore Shattrath City |achieve 8940/11 |goto 41.4,43.0
+step
+Explore Orunai Coast |achieve 8940/9 |goto 51.8,26.8
+step
+Explore Tuurem |achieve 8940/14 |goto 59.6,32.6
+step
+Explore Aruuna |achieve 8940/1 |goto 75.4,40.6
+step
+Explore Zangarra |achieve 8940/15 |goto 78.6,27.9
+step
+Explore Fort Wrynn |achieve 8940/5 |goto 68.0,20.3
+step
+Explore The Path of Glory |achieve 8940/8 |goto 66,10
+step
+|achieve 8940
+step
+_Congratulations!_
+You Earned the "Explore Talador" Achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explore Gorgrond",{
+condition_end=function() return achieved(8939) end,
+achieveid={8939},
+description="Explore Gorgrond, revealing the following covered areas of the world map:\n\n Evermorn Springs\n"..
+"Bastion Rise\nGrimrail Depot\nDeadgrin\nHighpass\nStonemaul Arena\nThe Iron Approach\nThe Pit\n"..
+"Beastwatch\nCrimson Fen\nEverbloom Wilds\nGronn Canyon\nIyun Weald\nTangleheart",
+},[[
+step
+Explore Bastion Rise |achieve 8939/1 |goto Gorgrond 48.6,79.3
+step
+Explore Tangleheart |achieve 8939/12 |goto 50.3,70.7
+step
+Explore Crimson Fen |achieve 8939/4 |goto 53.9,65.0
+step
+Explore Highpass |achieve 8939/9 |goto 52.9,60.7
+step
+Explore Iyun Weald |achieve 8939/10 |goto 61.0,51.7
+step
+Explore Everbloom Wilds |achieve 8939/6 |goto 54.4,44.5
+step
+Explore Grimrail Depot |achieve 8939/3 |goto 54.4,33.3
+step
+Explore The Pit |achieve 8939/14 |goto 47.6,38.7
+step
+Explore The Iron Approach |achieve 8939/13 |goto 43.3,20.9
+step
+Explore Gronn Canyon |achieve 8939/8 |goto 46.4,45.2
+step
+Explore Stonemaul Arena |achieve 8939/11 |goto 42.5,64.5
+step
+Explore Beastwatch |achieve 8939/2 |goto 45.4,71.1
+step
+Explore Evermorn Springs |achieve 8939/7 |goto 42.2,77.5
+step
+Explore Deadgrin |achieve 8939/5 |goto 41.4,74.1
+step
+|achieve 8939
+step
+_Congratulations!_
+You Earned the "Explore Gorgrond" Achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explore Frostfire Ridge",{
+condition_end=function() return achieved(8937) end,
+achieveid={8937},
+description="Explore Frostfire Ridge, revealing the following covered areas of the world map:\n\n Bladespire Citadel\n"..
+"Bones of Agurak\nDaggermaw Ravine\nGrimfrost Hill\nIron Siegeworks\nMagnarok\nThe Boneslag\nWor'gol\n"..
+"Bloodmaul Stronghold\nColossal's Fall\nFrostwind Crag\nGrom'gar\nIron Waystation\nStonefang Outpost\n"..
+"The Cracking Plains",
+},[[
+step
+Explore Bones of Agurak |achieve 8937/3 |goto Frostfire Ridge 86.2,71.2
+step
+Explore Iron Siegeworks |achieve 8937/9 |goto 83.7,59.4
+step
+Explore Iron Waystation |achieve 8937/10 |goto 74.7,62.7
+step
+Explore Grom'gar |achieve 8937/8 |goto 65.7,58.0
+step
+Explore Grimfrost Hill |achieve 8937/7 |goto 68.3,50.3
+step
+Explore The Cracking Plains |achieve 8937/14 |goto 54.6,44.1
+step
+Explore Magnarok |achieve 8937/11 |goto 68.1,32.0
+step
+Explore Colossal's Fall |achieve 8937/4 |goto 62.4,29.8
+step
+Explore Stonefang Outpost |achieve 8937/12 |goto 46.9,52.3
+step
+Explore The Boneslag |achieve 8937/13 |goto 46.5,47.4
+step
+Explore Wor'gol |achieve 8937/15 |goto 23.8,54.9
+step
+Explore Bladespire Citadel |achieve 8937/1 |goto 27.4,32.1
+step
+Explore Frostwind Crag |achieve 8937/6 |goto 36.1,19.3
+step
+Explore Bloodmaul Stronghold |achieve 8937/2 |goto 36.9,13.0
+step
+Explore Daggermaw Ravine |achieve 8937/5 |goto 44.8,31.2
+step
+|achieve 8937
+step
+_Congratulations!_
+You Earned the "Explore Frostfire Ridge" Achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explore Spires of Arak",{
+condition_end=function() return achieved(8941) end,
+achieveid={8941},
+description="Explore Spires of Arak, revealing the following covered areas of the world map:\n\n The Writhing Mire\n"..
+"Skettis\nVeil Zekk\nSouthport\nTerrace of Dawn\nBladefist Hold\nLost Veil Anzu\nRavenskar\nAxefall\n"..
+"The Howling Crag\nPinchwhistle Point\nVeil Akraz\nWindswept Terrace\nSethekk Hollow\nAdmiral Taylor's\n"..
+" Garrison\nPinchwhistle Gearworks\nBloodmane Valley",
+},[[
+step
+Explore Skettis |achieve 8941/1 |goto Spires of Arak 45.3,18.9
+step
+Explore The Howling Crag |achieve 8941/2 |goto 61.1,25.4
+step
+Explore Lost Veil Anzu |achieve 8941/13 |goto 73.4,37.9
+step
+Explore Sethekk Hollow |achieve 8941/10 |goto 61.9,37.3
+step
+Explore Terrace of Dawn |achieve 8941/9 |goto 53.8,46.7
+step
+Explore Windswept Terrace |achieve 8941/8 |goto 47.48,52.29
+step
+Explore Ravenskar |achieve 8941/15 |goto 55,55
+step
+Explore Veil Zekk |achieve 8941/5 |goto 61.2,55.2
+step
+Explore Pinchwhistle Gearworks |achieve 8941/14 |goto 61.3,70.0
+step
+Explore Pinchwhistle Point |achieve 8941/4 |goto 57.8,85.6
+step
+Explore Bloodmane Valley |achieve 8941/16 |goto 51.0,67.2
+step
+Explore Southport |achieve 8941/7 |goto 41.7,59.9
+step
+Explore Admiral Taylor's Garrison |achieve 8941/12 |goto 39.8,49.4
+step
+Explore Axefall |achieve 8941/17 |goto 41.2,46.8
+step
+Explore The Writhing Mire |achieve 8941/3 |goto 36.8,44.0
+step
+Explore Bladefist Hold |achieve 8941/11 |goto 31.3,28.9
+step
+Explore Veil Akraz |achieve 8941/6 |goto 41.5,23.7
+step
+|achieve 8941
+step
+_Congratulations!_
+You Earned the "Explore Spires of Arak" Achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explore Nagrand",{
+condition_end=function() return achieved(8942) end,
+achieveid={8942},
+description="Explore Nagrand, revealing the following covered areas of the world map:\n\n Ancestral Grounds\n"..
+"Gates of Grommashar\nHighmaul Harbor\nLok-rath\nMok'gol Watchpost\nTelaar\nThe Ring of Trials\n"..
+"Zangar Shore\nBroken Precipice\nHallvalor\nIronfist Harbor\nMar'gok's Overwatch\nOshu'gun\n"..
+"The Ring of Blood\nThrone of the Elements",
+},[[
+step
+Explore The Ring of Trials |achieve 8942/13 |goto Nagrand D 79.7,49.8
+step
+Explore Telaar |achieve 8942/11 |goto 69.0,64.2
+step
+Explore Gates of Grommashar |achieve 8942/3 |goto 75.0,68.1
+step
+Explore Mar'gok's Overwatch |achieve 8942/8 |goto 80.5,67.1
+step
+Explore Hallvalor |achieve 8942/4 |goto 84.4,56.4
+step
+Explore Zangar Shore |achieve 8942/15 |goto 86.3,27.6
+step
+Explore Throne of the Elements |achieve 8942/14 |goto 73.2,20.8
+step
+Explore The Ring of Blood |achieve 8942/12 |goto 57.0,19.0
+step
+Explore Broken Precipice |achieve 8942/2 |goto 50.4,19.3
+step
+Explore Highmaul Harbor |achieve 8942/5 |goto 37.4,32.4
+step
+Explore Mok'gol Watchpost |achieve 8942/9 |goto 42.7,33.2
+step
+Explore Lok-rath |achieve 8942/7 |goto 53.4,43.3
+step
+Explore Ancestral Grounds |achieve 8942/1 |goto 41.2,56.4
+step
+Explore Oshu'gun |achieve 8942/10 |goto 47.2,61.0
+step
+Explore Ironfist Harbor |achieve 8942/6 |goto 43.9,76.3
+step
+|achieve 8942
+step
+_Congratulations!_
+You Earned the "Explore Nagrand" Achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Draenor Explorer",{
+condition_end=function() return achieved(8935) end,
+achieveid={8935},
+description="Earn the following Draenor exploration achievements:\n\nExplore Frostfire Ridge\nExplore Gorgrond\n"..
+"Explore Spires of Arak\nExplore Shadowmoon Valley\nExplore Talador\nExplore Nagrand",
+},[[
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Shadowmoon Valley" 1-11
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Talador" 1-15
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Gorgrond" 1-14
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Frostfire Ridge" 1-15
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Spires of Arak" 1-17
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Nagrand" 1-15
+step
+_Congratulations!_
+You Earned the "Draenor Explorer" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Jungle Treasure Hunter/Master",{
 condition_end=function() return achieved(10262) end,
 achieveid={10261, 10262,10262},
 description="This guide will walk you through discovering all of the treasures in Tanaan Jungle.",
@@ -348,7 +635,7 @@ Congratulations! You earned the: |only if achieved(10262)
 _Jungle Treasure Hunter_ Achievement |only if achieved(10262)
 _Jungle Treasure Master_ Achievement |only if achieved(10262)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Mean and Green",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Mean and Green",{
 achieveid={9654},
 description="Reach 10 stacks of Mutagen in the Everbloom Wilds.",
 },[[

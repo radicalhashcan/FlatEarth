@@ -12,6 +12,10 @@ local L=ZGV.L
 local BZL=ZGV.BZL
 local BZR=ZGV.BZR
 
+local Mxlt = ZGV.MapCoords.Mxlt
+local Mdist = ZGV.MapCoords.Mdist
+local Mangle = ZGV.MapCoords.Mangle
+
 Pointer.nummanual = 0
 
 Pointer.waypoints = {}
@@ -111,6 +115,7 @@ end
 
 
 function Pointer:Startup()
+
 	self:SetArrowSkin(ZGV.db.profile.arrowskin)
 
 	if ZGV.db.profile.frame_positions and ZGV.db.profile.frame_positions.ZygorGuidesViewerPointer_ArrowCtrl then
@@ -133,7 +138,7 @@ function Pointer:Startup()
 	self.OverlayFrame = ZGV.ChainCall(CreateFrame("FRAME","ZygorGuidesViewerPointerOverlay",worldMap_TargetFrame))
 		:SetAllPoints(true)
 		--:SetSize(1002,668)
-		:SetFrameStrata("HIGH")
+		:SetFrameStrata("DIALOG")
 		--:SetFrameLevel(WorldMapButton:GetFrameLevel()+1)
 		--:SetScript("OnMouseUp",self.Overlay_OnClick)
 		--:EnableMouse(true)
@@ -173,12 +178,21 @@ function Pointer:Startup()
 		--:RegisterForClicks("AnyUp")
 		:Hide()
 		.__END
+		self.OverlayFrame.WQDebugButton = ZGV.ChainCall(CreateFrame("BUTTON","ZGVPointerDebugButton",worldMap_TargetFrame_UI,"UIPanelButtonTemplate"))
+		:SetPoint("TOP",self.OverlayFrame.PathDebugButton,"BOTTOM")
+		:SetSize(100,30)
+		:SetText("WQ")
+		:SetScript("OnClick",function() ZGV.Testing:ReportMissingWorldQuests() end)
+		--:RegisterForClicks("AnyUp")
+		:Hide()
+		.__END
 
 		if ZGV.db.profile.debug_display then
 			self.OverlayFrame.ZygorCoordsDEV:Show()
 			self.OverlayFrame.LibRoverButton:Show()
 			self.OverlayFrame.PointerDebugButton:Show()
 			self.OverlayFrame.PathDebugButton:Show()
+			self.OverlayFrame.WQDebugButton:Show()
 		end
 	end
 
@@ -256,8 +270,8 @@ Pointer.iconScale = 1  -- updated by :RescaleMarkers
 Pointer.iconScaleBase = 0.8
 Pointer.Icons = {
 	greendot = { tex={file="mapicons",coords={0.5,1,0,0.5},r=1,g=1,b=1}, size=30, alpha=0.5, minisize=35, minimap_alpha=0.5, rotates=false, edgetex={file="mapicons",coords={0,0.5,0.5,1},r=1,g=1,b=1}, edgesize=25, spinner=true, onminimap="always" },
-	graydot = { tex={file="mapicons",coords={0.5,1,0,0.5},r=0.7,g=0.7,b=0.7}, size=20, minisize=17, rotates=false, edgetex={file="mapicons",coords={0,0.5,0.5,1},r=1,g=1,b=1}, edgesize=25, spinner=true, desat=1, onminimap="always" },
-	arrow = { tex={file="mapicons",coords={0.5,1,0.5,1},r=1,g=1,b=1}, size=20, minisize=17, rotates=true, edgetex={file="mapicons",coords={0,0.5,0.5,1},r=1,g=1,b=1}, edgesize=25 },
+	graydot = { tex={file="mapicons",coords={0.5,1,0,0.5},r=0.7,g=0.7,b=0.7}, size=30, minisize=35, rotates=false, edgetex={file="mapicons",coords={0,0.5,0.5,1},r=1,g=1,b=1}, edgesize=25, spinner=true, desat=1, onminimap="always" },
+	arrow = { tex={file="mapicons",coords={0.5,1,0.5,1},r=1,g=1,b=1}, size=30, minisize=30, rotates=true, edgetex={file="mapicons",coords={0,0.5,0.5,1},r=1,g=1,b=1}, edgesize=25 },
 	
 	ant =	     { tex={file="mapicons",coords={0,0.5,0,0.5},r=1,g=1,b=1},     alpha=0.8, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1 },
 	ant_taxi =   { tex={file="mapicons",coords={0,0.5,0,0.5},r=0.4,g=1,b=0},   alpha=0.8, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1 },
@@ -491,6 +505,8 @@ function Pointer:SetWaypoint_ant (m,x,y,num,icon, ant)  -- ant is here for one-t
 	waypoint.p0,waypoint.p1,waypoint.p2,waypoint.p3 = ant.p0,ant.p1,ant.p2,ant.p3
 	waypoint.p1m,waypoint.p2m = ant.p1m,ant.p2m
 	waypoint.ant_dist=ant.ant_dist
+	waypoint.onminimap=ant.onminimap
+	waypoint.overworld=ant.overworld
 
 	waypoint.frame_minimap.waypoint = waypoint
 	waypoint.frame_worldmap.waypoint = waypoint
@@ -629,6 +645,7 @@ end
 
 function Pointer:ShowWaiting(phase)
 	self.ArrowFrame.WaitingPhase = phase
+	self.corpsearrow_shown = nil
 end
 
 local tmp_tab={}
@@ -985,6 +1002,7 @@ function markerproto:UpdateWorldMapIcon()
 
 	local map = WorldMapFrame:GetMapID()
 
+	if not self.overworld then self:Hide() return end
 	-- hide markers that are zone limited, and we are viewing something else
 	if self.onworldmap=="zone" and map~=self.m then self:Hide() return end
 
@@ -1084,10 +1102,6 @@ function markerproto:UpdateTaxiMapIcon()
 	if not ZGV.GetMapContinent(continent) then -- systemParent
 		Pointer:Debug("No map for taxi! map num is %d",taxitexture)
 		return
-	end
-
-	if show and not self.overworld then
-		show=false
 	end
 
 	if show and not self.overworld then
@@ -1243,38 +1257,14 @@ end
 local insanity=0
 -- makes sure we're not using a waypoint from an old/wrong goal or guide or poi
 function Pointer:ResetWaypointIfOrphaned()
-	--[[ unreachable code
-	local function IsStepVisible(step)
-		for k,sf in ipairs(ZGV.stepframes) do  if sf:IsShown() and sf.step==step then return true end  end
-		return false
-		-- Keep in mind this ACTUALLY checks if the step in question is DISPLAYED. If somehow a step is displayed when it shouldn't, or otherwise, it'll break this. But that would be insane.
-	end
-	--]]
-
 	local way = self.ArrowFrame and self.ArrowFrame.waypoint
 	local goal = way and (way.goal or (way.pathnode and way.pathnode.waypoint and way.pathnode.waypoint.goal))
 	
 	if not goal then return end
+	if goal:IsVisible() then return end
 
-	--[[	--failed attempts' graveyard
-		local guide = step.parentGuide
-		or (guide==ZGV.Poi.Guide and (not ZGV.Poi.ActivePoiStep or ZGV.Poi.ActivePoiStep~=goal.parentStep))  -- this is a goal for a POI, but NOT the currently selected one
-		or (guide~=ZGV.Poi.Guide and (
-			(guide~=ZGV.CurrentGuide) -- well WHAT guide is this goal for!?
-			or (goal.parentStep~=ZGV.CurrentStep and not goal.parentStep.is_sticky)
-		or (goal.parentStep~=
-	--]]
-	if (goal.condition_visible and not goal:IsVisible())  -- it went invisible for whatever reason
-	--or not IsStepVisible(goal.parentStep)
-	or not goal.parentStep.isFocused
-	then
-		insanity=insanity+1
-		if insanity>5 then ZGV:Debug("Pointer keeps resetting! ZGV:ShowWaypoints keeps making a waypoint for a bad goal..?") end
-		self:Debug("Waypoint was orphaned. Euthanize it.")
-		ZGV:ShowWaypoints()  -- make sure this NEVER EVER creates waypoints for bad goals.
-	else
-		insanity=0
-	end
+	ZGV.CurrentStep:CycleWaypoint()
+	ZGV:ShowWaypoints()
 end
 
 function Pointer:UpdateWaypoints()
@@ -1417,7 +1407,7 @@ end
 
 function Pointer.frame_minimap_functions.OnLeave(self)
 	if self.waypoint.passive then return end
-	WorldMapTooltip:Hide()
+	if WorldMapTooltip then WorldMapTooltip:Hide() else GameTooltip:Hide() end
 	if ZGV.Poi.ModelTooltip then
 		ZGV.Poi.ModelTooltip:Hide()
 	end
@@ -1580,7 +1570,7 @@ function Pointer.frame_minimap_functions.OnClick(self,button)
 
 		if self.waypoint.type=="manual" then 
 			ZGV.Pointer:RemoveWaypoint(self.waypoint)
-			WorldMapTooltip:Hide()
+			if WorldMapTooltip then WorldMapTooltip:Hide() else GameTooltip:Hide() end
 		elseif self.waypoint.surrogate_for and self.waypoint.surrogate_for.type=="manual" then ZGV.Pointer:RemoveWaypoint(self.waypoint.surrogate_for)
 		elseif self.waypoint.type=="route" then
 			-- if we're debugging, allow for banning a node
@@ -1647,14 +1637,14 @@ function Pointer.frame_worldmap_functions.OnEnter(self,arg)
 		--WorldMapPOIFrame.allowBlobTooltip = false
 
 		self.dist_tmp = self.waypoint.frame_minimap.dist
-		Pointer.frame_minimap_functions.OnEnter(self,arg,WorldMapTooltip)
+		if WorldMapTooltip or GameTooltip then Pointer.frame_minimap_functions.OnEnter(self,arg,WorldMapTooltip or GameTooltip) end
 	end
 end
 
 function Pointer.frame_worldmap_functions.OnLeave(self)
 	if not self.waypoint then return end
 	if self.waypoint and self.waypoint.passive then return end
-	WorldMapTooltip:Hide()
+	if WorldMapTooltip then WorldMapTooltip:Hide() else GameTooltip:Hide() end
 
 	--WorldMapPOIFrame.allowBlobTooltip = WorldMapPOIFrame.old_allowBlobTooltip  -- TODO: reimplement? whatever this was?
 	--WorldMapPOIFrame.old_allowBlobTooltip = nil
@@ -2081,7 +2071,7 @@ function Pointer:DoAudioCues(targetangle,playerangle,dist)
 
 		-- warning beeps
 		if self.ArrowFrame.arrow:IsVisible()  then
-			local perc = mabs(1-angle*0.3183)  -- 1/pi
+			local perc = mabs(1-targetangle*0.3183)  -- 1/pi
 			if perc<=0.9 then
 				if t-lastbeeptime>2 then
 					--PlaySoundFile( [[Sound\Item\Weapons\Ethereal\Ethereal2H3.wav]] )
@@ -2211,13 +2201,14 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	-- normal operation...
 
 
-	local dist,x,y
+	local angle,dist,x,y
 	local errortxt
 	local cm,cc = ZGV.CurrentMapID,ZGV.GetMapContinent(ZGV.CurrentMapID or 0) --,LibRover.ContinentsByID[ZGV.CurrentMapID]
+	local px,py,pm = ZGV.LibRover:GetPlayerPosition()
 
 	--if IsInInstance() and cm~=waypoint.m then ArrowFrame:Hide() return end
 
-	if not LibRover:GetPlayerPosition() then
+	if not px then
 		if GetUnitSpeed("player")>0 then
 		-- we're in an unknown location, and moving - our location is totally unknown now. DON'T display distances.
 			were_in_unknown_location = true
@@ -2229,7 +2220,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 
 	-- Calculate distance, or at least get a fake one
 
-	dist,x,y = HBDPins:GetDistanceToIcon(waypoint.frame_minimap)
+	local angle,dist = Mangle(pm,px,py,waypoint.m,waypoint.x,waypoint.y) -- HBDPins:GetDirectionToIcon(waypoint.frame_minimap)
 
 	local transcontinental
 	if waypoint.c~=cc then
@@ -2300,7 +2291,6 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	if safe then ArrowFrame:Show() end
 
 	local playerangle = GetPlayerFacing() or 0
-	local angle=0
 
 	local going_up
 	if errortxt then
@@ -2455,7 +2445,6 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 		else
 			-- show direction arrow
 
-			angle = HBDPins:GetDirectionToIcon(waypoint.frame_minimap)
 			local angle_error
 			if not angle or errortxt=="far" then
 				angle=3.1415
@@ -3251,7 +3240,7 @@ function Pointer.Overlay_OnUpdate(frame,but,...)
 
 	-- set waypoints by shift-leftclicking the world map
 
-	if frame.ZygorCoordsDEV then
+	if frame.ZygorCoordsDEV and frame.ZygorCoordsDEV:IsVisible() then
 		local mx,my = GetCursorPosition()
 		mx=(mx-(frame:GetLeft()*frame:GetEffectiveScale()))/(frame:GetWidth()*frame:GetEffectiveScale())
 		my=(my-(frame:GetBottom()*frame:GetEffectiveScale()))/(frame:GetHeight()*frame:GetEffectiveScale())
@@ -3271,6 +3260,13 @@ function Pointer.Overlay_OnUpdate(frame,but,...)
 				HBD:GetZoneDistance(pm,px,py, mm,mx,my) or 0
 			)
 		)
+
+		local wqtracker_present
+		for i=1,50 do
+			local f = select(i,WorldMapFrame:GetChildren())
+			if f and f.bounties and f:IsShown() then wqtracker_present=true break end
+		end
+		frame.ZygorCoordsDEV:SetPoint("BOTTOMLEFT",0,wqtracker_present and 115 or 35)
 
 	end
 
@@ -3525,12 +3521,12 @@ function Pointer:PointToNextInPath(pathname)
 	local way = self:GetNextInPath(pathname or "farm")
 	--self:Debug("GNIP done")
 	if type(way)=="table" then  -- OK, waypoint
-		ZGV:Debug("PointToNext: #%d '%s' %.1f,%.1f",way.num,way.title or "(untitled)",way.x,way.y)
+		self:Debug("PointToNext: #%d '%s' %.1f,%.1f",way.num,way.title or "(untitled)",way.x,way.y)
 		self:ShowArrow(way)
 		if LibRover.updating then LibRover:Abort("ptnip") end  -- BAD PLACE :(
 		return way
 	else
-		ZGV:Debug("PointToNext %s: to %s ?",pathname,tostring(way))
+		self:Debug("PointToNext fail for set '%s': to %s ?",pathname,tostring(way))
 	end
 end
 
@@ -3555,7 +3551,7 @@ function Pointer:GetNextInPath(pathname,testway)
 	local pathpoints = pointset.points
 	local pathloop = pointset.loop
 
-	--Pointer:Debug("GetNextInPath mode %s",pathfollow or "?")
+	self:Debug("GetNextInPath: path %s, mode %s, %d points",pathname,pathfollow or "nil",pathpoints and #pathpoints)
 
 	local curway = self.ArrowFrame.waypoint
 	curway=(curway and curway.pathnode and curway.pathnode.waypoint) or curway
@@ -4002,6 +3998,9 @@ function Pointer:GetNextInPath(pathname,testway)
 		--LibRover.updating = true
 		--LibRover:UpdateNow()
 		--ZGV:ShowWaypoints() -- UGLY. TODO. Clears manual path, that's bad.
+
+	elseif pathfollow == "none" then
+		return pathpoints and pathpoints[1]
 	end
 end
 
@@ -4115,6 +4114,8 @@ do
 		if not ZGV.db then error("WTF? No ZGV.db when there's already OnUpdates running!?") end
 		local t=GetTime()
 		
+		if not Pointer.OverlayFrame then return end -- too early!
+
 		-- ant_last and flash_last need to be increments of their respective intervals
 		
 		local antspeed = ZGV.db.profile.antspeed or 0.033
@@ -4156,7 +4157,6 @@ end
 -- may equally enjoy the pleasures of nettles^W path-based navigation ~aprotas
 
 local curve_spacing = 200  -- overwritten with antspacing from options anyway
-Pointer.curve_spacing = 200
 local max_ants_per_segment = 40
 
 local function calc_catmull_rom(t,t2,t3,p0,p1,p2,p3)
@@ -4230,8 +4230,9 @@ end})
 
 Pointer.widths_cache = widths_cache
 
-local function spawn_curve_ants(points,loop,phase)
-	if #points<3 then return end
+local maxants_sanity = 10000
+local function spawn_curve_ants(points,loop,phase, parentmap,xmin,xmax,ymin,ymax)
+	if #points<3 then return antpoints,0 end
 	--print("curving!!")
 	local abs=abs
 	local ceil=ceil
@@ -4239,6 +4240,9 @@ local function spawn_curve_ants(points,loop,phase)
 	local antpoints_num = 0
 
 	local np=#points
+	local sanity=0
+	local antpoints=antpoints
+	local curve_spacing=curve_spacing
 	for i=1,np do  while true do
 		--tinsert(antpoints,points[i])
 		local p0i,p1i,p2i,p3i = i-1,i,i+1,i+2
@@ -4251,7 +4255,7 @@ local function spawn_curve_ants(points,loop,phase)
 		local p0gx,p0gy,p1gx,p1gy,p2gx,p2gy,p3gx,p3gy=p0.gx,p0.gy,p1.gx,p1.gy,p2.gx,p2.gy,p3.gx,p3.gy
 		if not p0gx or not p1gx or not p2gx or not p3gx then break end
 
-		local curve_accuracy = p1.curve_accuracy
+		local curve_accuracy = p1.curve_accuracy and not p1.player
 		if not curve_accuracy then
 			--local dist = HBD:GetZoneDistance(p1.map,p1.floor,p1.x/100,p1.y/100,p2.map,p2.floor,p2.x/100,p2.y/100)   -- Astrolabe thinks x and y are 0..1, and they're 0..100 here. Results will be valid, though exaggerated.
 			local dist
@@ -4293,22 +4297,26 @@ local function spawn_curve_ants(points,loop,phase)
 
 			--if (abs(x-p1.x)+abs(y-p1.y)>0.1) and (abs(x-p2.x)+abs(y-p2.y)>0.1) then
 
-			antpoints_num = antpoints_num+1
-			local ant = antpoints[antpoints_num]
-			if not ant then
-				ant = {}
-				antpoints[antpoints_num]=ant
-			end
+			if not xmin  or  not xmax  or  (x>xmin and x<xmax and y>ymin and y<ymax) then
+				antpoints_num = antpoints_num+1
+				local ant = antpoints[antpoints_num]
+				if not ant then
+					ant = {}
+					antpoints[antpoints_num]=ant
+				end
 
-			ant.map,ant.x,ant.y=p1.gm,x,y
-			ant.sub=i+t
-			ant.icon = p2.ant_icon or def_ant_icon   -- ant_icon is contained in the DESTINATION waypoint of the pair.
-			ant.p0,ant.p1,ant.p2,ant.p3=p0,p1,p2,p3
-			ant.p1m,ant.p2m=p1.m,p2.m
-			ant.ant_dist=t
+				ant.map,ant.x,ant.y=p1.gm,x,y
+				ant.sub=i+t
+				ant.icon = p2.ant_icon or def_ant_icon   -- ant_icon is contained in the DESTINATION waypoint of the pair.
+				ant.p0,ant.p1,ant.p2,ant.p3=p0,p1,p2,p3
+				ant.p1m,ant.p2m=p1.m,p2.m
+				ant.ant_dist=t
+			end
 
 			--print(("%d/%.2f: [%.1f,%.1f]->[%.1f,%.1f] = [%.1f,%.1f]"):format(i,t,p1.x,p1.y,p2.x,p2.y,x,y))
 			--end
+
+			sanity=sanity+1  if sanity>=maxants_sanity then ZGV:Error("Ants get calculated infinitely! spacing "..curve_spacing..", "..antpoints_num.." live so far.")  breakall=true  break  end
 		end
 		break
 	end end
@@ -4393,8 +4401,10 @@ local function spawn_straight_ants_prev(points,loop,phase)
 	return antpoints,antpoints_num
 end
 
-local function spawn_straight_ants(points,loop,phase)
-	if #points<2 then return end
+-- points: source data
+-- start: num of ants generated so far
+local function spawn_straight_ants(points,loop,phase, parentmap,xmin,xmax,ymin,ymax)
+	if #points<2 then return antpoints,0 end
 	local abs=abs
 	local ceil=ceil
 
@@ -4410,9 +4420,12 @@ local function spawn_straight_ants(points,loop,phase)
 		--ZGV:Debug("&_WARN Ooo, leftover at start! %.2f so starting phase is %.2f",points[1].curve_leftoverphase,phase)
 	end
 
+	local curve_spacing=curve_spacing
 	local leftover=phase*curve_spacing
+	local antpoints=antpoints
 
 	local totaldist=0
+	local sanity=0
 	for i=1,np do  repeat
 		local p1 = points[i]
 		local p2 = points[i+1]
@@ -4420,8 +4433,9 @@ local function spawn_straight_ants(points,loop,phase)
 
 		-- NEW CHECK. Points are supposedly on global maps. If points do NOT share a global map, NO ANTS BETWEEN THEM.
 		if not p1.gm or p1.gm~=p2.gm then break end --continue
+		if parentmap and p1.gm~=parentmap then break end -- not viewing this one at the moment
 
-		local dist = p1.curve_dist
+		local dist = p1.curve_dist and not p1.player
 		if not dist then
 			dist = Mdist(p1.gm,p1.gx,p1.gy,p2.gm,p2.gx,p2.gy)
 			if not dist or dist<1 then dist=2000*sqrt((p1.gx-p2.gx)*(p1.gx-p2.gx)+(p1.gy-p2.gy)*(p1.gy-p2.gy)) end  -- use costly global calculation when in need.
@@ -4466,22 +4480,27 @@ local function spawn_straight_ants(points,loop,phase)
 			local x = p1.gx + t*(p2.gx-p1.gx)
 			local y = p1.gy + t*(p2.gy-p1.gy)
 
-			antpoints_num = antpoints_num+1
-			local ant = antpoints[antpoints_num]
-			if not ant then
-				ant = {}
-				antpoints[antpoints_num]=ant
-			end
+			if not xmin  or  not xmax  or  (x>xmin and x<xmax and y>ymin and y<ymax) then
+				-- save coords in ant
+				antpoints_num = antpoints_num+1
+				local ant = antpoints[antpoints_num]
+				if not ant then
+					ant = {}
+					antpoints[antpoints_num]=ant
+				end
 
-			ant.map,ant.x,ant.y=p1.gm,x,y
-			ant.sub=i+t
-			ant.icon = p2.ant_icon or def_ant_icon   -- ant_icon is contained in the DESTINATION waypoint of the pair.
-			ant.p1,ant.p2=p1,p2
-			ant.p1m,ant.p2m=p1.m,p2.m
-			ant.ant_dist=t
+				ant.map,ant.x,ant.y=p1.gm,x,y
+				ant.sub=i+t
+				ant.icon = p2.ant_icon or def_ant_icon   -- ant_icon is contained in the DESTINATION waypoint of the pair.
+				ant.p1,ant.p2=p1,p2
+				ant.p1m,ant.p2m=p1.m,p2.m
+				ant.ant_dist=t
+			end
 
 			--tinsert(antpoints,{map=0,floor=0,x=x,y=y,sub=i+t,icon=ZGV.Pointer.Icons.ant})
 			d=d+curve_spacing
+
+			sanity=sanity+1  if sanity>=maxants_sanity then ZGV:Error("Ants get calculated infinitely! spacing "..curve_spacing..", "..antpoints_num.." live so far.")  breakall=true  break  end
 		end
 		leftover=d-dist
 
@@ -4514,7 +4533,7 @@ local temp_setwaypoint_data={}
 -- keywords: valid data fields
 local copy_fields = {title=1,arrowtitle=1,arrowicon=1,text=1,pathnode=1,map=1,x=1,y=1,["type"]=1,icon=1,pathnode=1,radius=1,
 	waypoint_zone=1, waypoint_realzone=1, waypoint_subzone=1, waypoint_minizone=1, waypoint_region=1, waypoint_indoors=1, player=1, ant_icon=1,noskip=1,
-	poiNum=1,OnNear=1,OnFar=1,OnUpdate=1,isNear=1,nearRange=1, OnClick=1, onminimap=1, onworldmap=1, tooltipdata=1, storedData=1, customs=1, tooltipfunc=1 }
+	poiNum=1,OnNear=1,OnFar=1,OnUpdate=1,isNear=1,nearRange=1, OnClick=1, onminimap=1, onworldmap=1, overworld=1, tooltipdata=1, storedData=1, customs=1, tooltipfunc=1 }
 local dont_copy_Goal_fields = { OnClick=1 } -- I hate myself for this.
 	
 local function set_waypoints(points,worldsize,minisize,ptype,setname)
@@ -4605,7 +4624,7 @@ local function set_waypoints(points,worldsize,minisize,ptype,setname)
 end
 Pointer.set_waypoints = set_waypoints
 
-local function set_waypoints_ants(ants,num,start_at,worldsize,minisize)
+local function set_waypoints_ants(ants,num,start_at)
 	for k=1,num do
 		local ant=ants[k]
 		Pointer:SetWaypoint_ant (ant.map,ant.x,ant.y, k+start_at, ant.icon, ant)
@@ -4641,14 +4660,13 @@ end
 
 function Pointer:SetAntSpacing(spacing)
 	curve_spacing = spacing
-	Pointer.curve_spacing = spacing
 	--ZGV:Debug("ant spacing %.1f",spacing)
 end
 
 -- Display (time-phased) ants between all .ants -enabled sets in Pointer.pointsets .
-local mapsizeratio = {[-1]=10,[946]=3}
 
-setmetatable(mapsizeratio,{__index=function(t,mapid) 
+local ants_mapspacing = {[-1]=10,[946]=40,[947]=30,[905]=100}
+setmetatable(ants_mapspacing,{__index=function(t,mapid) 
 	if not mapid or not HBD.mapData[mapid] then return 1 end
 	local r=HBD.mapData[mapid][1]/2000
 	--[[
@@ -4660,88 +4678,106 @@ setmetatable(mapsizeratio,{__index=function(t,mapid)
 	t[mapid]=r
 	return r  
 end})
+Pointer.ants_mapspacing = ants_mapspacing
 
-Pointer.mapsizeratio = mapsizeratio
 
 local ants_optimized_which_isnt_implemented=false
 
+local minimap_size = {
+    indoor = {
+        [0] = 300, -- scale
+        [1] = 240, -- 1.25
+        [2] = 180, -- 5/3
+        [3] = 120, -- 2.5
+        [4] = 80,  -- 3.75
+        [5] = 50,  -- 6
+    },
+    outdoor = {
+        [0] = 466 + 2/3, -- scale
+        [1] = 400,       -- 7/6
+        [2] = 333 + 1/3, -- 1.4
+        [3] = 266 + 2/6, -- 1.75
+        [4] = 200,       -- 7/3
+        [5] = 133 + 1/3, -- 3.5
+    },
+}
+
+local lastmap
 function Pointer:AnimateAnts()
+	if not self.ready then return end
+
 	local ant_speed = ant_speed
 	if (ant_interval>0.2) then ant_speed=0.3 end
 	local phase = (GetTime()*ant_speed)%1
 
-	-- Set ant spacing properly for overworld maps
-	local map = WorldMapFrame:IsShown() and WorldMapFrame:GetMapID() or ZGV.CurrentMapID
-	local mastermap = ZGV.GetMapContinent(map)
+	local Total_ants = 0
 
-	--local overworld = (map==13 or map==14 or map==0 or map==689 or map==-1 or map==485 or map==466 or map==862 or map==962)
-	local ratio = mapsizeratio[map]
-	local antspacing = ZGV.db.profile.antspacing
 
-	--self:SetAntSpacing((overworld and antspacing*7) or (TaxiFrame:IsShown() and antspacing*5) or antspacing*ratio)
-	self:SetAntSpacing((TaxiFrame:IsShown() and antspacing*5) or antspacing*ratio)
-
-	local total_ants = 0
-
-	for name,pointset in pairs(self.pointsets) do
-		for pi,p in ipairs(pointset.points) do
-			p.curve_leftoverphase=nil
-		end
-	end
-
-	local function animate_set(name)
+	local function animate_set(name,target,spacing,mastermap,xmin,ymin,xmax,ymax)
 		local pointset = self.pointsets[name]
-		if pointset.ants and curve_spacing>0
-		--and only_type=="ant"
-		then
-			if pointset.antspacing then self:SetAntSpacing(pointset.antspacing) end
+		if not pointset.ants or spacing<=0 then return end
+		--if spacing==0 then ZGV:Error("Zero ant spacing on map "..mastermap..", first point was on map "..tostring(pointset.points and pointset.points[1] and pointset.points[1].m)) return end
 
-			for pi,wp in ipairs(pointset.points) do
-				wp.curve_accuracy=nil  -- clear this cached value, we might change accuracy.
+		for pi,wp in ipairs(pointset.points) do
+			wp.curve_accuracy=nil  -- clear this cached value, we might change accuracy.
 
-				if wp.player then
-					-- point is player? get new location
-					local x,y,m = LibRover:GetPlayerPosition()
-					wp.m,wp.x,wp.y = m,x,y
-					wp.gx,wp.gy,wp.gm = nil,nil,nil
-				end
-
-				move_point_to_global(wp,(map==947--[[Azeroth]] or map==946--[[Cosmic]]) and map or mastermap)
-
-				--ZGV.Pointer:SetWaypoint (wp.map,wp.x,wp.y,nil,nil)--data,arrow)
-				--ants=spawn(waypath)
-				--show(waypath, ants)
+			if wp.player then
+				-- point is player? get new location
+				local x,y,m = LibRover:GetPlayerPosition()
+				wp.m,wp.x,wp.y = m,x,y
+				wp.gx,wp.gy,wp.gm = nil,nil,nil
 			end
 
-			local antpoints,num
-			--print("spawning, player = "..waypath.coords[1].x)
-			if pointset.ants=="straight" or #pointset.points<3 then
-				antpoints,num = spawn_straight_ants(pointset.points,pointset.loop,phase)
-			elseif pointset.ants=="curved" then
-				antpoints,num = spawn_curve_ants(pointset.points,pointset.loop,phase)
-			else
-				-- no ants? no ants.
-			end
+			move_point_to_global(wp,mastermap)
 
-			--calc_angles(antpoints,pointset.loop)
-			if antpoints then
-				--Pointer:Debug("Ants: %d %s spawned for set %s",num,pointset.ants,name)
-				if ants_optimized_which_isnt_implemented then
-					if Pointer.ants_set then
-						update_ant_waypoints(antpoints)
-					else
-						set_waypoints_ants(antpoints,num,35,30)
-						Pointer.ants_set=true
-					end
-				else
-					set_waypoints_ants(antpoints,num,total_ants,35,30)
-				end
-			else
-				--Pointer:Debug("Ants: No ants spawned for set %s",name)
-			end
-
-			if num then total_ants = total_ants + num end
+			--ZGV.Pointer:SetWaypoint (wp.map,wp.x,wp.y,nil,nil)--data,arrow)
+			--ants=spawn(waypath)
+			--show(waypath, ants)
 		end
+
+		local antpoints  -- just localizing the global antpoints here
+		local num=0
+
+		--print("spawning, player = "..waypath.coords[1].x)
+		local spawn_func
+		if pointset.ants=="straight" or #pointset.points<3 then spawn_func=spawn_straight_ants
+		elseif pointset.ants=="curved" then spawn_func=spawn_curve_ants
+		else return "no ants"
+		end
+		
+		if target=="worldmap" then
+			self:SetAntSpacing(pointset.antspacing or spacing)
+			antpoints,num = spawn_func(pointset.points,pointset.loop,phase, mastermap,xmin,xmax,ymin,ymax)
+			for i=1,num do antpoints[i].onminimap=false antpoints[i].overworld=true end
+			--print (num,"world ants, spaced ",spacing,"parentmap",mastermap) --qq
+		elseif target=="minimap" then
+			self:SetAntSpacing(spacing)
+			antpoints,num = spawn_func(pointset.points,pointset.loop,phase, mastermap,xmin,xmax,ymin,ymax)
+			for i=1,num do antpoints[i].onminimap="always" antpoints[i].overworld=false end
+			--print(num,"mini ants, parentmap",mastermap," bounds ",("%.2f %.2f %.2f %.2f"):format(xmin or 0,ymin or 0,xmax or 0,ymax or 0)) --qq
+		end
+
+		--calc_angles(antpoints,pointset.loop)
+		--[[
+		if antpoints then
+			--Pointer:Debug("Ants: %d %s spawned for set %s",num,pointset.ants,name)
+			if ants_optimized_which_isnt_implemented then
+				if Pointer.ants_set then
+					update_ant_waypoints(antpoints)
+				else
+					set_waypoints_ants(antpoints,num,35,30)
+					Pointer.ants_set=true
+				end
+			else
+
+				--set_waypoints_ants(antpoints,num,Total_ants,35,30)
+				-- moved to end of function
+
+			end
+		else
+			--Pointer:Debug("Ants: No ants spawned for set %s",name)
+		end
+		--]]
 
 		-- check other pointsets for waypoint overlaps with this one; copy curve data.
 		for name2,pointset2 in pairs(self.pointsets) do  if (name=="path" and name2=="route") or (name2=="path" and name=="route") then
@@ -4754,15 +4790,70 @@ function Pointer:AnimateAnts()
 				end
 			end
 		end end
+
+		-- show num ants from antpoints into global waypoint table, starting at num Total_ants.
+		set_waypoints_ants(antpoints,num,Total_ants)
+
+		Total_ants = Total_ants + num
 	end
 
-	if self.pointsets["route"] then animate_set("route") end
-	if self.pointsets["path"] then animate_set("path") end
-	for name,pointset in pairs(self.pointsets) do  if name~="route" and name~="path" then
-		animate_set(name)
-	end end
 
-	self:ClearWaypoints_ant(total_ants)
+	if WorldMapFrame:IsVisible() then
+
+		local map = WorldMapFrame:GetMapID()
+		if map~=lastmap then self:ResetAnts() end
+		lastmap=map
+
+		--local overworld = (map==13 or map==14 or map==0 or map==689 or map==-1 or map==485 or map==466 or map==862 or map==962)
+		local spacing = ZGV.db.profile.antspacing*ants_mapspacing[map]
+
+		-- calculate bounds of shown map
+		local parentmap = (map==947--[[Azeroth]] or map==946--[[Cosmic]]) and map or ZGV.GetMapContinent(map)
+		local xmin,ymin = Mxlt(map,0,0,parentmap,true)
+		local xmax,ymax = Mxlt(map,1,1,parentmap,true)
+
+		-- Clear leftoverphase
+		for name,pointset in pairs(self.pointsets) do
+			for pi,p in ipairs(pointset.points) do
+				p.curve_leftoverphase=nil
+			end
+		end
+
+		if self.pointsets["route"] then animate_set("route","worldmap",spacing,parentmap,xmin,ymin,xmax,ymax) end
+		if self.pointsets["path"] then animate_set("path","worldmap",spacing,parentmap,xmin,ymin,xmax,ymax) end
+		for name,pointset in pairs(self.pointsets) do  if name~="route" and name~="path" then
+			animate_set(name,"worldmap",spacing,parentmap,xmin,ymin,xmax,ymax)
+		end end
+	end
+
+	-- minimap
+	if ZGV.db.profile.antspacing>0 then
+		-- calculate bounds of current map
+		local px,py,pm=ZGV.LibRover:GetPlayerPosition()
+		local parentmap = ZGV.GetMapContinent(pm)
+		local minimap_radius = 300 / (ZGV.HBD.mapData[pm] and ZGV.HBD.mapData[pm][1] or 1000)  -- in 0..1 scale
+		local xmin,ymin = Mxlt(pm,px-minimap_radius,py-minimap_radius/0.66,parentmap,true)
+		local xmax,ymax = Mxlt(pm,px+minimap_radius,py+minimap_radius/0.66,parentmap,true)
+		local spacing=30
+
+		--print(xmin,xmax,"minimap bounds from",pm,"to",parentmap) --qq
+
+		-- Clear leftoverphase
+		for name,pointset in pairs(self.pointsets) do
+			for pi,p in ipairs(pointset.points) do
+				p.curve_leftoverphase=nil
+			end
+		end
+
+		if self.pointsets["route"] then animate_set("route","minimap",spacing,parentmap,xmin,ymin,xmax,ymax) end
+		if self.pointsets["path"] then animate_set("path","minimap",spacing,parentmap,xmin,ymin,xmax,ymax) end
+		for name,pointset in pairs(self.pointsets) do  if name~="route" and name~="path" then
+			animate_set(name,"minimap",spacing,parentmap,xmin,ymin,xmax,ymax)
+		end end
+	end
+
+	-- clear remaining 
+	self:ClearWaypoints_ant(Total_ants)
 
 end
 
@@ -5140,6 +5231,7 @@ function Pointer:ResetCurrentWaypoint()
 end
 
 function Pointer:CycleWaypoint(delta,nocycle,step)
+	self:Debug("CycleWaypoint")
 	--if lastCycleMilli==GetFrameTimeMilliseconds() then lastCycles=lastCycles+1 end  if lastCycles>10 then return end
 	--lastCycleMilli=GetFrameTimeMilliseconds()  lastCycles=0
 
@@ -5207,10 +5299,19 @@ function Pointer:SetArrowToFirstCompletableGoal()
 	return self:ShowArrow(self.waypoints[1]) -- still here, return first one just in case
 end
 
-function Pointer:SetWaypointByCommandLine(input)
+function Pointer:SetWaypointByCommandLine(input,justparse)
 	local map,mapid,floor,x,y
 
 	if not input then return end
+
+	local way1,way2 = input:match("^from (.*) to (.*)$")
+	if way1 then
+		local m1,x1,y1 = self:SetWaypointByCommandLine(way1,true)
+		local m2,x2,y2 = self:SetWaypointByCommandLine(way2,true)
+		if not (m1 and x1 and y1 and m2 and x2 and y2) then ZGV:Print("Can't plot that.") return end
+		LibRover:QueueFindPath(m1,x1/100,y1/100,m2,x2/100,y2/100,ZGV.Pointer.PathFoundHandler, {})
+		return
+	end
 	
 	map,floor,x,y = input:match("^(.-)%s*/%s*(%d+)%s+([0-9%.]+)[ ,;:]+([0-9%.]+)$")
 	if not map then map,x,y = input:match("^(.-)%s+([0-9%.]+)[ ,;:]+([0-9%.]+)$") end
@@ -5218,8 +5319,12 @@ function Pointer:SetWaypointByCommandLine(input)
 	if not map then x,y = input:match("^([0-9%.]+)[ ,;:]+([0-9%.]+)") end
 	if not map and not x then map=input end
 
-	if map=="Shadowmoon Valley" and ZGV:GetPlayerPreciseLevel()>=90 then map="Shadowmoon Valley D" end
-	if map=="Nagrand" and ZGV:GetPlayerPreciseLevel()>=90 then map="Nagrand D" end
+	if map=="Shadowmoon Valley" and ZGV:GetPlayerPreciseLevel()>=90 then 
+		ZGV:Print("Setting waypoint to TBC zone. If you meant WOD one, please use |cffddff00Shadowmoon Valley D|r as map name.")
+	end
+	if map=="Nagrand" and ZGV:GetPlayerPreciseLevel()>=90 then 
+		ZGV:Print("Setting waypoint to TBC zone. If you meant WOD one, please use |cffddff00Nagrand D|r as map name.")
+	end
 
 	-- just a few random aliases
 	if map and map:upper()=="SW" then  map = "Stormwind City" end
@@ -5231,8 +5336,8 @@ function Pointer:SetWaypointByCommandLine(input)
 	if map=="Goldshire" then  map,x,y = "Elwynn Forest",42,66  end
 
 	if not map then
-		mapid=ZGV.GetCurrentMapID()
-		floor=ZGV.GetCurrentMapDungeonLevel()
+		mapid=WorldMapFrame:IsVisible() and WorldMapFrame:GetMapID() or ZGV.GetCurrentMapID()
+		--floor=ZGV.GetCurrentMapDungeonLevel()
 	end
 
 	if not mapid then
@@ -5250,6 +5355,8 @@ function Pointer:SetWaypointByCommandLine(input)
 	end
 
 	if mapid and not x and not y then  x=50 y=50  end   -- default to centers of maps. Ugly, but what the heck.
+
+	if justparse then return mapid,x,y end
 
 	if mapid and x and y then
 		ZGV.Pointer:SetWaypoint(mapid,tonumber(x)/100,tonumber(y)/100,{findpath=true,type="manual",cleartype=true,icon=ZGV.Pointer.Icons.graydot,onminimap="always",overworld=true,showonedge=true},true)

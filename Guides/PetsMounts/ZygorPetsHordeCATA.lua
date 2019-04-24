@@ -4,7 +4,7 @@ if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("PetsHCATA") then return end
 ZGV.CommonPets=true
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Magical Crawdad",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Magical Crawdad",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Magical Crawdad.",
 model={18269},
@@ -12,7 +12,7 @@ pet=132,
 },[[
 #include "Mr_Pinchy"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Pengu",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Pengu",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Pengu.",
 model={28216},
@@ -30,7 +30,7 @@ buy 1 Nurtured Penguin Egg##44723 |goto Dragonblight 48.6,75.6
 step
 learnpet Pengu##32595 |use Nurtured Penguin Egg##44723
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Sea Pony",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Sea Pony",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Sea Pony.",
 model={39109},
@@ -46,7 +46,7 @@ collect Sea Pony##73953
 step
 learnpet Sea Pony##55386 |use Sea Pony##73953
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Shore Crawler",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Shore Crawler",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Shore Crawler.",
 model={32790},
@@ -57,7 +57,7 @@ talk Matty##63086
 Tell him you're interested in catching some rare pets.
 learnpet Shore Crawler##63097 |goto Orgrimmar 37.6,79.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Small Frog",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Small Frog",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Small Frog.",
 model={6297},
@@ -68,7 +68,7 @@ Challenge one to a pet battle and capture it
 |tip The Small Frog is level 3.
 learnpet Small Frog##61071 |goto Northern Barrens 36.2,44.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Speedy",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Speedy",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Speedy.",
 model={16259},
@@ -76,9 +76,9 @@ pet=125,
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Turtle Box##23002
@@ -86,7 +86,7 @@ collect 1 Turtle Box##23002
 step
 learnpet Speedy##16547 |use Turtle Box##23002 |tip Back to the Orphanage (Shattrath)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Strand Crawler",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Strand Crawler",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Strand Crawler.",
 model={45880},
@@ -245,7 +245,7 @@ step
 label "use"
 learnpet Strand Crawler##33226 |use Strand Crawler##44983
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Black Kingsnake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Black Kingsnake",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Black Kingsnake.",
 model={1206},
@@ -257,7 +257,7 @@ buy 1 Black Kingsnake##10360 |goto Orgrimmar,33.0,67.4
 step
 learnpet Black Kingsnake##7565 |use Black Kingsnake##10360
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Bombay Cat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Bombay Cat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Bombay Cat.",
 model={5556},
@@ -270,7 +270,7 @@ buy 1 Cat Carrier (Bombay)##8485
 step
 learnpet Bombay Cat##7385  |use Cat Carrier (Bombay)##8485
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Brown Snake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Brown Snake",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Brown Snake.",
 model={2957},
@@ -282,7 +282,7 @@ buy 1 Brown Snake##10361 |goto Orgrimmar,33.0,67.4
 step
 learnpet Brown Snake##7562 |use Brown Snake##10361
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Cornish Rex Cat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Cornish Rex Cat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Cornish Rex Cat.",
 model={5586},
@@ -295,7 +295,7 @@ buy 1 Cat Carrier (Cornish Rex)##8486
 step
 learnpet Cornish Rex Cat##7384 |use Cat Carrier (Cornish Rex)##8486
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Crimson Snake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Crimson Snake",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Crimson Snake.",
 model={6303},
@@ -307,7 +307,7 @@ buy 1 Crimson Snake##10392 |goto Orgrimmar,33.0,67.4
 step
 learnpet Crimson Snake##7567 |use Crimson Snake##10392
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Dun Morogh Cub",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Dun Morogh Cub",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Dun Morogh Cub.",
 model={28489},
@@ -320,7 +320,7 @@ buy 1 Dun Morogh Cub##44970
 step
 learnpet Dun Morogh Cub##33194 |use Dun Morogh Cub##44970
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Durotar Scorpion",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Durotar Scorpion",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Durotar Scorpion.",
 model={15470},
@@ -333,8 +333,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here for Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for Valiant Rank Dailies. |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Aspirant Rank Daily quests. |next "Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Valiant Rank Dailies. |next "Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next "buy" |confirm
 step
 talk Helidan Lightwing##33849
@@ -492,7 +492,7 @@ buy 1 Durotar Scorpion##44973 |goto Icecrown,76.4,24.2
 step
 learnpet Durotar Scorpion##33198 |use Durotar Scorpion##44973
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Feline Familiar",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Feline Familiar",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Feline Familiar.",
 model={38539},
@@ -507,7 +507,7 @@ buy Feline Familiar##70908 |goto Undercity,67.8,6.8
 step
 learnpet Feline Familiar##53884 |use Feline Familiar##70908
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Hyjal Bear Cub",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Hyjal Bear Cub",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Hyjal Bear Cub.",
 model={38455},
@@ -529,7 +529,7 @@ buy 1 Hyjal Bear Cub##70140 |goto Molten Front,44.8,89.8
 step
 learnpet Hyjal Bear Cub##53658 |use Hyjal Bear Cub##70140
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Lashtail Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Lashtail Hatchling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Lashtail Hatchling.",
 model={38065},
@@ -721,7 +721,7 @@ confirm
 step
 learnpet Lashtail Hatchling##52894 |use Lashtail Hatchling##69251
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Orange Tabby Cat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Orange Tabby Cat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Orange Tabby Cat.",
 model={5554},
@@ -734,7 +734,7 @@ buy 1 Cat Carrier (Orange Tabby)##8487
 step
 learnpet Orange Tabby Cat##7382 |use Cat Carrier (Orange Tabby)##8487
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Panther Cub",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Panther Cub",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Panther Cub.",
 model={37814},
@@ -822,7 +822,7 @@ collect 1 Panther Cub##68833 |goto 76.1,66.7
 step
 learnpet Panther Cub##52226 |use Panther Cub##68833
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Silver Tabby Cat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Silver Tabby Cat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Silver Tabby Cat.",
 model={5555},
@@ -835,7 +835,7 @@ tip This pet must be bought with an Alliance character or through the Auction Ho
 step
 learnpet Silver Tabby Cat##7381 |use Cat Carrier (Silver Tabby)##8488
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Armadillo Pup",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Armadillo Pup",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Armadillo Pup.",
 model={36220},
@@ -850,7 +850,7 @@ buy 1 Armadillo Pup##63398 |goto Orgrimmar,48.38,75.79
 step
 learnpet Armadillo Pup##48242 |use Armadillo Pup##63398
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Brown Prairie Dog",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Brown Prairie Dog",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Brown Prairie Dog.",
 model={1072},
@@ -862,7 +862,7 @@ buy 1 Prarie Dog Whistle##10394 |goto Thunder Bluff 62.8,58.2
 step
 learnpet Brown Prairie Dog##14421 |use Prarie Dog Whistle##10394
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Dung Beetle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Dung Beetle",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Dung Beetle.",
 model={7511},
@@ -873,7 +873,7 @@ Challenge one to a pet battle and capture it
 |tip The Dung Beetle is level 1.
 learnpet Dung Beetle##62115 |goto Orgrimmar 42.4,46.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Egbert",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Egbert",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Egbert.",
 model={21382},
@@ -881,9 +881,9 @@ pet=158,
 },[[
 step
 You may only get _three_ of these pets _per year_ from _completing_ the quest lines _Back to the Orphanage (Shattrath)_, _Warden of the Horde_, and _Back to the Orphanage (Dalaran)_
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Egbert's Egg##32616 |tip Warden of the Horde
@@ -891,7 +891,7 @@ step
 learnpet Egbert##23258 |use Egbert's Egg##32616
 |tip Warden of the Horde
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Elwynn Lamb",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Elwynn Lamb",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Elwynn Lamb.",
 model={16205},
@@ -904,7 +904,7 @@ buy 1 Elwynn Lamb##44974
 step
 learnpet Elwynn Lamb##33200 |use Elwynn Lamb##44974
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Hare",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Hare",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Hare.",
 model={1560},
@@ -915,7 +915,7 @@ Challenge one to a pet battle and capture it
 |tip The Hares around this area are level 1.
 learnpet Hare##61751 |goto Durotar 47.3,30.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Mr. Wiggles",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Mr. Wiggles",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Mr. Wiggles.",
 model={16257},
@@ -923,16 +923,16 @@ pet=126,
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Piglet's Collar##23007 |tip Warden of the Horde
 step
 learnpet Mr. Wiggles##16548 |use Piglet's Collar##23007 |tip Warden of the Horde
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Mulgore Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Mulgore Hatchling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Mulgore Hatchling.",
 model={28502},
@@ -945,8 +945,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for Valiant Rank Dailies |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here Aspirant Rank Daily quests. |next "Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Valiant Rank Dailies |next "Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next "buy" |confirm
 step
 talk Helidan Lightwing##33849
@@ -1107,7 +1107,7 @@ buy 1 Mulgore Hatcling##44980 |goto Icecrown,76.2,24.4
 step
 learnpet Mulgore Hatchling##33219 |use Mulgore Hatchling##44980
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Peanut",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Peanut",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Peanut.",
 model={21393},
@@ -1115,9 +1115,9 @@ pet=159,
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Elekk Training Collar##32622
@@ -1126,7 +1126,7 @@ step
 learnpet Peanut##23266 |use Elekk Training Collar##32622
 |tip Back to the Orphanage (Shattrath)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Pint-Sized Pink Pachyderm",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Pint-Sized Pink Pachyderm",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Pint-Sized Pink Pachyderm.",
 model={22629},
@@ -1135,8 +1135,8 @@ pet=166,
 step
 This _pet_ is _only availiable_ during the _Brewfest_ Holiday
 collect 100 Brewfest Prize Tokens##37829
-Click here if you need to do the quests leading up to the dailies. |next "Zygor's Events Guides\\Brewfest (September 20th - October 6th)\\Brewfest Quests" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here if you have completed the quests and only need the dailies. |next "Zygor's Events Guides\\Brewfest (September 20th - October 6th)\\Brewfest Dailies" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here if you need to do the quests leading up to the dailies. |next "Events Guides\\Brewfest (September 20th - October 6th)\\Brewfest Quests" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here if you have completed the quests and only need the dailies. |next "Events Guides\\Brewfest (September 20th - October 6th)\\Brewfest Dailies" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
 step
 Go to Durotar and talk to Blix Fixwidget
 talk Blix Fixwidget##24495
@@ -1144,7 +1144,7 @@ buy 1 Pint-Sized Pink Pachyderm##46707
 step
 learnpet Pint-Sized Pink Pachyderm##24753 |use Pint-Sized Pink Pachyderm##46707
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Porcupette",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Porcupette",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Porcupette.",
 model={41833},
@@ -1324,7 +1324,7 @@ collect 1 Porcupette##89587
 learnpet Porcupette##61086 |use Porcupette##89587
 Click here if the Porcupette wasn't contained in any of the Sack of Pet Supplies, and you wish to go to the beginning of this guide. |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Scooter the Snail",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Scooter the Snail",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Scooter the Snail.",
 model={38135},
@@ -1332,9 +1332,9 @@ pet=289,
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Snail Shell##66073
@@ -1342,7 +1342,7 @@ collect 1 Snail Shell##66073
 step
 learnpet Scooter the Snail##51635 |use Snail Shell##66073 |tip Warden of the Horde
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Snowshoe Rabbit",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Snowshoe Rabbit",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Snowshoe Rabbit.",
 model={328},
@@ -1355,7 +1355,7 @@ buy 1 Rabbit Crate (Snowshoe)##8497
 step
 learnpet Snowshoe Rabbit##7560 |use Rabbit Crate (Snowshoe)##8497
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Undercity Cockroach",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Undercity Cockroach",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Undercity Cockroach.",
 model={2177},
@@ -1367,7 +1367,7 @@ buy 1 Undercity Cockroach##10393 |goto Netherstorm 43.4,35.2
 step
 learnpet Undercity Cockroach##7395 |use Undercity Cockroach##10393
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Undercity Rat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Undercity Rat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Undercity Rat.",
 model={1141},
@@ -1378,23 +1378,23 @@ Challenge one to a pet battle and capture it
 |tip The Undercity Rats are level 2.
 learnpet Undercity Rat##61889 |goto Undercity 70.9,35.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Whiskers the Rat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Whiskers the Rat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Whiskers the Rat.",
 model={2176},
 pet=127,
 },[[
 step
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Rat Cage##23015 |tip Warden of the Horde
 step
 learnpet Whiskers the Rat##16549 |use Rat Cage##23015 |tip Warden of the Horde
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\White Kitten",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\White Kitten",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: White Kitten.",
 model={9990},
@@ -1407,7 +1407,7 @@ buy 1 Cat Carrier (White Kitten)##8489
 step
 learnpet White Kitten##7386 |use Cat Carrier (White Kitten)##8489
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Winter Reindeer",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Winter Reindeer",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Winter Reindeer.",
 model={15901},
@@ -1421,7 +1421,7 @@ collect 1 Jingling Bell##21308
 step
 learnpet Winter Reindeer##15706 |use Jingling Bell##21308
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Wolpertinger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Wolpertinger",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Wolpertinger.",
 model={22349},
@@ -1430,8 +1430,7 @@ pet=153,
 step
 You can only obtain this pet during the Brewfest event.
 confirm
-step
-#include "Brewfest_Dailies"
+leechsteps "Events Guides\\Brewfest\\Brewfest Dailies"
 step
 Complete the Brewfest daily quests each day until you have 200 Brewfest Prize Tokens
 collect 200 Brewfest Prize Token##37829 |achieve 2796
@@ -1444,7 +1443,7 @@ Buy the Wolpertinger's Tankard and click it to learn it. |achieve 1683/6 |goto D
 step
 learnpet Wolpertinger##22943 |use Wolpertinger's Tankard##32233
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Golden Dragonhawk Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Golden Dragonhawk Hatchling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Dragonkin pet: Golden Dragonhawk Hatchling.",
 model={20026},
@@ -1456,7 +1455,7 @@ buy 1 Golden Dragonhawk Hatchling##29953 |goto Eversong Woods 44.8,71.6
 step
 learnpet Golden Dragonhawk Hatchling##21055 |use Golden Dragonhawk Hatchling##29953
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Lil' Tarecgosa",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Lil' Tarecgosa",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Dragonkin pet: Lil' Tarecgosa.",
 model={38614},
@@ -1472,7 +1471,7 @@ buy 1 Lil' Tarecgosa##71033 |goto Orgrimmar 48.2,75.6
 step
 learnpet Lil' Tarecgosa##54027 |use Lil' Tarecgosa##71033
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Red Dragonhawk Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Red Dragonhawk Hatchling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Dragonkin pet: Red Dragonhawk Hatchling.",
 model={20027},
@@ -1484,7 +1483,7 @@ buy 1 Red Dragonhawk Hatchling##29956 |goto Eversong Woods 44.8,71.6
 step
 learnpet Red Dragonhawk Hatchling##21064 |use Red Dragonhawk Hatchling##29956
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Silver Dragonhawk Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Silver Dragonhawk Hatchling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Dragonkin pet: Silver Dragonhawk Hatchling.",
 model={20037},
@@ -1496,7 +1495,7 @@ buy 1 Silver Dragonhawk##29957 |goto Eversong Woods 44.8,71.6
 step
 learnpet Silver Dragonhawk Hatchling##21063 |use Silver Dragonhawk##29957
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Thundering Serpent Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Thundering Serpent Hatchling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Dragonkin pet: Thundering Serpent Hatchling.",
 model={43865},
@@ -1511,7 +1510,7 @@ buy 1 Thundering Serpent Hatchling##85513 |goto Orgrimmar 48.2,75.6
 step
 learnpet Thundering Serpent Hatchling##65313 |use Thundering Serpent Hatchling##85513
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Ammen Vale Lashling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Ammen Vale Lashling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Ammen Vale Lashling.",
 model={28493},
@@ -1524,7 +1523,7 @@ buy 1 Ammen Vale Lashling##44984
 step
 learnpet Ammen Vale Lashling##33205 |use Ammen Vale Lashling##44984
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Dark Phoenix Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Dark Phoenix Hatchling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Dark Phoenix Hatchling.",
 model={37136},
@@ -1541,7 +1540,7 @@ buy 1 Dark Phoenix Hatchling##63138 |goto Orgrimmar,48.38,75.79
 step
 learnpet Dark Phoenix Hatchling##47944 |use Dark Phoenix Hatchling##63138
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Elementium Geode",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Elementium Geode",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Elementium Geode.",
 model={45878},
@@ -1570,7 +1569,7 @@ step
 label "last"
 learnpet Elementium Geode##50722 |use Elementium Geode##67282
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Lumpy",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Lumpy",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Lumpy.",
 model={45939},
@@ -1594,7 +1593,7 @@ collect 1 Lump of Coal##73797 |goto Orgrimmar,52.6,77.4
 step
 learnpet Lumpy##55215 |use Lump of Coal##73797
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Pebble",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Pebble",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Pebble.",
 model={45940},
@@ -2495,7 +2494,7 @@ collect 1 Pebble##60869
 step
 learnpet Pebble##45247 |use Pebble##60869
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Searing Scorchling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Searing Scorchling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Searing Scorchling.",
 model={8409},
@@ -2522,7 +2521,7 @@ collect 1 Scorched Stone##34955
 step
 learnpet Searing Scorchling##25706 |use Scorched Stone##34955
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Teldrassil Sproutling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Teldrassil Sproutling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Teldrassil Sproutling.",
 model={28482},
@@ -2535,7 +2534,7 @@ buy 1 Teldrassil Sproutling##44965
 step
 learnpet Teldrassil Sproutling##33188 |use Teldrassil Sproutling##44965
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Tiny Snowman",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Tiny Snowman",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Tiny Snowman.",
 model={13610},
@@ -2549,7 +2548,7 @@ collect 1 Snowman Kit##21309
 step
 learnpet Tiny Snowman##15710 |use Snowman Kit##21309
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Withers",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Withers",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Withers.",
 model={45943},
@@ -2563,7 +2562,7 @@ buy 1 Withers##46325 |goto 57.2,33.8
 step
 learnpet Withers##34278 |use Withers##46325
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Alliance Balloon",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Alliance Balloon",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Alliance Balloon.",
 model={38343},
@@ -2573,7 +2572,7 @@ step
 Horde can not earn this pet because it is gathered from an Alliance only quest.
 learnpet Alliance Balloon##54539 |use Alliance Balloon##72042
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Blue Mini Jouster",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Blue Mini Jouster",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Blue Mini Jouster.",
 model={69048},
@@ -3225,7 +3224,7 @@ step
 learnpet Blue Mini Jouster##42177 |use Blue Mini Jouster##65661 |or
 learnpet Gold Mini Jouster##42183 |use Gold Mini Jouster##65662 |or
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Blue Moth",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Blue Moth",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Blue Moth.",
 model={19987},
@@ -3238,7 +3237,7 @@ buy 1 Blue Moth Egg##29901
 step
 learnpet Blue Moth##21010 |use Blue Moth Egg##29901
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Darkmoon Balloon",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Darkmoon Balloon",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Darkmoon Balloon.",
 model={38344},
@@ -3246,8 +3245,8 @@ pet=336,
 },[[
 step
 This pet requires Darkmoon Island to be accessible.
-Click here to be taken to the Darkmoon Faire Quests |confirm |next "Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests"
-Click here to do Darkmoon Faire Dailies |confirm |next "Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies" |only if ZGV.guidesets["DailiesHCATA"]
+Click here to be taken to the Darkmoon Faire Quests |confirm |next "Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests"
+Click here to do Darkmoon Faire Dailies |confirm |next "Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies" |only if ZGV.guidesets["DailiesHCATA"]
 earn 90 Darkmoon Prize Ticket##515 |goto Darkmoon Island,56.0,52.9
 Click here to buy the pet |confirm |next "buy"
 step
@@ -3257,7 +3256,7 @@ buy 1 Darkmoon Balloon##73762 |goto Darkmoon Island,48.2,69.6
 step
 learnpet Darkmoon Balloon##55187 |use Darkmoon Balloon##73762
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Gilnean Raven",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Gilnean Raven",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Gilnean Raven.",
 model={42872},
@@ -3267,7 +3266,7 @@ step
 This pet is only available to Alliance characters.
 learnpet Gilnean Raven##63098
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Gold Mini Jouster",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Gold Mini Jouster",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Gold Mini Jouster.",
 model={69047},
@@ -3921,7 +3920,7 @@ step
 learnpet Blue Mini Jouster##42177 |use Blue Mini Jouster##65661 |or
 learnpet Gold Mini Jouster##42183 |use Gold Mini Jouster##65662 |or
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Great Horned Owl",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Great Horned Owl",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Great Horned Owl.",
 model={4615},
@@ -3934,7 +3933,7 @@ buy 1 Great Horned Owl##8500
 step
 learnpet Great Horned Owl##7553 |use Great Horned Owl##8500
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Hawk Owl",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Hawk Owl",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Hawk Owl.",
 model={6299},
@@ -3947,22 +3946,20 @@ buy 1 Hawk Owl##8501
 step
 learnpet Hawk Owl##7555 |use Hawk Owl##8501
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Plump Turkey",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Plump Turkey",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Plump Turkey.",
 model={45968},
 pet=201,
 },[[
-#include "Pilgrim's_Bounty_Quests"
-#include "Pilgrim's_Bounty_Achievements"
-#include "Pilgrim's_Bounty_Dailies"
+leechsteps "Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim"
 step
 Check your _mailbox_ for your _prize_!
 collect 1 Turkey Cage##44810
 step
 learnpet Plump Turkey##32818 |use Turkey Cage##44810
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Pterrordax Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Pterrordax Hatchling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Pterrordax Hatchling.",
 model={38229},
@@ -3985,7 +3982,7 @@ collect 1 Pterrodax Hatchling##69821
 step
 learnpet Pterrordax Hatchling##53225 |use Pterrodax Hatchling##69821
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Rustberg Gull",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Rustberg Gull",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Rustberg Gull.",
 model={36499},
@@ -4242,7 +4239,7 @@ buy 1 Rustberg Gull##64996 |goto Tol Barad Peninsula,54.6,81.0
 step
 learnpet Rustberg Gull##48107 |use Rustberg Gull##64996
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Tiny Flamefly",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Tiny Flamefly",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Tiny Flamefly.",
 model={28435},
@@ -4535,7 +4532,7 @@ turnin Not Fireflies, Flameflies##28491 |goto 54.9,22.5
 step
 learnpet Tiny Flamefly##51632 |use Tiny Flamefly##66080
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Tirisfal Batling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Tirisfal Batling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Tirisfal Batling.",
 model={4732},
@@ -4548,8 +4545,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here Aspirant Rank Daily quests. |next "Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for |next "Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next "buy" |confirm
 step
 talk Helidan Lightwing##33849
@@ -4710,7 +4707,7 @@ buy 1 Tirisfal Batling##44971 |goto Icecrown,76.4,24.0
 step
 learnpet Tirisfal Batling##33197 |use Tirisfal Batling##44971
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Westfall Chicken",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Westfall Chicken",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Westfall Chicken.",
 model={304},
@@ -4734,7 +4731,7 @@ step
 learnpet Westfall Chicken##30379 |use Chicken Egg##11110
 |tip Yes... the Tirisfal Glades chicken gives you a Westfall Chicken!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\White Moth",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\White Moth",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: White Moth.",
 model={19999},
@@ -4747,7 +4744,7 @@ buy 1 White Moth Egg##29904
 step
 learnpet White Moth##21018 |use White Moth Egg##29904
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Yellow Moth",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Yellow Moth",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Yellow Moth.",
 model={19985},
@@ -4760,7 +4757,7 @@ buy 1 Yellow Moth Egg##29903
 step
 learnpet Yellow Moth##21008 |use Yellow Moth Egg##29903
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Argent Squire",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Argent Squire",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Argent Squire.",
 model={28946},
@@ -4770,7 +4767,7 @@ step
 This pet is only available to Alliance Characters.
 learnpet Argent Squire##33238
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Argent Gruntling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Argent Gruntling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Argent Gruntling.",
 model={28948},
@@ -4836,7 +4833,7 @@ collect 1 Argent Gruntling##45022
 step
 learnpet Argent Gruntling##33239 |use Argent Gruntling##45022
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Curious Oracle Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Curious Oracle Hatchling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Curious Oracle Hatchling.",
 model={25173},
@@ -4844,8 +4841,8 @@ pet=225,
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Curious Oracle Hatchling##46545
@@ -4853,7 +4850,7 @@ collect 1 Curious Oracle Hatchling##46545
 step
 learnpet Curious Oracle Hatchling##33530 |use Curious Oracle Hatchling##46545 |tip Back to the Orphanage (Dalaran)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Curious Wolvar Pup",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Curious Wolvar Pup",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Curious Wolvar Pup.",
 model={25384},
@@ -4861,8 +4858,8 @@ pet=226,
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Curious Wolvar Pup##46544
@@ -4870,7 +4867,7 @@ collect 1 Curious Wolvar Pup##46544
 step
 learnpet Curious Wolvar Pup##33529 |use Curious Wolvar Pup##46544 |tip Back to the Orphanage (Dalaran)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Father Winter's Helper",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Father Winter's Helper",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Father Winter's Helper.",
 model={15660},
@@ -4884,7 +4881,7 @@ collect 1 Green Helper Box##21301
 step
 learnpet Father Winter's Helper##15698 |use Green Helper Box##21301
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Herald (Horde)",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Herald (Horde)",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Guild Herald.",
 model={37196},
@@ -4899,7 +4896,7 @@ buy 1 Guild Herald##65364 |goto Orgrimmar,48.38,75.79
 step
 learnpet Guild Herald##49590 |use Guild Herald##65364
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Herald (Alliance)",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Herald (Alliance)",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Guild Herald.",
 model={37196},
@@ -4909,7 +4906,7 @@ step
 This pet model is only available to Alliance Characters.
 learnpet Guild Herald##49587
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Page (Horde)",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Page (Horde)",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Guild Page.",
 model={37199},
@@ -4924,7 +4921,7 @@ buy 1 Guild Page##65362 |goto Orgrimmar,48.38,75.79
 step
 learnpet Guild Page##49588 |use Guild Page##65362
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Page (Alliance)",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Page (Alliance)",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Guild Page.",
 model={37200},
@@ -4934,7 +4931,7 @@ step
 This pet model is only available to Alliance Characters.
 learnpet Guild Page##49586
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Moonkin Hatchling (Horde)",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Moonkin Hatchling (Horde)",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Moonkin Hatchling.",
 model={37527},
@@ -4949,7 +4946,7 @@ collect Moonkin Hatchling##68619
 step
 learnpet Moonkin Hatchling##51649 |use Moonkin Hatchling##68619
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Moonkin Hatchling (Alliance)",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Moonkin Hatchling (Alliance)",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Moonkin Hatchling.",
 model={37526},
@@ -4959,7 +4956,7 @@ step
 This pet model is only available to Alliance characters.
 learnpet Moonkin Hatchling##51601
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Peddlefeet",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Peddlefeet",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Peddlefeet.",
 model={15992},
@@ -4968,7 +4965,7 @@ pet=122,
 step
 This pet is sold by Lovely Merchants during the Love is in the Air Holiday
 |tip The merchants are in the captial cities
-To earn tokens, click here. |next "Zygor's Events Guides\\Love is in the Air (February 6th - 20th)\\Love is in the Air Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+To earn tokens, click here. |next "Events Guides\\Love is in the Air (February 6th - 20th)\\Love is in the Air Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 collect 40 Love Token##49927
 confirm
 step
@@ -4977,7 +4974,7 @@ buy 1 Truesilver Shafted Arrow##22235
 step
 learnpet Peddlefeet##16085 |use Truesilver Shafted Arrow##22235
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Rotten Little Helper",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Rotten Little Helper",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Rotten Little Helper.",
 model={51505},
@@ -4991,7 +4988,7 @@ collect 1 Rotten Helper Box##104317
 step
 learnpet Rotten Little Helper##73741 |use Rotten Helper Box##104317
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Winter's Little Helper",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Winter's Little Helper",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Winter's Little Helper.",
 model={15663},
@@ -5005,7 +5002,7 @@ collect 1 Red Helper Box##21305
 step
 learnpet Winter's Little Helper##15705 |use Red Helper Box##21305
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Broom",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Broom",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Enchanted Broom.",
 model={45960},
@@ -5018,8 +5015,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for Valiant Rank Dailies |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here Aspirant Rank Daily quests. |next "Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Valiant Rank Dailies |next "Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next "buy" |confirm
 step
 talk Helidan Lightwing##33849
@@ -5180,7 +5177,7 @@ buy 1 Enchanted Broom##44982 |goto Icecrown,76.2,23.8
 step
 learnpet Enchanted Broom##33227 |use Enchanted Broom##44982
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Lantern",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Lantern",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Enchanted Lantern.",
 model={36902},
@@ -5224,7 +5221,7 @@ step
 label "bought"
 learnpet Enchanted Lantern##46898 |use Enchanted Lantern##67274
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Festival Lantern",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Festival Lantern",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Festival Lantern.",
 model={39333},
@@ -5237,9 +5234,9 @@ Click here for directions to the vendor |confirm |next "vendor"
 Click here for our guide on getting the Coins of Ancestry |confirm |next "coins"
 step
 label "coins"
-#include "Lunar_Festival_Main_Quests"
-step
-#include "Lunar_Festival_Elder_Paths"
+Continuing...
+leechsteps "Events Guides\\Lunar Festival\\Lunar Festival Main Questline"
+leechsteps "Events Guides\\Lunar Festival\\Lunar Festival Optimized Elders Path"
 step
 label "vendor"
 talk Valadar Starsong##15864
@@ -5247,7 +5244,7 @@ buy Festival Lantern##74611 |goto Moonglade,54.0,35.0
 step
 learnpet Festival Lantern##55574 |use Festival Lantern##74611
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Legs",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Legs",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Legs.",
 model={38134},
@@ -5255,16 +5252,16 @@ pet=308,
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Legs##69648 |tip Back to the Orphanage (Shattrath)
 step
 learnpet Legs##53048 |use Legs##69648 |tip Back to the Orphanage (Shattrath)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Lunar Lantern",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Lunar Lantern",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Lunar Lantern.",
 model={39163},
@@ -5277,9 +5274,9 @@ Click here for directions to the vendor |confirm |next "vendor"
 Click here for our guide on getting the Coins of Ancestry |confirm |next "coins"
 step
 label "coins"
-#include "Lunar_Festival_Main_Quests"
-step
-#include "Lunar_Festival_Elder_Paths"
+Continuing...
+leechsteps "Events Guides\\Lunar Festival\\Lunar Festival Main Questline"
+leechsteps "Events Guides\\Lunar Festival\\Lunar Festival Optimized Elders Path"
 step
 label "vendor"
 talk Valadar Starsong##15864
@@ -5287,7 +5284,7 @@ buy Lunar Lantern##74610 |goto Moonglade,54.0,35.0
 step
 learnpet Lunar Lantern##55571 |use Lunar Lantern##74610
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Magic Lamp",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Magic Lamp",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Magic Lamp.",
 model={36901},
@@ -5300,7 +5297,7 @@ buy 1 Magic Lamp##67275
 step
 learnpet Magic Lamp##50545 |use Magic Lamp##67275
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Shimmering Wyrmling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Shimmering Wyrmling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Shimmering Wyrmling.",
 model={70232},
@@ -5310,10 +5307,10 @@ step
 Use the Icecrown Dailies section of this guide to complete the Argent Tournament Grounds and The Sunreavers pre-quest_ and dailies
 Exalted with The Sunreavers |condition rep("The Sunreavers")>=Exalted
 Click here for The Pre Quests. |next |only if not completedq(13838) |confirm
-|next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-|next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"] and completedq(13678)
-|next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only DeathKnight |only if ZGV.guidesets["DailiesHCATA"] and completedq(13795)
-|next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |only if not DeathKnight |only if ZGV.guidesets["DailiesHCATA"] and completedq(13794)
+|next "Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+|next "Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"] and completedq(13678)
+|next "Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only DeathKnight |only if ZGV.guidesets["DailiesHCATA"] and completedq(13795)
+|next "Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |only if not DeathKnight |only if ZGV.guidesets["DailiesHCATA"] and completedq(13794)
 Click here if you have completed the Pre Quests. |next "buy" |confirm
 step
 talk Helidan Lightwing##33849
@@ -5374,16 +5371,16 @@ buy 1 Shimmering Wyrmling##46821 |goto Icecrown,76.2,24.0
 step
 learnpet Shimmering Wyrmling##34724 |use Shimmering Wyrmling##46821
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Willy",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Willy",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Willy.",
 model={21381},
 pet=157,
 },[[
 step
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 step
 talk Orphan Matron Mercy##22819
 turnin Back to the Orphanage##10967 |goto Shattrath City 74.9,47.9
@@ -5392,7 +5389,7 @@ collect 1 Sleepy Willy##32617
 step
 learnpet Willy##23231 |use Sleepy Willy##32617
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Clockwork Gnome",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Clockwork Gnome",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Mechanical pet: Clockwork Gnome.",
 model={36211},
@@ -5415,7 +5412,7 @@ collect 1 Clockwork Gnome##64372
 step
 learnpet Clockwork Gnome##48609 |use Clockwork Gnome##64372
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Clockwork Rocket Bot",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Clockwork Rocket Bot",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Mechanical pet: Clockwork Rocket Bot.",
 model={22776},
@@ -5443,7 +5440,7 @@ turnin A Smokywood Pastures' Thank You!##6984 |goto 49.6,78.0
 step
 learnpet Clockwork Rocket Bot##24968
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\De-Weaponized Mechanical Companion",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\De-Weaponized Mechanical Companion",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Mechanical pet: De-Weaponized Mechanical Companion.",
 model={33559},
@@ -5497,7 +5494,7 @@ collect 1 De-Weaponized Mechanical Companion##60216
 step
 learnpet De-Weaponized Mechanical Companion##43916 |use De-Weaponized Mechanical Companion##60216
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Lifelike Toad",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Lifelike Toad",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Mechanical pet: Lifelike Toad.",
 model={901},
@@ -5547,7 +5544,7 @@ step
 label "bought"
 learnpet Lifelike Toad##12419 |use Lifelike Mechanical Toad##15996
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Lil' Smoky",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Lil' Smoky",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Mechanical pet: Lil' Smoky.",
 model={8910},
@@ -5622,7 +5619,7 @@ step
 label "bought"
 learnpet Lil' Smoky##9657 |use Lil' Smoky##11826
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Mechanical Pandaren Dragonling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Mechanical Pandaren Dragonling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Mechanical pet: Mechanical Pandaren Dragonling.",
 model={45386},
@@ -5655,7 +5652,7 @@ collect 8 Ghost Iron Ore##
 collect 12 White Trillium Ore##72103
 collect 12 Black Trillium Ore##72094
 step
-create Ghost Iron Bar##102165,Mining,4 total |goto Vale of Eternal Blossoms/3 25.8,40.6
+create Ghost Iron Bar##102165,Mining,4 total |goto Shrine of Seven Stars/1 25.8,40.6
 step
 create Trillium Bar##102167,Mining,6 total
 step
@@ -5663,7 +5660,7 @@ create Mechanical Pandaren Dragonling##127135,Engineering,1 total
 step
 learnpet Mechanical Pandaren Dragonling##64899
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Mechanical Squirrel",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Mechanical Squirrel",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Mechanical pet: Mechanical Squirrel.",
 model={7937},
@@ -5708,7 +5705,7 @@ step
 label "bought"
 learnpet Mechanical Squirrel##2671 |use Mechanical Squirrel Box##4401
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Mechanopeep",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Mechanopeep",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Mechanical pet: Mechanopeep.",
 model={28539},
@@ -5721,7 +5718,7 @@ buy 1 Mechanopeep##45002
 step
 learnpet Mechanopeep##33274 |use Mechanopeep##45002
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Personal World Destroyer",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Personal World Destroyer",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Mechanical pet: Personal World Destroyer.",
 model={33512},
@@ -5766,7 +5763,7 @@ step
 label "bought"
 learnpet Personal World Destroyer##43800 |use Personal World Destroyer##59597
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Pet Bombling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Pet Bombling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Mechanical pet: Pet Bombling.",
 model={8909},
@@ -5828,7 +5825,7 @@ step
 label "bought"
 learnpet Pet Bombling##9656 |use Pet Bombling##11825
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Tranquil Mechanical Yeti",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Tranquil Mechanical Yeti",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Mechanical pet: Tranquil Mechanical Yeti.",
 model={10269},
@@ -5868,7 +5865,7 @@ step
 label "Tranquil Yeti"
 Congratulations you are now the proud owner of a _Tranquil Mechanical Yeti_
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Crawling Claw",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Crawling Claw",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Undead pet: Crawling Claw.",
 model={34262},
@@ -5891,19 +5888,25 @@ collect 1 Crawling Claw##60847
 step
 learnpet Crawling Claw##45128 |use Crawling Claw##60847
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Creepy Crate",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Creepy Crate",{
 author="support@zygorguides.com",
-description="This guide will walk you through obtaining the Undead pet: Creepy Crate.",
+description="The Undead pet: Creepy Crate can be obtained by completing the Creepy Crate questline during the Hallow's End event.",
+condition_suggested=function() return isevent("Hallow's End") end,
 model={38638},
 pet=321,
 },[[
 step
-This pet can only be obtained during the Hallow's End festival
-Click here to continue |confirm
+Wait for the Hallow's End Event to Start |condition isevent("Hallow's End")
+|tip Hallow's End runs from October 18th to November 1st.
+leechsteps "Events Guides\\Hallow's End\\Hallow's End Quests"
 step
-#include "Hallow's_End_Quests"
+use the Creepy Crate##71076
+learnpet Creepy Crate##54128
+step
+_Congratulations!_
+You Collected the "Creepy Crate" Battle Pet.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Fossilized Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Fossilized Hatchling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Undead pet: Fossilized Hatchling.",
 model={34413},
@@ -5926,7 +5929,7 @@ collect 1 Fossilized Hatchling##60955
 step
 learnpet Fossilized Hatchling##45340 |use Fossilized Hatchling##60955
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Macabre Marionette",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Macabre Marionette",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Undead pet: Macabre Marionette.",
 model={29404},
@@ -5960,7 +5963,7 @@ step
 Use the Macabre Marionette in your bags. |use Macabre Marionette##46831
 learnpet Macabre Marionette##34770
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Sen'jin Fetish",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Sen'jin Fetish",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Undead pet: Sen'jin Fetish.",
 model={46939},
@@ -5973,8 +5976,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here Aspirant Rank Daily quests. |next "Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for |next "Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next "buy" |confirm
 step
 talk Helidan Lightwing##33849
@@ -6135,7 +6138,7 @@ buy 1 Sen'jin Fetish##45606 |goto Icecrown,76.0,24.4
 step
 learnpet Sen'jin Fetish##33810 |use Sen'jin Fetish##45606
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Voodoo Figurine",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Voodoo Figurine",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Undead pet: Voodoo Figurine.",
 model={38232},

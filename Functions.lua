@@ -288,171 +288,54 @@ end
 local GOLD_AMOUNT_TEXTURE = GOLD_AMOUNT_TEXTURE:gsub("^%%d","|c%%s%%s|r")
 local SILVER_AMOUNT_TEXTURE = SILVER_AMOUNT_TEXTURE:gsub("^%%d","|c%%s%%s|r")
 local COPPER_AMOUNT_TEXTURE = COPPER_AMOUNT_TEXTURE:gsub("^%%d","|c%%s%%s|r")
-local GOLD_AMOUNT_CHAR = "|c%s%sg|r"
-local SILVER_AMOUNT_CHAR = "|c%s%ss|r"
-local COPPER_AMOUNT_CHAR = "|c%s%sc|r"
-local GOLD_AMOUNT_DOT = "|c%s%s|r."
-local SILVER_AMOUNT_DOT = "|c%s%s|r."
-local COPPER_AMOUNT_DOT = "|c%s%s|r"
-local GOLD_AMOUNT_CLEAR = "%sg"
-local SILVER_AMOUNT_CLEAR = "%ss"
-local COPPER_AMOUNT_CLEAR = "%sc"
 
-local WHITE_COLOR = "ffffffff"
-local GOLD_COLOR = "ffffee00"
-local SILVER_COLOR = "fff8f8ff"
-local COPPER_COLOR = "ffffaa99"
-local NO_COLOR = "ff888888"
-local SEPARATOR_2SPACE = "  "
-local SEPARATOR_1SPACE = " "
-local SEPARATOR_SPACE = " "
-local SEPARATOR_DOT = "|cff888888.|r"
+local GOLD_COLOR = "|cffffee00"
+local SILVER_COLOR = "|cfff8f8ff"
+local COPPER_COLOR = "|cffffaa99"
 
-function ZGV:GetMoneyStringTest(style)
-	print(self.GetMoneyString(000001,style))
-	print(self.GetMoneyString(000100,style))
-	print(self.GetMoneyString(001200,style))
-	print(self.GetMoneyString(001201,style))
-	print(self.GetMoneyString(001234,style))
-	print(self.GetMoneyString(010000,style))
-	print(self.GetMoneyString(010001,style))
-	print(self.GetMoneyString(010101,style))
-	print(self.GetMoneyString(210101,style))
-end
-
-function ZGV.GetMoneyString(money,style,whiteonly)
+function ZGV.GetMoneyString(money,colorcode,style)
 	if money<0 then money=0 end
-	local goldString, silverString, copperString;
+	if colorcode=="" then colorcode=nil end
+
 	local gold = floor(money / (COPPER_PER_SILVER * SILVER_PER_GOLD));
 	local silver = floor((money - (gold * COPPER_PER_SILVER * SILVER_PER_GOLD)) / COPPER_PER_SILVER);
-	local copper = mod(money, COPPER_PER_SILVER);
-	
-	--[[
-	if ( ENABLE_COLORBLIND_MODE == "1" ) then
-		goldString = gold..GOLD_AMOUNT_SYMBOL;
-		silverString = silver..SILVER_AMOUNT_SYMBOL;
-		copperString = copper..COPPER_AMOUNT_SYMBOL;
-	else
-		goldString = format(GOLD_AMOUNT_TEXTURE, gold, 0, 0);
-		silverString = format(SILVER_AMOUNT_TEXTURE, silver, 0, 0);
-		copperString = format(COPPER_AMOUNT_TEXTURE, copper, 0, 0);
-	end
-	--]]
+	local copper = money - (gold * COPPER_PER_SILVER * SILVER_PER_GOLD) - (silver * COPPER_PER_SILVER);
 
+	if ZGV.db.profile.gold_format>2 then ZGV.db.profile.gold_format=1 end
 	style=style or ZGV.db.profile.gold_format
-	whiteonly=whiteonly or ZGV.db.profile.gold_format_white
 
-	local moneyString = "";
-	
-	if style==0 then  -- textured
+	local goldString, silverString, copperString = "","","";
+	local goldPrefix, silverPrefix, copperPrefix = "","","";
+	local goldSuffix, silverSuffix, copperSuffix = "","","";
 
-		if ( gold > 0 ) then
-			moneyString = format(GOLD_AMOUNT_TEXTURE, whiteonly and WHITE_COLOR or GOLD_COLOR, gold, 0, 0);
-		end
-
-		if ( gold>0 and silver>0 ) then
-			moneyString = moneyString.."  "..format(SILVER_AMOUNT_TEXTURE, whiteonly and WHITE_COLOR or SILVER_COLOR, ("%02d"):format(silver), 0, 0)
-		elseif ( gold>0 and silver==0 and copper==0 ) then
-			moneyString = moneyString.."  "..format(SILVER_AMOUNT_TEXTURE, whiteonly and WHITE_COLOR or NO_COLOR, ("%02d"):format(00), 0, 0)
-		elseif ( gold>0 ) then
-			moneyString = moneyString.."  " .. format(SILVER_AMOUNT_TEXTURE, whiteonly and WHITE_COLOR or SILVER_COLOR, ("%02d"):format(silver), 0, 0)
-		else
-			moneyString = format(SILVER_AMOUNT_TEXTURE, whiteonly and WHITE_COLOR or SILVER_COLOR, ("%d"):format(silver), 0, 0)
-		end
-
-		if ( gold+silver>0 and copper>0 ) then
-			moneyString = moneyString.."  "..format(COPPER_AMOUNT_TEXTURE, whiteonly and WHITE_COLOR or COPPER_COLOR, ("%02d"):format(copper), 0, 0)
-		elseif ( gold+silver>0 and copper==0) then
-			moneyString = moneyString.."  "..format(COPPER_AMOUNT_TEXTURE, whiteonly and WHITE_COLOR or NO_COLOR, ("%02d"):format(00), 0, 0)
-		elseif ( gold+silver==0 and copper>0) then
-			moneyString = format(COPPER_AMOUNT_TEXTURE, whiteonly and WHITE_COLOR or COPPER_COLOR, ("%d"):format(copper), 0, 0)
-		elseif ( money==0) then
-			moneyString = format(COPPER_AMOUNT_TEXTURE, whiteonly and WHITE_COLOR or NO_COLOR, 0, 0, 0)
-		end
-	
-	elseif style==3 then  -- 11g 22s 00c
-
-		if ( gold > 0 ) then
-			moneyString = format(GOLD_AMOUNT_CHAR, whiteonly and WHITE_COLOR or GOLD_COLOR, gold, 0, 0)
-		end
-
-		if ( gold>0 and silver>0 ) then
-			moneyString = moneyString.." "..format(SILVER_AMOUNT_CHAR, whiteonly and WHITE_COLOR or SILVER_COLOR, ("%02d"):format(silver), 0, 0)
-		elseif ( gold>0 and silver==0 and copper==0) then
-			moneyString = moneyString.." "..format(SILVER_AMOUNT_CHAR, whiteonly and WHITE_COLOR or NO_COLOR, ("%02d"):format(00), 0, 0)
-		elseif ( gold>0 ) then
-			moneyString = moneyString.." " .. format(SILVER_AMOUNT_CHAR, whiteonly and WHITE_COLOR or SILVER_COLOR, ("%02d"):format(silver), 0, 0)
-		else
-			moneyString = format(SILVER_AMOUNT_CHAR, whiteonly and WHITE_COLOR or SILVER_COLOR, ("%d"):format(silver), 0, 0)
-		end
-
-		if ( gold+silver>0 and copper>0 ) then
-			moneyString = moneyString.." "..format(COPPER_AMOUNT_CHAR, whiteonly and WHITE_COLOR or COPPER_COLOR, ("%02d"):format(copper), 0, 0)
-		elseif ( gold+silver>0 and copper==0) then
-			moneyString = moneyString.." "..format(COPPER_AMOUNT_CHAR,  whiteonly and WHITE_COLOR or NO_COLOR, ("%02d"):format(00), 0, 0)
-		elseif ( gold+silver==0 and copper>0) then
-			moneyString = format(COPPER_AMOUNT_CHAR, whiteonly and WHITE_COLOR or COPPER_COLOR, ("%d"):format(copper), 0, 0)
-		elseif ( money==0) then
-			moneyString = format(COPPER_AMOUNT_CHAR,  whiteonly and WHITE_COLOR or NO_COLOR, 0, 0, 0)
-		end
-
-	elseif style==4 then  -- 11.22.33 colored
-
-		if ( gold > 0 ) then
-			moneyString = format(GOLD_AMOUNT_DOT, whiteonly and WHITE_COLOR or GOLD_COLOR, gold, 0, 0)
-		end
-
-		if ( gold>0 and silver>0 ) then
-			moneyString = moneyString.." "..format(SILVER_AMOUNT_DOT, whiteonly and WHITE_COLOR or SILVER_COLOR, ("%02d"):format(silver), 0, 0)
-		elseif ( gold>0 and silver==0 and copper==0) then
-			moneyString = moneyString.." "..format(SILVER_AMOUNT_DOT, whiteonly and WHITE_COLOR or NO_COLOR, ("%02d"):format(00), 0, 0)
-		elseif ( gold>0 ) then
-			moneyString = moneyString.." " .. format(SILVER_AMOUNT_DOT, whiteonly and WHITE_COLOR or SILVER_COLOR, ("%02d"):format(silver), 0, 0)
-		else
-			moneyString = format(SILVER_AMOUNT_DOT, whiteonly and WHITE_COLOR or SILVER_COLOR, ("%d"):format(silver), 0, 0)
-		end
-
-		if ( gold+silver>0 and copper>0 ) then
-			moneyString = moneyString.." "..format(COPPER_AMOUNT_DOT, whiteonly and WHITE_COLOR or COPPER_COLOR, ("%02d"):format(copper), 0, 0)
-		elseif ( gold+silver>0 and copper==0) then
-			moneyString = moneyString.." "..format(COPPER_AMOUNT_DOT,  whiteonly and WHITE_COLOR or NO_COLOR, ("%02d"):format(00), 0, 0)
-		elseif ( gold+silver==0 and copper>0) then
-			moneyString = format(COPPER_AMOUNT_DOT, whiteonly and WHITE_COLOR or COPPER_COLOR, ("%d"):format(copper), 0, 0)
-		elseif ( money==0) then
-			moneyString = format(COPPER_AMOUNT_DOT,  whiteonly and WHITE_COLOR or NO_COLOR, 0, 0, 0)
-		end
-	elseif style==5 then  -- 11g 22s 00c, no color codes
-
-		if ( gold > 0 ) then
-			moneyString = format(GOLD_AMOUNT_CLEAR, gold, 0, 0)
-		end
-
-		if ( gold>0 and silver>0 ) then
-			moneyString = moneyString.." "..format(SILVER_AMOUNT_CLEAR, ("%02d"):format(silver), 0, 0)
-		elseif ( gold>0 and silver==0 and copper==0) then
-			moneyString = moneyString.." "..format(SILVER_AMOUNT_CLEAR, ("%02d"):format(00), 0, 0)
-		elseif ( gold>0 ) then
-			moneyString = moneyString.." " .. format(SILVER_AMOUNT_CLEAR, ("%02d"):format(silver), 0, 0)
-		else
-			moneyString = format(SILVER_AMOUNT_CLEAR, ("%d"):format(silver), 0, 0)
-		end
-
-		if ( gold+silver>0 and copper>0 ) then
-			moneyString = moneyString.." "..format(COPPER_AMOUNT_CLEAR, ("%02d"):format(copper), 0, 0)
-		elseif ( gold+silver>0 and copper==0) then
-			moneyString = moneyString.." "..format(COPPER_AMOUNT_CLEAR, ("%02d"):format(00), 0, 0)
-		elseif ( gold+silver==0 and copper>0) then
-			moneyString = format(COPPER_AMOUNT_CLEAR, ("%d"):format(copper), 0, 0)
-		elseif ( money==0) then
-			moneyString = format(COPPER_AMOUNT_CLEAR,  0, 0, 0)
-		end
-
-
+	if style==1 then -- 11g 22s 33c
+		goldPrefix = colorcode or GOLD_COLOR
+		silverPrefix = colorcode or SILVER_COLOR
+		copperPrefix = colorcode or COPPER_COLOR
+		goldSuffix, silverSuffix, copperSuffix = "g|r ","s|r ","c|r"
+	elseif style==2	 then -- 11.22.33
+		goldPrefix = colorcode or GOLD_COLOR
+		silverPrefix = colorcode or SILVER_COLOR
+		copperPrefix = colorcode or COPPER_COLOR
+		goldSuffix, silverSuffix, copperSuffix = ".|r",".|r","|r"
+	else
+		goldSuffix, silverSuffix, copperSuffix = "g|r ","s|r ","c|r"
 	end
-	
-	return moneyString;
-end
 
+	goldString = goldPrefix..gold..goldSuffix
+	silverString = silverPrefix..(gold>0 and ("%02d"):format(silver) or silver)..silverSuffix
+	copperString = copperPrefix..((gold>0 or silver>0) and ("%02d"):format(copper)or copper)..copperSuffix
+
+	local result = ""
+
+	if gold>0 then result = goldString  end
+
+	if gold>0 or silver>0 then result = result .. silverString end
+
+	result = result .. copperString
+
+	return result
+end
 
 function ZGV.TableProduct(tabs)
 	local ret = {}
@@ -1152,7 +1035,7 @@ function IL.ProcessItemLink(itemlink,keepDecor,...) --  (warning, potential smal
 
 	-- Prepare data
 	local tab={strsplit(":",itemstring)}
-	for i=2,15 do tab[i]=tab[i] or "" end  -- empty fill
+	for i=2,13 do tab[i]=tab[i] or "" end  -- empty fill
 
 	-- Replace fields based on input params
 	for i=1,select("#",...),2 do tab[select(i,...)]=select(i+1,...) end
@@ -1221,6 +1104,40 @@ function IL.GetItemBonuses(itemlink)
 	for i=1,#tab do tab[i]=nil end
 
 	return tab
+end
+
+-- adds specified bonuses to given itemlink
+-- params:
+--	itemlink - string
+--	bonuses - string - : separated list of bonus ids
+-- returns:
+--	itemlink - string
+function IL.AddBonus(itemlink,bonuses)
+	if not itemlink then return itemlink,"BAD" end
+	if not bonuses then return itemlink,"no bonus" end
+
+	-- clean up decorations
+	local itemlink = IL.ProcessItemLink(itemlink,false)
+	local tab={strsplit(":",itemlink)}
+
+	local _, count = string.gsub(bonuses, ":", "")
+	tab[14] = (tab[14] or 0)+(count+1)
+	table.insert(tab,bonuses)
+	return table.concat(tab,":")
+end
+
+function IL.RemoveBonus(itemlink,bonusid)
+	if not itemlink then return itemlink,"BAD" end
+	if not bonusid then return itemlink,"no bonus" end
+
+	-- clean up decorations
+	local itemlink = IL.ProcessItemLink(itemlink,false)
+	itemlink = itemlink:gsub(":"..bonusid,"")
+	local tab={strsplit(":",itemlink)}
+
+	tab[14] = tab[14]-1
+	table.insert(tab,bonuses)
+	return table.concat(tab,":")
 end
 
 -- TESTING:

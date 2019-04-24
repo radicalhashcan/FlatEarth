@@ -344,6 +344,8 @@ function ZGV:OnInitialize()
 	end
 	--]]
 
+	ZGV.LibRover:DoStartup()
+
 	-- home detection, fire-and-forget style.
 	hooksecurefunc("ConfirmBinder",function() ZygorGuidesViewer.recentlyHomeChanged=true end)
 
@@ -419,16 +421,10 @@ function ZGV:OnEnable()
 
 	self:Hook_QuestChoice()
 
-	hooksecurefunc(WorldMap_WorldQuestPinMixin,"OnClick", function(self,button) ZGV:SuggestWorldQuestGuide(self) end)
 	hooksecurefunc(AreaPOIPinMixin,"OnAcquired", function(self) 
 		self:EnableMouse(true)
 		self:SetScript("OnMouseUp",function(self) ZGV:SuggestGuideFromBlizzardIcon(self) end)
 	end)	
-
-	if WorldQuestTrackerAddon then
-		ZGV:Hook(WorldQuestTrackerAddon,"OnQuestButtonClick", ZGV.WQTwrapper) -- map buttons
-		self:AddEventHandler("SUPER_TRACKED_QUEST_CHANGED") -- tracker buttons
-	end
 
 	--self.Localizers:PruneNPCs()  -- off until we start doing it by data, not by name. ~sinus 2013-04-09
 
@@ -667,8 +663,6 @@ local function _StartupThread()
 	if self.Foglight then self.Foglight:Startup() end
 	LibTaxi:Startup(ZGV.db.char.taxis)
 
-	self:SetWaypointAddon(self.db.profile.waypointaddon)
-
 	ZGV.HBD:FixPhasedContinents()
 	
 	waitformaint("maint_startup_modules") ---------------------
@@ -777,9 +771,6 @@ local function _StartupThread()
 
 	
 	self:SendMessage("ZGV_GUIDES_PARSED", "done")
-	
-	self:Print(L['welcome_guides']:format(#self.registeredguides),false,"force")
-	self:Print("Provided by: |cffffff88The 911 Files",false,"force")
 
 	self:Print(L['welcome_guides']:format(#self.registeredguides),false,"force")
 
@@ -1041,6 +1032,103 @@ function ZGV:GetGuideByTitle(title)
 	end
 end
 
+
+
+-- ###########################################################################################################################################################
+-- ###########################################################################################################################################################
+
+
+
+ZGV.StepHistory = {}
+
+function ZGV.StepHistory:Prune()
+	local _gsh = ZGV.db.char.guidestephistory   if not _gsh then return end
+
+	local to_remove={}
+	for guide,history in pairs(_gsh) do
+		if time()-(history.lasttime or 1548000000) > 86400*180  or  guide:find("SHARED\\")  then -- 6 months old, or it's a shared guide that shouldn't've been recorded here anyway
+			tinsert(to_remove,guide)
+		end
+	end
+	for i,guide in ipairs(to_remove) do _gsh[guide]=nil end
+end
+
+function ZGV.StepHistory:AddGuide(name)
+	local _gsh = ZGV.db.char.guidestephistory
+	_gsh[name] = _gsh[name] or {}
+	local _gshn=_gsh[name]
+	if _gshn[1] then _gsh[name]={['steps']=_gshn} _gshn=_gsh[name] end  -- convert old data
+	_gshn.steps = _gshn.steps or {}
+	_gshn.lasttime = time()
+	return _gshn
+end
+
+function ZGV.StepHistory:AddStep(name,num)
+	local _gshns = ZGV.db.char.guidestephistory[name].steps
+	if _gshns[#_gshns]~=num then
+		tinsert(_gshns,num)
+	end
+end
+
+function ZGV.StepHistory:GetPreviousValidStep(name)
+	local step
+	local _gshns = ZGV.db.char.guidestephistory[name].steps
+	local hlen = #_gshns
+	local stepnum
+	local backed=0
+	local okaytostay
+	repeat
+		-- pop stepnum from history
+		stepnum = _gshns[hlen-backed]
+
+		-- valid number?
+		if stepnum then
+			-- history popped 'pop'erly, hurr durr
+
+			-- get the step
+			s = ZGV.CurrentGuide.steps[stepnum]
+			if s then
+				backed = backed + 1
+				step = s
+			end
+		else
+			-- we broke history or it just ran out, whatever
+
+			ZGV:Debug("step history broken, omg")
+
+
+			-- TODO: Currently, when running out of history, we default to the first valid of the guide. Needs a message / confirmation.
+
+			s = ZGV.CurrentGuide:GetFirstValidStep()  -- always returns something, or breaks.
+			if s then
+				backed = hlen  -- rewind it all
+				step = s
+				okaytostay = true
+			end
+		end
+	until (step:AreRequirementsMet() or ZGV.db.profile.showwrongsteps) and (step~=ZGV.CurrentStep or okaytostay)
+	return step,backed
+end
+
+function ZGV.StepHistory:Back(name,num)
+	local _gshns = ZGV.db.char.guidestephistory[name].steps
+	local step
+	for i=1,num do step=tremove(_gshns) end
+	return step
+end
+
+function ZGV.StepHistory:HasHistory(name)
+	local _gshns = ZGV.db.char.guidestephistory[name].steps
+	return _gshns and #_gshns>0
+end
+
+
+
+-- ###########################################################################################################################################################
+-- ###########################################################################################################################################################
+
+
+
 function ZGV:SetGuide(name,step,hack,silent) --hack used for testing
 	if not name then return end
 	-- record if previous active guide had any points of interest
@@ -1130,7 +1218,9 @@ function ZGV:SetGuide(name,step,hack,silent) --hack used for testing
 			self.CurrentGuide = guide
 			self.CurrentGuideName = name
 			self.db.char.guidename = name
-			self.db.char.guidestephistory[name] = self.db.char.guidestephistory[name] or {}
+
+			self.StepHistory:Prune()
+			self.StepHistory:AddGuide(name)
 
 
 			-- History support moved to tabs:AssignGuide
@@ -1283,14 +1373,13 @@ function ZGV:FocusStep(num,forcefocus)
 
 	self:Debug("FocusStep "..num..(quiet and " (quiet)" or ""))
 
-	local current_guide = self.CurrentGuide.title
-	local step_history = self.db.char.guidestephistory[current_guide]
-
-	-- Record step into history
-	if self.LastSkip>0 and self.CurrentStep then
-		tinsert(step_history,self.CurrentStep.num)
-		if self.db.char.guides_history[1] and self.db.char.guides_history[1][1]==self.CurrentGuide.title then
-			self.db.char.guides_history[1][2]=self.CurrentStep.num
+	if self.CurrentGuide.type ~= "SHARED" then  -- don't store history for those, it just doesn't work
+		-- Record step into history
+		if self.LastSkip>0 and self.CurrentStep then
+			self.StepHistory:AddStep(self.CurrentGuide.title,self.CurrentStep.num)
+			if self.db.char.guides_history[1] and self.db.char.guides_history[1][1]==self.CurrentGuide.title then
+				self.db.char.guides_history[1][2]=self.CurrentStep.num
+			end
 		end
 	end
 
@@ -1405,6 +1494,11 @@ function ZGV:FocusStep(num,forcefocus)
 
 	ZGV:SetActionButtons()
 	ZGV.Tabs:UpdateCurrentTab()
+
+	-- if user changed guide/step, he may need to equip/dequip quest gear
+	if not self.skipping then
+		ZGV.ItemScore.Upgrades:ScanBagsForUpgrades()
+	end
 end
 
 function ZGV:SetActionButtons()
@@ -1447,7 +1541,7 @@ function ZGV:SetActionButtons()
 					--elseif goal.macro then
 					--	ZGV.ActionBar:SetButton("macro",goal.macro)
 					elseif goal.script and goal.script:find("DoEmote") then
-						ZGV.ActionBar:SetButton("emote",goal.macro)
+						ZGV.ActionBar:SetButton("emote",goal.script)
 					elseif goal.petaction then
 						local num,name,subtext,tex = ZGV.FindPetActionInfo(goal.petaction)
 						if num then
@@ -1518,43 +1612,7 @@ end
 -- return step = step obj
 -- return backed = num of valid history skips
 function ZGV:GetPreviousValidStep()
-	local step
-	local hist = self.db.char.guidestephistory[self.db.char.guidename]
-	local hlen = #hist
-	local stepnum
-	local backed=0
-	local okaytostay
-	repeat
-		-- pop stepnum from history
-		stepnum = hist[hlen-backed]
-
-		-- valid number?
-		if stepnum then
-			-- history popped 'pop'erly, hurr durr
-
-			-- get the step
-			s = self.CurrentGuide.steps[stepnum]
-			if s then
-				backed = backed + 1
-				step = s
-			end
-		else
-			-- we broke history or it just ran out, whatever
-
-			ZGV:Debug("step history broken, omg")
-
-
-			-- TODO: Currently, when running out of history, we default to the first valid of the guide. Needs a message / confirmation.
-
-			s = self.CurrentGuide:GetFirstValidStep()  -- always returns something, or breaks.
-			if s then
-				backed = hlen
-				step = s
-				okaytostay = true
-			end
-		end
-	until (step:AreRequirementsMet() or self.db.profile.showwrongsteps) and (step~=self.CurrentStep or okaytostay)
-	return step,backed
+	return self.StepHistory:GetPreviousValidStep(self.db.char.guidename)
 end
 
 function ZGV:PreviousStep(fast,forcefocus)
@@ -1567,17 +1625,18 @@ function ZGV:PreviousStep(fast,forcefocus)
 
 	self.autopause = IsAltKeyDown() and IsControlKeyDown()
 
-	local step,backed = self:GetPreviousValidStep()
+	local guidename = self.db.char.guidename
+
+	local step,backed = self:GetPreviousValidStep(guidename)
 	if self.autopause then step=self.CurrentGuide.steps[self.CurrentStepNum-1] end  -- HACK.
 	if not step then return end
 
 	self:Debug("PreviousStep to "..step.num..(fast and ' (fast)' or ''))
 
 	-- drop 'backed' history states
-	local history = self.db.char.guidestephistory[self.db.char.guidename]
-	for i=1,backed do tremove(history) end
+	self.StepHistory:Back(guidename,backed)
 
-	if #history==0 then
+	if not self.StepHistory:HasHistory(guidename) then
 		self.fastforward = false
 		self.skipping = false
 		self.pause = true
@@ -3155,7 +3214,10 @@ function ZGV:DoUpdateFrame(full,onupdate)
 
 	if minh<MIN_HEIGHT+tabh then minh=MIN_HEIGHT+tabh end
 	self.Frame:SetMinResize(MIN_WIDTH,minh)
-	if self.Frame:GetHeight()<minh-0.01 then self.Frame:SetHeight(minh) end
+	if not InCombatLockdown() then 
+		if self.Frame:GetHeight()<minh-0.01 then self.Frame:SetHeight(minh) end
+	end
+
 
 	self:ResizeFrame()
 
@@ -3667,6 +3729,7 @@ function ZGV:Print(s,ifdebug,force)
 
 	if not force and not self.db.profile.noisy then return end
 
+	--[[
 	if not ZGV.DEV and not ZGV.db.profile.debug and not force then  -- spam throttle on clients only
 		if s==spamthrot_last then
 			if not spamthrot_last_repeated then
@@ -3691,6 +3754,7 @@ function ZGV:Print(s,ifdebug,force)
 			return
 		end
 	end
+	--]]
 	
 	ChatFrame1:AddMessage(L['name']..": "..tostring(s))
 end
@@ -3881,7 +3945,7 @@ local eventtex = {
 
 function ZGV:FindEvent(eventName)
 	eventName=eventName:upper()
-	local dateobject = C_Calendar.GetDate()
+	local dateobject = (C_Calendar.GetDate and C_Calendar.GetDate()) or (C_DateAndTime.GetCurrentCalendarTime and C_DateAndTime.GetCurrentCalendarTime())
 	local month,day,year = dateobject.month,dateobject.monthDay,dateobject.year
 
 	local numEvents = C_Calendar.GetNumDayEvents(0, day);
@@ -6131,123 +6195,6 @@ function ZGV:PLAYER_LEVEL_UP(event,level)
 	end
 end
 
-function ZGV:SUPER_TRACKED_QUEST_CHANGED(_,questID)
-	if not questID then return end
-	if not WorldQuestTrackerAddon then return end
-	if not WorldQuestTrackerAddon.db.profile.use_tracker then return end
-	if not WorldQuestTrackerAddon.IsQuestBeingTracked(questID) then return end
-	for i,questdata in pairs(WorldQuestTrackerAddon.QuestTrackList) do
-		if questdata.questID == questID then
-			ZGV:SuggestWorldQuestGuide(nil,questID,"force",questdata.mapID)
-			return
-		end
-	end
-end
-
-function ZGV.WQTwrapper(object)
-	if not WorldQuestTrackerAddon.db.profile.use_tracker then return end
-	if not WorldQuestTrackerAddon.IsQuestBeingTracked(object.questID) then
-		ZGV:SuggestWorldQuestGuide(nil,object.questID,"force",object.mapID)
-	end
-end
-
-local world_quest_guides = nil
-local function find_world_quest_step(questID,mapID)
-	local labelstep, zoneguide
-	local mapid = mapID or WorldMapFrame and WorldMapFrame:GetMapID()
-
-	if not mapid then
-		ZGV:Debug("&_SUB &worldquests unable to get current map id")
-		return false,false
-	end
-	
-	if not world_quest_guides then
-		world_quest_guides = {}
-		for i,guide in pairs(ZGV.registeredguides) do
-			if guide.headerdata and guide.headerdata.worldquestzone then
-				if type(guide.headerdata.worldquestzone)=="table" then
-					for _,zone in pairs(guide.headerdata.worldquestzone) do
-						world_quest_guides[zone] = guide
-					end
-				else
-					world_quest_guides[guide.headerdata.worldquestzone] = guide
-				end
-			end
-		end
-	end
-
-	zoneguide = world_quest_guides[mapid]
-	
-	if zoneguide then
-		zoneguide:Parse(true)
-		for labelname,labeldata in pairs(zoneguide.steplabels) do
-			if labelname == "quest-"..questID then
-				return zoneguide,labeldata[1]
-			end
-		end
-	end
-	return false,false
-end
-
-local function add_world_quest_notification(questID,questTitle,guide,labelstep,tab)
-	ZGV:Debug("&_SUB &worldquests popup for "..questID)
-	ZGV.NotificationCenter.AddButton(
-	"worldquest",
-	questTitle,
-	L["tabs_world_quest_new"],
-	ZGV.DIR.."\\Skins\\guideicons-big",
-	{0, 0.25, 0, 0.25},
-	function() 
-		local tab = ZGV.Tabs:GetSpecialTabFromPool("worldquestzone")
-		tab:SetAsCurrent()
-		ZGV:SetGuide(guide.title,labelstep) end,
-	nil,
-	1,
-	10, --poptime
-	30, --removetime
-	false, --quiet
-	nil,--onopen
-	"worldquest")
-end
-
-function ZGV:SuggestWorldQuestGuide(object,questID,force,mapID)
-	local questID = object and object.worldQuest and object.questID or questID
-	if not questID then return end
-
-	if IsWorldQuestWatched(questID) or force then
-		local guide,labelstep = find_world_quest_step(questID,mapID)
-
-		if not labelstep then
-			ZGV:Debug("&_SUB &worldquests no label for "..questID)
-			return
-		end
-		
-		local questTitle = C_TaskQuest.GetQuestInfoByQuestID(questID)
-
-		if not questTitle then 
-			ZGV:Debug("&_SUB &worldquests no title for "..questID)
-			return
-		end
-
-		-- current guide is for world quests - focus step or load guide
-		if ZGV.CurrentGuide.headerdata.worldquestzone then
-			local mapid = WorldMapFrame and WorldMapFrame:GetMapID()
-			if ZGV.CurrentGuide.headerdata.worldquestzone == mapid then
-				ZGV:Debug("&_SUB &worldquests switching to "..questID)
-				ZGV:FocusStep(labelstep,true)
-			else
-				ZGV:Debug("&_SUB &worldquests setting to "..questID)
-				ZGV:SetGuide(guide.title,labelstep,false,"silent")
-			end
-		else
-			ZGV:Debug("&_SUB &worldquests show popup for "..questID)
-			add_world_quest_notification(questID,questTitle,guide,labelstep)
-		end
-	else
-		self:Debug("&worldquests won't switch to "..questID)
-	end
-end
-
 local POIcache={}
 function ZGV:CachePOIs()
 	local mapid = ZGV.GetCurrentMapID() or 0
@@ -6411,38 +6358,69 @@ function ZGV.IsLegionOn()
 	return PlayerCompletedQuest(44663) or ZGV:GetPlayerPreciseLevel()>=101
 end
 
+
+local collectors = {
+	[14] = {Horde=11, Alliance=116}, -- arathi highlands warfront
+	[62] = {Horde=118, Alliance=117}, -- darkshore warfront
+}
 function ZGV.InPhase(phasename)
 	if not phasename then return true end
 	if phasename==ZGV.db.profile.fakephase then return true end
 
-	local has_timetravel = ZGV.Parser.ConditionEnv.hasbuff(609811)
+	local level = UnitLevel('player')
+	local faction = UnitFactionGroup("player")
+	local hasbuff = ZGV.Parser.ConditionEnv.hasbuff
+	local state
+	local getmapartid = C_Map.GetMapArtID
+	local getstate = C_ContributionCollector.GetState
 
 	phasename = phasename:lower():gsub(" ","")
 
-	if phasename=="olddarnassus" then
-		return has_timetravel or UnitLevel('player')<110
+	if phasename=="bfa" then
+		if faction=="Horde" then 
+			local quest=ZGV.questsbyid[50769]
+			return PlayerCompletedQuest(50769) or (quest and quest.inlog)
+		else
+			local quest=ZGV.questsbyid[46728]
+			return PlayerCompletedQuest(46728) or (quest and quest.inlog)
+		end
+	elseif phasename=="olddarnassus" then
+		return getmapartid(62)==67
 	elseif phasename=="oldundercity" then
-		return has_timetravel or not PlayerCompletedQuest(52981)
-	elseif phasename=="oldsilithius" then
-		return has_timetravel
+		return getmapartid(18)==19
+	elseif (phasename=="oldsilithius" or phasename=="oldsilithus") then
+		return getmapartid(81)==86
 	elseif phasename=="oldblastedlands" then
-		return has_timetravel or UnitLevel('player')<90
+		return getmapartid(17)==18
 	elseif phasename=="newblastedlands" then
-		return not has_timetravel and UnitLevel('player')>=90
-	elseif phasename=="bfa" then
-		local qa=ZGV.questsbyid[46728]
-		local qh=ZGV.questsbyid[50769]
-		return (PlayerCompletedQuest(46728) or qa and qa.inlog) or (PlayerCompletedQuest(50769) or qh and qh.inlog)
+		return getmapartid(17)==628
+	elseif phasename=="oldpeak" then
+		return hasbuff("spell:609811")
 	elseif phasename=="oldarathi" then
-		return C_Map.GetMapArtID(14)==15
+		return getmapartid(14)==15
 	elseif phasename=="newarathi" then
-		return C_Map.GetMapArtID(14)==1137
-	elseif phasename=="newarathicontrolled" then
-		local state = C_ContributionCollector.GetState(11)
-		return C_Map.GetMapArtID(14)==1137 and (state==2 or state==3)
+		return getmapartid(14)==1137
+	elseif phasename=="olddustwallow" then
+		return getmapartid(70)==75
+	elseif phasename=="newdustwallow" then
+		return getmapartid(70)==498
+	elseif phasename=="warfrontarathiassault" then
+		return getstate(collectors[14][faction])<=2 -- state is the same no matter what timetravel phase you are in
+	elseif phasename=="warfrontarathicontrol" then
+		return getstate(collectors[14][faction])>=3 -- ^
+	elseif phasename=="warfrontdarkshoreassault" then
+		return getstate(collectors[62][faction])<=2 -- ^
+	elseif phasename=="warfrontdarkshorecontrol" then
+		return getstate(collectors[62][faction])>=3 -- ^
 	end
 end
 
+function ZGV:TestPhases()
+	local phases = {"olddarnassus","oldundercity","oldsilithus","oldblastedlands","bfa","oldarathi","newarathi","olddustwallow","newdustwallow","oldpeak","warfrontarathiassault","warfrontarathicontrol","warfrontdarkshoreassault","warfrontdarkshorecontrol"}
+	for i,ph in ipairs(phases) do
+		print(ph,":",ZGV.InPhase(ph) and "|cff00ff00YES" or "|cffff0000NO")
+	end
+end
 
 function ZGV:IsBoostedChar()
 	return IsQuestFlaggedCompleted(34398)

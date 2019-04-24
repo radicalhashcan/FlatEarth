@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ScenarioAMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\A Brewing Storm",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\A Brewing Storm",{
 author="support@zygorguides.com",
 description="This guide will walk you through the \"A Brewing Storm\" scenario. You will need a minimum item level of 425 (480 Heroic) to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},
@@ -80,7 +80,7 @@ step
 Congratulations!
 You have completed the _A Brewing Storm_ scenario
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\A Little Patience",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\A Little Patience",{
 author="support@zygorguides.com",
 description="This guide will walk you through the \"A Little Patience\" scenario. You will need a minimum item level of 425 to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},
@@ -177,7 +177,7 @@ step
 Congratulations!
 You have completed the _A Little Patience_ scenario
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Arena of Annihilation",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\Arena of Annihilation",{
 author="support@zygorguides.com",
 description="This guide will walk you through the \"Arena of Annihilation\" scenario. You will need a minimum item level of 425 to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},
@@ -259,7 +259,7 @@ step
 Congratulations!
 You have completed the _Arena of Annihilation_ scenario
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Assault on Zan'vess",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\Assault on Zan'vess",{
 author="support@zygorguides.com",
 description="This guide will walk you through the \"Assault on Zan'vess\" scenario. You will need a minimum item level of 425 to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},
@@ -327,7 +327,7 @@ step
 Congratulations!
 You have completed the _Assault on Zan'vess_ scenario
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Battle on the High Seas",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\Battle on the High Seas",{
 author="support@zygorguides.com",
 description="This guide will walk you through the \"Battle on the High Seas\" scenario. You will need a minimum item level of 425 (480 Heroic) to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},
@@ -424,7 +424,7 @@ step
 Congratulations!
 You have completed the _Battle on the High Seas_ scenario
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Blood in the Snow",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\Blood in the Snow",{
 author="support@zygorguides.com",
 description="This guide will walk you through the \"Blood in the Snow\" scenario. You will need a minimum item level of 425 (480 Heroic) to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},
@@ -511,7 +511,7 @@ step
 Congratulations!
 You have completed the _Blood in the Snow_ scenario
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Brewmoon Festival",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\Brewmoon Festival",{
 author="support@zygorguides.com",
 description="This guide will walk you through the \"Brewmoon Festival\" scenario. You will need a minimum item level of 425 to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},
@@ -609,7 +609,7 @@ step
 Congratulations!
 You have completed the _Brewmoon Festival_ scenario
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Crypt of Forgotten Kings",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\Crypt of Forgotten Kings",{
 author="support@zygorguides.com",
 description="This guide will walk you through the \"Crypt of Forgotten Kings\" scenario. You will need a minimum item level of 425 (480 Heroic) to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},
@@ -691,7 +691,7 @@ step
 Congratulations!
 You have completed the _Crypt of Forgotten Kings_ scenario
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Dagger in the Dark",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\Dagger in the Dark",{
 author="support@zygorguides.com",
 description="This guide will walk you through the \"Dagger in the Dark\" scenario. You will need a minimum item level of 425 to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},
@@ -761,7 +761,7 @@ step
 Congratulations!
 You have completed the _Dagger in the Dark_ scenario
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Dark Heart of Pandaria",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\Dark Heart of Pandaria",{
 author="support@zygorguides.com",
 description="This guide will walk you through the \"Dark Heart of Pandaria\" scenario. You will need a minimum item level of 425 (480 Heroic) to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},
@@ -829,7 +829,7 @@ step
 Congratulations!
 You have completed the _Dark Heart of Pandaria_ scenario
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Greenstone Village",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\Greenstone Village",{
 author="support@zygorguides.com",
 description="This guide will walk you through the \"Greenstone Village\" scenario. You will need a minimum item level of 425 to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},
@@ -916,7 +916,7 @@ step
 Congratulations!
 You have completed the _Greenstone Village_ scenario
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Lion's Landing",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\Lion's Landing",{
 author="support@zygorguides.com",
 description="This guide will walk you through the \"Lion's Landing\" scenario. You will need a minimum item level of 425 to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},
@@ -1013,7 +1013,7 @@ step
 Congratulations!
 You have completed the _Lion's Landing_ scenario
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\The Secrets of Ragefire",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\The Secrets of Ragefire",{
 author="support@zygorguides.com",
 description="This guide will walk you through the \"The Secrets of Ragefire\" scenario. You will need a minimum item level of 425 (480 Heroic) to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},
@@ -1130,7 +1130,7 @@ step
 Congratulations!
 You have completed the _Secrets of Ragefire_ scenario
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Theramore's Fall",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\Theramore's Fall",{
 author="support@zygorguides.com",
 description="This guide will walk you through the \"Theramore's Fall\" scenario. You will need a minimum item level of 425 to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},
@@ -1234,7 +1234,7 @@ step
 Congratulations!
 You have completed the _Theramore's Fall_ scenario
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Unga Ingoo",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Scenarios\\Unga Ingoo",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Unga Ingoo\" scenario. You will need a minimum item level of 425 to queue for this scenario.",
 keywords={"mists", "of", "pandaria", "scenario"},

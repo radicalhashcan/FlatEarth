@@ -3,147 +3,147 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("TitlesALEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Class Halls\\Archdruid",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Class Halls\\Archdruid",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Archdruid title.",
 },[[
 step
 This title can only be earned on a _Druid_ character
 |tip This title is earned by completing the final Druid Order Hall quest.
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
 |tip The quest you must complete is "The Demi-God's Return."
 Earn the _Archdruid_ title |condition completedq(42055)
 step
 Congratulations!
 You have earned the _Archdruid_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Class Halls\\Archmage",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Class Halls\\Archmage",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Archmage title.",
 },[[
 step
 This title can only be earned on a _Mage_ character
 |tip This title is earned by completing the final Mage Order Hall quest.
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
 |tip The quest you must complete is "Into the Oculus."
 Earn the _Archmage_ title |condition completedq(42734)
 step
 Congratulations!
 You have earned the _Archmage_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Class Halls\\Battlelord",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Class Halls\\Battlelord",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Battlelord title.",
 },[[
 step
 This title can only be earned on a _Warrior_ character
 |tip This title is earned by completing the final Warrior Order Hall quest.
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 |tip The quest you must complete is "The Fate of Hodir."
 Earn the _Battlelord_ title |condition completedq(42974)
 step
 Congratulations!
 You have earned the _Battlelord_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Class Halls\\Deathlord",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Class Halls\\Deathlord",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Deathlord title.",
 },[[
 step
 This title can only be earned on a _Death Knight_ character
 |tip This title is earned by completing the final Death Knight Order Hall quest.
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
 |tip The quest you must complete is "The Fourth Horseman."
 Earn the _Deathlord_ title |condition completedq(43686)
 step
 Congratulations!
 You have earned the _Deathlord_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Class Halls\\Farseer",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Class Halls\\Farseer",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Farseer title.",
 },[[
 step
 This title can only be earned on a _Shaman_ character
 |tip This title is earned by completing the final Shaman Order Hall quest.
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
 |tip The quest you must complete is "Allegiance of Flame."
 Earn the _Farseer_ title |condition completedq(41888)
 step
 Congratulations!
 You have earned the _Farseer_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Class Halls\\Grandmaster",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Class Halls\\Grandmaster",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Grandmaster title.",
 },[[
 step
 This title can only be earned on a _Monk_ character
 |tip This title is earned by completing the final Monk Order Hall quest.
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
 |tip The quest you must complete is "Storm Brew."
 Earn the _Grandmaster_ title |condition completedq(41087)
 step
 Congratulations!
 You have earned the _Grandmaster_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Class Halls\\Guardian of G'Hanir",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Class Halls\\Guardian of G'Hanir",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Guardian of G'Hanir title.",
 },[[
 step
 This title can only be earned on a _Druid_ character with the _Restoration_ spec
 |tip This title is earned by completing an Order Hall quest.
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
 |tip The quest you must complete is "Cleansing the Mother Tree."
 Earn the _Guardian of G'Hanir_ title |condition completedq(41689)
 step
 Congratulations!
 You have earned the _Guardian of G'Hanir_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Class Halls\\High Priest",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Class Halls\\High Priest",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the High Priest title.",
 },[[
 step
 This title can only be earned on a _Priest_ character
 |tip This title is earned by completing the final Priest Order Hall quest.
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
 |tip The quest you must complete is "High Priest of Netherlight."
 Earn the _High Priest_ title |condition completedq(43402)
 step
 Congratulations!
 You have earned the _High Priest_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Class Halls\\Highlord",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Class Halls\\Highlord",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Highlord title.",
 },[[
 step
 This title can only be earned on a _Paladin_ character
 |tip This title is earned by completing the final Paladin Order Hall quest.
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
 |tip The quest you must complete is "Warriors of Light."
 Earn the _Highlord_ title |condition completedq(43697)
 step
 Congratulations!
 You have earned the _Highlord_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Class Halls\\Huntmaster",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Class Halls\\Huntmaster",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Huntmaster title.",
 },[[
 step
 This title can only be earned on a _Hunter_ character
 |tip This title is earned by completing the final Hunter Order Hall quest.
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
 |tip The quest you must complete is "In Defense of Dalaran."
 Earn the _Huntmaster_ title |condition completedq(42659)
 step
 Congratulations!
 You have earned the _Huntmaster_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Class Halls\\The Illidari",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Class Halls\\The Illidari",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning The Illidari title.",
 },[[
@@ -154,49 +154,49 @@ step
 Congratulations!
 You have earned _The Illidari_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Class Halls\\Netherlord",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Class Halls\\Netherlord",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Shadowblade title.",
 },[[
 step
 This title can only be earned on a _Warlock_ character
 |tip This title is earned by completing the final Warlock Order Hall quest.
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
 |tip The quest you must complete is "Selecting a Sixth."
 Earn the _Netherlord_ title |condition completedq(41796)
 step
 Congratulations!
 You have earned the _Netherlord_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Class Halls\\Shadowblade",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Class Halls\\Shadowblade",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Shadowblade title.",
 },[[
 step
 This title can only be earned on a _Rogue_ character
 |tip This title is earned by completing the final Rogue Order Hall quest.
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
 |tip The quest you must complete is "The Imposter."
 Earn the _Shadowblade_ title |condition completedq(37689)
 step
 Congratulations!
 You have earned the _Shadowblade_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Class Halls\\Slayer",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Class Halls\\Slayer",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Slayer title.",
 },[[
 step
 This title can only be earned on a _Demon Hunter_ character
 |tip This title is earned by completing the final Demon Hunter Order Hall quest.
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
 |tip The quest you must complete is "I Am the Slayer!"
 Earn the _Slayer_ title |condition completedq(43186)
 step
 Congratulations!
 You have earned the _Slayer_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Dungeons & Raids\\The Chosen",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Dungeons & Raids\\The Chosen",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Chosen title.",
 },[[
@@ -209,7 +209,7 @@ step
 Congratulations!
 You have earned _The Chosen_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Dungeons & Raids\\The Darkener",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Dungeons & Raids\\The Darkener",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning The Darkener title.",
 },[[
@@ -225,7 +225,7 @@ step
 Congratulations!
 You have earned _The Darkener_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Dungeons & Raids\\The Dreamer",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Dungeons & Raids\\The Dreamer",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning The Dreamer title.",
 },[[
@@ -240,7 +240,7 @@ step
 Congratulations!
 You have earned _The Dreamer_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Dungeons & Raids\\The Tomb Raider",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Dungeons & Raids\\The Tomb Raider",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning The Tomb Raider title.",
 },[[
@@ -263,7 +263,7 @@ step
 Congratulations!
 You have earned _The Tomb Raider_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Dungeons & Raids\\Vengeance Incarnate",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Dungeons & Raids\\Vengeance Incarnate",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Vengeance Incarnate title.",
 },[[
@@ -278,7 +278,7 @@ step
 Congratulations!
 You have earned the _Vengeance Incarnate_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\General\\Crashin' Thrashin'",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\General\\Crashin' Thrashin'",{
 author="support@zygorguides.com",
 description="To earn this title, you will be required to collect 200 toys.",
 },[[
@@ -289,7 +289,7 @@ step
 _Congratulations!_
 You Earned the "Crashin' Thrashin'" Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\General\\The Fabulous",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\General\\The Fabulous",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning The Fabulous title.",
 },[[
@@ -315,13 +315,13 @@ step
 Congratulations!
 You have earned _The Fabulous_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\General\\The Gullible",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\General\\The Gullible",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning The Gullible title.",
 },[[
 step
 In order to earn this title, you will need to have completed the _What a Ripoff!_ achievement
-Click here to load the What a Ripoff! guide |confirm |next "Zygor's Achievement Guides\\Quests\\Legion\\What a Ripoff!"
+Click here to load the What a Ripoff! guide |confirm |next "Achievement Guides\\Quests\\Legion\\What a Ripoff!"
 |tip You may need a group of 2 or 3 in order to kill the objective enemies.
 Earn the _What a Ripoff!_ achievement |achieve 10793
 step
@@ -345,7 +345,7 @@ step
 Congratulations!
 You have earned _The Gullible_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\General\\Legionary",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\General\\Legionary",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Legionary title.",
 },[[
@@ -369,7 +369,7 @@ step
 Congratulations!
 You have earned the _Legionary_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\General\\Lord of the Reins",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\General\\Lord of the Reins",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Lord of the Reins title.",
 },[[
@@ -382,7 +382,7 @@ step
 Congratulations!
 You have earned the _Lord of the Reins_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\General\\Postmaster",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\General\\Postmaster",{
 author="support@zygorguides.com",
 description="Sort 30 partially addressed letters within 60 seconds in the Postmaster's Office to earn this title.",
 },[[
@@ -529,7 +529,7 @@ step
 Congratulations!
 You have earned the _Postmaster_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\General\\Stylist",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\General\\Stylist",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Stylist title.",
 },[[
@@ -541,7 +541,7 @@ step
 Congratulations!
 You have earned the _Stylist_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\General\\Timelord",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\General\\Timelord",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Timelord title.",
 },[[
@@ -553,23 +553,7 @@ step
 Congratulations!
 You have earned the _Timelord_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\General\\The Unrelenting",{
-author="support@zygorguides.com",
-description="This guide will assist you in earning The Unrelenting title.",
-},[[
-step
-This title is to be a reward for Legion Challenge Mode dungeons
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Player versus Player\\Bound by Honor",{
-author="support@zygorguides.com",
-description="This guide will assist you in earning the Bound By Honor title.",
-},[[
-step
-This title is earned by reaching Prestige level 4 in PvP
-However, it has not yet been added to the game
-|tip You gain the ability to prestige once you reach Honor level 50.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Player versus Player\\Fearless Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Player versus Player\\Fearless Gladiator",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Fearless Gladiator title.",
 },[[
@@ -578,19 +562,7 @@ This title is gained by finishing Legion arena PvP Season 2 in the top 0.1%
 |tip You must also win at least 50 games.
 Earn the _Fearless Gladiator_ title |achieve 11014
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Player versus Player\\The Honorable",{
-author="support@zygorguides.com",
-description="This guide will assist you in earning The Honorable title.",
-},[[
-step
-This title is earned by reaching Prestige Level 4 in PvP
-|tip You gain the ability to prestige once you reach Honor level 50.
-Earn _The Honorable_ title |achieve 10995
-step
-Congratulations!
-You have earned _The Honorable_ title!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Player versus Player\\Patron of War",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Player versus Player\\Patron of War",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Patron of War title.",
 },[[
@@ -599,19 +571,7 @@ This title was a reward for watching the Twitch streams of the World of Warcraft
 This title could also be earned if players watched the North American Regionals on October 8th - October 9th 2016
 Players that watched these Twitch streams had to have their Battle.net account connected to their Twitch account
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Player versus Player\\The Prestigious",{
-author="support@zygorguides.com",
-description="This guide will assist you in earning The Prestigious title.",
-},[[
-step
-This title is earned by reaching Prestige Level 9 in PvP
-|tip You gain the ability to prestige once you reach Honor level 50.
-Earn _The Prestigious_ title |achieve 11472
-step
-Congratulations!
-You have earned _The Prestigious_ title!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Player versus Player\\Vindictive Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Player versus Player\\Vindictive Gladiator",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Vindictive Gladiator title.",
 },[[
@@ -620,7 +580,7 @@ This title is gained by finishing Legion arena PvP Season 1 in the top 0.1%
 |tip You must also win at least 50 games.
 Earn the _Vindictive Gladiator_ title |achieve 11012
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Professions\\Archaeology\\The Groundbreaker",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Professions\\Archaeology\\The Groundbreaker",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning The Groundbreaker title.",
 },[[
@@ -637,14 +597,14 @@ step
 Congratulations!
 You have earned _The Groundbreaker_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Professions\\First Aid\\Field Medic",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Legion Titles\\Professions\\First Aid\\Field Medic",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Field Medic title.",
 },[[
 step
 This title is earned by completing the _Field Medic_ achievement
 |tip You must complete all of the wounded NPC quests in the Broken Isles.
-Click here to load the First Aid Quest Line guide |next "Zygor's Profession Guides\\First Aid\\Quest Guides\\Legion First Aid Quest Line"
+Click here to load the First Aid Quest Line guide |next "Profession Guides\\First Aid\\Quest Guides\\Legion First Aid Quest Line"
 Singed Note |achieve 11139/1
 Fevered Plea |achieve 11139/2
 Bloody Note |achieve 11139/3

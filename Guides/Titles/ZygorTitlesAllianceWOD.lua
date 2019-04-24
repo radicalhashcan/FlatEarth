@@ -3,27 +3,27 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("TitlesAWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Defiler's End",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Defiler's End",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning the Defiler's End title.",
 },[[
 step
 This title is a reward for defeating Archimonde on _Mythic_ difficulty
-Click here to load our "Hellfire Citadel - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Mythic"
+Click here to load our "Hellfire Citadel - Mythic" raid guide |confirm |next "Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Mythic"
 |tip Archimonde is the last boss in the Hellfire Citadel raid instance.
 kill Archimonde##91331 |achieve 10043
 step
 Congratulations!
 You have earned the _Defiler's End_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Dockmaster",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Dockmaster",{
 description="This title can no longer be obtained.",
 },[[
 step
 This title was a reward for completing Challenge Master: Iron Docks
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Empire's Twilight",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Empire's Twilight",{
 description="This guide will assist you in achieving the Empire's Twilight title.",
 },[[
 step
@@ -34,21 +34,21 @@ achieve 8965
 step
 Congratulations, you now have the _Empire's Twilight_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Grimrail Suplexer",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Grimrail Suplexer",{
 description="This title can no longer be obtained.",
 },[[
 step
 This title was a reward for completing Challenge Master: Grimrail Depot
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\The Indomitable",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\The Indomitable",{
 description="This title can no longer be obtained.",
 },[[
 step
 This title was a reward for completing Challenge Warlord: Bronze
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Ironbane",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Ironbane",{
 description="This guide will assist you in achieving the Ironbane title.",
 },[[
 step
@@ -59,14 +59,14 @@ achieve 8973
 step
 Congratulations, you now have the _Ironbane_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Lord/Lady of Blackrock",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Lord/Lady of Blackrock",{
 description="This title can no longer be obtained.",
 },[[
 step
 This title was a reward for completing Challenge Master: Upper Blackrock Spire
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\The Mine Master",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\The Mine Master",{
 description="This title is no longer obtainable! It was gained by earning a realm-best time for the Bloodmaul Slag Mines dungeon in Challenge Mode.",
 },[[
 step
@@ -74,7 +74,7 @@ This title is _no longer obtainable_!
 |tip This title was gained by earning a realm-best time for the Bloodmaul Slag Mines dungeon in Challenge Mode.
 Earn the _The Mine Master_ title |achieve 9620
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Savage Hero",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Savage Hero",{
 description="This guide will assist you in achieving the Savage Hero title.",
 },[[
 step
@@ -164,7 +164,7 @@ _Tank_:
 _DPS_:
 |tip Focus dps on boss until skeletons come out then focus all dps on killing one skeleton.
 _Healer_:
-|tip Watch players that stand to close to Omen of Death they will take alot of damage.
+|tip Watch players that stand to close to Omen of Death they will take a lot of damage.
 _All Roles_:
 |tip During Ritual of Bones, focus dps on a single skeleton to break a safe zone in the chain.
 |tip When Ritual of Bones is active don't stand in the purple area created by the skeletons.
@@ -260,35 +260,35 @@ achieve 9619/10 |goto Blackrock Foundry/5 48.8,34.4
 step
 Congratualtions on completing the _Savage Hero_ Title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Scion of Rukhmar",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Scion of Rukhmar",{
 description="This title can no longer be obtained.",
 },[[
 step
 This title was a reward for completing Challenge Master: Skyreach
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Soul Preserver",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Soul Preserver",{
 description="This title can no longer be obtained.",
 },[[
 step
 This title was a reward for completing Challenge Master: Skyreach
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Spiritwalker",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Spiritwalker",{
 description="This title can no longer be obtained.",
 },[[
 step
 This title was a reward for completing Challenge Master: Shadowmoon Burial Grounds
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Violet Guardian",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Dungeons & Raids\\Violet Guardian",{
 description="This title can no longer be obtained.",
 },[[
 step
 This title was a reward for completing Challenge Master: The Everbloom
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Garrisons\\Architect",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Garrisons\\Architect",{
 description="This guide will assist you in achieving the Architect title.",
 },[[
 step
@@ -328,7 +328,7 @@ achieve 9094/4
 step
 Congratulations, you now have the _Architect_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Garrisons\\The Butcher",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Garrisons\\The Butcher",{
 description="This guide will assist you in achieving The Butcher title.",
 },[[
 stickystart "info"
@@ -351,7 +351,7 @@ achieve 9521
 step
 Congratulations, you now have _The Butcher_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Garrisons\\Captain",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Garrisons\\Captain",{
 description="This guide will assist you in achieving the Captain title.",
 },[[
 step
@@ -376,7 +376,7 @@ After completing these 5 achievement you will recieve the achievement "Master of
 achieve 10164
 |tip This achievement rewards the title "Captain".
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Garrisons\\The Commandojack",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Garrisons\\The Commandojack",{
 description="This guide will assist you in achieving the Commandojack title.",
 },[[
 step
@@ -384,7 +384,7 @@ step
 |achieve 9080
 |tip The title and achievement are account wide.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Garrisons\\The Death Stalker",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Garrisons\\The Death Stalker",{
 description="This guide will assist you in achieving The Death Stalker title.",
 },[[
 stickystart "info"
@@ -407,7 +407,7 @@ step
 step
 Congratulations, you now have _The Death Stalker_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Garrisons\\Huojin's Fall",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Garrisons\\Huojin's Fall",{
 description="This guide will assist you in achieving the Huojin's Fall title.",
 },[[
 stickystart "info"
@@ -430,7 +430,7 @@ achieve 9520
 step
 Congratulations, you now have the _Huojin's Fall_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Garrisons\\Killer of Kezan",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Garrisons\\Killer of Kezan",{
 description="This guide will assist you in achieving the Killer of Kezan title.",
 },[[
 stickystart "info"
@@ -453,7 +453,7 @@ achieve 9518
 step
 Congratulations, you now have the _Killer of Kezan_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Garrisons\\Lord/Lady of War",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Garrisons\\Lord/Lady of War",{
 description="This guide will assist you in achieving the Lord/Lady of War title.",
 },[[
 step
@@ -485,7 +485,7 @@ step
 talk Kharg##87311
 turnin Fight, Kill, Salute!##37083 |goto Nagrand D 33.1,38.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Garrisons\\Lumberjack",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Garrisons\\Lumberjack",{
 description="This guide will assist you in achieving the Lumberjack title.",
 },[[
 step
@@ -493,7 +493,7 @@ step
 achieve 9077
 |tip The title and achievement are account wide.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Garrisons\\Orcslayer",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Garrisons\\Orcslayer",{
 description="This guide will assist you in achieving the Orcslayer title.",
 },[[
 stickystart "info"
@@ -516,7 +516,7 @@ achieve 9519
 step
 Congratulations, you now have the _Orcslayer_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Garrisons\\Slayer of Sin'dorei",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Garrisons\\Slayer of Sin'dorei",{
 description="This guide will assist you in achieving the Slayer of Sin'dorei title.",
 },[[
 stickystart "info"
@@ -539,7 +539,7 @@ step
 step
 Congratulations, you now have the _Slayer of Sin'dorei_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Garrisons\\Stable Master",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Garrisons\\Stable Master",{
 description="This guide will assist you in achieving the Stable Master title.",
 },[[
 step
@@ -605,7 +605,7 @@ step
 Congratulations, you now have the _Stable Master_ title! |only if achieved(9540)
 You must have a level 3 Stables to gain this title! |only if default
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Garrisons\\Troll Hunter",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Garrisons\\Troll Hunter",{
 description="This guide will assist you in achieving the Troll Hunter title.",
 },[[
 stickystart "info"
@@ -628,7 +628,7 @@ achieve 9522
 step
 Congratulations, you now have the _Troll Hunter_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Garrisons\\Warlord of Draenor",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Garrisons\\Warlord of Draenor",{
 description="This guide will assist you in achieving the Warlord of Draenor title.",
 },[[
 step
@@ -665,7 +665,7 @@ achieve 9738
 step
 Congratulations, you now have the _Warlord of Draenor_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\General\\Field Photographer",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\General\\Field Photographer",{
 description="This guide will walk you through obtaining the Field Photographer title.",
 },[[
 stickystart "Camera"
@@ -763,7 +763,7 @@ Use your Camera to take a Selfie |use SELFIE Camera MKI##122637
 step
 Congratulations, you are now a field photographer!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\General\\Jenkins",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\General\\Jenkins",{
 description="This guide will assist you in achieving the Jenkins title.",
 },[[
 stickystart "info"
@@ -782,7 +782,7 @@ This title is gained by helping Leeroy Jenkins recover his Devout shoulders in U
 step
 Congratulations, you now have the _Jenkins_ title and Leeroy Jenkins is now available as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\General\\Predator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\General\\Predator",{
 description="This guide will assist you in achieving the Predator title.",
 },[[
 step
@@ -812,49 +812,49 @@ kill Xemirkol##96235
 |tip You will probably need a group to kill this boss.
 |tip Face your back towards a wall so you don't get knocked off the edge.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Player versus Player\\Defender of the Alliance",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Player versus Player\\Defender of the Alliance",{
 description="This title can no longer be obtained.",
 },[[
 step
 This title was a reward for placing in the top 10% of rated battlegrounds in Warlords of Draenor PvP season 1 ,2, or 3
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Player versus Player\\Guardian of the Alliance",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Player versus Player\\Guardian of the Alliance",{
 description="This title can no longer be obtained.",
 },[[
 step
 This title was a reward for placing in the top 3% of rated battlegrounds in Warlords of Draenor PvP season 1 ,2, or 3
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Player versus Player\\Primal Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Player versus Player\\Primal Gladiator",{
 description="This title can no longer be obtained.",
 },[[
 step
 This title was a reward for placing in the top 0.1% of arenas in Warlords of Draenor PvP season 1
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Player versus Player\\Soldier of the Alliance",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Player versus Player\\Soldier of the Alliance",{
 description="This title can no longer be obtained.",
 },[[
 step
 This title was a reward for placing in the top 35% of rated battlegrounds in Warlords of Draenor PvP season 1 ,2, or 3
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Player versus Player\\Warmongering Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Player versus Player\\Warmongering Gladiator",{
 description="This title can no longer be obtained.",
 },[[
 step
 This title was a reward for placing in the top 0.1% of arenas in Warlords of Draenor PvP season 3
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Player versus Player\\Wild Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Player versus Player\\Wild Gladiator",{
 description="This title can no longer be obtained.",
 },[[
 step
 This title was a reward for placing in the top 0.1% of arenas in Warlords of Draenor PvP season 2
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Professions\\Artisan",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Professions\\Artisan",{
 description="This guide will assist you in achieving the Artisan title.",
 },[[
 step
@@ -863,7 +863,7 @@ achieve 9464
 step
 Congratulations, you now have the _Artisan_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Quests\\Blood Champion",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Quests\\Blood Champion",{
 description="This guide will assist you in achieving the Blood Champion title.",
 },[[
 step
@@ -873,7 +873,7 @@ To receive this title you must complete the quest "The Champion of Blood"
 |tip To find out how to complete this quest refer too our Garrison Campaign guides.
 condition completedq(36222)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Quests\\of the Jungle",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Quests\\of the Jungle",{
 description="This guide will assist you in achieving the of the Jungle title.",
 },[[
 step
@@ -907,7 +907,7 @@ After completeing these 8 achievements you will gain the achievement "Rumble in 
 achieve 10265
 |tip This achievement rewards the title "of the Jungle".
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Reputations\\Conservationist",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Reputations\\Conservationist",{
 description="This guide will assist you in achieving the Conservationist title.",
 },[[
 step
@@ -988,7 +988,7 @@ accept Xelganak's Stinger##37226 |or |only if itemcount(118661) >= 1 |instant |o
 accept Vileclaw's Claw##37520 |or |only if itemcount(120172) >= 1 |instant |or
 _Click_ to return to the menu |confirm always |next "menu" |only if default
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Reputations\\Peacekeeper",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Reputations\\Peacekeeper",{
 description="This guide will assist you in achieving the Peacekeeper title.",
 },[[
 step
@@ -999,7 +999,7 @@ step
 achieve 9476
 After completing this achievement you will be rewarded the title "Peacekeeper"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Reputations\\Prelate",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Reputations\\Prelate",{
 description="This guide will assist you in achieving the Prelate title.",
 },[[
 step
@@ -1010,7 +1010,7 @@ step
 achieve 9470
 After completing this achievement you will be rewarded the title "Prelate"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Reputations\\Sword of Wrynn",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Reputations\\Sword of Wrynn",{
 description="This guide will assist you in achieving the Sword of Wrynn title.",
 },[[
 step
@@ -1021,7 +1021,7 @@ step
 achieve 9474
 After completing this achievement you will be rewarded the title "Sword of Wrynn"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\Reputations\\Talon King/Queen",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\Reputations\\Talon King/Queen",{
 description="This guide will assist you in achieving the Talon King/Queen title.",
 },[[
 stickystart "info"
@@ -1060,7 +1060,7 @@ label "achieve"
 step
 Congratulations, you now have the _Talon King_ or _Talon Queen_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Warlords of Draenor Titles\\World Events\\Tarren Mill Terror",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Warlords of Draenor Titles\\World Events\\Tarren Mill Terror",{
 description="This title can no longer be obtained.",
 },[[
 step

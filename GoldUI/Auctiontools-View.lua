@@ -260,8 +260,8 @@ function Appraiser:CreateMainFrame()
 	Appraiser.Inventory_Frame = self:MakeInventoryTable()
 	Appraiser.Buy_Frame = self:MakeBuyTable()
 
-	Appraiser:CreateSystemTab("Inventory","Sell")
-	Appraiser:CreateSystemTab("Buy","Buy")
+	Appraiser.InventoryTab = Appraiser:CreateSystemTab("Inventory","Sell")
+	Appraiser.BuyTab = Appraiser:CreateSystemTab("Buy","Buy")
 
 	MF.HelpPageContainer = CHAIN(CreateFrame("Frame", nil, self.MainFrame.ContentFrame ))
 		:SetPoint("TOPLEFT")
@@ -307,7 +307,7 @@ function Appraiser:CreateMainFrame()
 	Appraiser:ApplySkin()
 end
 	
-function Appraiser:MakeInventoryTable()	
+function Appraiser:MakeInventoryTable()
 	local container = CHAIN(CreateFrame("Frame", "ZA_Sell_Frame", self.MainFrame.ContentFrame ))
 		:SetPoint("TOPLEFT")
 		:SetPoint("BOTTOMRIGHT")
@@ -817,7 +817,7 @@ function Appraiser:MakeInventoryTable()
 	return container
 end
 
-function Appraiser:MakeBuyTable()	
+function Appraiser:MakeBuyTable()
 	local container = CHAIN(CreateFrame("Frame", "ZA_Buy_Frame", self.MainFrame.ContentFrame ))
 		:SetPoint("TOPLEFT")
 		:SetPoint("BOTTOMRIGHT")
@@ -1150,7 +1150,7 @@ function Appraiser:MakeBuyTable()
 		:SetText("Item name")
 		.__END
 		containerSearch.searchname = CHAIN(ui:Create("EditBox",containerSearch))
-			:SetSize(314,17)
+			:SetSize(254,17)
 			:SetPoint("LEFT",containerSearch.searchnamelabel ,"RIGHT",5,0)
 			:SetText("")
 			:SetBackdropColor(0,0,0,1)
@@ -1161,6 +1161,15 @@ function Appraiser:MakeBuyTable()
 			:SetScript("OnTabPressed", function() Appraiser:TabKeyNavigation(containerSearch,TAB_NAVIGATION_SEARCH,"searchname") end)
 			:SetScript("OnEnterPressed",function(me) Appraiser:FindMatchingAuctions() end)
 			.__END
+		containerSearch.searchExact = CHAIN(ui:Create("ToggleButton",containerSearch))
+			:SetPoint("LEFT",containerSearch.searchname,"RIGHT",9,0) 
+			:SetFont(FONT,12)
+			:SetText("Exact")
+			:SetToggle(ZGV.db.profile.atbuyexact)
+		.__END
+		containerSearch.searchExact:RegisterToggleCallback(function()
+			ZGV.db.profile.atbuyexact = containerSearch.searchExact:IsChecked()
+		end)
 
 	containerSearch.pricelabel = CHAIN(containerSearch:CreateFontString())
 		:SetFont(FONT,12)
@@ -1286,6 +1295,15 @@ function Appraiser:MakeBuyTable()
 			end)
 		--]]
 		:SetScript("OnLeave",function(self) GameTooltip:Hide() end)
+	.__END
+	containerSearch.searchbuttonAbort = CHAIN(ui:Create("Button",containerSearch,nil,2))
+		:SetSize(105,20)
+		:SetPoint("TOPRIGHT",containerSearch.SearchResultList ,"BOTTOMRIGHT",0,-6)
+		:SetSize(100,20)
+		:SetText("Abort")
+		:SetFont(FONTBOLD,14)
+		:SetScript("OnClick",function(me) Appraiser:AbortManualScan() end)
+		:Hide()
 	.__END
 
 	container.playergold = CHAIN(container:CreateFontString())
@@ -1616,7 +1634,7 @@ function Appraiser:OnNonZygorClick()
 	AuctionFrameCloseButton:Show()
 	AuctionPortraitTexture:Show()
 	if not IsShiftKeyDown() then
-		self:DeactivateBuyItem()
+		--self:DeactivateBuyItem()
 		self:AbortManualScan()
 		Scan:SetState("SS_IDLE")
 	end
@@ -1661,7 +1679,53 @@ function Appraiser:CreateSystemTab(target,text,num)
 	tab.ZygorTarget = target
 	PanelTemplates_SetNumTabs(AuctionFrame, n)
 	PanelTemplates_EnableTab(AuctionFrame, n)
+
+	return tab
 end
+
+function Appraiser:HideSystemTabs()
+	local last_zygor
+
+	for i=1, AuctionFrame.numTabs do
+		if _G["AuctionFrameTab"..i].ZygorTab then
+			last_zygor = i
+			_G["AuctionFrameTab"..i]:Hide()
+		end
+	end
+
+	if last_zygor and last_zygor~=AuctionFrame.numTabs then
+		if _G["AuctionFrameTab"..(last_zygor+1)] then
+			_G["AuctionFrameTab"..(last_zygor+1)]:SetPoint("LEFT", _G["AuctionFrameTab"..last_zygor-1], "RIGHT", -8, 0)
+		end
+	end
+
+	AuctionFrameTab1:Click()
+end
+
+function Appraiser:ShowSystemTabs()
+	local last_zygor
+
+	if not Appraiser.InventoryTab then
+		Appraiser.InventoryTab = Appraiser:CreateSystemTab("Inventory","Sell")
+	end
+	if not Appraiser.BuyTab then
+		Appraiser.BuyTab = Appraiser:CreateSystemTab("Buy","Buy")
+	end
+
+	for i=1, AuctionFrame.numTabs do
+		if _G["AuctionFrameTab"..i].ZygorTab and not _G["AuctionFrameTab"..i]:IsVisible() then
+			last_zygor = i
+			_G["AuctionFrameTab"..i]:Show()
+		end
+	end
+
+	if last_zygor and last_zygor~=AuctionFrame.numTabs then
+		if _G["AuctionFrameTab"..last_zygor+1] then
+			_G["AuctionFrameTab"..last_zygor+1]:SetPoint("LEFT", _G["AuctionFrameTab"..last_zygor], "RIGHT", -8, 0)
+		end
+	end
+end
+
 
 
 function Appraiser:TabKeyNavigation(parent,orderarray,field)
@@ -1684,7 +1748,7 @@ function Appraiser:TabKeyNavigation(parent,orderarray,field)
 	end
 end
 
-function Appraiser:ShowHelpPage()	
+function Appraiser:ShowHelpPage()
 	Appraiser.MainFrame.HelpPage:Show()
 	if Appraiser.Buy_Frame:IsVisible() then
 		Appraiser.MainFrame.HelpPageContent:SetText(Appraiser.BuyTabInfo)

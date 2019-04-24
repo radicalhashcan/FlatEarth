@@ -23,6 +23,7 @@ local Scan=ZGVG.Scan
 local Proxy=Scan.Proxy
 
 
+
 function Appraiser.sort_buy(a,b)
 	if not a or not b then return false end
 	if not a.name or not b.name then return false end
@@ -55,7 +56,7 @@ function Appraiser.sort_shoppingAddAuctions(a,b)
 end
 
 function Appraiser:GetShoppingAuctions()
-	local ex_selected = 	Appraiser.SelectedBuyAuction
+	local ex_selected = Appraiser.SelectedBuyAuction
 	if Appraiser.SelectedShoppingItem and Appraiser.RawDataTable[Appraiser.SelectedShoppingItem.itemid] then
 		Appraiser.ShoppingAuctions = {}
 		for i,v in pairs(Appraiser.RawDataTable[Appraiser.SelectedShoppingItem.itemid]) do
@@ -283,16 +284,16 @@ function Appraiser:GetShoppingItemStatus(invItem)
 	end
 
 	if price > 0 then
-		text = ZGV.GetMoneyString(price,3)
+		text = ZGV.GetMoneyString(price)
 	else
 		text = "No results"
 	end
 
 	if status=="ok" then
-		text = count.." for "..ZGV.GetMoneyString(price,3)
+		text = count.." for "..ZGV.GetMoneyString(price)
 		alpha = 1
-		tooltip = "Buy "..count.." for "..ZGV.GetMoneyString(price,3)
-		if tonumber(count)>1 then	tooltip = tooltip.." ("..ZGV.GetMoneyString(each,3).." ea)" end
+		tooltip = "Buy "..count.." for "..ZGV.GetMoneyString(price)
+		if tonumber(count)>1 then	tooltip = tooltip.." ("..ZGV.GetMoneyString(each).." ea)" end
 
 	elseif status=="noresults" then
 		text = "No results"
@@ -300,13 +301,13 @@ function Appraiser:GetShoppingItemStatus(invItem)
 	elseif status=="nodeals" then
 		text = "No deals"
 		alpha = 1
-		tooltip = "No deals were found for this item\nDeal threshold: "..ZGV.GetMoneyString(price,3).. " ea"
+		tooltip = "No deals were found for this item\nDeal threshold: "..ZGV.GetMoneyString(price).. " ea"
 	end
 
 	if not invItem.updated or (invItem.updated and time()-invItem.updated>self.OutdatedTime) or status=="old" then
 		alpha = 0.2
 		tooltip = "Click to update price"
-		text = (each>0 and ZGV.GetMoneyString(each,3,true).." ea" or text)
+		text = (each>0 and ZGV.GetMoneyString(each,"|cffffffff").." ea" or text)
 		if invItem.active and time()-invItem.updated>10 then
 			invItem.active = false
 			self:DeactivateBuyItem()
@@ -328,13 +329,17 @@ function Appraiser:DeactivateBuyItem()
 end
 
 function Appraiser:ActivateBuyItem(item)
+	Appraiser:AbortManualScan()
+
+	--[[
 	-- do not switch items while any scan is running
 	if ZGV.Gold.Scan.state~="SS_IDLE" then return end
-
+	
 	if Appraiser.ActiveSearch then return end
 	if Appraiser.ActiveSearchName then return end
 	if Appraiser.GoToPage then return end
 	if Appraiser.manualBuyScanning then return end
+	--]]
 
 	Appraiser.SelectedBuyAuction = nil
 
@@ -536,6 +541,16 @@ function Appraiser:ExecuteBuyout()
 			Appraiser:Update()
 			item.rescanned = nil
 		end
+	elseif not item.rescanned then
+		-- it is not this item, but user may have switched auctions while buy was not active.
+		-- we have cached data, so lets just requery only this page
+		ZGV:Print("Auction not found! Refreshing one page of auction results. Please retry.")
+		item.rescanned = true
+		Proxy:GoToPage(item_page)
+		Scan.queried_by_name = Proxy.lastQuery:Get("name")
+		Appraiser.ActiveSearch = item.itemid
+		Appraiser.ActiveSearchName = item.name
+		Appraiser:Update()
 	else
 		-- we already did a quick rescan of current page, and item is still not here.
 		-- so, do a full rescan
@@ -567,9 +582,9 @@ function Appraiser:SetBuyoutHistoricalLabels()
 	
 	local trend = ZGV.Gold.servertrends and ZGV.Gold.servertrends.items[itemid]
 	if trend then
-		histlow = ZGV.GetMoneyString(trend.p_lo*countForSellCalc,3) or "unknown"
-		histmed = ZGV.GetMoneyString(trend.p_md*countForSellCalc,3) or "unknown"
-		histhigh = ZGV.GetMoneyString(trend.p_hi*countForSellCalc,3) or "unknown"
+		histlow = ZGV.GetMoneyString(trend.p_lo*countForSellCalc) or "unknown"
+		histmed = ZGV.GetMoneyString(trend.p_md*countForSellCalc) or "unknown"
+		histhigh = ZGV.GetMoneyString(trend.p_hi*countForSellCalc) or "unknown"
 		estval = ZGV.GetMoneyString(selling_price) or "unknown"
 	else
 		p_lo,p_md,p_hi,demand,sell = "unknown","unknown","unknown","unknown","unknown"
@@ -595,7 +610,7 @@ function Appraiser:WipeBuyoutHistoricalLabels()
 	--for i,v in pairs(Appraiser.Buy_Frame.ShoppingAuctionList.rows) do if v.item then v.item.active = false end end
 end
 
-function Appraiser:SetBuyoutLabels() 
+function Appraiser:SetBuyoutLabels()
 	if not Appraiser.SelectedShoppingItem then 
 		Appraiser.Buy_Frame.nextbuyout:SetText("n/a")
 		return 
@@ -614,10 +629,10 @@ function Appraiser:SetBuyoutLabels()
 
 	if priceMax then
 		Appraiser.Buy_Frame.extrainfolabel:Show()
-		Appraiser.Buy_Frame.extrainfolabel:SetText("Defined max price: "..ZGV.GetMoneyString(tonumber(priceMax),3))
+		Appraiser.Buy_Frame.extrainfolabel:SetText("Defined max price: "..ZGV.GetMoneyString(tonumber(priceMax)))
 	--elseif dealPrice then
 	--	Appraiser.Buy_Frame.extrainfolabel:Show()
-	--	Appraiser.Buy_Frame.extrainfolabel:SetText("Deal max price: "..ZGV.GetMoneyString(tonumber(dealPrice),3))
+	--	Appraiser.Buy_Frame.extrainfolabel:SetText("Deal max price: "..ZGV.GetMoneyString(tonumber(dealPrice)))
 	else
 		Appraiser.Buy_Frame.extrainfolabel:Hide()
 	end
@@ -628,7 +643,7 @@ function Appraiser:SetBuyoutLabels()
 	end
 	local itemBuy = Appraiser.RawDataTable[itemid][Appraiser.SelectedShoppingItem.buyoutindex]
 	if itemBuy then
-		Appraiser.Buy_Frame.nextbuyout:SetText(itemBuy[1].." for "..ZGV.GetMoneyString(tonumber(itemBuy[2]),3))
+		Appraiser.Buy_Frame.nextbuyout:SetText(itemBuy[1].." for "..ZGV.GetMoneyString(tonumber(itemBuy[2])))
 	else
 		Appraiser.Buy_Frame.nextbuyout:SetText("No deals found")
 	end
@@ -647,14 +662,14 @@ function Appraiser:SaveSearchItem(item)
 	Appraiser:AddItemToBuy(ZGV.ItemLink.GetItemID(item.itemlink),count,Appraiser.ShoppingModes.MANUAL,priceMax,item.itemlink,nil)
 end
 
-function Appraiser:WipeBuyoutLabels() 
+function Appraiser:WipeBuyoutLabels()
 	Appraiser.Buy_Frame.nextbuyout:SetText("n/a")
 	Appraiser.Buy_Frame.amountbuyout:SetText("")
 end
 
+Appraiser.ShoppingAddAuctions = {}
 function Appraiser:GetScannedItems()
 	if Appraiser.ActiveShoppingAddItem and ZGV.Gold.Scan.FoundInScan and ZGV.Gold.Scan.FoundInScan[Appraiser.ActiveShoppingAddItem] then
-		Appraiser.ShoppingAddAuctions = {}
 		for _,itemlink in pairs(ZGV.Gold.Scan.FoundInScan[Appraiser.ActiveShoppingAddItem]) do
 			local name, link, quality, _, _, _, _, _, _, icon = ZGV:GetItemInfo(itemlink)
 
@@ -664,11 +679,37 @@ function Appraiser:GetScannedItems()
 				quality = BattlePetRarity
 			end
 
-			table.insert(Appraiser.ShoppingAddAuctions,{itemlink=itemlink,name=name,quality=tonumber(quality),icon=icon})
+			if not Appraiser.FoundQuickResults[itemlink] then
+				table.insert(Appraiser.ShoppingAddAuctions,{itemlink=itemlink,name=name,quality=tonumber(quality),icon=icon})
+			end
 		end
 		Appraiser.ActiveShoppingAddItem = nil
 		Appraiser:Update()
 	end	
+end
+
+function Appraiser:InitQuickSearch()
+	ZGV.db.global.quicksearch = ZGV.db.global.quicksearch or {}
+	for i,v in pairs(Appraiser.QuickSearch) do
+		if not ZGV.db.global.quicksearch[v] then
+			local itemName, itemLink, itemRarity, _, _, _, _, _, _, itemIcon = ZGV:GetItemInfo(v)
+			if itemLink then
+				ZGV.db.global.quicksearch[v] = {name=itemName:lower(),link=itemLink,quality=tonumber(itemRarity), icon=itemIcon}
+			end
+		end
+	end
+end
+
+Appraiser.FoundQuickResults = {}
+function Appraiser:FindQuickSearch(name)
+	table.wipe(Appraiser.FoundQuickResults)
+	name = name:lower()
+	for i,v in pairs(ZGV.db.global.quicksearch) do
+		if v.name:match(name) then
+			Appraiser.FoundQuickResults[v.link]=true
+			table.insert(Appraiser.ShoppingAddAuctions,{itemlink=v.link,name=v.name,quality=v.quality,icon=v.icon,quick=true})
+		end
+	end
 end
 
 function Appraiser:FindMatchingAuctions()
@@ -677,14 +718,23 @@ function Appraiser:FindMatchingAuctions()
 	local name = Appraiser.Buy_Frame.containerSearch.searchname:GetText()
 	Appraiser.Buy_Frame.containerSearch.searchname:ClearFocus()
 
+	table.wipe(Appraiser.ShoppingAddAuctions)
+
 	if name:match("item:(%d+)") then
 		-- we got itemlink
 		ZGV.Gold.Scan:ScanByLink(name)
 		Appraiser.ActiveShoppingAddItem=name
 	elseif name~="" then
-		ZGV.Gold.Scan:ScanByPartialName(name)
-		Appraiser.ActiveShoppingAddItem=name
+		if ZGV.db.profile.atbuyexact then
+			ZGV.Gold.Scan:ScanLookupByExact(name)
+			Appraiser.ActiveShoppingAddItem=name
+		else
+			ZGV.Gold.Scan:ScanByPartialName(name)
+			Appraiser.ActiveShoppingAddItem=name
+		end
 	end
+
+	Appraiser:FindQuickSearch(name)
 end
 
 function Appraiser:InsertSearchLink(text)
@@ -717,7 +767,7 @@ function Appraiser:SetBuyoutToAuction(row)   -- == row:OnClick
 	--Appraiser:FindNextBuyout(row.auction.item,true)
 end
 
-function Appraiser:ResetBuyoutToAuction() 
+function Appraiser:ResetBuyoutToAuction()
 	Appraiser.SelectedBuyAuction = nil
 	--for i,aucItem in ipairs(self.ShoppingAuctions) do aucItem.active=false end
 	Appraiser:FindNextBuyout(Appraiser.SelectedShoppingItem)
@@ -811,7 +861,10 @@ function Appraiser:SetBuyoutToAuctionByIndex(index)
 				ZGV:Debug("Focused nicely on the auction, data matched.")
 			elseif focus=="FOC_NOFOCUS" then
 				ZGV:Debug("Can't focus. Need to rescan.")
-				self:ActivateBuyItem(self.SelectedShoppingItem)
+				--self:ActivateBuyItem(self.SelectedShoppingItem)
+				-- don't do full rescan, just go to page we have it recorded on
+				local item_page = math.floor((auc.buyoutindex-1)/50)
+				Proxy:GoToPage(item_page)
 			end
 
 			--[[

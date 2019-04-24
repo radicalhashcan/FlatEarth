@@ -273,6 +273,8 @@ data.basenodes.borders = {
 		"Tiragarde Sound/0 43.82,24.00",
 		"Tiragarde Sound/0 37.62,22.61",
 
+		"Tiragarde Sound/0 99.55,47.62 -x- Tol Dagor Isle/0 4.42,84.04 {title:Enter the Garrison}",
+
 	-- Zandalar
 
 		"Zuldazar/0 46.15,20.37 -x- Nazmir/0 31.13,93.94",

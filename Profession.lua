@@ -73,8 +73,8 @@ ZGVP.tradeskills = {
 		[373] = {name="Draenor Jewelcrafting", skill=2519},
 		[809] = {name="Pandaria Jewelcrafting", skill=2520},
 		[811] = {name="Cataclysm Jewelcrafting", skill=2521},
-		--  id:"2522,"name":"Northrend Jewelcrafting"
-		--  id:"2523,"name":"Outland Jewelcrafting"
+		[813] = {name="Northrend Jewelcrafting", skill=2522},
+		[815] = {name="Outland Jewelcrafting", skill=2523},
 		[372] = {name="Jewelcrafting", skill=2524},
 	}},
 	[165] = {name="Leatherworking",crafting=true,subs={
@@ -100,17 +100,17 @@ ZGVP.tradeskills = {
 	[182] = {name="Herbalism",subs={
 		[1029] = {name="Zandalari Herbalism", skill=2549},
 		[456] = {name="Legion Herbalism", skill=2550},
-		-- id:2551,"name":"Draenor Herbalism"
-		-- id:2552,"name":"Pandaria Herbalism"
-		-- id:2553,"name":"Cataclysm Herbalism"
-		-- id:2554,"name":"Northrend Herbalism"
-		-- id:2555,"name":"Outland Herbalism"
+		[1034] = {name="Draenor Herbalism", skill=2551},
+		[1036] = {name="Pandaria Herbalism", skill=2552},
+		[1038] = {name="Cataclysm Herbalism", skill=2553},
+		[1040] = {name="Northrend Herbalism", skill=2554},
+		[1042] = {name="Outland Herbalism", skill=2555},
 		[1044] = {name="Herbalism", skill=2556},
 	}},
 	[186] = {name="Mining",crafting=true,subs={
 		[1065] = {name="Zandalari Mining", skill=2565},
 		[425] =  {name="Legion Mining", skill=2566},
-		-- id:2567,"name":"Draenor Mining"
+		[1068] =  {name="Draenor Mining", skill=2567},
 		[1070] = {name="Pandaria Mining", skill=2568},
 		[1072] = {name="Cataclysm Mining", skill=2569},
 		[1074] = {name="Northrend Mining", skill=2570},
@@ -120,13 +120,13 @@ ZGVP.tradeskills = {
 	[393] = {name="Skinning",subs={
 		[1046] = {name="Zandalari Skinning", skill=2557},
 		[459] = {name="Legion Skinning", skill=2558},
-		-- id:2560,"name":"Pandaria Skinning"
-		-- id:2561,"name":"Cataclysm Skinning"
-		-- id:2562,"name":"Northrend Skinning"
-		-- id:2563,"name":"Outland Skinning"
+		[1052] = {name="Pandaria Skinning", skill=2560},
+		[1054] = {name="Cataclysm Skinning", skill=2561},
+		[1056] = {name="Northrend Skinning", skill=2562},
+		[1058] = {name="Outland Skinning", skill=2563},
 		[1060] = {name="Skinning", skill=2564},
 	}},
-	[794] = {name="Archaeology",subs={
+	[794] = {name="Archaeology",subs={ -- needs special handling
 		[794] = {name="Archaeology", skill=794},
 	}},
 	[185] = {name="Cooking",crafting=true,subs={
@@ -138,6 +138,12 @@ ZGVP.tradeskills = {
 		[74] = {name="Northrend Cooking", skill=2546},
 		[73] = {name="Outland Cooking", skill=2547},
 		[72] = {name="Cooking", skill=2548},
+		[64] = {name="Way of the Grill", skill=975},
+		[65] = {name="Way of the Wok", skill=976},
+		[66] = {name="Way of the Pot", skill=977},
+		[67] = {name="Way of the Steamer", skill=978},
+		[68] = {name="Way of the Oven", skill=979},
+		[69] = {name="Way of the Brew", skill=980},
 	}},
 	[356] = {name="Fishing",subs={
 		[1114] = {name="Zandalari Fishing", skill=2585},
@@ -183,8 +189,8 @@ setmetatable(ZGV.Professions.LocaleSkillsR,{__index=function(t,q) return q end})
 ZGVP.tradeskillsIdByName = {}
 for id,data in pairs(ZGVP.tradeskills) do 
 	ZGVP.tradeskillsIdByName[data.name] = id 
-	for sid,sname in pairs(data.subs) do
-		ZGVP.tradeskillsIdByName[sname] = sid 
+	for sid,sdata in pairs(data.subs) do
+		ZGVP.tradeskillsIdByName[sdata.name] = sid 
 	end
 end
 
@@ -222,17 +228,17 @@ function ZGV:CacheSkills_Queued()
 
 		if Goldguide and ZGVP.tradeskills[skillline] and ZGVP.tradeskills[skillline].crafting then Goldguide.knows_crafting = true end-- this is a crafting skill, mark for gold guide that user can craft something
 
-		--[[ -- nope, even core skills need to be handled via subskills, as GetProfessionInfo now returns info about highest tier only
-		local name = ZGVP.tradeskills[skillline] and ZGVP.tradeskills[skillline].name
-		ZGVP.SkillsKnown[name] = ZGVP.SkillsKnown[name] or {}
-		local pro = ZGVP.SkillsKnown[name]
+		if skillline == 794 then -- archeology special handling as it is not visible using C_TradeSkillUI.GetCategoryInfo later
+			local name = ZGVP.tradeskills[skillline] and ZGVP.tradeskills[skillline].name
+			ZGVP.SkillsKnown[name] = ZGVP.SkillsKnown[name] or {}
+			local pro = ZGVP.SkillsKnown[name]
+			pro.level = rank
+			pro.max = maxRank
+			pro.active = true
+			pro.skillID = skillline
+			pro.name = name
+		end
 
-		pro.level = rank
-		pro.max = maxRank
-		pro.active = true
-		pro.skillID = skillline
-		pro.name = name
-		--]]
 
 		cacheskill_lines[skillline] = true
 		cacheskill_core[skillline] = true
@@ -347,6 +353,10 @@ end
 function ZGVP:GetSkill(name)
 	if not name then return ZGV.db.char.SkillsKnown[""] end
 
+	-- handle aliases : legion_alchemy => Legion Alchemy
+	name = name:gsub("_"," "):gsub("(%a)([%w]*)", function(first,rest) return first:upper()..rest:lower() end)
+
+
 	if ZGV.db.profile.fakeskills[name] then
 		return ZGV.db.profile.fakeskills[name] -- faked value
 	elseif ZGV.db.char.SkillsKnown[name] then
@@ -429,7 +439,19 @@ end
 local pattern = "Skill (%d+) increased from (%d+) to (%d+)"
 local function UpdateSkillConsole(_,_,msg)
 	local id,from,to = msg:match(pattern)
-	if id and to then
+
+	if id == 794 then -- archeology special handling
+		local _, _, arch = GetProfessions()
+		local name, _, rank, maxRank = GetProfessionInfo(arch)
+		ZGVP.SkillsKnown[name] = ZGVP.SkillsKnown[name] or {}
+		local pro = ZGVP.SkillsKnown[name]
+		pro.level = rank
+		pro.max = maxRank
+		pro.active = true
+		pro.skillID = id
+		pro.name = name
+
+	elseif id and to then
 		id=tonumber(id)
 		to=tonumber(to)
 

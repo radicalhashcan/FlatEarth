@@ -6,6 +6,7 @@
 	<Script file="ServerTrends.lua" />
 
 	<Script file="Auctiontools-Core.lua" />
+	<Script file="Auctiontools-Data.lua" />
 	<Script file="Auctiontools-View.lua" />
 	<Script file="Auctiontools-Buy.lua" />
 	<Script file="Auctiontools-Sell.lua" />

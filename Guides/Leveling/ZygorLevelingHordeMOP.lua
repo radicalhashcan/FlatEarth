@@ -3,10 +3,10 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("LevelingHMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\The Jade Forest (80-90)",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\The Jade Forest (80-90)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\JadeForest",
-next="Zygor's Leveling Guides\\Pandaria (80-90)\\Valley of the Four Winds (81-90)",
+next="Leveling Guides\\Pandaria (80-90)\\Valley of the Four Winds (81-90)",
 condition_suggested=function() return level >= 80 and level <= 90 and not completedq(29670) end,
 startlevel=80,
 endlevel=90,
@@ -945,7 +945,7 @@ turnin Trapped!##29929 |goto The Jade Forest 46.3,29.4
 accept What's Mined Is Yours##29930 |goto The Jade Forest 46.3,29.4
 step
 clicknpc Jade Cart##56527 |goto The Jade Forest 46.3,29.5
-Defened the Jade Cart from Brittle Greenstone Gorgers until you reach your location |goto The Jade Forest 51.2,26.7 < 5 |c
+Defend the Jade Cart from Brittle Greenstone Gorgers until you reach your location |goto The Jade Forest 51.2,26.7 < 5 |c
 step
 talk Foreman Mann##56346
 turnin Calamity Jade##29926 |goto The Jade Forest 50.9,27.0
@@ -1199,10 +1199,10 @@ talk Shao the Defiant##55009
 turnin Unbound##29587 |goto 41.0,74.0
 turnin Getting Down to Business##29670 |goto 41.0,74.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\Krasarang Wilds (81-90)",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\Krasarang Wilds (81-90)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\KrasarangWilds",
-next="Zygor's Leveling Guides\\Pandaria (80-90)\\Kun-Lai Summit (82-90)",
+next="Leveling Guides\\Pandaria (80-90)\\Kun-Lai Summit (82-90)",
 condition_suggested=function() return level >= 81 and level <= 90 and not completedq(30628) end,
 startlevel=81,
 endlevel=90,
@@ -1527,10 +1527,10 @@ click The Commander's Cache##211316
 |tip Upstairs in the inn.
 turnin The Gratitude of Stoneplow##30628 |goto 19.8,55.9
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\Valley of the Four Winds (81-90)",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\Valley of the Four Winds (81-90)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\ValleyOfTheFourWinds",
-next="Zygor's Leveling Guides\\Pandaria (80-90)\\Krasarang Wilds (81-90)",
+next="Leveling Guides\\Pandaria (80-90)\\Krasarang Wilds (81-90)",
 condition_suggested=function() return level >= 81 and level <= 90 and not completedq(29990) end,
 startlevel=81,
 endlevel=90,
@@ -2384,10 +2384,10 @@ step
 talk Loon Mai##56720
 turnin Training and Discipline##29990 |goto Valley of the Four Winds 19.5,56.9
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\Kun-Lai Summit (82-90)",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\Kun-Lai Summit (82-90)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\KunLai",
-next="Zygor's Leveling Guides\\Pandaria (80-90)\\Townlong Steppes (83-90)",
+next="Leveling Guides\\Pandaria (80-90)\\Townlong Steppes (83-90)",
 condition_suggested=function() return level >= 82 and level <= 90 and not completedq(30752) end,
 startlevel=82,
 endlevel=90,
@@ -3500,10 +3500,10 @@ Next to you:
 talk Ban Bearheart##61819
 turnin Unbelievable!##30752
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\Townlong Steppes (83-90)",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\Townlong Steppes (83-90)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\TownlongSteppes",
-next="Zygor's Leveling Guides\\Pandaria (80-90)\\Dread Wastes (84-90)",
+next="Leveling Guides\\Pandaria (80-90)\\Dread Wastes (84-90)",
 condition_suggested=function() return level >= 83 and level <= 90 and not completedq(30928) end,
 startlevel=83,
 endlevel=90,
@@ -4177,7 +4177,7 @@ step
 talk Yak-Keeper Kyana##61585
 turnin A Trail of Fear##30928 |goto 39.1,62.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\Dread Wastes (84-90)",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\Dread Wastes (84-90)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\DreadWastes",
 condition_suggested=function() return level >= 84 and level <= 90 and not completedq(31179) end,
@@ -4854,7 +4854,7 @@ step
 talk Kil'ruk the Wind-Reaver##62538
 turnin The Scent of Blood##31179 |goto 55.0,35.9
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Daily",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Daily",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\WanderingIsle",
 monkquest=1,
@@ -4932,7 +4932,7 @@ turnin Practice Makes Perfect: Master Cheng##31844 |or |goto 48.6,42.7
 turnin Practice Makes Perfect: Master Tsang##31845 |or |goto 48.6,42.7
 turnin Practice Makes Perfect: Master Hsu##31846 |or |goto 48.6,42.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 20",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 20",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Serenity_Peak",
 monkquest=20,
@@ -4943,33 +4943,36 @@ condition_end=function() return completedq(31834) end,
 description="This guide will walk you through the Monk daily for extra experience.",
 },[[
 step
-Upon reaching level 20 as a Monk, you will automatically accept a class quest:
 accept The Peak of Serenity - Begin Your Training##31856
+|tip You will accept this automatically when you reach level 20.
 step
 talk Master Hight##66260
-turnin The Peak of Serenity - Begin Your Training##31856 |goto Kun-Lai Summit 48.6,42.7
-accept Begin Your Training: Master Cheng##31834 |goto Kun-Lai Summit 48.6,42.7
+|tip Inside the building.
+turnin The Peak of Serenity - Begin Your Training##31856 |goto Kun-Lai Summit/0 48.59,42.70
+accept Begin Your Training: Master Cheng##31834 |goto 48.59,42.70
 step
 talk Master Cheng##66138
-Tell him you wish to challenge him
-Follow him to the center of the area and fight him
+Tell him _"I wish to challenge you."_
+|tip Follow him to the center of the Training Grounds after selecting the dialogue.
+Bow to Master Cheng to Begin |script DoEmote("BOW")
 kill Master Cheng##66138
-Complete Master Cheng's Training |q 31834/1 |goto 47.1,40.1
+Complete Master Cheng's Training |q 31834/1 |goto 47.07,40.15
 step
 talk Master Hight##66260
-turnin Begin Your Training: Master Cheng##31834 |goto 48.6,42.7
-accept Practice Makes Perfect: Master Cheng##31840 |goto 48.6,42.7
+turnin Begin Your Training: Master Cheng##31834 |goto 48.59,42.70
+accept Practice Makes Perfect: Master Cheng##31840 |goto 48.59,42.70
 step
 talk Master Cheng##66138
-Tell him you wish to challenge him
-Follow him to the center of the area and fight him
+Tell him _"I wish to challenge you."_
+|tip Follow him to the center of the Training Grounds after selecting the dialogue.
+Bow to Master Cheng to Begin |script DoEmote("BOW")
 kill Master Cheng##66138
-Complete Master Cheng's Training |q 31840/1 |goto 47.1,40.1
+Complete Master Cheng's Training |q 31840/1 |goto 47.07,40.15
 step
 talk Master Hight##66260
-turnin Practice Makes Perfect: Master Cheng##31840 |goto 48.6,42.7
+turnin Practice Makes Perfect: Master Cheng##31840 |goto 48.59,42.70
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 30",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 30",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Serenity_Peak",
 monkquest=30,
@@ -5006,7 +5009,7 @@ step
 talk Master Hight##66260
 turnin Practice Makes Perfect: Master Woo##31841 |goto 48.6,42.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 40",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 40",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Serenity_Peak",
 monkquest=40,
@@ -5043,7 +5046,7 @@ step
 talk Master Hight##66260
 turnin Practice Makes Perfect: Master Kistane##31842 |goto 48.6,42.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 50",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 50",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Serenity_Peak",
 monkquest=50,
@@ -5080,7 +5083,7 @@ step
 talk Master Hight##66260
 turnin Practice Makes Perfect: Master Yoon##31843 |goto 48.6,42.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 60",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 60",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Serenity_Peak",
 monkquest=60,
@@ -5117,7 +5120,7 @@ step
 talk Master Hight##66260
 turnin Practice Makes Perfect: Master Cheng##31844 |goto 48.6,42.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 70",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 70",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Serenity_Peak",
 monkquest=70,
@@ -5154,7 +5157,7 @@ step
 talk Master Hight##66260
 turnin Practice Makes Perfect: Master Tsang##31845 |goto 48.6,42.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 80",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 80",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Serenity_Peak",
 monkquest=80,
@@ -5191,7 +5194,7 @@ step
 talk Master Hight##66260
 turnin Practice Makes Perfect: Master Hsu##31846 |goto 48.6,42.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 90",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Pandaria (80-90)\\Peak of Serenity\\Monk Quest 90",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Serenity_Peak",
 monkquest=90,
@@ -5218,7 +5221,7 @@ step
 talk Master Hight##66260
 turnin Complete Your Training: The Final Test##31844 |goto 48.6,42.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\The Loremaster\\Loremaster of Pandaria",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\The Loremaster\\Loremaster of Pandaria",{
 achieveid={6541},
 description="Complete all the storyline achievements in all the zones of the game.",
 },[[
@@ -5226,12 +5229,12 @@ step
 Use the Pandaria Leveling Guides to complete Loremaster:
 |tip The Leveling guides cover all required questlines for Loremaster.
 |tip Click one of the lines below to load the Leveling guide for that zone.
-Jade Forest Quests |achieve 6534 |loadguide "Zygor's Leveling Guides\\Pandaria (80-90)\\The Jade Forest (80-90)"
-Valley of the Four Winds Quests |achieve 6301 |loadguide "Zygor's Leveling Guides\\Pandaria (80-90)\\Valley of the Four Winds (81-90)"
-Townlong Steppes Quests |achieve 6539 |loadguide "Zygor's Leveling Guides\\Pandaria (80-90)\\Townlong Steppes (83-90)"
-Dread Wastes Quests |achieve 6540 |loadguide "Zygor's Leveling Guides\\Pandaria (80-90)\\Dread Wastes (84-90)"
-Krasarang Wilds Quests |achieve 6536 |loadguide "Zygor's Leveling Guides\\Pandaria (80-90)\\Krasarang Wilds (81-90)"
-Kun-Lai Summit Quests |achieve 6538 |loadguide "Zygor's Leveling Guides\\Pandaria (80-90)\\Kun-Lai Summit (82-90)"
+Jade Forest Quests |achieve 6534 |loadguide "Leveling Guides\\Pandaria (80-90)\\The Jade Forest (80-90)"
+Valley of the Four Winds Quests |achieve 6301 |loadguide "Leveling Guides\\Pandaria (80-90)\\Valley of the Four Winds (81-90)"
+Townlong Steppes Quests |achieve 6539 |loadguide "Leveling Guides\\Pandaria (80-90)\\Townlong Steppes (83-90)"
+Dread Wastes Quests |achieve 6540 |loadguide "Leveling Guides\\Pandaria (80-90)\\Dread Wastes (84-90)"
+Krasarang Wilds Quests |achieve 6536 |loadguide "Leveling Guides\\Pandaria (80-90)\\Krasarang Wilds (81-90)"
+Kun-Lai Summit Quests |achieve 6538 |loadguide "Leveling Guides\\Pandaria (80-90)\\Kun-Lai Summit (82-90)"
 step
 Congratulations, you have _earned_ the _Loremaster of Pandaria_ achievement!
 ]])

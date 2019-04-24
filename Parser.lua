@@ -270,7 +270,7 @@ function ZGV:NeedsAnimatedPopup(variablesArray)
 	local faction_color = UnitFactionGroup("player")=="Alliance" and "A" or "H" -- blue/red
 	local function get_seasonal_decorations()
 	-- get server date, and use it to check if we need to apply any special features
-		local a = C_Calendar.GetDate()
+		local a = (C_Calendar.GetDate and C_Calendar.GetDate()) or (C_DateAndTime.GetCurrentCalendarTime and C_DateAndTime.GetCurrentCalendarTime())
 		local season_base = {"year","month","day"}
 		return decorate({[season_base[1]]=a.year,[season_base[2]]=a.month,[season_base[3]]=a.monthDay})
 	end
@@ -349,11 +349,13 @@ local ConditionEnv = {
 		 for i=1,GetNumClasses() do  local _,cl=GetClassInfo(i)  cl=cl:lower()  self[cl] = (pcl==cl)  end
 		-- Store race constants
 		 local pra = select(2,UnitRace("player")):lower()
-		 for i,ra in ipairs{"nightelf","dwarf","human","gnome","draenei","worgen", "orc","troll","scourge","tauren","bloodelf","goblin", "pandaren", "lightforgeddraenei","voidelf", "highmountaintauren","nightborne"} do  self[ra] = (pra==ra)  end
+		 for i,ra in ipairs{"nightelf","dwarf","human","gnome","draenei","worgen", "orc","troll","scourge","tauren","bloodelf","goblin", "pandaren", "lightforgeddraenei","voidelf","darkirondwarf", "highmountaintauren","nightborne","magharorc"} do  self[ra] = (pra==ra)  end
 		 self['undead']=self['scourge']
 		 self['lfdraenei']=self['lightforgeddraenei']
 		 self['hmtauren']=self['highmountaintauren']
 		 self['ztroll']=self['zandalaritroll']
+		 self['didwarf']=self['darkirondwarf']
+		 self['mhorc']=self['magharorc']
 		-- Store faction constants
 		 local pfa = UnitFactionGroup("player"):lower()
 		 for i,fa in ipairs{"alliance","horde","neutral"} do  self[fa] = (pfa==fa)  end
@@ -418,12 +420,13 @@ local ConditionEnv = {
 	hasprof = function(hasprof,minlevel,maxlevel)
 		return ZGV:MatchProfs(hasprof,minlevel,maxlevel)
 	end,
-	hasbuff = function(id,count)
-		for i=1,30 do
-			local name,_,fileid,buffcount = UnitBuff("player",i)
-			if name and (id==fileid or name:find(id)) and (not count or buffcount>=count) then return true end
-			local name,_,fileid,buffcount = UnitDebuff("player",i)
-			if name and (id==fileid or name:find(id)) and (not count or buffcount>=count) then return true end
+	hasbuff = function(query,count)
+		local qspellid = type(query)=="string" and tonumber(query:match("spell:(%d+)"))
+		for i=1,50 do
+			local name,fileid,buffcount,bufftype,duration, expirationTime, unitCaster, _, _, spellId = UnitBuff("player",i)
+			if name	and ((fileid==query) or (name:find(query)) or (spellId==qspellid)) and (not count or buffcount>=count) then return true end
+			local name,fileid,buffcount,bufftype,duration, expirationTime, unitCaster, _, _, spellId = UnitDebuff("player",i)
+			if name	and ((fileid==query) or (name:find(query)) or (spellId==qspellid)) and (not count or buffcount>=count) then return true end
 		end
 	end,
 	isevent = function(eventname)
@@ -588,6 +591,12 @@ local ConditionEnv = {
 	end,
 	poiactive = function(poiid)
 		return ZGV:IsPOIActive(poiid)
+	end,
+	hastitle = function(id)
+		return IsTitleKnown(id)
+	end,
+	invasion = function(id,map)
+		return C_AreaPoiInfo.GetAreaPOIInfo(map,id)
 	end,
 }
 setmetatable(ConditionEnv,{__index=function(t,k) return k and rawget(t,k:lower()) end})
@@ -1694,12 +1703,13 @@ function Parser:ParseHeader(guide)
 			guide.completionparams = {params[2],params[3],params[4]}
 			guide.completionraw = params
 
-		elseif cmd=="condition_suggested" or cmd=="condition_valid" or cmd=="condition_invalid" or cmd=="condition_end" then
+		elseif cmd=="condition_suggested" or cmd=="condition_valid" or cmd=="condition_invalid" or cmd=="condition_end" or cmd=="condition_visible" then
 			local case
 			if cmd=="condition_suggested" then case="suggested" end
 			if cmd=="condition_valid" then case="valid" end
 			if cmd=="condition_invalid" then case="invalid" end
 			if cmd=="condition_end" then case="end" end
+			if cmd=="condition_visible" then case="visible" end
 
 			-- Hold up, let's see if that is a pet or mount guide
 			-- Umm... Parsing a Lua condition using regexps..? Oh dear... ~sinus
@@ -1777,7 +1787,7 @@ function Parser:ParseHeader(guide)
 				end
 				if num then
 					params[i]=num
-					ZGV.CreatureDetector.PetMirror:SetDisplayInfo(num)
+					ZGV.CreatureDetector.PetMirror:SetCreature(num)
 					local model=ZGV.CreatureDetector.PetMirror:GetDisplayInfo()
 					local file=ZGV.CreatureDetector.PetMirror:GetModelFileID()
 					if model then
@@ -1787,9 +1797,8 @@ function Parser:ParseHeader(guide)
 					end
 				end
 			end
-			guide.model = params
-
 			ZGV.CreatureDetector.PetMirror:Hide() -- and stay low
+			guide.model = params
 		elseif cmd=="icon" then
 			guide.icon= { texname=params, coords={ 0,1,0,1 } }
 		else

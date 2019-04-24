@@ -3,11 +3,10 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("LevelingAWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (90)",{
-next="Zygor's Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-100)",
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (90)",{
+next="Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-100)",
 condition_suggested=function() return level >= 90 and level <= 100 and not completedq(35884) end,
 image=ZGV.DIR.."\\Guides\\Images\\TanaanJungle",
-condition_suggested_exclusive=true,
 startlevel=90,
 },[[
 step
@@ -331,11 +330,10 @@ step
 talk Prophet Velen##79206
 accept Step Three: Prophet!##34575 |goto Shadowmoon Valley D 27.0,8.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-100)",{
-next="Zygor's Leveling Guides\\Draenor (90-100)\\Gorgrond (92-100)",
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-100)",{
+next="Leveling Guides\\Draenor (90-100)\\Gorgrond (92-100)",
 condition_suggested=function() return level >= 90 and level <= 100 and not completedq(33256) end,
 image=ZGV.DIR.."\\Guides\\Images\\ShadowmoonValleyDraenor",
-condition_suggested_exclusive=true,
 startlevel=90.5,
 },[[
 step
@@ -859,6 +857,7 @@ accept Circle the Wagon##34779 |goto 55.98,32.61
 step
 Locate the Missing Wagon |q Circle the Wagon##34779/1 |goto 51.32,28.50
 |tip When you get here, fight the incoming forces but be careful not to draw too many.
+step
 Kill the enemies that attack
 Defend the Camp |q Circle the Wagon##34779/2 |goto 51.32,28.50
 step
@@ -1170,23 +1169,21 @@ step
 use Clarity Elixir##111591
 Drink the Clarity Elixir |q The Fate of Karabor##33059/1 |goto 35.28,49.12
 step
-confirm |condition completedq(33059)
-|tip Wait until your character has entered the scenario, then click to proceed to the next step. This is necessary for the next few steps to function correctly.
+Enter the Scenario |scenariostart |q 33059 |future
 step
-Enter the Scenario |goto Shadowmoon Valley D 79.0,46.6 < 20 |c |q 33059
+Follow Prophet Velen |scenariogoal 1/24541 |goto Shadowmoon Valley D/0 79.87,46.60
 step
-Follow Prophet Velen |scenariogoal 24541 |goto Shadowmoon Valley D 79.9,46.6
+kill Krull##77767 |scenariogoal 2/24539 |goto 79.87,46.60
 step
-kill Krull##77767 |scenariogoal 24539 |goto Shadowmoon Valley D 80.0,46.6
-step
-Witness Commander Vorka's Arrival |scenariogoal 24542
+Witness Commander Vorka's Arrival |scenariogoal 3/24542 |goto 79.87,46.60
 step
 talk Prophet Velen##79522
 Tell him _"Prophet, we're being overrun!"_
-Speak to Velen on the Karabor Stairs |scenariogoal 24543 |goto Shadowmoon Valley D 79.2,46.6
+Watch the dialogue
+Speak to Velen on the Karabor Stairs |scenariogoal 4/24543 |goto 79.21,46.58
 step
 Watch the dialogue
-Witness the fate of Karabor |q The Fate of Karabor##33059/2 |goto Shadowmoon Valley D 79.2,46.6
+Witness the fate of Karabor |q 33059/2 |goto 79.21,46.58
 step
 _Follow_ the path back down |goto Shadowmoon Valley D 37.5,54.5 < 20 |only if walking
 talk Prophet Velen##79043
@@ -1530,9 +1527,8 @@ talk Lost Packmule##79966
 |tip The Packmule patrols a short area around the road.
 turnin Lost Lumberjacks##34820 |goto Shadowmoon Valley D/0 39.82,30.07
 accept Gloomshade Grove##33263 |goto Shadowmoon Valley D/0 39.82,30.07
-stickystart "Gloomshade"
 step
-Search Gloomshade Grove for Clues |q Gloomshade Grove##33263/1 |goto Shadowmoon Valley D/0 39.4,26.7
+Search Gloomshade Grove for Clues |q Gloomshade Grove##33263/1 |goto Shadowmoon Valley D/0 39.31,25.52
 step
 talk Phlox##74667
 Speak With Phlox |q Gloomshade Grove##33263/2 |goto 39.27,25.64
@@ -1695,21 +1691,21 @@ accept The Defense of Karabor##33256 |goto Shadowmoon Valley D 77.46,37.61
 step
 kill Arnokk the Burner##75358
 |tip He runs around this area burning stuff.
-Defeat Arnokk the Burner |scenariogoal 24515 |goto Shadowmoon Valley D 76.8,40.5 |condition completedq(33256)
+Defeat Arnokk the Burner |scenariogoal 1/24515 |goto Shadowmoon Valley D 76.8,40.5 |condition completedq(33256)
 step
 _Run through_ the doorway |goto Shadowmoon Valley D 77.2,41.7 < 10 |only if walking
 _Keep running_ and killing waves of enemies |goto 78.0,42.9 < 10 |only if walking
 _Go down_ the stairs |goto 79.6,46.6 < 20 |only if walking
-Clear a path to Karabor Harbor |scenariogoal 24596 |goto 79.6,46.6
+Clear a path to Karabor Harbor |scenariogoal 2/24596 |goto 79.6,46.6
 |tip Do this by killing enemies.
-Meet Yrel at the Karabor Harbor |scenariogoal 24516 |goto Shadowmoon Valley D 79.7,46.9 |condition completedq(33256)
+Meet Yrel at the Karabor Harbor |scenariogoal 2/24516 |goto Shadowmoon Valley D 79.7,46.9 |condition completedq(33256)
 |tip Getting here is pretty rough, currently. It's okay if you die, you'll basically resurrect where you need to be anyway.
 step
-scenariogoal 24517 |goto 79.6,46.6 |condition completedq(33256)
+Defend K'ara Until it Becomes Fully Empowered |scenariogoal 3/24517 |goto 79.6,46.6 |condition completedq(33256)
 step
 kill Commander Vorka##74715
 |tip You will spend the entire fight trying to dodge AoE attacks he throws at you. Watch the ground and make sure to move out of the various circular markers that appear before the attacks hit. He also summons adds that will attack you, try to kill them as quickly as possible, so you can get back to concentrating on him.
-Defeat Commander Vorka |scenariogoal 24585 |goto Shadowmoon Valley D 80.6,46.6 |condition completedq(33256)
+Defeat Commander Vorka |scenarioend |goto Shadowmoon Valley D 80.6,46.6 |condition completedq(33256)
 step
 clicknpc Raindash##80300
 _Ride_ the Fey Drake |goto Shadowmoon Valley D 80.5,47.0

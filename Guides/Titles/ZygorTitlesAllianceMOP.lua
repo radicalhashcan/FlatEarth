@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("TitlesAMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Bloodseeker",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Bloodseeker",{
 description="This guide will walk you through earning the Bloodseeker title."
 },[[
 step
@@ -13,14 +13,14 @@ clicknpc Skeer the Bloodseeker##71220
 |tip Click his corpse after defeating him.
 Earn _The Bloodseeker_ title
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Conqurer of Orgrimmar",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Conqurer of Orgrimmar",{
 description="This guide will walk you through earning the Conqurer of Orgrimmar title."
 },[[
 step
 This title is earned by defeating Garrosh Hellscream for the first time in the Siege of Orgrimmar raid on Heroic or Mythic difficulty
 Earn the _Conqurer of Orgrimmar_ title |achieve 8679
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Darkmaster",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Darkmaster",{
 description="This title is no longer obtainable! It was gained by earning a realm-best time for the Scholomance dungeon in Challenge Mode.",
 },[[
 step
@@ -28,7 +28,7 @@ This title is _no longer obtainable_!
 |tip This title was gained by earning a realm-best time for the Scholomance dungeon in Challenge Mode.
 Earn the _Darkmaster_ title |achieve 8438
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Defender of the Wall",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Defender of the Wall",{
 description="This title is no longer obtainable! It was gained by earning a realm-best time for the Gate of the Setting Sun dungeon in Challenge Mode.",
 },[[
 step
@@ -36,16 +36,16 @@ This title is _no longer obtainable_!
 |tip This title was gained by earning a realm-best time for the Gate of the Setting Sun dungeon in Challenge Mode.
 Earn the _Defender of the Wall_ title |achieve 8434
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Delver of the Vaults",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Delver of the Vaults",{
 description="This guide will walk you through earning the Delver of the Vaults title.",
 },[[
 step
 To get this title you must defeat the Will of the Emperor in Heroic mode in the Guardians of Mogu'shan raid.
 Click here to load the Mogu'shan raid guide. |confirm
 step
-leechsteps "Zygor's Dungeon Guides\\Pandaria Raids\\Mogu'shan Vaults"
+leechsteps "Dungeon Guides\\Pandaria Raids\\Mogu'shan Vaults"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Dissector",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Dissector",{
 description="This guide will walk you through earning the Dissector title."
 },[[
 step
@@ -55,16 +55,16 @@ clicknpc Rik'kal the Dissector##67091
 |tip Click his corpse after defeating him.
 Earn _The Dissector_ title
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Fearless",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Fearless",{
 description="This guide will walk you through earning the Fearless title.",
 },[[
 step
 To get this title you must defeat the Sha of Fear on Heroic difficulty in the Terrace of Endless Spring raid.
 Click here to load the Terrace of Endless Spring raid guide. |confirm
 step
-leechsteps "Zygor's Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
+leechsteps "Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Flameweaver",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Flameweaver",{
 description="This title is no longer obtainable! It was gained by earning a realm-best time for the Scarlet Halls dungeon in Challenge Mode.",
 },[[
 step
@@ -72,7 +72,7 @@ This title is _no longer obtainable_!
 |tip This title was gained by earning a realm-best time for the Scarlet Halls dungeon in Challenge Mode.
 Earn the _Flameweaver_ title |achieve 8436
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Hellscream's Downfall",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Hellscream's Downfall",{
 description="This guide will walk you through earning the Hellscream's Downfall title."
 },[[
 step
@@ -80,7 +80,7 @@ This title is gained by defeating Garrosh Hellscream in Siege of Orgrimmar on My
 kill Garrosh Hellscream
 Earn the _Hellscream's Downfall_ title |achieve 8482
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Jade Protector",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Jade Protector",{
 description="This title is no longer obtainable! It was gained by earning a realm-best time for the Temple of the Jade Serpent dungeon in Challenge Mode.",
 },[[
 step
@@ -88,7 +88,7 @@ This title is _no longer obtainable_!
 |tip This title was gained by earning a realm-best time for the Temple of the Jade Serpent dungeon in Challenge Mode.
 Earn the _Jade Protector_ title |achieve 8430
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Locust",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Locust",{
 description="This guide will walk you through earning the Locust title."
 },[[
 step
@@ -98,7 +98,7 @@ clicknpc Ka'roz the Locust##66781
 |tip Click his corpse after defeating him.
 Earn _The Locust_ title
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Lucid",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Lucid",{
 description="This guide will walk you through earning the Lucid title."
 },[[
 step
@@ -108,7 +108,7 @@ clicknpc Iyyokuk the Lucid##71213
 |tip Click its corpse after defeating it.
 Earn _The Lucid_ title
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Manipulator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Manipulator",{
 description="This guide will walk you through earning the Manipulator title."
 },[[
 step
@@ -118,7 +118,7 @@ clicknpc Kaz'tik the Manipulator##62540
 |tip Click its corpse after defeating it.
 Earn _The Manipulator_ title
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Mistwalker",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Mistwalker",{
 description="This title is no longer obtainable! It was gained by earning any dungeon realm-best time during the Mists of Pandaria Challenge Mode season.",
 },[[
 step
@@ -126,7 +126,7 @@ This title is _no longer obtainable_!
 |tip This title was gained by earning any dungeon realm-best time during the Mists of Pandaria Challenge Mode season.
 Earn the _Mistwalker_ title |achieve 8903
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Mogu-Slayer",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Mogu-Slayer",{
 description="This title is no longer obtainable! It was gained by earning a realm-best time for the Mogu'shan Palace dungeon in Challenge Mode.",
 },[[
 step
@@ -134,7 +134,7 @@ This title is _no longer obtainable_!
 |tip This title was gained by earning a realm-best time for the Mogu'shan Palace dungeon in Challenge Mode.
 Earn the _Mogu-Slayer_ title |achieve 8433
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Poisoned Mind",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Poisoned Mind",{
 description="This guide will walk you through earning the Poisoned Mind title."
 },[[
 step
@@ -144,7 +144,7 @@ clicknpc Xaril the Poisoned Mind##66773
 |tip Click its corpse after defeating it.
 Earn _The Poisoned Mind_ title
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Prime",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Prime",{
 description="This guide will walk you through earning the Prime title."
 },[[
 step
@@ -154,7 +154,7 @@ clicknpc Korven the Prime##71217
 |tip Click its corpse after defeating it.
 Earn _The Prime_ title
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Purified Defender",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Purified Defender",{
 description="This title is no longer obtainable! It was gained by earning a realm-best time for the Shado-Pan Monastery dungeon in Challenge Mode.",
 },[[
 step
@@ -162,7 +162,7 @@ This title is _no longer obtainable_!
 |tip This title was gained by earning a realm-best time for the Shado-Pan Monastery dungeon in Challenge Mode.
 Earn the _Purified Defender_ title |achieve 8432
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Scarab Lord",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Scarab Lord",{
 description="This title is no longer obtainable! It was gained by ringing the gong to open the Temple of Ahn'Qiraj raid.",
 },[[
 step
@@ -170,7 +170,7 @@ This title is _no longer obtainable_!
 |tip This title was gained by ringing the gong to open the Temple of Ahn'Qiraj raid. This required completing the Gates of Ahn'Qiraj event.
 Earn the _Scarab Lord_ title |achieve 416
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Scarlet Commander",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Scarlet Commander",{
 description="This title is no longer obtainable! It was gained by earning a realm-best time for the Scarlet Monastery dungeon in Challenge Mode.",
 },[[
 step
@@ -178,7 +178,7 @@ This title is _no longer obtainable_!
 |tip This title was gained by earning a realm-best time for the Scarlet Monastery dungeon in Challenge Mode.
 Earn the _Scarlet Commander_ title |achieve 8437
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Siegebreaker",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Siegebreaker",{
 description="This title is no longer obtainable! It was gained by earning a realm-best time for the Siege of Niuzao Temple dungeon in Challenge Mode.",
 },[[
 step
@@ -186,7 +186,7 @@ This title is _no longer obtainable_!
 |tip This title was gained by earning a realm-best time for the Siege of Niuzao Temple dungeon in Challenge Mode.
 Earn the _Siegebreaker_ title |achieve 8439
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Storm's End",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Storm's End",{
 description="This guide will walk you through earning the Storm's End title."
 },[[
 step
@@ -194,7 +194,7 @@ This title is gained by defeating Lei Shen in Throne of Thunder on Mythic diffic
 kill Lei Shen
 Earn the _Storm's End_ title |achieve 8067
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Swarmkeeper",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Swarmkeeper",{
 description="This guide will walk you through earning the Swarmkeeper title."
 },[[
 step
@@ -204,14 +204,14 @@ clicknpc Hisek the Swarmkeeper##65454
 |tip Click its corpse after defeating it.
 Earn _The Swarmkeeper_ title
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Undaunted",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\Undaunted",{
 description="This guide will walk you through earning the Undaunted title.",
 },[[
 step
 This title was a reward for completing challenge mode dungeons in Mists of Pandaria
 |tip You can no longer earn this title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Wind-Reaver",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Dungeons & Raids\\The Wind-Reaver",{
 description="This guide will walk you through earning the Wind-Reaver title."
 },[[
 step
@@ -221,7 +221,7 @@ clicknpc Kil'ruk the Wind-Reaver##65371
 |tip Click its corpse after defeating it.
 Earn _The Wind-Reaver_ title
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\General\\The Proven Assailant",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\General\\The Proven Assailant",{
 description="This guide will walk you through earning the The Proven Assailant title.",
 },[[
 step
@@ -235,7 +235,7 @@ Complete 30 waves of the damage trial
 step
 Congratulations, you have achieved the _The Proven Assailant_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\General\\The Proven Defender",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\General\\The Proven Defender",{
 description="This guide will walk you through earning the The Proven Defender title.",
 },[[
 step
@@ -249,7 +249,7 @@ Complete 30 waves of the tanking trial
 step
 Congratulations, you have achieved the _The Proven Defender_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\General\\The Proven Healer",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\General\\The Proven Healer",{
 description="This guide will walk you through earning the The Proven Healer title.",
 },[[
 step
@@ -263,13 +263,13 @@ Complete 30 waves of the healing trial
 step
 Congratulations, you have achieved the _The Proven Healer_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\General\\The Relic Hunter",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\General\\The Relic Hunter",{
 description="This guide will walk you through earning the Relic Hunter title.",
 },[[
 step
-leechsteps "Zygor's Achievement Guides\\Exploration\\Pandaria\\Is Another Man's Treasure"
+leechsteps "Achievement Guides\\Exploration\\Mists of Pandaria\\Is Another Man's Treasure"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\General\\Shado-Master",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\General\\Shado-Master",{
 description="This guide will walk you through earning the Shado-Master title.",
 },[[
 step
@@ -289,7 +289,7 @@ This title is gained by completing the following achievements:
 step
 Congratulations, you have achieved the _Shado-Master_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\General\\The Stormbreaker",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\General\\The Stormbreaker",{
 description="This guide will walk you through earning the Stormbreaker title.",
 },[[
 step
@@ -315,7 +315,7 @@ This title is gained by completing the following achievements:
 step
 Congratulations, you have achieved _The Stormbreaker_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Player versus Player\\Fire-Watcher",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Player versus Player\\Fire-Watcher",{
 author="support@zygorguides.com",
 description="This title is gained by obtaining 2,000 Bloody Coins in Timeless Isle PvP."
 },[[
@@ -330,7 +330,7 @@ step
 Kill players in Timeless Isle and collect Bloody Coins
 Earn the _Fire-Watcher_ title |achieve 8721 |goto Timeless Isle 75.0,44.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Player versus Player\\Gorgeous",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Player versus Player\\Gorgeous",{
 author="support@zygorguides.com",
 description="This title is gained by completing all the Deepwind Gorge achievements."
 },[[
@@ -347,7 +347,7 @@ Persoanlly Capture the Enemy Mine Cart 4 Times in a Single Match |achieve 8360/8
 Assault, Defend, Capture, and Defend a Mine Cart in a Single Match |achieve 8360/9
 Earn the _Gorgeous_ title |achieve 8360
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Player versus Player\\Grievous Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Player versus Player\\Grievous Gladiator",{
 author="support@zygorguides.com",
 description="This title is no longer obtainable! It was gained by finishing the PvP Arena Season 14 and meeting the following conditions:\n\nYour team was ranked #1 in the 3v3 or 5v5 bracket.\nYour character had a personal rating within 100 points of the team's rating.\nYour character had to have played in at least 20% of the team's total games played.\nYour character had to be max level for that time.",
 },[[
@@ -360,7 +360,7 @@ This title was gained by finishing the PvP Arena Season 14 and meeting the follo
 |tip Your character had to be max level for that time.
 Earn the _Grievous Gladiator_ title |achieve 8643
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Player versus Player\\Khan",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Player versus Player\\Khan",{
 author="support@zygorguides.com",
 description="This title is gained by completing all the battleground achievements."
 },[[
@@ -373,7 +373,7 @@ This title is gained by completing the Battleground achievements listed below:
 |achieve 8052/5
 Earn the _Khan_ title |achieve 8052
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Player versus Player\\Malevolent Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Player versus Player\\Malevolent Gladiator",{
 author="support@zygorguides.com",
 description="This title is no longer obtainable! It was gained by finishing the PvP Arena Season 12 and meeting the following conditions:\n\nYour team was ranked #1 in the 3v3 or 5v5 bracket.\nYour character had a personal rating within 100 points of the team's rating.\nYour character had to have played in at least 20% of the team's total games played.\nYour character had to be max level for that time.",
 },[[
@@ -385,7 +385,7 @@ This title was gained by finishing the PvP Arena Season 12 and meeting the follo
 |tip Your character had to have played in at least 20% of the team's total games played.
 |tip Your character had to be max level for that time.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Player versus Player\\Prideful Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Player versus Player\\Prideful Gladiator",{
 author="support@zygorguides.com",
 description="This title is no longer obtainable! It was gained by finishing the PvP Arena Season 15 and meeting the following conditions:\n\nYour team was ranked #1 in the 3v3 or 5v5 bracket.\nYour character had a personal rating within 100 points of the team's rating.\nYour character had to have played in at least 20% of the team's total games played.\nYour character had to be max level for that time.",
 },[[
@@ -397,7 +397,7 @@ This title was gained by finishing the PvP Arena Season 15 and meeting the follo
 |tip Your character had to have played in at least 20% of the team's total games played.
 |tip Your character had to be max level for that time.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Player versus Player\\Tyrannical Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Player versus Player\\Tyrannical Gladiator",{
 author="support@zygorguides.com",
 description="This title is no longer obtainable! It was gained by finishing the PvP Arena Season 13 and meeting the following conditions:\n\nYour team was ranked #1 in the 3v3 or 5v5 bracket.\nYour character had a personal rating within 100 points of the team's rating.\nYour character had to have played in at least 20% of the team's total games played.\nYour character had to be max level for that time.",
 },[[
@@ -409,7 +409,7 @@ This title was gained by finishing the PvP Arena Season 13 and meeting the follo
 |tip Your character had to have played in at least 20% of the team's total games played.
 |tip Your character had to be max level for that time.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Pet Battles\\Crazy Cat Lady/Man",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Pet Battles\\Crazy Cat Lady/Man",{
 achieveid={8397},
 description="This guide will walk you through earning the Crazy Cat Lady/Man title.",
 },[[
@@ -740,7 +740,7 @@ step
 label "end"
 Congratulations, you have obtained the _Crazy Cat Lady/Man_ title! |achieve 8397
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Pet Battles\\Tamer",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Pet Battles\\Tamer",{
 author="support@zygorguides.com",
 description="This guide section will assist you in achieving the Tamer title.",
 },[[
@@ -755,7 +755,7 @@ step
 Congratulations, you now have the _Tamer_ Title! |achieve 6607 |only if achieved(6607)
 You have not yet finished this achievement |only if default
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Pet Battles\\Trainer",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Pet Battles\\Trainer",{
 condition_end=function() return achieved(8301) end,
 achieveid={8297,8298,8300,8301,8301},
 description="This guide will walk you through earning the Trainer title.",
@@ -786,7 +786,7 @@ Win _1000_ Pvp pet battles. |achieve 8301
 step
 Congatulations, you have earned the _Merciless, Vengeful, Brutal and Deadly Pet Brawler_ achievements, granting you the _Trainer_title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Pet Battles\\Zookeeper",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Pet Battles\\Zookeeper",{
 author="support@zygorguides.com",
 description="This guide section will assist you in achieving the Zookeeper title.",
 },[[
@@ -800,7 +800,7 @@ Achieved Pandaria Safari. |achieve 6589
 step
 Congratulations, you now have the _Zookeeper_ Title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Quests\\Of The Iron Vanguard",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Quests\\Of The Iron Vanguard",{
 author="support@zygorguides.com",
 description="This title is no longer obtainable! It was gained by completing the Blasted Lands invasion questline before the release of Warlords of Draenor.",
 },[[
@@ -808,69 +808,69 @@ step
 This title is _no longer obtainable_!
 |tip This title was gained by completing the Blasted Lands invasion questline before the release of Warlords of Draenor.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Quests\\Legend of Pandaria",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Quests\\Legend of Pandaria",{
 description="This title is no longer obtainable! It was a reward for obtaining your legendary cloak and completing Wrathion's questline to defeat Garrosh Hellscream before the release of Warlords of Draenor.",
 },[[
 step
 This title is _no longer obtainable_!
 |tip This title was a reward for obtaining your legendary cloak and completing Wrathion's questline to defeat Garrosh Hellscream before the release of Warlords of Draenor.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Quests\\Stormbreaker",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Quests\\Stormbreaker",{
 description="This title is earned by completing the following Isle of Thunder achievements:\n\nIsle of Thunder\nIt Was Worth Every Ritual Stone\nThunder Plunder\nThe Crumble Bundle\nReady for RAAAAIIIIDDD?!?ing\nWhen in Ihgaluk, Do as the Skumblade Do\nThese Mogu Have Gotta Go-gu\nThis Isn't Even My Final Form\nBlue Response\nPlatform Hero\nSpeed Metal\nYou Made Me Bleed My Own Blood\nFor the Ward!\nBoop\nOur Power Combined\nDirehorn in a China Shop\nZandalari Library Card",
 achieveid={8121},
 },[[
 step
-Click here to load the "Isle of Thunder" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\Isle of Thunder" |or
+Click here to load the "Isle of Thunder" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\Isle of Thunder" |or
 Earn the _Isle of Thunder_ achievement |achieve 8121/1 |or
 step
-Click here to load the "It Was Worth Every Ritual Stone" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\It Was Worth Every Ritual Stone" |or
+Click here to load the "It Was Worth Every Ritual Stone" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\It Was Worth Every Ritual Stone" |or
 Earn the _It Was Worth Every Ritual Stone_ achievement |achieve 8121/2 |or
 step
-Click here to load the "Thunder Plunder" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\Thunder Plunder" |or
+Click here to load the "Thunder Plunder" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\Thunder Plunder" |or
 Earn the _Thunder Plunder_ achievement |achieve 8121/3 |or
 step
-Click here to load the "The Crumble Bundle" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\The Crumble Bundle" |or
+Click here to load the "The Crumble Bundle" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\The Crumble Bundle" |or
 Earn the _The Crumble Bundle_ achievement |achieve 8121/4 |or
 step
-Click here to load the "Ready for RAAAAIIIIDDD?!?ing" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\Ready for RAAAAIIIIDDD?!?ing" |or
+Click here to load the "Ready for RAAAAIIIIDDD?!?ing" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\Ready for RAAAAIIIIDDD?!?ing" |or
 Earn the _Ready for RAAAAIIIIDDD?!?ing_ achievement |achieve 8121/5 |or
 step
-Click here to load the "When in Ihgaluk, Do as the Skumblade Do" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\When in Ihgaluk, Do as the Skumblade Do" |or
+Click here to load the "When in Ihgaluk, Do as the Skumblade Do" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\When in Ihgaluk, Do as the Skumblade Do" |or
 Earn the _When in Ihgaluk, Do as the Skumblade Do_ achievement |achieve 8121/6 |or
 step
-Click here to load the "These Mogu Have Gotta Go-gu" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\These Mogu Have Gotta Go-gu" |or
+Click here to load the "These Mogu Have Gotta Go-gu" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\These Mogu Have Gotta Go-gu" |or
 Earn the _These Mogu Have Gotta Go-gu_ achievement |achieve 8121/7 |or
 step
-Click here to load the "This Isn't Even My Final Form" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\This Isn't Even My Final Form" |or
+Click here to load the "This Isn't Even My Final Form" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\This Isn't Even My Final Form" |or
 Earn the _This Isn't Even My Final Form_ achievement |achieve 8121/8 |or
 step
-Click here to load the "Blue Response" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\Blue Response" |or
+Click here to load the "Blue Response" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\Blue Response" |or
 Earn the _Blue Response_ achievement |achieve 8121/9 |or
 step
-Click here to load the "Platform Hero" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\Platform Hero" |or
+Click here to load the "Platform Hero" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\Platform Hero" |or
 Earn the _Platform Hero_ achievement |achieve 8121/10 |or
 step
-Click here to load the "Speed Metal" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\Speed Metal" |or
+Click here to load the "Speed Metal" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\Speed Metal" |or
 Earn the _Speed Metal_ achievement |achieve 8121/11 |or
 step
-Click here to load the "You Made Me Bleed My Own Blood" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\You Made Me Bleed My Own Blood" |or
+Click here to load the "You Made Me Bleed My Own Blood" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\You Made Me Bleed My Own Blood" |or
 Earn the _You Made Me Bleed My Own Blood_ achievement |achieve 8121/12 |or
 step
-Click here to load the "For the Ward!" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\For the Ward!" |or
+Click here to load the "For the Ward!" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\For the Ward!" |or
 Earn the _For the Ward!_ achievement |achieve 8121/13 |or
 step
-Click here to load the "Boop" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\Boop" |or
+Click here to load the "Boop" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\Boop" |or
 Earn the _Boop_ achievement |achieve 8121/14 |or
 step
 Earn the _Our Power Combined_ achievement |achieve 8121/15
 step
-Click here to load the "Direhorn in a China Shop" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\Direhorn in a China Shop" |or
+Click here to load the "Direhorn in a China Shop" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\Direhorn in a China Shop" |or
 Earn the _Direhorn in a China Shop_ achievement |achieve 8121/16 |or
 step
-Click here to load the "Zandalari Library Card" achievement guide |confirm |next "Zygor's Achievement Guides\\Quests\\Pandaria\\Zandalari Library Card" |or
+Click here to load the "Zandalari Library Card" achievement guide |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\Zandalari Library Card" |or
 Earn the _Zandalari Library Card_ achievement |achieve 8121/17 |or
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Professions\\Cooking\\Master of the Ways",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Professions\\Cooking\\Master of the Ways",{
 achieveid={7306},
 author="support@zygorguides.com",
 startlevel=85,
@@ -892,7 +892,7 @@ step
 Congratulations!
 You now have the _Master of the Ways_ title
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Reputations\\The Beloved",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Reputations\\The Beloved",{
 author="support@zygorguides.com",
 description="This guide section will assist you in achieving The Beloved title.",
 },[[
@@ -914,7 +914,7 @@ step
 step
 Congratulations, you now have _The Beloved_ Title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Reputations\\Farmer",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Reputations\\Farmer",{
 author="support@zygorguides.com",
 description="This guide section will assist you in achieving the Farmer title.",
 },[[
@@ -922,13 +922,13 @@ step
 In order to achieve the Farmer Title, you must become exalted with _The Tillers_
 |confirm
 step
-leechsteps "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies"
+leechsteps "Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies"
 step
 Obtain the Farmer Title |achieve 6544
 step
 Congratulations, you now have the title of _Farmer_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Reputations\\The Wakener",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Reputations\\The Wakener",{
 achieveid={7312,6545},
 description="This guide will walk you through obtaining the Wakener title.",
 },[[
@@ -1096,7 +1096,7 @@ Reach _Exalted_ with the _Klaxxi_ |achieve 6545
 step
 Congratulations, you have earned the _Wakener_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Scenarios\\Of the Black Harvest",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Scenarios\\Of the Black Harvest",{
 author="support@zygorguides.com",
 description="This title is no longer obtainable! It was gained by defeating Kanrethad Ebonlocke and gaining command over fel energy before the release of Warlords of Draenor.",
 },[[
@@ -1104,7 +1104,7 @@ step
 This title is _no longer obtainable_!
 |tip This title was gained by defeating Kanrethad Ebonlocke and gaining command over fel energy before the release of Warlords of Draenor.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Scenarios\\Scenaturdist",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\Scenarios\\Scenaturdist",{
 author="support@zygorguides.com",
 description="This guide section will assist you in achieving the Scenaturdist title.",
 },[[
@@ -1113,7 +1113,7 @@ This Title requires that you complete all 7 Scenarios on a Saturday. Refer to th
 step
 Congratulations, you now have the _Scenaturdist_ Title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\World Events\\Brawler",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\World Events\\Brawler",{
 achieveid={7941},
 description="This guide will walk you through earning the Brawler title.",
 },[[
@@ -1418,7 +1418,7 @@ Defeat Meatball in the Brawler's Guild |condition ZGV:GetReputation(1419).friend
 step
 Congratulations, you have earned the _Brawler_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\World Events\\The Hordebreaker",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Mists of Pandaria Titles\\World Events\\The Hordebreaker",{
 author="support@zygorguides.com",
 description="This title is no longer obtainable! It was gained by pitting the Vol'jin troll uprising against Garrosh Hellscream's Horde during patch 5.3.",
 achieveid={8306},

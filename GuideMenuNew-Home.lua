@@ -8,8 +8,38 @@ GuideMenu.Home={
 	{"banner", image=ZGV.DIR.."\\Skins\\banner"},
 
 	{"title", text=[[Featured Content]]},
+
+	{"item", text=[[Added |cfffe6100Loremaster of Kul Tiras Achievement|r.]], guide="ACHIEVEMENTS\\Quests\\Battle for Azeroth\\Loremaster of Kul Tiras",faction="A"},
+	{"item", text=[[Added |cfffe6100Loremaster of Zandalar Achievement|r.]], guide="ACHIEVEMENTS\\Quests\\Battle for Azeroth\\Loremaster of Zandalar",faction="H"},
+
+	{"item", text=[[Added |cfffe6100War Campaign|r.]], guide="LEVELING\\Battle for Azeroth (110-120)\\War Campaign"},
+
+	{"item", text=[[Added |cfffe6100Proudmoore Admiralty Reputation|r.]], guide="REPUTATIONS\\Battle for Azeroth\\Proudmoore Admiralty",faction="A"},
+	{"item", text=[[Added |cfffe6100Zandalari Empire  Reputation|r.]], guide="REPUTATIONS\\Battle for Azeroth\\Zandalari Empire",faction="H"},
+
+	{"item", text=[[Added |cfffe6100Love is in the Air Main Questline|r.]], guide="EVENTS\\Love is in the Air\\Love is in the Air Main Questline"},
+	{"item", text=[[Added |cfffe6100Love is in the Air Dailies|r.]], guide="EVENTS\\Love is in the Air\\Love is in the Air Dailies"},
+	{"item", text=[[Added |cfffe6100Love is in the Air Achievements|r.]], guide="EVENTS\\Love is in the Air\\Love is in the Air Achievements"},
+
+	{"title", text=[[Patch 8.1 Content]]},
+
+	{"section", text=[[LEVELING]]},
+	{"item", text=[[Added |cfffe6100Dwarf Heritage Armor|r.]], guide="LEVELING\\Battle for Azeroth (110-120)\\Heritage Armor\\Dwarf Heritage Armor",faction="A"},
+	{"item", text=[[Added |cfffe6100Blood Elf Heritage Armor|r.]], guide="LEVELING\\Battle for Azeroth (110-120)\\Heritage Armor\\Blood Elf Heritage Armor",faction="H"},
+
+	{"section", text=[[DAILIES]]},
+	{"item", text=[[Added |cfffe6100Arathi Highlands World Quests|r.]], guide="DAILIES\\Battle for Azeroth\\Arathi Highlands World Quests"},
+	{"item", text=[[Added |cfffe6100Darkshore World Quests|r.]], guide="DAILIES\\Battle for Azeroth\\Darkshore World Quests"},
+
 	{"section", text=[[EVENTS]]},
-	{"item", text=[[Added |cfffe6100Harvest Festival Quest|r.]], guide="EVENTS\\Harvest Festival\\Harvest Festival Quest"},
+	{"item", text=[[Added |cfffe6100Tyrande's Ascension (Darkshore Warfront Unlock)|r.]], guide="EVENTS\\Battle for Azeroth\\Tyrande's Ascension (Darkshore Warfront Unlock)",faction="A"},
+	{"item", text=[[Added |cfffe6100Trouble in Darkshore (Darkshore Warfront Unlock)|r.]], guide="EVENTS\\Battle for Azeroth\\Trouble in Darkshore (Darkshore Warfront Unlock)",faction="H"},
+	{"item", text=[[Added |cfffe6100The Fate of Saurfang|r.]], guide="EVENTS\\Battle for Azeroth\\The Fate of Saurfang",faction="H"},
+	{"item", text=[[Added |cfffe6100Incursions|r.]], guide="EVENTS\\Battle for Azeroth\\Incursions"},
+
+	{"section", text=[[PETSMOUNTS]]},
+	{"item", text=[[Added |cfffe6100Gnomeregan Pet Battle Dungeon|r.]], guide="PETSMOUNTS\\Battle Pets\\Battle Pet Dungeons\\Gnomeregan"},
+	{"item", text=[[Added |cfffe6100The Hivemind|r.]], guide="PETSMOUNTS\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\The Hivemind"},
 
 	{"title", text=[[Battle for Azeroth Content]]},
 

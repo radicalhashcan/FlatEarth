@@ -50,6 +50,7 @@ data.taxipoints = {
 		{name="Xibala",faction="H",npc="Eliara Duskwing",npcid=123817,x=44.84,y=72.25},
 		{name="Isle of Fangs",faction="H",npc="Paku'ai Leti",npcid=140650,x=54.45,y=87.06},
 		{name="Tusk Isle",faction="H",npc="Paku'ai Jetar",npcid=140653,x=59.39,y=77.94},
+		{name="The Mugambala",faction="H",npc="Paku'ai Chal",npcid=148157,x=53.34,y=57.33},
 
 		-- Alliance --
 		{name="Xibala",faction="A",npc="Paula Waverunner",npcid=128041,x=40.58,y=71.45},
@@ -121,7 +122,7 @@ data.taxipoints = {
 	['Drustvar']={
 		-- Alliance --
 		{name="Hangman's Point",faction="A",npc="Aaron Ridgeley",npcid=128576,x=71.06,y=40.88},
-		{name="Fletcher's Hollow",faction="A",npc="Bridget Bran",npcid=126724,x=70.21,y=60.45,taxinodeID=2035},
+		{name="Fletcher's Hollow",faction="A",npc="Bridget Bran",npcid=126724,x=70.21,y=60.45},
 		{name="Falconhurst",faction="A",npc="Viviana Swailes",npcid=134866,x=26.98,y=72.38},
 		{name="Arom's Stand",faction="A",npc="Jess Albury",npcid=135023,x=38.14,y=52.53},
 		{name="Watchman's Rise",faction="A",npc="Ensign Wallace",npcid=135024,x=31.87,y=30.45,quest=50003},
@@ -226,7 +227,7 @@ data.taxipoints = {
 	},
 
 	['Dustwallow Marsh']={
-		{name="Theramore",faction="A",npc="Baldruc",npcid=4321,x=67.48,y=51.30,cond_fun=function() return not select(13,GetAchievementInfo(7523)) end},
+		{name="Theramore",faction="A",npc="Baldruc",npcid=4321,x=67.48,y=51.30,cond_fun=function() return ZGV.InPhase("Old Dustwallow") end},
 		{name="Brackenwall Village",faction="H",npc="Shardi",npcid=11899,x=35.57,y=31.88},
 		{name="Mudsprocket",faction="B",npc="Dyslix Silvergrub",npcid=40358,x=42.82,y=72.43},
 	},
@@ -896,11 +897,11 @@ data.taxipoints = {
 	},
 
 	['Lunarfall']={
-		{name="Lunarfall Garrison",faction="A",npc="Dungar Longdrink",npcid=81103,x=47.99,y=49.81},
+		{name="Lunarfall Garrison",faction="A",npc="Dungar Longdrink",npcid=81103,x=47.99,y=49.81,taxinodeID=1476},
 	},
 
 	['Frostwall']={
-		{name="Frostwall Garrison",faction="H",npc="Bron Skyhorn",npcid=79407,x=45.79,y=50.92},
+		{name="Frostwall Garrison",faction="H",npc="Bron Skyhorn",npcid=79407,x=45.79,y=50.92,taxinodeID=1432},
 	},
 },
 
@@ -986,7 +987,7 @@ data.taxipoints = {
 },
 
 -- Argus --
-[905]={
+[994]={ -- was 905
 	['Krokuun']={
 		{name="Vindicaar, Krokuun",faction="B",x=42.58,y=22.78,f=1,taxioperator="argusportal",argushub=true},
 		{name="Krokul Hovel, Krokuun",faction="B",x=55.48,y=67.35,taxioperator="argusportal"},
@@ -2838,6 +2839,7 @@ data.flightcost = {
 		name = "Gol'Bolar Quarry, Dun Morogh",
 		neighbors = {
 			[6] = 69, -- Ironforge, Dun Morogh
+			[8] = 52, -- Thelsamar, Loch Modan
 			[619] = 44, -- Kharanos, Dun Morogh
 		},
 	},
@@ -3096,6 +3098,7 @@ data.flightcost = {
 			[74] = 81, -- Thorium Point, Searing Gorge
 			[554] = 60, -- Slabchisel's Survey, Wetlands
 			[555] = 46, -- Farstrider Lodge, Loch Modan
+			[620] = 54, -- Gol'Bolar Quarry, Dun Morogh
 			[633] = 46, -- Dustwind Dig, Badlands
 			[662] = 181, -- Highbank, Twilight Highlands
 		},
@@ -5811,7 +5814,7 @@ data.flightcost = {
 			[1643] = 0, -- Aktar's Post, Tanaan Jungle
 			[1646] = 0, -- Vault of the Earth, Tanaan Jungle
 			[1648] = 0, -- Sha'naari Refuge, Tanaan Jungle
-			["706:553"] = 0, -- Vol'mar, Tanaan Jungle
+			[1621] = 0, -- Vol'mar, Tanaan Jungle
 		},
 	},
 	{
@@ -5827,7 +5830,7 @@ data.flightcost = {
 			[1643] = 0, -- Aktar's Post, Tanaan Jungle
 			[1646] = 0, -- Vault of the Earth, Tanaan Jungle
 			[1648] = 0, -- Sha'naari Refuge, Tanaan Jungle
-			["697:527"] = 0, -- Lion's Watch, Tanaan Jungle
+			[1620] = 0, -- Lion's Watch, Tanaan Jungle
 		},
 	},
 	{
@@ -5981,8 +5984,8 @@ data.flightcost = {
 			[1646] = 0, -- Vault of the Earth, Tanaan Jungle
 			[1647] = 0, -- Malo's Lookout, Tanaan Jungle
 			[1648] = 0, -- Sha'naari Refuge, Tanaan Jungle
-			["697:527"] = 0, -- Lion's Watch, Tanaan Jungle
-			["706:553"] = 0, -- Vol'mar, Tanaan Jungle
+			[1620] = 0, -- Lion's Watch, Tanaan Jungle
+			[1621] = 0, -- Vol'mar, Tanaan Jungle
 		},
 	},
 	{
@@ -6041,7 +6044,7 @@ data.flightcost = {
 			[1539] = 0, -- Skysea Ridge, Gorgrond
 			[1568] = 0, -- Everbloom Wilds, Gorgrond
 			[1643] = 0, -- Aktar's Post, Tanaan Jungle
-			["697:527"] = 0, -- Lion's Watch, Tanaan Jungle
+			[1620] = 0, -- Lion's Watch, Tanaan Jungle
 		},
 	},
 	{
@@ -6076,8 +6079,8 @@ data.flightcost = {
 			[1643] = 0, -- Aktar's Post, Tanaan Jungle
 			[1646] = 0, -- Vault of the Earth, Tanaan Jungle
 			[1648] = 0, -- Sha'naari Refuge, Tanaan Jungle
-			["697:527"] = 0, -- Lion's Watch, Tanaan Jungle
-			["706:553"] = 0, -- Vol'mar, Tanaan Jungle
+			[1620] = 0, -- Lion's Watch, Tanaan Jungle
+			[1621] = 0, -- Vol'mar, Tanaan Jungle
 		},
 	},
 	{
@@ -6113,8 +6116,8 @@ data.flightcost = {
 			[1645] = 0, -- The Iron Front, Tanaan Jungle
 			[1647] = 0, -- Malo's Lookout, Tanaan Jungle
 			[1648] = 0, -- Sha'naari Refuge, Tanaan Jungle
-			["697:527"] = 0, -- Lion's Watch, Tanaan Jungle
-			["706:553"] = 0, -- Vol'mar, Tanaan Jungle
+			[1620] = 0, -- Lion's Watch, Tanaan Jungle
+			[1621] = 0, -- Vol'mar, Tanaan Jungle
 		},
 	},
 	{
@@ -6138,7 +6141,7 @@ data.flightcost = {
 			[1646] = 0, -- Vault of the Earth, Tanaan Jungle
 			[1647] = 0, -- Malo's Lookout, Tanaan Jungle
 			[1648] = 0, -- Sha'naari Refuge, Tanaan Jungle
-			["697:527"] = 0, -- Lion's Watch, Tanaan Jungle
+			[1620] = 0, -- Lion's Watch, Tanaan Jungle
 		},
 	},
 	{
@@ -6167,11 +6170,11 @@ data.flightcost = {
 			[1646] = 0, -- Vault of the Earth, Tanaan Jungle
 			[1647] = 0, -- Malo's Lookout, Tanaan Jungle
 			[1648] = 0, -- Sha'naari Refuge, Tanaan Jungle
-			["706:553"] = 0, -- Vol'mar, Tanaan Jungle
+			[1621] = 0, -- Vol'mar, Tanaan Jungle
 		},
 	},
 	{
-		tag = "697:527",
+		nodeID = 1620,
 		name = "Lion's Watch, Tanaan Jungle",
 		neighbors = {
 			[1381] = 0, -- Embaari Village, Shadowmoon Valley
@@ -6184,7 +6187,7 @@ data.flightcost = {
 		},
 	},
 	{
-		tag = "706:553",
+		nodeID = 1621,
 		name = "Vol'mar, Tanaan Jungle",
 		neighbors = {
 			[1384] = 0, -- Exile's Rise, Shadowmoon Valley
@@ -6267,7 +6270,7 @@ data.flightcost = {
 			[1518] = 0, -- Wildwood Wash, Gorgrond
 			[1529] = 0, -- Darktide Roost, Shadowmoon Valley
 			[1569] = 0, -- Akeeta's Hovel, Shadowmoon Valley
-			["697:527"] = 0, -- Lion's Watch, Tanaan Jungle
+			[1620] = 0, -- Lion's Watch, Tanaan Jungle
 		},
 	},
 	{
@@ -6284,7 +6287,7 @@ data.flightcost = {
 			[1529] = 0, -- Darktide Roost, Shadowmoon Valley
 			[1568] = 0, -- Everbloom Wilds, Gorgrond
 			[1569] = 0, -- Akeeta's Hovel, Shadowmoon Valley
-			["706:553"] = 0, -- Vol'mar, Tanaan Jungle
+			[1621] = 0, -- Vol'mar, Tanaan Jungle
 		},
 	},
 },
@@ -6871,7 +6874,7 @@ data.flightcost = {
 		},
 	},
 },
-[905]={
+[994]={ -- was 905
 	{
 		tag = "069:726",
 		nodeID = 1981,
@@ -7154,7 +7157,6 @@ data.flightcost = {
 			[2111] = 0, -- Vorrik's Sanctum, Vol'dun
 			[2114] = 57, -- Deadwood Cove, Vol'dun
 			[2144] = 0, -- Goldtusk Inn, Vol'dun
-			["347:439"] = 0, -- Deadwood Cove, Vol'dun
 		},
 	},
 	{
@@ -7165,7 +7167,7 @@ data.flightcost = {
 			[2112] = 0, -- Vulture's Nest, Vol'dun
 			[2114] = 0, -- Deadwood Cove, Vol'dun
 			[2119] = 46, -- Sanctuary of the Devoted, Vol'dun
-			["416:209"] = 0, -- Crankchug's Overlook, Vol'dun
+			["416:209"] = 0, -- Vulture's Nest, Vol'dun
 		},
 	},
 	{
@@ -7178,7 +7180,6 @@ data.flightcost = {
 			[2112] = 0, -- Vulture's Nest, Vol'dun
 			[2119] = 57, -- Sanctuary of the Devoted, Vol'dun
 			[2148] = 0, -- Mugamba Overlook, Zuldazar
-			["498:513"] = 0, -- Mugamba Overlook, Zuldazar
 		},
 	},
 	{
@@ -7222,7 +7223,6 @@ data.flightcost = {
 			[2110] = 0, -- Shatterstone Harbor, Vol'dun
 			[2114] = 0, -- Deadwood Cove, Vol'dun
 			[2120] = 0, -- Tortaka Refuge, Vol'dun
-			["332:192"] = 0, -- Shatterstone Harbor, Vol'dun
 		},
 	},
 	{
@@ -7256,7 +7256,7 @@ data.flightcost = {
 			[2111] = 0, -- Vorrik's Sanctum, Vol'dun
 			[2112] = 0, -- Vulture's Nest, Vol'dun
 			[2161] = 0, -- Redfield's Watch, Nazmir
-			["416:209"] = 0, -- Crankchug's Overlook, Vol'dun
+			["416:209"] = 0, -- Vulture's Nest, Vol'dun
 		},
 	},
 	{
@@ -7270,7 +7270,6 @@ data.flightcost = {
 			[2153] = 0, -- Mistvine Ledge, Zuldazar
 			[2157] = 0, -- Veiled Grotto, Zuldazar
 			["498:513"] = 0, -- Mugamba Overlook, Zuldazar
-			["619:639"] = 0, -- Mistvine Ledge, Zuldazar
 		},
 	},
 	{
@@ -7283,7 +7282,6 @@ data.flightcost = {
 			[2145] = 0, -- Verdant Hollow, Zuldazar
 			[2148] = 0, -- Mugamba Overlook, Zuldazar
 			[2153] = 0, -- Mistvine Ledge, Zuldazar
-			["565:499"] = 0, -- Verdant Hollow, Zuldazar
 		},
 	},
 	{
@@ -7296,8 +7294,6 @@ data.flightcost = {
 			[2114] = 0, -- Deadwood Cove, Vol'dun
 			[2145] = 0, -- Verdant Hollow, Zuldazar
 			[2157] = 0, -- Veiled Grotto, Zuldazar
-			["347:439"] = 0, -- Deadwood Cove, Vol'dun
-			["565:499"] = 0, -- Verdant Hollow, Zuldazar
 		},
 	},
 	{
@@ -7341,6 +7337,7 @@ data.flightcost = {
 			[1957] = 0, -- Port of Zandalar, Zuldazar
 			[1959] = 0, -- The Great Seal
 			[1974] = 0, -- Xibala, Zuldazar
+			[2381] = 0, -- The Mugambala, Zuldazar
 		},
 	},
 	{
@@ -7367,6 +7364,7 @@ data.flightcost = {
 			[2045] = 0, -- Garden of the Loa, Zuldazar
 			[2046] = 0, -- Atal'dazar, Zuldazar
 			[2061] = 0, -- The Sliver, Zuldazar
+			[2381] = 0, -- The Mugambala, Zuldazar
 		},
 	},
 	{
@@ -7394,6 +7392,17 @@ data.flightcost = {
 		},
 	},
 	{
+		tag = "551:700",
+		nodeID = 2381,
+		name = "The Mugambala, Zuldazar",
+		neighbors = {
+			[1957] = 0, -- Port of Zandalar, Zuldazar
+			[1959] = 0, -- The Great Seal
+			[2009] = 0, -- Warport Rastari, Zuldazar
+			[2027] = 0, -- Temple of the Prophet, Zuldazar
+		},
+	},
+	{
 		tag = "557:884",
 		nodeID = 2164,
 		name = "Isle of Fangs, Zuldazar",
@@ -7414,9 +7423,6 @@ data.flightcost = {
 			[2148] = 0, -- Mugamba Overlook, Zuldazar
 			[2153] = 0, -- Mistvine Ledge, Zuldazar
 			[2157] = 0, -- Veiled Grotto, Zuldazar
-			["496:573"] = 0, -- Veiled Grotto, Zuldazar
-			["498:513"] = 0, -- Mugamba Overlook, Zuldazar
-			["619:639"] = 0, -- Mistvine Ledge, Zuldazar
 		},
 	},
 	{
@@ -7431,6 +7437,7 @@ data.flightcost = {
 			[2045] = 0, -- Garden of the Loa, Zuldazar
 			[2046] = 0, -- Atal'dazar, Zuldazar
 			[2061] = 0, -- The Sliver, Zuldazar
+			[2381] = 0, -- The Mugambala, Zuldazar
 		},
 	},
 	{
@@ -7445,6 +7452,7 @@ data.flightcost = {
 			[2075] = 0, -- Seeker's Outpost, Zuldazar
 			[2126] = 0, -- Scaletrader Post, Zuldazar
 			[2165] = 0, -- Tusk Isle, Zuldazar
+			[2381] = 0, -- The Mugambala, Zuldazar
 		},
 	},
 	{
@@ -7482,7 +7490,6 @@ data.flightcost = {
 			[2126] = 0, -- Scaletrader Post, Zuldazar
 			[2145] = 0, -- Verdant Hollow, Zuldazar
 			[2157] = 0, -- Veiled Grotto, Zuldazar
-			["565:499"] = 0, -- Verdant Hollow, Zuldazar
 			["701:682"] = 0, -- Talanji's Rebuke, Zuldazar
 		},
 	},
@@ -7495,7 +7502,6 @@ data.flightcost = {
 			[2080] = 0, -- Grimwatt's Crash, Nazmir
 			[2145] = 0, -- Verdant Hollow, Zuldazar
 			[2161] = 0, -- Redfield's Watch, Nazmir
-			["565:499"] = 0, -- Verdant Hollow, Zuldazar
 		},
 	},
 	{
@@ -7511,7 +7517,7 @@ data.flightcost = {
 			[2078] = 0, -- Fort Victory - Nazmir (Alliance)
 			[2126] = 0, -- Scaletrader Post, Zuldazar
 			[2145] = 0, -- Verdant Hollow, Zuldazar
-			["416:209"] = 0, -- Crankchug's Overlook, Vol'dun
+			["416:209"] = 0, -- Vulture's Nest, Vol'dun
 		},
 	},
 	{
@@ -7569,7 +7575,6 @@ data.flightcost = {
 			[2076] = 0, -- Atal'Gral, Zuldazar
 			[2145] = 0, -- Verdant Hollow, Zuldazar
 			[2153] = 0, -- Mistvine Ledge, Zuldazar
-			["619:639"] = 0, -- Mistvine Ledge, Zuldazar
 		},
 	},
 	{

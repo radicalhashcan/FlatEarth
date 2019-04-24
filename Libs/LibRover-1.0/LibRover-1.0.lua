@@ -104,7 +104,7 @@ do
 
 
 		local WEAK_VALUES={__mode='v'}
-		Lib.nodes = {all={},taxi={},id={},mageteleport={},useitem={},['start']={},['end']={},['temp']={}}
+		Lib.nodes = {all={},taxi={},id={},mageteleport={},useitem={},['start']={},['end']={},['temp']={},['by_map']={},['by_cont']={}}
 		-- if a node falls out of the 'all', drop it everywhere.
 		local allnodes = Lib.nodes.all
 		--setmetatable(Lib.nodes.taxi,WEAK_VALUES)
@@ -145,6 +145,7 @@ do
 			use_ghearth = true,
 			use_astral_recall = true,
 			frown_on_portals = false,
+			blow_item_cd_ratio = 0,
 
 			remove_hairpins = true,
 			remove_standing = true
@@ -177,7 +178,9 @@ do
 		local area_maps_table=GetAreaMaps()
 		--]]
 
+		local Mdist
 		local function getdist(node1,node2)
+			if not Mdist then return 99999999,0,0 end
 			if not node1.x or not node2.x then return 99999999 end
 			local dist,xd,yd = Mdist(node1.m,node1.x,node1.y,node2.m,node2.x,node2.y)
 			if dist==0 and node1.c~=node2.c or (node1.c==node2.c and node1.c==-1 and node1.m~=node2.m) then dist=nil end   -- the latter condition shouldn't matter anymore, since we moved to Astrolabe systems instead of continents
@@ -336,24 +339,34 @@ do
 
 		local link_walk_greenborders = {mode="walk", interx=1}
 
+		local nodes_by_map=Lib.nodes.by_map
+		local nodes_by_cont=Lib.nodes.by_cont
+
 		local function AddNode(node,dontlink)
 			--if not self.nodes[node.l[1]] then self.nodes[node.l[1]]={} end
 
 			if node.m and not node.x then return nil end
+
+			-- sanitize continent, coordinates, floor
+			node.c = node.c or ZGV.GetMapContinent(node.m)  --Lib.ContinentsByID[node.m]
+			if not node.x then error("Failed to add map node "..(#allnodes+1).." type "..node.type) end
+			if node.x>1 then node.x,node.y=node.x/100,node.y/100 end
+			node.f = node.f or Lib.data.FloorByID[node.m] or 0
+			--node.f = ZGV:SanitizeMapFloor(node.m,node.f) -- with bfa changes, we should already have sane uimapid here
 
 			table.insert(allnodes,node)
 			if (node.type) then
 				if not Lib.nodes[node.type] then Lib.nodes[node.type]={} --[[setmetatable(Lib.nodes[node.type],{__mode="v"}) --]] end
 				--setmetatable(Lib.nodes[node.type],WEAK_VALUES)
 				table.insert(Lib.nodes[node.type],node)
-			end
 
-			-- sanitize continent, coordinates, floor
-			node.c = node.c or ZGV.GetMapContinent(node.m)  --Lib.ContinentsByID[node.m]
-			if not node.x then error("Failed to add map node "..(#Lib.nodes.all).." type "..node.type) end
-			if node.x>1 then node.x,node.y=node.x/100,node.y/100 end
-			node.f = node.f or Lib.data.FloorByID[node.m] or 0
-			--node.f = ZGV:SanitizeMapFloor(node.m,node.f) -- with bfa changes, we should already have sane uimapid here
+				if node.type~="end" and node.type~="start" and node.type~="temp" then
+					if not nodes_by_map[node.m] then nodes_by_map[node.m]={} end
+					table.insert(nodes_by_map[node.m],node)
+					if not nodes_by_cont[node.c] then nodes_by_cont[node.c]={} end
+					table.insert(nodes_by_cont[node.c],node)
+				end
+			end
 
 			local ni = #allnodes
 			node.num=ni
@@ -375,15 +388,21 @@ do
 			--setmetatable(node.n,{__mode="k"})
 
 			-- connect to other nodes, by automatic linkage (walk or fly)
-			if not dontlink then
-				for i,v in pairs(allnodes) do
+			local function DoLinkage_in_scope(scope)
+				if scope then for i,v in ipairs(scope) do
 					if v~=node then
 						-- endnode only gets linked TO.
-						if node.type~="end" then node:DoLinkage(v) end
+						if ntype~="end" then node:DoLinkage(v) end
 						-- startnode and inns don't get linked TO, only FROM.
-						if node.type~="start" and node.type~="inn" then v:DoLinkage(node) end
+						if ntype~="start" and ntype~="inn" then v:DoLinkage(node) end
 					end
-				end
+				end end
+			end
+			if not dontlink then
+				local ntype=node.type
+				DoLinkage_in_scope(nodes_by_cont[node.c])  -- todo: narrow down to zone, if player can't fly on continent
+				if ntype=="start" and Lib.nodes["end"][1] then DoLinkage_in_scope(Lib.nodes["end"]) end  -- supporting multiple endpoints
+				if ntype=="start" and Lib.nodes["temp"][1] then DoLinkage_in_scope(Lib.nodes["temp"]) end
 			end
 
 			--[[
@@ -896,7 +915,10 @@ do
 
 
 		function Lib.greenborders:CanCross(id1,id2)
-			return (self[id1] and self[id1][id2]) or (self[id2] and self[id2][id1])
+			local si1=self[id1]
+			if si1 and si1[id2] then return true end
+			local si2=self[id2]
+			if si2 and si2[id1] then return true end
 		end
 
 		--[[================ INITIALIZE NODES ===============]]--
@@ -987,18 +1009,18 @@ do
 			{"start",0}, --ms
 			{"maxspeeds",5},
 			{"taxis",96},
-			{"inns",56},
+			{"inns",13},
 			{"greenborders",0},
 			{"walls",0},
-			{"borders",240},
-			{"transit",466},
-			{"flooring",710},
-			{"indoors",600},
-			{"dungeonentrances",400},
-			{"dungeonfloors",600},
-			{"dolinkage",0},
-			{"portkeys",100},
-		}
+			{"borders",24},
+			{"transit",46},
+			{"flooring",40},
+			{"indoors",0},
+			{"dungeonentrances",30},
+			{"dungeonfloors",30},
+			{"dolinkage",1260},
+			{"portkeys",2400},
+		} -- look at LibRover.startuptimes to see real values and maybe adjust these sometimes.
 		local TOTALPROGRESSES = {}
 		local TOTALPROGRESS_TIME=0
 		for i,TP in ipairs(TOTALPROGRESS_DATA) do TOTALPROGRESS_TIME=TOTALPROGRESS_TIME+TP[2] end
@@ -1056,9 +1078,9 @@ do
 						
 			Lib.startup_yieldtimer=debugprofilestop()
 
-			punchStartupTime("start")
+			Mdist=ZGV.MapCoords.Mdist
 
-			TaxiFrame:HookScript("OnShow",function() Lib:HighlightTaxiDestination() end)
+			punchStartupTime("start")
 
 			Lib.frame:RegisterEvent("ACHIEVEMENT_EARNED")
 			Lib.frame:RegisterEvent("RECEIVED_ACHIEVEMENT_LIST")
@@ -1074,6 +1096,7 @@ do
 			Lib.frame:RegisterEvent("ZONE_CHANGED_INDOORS")
 			Lib.frame:RegisterEvent("NEW_WMO_CHUNK")  -- subzone change, or entering a building
 			Lib.frame:RegisterEvent("LOADING_SCREEN_DISABLED")
+			Lib.frame:RegisterEvent("TAXIMAP_OPENED")
 			Lib.frame:SetScript("OnUpdate", function(frame,elapsed) Lib:OnUpdate(elapsed) end)
 
 			--punchStartupTime("sha2")
@@ -1504,13 +1527,10 @@ do
 						item.destination = SmartAddNode(item.destination)
 						if not item.destination then item.ERROR="bad destination" break end -- Invalid location.
 					end
-					-- special handling for astral recall.
-					if item.spell==556 then
-						item.destination="_HEARTH"
-					end
 					if type(dest)=="table" then -- all is correct
 						item.destination.onlyhardwire = true
 					end
+					if item.spell==1459 then item.subtype="deathgate" end  -- unused?
 
 					item.link=item.link or {}
 					local link=item.link
@@ -1529,7 +1549,7 @@ do
 
 			for i,namefunc in ipairs(Lib.startup_modules_funcs) do
 				local name,func = unpack(namefunc)
-				func()
+				func(Lib)
 				yield(name,1)
 			end
 			
@@ -1794,11 +1814,10 @@ do
 		--]]
 
 		-- Adds instant travel modes to starting node
-		function Lib:SetupInitialQuickTravel(current)
-			local hearthlocation;
-			local bind=GetBindLocation()
+		function Lib:SetupInitialQuickTravel(startnode)
 			local userlevel = UnitLevel("player")
 
+			local bind=GetBindLocation()
 			if bind=="The Vindicaar" then
 				bind = bind..", "..Lib:GetVindicaarPosition()
 			end
@@ -1835,49 +1854,53 @@ do
 				return nil
 			end
 
-			if Lib.cfg.use_mage_teleport then
-				--local is_mage = select(2,UnitClass("player"))=="MAGE"
-				-- teleports allowed at all
-				for i,node in ipairs(Lib.nodes.mageteleport) do
-					if IsSpellKnown(node.spell) and GetSpellCooldown(node.spell)==0 and (not node.cond_fun or node:cond_fun()) then
-						local meta = {mode="teleport",cost=MAGE_TELEPORT_COST}
-						local valid_spell=true
-						if (node.spell==50977 and tonumber(node.zone)==current.m and (current.f==1 or current.f==2)) or -- Deathgate only outside of acherus/1,2 brokenshores/1,2
-						   (node.spell==126892 and tonumber(node.zone)==current.m) then -- zen pilgrimage only outside new classhall
-							valid_spell = false
-						end
-						--ax,ay,am,af = LibRover:GetPlayerPosition()
-						if valid_spell then current:AddNeigh(node,meta) end
-						if node.spell==50977 then node.subtype="deathgate" end
-						if node.spell==3561 then meta.cost = MAGE_TELEPORT_COST_STORMWIND end  -- Stormwind Mage Tower is a bitch to get out of.
-					elseif Lib.cfg.use_last_resort then
-						if node.faction and (node.faction=="B" or node.faction~=enemyfac) then
-							current:AddNeigh(node,{mode="courtesy",cost=20000}) --Crazy cost to not use it unless this is only way to get to this continent.
-							node.subtype="courtesymage"
-						end
-					end
-				end
-			end
-
-			hearthlocation = FindBindLocation(bind)
-
+			local base=2
+			local logbase=log(base)
+			Lib.debug_portkeys={}
+			local bindlocation = FindBindLocation(bind)
 			for i,port in ipairs(Lib.data.portkeys) do repeat
 				-- first let's get rid of bad conditions
-				if port.cond and not port.cond() then port.costdesc="cond unmet" break end
-				if port.use_hearth_cd and not Lib.cfg.use_hearth then  break  end  -- obviously
-				if port.mode=="ghearth" and not Lib.cfg.use_ghearth then break  end  -- obviously
-				if port.mode=="dhearth" and not Lib.cfg.use_dhearth then break  end  -- obviously
-				if not port.use_hearth_cd and port.item and port.item~=110560 and not Lib.cfg.use_item_teleports then  break  end  -- don't use items other then hearthstone(s)
-				if port.is_astral and not Lib.cfg.use_astral_recall then  break  end  -- captain?
-				if port.maxlevel and userlevel>port.maxlevel then  break  end -- we can't use this item
-				if port.item and port.toy then
-					if not PlayerHasToy(port.item) then break end -- toy not collected
+
+				-- let's find a destination
+				local dest,link=port.destination,port.link
+				-- make sure it's pointing to a node.
+				if dest=="_HEARTH" then  dest = bindlocation
+				elseif dest=="_G_HEARTH" then  dest = FindGarrisonBindLocation()
+				elseif dest=="_TAXIWHISTLE" then  dest = self.TaxiWhistlePredictor:PredictWhistle()
 				end
-				if port.item and (not port.toy) and (GetItemCount(port.item)==0 or not IsUsableItem(port.item)) then break  end
-				if port.spell and not IsSpellKnown(port.spell) then  break  end
+
+				-- denial conditions
+				local rejected=true
+				local reject_reason
+				repeat
+					if not dest then  reject_reason="no destination"  break  end ---------------- continue   -- destination NOT found!
+					if port.spell and not IsSpellKnown(port.spell) then  reject_reason="spell unknown"  break  end
+					if port.item then
+						if port.toy and not PlayerHasToy(port.item) then reject_reason="no toy"  break end -- toy not collected
+						if not port.toy and (GetItemCount(port.item)==0 or not IsUsableItem(port.item)) then reject_reason="no item"  break  end
+					end
+					if port.mode=="hearth" and not Lib.cfg.use_hearth then  reject_reason="use_hearth off"  break  end  -- obviously
+					if port.mode=="ghearth" and not Lib.cfg.use_ghearth then  reject_reason="use_ghearth off"  break  end  -- obviously
+					if port.mode=="dhearth" and not Lib.cfg.use_dhearth then  reject_reason="use_dhearth off"  break  end  -- obviously
+					if not Lib.cfg.use_item_teleports and --[[ it's not a HS ]] not port.use_hearth_cd and port.item and port.item~=110560 and port.item~=140192 then  reject_reason="use_item_teleports off"  break  end  -- don't use items other then hearthstone(s)
+					if port.is_astral and not Lib.cfg.use_astral_recall then  reject_reason="use_astral_recall off"  break  end  -- captain?
+					if port.maxlevel and userlevel>port.maxlevel then  reject_reason="overleveled"  break  end -- we can't use this item
+					if port.cond and not port.cond() then reject_reason="cond unmet"  port.costdesc="cond unmet" break end
+					if port.item==140192 and (startnode.m==1101 or startnode.m==1101) then rejected=true reject_reason="no DHS in class halls" end  -- don't use Dalaran HS in Class Halls
+					rejected=false
+				until true
+				if rejected then
+					tinsert(Lib.debug_portkeys,("%s #%d - |cffff0000%s")
+						:format(port.item and GetItemInfo(port.item) or GetSpellInfo(port.spell) or "name no ready",port.item or port.spell, reject_reason or "?")
+						)
+					break  --next item
+				end
+
 
 				local cdFunc = port.spell and GetSpellCooldown or GetItemCooldown
 				local coolstart,cooldur,coolavail = cdFunc(port.spell or port.item or 0)
+				coolstart,cooldur,coolavail = coolstart or 0,cooldur or 600,coolavail or 1
+
 				local coolrem = max(0,coolstart+cooldur-GetTime())
 				if port.item and coolavail==0 then break end ----------------
 
@@ -1897,34 +1920,90 @@ do
 					end
 				end
 				--]]
+
 				
-				-- seems fine, let's find a destination
-				local dest,link=port.destination,port.link
+				--local rarity_min = 0
+				--local rarity_max = base*(log(max(port.cooldown or 0,2))/logbase - 1)
+				local raritycost = 0--Lerp(rarity_min,rarity_max,1-Lib.cfg.blow_item_cd_ratio) --30m cd = 25 extra cost.
 
-				-- make sure it's pointing to a node.
-				if dest=="_HEARTH" then  dest = hearthlocation
-				elseif dest=="_G_HEARTH" then  dest = FindGarrisonBindLocation()
-				elseif dest=="_TAXIWHISTLE" then  dest = self.TaxiWhistlePredictor:PredictWhistle()
-				end
-				
-				if not dest then  break  end ---------------- continue
+				local old_raritycost = (port.cooldown or 0)/72 --30m cd = 25 extra cost.
 
-				local raritycost = (port.cooldown or 0)/72 --30m cd = 25 extra cost.
-
+				local casttime=0
 				if port.item then
 					link.mode = port.mode or "useitem"
 					link.toy = port.toy
-					link.cost = (port.cost or 0) + coolrem + raritycost
-					if port.item==140192 and (current.m==1101 or current.m==1101) then link.cost=9999 end  -- don't use Dalaran HS in Class Halls
+					link.cost = casttime + coolrem + (port.cost or 99)
 				elseif port.spell then
 					link.mode = "spell"
-					link.cost = (port.cost or 0) + coolrem + raritycost
+					link.cost = casttime + coolrem + (port.cost or 0)
 				end
-				link.time = 20
+				link.time = casttime
+
+				if port.title then                                                                            
+					link.title = port.title
+					dest.title = port.title
+				end
+
+				tinsert(Lib.debug_portkeys,("%s #%d - cost:|cffffff44%.1f|rs, cd:|cff88ff00%.1f|rs, item cd:|cff00ff88%.1f|rs, final cost:|cff88aaff%.1f|rs")
+					:format(port.item and GetItemInfo(port.item) or GetSpellInfo(port.spell) or "name no ready",port.item or port.spell,
+						port.cost or 0,coolrem,port.cooldown or 0,link.cost or -1)
+					)
 
 				link.spell=port.spell
-				current:AddNeigh(dest,link)
+				startnode:AddNeigh(dest,link)
 			until true end
+
+			if Lib.MoleMachineHandler.ready then
+				local mole = Lib.MoleMachineHandler:GetMoleLocation()
+				if mole then
+					--[[
+					local mole_node = Lib.nodes['mole'] and Lib.nodes['mole'][1]
+					if mole_node then
+						mole_node.m=mole.m
+						mole_node.x=mole.x
+						mole_node.y=mole.y
+					else
+						LibRover_Node:New{m=mole.m,x=mole.x,y=mole.y,type="mole",noskip=true}
+						AddNode(mole_node,"dontlink")
+						Lib.nodes['mole'] = Lib.nodes['mole'] or {}
+						tinsert(Lib.nodes['mole'],mole_node)
+					end
+					]]
+					local mole_node = LibRover_Node:New{m=mole.m,x=mole.x,y=mole.y,type="temp",noskip=true}
+					AddNode(mole_node,"dontlink")
+					startnode:AddNeigh(mole_node,{mode="walk"})
+
+					local destinations = Lib.MoleMachineHandler:GetDestinations()
+					local meta = {mode="mole",cost=10}
+					for i,dest in ipairs(destinations) do
+						mole_node:AddNeigh(dest,meta)
+					end
+				end
+			end
+
+			if Lib.cfg.use_mage_teleport then
+				--local is_mage = select(2,UnitClass("player"))=="MAGE"
+				-- teleports allowed at all
+				for i,node in ipairs(Lib.nodes.mageteleport) do
+					if IsSpellKnown(node.spell) and GetSpellCooldown(node.spell)==0 and (not node.cond_fun or node:cond_fun()) then
+						local meta = {mode="teleport",cost=MAGE_TELEPORT_COST}
+						local valid_spell=true
+						if (node.spell==50977 and tonumber(node.zone)==startnode.m and (startnode.f==1 or startnode.f==2)) or -- Deathgate only outside of acherus/1,2 brokenshores/1,2
+						   (node.spell==126892 and tonumber(node.zone)==startnode.m) then -- zen pilgrimage only outside new classhall
+							valid_spell = false
+						end
+						--ax,ay,am,af = LibRover:GetPlayerPosition()
+						if valid_spell then startnode:AddNeigh(node,meta) end
+						if node.spell==50977 then node.subtype="deathgate" end
+						if node.spell==3561 then meta.cost = MAGE_TELEPORT_COST_STORMWIND end  -- Stormwind Mage Tower is a bitch to get out of.
+					elseif Lib.cfg.use_last_resort then
+						if node.faction and (node.faction=="B" or node.faction~=enemyfac) then
+							startnode:AddNeigh(node,{mode="courtesy",cost=20000}) --Crazy cost to not use it unless this is only way to get to this continent.
+							node.subtype="courtesymage"
+						end
+					end
+				end
+			end
 
 		end
 
@@ -1995,12 +2074,14 @@ do
 				local title
 				return true,"OUTLAND_LOCKED","You can't get to Outland if you're below level 58."
 
-			elseif ZGV.GetMapContinent(destmap)==424 and level<85 and not (IsQuestFlaggedCompleted(31736) or IsQuestFlaggedCompleted(31767))  then
-				--Pandaria
+			elseif ZGV.GetMapContinent(destmap)==424 and level<80 
+				and not (IsQuestFlaggedCompleted(31736) or IsQuestFlaggedCompleted(31767)) 
+				and not (ZGV.CurrentGuide and ZGV.CurrentGuide.monkquest and select(2,UnitClass("player"))=="MONK") then
+				--Pandaria is level locked, but low level monks can get to peak during monk daily quests
 				local title
 				local questdata = ZGV.Localizers:GetQuestData(fac=="Alliance" and 29548 or 29690)
 				title = questdata and questdata.title
-				return true,"PANDARIA_LOCKED","You can't get to Pandaria if you're below level 85 and haven't completed the " .. (title and "quest \""..title.."\"" or "initial quest")
+				return true,"PANDARIA_LOCKED","You can't get to Pandaria if you're below level 80 and haven't completed the " .. (title and "quest \""..title.."\"" or "initial quest")
 
 			elseif ZGV.GetMapContinent(destmap)==572 and level<90  then
 				--Draenor
@@ -2065,7 +2146,9 @@ do
 				return
 			end
 			--]]
+			extradata = extradata or {}
 
+			self.start_is_player=extradata.player
 			if am==0 then
 				--local m,f=ZGV.CurrentMapID,ZGV.CurrentMapFloor
 				ax,ay,am = LibRover:GetPlayerPosition()
@@ -2076,6 +2159,7 @@ do
 					ax,ay=0,0
 				end
 				self.start_is_player=true
+				extradata.player=true
 				--[[
 				local x,y = Astrolabe:TranslateWorldMapPosition( am, af, ax, ay, m, f )
 				if x and y and x>0 and y>0 and x<1 and y<1 then
@@ -2199,12 +2283,12 @@ do
 			yield("PENDING")
 			--if end_is_new then
 				wipe(self.nodes['end'])
-				for ni=1,#all do while all[ni] and all[ni].type=="end" do tremove(all,ni) end end  -- there could be many ENDs
+				for ni=#all,1,-1 do local n=all[ni] if n.type=="end" then tremove(all,ni) elseif n.type=="misc" then break end end  -- there could be many ENDs
 			--end
 			yield("PENDING")
 			if #self.nodes.temp>0 then
 				wipe(self.nodes.temp)
-				for ni=1,#all do while all[ni] and all[ni].type=="temp" do tremove(all,ni) end end  -- there could be many TEMPs
+				for ni=#all,1,-1 do local n=all[ni] if n.type=="temp" then tremove(all,ni) elseif n.type=="misc" then break end end  -- there could be many ENDs
 			end
 			yield("PENDING")
 		end
@@ -2251,11 +2335,43 @@ do
 
 				yield("PENDING")
 
-				self.copyendnode = LibRover_Node:New{m=lbm,f=lbf,x=lbx,y=lby,type="temp",warlocksummon=true,onlyhardwire=true}
-				AddNode(self.copyendnode)
+				if Lib.cfg.use_last_resort then
+					self.copyendnode = LibRover_Node:New{m=lbm,f=lbf,x=lbx,y=lby,type="temp",warlocksummon=true,onlyhardwire=true}
+					AddNode(self.copyendnode)
+					self:Debug("Initialized end node #".. self.endnode.num .. " with copy #".. self.copyendnode.num.." "..tostring(self.copyendnode))
+				else
+					self:Debug("Initialized end node #".. self.endnode.num)
+				end
 
-				 self:Debug("Initialized end node #".. self.endnode.num .. " with copy #".. self.copyendnode.num.." "..tostring(self.copyendnode))
 			end
+
+
+			yield("PENDING")
+
+			local timeoff=0
+			if self.extradata and self.extradata.multiple_ends then
+				-- this TRANSFORMS the ends into nodes! Supply plain data, don't get recycled.
+				self:Debug("Multiple endpoints detected: %d, called by %s",#self.extradata.multiple_ends+1,self.caller_stack or "(no stack)")
+				local limit=10000
+				local t1=debugprofilestop()
+				for i,data in ipairs(self.extradata.multiple_ends) do
+					local node = LibRover_Node:New(data)
+					node.type="end"
+					local t01=debugprofilestop()
+					AddNode(node) -- don't link endpoints, it's end-pointless
+					self:Debug("end node %d added in %.3fms",i,debugprofilestop()-t01)
+					limit=limit-1
+					if limit<0 then break end
+
+					local t2=debugprofilestop()
+					if t2-t1>10 then local to1=debugprofilestop() yield("PENDING")  timeoff=timeoff+debugprofilestop()-to1  t1=t2 end
+				end
+				self:Debug("Added %d extra endpoint nodes, #%d-#%d", #self.extradata.multiple_ends, (#Lib.nodes.all - #self.extradata.multiple_ends + 1), #Lib.nodes.all)
+				if limit<0 then self:Debug("CRAP. multiple_ends limit reached! Refusing to find out of so many.") end
+			end
+
+			t=debugprofilestop()-t0
+			self:Debug("&lr_initpath_v InitializePath: inited start/end nodes (@%.1fms dirty, %.1fms clean)",t,t-timeoff)
 
 			yield("PENDING")
 
@@ -2299,40 +2415,17 @@ do
 
 				self:Debug("Initialized start node #%d", self.startnode.num)
 
-				if self.debug_forcepath then
+				if self.debug_forcepath then  -- put proper "indices" into the forcepath data: 0 for start, leave 1..n alone, set all endpoints to n+1.
 					self.debug_forcepath[self.startnode]=0
-					self.debug_forcepath[self.endnode]=self.debug_forcepath.n+1
-					self.debug_forcepath[self.endnode]=self.debug_forcepath.n+1
-				end
-			end
-
-			yield("PENDING")
-
-			if self.extradata and self.extradata.multiple_ends then
-				-- this TRANSFORMS the ends into nodes! Supply plain data, don't get recycled.
-				self:Debug("Multiple endpoints detected: %d, called by %s",#self.extradata.multiple_ends+1,self.caller_stack or "(no stack)")
-				local limit=10000
-				local t1=debugprofilestop()
-				for i,data in ipairs(self.extradata.multiple_ends) do
-					local node = LibRover_Node:New(data)
-					node.type="end"
-					AddNode(node) -- don't link endpoints, it's end-pointless
-					limit=limit-1
-					if limit%10==0 then
-						local t2=debugprofilestop()
-						if t2-t1>20 then yield("PENDING") t1=t2 end
+					print(("|cffeeddaaLibRover forcepath:|r Node 0: %s"):format(self.startnode:tostring()))
+					for ni,nend in ipairs(self.nodes["end"]) do
+						self.debug_forcepath[nend]=self.debug_forcepath.n+1
+						print(("|cffeeddaaLibRover forcepath:|r Node %d: %s"):format(self.debug_forcepath.n+1,nend:tostring()))
 					end
-					if limit<0 then break end
 				end
-				self:Debug("Added %d extra endpoint nodes, #%d-#%d", #self.extradata.multiple_ends, (#Lib.nodes.all - #self.extradata.multiple_ends + 1), #Lib.nodes.all)
-				if limit<0 then self:Debug("CRAP. multiple_ends limit reached! Refusing to find out of so many.") end
 			end
 
-			t=debugprofilestop()-t0
-			self:Debug("&lr_initpath_v InitializePath: inited start/end nodes (@%.1fms dirty)",t)
-
 			yield("PENDING")
-
 
 			-- clear calculation garbage
 			-- moved to after all nodes are set up, because some nodes (multiple endpoints!) used to persist through the endnode wipe, and retained their status/cost from the previous cycle.
@@ -2641,8 +2734,6 @@ do
 
 			local cost_debugging = ZGV.db.profile.debug_display
 
-			local end_node_for_early_return
-
 			local lib_debug_onodes = Lib.debug_onodes
 			local lib_debug_nodes = Lib.debug_nodes
 			local lib_debug_nodes_any = next(Lib.debug_nodes)
@@ -2688,7 +2779,7 @@ do
 				if lib_debug_forcepath and (lib_debug_forcepath[neigh] or 99)-(lib_debug_forcepath[current] or 99)==1 then
 					debugged_pair=true
 				end
-				if debugged_pair then print("DEBUGGED PAIR:",current.num,neigh.num) end
+				if debugged_pair then print("|cffeeddaaLibRover forcepath:|r DEBUGGED PAIR:",(current.type=="start" and "start" or current.num),(neigh.type=="end" and "end" or neigh.num)) end
 
 				local mode=neighlink.mode
 				local neighlink__ts = tempstore[neighlink]
@@ -2881,14 +2972,6 @@ do
 						end
 					-- ==
 
-					-- Penalize not-debug-forced path. Experimental...
-						if lib_debug_forcepath and (lib_debug_forcepath[neigh] or 99)-(lib_debug_forcepath[current] or 99)~=1 then
-							-- they're not consecutive in the forced path
-							mycost = mycost+COST_FAILURE
-							if cost_debugging then costdesc = costdesc .. current.num.."-"..neigh.num.." not in forcepath; " end
-						end
-					-- ==
-
 					-- Don't start at unknown taxis that are: - too high level; - complicated. This means we DO allow starting at unknown but valid taxis.
 						if neigh.type=="taxi"
 						and (mode=="walk" or mode=="fly")
@@ -2971,6 +3054,11 @@ do
 						end
 					--]]
 
+
+					if Lib.RestrictMap and current.m~=Lib.startnode.m then 
+						mycost = mycost + COST_FAILURE + 100
+					end
+
 					-- cost calculation is over.
 
 					local cost = current.cost + mycost
@@ -2983,7 +3071,7 @@ do
 					end
 
 					if debugged_pair then
-						print(("|cffffffffLinking %d to %d: came from %d, mode %s, cost %.1f, time %.1f, '%s' (total time %.1f, cost %.1f)"):format(
+						print(("|cffeeddaaLibRover forcepath:|r Linking %d to %d: came from %d, mode %s, cost %.1f, time %.1f, '%s' (total time %.1f, cost %.1f)"):format(
 							current.num, neigh.num, current.parent and current.parent.num or -1, neighlink.mode, mytime,mycost, costdesc, time,cost))
 					end
 
@@ -3029,28 +3117,28 @@ do
 						end
 
 					end
-					-- With the heaps used for open nodes, NEVER ALLOW THE NODE SCORE TO INCREASE. This screws things royally.
 
 					 lib_debug_time.scoring = lib_debug_time.scoring + debugprofilestop() - debug_time_scoring_1
 
 					 local debug_time_adding_1 = debugprofilestop()
 
+					-- With the heaps used for open nodes, NEVER ALLOW THE NODE SCORE TO INCREASE. This screws things royally.
 					if updated then
 						if neigh.status=="open" then
 							-- just update it. RESORT THE HEAP.
 							self.opennodes:BubbleUp(neigh)
 						else
-							self.opennodes:Add(neigh)  --TODO: if neigh has a border twin, then open the twin INSTEAD. Later, when working the twin, close this one immediately.
-							neigh.status="open"
-							opened_count=opened_count+1
+							if lib_debug_forcepath and not debugged_pair then
+								-- don't even open this, if we're debugging and this connection does not have two consecutive indices in the debug_forcepath list.
+							else
+								self.opennodes:Add(neigh)  --TODO: if neigh has a border twin, then open the twin INSTEAD. Later, when working the twin, close this one immediately.
+								neigh.status="open"
+								opened_count=opened_count+1
+							end
 						end
 					end
 
 					 lib_debug_time.adding = lib_debug_time.adding + debugprofilestop() - debug_time_adding_1
-
-					if neigh.type=="end" then
-						end_node_for_early_return = neigh
-					end
 
 				else
 					-- closed or otherwise invalid
@@ -3103,10 +3191,6 @@ do
 			end
 
 			-- lib_debug_time.final = lib_debug_time.final + debugprofilestop() - debug_time_final_1
-
-			if end_node_for_early_return then
-				--return "EARLYSUCCESS",end_node_for_early_return
-			end
 
 			if self.calculation_step>=self.calculation_step_limit then
 				return "TIMEOUT",current
@@ -3168,6 +3252,10 @@ do
 
 			wipe(Lib.RESULTS_SKIPPED_START)
 			wipe(Lib.RESULTS_SKIPPED_END)
+
+			if self.extradata and self.extradata.reportEnd then
+				self.extradata.endnode = endnode
+			end
 
 			-- do the backwards walk
 			while endnode do
@@ -3300,7 +3388,7 @@ do
 
 					text=text or "walk"
 
-					if (a_b=="taxi_taxi" or a_b=="ship_ship" or a_b=="zeppelin_zeppelin" or a_b=="portal_portal" or text=="arrive" or a_b=="taxi_argusportal" or a_b=="taxi_ferry")
+					if (a_b=="taxi_taxi" or a_b=="ship_ship" or a_b=="zeppelin_zeppelin" or a_b=="portal_portal" or a_b=="mole_misc" or text=="arrive" or a_b=="taxi_argusportal" or a_b=="taxi_ferry")
 					 and node~=self.force_next then  -- prepare to skip the point... oh shit oh shit
 						node.is_arrival=true
 					end
@@ -3323,6 +3411,7 @@ do
 						:gsub("{next_name}",nextnode and (nextnode.taxiDestination and TryBZL(nextnode.taxiDestination.localname or nextnode.taxiDestination.name) or TryBZL(nextnode.extitle) or TryBZL(nextnode.localname) or TryBZL(nextnode.name)) or "?")
 						:gsub("{map}",TryBZL(MapName(node)))
 						:gsub("{next_map}",nextnode and nextnode.title and TryBZL(nextnode.title) or TryBZL(nextmap) or "?")
+						:gsub("{next_title}",nextnode and nextnode.title and TryBZL(nextnode.title) or "?")
 						:gsub("{next_port}",nextnode and nextnode.port and TryBZL(nextnode.port)..", "..TryBZL(nextmap) or TryBZL(nextmap) or "?port?")
 						:gsub("{bordermap}",nextnode and nextnode.border==node and TryBZL(MapName(nextnode)) or TryBZL(MapName(node)))
 						:gsub("{item}", ZGV:GetItemInfo(node.item or (node.link and node.link.item) or 0) or "item")
@@ -3527,7 +3616,7 @@ do
 
 			if self.PathFoundHandler then 
 				local returnData = self.extradata
-				returnData.fromme = self.start_is_player
+				returnData.fromme = self.startnode.player
 				self.PathFoundHandler("success",results,returnData)
 			end
 
@@ -3656,7 +3745,7 @@ do
 					local slot_time=debugprofilestop()
 
 					local debug_time_onerun_1=debugprofilestop()
-					if co_status(self.thread)=="dead" then return end
+					if co_status(self.thread)=="dead" then self.calculating=false return end
 					resumed,code,ret = resume(self.thread,self,time_slot_remaining) -- returns num as count of nodes covered. nil if ending.
 					if self.initializing_path then
 						Lib.debug_time.initpath = Lib.debug_time.initpath+debugprofilestop()-debug_time_onerun_1
@@ -3680,7 +3769,9 @@ do
 							time_slot_remaining=0
 						end
 					else
-						error("{{"..(code or "").."}}")
+						ZGV:Error("Travel System crashed!\n"..(code or ""))
+						self.calculating=false
+						return
 					end
 
 					slot_time=debugprofilestop()-slot_time
@@ -3731,7 +3822,7 @@ do
 				if code=="SUCCESS" and Lib.FORCE_FAILURE then self.success_endnode.cost = COST_FAILURE+123 end
 
 				-- Detect soft failure - path was found, but unacceptably long.
-				if code=="SUCCESS" and self.success_endnode and self.success_endnode.cost>=COST_FAILURE then
+				if code=="SUCCESS" and self.success_endnode and self.success_endnode.cost>=COST_FAILURE and not self.debug_forcepath then
 					Lib:Debug("Path found has cost %d, that's unacceptable. Failing.",self.success_endnode.cost)
 					code="END"
 				end
@@ -3767,7 +3858,7 @@ do
 					Lib:Debug("Path ERROR in %s frames, %d calcs, %.1f ms.", Lib.debug_frames_total,Lib.calculation_step,Lib.debug_time.all)
 					self:ReportFail("Error finding path.")
 				else
-					error("WTF_CALC? Code %s, endnode %s",code,self.success_endnode and "YES" or "NO")
+					error("WTF_CALC? Code "..code.." endnode "..(self.success_endnode and "YES" or "NO"))
 				end
 
 				--ZGV:Debug("&LibRover Ela %.2f, sec_per %.2f, Time slot: %.2f, taken: %.2f, covered %d steps", elapsed*1000,sec_per_frame*1000, time_slot,time_slot-time_slot_remaining,self.calculation_step)
@@ -3837,11 +3928,22 @@ do
 						return
 					end
 					-- self.quiet=false -- leave it to the caller to set.
-					local x,y,m = LibRover:GetPlayerPosition()
-					if not x or not y then
-						self:Debug("Force update: current location is unknown (%s %s %s). May retry: %d/50.",tostring(x),tostring(y),tostring(m),self.force_update_counter)
+
+					local x,y,m
+					if self.startnode then
+						if self.startnode.player then
+							x,y,m = LibRover:GetPlayerPosition()
+							if not x or not y then
+								self:Debug("Force update: current location is unknown (%s %s %s). May retry: %d/50.",tostring(x),tostring(y),tostring(m),self.force_update_counter)
+								return
+							end -- we're NOT working in mapless places.
+						else
+							x,y,m = self.startnode.x,self.startnode.y,self.startnode.m
+						end
+					else
+						self:Debug("Can't force update from an unknown start point!")
 						return
-					end -- we're NOT working in mapless places.
+					end
 					self.force_update_now=false
 					self:Debug("Force update: updating!")
 					self:FindPath(m,x,y,lbm,lbx,lby,self.PathFoundHandler, self.extradata,nil, self.quiet)
@@ -4026,16 +4128,23 @@ do
 		local function onEvent(this, event, arg1, arg2, arg3, arg4, arg5)
 			local Lib=Lib
 			local self=Lib
+
+			--[[ -- startup moved to ZGV:OnInitialize
 			if event=="ADDON_LOADED" and arg1==addonName then
 				--Lib.ready=true  -- TODO added a ZGV.db check for sanity, test how it is working in real life
 				--Lib:Debug("ADDON_LOADED %s, let's get this show on the road.",addonName)
 				Lib:DoStartup()
 			end
+			--]]
 
 			if not Lib.ready then return end
 
-			if event=="ADDON_LOADED" and arg1=="Blizzard_FlightMap" then Lib.DebugHighlightHooked = true
-				FlightMapFrame:HookScript("OnShow",function() Lib:HighlightFlightMapDestination() end)
+			if event=="TAXIMAP_OPENED" then
+				if (arg1 == Enum.UIMapSystem.Taxi) then
+					Lib:HighlightTaxiDestination()
+				else
+					Lib:HighlightFlightMapDestination()
+				end
 			end
 
 			if event=="ACHIEVEMENT_EARNED" or event=="LEARNED_SPELL_IN_TAB" or event=="RECEIVED_ACHIEVEMENT_LIST" then
@@ -4401,11 +4510,13 @@ do
 
 		function LibRover:DebugNodes(n1,n2,...)
 			if n1=="clear" then print("DebugNodes cleared.") self.debug_fromtonodes=nil return self:DebugNodes(n2,...) end
-			if not n1 and not n2 then return self end
 			if type(n1)=="number" then n1=self.nodes['all'][n1] end
 			if type(n2)=="number" then n2=self.nodes['all'][n2] end
 			if n1=="start" then n1=self.nodes['start'][1] end
 			if n2=="end" then n2=self.nodes['end'][1] end
+			if type(n1)=="string" then n1=self:FindNode(n1)[1] end
+			if type(n2)=="string" then n2=self:FindNode(n2)[1] end
+			if not n1 or not n2 then return self end
 
 			print("Node 1:",n1 and n1:tostring())
 			print("Node 2:",n2 and n2:tostring())
@@ -4445,19 +4556,40 @@ do
 				print("Node 2:",n2 and n2:tostring() or "any")
 			end
 
-			if select("#",...)>0 then  print("-")  return self:DebugNodes(...)  end
+			if select("#",...)>0 then  print("-")  return self:DebugNodes(n2,...)  end
 			return self
 		end
 
-		function LibRover:DebugForcePath(...)
+		function LibRover:DebugPath(...)
 			if not ... or (...=="clear") then
 				self.debug_forcepath=nil
 			else
-				self.debug_forcepath={}
+				local debug_forcepath={}
 				for i=1,select("#",...) do
-					self.debug_forcepath[self.nodes.all[select(i,...)]]=i
+					local ni = select(i,...)
+					local node
+					if type(ni)=="string" then
+						local nodes = self:FindNode(ni)
+						if #nodes==0 then
+							print("I have no idea what '",ni,"' is.")
+							return
+						elseif #nodes>1 then
+							print(ni," is not specific enough. Use a node id:")
+							for ni,node in ipairs(nodes) do
+								print(node.num,"=",node:tostring())
+							end
+							return
+						end
+						node=nodes[1]
+					else
+						node=self.nodes.all[ni]
+					end
+					if not node then ZGV:Print(("No such node: %d"):format(ni)) break end
+					print(("|cffeeddaaLibRover forcepath:|r Node %d: %s"):format(i,node:tostring()))
+					debug_forcepath[node]=i
 				end
-				self.debug_forcepath.n=select("#",...)
+				debug_forcepath.n=select("#",...)
+				self.debug_forcepath = debug_forcepath
 			end
 			self:UpdateNow()
 			return self
@@ -4522,12 +4654,16 @@ do
 					tinsert(ret,node)
 				end
 			end
+			return ret
+		end
+
+		function LibRover:DumpNode(...)
+			local ret = self:FindNode(...)
 			if Spoo then
 				Spoo(nil,nil,ret)
 			else
 				for i,node in ipairs(ret) do print(node:tostring()) end
 			end
-			return ret
 		end
 
 		-- PUBLIC
@@ -4564,7 +4700,7 @@ do
 					for i,v in pairs(LibRover.UnknownFloors) do
 						o=o.."\n[\""..i.."\"] = {[0]="..v[1].."},"..(v[2] and " -- mapgroup "..v[2] or "")
 					end
-					ZGV:ShowDump("Warning, looking for a map that is not known. Temporary assigning "..mapdata.name..", it may change later. Please give following to devs:\n"..o)
+					ZGV:ShowDump("Warning, looking for map "..m.." that is not known. Temporary assigning "..mapdata.name..", it may change later. Please give following to devs:\n"..o)
 					
 					return 0
 				end
@@ -4577,6 +4713,10 @@ do
 			if not map then return 0,0,0 end
 			local pos = C_Map.GetPlayerMapPosition(map,"player")
 			if not pos then return 0,0,map end
+
+			if map==418 then -- Krasang wilds is broken, and all coords are offset.	
+				pos.x, pos.y = ZGV.MapCoords.FixKrasang(map,pos.x,pos.y)
+			end
 			return pos.x,pos.y,map
 		end
 
@@ -4754,17 +4894,15 @@ do
 			
 		end
 	
-
-
 		do -- TaxiWhistle predictor
 			
 			local TaxiWhistlePredictor = {}
 			Lib.TaxiWhistlePredictor = TaxiWhistlePredictor
-
+			Lib.TWP = TaxiWhistlePredictor
 			local TWP=TaxiWhistlePredictor
 			
 			function TWP:SetupListener()
-				local TWLF = CreateFrame("FRAME","LibRoverTaxiWhistleListenerFrame")
+				local TWLF = CreateFrame("FRAME")
 				TWLF:SetScript("OnEvent", self.FrameOnEvent)
 
 				-- listed in usual startup order
@@ -4936,12 +5074,69 @@ do
 			end
 
 			tinsert(Lib.startup_modules_funcs,{"Setting up Taxi Whistle predictor",function(self)
-				--if ZGV.DEV then
-					TWP:SetupListener()
-				--end
+				self.TaxiWhistlePredictor:SetupListener()
 				if ZGV.DEV then
 					--if TWP.ready then TWP.verbose=true end
 				end
+			end})
+
+		end
+
+
+		do -- Mole Machine handler
+			local MoleMachineHandler = {}
+			Lib.MoleMachineHandler = MoleMachineHandler
+			Lib.MMH = MoleMachineHandler
+			local MMH = MoleMachineHandler
+
+			MMH.mole_wait_time = 3*60
+
+			function MMH:SetupListener()
+				if select(2,UnitRace("player"))~="DarkIronDwarf" and not ZGV.db.profile.debug_fake_darkiron then return end
+				self.ListenerFrame = CreateFrame("FRAME")
+				self.ListenerFrame:SetScript("OnEvent", self.FrameOnEvent)
+				self.ListenerFrame:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")
+				self.ready=true
+			end
+
+			function MMH.FrameOnEvent(frame,event,arg1,arg2,arg3)
+				if event=="UNIT_SPELLCAST_SUCCEEDED" then
+					if (arg3==265225 --[[D.I.Mole Machine]] or arg3==168657 --[[bubble wand toy]]) then
+						ZGV:Debug("Mole Machine appeared!")
+						local x,y,m = LibRover:GetPlayerPosition()
+						MMH.last_mole = {time=time(), m=m, x=x, y=y}
+						Lib:UpdateNow()
+					elseif (arg3>=280906 and arg3<=280924) or arg3==280928 then
+						MMH.last_mole = nil
+					--[[
+					elseif ZGV.DEV and MMH.last_mole and MMH.last_mole.time and time()-MMH.last_mole.time<30 then
+						local spellname = GetSpellInfo(arg3)
+						if spellname and spellname:find("Mole") then
+							ZGV:Error("Mole machine arrival spell: "..arg3)
+						end
+					--]]
+					end
+				end
+			end
+
+			function MMH:GetMoleLocation()
+				if MMH.last_mole and MMH.last_mole.time and time()-MMH.last_mole.time<self.mole_wait_time then
+					return MMH.last_mole
+				end
+			end
+
+			function MMH:GetDestinations()
+				if not self.destinations then
+					self.destinations = {}
+					for i,item in ipairs(Lib.data.portkeys) do  if item.spell==265225 then
+						tinsert(self.destinations,item.destination)
+					end end
+				end
+				return self.destinations
+			end
+
+			tinsert(Lib.startup_modules_funcs,{"Setting up Mole Machine handler",function(self)
+				self.MoleMachineHandler:SetupListener()
 			end})
 
 		end

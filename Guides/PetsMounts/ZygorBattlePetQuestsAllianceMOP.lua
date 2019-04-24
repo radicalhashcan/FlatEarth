@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("PetBattleAMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Dailies",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Dailies",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the battle pet dailies in Eastern Kingdoms, Kalimdor, Outland, Northrend, Cataclysm, and Pandaria.",
 condition_suggested=function() return level>=1 and level<=110 end,
@@ -11,7 +11,7 @@ condition_suggested=function() return level>=1 and level<=110 end,
 step
 #include "Alliance_Battlepet_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Cataclysm",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Cataclysm",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Battle Pet Tamers: Cataclysm questline.",
 condition_end=function() return completedq(31966) end,
@@ -83,9 +83,9 @@ step
 Congratulations!
 You have completed the _Battle Pet Tamers: Cataclysm_ questline!
 |tip
-Click here to load the "Battle Pet Tamers: Pandaria" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Pandaria"
+Click here to load the "Battle Pet Tamers: Pandaria" guide |confirm |next "Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Pandaria"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Eastern Kingdoms",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Eastern Kingdoms",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Battle Pet Tamers: Eastern Kingdoms questline.",
 condition_end=function() return completedq(31902) end,
@@ -266,9 +266,9 @@ step
 Congratulations!
 You have completed the _Battle Pet Tamers: Eastern Kingdoms_ questline!
 |tip
-Click here to load the "Battle Pet Tamers: Kalimdor" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Kalimdor"
+Click here to load the "Battle Pet Tamers: Kalimdor" guide |confirm |next "Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Kalimdor"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Kalimdor",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Kalimdor",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Battle Pet Tamers: Kalimdor questline.",
 condition_end=function() return completedq(31889) end,
@@ -320,9 +320,9 @@ step
 Congratulations!
 You have completed the _Battle Pet Tamers: Kalimdor_ questline!
 |tip
-Click here to load the "Battle Pet Tamers: Outland" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Outland"
+Click here to load the "Battle Pet Tamers: Outland" guide |confirm |next "Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Outland"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Northrend",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Northrend",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Battle Pet Tamers: Northrend questline.",
 condition_end=function() return completedq(31927) end,
@@ -403,9 +403,9 @@ step
 Congratulations!
 You have completed the _Battle Pet Tamers: Northrend_ questline!
 |tip
-Click here to load the "Battle Pet Tamers: Cataclysm" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Cataclysm"
+Click here to load the "Battle Pet Tamers: Cataclysm" guide |confirm |next "Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Cataclysm"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Outland",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Outland",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Battle Pet Tamers: Outland questline.",
 condition_end=function() return completedq(31919) end,
@@ -487,9 +487,9 @@ step
 Congratulations!
 You have completed the _Battle Pet Tamers: Outland_ questline!
 |tip
-Click here to load the "Battle Pet Tamers: Northrend" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Northrend"
+Click here to load the "Battle Pet Tamers: Northrend" guide |confirm |next "Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Northrend"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Pandaria",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Pandaria",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Battle Pet Tamers: Pandaria questline.",
 condition_end=function() return completedq(31930) end,
@@ -594,7 +594,7 @@ step
 Congratulations!
 You have completed the _Battle Pet Tamers: Pandaria_ questline!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Beasts of Fable",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pet Quests\\Beasts of Fable",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Beasts of Fable questline.",
 condition_suggested=function() return level>=85 and level<=90 end,
@@ -603,7 +603,7 @@ condition_end=function() return completedq(32603) end,
 step
 #include "A_Beasts_of_Fable"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Beasts of Fable Dailies",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pet Quests\\Beasts of Fable Dailies",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Beasts of Fable dailies.",
 condition_suggested=function() return level>=85 and level<=110 end,
@@ -615,7 +615,7 @@ step
 You have completed the Beasts of Fable Dailies for the day.
 Click here to return to the beginning of the guide. |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Pandaren Spirit Tamer",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pet Quests\\Pandaren Spirit Tamer",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Pandaren Spirit Tamer questline.",
 condition_end=function() return completedq(32428) end,

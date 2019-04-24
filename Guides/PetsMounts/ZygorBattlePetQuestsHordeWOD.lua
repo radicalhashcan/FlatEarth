@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("PetBattleHWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Draenor Battle Pets Dailies",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pet Quests\\Draenor Battle Pets Dailies",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Draenor Battle Pet dailies.",
 condition_suggested=function() return level>=90 and level<=110 end,

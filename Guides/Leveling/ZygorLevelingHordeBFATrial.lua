@@ -3,287 +3,603 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("LevelingHBFA") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\World Events\\Battle for Azeroth (110-120)\\The Burning of Teldrassil",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Battle for Azeroth (110-120)\\Intro & Quest Zone Choice",{
 author="support@zygorguides.com",
-description="This guide will help you assault Teldrassil on behalf of the Horde.",
-condition_suggested=function() return level == 110 and not completedq(52981) end,
+description="\nThis guide will assist you in completing the following:\n"..
+"\nBattle for Azeroth \"The Battle for Lordaeron\" introduction scenario\n"..
+"\nObtaining the Heart of Azeroth\n"..
+"\nChoosing which zones to complete quests in to level your character\n",
+condition_suggested=function() return level >= 110 and level <= 120 end,
+startlevel=110.0,
+endlevel=120.0,
+image=ZGV.DIR.."\\Guides\\Images\\BfAIntro",
 },[[
 step
-accept The Warchief Awaits##50476
+Starting Guide |next "Fresh_Start_BFA" |only if not completedq(52131)
+Starting Guide |next "Choose_Next_Questing_Zone_BFA" |only if completedq(52131)
+step
+label "Fresh_Start_BFA"
+accept Hour of Reckoning##53372
+|tip Relog if you do not automatically accept this quest.
+step
+Enter the building |goto Orgrimmar/1 49.88,75.54 < 10 |walk
+talk High Overlord Saurfang##14720
+|tip Inside the building.
+turnin Hour of Reckoning##53372 |goto Orgrimmar/1 48.52,70.73
+accept The Battle for Lordaeron##51796 |goto Orgrimmar/1 48.52,70.73
+step
+talk Isabella##139093
+|tip Inside the building.
+Tell her _"I am ready to go to the Undercity."_
+Travel to Lordaeron |scenariostart |goto 47.79,71.69 |q 51796 |or |next "Intro_Scenario"
+|tip It may take a moment to enter the scenario.
+_Or_
+Tell her _"I've heard this tale before... <Skip the scenario and begin your next mission.>"_
+|tip This will allow you to skip the intro scenario if you've already completed it on another character.
+Skip the Battle for Lordaeron |condition readyq(51796) |goto 47.79,71.69 |or |future |next "Intro_Scenario_Completed"
+step
+label "Intro_Scenario"
+Watch the dialogue
+Report to High Overlord Saurfang |scenariogoal 1/38253 |goto Undercity BFA/0 84.42,25.60 |q 51796
+step
+talk Friendly NPCs
+|tip They have various names, and are highlighted around this area inside the building.
+|tip They appear on your minimap as yellow dots.
+Tell them "_The Undercity is under attack! Get to the mage portal!"_
+kill SI:7 Operative##131137+
+Secure the Mage Distrct |scenariostage 2 |goto 75.33,30.32 |q 51796
+step
+Follow the path |goto 79.69,43.74 < 15 |only if walking
+Watch the dialogue
+|tip Follow High Overlord Saurfang as he walks.
+Follow Saurfang to the Heart of the City |scenariogoal 3/38468 |goto 69.60,49.58 |q 51796
+step
+talk Friendly NPCs
+|tip They have various names, and are highlighted around this area inside the building.
+Tell them "_The Undercity is under attack! Get to the mage portal!"_
+Evacuate the Remainder of Undercity |scenariostage 4 |goto 67.21,46.18 |q 51796
+step
+clicknpc Portal to Lordaeron##131087 |goto 67.08,45.95
+|tip Inside the building.
+Teleport to the Ruins of Lordaeron |goto Ruins of Lordaeron/0 48.08,74.52 < 10 |noway |c |q 51796
+step
+Watch the dialogue
+|tip Follow High Overlord Saurfang as he walks.
+Follow Saurfang to Battle |scenariogoal 5/39077 |goto 48.13,68.72 |q 51796
+step
+Kill enemies around this area
+Break Their Front Line |scenariostage 6 |goto 48.27,66.90 |q 51796
+step
+Watch the dialogue
+Kill the enemies that attack in waves
+Defeat #3# Waves of Attackers |scenariogoal 7/39562 |goto 47.84,61.98 |q 51796
+step
+talk Sludge Guard##133115
+Tell him _"Gas mask and blight canister, please. I want to see what this thing can do."_
+Request a Gas Mask and Blight Canister |havebuff 629984 |goto 48.31,67.58 |q 51796
+step
+Kill enemies around this area
+|tip Use the "Blight Canister" ability.
+|tip It appears as a button on the screen.
+|tip Try to make them run north.
+clicknpc Wounded Horde Soldier##127065+
+|tip They look like Alliance soldiers standing with huge partially filled red bubbles above their heads around this area.
+|tip They will appear on your minimap as yellow dots.
+Use the Blight on Alliance Forces to Drive Them Away |scenariostage 8 |goto 48.34,59.90 |q 51796
+step
+Run up the stairs |goto 49.01,72.28 < 10 |only if walking
+Follow the path |goto 50.27,72.78 < 15 |only if walking
+Follow the path |goto 51.94,75.98 < 30 |only if walking
+Continue following the path |goto 51.61,86.86 < 30 |only if walking
+Watch the dialogue
+|tip Follow Nathanos Blightcaller as he runs.
+Follow Nathanos to the Keep |scenariostage 9 |goto 46.53,89.24 |q 51796
+step
+Watch the dialogue
+Intercept the Alliance |scenariostage 10 |goto 46.53,89.24 |q 51796
+step
+Kill enemies around this area
+Defeat King Anduin Wrynn and His Allies |scenariostage 11 |goto 46.82,89.35 |q 51796
+step
+Run up the stairs |goto 51.91,74.60 < 10 |only if walking
+Follow the path |goto 50.81,72.81 < 15 |only if walking
+Watch the dialogue
+|tip Follow Nathanos Blightcaller as he walks.
+Follow Nathanos to Safety |scenariostage 12 |goto 48.18,74.28 |q 51796
+step
+Enter the building |goto 48.71,76.64 < 10 |walk
+Watch the dialogue
+Follow Sylvanas Windrunner |scenarioend |goto 48.10,78.26 |q 51796
+step
+Return to Orgrimmar |goto Orgrimmar/1 49.02,91.80 < 10 |c |q 51796 |notravel
+step
+label "Intro_Scenario_Completed"
+talk Nathanos Blightcaller##140176
+|tip On top of the building.
+turnin The Battle for Lordaeron##51796 |goto 48.90,91.51
+step
+accept A Dying World##53028 |goto 48.90,91.51
 |tip You will automatically accept this quest.
 step
-Follow the path |goto Undercity/0 52.05,64.52 < 5 |walk
-Continue following the path |goto Undercity/0 46.32,72.88 < 5 |walk
-Continue following the path |goto Undercity/0 45.29,78.11 < 5 |walk
-Continue following the path |goto Undercity/0 46.20,83.81 < 5 |walk
-Continue following the path |goto Undercity/0 48.81,87.79 < 5 |walk
-Continue following the path |goto Undercity/0 52.44,89.43 < 5 |walk
-Run up the stairs |goto 53.97,90.40 |goto Undercity/0 53.97,90.40 |only if walking
-Follow the path |goto Undercity/0 54.76,94.39 < 5 |only if walking
-Run up the stairs |goto Undercity/0 56.19,95.51 < 5 |only if walking
-Run up the stairs |goto Undercity/0 57.19,93.29 < 5 |only if walking
-talk Lady Sylvanas Windrunner##134554
-turnin The Warchief Awaits##50476 |goto Undercity/0 58.14,91.88
-accept The Warchief Commands##50642 |goto Undercity/0 58.10,91.88
+click Portal to Uldum
+Take the Portal to Uldum to Get Closer to Silithus |q 53028/1 |goto 48.87,38.55
 step
-talk High Overlord Saurfang##134574
-turnin The Warchief Commands##50642 |goto Northern Barrens/0 50.88,46.00
-accept A Quick Diversion##50646 |goto Northern Barrens/0 50.88,46.00
+Reach Silithus |q 53028/2 |goto Silithus/0 42.22,44.27
 step
-talk Lorash##134573
-turnin A Quick Diversion##50646 |goto Ashenvale/0 38.91,55.30
-accept Everybody Has a Price##50647 |goto Ashenvale/0 38.91,55.30
+talk Magni Bronzebeard##142322
+turnin A Dying World##53028 |goto 42.22,44.27
+accept The Heart of Azeroth##51211 |goto 42.22,44.27
 step
-Eliminate #10# Guards |q 50647/1 |goto 36.15,50.64
-|tip Use the "Marked!" ability on guards around this area.
-|tip It appears as a button on the screen.
-|tip You will be stealthed, so enemies won't attack you.
-|tip You must not be mounted to do this.
+click Titan Translocator
+Use the Device in Silithus to Travel to the Chamber of the Heart |q 51211/1 |goto 43.20,44.49
 step
-Watch the dialogue
-Return to the Outskirts of Astranaar |goto 38.92,55.35 < 7 |noway |c |q 50647
+Travel to the Chamber of Heart |goto Chamber Of Heart/0 50.12,30.35 < 10 |noway |c |q 51211
 step
-talk Lorash##134573
-turnin Everybody Has a Price##50647 |goto 38.91,55.29
-accept A Timely Arrival##50738 |goto 38.91,55.29
-step
-talk Lady Sylvanas Windrunner##135003
-|tip She walks to this location.
-turnin A Timely Arrival##50738 |goto 37.83,56.30
-accept Zoram'gar Outpost##50740 |goto 37.83,56.30
-step
-Enter the building |goto 11.67,35.00 < 5 |walk
-talk Dagrun Ragehammer##34303
-|tip He walks around this area inside the building.
-Tell him _"Warchief Sylvanas Windrunner requires your aid repairing her soldiers' weapons."_
-Speak with the Weaponsmith |q 50740/3 |goto 11.56,35.36
-step
-Leave the building |goto 11.67,35.00 < 5 |walk
-talk Commander Grimfang##34122
-Tell him _"Commander, the warchief asks that you prepare your outpost for an incoming army."_
-Speak with Commander Grimfang |q 50740/1 |goto 12.11,33.86
-step
-Enter the building |goto 12.86,34.12 < 3 |walk
-talk Innkeeper Duras##43606
+click Titan Console
 |tip Inside the building.
-Tell her _"The warchief needs rations and lodging for an incoming army."_
-Speak with the Innkeeper |q 50740/2 |goto 12.99,34.16
-step
-talk High Overlord Saurfang##134574
-turnin Zoram'gar Outpost##50740 |goto 35.17,49.44
-accept On The Prowl##50772 |goto 35.17,49.44
-step
-Meet Sylvanas Near the Entrance to Darkshore |q 50772/1 |goto Darkshore/0 44.07,90.46
+Choose _(View events that led to Azeroth's wound)_
+Watch the dialogue
+Witness Past Events on the Titan Console |q 51211/2 |goto 50.16,55.19
 step
 Watch the dialogue
-talk Lady Sylvanas Windrunner##134554
-turnin On The Prowl##50772 |goto 44.08,90.50
-accept Into the Woods##50800 |goto 44.08,90.50
+talk Magni Bronzebeard##136907
+|tip Inside the building.
+Ask him _"What does Azeroth want of me, Magni?"_
+Watch the dialogue
+Speak to Magni Within the Chamber of Heart |q 51211/3 |goto 50.15,53.76
 step
-Kill the enemies that attack in waves
-Defeat #6# Ashenvale Huntresses |q 50800/1 |goto 44.08,90.50
+talk Magni Bronzebeard##136907
+|tip Inside the building.
+turnin The Heart of Azeroth##51211 |goto 50.14,53.76
+accept Infusing the Heart##52428 |goto 50.14,53.76
 step
-talk Lady Sylvanas Windrunner##134554
-turnin Into the Woods##50800 |goto 44.07,90.49
-accept Ripe for the Picking##50823 |goto 44.07,90.49
+Use the Heart of Azeroth
+|tip Use it next to Azerite Cracks around this area.
+|tip They look like blue glowing rock stumps inside the building on the ground around this area.
+|tip It appears as a button on the screen.
+Absorb the Azerite Wounds |q 52428/1 |goto 50.18,59.01
 step
-talk High Overlord Saurfang##135443
-turnin Ripe for the Picking##50823 |goto Ashenvale/0 12.13,33.75
+Use the Heart of Azeroth
+|tip It appears as a button on the screen.
+|tip Inside the building.
+Watch the dialogue
+Use the Heart of Azeroth to Mend the Seal |q 52428/3 |goto 50.14,63.94
 step
-talk Lady Sylvanas Windrunner##134554
-accept A Quick Flyover##50837 |goto 12.02,33.77
+talk Magni Bronzebeard##136907
+|tip Inside the building.
+turnin Infusing the Heart##52428 |goto 50.14,53.75
+accept The Speaker's Imperative##53031 |goto 50.14,53.75
 step
-talk Zarvik Blastwix##135501
-Speak with Zarvik Blastwix |q 50837/1 |goto 11.82,33.26
+click Teleport Pad
+|tip Inside the building.
+Return to Orgrimmar |q 53031/1 |goto 50.12,30.40
 step
-talk Zarvik Blastwix##135501
-Tell him _"Let's Fly."_
-Board the Bombardier |invehicle |goto 11.82,33.26 |q 50837
-stickystart "Destroy_Wisps"
+talk Nathanos Blightcaller##140176
+|tip On top of the building.
+turnin The Speaker's Imperative##53031 |goto Orgrimmar/1 48.91,91.51
+accept Mission Statement##51443 |goto Orgrimmar/1 48.91,91.51
 step
-kill Marked Tree##140924+
-|tip Use the ability on your action bar.
-|tip Aim near the bottom of them.
-Fell #3# Marked Trees |q 50837/2 |goto Darkshore/0 41.60,90.63
+Enter the building |goto 49.88,75.54 < 10 |walk
+Watch the dialogue
+|tip Inside the building.
+Speak to Warchief Sylvanas Windrunner |q 51443/1 |goto 49.36,74.06
 step
-label "Destroy_Wisps"
-kill Wisp##141268+
-|tip Use the ability on your action bar.
-Destroy #30# Wisps |q 50837/3 |goto 41.60,90.63
-step
-Return to Zoram'gar Outpost |goto Ashenvale/0  12.23,33.21 < 7 |c |q 50837 |notravel
-step
-talk Lady Sylvanas Windrunner##134554
-turnin A Quick Flyover##50837 |goto 12.02,33.78
-accept An Unstoppable Force##50880 |goto 12.02,33.78
-step
-Meet Sylvanas at the Wall |q 50880/1 |goto Darkshore/0 44.00,90.18
-step
-Pass Through the Wall |q 50880/2 |goto 43.81,89.77
+Leave the building |goto 49.87,75.51 < 10 |walk
+Enter the building |goto 53.46,78.85 < 10 |walk
+Watch the dialogue
+|tip Inside the building.
+Meet Your Team |q 51443/2 |goto 54.43,78.43
 step
 Watch the dialogue
-talk Lady Sylvanas Windrunner##134554
-turnin An Unstoppable Force##50880 |goto 42.84,87.43
-accept Clearing Them Out##53604 |goto 42.84,87.43
-accept A Glaive Misunderstanding##53605 |goto 42.84,87.43
-stickystart "Kill_Darnassian_Archers"
+talk Nathanos Blightcaller##135205
+|tip Inside the building.
+turnin Mission Statement##51443 |goto 54.44,78.42
+accept The Stormwind Extraction##50769 |goto 54.44,78.42
 step
-use the Everburning Torch##158937
-|tip Use it on Glaive Throwers around this area.
-|tip They look like wooden artillery machines with purple wings on the ground around this area.
-Burn #4# Glaive Throwers |q 53605/1 |goto 40.40,83.39
+click Blightcaller's Easy Death##289645
+|tip Inside the building.
+Take a Potion |q 50769/1 |goto 54.58,78.36 |or |next "Stormwind_Jail_Break"
+_Or_
+Click Here to Skip the Stormwind Extraction Scenario |or |confirm |next "Skip_Stormwind_Jail_Break"
+|tip This will allow you to skip the intro scenario if you've already completed it on another character.
 step
-label "Kill_Darnassian_Archers"
-Kill enemies around this area
-Defeat #7# Night Elf Forces |q 53604/1 |goto 40.40,83.39
+label "Skip_Stormwind_Jail_Break"
+talk Nathanos Blightcaller##135205
+|tip Inside the building.
+Tell him _"I have heard this story before. (Skip the Scenario and port to Zuldazar Harbor in Zandalar)"_
+Skip the Stormwind Extraction |condition readyq(50769) |goto 54.44,78.42 |or |future |next "Stormwind_Jail_Break_Completed"
 step
-talk Lady Sylvanas Windrunner##134554
-turnin Clearing Them Out##53604 |goto 42.43,82.06
-turnin A Glaive Misunderstanding##53605 |goto 42.43,82.06
-accept Blurred Vision##50878 |goto 42.43,82.06
-stickystart "Kill_Frenzied_Blackwood_Furbolgs"
+label "Stormwind_Jail_Break"
+Leave the building |goto 53.43,78.86 < 10 |walk
+clicknpc Skyhorn Eagle##135211
+|tip On top of the building.
+Begin Flying with the Skyhorn Eagle |invehicle |goto 49.67,93.66 |q 50769
 step
-kill 8 Sentry Owl##141359 |q 50878/1 |goto 42.36,78.18
+Take the Transport from the Ramparts |q 50769/2
 step
-label "Kill_Frenzied_Blackwood_Furbolgs"
-kill 10 Frenzied Blackwood Furbolg##140686 |q 50878/2 |goto 42.36,78.18
-step
-talk Lady Sylvanas Windrunner##135003
-turnin Blurred Vision##50878 |goto 43.30,75.67
-accept The Trees Have Ears##50879 |goto 43.30,75.67
-step
-kill Burning Ancient##141365 |q 50879/1 |goto 44.40,75.11
-|tip You may need help with this.
-step
-talk Lady Sylvanas Windrunner##135003
-turnin The Trees Have Ears##50879 |goto 43.30,75.67
+Begin the "The Stormwind Extraction" Scenario |scenariostart |q 50769
 step
 Watch the dialogue
-talk Lady Sylvanas Windrunner##135003
-accept The Blackwood Den##52436 |goto 43.30,75.67
-accept Aggressive Inspiration##53606 |goto 43.30,75.67
-stickystart "Slay_Blackwood_Furbolgs"
+Infiltrate Stormwind City |scenariogoal 1/39765 |goto Stormwind City BFA/0 47.22,59.58 |q 50769 |notravel
 step
-click Horde Banner##289540
-Plant the Northern Banner |q 53606/1 |goto 45.10,83.68
+clicknpc Padlock##134070+
+|tip They look like dark metal locks on the wooden door on the ground in the water.
+Open the Sewer Access Gate |scenariogoal 2/0 |goto 46.24,58.13 |q 50769
 step
-click Horde Banner##289540
-Plant the Center Banner |q 53606/2 |goto 44.61,85.10
+Enter the Stockades |scenariogoal 2/39766 |goto 46.27,58.09 |q 50769
+|tip Jump down into the swirling portal.
 step
-click Horde Banner##289540
-Plant the Southern Banner |q 53606/3 |goto 44.39,86.53
+Enter the Stormwind Stockades |goto Stockcades Scenario/0 25.18,52.52 < 7 |noway |c |q 50769
 step
-label "Slay_Blackwood_Furbolgs"
-Kill enemies around this area
-Slay #10# Blackwood Furbolgs |q 52436/1 |goto 44.74,84.01
+Follow the path |goto 31.80,62.16 < 10 |walk
+Run up the stairs |goto 46.51,52.52 < 15 |walk
+Meet Up With Rokhan |scenariostage 3 |goto 52.11,40.12 |q 50769
 step
-talk Lady Sylvanas Windrunner##134554
-turnin The Blackwood Den##52436 |goto 43.32,84.71
-turnin Aggressive Inspiration##53606 |goto 43.32,84.71
-accept The Start of Something Good##52437 |goto 43.32,84.71
+talk High Overlord Saurfang##134120
+|tip Inside the building.
+|tip Click the Cell Door to be able to reach him.
+Ask him _"What do you mean?"_
+Watch the dialogue
+Release Saurfang |scenariostage 4 |goto 48.01,33.48 |q 50769
 step
-Meet Sylvanas at Nazj'vel |q 52437/1 |goto 35.78,84.79
+Follow the path |goto 59.80,59.49 < 10 |walk
+click Cell Door
+|tip Inside the building.
+Release the Other Prisoners |scenariogoal 5/39781 |goto 55.98,64.10 |q 50769
 step
-talk Jux Burstkix##144346
-turnin The Start of Something Good##52437 |goto 35.82,84.84
-accept Fueling the Horde War Machine##53608 |goto 35.82,84.84
-accept A Very Clear Message##53609 |goto 35.82,84.84
-stickystart "Slay_Night_Elves"
+Run down the stairs |goto 55.83,41.61 < 10 |walk
+Watch the dialogue
+|tip Follow your allies as they walk.
+clicknpc Stormwind Sewer Access##139948
+|tip Inside the building.
+Escape the Stockades |scenariogoal 5/39786 |goto 87.05,23.22 |q 50769
 step
-click Azerite Deposit##297790+
-|tip They look like black and silver rock clusters on the ground around this area.
-Collect #6# Azerite |q 53608/1 |goto 32.63,84.08
-step
-label "Slay_Night_Elves"
-Kill enemies around this area
-Slay #10# Night Elves |q 53609/1 |goto 32.63,84.08
-step
-talk Jux Burstkix##144346
-turnin Fueling the Horde War Machine##53608 |goto 35.82,84.84
-turnin A Very Clear Message##53609 |goto 35.82,84.84
-accept A Gift of Azerite##53627 |goto 35.82,84.84
-step
-talk Zarvik Blastwix##135501
-|tip He walks around this area.
-turnin A Gift of Azerite##53627 |goto 44.60,86.54
-accept A Wild Ride##52438 |goto 44.60,86.54
-step
-clicknpc Goblin Hellion##141847
-Use the Goblin Hellion |q 52438/1 |goto 44.76,86.42
-step
-Ride the Goblin Hellion to Wildbend River |q 52438/2 |goto 41.15,69.32 |notravel
-stickystart "Slay_Kaldorei_Forces"
-step
-kill 5 Awakened Ancient##140741 |q 52438/3 |goto 41.86,66.77
-|tip Use the abilities on your action bar.
-step
-label "Slay_Kaldorei_Forces"
-Kill enemies around this area
-|tip Use the abilities on your action bar.
-Slay #20# Kaldorei Forces |q 52438/4 |goto 41.86,66.77
-step
-Return to Lady Sylvanas Windrunner |goto 42.74,67.95 < 7 |c |q 52438 |notravel
-step
-talk Lady Sylvanas Windrunner##134554
-turnin A Wild Ride##52438 |goto 42.70,67.75
-accept A Looming Threat##52806 |goto 42.70,67.75
-step
-talk Lady Sylvanas Windrunner##134554
-Ask her _"Where do we go from here, Warchief?"_
-Speak with Sylvanas at the Blackwood Den |q 52806/1 |goto 44.70,86.78
-step
-talk Lady Sylvanas Windrunner##134554
-turnin A Looming Threat##52806 |goto 44.70,86.78
-step
-talk Lady Sylvanas Windrunner##134554
-accept Saurfang Returns##52967 |goto 44.70,86.78
-step
-talk High Overlord Saurfang##142310
-turnin Saurfang Returns##52967 |goto 52.16,22.46
-accept No Small Mercy##52970 |goto 52.16,22.46
-accept Driving Them Out##53610 |goto 52.16,22.46
-accept Seaside Rendezvous##52971 |goto 52.16,22.46
-stickystart "Secure_Civilians"
-stickystart "Slay_Lordanel_Defenders"
-step
-kill Ariel Stagguard##144345 |q 52971/2 |goto 51.73,17.76
-|tip She walks around this area.
-step
-kill Caranne Briarbow##142749 |q 52971/1 |goto 46.73,18.79
-step
-label "Secure_Civilians"
-talk Lor'danel Citizen##142408+
-|tip They look like neutral NPCs cowering in fear on the ground around this area.
-Tell them _"Come with us to safety. We will not harm you."_
-Secure #8# Civilians |q 52970/1 |goto 50.80,19.30
-step
-label "Slay_Lordanel_Defenders"
-Kill enemies around this area
-Slay #15# Lor'danel Defenders |q 53610/1 |goto 49.00,19.56
-step
-talk High Overlord Saurfang##142310
-turnin No Small Mercy##52970 |goto 52.16,22.45
-turnin Driving Them Out##53610 |goto 52.16,22.45
-turnin Seaside Rendezvous##52971 |goto 52.16,22.45
-accept Killer Queen##52981 |goto 52.16,22.45
-step
-Find Saurfang in Northern Darkshore |q 52981/1 |goto 45.93,23.55
+talk Rokhan##134038
+Tell him _"Let's go."_
+Watch the dialogue
+|tip Follow your allies as they walk.
+|tip Stay within the circle on the ground beneath Rokhan as you walk.
+Begin Following Rokhan |goto Stormwind City BFA/0 71.09,46.71 > 15 |c |q 50769
 step
 Watch the dialogue
-Assist the Warchief |q 52981/2 |goto 46.07,24.31
+|tip Follow your allies as they walk.
+|tip Stay within the circle on the ground beneath Rokhan as you walk.
+|tip Jump off the bridge into the water when your allies tell you to.
+|tip Talk to Rokhan again when he stops, to get him to continue walking.
+Follow Rokhan |scenariostage 6 |goto Stormwind City BFA/0 55.81,56.85 |q 50769
+step
+Kill the enemies that attack
+Defeat the Worgen Ambush |scenariogoal 7/39795 |goto 55.81,56.85 |q 50769
 step
 Watch the dialogue
-Follow Saurfang |q 52981/3 |goto 46.07,24.31
+|tip Follow your allies as they walk.
+talk Nathanos Blightcaller##134039
+Tell him _"I'm ready."_
+Escape Cathedral Square |scenariostage 7 |goto 45.44,43.18 |q 50769
 step
-talk Lady Sylvanas Windrunner##144466
-Tell her _"I am ready."_
 Watch the dialogue
-Speak with Sylvanas |q 52981/4 |goto 45.52,18.25
+|tip Follow your allies as they walk.
+kill Icy Barrier##134881
+Escape Jaina's Wrath |scenariostage 8 |goto 39.76,40.63 |q 50769
 step
-talk Lady Sylvanas Windrunner##144466
-turnin Killer Queen##52981 |goto 45.51,18.24
+Watch the dialogue
+|tip Follow your allies as they walk.
+Reach Talanji's Ship |scenariostage 9 |goto 20.60,25.75 |q 50769
 step
-_Lordaeron is under attack!_
-Click Here to Load the "Battle for Lordaeron" Leveling Guide |confirm |next "Zygor's Events Guides\\World Events\\Battle for Azeroth (110-120)\\The Battle for Lordaeron"
-|only if not completedq(51796)
+Watch the dialogue
+talk Princess Talanji##134092
+|tip At the top of the ship.
+Tell her _"Not at all."_
+Escape Stormwind Harbor |scenarioend |goto 20.54,28.94 |q 50769
+step
+Complete the "The Stormwind Extraction" Scenario |q 50769/3 |next "Stormwind_Jail_Break_Completed"
+step
+label "Stormwind_Jail_Break_Completed"
+Travel to Zuldazar |goto Zuldazar/0 57.98,62.80 < 10 |noway |c |q 50769
+step
+talk Nathanos Blightcaller##121210
+turnin The Stormwind Extraction##50769 |goto Zuldazar/0 57.95,62.76
+step
+talk Princess Talanji##132332
+accept Welcome to Zuldazar##46957 |goto 57.95,62.46
+step
+Watch the dialogue
+|tip Follow Princess Talanji as she walks.
+Follow Princess Talanji |q 46957/1 |goto Dazar'alor/0 49.98,82.60
+step
+talk General Jakra'zet##122661
+turnin Welcome to Zuldazar##46957 |goto 49.98,82.33
+accept Rastakhan##46930 |goto 49.98,82.33
+step
+Follow the path |goto 51.21,86.29 < 15 |only if walking
+talk Ripa the Wind Ripper##121252
+fpath Port of Zandalar |goto 52.10,90.12
+step
+clicknpc Enforcer's Pterrordax##135438
+Ride the Enforcer's Pterrordax to the Throne |q 46930/1 |goto 49.98,82.17
+step
+Watch the dialogue
+Ride to the Throne |goto 48.03,44.45 < 7 |c |q 46930 |notravel
+step
+talk Princess Talanji##135440
+|tip On top of the building.
+Tell her _"Take me to King Rastakhan."_
+Speak with Princess Talanji |q 46930/2 |goto 48.82,44.64
+step
+Watch the dialogue
+talk King Rastakhan##120740
+|tip On top of the building.
+turnin Rastakhan##46930 |goto 49.91,42.72
+accept Speaker of the Horde##46931 |goto 49.91,42.72
+step
+Enter the building |goto Dazar'alor/2 29.17,59.39 < 10 |walk
+Watch the dialogue
+|tip Follow Zolani as she walks.
+Follow Zolani |q 46931/1 |goto Dazar'alor/2 25.91,73.81
+step
+click Horde Banner
+Summon the Horde |q 46931/2 |goto Dazar'alor/0 49.93,39.49
+step
+Enter the building |goto 49.94,42.14 < 10 |walk
+Follow the path |goto Dazar'alor/1 58.14,35.76 < 10 |walk
+Watch the dialogue
+|tip Inside the building.
+Explore the Hall of Ancient Paths |q 46931/4 |goto Dazar'alor/1 66.92,72.06
+step
+Watch the dialogue
+|tip Inside the building.
+Explore the Great Seal |q 46931/3 |goto 49.09,70.79
+step
+Watch the dialogue
+|tip Inside the building.
+Explore the Royal Treasury |q 46931/5 |goto Dazar'alor/0 48.76,45.89 |notravel
+step
+Follow the path |goto Dazar'alor/1 39.43,35.47 < 10 |walk
+talk Chronicler To'kini##120168
+|tip Inside the building.
+turnin Speaker of the Horde##46931 |goto Dazar'alor/1 32.99,43.38
+accept To Matters at Hand##52139 |goto Dazar'alor/1 32.99,43.38
+step
+talk Princess Talanji##133050
+|tip Inside the building.
+turnin To Matters at Hand##52139 |goto Dazar'alor/2 41.14,66.73
+accept We Need Each Other##52131 |goto Dazar'alor/2 41.14,66.73
+step
+Watch the dialogue
+talk Princess Talanji##133050
+|tip Inside the building.
+turnin We Need Each Other##52131 |goto 41.14,66.73
+step
+label "Choose_Next_Questing_Zone_BFA"
+click Scouting Map |goto Dazar'alor/2 41.71,69.41
+|tip Inside the building.
+|tip You are choosing the zone you wish to do quests in next.
+|tip Pick whichever you like, it doesn't matter.
+accept Zuldazar##47514|or |next "Zuldazar_Start" |only if not completedq(47514)
+accept Nazmir##47512 |or |next "Nazmir_Start" |only if not completedq(47512)
+accept Vol'dun##47513 |or |next "Voldun_Start" |only if not completedq(47513)
+Completing Guide |next "All_Zones_Completed_BFA" |only if completedq(47514) and completedq(47512) and completedq(47513)
+step
+label "Zuldazar_Start"
+talk Princess Talanji##133050
+|tip Inside the building.
+turnin Zuldazar##47514 |goto Dazar'alor/2 41.14,66.73 |next "Leveling Guides\\Battle for Azeroth (110-120)\\Zandalar\\Zuldazar"
+step
+label "Nazmir_Start"
+talk Princess Talanji##133050
+|tip Inside the building.
+turnin Nazmir##47512 |goto Dazar'alor/2 41.14,66.73 |next "Leveling Guides\\Battle for Azeroth (110-120)\\Zandalar\\Nazmir"
+step
+label "Voldun_Start"
+talk Princess Talanji##133050
+|tip Inside the building.
+turnin Vol'dun##47513 |goto Dazar'alor/2 41.14,66.73 |next "Leveling Guides\\Battle for Azeroth (110-120)\\Zandalar\\Vol'dun"
+step
+label "All_Zones_Completed_BFA"
+_Congratulations!_
+You unlocked all of the questing zones.
+]])
+ZGV.BETASTART()
+ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Battle for Azeroth (110-120)\\War Campaign",{
+author="support@zygorguides.com",
+description="This guide will walk you through the Horde War Campaign for Battle for Azeroth.",
+condition_suggested=function() return level >= 110 and level <= 120 and not completedq(53003) and completedq(52131) end,
+image=ZGV.DIR.."\\Guides\\Images\\WarCampaign",
+},[[
+step
+Unlock the War Campaign |condition completedq(52131)
+|tip Use the "Intro & Quest Zone Choice" guide to accomplish this.
+step
+talk Nathanos Blightcaller##120170
+|tip Inside the building.
+accept The War Campaign##52749 |goto Dazar'alor/2 40.18,71.70
+step
+talk Nathanos Blightcaller##135691
+turnin The War Campaign##52749 |goto Zuldazar/0 58.44,62.67
+accept The War Cache##52746 |goto Zuldazar/0 58.44,62.67
+step
+Gather #100# War Resources |q 52746/1
+|tip Gather these mainly from treasure chests.
+|tip You will also occasionally get some from completing quests as you level.
+|tip Treasure chests appear in random locations in leveling zones.
+|tip As you complete quests, look for silver treasure chest icons on your minimap.
+|tip Also look for silver arrows around the edge of your minimap.
+|tip These silver arrows point you to nearby treasure chests.
+step
+Click the Complete Quest Box:
+turnin The War Cache##52746
+accept Time for War##53333
+step
+talk Nathanos Blightcaller##135691
+turnin Time for War##53333 |goto 58.44,62.67
+step
+talk Nathanos Blightcaller##135691
+accept Mission from the Warchief##51770 |goto 58.44,62.67
+step
+Watch the dialogue
+talk Garona Halforcen##138708
+|tip She walks to this spot on the deck of the ship.
+turnin Mission from the Warchief##51770 |goto Dazar'alor/0 51.69,99.68
+accept War of Shadows##51771 |goto Dazar'alor/0 51.69,99.68
+step
+clicknpc Mission Command Table
+|tip Click the "Missions" tab at the bottom of the window that appears.
+Complete "The Shadow War" Mission |q 51771/1 |goto 51.60,99.55
+|tip This mission will take 2 hours to complete.
+step
+talk Garona Halforcen##138708
+turnin War of Shadows##51771 |goto 51.69,99.68
+accept Reinforcements##53079 |goto 51.69,99.68
+step
+talk Garona Halforcen##138708
+Tell her _"I require reinforcements."_
+|tip Recruit 1 Horde Troop.
+Order Troops |q 53079/1 |goto 51.69,99.69
+step
+talk Garona Halforcen##138708
+turnin Reinforcements##53079 |goto 51.69,99.68
+step
+Reach Level 112 |ding 112
+|tip You must be at least level 112 to continue this questline.
+|tip Use the Leveling guides to accomplish this.
+step
+talk Nathanos Blightcaller##135691
+accept The Kul Tiras Campaign##51803 |goto Zuldazar/0 58.44,62.67
+step
+click Kul Tiras Campaign
+|tip You will only be able to accept one of these quests.
+|tip Pick whichever one you like, it doesn't matter.
+#include "Choose_Foothold_1"
+step
+label "Tiragarde_Sound_Foothold_1"
+#include "Tiragarde_Sound_Foothold_Quests"
+step
+|next "Reach_Level_114"
+step
+label "Drustvar_Foothold_1"
+#include "Drustvar_Foothold_Quests"
+step
+|next "Reach_Level_114"
+step
+label "Stormsong_Valley_Foothold_1"
+#include "Stormsong_Valley_Foothold_Quests"
+step
+|next "Reach_Level_114"
+step
+label "Reach_Level_114"
+Reach Level 114 |ding 114
+|tip You must be at least level 114 to continue this questline.
+|tip Use the Leveling guides to accomplish this.
+step
+talk Eitrigg##143913
+accept Adapting Our Tactics##53602 |goto Zuldazar/0 58.56,62.72
+step
+talk Eitrigg##143913
+Tell him _"Show me our research options."_
+Choose an Upgrade to Pursue |q 53602/1 |goto 58.56,62.72
+step
+talk Eitrigg##143913
+turnin Adapting Our Tactics##53602 |goto 58.56,62.72
+step
+talk Nathanos Blightcaller##135691
+turnin Deeper Into Kul Tiras##53050 |goto 58.44,62.67 |only if havequest(53050) or completedq(53050)
+accept The Ongoing Campaign##51979 |goto 58.44,62.67
+step
+click Kul Tiras Campaign
+|tip You will only be able to accept one of these quests.
+|tip Pick whichever one you like, it doesn't matter.
+#include "Choose_Foothold_2"
+step
+label "Tiragarde_Sound_Foothold_2"
+#include "Tiragarde_Sound_Foothold_Quests"
+step
+|next "Reach_Level_116"
+step
+label "Drustvar_Foothold_2"
+#include "Drustvar_Foothold_Quests"
+step
+|next "Reach_Level_116"
+step
+label "Stormsong_Valley_Foothold_2"
+#include "Stormsong_Valley_Foothold_Quests"
+step
+|next "Reach_Level_116"
+step
+label "Reach_Level_116"
+Reach Level 116 |ding 116
+|tip You must be at least level 116 to continue this questline.
+|tip Use the Leveling guides to accomplish this.
+step
+talk Nathanos Blightcaller##135691
+turnin The Azerite Advantage##53062 |goto Zuldazar/0 58.44,62.67 |only if havequest(53062) or completedq(53062)
+accept Island Expedition##51870 |goto Zuldazar/0 58.44,62.67 |or |next "Start_Island_Expedition_Intro"
+|tip
+_NOTE:_
+|tip You can only complete the Island Expedition introduction quest on one character.
+|tip You may not be able to accept this quest.
+Click Here If You Are Unable to Accept the Quest |confirm |q 52444 |future |future |or |next "Reach_Level_118"
+step
+label "Start_Island_Expedition_Intro"
+talk Captain Rez'okun##123000
+turnin Island Expedition##51870 |goto Dazar'alor/0 44.80,95.46
+accept Island Expedition##51888 |goto Dazar'alor/0 44.80,95.46
+step
+talk Captain Rez'okun##123000
+Tell him _"Let's go!"_
+Use the Expedition Map |q 51888/1 |goto 44.80,95.46
+step
+Watch the dialogue
+|tip The waypoint arrow does not work on island expedition maps.
+|tip Use your world map and minimap to complete the scenario objectives.
+|tip The scenario is simple to do, everything is nearby and easy to find.
+Explore the Uncharted Island |q 51888/2
+step
+talk Captain Rez'okun##123000
+turnin Island Expedition##51888 |goto Dazar'alor/0 44.80,95.45
+step
+label "Reach_Level_118"
+Reach Level 118 |ding 118
+|tip You must be at least level 118 to continue this questline.
+|tip Use the Leveling guides to accomplish this.
+step
+talk Nathanos Blightcaller##135691
+turnin Pushing Our Influence##53056 |goto Zuldazar/0 58.44,62.67 |only if havequest(53056) or completedq(53056)
+accept The Final Foothold##52444 |goto Zuldazar/0 58.44,62.67
+step
+click Kul Tiras Campaign
+|tip Pick the last available quest.
+#include "Choose_Foothold_3"
+step
+label "Tiragarde_Sound_Foothold_3"
+#include "Tiragarde_Sound_Foothold_Quests"
+|next "Reach_Level_120"
+step
+label "Drustvar_Foothold_3"
+#include "Drustvar_Foothold_Quests"
+|next "Reach_Level_120"
+step
+label "Stormsong_Valley_Foothold_3"
+#include "Stormsong_Valley_Foothold_Quests"
+|next "Reach_Level_120"
+step
+label "Reach_Level_120"
+Reach Level 120 |ding 120
+|tip You must be at least level 120 to continue this questline.
+|tip Use the Leveling guides to accomplish this.
+step
+talk Nathanos Blightcaller##135691
+accept Uniting Zandalar##51916 |goto Zuldazar/0 58.44,62.67
+step
+Reach Friendly Reputation with the Zandalari Empire in Zuldazar |q 51916/1
+|tip Use the "Zuldazar" leveling guide to accomplish this.
+step
+Reach Friendly Reputation with Talanji's Expedition in Nazmir |q 51916/2
+|tip Use the "Nazmir" leveling guide to accomplish this.
+step
+Reach Friendly Reputation with the Voldunai in Vol'dun |q 51916/3
+|tip Use the "Vol'dun" leveling guide to accomplish this.
+step
+talk Nathanos Blightcaller##135691
+turnin Uniting Zandalar##51916 |goto 58.44,62.67
 ]])

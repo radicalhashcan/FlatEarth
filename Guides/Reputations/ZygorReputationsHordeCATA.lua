@@ -3,14 +3,14 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ReputationsH") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Argent Dawn",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Argent Dawn",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Argent Dawn faction.",
 achieveid={946},
 },[[
 #include "Argent_Dawn_Rep"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Bloodsail Buccaneers",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Bloodsail Buccaneers",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Bloodsail Buccaneers faction.",
 achieveid={2336},
@@ -292,7 +292,7 @@ step
 label "exalted"
 Congratulations, you are Exalted with the Bloodsail Buccaneers!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Brood of Nozdormu",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Brood of Nozdormu",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Brood of Nozdormu faction.",
 achieveid={956},
@@ -343,7 +343,7 @@ step
 label "exalted"
 Congratulations, you are Exalted with the Brood of Nozdormu!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Cenarion Circle",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Cenarion Circle",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Cenarion Circle faction.",
 achieveid={953},
@@ -442,24 +442,6 @@ step
 label "dredgecrush"
 kill 20 Dredge Crusher##11741+ |q 8281/1 |goto 44.9,48.7
 You can find more Dredge Crushers around [37.9,32.4]
-step
-talk General Kirika##17079
-turnin Report to General Kirika##9416 |goto 54.5,62.9
-accept Scouring the Desert##9422 |goto 54.5,62.9
-step
-click the Silithyst Geyser##181598
-|tip They look like small pink rocks with holes in the top of them.  They have smoke floating out of their tops, and they blow up a stream of orange steam occasionally.  You can find them all around Silithus.
-Surround yourself in Silithyst Dust |havebuff 135867 |c |q 9422 |goto 50.0,49.9
-They spawn in various locations, you find more at:
-[53.2,41.6]
-[57.1,47.2]
-[60.0,41.1]
-step
-Stand inside the big red-glowing metal machine
-Deliver Silithyst |q 9422/1 |goto 54.9,63.4
-step
-talk General Kirika##17079
-turnin Scouring the Desert##9422 |goto 54.5,62.9
 step
 kill Stonelash Flayer##11737+
 collect 3 Stonelash Flayer Stinger##20375 |q 8278/1 |goto 51.7,64.7
@@ -818,9 +800,9 @@ This is the end of the questing
 Click here to go back to the Silithus Reputation menu |confirm always |next "menu"
 step
 label "exalted"
-Congratulations, you are Exalted with Cenarion Expedition |only if rep('Cenarion Circle')==Exalted
+Congratulations, you are Exalted with Cenarion Circle |only if rep('Cenarion Circle')==Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Darkmoon Faire",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Darkmoon Faire",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Darkmoon Faire faction.",
 achieveid={2336},
@@ -834,7 +816,8 @@ Click here to go to the Darkmoon Faire Dailies Guide. |next "dailies"
 You can also earn reputation by turning in Darkmoon Decks. Click here to view the Darkmoon Deck statistics. |next "cards" |confirm
 step
 label "dailies"
-#include "Darkmoon_Faire_Dailies"
+Continuing...
+leechsteps "Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies"
 step
 label "cards"
 You can now only get cards using _Inscription_, or buying them at the _Auction House_.
@@ -852,7 +835,7 @@ step
 label "end"
 Congratulations, you have reached Exalted with The Darkmoon Faire! |condition rep('Darkmoon Faire')>=Exalted |only if rep('Darkmoon Faire')>=Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Darkspear Trolls",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Darkspear Trolls",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Darkspear Trolls faction.",
 condition_suggested=function() return level >= 20 and level <= 60 and rep('Darkspear Trolls') < Exalted end,
@@ -866,7 +849,7 @@ Become Exalted with Darkspear Trolls |condition rep('Darkspear Trolls')==Exalted
 step
 Congratulations, you have reached exalted with the Darkspear Trolls!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\The Defilers",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\The Defilers",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Defilers faction.",
 achieveid={710},
@@ -906,7 +889,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with The Defilers!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Frostwolf Clan",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Frostwolf Clan",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Frostwolf Clan faction.",
 achieveid={708},
@@ -994,7 +977,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with the Frostwolf Clan!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Hydraxian Waterlords",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Hydraxian Waterlords",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Hydraxian Waterlords faction.",
 achieveid={955},
@@ -1011,7 +994,7 @@ Earn Exalted status with the Hydraxian Waterlords |condition rep('Hydraxian Wate
 step
 Congratulations, you are now Exalted with the Hydraxian Waterlords!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Orgrimmar",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Orgrimmar",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Orgrimmar faction.",
 condition_suggested=function() return level >= 20 and level <= 60 and rep('Orgrimmar') < Exalted end,
@@ -1025,7 +1008,7 @@ Become Exalted with Orgrimmar |condition rep('Orgrimmar')==Exalted
 step
 Congratulations, you have reached exalted with Orgrimmar!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Ravenholdt",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Ravenholdt",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Ravenholdt faction.",
 achieveid={2336},
@@ -1064,7 +1047,7 @@ step
 label "end"
 Congratulations, you have reached Exalted with Ravenholdt!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\The Steamwheedle Cartel",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\The Steamwheedle Cartel",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Steamwheedle Cartel faction.",
 },[[
@@ -1268,7 +1251,7 @@ step
 label "end"
 Congratulations! You are honored with the Steamwheedle Cartel!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Thorium Brotherhood",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Thorium Brotherhood",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Thorium Brotherhood faction.",
 },[[
@@ -1778,7 +1761,7 @@ step
 label "exalted"
 Congratulations, you are Exalted with the Thorium Brotherhood!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Thunder Bluff",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Thunder Bluff",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Thunder Bluff faction.",
 condition_suggested=function() return level >= 20 and level <= 60 and rep('Thunder Bluff') < Exalted end,
@@ -1792,7 +1775,7 @@ Become Exalted with Thunder Bluff |condition rep('Thunder Bluff')==Exalted
 step
 Congratulations, you have reached exalted with Thunder Bluff!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Timbermaw Hold",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Timbermaw Hold",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Timbermaw Hold faction.",
 achieveid={944},
@@ -1945,7 +1928,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with Timbermaw Hold!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Undercity",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Undercity",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Undercity faction.",
 condition_suggested=function() return level >= 20 and level <= 60 and rep('Undercity') < Exalted end,
@@ -1959,7 +1942,7 @@ Become Exalted with Undercity |condition rep('Undercity')==Exalted
 step
 Congratulations, you have reached exalted with Undercity!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Warsong Outriders",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Classic Reputations\\Warsong Outriders",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Warsong Outriders faction.",
 achieveid={712},
@@ -1972,7 +1955,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with the Warsong Outriders!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Egg Hunting - Optimized Path",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Egg Hunting - Optimized Path",{
 author="support@zygorguides.com",
 description="This guide section will walk you through an optimized path of collecting Netherwing Eggs, which you can turn in for 250 Netherwing rep each. You must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section in order to be able to collect and turn in the Netherwing Eggs you find using this guide section.",
 achieveid={898},
@@ -2196,7 +2179,7 @@ step
 This is the end of the path.
 Click here to go back to the beginning of the path. |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Neutral)",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Neutral)",{
 author="support@zygorguides.com",
 description="This guide section will walk you through getting Friendly reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
 achieveid={898},
@@ -2256,7 +2239,7 @@ turnin Netherdust Pollen##11017 |goto 66.1,86.4
 step
 Repeat this process daily until you are Friendly with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Neutral) - Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Neutral) - Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through getting Neutral reputation with Netherwing faction.",
 achieveid={898},
@@ -2349,7 +2332,7 @@ step
 talk Yarzill the Merc##23141
 turnin The Great Netherwing Egg Hunt##11049 |goto 66.0,86.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Friendly)",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Friendly)",{
 author="support@zygorguides.com",
 description="This guide section will walk you through getting Honored reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Friendly) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
 achieveid={898},
@@ -2433,7 +2416,7 @@ turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.
 step
 Repeat this process daily until you are Honored with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Friendly) - Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Friendly) - Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through a chain of pre-quests, that become available once you have earned Friendly reputation with the Netherwing faction. This chain of pre-quests will open up more Netherwing faction daily quests.",
 achieveid={898},
@@ -2496,7 +2479,7 @@ step
 talk Chief Overseer Mudlump##23291
 turnin Overseeing and You: Making the Right Choices##11054 |goto Shadowmoon Valley,66.8,86.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Honored)",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Honored)",{
 author="support@zygorguides.com",
 description="This guide section will walk you through getting Revered reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Honored) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
 achieveid={898},
@@ -2589,7 +2572,7 @@ turnin Disrupting the Twilight Portal##11086 |goto 66.2,85.7
 step
 Repeat this process daily until you are Revered with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Honored) - Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Honored) - Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through a chain of pre-quests, that become available once you have earned Honored reputation with the Netherwing faction. This chain of pre-quests will open up more Netherwing faction daily quests.",
 achieveid={898},
@@ -2658,7 +2641,7 @@ step
 talk Ja'y Nosliw##22433
 turnin Dragonmaw Race: Captain Skyshatter##11071 |goto 65.9,87.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Revered)",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Revered)",{
 author="support@zygorguides.com",
 description="This guide section will walk you through getting Exalted reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Revered) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
 achieveid={898},
@@ -2767,7 +2750,7 @@ turnin The Deadliest Trap Ever Laid##11101 |only if rep ('The Aldor') >= Friendl
 step
 Repeat this process daily until you are Exalted with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Revered) - Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Revered) - Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through a chain of pre-quests, that become available once you have earned Revered reputation with the Netherwing faction. This chain of pre-quests will open up more Netherwing faction daily quests.",
 achieveid={898},
@@ -2815,7 +2798,7 @@ talk Commander Arcus##23452
 turnin Commander Arcus##11100 |goto 62.4,29.3
 only if rep ('The Aldor') >= Friendly
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Exalted) - Getting Your Netherdrake!",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Exalted) - Getting Your Netherdrake!",{
 author="support@zygorguides.com",
 description="This guide section will walk you through the final steps of getting your Netherdrake Mount, once you've earned Exalted reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Revered) guide section in order to be able to complete the quests in this guide section.",
 achieveid={898},
@@ -2843,7 +2826,7 @@ accept Jorus the Cobalt Netherwing Drake##11109 |instant |or |goto 66.8,17.6
 step
 Congratulations, you are now the proud owner of a Netherdrake Mount!  Enjoy!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Aldor",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\The Aldor",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Aldor faction.",
 condition_suggested=function() return level >= 60 and level <= 70 and rep('The Aldor') < Exalted end,
@@ -3253,7 +3236,7 @@ step
 label "exalted"
 Congratulations, you are Exalted with The Aldor.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Ashtongue Deathsworn",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Ashtongue Deathsworn",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Ashtongue Deathsworn faction.",
 achieveid={958},
@@ -3276,7 +3259,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with the Ashtongue Deathsworn!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Cenarion Expedition",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Cenarion Expedition",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Cenarion Expedition faction.",
 condition_suggested=function() return level >= 60 and level <= 70 and rep('Cenarion Expedition') < Exalted end,
@@ -4209,7 +4192,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with the Cenarion Expedition!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Consortium",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\The Consortium",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Consortium faction.",
 achieveid={902},
@@ -4734,7 +4717,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with The Consortium.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Keepers of Time",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Keepers of Time",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Keepers of Time faction.",
 },[[
@@ -4859,7 +4842,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with the Keepers of Time!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Lower City",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Lower City",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Lower City faction.",
 condition_suggested=function() return level >= 60 and level <= 70 and rep('Lower City') < Exalted end,
@@ -5181,428 +5164,609 @@ step
 label "exalted"
 Congratulations, you are now Exalted with the Lower City!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Mag'har",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Mag'har",{
 author="support@zygorguides.com",
-description="This guide will walk you through becoming exalted with the Mag'har faction.",
+description="This guide will walk you through becoming Exalted with the Mag'har faction.",
 condition_suggested=function() return level >= 60 and level <= 70 and rep('Mag\'har') < Exalted end,
 achieveid={901},
 },[[
 step
+talk Lieutenant General Orion##19253
+accept Arrival in Outland##10120 |goto Hellfire Peninsula/0 87.35,49.80
+step
+talk Vlagga Freyfeather##18930
+turnin Arrival in Outland##10120 |goto 87.34,48.14
+accept Journey to Thrallmar##10289 |goto 87.34,48.14
+step
+talk Vlagga Freyfeather##18930 |goto 87.34,48.14
+Tell her _"Send me to Thrallmar!"_
+Fly to Thrallmar |goto 56.27,36.38 < 20 |noway |c |q 10289
+step
+talk General Krakork##19255
+turnin Journey to Thrallmar##10289 |goto 55.87,36.87
+accept Report to Nazgrel##10291 |goto 55.87,36.87
+step
+Follow the path |goto 56.06,37.51 < 15 |only if walking
+Enter the building |goto 56.44,37.76 < 7 |walk
+talk Floyd Pinkus##16602
+home Thrallmar |goto 56.71,37.47 |q 10291
+step
+Enter the building |goto 55.14,37.35 < 7 |walk
 talk Nazgrel##3230
-accept The Assassin##9400 |goto Hellfire Peninsula,55,36
+|tip Inside the building.
+turnin Report to Nazgrel##10291 |goto 55.02,35.96
+accept Eradicate the Burning Legion##10121 |goto 55.02,35.96
 step
-Go to this spot
-Find Krun Spinebreaker |q 9400/1 |goto 33.6,43.5
+talk Sergeant Shatterskull##19256
+turnin Eradicate the Burning Legion##10121 |goto 58.06,41.28
+accept Felspark Ravine##10123 |goto 58.06,41.28
 step
-Click the Fel Orc Corpse
-|tip It's a corpse laying halfway up the hill.
-turnin The Assassin##9400 |goto 33.6,43.5
-accept A Strange Weapon##9401 |goto 33.6,43.5
+kill 1 Dreadcaller##19434 |q 10123/1 |goto 63.80,37.41
+kill 4 Flamewaker Imp##19136 |q 10123/2 |goto 63.80,37.41
+kill 6 Infernal Warbringer##19261 |q 10123/3 |goto 63.80,37.41
 step
+talk Sergeant Shatterskull##19256
+turnin Felspark Ravine##10123 |goto 58.06,41.28
+accept Forward Base: Reaver's Fall##10124 |goto 58.06,41.28
+step
+Follow the path |goto 63.72,46.43 < 20 |only if walking
+talk Forward Commander To'arch##19273
+turnin Forward Base: Reaver's Fall##10124 |goto 65.89,43.59
+accept Disrupt Their Reinforcements##10208 |goto 65.89,43.59
+step
+Follow the path |goto 68.14,45.34 < 15 |only if walking
+Kill demon enemies around this area
+collect 4 Demonic Rune Stone##28513 |q 10208 |goto 70.83,45.48
+step
+click Portal Xilus##184290
+|tip Stand inside the portal.
+Disrupt Port Xilus |q 10208/1 |goto 70.83,45.48
+step
+Follow the path |goto Hellfire Peninsula/0 73.06,44.10 < 15 |only if walking
+Follow the path |goto 73.78,42.82 < 15 |only if walking
+Kill demon enemies around this area
+collect 4 Demonic Rune Stone##28513 |q 10208 |goto 74.01,38.73
+step
+click Portal Kruul##184289
+|tip Stand inside the portal.
+Disrupt Port Kruul |q 10208/2 |goto 74.01,38.73
+step
+Follow the path |goto 72.51,40.80 < 20 |only if walking
+Follow the path |goto 70.80,42.46 < 20 |only if walking
+Follow the path |goto 69.45,43.89 < 20 |only if walking
+Follow the path |goto 68.15,44.90 < 15 |only if walking
+talk Forward Commander To'arch##19273
+turnin Disrupt Their Reinforcements##10208 |goto 65.89,43.59
+accept Mission: Gateways Murketh and Shaadraz##10129 |goto 65.89,43.59
+step
+talk Wing Commander Brack##19401
+Tell him _"I'm on a bombing mission for Forward Commander To'arch. I need a wyvern destroyer!"_
+Mount a Wyvern Destroyer |condition _G.UnitOnTaxi("player") |goto 66.10,43.72 |q 10129
+step
+|use Seaforium PU-36 Explosive Nether Modulator##28038
+|tip Use the bomb in your bags to bomb Gateway Shaadraz.
+Bomb Gateway Shaadraz |q 10129/2 |goto 77.73,51.81
+step
+|use Seaforium PU-36 Explosive Nether Modulator##28038
+|tip Use the bomb in your bags to bomb Gateway Murketh.
+Bomb Gateway Murketh |q 10129/1 |goto 78.02,47.19
+step
+Return the Wyvern Destroyer |condition not _G.UnitOnTaxi("player") |goto 66.10,43.72
+step
+talk Forward Commander To'arch##19273
+turnin Mission: Gateways Murketh and Shaadraz##10129 |goto 65.89,43.59
+accept Mission: The Abyssal Shelf##10162 |goto 65.89,43.59
+accept Return to Thrallmar##10388 |goto 65.89,43.59
+step
+talk Wing Commander Brack##19401
+Tell him _"Send me to the Abyssal Shelf!"_
+Mount a Wyvern Destroyer |condition _G.UnitOnTaxi("player") |q 10162 |goto 66.10,43.72
+step
+|use Area 52 Special##28132
+|tip Use the bomb in your bags to bomb the mobs.
+|tip If you don't complete this in the first run, you can fly again until it is done.
+Destroy #5# Fel Cannons |q 10162/3 |goto 72.63,17.94
+kill 5 Mo'arg Overseer##19397 |q 10162/2 |goto 72.63,17.94
+kill 20 Gan'arg Peon##19398 |q 10162/1 |goto 72.63,17.94
+step
+Return the Wyvern Destroyer |condition not _G.UnitOnTaxi("player") |goto 66.10,43.72
+step
+talk Forward Commander To'arch##19273
+turnin Mission: The Abyssal Shelf##10162 |goto 65.89,43.59
+step
+Enter the building |goto 55.15,37.40 < 5 |walk
 talk Nazgrel##3230
-turnin A Strange Weapon##9401 |goto 55,36
-accept The Warchief's Mandate##9405 |goto 55,36
+|tip Inside the building.
+turnin Return to Thrallmar##10388 |goto 55.02,35.97
+accept The Assassin##9400 |goto 55.02,35.97
+step
+Find Krun Spinebreaker |q 9400/1 |goto 33.62,43.53
+step
+clicknpc Fel Orc Corpse##17062
+turnin The Assassin##9400 |goto 33.62,43.53
+accept A Strange Weapon##9401 |goto 33.62,43.53
+step
+Enter the building |goto 55.15,37.40 < 5 |walk
+talk Nazgrel##3230
+|tip Inside the building.
+turnin A Strange Weapon##9401 |goto 55.02,35.97
+accept The Warchief's Mandate##9405 |goto 55.02,35.97
 step
 talk Far Seer Regulkut##16574
-turnin The Warchief's Mandate##9405 |goto 54.2,37.9
-accept A Spirit Guide##9410 |goto 54.2,37.9
+turnin The Warchief's Mandate##9405 |goto 54.23,37.90
+accept A Spirit Guide##9410 |goto 54.23,37.90
 step
-Use your Ancestral Spirit Wolf Totem next to the Fel Orc Corpse |use Ancestral Spirit Wolf Totem##23669
-|tip It's a corpse laying halfway up the hill.
-Follow the spirit wolf
-|tip Stay close to the wolf and follow it until it stops, or you will not be able to turn in the quest.
-Follow the wolf to this spot|goto 32,27.8 < 10 |q 9410 |goto 33.6,43.5
+use the Ancestral Spirit Wolf Totem##23669
+|tip Use it next to the Fel Orc Corpse.
+Summon the Ancestral Spirit Wolf |havebuff 132328 |goto 33.62,43.53 |q 9410
+step
+Watch the dialogue
+|tip Stay close to the wolf and follow it until it stops.
+Follow the Spirit Wolf |goto 32.05,27.83 < 10 |walk |q 9410
 step
 talk Gorkan Bloodfist##16845
-turnin A Spirit Guide##9410 |goto 32,27.8
-accept The Mag'har##9406 |goto 32,27.8
+turnin A Spirit Guide##9410 |goto 31.99,27.79
+accept The Mag'har##9406 |goto 31.99,27.79
 step
+Enter the building |goto 55.15,37.40 < 5 |walk
 talk Nazgrel##3230
-turnin The Mag'har##9406 |goto 55,36
+|tip Inside the building.
+turnin The Mag'har##9406 |goto 55.02,35.97
 step
 talk Shado 'Fitz' Farstrider##18200
-accept Windroc Mastery (1)##9854 |goto Nagrand,71.6,40.5
+accept Windroc Mastery##9854 |goto Nagrand/0 71.57,40.52
+step
 talk Hemet Nesingwary##18180
-accept Clefthoof Mastery (1)##9789 |goto Nagrand,71.6,40.5
+accept Clefthoof Mastery##9789 |goto 71.52,40.82
+step
 talk Harold Lane##18218
-accept Talbuk Mastery (1)##9857 |goto Nagrand,71.6,40.5
-stickystart "cleftpair"
-stickystart "windroc"
+accept Talbuk Mastery##9857 |goto 71.38,40.63
+stickystart "Slay_12_Windrocs"
+stickystart "Slay_12_Clefthoofs"
+stickystart "Collect_3_Pairs_of_Ivory_Tusks"
 step
-kill 12 Talbuk Stag##17130+ |q 9857/1 |goto 72.2,38.4
-You can find more Talbuk Stags at [70.8,46.4]
+kill 12 Talbuk Stag##17130+ |q 9857/1 |goto 72.20,38.42
+You can find more Talbuk Stags at [70.81,46.37]
 step
-label "windroc"
-kill 12 Windroc##17128+ |q 9854/1 |goto 66.5,39.5
+label "Slay_12_Windrocs"
+kill 12 Windroc##17128+ |q 9854/1 |goto 66.61,39.30
 step
-label "cleftpair"
-kill 12 Clefthoof##18205+ |q 9789/1 |goto 64,45.1
+label "Slay_12_Clefthoofs"
+kill 12 Clefthoof##18205+ |q 9789/1 |goto 64.02,45.11
+You can find more Clefthoofs at [70.81,46.37]
+step
+label "Collect_3_Pairs_of_Ivory_Tusks"
 kill Wild Elekk##18334
-collect 3 Pair of Ivory Tusks##25463 |q 9914 |future |goto 64,45.1
-kill Dust Howlers##17158
+collect 3 Pair of Ivory Tusks##25463 |q 9914 |future |goto 64.02,45.11
+You can find more Elekks at [70.81,46.37]
+step
+kill Dust Howlers##17158+
 collect Howling Wind##24504 |n
-Use the Howling Wind in your bags |use Howling Wind##24504
-accept The Howling Wind##9861
-You can find more Clefthoofs, Elekks, and Dust Howlers at [70.8,46.4]
+accept The Howling Wind##9861 |goto 64.02,45.11
+|tip You will eventually automatically accept this quest.
+You can find more Dust Howlers at [70.81,46.37]
 step
 talk Shado 'Fitz' Farstrider##18200
-turnin Windroc Mastery (1)##9854 |goto 71.6,40.5
-accept Windroc Mastery (2)##9855 |goto 71.6,40.5
+turnin Windroc Mastery##9854 |goto 71.57,40.52
+accept Windroc Mastery##9855 |goto 71.57,40.52
+step
 talk Hemet Nesingwary##18180
-turnin Clefthoof Mastery (1)##9789 |goto 71.6,40.5
-accept Clefthoof Mastery (2)##9850 |goto 71.6,40.5
+turnin Clefthoof Mastery##9789 |goto 71.52,40.82
+accept Clefthoof Mastery##9850 |goto 71.52,40.82
+step
 talk Harold Lane##18218
-turnin Talbuk Mastery (1)##9857 |goto 71.6,40.5
-accept Talbuk Mastery (2)##9858 |goto 71.6,40.5
+turnin Talbuk Mastery##9857 |goto 71.38,40.63
+accept Talbuk Mastery##9858 |goto 71.38,40.63
 step
 talk Gursha##18808
-fpath Garadar |goto 57.2,35.2
+fpath Garadar |goto 57.19,35.25
 step
 talk Matron Drakia##18302
-accept Missing Mag'hari Procession##9944 |goto 57.1,34.9
+|tip She walks around inside the building.
+accept Missing Mag'hari Procession##9944 |goto 57.10,34.87
 step
 talk Matron Tikkit##18913
-home Garadar |goto 56.6,34.6
-step
-talk Captain Kroghan##18090
-turnin Reinforcements for Garadar##9797 |goto 55.4,37.4
+home Garadar |goto 56.73,34.51 |q 9944
 step
 talk Jorin Deadeye##18106
-accept The Impotent Leader##9888 |goto 55.5,37.6
+accept The Impotent Leader##9888 |goto 55.56,37.62
 step
 talk Warden Bullrok##18407
-accept Proving Your Strength##10479 |goto 55.8,38
-click the Garadar Bulletin Board##182392
-accept Wanted: Giselda the Crone##9935 |goto 55.8,38
-accept Wanted: Zorbo the Advisor##9939 |goto 55.8,38
+accept Proving Your Strength##10479 |goto 55.79,37.94
+step
+click Garadar Bulletin Board##182392
+accept Wanted: Giselda the Crone##9935 |goto 55.77,38.01
+accept Wanted: Zorbo the Advisor##9939 |goto 55.77,38.01
 step
 talk Elementalist Yal'hah##18234
-accept The Throne of the Elements##9870 |goto 55,39
+|tip He walks around this area.
+accept The Throne of the Elements##9870 |goto 55.10,39.05
 step
 talk Farseer Kurkush##18066
-accept Vile Idolatry##9863 |goto 54.7,39.7
+accept Vile Idolatry##9863 |goto 54.78,39.41
+step
 talk Farseer Corhuk##18067
-accept The Missing War Party##9864 |goto 54.7,39.7
+accept The Missing War Party##9864 |goto 54.80,39.86
+step
 talk Farseer Margadesh##18068
-accept Murkblood Leaders...##9867 |goto 54.7,39.7
+accept Murkblood Leaders...##9867 |goto 54.53,39.96
 step
 talk Consortium Recruiter##18335
-accept The Consortium Needs You!##9913 |goto 51.9,34.8
+accept The Consortium Needs You!##9913 |goto 51.95,34.78
 step
 talk Elementalist Morgh##18074
-turnin The Howling Wind##9861 |goto 60.5,22.4
-accept Murkblood Corrupters##9862 |goto 60.5,22.4
+turnin The Howling Wind##9861 |goto 60.50,22.37
+accept Murkblood Corrupters##9862 |goto 60.50,22.37
+step
 talk Elementalist Sharvak##18072
-turnin The Throne of the Elements##9870 |goto 60.5,22.4
+turnin The Throne of the Elements##9870 |goto 60.66,22.10
+step
 talk Elementalist Lo'ap##18073
-accept A Rare Bean##9800 |goto 60.5,22.4
-accept Muck Diving##9815 |goto 60.5,22.4
+accept A Rare Bean##9800 |goto 60.80,22.38
+accept Muck Diving##9815 |goto 60.80,22.38
+step
 talk Elementalist Untrag##18071
-accept The Underneath##9818 |goto 60.5,22.4
+accept The Underneath##9818 |goto 60.66,22.65
 step
 talk Gordawg##18099
-|tip He may not be in this spot, he wanders around the Throne of Elements area.
-turnin The Underneath##9818 |goto 61.8,24.4
-accept The Tortured Earth##9819 |goto 61.8,24.4
-stickystart "cleftbull"
+|tip He walks around this area.
+turnin The Underneath##9818 |goto 61.77,24.50
+accept The Tortured Earth##9819 |goto 61.77,24.50
+stickystart "Collect_Digested_Caracoli"
+stickystart "Slay_12_Clefhoof_Bulls"
 step
-kill 12 Talbuk Thorngrazer##17131+ |q 9858/1
-click the Dung piles
-|tip The Dung piles looks like green piles of swirled poop.
-collect 8 Digested Caracoli##24419 |q 9800/1 |goto 52.1,25.6
+kill 12 Talbuk Thorngrazer##17131+ |q 9858/1 |goto 52.10,25.59
 step
-label "cleftbull"
-kill 12 Clefthoof Bull##17132+ |q 9850/1 |goto 51.6,30.8
-You can find more Clefthoof Bulls at [49.7,35.6]
-stickystart "obbeads"
+label "Collect_Digested_Caracoli"
+click Dung##182128
+|tip They looks like small green piles of swirled poop on the ground around this area.
+collect 8 Digested Caracoli##24419 |q 9800/1 |goto 52.10,25.59
 step
-kill Zorbo the Advisor##18413 |q 9939/1 |goto 46.5,18.2
-|tip Inside the cave at the top of the hill.
+label "Slay_12_Clefhoof_Bulls"
+kill 12 Clefthoof Bull##17132+ |q 9850/1 |goto 51.52,30.86
+You can find more at [49.96,35.93]
+stickystart "Slay_Warmaul_Enemies"
+stickystart "Collect_Obsidian_Warbeads"
 step
-label "obbeads"
-kill 5 Warmaul Shaman##18064+ |q 9939/2 |goto 48.3,21.5
-kill 5 Warmaul Reaver##17138+ |q 9939/3 |goto 48.3,21.5
-collect 10 Obsidian Warbeads##25433 |q 10479/1 |goto 48.3,21.5
+Enter the cave |goto 46.23,18.78 < 5 |walk
+kill Zorbo the Advisor##18413 |q 9939/1 |goto 46.48,18.17
+|tip Inside the cave.
+step
+label "Slay_Warmaul_Enemies"
+kill 5 Warmaul Shaman##18064+ |q 9939/2 |goto 47.03,23.58
+kill 5 Warmaul Reaver##17138+ |q 9939/3 |goto 47.03,23.58
+step
+label "Collect_Obsidian_Warbeads"
+Kill Warmaul enemies around this area
+collect 10 Obsidian Warbeads##25433 |q 10479/1 |goto 47.03,23.58
 step
 talk Saurfang the Younger##18229
-turnin The Missing War Party##9864 |goto 32.4,36.1
-accept Once Were Warriors##9865 |goto 32.4,36.1
-talk Elder Yorley##18414
-turnin Missing Mag'hari Procession##9944 |goto 32.4,36.1
-accept War on the Warmaul##9945 |goto 32.4,36.1
-talk Elder Ungriz##18415
-accept Finding the Survivors##9948 |goto 32.4,36.1
+turnin The Missing War Party##9864 |goto 32.44,36.03
+accept Once Were Warriors##9865 |goto 32.44,36.03
 step
-The path up to 'War on the Warmaul' and 'Finding the Survivors' starts here |goto 29.2,31.6 < 10 |q 9948
-kill 8 Warmaul Brute##18065+ |q 9945/1 |goto 23.4,29.2
-kill 8 Warmaul Warlock##18037+ |q 9945/2 |goto 23.4,29.2
+talk Elder Yorley##18414
+turnin Missing Mag'hari Procession##9944 |goto 32.31,36.15
+accept War on the Warmaul##9945 |goto 32.31,36.15
+step
+talk Elder Ungriz##18415
+accept Finding the Survivors##9948 |goto 32.36,36.21
+stickystart "Free_Maghar_Prisoners"
+step
+Follow the path |goto 29.31,31.92 < 10 |only if walking
+kill 8 Warmaul Brute##18065+ |q 9945/1 |goto 24.23,29.71
+kill 8 Warmaul Warlock##18037+ |q 9945/2 |goto 24.23,29.71
+step
+label "Free_Maghar_Prisoners"
+Kill Warmaul enemies around this area
 collect Warmaul Prison Key##25604 |n
-click the yellow cages around this area
-Free 5 Mag'har Prisoners |q 9948/1 |goto 23.4,29.2
+click Warmaul Prisons
+Free #5# Mag'har Prisoners |q 9948/1 |goto 24.23,29.71
 step
 talk Elder Yorley##18414
-turnin War on the Warmaul##9945 |goto 32.4,36.1
+turnin War on the Warmaul##9945 |goto 32.31,36.15
+step
 talk Elder Ungriz##18415
-turnin Finding the Survivors##9948 |goto 32.4,36.1
+turnin Finding the Survivors##9948 |goto 32.36,36.21
 step
 kill Muck Spawn##17154+
-collect 5 Muck-ridden Core##24469 |q 9815/1 |goto 41.5,40.9
-stickystart "murkidol"
+collect 5 Muck-ridden Core##24469 |q 9815/1 |goto 41.66,40.79
+stickystart "Slay_Murkblood_Enemies"
+stickystart "Collect_10_Murkblood_Idols"
 step
 kill Ortor of Murkblood##18204
-|tip He's standing inside the big building here.
-collect Head of Ortor of Murkblood##24543 |q 9867/1 |goto 30.9,42.3
+|tip Inside the building.
+collect Head of Ortor of Murkblood##24543 |q 9867/1 |goto 30.84,42.36
 step
-label "murkidol"
-kill 20 Murkblood Scavenger##18207+ |q 9865/1 |goto 32,39.1
-kill 10 Murkblood Raider##18203+ |q 9865/2 |goto 32,39.1
-kill 5 Murkblood Putrifier##18202+ |q 9862/1 |goto 32,39.1
-collect 10 Murkblood Idol##24542 |q 9863/1 |goto 32,39.1
+label "Slay_Murkblood_Enemies"
+kill 20 Murkblood Scavenger##18207+ |q 9865/1 |goto 31.95,41.41
+kill 10 Murkblood Raider##18203+ |q 9865/2 |goto 31.95,41.41
+kill 5 Murkblood Putrifier##18202+ |q 9862/1 |goto 31.95,41.41
+step
+label "Collect_10_Murkblood_Idols"
+Kill Murkblood enemies around this area
+collect 10 Murkblood Idol##24542 |q 9863/1 |goto 31.95,41.41
 step
 talk Saurfang the Younger##18229
-turnin Once Were Warriors##9865 |goto 32.4,36.1
-accept He Will Walk The Earth...##9866 |goto 32.4,36.1
+turnin Once Were Warriors##9865 |goto 32.44,36.03
+accept He Will Walk The Earth...##9866 |goto 32.44,36.03
 step
 talk Zerid##18276
-accept Gava'xi##9900 |goto 30.8,58.1
-accept Matters of Security##9925 |goto 30.8,58.1
+accept Gava'xi##9900 |goto 30.78,58.13
+accept Matters of Security##9925 |goto 30.78,58.13
 step
 talk Gezhe##18265
-turnin The Consortium Needs You!##9913 |goto 31.4,57.8
-accept Stealing from Thieves##9882 |goto 31.4,57.8
+turnin The Consortium Needs You!##9913 |goto 31.36,57.79
+accept Stealing from Thieves##9882 |goto 31.36,57.79
 step
 talk Shadrek##18333
-accept A Head Full of Ivory##9914 |goto 31.8,56.8
-turnin A Head Full of Ivory##9914 |goto 31.8,56.8
-stickystart "voidspawn"
+accept A Head Full of Ivory##9914 |goto 31.77,56.78
+turnin A Head Full of Ivory##9914 |goto 31.77,56.78
+stickystart "Slay_Voidspawns"
 step
-click the Oshu'gun Crystal Fragments on the ground.
-|tip They are the green and white crystals on the ground.
-kill Vir'aani Raider##17149
-collect 10 Oshu'gun Crystal Fragment##25416 |q 9882/1 |goto 33.4,62.4
+click Oshu'gun Crystal Fragment##182258+
+|tip They look like green and white crystals on the ground around this area.
+kill Vir'aani Raider##17149+
+collect 10 Oshu'gun Crystal Fragment##25416 |q 9882/1 |goto 33.40,62.39
 step
-label "voidspawn"
-kill 8 Voidspawn##17981+ |q 9925/1 |goto 30.6,67.5
+label "Slay_Voidspawns"
+kill 8 Voidspawn##17981+ |q 9925/1 |goto 31.28,67.73
 step
-kill Gava'xi##18298 |q 9900/1 |goto 42.4,73.5
-|tip He spawns at the peak of a small hill at this location, sometimes he spawns at the base of the hill though, so keep an eye out.  He walks around all around this area, near this hill, so you may need to search for him.
+kill Gava'xi##18298 |q 9900/1 |goto 42.41,73.49
+|tip He walks around this area.
 step
-kill 12 Ravenous Windroc##18220+ |q 9855/1 |goto 48.4,61.5
+kill 12 Ravenous Windroc##18220+ |q 9855/1 |goto 48.44,61.49
 step
 talk Zerid##18276
-turnin Gava'xi##9900 |goto 30.8,58.1
-turnin Matters of Security##9925 |goto 30.8,58.1
+turnin Gava'xi##9900 |goto 30.78,58.13
+turnin Matters of Security##9925 |goto 30.78,58.13
 step
 talk Gezhe##18265
-turnin Stealing from Thieves##9882 |goto 31.4,57.8
+turnin Stealing from Thieves##9882 |goto 31.36,57.79
 step
 talk Wazat##19035
-accept I Must Have Them!##10109 |goto 61.7,67.1
+accept I Must Have Them!##10109 |goto 61.67,67.14
 step
-kill 10 Tortured Earth Spirit##17156+ |q 9819/1 |goto 65.4,70.8
+kill 10 Tortured Earth Spirit##17156+ |q 9819/1 |goto 65.40,70.81
 step
 kill Dust Howler##17158+
-collect 3 Air Elemental Gas##27807 |q 10109/1 |goto 69.4,56.9
-You can find more Dust Howlers at [65.5,46.9]
+collect 3 Air Elemental Gas##27807 |q 10109/1 |goto 69.42,56.91
+You can find more Dust Howlers at [65.46,46.90]
 step
 talk Wazat##19035
-turnin I Must Have Them!##10109 |goto 61.7,67.1
+turnin I Must Have Them!##10109 |goto 61.67,67.14
 step
 talk Kilrath##18273
-turnin The Impotent Leader##9888 |goto Terokkar Forest,19.8,60.9
-accept Don't Kill the Fat One##9889 |goto Terokkar Forest,19.8,60.9
+turnin The Impotent Leader##9888 |goto Terokkar Forest/0 19.77,60.85
+accept Don't Kill the Fat One##9889 |goto Terokkar Forest/0 19.77,60.85
 step
-kill 10 Boulderfist Invader##18260+ |q 9889/1 |goto 20,63.1
+kill 10 Boulderfist Invader##18260+ |q 9889/1 |goto 19.99,63.07
 step
-Fight Unkor the Ruthless until he submits |q 9889/2 |goto 20,63.1
+kill Unkor the Ruthless##18262 |q 9889/2 |goto 20.06,63.25
+|tip He will eventually submit.
+step
 talk Unkor the Ruthless##18262
-turnin Don't Kill the Fat One##9889 |goto 20,63.1
-accept Success!##9890 |goto 20,63.1
+turnin Don't Kill the Fat One##9889 |goto 20.06,63.25
+accept Success!##9890 |goto 20.06,63.25
 step
 talk Kilrath##18273
-turnin Success!##9890 |goto 19.8,60.9
-accept Because Kilrath is a Coward##9891 |goto 19.8,60.9
+turnin Success!##9890 |goto 19.77,60.85
+accept Because Kilrath is a Coward##9891 |goto 19.77,60.85
 step
 talk Jorin Deadeye##18106
-turnin Because Kilrath is a Coward##9891 |goto Nagrand,55.5,37.6
-accept Message in a Battle##9906 |goto Nagrand,55.5,37.6
+turnin Because Kilrath is a Coward##9891 |goto Nagrand/0 55.56,37.62
+accept Message in a Battle##9906 |goto Nagrand/0 55.56,37.62
 step
 talk Warden Bullrok##18407
-turnin Proving Your Strength##10479 |goto 55.8,38
-turnin Wanted: Zorbo the Advisor##9939 |goto 55.8,38
+turnin Proving Your Strength##10479 |goto 55.79,37.94
+turnin Wanted: Zorbo the Advisor##9939 |goto 55.79,37.94
 step
 talk Elkay'gan the Mystic##18300
-accept Standards and Practices##9910 |goto 55.5,37.6
+accept Standards and Practices##9910 |goto 55.63,37.53
 step
 talk Farseer Kurkush##18066
-turnin Vile Idolatry##9863 |goto 54.7,39.7
+turnin Vile Idolatry##9863 |goto 54.78,39.41
+step
 talk Farseer Corhuk##18067
-turnin He Will Walk The Earth...##9866 |goto 54.7,39.7
+turnin He Will Walk The Earth...##9866 |goto 54.80,39.86
+step
 talk Farseer Margadesh##18068
-turnin Murkblood Leaders...##9867 |goto 54.7,39.7
+turnin Murkblood Leaders...##9867 |goto 54.53,39.96
 step
 talk Gordawg##18099
-turnin The Tortured Earth##9819 |goto 61.8,24.4
-accept Eating Damnation##9821 |goto 61.8,24.4
-|tip He may not be in this spot, he wanders around the Throne of Elements area.
+|tip He walks around this area.
+turnin The Tortured Earth##9819 |goto 61.77,24.50
+accept Eating Damnation##9821 |goto 61.77,24.50
 step
 talk Elementalist Lo'ap##18073
-turnin A Rare Bean##9800 |goto 60.5,22.4
-accept Agitated Spirits of Skysong##9804 |goto 60.5,22.4
-turnin Muck Diving##9815 |goto 60.5,22.4
+turnin A Rare Bean##9800 |goto 60.80,22.38
+accept Agitated Spirits of Skysong##9804 |goto 60.80,22.38
+turnin Muck Diving##9815 |goto 60.80,22.38
+step
 talk Elementalist Morgh##18074
-turnin Murkblood Corrupters##9862 |goto 60.5,22.4
+turnin Murkblood Corrupters##9862 |goto 60.50,22.37
 step
-kill 8 Lake Spirit##17153+ |q 9804/1 |goto 59.7,27.3
+kill 8 Lake Spirit##17153+ |q 9804/1 |goto 59.80,27.25
 step
 talk Elementalist Lo'ap##18073
-turnin Agitated Spirits of Skysong##9804 |goto 60.5,22.4
-accept Blessing of Incineratus##9805 |goto 60.5,22.4
+turnin Agitated Spirits of Skysong##9804 |goto 60.80,22.38
+accept Blessing of Incineratus##9805 |goto 60.80,22.38
 step
 kill Enraged Crusher##18062+
-|tip You can find them all along this cliffside.
-collect 10 Enraged Crusher Core##24473 |q 9821/1 |goto 52,20.2
+collect 10 Enraged Crusher Core##24473 |q 9821/1 |goto 52.02,20.09
 step
 talk Gordawg##18099
-|tip He may not be in this spot, he wanders around the Throne of Elements area.
-turnin Eating Damnation##9821 |goto 61.8,24.4
-accept Shattering the Veil##9849 |goto 61.8,24.4
+|tip He walks around this area.
+turnin Eating Damnation##9821 |goto 61.77,24.50
+accept Shattering the Veil##9849 |goto 61.77,24.50
 step
 talk Harold Lane##18218
-turnin Talbuk Mastery (2)##9858 |goto 71.6,40.5
+turnin Talbuk Mastery##9858 |goto 71.38,40.63
+step
 talk Hemet Nesingwary##18180
-turnin Clefthoof Mastery (2)##9850 |goto 71.6,40.5
+turnin Clefthoof Mastery##9850 |goto 71.52,40.82
+step
 talk Shado 'Fitz' Farstrider##18200
-turnin Windroc Mastery (2)##9855 |goto 71.6,40.5
+turnin Windroc Mastery##9855 |goto 71.57,40.52
 step
-Go inside the hut
-Use the Living Fire in your bags |use Living Fire##24467
-Destroy the Western Hut |q 9805/2 |goto 70.8,51.2
+Enter the building |goto 70.94,51.30 < 5 |walk
+use the Living Fire##24467
+|tip Inside the hut.
+Destroy the Western Hut |q 9805/2 |goto 70.76,51.12
 step
-Go inside the hut
-Use the Living Fire in your bags |use Living Fire##24467
-Destroy the Large Hut |q 9805/1 |goto 72.4,50.3
+Follow the path up |goto 72.24,51.12 < 5 |only if walking
+Enter the building |goto 72.35,50.56 < 5 |walk
+use the Living Fire##24467
+|tip Inside the hut.
+Destroy the Large Hut |q 9805/1 |goto 72.41,50.28
 step
-Go inside the hut
-Use the Living Fire in your bags |use Living Fire##24467
-Destroy the Eastern Hut |q 9805/4 |goto 72.8,54.7
+Enter the building |goto 72.67,54.58 < 5 |walk
+use the Living Fire##24467
+|tip Inside the hut.
+Destroy the Eastern Hut |q 9805/4 |goto 72.75,54.70
 step
-Go inside the hut
-Use the Living Fire in your bags |use Living Fire##24467
-Destroy the Southern Hut |q 9805/3 |goto 71.2,53.2
+Enter the building |goto 71.37,53.06 < 5 |walk
+use the Living Fire##24467
+|tip Inside the hut.
+Destroy the Southern Hut |q 9805/3 |goto 71.21,53.24
 step
 talk Elementalist Lo'ap##18073
-turnin Blessing of Incineratus##9805 |goto 60.5,22.4
-accept The Spirit Polluted##9810 |goto 60.5,22.4
-stickystart "bouldercrush"
+turnin Blessing of Incineratus##9805 |goto 60.80,22.38
+accept The Spirit Polluted##9810 |goto 60.80,22.38
+stickystart "Slay_Boulderfist_Enemies"
 step
-Use your Mag'har Battle Standard next to the bonfire |use Mag'har Battle Standard##25458
-Place the First Battle Standard |q 9910/1 |goto 72.1,69.9
+use the Mag'har Battle Standard##25458
+|tip Use it next to the bonfire.
+Place the First Battle Standard |q 9910/1 |goto 72.25,69.98
 step
-Use your Mag'har Battle Standard next to the bonfire |use Mag'har Battle Standard##25458
-|tip Up the hill on the middle ledge, overlooking the camp.
-Place the Second Battle Standard |q 9910/2 |goto 74.7,69.8
+Follow the path |goto 73.16,69.56 < 10 |only if walking
+Follow the path up |goto 72.95,68.65 < 10 |only if walking
+Continue up the path |goto 74.75,67.64 < 10 |only if walking
+use the Mag'har Battle Standard##25458
+|tip Use it next to the bonfire.
+Place the Second Battle Standard |q 9910/2 |goto 74.68,69.83
 step
-Use your Mag'har Battle Standard next to the bonfire |use Mag'har Battle Standard##25458
-|tip All the way up the hill.
-Place the Third Battle Standard |q 9910/3 |goto 75.8,68.4
+Follow the path |goto 74.68,68.65 < 10 |only if walking
+Continue up the path |goto 75.39,67.57 < 10 |only if walking
+use the Mag'har Battle Standard##25458
+|tip Use it next to the bonfire.
+Place the Third Battle Standard |q 9910/3 |goto 75.79,68.30
 step
-label "bouldercrush"
-kill 8 Boulderfist Mystic##17135+ |q 9906/1 |goto 72.9,69.8
-kill 8 Boulderfist Crusher##17134+ |q 9906/2 |goto 72.9,69.8
-step
-talk Jorin Deadeye##18106
-turnin Message in a Battle##9906 |goto 55.5,37.6
-accept An Audacious Advance##9907 |goto 55.5,37.6
-step
-talk Elkay'gan the Mystic##18300
-turnin Standards and Practices##9910 |goto 55.5,37.6
-accept Bleeding Hollow Supply Crates##9916 |goto 55.5,37.6
-step
-kill 10 Boulderfist Warrior##17136+ |q 9907/1 |goto 40.8,31.5
-kill 10 Boulderfist Mage##17137+ |q 9907/2 |goto 40.8,31.5
-click the Bleeding Hollow Supply Crates
-collect 10 Bleeding Hollow Supply Crate##25460 |q 9916/1 |goto 40.8,31.5
-|tip They look like wooden boxes with a red symbol on the side of them.  There are a lot of them inside the cave.
-stickystart "lakesurge"
-step
-kill Watoosun's Polluted Essence##18145 |q 9810/1 |goto 33.1,50.8
-|tip He's underwater.
-step
-label "lakesurge"
-kill 8 Lake Surger##17155+ |q 9810/2 |goto 33.8,48.9
-step
-Use Gordawg's Boulder on Shattered Rumblers |use Gordawg's Boulder##24501
-Kill the Minions of Gurok that spawn from their corpses
-kill 30 Minion of Gurok##18181+ |q 9849/1 |goto 27.9,77.6
-step
-talk Elkay'gan the Mystic##18300
-turnin Bleeding Hollow Supply Crates##9916 |goto 55.5,37.6
+label "Slay_Boulderfist_Enemies"
+kill 8 Boulderfist Mystic##17135+ |q 9906/1 |goto 72.88,69.81
+kill 8 Boulderfist Crusher##17134+ |q 9906/2 |goto 72.88,69.81
 step
 talk Jorin Deadeye##18106
-turnin An Audacious Advance##9907 |goto 55.5,37.6
-accept Diplomatic Measures##10107 |goto 55.5,37.6
+turnin Message in a Battle##9906 |goto 55.56,37.62
+accept An Audacious Advance##9907 |goto 55.56,37.62
 step
-The path up to Lantresor of the Blade starts here |goto 73.8,68.1 < 10 |q 10107
+talk Elkay'gan the Mystic##18300
+turnin Standards and Practices##9910 |goto 55.63,37.54
+accept Bleeding Hollow Supply Crates##9916 |goto 55.63,37.54
+stickystart "Collect_Bleeding_Hollow_Supply_Crates"
+step
+kill 10 Boulderfist Warrior##17136+ |q 9907/1 |goto 40.77,31.63
+kill 10 Boulderfist Mage##17137+ |q 9907/2 |goto 40.77,31.63
+step
+label "Collect_Bleeding_Hollow_Supply_Crates"
+click Bleeding Hollow Supply Crate##182265+
+collect 10 Bleeding Hollow Supply Crate##25460 |q 9916/1 |goto 40.77,31.63
+|tip They look like wooden boxes with a red symbol on the side of them.
+stickystart "Slay_8_Lake_Surgers"
+step
+kill Watoosun's Polluted Essence##18145 |q 9810/1 |goto 32.99,50.89
+|tip Underwater.
+step
+label "Slay_8_Lake_Surgers"
+kill 8 Lake Surger##17155+ |q 9810/2 |goto 34.67,48.78
+|tip Underwater.
+step
+kill Shattered Rumbler##17157+
+use Gordawg's Boulder##24501
+|tip Use it on their corpses.
+kill 30 Minion of Gurok##18181+ |q 9849/1 |goto 28.18,77.65
+step
+talk Elkay'gan the Mystic##18300
+turnin Bleeding Hollow Supply Crates##9916 |goto 55.63,37.54
+step
+talk Jorin Deadeye##18106
+turnin An Audacious Advance##9907 |goto 55.56,37.62
+accept Diplomatic Measures##10107 |goto 55.56,37.62
+step
+Follow the path |goto 73.56,68.18 < 10 |only if walking
+Follow the path up |goto 74.70,67.96 < 10 |only if walking
+Continue up the path |goto 75.57,67.60 < 10 |only if walking
 talk Lantresor of the Blade##18261
-Listen to his story
-Hear the story of the Blademaster |q 10107/1 |goto 73.8,62.6
-turnin Diplomatic Measures##10107 |goto 73.8,62.6
-accept Armaments for Deception##9928 |goto 73.8,62.6
-accept Ruthless Cunning##9927 |goto 73.8,62.6
-stickystart "kildeath"
-step
-kill Giselda the Crone##18391 |q 9935/1 |goto 71.1,82.4
-|tip Inside the big circle building, in the middle.
-step
-label "kildeath"
-click the Kil'sorrow Armaments##182355
-|tip They look like skinny, square, tan boxes on the ground with a red axe logo on them.
-collect 10 Kil'sorrow Armaments##25554 |q 9928/1 |goto 71.4,79.4
-kill Kil'sorrow Deathsworn##17148, Kil'sorrow Cultist##17147, Kil'sorrow Spellbinder##17146
-Kill 10 Kil'sorrow Agents |q 9935/2 |goto 71.4,79.4
-Use your Warmaul Ogre Banner on their corpses |use Warmaul Ogre Banner##25552
-Plant 10 Warmaul Ogre Banners |q 9927/1 |goto 71.4,79.4
+Watch the dialogue
+Hear the story of the Blademaster |q 10107/1 |goto 73.81,62.60
 step
 talk Lantresor of the Blade##18261
-turnin Armaments for Deception##9928 |goto 73.8,62.6
-turnin Ruthless Cunning##9927 |goto 73.8,62.6
-accept Returning the Favor##9931 |goto 73.8,62.6
-accept Body of Evidence##9932 |goto 73.8,62.6
+turnin Diplomatic Measures##10107 |goto 73.81,62.60
+accept Armaments for Deception##9928 |goto 73.81,62.60
+accept Ruthless Cunning##9927 |goto 73.81,62.60
+stickystart "Plant_Warmaul_Ogre_Banners"
+stickystart "Slay_Kilsorrow_Agents"
+stickystart "Collect_Kilsorrow_Armaments"
+step
+Enter the building |goto 70.93,81.25 < 5 |walk
+kill Giselda the Crone##18391 |q 9935/1 |goto 71.16,82.36
+|tip Inside the building.
+step
+label "Plant_Warmaul_Ogre_Banners"
+Kill Kil'sorrow enemies around this area
+use the Warmaul Ogre Banner##25552
+|tip Use it on their corpses.
+Plant #10# Warmaul Ogre Banners |q 9927/1 |goto 70.28,79.76
+step
+label "Slay_Kilsorrow_Agents"
+Kill Kil'sorrow enemies around this area
+Slay #10# Kil'sorrow Agents |q 9935/2 |goto 70.28,79.76
+step
+label "Collect_Kilsorrow_Armaments"
+click Kil'sorrow Armaments##182355+
+|tip They look like small tan boxes on the ground with a red axe logo on the ground around this area.
+collect 10 Kil'sorrow Armaments##25554 |q 9928/1 |goto 70.28,79.76
+step
+talk Lantresor of the Blade##18261
+turnin Armaments for Deception##9928 |goto 73.81,62.60
+turnin Ruthless Cunning##9927 |goto 73.81,62.60
+accept Returning the Favor##9931 |goto 73.81,62.60
+accept Body of Evidence##9932 |goto 73.81,62.60
 step
 talk Warden Bullrok##18407
-turnin Wanted: Giselda the Crone##9935 |goto 55.8,38
+turnin Wanted: Giselda the Crone##9935 |goto 55.79,37.94
 step
 talk Gordawg##18099
-turnin Shattering the Veil##9849 |goto 61.8,24.4
+|tip He walks around this area.
+turnin Shattering the Veil##9849 |goto 61.77,24.50
 step
 talk Elementalist Lo'ap##18073
-turnin The Spirit Polluted##9810 |goto 60.5,22.4
+turnin The Spirit Polluted##9810 |goto 60.80,22.38
+stickystart "Plant_Kilsorrow_Banners"
 step
-kill Warmaul Shaman##18064+, Warmaul Reaver##17138+
-Use your Kil'sorrow Banner on their copses |use Kil'sorrow Banner##25555
-Plant 10 Kil'sorrow Banners |q 9931/1 |goto 46.5,24.3
-Use the Damp Woolen Blanket on the Blazing Warmaul Pyre |use Damp Woolen Blanket##25658
-|tip It looks like a big burning bonfire.
-Defend the 2 ogres that spawn until they finish placing corpses around
-Plant the Kil'sorrow Bodies |q 9932/1 |goto 46.5,24.3
+use the Damp Woolen Blanket##25658
+|tip Use it on the Blazing Warmaul Pyre.
+|tip Defend the 2 ogres that spawn until they finish placing corpses.
+Plant the Kil'sorrow Bodies |q 9932/1 |goto 46.57,24.28
+step
+label "Plant_Kilsorrow_Banners"
+Kill Warmaul enemies around this area
+use the Kil'sorrow Banner##25555
+|tip Use it on their copses.
+Plant #10# Kil'sorrow Banners |q 9931/1 |goto 46.57,24.28
 step
 talk Lantresor of the Blade##18261
-turnin Returning the Favor##9931 |goto 73.8,62.6
-turnin Body of Evidence##9932 |goto 73.8,62.6
-accept Message to Garadar##9934 |goto 73.8,62.6
+turnin Returning the Favor##9931 |goto 73.81,62.60
+turnin Body of Evidence##9932 |goto 73.81,62.60
+accept Message to Garadar##9934 |goto 73.81,62.60
 step
 talk Garrosh##18063
-turnin Message to Garadar##9934 |goto 55.5,37.6
+turnin Message to Garadar##9934 |goto 55.44,37.64
 step
 talk Warden Bullrok##18407
-accept Wanted: Durn the Hungerer##9937 |goto Nagrand,55.8,38.0
+accept Wanted: Durn the Hungerer##9937 |goto 55.79,37.94
 step
 talk Matron Celestine##18301
-accept He Called Himself Altruis...##9983 |goto 55.2,36.1
-step
-The next few quests are meant to be _group quests_. If you are not high level, you may need at least _3 people_ for these quests.
-Click here to proceed |confirm always
+accept He Called Himself Altruis...##9983 |goto 55.20,36.10
 step
 map Nagrand
 path follow loose;loop;ants curved
@@ -5610,110 +5774,143 @@ path	46.7,63.7	40.8,63.5	37.4,62.1
 path	34.0,62.7	31.7,65.4	30.5,71.3
 path	32.0,75.9	35.5,78.5	39.8,78.7
 path	42.4,75.5	46.0,70.2
-Follow the path around this are to look for _Durn the Hungerer_
+Follow the path around looking for Durn the Hungerer
 kill Durn the Hungerer |q 9937/1
+|tip He walks around this area.
 step
 talk Altruis the Sufferer##18417
-turnin He Called Himself Altruis...##9983 |goto 27.3,43.1
-accept Survey the Land##9991 |goto 27.3,43.1
-|tip You will fly around on a drake to view The Twilight Ridge.
-turnin Survey the Land##9991 |goto 27.3,43.1
-accept Buying Time##9999 |goto 27.3,43.1
+turnin He Called Himself Altruis...##9983 |goto 27.34,43.09
+accept Survey the Land##9991 |goto 27.34,43.09
 step
-kill 2 Felguard Legionnaire |q 9999/1 |goto 24.5,37.9
-kill 3 Mo'arg Engineer |q 9999/2 |goto 24.5,37.9
-kill 8 Gan'arg Tinkerer |q 9999/3 |goto 24.5,37.9
+Watch the dialogue
+Survey the Forge Camps |q 9991/1
 step
 talk Altruis the Sufferer##18417
-turnin Buying Time##9999 |goto 27.3,43.1
-accept The Master Planner##10001 |goto 27.3,43.1
+turnin Survey the Land##9991 |goto 27.34,43.09
+accept Buying Time##9999 |goto 27.34,43.09
+stickystart "Slay_Moarg_Engineers"
+stickystart "Slay_Ganarg_Tinkerers"
+step
+kill 2 Felguard Legionnaire |q 9999/1 |goto 24.50,37.92
+step
+label "Slay_Moarg_Engineers"
+kill 3 Mo'arg Engineer |q 9999/2 |goto 24.50,37.92
+step
+label "Slay_Ganarg_Tinkerers"
+kill 8 Gan'arg Tinkerer |q 9999/3 |goto 24.50,37.92
+step
+talk Altruis the Sufferer##18417
+turnin Buying Time##9999 |goto 27.34,43.09
+accept The Master Planner##10001 |goto 27.34,43.09
 step
 kill Mo'arg Master Planner##18567
-collect The Master Planner's Blueprints##25751 |q 10001/1 |goto Nagrand,17.5,50.3
-You can also find the Mater Planner around [23.3,35.4]
+collect The Master Planner's Blueprints##25751 |q 10001/1 |goto 17.54,50.32
 step
 talk Altruis the Sufferer##18417
-turnin The Master Planner##10001 |goto 27.3,43.1
-accept Patience and Understanding##10004 |goto 27.3,43.1
+turnin The Master Planner##10001 |goto 27.34,43.09
+accept Patience and Understanding##10004 |goto 27.34,43.09
 step
 talk Elder Yorley##18414
-accept Cho'war the Pillager##9946 |goto 32.3,36.2
+accept Cho'war the Pillager##9946 |goto 32.31,36.15
 step
-Follow the path up and around
+Follow the path |goto 29.26,31.82 < 10 |only if walking
+Follow the path up |goto 25.98,29.03 < 10 |only if walking
+Continue following the path |goto 24.89,23.82 < 10 |only if walking
+Enter the cave |goto 27.14,18.37 < 10 |only if walking
+Continue following the path |goto 25.80,15.61 < 15 |c |only if walking |q 9946
+step
+Continue following the path |goto 26.85,13.61 < 10 |only if walking
+Leave the cave |goto 28.16,13.44 < 10 |only if walking
+Follow the path up |goto 28.29,11.81 < 10 |c |only if walking |q 9946
+step
+Enter the cave |goto 27.41,11.46 < 10 |walk
+Follow the path |goto 26.32,13.09 < 5 |walk
+Continue following the path |goto 25.53,15.78 < 5 |walk
+Follow the path up |goto 26.25,14.64 < 5 |walk
 kill Cho'war the Pillager##18423
-collect Head of Cho'war##25590 |q 9946/1 |goto Nagrand,25.8,13.8
+|tip Inside the cave.
+collect Head of Cho'war##25590 |q 9946/1 |goto 25.90,13.70
 step
 talk Elder Yorley##18414
-turnin Cho'war the Pillager##9946 |goto 32.3,36.2
+turnin Cho'war the Pillager##9946 |goto 32.31,36.15
 step
 talk Warden Bullrok##18407
-turnin Wanted: Durn the Hungerer##9937 |goto Nagrand,55.8,38.0
+turnin Wanted: Durn the Hungerer##9937 |goto 55.79,37.94
+step
+Enter the building |goto Shattrath City/0 74.06,32.83 < 10 |walk
+talk Sal'salabim##18584
+|tip Inside the building.
+Tell him _"Altruis sent me. He said that you could help me."_
+kill Sal'salabim##18584
+Persuad Sal'salabim |q 10004/1 |goto 77.29,34.86
 step
 talk Sal'salabim##18584
-Tell him "Altruis sent me. He said that you could help me."
-|tip He will immediately start attacking you!
-Persuad Sal'salabim |q 10004/1 |goto Shattrath City,77.3,34.9
-step
-talk Sal'salabim##18584
-turnin Patience and Understanding##10004 |goto Shattrath City,77.3,34.9
-accept Crackin' Some Skulls##10009 |goto Shattrath City,77.3,34.9
+|tip Inside the building.
+turnin Patience and Understanding##10004 |goto 77.29,34.86
+accept Crackin' Some Skulls##10009 |goto 77.29,34.86
 step
 talk Raliq the Drunk##18585
-Tell him you are here to collect a dept, pay up or you're going to have to hurt him.
-|tip He will immediately start attacking you!
-Collect Raliq's Debt |q 10009/1 |goto 75.0,31.5
+|tip Inside the building.
+Tell him _"I have been sent by Sal'salabim to collect a debt that you owe. Pay up or I'm going to have to hurt you."_
+kill Raliq the Drunk##18585
+Collect Raliq's Debt |q 10009/1 |goto 75.00,31.41
 step
 talk Coosh'coosh##18586
-Tell him you are here to collect a dept, pay up or you're going to have to hurt him.
-|tip He will immediately start attacking you!
-Collect Coosh'coosh's Debt |q 10009/2 |goto Zangarmarsh,80.9,91.1
+|tip He walks around this area.
+Tell him _"I have been sent by Sal'salabim to collect a debt that you owe. Pay up or I'm going to have to hurt you."_
+kill Coosh'coosh##18586
+Collect Coosh'coosh's Debt |q 10009/2 |goto Zangarmarsh/0 80.82,91.12
 step
 talk Floon##18588
-Tell him you are here to collect a dept, pay up or you're going to have to hurt him.
-|tip He will immediately start attacking you!
-Collect Floon's Debt |q 10009/3 |goto Terokkar Forest,27.2,58.1
+|tip He walks around this area.
+Tell him _"I have been sent by Sal'salabim to collect a debt that you owe. Pay up or I'm going to have to hurt you."_
+kill Floon##18588
+Collect Floon's Debt |q 10009/3 |goto Terokkar Forest/0 27.14,58.19
 step
+Enter the building |goto Shattrath City/0 74.06,32.83 < 10 |walk
 talk Sal'salabim##18584
-turnin Crackin' Some Skulls##10009 |goto 77.3,34.9
-accept It's Just That Easy?##10010 |goto 77.3,34.9
+|tip Inside the building.
+turnin Crackin' Some Skulls##10009 |goto 77.29,34.86
+accept It's Just That Easy?##10010 |goto 77.29,34.86
 step
 talk Altruis the Sufferer##18417
-turnin It's Just That Easy?##10010 |goto Nagrand,27.3,43.1
-accept Forge Camp: Annihilated##10011 |goto Nagrand,27.3,43.1
+turnin It's Just That Easy?##10010 |goto Nagrand/0 27.34,43.09
+accept Forge Camp: Annihilated##10011 |goto Nagrand/0 27.34,43.09
 step
-kill "Demos\,\ Overseer of Hate##18535"
-collect Fel Cannon Activator##25770 |n
-Use the Fel Cannon Activator in your bags |use Fel Cannon Activator##25770
-Destroy Forge Camp: Hate |q 10011/1 |goto Nagrand,25.0,36.1
+kill Demos,Overseer of Hate##18535
+collect 1 Fel Cannon Activator##25770 |goto 24.98,36.09 |q 10011
 step
-kill "Xirkos\,\ Overseer of Fear##18536"
-collect Fel Cannon Activator##25771 |n
-Use the Fel Cannon Activator in your bags |use Fel Cannon Activator##25771
-Destoy Forge Camp: Fear |q 10011/2 |goto 19.6,51.1
+use the Fel Cannon Activator##25770
+Destroy Forge Camp: Hate |q 10011/1 |goto 24.98,36.09
+step
+kill Xirkos,Overseer of Fear##18536
+collect 1 Fel Cannon Activator##25771 |goto 19.59,51.15 |q 10011
+step
+use the Fel Cannon Activator##25771
+Destoy Forge Camp: Fear |q 10011/2 |goto 19.38,50.87
 step
 talk Altruis the Sufferer##18417
-turnin Forge Camp: Annihilated##10011 |goto 27.3,43.1
+turnin Forge Camp: Annihilated##10011 |goto 27.34,43.09
 step
-Once you have completed the above quests, you will have to grind your way to exalted.
-Click to proceed. |confirm always
+After doing those quests the best way to gain reputation is to farm and turn in Obsidian Warbeads
+confirm |only if rep("The Mag'har")<Exalted
 step
-label "bead_grind"
-kill Warmaul Reaver##17138+, Warmaul Shaman##18064+
-collect Obsidian Warbeads##25433 |n |goto Nagrand,48.9,22.7
-If you are fresh into revered, you will need 420 beads to get 21,000 reputation points.
-Collect beads in sets of 10.
-Click here when you're ready to turn in. |confirm always
+label "Collect_Beads_For_Rep"
+Kill Warmaul enemies around this area
+collect Obsidian Warbeads##25433 |n |goto 45.56,22.00
+|tip Collect beads in sets of 10.
+Click here to turn them in |confirm |only if rep("The Mag'har")<Exalted
 step
-label "turn_in"
 talk Warden Bullrok##18407
-accept More Warbeads##10478 |n |goto Nagrand,55.8,37.9
-Click here to go back to farming. |next "bead_grind" |confirm |only if rep("The Mag'har")<=Revered
-Earn Exalted status with The Mag'har |condition rep("The Mag'har")==Exalted |next "exalted"
+accept More Warbeads##10478 |goto 55.79,37.94
+Click here to continue farming |next "Collect_Beads_For_Rep" |confirm |only if rep("The Mag'har")<=Revered
+Earn Exalted status with The Mag'har |condition rep("The Mag'har")==Exalted |next "Reached_Exalted_Status"
 step
-label "exalted"
-Congratulations, you are now Exalted with The Mag'har! |condition rep("The Mag'har")==Exalted
+label "Reached_Exalted_Status"
+_Congratulations!_
+You reached Exalted reputation with "The Mag'har" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Ogri'la",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Ogri'la",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Ogri'la faction.",
 achieveid={896},
@@ -6026,7 +6223,7 @@ step
 label "exalted"
 Congratulation, you are now Exalted with Ogri'la.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Scale of the Sands",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\The Scale of the Sands",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Scale of the Sands faction.",
 achieveid={959},
@@ -6048,7 +6245,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with The Scale of the Sands!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Scryers",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\The Scryers",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Scryers faction.",
 condition_suggested=function() return level >= 60 and level <= 70 and rep('The Scryers') < Exalted end,
@@ -6442,7 +6639,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with The Scryers!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Sha'tar",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\The Sha'tar",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Sha'tar faction.",
 },[[
@@ -7244,7 +7441,7 @@ step
 label "exalted"
 Congratulations, you're now exalted with The Sha'tar!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Sha'tari Skyguard",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Sha'tari Skyguard",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Sha'tari Skyguard faction.",
 achieveid={894},
@@ -7488,7 +7685,7 @@ kill Terokk##21838 |goto 66.2,77.5
 Killing Terokk will gain you 550 reputation with Ska'tari Skyguard
 |confirm always |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Shattered Sun Offensive",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Shattered Sun Offensive",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Shattered Sun Offensive faction.",
 achieveid={897},
@@ -7496,7 +7693,7 @@ achieveid={897},
 step
 #include "SSO_PreQuest_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Silvermoon City",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Silvermoon City",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Silvermoon City faction.",
 condition_suggested=function() return level >= 20 and level <= 60 and rep('Silvermoon City') < Exalted end,
@@ -7510,134 +7707,79 @@ Become Exalted with Silvermoon City |condition rep('Silvermoon City')==Exalted
 step
 Congratulations, you have reached exalted with Silvermoon City!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Sporeggar",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Sporeggar",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Sporeggar faction.",
 achieveid={900},
 },[[
 step
-label "back up"
 talk Fahssn##17923
-accept The Sporelings' Plight##9739 |goto Zangarmarsh,19.1,64.2
-accept Natural Enemies##9743 |goto Zangarmarsh,19.1,64.2
-turn in these two quests 4 times to go from unfriend to friendly.
-|only if rep('Sporeggar')<=Neutral
+|tip He walks around this area.
+accept The Sporelings' Plight##9739 |goto Zangarmarsh/0 18.96,63.45
+accept Natural Enemies##9743 |goto Zangarmarsh/0 18.96,63.45
+stickystart "Collect_Mature_Spore_Sacs"
 step
-kill Starving Fungal Giant##18125+, Starving Bog Lord##19519+
-collect 6 Bog Lord Tendril##24291 |q  9743/1 |goto 16.0,60.3
-click Mature Spore Sac##182069
-collect 10 Mature Spore Sac##24290 |q 9739/1 |goto 16.0,60.3
-|tip They are on the ground throughout the area.
-|only if rep('Sporeggar')<=Neutral
+Kill Starving enemies around this area
+collect 6 Bog Lord Tendril##24291 |q 9743/1 |goto 15.90,60.51
 step
-talk Fahssn##17923
-turnin The Sporelings' Plight##9739 |repeatable |goto Zangarmarsh,19.1,64.2
-turnin Natural Enemies##9743 |repeatable |goto Zangarmarsh,19.1,64.2
-|only if rep('Sporeggar')<=Neutral
-step
-kill Starving Fungal Giant##18125+, Starving Bog Lord##19519+
-collect 6 Bog Lord Tendril##24291+ |n |goto 16.0,60.3
-click Mature Spore Sac##182069
-collect 10 Mature Spore Sac##24290 |n
-|tip They are on the ground throughout the area.
-Turn in 10 Spore Sacs or 6 Bog Lord Tendrils at a time here: [19.0,63.3]
-Reach Friendly with Sporeggar |condition rep('Sporeggar')>=Friendly
+label "Collect_Mature_Spore_Sacs"
+click Mature Spore Sac##182069+
+|tip They look like small puffy, balloon-shaped sacs on on the ground around this area.
+collect 10 Mature Spore Sac##24290 |q 9739/1 |goto 15.90,60.51
 step
 talk Fahssn##17923
-accept Sporeggar##9919 |goto Zangarmarsh,19.1,64.2
+|tip He walks around this area.
+turnin The Sporelings' Plight##9739 |goto 18.96,63.45
+turnin Natural Enemies##9743 |goto 18.96,63.45
 step
+label "Collect_Spore_Sacs_Reach_Friendly"
+click Mature Spore Sac##182069+
+|tip They look like small puffy, balloon-shaped sacs on on the ground around this area.
+collect Mature Spore Sac##24290 |n |goto 15.90,60.51
+|tip Collect them in in stacks of 10.
+Click here to turn them in |confirm |only if rep('Sporeggar')<Friendly
+step
+talk Fahssn##17923
+|tip He walks around this area.
+accept More Spore Sacs##9742 |goto 18.96,63.45 |only if rep('Sporeggar')<Friendly
+Click here to continue farming |next "Collect_Spore_Sacs_Reach_Friendly" |confirm |only if rep('Sporeggar')<Friendly
+Reach Friendly with Sporeggar |condition rep('Sporeggar')>=Friendly |next "Reached_Friendly_Reputation"
+step
+label "Reached_Friendly_Reputation"
+talk Fahssn##17923
+|tip He walks around this area.
+accept Sporeggar##9919 |goto 18.96,63.45
+step
+Enter the building |goto 19.54,51.82 < 5 |walk
 talk Msshi'fn##17924
-turnin Sporeggar##9919 |goto 19.7,52.0
+|tip Inside the building.
+turnin Sporeggar##9919 |goto 19.68,52.07
 step
-Once you have reached friendly, you can farm the quest Now That We're Friends... and Bring Me A Shrubbery!  Grinding mobs at The Spawning Glen no longer will give you reputation.
-Collecting 265 Sanguine Hibiscus from The Underbog will give you enough
-Click here if you want to grind out Sanguine Hibiscus. |confirm always |next "hibiscus_1"
-or
-Click here if you want to grind Naga mobs.|confirm always |next "grind_1"
+The fastest way to go reach Exalted is to farm The Underbog dungeon
+|tip You can complete the dungeon once pery day on Heroic and as many times as you want on Normal.
+Enter The Underbog |goto The Underbog/1 30.02,67.39 < 1000 |c
+only if rep('Sporeggar')<Exalted
 step
-label "hibiscus_1"
-talk T'shu##54674
-accept Bring Me A Shrubbery!##29691 |goto The Underbog 31.6,65.4
-accept Stalk the Stalker##29567 |goto The Underbog 31.6,65.4
-step
-label "hibiscus"
-You can find the Sanguine Hibiscus on the ground scattered through out the instance.
-You can also get Sanguine Hibiscus from Underbat, Underbog Lurkers, Underbog Shamblers, Bog Overlords, Bog Giants and Underbog Lords.
+label "Farm_Dungeon_Collect_Sanguine_Hibiscus"
+Kill everything in the dungeon
+click Sanguine Hibiscus##183385+
+|tip They look like small red flowery plants on the ground throughout the dungeon.
+|tip They can also drop from creatures in the dungeon.
 collect Sanguine Hibiscus##24246 |n
-You need 5 Sanguine Hibiscus for 750 Reputation.
-40 Sanguine Hibiscus = 6,000 Reputation.
-80 Sanguine Hibiscus = 12,000 Reputation.
-Click when you are ready to turn in |confirm always
-step
-kill The Black Stalker##17882+
-collect Brain of the Black Stalker##24248 |q 29567/1 |goto The Underbog 25.7,44.1
+|tip Collect these and turn them in for more reputation after each run.
+Click here to turn them in |confirm |only if rep('Sporeggar')<Exalted
 step
 talk T'shu##54674
-turnin Bring Me A Shrubbery!##29691 |goto The Underbog 31.6,65.4
-turnin Stalk the Stalker##29567 |goto The Underbog 31.6,65.4
+accept Bring Me Another Shrubbery!##29692 |goto 31.48,65.21 |only if rep('Sporeggar')<Exalted
+Click here to continue farming |next "Farm_Dungeon_Collect_Sanguine_Hibiscus" |confirm |only if rep('Sporeggar')<Exalted
+|tip You can complete the dungeon once pery day on Heroic and as many times as you want on Normal.
+Earn Exalted status with the Sporeggar |condition rep('Sporeggar')==Exalted |next "Reached_Exalted_Status"
 step
-label "hibiscus_r"
-talk T'shu##54674 |goto The Underbog 31.6,65.4
-accept Bring Me Another Shrubbery!##9714 |instant |repeatable |or
-or
-Click here to go farming for more _Sanguine Hibiscus_ |confirm always |next "hibiscus" |or
-or
-Click here if you would like to farm Naga for more reputation |confirm always |next "grind_1" |or
-step
-talk Gzhun'tt##17856
-turnin Bring Me A Shrubbery!##9715 |goto 19.5,50.0
-|next "hibiscus_r" |only if rep('Sporeggar')<=Revered
-|next "exalted" |only if rep('Sporeggar')==Exalted
-|only if havequest(9715)
-step
-talk Gzhun'tt##17856
-turnin Bring Me Another Shrubbery!##9714 |goto 19.5,50.0
-|next "hibiscus_r" |only if rep('Sporeggar')<=Revered
-|next "exalted" |only if rep('Sporeggar')==Exalted
-|only if havequest(9714)
-step
-label "grind_1"
-talk Gzhun'tt##17856
-accept Now That We're Friends...##9726 |goto Zangarmarsh 19.5,50.0
-|only if rep('Sporeggar')>=Friendly
-|next "grind_2" |only if not completedq(9726)
-|next |only if default
-step
-label "grind_r"
-talk Gzhun'tt##17856
-accept Now That We're Still Friends...##9727 |repeatable |next "grind"|or |goto 19.5,50.0
-or
-Click here to go farming for _Sanguine Hibiscus_ |confirm |next "hibiscus_1" |or
-|only if rep('Sporeggar')>=Friendly
-step
-label "grind_2"
-kill 12 Bloodscale Slavedriver##18089+ |q 9726/1 |goto Zangarmarsh,26.9,41.7
-kill 6 Bloodscale Enchantress##18088+ |q 9726/2 |goto Zangarmarsh,26.9,41.7
-|only if havequest(9726)
-|next "grind_3"
-step
-label "grind"
-kill 12 Bloodscale Slavedriver##18089+ |q 9727/1 |repeatable |goto Zangarmarsh,26.9,41.7
-kill 6 Bloodscale Enchantress##18088+ |q 9727/2 |repeatable |goto Zangarmarsh,26.9,41.7
-|only if havequest(9727)
-|next "grind_4"
-step
-label "grind_3"
-talk Gzhun'tt##17856
-turnin Now That We're Friends...##9726 |goto 19.5,50.0
-|next "grind_r" |only if rep('Sporeggar')<=Revered
-|next "exalted" |only if rep('Sporeggar')==Exalted
-step
-label "grind_4"
-talk Gzhun'tt##17856
-turnin Now That We're Still Friends...##9727 |goto 19.5,50.0
-|next "grind_r" |only if rep('Sporeggar')<=Revered
-|next "exalted" |only if rep('Sporeggar')==Exalted
-step
-label "exalted"
-Congratulations, you are now exalted with Sporeggar!
+label "Reached_Exalted_Status"
+_Congratulations!_
+You reached Exalted reputation with the "Sporeggar" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Thrallmar",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Thrallmar",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Thrallmar faction.",
 condition_suggested=function() return level >= 60 and level <= 70 and rep('Thrallmar') < Exalted end,
@@ -7650,7 +7792,7 @@ Reputation gained from doing Hellfire Peninsula quests well net you around 10,00
 Click here to continue to the quest portion of the guide. |confirm
 step
 click Warchief's Command Board##206109
-accept Warchief's Command: Outland!##28705 |goto Orgrimmar/0 49.70,76.60
+accept Warchief's Command: Outland!##28705 |goto Orgrimmar/1 49.70,76.60
 step
 talk Lieutenant General Orion##19253
 turnin Warchief's Command: Outland!##28705 |goto Hellfire Peninsula/0 87.40,49.80
@@ -8344,469 +8486,621 @@ step
 label "grats"
 Congratulations, you are now exalted with Thrallmar!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Tranquillien",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\Tranquillien",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Tranquillien faction.",
+condition_end=function() return completedq(9811) end,
 },[[
 step
 talk Courier Dawnstrider##16183
-turnin Missing in the Ghostlands##9144 |goto Eversong Woods,49.0,89.0
+turnin Missing in the Ghostlands##9144 |goto Eversong Woods/0 48.98,88.99
 |only if havequest(16183)
 step
 talk Apothecary Thedra##16196
-accept The Fallen Courier##9147 |goto 49.0,89.0
+accept The Fallen Courier##9147 |goto 49.01,89.04
 step
-klll Starving Ghostclaw##16347+, Mistbat##16353+
-collect 4 Plagued Blood Sample##22570 |q 9147/1 |goto Ghostlands,49.3,12.6
+Kill enemies around this area
+collect 4 Plagued Blood Sample##22570 |q 9147/1 |goto Ghostlands/0 48.75,14.62
 step
 talk Apothecary Thedra##16196
-turnin The Fallen Courier##9147 |goto Eversong Woods,49.0,89.0
+turnin The Fallen Courier##9147 |goto Eversong Woods/0 49.01,89.04
 step
 talk Courier Dawnstrider##16183
-accept Delivery to Tranquillien##9148 |goto 49.0,89.0
+accept Delivery to Tranquillien##9148 |goto 48.98,88.99
 step
+Follow the road |goto Ghostlands/0 46.53,18.49 < 30 |only if walking
 talk Arcanist Vandril##16197
-turnin Delivery to Tranquillien##9148 |goto Ghostlands,46.3,28.4
-accept The Forsaken##9327 |or |goto Ghostlands,46.3,28.4
-accept the Forsaken##9329 |or |goto Ghostlands,46.3,28.4
+|tip He walks around this area.
+turnin Delivery to Tranquillien##9148 |goto 46.34,28.36
+accept The Forsaken##9327 |or |goto 46.34,28.36
+'|accept the Forsaken##9329 |or |goto 46.34,28.36
 step
 talk Skymaster Sunwing##16189
-fpath Tranquillien |goto 45.4,30.5
+fpath Tranquillien |goto 45.42,30.52
 step
+Enter the building |goto 45.17,32.36 < 10 |walk
 talk High Executor Mavren##16252
-turnin The Forsaken##9329 |or |goto 44.8,32.5
-turnin The Forsaken##9327 |or |goto 44.8,32.5
-accept Return to Arcanist Vandril##9758 |goto 44.8,32.5
+|tip Inside the building.
+turnin The Forsaken##9329 |goto 44.77,32.45 |or |only if havequest(9329)
+turnin The Forsaken##9327 |goto 44.77,32.45|or |only if havequest(9327)
+accept Return to Arcanist Vandril##9758 |goto 44.77,32.45
 step
 talk Arcanist Vandril##16197
-turnin Return to Arcanist Vandril##9758 |goto 46.3,28.4
-accept Suncrown Village##9138 |goto 46.3,28.4
+|tip He walks around this area.
+turnin Return to Arcanist Vandril##9758 |goto 46.34,28.36
+accept Suncrown Village##9138 |goto 46.34,28.36
+step
+Enter the building |goto 48.34,31.98 < 10 |walk
+talk Innkeeper Kalarin##16542
+|tip Inside the building.
+home Tranquillien |goto 48.91,32.42 |q 9138
+step
+Follow the road up |goto 46.55,24.22 < 30 |only if walking
+kill 10 Nerubis Guard##16313 |q 9138/1 |goto 60.61,14.03
+step
+talk Arcanist Vandril##16197
+|tip He walks around this area.
+turnin Suncrown Village##9138 |goto 46.34,28.36
+accept Goldenmist Village##9139 |goto 46.34,28.36
 step
 talk Rathis Tomber##16224
-accept Tomber's Supplies##9152 |goto 47.3,28.6
-step
-talk Innkeeper Kalarin##16542
-home Tranquillien |goto 48.9,32.4
+|tip He walks around the area.
+accept Tomber's Supplies##9152 |goto 47.15,28.59
 step
 talk Apothecary Renzithen##16198
-accept The Plagued Coast##9149 |goto 47.7,34.9
+accept The Plagued Coast##9149 |goto 47.74,34.91
 step
-kill 10 Nerubis Guard##16313+ |q 9138/1 |goto 60.6,14.0
-step
-talk Arcanist Vandril##16197
-turnin Suncrown Village##9138 |goto 46.3,28.4
-accept Goldenmist Village##9139 |goto 46.3,28.4
-step
+Follow the road down |goto 45.89,29.34 < 20 |only if walking
 click Rathis Tomber's Supplies##181133
 |tip It's in a wagon with a purple canopy over it.
-collect Rathis Tomber's Supplies##22583 |q 9152/1 |goto 33.6,26.5
+collect Rathis Tomber's Supplies##22583 |q 9152/1 |goto 33.61,26.53
+stickystart "Kill_Quel'dorei_Wraiths"
 step
-kill 6 Quel'dorei Ghost##16325+ |q 9139/1 |goto 27.3,16.2
-kill 4 Quel'dorei Wraith##16326+ |q 9139/2 |goto 27.3,16.2
+kill 6 Quel'dorei Ghost##16325 |q 9139/1 |goto 27.3,16.2
 step
-kill Withered Grimscale##16403+, Zombified Grimscale##16402+
-collect 6 Plagued Murloc Spine##22579 |q 9149/1 |goto 20.5,21.4
+label "Kill_Quel'dorei_Wraiths"
+kill 4 Quel'dorei Wraith##16326 |q 9139/2 |goto 27.3,16.2
+step
+Kill Grimscale enemies around this area
+collect 6 Plagued Murloc Spine##22579 |q 9149/1 |goto 20.11,22.04
 step
 talk Rathis Tomber##16224
-turnin Tomber's Supplies##9152 |goto 47.1,28.3
+|tip He walks around this area.
+turnin Tomber's Supplies##9152 |goto 47.15,28.59
 step
 talk Arcanist Vandril##16197
-turnin Goldenmist Village##9139 |goto 46.3,28.4
-accept Windrunner Village##9140 |goto 46.3,28.4
+|tip He walks around this area.
+turnin Goldenmist Village##9139 |goto 46.34,28.36
+accept Windrunner Village##9140 |goto 46.34,28.36
 step
 talk Magister Darenis##16199
-accept Salvaging the Past##9150 |goto 46.0,32.0
+accept Salvaging the Past##9150 |goto 46.03,31.96
 step
 talk Ranger Lethvalin##16213
-accept Help Ranger Valanna!##9145 |goto 45.5,32.5
+accept Help Ranger Valanna!##9145 |goto 45.48,32.44
 step
 talk Dame Auriferous##16231
-accept Investigate An'daroth##9160 |goto 44.9,32.5
+|tip Inside the building.
+accept Investigate An'daroth##9160 |goto 44.88,32.51
 step
 talk Deathstalker Maltendis##16251
-accept Trouble at the Underlight Mines##9192 |goto 44.8,32.3
+|tip Inside the building.
+accept Trouble at the Underlight Mines##9192 |goto 44.75,32.28
 step
 talk Deathstalker Rathiel##16200
-accept Down the Dead Scar##9155 |goto 46.0,33.6
+accept Down the Dead Scar##9155 |goto 46.02,33.57
 step
 talk Apothecary Renzithen##16198
-turnin The Plagued Coast##9149 |goto 47.7,34.9
+turnin The Plagued Coast##9149 |goto 47.66,34.86
 step
 talk Master Chef Mouldier##16253
-accept Culinary Crunch##9171 |goto 48.4,30.9
+accept Culinary Crunch##9171 |goto 48.43,30.93
+stickystart "Kill_Gangled_Cannibals"
 step
-kill 10 Risen Hungerer##16301+ |q 9155/1 |goto 40.5,33.5
-kill 10 Gangled Cannibal##16309+ |q 9155/2 |goto 40.5,33.5
-More can be found around [38.3,36.5]
+Follow the path down |goto 43.34,32.56 < 20 |only if walking
+kill 10 Risen Hungerer##16301 |q 9155/1 |goto 38.89,34.34
 step
-kill Arcane Devourer##16304+, Mana Shifter##16310+
-collect 8 Crystallized Mana Essence##22580 |q 9150/1 |goto 35.9,32.9
+label "Kill_Gangled_Cannibals"
+kill 10 Gangled Cannibal##16309 |q 9155/2 |goto 38.89,34.34
+step
+Kill enemies around this area
+collect 8 Crystallized Mana Essence##22580 |q 9150/1 |goto 35.91,32.92
 step
 kill Spindleweb Spider##16350+
-collect 5 Crunchy Spider Leg##22644 |q 9171/1 |goto 27.6,31.1
-You can find more around [33.5,22.2]
+collect 5 Crunchy Spider Leg##22644 |q 9171/1 |goto 27.36,29.43
+You can find more around [33.63,20.31]
+stickystart "Kill_Sentinel_Spies"
 step
-Follow the path up |goto 37.7,22.9 < 10
-Go to this spot
+Follow the path up |goto 37.73,22.73 < 20
+Investigate An'daroth |q 9160/2 |goto 37.10,15.98
 |tip Get near the intertwined tree lamp in the middle of the camp.
-Investigate An'daroth |q 9160/1 |goto 35.4,12.4
-kill 12 Sentinel Spy##16330+ |q 9160/2 |goto 35.4,12.4
+step
+label "Kill_Sentinel_Spies"
+kill 12 Sentinel Spy##16330 |q 9160/1 |goto 37.24,16.46
 step
 talk Master Chef Mouldier##16253
-turnin Culinary Crunch##9171 |goto 48.0,31.0
+turnin Culinary Crunch##9171 |goto 48.43,30.93
 step
 talk Magister Darenis##16199
-turnin Salvaging the Past##9150 |goto 46.0,32.0
+turnin Salvaging the Past##9150 |goto 46.03,31.96
 step
 talk Dame Auriferous##16231
-turnin Investigate An'daroth##9160 |goto 44.9,32.5
-accept Into Occupied Territory##9163 |goto 44.9,32.5
-step
-talk Deathstalker Maltendis##16251
-accept Troll Juju##9199 |goto 44.7,32.3
-step
-talk Advisor Valwyn##16289
-accept Investigate the Amani Catacombs##9193 |goto 44.8,32.8
+|tip Inside the building.
+turnin Investigate An'daroth##9160 |goto 44.89,32.50
+accept Into Occupied Territory##9163 |goto 44.89,32.50
 step
 talk Deathstalker Rathiel##16200
-turnin Down the Dead Scar##9155 |goto 46.0,33.6
+turnin Down the Dead Scar##9155 |goto 46.02,33.57
+step
+click Wanted Poster
+accept WANTED: Knucklerot and Luzran##9156 |goto 48.33,31.66
+step
+Follow the road down |goto 46.58,36.31 < 30 |only if walking
+kill Knucklerot##16246
+|tip He walks around the road in this area.
+|tip You may need help to kill him.
+collect Knucklerot's Head##22894 |q 9156/1 |goto 41.26,45.55
+step
+Follow the road down |goto 46.58,36.31 < 30 |only if walking
+kill Luzran##16245
+|tip He walks around the road in this area.
+|tip You may need help to kill him.
+collect Luzran's Head##22893 |q 9156/2 |goto 34.91,52.15
 step
 talk Apprentice Shatharia##16293
-accept Underlight Ore Samples##9207 |goto 31.4,48.3
+accept Underlight Ore Samples##9207 |goto 31.43,48.33
+stickystart "Kill_Blackpaw_Scavengers"
+stickystart "Kill_Blackpaw_Shaman"
+stickystart "Collect_Underlight_Ore"
 step
-kill 8 Blackpaw Gnoll##16334+ |q 9192/1 |goto 29.7,46.9
-kill 6 Blackpaw Scavenger##16335+ |q 9192/2 |goto 29.7,46.9
-kill 4 Blackpaw Shaman##16337+ |q 9192/3 |goto 29.7,46.9
-collect 6 Underlight Ore##22634 |q 9207/1 |goto 29.7,46.9
+kill 8 Blackpaw Gnoll##16334 |q 9192/1 |goto 28.55,48.01
+step
+label "Kill_Blackpaw_Scavengers"
+kill 6 Blackpaw Scavenger##16335 |q 9192/2 |goto 28.55,48.01
+step
+label "Kill_Blackpaw_Shaman"
+kill 4 Blackpaw Shaman##16337 |q 9192/3 |goto 28.55,48.01
+step
+label "Collect_Underlight_Ore"
+collect 6 Underlight Ore##22634 |q 9207/1 |goto 28.55,48.01
+|tip They drop from Blackpaw Gnolls.
+stickystart "Collect_Gargoyle_Fragments"
 step
 kill Phantasmal Seeker##16323+
-collect 6 Phantasmal Substance##22566 |q 9140/1 |goto 18.8,46.1
-kill Stonewing Slayer##16324+
-collect 4 Gargoyle Fragment##22567 |q 9140/2 |goto 18.8,46.1
+collect 6 Phantasmal Substance##22566 |q 9140/1 |goto 18.67,46.01
 step
+label "Collect_Gargoyle_Fragments"
+kill Stonewing Slayer##16324+
+collect 4 Gargoyle Fragment##22567 |q 9140/2 |goto 18.67,46.01
+step
+Cross the water |goto 14.58,32.15 < 30 |only if walking
 click Night Elf Plans: An'daroth##181138
-collect Night Elf Plans: An'daroth##22590 |q 9163/1 |goto 12.6,26.5
-It can also spawn at [13.7,26.8]
+collect Night Elf Plans: An'daroth##22590 |q 9163/1 |goto 12.52,26.51
+It can also spawn at [13.71,26.82]
 step
 click Night Elf Plans: An'owyn##181139
-collect Night Elf Plans: An'owyn##22591 |q 9163/2 |goto 12.9,23.9
-It can also spawn at [12.5,24.8]
+collect Night Elf Plans: An'owyn##22591 |q 9163/2 |goto 12.86,23.94
+It can also spawn at [12.78,25.14]
 step
+Cross the bridge |goto 10.48,24.38 < 10 |only if walking
 click Night Elf Plans: Scrying on the Sin'dorei##181140
-collect Night Elf Plans: Scrying on the Sin'dorei##22592 |q 9163/3 |goto 10.5,22.6
+|tip On the deck of the ship.
+collect Night Elf Plans: Scrying on the Sin'dorei##22592 |q 9163/3 |goto 10.45,22.58
 step
-talk Arcanist Vandril##16197
-turnin Windrunner Village##9140 |goto 46.3,28.4
+Run up the ramp |goto 48.71,30.81 < 15 |only if walking
+talk Magistrix Aminel##16205
+|tip At the top of the platform.
+accept Spinal Dust##9218 |goto 48.92,31.31
+accept Rotting Hearts##9216 |goto 48.92,31.31
+step
+talk Deathstalker Rathiel##16200
+turnin WANTED: Knucklerot and Luzran##9156 |goto 46.02,33.57
 step
 talk Dame Auriferous##16231
-turnin Into Occupied Territory##9163 |goto 44.9,32.5
-accept Deliver the Plans to An'telas##9166 |goto 44.9,32.5
-step
-talk Deathstalker Maltendis##16251
-turnin Trouble at the Underlight Mines##9192 |goto 44.7,32.3
+|tip Inside the building.
+turnin Into Occupied Territory##9163 |goto 44.88,32.51
+accept Deliver the Plans to An'telas##9166 |goto 44.88,32.51
 step
 talk High Executor Mavren##16252
-accept Retaking Windrunner Spire##9173 |goto 44.8,32.5
+|tip Inside the building.
+accept Retaking Windrunner Spire##9173 |goto 44.77,32.45
 step
-talk Magistrix Aminel##16205
-accept Spinal Dust##9218 |goto 48.9,31.3
-accept Rotting Hearts##9216 |goto 48.9,31.3
-step
-talk Dying Blood Elf##16601
-accept Anok'suten##9315 |goto 57.6,14.9
-step
-kill Anok'suten##16357 |q 9315/1 |goto 61.3,15.9
-|tip He walks all around this village, so you may need to search for him.
-step
-talk Ranger Valanna##16219
-turnin Help Ranger Valanna!##9145 |goto 69.4,15.2
-accept Dealing with Zeb'Sora##9143 |goto 69.4,15.2
-step
-kill Shadowpine Ripper##+, Shadowpine Witch##+
-collect 6 Zeb'Sora Troll Ear##22639 |q 9143/1 |goto 74.8,12.3
-step
-talk Ranger Valanna##16219
-turnin Dealing with Zeb'Sora##9143 |goto 69.4,15.2
-accept Report to Captain Helios##9146 |goto 69.4,15.2
-step
-talk Geranis Whitemorn##16201
-accept Forgotten Rituals##9157 |goto 72.3,19.1
-step
-talk Farstrider Sedina##16202
-accept Bearers of the Plague##9158 |goto 72.5,32.1
-step
-talk Farstrider Solanna##16463
-accept Attack on Zeb'Tela##9276 |goto 72.3,31.3
-step
-talk Captain Helios##16220
-turnin Report to Captain Helios##9146 |goto 72.4,29.6
-accept Shadowpine Weaponry##9214 |goto 72.4,29.6
-step
-talk Ranger Krenn'an##16462
-accept Spirits of the Drowned##9274 |goto 72.2,29.8
-step
-talk Ranger Vynna##16203
-accept The Traitor's Shadow##9161 |goto 72.0,32.6
-step
-kill 8 Ravening Apparition##16327+ |q 9274/1 |goto 73.5,21.9
-kill 8 Vengeful Apparition##16328+ |q 9274/2 |goto 73.5,21.9
-click Glistening Mud##181151
-collect 8 Wavefront Medallion##22674 |q 9157/1 |goto 73.5,21.9
-step
-talk Geranis Whitemorn##16201
-turnin Forgotten Rituals##9157 |goto 72.3,19.1
-accept Vanquishing Aquantion##9174 |goto 72.3,19.1
-step
-click Altar of Tidal Mastery##181157
-kill Aquantion##16292 |q 9174/1 |goto 71.3,15.1
-step
-talk Geranis Whitemorn##16201
-turnin Vanquishing Aquantion##9174 |goto 72.3,19.1
-step
-click Dusty Journal##194341
-|tip It's laying on the balcony platform of this building.
-turnin The Traitor's Shadow##9161 |goto 79.6,17.6
-accept Hints of the Past##9162 |goto 79.6,17.6
-step
-kill 10 Ghostclaw Lynx##16348+ |q 9158/1 |goto 75.8,28.4
-|tip The Ghostclaw Lynx share spawn points with the bats.
-step
-talk Farstrider Sedina##16202
-turnin Bearers of the Plague##9158 |goto 72.5,32.1
-accept Curbing the Plague##9159 |goto 72.5,32.1
-step
-talk Ranger Krenn'an##16462
-turnin Spirits of the Drowned##9274 |goto 72.2,29.8
-step
-talk Ranger Vynna##16203
-turnin Hints of the Past##9162 |goto 72.0,32.6
-accept Report to Magister Kaendris##9172 |goto 72.0,32.6
-step
-talk Apothecary Venustus##16464
-accept A Little Dash of Seasoning##9275 |goto 72.6,31.6
-stickystart "shadowhead"
-step
-kill 10 Vampiric Mistbat##16354+ |q 9159/1 |goto 73.9,38.0
-step
-label "shadowhead"
-kill 8 Shadowpine Shadowcaster##16469+ |q 9276/1 |goto 78.6,38.1
-collect 3 Shadowcaster Mace##23167 |q 9214/2 |goto 78.6,38.1
-kill 8 Shadowpine Headhunter##16344+ |q 9276/2 |goto 78.6,38.1
-collect 3 Headhunter Axe##23165 |q 9214/1 |goto 78.6,38.1
-step
-talk Farstrider Solanna##16463
-turnin Attack on Zeb'Tela##9276 |goto 72.3,31.3
-accept Assault on Zeb'Nowa##9277 |goto 72.3,31.3
+talk Deathstalker Maltendis##16251
+|tip Inside the building.
+turnin Trouble at the Underlight Mines##9192 |goto 44.74,32.28
 step
 talk Arcanist Vandril##16197
-turnin Anok'suten##9315 |goto 46.3,28.4
+|tip He walks around this area.
+turnin Windrunner Village##9140 |goto 46.34,28.36
 step
-kill Risen Stalker##16302+, Risen Hungerer##16301+
-collect 10 Rotting Heart##22641 |q 9216/1 |goto 39.2,36.3
-You can find more around [37.8,45.8]
+Follow the road up |goto 47.67,22.62 < 30 |only if walking
+talk Dying Blood Elf##16601
+accept Anok'suten##9315 |goto 57.55,14.93
 step
-kill 8 Spindleweb Lurker##16351+ |q 9159/2 |goto 29.8,40.9
-You can find more around [26.4,53.5]
+kill Anok'suten##16357 |q 9315/1 |goto 60.73,11.17
+|tip He walks around this village, so you may need to search for him.
 step
-kill 8 Deatholme Acolyte##16315+ |q 9173/1
-kill 10 Fallen Ranger##16314+ |q 9173/2
-collect The Lady's Necklace##22597 |n
-Click The Lady's Necklace in your bags |use The Lady's Necklace##22597
-accept The Lady's Necklace##9175 |goto 17,59
+talk Ranger Valanna##16219
+turnin Help Ranger Valanna!##9145 |goto 69.40,15.18
+accept Dealing with Zeb'Sora##9143 |goto 69.40,15.18
 step
-talk Magistrix Aminel##16205
-turnin Rotting Hearts##9216 |goto 48.9,31.3
+Kill Shadowpine enemies around this area
+collect 6 Zeb'Sora Troll Ear##22639 |q 9143/1 |goto 76.01,11.78
 step
-talk Magister Darenis##16199
-accept The Sanctum of the Sun##9151 |goto 46.0,31.9
+talk Ranger Valanna##16219
+turnin Dealing with Zeb'Sora##9143 |goto 69.40,15.18
+accept Report to Captain Helios##9146 |goto 69.40,15.18
 step
-talk High Executor Mavren##16252
-turnin Retaking Windrunner Spire##9173 |goto 44.8,32.4
-turnin The Lady's Necklace##9175 |goto 44.8,32.4
-step
-Follow this path |goto 55.2,44.8 < 5
-talk Magister Kaendris##16239
-turnin Report to Magister Kaendris##9172 |goto 55.1,48.8
-accept The Twin Ziggurats##9176 |goto 55.1,48.8
-step
-talk Magister Quallestis##16291
-turnin Underlight Ore Samples##9207 |goto 54.9,48.5
-step
-talk Magister Idonis##16204
-turnin The Sanctum of the Sun##9151 |goto 54.9,48.5
-accept War on Deatholme##9220 |goto 54.9,48.5
-step
-Follow this path |goto 57.1,45.0 < 5 |only if walking
-Follow the path up |goto 60.7,42.7 < 5 |only if walking
-talk Magister Sylastor##16237
-turnin Deliver the Plans to An'telas##9166 |goto 60.3,35.6
-accept Deactivate An'owyn##9169 |goto 60.3,35.6
-step
-kill Sentinel Infiltrator##16333+
-collect Crystal Controlling Orb##23191 |goto 57.8,64.9
-step
-click Night Elf Moon Crystal##181359
-Deactivate the Night Elf Moon Crystal |q 9169/1 |goto 58.0,65.1
-stickystart "hexxerstave"
-step
-click Raw Meat Rack##181250
-Poison the Raw Meat Rack |q 9275/1 |goto 65.1,66.8
-step
-click Smoked Meat Rack##181251
-Poison the Smoked Meat Rack |q 9275/2 |goto 63.0,75.0
-step
-click Fresh Fish Rack##181252
-Poison the Fresh Fish Rack |q 9275/3 |goto 68.3,57.8
-step
-label "hexxerstave"
-kill 10 Shadowpine Catlord##16345+ |q 9277/1 |goto 66.9,58.6
-collect 3 Catlord Claws##22677 |q 9214/3 |goto 66.9,58.6
-kill 10 Shadowpine Hexxer##16346+ |q 9277/2 |goto 66.9,58.6
-collect 3 Hexxer Stave##23166 |q 9214/4 |goto 66.9,58.6
-You can find more around [63.5,67.4]
+talk Geranis Whitemorn##16201
+accept Forgotten Rituals##9157 |goto 72.29,19.09
 step
 talk Farstrider Sedina##16202
-turnin Curbing the Plague##9159 |goto 72.5,32.1
+|tip Inside the building on the bottom floor.
+accept Bearers of the Plague##9158 |goto 72.49,32.13
 step
 talk Farstrider Solanna##16463
-turnin Assault on Zeb'Nowa##9277 |goto 72.3,31.2
+|tip Inside the building on the bottom floor.
+accept Attack on Zeb'Tela##9276 |goto 72.32,31.25
 step
 talk Captain Helios##16220
-turnin Shadowpine Weaponry##9214 |goto 72.4,29.6
+turnin Report to Captain Helios##9146 |goto 72.37,29.64
+accept Shadowpine Weaponry##9214 |goto 72.37,29.64
 step
+talk Ranger Krenn'an##16462
+accept Spirits of the Drowned##9274 |goto 72.21,29.77
+step
+Run up the ramp |goto 71.71,30.18 < 10 |only if walking
+talk Ranger Vynna##16203
+|tip Inside the building on the top floor.
+accept The Traitor's Shadow##9161 |goto 71.95,32.64
+accept Investigate the Amani Catacombs##9193 |goto 71.95,32.64
+accept Report to Magister Kaendris##9172 |goto 71.95,32.64
+step
+Run up the ramp |goto 72.96,30.20 < 10 |only if walking
 talk Apothecary Venustus##16464
-turnin A Little Dash of Seasoning##9275 |goto 72.6,31.6
-stickystart "trolljuju"
+|tip Inside the building on the top floor.
+accept Troll Juju##9199 |goto 72.62,31.57
+accept A Little Dash of Seasoning##9275 |goto 72.62,31.57
+stickystart "Kill_Vengeful_Apparitions"
+stickystart "Collect_Wavefront_Medallion"
 step
-Follow this path |goto 67.7,28.9 < 10 |only if walking
-Enter the Amani Catacombs |goto 66.2,28.5 < 10 |walk
-click Mummified Troll Remains##181148
-|tip Do this as you walk.
-Go to this spot
-Investigate the Amani Catacombs |q 9193/1 |goto 62.9,31.1
+kill 8 Ravening Apparition##16327 |q 9274/1 |goto 73.36,22.28
+|tip Underwater around this area.
+step
+label "Kill_Vengeful_Apparitions"
+kill 8 Vengeful Apparition##16328 |q 9274/2 |goto 73.36,22.28
+|tip Underwater around this area.
+step
+label "Collect_Wavefront_Medallion"
+click Glistening Mud##181151+
+|tip Underwater around this area.
+collect 8 Wavefront Medallion##22674 |q 9157/1 |goto 73.36,22.28
+step
+talk Geranis Whitemorn##16201
+turnin Forgotten Rituals##9157 |goto 72.29,19.09
+accept Vanquishing Aquantion##9174 |goto 72.29,19.09
+step
+click Altar of Tidal Mastery##181157
+|tip Underwater.
+kill Aquantion##16292 |q 9174/1 |goto 71.34,15.04
+step
+talk Geranis Whitemorn##16201
+turnin Vanquishing Aquantion##9174 |goto 72.29,19.09
+step
+Enter the building |goto 78.79,19.84 < 15 |only if walking
+click Dusty Journal##194341
+|tip On the balcony platform of this building.
+turnin The Traitor's Shadow##9161 |goto 79.63,17.55
+accept Hints of the Past##9162 |goto 79.63,17.55
+step
+kill 10 Ghostclaw Lynx##16348 |q 9158/1 |goto 75.87,28.39
+|tip The Ghostclaw Lynx share spawns with the bats.
+step
+talk Farstrider Sedina##16202
+|tip Inside the building on the bottom floor.
+turnin Bearers of the Plague##9158 |goto 72.49,32.13
+accept Curbing the Plague##9159 |goto 72.49,32.13
+step
+talk Ranger Krenn'an##16462
+turnin Spirits of the Drowned##9274 |goto 72.21,29.77
+step
+Run up the ramp |goto 71.71,30.18 < 10 |only if walking
+talk Ranger Vynna##16203
+|tip Inside the building on the top floor.
+turnin Hints of the Past##9162 |goto 71.95,32.64
+step
+kill 10 Vampiric Mistbat##16354 |q 9159/1 |goto 73.91,38.03
+stickystart "Kill_Shadowpine_Headhunters"
+stickystart "Collect_Headhunter_Axes"
+stickystart "Collect_Shadowcaster_Maces"
+step
+kill 8 Shadowpine Shadowcaster##16469 |q 9276/1 |goto 78.82,36.69
+step
+label "Kill_Shadowpine_Headhunters"
+kill 8 Shadowpine Headhunter##16344 |q 9276/2 |goto 78.82,36.69
+step
+label "Collect_Headhunter_Axes"
+collect 3 Headhunter Axe##23165 |q 9214/1 |goto 78.82,36.69
+|tip They drop from Shadowpine Headhunters.
+step
+label "Collect_Shadowcaster_Maces"
+collect 3 Shadowcaster Mace##23167 |q 9214/2 |goto 78.82,36.69
+|tip They drop from Shadowpine Shadowcasters.
+step
+talk Farstrider Solanna##16463
+|tip Inside the building on the bottom floor.
+turnin Attack on Zeb'Tela##9276 |goto 72.32,31.25
+accept Assault on Zeb'Nowa##9277 |goto 72.32,31.25
+step
+talk Arcanist Vandril##16197
+|tip He walks around this area.
+turnin Anok'suten##9315 |goto 46.34,28.36
+step
+Follow the path down |goto 43.20,32.53 < 20 |only if walking
+Kill Risen enemies around this area
+collect 10 Rotting Heart##22641 |q 9216/1 |goto 39.16,36.32
+step
+kill 8 Spindleweb Lurker##16351 |q 9159/2 |goto 29.82,40.91
+You can find more around [26.41,53.52]
+stickystart "Kill_Fallen_Rangers"
+stickystart "Collect_The_Lady's_Necklace"
+step
+Follow the road up |goto 18.41,58.40 < 20 |only if walking
+kill 8 Deatholme Acolyte##16315 |q 9173/1 |goto 12.46,56.91
+step
+label "Kill_Fallen_Rangers"
+kill 10 Fallen Ranger##16314 |q 9173/2 |goto 12.46,56.91
+step
+label "Collect_The_Lady's_Necklace"
+collect The Lady's Necklace##22597 |goto 12.46,56.91 |q 9175 |future
+|tip It drops from Rangers and Acolytes.
+step
+use The Lady's Necklace##22597
+accept The Lady's Necklace##9175
+step
+Run up the ramp |goto 48.71,30.81 < 15 |only if walking
+talk Magistrix Aminel##16205
+|tip At the top of the platform.
+turnin Rotting Hearts##9216 |goto 48.92,31.31
+step
+talk Magister Darenis##16199
+accept The Sanctum of the Sun##9151 |goto 46.03,31.96
+step
+talk High Executor Mavren##16252
+|tip Inside the building.
+turnin Retaking Windrunner Spire##9173 |goto 44.77,32.45
+turnin The Lady's Necklace##9175 |goto 44.77,32.45
+step
+Follow the path |goto 47.98,40.14 < 20 |only if walking
+Continue following the path |goto 53.20,49.03 < 15 |only if walking
+talk Magister Kaendris##16239
+|tip Inside the building.
+turnin Report to Magister Kaendris##9172 |goto 55.07,48.84
+accept The Twin Ziggurats##9176 |goto 55.07,48.84
+step
+talk Magister Quallestis##16291
+|tip Inside the building.
+turnin Underlight Ore Samples##9207 |goto 54.95,48.49
+step
+Follow the path |goto 56.80,45.20 < 15 |only if walking
+Follow the path up |goto 60.52,42.57 < 20 |only if walking
+talk Magister Sylastor##16237
+turnin Deliver the Plans to An'telas##9166 |goto60.29,35.63
+accept Deactivate An'owyn##9169 |goto 60.29,35.63
+step
+Follow the road |goto 61.07,50.79 < 30 |only if walking
+kill Sentinel Infiltrator##16333+
+collect Crystal Controlling Orb##23191 |goto 57.69,64.87 |q 9169
+step
+click Night Elf Moon Crystal##181359
+Deactivate the Night Elf Moon Crystal |q 9169/1 |goto 58.22,64.93
+stickystart "Kill_Shadowpine_Catlords"
+stickystart "Kill_Shadowpine_Hexxers"
+stickystart "Collect_Catlord_Claws"
+stickystart "Collect_Hexxer_Staves"
+step
+Follow the path up |goto 60.47,64.06 < 15 |only if walking
+click Raw Meat Rack##181250
+Poison the Raw Meat Rack |q 9275/1 |goto 65.06,66.71
+step
+click Smoked Meat Rack##181251
+Poison the Smoked Meat Rack |q 9275/2 |goto 62.99,75.02
+step
+Follow the path |goto 63.89,61.72 < 15 |only if walking
+click Fresh Fish Rack##181252
+|tip Inside the building.
+Poison the Fresh Fish Rack |q 9275/3 |goto 68.23,57.79
+step
+label "Kill_Shadowpine_Catlords"
+kill 10 Shadowpine Catlord##16345 |q 9277/1 |goto 66.80,56.89
+step
+label "Kill_Shadowpine_Hexxers"
+kill 10 Shadowpine Hexxer##16346 |q 9277/2 |goto 66.80,56.89
+step
+label "Collect_Catlord_Claws"
+collect 3 Catlord Claws##22677 |q 9214/3 |goto 66.80,56.89
+step
+label "Collect_Hexxer_Staves"
+collect 3 Hexxer Stave##23166 |q 9214/4 |goto 66.80,56.89
+step
+Follow the path up |goto 68.93,45.89 < 30 |only if walking
+Continue following the path |goto 70.15,33.73 < 15 |only if walking
+talk Farstrider Sedina##16202
+|tip Inside the building on the bottom floor.
+turnin Curbing the Plague##9159 |goto 72.49,32.13
+step
+talk Farstrider Solanna##16463
+|tip Inside the building on the bottom floor.
+turnin Assault on Zeb'Nowa##9277 |goto 72.32,31.25
+step
+talk Captain Helios##16220
+turnin Shadowpine Weaponry##9214 |goto 72.37,29.64
+stickystart "Burn_Mummified_Troll_Remains"
+step
+Follow the path |goto 67.87,28.87 < 15 |only if walking
+Enter the tunnel |goto 66.26,28.56 < 10 |walk
+Kill enemies around this area
+collect 8 Troll Juju##22633 |q 9199/1 |goto Ghostlands/1 33.98,48.36
+step
+label "Burn_Mummified_Troll_Remains"
+click Mummified Troll Remains##181148+
+Burn #10# Mummified Troll Remains |q 9193/1 |goto 33.98,48.36
+step
+Investigate the Amani Catacombs |q 9193/2 |goto 59.84,63.83
 step
 talk Ranger Lilatha##16295
-accept Escape from the Catacombs##9212
-Escort Ranger Lilatha back to Farstrider Enclave |q 9212/1 |goto 62.9,32.7
+|tip If she is not in the cage, you will have to wait for someone to finish escorting her.
+accept Escape from the Catacombs##9212 |goto 59.92,81.69
 step
-label "trolljuju"
-kill Mummified Headhunter##16342+, Shadowpine Oracle##16343+
-collect 8 Troll Juju##22633 |q 9199/1 |goto 62.8,31.8
-click Mummified Troll Remains##181148
-Burn 10 Mummified Troll Remains |q 9193/2 |goto 62.8,31.8
-There are more Mummified Troll Remains in the hallway at [64.9,28.5]
+Follow the path |goto 65.62,52.09 < 8 |walk
+Continue following the path |goto 73.78,37.67 < 8 |walk
+Leave the tunnel |goto Ghostlands/0 66.24,28.56 < 8 |walk
+Escort Ranger Lilatha back to Farstrider Enclave |q 9212/1 |goto 72.25,30.11
 step
 talk Captain Helios##16220
-turnin Escape from the Catacombs##9212 |goto 72.4,29.6
+turnin Escape from the Catacombs##9212 |goto 72.37,29.64
 step
-Follow this path |goto 60.7,42.7 < 10 |walk
+Run up the ramp |goto 72.96,30.20 < 10 |only if walking
+talk Apothecary Venustus##16464
+|tip Inside the building on the top floor.
+turnin Troll Juju##9199 |goto 72.62,31.57
+turnin A Little Dash of Seasoning##9275 |goto 72.62,31.57
+step
+Run up the ramp |goto 71.71,30.18 < 10 |only if walking
+talk Ranger Vynna##16203
+|tip Inside the building on the top floor.
+turnin Investigate the Amani Catacombs##9193 |goto 71.95,32.64
+step
+Follow the path |goto 64.90,42.13 < 20 |only if walking
+Continue following the path |goto 61.41,41.41 < 15 |only if walking
 talk Magister Sylastor##16237
-turnin Deactivate An'owyn##9169 |goto 60.3,35.6
+turnin Deactivate An'owyn##9169 |goto 60.29,35.63
+stickystart "Collect_Spinal_Dust"
 step
-talk Deathstalker Maltendis##16251
-turnin Troll Juju##9199 |goto 44.7,32.3
-step
-talk Advisor Valwyn##16289
-turnin Investigate the Amani Catacombs##9193 |goto 44.8,32.8
-stickystart "spinaldust"
-step
+Follow the road |goto 46.22,39.47 < 20 |only if walking
+Enter the building |goto 40.56,48.61 < 10 |walk
 click Worn Chest##181239
-collect Stone of Flame##22599 |q 9176/1 |goto 40.4,49.8
+|tip Inside the building.
+collect Stone of Flame##22599 |q 9176/1 |goto 40.37,49.76
 step
+Jump down here |goto 40.26,47.77 < 10 |only if walking
+Enter the building |goto 34.34,48.74 < 10 |walk
 click Dented Chest##181238
-collect Stone of Light##22598 |q 9176/2 |goto 34.3,47.7
+collect Stone of Light##22598 |q 9176/2 |goto 34.30,47.66
 step
-label "spinaldust"
-kill Dreadbone Sentinel##16305+, Deathcage Sorcerer##16308+
-collect 10 Spinal Dust##22642 |q 9218/1 |goto 38.1,58.6
-You can find more around [36.3,68.8]
-stickystart "eyewailer"
-step
-Enter Deatholme |goto 36.0,71.7 < 10 |walk
-kill 6 Nerubis Centurion##16319+ |q 9220/2 |goto 36.9,76.1
-You can find a few more around [39.2,79.7]
-step
-label "eyewailer"
-kill 5 Eye of Dar'Khan##16320+ |q 9220/1 |goto 37.8,81.3
-kill 6 Wailer##16321+ |q 9220/3 |goto 37.8,81.3
+label "Collect_Spinal_Dust"
+Kill enemies around this area
+|tip Dreadbone and Deathcage enemies can drop Spinal Dust.
+collect 10 Spinal Dust##22642 |q 9218/1 |goto 38.10,58.53
+You can find more around [36.74,68.37]
 step
 talk Apprentice Vor'el##16480
-accept Clearing the Way##9281 |goto 46.4,56.4
+accept Clearing the Way##9281 |goto 46.40,56.42
 step
-kill 10 Greater Spindleweb##16352+ |q 9281/1 |goto 46.9,60.4
-kill 10 Ghostclaw Ravager##16349+ |q 9281/2 |goto 46.9,60.4
-You can find more:
-Around [56.4,59.9]
-Around [42.8,55.8]
-step
-talk Apprentice Vor'el##16480
-turnin Clearing the Way##9281 |goto 46.4,56.4
-step
+Follow the road |goto 51.51,56.01 < 20 |only if walking
+Enter the building |goto 54.75,49.47 < 10 |walk
 talk Magister Kaendris##16239
-turnin The Twin Ziggurats##9176 |goto 55.1,48.8
-step
-talk Magister Idonis##16204
-turnin War on Deatholme##9220 |goto 54.9,48.6
-accept Dar'Khan's Lieutenants##9170 |goto 54.9,48.6
+|tip Inside the building.
+turnin The Twin Ziggurats##9176 |goto 55.07,48.84
+accept The Traitor's Destruction##9167 |goto 55.07,48.84
 step
 talk Arcanist Janeda##16240
-accept A Restorative Draught##9877 |goto 54.8,48.4
+|tip Upstairs inside the building.
+accept Captives at Deatholme##9164 |goto 54.84,48.35
 step
-talk Apothecary Renzithen##16198
-turnin A Restorative Draught##9877 |goto 47.7,34.9
-accept Captives at Deatholme##9164 |goto 47.7,34.9
+talk Magister Idonis##16204
+|tip Upstairs inside the building.
+accept War on Deatholme##9220 |goto 54.87,48.55
+accept Dar'Khan's Lieutenants##9170 |goto 54.87,48.55
+stickystart "Kill_Ghostclaw_Ravagers"
 step
-talk Magistrix Aminel##16205
-turnin Spinal Dust##9218 |goto 48.9,31.3
+kill 10 Greater Spindleweb##16352 |q 9281/1 |goto 50.90,60.79
+You can find more around [42.58,58.20]
 step
-Enter Deatholme |goto 36.0,71.7 < 10 |walk
-Enter the crypt |goto 31.7,73.7 < 10 |walk
-kill Jurion the Deceiver##16248 |q 9170/3 |goto 32.1,74.3
+label "Kill_Ghostclaw_Ravagers"
+kill 10 Ghostclaw Ravager##16349 |q 9281/2 |goto 50.90,60.79
+You can find more around [42.58,58.20]
+stickystart "Kill_Nerubis_Centurions"
+stickystart "Kill_Eyes_of_Dar'Khan"
+stickystart "Kill_Wailers"
+step
+Follow the path |goto 37.5,84.7 < 10
+Enter the crypt |goto 31.70,73.58 < 5 |walk
+kill Jurion the Deceiver##16248 |q 9170/3 |goto 32.09,74.45
+|tip Inside the crypt.
 step
 talk Apothecary Enith##16208
-<Administer the restorative draught.>
-Rescue Apothecary Enith |q 9164/1 |goto 32.1,74.0
+Choose _<Administer the restorative draught.>_
+Rescue Apothecary Enith |q 9164/1 |goto 32.14,73.95
 step
-kill Mirdoran the Fallen##16250 |q 9170/1 |goto 37.4,79.3
+kill Mirdoran the Fallen##16250 |q 9170/1 |goto 37.35,79.33
+|tip Inside the building.
 step
-kill Masophet the Black##16249 |q 9170/4 |goto 35.8,89.1
-He can also spawn at [29.3,88.9]
-step
-kill Borgoth the Bloodletter##16247 |q 9170/2 |goto 32.7,90.5
-He can also be found at [40.9,83.1]
+Enter the building |goto 35.20,88.23 < 10 |walk
+kill Masophet the Black##16249 |q 9170/4 |goto 35.78,89.12
+|tip Inside the building.
+He can also be found at [29.28,88.89]
 step
 talk Ranger Vedoran##16209
-<Administer the restorative draught.>
-Rescue Ranger Vedoran |q 9164/3 |goto 32.8,89.8
+Choose <Administer the restorative draught.>
+Rescue Ranger Vedoran |q 9164/3 |goto 32.79,89.92
 step
-Follow the path up |goto 37.5,84.7 < 10
+kill Borgoth the Bloodletter##16247 |q 9170/2 |goto 32.66,90.48
+He can also be found at [41.26,83.04]
+step
 talk Apprentice Varnis##16206
-<Administer the restorative draught.>
-Rescue Apprentice Varnis |q 9164/2 |goto 40.8,83.2
+Choose <Administer the restorative draught.>
+Rescue Apprentice Varnis |q 9164/2 |goto 40.97,83.21
 step
-talk Magister Idonis##16204
-turnin Dar'Khan's Lieutenants##9170 |goto 54.9,48.5
+kill Dar'Khan Drathir##16329
+|tip Downstairs inside the building.
+|tip You might need help with this.
+collect Dar'Khan's Head##22653 |q 9167/1 |goto 33.04,81.24
+step
+label "Kill_Nerubis_Centurions"
+Follow the path |goto 36.05,71.38 < 30 |only if walking
+kill 6 Nerubis Centurion##16319 |q 9220/2 |goto 37.78,76.97
+He can also be found at [36.62,85.32]
+step
+label "Kill_Eyes_of_Dar'Khan"
+kill 5 Eye of Dar'Khan##16320 |q 9220/1 |goto 34.02,78.84
+step
+label "Kill_Wailers"
+kill 6 Wailer##16321 |q 9220/3 |goto 34.02,78.84
+step
+Follow the path |goto 36.19,71.00 < 20 |only if walking
+Continue following the path |goto 43.63,57.53 < 20 |only if walking
+talk Apprentice Vor'el##16480
+turnin Clearing the Way##9281 |goto 46.40,56.42
+step
+Follow the road |goto 51.51,56.01 < 20 |only if walking
+Enter the building |goto 54.75,49.47 < 10 |walk
+talk Magister Kaendris##16239
+|tip Inside the building.
+turnin The Traitor's Destruction##9167 |goto 55.07,48.84
+accept Friend of the Sin'dorei##9811 |goto 55.07,48.84
 step
 talk Arcanist Janeda##16240
-turnin Captives at Deatholme##9164 |goto 54.8,48.4
+turnin Captives at Deatholme##9164 |goto 54.84,48.35
 step
-click Wanted Poster: Kel'gash the Wicked##181153
-accept Bring Me Kel'gash's Head!##9215 |goto 72.2,31.2
-This is a group quest, so you may need some extra help with it.
+talk Magister Idonis##16204
+|tip Upstairs inside the building.
+turnin War on Deatholme##9220 |goto 54.87,48.55
+turnin Dar'Khan's Lieutenants##9170 |goto 54.87,48.55
 step
-kill Kel'gash the Wicked##16358
-collect Head of Kel'gash the Wicked##22640 |q 9215/1 |goto Ghostlands,65.3,79.5
+Run up the ramp |goto 48.71,30.81 < 15 |only if walking
+talk Magistrix Aminel##16205
+|tip At the top of the platform.
+turnin Spinal Dust##9218 |goto 48.92,31.31
 step
-talk Captain Helios##16220
-turnin Bring Me Kel'gash's Head!##9215 |goto 72.4,29.7
+talk Lor'themar Theron##16802
+turnin Friend of the Sin'dorei##9811 |goto Silvermoon City/0 53.80,20.24
 step
-You should be Exalted with Tranquillien by this point.
-Earn Exalted with Tranquillien |condition rep('Tranquillien') |next "exalted"
-step
-label "exalted"
-Congratulations, you are Exalted with Tranquillien!
+label "Reached_Exalted"
+Congratulations!
+You are Exalted with Tranquillien!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Violet Eye",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Burning Crusade Reputations\\The Violet Eye",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Violet Eye faction.",
 condition_suggested=function() return level >= 60 and level <= 70 and rep('The Violet Eye') < Exalted end,
@@ -8832,21 +9126,21 @@ step
 label "exalted"
 Congratulations, you are now Exalted with The Violet Eye!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Argent Tournament\\Aspirant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Wrath of the Lich King Reputations\\Argent Tournament\\Aspirant Rank Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing your race's Aspirant Rank dailies in order to achieve Argent Tournament Grounds Valiant Rank with your own race and eventually the Crusader title.",
 },[[
 step
 #include "Argent Tourney_Aspirant"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Argent Tournament\\Valiant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Wrath of the Lich King Reputations\\Argent Tournament\\Valiant Rank Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing your race's Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion Rank with your own race. You must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section in order to have access to the quests in this guide section and gain the Crusader title.",
 },[[
 step
 #include "Argent Tourney_Valiant"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Argent Crusade",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Wrath of the Lich King Reputations\\Argent Crusade",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Argent Crusade faction.",
 condition_suggested=function() return level >= 70 and level <= 80 and rep('Argent Crusade') < Exalted end,
@@ -8854,7 +9148,7 @@ achieveid={947},
 },[[
 #include "Argent_Crusade_Rep"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Ashen Verdict",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Wrath of the Lich King Reputations\\Ashen Verdict",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Ashen Verdict faction.",
 achieveid={4598},
@@ -8876,7 +9170,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with the Ashen Verdict!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Frenzyheart Tribe",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Wrath of the Lich King Reputations\\The Frenzyheart Tribe",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Frenzyheart Tribe faction.",
 achieveid={950},
@@ -9214,7 +9508,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with the Frenzyheart Tribe!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Horde Expedition",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Wrath of the Lich King Reputations\\The Horde Expedition",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Horde Expedition faction.",
 condition_suggested=function() return level >= 70 and level <= 80 end,
@@ -9237,7 +9531,7 @@ Exalted with Warsong Offensive |condition rep('Warsong Offensive')==Exalted
 step
 Congratulation, You are now Exalted with the Horde Expedition!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Kalu'ak",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Wrath of the Lich King Reputations\\Kalu'ak",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Kalu'ak faction.",
 achieveid={949},
@@ -9247,7 +9541,7 @@ step
 label "exalted"
 Congratulations, you are Exalted with the Kalu'ak!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Kirin Tor",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Wrath of the Lich King Reputations\\Kirin Tor",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Kirin Tor faction.",
 condition_suggested=function() return level >= 70 and level <= 80 and rep('Kirin Tor') < Exalted end,
@@ -9363,7 +9657,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with The Kirin Tor!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Knights of the Ebon Blade",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Wrath of the Lich King Reputations\\Knights of the Ebon Blade",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Knights of the Ebon Blade faction.",
 achieveid={1009},
@@ -9506,7 +9800,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with the Knights of the Ebon Blade!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Oracles",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Wrath of the Lich King Reputations\\The Oracles",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the The Oracles faction.",
 achieveid={951},
@@ -9639,7 +9933,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with The Oracles!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Sons of Hodir",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Wrath of the Lich King Reputations\\The Sons of Hodir",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Sons of Hodir faction.",
 },[[
@@ -10726,7 +11020,7 @@ step
 label "Exalted"
 Congratulations, you are now Exalted with the Sons of Hodir!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Wyrmrest Accord",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Wrath of the Lich King Reputations\\The Wyrmrest Accord",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Wyrmrest Accord faction.",
 condition_suggested=function() return level >= 70 and level <= 80 and rep('The Wyrmrest Accord') < Exalted end,
@@ -11238,7 +11532,7 @@ step
 label "exalted"
 Congratulation, you are now exalted with The Wyrmrest Accord!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Avengers of Hyjal",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Cataclysm Reputations\\Avengers of Hyjal",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Avengers of Hyjal faction.",
 condition_suggested=function() return level >= 80 and level <= 85 and rep('Avengers of Hyjal') < Exalted end,
@@ -11259,7 +11553,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with the Avengers of Hyjal!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Bilgewater Cartel",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Cataclysm Reputations\\Bilgewater Cartel",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Bilgewater Cartel faction.",
 condition_suggested=function() return level >= 20 and level <= 60 and rep('Bilgewater Cartel') < Exalted end,
@@ -11273,7 +11567,7 @@ Become Exalted with Bilgewater Cartel |condition rep('Bilgewater Cartel')==Exalt
 step
 Congratulations, you have reached exalted with the Bilgewater Cartel!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Dragonmaw Clan",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Cataclysm Reputations\\Dragonmaw Clan",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Dragonmaw Clan faction.",
 condition_suggested=function() return level >= 80 and level <= 85 and rep('Dragonmaw Clan') < Exalted end,
@@ -12377,7 +12671,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with the Dragonmaw Clan!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\The Earthen Ring",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Cataclysm Reputations\\The Earthen Ring",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Earthen Ring faction.",
 condition_suggested=function() return level >= 80 and level <= 85 and rep('The Earthen Ring') < Exalted end,
@@ -14473,7 +14767,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with The Earthen Ring!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Guardians of Hyjal",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Cataclysm Reputations\\Guardians of Hyjal",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Guardians of Hyjal faction.",
 condition_suggested=function() return level >= 80 and level <= 85 and rep('Guardians of Hyjal') < Exalted end,
@@ -15270,7 +15564,7 @@ step
 label "exalted"
 Congratulations you are Exalted with the Guardians of Hyjal!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Hellscream's Reach",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Cataclysm Reputations\\Hellscream's Reach",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Hellscream's Reach faction.",
 achieveid={5376},
@@ -15516,7 +15810,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with Hellscream's Reach!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Ramkahen",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Cataclysm Reputations\\Ramkahen",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Ramkahen faction.",
 condition_suggested=function() return level >= 80 and level <= 85 and rep('Ramkahen') < Exalted end,
@@ -16484,7 +16778,7 @@ step
 label "exalted"
 Congratulations, you are now Exalted with Ramkahen!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Therazane",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Cataclysm Reputations\\Therazane",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Therazane faction.",
 condition_suggested=function() return level >= 80 and level <= 85 and rep('Therazane') < Exalted end,

@@ -3,25 +3,25 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("AchievementsHWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Awake the Drakes",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Awake the Drakes",{
 achieveid={9713},
 description="Collect the drake mounts.",
 },[[
 step
 _Collect the following drake mounts_ listed below:
-_Click here_ for Azure Drake |achieve 9713/5 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Azure Drake"
-_Click here_ for Bronze Drake |achieve 9713/1 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Bronze Drake"
-_Click here_ for Black Drake |achieve 9713/4 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Black Drake"
-_Click here_ for Blazing Drake |achieve 9713/6 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Blazing Drake"
-_Click here_ for Blue Drake |achieve 9713/2 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Blue Drake"
-_Click here_ for Onyxian Drake |achieve 9713/9 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Onyxian Drake"
-_Click here_ for Purple Netherwing Drake |achieve 9713/7 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Netherwing Drakes\\Quests & Dailies"
-_Click here_ for Red Drake |achieve 9713/3 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Red Drake"
-_Click here_ for Twilight Drake |achieve 9713/8 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Twilight Drake"
+_Click here_ for Azure Drake |achieve 9713/5 |confirm |next "Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Azure Drake"
+_Click here_ for Bronze Drake |achieve 9713/1 |confirm |next "Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Bronze Drake"
+_Click here_ for Black Drake |achieve 9713/4 |confirm |next "Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Black Drake"
+_Click here_ for Blazing Drake |achieve 9713/6 |confirm |next "Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Blazing Drake"
+_Click here_ for Blue Drake |achieve 9713/2 |confirm |next "Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Blue Drake"
+_Click here_ for Onyxian Drake |achieve 9713/9 |confirm |next "Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Onyxian Drake"
+_Click here_ for Purple Netherwing Drake |achieve 9713/7 |confirm |next "Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Netherwing Drakes\\Quests & Dailies"
+_Click here_ for Red Drake |achieve 9713/3 |confirm |next "Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Red Drake"
+_Click here_ for Twilight Drake |achieve 9713/8 |confirm |next "Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Twilight Drake"
 step
 .' Congratulations, you have earned the _Awake the Drakes_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Mountacular",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Mountacular",{
 achieveid={9599},
 description="Obtain 250 mounts.",
 },[[
@@ -31,7 +31,7 @@ Obtain 250 mounts. |achieve 9599
 step
 Congratulations, you have earned the _Mountacular_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Lord of Reins",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Lord of Reins",{
 achieveid={10355},
 description="Obtain 300 mounts.",
 },[[
@@ -42,7 +42,7 @@ _Obtain_ 300 mounts |achieve 10355
 step
 Congratulations, you have _earned_ the Lord of Reins Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Buildings\\Finding Your Waystones",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Buildings\\Finding Your Waystones",{
 achieveid={9497},
 description="This guide will walk you through looting 500 Ogre Waystones.",
 },[[
@@ -53,20 +53,20 @@ step
 Congratulations, you have earned the Finding Your Waystones Achievement! |only if hasbuilding(37,1) or hasbuilding(38,2) or hasbuilding(39,3)
 You must have a Spirit Lodge to gain this achievement! |only if default
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Buildings\\Garrison Architect",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Buildings\\Garrison Architect",{
 achieveid={9094},
 description="This guide will walk you through completing the garrison building achievements resulting in the Architect title.",
 },[[
 step
-_Click here_ to complete Draftsman |confirm |next "Zygor's Achievement Guides\\Draenor Garrison\\Draftsman" |only if not achieved(9094,1)
-_Click here_ to complete Master Draftsman |confirm |next "Zygor's Achievement Guides\\Draenor Garrison\\Master Draftsman" |only if not achieved(9094,3)
-_Click here_ to complete Grand Master Draftsman |confirm |next "Zygor's Achievement Guides\\Draenor Garrison\\Grand Master Draftsman" |only if not achieved(9094,2)
-_Click here_ to complete Keepin' Busy |confirm |next "Zygor's Achievement Guides\\Draenor Garrison\\Buildings\\Keepin' Busy" |only if not achieved(9094,4)
-_Click here_ to complete Master Builder |confirm |next "Zygor's Achievement Guides\\Draenor Garrison\\Master Builder" |only if not achieved(9094,5)
+_Click here_ to complete Draftsman |confirm |next "Achievement Guides\\Draenor Garrison\\Draftsman" |only if not achieved(9094,1)
+_Click here_ to complete Master Draftsman |confirm |next "Achievement Guides\\Draenor Garrison\\Master Draftsman" |only if not achieved(9094,3)
+_Click here_ to complete Grand Master Draftsman |confirm |next "Achievement Guides\\Draenor Garrison\\Grand Master Draftsman" |only if not achieved(9094,2)
+_Click here_ to complete Keepin' Busy |confirm |next "Achievement Guides\\Draenor Garrison\\Buildings\\Keepin' Busy" |only if not achieved(9094,4)
+_Click here_ to complete Master Builder |confirm |next "Achievement Guides\\Draenor Garrison\\Master Builder" |only if not achieved(9094,5)
 step
 Congratulations, you have earned the Garrison Architect Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Buildings\\Intro to Husbandry",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Buildings\\Intro to Husbandry",{
 achieveid={9538},
 author="support@zygorguides.com",
 startlevel=85,
@@ -196,7 +196,7 @@ label "End"
 _Congratulations!_
 You have earned the _Intro to Husbandry_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Buildings\\Keepin' Busy",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Buildings\\Keepin' Busy",{
 achieveid={9097},
 description="This guide will walk you through constructing all the preset buildings in your garrison.",
 },[[
@@ -501,7 +501,7 @@ Click here to return to the building menu |next "BuildMenu" |confirm
 step
 Congratulations, you have earned the Keepin' Busy Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Buildings\\More Plots",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Buildings\\More Plots",{
 achieveid={9545},
 author="support@zygorguides.com",
 startlevel=85,
@@ -510,7 +510,7 @@ description="This guide will walk you through completing the \"More Plots\" Achi
 },[[
 step
 Complete the Tanaan Jungle (90) Storyline |condition completedq(34446)
-Click here to load the Tanaan Jungle Leveling gudie |confirm |next "Zygor's Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (90)"
+Click here to load the Tanaan Jungle Leveling gudie |confirm |next "Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (90)"
 step
 Be sure to save up _200 Garrison Resources_
 |tip You will need 200 Garrison Resources to upgrade your Garrison to Level 2.
@@ -939,7 +939,7 @@ step
 _Congratulations!_
 You have earned the _More Plots_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Buildings\\Set Sail!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Buildings\\Set Sail!",{
 achieveid={10177},
 author="support@zygorguides.com",
 startlevel=90,
@@ -951,7 +951,7 @@ Reach Level 100 |ding 100
 |tip Use the Leveling guide to accomplish this.
 step
 Upgrade your Garrison to Level 3 |condition garrisonlvl(3)
-Click here to load the Garrison guide |confirm |next "Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Leveling Guide"
+Click here to load the Garrison guide |confirm |next "Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Leveling Guide"
 step
 accept Garrison Campaign: War Council##38567 |goto Frostwall/0 40.1,54.0
 |tip You will automatically accept this quest.
@@ -1041,14 +1041,14 @@ turnin Nothing Remains##38573 |goto Frostwall/0 39.1,54.8
 accept All Hands on Deck##38574 |goto 39.1,54.8
 step
 Follow the path |goto 36.5,40.9 < 30 |only if walking
-Go through the dooway |goto 27.0,55.4 < 20 |only if walking
+Go through the doorway |goto 27.0,55.4 < 20 |only if walking
 talk Solog Roark##91242
 turnin All Hands on Deck##38574 |goto Frostfire Ridge/0 41.5,69.9
 step
 _Congratulations!_
 You have earned the _Set Sail!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Buildings\\Terrific Technology",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Buildings\\Terrific Technology",{
 achieveid={9527},
 description="This guide will walk you through using at least 6 of the inventions available at the Workshop specified below.",
 },[[
@@ -1145,7 +1145,7 @@ only if not achieved(9527,5)
 step
 Congratulations, you have earned the Terrific Technology Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Buildings\\Time for an Upgrade",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Buildings\\Time for an Upgrade",{
 achieveid={9099},
 author="support@zygorguides.com",
 startlevel=85,
@@ -1155,13 +1155,13 @@ description="This guide will walk you through completing the \"Time for an Upgra
 step
 Upgrade your garrison to level 2
 |tip To accomplish this, refer to the Garrison Leveling Guide.
-Click here to load the Garrison Leveling Guide |confirm |next "Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Leveling Guide"
+Click here to load the Garrison Leveling Guide |confirm |next "Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Leveling Guide"
 Earn the _Time for an Upgrade_ achievement |achieve 9099
 step
 _Congratulations!_
 You have earned the _Time for an Upgrade_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Buildings\\Upgrading the Mill",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Buildings\\Upgrading the Mill",{
 achieveid={9429},
 description="This guide will walk you through placing 75 Work Orders at the Lumber Mill and completing the quests Legacy of the Ancients and Reduction in Force.",
 },[[
@@ -1263,7 +1263,7 @@ Place #75# work orders at the Lumber Mill |achieve 9429
 step
 Congratulations, you have earned the Upgrading the Mill Achievement! |only if hasbuilding(41,2) or hasbuilding(138,3)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Invasions\\Ogre Invasion",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Invasions\\Ogre Invasion",{
 achieveid={9204},
 description="This guide will walk you through successfully completing an Ogre garrison invasion.",
 },[[
@@ -1294,7 +1294,7 @@ turnin Ogre Invasion!##36623 |goto Frostwall 45.0,48.0
 step
 Congratulations, you have earned the Ogre Invsaion Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Missions\\Exploration Mission Master",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Missions\\Exploration Mission Master",{
 achieveid={9900},
 description="This guide will walk you through completing all of the garrison exploration missions.",
 },[[
@@ -1317,7 +1317,7 @@ step
 Congratulations, you have earned the Exploration Mission Master Achievement! |only if achieved(9900)
 Still more missions required. Routing to the guide start |next "start" |only if not achieved(9900)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\A Rare Friend",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\A Rare Friend",{
 achieveid={9130},
 description="Recruit a Rare follower.",
 },[[
@@ -1329,7 +1329,7 @@ _Recruit_ a Rare follower |achieve 9130
 step
 Congratulations, you have _earned_ the A Rare Friend Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\A Rare Mission",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\A Rare Mission",{
 achieveid={9141},
 description="Complete a Rare garrison mission.",
 },[[
@@ -1340,7 +1340,7 @@ _Select_ a mission labeled "Rare" and complete it |achieve 9141
 step
 Congratulations, you have _earned_ the A Rare Mission Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\An Epic Buddy",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\An Epic Buddy",{
 achieveid={9131},
 description="Recruit an Epic follower.",
 },[[
@@ -1352,7 +1352,7 @@ _Recruit_ an Epic follower |achieve 9131
 step
 Congratulations, you have _earned_ the An Epic Buddy Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Azeroth's Top Twenty Tunes",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Azeroth's Top Twenty Tunes",{
 achieveid={9914},
 description="This guide will walk you through collecting twenty Music Rolls for your garrison's jukebox.",
 },[[
@@ -1480,7 +1480,7 @@ use Music Roll: Song of Liu Lang##122221 |achieve 9914/13
 step
 Congratulations, you have earned the Azeroth's Top Twenty Tunes Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Builder",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Builder",{
 achieveid={9095},
 description="Upgrade all the buildings on your garrison plots to level 2.",
 },[[
@@ -1496,7 +1496,7 @@ _Upgrade_ #1# large building |achieve 9095/2
 step
 Congratulations, you have _earned_ the Builder Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Choppin' Even More Logs", {
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Choppin' Even More Logs", {
 achieveid={9080},
 description="Place 100 Work Orders at the Lumber Mill.",
 },[[
@@ -1509,7 +1509,7 @@ _Place_ #100# work orders the Lumber Mill |achieve 9080
 step
 Congratulations, you have _earned_ the Choppin' Even More Logs Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Choppin' Some Logs",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Choppin' Some Logs",{
 achieveid={9076},
 description="Place 10 Work Orders at the Lumber Mill.",
 },[[
@@ -1522,7 +1522,7 @@ _Place_ #10# work orders the Lumber Mill |achieve 9076
 step
 Congratulations, you have _earned_ the Choppin' Some Logs Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Choppin' Some More Logs",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Choppin' Some More Logs",{
 achieveid={9077},
 description="Place 50 Work Orders at the Lumber Mill.",
 },[[
@@ -1535,7 +1535,7 @@ _Place_ #50# work orders the Lumber Mill |achieve 9077
 step
 Congratulations, you have _earned_ the Choppin' Some More Logs Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Commander",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Commander",{
 achieveid={9494},
 description="Recruit 40 followers.",
 },[[
@@ -1546,7 +1546,7 @@ _Recruit_ #40# followers |achieve 9494
 step
 Congratulations, you have _earned_ the Commander Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Draenor Pet Brawler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Draenor Pet Brawler",{
 achieveid={9264},
 description="Win 2000 pet battles in Draenor.",
 },[[
@@ -1556,7 +1556,7 @@ _Win_ #2000# pet battles in Draenor |achieve 9264 |goto Frostfire Ridge 54,20
 step
 Congratulations, you have _earned_ the Draenor Pet Brawler Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Draftsman",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Draftsman",{
 achieveid={9125},
 description="Learn 20 garrison blueprints.",
 },[[
@@ -1566,7 +1566,7 @@ _Buy_ #20# different blueprints for updating your Garrison plots |achieve 9125
 step
 Congratulations, you have _earned_ the Draftsman Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Even More Plots",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Even More Plots",{
 achieveid={9546},
 description="This guide will walk you through upgrading your garrison to level 3.",
 },[[
@@ -1609,7 +1609,7 @@ turnin My Very Own Fortress##36614 |goto Frostwall/0 37.9,50.7
 step
 Congratulations, you have earned the Even More Plots Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Exploration Mission Specialist",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Exploration Mission Specialist",{
 achieveid={9150},
 description="Complete a garrison exploration mission.",
 },[[
@@ -1620,7 +1620,7 @@ _Select a mission with the Exploration icon_ and complete it. |achieve 9150
 step
 Congratulations, you have earned the _Exploration Mission Specialist_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Fearless Leader",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Fearless Leader",{
 achieveid={9109},
 description="Recruit 25 followers.",
 },[[
@@ -1631,7 +1631,7 @@ _Recruit_ #25# followers |achieve 9109
 step
 Congratulations, you have _earned_ the Fearless Leader Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Filling the Ranks",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Filling the Ranks",{
 achieveid={9129},
 description="Raise 20 garrison followers to level 100.",
 },[[
@@ -1642,7 +1642,7 @@ _Raise_ #20# followers to level 100 |achieve 9129
 step
 Congratulations, you have _earned_ the Filling the Ranks Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Follow the Leader",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Follow the Leader",{
 achieveid={9107},
 description="Recruit 5 followers.",
 },[[
@@ -1653,7 +1653,7 @@ _Recruit_ #5# followers |achieve 9107
 step
 Congratulations, you have _earned_ the Follow the Leader Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Following Up",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Following Up",{
 achieveid={9110},
 description="Raise a follower to level 100.",
 },[[
@@ -1664,7 +1664,7 @@ _Raise_ #1# follower to level 100 |achieve 9110
 step
 Congratulations, you have _earned_ the Filling the Ranks Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Garrison Buddies",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Garrison Buddies",{
 achieveid={9132},
 description="This guide will walk you through visiting a friend's garrison and waving.",
 },[[
@@ -1676,7 +1676,7 @@ Click on your friend and perform a /wave emote |achieve 9132
 step
 Congratulations, you have earned the Garrison Buddies Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Grand Master Draftsman",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Grand Master Draftsman",{
 achieveid={9128},
 description="Learn 60 garrison blueprints.",
 },[[
@@ -1686,7 +1686,7 @@ _Buy_ #60# different blueprints for updating your Garrison plots |achieve 9128
 step
 Congratulations, you have _earned_ the Grand Master Draftsman Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\In Pursuit of Gul'dan",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\In Pursuit of Gul'dan",{
 achieveid={10074},
 description="Complete the Garrison Campaign chapters listed below.",
 },[[
@@ -1777,7 +1777,7 @@ turnin Nothing Remains##38573 |goto Frostwall/0 39.1,54.8
 accept All Hands on Deck##38574 |goto Frostwall/0 39.1,54.8
 step
 _Follow_ the path |goto Frostwall/0 36.5,40.9 < 30 |only if walking
-_Go through_ the dooway |goto Frostwall/0 27.0,55.4 < 20 |only if walking
+Go through the doorway |goto Frostwall/0 27.0,55.4 < 20 |only if walking
 talk Solog Roark##91242
 turnin All Hands on Deck##38574 |goto Frostfire Ridge/0 41.5,69.9
 step
@@ -2104,7 +2104,7 @@ turnin The Cipher of Damnation##38463 |goto Tanaan Jungle/0 62.90,27.88
 step
 Congratulations, you have earned the In Pursuit of Gul'dan achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Item Level Army",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Item Level Army",{
 achieveid={9213},
 description="Raise 10 followers' item level to 650.",
 },[[
@@ -2134,7 +2134,7 @@ use Heavily Reinforced Armor Enhancement##114822
 step
 Congratulations, you have _earned_ the Item Level Army Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Item Level Force",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Item Level Force",{
 achieveid={9243},
 description="Raise 20 followers' item level to 650.",
 },[[
@@ -2164,7 +2164,7 @@ _Raise_ 20 followers' item level to 650 |achieve 9243
 step
 Congratulations, you have _earned_ the Item Level Force Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Keeping It Rare",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Keeping It Rare",{
 achieveid={9142},
 description="Complete 50 Rare garrison missions.",
 },[[
@@ -2175,7 +2175,7 @@ _Select_ #50# missions labeled "Rare" and complete them |achieve 9142
 step
 Congratulations, you have _earned_ the Keeping It Rare Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Master Builder",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Master Builder",{
 achieveid={9096},
 description="Upgrade all the buildings on your garrison plots to level 3.",
 },[[
@@ -2191,7 +2191,7 @@ _Upgrade_ #2# large building |achieve 9096/3
 step
 Congratulations, you have _earned_ the Master Builder Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Master Draenor Crafter",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Master Draenor Crafter",{
 achieveid={9246},
 description="Craft 50 Epic items with an item level of at least 600.",
 },[[
@@ -2201,7 +2201,7 @@ _Craft 50 Epic items_ with an item level of at least 600 |achieve 9246
 step
 Congratulations, you have earned the _Master Draenor Crafter_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Master Draftsman",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Master Draftsman",{
 achieveid={9126},
 description="Learn 40 garrison blueprints.",
 },[[
@@ -2211,7 +2211,7 @@ _Buy_ #40# different blueprints for updating your Garrison plots |achieve 9126
 step
 Congratulations, you have _earned_ the Master Draftsman Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Master of Apexis",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Master of Apexis",{
 achieveid={9265},
 description="Collect 100,000 Apexis Crystals.",
 },[[
@@ -2221,7 +2221,7 @@ _Collect 100,000_ Apexis Crystals. |achieve 9265
 step
 Congratulations, you have earned the _Master of Apexis_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Master of Mounts",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Master of Mounts",{
 condition_end=function() return achieved(9526) end,
 achieveid={9538,9526},
 description="Fully train all six mounts at your Stables.",
@@ -2684,7 +2684,7 @@ label "end"
 Congratulations, you have _earned_ the Intro to Husbandry Achievement! |only if achieved(9538)
 Congratulations, you have _earned_ the _Master of Mounts_ Achievement! |only if achieved(9526)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Mission Specialist",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Mission Specialist",{
 condition_end=function() return achieved(9147) end,
 achieveid={9145,9146,9147},
 description="Complete the Mission Specialist achievements.",
@@ -2703,7 +2703,7 @@ step
 label "end"
 Congratulations, you have _earned_ the Mission Specialist Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Master Trapper",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Master Trapper",{
 achieveid={9565},
 description="Place 125 Work Orders at the Barn by trapping creatures in the world.",
 },[[
@@ -2715,7 +2715,7 @@ _Place_ #125# work orders at the Barn |achieve 9565
 step
 Congratulations, you have _earned_ the Master Trapper Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Movin' On Up",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Movin' On Up",{
 achieveid={9098},
 description="Upgrade any garrison building to level 3.",
 },[[
@@ -2725,7 +2725,7 @@ _Upgrade_ any garrison building to level 3 |achieve 9098
 step
 Congratulations, you have _earned_ the Movin' On Up Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\My Item Level Is Higher than Yours",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\My Item Level Is Higher than Yours",{
 achieveid={9211},
 description="Raise a follower's item level to 625.",
 },[[
@@ -2755,7 +2755,7 @@ use Heavily Reinforced Armor Enhancement##114822
 step
 Congratulations, you have _earned_ the My Item Level Is Higher than Yours Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\My Item Level Is Way Higher than Yours",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\My Item Level Is Way Higher than Yours",{
 achieveid={9212},
 description="Raise a follower's item level to 650.",
 },[[
@@ -2785,7 +2785,7 @@ use Heavily Reinforced Armor Enhancement##114822
 step
 Congratulations, you have _earned_ the My Item Level Is Way Higher than Yours Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\On a Few Missions",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\On a Few Missions",{
 achieveid={9134},
 description="Complete 50 garrison missions.",
 },[[
@@ -2795,7 +2795,7 @@ _Start and complete 50_ garrison missions. |achieve 9134
 step
 Congratulations, you have earned the _On a Few Missions_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\On a Lot of Missions",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\On a Lot of Missions",{
 achieveid={9138},
 description="Complete 100 garrison missions.",
 },[[
@@ -2805,7 +2805,7 @@ _Start and complete 100_ garrison missions. |achieve 9138
 step
 Congratulations, you have earned the _On a Lot of Missions_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\On a Massive Number of Missions",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\On a Massive Number of Missions",{
 achieveid={9139},
 description="Complete 500 garrison missions.",
 },[[
@@ -2815,7 +2815,7 @@ _Start and complete 500_ garrison missions. |achieve 9139
 step
 Congratulations, you have earned the _On a Massive Number of Missions_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\On a Metric Ton of Missions",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\On a Metric Ton of Missions",{
 achieveid={9140},
 description="Complete 1000 garrison missions.",
 },[[
@@ -2825,7 +2825,7 @@ _Start and complete 1000_ garrison missions. |achieve 9140
 step
 Congratulations, you have earned the _On a Metric Ton of Missions_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\On a Mission",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\On a Mission",{
 achieveid={9133},
 description="Complete 10 garrison missions.",
 },[[
@@ -2835,7 +2835,7 @@ _Start and complete 10_ garrison missions. |achieve 9133
 step
 Congratulations, you have earned the _On a Mission_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Patrol Mission Specialist",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Patrol Mission Specialist",{
 achieveid={9146},
 description="Complete a garrison patrol mission.",
 },[[
@@ -2847,7 +2847,7 @@ _Select a mission with the Patrol icon_ and complete it. |achieve 9146
 step
 Congratulations, you have earned the _Patrol Mission Specialist_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Patrolling Draenor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Patrolling Draenor",{
 achieveid={9523},
 description="Complete 50 garrison patrol missions.",
 },[[
@@ -2859,7 +2859,7 @@ _Select 50 missions with the Patrol icon_ and complete them. |achieve 9523
 step
 Congratulations, you have earned the _Patrolling Draenor_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Raising the Bar",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Raising the Bar",{
 achieveid={9111},
 description="Raise 10 garrison followers to level 100.",
 },[[
@@ -2870,7 +2870,7 @@ _Raise_ #10# followers to level 100 |achieve 9111
 step
 Congratulations, you have _earned_ the Raising the Bar Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Salvaging Pays Off",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Salvaging Pays Off",{
 achieveid={9468},
 description="Open 100 pieces of Salvage from missions.",
 },[[
@@ -2882,7 +2882,7 @@ _Open_ #100# pieces of salvage |achieve 9468
 step
 Congratulations, you have _earned_ the Salvaging Pays Off Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Stay Awhile and Listen",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Stay Awhile and Listen",{
 achieveid={9703},
 description="Complete all of the Inn quests.",
 },[[
@@ -2892,7 +2892,7 @@ confirm
 step
 Congratulations, you have _earned_ the Stay Awhile and Listen Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\The Rarer the Better",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\The Rarer the Better",{
 achieveid={9143},
 description="Complete 300 Rare garrison missions.",
 },[[
@@ -2902,7 +2902,7 @@ _Select 300 missions labeled "Rare"_ and complete them |achieve 9143
 step
 Congratulations, you have earned the _The Rarer the Better_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\The Stable Master",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\The Stable Master",{
 condition_end=function() return achieved(9706) end,
 achieveid={9705,9706},
 description="Defeat all mount-in-training targets in Nagrand while carrying the Garn-Tooth Necklace.",
@@ -2987,7 +2987,7 @@ step
 Congratulations, you have _earned_ the _Advanced Husbandry_ Achievement! |only if achieved(9705)
 Congratulations, you have _earned_ the _The Stable Master_ Achievement! |only if achieved(9706)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\The Trap Game",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\The Trap Game",{
 achieveid={9450},
 description="Place 50 Work Orders at the Barn by trapping creatures in the world.",
 },[[
@@ -2999,7 +2999,7 @@ _Place_ #50# work orders at the Barn |achieve 9450
 step
 Congratulations, you have _earned_ the The Trap Game Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Trap Superstar",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Trap Superstar",{
 achieveid={9452},
 description="Place 500 Work Orders at the Barn by trapping creatures in the world.",
 },[[
@@ -3011,7 +3011,7 @@ _Place_ #500# work orders at the Barn |achieve 9452
 step
 Congratulations, you have _earned_ the Trap Superstar Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Trapper's Delight",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Trapper's Delight",{
 achieveid={9451},
 description="Place 250 Work Orders at the Barn by trapping creatures in the world.",
 },[[
@@ -3023,7 +3023,7 @@ _Place_ #250# work orders at the Barn |achieve 9451
 step
 Congratulations, you have _earned_ the Trapper's Delight Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Treasure Master",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Treasure Master",{
 achieveid={9524},
 description="Complete 50 garrison treasure missions.",
 },[[
@@ -3037,7 +3037,7 @@ _Select 50 missions with the Treasure icon_ and complete them. |achieve 9524
 step
 Congratulations, you have earned the _Treasure Master_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Treasure Mission Specialist",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Treasure Mission Specialist",{
 achieveid={9145},
 description="Complete a garrison treasure mission.",
 },[[
@@ -3051,7 +3051,7 @@ _Select a mission with the Treasure icon_ and complete it. |achieve 9145
 step
 Congratulations, you have earned the _Treasure Mission Specialist_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Defender of Draenor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Defender of Draenor",{
 achieveid={9248},
 description="Get 5000 honorable kills in Draenor.",
 },[[
@@ -3060,12 +3060,12 @@ _Get 5000 honorable kills_ in Draenor. |achieve 9248
 step
 Congratulations, you have earned the _Defender of Draenor_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\The Garrison Campaign",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\The Garrison Campaign",{
 description="This guide will walk you through the Garrison Campaign questlines.",
 },[[
 #include "Garrison_Campaign"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Where You Go, They Will Follow",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Where You Go, They Will Follow",{
 achieveid={9108},
 description="Recruit 10 followers.",
 },[[
@@ -3076,7 +3076,7 @@ _Recruit_ #10# followers |achieve 9108
 step
 Congratulations, you have _earned_ the Where You Go, They Will Follow Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Wingman",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Wingman",{
 achieveid={9498},
 description="Become a Personal Wingman with one of your Barracks Bodyguards.",
 },[[
@@ -3108,7 +3108,7 @@ Vivianne |achieve 9498
 step
 Congratulations, you have _earned_ the Wingman Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Wingmen",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Wingmen",{
 achieveid={9499},
 description="Become a Personal Wingman with all of your Barracks Bodyguards.",
 },[[
@@ -3140,7 +3140,7 @@ Vivianne |achieve 9499/2
 step
 Congratulations, you have _earned_ the Wingmen Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Working Many Orders",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Working Many Orders",{
 achieveid={9407},
 description="Complete 750 Work Orders at your garrison.",
 },[[
@@ -3150,7 +3150,7 @@ _Complete_ #750# work orders around your Garrison |achieve 9407
 step
 Congratulations, you have _earned_ the Working Many Orders Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Working More Orders",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Working More Orders",{
 achieveid={9406},
 description="Complete 250 Work Orders at your garrison.",
 },[[
@@ -3160,7 +3160,7 @@ _Complete_ #250# work orders around your Garrison |achieve 9406
 step
 Congratulations, you have _earned_ the Working More Orders Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Working Some Orders",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Working Some Orders",{
 achieveid={9405},
 description="Complete 125 Work Orders at your garrison.",
 },[[
@@ -3170,7 +3170,7 @@ _Complete_ #125# work orders around your Garrison |achieve 9405
 step
 Congratulations, you have _earned_ the Working Some Orders Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Fleet",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Fleet",{
 achieveid={10169},
 description="Upgrade your shipyard to level 2.",
 },[[
@@ -3181,7 +3181,7 @@ Upgrade your Shipyard to Level 2 |achieve 10169
 step
 Congratulations, you earned the _Naval Fleet_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Armada",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Armada",{
 achieveid={10168},
 description="Upgrade your shipyard to level 3.",
 },[[
@@ -3192,7 +3192,7 @@ Upgrade your Shipyard to Level 3 |achieve 10168
 step
 Congratulations, you earned the _Naval Fleet_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Seaman",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Seaman",{
 achieveid={10170},
 description="Complete 50 Naval Missions.",
 },[[
@@ -3204,7 +3204,7 @@ Complete #50# Naval Missions |achieve 10170 |goto Frostfire Ridge/0 42.1,70.9
 step
 Congratulations! You earned the _Seaman_ Achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Petty Officer",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Petty Officer",{
 achieveid={10255},
 description="Complete 100 Naval Missions.",
 },[[
@@ -3216,7 +3216,7 @@ Complete #100# Naval Missions |achieve 10255 |goto Frostfire Ridge/0 42.1,70.9
 step
 Congratulations! You earned the _Petty Officer_ Achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Fleet Commander",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Fleet Commander",{
 achieveid={10275},
 description="Complete 500 Naval Missions.",
 },[[
@@ -3228,7 +3228,7 @@ Complete #500# Naval Missions |achieve 10275 |goto Frostfire Ridge/0 42.1,70.9
 step
 Congratulations! You earned the _Fleet Commander_ Achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Admiral",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Admiral",{
 achieveid={10276},
 description="Complete 1,000 Naval Missions.",
 },[[
@@ -3240,7 +3240,7 @@ Complete #1000# Naval Missions |achieve 10276 |goto Frostfire Ridge/0 42.1,70.9
 step
 Congratulations! You earned the _Admiral_ Achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Training Specialist/Expert",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Training Specialist/Expert",{
 condition_end=function() return achieved(10163) end,
 achieveid={10162, 10163},
 description="Complete 25 Naval Training Missions.",
@@ -3255,7 +3255,7 @@ Congratulations! You earned the:
 _Naval Training Specialist_ Achievement
 _Naval Training Expert_ Achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Combat Specialist/Expert",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Combat Specialist/Expert",{
 condition_end=function() return achieved(10154) end,
 achieveid={10156, 10154},
 description="Complete 25 Naval Combat Missions.",
@@ -3270,7 +3270,7 @@ Congratulations! You earned the:
 _Naval Combat Specialist_ Achievement
 _Naval Combat Expert_ Achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Treasure Specialist/Expert",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Treasure Specialist/Expert",{
 condition_end=function() return achieved(10160) end,
 achieveid={10159, 10160},
 description="Complete 25 Naval Treasure Missions.",
@@ -3285,7 +3285,7 @@ Congratulations! You earned the:
 _Naval Treasure Specialist_ Achievement
 _Naval Treasure Expert_ Achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Siege Specialist/Expert",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Siege Specialist/Expert",{
 condition_end=function() return achieved(10155) end,
 achieveid={10161, 10155},
 description="Complete 25 Naval Siege Missions.",
@@ -3300,7 +3300,7 @@ Congratulations! You earned the:
 _Naval Siege Specialist_ Achievement
 _Naval Siege Expert_ Achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Bonus Specialist/Expert",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Bonus Specialist/Expert",{
 condition_end=function() return achieved(10036) end,
 achieveid={10017, 10036},
 description="Complete 25 Naval Bonus Missions.",
@@ -3315,7 +3315,7 @@ Congratulations! You earned the:
 _Naval Bonus Specialist_ Achievement
 _Naval Bonus Expert_ Achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Master of the Seas",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Master of the Seas",{
 achieveid={10164},
 description="This guide will walk you through completing the Master of the Seas achievement.",
 },[[
@@ -3335,7 +3335,7 @@ Complete #25# Naval Siege Missions |achieve 10155 |goto Frostfire Ridge/0 42.1,7
 step
 Congratulations, you earned the _Master of the Seas_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Ironsides",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Ironsides",{
 achieveid={10165},
 description="Upgrade a ship of every type to Epic quality.",
 },[[
@@ -3355,7 +3355,7 @@ Build ships with _Solog Roark_ at [Frostfire Ridge/0 40.7,70.3]
 step
 Congratulations, you earned the _Ironsides_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Mechanics",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Naval Mechanics",{
 achieveid={10256},
 description="This guide will walk you through completing the Naval Mechanics achievement.",
 },[[
@@ -3527,7 +3527,7 @@ Click to restart this guide |confirm |next "naval_mechanics_start" |only if not 
 |tip This will help you go back and get any blueprints you missed. |only if not achieved(10256)
 Congratulations, you earned the _Naval Mechanics_ achievement! |only if achieved(10256)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Charting a Course",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Charting a Course",{
 achieveid={10258},
 description="This guide will walk you through completing the Charting a Course achievement.",
 },[[
@@ -3544,7 +3544,7 @@ It's a boat, it's a plane, it's... just a riverbeast. |achieve 10258/4 |conditio
 step
 Congratulations, you earned the _Charting a Course_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Draenor Garrison\\Shipyard\\Exploring the High Seas",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Draenor Garrison\\Shipyard\\Exploring the High Seas",{
 achieveid={10307},
 description="This guide will walk you through completing the Exploring the High Seas achievement.",
 },[[
@@ -3561,7 +3561,7 @@ It's a boat, it's a plane, it's... just a riverbeast. |achieve 10307/6
 step
 Congratulations, you earned the _Exploring the High Seas_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\A Gift of Earth and Fire",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\A Gift of Earth and Fire",{
 achieveid={8993},
 description="Defeat Magmolatus while Calamity and Ruination are still alive in Bloodmaul Slag Mines on Heroic difficulty.",
 },[[
@@ -3592,7 +3592,7 @@ kill Magmolatus##74475
 step
 Congratulations, you have _earned_ the A Gift of Earth and Fire Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Auchindoun",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Auchindoun",{
 achieveid={9039},
 description="Defeat Teron'gor in Auchindoun.",
 },[[
@@ -3643,7 +3643,7 @@ kill Teron'gor##86220 |goto Auchindoun/1 49.6,33.5
 step
 Congratulations, you have _earned_ the Auchindoun Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Bloodmaul Slag Mines",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Bloodmaul Slag Mines",{
 achieveid={9037},
 description="Defeat Gug'rokk in the Bloodmaul Slag Mines.",
 },[[
@@ -3660,7 +3660,7 @@ kill Gug'rokk##86224
 step
 Congratulations, you have _earned_ the Bloodmaul Slag Mines Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Bridge Over Troubled Fire",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Bridge Over Troubled Fire",{
 achieveid={9056},
 description="Kill 20 Ragewing Whelps in 10 seconds while fighting Ragewing the Untamed in Upper Blackrock Spire on Heroic difficulty.",
 },[[
@@ -3710,7 +3710,7 @@ kill Ragewing##76585 |goto Upper Blackrock Spire 2/3 46.7,45.6
 step
 Congratulations, you have _earned_ the Bridge Over Troubled Fire Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Come With Me If You Want to Live",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Come With Me If You Want to Live",{
 achieveid={9005},
 description="Defeat Gug'rokk alongside Croman the Barbarian after finding his sword in Bloodmaul Slag Mines on Heroic difficulty.",
 },[[
@@ -3756,7 +3756,7 @@ There will be a bit of dialogue before you gain the achievement
 step
 Congratulations, you have _earned_ the Come With Me If You Want to Live Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Demon's Souls",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Demon's Souls",{
 achieveid={9551},
 description="Defeat Azzakel in Auchindoun on Heroic difficulty without killing any other demons during the encounter.",
 },[[
@@ -3810,7 +3810,7 @@ kill Azzakel##86219 |goto Auchindoun/1 49.6,33.5
 step
 Congratulations, you have _earned_ the Demon's Souls Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Dragonmaw? More Like Dragonfall",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Dragonmaw? More Like Dragonfall",{
 achieveid={9057},
 description="Kill 5 Emberscale Ironflight before defeating Warlord Zaela in Upper Blackrock Spire on Heroic difficulty.",
 },[[
@@ -3870,7 +3870,7 @@ kill Warlord Zaela##77120 |goto Upper Blackrock Spire 2/3 14.4,47.7
 step
 Congratulations, you have _earned_ the Dragonmaw? More Like Dragonfall Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Draenor Dungeon Hero",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Draenor Dungeon Hero",{
 achieveid={9391},
 description="This guide will walk you through how to get the Draenor Dungeon Hero achievement.",
 },[[
@@ -3888,7 +3888,7 @@ Heroic: Upper Blackrock Spire |achieve 9391/8
 step
 Congratulations, you have earned the Draenor Dungeon Hero achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Expert Timing",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Expert Timing",{
 achieveid={9081},
 description="Slay 4 Ogron Laborers that are not in combat using a single Iron Star in Iron Docks on Heroic Difficulty.",
 },[[
@@ -3911,7 +3911,7 @@ Once all four of them line up _use the new vehicle action bar_ to rush through t
 step
 Congratulations, you have _earned_ the Expert Timing Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Grimrail Depot",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Grimrail Depot",{
 achieveid={9043},
 description="Defeat Skylord Tovra in Grimrail Depot.",
 },[[
@@ -3947,7 +3947,7 @@ kill Skylord Tovra##86228 |goto Grimrail Depot/4 8.6,51.0
 step
 Congratulations, you have _earned_ the Grimrail Depot Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: Auchindoun",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: Auchindoun",{
 achieveid={9049},
 description="Defeat Teron'gor in Auchindoun on Heroic difficulty.",
 },[[
@@ -4001,7 +4001,7 @@ kill Teron'gor##86220 |goto Auchindoun/1 49.6,33.5
 step
 Congratulations, you have _earned_ the Heroic: Auchindoun Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: Bloodmaul Slag Mines", {
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: Bloodmaul Slag Mines", {
 achieveid={9046},
 description="Defeat Gug'rokk in the Bloodmaul Slag Mines on Heroic difficulty.",
 },[[
@@ -4022,7 +4022,7 @@ kill Gug'rokk##86224
 step
 Congratulations, you have _earned_ the Heroic: Bloodmaul Slag Mines Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: Grimrail Depot",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: Grimrail Depot",{
 achieveid={9052},
 description="Defeat Skylord Tovra in Grimrail Depot on Heroic difficulty.",
 },[[
@@ -4058,7 +4058,7 @@ kill Skylord Tovra##86228 |goto Grimrail Depot/4 8.6,51.0
 step
 Congratulations, you have _earned_ the Heroic: Grimrail Depot Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: Iron Docks",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: Iron Docks",{
 achieveid={9047},
 description="Defeat Skulloc in the Iron Docks on Heroic difficulty.",
 },[[
@@ -4081,7 +4081,7 @@ kill Skulloc##83612
 step
 Congratulations, you have _earned_ the Heroic: Iron Docks Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: Shadowmoon Burial Grounds",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: Shadowmoon Burial Grounds",{
 achieveid={9054},
 description="Defeat Ner'zhul in Shadowmoon Burial Grounds on Heroic difficulty.",
 },[[
@@ -4132,7 +4132,7 @@ kill Ner'zhul##76268 |goto Shadowmoon Burial Grounds/3 48.1,47.1
 step
 Congratulations, you have _earned_ the Heroic: Shadowmoon Burial Grounds Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: Skyreach",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: Skyreach",{
 achieveid={8844},
 description="Defeat High Sage Viryx in Skyreach on Heroic difficulty.",
 },[[
@@ -4167,7 +4167,7 @@ kill High Sage Viryx##86241 |goto Skyreach/2 51.1,27.4
 step
 Congratulations, you have _earned_ the Heroic: Skyreach Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: The Everbloom",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: The Everbloom",{
 achieveid={9053},
 description="Defeat Yalnu in The Everbloom on Heroic difficulty.",
 },[[
@@ -4217,7 +4217,7 @@ Defeat Yalnu |achieve 9053 |goto The Everbloom/2 45.0,72.0
 step
 Congratulations, you have _earned_ the Heroic: Everbloom Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: Upper Blackrock Spire",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Heroic: Upper Blackrock Spire",{
 achieveid={9055},
 description="Defeat Warlord Zaela in Upper Blackrock Spire on Heroic difficulty.",
 },[[
@@ -4272,7 +4272,7 @@ kill Warlord Zaela##77120 |goto Upper Blackrock Spire 2/3 14.4,47.7
 step
 Congratulations, you have _earned_ the Heroic: Upper Blackrock Spire Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\I Saw Soils",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\I Saw Soils",{
 achieveid={9035},
 description="Cause three Piles of Ash to form Solar Flares at the same time during the Rukhran encounter in Skyreach on Heroic difficulty.",
 },[[
@@ -4302,7 +4302,7 @@ kill Rukhran##76379 |goto Skyreach/1 42.7,81.9
 step
 Congratulations, you have _earned_ the I Saw Soils Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Icky Ichors",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Icky Ichors",{
 achieveid={9025},
 description="Defeat Bonemaw after having fed him 25 Corpse Skitterlings in Shadowmoon Burial Grounds on Heroic difficulty.",
 },[[
@@ -4351,7 +4351,7 @@ kill Bonemaw##86236 |goto Shadowmoon Burial Grounds/2 39.8,51.4
 step
 Congratulations, you have _earned_ the Icky Ichors Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Iron Docks",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Iron Docks",{
 achieveid={9038},
 description="Defeat Skulloc in the Iron Docks.",
 },[[
@@ -4374,7 +4374,7 @@ kill Skulloc##83612
 step
 Congratulations, you have _earned_ the Iron Docks Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Is Draenor on Fire?",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Is Draenor on Fire?",{
 achieveid={9008},
 description="Defeat Gug'rokk without killing any Unstable Slag in Bloodmaul Slag Mines on Heroic difficulty.",
 },[[
@@ -4400,7 +4400,7 @@ kill Gug'rokk##86224
 step
 Congratulations, you have _earned_ the Is Draenor on Fire? Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Magnets, How Do They Work?",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Magnets, How Do They Work?",{
 achieveid={9045},
 description="Defeat Orebender Gor'ashan without allowing him to cast Thundering Cacophony 4 times in Upper Blackrock Spire on Heroic difficulty.",
 },[[
@@ -4427,7 +4427,7 @@ kill Orebender Gor'ashan##86249 |goto Upper Blackrock Spire 2/2 30.3,27.0
 step
 Congratulations, you have _earned_ the Magnets, How Do They Work? Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Magnify... Enhance",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Magnify... Enhance",{
 achieveid={9034},
 description="Defeat the Empowered Construct in Skyreach on Heroic difficulty.",
 },[[
@@ -4472,7 +4472,7 @@ kill High Sage Viryx##86241 |goto Skyreach/2 51.1,27.4
 step
 Congratulations, you have _earned_ the Magnify... Enhance Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Militaristic, Expansionist",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Militaristic, Expansionist",{
 achieveid={9083},
 description="Defeat Fleshrender Nok'gar in Iron Docks on Heroic difficulty, while Siegemaster Olugar, Pitwarden Gwarnok, and Champion Druna remain alive and in the fight.",
 },[[
@@ -4495,7 +4495,7 @@ kill Fleshrender Nok'gar##87451
 step
 Congratulations, you have _earned_ the Militaristic, Expansionist Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Monomania",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Monomania",{
 achieveid={9036},
 description="Defeat High Sage Viryx without killing any of the Shield Constructs in Skyreach on Heroic difficulty.",
 },[[
@@ -4532,7 +4532,7 @@ kill High Sage Viryx##86241 |goto Skyreach/2 51.1,27.4
 step
 Congratulations, you have _earned_ the Monomania Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\No Tag-backs!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\No Tag-backs!",{
 achieveid={9552},
 description="Defeat Teron'gor in Auchindoun on Heroic difficulty while under the effects of Curtain of Flame.",
 },[[
@@ -4575,7 +4575,7 @@ kill Teron'gor##86220 |goto Auchindoun/1 49.6,33.5
 step
 Congratulations, you have _earned_ the No Tag-backs! Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\No Ticket",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\No Ticket",{
 achieveid={9007},
 description="Defeat Nitrogg Thundertower after abruptly removing 20 enemies from the Grimrail in Grimrail Depot on Heroic difficulty.",
 },[[
@@ -4611,7 +4611,7 @@ kill Nitrogg Thundertower##86227 |goto Grimrail Depot/3 9.7,51.7 |c |noway
 step
 Congratulations, you have _earned_ the No Ticket Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Ready for Raiding IV",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Ready for Raiding IV",{
 achieveid={9033},
 description="Defeat Ranjit without taking damage from any of the following abilities in Skyreach on Heroic difficulty: Spinning Blade, Windwall, Four Winds, Lens Flare.",
 },[[
@@ -4637,7 +4637,7 @@ kill Ranjit##86238 |goto Skyreach/1 63.3,38.5
 step
 Congratulations, you have _earned_ the Ready for Raiding IV Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Savage Hero",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Savage Hero",{
 achieveid={9619},
 description="This guide will list the bosses necessary to kill for this achievement.",
 },[[
@@ -4657,7 +4657,7 @@ Warlord Blackhand (Blackrock Foundry) |achieve 9619/10
 step
 Congratulations, you have earned the Savage Hero achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Shadowmoon Burial Grounds",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Shadowmoon Burial Grounds",{
 achieveid={9041},
 description="Defeat Ner'zhul in Shadowmoon Burial Grounds.",
 },[[
@@ -4708,7 +4708,7 @@ kill Ner'zhul##76268 |goto Shadowmoon Burial Grounds/3 48.1,47.1
 step
 Congratulations, you have _earned_ the Shadowmoon Burial Grounds Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Skyreach",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Skyreach",{
 achieveid={8843},
 description="Defeat High Sage Viryx in Skyreach.",
 },[[
@@ -4743,7 +4743,7 @@ kill High Sage Viryx##86241 |goto Skyreach/2 51.1,27.4
 step
 Congratulations, you have _earned_ the Skyreach Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Souls of the Lost",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Souls of the Lost",{
 achieveid={9026},
 description="Defeat Ner'zhul after slaying 2 Ritual of Bones skeletons within 5 seconds of each other in Shadowmoon Burial Grounds on Heroic difficulty.",
 },[[
@@ -4797,7 +4797,7 @@ kill Ner'zhul##76268 |goto Shadowmoon Burial Grounds/3 48.1,47.1
 step
 Congratulations, you have _earned_ the Souls of the Lost Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Take Cover!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Take Cover!",{
 achieveid={9082},
 description="Defeat Skulloc in Iron Docks on Heroic difficulty without any players getting hit by Cannon Barrage or Backdraft.",
 },[[
@@ -4825,7 +4825,7 @@ kill Skulloc##83612
 step
 Congratulations, you have _earned_ the Take Cover! Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\The Everbloom",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\The Everbloom",{
 achieveid={9044},
 description="Defeat Yalnu in The Everbloom.",
 },[[
@@ -4852,7 +4852,7 @@ kill Yalnu##86248
 step
 Congratulations, you have _earned_ the Everbloom Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\They Burn, Burn, Burn",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\They Burn, Burn, Burn",{
 achieveid={9493},
 description="Successfully jump over 5 of Archmage Sol's Firebloom explosion rings within 5 seconds in The Everbloom on Heroic difficulty.",
 },[[
@@ -4884,7 +4884,7 @@ kill Archmage Sol##86246
 step
 Congratulations, you have _earned_ the They Burn, Burn, Burn Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\This is Why We Can't Have Nice Things",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\This is Why We Can't Have Nice Things",{
 achieveid={9024},
 description="Defeat Railmaster Rocketspark and Borka the Brute after destroying all of the Priceless Paraphernalia in Grimrail Depot on Heroic difficulty.",
 },[[
@@ -4906,7 +4906,7 @@ kill Borka the Brute##77816
 step
 Congratulations, you have _earned_ the This is Why We Can't Have Nice Things Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Upper Blackrock Spire",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Upper Blackrock Spire",{
 achieveid={9042},
 description="Defeat Warlord Zaela in Upper Blackrock Spire.",
 },[[
@@ -4961,7 +4961,7 @@ kill Warlord Zaela##77120 |goto Upper Blackrock Spire 2/3 14.4,47.7
 step
 Congratulations, you have _earned_ the Upper Blackrock Spire Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Water Management",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Water Management",{
 achieveid={9017},
 description="Defeat Witherbark without allowing him to replenish any of his Aqueous Energy in The Everbloom on Heroic difficulty.",
 },[[
@@ -4986,7 +4986,7 @@ kill Witherbark##86242 |goto The Everbloom/1 52.5,56.9
 step
 Congratulations, you have _earned_ the Water Management Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Weed Whacker",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\Weed Whacker",{
 achieveid={9223},
 description="Defeat Yalnu without any Kirin Tor Battle-Mages dying in The Everbloom on Heroic difficulty.",
 },[[
@@ -5015,7 +5015,7 @@ kill Yalnu##86248 |goto The Everbloom/2 45.0,72.0
 step
 Congratulations, you have _earned_ the Weed Whacker Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\What's Your Sign?",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\What's Your Sign?",{
 achieveid={9018},
 description="Defeat Sadana Bloodfury while only having the runes that correspond to her active lunar cycle lit in Shadowmoon Burial Grounds on Heroic difficulty.",
 },[[
@@ -5047,7 +5047,7 @@ kill Sadana Bloodfury##86234 |goto Shadowmoon Burial Grounds/1 52.2,51.0
 step
 Congratulations, you have _earned_ the What's Your Sign? Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\...They All Fall Down",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Draenor Dungeon\\...They All Fall Down",{
 achieveid={9023},
 description="Defeat Soulbinder Nyami after defeating 12 fallen Auchenai protectors within 3 seconds in Auchindoun on Heroic difficulty.",
 },[[
@@ -5072,190 +5072,294 @@ kill Soulbinder Nyami##86218 |goto Auchindoun/1 49.7,66.6
 step
 Congratulations, you have _earned_ the ...They All Fall Down Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Draenor Explorer",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Draenor Explorer",{
 condition_end=function() return achieved(8935) end,
-achieveid={8937,8939,8938,8940,8941,8942,8935},
-description="Complete the Angler achievements.",
+achieveid={8935},
+description="Earn the following Draenor exploration achievements:\n\nExplore Frostfire Ridge\nExplore Gorgrond\n"..
+"Explore Spires of Arak\nExplore Shadowmoon Valley\nExplore Talador\nExplore Nagrand",
+},[[
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Shadowmoon Valley" 1-11
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Talador" 1-15
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Gorgrond" 1-14
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Frostfire Ridge" 1-15
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Spires of Arak" 1-17
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Nagrand" 1-15
+step
+_Congratulations!_
+You Earned the "Draenor Explorer" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explore Shadowmoon Valley",{
+condition_end=function() return achieved(8938) end,
+achieveid={8938},
+description="Explore Shadowmoon Valley, revealing the following covered areas of the world map:\n\n Anguish Fortress\n"..
+"Elodor\nGloomshade Grove\nKarabor\nThe Shimmer Moor\nIsle of Shadows\nDarktide Roost\nEmbaari Village\n"..
+"Gul'var\nShaz'gul\nSocrethar's Rise",
 },[[
 step
 Explore Socrethar's Rise |achieve 8938/10 |goto Shadowmoon Valley D 42.9,69.9
 step
-Explore Shaz'gul |achieve 8938/8 |goto Shadowmoon Valley D 40.0,66.0
+Explore Shaz'gul |achieve 8938/8 |goto 40.0,66.0
 step
-Explore Isle of Shadows |achieve 8938/11 |goto Shadowmoon Valley D 40.1,79.2
+Explore Isle of Shadows |achieve 8938/11 |goto 40.1,79.2
 step
-Explore Darktide Roost |achieve 8938/2 |goto Shadowmoon Valley D 61.1,78.1
+Explore Darktide Roost |achieve 8938/2 |goto 61.1,78.1
 step
-Explore The Shimmer Moor |achieve 8938/9 |goto Shadowmoon Valley D 58.7,58.3
+Explore The Shimmer Moor |achieve 8938/9 |goto 58.7,58.3
 step
-Explore Karabor |achieve 8938/7 |goto Shadowmoon Valley D 61.2,45.3
+Explore Karabor |achieve 8938/7 |goto 61.2,45.3
 step
-Explore Elodor |achieve 8938/3 |goto Shadowmoon Valley D 52.3,26.7
+Explore Elodor |achieve 8938/3 |goto 52.3,26.7
 step
-Explore Gloomshade Grove |achieve 8938/5 |goto Shadowmoon Valley D 40.3,26.5
+Explore Gloomshade Grove |achieve 8938/5 |goto 40.3,26.5
 step
-Explore Embaari Village |achieve 8938/4 |goto Shadowmoon Valley D 38.6,33.4
+Explore Embaari Village |achieve 8938/4 |goto 38.6,33.4
 step
-Explore Anguish Fortress |achieve 8938/1 |goto Shadowmoon Valley D 32.2,23.6
+Explore Anguish Fortress |achieve 8938/1 |goto 32.2,23.6
 step
-Explore Gul'var |achieve 8938/6 |goto Shadowmoon Valley D 20.5,13.6
+Explore Gul'var |achieve 8938/6 |goto 20.5,13.6
+step
+|achieve 8938
+step
+_Congratulations!_
+You Earned the "Explore Shadowmoon Valley" Achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explore Talador",{
+condition_end=function() return achieved(8940) end,
+achieveid={8940},
+description="Explore Talador, revealing the following covered areas of the world map:\n\n Duskfall Island\n"..
+"Aruuna\nFort Wrynn\nGul'rok\nOrunai Coast\nShattrath City\nTomb of Lights\nAnchorite's Sojourn\n"..
+"Zangarra\nAuchindoun\nCourt of Souls\nGordal Fortress\nThe Path of Glory\nTelmor\nTuurem",
+},[[
 step
 Explore Anchorite's Sojourn |achieve 8940/10 |goto Talador 76.7,56.6
 step
-Explore Duskfall Island |achieve 8940/3 |goto Talador 71.6,57.7
+Explore Duskfall Island |achieve 8940/3 |goto 71.6,57.7
 step
-Explore Tomb of Lights |achieve 8940/13 |goto Talador 58.9,64.8
+Explore Tomb of Lights |achieve 8940/13 |goto 58.9,64.8
 step
-Explore Auchindoun |achieve 8940/2 |goto Talador 54.6,69.6
+Explore Auchindoun |achieve 8940/2 |goto 54.6,69.6
 step
-Explore Gordal Fortress |achieve 8940/6 |goto Talador 67.7,68.8
+Explore Gordal Fortress |achieve 8940/6 |goto 67.7,68.8
 step
-Explore Telmor |achieve 8940/12 |goto Talador 50.6,86.7
+Explore Telmor |achieve 8940/12 |goto 50.6,86.7
 step
-Explore Gul'rok |achieve 8940/7 |goto Talador 38.5,79.3
+Explore Gul'rok |achieve 8940/7 |goto 38.5,79.3
 step
-Explore Court of Souls |achieve 8940/4 |goto Talador 40.0,60.1
+Explore Court of Souls |achieve 8940/4 |goto 40.0,60.1
 step
-Explore Shattrath City |achieve 8940/11 |goto Talador 41.4,43.0
+Explore Shattrath City |achieve 8940/11 |goto 41.4,43.0
 step
-Explore Orunai Coast |achieve 8940/9 |goto Talador 51.8,26.8
+Explore Orunai Coast |achieve 8940/9 |goto 51.8,26.8
 step
-Explore Tuurem |achieve 8940/14 |goto Talador 63.3,37.4
+Explore Tuurem |achieve 8940/14 |goto 59.6,32.6
 step
-Explore Aruuna |achieve 8940/1 |goto Talador 75.4,40.6
+Explore Aruuna |achieve 8940/1 |goto 75.4,40.6
 step
-Explore Zangarra |achieve 8940/15 |goto Talador 78.6,27.9
+Explore Zangarra |achieve 8940/15 |goto 78.6,27.9
 step
-Explore Fort Wrynn |achieve 8940/5 |goto Talador 68.0,20.3
+Explore Fort Wrynn |achieve 8940/5 |goto 68.0,20.3
 step
-Explore The Path of Glory |achieve 8940/8 |goto Talador 66,10
+Explore The Path of Glory |achieve 8940/8 |goto 66,10
+step
+|achieve 8940
+step
+_Congratulations!_
+You Earned the "Explore Talador" Achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explore Gorgrond",{
+condition_end=function() return achieved(8939) end,
+achieveid={8939},
+description="Explore Gorgrond, revealing the following covered areas of the world map:\n\n Evermorn Springs\n"..
+"Bastion Rise\nGrimrail Depot\nDeadgrin\nHighpass\nStonemaul Arena\nThe Iron Approach\nThe Pit\n"..
+"Beastwatch\nCrimson Fen\nEverbloom Wilds\nGronn Canyon\nIyun Weald\nTangleheart",
+},[[
 step
 Explore Bastion Rise |achieve 8939/1 |goto Gorgrond 48.6,79.3
 step
-Explore Tangleheart |achieve 8939/12 |goto Gorgrond 50.3,70.7
+Explore Tangleheart |achieve 8939/12 |goto 50.3,70.7
 step
-Explore Crimson Fen |achieve 8939/4 |goto Gorgrond 53.9,65.0
+Explore Crimson Fen |achieve 8939/4 |goto 53.9,65.0
 step
-Explore Highpass |achieve 8939/9 |goto Gorgrond 52.9,60.7
+Explore Highpass |achieve 8939/9 |goto 52.9,60.7
 step
-Explore Iyun Weald |achieve 8939/10 |goto Gorgrond 61.0,51.7
+Explore Iyun Weald |achieve 8939/10 |goto 61.0,51.7
 step
-Explore Everbloom Wilds |achieve 8939/6 |goto Gorgrond 54.4,44.5
+Explore Everbloom Wilds |achieve 8939/6 |goto 54.4,44.5
 step
-Explore Grimrail Depot |achieve 8939/3 |goto Gorgrond 54.4,33.3
+Explore Grimrail Depot |achieve 8939/3 |goto 54.4,33.3
 step
-Explore The Pit |achieve 8939/14 |goto Gorgrond 47.6,38.7
+Explore The Pit |achieve 8939/14 |goto 47.6,38.7
 step
-Explore The Iron Approach |achieve 8939/13 |goto Gorgrond 43.3,20.9
+Explore The Iron Approach |achieve 8939/13 |goto 43.3,20.9
 step
-Explore Gronn Canyon |achieve 8939/8 |goto Gorgrond 46.4,45.2
+Explore Gronn Canyon |achieve 8939/8 |goto 46.4,45.2
 step
-Explore Stonemaul Arena |achieve 8939/11 |goto Gorgrond 42.5,64.5
+Explore Stonemaul Arena |achieve 8939/11 |goto 42.5,64.5
 step
-Explore Beastwatch |achieve 8939/2 |goto Gorgrond 45.4,71.1
+Explore Beastwatch |achieve 8939/2 |goto 45.4,71.1
 step
-Explore Evermorn Springs |achieve 8939/7 |goto Gorgrond 42.2,77.5
+Explore Evermorn Springs |achieve 8939/7 |goto 42.2,77.5
 step
-Explore Deadgrin |achieve 8939/5 |goto Gorgrond 41.4,74.1
+Explore Deadgrin |achieve 8939/5 |goto 41.4,74.1
+step
+|achieve 8939
+step
+_Congratulations!_
+You Earned the "Explore Gorgrond" Achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explore Frostfire Ridge",{
+condition_end=function() return achieved(8937) end,
+achieveid={8937},
+description="Explore Frostfire Ridge, revealing the following covered areas of the world map:\n\n Bladespire Citadel\n"..
+"Bones of Agurak\nDaggermaw Ravine\nGrimfrost Hill\nIron Siegeworks\nMagnarok\nThe Boneslag\nWor'gol\n"..
+"Bloodmaul Stronghold\nColossal's Fall\nFrostwind Crag\nGrom'gar\nIron Waystation\nStonefang Outpost\n"..
+"The Cracking Plains",
+},[[
 step
 Explore Bones of Agurak |achieve 8937/3 |goto Frostfire Ridge 86.2,71.2
 step
-Explore Iron Siegeworks |achieve 8937/9 |goto Frostfire Ridge 83.7,59.4
+Explore Iron Siegeworks |achieve 8937/9 |goto 83.7,59.4
 step
-_Go through_ through the _tunnel in the boulders_ |goto Frostfire Ridge 78.9,55.9 < 20 |only if walking
-Explore Iron Waystation |achieve 8937/10 |goto Frostfire Ridge 74.7,62.7
+Explore Iron Waystation |achieve 8937/10 |goto 74.7,62.7
 step
-Explore Grom'gar |achieve 8937/8 |goto Frostfire Ridge 65.7,58.0
+Explore Grom'gar |achieve 8937/8 |goto 65.7,58.0
 step
-Explore Grimfrost Hill |achieve 8937/7 |goto Frostfire Ridge 68.3,50.3
+Explore Grimfrost Hill |achieve 8937/7 |goto 68.3,50.3
 step
-Explore The Cracking Plains |achieve 8937/14 |goto Frostfire Ridge 54.6,44.1
+Explore The Cracking Plains |achieve 8937/14 |goto 54.6,44.1
 step
-Explore Magnarok |achieve 8937/11 |goto Frostfire Ridge 68.1,32.0
+Explore Magnarok |achieve 8937/11 |goto 68.1,32.0
 step
-Explore Colossal's Fall |achieve 8937/4 |goto Frostfire Ridge 62.4,29.8
+Explore Colossal's Fall |achieve 8937/4 |goto 62.4,29.8
 step
-Explore Stonefang Outpost |achieve 8937/12 |goto Frostfire Ridge 46.9,52.3
+Explore Stonefang Outpost |achieve 8937/12 |goto 46.9,52.3
 step
-Explore The Boneslag |achieve 8937/13 |goto Frostfire Ridge 46.5,47.4
+Explore The Boneslag |achieve 8937/13 |goto 46.5,47.4
 step
-Explore Wor'gol |achieve 8937/15 |goto Frostfire Ridge 23.8,54.9
+Explore Wor'gol |achieve 8937/15 |goto 23.8,54.9
 step
-Explore Bladespire Citadel |achieve 8937/1 |goto Frostfire Ridge 27.4,32.1
+Explore Bladespire Citadel |achieve 8937/1 |goto 27.4,32.1
 step
-Explore Frostwind Crag |achieve 8937/6 |goto Frostfire Ridge 36.1,19.3
+Explore Frostwind Crag |achieve 8937/6 |goto 36.1,19.3
 step
-Explore Bloodmaul Stronghold |achieve 8937/2 |goto Frostfire Ridge 36.9,13.0
+Explore Bloodmaul Stronghold |achieve 8937/2 |goto 36.9,13.0
 step
-Explore Daggermaw Ravine |achieve 8937/5 |goto Frostfire Ridge 44.8,31.2
+Explore Daggermaw Ravine |achieve 8937/5 |goto 44.8,31.2
+step
+|achieve 8937
+step
+_Congratulations!_
+You Earned the "Explore Frostfire Ridge" Achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explore Spires of Arak",{
+condition_end=function() return achieved(8941) end,
+achieveid={8941},
+description="Explore Spires of Arak, revealing the following covered areas of the world map:\n\n The Writhing Mire\n"..
+"Skettis\nVeil Zekk\nSouthport\nTerrace of Dawn\nBladefist Hold\nLost Veil Anzu\nRavenskar\nAxefall\n"..
+"The Howling Crag\nPinchwhistle Point\nVeil Akraz\nWindswept Terrace\nSethekk Hollow\nAdmiral Taylor's\n"..
+" Garrison\nPinchwhistle Gearworks\nBloodmane Valley",
+},[[
 step
 Explore Skettis |achieve 8941/1 |goto Spires of Arak 45.3,18.9
 step
-Explore The Howling Crag |achieve 8941/2 |goto Spires of Arak 61.1,25.4
+Explore The Howling Crag |achieve 8941/2 |goto 61.1,25.4
 step
-Explore Lost Veil Anzu |achieve 8941/13 |goto Spires of Arak 73.4,37.9
+Explore Lost Veil Anzu |achieve 8941/13 |goto 73.4,37.9
 step
-Explore Sethekk Hollow |achieve 8941/10 |goto Spires of Arak 61.9,37.3
+Explore Sethekk Hollow |achieve 8941/10 |goto 61.9,37.3
 step
-Explore Terrace of Dawn |achieve 8941/9 |goto Spires of Arak 53.8,46.7
+Explore Terrace of Dawn |achieve 8941/9 |goto 53.8,46.7
 step
-Explore Windswept Terrace |achieve 8941/8 |goto Spires of Arak 47.48,52.29
+Explore Windswept Terrace |achieve 8941/8 |goto 47.48,52.29
 step
-Explore Ravenskar |achieve 8941/15 |goto Spires of Arak 55,55
+Explore Ravenskar |achieve 8941/15 |goto 55,55
 step
-Explore Veil Zekk |achieve 8941/5 |goto Spires of Arak 61.2,55.2
+Explore Veil Zekk |achieve 8941/5 |goto 61.2,55.2
 step
-Explore Pinchwhistle Gearworks |achieve 8941/14 |goto Spires of Arak 61.3,70.0
+Explore Pinchwhistle Gearworks |achieve 8941/14 |goto 61.3,70.0
 step
-Explore Pinchwhistle Point |achieve 8941/4 |goto Spires of Arak 57.8,85.6
+Explore Pinchwhistle Point |achieve 8941/4 |goto 57.8,85.6
 step
-Explore Bloodmane Valley |achieve 8941/16 |goto Spires of Arak 51.0,67.2
+Explore Bloodmane Valley |achieve 8941/16 |goto 51.0,67.2
 step
-Explore Southport |achieve 8941/7 |goto Spires of Arak 41.7,59.9
+Explore Southport |achieve 8941/7 |goto 41.7,59.9
 step
-Explore Admiral Taylor's Garrison |achieve 8941/12 |goto Spires of Arak 39.8,49.4
+Explore Admiral Taylor's Garrison |achieve 8941/12 |goto 39.8,49.4
 step
-Explore Axefall |achieve 8941/17 |goto Spires of Arak 41.2,46.8
+Explore Axefall |achieve 8941/17 |goto 41.2,46.8
 step
-Explore The Writhing Mire |achieve 8941/3 |goto Spires of Arak 36.8,44.0
+Explore The Writhing Mire |achieve 8941/3 |goto 36.8,44.0
 step
-Explore Bladefist Hold |achieve 8941/11 |goto Spires of Arak 31.3,28.9
+Explore Bladefist Hold |achieve 8941/11 |goto 31.3,28.9
 step
-Explore Veil Akraz |achieve 8941/6 |goto Spires of Arak 41.5,23.7
+Explore Veil Akraz |achieve 8941/6 |goto 41.5,23.7
+step
+|achieve 8941
+step
+_Congratulations!_
+You Earned the "Explore Spires of Arak" Achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explore Nagrand",{
+condition_end=function() return achieved(8942) end,
+achieveid={8942},
+description="Explore Nagrand, revealing the following covered areas of the world map:\n\n Ancestral Grounds\n"..
+"Gates of Grommashar\nHighmaul Harbor\nLok-rath\nMok'gol Watchpost\nTelaar\nThe Ring of Trials\n"..
+"Zangar Shore\nBroken Precipice\nHallvalor\nIronfist Harbor\nMar'gok's Overwatch\nOshu'gun\n"..
+"The Ring of Blood\nThrone of the Elements",
+},[[
 step
 Explore The Ring of Trials |achieve 8942/13 |goto Nagrand D 79.7,49.8
 step
-Explore Telaar |achieve 8942/11 |goto Nagrand D 69.0,64.2
+Explore Telaar |achieve 8942/11 |goto 69.0,64.2
 step
-Explore Gates of Grommashar |achieve 8942/3 |goto Nagrand D 75.0,68.1
+Explore Gates of Grommashar |achieve 8942/3 |goto 75.0,68.1
 step
-Explore Mar'gok's Overwatch |achieve 8942/8 |goto Nagrand D 80.5,67.1
+Explore Mar'gok's Overwatch |achieve 8942/8 |goto 80.5,67.1
 step
-Explore Hallvalor |achieve 8942/4 |goto Nagrand D 84.4,56.4
+Explore Hallvalor |achieve 8942/4 |goto 84.4,56.4
 step
-Explore Zangar Shore |achieve 8942/15 |goto Nagrand D 86.3,27.6
+Explore Zangar Shore |achieve 8942/15 |goto 86.3,27.6
 step
-Explore Throne of the Elements |achieve 8942/14 |goto Nagrand D 73.2,20.8
+Explore Throne of the Elements |achieve 8942/14 |goto 73.2,20.8
 step
-Explore The Ring of Blood |achieve 8942/12 |goto Nagrand D 57.0,19.0
+Explore The Ring of Blood |achieve 8942/12 |goto 57.0,19.0
 step
-Explore Broken Precipice |achieve 8942/2 |goto Nagrand D 50.4,19.3
+Explore Broken Precipice |achieve 8942/2 |goto 50.4,19.3
 step
-Explore Highmaul Harbor |achieve 8942/5 |goto Nagrand D 37.4,32.4
+Explore Highmaul Harbor |achieve 8942/5 |goto 37.4,32.4
 step
-Explore Mok'gol Watchpost |achieve 8942/9 |goto Nagrand D 42.7,33.2
+Explore Mok'gol Watchpost |achieve 8942/9 |goto 42.7,33.2
 step
-Explore Lok-rath |achieve 8942/7 |goto Nagrand D 53.4,43.3
+Explore Lok-rath |achieve 8942/7 |goto 53.4,43.3
 step
-Explore Ancestral Grounds |achieve 8942/1 |goto Nagrand D 41.2,56.4
+Explore Ancestral Grounds |achieve 8942/1 |goto 41.2,56.4
 step
-Explore Oshu'gun |achieve 8942/10 |goto Nagrand D 47.2,61.0
+Explore Oshu'gun |achieve 8942/10 |goto 47.2,61.0
 step
-Explore Ironfist Harbor |achieve 8942/6 |goto Nagrand D 43.9,76.3
+Explore Ironfist Harbor |achieve 8942/6 |goto 43.9,76.3
 step
-Congratulations, you earned the _Draenor Explorer_ Achievement!
+|achieve 8942
+step
+_Congratulations!_
+You Earned the "Explore Nagrand" Achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Field Photographer",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Draenor Explorer",{
+condition_end=function() return achieved(8935) end,
+achieveid={8935},
+description="Earn the following Draenor exploration achievements:\n\nExplore Frostfire Ridge\nExplore Gorgrond\n"..
+"Explore Spires of Arak\nExplore Shadowmoon Valley\nExplore Talador\nExplore Nagrand",
+},[[
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Shadowmoon Valley" 1-11
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Talador" 1-15
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Gorgrond" 1-14
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Frostfire Ridge" 1-15
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Spires of Arak" 1-17
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Nagrand" 1-15
+step
+_Congratulations!_
+You Earned the "Draenor Explorer" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Field Photographer",{
 achieveid={9924},
 description="Take a picture with the S.E.L.F.I.E. camera in various locations.",
 },[[
@@ -5265,7 +5369,7 @@ Take a S.E.L.F.I.E. in Moonglade |achieve 9924/29 |goto Moonglade/0 32.2,66.4
 step
 Take a S.E.L.F.I.E. in Nordrasil |achieve 9924/17 |goto Mount Hyjal/0 62.2,21.6
 step
-Take a S.E.L.F.I.E. in Orgrimmar |achieve 9924/43 |goto Orgrimmar/0 49.6,59.0
+Take a S.E.L.F.I.E. in Orgrimmar |achieve 9924/43 |goto Orgrimmar/1 49.6,59.0
 step
 Take a S.E.L.F.I.E. in the Echo Isles |achieve 9924/35 |goto Echo Isles/0 38.6,46.5
 step
@@ -5354,7 +5458,7 @@ Use your Camera to take a Selfie |use SELFIE Camera MKI##122637
 step
 Congratulations, you are now a Field Photographer!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Master/Grand Treasure Hunter",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Master/Grand Treasure Hunter",{
 condition_end=function() return achieved(9728) end,
 achieveid={9726, 9727, 9728,9728},
 keywords={"Master","Treasure","Hunter"},
@@ -6491,7 +6595,7 @@ click Warsong Helm##233645 |q 36073 |future |goto Nagrand D 52.41,44.38
 step
 Congratulations! You earned the _Grand Treasure Hunter_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Gorgrond Monster Hunter",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Gorgrond Monster Hunter",{
 achieveid={9400},
 description="Slay the rare elites in Gorgrond.",
 },[[
@@ -6530,7 +6634,7 @@ kill Biolante##75207 |achieve 9400/1 |goto Gorgrond 63.0,54.6
 step
 Congratulations, you have _earned_ the Gorgrond Monster Hunter Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Prove Your Strength",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Prove Your Strength",{
 achieveid={9402},
 description="Complete the following Proofs of Strength in Gorgrond.",
 },[[
@@ -6607,7 +6711,7 @@ turnin Proof of Strength: Ancient Branch##36094 |goto Gorgrond 46.2,69.6 |achiev
 step
 Congratulations, you have _earned_ the Prove Your Strength Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Shredder Maniac",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Shredder Maniac",{
 achieveid={9401},
 description="Collect 12 or more Hardened Thornvines in Gorgrond.",
 },[[
@@ -6624,7 +6728,7 @@ achieve 9401
 step
 Congratulations, you have _earned_ the Shredder Maniac Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Draenor Pathfinder",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor Pathfinder",{
 achieveid={10018},
 description="This guide will walk you through completing the Draenor Pathfinder Achievement.",
 condition_suggested=function() return level >= 90 and level <= 100 and not achieved(10018) end,
@@ -6644,7 +6748,7 @@ Tanaan Diplomat |achieve 10018/5
 step
 Congratulations, you earned the _Draenor Pathfinder_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Jungle Treasure Hunter/Master",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Jungle Treasure Hunter/Master",{
 condition_end=function() return achieved(10262) end,
 achieveid={10261, 10262,10262},
 description="This guide will walk you through discovering all of the treasures in Tanaan Jungle.",
@@ -6989,7 +7093,7 @@ Congratulations! You earned the: |only if achieved(10262)
 _Jungle Treasure Hunter_ Achievement |only if achieved(10262)
 _Jungle Treasure Master_ Achievement |only if achieved(10262)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Jungle Hunter/Stalker",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Jungle Hunter/Stalker",{
 condition_end=function() return achieved(10070) end,
 achieveid={10259, 10070,10070},
 description="This guide will walk you through defeating all of the rare creatures in Tanaan Jungle.",
@@ -7374,7 +7478,7 @@ Congratulations! You earned the: |only if achieved(10070)
 _Jungle Hunter_ Achievement |only if achieved(10070)
 _Jungle Stalker_ Achievement |only if achieved(10070)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Explore Tanaan Jungle",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Explore Tanaan Jungle",{
 achieveid={10260},
 description="Explore Tanaan Jungle, revealing the covered areas of the world map.",
 },[[
@@ -7429,7 +7533,7 @@ Explore Zeth'Kur |achieve 10260/1 |goto Tanaan Jungle/0 73.1,69.0
 step
 Congratulations, you earned the _Explore Tanaan Jungle_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\I Came, I Clawed, I Conquered",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\I Came, I Clawed, I Conquered",{
 achieveid={10069},
 description="Loot 5,000 Blackfang Claws from saberon at Fang'rila in Tanaan Jungle.",
 },[[
@@ -7441,7 +7545,7 @@ collect 5000 Blackfang Claw##124099 |achieve 10069
 step
 Congratulations, you earned the _I Came, I Clawed, I Conquered_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Hellbane",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Hellbane",{
 achieveid={10061},
 description="Defeat all of the champions of Tanaan Jungle.",
 },[[
@@ -7461,7 +7565,7 @@ kill Vengeance##95054 |goto Tanaan Jungle 32.5,74.0 |achieve 10061/3
 step
 Congratulations, you earned the _Hellbane_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\General\\Savagely Superior",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Savagely Superior",{
 achieveid={9707},
 description="Wear an item with a minimal level of 608 or greater in each slot.",
 },[[
@@ -7490,7 +7594,7 @@ Head |achieve 9707/15
 step
 Congratulations, you have earned the _Savagely Superior_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\General\\Savagely Epic",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Savagely Epic",{
 achieveid={9708},
 description="Wear an item with a minimal level of 640 or greater in each slot.",
 },[[
@@ -7520,7 +7624,7 @@ Weapon |achieve 9708/15
 step
 Congratulations, you have earned the _Savagely Epic_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\General\\Draenor Cuisine",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Draenor Cuisine",{
 achieveid={9502},
 description="Sample various Draenor foods.",
 },[[
@@ -7731,7 +7835,7 @@ Sample the Talador Surf and Turf |achieve 9502/20 |use Talador Surf and Turf##11
 step
 Congratulations, you have earned the _Draenor Cuisine_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\General\\Everything Is Awesome",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Everything Is Awesome",{
 achieveid={9547},
 description="Throw Twenty Awesomefish.",
 },[[
@@ -7758,7 +7862,7 @@ Throw 20 fish at random NPC's in your Garrison |goto Frostwall/0 40.5,52.9
 step
 Congratulations, you have earned the _Everything Is Awesome_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\General\\Got My Mind On My Draenor Money",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Got My Mind On My Draenor Money",{
 achieveid={9487},
 description="Loot 10,000 gold in Draenor.",
 },[[
@@ -7768,7 +7872,7 @@ Loot _10,000_ gold in Draenor |achieve 9487/1
 step
 Congratulations, you have earned the _Got My Mind On My Draenor Money_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Legacy\\Professions\\Draenor Medic",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Professions\\Draenor Medic",{
 achieveid={9505},
 description="This achievement was earned prior to patch 8.0 and can no longer be obtained.",
 },[[
@@ -7776,7 +7880,7 @@ step
 This achievement can no longer be obtained!
 |tip It was earned prior to patch 8.0,
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Tiny Terrors in Tanaan",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Tiny Terrors in Tanaan",{
 achieveid={10052},
 description="This guide will help you earn the Tiny Terrors in Tanaan achievement.",
 },[[
@@ -7861,7 +7965,7 @@ Defeat Defiled Earth |achieve 10052/15 |goto Tanaan Jungle/0 75.4,37.4
 step
 Congratulations, you have earned the _Tiny Terrors in Tanaan_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\An Awfully Big Adventure",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\An Awfully Big Adventure",{
 achieveid={9069},
 description="Defeat trainers with an Elekk Plushie on your team.",
 },[[
@@ -7961,7 +8065,7 @@ Two of the trainers can only be defeated when the _Darkmoon Faire_ is in town
 step
 Congratulations, you have _earned_ the An Awfully Big Adventure Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Draenic Pet Battler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Draenic Pet Battler",{
 achieveid={9463},
 description="Win 500 pet battles in Draenor.",
 },[[
@@ -7971,7 +8075,7 @@ _Win_ #500# pet battles in Draenor |achieve 9463 |goto Frostfire Ridge 54,20
 step
 Congratulations, you have _earned_ the Draenic Pet Battler Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Draenor Safari",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Draenor Safari",{
 achieveid={9685},
 description="Catch every battle pet in Draenor.",
 },[[
@@ -8057,17 +8161,17 @@ Make sure you train up level 25 Pets
 step
 Congratulations, you have _earned_ the Draenor Safari Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Overstuffed",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Overstuffed",{
 achieveid={9070},
 description="Raise an Elekk Plushie to level 25.",
 },[[
 step
-_Click here_ to obtain an Elekk Plushie |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Elekk Plushie"
+_Click here_ to obtain an Elekk Plushie |confirm |next "Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Elekk Plushie"
 _Raise an Elekk Plushie_ to level 25 |achieve 9070
 step
 Congratulations, you have earned the _Overstuffed_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Pet Charmer",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Pet Charmer",{
 achieveid={9712},
 description="Earn 500 Pet Charms.",
 },[[
@@ -8132,7 +8236,7 @@ You need to complete the _Battle Pet Questline_ for these dailies to show up
 step
 Congratulations, you have _earned_ the Pet Charmer Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\So. Many. Pets.",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\So. Many. Pets.",{
 achieveid={9643},
 description="Collect 600 unique pets.",
 },[[
@@ -8142,7 +8246,7 @@ _Collect_ #600# unique pets |achieve 9643
 step
 Congratulations, you have _earned_ the So. Many. Pets. Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Taming Draenor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Taming Draenor",{
 achieveid={9724},
 description="Defeat all of the Pet Tamers in Draenor.",
 },[[
@@ -8207,7 +8311,7 @@ You need to complete the _Battle Pet Questline_ for these dailies to show up
 step
 Congratulations, you have earned the _Taming Draenor_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Draenor Fisherman",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Draenor Fisherman",{
 achieveid={9503},
 description="Obtain 700 skill points in fishing.",
 },[[
@@ -8217,7 +8321,7 @@ achieve 9503
 step
 Congratulations, you have earned the _Draenor Fisherman_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Arakkoa Archivist",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Arakkoa Archivist",{
 achieveid={9412},
 description="Restore and display pristine versions of all Arakkoa artifacts.",
 },[[
@@ -8237,7 +8341,7 @@ Pristine Apexis Scroll |achieve 9412/10
 step
 Congratulations, you have earned the _Arakkoa Archivist_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Draenor Angler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Draenor Angler",{
 condition_end=function() return achieved(9462) end,
 achieveid={9455,9456,9457,9458,9459,9460,9461,9462},
 description="Complete the Angler achievements.",
@@ -8280,7 +8384,7 @@ _Fish here_ until you earn the achievement |achieve 9462/1 |goto Frostfire Ridge
 step
 Congratulations, you have _earned_ the Draenor Angler Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Draenor Archaeologist",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Draenor Archaeologist",{
 achieveid={9409},
 description="Obtain 700 skill points in archaeology.",
 },[[
@@ -8290,7 +8394,7 @@ achieve 9409
 step
 Congratulations, you have earned the _Draenor Archaeologist_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Draenor Cook",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Draenor Cook",{
 achieveid={9500},
 description="Obtain 700 skill points in cooking.",
 },[[
@@ -8300,7 +8404,7 @@ To obtain 700 skill points in Cooking _click here_. |confirm |next "Profession G
 step
 Congratulations, you have earned the _Draenor Cook_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Draenor Curator",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Draenor Curator",{
 achieveid={9419},
 description="Restore and display pristine versions of all Draenor artifacts.",
 },[[
@@ -8364,7 +8468,7 @@ Pristine Imperial Decree Stele |achieve 9419/49
 step
 Congratulations, you have _earned_ the Draenor Curator Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Draenor Fisherman",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Draenor Fisherman",{
 achieveid={9503},
 description="Obtain 700 skill points in fishing.",
 },[[
@@ -8374,7 +8478,7 @@ achieve 9503
 step
 Congratulations, you have earned the _Draenor Fisherman_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Draenor Master",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Draenor Master",{
 achieveid={9464},
 description="Obtain 700 skill points in a profession.",
 },[[
@@ -8395,7 +8499,7 @@ _Click here_ for Tailoring |confirm |next "Profession Guides\\Tailoring\\Levelin
 step
 Congratulations, you have earned the _Draenor Master_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Draenic Seed Collector",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Draenic Seed Collector",{
 achieveid={9454},
 description="Collect 500 Draenic Seeds.",
 },[[
@@ -8408,7 +8512,7 @@ _Collect_ #500# Draenic Seeds |achieve 9454
 step
 Congratulations, you have _earned_ the Draenic Seed Collector Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Grand Master of All",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Grand Master of All",{
 achieveid={9087},
 description="Raise all primary professions to 700 skill points.",
 },[[
@@ -8428,7 +8532,7 @@ _Click here_ for Tailoring |achieve 9087/11 |confirm |next "Profession Guides\\T
 step
 Congratulations, you have earned the _Grand Master of All_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Highmaul Historian",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Highmaul Historian",{
 achieveid={9411},
 description="Restore and display pristine versions of all Ogre artifacts.",
 },[[
@@ -8448,7 +8552,7 @@ Pristine Imperial Decree Stele |achieve 9411/10
 step
 Congratulations, you have _earned_ the Highmaul Historian Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Inspector Gadgetzan",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Inspector Gadgetzan",{
 achieveid={9071},
 description="Acquire decoded messages from Blingtron 5000.",
 },[[
@@ -8467,7 +8571,7 @@ Decoded Message 001-168 |achieve 9071/8
 step
 Congratulations, you have _earned_ the Inspector Gadgetzan Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Ogre Observer",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Ogre Observer",{
 achieveid={9414},
 description="Discover the Ogre artifacts.",
 },[[
@@ -8491,7 +8595,7 @@ Stonemaul Succession Stone |achieve 9414/10
 step
 Congratulations, you have _earned_ the Ogre Observer Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Savage Skills to Pay the Bills",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Savage Skills to Pay the Bills",{
 achieveid={9506},
 description="Obtain 700 skill points in Fishing, First Aid, Cooking, and Archaeology.",
 },[[
@@ -8504,7 +8608,7 @@ _Click here_ for Fishing |achieve 9506/4 |confirm |next "Profession Guides\\Fish
 step
 Congratulations, you have earned the _Savage Skills to Pay the Bills_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Secrets of Skettis",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Secrets of Skettis",{
 achieveid={9415},
 description="Discover the Arakkoa artifacts.",
 },[[
@@ -8524,7 +8628,7 @@ Apexis Scroll |achieve 9415/10
 step
 Congratulations, you have _earned_ the Secrets of Skettis Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Strength and Honor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Strength and Honor",{
 achieveid={9413},
 description="Discover the Draenor Clans artifacts.",
 },[[
@@ -8553,7 +8657,7 @@ Wolfskin Snowshoes |achieve 9413/19
 step
 Congratulations, you have _earned_ the Strength and Honor Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\The Draenor Gourmet",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\The Draenor Gourmet",{
 achieveid={9501},
 description="Cook 20 of the Draenor recipes listed below.",
 },[[
@@ -8710,7 +8814,7 @@ create Talador Surf and Turf##160984,Cooking,1 total |condition achieved(9501/10
 step
 Congratulations, you have _earned_ the The Draenor Gourmet Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\The Search For Fact, Not Truth",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\The Search For Fact, Not Truth",{
 achieveid={9422},
 description="Find 30 rare artifacts.",
 },[[
@@ -8723,7 +8827,7 @@ _Find_ #30# rare artifacts |achieve 9422 |tip These are randomly solved with Arc
 step
 Congratulations, you have _earned_ the The Search For Fact, Not Truth Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Unite the Clans",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Unite the Clans",{
 achieveid={9410},
 description="Restore and display pristine versions of all Draenor Clans artifacts.",
 },[[
@@ -8756,7 +8860,7 @@ Pristine Doomsday Prophecy |achieve 9410/19
 step
 Congratulations, you have _earned_ the Unite the Clans Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Working in Draenor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Working in Draenor",{
 achieveid={9507},
 description="Obtain 700 skill points in two primary professions.",
 },[[
@@ -8776,7 +8880,7 @@ _Click here_ for Tailoring |confirm |next "Profession Guides\\Tailoring\\Levelin
 step
 Congratulations, you have earned the _Working in Draenor_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Loremaster of Draenor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Loremaster of Draenor",{
 achieveid={9923},
 description="Complete the Draenor quest achievements.",
 },[[
@@ -8785,15 +8889,15 @@ Use these Draenor Leveling Guides to complete Loremaster:
 |tip The Leveling guides cover all required questlines for Loremaster.
 |tip Click one of the lines below to load the Leveling guide for that zone.
 condition achieved(9923) |next
-Frostfire Ridge |condition achieved(9923,4) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Frostfire Ridge (90-100)"
-Gorgrond |condition achieved(9923,5) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Gorgrond (92-100)"
-Talador |condition achieved(9923,1) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-100)"
-Spires of Arak |condition achieved(9923,2) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-100)"
-Nagrand |condition achieved(9923,3) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
+Frostfire Ridge |condition achieved(9923,4) |confirm always |next "Leveling Guides\\Draenor (90-100)\\Frostfire Ridge (90-100)"
+Gorgrond |condition achieved(9923,5) |confirm always |next "Leveling Guides\\Draenor (90-100)\\Gorgrond (92-100)"
+Talador |condition achieved(9923,1) |confirm always |next "Leveling Guides\\Draenor (90-100)\\Talador (94-100)"
+Spires of Arak |condition achieved(9923,2) |confirm always |next "Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-100)"
+Nagrand |condition achieved(9923,3) |confirm always |next "Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
 step
 Congratulations, you earned the _Loremaster of Draenor_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\A Demidos of Reality",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\A Demidos of Reality",{
 achieveid={9437},
 description="Defeat Demidos, Devourer of Lights in Socrethar's Rise.",
 },[[
@@ -8811,7 +8915,7 @@ kill Demidos##84911 |achieve 9437 |goto Shadowmoon Valley D 46.0,71.7
 step
 Congratulations, you have _earned_ the A Demidos of Reality Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\A-VOID-ance",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\A-VOID-ance",{
 achieveid={9433},
 description="Defeat Kenos without using Void Implosion to slay any Coalesced Void Fragments in the Shadowmoon Enclave.",
 },[[
@@ -8831,7 +8935,7 @@ kill Kenos the Unraveler##85037 |achieve 9433 |goto Spires of Arak 70.4,24.2
 step
 Congratulations, you have _earned_ the A-VOID-ance Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Ancient No More",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Ancient No More",{
 achieveid={9678},
 description="Defeat all of the rare creatures in the Everbloom Wilds.",
 },[[
@@ -8876,7 +8980,7 @@ kill Grove Warden Yal##88583 |achieve 9678/8 |goto Gorgrond 59.6,43.0
 step
 Congratulations, you have _earned_ the Ancient No More Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Arak Star",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Arak Star",{
 achieveid={9605},
 description="Complete the Spires of Arak bonus objectives listed below.",
 },[[
@@ -9041,7 +9145,7 @@ kill 25 Shattered Hand Orc |q Bonus Objective: Bladefist Hold##36792/1 |goto Spi
 step
 Congratulations, you have _earned_ the Arak Star Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Frostfire Fridge",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Frostfire Fridge",{
 achieveid={9606},
 description="Complete the 3 Bonus Objectives in Frostfire Ridge.",
 },[[
@@ -9094,7 +9198,7 @@ Complete the Bonus Objective: Frostbite Hollow |achieve 9606/2
 step
 Congratulations, you have earned the _Frostfire Fridge_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Between Arak and a Hard Place",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Between Arak and a Hard Place",{
 achieveid={8926},
 description="Complete the Spires of Arak storylines.",
 },[[
@@ -9114,7 +9218,7 @@ _Please refer to our Spires of Arak leveling guide_ to earn this achievement.
 step
 Congratulations, you have earned the _Between Arak and a Hard Place_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Bobbing for Orcs",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Bobbing for Orcs",{
 achieveid={9635},
 description="Dispose of 40 floating orcs in Shattrath City.",
 },[[
@@ -9132,7 +9236,7 @@ _Dispose_ of #40# floating orcs in Shattrath City |achieve 9635 |goto Talador 45
 step
 Congratulations, you have _earned_ the Bobbing for Orcs Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Breaker of Chains",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Breaker of Chains",{
 achieveid={9533},
 description="Free 50 slaves from captivity in the Bloodmaul Stronghold.",
 },[[
@@ -9150,7 +9254,7 @@ _Free_ #50# slaves from captivity in the Bloodmaul Stronghold |achieve 9533 |got
 step
 Congratulations, you have _earned_ the Breaker of Chains Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Broke Back Precipice",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Broke Back Precipice",{
 achieveid={9571},
 description="Defeat the powerful foes within Broken Precipice.",
 },[[
@@ -9173,7 +9277,7 @@ kill Pit Slayer##87846 |achieve 9571/3 |goto Nagrand D 38.8,13.8
 step
 Congratulations, you have _earned_ the Broke Back Precipice Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Buried Treasures",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Buried Treasures",{
 achieveid={9548},
 description="Find all of the Warsong objects within Mok'gol Watchpost.",
 },[[
@@ -9209,7 +9313,7 @@ clicknpc Gnarled Bone##87528 |achieve 9548/6
 step
 Congratulations, you have _earned_ the Buried Treasures Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Burn it to the Ground",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Burn it to the Ground",{
 achieveid={9667},
 description="Burn 100 trees in the Everbloom Wilds.",
 },[[
@@ -9228,7 +9332,7 @@ _Burn_ #100# trees in the Everbloom Wilds |achieve 9667 |goto Gorgrond 72.4,38.6
 step
 Congratulations, you have _earned_ the Burn it to the Ground Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\By Fire Be... Merged?",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\By Fire Be... Merged?",{
 achieveid={9537},
 description="Complete the quest 'Rekindling an Old Flame' without using a Kindling Flame to rekindle the essence in Magnarok.",
 },[[
@@ -9253,7 +9357,7 @@ turnin Rekindling an Old Flame##37204 |goto Frostfire Ridge 74.8,30.0
 step
 Congratulations, you have _earned_ the By Fire Be... Merged? Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Chapter I: Call of the Archmage",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Chapter I: Call of the Archmage",{
 achieveid={9640},
 description="This achievement was part of a legendary quest line that has been removed from the game.",
 },[[
@@ -9261,7 +9365,7 @@ step
 This achievement was part of a legendary quest line that has been removed from the game
 |tip You can no longer earn it.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Chapter II: Gul'dan Strikes Back",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Chapter II: Gul'dan Strikes Back",{
 achieveid={9641},
 description="This achievement was part of a legendary quest line that has been removed from the game.",
 },[[
@@ -9269,7 +9373,7 @@ step
 This achievement was part of a legendary quest line that has been removed from the game
 |tip You can no longer earn it.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Chapter III: The Foundry Falls",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Chapter III: The Foundry Falls",{
 achieveid={9642},
 description="This achievement was part of a legendary quest line that has been removed from the game.",
 },[[
@@ -9277,7 +9381,7 @@ step
 This achievement was part of a legendary quest line that has been removed from the game
 |tip You can no longer earn it.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Chapter IV: Darkness Incarnate",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Chapter IV: Darkness Incarnate",{
 achieveid={10148},
 description="This achievement was part of a legendary quest line that has been removed from the game.",
 },[[
@@ -9285,7 +9389,7 @@ step
 This achievement was part of a legendary quest line that has been removed from the game
 |tip You can no longer earn it.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Charged Up",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Charged Up",{
 achieveid={9634},
 description="Defeat 30 Shadow Council members while under the effects of Arkonite Empowerment in Shattrath City.",
 },[[
@@ -9307,7 +9411,7 @@ _Defeat_ #30# Shadow Council members while under the effects of Arkonite Empower
 step
 Congratulations, you have _earned_ the Charged Up Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Cut off the Head",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Cut off the Head",{
 achieveid={9633},
 description="Defeat all of the rare creatures in Shattrath City.",
 },[[
@@ -9346,7 +9450,7 @@ kill Xothear, the Destroyer##82922 |achieve 9633/8 |goto Talador 38.0,14.6
 step
 Congratulations, you have _earned_ the Cut off the Head Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Delectable Ogre Delicacies",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Delectable Ogre Delicacies",{
 achieveid={9534},
 description="Gain the well fed effects from Toasted Roach Crunchies, Pickled Rat Skewers, and Charred Boar Chops at the same time in Bloodmaul Stronghold.",
 },[[
@@ -9371,7 +9475,7 @@ achieve 9534 |goto Frostfire Ridge 48,15
 step
 Congratulations, you have _earned_ the Delectable Ogre Delicacies Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Don't Let the Tala-door Hit You on the Way Out",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Don't Let the Tala-door Hit You on the Way Out",{
 achieveid={8919},
 description="Complete the Talador storylines.",
 },[[
@@ -9385,7 +9489,7 @@ _Please refer to our Talador leveling guide_ to earn this achievement.
 step
 Congratulations, you have earned the _Don't Let the Tala-door Hit You on the Way Out_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Eggs in One Basket",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Eggs in One Basket",{
 achieveid={9612},
 description="Escort Arakkoa Outcasts to Outcast Darkscryer with 100 morale during Operation: Skettis Ruins.",
 },[[
@@ -9407,7 +9511,7 @@ achieve 9612 |goto Spires of Arak 59.6,11.4
 step
 Congratulations, you have _earned_ the Eggs in One Basket Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Fight the Power",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Fight the Power",{
 achieveid={9655},
 description="Defeat all of the rare creatures in The Pit.",
 },[[
@@ -9442,7 +9546,7 @@ kill Morgo Kain##86582 |achieve 9655/7 |goto Gorgrond 49.0,22.6
 step
 Congratulations, you have _earned_ the Fight the Power Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\King of the Monsters",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\King of the Monsters",{
 achieveid={9601},
 description="Defeat each of the following creatures while evolved in the Lost Veil Anzu",
 },[[
@@ -9477,7 +9581,7 @@ kill Mecha Plunderer##87026 |achieve 9601/4 |goto Spires of Arak 74.4,38.6
 step
 Congratulations, you have _earned_ the King of the Monsters Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Monster Mash",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Monster Mash",{
 achieveid={9600},
 description="Complete both of the following Evolutions in the Lost Veil Anzu",
 },[[
@@ -9502,7 +9606,7 @@ Once 5 Ogres are dead and consumed you should evolve into the Gluttonous Giant! 
 step
 Congratulations, you have _earned_ the Monster Mash Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Rumble in the Jungle",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Rumble in the Jungle",{
 achieveid={10265},
 description="Complete all of the Tanaan Jungle Achievements below",
 },[[
@@ -9537,7 +9641,7 @@ Jungle Treasure Master |achieve 10265/8
 step
 Congratulations, you have _earned_ the Rumble in the Jungle Achievement and the "of the jungle" Title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Writing in the Snow",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Writing in the Snow",{
 achieveid={9531},
 description="Find Shadow Hunter Bwu'ja's tattered journal page in the Bloodmaul Stronghold",
 },[[
@@ -9561,7 +9665,7 @@ turnin Writing in the Snow##35736 |achieve 9531 |goto Frostwall 45.7,43.2
 step
 Congratulations, you have _earned_ the Writing in the Snow Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Fish Gotta Swim, Birds Gotta Eat",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Fish Gotta Swim, Birds Gotta Eat",{
 achieveid={9613},
 description="Steal a fish from a Kaliri before it successfully eats it then consume it in Skettis Ruins.",
 },[[
@@ -9582,7 +9686,7 @@ click Spiced Barbed Trout##233805
 step
 Congratulations, you have _earned_ the Fish Gotta Swim, Birds Gotta Eat Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Goodness Gracious",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Goodness Gracious",{
 achieveid={9486},
 description="Activate 12 different Fel Runes within 6 seconds and live to tell the tale in Shattrath City.",
 },[[
@@ -9607,7 +9711,7 @@ Activate #12# Runes within six seconds |achieve 9486 |goto Talador 34.6,46.2
 step
 Congratulations, you have _earned_ the Goodness Gracious Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Heralds of the Legion",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Heralds of the Legion",{
 achieveid={9638},
 description="Defeat all the rare creatures in Shattrath City.",
 },[[
@@ -9642,7 +9746,7 @@ kill Vigilant Paarthos##88436 |achieve 9638/7 |goto Talador 37.4,43.0
 step
 Congratulations, you have _earned_ the Heralds of the Legion Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\History of Violence",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\History of Violence",{
 achieveid={9610},
 description="Unearth the ancient ogre relics in Broken Precipice.",
 },[[
@@ -9671,7 +9775,7 @@ achieve 9610/4
 step
 Congratulations, you have _earned_ the History of Violence Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\I Want More Talador",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\I Want More Talador",{
 achieveid={9674},
 description="Complete the Talador bonus objectives.",
 },[[
@@ -9739,7 +9843,7 @@ achieve 9674/4
 step
 Congratulations, you have _earned_ the I Want More Talador Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\I Was Framed!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\I Was Framed!",{
 achieveid={9483},
 description="Bait a Darkwing Matron into ambushing a Darktide Rylakinator-3000 while in Darktide Roost.",
 },[[
@@ -9758,7 +9862,7 @@ The _matron will attack_ the Rylakinator instead of you |achieve 9483 |goto Shad
 step
 Congratulations, you have _earned_ the I Was Framed! Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\In Plain Sight",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\In Plain Sight",{
 achieveid={9656},
 description="Find the Iron Horde Attack Plans in The Pit.",
 },[[
@@ -9781,7 +9885,7 @@ achieve 9656
 step
 Congratulations, you have _earned_ the In Plain Sight Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Iron Wings",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Iron Wings",{
 achieveid={9659},
 description="Use the Iron Troop Launcher in The Pit to get launched through four rings in 3 minutes.",
 },[[
@@ -9805,7 +9909,7 @@ achieve 9659
 step
 Congratulations, you have _earned_ the Iron Wings Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\It's the Stones!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\It's the Stones!",{
 achieveid={9436},
 description="Destroy 5 Draenic Darkstones in Socrethar's Rise.",
 },[[
@@ -9832,7 +9936,7 @@ _Click_ the stone here [Shadowmoon Valley D 44.8,82.5]
 step
 Congratulations, you have _earned_ the It's the Stones! Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Make It a Bonus",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Make It a Bonus",{
 achieveid={9607},
 description="Complete the Gorgrond bonus objectives.",
 },[[
@@ -9997,7 +10101,7 @@ achieve 9607/9
 step
 Congratulations, you have earned the _Make It a Bonus_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Making the Cut",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Making the Cut",{
 achieveid={9617},
 description="Defeat Krud the Eviscerator in the Gorian Proving Grounds.",
 },[[
@@ -10007,7 +10111,7 @@ kill Krud the Eviscerator##88210 |achieve 9617/1 |goto Nagrand D 58.2,12.0
 step
 Congratulations, you have earned the _Making the Cut_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Master Relic Hunter",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Master Relic Hunter",{
 condition_end=function() return achieved(9836) end,
 achieveid={9901,9836},
 description="This guide will walk you through completing all 6 Relic Hunter quests offered by Harrison Jones in your garrison.",
@@ -10333,7 +10437,7 @@ You have finished today's daily Treasure Contract! Check back tomorrow |only if 
 Congratulations, you now have the Master Relic Hunter achivement! |achieve 9836 |only if achieved(9836)
 Click here to return to the menu |confirm |next "Start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Mean and Green",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Mean and Green",{
 achieveid={9654},
 description="Reach 10 stacks of Mutagen in the Everbloom Wilds.",
 },[[
@@ -10350,7 +10454,7 @@ _Gain_ 10 stacks of Mutagen
 step
 Congratulations, you have _earned_ the Mean and Green Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Nagrandeur",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Nagrandeur",{
 achieveid={8928},
 description="Complete the Nagrand storylines.",
 },[[
@@ -10368,7 +10472,7 @@ Please refer to our _Nagrand Leveling Guide_ to earn this achievement
 step
 Congratulations, you have earned the _Nagrandeur_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\On the Shadow's Trail",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\On the Shadow's Trail",{
 achieveid={9529},
 description="Complete the Shadowmoon Valley storyline 'To Catch a Shadow'.",
 },[[
@@ -10380,7 +10484,7 @@ _Please refer to our Frostfire Ridge leveling guide_ to earn this achievement
 step
 Congratulations, you have earned the _On the Shadow's Trail_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\One of Us! One of Us!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\One of Us! One of Us!",{
 achieveid={9434},
 description="Gain Power Overwhelming while inside the realm of the void in the Shadowmoon Enclave.",
 },[[
@@ -10400,7 +10504,7 @@ _Gain_ the Power Overwhelming buff |achieve 9434
 step
 Congratulations, you have _earned_ the One of Us! One of Us! Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Picky Palate", {
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Picky Palate", {
 achieveid={9663},
 description="Benefit from the effects of a Prickly Guava, a Lovely Coconut, and Gorgraberries at once in Everbloom Wilds.",
 },[[
@@ -10426,7 +10530,7 @@ achieve 9663
 step
 Congratulations, you have _earned_ the Picky Palate Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Pillars of Draenor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Pillars of Draenor",{
 achieveid={9658},
 description="Hold the power of all 3 pillars of power in the Everbloom Wilds simultaneously.",
 },[[
@@ -10443,7 +10547,7 @@ achieve 9658
 step
 Congratulations, you have _earned_ the Pillars of Draenor Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Planned to Fail", {
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Planned to Fail", {
 achieveid={9711},
 description="Destroy 10 Secret Warplans in Iron Siegeworks.",
 },[[
@@ -10458,7 +10562,7 @@ Destroy #10# Secret Warplans in Iron Siegeworks |achieve 9711/1 |goto Frostfire 
 step
 Congratulations, you have _earned_ the Planned to Fail Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Poisoning the Well",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Poisoning the Well",{
 achieveid={9710},
 description="Poison 10 Kegs of Impaler Ale in Iron Siegeworks.",
 },[[
@@ -10472,7 +10576,7 @@ _Poison_ #10# Kegs of Impaler Ale scattered throughout the area |achieve 9710/1 
 step
 Congratulations, you have _earned_ the Poisoning the Well Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Poor Communication",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Poor Communication",{
 achieveid={9637},
 description="Burn 30 Sargerei Missives in Shattrath City.",
 },[[
@@ -10493,7 +10597,7 @@ These spots should be enough to go back and farm them repeatedly
 step
 Congratulations, you have _earned_ the Poor Communication Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Putting the Gore in Gorgrond", {
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Putting the Gore in Gorgrond", {
 achieveid={8924},
 description="Complete the Gorgrond storylines.",
 },[[
@@ -10507,7 +10611,7 @@ _Please refer to our Gorgrond leveling guide_ to earn this achievement.
 step
 Congratulations, you have earned the _Putting the Gore in Gorgrond_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Securing Draenor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Securing Draenor",{
 achieveid={9562},
 description="Complete the Draenor bonus objectives.",
 },[[
@@ -10520,16 +10624,16 @@ Assault on Magnarok |achieve 9562/3
 Assault on the Pit |achieve 9562/4
 Assault on the Everbloom Wilds |achieve 9562/5
 Assault on the Broken Precipice |achieve 9562/6
-Assault on Mok'gol Watchpost |achieve 9562/7
-Assault on Socrethar's Rise |achieve 9562/8
-Assault on Darktide Roost |achieve 9562/9
-Assault on PIllars of Fate |achieve 9562/10
-Assault on Shattrath Harbor  |achieve 9562/11
+Assault on Shattrath Harbor  |achieve 9562/7
+Assault on Mok'gol Watchpost |achieve 9562/8
+Assault on Socrethar's Rise |achieve 9562/9
+Assault on Darktide Roost |achieve 9562/10
+Assault on PIllars of Fate |achieve 9562/11
 Assault on Skettis |achieve 9562/12
 step
 Congratulations, you earned the _Securing Draenor_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Slagnarok",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Slagnarok",{
 achieveid={9536},
 description="Defeat 20 creatures after slagging them with goren acid in Magnarok.",
 },[[
@@ -10548,7 +10652,7 @@ _Defeat_ #20# creatures |achieve 9536/1 |goto Frostfire Ridge 70.8,28.6
 step
 Congratulations, you have _earned_ the Slagnarok Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Take From Them Everything",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Take From Them Everything",{
 achieveid={9435},
 description="Maintain one of the beneficial effects from destroying Sargerei supplies for 10 minutes in Socrethar's Rise.",
 },[[
@@ -10566,7 +10670,7 @@ achieve 9435
 step
 Congratulations, you have _earned_ the Take From Them Everything Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\That Was Entirely Unnecessary",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\That Was Entirely Unnecessary",{
 achieveid={9535},
 description="Punt 100 Goren Eggs in Magnarok.",
 },[[
@@ -10582,13 +10686,13 @@ _Punt_ #100# Goren Eggs in Magnarok |achieve 9535/1 |goto Frostfire Ridge 70.8,2
 step
 Congratulations, you have _earned_ the That Was Entirely Unnecessary Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\The Garrison Campaign",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\The Garrison Campaign",{
 achieveid={9492},
 description="Complete the Garrison Campaign chapters.",
 },[[
 #include "Garrison_Campaign"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\The Power Is Yours",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\The Power Is Yours",{
 achieveid={9632},
 description="Combine the effects of all three types of Rune Crystals in Shattrath City.",
 },[[
@@ -10605,7 +10709,7 @@ The best area to have access to all three crystals at once is _around the Sha'ta
 step
 Congratulations, you have _earned_ the The Power Is Yours Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\The Song of Silence",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\The Song of Silence",{
 achieveid={9541},
 description="Defeat the elite Warsong of Mok'gol Watchpost.",
 },[[
@@ -10626,7 +10730,7 @@ kill Gortag Steelgrip##87344 |achieve 9541/4
 step
 Congratulations, you have _earned_ the The Song of Silence Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\United We Stand",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\United We Stand",{
 achieveid={9636},
 description="Free 10 captured guards in Shattrath City.",
 },[[
@@ -10649,7 +10753,7 @@ _Free_ #10# captured guards in Shattrath City |achieve 9636 |goto Talador 41.5,2
 step
 Congratulations, you have _earned_ the United We Stand Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Welcome to Draenor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Welcome to Draenor",{
 achieveid={8922},
 description="Complete the quest 'The Dark Portal'",
 },[[
@@ -10665,7 +10769,7 @@ achieve 8922
 step
 Congratulations, you have the _Welcome to Draenor_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\With a Nagrand Cherry On Top",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\With a Nagrand Cherry On Top",{
 achieveid={9615},
 description="Complete the Nagrand bonus objectives.",
 },[[
@@ -10731,7 +10835,7 @@ step
 label "end"
 Congratulations, you have _earned_ the With a Nagrand Cherry On Top Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Would You Like a Pamphlet?",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Would You Like a Pamphlet?",{
 achieveid={9432},
 description="Have all three incantations found in Forbidden Tomes active at once in the Shadowmoon Enclave.",
 },[[
@@ -10751,7 +10855,7 @@ _Gain_ all three buffs at once |achieve 9432
 step
 Congratulations, you have _earned_ the Would You Like a Pamphlet? Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\You Can't Make a Giant Omelette",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\You Can't Make a Giant Omelette",{
 achieveid={9479},
 description="Break the Giant Rylak Egg in Darktide Roost.",
 },[[
@@ -10773,7 +10877,7 @@ _Click_ the Giant Rylak Egg in the nest |achieve 9479 |goto Shadowmoon Valley D 
 step
 Congratulations, you have _earned_ the You Can't Make a Giant Omelette... Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\You Have Been Rylakinated!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\You Have Been Rylakinated!",{
 achieveid={9481},
 description="Defeat 10 Darkwing Adolescents within 3 minutes while driving a Rylakinator-3000 in Darktide Roost.",
 },[[
@@ -10790,7 +10894,7 @@ kill 10 Darkwing Adolescents##85357 |achieve 9481 |goto Shadowmoon Valley D 57.6
 step
 Congratulations, you have _earned_ the You Have Been Rylakinated! Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\You'll Get Caught Up In The... Frostfire!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\You'll Get Caught Up In The... Frostfire!",{
 achieveid={8671},
 description="Complete the Frostfire Ridge storylines.",
 },[[
@@ -10806,7 +10910,7 @@ _Please refer to our Frostfire Ridge leveling guide_ to earn this achievement.
 step
 Congratulations, you have earned the _You'll Get Caught Up In The... Frostfire!_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Draenor's Last Stand",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Draenor's Last Stand",{
 achieveid={10075},
 description="This guide will walk you through completing the Draenor's Last Stand achievement.",
 },[[
@@ -10825,7 +10929,7 @@ Temple of Sha'naar |achieve 10075/7
 step
 Congratulations, you earned the _Draenor's Last Stand_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Draenor\\Loremaster of Draenor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Loremaster of Draenor",{
 achieveid={9923},
 description="Complete all the storyline achievements in all the zones of the game.",
 },[[
@@ -10833,39 +10937,39 @@ step
 Use the Draenor Leveling Guides to complete Loremaster:
 |tip The Leveling guides cover all required questlines for Loremaster.
 |tip Click one of the lines below to load the Leveling guide for that zone.
-Frostfire Ridge Quests |achieve 8671 |loadguide "Zygor's Leveling Guides\\Draenor (90-100)\\Frostfire Ridge (90-100)"
-Gorgrond Quests |achieve 8924 |loadguide "Zygor's Leveling Guides\\Draenor (90-100)\\Gorgrond (92-100)"
-Talador Quests |achieve 8919 |loadguide "Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-100)"
-Spires of Arak Quests |achieve 8926 |loadguide "Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-100)"
-Nagrand Quests |achieve 8928 |loadguide "Zygor's Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
+Frostfire Ridge Quests |achieve 8671 |loadguide "Leveling Guides\\Draenor (90-100)\\Frostfire Ridge (90-100)"
+Gorgrond Quests |achieve 8924 |loadguide "Leveling Guides\\Draenor (90-100)\\Gorgrond (92-100)"
+Talador Quests |achieve 8919 |loadguide "Leveling Guides\\Draenor (90-100)\\Talador (94-100)"
+Spires of Arak Quests |achieve 8926 |loadguide "Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-100)"
+Nagrand Quests |achieve 8928 |loadguide "Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
 step
 Congratulations, you have _earned_ the _Loremaster of Draenor_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Arakkoa Outcasts",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Arakkoa Outcasts",{
 achieveid={9469},
 description="Earn Exalted status with the Arakkoa Outcasts.",
 },[[
 step
 This achievement _can be completed_ with the Arakkoa Outcasts Reputation Guide
-|confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
+|confirm |next "Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Frostwolf Orcs",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Frostwolf Orcs",{
 achieveid={9471},
 description="Earn Exalted status with the Frostwolf Orcs.",
 },[[
 step
 This achievement _can be completed_ with the Frostwolf Orcs Reputation Guide
-|confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Frostwolf Orcs"
+|confirm |next "Reputations Guides\\Warlords of Draenor\\Frostwolf Orcs"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Laughing Skull Orcs",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Laughing Skull Orcs",{
 achieveid={9475},
 description="Earn Exalted status with the Laughing Skull Orcs.",
 },[[
 step
 This achievement _can be completed_ with the Laughing Skull Orcs Reputation Guide
-|confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Laughing Skull Orcs"
+|confirm |next "Reputations Guides\\Warlords of Draenor\\Laughing Skull Orcs"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Mantle of the Talon King",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Mantle of the Talon King",{
 achieveid={9072},
 description="Complete the Terokk's Legacy storyline and earn Exalted status with the Arakkoa Outcasts.",
 },[[
@@ -10873,7 +10977,7 @@ step
 label "start"
 _Click here_ to complete the Terokk's Legacy storyline |confirm |next "terokk" |only if not completedq(35896)
 You have _completed_ the required Terokk's Legacy storyline |only if completedq(35896)
-_Click here_ to proceed to the reputation guide |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
+_Click here_ to proceed to the reputation guide |confirm |next "Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
 You have _reached_ Exalted with the Arakkoa Outcasts |only if rep('Arakkoa Outcasts')==Exalted
 step
 label "terokk"
@@ -10943,29 +11047,29 @@ talk Reshad##81770
 turnin The Avatar of Terokk##35896 |goto 46.49,46.67
 |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Savage Friends",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Savage Friends",{
 achieveid={9477},
 description="Earn Exalted with 3 Draenor reputations.",
 },[[
 step
 _Earn Exalted_ with 3 Draenor reputations.
-To earn exalted with the Arakkoa Outcasts _click here_. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
-To earn exalted with the Frostwolf Orcs _click here_. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Frostwolf Orcs"
-To earn exalted with the Laughing Skull Orcs _click here_. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Laughing Skull Orcs"
-To earn exalted with the Steamwheedle Preservation Society _click here_. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society"
+To earn exalted with the Arakkoa Outcasts _click here_. |confirm |next "Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
+To earn exalted with the Frostwolf Orcs _click here_. |confirm |next "Reputations Guides\\Warlords of Draenor\\Frostwolf Orcs"
+To earn exalted with the Laughing Skull Orcs _click here_. |confirm |next "Reputations Guides\\Warlords of Draenor\\Laughing Skull Orcs"
+To earn exalted with the Steamwheedle Preservation Society _click here_. |confirm |next "Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society"
 achieve 9477
 step
 Congratulations, you have earned the _Savage Friends_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Steamwheedle Perservation Society",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Steamwheedle Perservation Society",{
 achieveid={9472},
 description="Earn Exalted status with the Steamwheedle Perservation Society.",
 },[[
 step
 This achievement _can be completed_ with the Steamwheedle Perservation Society Reputation Guide
-confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society"
+confirm |next "Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Scenarios\\Proving Grounds\\Proving Yourself: Bronze Damage",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Proving Grounds\\Proving Yourself: Bronze Damage",{
 achieveid={9572},
 author="support@zygorguides.com",
 startlevel=90,
@@ -10989,7 +11093,7 @@ step
 _Congratulations!_
 You have earned the _Proving Yourself: Bronze Damage_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Scenarios\\Proving Grounds\\Proving Yourself: Bronze Tank",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Proving Grounds\\Proving Yourself: Bronze Tank",{
 achieveid={9578},
 author="support@zygorguides.com",
 startlevel=90,
@@ -11014,7 +11118,7 @@ step
 _Congratulations!_
 You have earned the _Proving Yourself: Bronze Tank_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Scenarios\\Proving Grounds\\Proving Yourself: Gold Damage",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Proving Grounds\\Proving Yourself: Gold Damage",{
 achieveid={9574},
 author="support@zygorguides.com",
 startlevel=90,
@@ -11046,7 +11150,7 @@ step
 _Congratulations!_
 You have earned the _Proving Yourself: Gold Damage_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Scenarios\\Proving Grounds\\Proving Yourself: Gold Tank",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Proving Grounds\\Proving Yourself: Gold Tank",{
 achieveid={9580},
 author="support@zygorguides.com",
 startlevel=90,
@@ -11076,7 +11180,7 @@ step
 _Congratulations!_
 You have earned the _Proving Yourself: Gold Tank_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Scenarios\\Proving Grounds\\Proving Yourself: Siliver Damage",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Proving Grounds\\Proving Yourself: Siliver Damage",{
 achieveid={9573},
 author="support@zygorguides.com",
 startlevel=90,
@@ -11106,7 +11210,7 @@ step
 _Congratulations!_
 You have earned the _Proving Yourself: Siliver Damage_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Scenarios\\Proving Grounds\\Proving Yourself: Silver Tank",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Proving Grounds\\Proving Yourself: Silver Tank",{
 achieveid={9579},
 author="support@zygorguides.com",
 startlevel=90,

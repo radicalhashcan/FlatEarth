@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("PoiRareLEG") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\POI Legion Rares",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\POI Legion Rares",{
 hidden=true,
 poi=true,
 poitype=rare,

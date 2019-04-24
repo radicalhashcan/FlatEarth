@@ -21,16 +21,6 @@ local DungeonNamesToMapNames = {
 setmetatable(DungeonNamesToMapNames,{__index=function(t,map) return map end})  -- return the same name if no alias is found
 Dungeons.DungeonNamesToMapNames  = DungeonNamesToMapNames
 
-local function UpdateDungeonItemlevels(dungeon)
-	-- get item requirements - if they're low enough, we just won't know it, but we won't care
-	local _,code,a,b = GetLFDLockInfo(dungeon.id,1)
-	if code==4 then
-		dungeon.min_ilevel = a
-	else
-		dungeon.min_ilevel = 0
-	end
-end
-
 Dungeons.ExpansionsLimits = {
 	[0] = 60,
 	[1] = 80,
@@ -45,31 +35,40 @@ Dungeons.ExpansionsLimits = {
 -- Timewalks and legion mythics do not have any lfg entry, so we need to hardcode basic data for them
 local hardcoded_dungeons = {
 	-- timewalk tbc
-	["e_249"] = {expansionLevel=1, minLevel=71, difficulty=24, name="Magisters' Terrace"},
-	["e_250"] = {expansionLevel=1, minLevel=71, difficulty=24, name="Mana-Tombs"},
-	["e_254"] = {expansionLevel=1, minLevel=71, difficulty=24, name="The Arcatraz"},
-	["e_255"] = {expansionLevel=1, minLevel=71, difficulty=24, name="The Black Morass"},
-	["e_259"] = {expansionLevel=1, minLevel=71, difficulty=24, name="The Shattered Halls"},
-	["e_260"] = {expansionLevel=1, minLevel=71, difficulty=24, name="The Slave Pens"},
+	["e_249"] = {expansionLevel=1, minLevel=61, difficulty=24, name="Magisters' Terrace"},
+	["e_250"] = {expansionLevel=1, minLevel=61, difficulty=24, name="Mana-Tombs"},
+	["e_254"] = {expansionLevel=1, minLevel=61, difficulty=24, name="The Arcatraz"},
+	["e_255"] = {expansionLevel=1, minLevel=61, difficulty=24, name="The Black Morass"},
+	["e_259"] = {expansionLevel=1, minLevel=61, difficulty=24, name="The Shattered Halls"},
+	["e_260"] = {expansionLevel=1, minLevel=61, difficulty=24, name="The Slave Pens"},
 	-- timewalk wotlk
-	["e_271"] = {expansionLevel=2, minLevel=81, difficulty=24, name="Ahn'kahet: The Old Kingdom"},
-	["e_274"] = {expansionLevel=2, minLevel=81, difficulty=24, name="Gundrak"},
-	["e_275"] = {expansionLevel=2, minLevel=81, difficulty=24, name="Halls of Lightning"},
-	["e_278"] = {expansionLevel=2, minLevel=81, difficulty=24, name="Pit of Saron"},
-	["e_281"] = {expansionLevel=2, minLevel=81, difficulty=24, name="The Nexus"},
-	["e_286"] = {expansionLevel=2, minLevel=81, difficulty=24, name="Utgarde Pinnacle"},
+	["e_271"] = {expansionLevel=2, minLevel=61, difficulty=24, name="Ahn'kahet: The Old Kingdom"},
+	["e_274"] = {expansionLevel=2, minLevel=61, difficulty=24, name="Gundrak"},
+	["e_275"] = {expansionLevel=2, minLevel=61, difficulty=24, name="Halls of Lightning"},
+	["e_278"] = {expansionLevel=2, minLevel=61, difficulty=24, name="Pit of Saron"},
+	["e_281"] = {expansionLevel=2, minLevel=61, difficulty=24, name="The Nexus"},
+	["e_286"] = {expansionLevel=2, minLevel=61, difficulty=24, name="Utgarde Pinnacle"},
 	-- timewalk cata
-	["e_184"] = {expansionLevel=3, minLevel=85, difficulty=24, name="End Time"},
-	["e_71"]  = {expansionLevel=3, minLevel=85, difficulty=24, name="Grim Batol"},
-	["e_69"]  = {expansionLevel=3, minLevel=85, difficulty=24, name="Lost City of the Tol'vir"},
-	["e_67"]  = {expansionLevel=3, minLevel=85, difficulty=24, name="The Stonecore"},
-	["e_68"]  = {expansionLevel=3, minLevel=85, difficulty=24, name="The Vortex Pinnacle"},
-	["e_65"]  = {expansionLevel=3, minLevel=85, difficulty=24, name="Throne of the Tides"},
+	["e_184"] = {expansionLevel=3, minLevel=81, difficulty=24, name="End Time"},
+	["e_71"]  = {expansionLevel=3, minLevel=81, difficulty=24, name="Grim Batol"},
+	["e_69"]  = {expansionLevel=3, minLevel=81, difficulty=24, name="Lost City of the Tol'vir"},
+	["e_67"]  = {expansionLevel=3, minLevel=81, difficulty=24, name="The Stonecore"},
+	["e_68"]  = {expansionLevel=3, minLevel=81, difficulty=24, name="The Vortex Pinnacle"},
+	["e_65"]  = {expansionLevel=3, minLevel=81, difficulty=24, name="Throne of the Tides"},
+	-- timewalk mop
+	["e_303"] = {expansionLevel=4, minLevel=81, difficulty=24, name="Gate of the Setting Sun"},
+	["e_321"] = {expansionLevel=4, minLevel=81, difficulty=24, name="Mogu'Shan Palace"},
+	["e_312"] = {expansionLevel=4, minLevel=81, difficulty=24, name="Shado'Pan Monastery"},
+	["e_324"] = {expansionLevel=4, minLevel=81, difficulty=24, name="Siege of Niuzao Temple"},
+	["e_302"] = {expansionLevel=4, minLevel=81, difficulty=24, name="Stormstout Brewery"},
+	["e_313"] = {expansionLevel=4, minLevel=81, difficulty=24, name="Temple of the Jade Dragon"},
+
 	-- mythic legion
 	["e_777"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Assault on Violet Hold"},
 	["e_740"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Black Rook Hold"},
 	["e_800"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Court of Stars"},
 	["e_762"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Darkheart Thicket"},
+	["e_716"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Eye of Azshara"},
 	["e_721"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Halls of Valor"},
 	["e_727"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Maw of Souls"},
 	["e_767"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Neltharion's Lair"},
@@ -77,6 +76,7 @@ local hardcoded_dungeons = {
 	["e_707"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Vault of the Wardens"},
 	["e_860"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Return to Karazhan"},
 	["e_900"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Cathedral of Eternal Night"},
+	["e_945"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Seat of the Triumvirate"},
 	-- mythic battle for azeroth
 	["e_968"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="Atal'Dazar"},
 	["e_1001"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="Freehold"},
@@ -88,6 +88,12 @@ local hardcoded_dungeons = {
 	["e_1022"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="The Underrot"},
 	["e_1002"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="Tol Dagor"},
 	["e_1021"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="Waycrest Manor"},
+
+	-- world bosses
+	["e_1028"]  = {expansionLevel=7, minLevel=120, min_ilevel=280, difficulty=14, name="World Bosses"}, 
+	["e_833"]  = {expansionLevel=6, minLevel=110, min_ilevel=150, difficulty=14, name="World Bosses"},
+	["e_557"]  = {expansionLevel=5, minLevel=100, min_ilevel=90, difficulty=14, name="World Bosses"},
+	["e_322"]  = {expansionLevel=4, minLevel=80, min_ilevel=70, difficulty=14, name="World Bosses"},
 }
 
 local attunements = {
@@ -97,6 +103,16 @@ local attunements = {
 	[1488] = {attunement_queston=46244}, -- Cathedral of Eternal Night HC
 }
 
+local override_min_levels = { -- bfa dungeons have different min levels per faction
+	[1672] = { Alliance=110, Horde=120 }, -- Freehold
+	[1774] = { Alliance=110, Horde=120 }, -- Shrine of the Storm
+	[1705] = { Alliance=110, Horde=120 }, -- Waycrest Manor
+	[1778] = { Alliance=115, Horde=120 }, -- Tol Dagor
+	[1668] = { Alliance=120, Horde=110 }, -- Atal´dazar
+	[1694] = { Alliance=120, Horde=110 }, -- Temple of Sethraliss
+	[1777] = { Alliance=120, Horde=110 }, -- The Underrot
+	[1707] = { Alliance=120, Horde=115 }, -- The Motherlode!!
+}
 
 setmetatable(Dungeons,{
 	__index=function(t,id)
@@ -110,7 +126,7 @@ setmetatable(Dungeons,{
 			local d=hardcoded_dungeons[id]
 			name,expansionLevel,minLevel,min_ilevel,difficulty = d.name,d.expansionLevel,d.minLevel,d.min_ilevel,d.difficulty
 		else
-			name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday = GetLFGDungeonInfo(id)
+			name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, min_ilevel  = GetLFGDungeonInfo(id)
 		end
 
 		if name and typeID~=4 then
@@ -120,9 +136,14 @@ setmetatable(Dungeons,{
 			dungeon.name = name
 			dungeon.difficulty = difficulty
 			dungeon.isHoliday = isHoliday
-			dungeon.minLevel = minLevel
+			if override_min_levels[id] then
+				dungeon.minLevel = override_min_levels[id][Dungeons.Faction]
+			else
+				dungeon.minLevel = minLevel
+			end
 			dungeon.expansionLevel = expansionLevel
-			dungeon.maxScaleLevel = Dungeons.ExpansionsLimits[expansionLevel]
+			dungeon.maxScaleLevel = math.max(Dungeons.ExpansionsLimits[expansionLevel],dungeon.minLevel) -- maxscale cannot be lower than minlevel (uldir hero/mythic reports being from exp6, so maxscale would be 110)
+			dungeon.min_ilevel = min_ilevel
 
 			if attunements[id] then
 				dungeon.attunement_achieve = attunements[id].attunement_achieve
@@ -141,33 +162,19 @@ setmetatable(Dungeons,{
 })
 
 function Dungeons:Get(id)
-	local dungeon = self[id]
-	UpdateDungeonItemlevels(dungeon)
-	return dungeon
+	return self[id]
 end
 
 
 function Dungeons:Init()
 	--if not LFDDungeonList then return end
+	Dungeons.Faction = UnitFactionGroup("player")
 	for id=1,2000 do
 		local cache_wasted = self[id]
 	end
 end
 
 Dungeons:Init()
-
--- Set up listening for lock info.
-local FRAME = CreateFrame("FRAME","ZGVDungeonsUpdateFrame")
-FRAME:RegisterEvent("LFG_LOCK_INFO_RECEIVED")
-FRAME:SetScript("OnEvent",function(self,event)
-	if event=="LFG_LOCK_INFO_RECEIVED" then
-		for id=1,2000 do
-			local dungeon = Dungeons[id]
-			if dungeon then  UpdateDungeonItemlevels(dungeon)  end
-		end
-	end
-end)
-
 
 ZGV.UTILS.Dungeons = {
 	GetDungeonsByName = function()

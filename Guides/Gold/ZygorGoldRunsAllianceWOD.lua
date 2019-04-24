@@ -1631,9 +1631,9 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Alliance Daily Runs\\The Golden Lotus Dai
 		Tell him "Let's find out!" |q 31511/1 |only if havequest(31511) |goto 55.5,91.3
 	step
 		talk Matron Vi Vinh##64149
-		turnin A Witness to History##31511 |goto Vale of Eternal Blossoms/3 35.4,65.9
+		turnin A Witness to History##31511 |goto Shrine of Seven Stars/1 35.4,65.9
 		or
-		turnin A Witness to History##31512 |goto Vale of Eternal Blossoms/3 35.4,65.9
+		turnin A Witness to History##31512 |goto Shrine of Seven Stars/1 35.4,65.9
 	step
 	label "dailies"
 		talk Kun Autumnlight##58920
@@ -1702,12 +1702,12 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Alliance Daily Runs\\The Golden Lotus Dai
 		confirm
 		only if havequest(30280) or havequest(30277)
 	step
-		kill Milau##64965 |q 30280/1 |goto Vale of Eternal Blossoms/18 53.9,68.3
+		kill Milau##64965 |q 30280/1 |goto Vale of Eternal Blossoms/1 53.9,68.3
 		|tip Milau has several deadly abilities. He will cast a Lightning Breath in any direction, do not be in front of him when he does this. He also starts casting Lightning Pools, constantly move until he is done. Periodically he will pull you to the middle of the room and cast Lightning Sweep. While he is casting get as much distance on him as you can.
 		only if havequest(30280)
 	step
 		click Deactivate Final Spirit Wall##214477
-		Deactivate the Final Spirit Wall |q 30277/1 |goto Vale of Eternal Blossoms/18 42.1,27.2
+		Deactivate the Final Spirit Wall |q 30277/1 |goto Vale of Eternal Blossoms/1 42.1,27.2
 		only if havequest(30277)
 	step
 		click Ancient Guo-Lai Artifact##214394
@@ -2637,8 +2637,8 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Alliance Daily Runs\\Operation:Shieldwall
 	step
 		talk Anduin Wrynn##67948
 		Find Anduin |q 32315/1
-		turnin Anduin's Plea##32315 |goto Vale of Eternal Blossoms/4 65.8,32.9
-		accept Heart Of The Alliance##32316 |goto Vale of Eternal Blossoms/4 65.8,32.9
+		turnin Anduin's Plea##32315 |goto Shrine of Seven Stars/2 65.8,32.9
+		accept Heart Of The Alliance##32316 |goto Shrine of Seven Stars/2 65.8,32.9
 		only if not completedq(32316)
 	step
 		Walk around the shrine clicking Sha-Touched Footmen
@@ -2647,7 +2647,7 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Alliance Daily Runs\\Operation:Shieldwall
 		only if havequest(32316)
 	step
 		talk King Varian Wrynn##68242
-		turnin Heart Of The Alliance##32316 |goto Vale of Eternal Blossoms/4 67.4,43.5
+		turnin Heart Of The Alliance##32316 |goto Shrine of Seven Stars/2 67.4,43.5
 		only if havequest(32316)
 		|next "endg"
 	// 2700 Revered

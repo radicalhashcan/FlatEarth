@@ -636,7 +636,7 @@ If you're new to the guides, or have only started using them on this character, 
 		["opt_travel_system_advanced"] = "Show Advanced Customization Options",
 
 		['opt_mapicons'] = "Show map markers",			['opt_mapicons_desc'] = "Display location markers on the world map.",
-		['opt_antspacing'] = "Enable ant trails",			['opt_antspacing_desc'] = "Sets how dense are 'ant trails' displayed on navigation paths.\n\nDense ant trails cause a heavier performance hit.",
+		['opt_antspacing'] = "Enable ant trails",			['opt_antspacing_desc'] = "Display 'ant trails' depicting travel directions on maps.", --['opt_antspacing_desc'] = "Sets how dense are 'ant trails' displayed on navigation paths.\n\nDense ant trails cause a heavier performance hit.",
 		['opt_antspacing_0'] = "Ants off",
 		['opt_antspacing_yd'] = "%d yd apart",
 		['opt_antspacing_yd_def'] = "%d yd apart (default)",
@@ -779,9 +779,12 @@ If you're new to the guides, or have only started using them on this character, 
 		['opt_detectcreatures']= "Enable Creature Detector",		['opt_detectcreatures_desc']= "Display a shortcut on the unitframe to open the guide corresponding to a selected mount or pet.",
 		['opt_noisy'] = "Show Zygor chat messages",			['opt_noisy_desc'] = "Display Zygor status messages in chat. You can turn this off if you'd like your chat window clean.",
 		['opt_collapsecompleted'] = "Hide completed lines",		['opt_collapsecompleted_desc'] = "Hides completed goals together with their 'parent' lines.|n|n|cffff3300Experimental feature.|r",
+		['opt_worldquestenable'] = "Enable Zygor World Quest Planner",
+		['opt_worldquestlocal'] = "Prioritize current zone world quests in queue",	['opt_worldquestlocal_desc'] = "All queued World Quests in current zone will be completed before moving to the next zone.",
+		['opt_worldquestmap'] = "Automatically load World Quest guides when clicking World Quest icons on the map",
 
 		['opt_highlight'] = "Highlight current objective",
-
+		
 
 	['opt_group_petbattle'] = "Pet Battle",		['opt_group_petbattle_desc'] = "Features enhancing your Pet Battles experience.",
 		['opt_petbattleframe'] = "Enable Pet Battle HUD",			['opt_petbattleframe_desc'] = "Shows the information frame that is visible when you enter a pet battle.",
@@ -814,7 +817,7 @@ If you're new to the guides, or have only started using them on this character, 
 		['opt_gold_appraiser_undercut_1c'] = "1 copper",
 
 		["opt_gold_tooltips"] = "Zygor Gold data item tooltips",
-		["opt_gold_tooltips_show"] = "Show Zygor Item Tooltips",
+		["opt_gold_tooltips_show"] = "Enable Zygor Gold Guide Tooltips",
 		["opt_gold_tooltips_ah"] = "Auction House display mode",
 		["opt_gold_tooltips_ah_desc"] = "Zygor item tooltips when using Auction House",
 		["opt_gold_tooltips_ah_none"] = "None",
@@ -878,6 +881,10 @@ If you're new to the guides, or have only started using them on this character, 
 	['opt_autogear_desc'] = "Reminds you to upgrade your gear as new items are acquired.\nNote: enabling this requires a reload.",
 	['opt_autogearauto'] = "Auto-equip recommended gear upgrades",
 	['opt_autogearauto_desc'] = "Upgrades are equipped without confirmation.",
+
+	['opt_itemscore_tooltips'] = "Enable Zygor Item Score Tooltips",
+	['opt_itemscore_tooltips_azerite'] = "Display Azerite Power info",
+	
 	['opt_gear_sources'] = "Gear Finder sources:",
 	['opt_gear_sources_dungeons'] = "Dungeons",
 	['opt_gear_sources_raids'] = "Raids",
@@ -900,6 +907,10 @@ If you're new to the guides, or have only started using them on this character, 
 
 	['opt_gearimport'] = "Import",
 	['opt_gearexport'] = "Export",
+
+	['opt_gear_gems'] = "Gems",
+	['opt_gear_maxGem'] = "Socket empty sockets:",
+	['opt_gear_maxGem_desc'] = "Zygor will score empty sockets using best gem available. Select maximum gem quality you want to use.",
 
 	['opt_group_itemscore'] = "Item Scoring",
 	['opt_group_itemscore_warning'] = "You can make changes to the gear weights the gear advisor uses.|nDo not change these values unless you know what you are doing!",
@@ -951,6 +962,7 @@ If you're new to the guides, or have only started using them on this character, 
 				opt_n_popup_dungeon = "A dungeon guide is available when I enter a dungeon.",					opt_n_popup_dungeon_desc = "Display a pop-up window suggesting the guide for a dungeon when you enter the dungeon.",
 				opt_n_popup_monk = "My monk daily quest guides can be used. (Monk Only.)",								opt_n_popup_monk_desc = "Display a pop-up window for Monk class quests every 10 levels and for the daily.",
 				opt_n_popup_pet = "A guide is available for a pet or mount I click on.",							opt_n_popup_pet_desc = "Display a pop-up window with a guide on how to obtain a targeted pet or the targeted player's mount.",
+				opt_n_popup_wq = "A guide is available for a world quest I click on.",							opt_n_popup_wq_desc = "Display a pop-up window with a guide on how to complete selected world quest.",
 
 	opt_group_magickey = "Magic Key",
 	opt_group_magickey_desc = "The 'Magic Key' is a dynamic do-it-all keybinding, doing its best to adapt itself to your current situation and provide the action you'll most likely want to perform.|n|cffff8888This is a 'beta' feature. It is still under development and may not work properly.|r",
@@ -1300,7 +1312,7 @@ If you're new to the guides, or have only started using them on this character, 
 
 
 	["stepgoal_goldcollect"] = "Collect %s",				-- no cap and 0
-	["stepgoal_goldcollect #"] = "Collected %s %s",			-- no cap and > 0
+	["stepgoal_goldcollect #"] = "Collect %s %s",			-- no cap and > 0
 	["stepgoal_goldcollect_done"] = "Collected %s",		-- cap and cap = 1 or 0
 	["stepgoal_goldcollect #_done"] = "Collected %s %s",	-- cap > 0. 
 	["stepgoal_goldtracker"] = "Estimated Gold Earned: %s",
@@ -1358,6 +1370,9 @@ If you're new to the guides, or have only started using them on this character, 
 	["stepgoal_scenariostage_named"] = "Complete stage %d: %s",
 	["stepgoal_scenariostage_done"] = "Scenario stage %d completed",
 	["stepgoal_noquest"] = "Make sure %s offers no quests, or click here",
+	["stepgoal_title"] = "Earn '%s' title",
+	["stepgoal_appearance"] = "Collect %s appearance",
+	["stepgoal_appearance_done"] = "Collected %s appearance",
 
 	["stepgoal_perform_alchemy"] = "Create %s %s",
 	["stepgoal_perform_first aid"] = "Create %s %s",
@@ -1438,7 +1453,7 @@ If you're new to the guides, or have only started using them on this character, 
 	['stepcollapsed'] = "(step collapsed)",
 
 
-	['static_caption'] = "|TInterface\\Addons\\"..addonName.."\\Skins\\zygorlogo2:25:100|t\n \n",
+	['static_caption'] = "|TInterface\\Addons\\"..addonName.."\\Skins\\zygorlogo:25:100|t\n \n",
 	--['static_image'] = "\n\n|T%s:115:215|t",
 	['static_help'] = "Help and tutorial system|ncoming soon.",
 	--['static_sis'] = "|cffffff88Smart Injection System|r|n|nThis feature will attempt to find the best spot in the guides for you to start.|nIt will reset your dynamic progress settings, load the starting guide for level 1 of your race/class, and start skipping forward until it finds quests worth completing.|n|nIf your character is high-level, you'll mostly see the guide zip past |cff88ff88green|r (completed) or |cff88aaffblue|r (low-level) steps.|n|nIf it stops at a seemingly low-level quest, it's usually a good idea to trust the guide and complete the quest, as it might start a long chain reaching to your level.|n|nIt might stop at flight path pickups, it's up to you to verify if they're really unknown to your character.|n|nSo... Ready for the ride?",
@@ -1676,7 +1691,7 @@ If you're new to the guides, or have only started using them on this character, 
 	['notifcenter_loot_text'] = "Shopping List",
 	['notifcenter_spec_text'] = "Specialization Reminder",
 	['notifcenter_gear_text'] = "New Upgrade Available",
-	['notifcenter_gear_equipped'] = "|c%s%s|r equipped to the |cffffff00%s|r slot",
+	['notifcenter_gear_equipped'] = "%s equipped to the |cffffff00%s|r slot",
 	['notifcenter_gear_text_sl'] = "%d New Upgrade Available",
 	['notifcenter_gear_text_pl'] = "%d New Upgrades Available",
 	['notifcenter_quest_text'] = "Quest Item action required",
@@ -1885,11 +1900,15 @@ If you're new to the guides, or have only started using them on this character, 
 	['gold_xxxx_9_header']	= "",
 	['gold_xxxx_9_sum']	= "",
 
+
 	["gold_gathering_no_results"] = "You do not meet the requirements for this section.\nYou must have a Gathering profession: Skinning, Herbalism, and/or Mining.",
 	["gold_farming_no_results"] = "You do not meet the requirements for this section.",
 	["gold_goldrun_no_results"] = "You do not meet the requirements for any of the selected group of guides.",
 	["gold_crafting_no_results"] = "There are no results to display in this section.",
 	["gold_crafting_no_profession"] = "You do not meet the requirements for this section. You must have a Crafting profession:\nExamples: Alchemy, Blacksmithing, Engineering, Inscription, Jewelcrafting, Tailoring, or Leatherworking.",
+
+	["gold_general_open_window1"] = "\nIf you already know it, please open that skills Professions window",
+	["gold_general_open_window2"] = "\nIf you already know more, please open that skills Professions window",
 
 	["gold_expertmode_generictooltip"] = "Set investment mode.",
 	["gold_expertmode_easylabel"] = "Easy",
@@ -1905,10 +1924,11 @@ If you're new to the guides, or have only started using them on this character, 
 
 	["gold_gathering_error_all_noprofessions"] = "You have not learned any Gathering profession.\n\nYou need to learn Skinning, Herbalism, Fishing or Mining.",
 	["gold_gathering_error_all_lowskill"] = "Your skill in Gathering professions is insufficient:",
-	["gold_gathering_error_one_noskillin"] = "You have not learned %s.\n\nYour gathering professions are: %s",
+	["gold_gathering_error_one_noskillin"] = "You have not learned %s.",
+	["gold_gathering_error_one_noskillin_skills"] = "\n\nYour gathering professions are: %s",
 	["gold_gathering_error_one_lowskill"] = "Your skill in %s (%d) is too low.\nThere are no profitable routes for that skill level.",
-	["gold_gathering_error_one_noresults"] = "No gathering routes for %s were found to be profitable at this moment.",
-	["gold_gathering_error_one_nothing"] = "No gathering routes for your professions were found to be profitable at this moment.\n\nYour gathering professions are: %s",
+	["gold_gathering_error_one_noresults"] = "No gathering routes for %s were found to be profitable and in demand at this moment.",
+	["gold_gathering_error_one_nothing"] = "No gathering routes for your professions were found to be profitable and in demand at this moment.\n\nYour gathering professions are: %s",
 	["gold_gathering_error_prof"] = "%s (%d)",
 
 	["gold_farming_error_noresults"] = "No farmable items were found for your level.",
@@ -1947,6 +1967,7 @@ If you're new to the guides, or have only started using them on this character, 
 	['waypoint_tip_distance'] = "Distance: %s",
 
 	---- Item score effect filters
+	--[[
 	["effect1"] = "have a chance to gain $number $word for $number sec",			["effect1_returns"] = {"amount","stat","duration"},
 	["effect2"] = "have a chance to grant you $number $word for $number sec",		["effect2_returns"] = {"amount","stat","duration"},
 	["effect3"] = "have a chance to grant $number $word for $number sec",			["effect3_returns"] = {"amount","stat","duration"},
@@ -2051,6 +2072,7 @@ If you're new to the guides, or have only started using them on this character, 
 		["parry"] = "parry",
 		["mana"] = "mana",
 	},
+	--]]
 
 	-- pointer_floors_<map_from>_<map_to>
 	-- These are in use only if LibRover floor-to-floor connections are not used.

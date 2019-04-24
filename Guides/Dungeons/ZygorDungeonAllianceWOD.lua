@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("DungeonAWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\Auchindoun",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Dungeons\\Auchindoun",{
 mapid=593,
 achieveid={9049},
 condition_suggested=function() return level>=94 and level<=100 and _G.GetAverageItemLevel()>540 end,
@@ -152,15 +152,15 @@ Slay Teron'gor |q Soulcarver Voss##37232/2 |goto Auchindoun/1 49.6,33.5 |only if
 Slay Teron'gor |q Vessel of Virtue##37233/2 |goto Auchindoun/1 49.6,33.5 |only if havequest(37233)
 Slay Teron'gor |q Go Fetch##37146/2 |goto Auchindoun/1 49.6,33.5 |only if havequest(37146)
 step
-|next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
+|next "Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
 only if havequest(37232) or havequest(37233) or havequest(37146)
 step
-|next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Muradin Bronzebeard Dailies"
+|next "Dailies Guides\\Warlords of Draenor Dailies\\Muradin Bronzebeard Dailies"
 only if havequest(37796)
 step
 Congratulations, you have completed _Auchindoun_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\Bloodmaul Slag Mines",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Dungeons\\Bloodmaul Slag Mines",{
 mapid=573,
 achieveid={9046},
 condition_suggested=function() return level>=90 and level<=100 and _G.GetAverageItemLevel()>500 end,
@@ -357,15 +357,15 @@ Slay Gug'rokk |q Like a Dwarf In A Mine##37229/2 |goto Bloodmaul Slag Mines/1 65
 Slay Gug'rokk |q Ogre Ancestry##37142/2 |goto Bloodmaul Slag Mines/1 65.4,22.7 |only if havequest(37142)
 Slay Gug'rokk |q A Fruitful Proposition##37228/2 |goto Bloodmaul Slag Mines/1 65.4,22.7 |only if havequest(37228)
 step
-|next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
+|next "Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
 only if havequest(37229) or havequest(37142) or havequest(37228)
 step
-|next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Muradin Bronzebeard Dailies"
+|next "Dailies Guides\\Warlords of Draenor Dailies\\Muradin Bronzebeard Dailies"
 only if havequest(37795)
 step
 Congratulations, you have completed the _Bloodmaul Slag Mines_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\The Everbloom",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Dungeons\\The Everbloom",{
 mapid=620,
 achieveid={9053},
 condition_suggested=function() return level>=100 and level<=100 and _G.GetAverageItemLevel()>595 end,
@@ -518,15 +518,15 @@ Slay Yalnu |q Lessons of the Past##37241/2 |goto The Everbloom/2 45.0,72.0 |only
 Slay Yalnu |q The Leaf-Reader##37240/2 |goto The Everbloom/2 45.0,72.0 |only if havequest(37240)
 Slay Yalnu |q Put a Bird on It##37227/2 |goto The Everbloom/2 45.0,72.0 |only if havequest(37227)
 step
-|next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
+|next "Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
 only if havequest(37241) or havequest(37240) or havequest(37227)
 step
-|next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Muradin Bronzebeard Dailies"
+|next "Dailies Guides\\Warlords of Draenor Dailies\\Muradin Bronzebeard Dailies"
 only if havequest(37790)
 step
 Congratulations, you have completed the _Everbloom_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\Grimrail Depot",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Dungeons\\Grimrail Depot",{
 mapid=606,
 achieveid={9052},
 condition_suggested=function() return level>=100 and level<=100 and _G.GetAverageItemLevel()>595 end,
@@ -632,15 +632,15 @@ Slay Skylord Tovra |q Learning is Painful##37242/2 |goto Grimrail Depot/4 8.6,51
 Slay Skylord Tovra |q An Axe to Grind##37243/2 |goto Grimrail Depot/4 8.6,51.0 |only if havequest(37243)
 Slay Skylord Tovra |q Cold Steel Part II##37209/2 |goto Grimrail Depot/4 8.6,51.0 |only if havequest(37209)
 step
-|next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
+|next "Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
 only if havequest(37242) or havequest(37243) or havequest(37209)
 step
-|next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Muradin Bronzebeard Dailies"
+|next "Dailies Guides\\Warlords of Draenor Dailies\\Muradin Bronzebeard Dailies"
 only if havequest(37794)
 step
 Congratulations, you have completed the _Grimrail Depot_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\Iron Docks",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Dungeons\\Iron Docks",{
 mapid=595,
 achieveid={9047},
 condition_suggested=function() return level>=92 and level<=100 and _G.GetAverageItemLevel()>520 end,
@@ -759,12 +759,12 @@ Slay Skulloc |q The Search Continues##37231/2 |goto Iron Docks/1 68.4,43.6 |only
 Slay Skulloc |q Bloody Expensive##37230/2 |goto Iron Docks/1 68.4,43.6 |only if havequest(37230)
 Slay Skulloc |q Budd's Gambit##37145/2 |goto Iron Docks/1 68.4,43.6 |only if havequest(37145)
 step
-Proceeding |next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
+Proceeding |next "Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
 only if havequest(37231) or havequest(37230) or havequest(37145)
 step
 Congratulations, you have completed the _Iron Docks_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\Shadowmoon Burial Grounds",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Dungeons\\Shadowmoon Burial Grounds",{
 mapid=574,
 achieveid={9054},
 condition_suggested=function() return level>=100 and level<=100 and _G.GetAverageItemLevel()>595 end,
@@ -891,7 +891,7 @@ _TANK:_ |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Focus dps on boss until skeletons come out then focus all dps on killing one skeleton. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
-|tip Watch players that stand to close to Omen of Death they will take alot of damage. |grouprole HEALER
+|tip Watch players that stand to close to Omen of Death they will take a lot of damage. |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
 |tip During Ritual of Bones, focus dps on a single skeleton to break a safe zone in the chain. |grouprole EVERYONE
 |tip When Ritual of Bones is active don't stand in the purple area created by the skeletons. |grouprole EVERYONE
@@ -901,15 +901,15 @@ Slay Ner'zhul |q Secrets of Soulbinding##37238/2 |goto Shadowmoon Burial Grounds
 Slay Ner'zhul |q Whispers in the Darkness##37245/2 |goto Shadowmoon Burial Grounds/3 48.1,47.1 |only if havequest(37245)
 Slay Ner'zhul |q Fate of the Fallen##37239/2 |goto Shadowmoon Burial Grounds/3 48.1,47.1 |only if havequest(37239)
 step
-|next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
+|next "Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
 only if havequest(37238) or havequest(37245) or havequest(37239) or havequest(37149)
 step
-|next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Muradin Bronzebeard Dailies"
+|next "Dailies Guides\\Warlords of Draenor Dailies\\Muradin Bronzebeard Dailies"
 only if havequest(37792)
 step
 Congratulations, you have completed the _Shadowmoon Burial Grounds_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\Skyreach",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Dungeons\\Skyreach",{
 mapid=601,
 achieveid={8844},
 condition_suggested=function() return level>=96 and level<=100 and _G.GetAverageItemLevel()>560 end,
@@ -1042,15 +1042,15 @@ Slay High Sage Viryx |q A Plea to the Sky##37235/2 |goto Skyreach/2 51.1,27.4 |o
 Slay High Sage Viryx |q The Dark Within##37234/2 |goto Skyreach/2 51.1,27.4 |only if havequest(37234)
 Slay High Sage Viryx |q Sky Dancers##37147/2 |goto Skyreach/2 51.1,27.4 |only if havequest(37147)
 step
-|next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
+|next "Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
 only if havequest(37235) or havequest(37234) or havequest(37147) or havequest(37158)
 step
-|next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Muradin Bronzebeard Dailies"
+|next "Dailies Guides\\Warlords of Draenor Dailies\\Muradin Bronzebeard Dailies"
 only if havequest(37791)
 step
 Congratulations, you have completed _Skyreach_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\Upper Blackrock Spire",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Dungeons\\Upper Blackrock Spire",{
 mapid=616,
 achieveid={9055},
 condition_suggested=function() return level>=100 and level<=100 and _G.GetAverageItemLevel()>595 end,
@@ -1085,7 +1085,7 @@ _TANK:_ |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Stand on the plateform and dps the boss until Rune Conduits activate. |grouprole DAMAGE
 _HEALER:_ |grouprole TANK
-|tip When Rune Conduits activate watch the raid there will be alot of aoe damage going out.
+|tip When Rune Conduits activate watch the raid there will be a lot of aoe damage going out.
 _EVERYONE:_ |grouprole HEALER
 |tip When Rune Conduits active anyone can go down and deactive them. |grouprole HEALER
 |tip When down on the ground floor deactivating Rune Conduits watch out for the two Electric Pulses that travel around the room. |grouprole HEALER
@@ -1221,15 +1221,15 @@ Slay Warlord Zaela |q Flamefly Trap##37244/2 |goto Upper Blackrock Spire 2/3 14.
 Slay Warlord Zaela |q Like Father, Like Son##37236/2 |goto Upper Blackrock Spire 2/3 14.4,47.7 |only if havequest(37236)
 Slay Warlord Zaela |q A Hero's Quest is Never Complete##37237/2 |goto Upper Blackrock Spire 2/3 14.4,47.7 |only if havequest(37237)
 step
-|next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
+|next "Dailies Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies::Inn_Turnin"
 only if havequest(37244) or havequest(37236) or havequest(37237)
 step
-|next "Zygor's Dailies Guides\\Warlords of Draenor Dailies\\Muradin Bronzebeard Dailies"
+|next "Dailies Guides\\Warlords of Draenor Dailies\\Muradin Bronzebeard Dailies"
 only if havequest(37789)
 step
 Congratulations, you have completed _Upper Blackrock Spire_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - The Black Forge (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Blackrock Foundry - The Black Forge (LFR)",{
 mapid=596,
 lfgid=846,
 achieveid={8988},
@@ -1350,7 +1350,7 @@ confirm
 step
 Congratulations! You have completed _Blackrock Foundry - The Black Forge_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Blackhand's Crucible (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Blackhand's Crucible (LFR)",{
 mapid=596,
 lfgid=823,
 achieveid={8988},
@@ -1414,7 +1414,7 @@ confirm
 step
 Congratulations! You have completed _Blackrock Foundry - Blackhand's Crucible_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Iron Assembly (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Iron Assembly (LFR)",{
 mapid=596,
 lfgid=848,
 achieveid={8988},
@@ -1547,7 +1547,7 @@ confirm
 step
 Congratulation! You have completed _Blackrock Foundry - Iron Assembly_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Slagworks (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Slagworks (LFR)",{
 mapid=596,
 lfgid=847,
 achieveid={8988},
@@ -1668,7 +1668,7 @@ confirm
 step
 Congratulations! You have completed _Blackrock Foundry - Slagworks_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Bastion of Shadows (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Bastion of Shadows (LFR)",{
 mapid=661,
 lfgid=984,
 achieveid={10025},
@@ -1759,7 +1759,7 @@ confirm
 step
 Congratulations! You have completed _Hellfire Citadel - Bastion of Shadows_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - The Black Gate (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Hellfire Citadel - The Black Gate (LFR)",{
 mapid=661,
 lfgid=986,
 achieveid={10019},
@@ -1844,7 +1844,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip When in the Nether don't stand in Nether Storm these are circles on the groud and deal damage. |grouprole EVERYONE
 |tip When in the Nether be sure to leave the Nether when the Shadowed Nethewalker dies. |grouprole EVERYONE
 |tip When outside the Nether don't stand in the green circles during Rain of Chaos, they deal massive damage. |grouprole EVERYONE
-|tip Try to be far away from the Nether portals as they spawn Living Shadows that do alot of damage and give you a healing debuff if they hit you. |grouprole EVERYONE
+|tip Try to be far away from the Nether portals as they spawn Living Shadows that do a lot of damage and give you a healing debuff if they hit you. |grouprole EVERYONE
 |tip If any less then three people go into the Nether then the boss will heal. |grouprole EVERYONE
 |tip Infernal Doombringers can be stunned, and if they live to long they will start casting Hellfire which will deal a very high amount of damage to all players within 40 yards every second, this is basically a wipe if they start casting. |grouprole EVERYONE
 |tip Use Bloodlust/Heroism/Timewarp in the final phase After the first Rain of Chaos. |grouprole EVERYONE
@@ -1852,7 +1852,7 @@ confirm
 step
 Congratulations! You have completed _Hellfire Citadel - The Black Gate_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Destructor's Rise (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Destructor's Rise (LFR)",{
 mapid=661,
 lfgid=985,
 achieveid={10020},
@@ -1961,7 +1961,7 @@ confirm
 step
 Congratulations! You have completed _Hellfire Citadel - Destructor's Rise_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Halls of Blood (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Halls of Blood (LFR)",{
 mapid=661,
 lfgid=983,
 achieveid={10024},
@@ -2090,7 +2090,7 @@ confirm
 step
 Congratulations! You have completed _Hellfire Citadel - Halls of Blood_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Hellbreach (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Hellbreach (LFR)",{
 mapid=661,
 lfgid=982,
 achieveid={10023},
@@ -2186,7 +2186,7 @@ confirm
 step
 Congratulations! You have completed _Hellfire Citadel - Hellbreach_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Arcane Sanctum (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Highmaul - Arcane Sanctum (LFR)",{
 mapid=610,
 lfgid=850,
 achieveid={8987},
@@ -2303,7 +2303,7 @@ confirm
 step
 Congratulations! You have completed _Highmaul - Arcane Sanctum_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Imperator's Rise (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Highmaul - Imperator's Rise (LFR)",{
 mapid=610,
 lfgid=851,
 achieveid={8988},
@@ -2348,7 +2348,7 @@ confirm
 step
 Congratulations! You have completed _Highmaul - Imperator's Rise_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Walled City (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Highmaul - Walled City (LFR)",{
 mapid=610,
 lfgid=849,
 achieveid={8986},
@@ -2453,7 +2453,7 @@ confirm
 step
 Congratulations! You have completed _Highmaul - Walled City_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic",{
 mapid=596,
 condition_suggested=function() return level>=100 and level<=105 and _G.GetAverageItemLevel()>635 end,
 keywords={"BRF, BF, Draenor, Gorgrond"},
@@ -2863,7 +2863,7 @@ confirm
 step
 Congratulations! You have completed _Blackrock Foundry_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Mythic",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Mythic",{
 lfgid=900,
 condition_suggested=function() return level>=100 and level<=105 and _G.GetAverageItemLevel()>635 end,
 keywords={"BRF, BF, Draenor, Gorgrond, Mythic"},
@@ -3372,7 +3372,7 @@ confirm
 step
 Congratulations! You have completed _Blackrock Foundry Mythic_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic",{
 mapid=661,
 condition_suggested=function() return level>=100 and level<=105 and _G.GetAverageItemLevel()>650 end,
 keywords={"HFC, Normal, Heroic, Draenor, Tanaan, Jungle"},
@@ -3892,14 +3892,14 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip When in the Nether don't stand in Nether Storm these are circles on the groud and deal damage. |grouprole EVERYONE
 |tip When in the Nether be sure to leave the Nether when the Shadowed Nethewalker dies. |grouprole EVERYONE
 |tip When outside the Nether don't stand in the green circles during Rain of Chaos, they deal massive damage. |grouprole EVERYONE
-|tip Try to be far away from the Nether portals as they spawn Living Shadows that do alot of damage and give you a healing debuff if they hit you. |grouprole EVERYONE
+|tip Try to be far away from the Nether portals as they spawn Living Shadows that do a lot of damage and give you a healing debuff if they hit you. |grouprole EVERYONE
 |tip If any less then three people go into the Nether then the boss will heal. |grouprole EVERYONE
 |tip Infernal Doombringers can be stunned, and if they live to long they will start casting Hellfire which will deal a very high amount of damage to all players within 40 yards every second, this is basically a wipe if they start casting. |grouprole EVERYONE
 confirm
 step
 Congratulations on completeing _Hellfire Citadel_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Mythic",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Mythic",{
 lfgid=989,
 condition_suggested=function() return level>=100 and level<=105 and _G.GetAverageItemLevel()>650 end,
 keywords={"HFC, Mythic, Draenor, Tanaan, Jungle"},
@@ -4107,7 +4107,7 @@ _Vision of Death Team:_
 |tip Kill these mobs as fast as possible, there will be 3 types Hellblaze Imp, Mistress, and Fiend, each have a special ability.
 |tip Hellblaze Imps will only cast one spell that takes about 10 seconds to cast, this needs to be interrupted or it will one shot whoever they target.
 |tip Hellblaze Fiends will explode when they die be sure to run away from this explosion it will deal a massive amount of damage.
-|tip Hellblaze Mistress these have alot of health and will cast a cone attack which will stun and deal a massive amount of damage to anyone inside the cone, don't stand in this.
+|tip Hellblaze Mistress these have a lot of health and will cast a cone attack which will stun and deal a massive amount of damage to anyone inside the cone, don't stand in this.
 |tip Upon returning, Healers should stand near the tanks to clear Fel Corruption and use their cooldowns during Death Throes. |grouprole HEALER
 |tip Upon returning, DPS should focus on killing adds, but this buff is very big so players will kill these mobs very fast, then be sure to put as much damage on the boss as possible. |grouprole DAMAGE
 _EVERYONE:_ |grouprole EVERYONE
@@ -4490,7 +4490,7 @@ confirm
 step
 Congratulations on completeing _Hellfire Citadel Mythic_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic",{
 mapid=610,
 condition_suggested=function() return level>=100 and level<=105 and _G.GetAverageItemLevel()>615 end,
 keywords={"HM, Normal, Maul, High, Heroic, Draenor, Nagrand"},
@@ -4736,7 +4736,7 @@ confirm
 step
 Congratulations! You have completed _Highmaul_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Mythic",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Draenor Raids\\Highmaul - Mythic",{
 lfgid=897,
 condition_suggested=function() return level>=100 and level<=105 and _G.GetAverageItemLevel()>615 end,
 keywords={"HM, Mythic, Maul, High, Draenor, Nagrand"},

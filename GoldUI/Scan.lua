@@ -67,6 +67,8 @@ function Scan:ScanFast()
 	if not select(2,CanSendAuctionQuery()) then return FALSE,"can't scan yet" end
 	if self.state~="SS_IDLE" then return FALSE,"state "..self.state.." not SS_IDLE" end
 
+	self.scan_only_one_page = false
+
 	self.get_links = not ZGV.db.profile.quickscan
 	if ZGV.db.profile.quickscan then ZGV:Print(ZGV.L["opt_quickscan_warning"]) end
 
@@ -94,6 +96,7 @@ function Scan:ScanByName(name,itemid,options)
 	local exact = true
 	self.queried_by_id = nil
 	self.get_links = false
+	self.scan_only_one_page = false
 
 	local queryname,_ = ZGV:GetItemInfo(itemid)
 
@@ -157,6 +160,7 @@ function Scan:ScanByPartialName(queryname)
 	self.queried_by_partial_name = true
 	self.queried_by_id = nil
 	self.get_links = true
+	self.scan_only_one_page = false
 
 	table.wipe(self.rawdata)
 	self.scan_page = 1
@@ -181,6 +185,7 @@ function Scan:ScanByLink(itemlink)
 	self.queried_by_id = nil
 	local queryname = ZGV:GetItemInfo(itemlink)
 	self.get_links = true
+	self.scan_only_one_page = false
 
 	self.scan_page = 1
 	self:SetState("SS_QUERYING")
@@ -191,6 +196,34 @@ function Scan:ScanByLink(itemlink)
 	self.Proxy:PerformQuery(queryname, nil, nil, 0, false, -1, false, exact)  -- 6.0.2: query by exact name
 end
 
+function Scan:ScanLookupByExact(name)
+	if self.state=="SS_BUYING" then ZGV:Debug("&scan Scan:ScanLookupByExact cannot scan, buyout not finished!") return false end
+	if not select(1,CanSendAuctionQuery()) then 
+		ZGV:Debug("&scan Scan:ScanLookupByExact %s |rcan't scan yet!",name)
+		return FALSE,"can't scan yet"
+	end
+	if name=="" then return FALSE,"no name" end
+	if self.state~="SS_IDLE" then return FALSE,"state "..self.state.." not SS_IDLE" end
+
+	self.queried_by_id = nil
+	self.get_links = true
+
+	table.wipe(self.rawdata)
+	self.queried_by_name = name
+	self.queried_by_partial_name = false
+	self.scan_page = 1
+	self.scan_pages = 1
+	self.scanning_by_name = true
+	self.scan_only_one_page = true
+	self:SetState("SS_QUERYING")
+
+	self.WaitingForSortAuctionSetSort=true
+	SortAuctionSetSort("list","unitprice",false)
+	SortAuctionApplySort("list")
+	ZGV:Debug("&scan ScanByName for: "..name.." id=none partial=no exact=true")
+	self.Proxy:PerformQuery(name, nil, nil, 0, false, -1, false, true)  -- 6.0.2: query by exact name
+	return true
+end
 
 function Scan:CanScanByName()
 	local canOne,canMass = CanSendAuctionQuery()
@@ -447,6 +480,7 @@ function Scan:Work()
 	elseif self.state=="SS_RECEIVING" then
 		-- grab the page count, for progress
 		self.scan_pages = math.ceil(select(2,GetNumAuctionItems("list"))/NUM_AUCTION_ITEMS_PER_PAGE)
+		if self.scan_only_one_page then print("drop from",self.scan_pages) self.scan_pages=1 end
 
 		--[[
 		if GetTime()-self.last_AILU_time >= self.wait_after_AILU then  -- Scan.wait_after_AILU ms passed since the last AILU event... this maaay not be good, but let's start with this.
@@ -532,6 +566,10 @@ local scanning_current_sec,scanning_last_sec,scanning_this_sec
 
 function Scan:ScanAuctions()  -- in state: SS_SCANNING
 	local batch,total = self:GetAuctionCount("list")
+	if self.scan_only_one_page then
+		total = min(total,NUM_AUCTION_ITEMS_PER_PAGE)
+	end
+
 	Scan.total_count = total
 	local goodlinks,badlinks,uniqueids,unwanted=0,0,0,0
 

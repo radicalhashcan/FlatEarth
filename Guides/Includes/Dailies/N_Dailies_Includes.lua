@@ -488,332 +488,404 @@ ZygorGuidesViewer:RegisterInclude("SSO_PreQuest_Dailies",[[
 
 ZygorGuidesViewer:RegisterInclude("Oracles_PreQuests",[[
 		talk Tamara Wobblesprocket##28568
-		accept The Part-time Hunter##12654 |goto Sholazar Basin 50.5,62.1
+		accept The Part-time Hunter##12654 |goto Sholazar Basin/0 50.48,62.13
 	step
 		kill Pitch##28097
-		collect Pitch's Remains##38703 |q The Part-time Hunter##12654/1 |goto Sholazar Basin 50.5,77.3
+		collect Pitch's Remains##38703 |q The Part-time Hunter##12654/1 |goto 50.53,77.21
 	step
 		talk Tracker Gekgek##28095
-		accept Playing Along##12528 |goto Sholazar Basin 50.5,76.6
+		accept Playing Along##12528 |goto 50.54,76.58
 	step
 		talk High-Shaman Rakjak##28082
-		turnin Playing Along##12528 |goto Sholazar Basin 55,69.1
-		accept The Ape Hunter's Slave##12529 |goto Sholazar Basin 55,69.1
+		turnin Playing Along##12528 |goto 54.99,69.11
+		accept The Ape Hunter's Slave##12529 |goto 54.99,69.11
 	step
-		Talk to Goregek the Gorilla Hunter who is following you
+		_Next to you:_
+		talk Goregek the Gorilla Hunter##28214
 		accept Tormenting the Softknuckles##12530
-	stickystart "hardmatriarch"
+	stickystart "Slay_Hardknuckle_Matriarch"
 	step
-		kill 8 Hardknuckle Forager##28098 |q The Ape Hunter's Slave##12529/1 |goto Sholazar Basin 57.5,73.3
+		kill 8 Hardknuckle Forager##28098 |q The Ape Hunter's Slave##12529/1 |goto 57.49,73.30
 	step
-		kill 6 Hardknuckle Charger##28096 |q The Ape Hunter's Slave##12529/2 |goto Sholazar Basin 61.1,71.7
+		kill 6 Hardknuckle Charger##28096 |q The Ape Hunter's Slave##12529/2 |goto 62.24,72.66
 	step
-	label "hardmatriarch"
-		Use your Softknuckle Poker on Softknuckles |use Softknuckle Poker##38467
-		|tip Softknuckles are baby gorillas.
-		A Hardknuckle Matriarch will spawn eventually
-		kill Hardknuckle Matriarch |q Tormenting the Softknuckles##12530/1 |goto Sholazar Basin 66.9,73.2
+	label "Slay_Hardknuckle_Matriarch"
+		use Softknuckle Poker##38467
+		|tip Use it on Softknuckle gorrilas.
+		|tip They look like baby gorillas around this area.
+		|tip Eventually a Hardknuckle Matriarch will spawn.
+		kill Hardknuckle Matriarch##28213 |q Tormenting the Softknuckles##12530/1 |goto 66.90,73.41
 	step
 		talk High-Shaman Rakjak##28082
-		turnin The Ape Hunter's Slave##12529 |goto Sholazar Basin 55,69.1
-		turnin Tormenting the Softknuckles##12530 |goto Sholazar Basin 55,69.1
-		accept The Wasp Hunter's Apprentice##12533 |goto Sholazar Basin 55,69.1
+		turnin The Ape Hunter's Slave##12529 |goto 54.99,69.11
+		turnin Tormenting the Softknuckles##12530 |goto 54.99,69.11
+		accept The Wasp Hunter's Apprentice##12533 |goto 54.99,69.11
 	step
 		talk Elder Harkek##28138
-		accept The Sapphire Queen##12534 |goto Sholazar Basin 55.5,69.7
+		accept The Sapphire Queen##12534 |goto 55.50,69.68
+	stickystart "Slay_Sapphire_Hive_Drones"
 	step
-		kill 6 Sapphire Hive Wasp##28086 |q The Wasp Hunter's Apprentice##12533/1 |goto Sholazar Basin 59.6,75.8
-		kill 9 Sapphire Hive Drone##28085 |q The Wasp Hunter's Apprentice##12533/2 |goto Sholazar Basin 59.6,75.8
+		kill 6 Sapphire Hive Wasp##28086 |q The Wasp Hunter's Apprentice##12533/1 |goto 61.52,77.75
 	step
-		Enter the Sapphire Hive |goto Sholazar Basin 59.4,79.1 < 15
-		Follow the path down to here |goto Sholazar Basin 57.1,79.3 < 10
+	label "Slay_Sapphire_Hive_Drones"
+		kill 9 Sapphire Hive Drone##28085 |q The Wasp Hunter's Apprentice##12533/2 |goto 61.52,77.75
+	step
+		Follow the path down |goto 59.41,79.10 < 5 |walk
+		Continue down the path |goto 57.55,79.65 |goto 57.51,79.63 < 10 |walk
 		kill Sapphire Hive Queen##28087
-		collect Stinger of the Sapphire Queen##38477 |q The Sapphire Queen##12534/1 |goto 57.1,79.4
+		|tip Inside the cave.
+		collect Stinger of the Sapphire Queen##38477 |q The Sapphire Queen##12534/1 |goto 57.17,79.17
 	step
-		Exit the hive |goto Sholazar Basin 55.0,69.1
+		Follow the path |goto 57.43,81.33 < 15 |only if walking
+		Leave the cave |goto 59.33,79.18 < 5 |only if walking
 		talk High-Shaman Rakjak##28082
-		turnin The Wasp Hunter's Apprentice##12533
-		turnin The Sapphire Queen##12534
+		turnin The Wasp Hunter's Apprentice##12533 |goto 54.99,69.12
+		turnin The Sapphire Queen##12534 |goto 54.99,69.12
 	step
 		talk Elder Harkek##28138
-		accept Flown the Coop!##12532 |goto Sholazar Basin 55.5,69.7
+		accept Flown the Coop!##12532 |goto 55.50,69.68
 	step
-		clicknpc Chicken Escapee##28161
-		|tip They are all around the village.
-		collect 12 Captured Chicken##38483 |q Flown the Coop!##12532/1
+		clicknpc Chicken Escapee##28161+
+		|tip They look like small chickens running around this area.
+		collect 12 Captured Chicken##38483 |q Flown the Coop!##12532/1 |goto 55.22,70.15
 	step
 		talk Elder Harkek##28138
-		turnin Flown the Coop!##12532 |goto Sholazar Basin 55.5,69.7
-		accept The Underground Menace##12531 |goto Sholazar Basin 55.5,69.7
+		turnin Flown the Coop!##12532 |goto 55.50,69.68
+		accept The Underground Menace##12531 |goto 55.50,69.68
 	step
 		talk High-Shaman Rakjak##28082
-		accept Mischief in the Making##12535 |goto Sholazar Basin 55,69.1
+		accept Mischief in the Making##12535 |goto 54.99,69.11
+	stickystart "Collect_Claw_of_Serfex"
 	step
 		click Skyreach Crystal Formation##190500
-		collect 8 Skyreach Crystal Cluster##38504 |q Mischief in the Making##12535/1 |goto Sholazar Basin 56.6,84.6
+		|tip They look like small clusters of light purple crystals along the river around this area.
+		collect 8 Skyreach Crystal Cluster##38504 |q Mischief in the Making##12535/1 |goto 56.81,84.57
 	step
+	label "Collect_Claw_of_Serfex"
 		kill Serfex the Reaver##28083
-		collect Claw of Serfex##38473 |q The Underground Menace##12531/1 |goto Sholazar Basin 49.8,85
+		|tip He looks like a burrowing worm that travels along the river around this area.
+		collect Claw of Serfex##38473 |q The Underground Menace##12531/1 |goto 49.79,84.96
 	step
 		talk High-Shaman Rakjak##28082
-		turnin The Underground Menace##12531 |goto Sholazar Basin 55,69.1
-		turnin Mischief in the Making##12535 |goto Sholazar Basin 55,69.1
-		accept A Rough Ride##12536 |goto Sholazar Basin 55,69.1
+		turnin The Underground Menace##12531 |goto 54.99,69.11
+		turnin Mischief in the Making##12535 |goto 54.99,69.11
+		accept A Rough Ride##12536 |goto 54.99,69.11
 	step
 		talk Captive Crocolisk##28298
-		Tell him "_Let's do this_".
-		Travel to Mistwhisper Refuge |q A Rough Ride##12536/1 |goto Sholazar Basin 57.3,68.4
+		Tell him _"You look safe enough...let's do this."_
+		Mount the Crocolisk |invehicle |goto 57.28,68.39 |q 12536
 	step
-		When you jump off the crocodile:
+		Watch the dialogue
+		Travel to Mistwhisper Refuge |q A Rough Ride##12536/1 |goto 46.25,39.47 |notravel
+	step
+		_Next to you:_
 		talk Zepik the Gorloc Hunter##28668
 		turnin A Rough Ride##12536
 		accept Lightning Definitely Strikes Twice##12537
 		accept The Mist Isn't Listening##12538
-	stickystart "mistgorlocs"
+	stickystart "Slay_Mistwhisper_Gorlocs"
 	step
-		Use your Skyreach Crystal Clusters next to the stone monument |use Skyreach Crystal Clusters##38510
-		|tip It's a tall rectangle stone monument.
+		use Skyreach Crystal Clusters##38510
+		|tip Use it next to the stone monument.
 		click Arranged Crystal Formation##190502
-		Sabotage the Mistwhisper Weather Shrine |q Lightning Definitely Strikes Twice##12537/1 |goto Sholazar Basin 45.4,37.2
+		Sabotage the Mistwhisper Weather Shrine |q Lightning Definitely Strikes Twice##12537/1 |goto 45.37,37.21
 	step
-	label "mistgorlocs"
-		kill Mistwhisper Warrior##28109+, Mistwhisper Oracle##28110+
-		Kill #12# Mistwhisper Gorlocs |q The Mist Isn't Listening##12538/1 |goto Sholazar Basin 45.5,39.8
+	label "Slay_Mistwhisper_Gorlocs"
+		Kill Mistwhisper enemies around this area
+		Kill #12# Mistwhisper Gorlocs |q The Mist Isn't Listening##12538/1 |goto 44.79,36.61
 	step
-		Use Zepik's Hunting Horn if Zepik is not standing next to you: |use Zepik's Hunting Horn##38512
+		_Next to you:_
 		talk Zepik the Gorloc Hunter##28216
+		|tip Use Zepik's Hunting Horn to summon Zepik if he's not already next to you.
 		turnin Lightning Definitely Strikes Twice##12537
 		turnin The Mist Isn't Listening##12538
 		accept Hoofing It##12539
 	step
 		talk High-Shaman Rakjak##28082
-		turnin Hoofing It##12539 |goto Sholazar Basin 55,69.1
-		accept Just Following Orders##12540 |goto Sholazar Basin 55,69.1
+		turnin Hoofing It##12539 |goto 54.99,69.11
+		accept Just Following Orders##12540 |goto 54.99,69.11
+	step
+		clicknpc Injured Rainspeaker Oracle##28217
+		Select _<Reach down and pull the Injured Rainspeaker Oracle to its feet.>_
+		kill Ravenous Mangal Crocolisk##28325
+		Locate the Injured Rainspeaker Oracle |q Just Following Orders##12540/1 |goto 55.70,64.97
 	step
 		talk Injured Rainspeaker Oracle##28217
-		Pull it to its feet
-		Kill the crocodile that spawns
-		Locate the Injured Rainspeaker Oracle |q Just Following Orders##12540/1 |goto Sholazar Basin 55.7,64.9
+		turnin Just Following Orders##12540 |goto 55.70,64.97
+		accept Fortunate Misunderstandings##12570 |goto 55.70,64.97
 	step
 		talk Injured Rainspeaker Oracle##28217
-		turnin Just Following Orders##12540
-		accept Fortunate Misunderstandings##12570
-		Tell him "_I am ready to travel to your village now_".
-		Escort the Injured Rainspeaker Oracle to Rainspeaker Canopy |q Fortunate Misunderstandings##12570/1 |goto Sholazar Basin 55.7,64.9
+		Tell him _"I am ready to travel to your village now."_ |goto 55.70,64.97
+		Begin Following the Injured Rainspeaker Oracle |goto 55.24,64.17 < 10 |c |q 12570
+	step
+		Follow the Injured Rainspeaker as it walks
+		Watch the dialogue
+		Escort the Injured Rainspeaker Oracle to Rainspeaker Canopy |q Fortunate Misunderstandings##12570/1 |goto 53.52,56.81
 	step
 		talk High-Oracle Soo-say##28027
-		turnin Fortunate Misunderstandings##12570 |goto Sholazar Basin 54.6,56.3
-		accept Make the Bad Snake Go Away##12571 |goto Sholazar Basin 54.6,56.3
+		turnin Fortunate Misunderstandings##12570 |goto 54.59,56.35
+		accept Make the Bad Snake Go Away##12571 |goto 54.59,56.35
 	step
-		Use Lafoo's Bug Bag if Lafoo is not standing next to you |use Lafoo's Bug Bag##38622
+		_Next to you:_
 		talk Lafoo##28120
+		|tip Use Lafoo's Bug Bag to summon Lafoo if he's not already next to you.
 		accept Gods like Shiny Things##12572
-	stickystart "shinycobra"
+	stickystart "Slay_Emperor_Cobras"
 	step
-		kill Venomtip##28358 |q Make the Bad Snake Go Away##12571/2 |goto Sholazar Basin 57.5,52.4
-		|tip He walks back and forth on this small path near the waterfall.
+		kill Venomtip##28358 |q Make the Bad Snake Go Away##12571/2 |goto 57.48,52.50
+		|tip It looks like a purple and red cobra near the waterfall in this area.
 	step
-	label "shinycobra"
-		Use Lafoo's Bug Bag if Lafoo is not standing next to you: |use Lafoo's Bug Bag##38622
+		_Next to you:_
+		talk Lafoo##28120
+		|tip Use Lafoo's Bug Bag to summon Lafoo if he's not already next to you.
 		Stand on top of the twinkles of light on the ground around this area
-		Lafoo will dig up the treasure
+		|tip Lafoo will dig up the treasure.
 		Click the random items that appear on the ground
-		collect 6 Shiny Treasures##38575 |q Gods like Shiny Things##12572/1 |goto Sholazar Basin 52.4,53.2
-		kill 10 Emperor Cobra##28011 |q Make the Bad Snake Go Away##12571/1 |goto Sholazar Basin 52.4,53.2
+		collect 6 Shiny Treasures##38575 |q Gods like Shiny Things##12572/1 |goto 52.43,53.13
+	step
+	label "Slay_Emperor_Cobras"
+		kill 10 Emperor Cobra##28011 |q Make the Bad Snake Go Away##12571/1 |goto 52.43,53.13
 	step
 		talk High-Oracle Soo-say##28027
-		turnin Make the Bad Snake Go Away##12571 |goto Sholazar Basin 54.6,56.3
-		accept Making Peace##12573 |goto Sholazar Basin 54.6,56.3
-		turnin Gods like Shiny Things##12572 |goto Sholazar Basin 54.6,56.3
+		turnin Make the Bad Snake Go Away##12571 |goto 54.59,56.35
+		accept Making Peace##12573 |goto 54.59,56.35
+		turnin Gods like Shiny Things##12572 |goto 54.59,56.35
 	step
 		talk Shaman Vekjik##28315
-		Tell him "_I've brought an offering_".
-		Extend the Peace Offering to Shaman Vekjik |q Making Peace##12573/1 |goto Sholazar Basin 51.3,64.6
+		Tell him _"Shaman Vekjik, I have spoken with the big-tongues and they desire peace. I have brought this offering on their behalf."_
+		Extend the Peace Offering to Shaman Vekjik |q Making Peace##12573/1 |goto 51.30,64.63
 	step
 		talk Tamara Wobblesprocket##28568
-		turnin The Part-time Hunter##12654 |goto Sholazar Basin 50.5,62.1
+		turnin The Part-time Hunter##12654 |goto 50.48,62.13
 	step
 		talk High-Oracle Soo-say##28027
-		turnin Making Peace##12573 |goto Sholazar Basin 54.6,56.3
-		accept Back So Soon?##12574 |goto Sholazar Basin 54.6,56.3
+		turnin Making Peace##12573 |goto 54.59,56.35
+		accept Back So Soon?##12574 |goto 54.59,56.35
 	step
 		talk Mistcaller Soo-gan##28114
-		turnin Back So Soon?##12574 |goto Sholazar Basin 42.1,38.6
-		accept The Lost Mistwhisper Treasure##12575 |goto Sholazar Basin 42.1,38.6
-		accept Forced Hand##12576 |goto Sholazar Basin 42.1,38.6
-	stickystart "frenzyspear"
+		turnin Back So Soon?##12574 |goto 42.15,38.65
+		accept The Lost Mistwhisper Treasure##12575 |goto 42.15,38.65
+		accept Forced Hand##12576 |goto 42.15,38.65
+	stickystart "Slay_Frenzyheart_Spearbearers"
+	stickystart "Slay_Frenzyheart_Scavengers"
 	step
-		kill Warlord Tartek##28105 |q The Lost Mistwhisper Treasure##12575/1 |goto Sholazar Basin 41.3,19.8
-		|tip He comes walking up on a red dragon.
+		kill Warlord Tartek##28105 |q The Lost Mistwhisper Treasure##12575/1 |goto 41.29,19.79
+		|tip He walks up on a red dragon.
 	step
 		click Mistwhisper Treasure##190578
-		|tip It's a yellow glowing floating orb, hovering over a tree stump altar.
-		collect Mistwhisper Treasure##38601 |q The Lost Mistwhisper Treasure##12575/2 |goto Sholazar Basin 41.6,19.5
+		|tip It looks like a yellow glowing floating orb hovering over a tree stump altar.
+		collect Mistwhisper Treasure##38601 |q The Lost Mistwhisper Treasure##12575/2 |goto 41.69,19.49
 	step
-	label "frenzyspear"
-		kill 8 Frenzyheart Spearbearer##28080 |q Forced Hand##12576/1 |goto Sholazar Basin 40.4,26.4
-		kill 6 Frenzyheart Scavenger##28081 |q Forced Hand##12576/2 |goto Sholazar Basin 40.4,26.4
+	label "Slay_Frenzyheart_Spearbearers"
+		kill 8 Frenzyheart Spearbearer##28080 |q Forced Hand##12576/1 |goto 40.40,22.88
+	step
+	label "Slay_Frenzyheart_Scavengers"
+		kill 6 Frenzyheart Scavenger##28081 |q Forced Hand##12576/2 |goto 40.40,22.88
 	step
 		talk Mistcaller Soo-gan##28114
-		turnin The Lost Mistwhisper Treasure##12575 |goto Sholazar Basin 42.1,38.6
-		turnin Forced Hand##12576 |goto Sholazar Basin 42.1,38.6
-		accept Home Time!##12577 |goto Sholazar Basin 42.1,38.6
+		turnin The Lost Mistwhisper Treasure##12575 |goto 42.15,38.65
+		turnin Forced Hand##12576 |goto 42.15,38.65
+		accept Home Time!##12577 |goto 42.15,38.65
 	step
 		talk High-Oracle Soo-say##28027
-		turnin Home Time!##12577 |goto Sholazar Basin 54.6,56.3
-		accept The Angry Gorloc##12578 |goto Sholazar Basin 54.6,56.3
+		turnin Home Time!##12577 |goto 54.59,56.35
+		accept The Angry Gorloc##12578 |goto 54.59,56.35
 	step
-		Travel to Mosswalker Village |q The Angry Gorloc##12578/1 |goto Sholazar Basin 75.3,54.1
+		talk High-Oracle Soo-say##28027
+		Tell him _"I need to find Moodle, doyou have his stress ball?"_
+		collect 1 Moodle's Stress Ball##38624 |goto 54.58,56.36 |q 12578
 	step
-		Use Moodle's Stress Ball if Moodle is not standing next to you |use Moodle's Stress Ball##38624
+		Travel to Mosswalker Village |q The Angry Gorloc##12578/1 |goto 75.35,54.23
+	step
+		use Moodle's Stress Ball##38624
+		_Next to you:_
 		talk Moodle##28122
 		turnin The Angry Gorloc##12578
 		accept The Mosswalker Savior##12580
 		accept Lifeblood of the Mosswalker Shrine##12579
 	step
-		talk Mosswalker Victim##28113
-		Rescue #6# Mosswalker Victims |q The Mosswalker Savior##12580/1 |goto Sholazar Basin 75.4,52.4
+		talk Mosswalker Victim##28113+
+		|tip They look like friendly NPC's laying on the ground around this area.
+		Select _<Check for a pulse...>_
+		Rescue #6# Mosswalker Victims |q The Mosswalker Savior##12580/1 |goto 75.32,52.30
 	step
-		Use Moodle's Stress Ball if Moodle is not standing next to you |use Moodle's Stress Ball##38624
+		_Next to you:_
 		talk Moodle##28122
+		|tip Use Moodle's Stress Ball to summon Moodle if he's not already next to you.
 		turnin The Mosswalker Savior##12580
 	step
 		click Lifeblood Shard##190702
 		|tip They look like small red crystals on the ground around this area.
-		collect 10 Lifeblood Shard##39063 |q Lifeblood of the Mosswalker Shrine##12579/1 |goto Sholazar Basin 68.9,54.6
+		collect 10 Lifeblood Shard##39063 |q Lifeblood of the Mosswalker Shrine##12579/1 |goto 69.34,57.94
 	step
-		You can also use Moodle's Stress Ball if you have it in your bags |use Moodle's Stress Ball##38624
+		_Next to you:_
 		talk Moodle##28122
-		turnin Lifeblood of the Mosswalker Shrine##12579 |goto Sholazar Basin 54.5,56.6
-		accept A Hero's Burden##12581 |goto Sholazar Basin 54.5,56.6
+		|tip Use Moodle's Stress Ball to summon Moodle if he's not already next to you.
+		turnin Lifeblood of the Mosswalker Shrine##12579
+		accept A Hero's Burden##12581
 	step
-		During this next part you will fight a boss
-		If you kill Zepik the Gorloc Hunter during the fight, you will be able to pick up the Oracle Tribe quest and vice versa
-		NOTE** _You must kill Artuis Slowly if you are high level_
-		This will decrease your Reputation with the Frenzyheart Tribe to Hated
-		kill Zepik the Gorloc Hunter##28668
-		confirm
+		Enter the cave |goto 70.89,58.70 < 10 |walk
+		Follow the path down |goto 73.90,59.06 < 10 |only if walking
+		kill Artruis the Heartless##28659
+		kill Zepik the Gorloc Hunter##28668 |q A Hero's Burden##12581/1 |goto 72.12,57.61
+		|tip Inside the cave.
+		|tip This will decrease your Reputation with the Frenzyheart Tribe to Hated.
 	step
-		Enter the cave and follow the path |goto 72.2,57.3 < 10
-		kill Artruis the Heartless##28659 |q  A Hero's Burden##12581/1 |goto Sholazar Basin 70.8,58.7
 		click Artruis' Phylactery##190777
-		|tip This will spawn after the fight.
-		turnin A Hero's Burden##12581
+		turnin A Hero's Burden##12581 |goto 72.06,57.57
+		|tip Inside the cave.
+		|tip Completing this quest will allow you to do The Oracles daily quests.
 ]])
 
 ZygorGuidesViewer:RegisterInclude("Oracles_Dailies",[[
+		Enter the cave |goto Sholazar Basin/0 70.89,58.70 < 10 |walk
+		Follow the path down |goto 73.90,59.06 < 10 |walk
+		kill Artruis the Heartless##28659, Zepik the Gorloc Hunter##28668
 		talk Jaloot##28667
-		accept Hand of the Oracles##12689
-		accept Return of the Friendly Dryskin##12695
+		|tip Inside the cave.
+		|tip Kill Artruis the Heartless and Zepik the Gorloc Hunter in order to talk to Jaloot.
+		|tip This will decrease your Reputation with the Frenzyheart Tribe to Hated.
+		accept Hand of the Oracles##12689 |goto 72.46,57.52
+		accept Return of the Friendly Dryskin##12695 |goto 72.46,57.52
 	step
 		talk High-Oracle Soo-say##28027
-		turnin Return of the Friendly Dryskin##12695 |goto Sholazar Basin 54.6,56.4
+		turnin Return of the Friendly Dryskin##12695 |goto 54.59,56.36
+	step
+	label "Oracles_Dailies_Start"
+		talk High-Oracle Soo-say##28027
+		accept Appeasing the Great Rain Stone##12704 |goto 54.59,56.36
 	step
 		talk High-Oracle Soo-say##28027
-		accept Appeasing the Great Rain Stone##12704 |goto Sholazar Basin 54.6,56.4
-		Tell him, "_I need to find Lafoo_".
-		collect Lafoo's Bug Bag##38622 |goto Sholazar Basin 54.6,56.4
+		Tell him _"I need to find Lafoo, do you have his bug bag?"_
+		collect 1 Lafoo's Bug Bag##38622 |goto 54.59,56.36
 	step
 		talk Oracle Soo-nee##29006
-		You will only be able to accept and turn in 1 of these 4 daily quests per day
-		accept A Cleansing Song##12735 |or |goto Sholazar Basin 53.3,56.5
-		accept Song of Fecundity##12737 |or |goto Sholazar Basin 53.3,56.5
-		accept Song of Reflection##12736 |or |goto Sholazar Basin 53.3,56.5
-		accept Song of Wind and Water##12726 |or |goto Sholazar Basin 53.3,56.5
+		|tip You will only be able to accept and turn in 1 of these 4 daily quests per day.
+		accept A Cleansing Song##12735 |or |goto 53.34,56.45
+		accept Song of Fecundity##12737 |or |goto 53.34,56.45
+		accept Song of Reflection##12736 |or |goto 53.34,56.45
+		accept Song of Wind and Water##12726 |or |goto 53.34,56.45
 	step
+		Enter the building |goto 54.00,54.33 < 5 |walk
 		talk Oracle Soo-dow##29149
-		You will only be able to accept and turn in 1 of these 3 daily quests per day
-		accept Mastery of the Crystals##12761 |or |goto Sholazar Basin 54.2,53.8
-		accept Power of the Great Ones##12762 |or |goto Sholazar Basin 54.2,53.8
-		accept Will of the Titans##12705 |or |goto Sholazar Basin 54.2,53.8
+		|tip Inside the building.
+		|tip You will only be able to accept and turn in 1 of these 3 daily quests per day.
+		accept Mastery of the Crystals##12761 |or |goto 54.16,53.77
+		accept Power of the Great Ones##12762 |or |goto 54.16,53.77
+		accept Will of the Titans##12705 |or |goto 54.16,53.77
 	step
-		Use Lafoo's Bug Bag if Lafoo is not standing next to you |use Lafoo's Bug Bag##38622
 		Stand on top of the twinkles of light on the ground around this area
-		Lafoo will dig up the treasure
+		|tip Lafoo will dig up the treasure.
+		|tip Use Lafoo's Bug Bag to summon Lafoo if he's not already next to you.
 		Click the random items that appear on the ground
-		collect 6 Shiny Treasures##38575 |q Appeasing the Great Rain Stone##12704/1 |goto Sholazar Basin 52.4,53.2
+		collect 6 Shiny Treasures##38575 |q Appeasing the Great Rain Stone##12704/1 |goto 52.43,53.15
 		only if havequest(12704)
 	step
-		Use your Chime of Cleansing in this spot |use Chime of Cleansing##39572
-		kill Spirit of Atha##29033 |q A Cleansing Song##12735/1 |goto Sholazar Basin 42.7,42.8
+		use Chime of Cleansing##39572
+		kill Spirit of Atha##29033 |q A Cleansing Song##12735/1 |goto 42.70,42.79
 		only if havequest(12735)
 	step
-		Use your Chime of Cleansing in this spot |use Chime of Cleansing##39572
-		kill Spirit of Ha-Khalan##29018 |q A Cleansing Song##12735/2 |goto Sholazar Basin 49.4,62.7
+		use Chime of Cleansing##39572
+		kill Spirit of Ha-Khalan##29018 |q A Cleansing Song##12735/2 |goto 49.41,62.70
 		only if havequest(12735)
 	step
-		Use your Chime of Cleansing in this spot |use Chime of Cleansing##39572
-		kill Spirit of Koosu##29034 |q A Cleansing Song##12735/3 |goto Sholazar Basin 48.8,70.5
+		use Chime of Cleansing##39572
+		kill Spirit of Koosu##29034 |q A Cleansing Song##12735/3 |goto 48.79,70.54
 		only if havequest(12735)
 	step
-		Use your Horn of Fecundity next to Soaked Fertile Dirt piles |use Horn of Fecundity##39599
-		Play the Song of Fecundity #8# Times |q Song of Fecundity##12737/1 |goto Sholazar Basin 26.2,37.1
+		use Horn of Fecundity##39599
+		|tip Use it next to Soaked Fertile Dirt piles.
+		|tip They look like mounds of dirt with small trees growing out of them on the ground around this area.
+		Play the Song of Fecundity #8# Times |q Song of Fecundity##12737/1 |goto 26.19,37.14
 		only if havequest(12737)
 	step
-		Use your Didgeridoo of Contemplation at the top of The Glimmering Pillar |use Didgeridoo of Contemplation##39598
-		Contemplate at the Glimmering Pillar |q Song of Reflection##12736/1 |goto Sholazar Basin 50.0,37.4
+		use Didgeridoo of Contemplation##39598
+		Contemplate at the Glimmering Pillar |q Song of Reflection##12736/1 |goto 49.98,37.39
 		only if havequest(12736)
 	step
-		Use your Didgeridoo of Contemplation at the top of The Suntouched Pillar |use Didgeridoo of Contemplation##39598
-		Contemplate at the Suntouched Pillar |q Song of Reflection##12736/4 |goto Sholazar Basin 33.6,52.3
+		use Didgeridoo of Contemplation##39598
+		Contemplate at the Suntouched Pillar |q Song of Reflection##12736/4 |goto 33.43,52.26
 		only if havequest(12736)
 	step
-		Use your Didgeridoo of Contemplation at the top of The Mosslight Pillar |use Didgeridoo of Contemplation##39598
-		Contemplate at the Mosslight Pillar |q Song of Reflection##12736/2 |goto Sholazar Basin 36.4,74.7
+		use Didgeridoo of Contemplation##39598
+		Contemplate at the Mosslight Pillar |q Song of Reflection##12736/2 |goto 36.39,74.88
 		only if havequest(12736)
 	step
-		Use your Didgeridoo of Contemplation at the top of The Skyreach Pillar |use Didgeridoo of Contemplation##39598
-		Contemplate at the Skyreach Pillar |q Song of Reflection##12736/3 |goto Sholazar Basin 53.3,79.4
+		use Didgeridoo of Contemplation##39598
+		Contemplate at the Skyreach Pillar |q Song of Reflection##12736/3 |goto 53.30,79.41
 		only if havequest(12736)
 	step
-		Use your Drums of the Tempest to take control of Haiphoon, the Great Tempest |use Drums of the Tempest##39571
+		use Drums of the Tempest##39571
+		Take Control of Haiphoon, the Great Tempest |invehicle |goto 25.35,35.40 |q 12726
+		only if havequest(12726)
+	stickystart "Devour_Storm_Revenants"
+	step
 		Haiphoon has 2 forms: Water and Air
-		|tip When in Haiphoon's Water form, use Haiphoon's abilities to fight Storm Revenants around this area. When the Storm Revenants are weak, use Haiphoon's Devour Wind ability to eat them. When in Haiphoon's Air form, use Haiphoon's abilities to fight Aqueous Spirits around this area. When the Aqueous Spirits are weak, use Haiphoon's Devour Water ability to eat them. After eating an elemental, you will take on Haiphoon's matching form of that elemental you last ate. Keep repeating this process.
-		Devour #3# Aqueous Spirits |q Song of Wind and Water##12726/1 |goto Sholazar Basin 26.2,37.1
-		Devour #3# Storm Revenants |q Song of Wind and Water##12726/2 |goto Sholazar Basin 26.2,37.1
+		While in Air Form:
+		kill Aqueous Spirit##28862+
+		|tip When the Aqueous Spirits are weak, use the "Devour Water" ability to eat them.
+		|tip After eating an Aqueous Spirit, you will turn into Haiphoon's Water Form.
+		Devour #3# Aqueous Spirits |q Song of Wind and Water##12726/1 |goto 25.35,35.40
+		only if havequest(12726)
+	step
+	label "Devour_Storm_Revenants"
+		While in Water Form:
+		kill Storm Revenant##28858
+		|tip When the Storm Revenants are weak, use the "Devour Wind" ability to eat them.
+		|tip After eating a Storm Revenant, you will turn into Haiphoon's Air Form.
+		Devour #3# Storm Revenants |q Song of Wind and Water##12726/2 |goto 25.35,35.40
 		only if havequest(12726)
 	step
 		click Sparktouched Crystal Defenses##191209
-		collect 1 Crystal of the Violent Storm##39694 |condition itemcount(39694)>=1 |q 12761 |goto Sholazar Basin 33.0,75.7
-		collect 1 Crystal of Unstable Energy##39693 |condition itemcount(39693)>=1 |q 12761 |goto Sholazar Basin 33.0,75.7
-		collect 1 Crystal of the Frozen Grip##39689 |condition itemcount(39689)>=1 |q 12761 |goto Sholazar Basin 33.0,75.7
+		collect 1 Crystal of the Violent Storm##39694 |condition itemcount(39694)>=1 |q 12761 |goto 33.05,75.69
+		collect 1 Crystal of Unstable Energy##39693 |condition itemcount(39693)>=1 |q 12761 |goto 33.05,75.69
+		collect 1 Crystal of the Frozen Grip##39689 |condition itemcount(39689)>=1 |q 12761 |goto 33.05,75.69
 		only if havequest(12761)
 	step
-		Use your Crystal of the Frozen Grip |use Crystal of the Frozen Grip##39689
-		Use your Crystal of the Violent Storm |use Crystal of the Violent Storm##39694
-		Use your Crystal of Unstable Energy |use Crystal of Unstable Energy##39693
-		Use your crystals near Frenzyheart mobs around this area
-		Kill #50# Frenzyheart Attackers |q Mastery of the Crystals##12761/1 |goto Sholazar Basin 22.2,78.0
+		use Crystal of the Frozen Grip##39689
+		use Crystal of the Violent Storm##39694
+		use Crystal of Unstable Energy##39693
+		|tip Use the crystals to help you defeat Frenzyheart enemies around this area.
+		Kill #50# Frenzyheart Attackers |q Mastery of the Crystals##12761/1 |goto 22.19,79.42
 		only if havequest(12761)
 	step
-		Use your Dormant Polished Crystal at the top of the Lifeblood Pillar next to the big red crystal |use Dormant Polished Crystal##39747
-		collect Energized Polished Crystal##39748 |q Power of the Great Ones##12762/2 |goto Sholazar Basin 65.5,60.2
+		use Dormant Polished Crystal##39747
+		collect Energized Polished Crystal##39748 |q Power of the Great Ones##12762/2 |goto 65.50,60.23
 		only if havequest(12762)
 	step
-		Use your Energized Polished Crystal |use Energized Polished Crystal##39748 |tip This will give you a buff that will heal you a lot every time you do damage to an enemy, so you can fight a LOT of mobs at once.
-		Kill #30# Frenzyheart Attackers |q Power of the Great Ones##12762/1 |goto Sholazar Basin 22.2,78.0
+		use Energized Polished Crystal##39748
+		Gain the Power of the Great Ones Buff |havebuff 134125 |q 12762 |goto 22.19,79.42
 		only if havequest(12762)
 	step
-		kill Frenzyheart Ravager##28078+, Frenzyheart Hunter##28079+
-		collect 1 Tainted Crystal##39266 |c |goto Sholazar Basin 22.9,76.0
-		Use your Tainted Crystal next to the tall stone altar |use Tainted Crystal##39266 |goto Sholazar Basin 33.7,75.0<5
-		Use Soo-holu's abilities to kill Frenzyheart mobs around this area
-		Kill #30# Frenzyheart Attackers |q Will of the Titans##12705/1 |goto Sholazar Basin 22.2,78.0
+		Kill Frenzyheart enemies around this area
+		Kill #30# Frenzyheart Attackers |q Power of the Great Ones##12762/1 |goto 22.19,79.42
+		only if havequest(12762)
+	step
+		Kill Frenzyheart enemies around this area
+		collect 1 Tainted Crystal##39266 |goto 22.19,79.42
+		only if havequest(12705)
+	step
+		use Tainted Crystal##39266 |goto Sholazar Basin 33.60,74.98 < 5 |walk
+		|tip Use Soo-holu's abilities to help kill Frenzyheart enemies if you aren't a high level.
+		Kill #50# Frenzyheart Attackers |q Will of the Titans##12705/1 |goto 22.19,79.42
 		only if havequest(12705)
 	step
 		talk Lightningcaller Soo-met##28107
-		turnin Mastery of the Crystals##12761 |goto Sholazar Basin 33.5,74.8 |only if havequest(12761)
-		turnin Power of the Great Ones##12762 |goto Sholazar Basin 33.5,74.8 |only if havequest(12762)
-		turnin Will of the Titans##12705 |goto Sholazar Basin 33.5,74.8 |only if havequest(12705)
+		turnin Mastery of the Crystals##12761 |or |goto 33.50,74.75 |only if havequest(12761)
+		turnin Power of the Great Ones##12762 |or |goto 33.50,74.75 |only if havequest(12762)
+		turnin Will of the Titans##12705 |or |goto 33.50,74.75 |only if havequest(12705)
 	step
 		talk Oracle Soo-nee##29006
-		turnin A Cleansing Song##12735 |goto Sholazar Basin 53.3,56.5 |only if havequest(12735)
-		turnin Song of Fecundity##12737 |goto Sholazar Basin 53.3,56.5 |only if havequest(12737)
-		turnin Song of Reflection##12736 |goto Sholazar Basin 53.3,56.5 |only if havequest(12736)
-		turnin Song of Wind and Water##12726 |goto Sholazar Basin 53.3,56.5 |only if havequest(12726)
+		turnin A Cleansing Song##12735 |or |goto 53.34,56.45 |only if havequest(12735)
+		turnin Song of Fecundity##12737 |or |goto 53.34,56.45 |only if havequest(12737)
+		turnin Song of Reflection##12736 |or |goto 53.34,56.45 |only if havequest(12736)
+		turnin Song of Wind and Water##12726 |or |goto 53.34,56.45 |only if havequest(12726)
 	step
 		talk High-Oracle Soo-say##28027
-		turnin Appeasing the Great Rain Stone##12704 |goto Sholazar Basin 54.6,56.4 |only if havequest(12704)
+		turnin Appeasing the Great Rain Stone##12704 |goto 54.59,56.36
+	step
+		You've completed the daily for today
+		Click to restart the dailies guide |confirm |next "Oracles_Dailies_Start"
 ]])
 
 --------------------------------------

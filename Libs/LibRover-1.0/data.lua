@@ -4,7 +4,7 @@ addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
 data.version={
-	nodes_version = 203,  -- Increase this when working on the nodes. Bake the connections using the Debug menu when you're done.
+	nodes_version = 246,  -- Increase this when working on the nodes. Bake the connections using the Debug menu when you're done.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -20,12 +20,12 @@ data.MapIDsByName = {
 ["Draenor"] = {[0]=572},
 ["Eastern Kingdoms"] = {[0]=13},
 ["Kalimdor"] = {[0]=12},
-["Kul Tiras"] = {[0]=876},
+["Kul Tiras"] = {[0]=876, [1]=1014},
 ["Northrend"] = {[0]=113},
 ["Outland"] = {[0]=101},
 ["Pandaria"] = {[0]=424},
 ["The Maelstrom"] = {[0]=948},
-["Zandalar"] = {[0]=875},
+["Zandalar"] = {[0]=875, [1]=1011},
 
 
 
@@ -37,14 +37,12 @@ data.MapIDsByName = {
 ["Boralus"] = {[0]=1161},
 ["Drustvar"] = {[0]=896, [1]=1045},
 ["Stormsong Valley"] = {[0]=942, [1]=1179, [2]=1180, [3]=1183, [4]=1182},
-["Kul Tiras"] = {[0]=1014},
 ["Tiragarde Sound"] = {[0]=895, [1]=1171, [2]=1172, [3]=1185, [4]=1184},
 ["The Great Sea"] = {[0]=1157},
 
 --Zandalar
 ["Nazmir"] = {[0]=863},
 ["Vol'dun"] = {[0]=864,[1]=1009},
-["Zandalar"] = {[0]=1011},
 ["Zuldazar"] = {[0]=862, [1]=1173, [2]=1174, [3]=1176, [4]=1177,[5]=1181},
 ["Dazar'alor"] = {[0]=1165, [1]=1163, [2]=1164, [3]=1166, [4]=1167},
 
@@ -52,19 +50,44 @@ data.MapIDsByName = {
 ["Atal'Dazar"] = {[0]=934,[1]=935},
 ["Freehold"] = {[0]=936},
 ["Shrine of the Storm"] = {[0]=1039,[1]=1040},
-["Tol Dagor"] = {[0]=974,[1]=975,[2]=976,[3]=977,[4]=978,[5]=979,[6]=980, [7]=1169},
+["Tol Dagor"] = {[0]=974,[1]=975,[2]=976,[3]=977,[4]=978,[5]=979,[6]=980},
+["Tol Dagor Isle"] = {[0]=1169},
 ["King's Rest"] = {[0]=1004},
 ["Temple of Sethraliss"] = {[0]=1038,[1]=1043},
-["Waycrest Manor"] = {[0]=1015,[1]=1016,[2]=1017,[3]=1018},
+["Waycrest Manor"] = {[0]=1015,[1]=1016,[2]=1017,[3]=1018,[4]=1029},
 ["The MOTHERLODE!!"] = {[0]=1010},
 ["Uldir"] = {[0]=1148, [1]=1149, [2]=1150, [3]=1151, [4]=1152, [5]=1153, [6]=1154, [7]=1155},
 ["Siege of Boralus"] = {[0]=1162},
+
+--BFA Raid
+["Battle of Dazar'alor"] = {[0]=1352, [1]=1353, [2]=1354, [3]=1356, [4]=1357, [5]=1358, [6]=1364, [7]=1367},
+["Crucible of Storms"] = {[0]=1363},
+["Ring of Containment"] = {[0]=1381},
+["The Oblivion Door"] = {[0]=1382},
+
 
 --Island Expeditions
 ["Uncharted Island"] = {[0]=1022},
 ["Un'gol Ruins"] = {[0]=981},
 
+--Patch 8.1
+["Tol Dagor Scenario"] = {[0]=1349,[1]=1351,[2]=1350},
+["Zandalari Treasury"] = {[0]=1348},
+["Arathi Warfront"] = {[0]=1044},
+["Darkshore Warfront"] = {[0]=1332},
+["Darkshore H"] = {[0]=1333},
 
+--Shadowforge City
+["Shadowforge City"] = {[0]=1186},
+
+--Mag'har Allied Race Gorgrond Scenario
+["Gorgrond Maghar Scenario"] = {[0]=1170},
+
+--Prison of Ink
+["Prison of Ink"] = {[0]=1407},
+
+--Icecrown Citadel Scenario
+["Icecrown Citadel L"] = {[0]=1359},
 
 
 -------------------------------------
@@ -84,9 +107,10 @@ data.MapIDsByName = {
 ["Duskwood"] = {[0]=47},
 ["Eastern Plaguelands"] = {[0]=23,[20]=24},
 ["Elwynn Forest"] = {[0]=37,[1]=38,[2]=39,[19]=40},
+["Gnomeregan Scenario"] = {[0]=840,[1]=841,[2]=842},
 ["Hillsbrad Foothills"] = {[0]=25},
 ["The Hinterlands"] = {[0]=26},
-["Ironforge"] = {[0]=87},
+["Ironforge"] = {[0]=87,[1]=1361},
 ["Kelp'thar Forest"] = {[0]=201},
 ["Loch Modan"] = {[0]=48},
 ["New Tinkertown"] = {[0]=469,[8]=470},
@@ -114,6 +138,7 @@ data.MapIDsByName = {
 ["Bloodmyst Isle"] = {[0]=106},
 ["Camp Narache"] = {[0]=462},
 ["Darkshore"] = {[0]=62},
+["Darkshore Scenario"] = {[0]=1338},
 ["Darnassus"] = {[0]=89},
 ["Deathknell"] = {[0]=465,[12]=466},
 ["Desolace"] = {[0]=66,[21]=67,[22]=68},
@@ -133,7 +158,7 @@ data.MapIDsByName = {
 ["Moonglade"] = {[0]=80},
 ["Mulgore"] = {[0]=7,[6]=8,[7]=9},
 ["Northern Barrens"] = {[0]=10,[20]=11},
-["Orgrimmar"] = {[0]=85, [1]=85,[2]=86},
+["Orgrimmar"] = {[1]=85,[2]=86},
 ["Shadowglen"] = {[0]=460},
 ["Silithus"] = {[0]=81,[13]=82},
 ["Silvermoon City"] = {[0]=110},
@@ -181,11 +206,11 @@ data.MapIDsByName = {
 ["The Jade Forest"] = {[0]=371,[6]=372,[7]=373,[15]=374,[16]=375},
 ["Krasarang Wilds"] = {[0]=418,[1]=419,[2]=420,[3]=421},
 ["Kun-Lai Summit"] = {[0]=379,[8]=380,[9]=381,[10]=382,[11]=383,[12]=384,[17]=385,[20]=386,[21]=387},
-['Shrine of Seven Stars'] = {[1]=393,[2]=394}, 
+["Shrine of Seven Stars"] = {[1]=393,[2]=394}, 
 ["Shrine of Two Moons"] = {[1]=391,[2]=392},
 ["Timeless Isle"] = {[0]=554,[22]=555},
 ["Townlong Steppes"] = {[0]=388,[13]=389},
-["Vale of Eternal Blossoms"] = {[0]=390,[1]=391,[2]=392,[3]=393,[4]=394,[18]=395,[19]=396},
+["Vale of Eternal Blossoms"] = {[0]=390,[1]=395,[2]=396},
 ["Valley of the Four Winds"] = {[0]=376,[14]=377},
 ["The Veiled Stair"] = {[0]=433,[5]=434},
 
@@ -483,15 +508,6 @@ data.MapIDsByName = {
 
 
 
-
-
-
-
-
-
-
-
-
 ["Atul'Aman"] = {[0]=1009},
 ["Chamber Of Heart"] = {[0]=1021},
 ["Greymane Manor"] = {[0]=1030,[1]=1031},
@@ -506,7 +522,6 @@ data.MapIDsByName = {
 ["The Underrot"] = {[0]=1041,[1]=1042},
 ["Tropical Isle 8.0"] = {[0]=939},
 ["Verdant Wilds"] = {[0]=1034},
-["Waycrest Dimension"] = {[0]=1029},
 ["Whispering Reef"] = {[0]=1037},
 ["Thros, The Blighted Lands"] = {[0]=1045},
 ["Tirisfal Glades BFA"] = {[0]=997},
@@ -526,6 +541,18 @@ data.MapIDsByName = {
 ['1130'] = {[1] = 827},
 ['1148'] = {[1] = 857},
 ['1166'] = {[1] = 881},
+
+-- 8.2
+["Orgrimmar Collapse Scenario"] = {[0]=1499},
+["Mechagon Island"] = {[0]=1462},
+["Mechagon"] = {[0]=1490, [1]=1491, [2]=1493, [3]=1494, [4]=1497}, -- may need to reverse the order if we go down the floors
+["Nazjatar"] = {[0]=1504},
+["Chamber of Heart 2"] = {[0]=1473},
+["The Emerald Dreamway"] = {[0]=1471,[1]=1475},
+["The Dragon's Spine"] = {[0]=1472},
+["The Maelstrom HoA"] = {[0]=1474},
+["Vermillion Redoubt"] = {[0]=1476},
+
 
 
 --Unused Maps
@@ -779,31 +806,92 @@ data.basenodes.setup = {
 
 -- These zone pairs see directly into each other, as they share "green" borders.
 data.greenborders = {
-	{"Elwynn Forest","Duskwood"},
-	{"Westfall","Duskwood"},
-	{"Eversong Woods","Ghostlands"},
 
-	{"Kelp'thar Forest","Shimmering Expanse"},
-	{"Shimmering Expanse","Abyssal Depths"},
-	{"Abyssal Depths","Kelp'thar Forest"},
+----------------------
+-- EASTERN KINGDOMS --
+----------------------
 
-	{"Tiragarde Sound","Boralus"},
-	{"Zuldazar","Dazar'alor"},
+-- Main Zone Borders
+	{"Elwynn Forest/0","Duskwood/0"},
+	{"Westfall/0","Duskwood/0"},
+	{"Eversong Woods/0","Ghostlands/0"},
+
+-- Ghostlands
+	{"Ghostlands/0","Ghostlands/1"},
+
+-- Ironforge
+	{"Ironforge/0","Ironforge/1"},	-- Old Ironforge
+
+
+---------------
+-- CATACLYSM --
+---------------
+
+-- Main Zone Borders
+	{"Kelp'thar Forest/0","Shimmering Expanse/0"},
+	{"Shimmering Expanse/0","Abyssal Depths/0"},
+	{"Abyssal Depths/0","Kelp'thar Forest/0"},
+
+
+------------------------
+-- BATTLE FOR AZEROTH --
+------------------------
+
+-- Main Zone Borders
+	{"Tiragarde Sound/0","Boralus/0"},
+	{"Zuldazar/0","Dazar'alor/0"},
+	{"Drustvar/0","Tiragarde Sound/0"},
+	{"Zandalar/0","Nazmir/0"},
+
+-- Dazar'alor
 	{"Dazar'alor/0","Dazar'alor/1"},
 	{"Dazar'alor/0","Dazar'alor/2"},
+	{"Dazar'alor/0","Dazar'alor/3"},
+	{"Dazar'alor/0","Dazar'alor/4"},
 	{"Dazar'alor/1","Dazar'alor/2"},
-	{"Drustvar/0","Tiragarde Sound/0"},
+	{"Dazar'alor/4","Dazar'alor/3"},
+
+-- Tiragarde Sound
 	{"Tiragarde Sound/3","Tiragarde Sound/4"},
 	{"Tiragarde Sound/0","Tiragarde Sound/3"},
 	{"Tiragarde Sound/0","Tiragarde Sound/4"},
 	{"Tiragarde Sound/1","Tiragarde Sound/2"},
 	{"Tiragarde Sound/0","Tiragarde Sound/1"},
 	{"Tiragarde Sound/0","Tiragarde Sound/2"},
+
+-- Stormsong Valley
 	{"Stormsong Valley/0","Stormsong Valley/4"},
 	{"Stormsong Valley/0","Stormsong Valley/1"},
 	{"Stormsong Valley/0","Stormsong Valley/2"},
 	{"Stormsong Valley/1","Stormsong Valley/2"},
+	{"Stormsong Valley/0","Stormsong Valley/3"},
+
+-- Zuldazar
+	{"Zuldazar/0","Zuldazar/4"},
+	{"Zuldazar/0","Zuldazar/1"},
+	{"Zuldazar/0","Zuldazar/2"},
+	{"Zuldazar/1","Zuldazar/2"},
+	{"Zuldazar/0","Zuldazar/3"},
+
+-- Vol'dun
+	{"Vol'dun/0","Vol'dun/1"},
+
+-- Tol Dagor Scenario
+	{"Tol Dagor Scenario/0","Tol Dagor Scenario/1"},
+	{"Tol Dagor Scenario/0","Tol Dagor Scenario/2"},
+	{"Tol Dagor Scenario/1","Tol Dagor Scenario/2"},
 }
+
+
+
+
+
+
+
+
+
+
+
 
 data.walls = {
 	["Tirisfal Glades"] = {
@@ -849,6 +937,7 @@ data.zoneflags = {
 --]]
 
 data.point_context_templates = {
+	{'start_start',"Start at {node}"}, -- dev purposes only
 	{'walk_start',"You are here"},
 
 	{'whistle',"Use Flight Master's Whistle"},
@@ -915,6 +1004,7 @@ data.point_context_templates = {
 
 	{'teleport_ask',"Use a Mage Portal to {map}"},
 	{'useitem',"Use {item}"},
+	{'*_temp__mole_*',"{next_title}"}, -- not used; .title overrides this
 
 	{'hearth',"Hearth to {name}"},
 	{'ghearth',"Hearth to Your Garrison"},
@@ -978,6 +1068,9 @@ data.ZoneMeta = {
 	["Deeprun Tram/2"] = {hostile=false},
 	["Dazar'alor/1"] = {hostile=false},
 	["Dazar'alor/2"] = {hostile=false},
+	[831] = {hostile=false},
+	[886] = {hostile=false},
+	[883] = {hostile=false},
 }
 
 --[[

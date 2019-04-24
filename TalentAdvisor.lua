@@ -160,12 +160,10 @@ function TA:Toggle(enable)
 
 	if enable then
 		for _,icon in pairs(TA.TalentIcons) do icon:Show() end
-		for _,icon in pairs(TA.PVPTalentIcons) do icon:Show() end
 		TA.SpecIcon:Show()
 		TA.PetSpecIcon:Show()
 	else
 		for _,icon in pairs(TA.TalentIcons) do icon:Hide() end
-		for _,icon in pairs(TA.PVPTalentIcons) do icon:Hide() end
 		TA.SpecIcon:Hide()
 		TA.PetSpecIcon:Hide()
 	end

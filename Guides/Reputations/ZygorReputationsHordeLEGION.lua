@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ReputationsHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Fishing\\Ilyssia of the Waters",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\Fishing\\Ilyssia of the Waters",{
 author="support@zygorguides.com",
 keywords={"fishing, reputation"},
 description="This guide will walk you through becoming best friends with Ilyssia of the Waters.",
@@ -30,7 +30,7 @@ step
 _Congratulations!_
 You are now best friends with "Ilyssia of the Waters."
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Fishing\\Impus",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\Fishing\\Impus",{
 author="support@zygorguides.com",
 keywords={"fishing, reputation"},
 description="This guide will walk you through becoming best friends with Impus in the Broken Shore.",
@@ -57,7 +57,7 @@ step
 _Congratulations!_
 You are now best friends with "Impus."
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Fishing\\Corbyn",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\Fishing\\Corbyn",{
 author="support@zygorguides.com",
 keywords={"fishing, reputation"},
 description="This guide will walk you through becoming best friends with Corbyn in Stormheim.",
@@ -82,7 +82,7 @@ step
 _Congratulations!_
 You are now best friends with "Corbyn."
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Fishing\\Keeper Raynae",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\Fishing\\Keeper Raynae",{
 author="support@zygorguides.com",
 keywords={"fishing, reputation"},
 description="This guide will walk you through becoming best friends with Keeper Raynae in Val'sharah.",
@@ -111,7 +111,7 @@ step
 _Congratulations!_
 You are now best friends with "Keeper Raynae."
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Fishing\\Sha'leth",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\Fishing\\Sha'leth",{
 author="support@zygorguides.com",
 keywords={"fishing, reputation"},
 description="This guide will walk you through becoming best friends with Sha'leth in Suramar.",
@@ -139,7 +139,7 @@ step
 _Congratulations!_
 You are now best friends with "Sha'leth."
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Fishing\\Akule Riverhorn",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\Fishing\\Akule Riverhorn",{
 author="support@zygorguides.com",
 keywords={"fishing, reputation"},
 description="This guide will walk you through becoming best friends with Akule Riverhorn in Highmountain.",
@@ -168,7 +168,7 @@ step
 _Congratulations!_
 You are now best friends with "Akule Riverhorn."
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Argussian Reach",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\Argussian Reach",{
 author="support@zygorguides.com",
 keywords={"reputation"},
 description="This guide will walk you through becoming exalted with the Argussian Reach faction.",
@@ -177,9 +177,9 @@ step
 _Earning reputation with Argussian Reach can be achieved by:_
 Completing the Argus story quests
 |tip This is also required to unlock various world quest areas.
-Click here to load the Argus guide |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign"
+Click here to load the Argus guide |next "Leveling Guides\\Legion (100-110)\\Argus Campaign"
 Completing Argus world quests
-Click here to load the world quests guide |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the world quests guide |next "Dailies Guides\\Legion\\World Quests"
 Using Argussian Reach reputation insignias
 |tip These are awarded from Order Hall missions, Argussian Reach emissary quests, and world quests.
 |tip These can also be chosen from "The Kirin Tor of Dalaran" emissary quest.
@@ -194,7 +194,7 @@ step
 _Congratulations!_
 You have earned Exalted reputation with the "Argussian Reach" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Armies of Legionfall",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\Armies of Legionfall",{
 author="support@zygorguides.com",
 keywords={"Armies","Legionfall","Army"},
 description="This guide will walk you through becoming exalted with the \"Armies of Legionfall\" faction.",
@@ -203,34 +203,34 @@ achieveid={11545, 11796},
 step
 _Earning reputation with Armies of Legionfall can be achieved by:_
 |tip Completing Broken Shore world quests.
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 |tip Completing quests offered by Excavator Karla
 |tip Karla offers a new quest every day. You can find her by looking for the new quest icon on the Broken Shore map.
-Click here to load the "Excavator Karla" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore\\Excavator Karla Quests"
+Click here to load the "Excavator Karla" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore\\Excavator Karla Quests"
 |tip Turning in a building construction quest at Deliverance Point in Broken Shore rewards 150 reputation
 |tip You also receive 150 reputation for donating 100 Legionfall War Supplies to the Legionfall Construction Table.
 |tip Using Legionfall Insignias from Class Order Hall missions.
 Use your Legionfall Insignia |use Legionfall Insignia##146949 |only if itemcount(146949) >= 1
 |tip These can also be chosen from "The Kirin Tor of Dalaran" emissary quest.
-Click here to load the "Death Knight 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight 7.2 Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter 7.2 Order Hall Quests" |only DemonHunter
-Click here to load the "Druid 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid 7.2 Order Hall Quests" |only Druid
-Click here to load the "Hunter 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter 7.2 Order Hall Quests" |only Hunter
-Click here to load the "Mage 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage 7.2 Order Hall Quests" |only Mage
-Click here to load the "Monk 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk 7.2 Order Hall Quests" |only Monk
-Click here to load the "Paladin 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin 7.2 Order Hall Quests" |only Paladin
-Click here to load the "Priest 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest 7.2 Order Hall Quests" |only Priest
-Click here to load the "Rogue 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue 7.2 Order Hall Quests" |only Rogue
-Click here to load the "Shaman 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman 7.2 Order Hall Quests" |only Shaman
-Click here to load the "Warlock 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock 7.2 Order Hall Quests" |only Warlock
-Click here to load the "Warrior 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior 7.2 Order Hall Quests" |only Warrior
+Click here to load the "Death Knight 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight 7.2 Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter 7.2 Order Hall Quests" |only DemonHunter
+Click here to load the "Druid 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid 7.2 Order Hall Quests" |only Druid
+Click here to load the "Hunter 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter 7.2 Order Hall Quests" |only Hunter
+Click here to load the "Mage 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage 7.2 Order Hall Quests" |only Mage
+Click here to load the "Monk 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk 7.2 Order Hall Quests" |only Monk
+Click here to load the "Paladin 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin 7.2 Order Hall Quests" |only Paladin
+Click here to load the "Priest 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest 7.2 Order Hall Quests" |only Priest
+Click here to load the "Rogue 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue 7.2 Order Hall Quests" |only Rogue
+Click here to load the "Shaman 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman 7.2 Order Hall Quests" |only Shaman
+Click here to load the "Warlock 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock 7.2 Order Hall Quests" |only Warlock
+Click here to load the "Warrior 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior 7.2 Order Hall Quests" |only Warrior
 |tip Class champion and Class Order Hall questlines reward various one-time reputation gains.
 Gain exalted reputation with the Armies of Legionfall |condition rep("Armies of Legionfall")>=Exalted
 step
 _Congratulations!_
 You earned exalted reputation with the "Armies of Legionfall" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Army of the Light",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\Army of the Light",{
 author="support@zygorguides.com",
 keywords={"reputation"},
 description="This guide will walk you through becoming exalted with the Army of the Light faction.",
@@ -239,9 +239,9 @@ step
 _Earning reputation with Army of the Light can be achieved by:_
 Completing the Argus story quests
 |tip This is also required to unlock various world quest areas.
-Click here to load the Argus guide |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign"
+Click here to load the Argus guide |next "Leveling Guides\\Legion (100-110)\\Argus Campaign"
 Completing Argus world quests
-Click here to load the world quests guide |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the world quests guide |next "Dailies Guides\\Legion\\World Quests"
 Using Army of the Light reputation insignias
 |tip These are awarded from Order Hall missions, Army of the Light emissary quests, and world quests.
 |tip These can also be chosen from "The Kirin Tor of Dalaran" emissary quest.
@@ -256,7 +256,7 @@ step
 _Congratulations!_
 You have earned Exalted reputation with the "Army of the Light" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Conjurer Margoss",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\Conjurer Margoss",{
 author="support@zygorguides.com",
 keywords={"Conjurer","Margoss"},
 description="This guide will walk you through becoming exalted with the Conjurer Margoss faction.",
@@ -284,7 +284,7 @@ step
 _Congratulations!_
 You earned Best Friend reputation with the "Conjurer Margoss" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Court of Farondis",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\Court of Farondis",{
 author="support@zygorguides.com",
 keywords={"Court","Farondis"},
 description="This guide will walk you through becoming exalted with the Court of Farondis faction.",
@@ -299,7 +299,7 @@ step
 _Congratulations!_
 You earned Exalted reputation with the "Court of Farondis" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Dreamweavers",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\Dreamweavers",{
 author="support@zygorguides.com",
 keywords={"Dreamweavers"},
 description="This guide will walk you through becoming exalted with the Dreamweavers faction.",
@@ -314,7 +314,7 @@ step
 _Congratulations!_
 You earned Exalted reputation with the "Dreamweavers" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Highmountain Tribe",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\Highmountain Tribe",{
 author="support@zygorguides.com",
 keywords={"Highmountain","Tribe"},
 description="This guide will walk you through becoming exalted with the Highmountain Tribe faction.",
@@ -329,7 +329,7 @@ step
 _Congratulations!_
 You earned Exalted reputation with the "Highmountain Tribe" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\The Nightfallen",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\The Nightfallen",{
 author="support@zygorguides.com",
 keywords={"Nightfallen"},
 description="This guide will walk you through becoming exalted with The Nightfallen faction.",
@@ -357,7 +357,7 @@ step
 _Congratulations!_
 You earned Exalted reputation with "The Nightfallen" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Valarjar",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\Valarjar",{
 author="support@zygorguides.com",
 keywords={"Valarjar"},
 description="This guide will walk you through becoming exalted with the Valarjar faction.",
@@ -372,7 +372,7 @@ step
 _Congratulations!_
 You earned Exalted reputation with the "Valarjar" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\The Wardens",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Legion Reputations\\The Wardens",{
 author="support@zygorguides.com",
 keywords={"Wardens"},
 description="This guide will walk you through becoming exalted with The Wardens faction.",

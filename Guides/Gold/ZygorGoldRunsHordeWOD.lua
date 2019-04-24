@@ -1702,12 +1702,12 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Horde Daily Runs\\The Golden Lotus Dailie
 		confirm
 		only if havequest(30280) or havequest(30277)
 	step
-		kill Milau##64965 |q 30280/1 |goto Vale of Eternal Blossoms/18 53.9,68.3
+		kill Milau##64965 |q 30280/1 |goto Vale of Eternal Blossoms/1 53.9,68.3
 		|tip Milau has several deadly abilities. He will cast a Lightning Breath in any direction, do not be in front of him when he does this. He also starts casting Lightning Pools, constantly move until he is done. Periodically he will pull you to the middle of the room and cast Lightning Sweep. While he is casting get as much distance on him as you can.
 		only if havequest(30280)
 	step
 		click Deactivate Final Spirit Wall##214477
-		Deactivate the Final Spirit Wall |q 30277/1 |goto Vale of Eternal Blossoms/18 42.1,27.2
+		Deactivate the Final Spirit Wall |q 30277/1 |goto Vale of Eternal Blossoms/1 42.1,27.2
 		only if havequest(30277)
 	step
 		click Ancient Guo-Lai Artifact##214394

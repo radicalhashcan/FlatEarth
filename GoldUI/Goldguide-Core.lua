@@ -198,31 +198,46 @@ function Goldguide:Update()
 	if tab=="Gathering" then 
 		if results==0 then
 			if #Goldguide.Chores.Gathering==0 then
-				resultstatus = L["gold_gathering_no_results"]
+				resultstatus = L["gold_gathering_no_results"]..L["gold_general_open_window1"]
 			else
 				local type = Goldguide.Gathering_Frame.TypeDropdown:GetCurrentSelectedItem():GetText()
 				local profstrings = "" 
 				local gatheringprofs={herbalism="Herbalism",mining="Mining",skinning="Skinning",fishing="Fishing",enchanting="Enchanting"}
 
 				for k,prof in pairs(gatheringprofs) do
-					local skill=ZGV.Professions:GetSkill(prof).level
-					if skill>0 then 
-						profstrings = profstrings .. "\n" .. L["gold_gathering_error_prof"]:format(prof,skill)
+					local skill=ZGV.Professions:GetSkill(prof)
+					local level=skill.level
+					if level>0 then 
+						profstrings = profstrings .. "\n" .. L["gold_gathering_error_prof"]:format(prof,level)
+					end
+					if ZGV.Professions.tradeskills[skill.parentskillID] and ZGV.Professions.tradeskills[skill.parentskillID].subs then
+						for i,v in pairs(ZGV.Professions.tradeskills[skill.parentskillID].subs) do
+							if v.name ~= prof then
+								local subskill=ZGV.Professions:GetSkill(v.name)
+								local sublevel=subskill.level
+								if sublevel>0 then 
+									profstrings = profstrings .. "\n" .. L["gold_gathering_error_prof"]:format(v.name,sublevel)
+								end
+							end
+						end
 					end
 				end
 
 				if type~="All" then
 					local level = ZGV.Professions:GetSkill(type).level
 					if level==0 then
-						resultstatus = L["gold_gathering_error_one_noskillin"]:format(type,profstrings)
+						resultstatus = L["gold_gathering_error_one_noskillin"]:format(type) .. L["gold_general_open_window1"]
+						if profstrings~="" then
+							resultstatus = resultstatus..L["gold_gathering_error_one_noskillin_skills"]:format(profstrings)
+						end
 					else
 						resultstatus = L["gold_gathering_error_one_noresults"]:format(type)
 					end
 				else
 					if profstrings~="" then
-						resultstatus = L["gold_gathering_error_one_nothing"]:format(profstrings)
+						resultstatus = L["gold_gathering_error_one_nothing"]:format(profstrings) .. L["gold_general_open_window2"]
 					else
-						resultstatus = L["gold_gathering_error_all_noprofessions"]
+						resultstatus = L["gold_gathering_error_all_noprofessions"] .. L["gold_general_open_window1"]
 					end
 				end
 			end
@@ -622,6 +637,7 @@ Goldguide.Common = {}
 function Goldguide.Common:AreRequirementsMet(ignore_skill,ignore_level)
 	if ZGV.Gold.any_skill then ignore_skill=true end
 	if ZGV.Gold.any_level then ignore_level=true end
+	
 	if self.meta then
 		if self.meta.levelreq and not ignore_level then
 			local level = ZGV:GetPlayerPreciseLevel()
@@ -629,9 +645,11 @@ function Goldguide.Common:AreRequirementsMet(ignore_skill,ignore_level)
 			if type(self.meta.levelreq)=="table" and level<self.meta.levelreq[1] then return false,"level" end
 		end
 		if self.meta.skillreq and not ignore_skill then
-			for skillid,skilldata in pairs(ZGV.Professions.tradeskills) do
-				local req = self.meta.skillreq[string.lower(skilldata.name)]
-				if req and ((ZGV.Professions:GetSkill(skilldata.name).level or 0)<(req or 0)) then return false,"skill" end
+			for entry,value in pairs(self.meta.skillreq) do
+				if ZGV.Professions.tradeskillsIdByName[entry] then
+					local tradeskill = ZGV.Professions:GetSkill(entry)
+					if (not tradeskill.active) or (tradeskill.level or 0) < (req or 0) then return false,"skill" end
+				end
 			end
 		end
 	end

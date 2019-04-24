@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("DailiesABFA") then return end
 ZygorGuidesViewer.GuideMenuTier = "BFA"
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Battle for Azeroth\\BFA World Quest Unlock",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Battle for Azeroth\\BFA World Quest Unlock",{
 author="support@zygorguides.com",
 description="This guide will walk you through unlocking world quests in Kul Tiras and Zandalar.\n\n"..
 "To accomplish this, you will need to earn \"Friendly\" reputation with the follwing factions:\n\n"..

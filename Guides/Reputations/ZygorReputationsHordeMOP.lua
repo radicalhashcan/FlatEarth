@@ -3,21 +3,21 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ReputationsHMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Dominance Offensive\\Dominance Offensive\\Beastmaster Dailies",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Dominance Offensive\\Dominance Offensive\\Beastmaster Dailies",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Dominance Offensive faction.",
 achieveid={8206},
 },[[
 #include "Sturdy_Traps"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Dominance Offensive\\Dominance Offensive",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Dominance Offensive\\Dominance Offensive",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Dominance Offensive faction.",
 achieveid={7929},
 },[[
 #include "Dominance_Offensive"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Chee Chee",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Chee Chee",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Chee Chee.",
 achieveid={6551, 6552},
@@ -128,7 +128,7 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Ella",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Ella",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Ella.",
 achieveid={6551, 6552},
@@ -275,7 +275,7 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Farmer Fung",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Farmer Fung",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Farmer Fung.",
 achieveid={6551, 6552},
@@ -349,7 +349,7 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Fish Fellreed",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Fish Fellreed",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Fish Fellreed.",
 achieveid={6551, 6552},
@@ -435,7 +435,7 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Gina Mudclaw",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Gina Mudclaw",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Gina Mudclaw.",
 achieveid={6551, 6552},
@@ -510,7 +510,7 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Haohan Mudclaw",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Haohan Mudclaw",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Haohan Mudclaw.",
 achieveid={6551, 6552},
@@ -584,7 +584,7 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Jogu the Drunk",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Jogu the Drunk",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Jogu the Drunk.",
 achieveid={6551, 6552},
@@ -684,7 +684,7 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Old Hillpaw",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Old Hillpaw",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Old Hillpaw.",
 achieveid={6551, 6552},
@@ -763,7 +763,7 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Sho",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Sho",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Sho.",
 achieveid={6551, 6552},
@@ -847,7 +847,7 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Tina Mudclaw",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Tina Mudclaw",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Tina Mudclaw.",
 achieveid={6551, 6552},
@@ -929,7 +929,7 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Anglers",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\The Anglers",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Anglers faction.",
 achieveid={6547,7614},
@@ -1093,7 +1093,7 @@ step
 You have reached the end of this guide
 Click here to go back to the dailies |confirm |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The August Celestials",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\The August Celestials",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The August Celestials faction.",
 condition_suggested=function() return level >= 85 and level <= 90 and rep('August Celestials') < Exalted end,
@@ -1522,7 +1522,7 @@ step
 label "end"
 This is the end of the current guide. Click here to go back to the beginning. |confirm |next "startaug"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Emperor Shaohao",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Emperor Shaohao",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Emperor Shaohao faction.",
 achieveid={8715},
@@ -1637,19 +1637,19 @@ kill Ordon Fire-Watcher##72894+, Ordon Candlekeeper##72875+, Ordon Oathguard##72
 step
 Congratulations, you are now _Exalted_ with _Emperor Shaohao_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Forest Hozen",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Forest Hozen",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Forest Hozen faction.",
 },[[
 step
 For this achievement you will need to complete a specific quest line that becomes available whilst doing The Jade Forest leveling zone
-Check out our Jade Forest guide to accomplish this |next "Zygor's Leveling Guides\\Pandaria (80-90)\\The Jade Forest (80-90)" |confirm |or
+Check out our Jade Forest guide to accomplish this |next "Leveling Guides\\Pandaria (80-90)\\The Jade Forest (80-90)" |confirm |or
 Gain Exalted reputation with the Forest Hozen |condition rep("Forest Hozen")>=Exalted |or
 step
 Congratulations!
 You are now exalted with the "Pearlfin Jinyu."
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Golden Lotus",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\The Golden Lotus",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Golden Lotus faction.",
 condition_suggested=function() return level >= 85 and level <= 90 and rep('Golden Lotus') < Exalted end,
@@ -1757,12 +1757,12 @@ Traverse the following rooms by only stepping on the _green_ or _red_ tiles, oth
 confirm
 only if havequest(30280) or havequest(30277)
 step
-kill Milau##64965 |q 30280/1 |goto Vale of Eternal Blossoms/18 53.9,68.3
+kill Milau##64965 |q 30280/1 |goto Vale of Eternal Blossoms/1 53.9,68.3
 |tip Milau has several deadly abilities. He will cast a Lightning Breath in any direction, do not be in front of him when he does this. He also starts casting Lightning Pools, constantly move until he is done. Periodically he will pull you to the middle of the room and cast Lightning Sweep. While he is casting get as much distance on him as you can.
 only if havequest(30280)
 step
 click Deactivate Final Spirit Wall##214477
-Deactivate the Final Spirit Wall |q 30277/1 |goto Vale of Eternal Blossoms/18 42.1,27.2
+Deactivate the Final Spirit Wall |q 30277/1 |goto Vale of Eternal Blossoms/1 42.1,27.2
 only if havequest(30277)
 step
 click Ancient Guo-Lai Artifact##214394
@@ -1789,7 +1789,7 @@ label "end"
 You have reached the end of the guide for today
 Click here to go back to the beginning of the dailies |confirm |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Huojin Pandaren",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Huojin Pandaren",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Huojin Pandaren faction.",
 condition_suggested=function() return level >= 20 and level <= 60 and rep('Huojin Pandaren') < Exalted end,
@@ -1804,7 +1804,7 @@ Become Exalted with Huojin Pandaren |condition rep('Huojin Pandaren')==Exalted
 step
 Congratulations, you have reached exalted with the Huojin Pandaren!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Klaxxi",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\The Klaxxi",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Klaxxi faction.",
 condition_suggested=function() return level >= 85 and level <= 90 and rep('The Klaxxi') < Exalted end,
@@ -1818,7 +1818,7 @@ Falling to Pieces |achieve 6540/2
 Blood of Ancients |achieve 6540/3
 Mazu's Bounty |achieve 6540/4
 Please refer to Zygor's Leveling and Loremaster guides for assistance in completing these questlines
-Click here to go to Zygor's Leveling and Loremaster guides for assistance in completing these questlines |confirm |next "Zygor's Leveling Guides\\Pandaria (80-90)\\Dread Wastes (84-90)"
+Click here to go to Zygor's Leveling and Loremaster guides for assistance in completing these questlines |confirm |next "Leveling Guides\\Pandaria (80-90)\\Dread Wastes (84-90)"
 confirm
 step
 label "klaxxi start"
@@ -2261,7 +2261,7 @@ label "end"
 This is the end of this guide.
 Click here to return to the beginning of the dailies |confirm |next "klaxxi start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Lorewalkers",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Lorewalkers",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Lorewalkers faction.",
 achieveid={6548},
@@ -2471,7 +2471,7 @@ Watch his story, then click here |confirm always
 step
 Congratulations, you are now Exalted with the Lorewalkers!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Nat Pagle",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Nat Pagle",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with Nat Pagle faction.",
 achieveid={7274},
@@ -2519,7 +2519,7 @@ turnin Mimic Octopus##31446 |goto Krasarang Wilds 68.4,43.5
 turnin Flying Tiger Gourami##31443 |goto Krasarang Wilds 68.4,43.5
 |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Order of the Cloud Serpent faction.",
 condition_suggested=function() return level >= 85 and level <= 90 and rep('Order of the Cloud Serpent') < Exalted end,
@@ -2565,7 +2565,7 @@ noquest
 step
 talk Jenova Longeye##58413
 |tip NOTE: You will be able to accept Fragments of the Past at any level Archaeology, but won't be able to do the quest unless your skill in Archaeology is 525 or more.
-accept Just a Flesh Wound##30148 |goto 57.5,44.7 |only if skill("First Aid")>=525
+accept Just a Flesh Wound##30148 |goto 57.5,44.7 |only if skill("Pandaria Tailoring") >= 1
 accept A Feast for the Senses##30149 |goto 57.5,44.7 |only if skill("Cooking")>=525
 accept Fragments of the Past##30147 |goto 57.5,44.7 |only if skill("Archaeology")>=525
 accept Snack Time##30146 |goto 57.5,44.7 |only if skill("Fishing")>=1
@@ -2769,17 +2769,13 @@ Bring the Windward Hatchlings to the nest at |goto 63.4,31.4
 Return #6# Windward Hatchlings |q 30157/1 |goto The Jade Forest 64.5,31.1
 only if havequest(30157)
 step
-Use your First Aid skill to create 8 _Windwool Bandages_ or _Heavy Windwool Bandages_
-You can also ask other players to sell you some bandages
-create 8 Heavy Windwool Bandage##102698,First Aid,8 total |only if skill("First Aid")>=550 and skill("First Aid")<600
-collect 8 Windwool Bandage##72985 |only if skill("First Aid")<550
-or
-create 8 Heavy Windwool Bandage##102699,First Aid,8 total  |only if skill("First Aid")>=600
-collect 8 Heavy Windwool Bandage##72986 |only if skill("First Aid")<550
+Use your Tailoring skill to create 8 Windwool Bandages
+|tip You can also ask other players to sell you some bandages.
+collect 8 Windwool Bandage##72985
 only if havequest(30148)
 step
-Use your Windwool Bandages on Injured Hatchlings |use Windwool Bandage##72985
-Heavy Windwool Bandages work, too |use Heavy Windwool Bandage##72986
+use the Windwool Bandage##72985
+|tip Use them on Injured Hatchlings.
 Bandage #8# Injured Hatchlings |q 30148/1 |goto 63.9,31.1
 only if havequest(30148)
 step
@@ -2859,7 +2855,7 @@ collect 6 Serpentrider Relic## |q 30147/1
 only if havequest(30147)
 step
 talk Jenova Longeye##58413
-turnin Just a Flesh Wound##30148 |goto 57.5,44.7 |only if skill("First Aid")>=525
+turnin Just a Flesh Wound##30148 |goto 57.5,44.7 |only if havequest(30148)
 turnin A Feast for the Senses##30149 |goto 57.5,44.7 |only if skill("Cooking")>=525
 turnin Fragments of the Past##30147 |goto 57.5,44.7
 turnin Snack Time##30146 |goto 57.5,44.7
@@ -2980,7 +2976,7 @@ label "end"
 This the end of our daily guide
 Click here to go back to the beginning |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Shado-Pan Assault faction.",
 condition_suggested=function() return level >= 85 and level <= 90 and rep('Shado-Pan Assault') < Exalted end,
@@ -3509,7 +3505,7 @@ step
 You have reached the end of this daily guide
 Click here to return to the start of the dailies |next "shado_dailies" |confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Sunreaver Onslaught",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\Sunreaver Onslaught",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Sunreaver Onslaught faction.",
 achieveid={8209},
@@ -3517,7 +3513,7 @@ achieveid={8209},
 step
 #include "Sunreavers_dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Tillers",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Mists of Pandaria Reputations\\The Tillers",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Tillers faction.",
 achieveid={6544},

@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DailiesHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\Azsuna World Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Legion\\Azsuna World Quests",{
 author="support@zygorguides.com",
 startlevel=110.0,
 worldquestzone=630,
@@ -14,11 +14,7 @@ label "Choose_World_Quest"
 |tip The full version of this guide includes a walkthrough on how to unlock world quests.
 |tip You will only be able to accept quests in Aszuna for this trial.
 |tip
-Choose a World Quest to Complete |confirm
-|tip With the "World Quests" guide loaded, open your world map.
-|tip Left-click on a world quest icon to select that world quest.
-|tip The guide will automatically load the steps for that world quest.
-|tip Left-click on Broken Shore rares to load some helpful tips.
+#include "Legion_Choose_World_Quests"
 step
 label quest-42119
 Follow the path |goto Azsuna/0 43.63,42.29 < 30 |only if walking

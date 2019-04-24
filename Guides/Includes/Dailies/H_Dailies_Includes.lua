@@ -733,164 +733,172 @@ ZygorGuidesViewer:RegisterInclude("Org_Cooking_Dailies",[[
 	step
 	label "start"
 		talk Marogg##42506
-		|tip You will only be able to complete 1 of the following quests per day:
-		accept Careful, This Fruit Bites Back##26227 |goto Orgrimmar 56.5,62.5 |or
-		accept Crawfish Creole##26226 |goto Orgrimmar 56.5,62.5 |or
-		accept Even Thieves Get Hungry##26235 |goto Orgrimmar 56.5,62.5 |or
-		accept Everything Is Better with Bacon##26220 |goto Orgrimmar 56.5,62.5 |or
-		accept Stealing From Our Own##26234 |goto Orgrimmar 56.5,62.5 |only Troll |or
-		accept Stealing From Our Own##26233 |goto Orgrimmar 56.5,62.5 |only Orc,Scourge,Tauren,BloodElf,Goblin,Pandaren |or
+		|tip You will only be able to complete 1 of the following quests per day.
+		accept Careful, This Fruit Bites Back##26227 |goto Orgrimmar/1 56.53,62.48 |or
+		accept Crawfish Creole##26226 |goto 56.53,62.48 |or
+		accept Even Thieves Get Hungry##26235 |goto 56.53,62.48 |or
+		accept Everything Is Better with Bacon##26220 |goto 56.53,62.48 |or
+		accept Stealing From Our Own##26234 |goto 56.53,62.48 |only Troll |or
+		accept Stealing From Our Own##26233 |goto 56.53,62.48 |only Orc,Scourge,Tauren,BloodElf,Goblin,Pandaren |or
 	step
 		click Prickly Pear Fruit##203969
-		|tip They look like smaller cactus plants with red round fruit on top of them. They are usually found next to walls all around Orgrimmar.
-		collect 8 Prickly Pear Fruit##57766 |q 26227/1 |goto Orgrimmar 52.7,62.1
+		|tip They look like smaller cactus plants with red round fruit on top of them.
+		|tip They are usually found next to walls all around Orgrimmar.
+		collect 8 Prickly Pear Fruit##57766 |q 26227/1 |goto 52.81,62.11
 		|only if havequest(26227)
 	stickystart "hordeinfant"
 	step
 		clicknpc Muddy Crawfish##42548+
 		|tip They look like tiny lobsters in the water around this area.
-		collect 10 Muddy Crawfish##57765 |q 26226/1 |goto 65.3,43.5
+		collect 10 Muddy Crawfish##57765 |q 26226/1 |goto 65.26,43.47
 		|only if havequest(26226)
 	step
 	label "hordeinfant"
-		Get near the piles of wooden crates
-		|tip They are all around Orgrimmar, so you can walk around and find them everywhere.
 		kill Orgrimmar Thief##42594+
-		|tip They are stealthed next to the crates, trying to steal them. They won't be next to every pile of crates, so you'll need to search for them.
-		collect 3 Horde Infantry Rations##57879 |q 26235/1 |goto 66.2,39.4
+		|tip They are stealthed near wooden crates.
+		|tip They are all around Orgrimmar, so you can walk around and find them everywhere.
+		|tip They won't be next to every pile of crates, so you'll need to search for them.
+		collect 3 Horde Infantry Rations##57879 |q 26235/1 |goto 65.77,39.62
 		|only if havequest(26235)
 	step
-		kill Mature Swine##42504+, Wild Mature Swine##42859+
-		collect 6 Swine Belly##57758 |q 26220/1 |goto Durotar,48.7,16.0
+		Kill enemies around this area
+		collect 6 Swine Belly##57758 |q 26220/1 |goto Durotar/0 48.71,16.00
 		|only if havequest(26220)
 	step
 		click Barrels of Kezan Rice##9664+
 		|tip They look like light brown wooden barrels around this area.
-		collect 6 Barrel of Kezan Rice##57878 |q 26234/1 |goto Orgrimmar,40.3,80.0
+		collect 6 Barrel of Kezan Rice##57878 |q 26234/1 |goto Orgrimmar/1 35.11,69.70
 		|only Troll
 		|only if havequest(26234)
 	step
 		click Barrels of Darkspear Rice##6037+
 		|tip They looks like dark brown wooden barrels around this area.
-		collect 6 Barrel of Darkspear Rice##57877 |q 26233/1 |goto 34.5,69.8
+		collect 6 Barrel of Darkspear Rice##57877 |q 26233/1 |goto Orgrimmar/1 35.11,69.70
 		|only Orc,Scourge,Tauren,BloodElf,Goblin
 		|only if havequest(26233)
 	step
 		talk Marogg##42506
 		|tip You will only be able to complete 1 of the following quests per day.
-		turnin Careful, This Fruit Bites Back##26227 |goto 56.5,62.5 |only if havequest(26227)
-		turnin Crawfish Creole##26226 |goto 56.5,62.5 |only if havequest(26226)
-		turnin Even Thieves Get Hungry##26235 |goto 56.5,62.5 |only if havequest(26235)
-		turnin Everything Is Better with Bacon##26220 |goto 56.5,62.5 |only if havequest(26220)
-		turnin Stealing From Our Own##26234 |goto 56.5,62.5 |only Troll |only if havequest(26234)
-		turnin Stealing From Our Own##26233 |goto 56.5,62.5 |only Orc,Scourge,Tauren,BloodElf,Goblin,Pandaren |only if havequest(26233)
+		turnin Careful, This Fruit Bites Back##26227 |goto Orgrimmar/1 56.53,62.48 |only if havequest(26227)
+		turnin Crawfish Creole##26226 |goto Orgrimmar/1 56.53,62.48 |only if havequest(26226)
+		turnin Even Thieves Get Hungry##26235 |goto Orgrimmar/1 56.53,62.48 |only if havequest(26235)
+		turnin Everything Is Better with Bacon##26220 |goto Orgrimmar/1 56.53,62.48 |only if havequest(26220)
+		turnin Stealing From Our Own##26234 |goto Orgrimmar/1 56.53,62.48 |only Troll |only if havequest(26234)
+		turnin Stealing From Our Own##26233 |goto Orgrimmar/1 56.53,62.48 |only Orc,Scourge,Tauren,BloodElf,Goblin,Pandaren |only if havequest(26233)
 ]])
 
 ZygorGuidesViewer:RegisterInclude("TB_Cooking_Dailies",[[
 	step
 	label "dailies"
 		talk Aska Mistrunner##3026
-		accept Pining for Nuts##29358 |goto Thunder Bluff 50.71,53.12 |or
-		accept "Magic" Mushrooms##29362 |goto Thunder Bluff 50.71,53.12 |or
-		accept Mulgore Spice Bread##29363 |goto Thunder Bluff 50.71,53.12 |or
-		accept Corn Mash##29364 |goto Thunder Bluff 50.71,53.12 |or
-		accept Perfectly Pickled Portions##29365 |goto Thunder Bluff 50.71,53.12 |or
+		accept Pining for Nuts##29358 |goto Thunder Bluff/0 50.72,53.11 |or
+		accept "Magic" Mushrooms##29362 |goto 50.72,53.11 |or
+		accept Mulgore Spice Bread##29363 |goto 50.72,53.11 |or
+		accept Corn Mash##29364 |goto 50.72,53.11 |or
+		accept Perfectly Pickled Portions##29365 |goto 50.72,53.11 |or
 	step
 		click Mulgore Pine Cone##208875
-		|tip They look like sparkling pine cones on the ground, next to the base of moss trees in Thunder Bluff.
-		Create a Cooking Fire |cast Cooking Fire##818
-		use Mulgore Pine Cones##69990
-		|tip Cook the Mulgore Pine Cones over a cooking fire to release Pine Nuts.
-		collect 30 Pine Nut##69988 |q 29358/1 |goto 48.4,62.2
+		|tip They look like sparkling pine cones on the ground next to the base of moss trees in Thunder Bluff.
+		_<Create a Cooking Fire>_
+		use the Mulgore Pine Cones##69990
+		collect 30 Pine Nut##69988 |q 29358/1 |goto 48.52,62.16
 		|only if havequest(29358)
 	step
+		Enter the cave |goto 29.49,29.82 < 5		
 		click "Magic" Mushroom##208878
-		|tip They look like white glowing mushrooms along the walls
-		collect 6 "Magic" Mushroom##69994 |q 29362/1 |goto 26.3,23.6
+		|tip They look like pale grey mushrooms grouped in fours all around the cave.
+		collect 6 "Magic" Mushroom##69994 |q 29362/1 |goto 26.16,22.18
 		|only if havequest(29362)
 	step
 		talk Naal Mistrunner##3027
-		buy 5 Simple Flour##30817 |q 29363 |goto Thunder Bluff 51.1,52.7
-		buy 5 Mild Spices##2678 |q 29363 |goto Thunder Bluff 51.1,52.7
+		buy 5 Simple Flour##30817 |q 29363 |goto 51.01,52.46
+		buy 5 Mild Spices##2678 |q 29363 |goto 51.01,52.46
 		|only if havequest(29363)
 	step
-		create Spice Bread##37836,Cooking,5 total
+		_<Create a Cooking Fire>_
+		Open Your Cooking Crafting Panel:
+		_<Create 5 Spice Bread>_
 		collect 5 Spice Bread##30816 |q 29363/1
 		|only if havequest(29363)
 	step
-		use Mulgore Spices##69997
-		|tip Use the Mulgore Spices in your bags to make Fresh Mulgore Spice Bread.
+		use the Mulgore Spices##69997
 		collect 5 Fresh Mulgore Spice Bread##69996 |q 29363/1
 		|only if havequest(29363)
 	step
 		Click the bowls of Corn Kernels
 		|tip They look like little bowls of yellow corn in almost all the huts in Thunderbluff.
-		Grind #6# Bowls of Corn Kernels |q 29364/1 |goto Thunder Bluff 52.1,45.6
+		Grind #6# Bowls of Corn Kernels |q 29364/1 |goto 52.00,45.53
 		|only if havequest(29364)
 	step
-		collect Succulent Sweet Potatoes##70000 |q 29365/1 |goto 47.7,42.3
+		collect Succulent Sweet Potatoes##70000 |q 29365/1 |goto 47.96,43.08
 		|tip They look like baskets in this little hut.
 		|only if havequest(29365)
 	step
-		collect Savory Spices##70001 |q 29365/2 |goto 49.7,41.5
+		collect Savory Spices##70001 |q 29365/2 |goto 49.71,41.54
 		|tip It looks like a bag with weeds in it
 		|only if havequest(29365)
 	step
-		collect Fresh-Caught Fish##70002 |q 29365/3 |goto Thunder Bluff 56.0,44.9
-		|tip It looks like a rope hanging down with a bunch of fish on it
-		collect Fresh-Hunted Fowl##70003 |q 29365/4 |goto Thunder Bluff 50.9,47.6
+		collect Fresh-Caught Fish##70002 |q 29365/3 |goto 56.01,44.47
+		|tip It looks like a rope hanging down with a bunch of fish on it inside of the tent.
+		|only if havequest(29365)
+	step
+		collect Fresh-Hunted Fowl##70003 |q 29365/4 |goto 51.02,47.12
+		|tip It looks like a bird hanging upside down at the side of the tent.
 		|only if havequest(29365)
 	step
 		talk Aska Mistrunner##3026
-		turnin Pining for Nuts##29358 |goto Thunder Bluff 50.71,53.12 |or |only if havequest(29358)
-		turnin "Magic" Mushrooms##29362 |goto Thunder Bluff 50.71,53.12 |or |only if havequest(29362)
-		turnin Mulgore Spice Bread##29363 |goto Thunder Bluff 50.71,53.12 |or |only if havequest(29363)
-		turnin Corn Mash##29364 |goto Thunder Bluff 50.71,53.12 |or |only if havequest(29364)
-		turnin Perfectly Pickled Portions##29365 |goto Thunder Bluff 50.71,53.12 |or |only if havequest(29365)
+		turnin Pining for Nuts##29358 |goto Thunder Bluff 50.72,53.11 |or |only if havequest(29358)
+		turnin "Magic" Mushrooms##29362 |goto Thunder Bluff 50.72,53.11 |or |only if havequest(29362)
+		turnin Mulgore Spice Bread##29363 |goto Thunder Bluff 50.72,53.11 |or |only if havequest(29363)
+		turnin Corn Mash##29364 |goto Thunder Bluff 50.72,53.11 |or |only if havequest(29364)
+		turnin Perfectly Pickled Portions##29365 |goto Thunder Bluff 50.72,53.11 |or |only if havequest(29365)
 ]])
 
 ZygorGuidesViewer:RegisterInclude("UC_Cooking_Dailies",[[
 	step
 		talk Eunice Burch##4552
-		accept Roach Coach##29334 |goto Undercity 62.1,44.9 |or
-		accept Escargot A Go-Go##29333 |goto Undercity 62.1,44.9 |or
-		accept Would You Like Some Flies With That?##29360 |goto Undercity 62.1,44.9 |or
-		accept Lily, Oh Lily##29332 |goto Undercity 62.1,44.9 |or
-		accept Fungus Among Us##29315 |goto Undercity 62.1,44.9 |or
+		accept Roach Coach##29334 |goto Undercity/0 62.15,44.89 |or
+		accept Escargot A Go-Go##29333 |goto 62.15,44.89 |or
+		accept Would You Like Some Flies With That?##29360 |goto 62.15,44.89 |or
+		accept Lily, Oh Lily##29332 |goto 62.15,44.89 |or
+		accept Fungus Among Us##29315 |goto 62.15,44.89 |or
 	step
 		click Cockrach Cabin##336+
-		|tip Look in corners and behind crates. They are hidden all around Undercity.
-		collect 20 Plump Cockroach##69919 |q 29334/1
+		|tip Look in corners and behind crates.
+		|tip They are hidden all around Undercity.
+		collect 20 Plump Cockroach##69919 |q 29334/1 |goto 61.28,34.06
 		|only if havequest(29334)
 	step
 		click Fly Covered "Meat"##208876
 		|tip You will find the fly meat around the wagons in this area.
-		collect 25 Bloated Fly##69989 |q 29360/1 |goto Undercity 68.7,53.7
-		You can find more here |goto Undercity 57.0,17.2
+		collect 25 Bloated Fly##69989 |q 29360/1 |goto 69.26,52.38
+		You can find more around [57.08,17.01]
 		|only if havequest(29360)
 	step
 		clicknpc Brightwater Snail##53526+
-		|tip They are underneath the water in this lake.
-		collect 8 Brightwater Snail##69918 |q 29333/1 |goto Tirisfal Glades 70.5,39.6
+		|tip They are underneath the water around the area.
+		collect 8 Brightwater Snail##69918 |q 29333/1 |goto Tirisfal Glades/0 70.72,39.55
 		|only if havequest(29333)
 	step
 		click Sewer Cap##208816
-		collect 12 Sewer Cap##208816 |q 29315/1 |goto Undercity 36.1,30.2
+		|tip They spawn near walls around this area.
+		collect 12 Sewer Cap##208816 |q 29315/1 |goto Undercity/0 36.24,30.34
 		|only if havequest(29315)
 	step
 		click Stillwater Lily##208833
-		collect 10 Stillwater Lily##69917 |q 29332/1 |goto Undercity 51,55.3
+		|tip They are floating along the edge of the lake around this area.
+		collect 10 Stillwater Lily##69917 |q 29332/1 |goto Tirisfal Glades/0 50.86,55.57
 		|only if havequest(29332)
 	step
 		talk Chef Audrey##53528
-		turnin Roach Coach##29334 |goto Undercity 62.6,35.5
-		|only if havequest(29334)
+		turnin Roach Coach##29334 |goto Undercity/0 62.68,35.51
+		--|only if havequest(29334)
 	step
 		talk Eunice Burch##4552
-		turnin Escargot A Go-Go##29333 |goto Undercity 62.1,44.9 |only if havequest(29333)
-		turnin Would You Like Some Flies With That?##29360 |goto Undercity 62.1,44.9 |only if havequest(29360)
-		turnin Fungus Among Us##29315 |goto Undercity 62.1,44.9 |only if havequest(29315)
-		turnin Lily, Oh Lily##29332 |goto Undercity 62.1,44.9 |only if havequest(29332)
+		turnin Escargot A Go-Go##29333 |goto 62.15,44.89 |only if havequest(29333)
+		turnin Would You Like Some Flies With That?##29360 |goto 62.15,44.89 |only if havequest(29360)
+		turnin Fungus Among Us##29315 |goto 62.15,44.89 |only if havequest(29315)
+		turnin Lily, Oh Lily##29332 |goto 62.15,44.89 |only if havequest(29332)
 ]])
 
 ZygorGuidesViewer:RegisterInclude("H_Shattrath_Cooking_Dailies",[[
@@ -983,93 +991,108 @@ ZygorGuidesViewer:RegisterInclude("H_Shattrath_Cooking_Dailies",[[
 ]])
 
 ZygorGuidesViewer:RegisterInclude("H_Dalaran_Cooking_Dailies",[[
+		Enter the building |goto Dalaran/1 63.75,32.77 < 5 |walk
 		talk Awilo Lon'gomba##29631
-		You will only be able to accept, and turn in, 1 of these 5 daily quests per day, and they all require you have 350+ Cooking skill:
-		accept Cheese for Glowergold##13115 |or |goto Dalaran 70.0,39.0
-		accept Convention at the Legerdemain##13113 |or |goto Dalaran 70.0,39.0
-		accept Infused Mushroom Meatloaf##13112 |or |goto Dalaran 70.0,39.0
-		accept Mustard Dogs!##13116 |or |goto Dalaran 70.0,39.0
-		accept Sewer Stew##13114 |or |goto Dalaran 70.0,39.0
+		|tip Inside the building.
+		accept Cheese for Glowergold##13115 |or |goto 69.93,38.99
+		accept Convention at the Legerdemain##13113 |or |goto 69.93,38.99
+		accept Infused Mushroom Meatloaf##13112 |or |goto 69.93,38.99
+		accept Mustard Dogs!##13116 |or |goto 69.93,38.99
+		accept Sewer Stew##13114 |or |goto 69.93,38.99
+		|tip You will only be able to accept and turn in 1 of these 5 daily quests per day.
 	step
+		Enter the building |goto 53.30,33.32 < 5 |walk 
 		click Aged Dalaran Limburger##192825
 		|tip They look like piles and pieces of yellow cheese on the tables inside this building.
-		collect 1 Aged Dalaran Limburger##43137 |q 13115 |goto 54.7,31.5
+		collect 1 Aged Dalaran Limburger##43137 |q 13115 |goto 54.63,31.56
 	step
 		click Half Full Glass of Wine##192824
-		|tip They look like small blue-ish wine glasses sitting on tables, and on the ground, inside this building. They spawn in random locations.
-		collect 6 Half Full Dalaran Wine Glass##43138 |q 13115 |goto 54.7,31.5
-		You can find more Half Full Glasses of Wine inside the building at [49.4,39.3]
+		|tip Inside the building.
+		|tip They look like small blue-ish wine glasses sitting on tables and on the ground inside this building.
+		|tip They spawn in random locations.
+		collect 6 Half Full Dalaran Wine Glass##43138 |q 13115 |goto 54.55,33.95
+		You can find more Half Full Glasses of Wine inside the building at [49.33,39.36]
 	step
-		use Empty Cheese Serving Platter##43139
+		use the Empty Cheese Serving Platter##43139
 		collect 1 Wine and Cheese Platter##43136 |q 13115/1
 	step
 		click Full Jug of Wine##192823
-		|tip They look like small blue-ish green jugs sitting on the ground inside this building. They spawn in random locations.
-		collect 1 Jug of Wine##43128 |q 13113/2 |goto 55.0,30.8
+		|tip They look like small blue-ish green jugs sitting on the ground inside this building.
+		|tip They spawn in random locations.
+		collect 1 Jug of Wine##43128 |q 13113/2 |goto 54.96,30.79
 	step
-		kill Rabid Grizzly##26643+, Blighted Elk##26616+
-		collect 4 Chilled Meat##43013 |q 13113 |goto Dragonblight 30.0,49.8
+		Kill enemies around this area
+		collect 4 Chilled Meat##43013 |q 13113 |goto Dragonblight/0 30.01,49.81
 	step
-		Use your Cooking ability to cook 4 Northern Stew
-		|tip You will need a cooking fire to do this.
+		_<Create a Cooking Fire>_
+		Open Your Cooking Crafting Panel:
+		_<Create 4 Northern Stews>_
+		Reach Level 25 Northrend Cooking |skill Northrend Cooking,25
 		collect 4 Northern Stew##34747 |q 13113/1
 	step
-		The entrance to the Dalaran sewers starts here |goto Dalaran 60.2,47.7 < 5 |c |q 13112 |walk
+		Jump into the Well |goto Dalaran/1 48.36,32.50
 		click Infused Mushroom##192818
-		collect 4 Infused Mushroom##43100 |q 13112 |goto Dalaran/2 51.6,41.6
+		|tip They look like grouped up blue mushrooms on the ground.
+		collect 4 Infused Mushroom##43100 |q 13112 |goto Dalaran/2 51.41,41.78
 	step
-		Leave the Dalaran sewers |goto Dalaran 60.2,47.7 < 5 |c |q 13112 |walk
-		kill Rabid Grizzly##26643+, Blighted Elk##26616+
-		collect 2 Chilled Meat##43013 |q 13112 |goto Dragonblight 30.0,49.8
+		Run up the stairs |goto 51.45,38.37 < 5 |walk
+		Run up the ramp |goto 64.42,48.37 < 5 |walk
+		Leave the Dalaran Sewers |goto 65.45,46.99 < 5 |walk
+		Kill enemies around this area 
+		collect 2 Chilled Meat##43013 |q 13112 |goto Dragonblight/0 30.01,49.81
 	step
-		use Meatloaf Pan##43101
-		|tip You will need a cooking fire to do this.
+		_<Create a Cooking Fire>_
+		use the Meatloaf Pan##43101
 		collect 1 Infused Mushroom Meatloaf##43099 |q 13112/1
 	step
 		click Wild Mustard##192827
-		|tip They look like small, and kind of hard to see, bushy yellow flowers on the ground around this area. They spawn randomly in grassy areas.
-		collect 4 Wild Mustard##43143 |q 13116 |goto Dalaran 67.7,40.0
-		You can find more Wild Mustard flowers:
-		Here at [50.3,48.3]
-		And here at [37.2,43.9]
+		|tip They look like small bushy yellow flowers on the ground around this area.
+		|tip They spawn randomly in grassy areas.
+		collect 4 Wild Mustard##43143 |q 13116 |goto Dalaran/0 72.21,38.68
+		You can find more around [50.68,50.88]
+		You can find more around [33.74,39.57]
 	step
-		kill Wooly Rhino Calf##25488+, Wooly Rhino Matriarch##25487+, Wooly Rhino Bull##25489+
-		collect 4 Rhino Meat##43012 |q 13116 |goto Borean Tundra 46.7,43.6
+		Kill Wooly Rhino enemies around this area
+		collect 4 Rhino Meat##43012 |q 13116 |goto Borean Tundra/0 46.22,43.98
 	step
-		create 4 Rhino Dogs##45553,Cooking,4 total |n
-		Use your Cooking ability to cook 4 Rhino Dogs
-		|tip You will need a cooking fire to do this.
+		_<Create a Cooking Fire>_
+		Open Your Cooking Crafting Panel:
+		_<Create 4 Rhino Dogs>_
 		collect 4 Rhino Dogs##34752 |q 13116
 	step
-		use Empty Picnic Basket##43142
+		use the Empty Picnic Basket##43142
 		collect 1 Mustard Dog Basket##43144 |q 13116/1
 	step
 		click Crystalsong Carrots##192828
-		|tip they look like carrots sticking out of the ground, at the base of trees around this area underneath Dalaran. They spawn in random locations around this area.
-		collect 4 Crystalsong Carrot##43148 |q 13114 |goto Crystalsong Forest 26.9,45.5
+		|tip They look like carrots sticking out of the ground at the base of trees around this area, underneath Dalaran.
+		|tip They spawn in random locations around this area.
+		collect 4 Crystalsong Carrot##43148 |q 13114 |goto Crystalsong Forest 26.92,45.46
 	step
-		kill Rabid Grizzly##26643+, Blighted Elk##26616+
-		collect 4 Chilled Meat##43013 |q 13114 |goto Dragonblight 30.0,49.8
+		Kill enemies around this area 
+		collect 4 Chilled Meat##43013 |q 13114 |goto Dragonblight/0 30.01,49.81
 	step
-		use Stew Cookpot##43147
-		|tip You will need a cooking fire to do this.
+		_<Create a Cooking Fire>_
+		use the Stew Cookpot##43147
 		collect 1 Vegetable Stew##43149 |q 13114/1
 	step
+		Enter the building |goto Dalaran/1 36.80,29.78 < 5 |walk
 		talk Ranid Glowergold##28718
-		turnin Cheese for Glowergold##13115 |goto Dalaran 36.6,27.8
+		turnin Cheese for Glowergold##13115 |goto 36.62,27.81
 	step
+		Enter the building |goto 50.29,37.62 < 5 |walk 
 		talk Arille Azuregaze##29049
-		turnin Convention at the Legerdemain##13113 |goto Dalaran 48.6,37.5
+		turnin Convention at the Legerdemain##13113 |goto 48.39,37.46
 	step
+		Enter the building |goto 48.99,56.99 < 5 |walk 
 		talk Orton Bennet##29527
-		turnin Infused Mushroom Meatloaf##13112 |goto Dalaran 52.3,55.6
+		turnin Infused Mushroom Meatloaf##13112 |goto 52.33,55.59
 	step
 		talk Archmage Pentarus##28160
-		turnin Mustard Dogs!##13116 |goto Dalaran 68.6,42.0
+		turnin Mustard Dogs!##13116 |goto 68.54,41.99
 	step
-		The entrance to the Dalaran sewers starts here |goto Dalaran 60.2,47.7 < 5 |c |q 13114 |walk
+		Enter the Dalaran Sewers |goto 35.12,45.18 < 5 |walk
 		talk Ajay Green##29532
-		turnin Sewer Stew##13114 |goto Dalaran 35.5,57.6
+		turnin Sewer Stew##13114 |goto Dalaran/2 35.44,57.62
 ]])
 
 -------------------------------
@@ -7382,153 +7405,206 @@ ZygorGuidesViewer:RegisterInclude("Marista_Hub",[[
 		accept The Gratitude of Stoneplow##30628 |goto 18.0,56.3
 ]])
 
+
+
+
+
 -------------------------
 ----- World  Quests -----
 -------------------------
 
+-- LEGION
+ZygorGuidesViewer:RegisterInclude("Legion_Choose_World_Quests",[[
+		Choose a World Quest to Complete |confirm
+		|tip With the "World Quests" guide loaded, open your world map.
+		|tip Left-click on a world quest icon to select that world quest.
+		|tip The guide will automatically load the steps for that world quest.
+		'|confirm |next "Court_of_Farondis_WQ" |condition readyq(42420) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Dreamweavers_WQ" |condition readyq(42170) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Highmountain_Tribe_WQ" |condition readyq(42233) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Valarjar_WQ" |condition readyq(42234) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Nightfallen_WQ" |condition readyq(42421) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Wardens_WQ" |condition readyq(42422) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Kirin_Tor_WQ" |condition readyq(43179) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Armies_of_Legionfall_WQ" |condition readyq(48641) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Argussian_Reach_WQ" |condition readyq(48642) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Army_of_the_Light_WQ" |condition readyq(48639) and not ZGV.WorldQuests:QuestsQueued()
+		|worldquestqueue
+]])
+
 ZygorGuidesViewer:RegisterInclude("Legion_World_Quest_Emissaries",[[
-		talk Veridis Fallon##107376 |only if ZGV.questsbyid[42420] and ZGV.questsbyid[42420].complete
-		|tip Inside the building. |only if ZGV.questsbyid[42420] and ZGV.questsbyid[42420].complete
-		turnin Court of Farondis##42420 |goto Azsuna/0 46.90,41.43 |only if ZGV.questsbyid[42420] and ZGV.questsbyid[42420].complete
-		|next "The_Dreamweavers_WQ"
+		-- if we are running queued world quests, do not move to emissary turnins
+		'|confirm |next "Choose_World_Quest" |condition true |only if ZGV.WorldQuests:QuestsQueued()
 	step
-	label "The_Dreamweavers_WQ"
-		talk Sylvia Hartshorn##106901 |only if ZGV.questsbyid[42170] and ZGV.questsbyid[42170].complete
-		turnin The Dreamweavers##42170 |goto Val'sharah/0 54.70,73.25 |only if ZGV.questsbyid[42170] and ZGV.questsbyid[42170].complete
-		|next "Highmountain_Tribes_WQ"
+	label "Court_of_Farondis_WQ"
+		talk Veridis Fallon##107376
+		|tip Inside the building.
+		turnin Court of Farondis##42420 |goto Azsuna/0 46.90,41.43
+		|only if readyq(42420)
 	step
-	label "Highmountain_Tribes_WQ"
-		talk Ransa Greyfeather##106902 |only if ZGV.questsbyid[42233] and ZGV.questsbyid[42233].complete
-		turnin Highmountain Tribes##42233 |goto Thunder Totem/0 38.06,46.04 |only if ZGV.questsbyid[42233] and ZGV.questsbyid[42233].complete
-		|next "The_Valarjar_WQ"
+		talk Veridis Fallon##107376
+		|tip Inside the building.
+		turnin Supplies From the Court##46745 |goto Azsuna/0 46.90,41.43
+		|only if havequest(46745)
 	step
-	label "The_Valarjar_WQ"
-		talk Valdemar Stormseeker##106904 |only if ZGV.questsbyid[42234] and ZGV.questsbyid[42234].complete
-		turnin The Valarjar##42234 |goto Stormheim/0 60.26,51.38 |only if ZGV.questsbyid[42234] and ZGV.questsbyid[42234].complete
-		|next "The_Nightfallen_WQ"
+	label "Dreamweavers_WQ"
+		talk Sylvia Hartshorn##106901
+		turnin The Dreamweavers##42170 |goto Val'sharah/0 54.70,73.25
+		|only if readyq(42170)
 	step
-	label "The_Nightfallen_WQ"
-		talk First Arcanist Thalyssra##97140 |only if ZGV.questsbyid[42421] and ZGV.questsbyid[42421].complete
-		turnin The Nightfallen##42421 |goto Suramar/0 36.88,46.61 |only if ZGV.questsbyid[42421] and ZGV.questsbyid[42421].complete |region suramar_shalaran
-		|next "The_Wardens_WQ"
+		talk Sylvia Hartshorn##106901
+		turnin Supplies From the Dreamweavers##46747 |goto Val'sharah/0 54.70,73.25
+		|only if havequest(46747)
 	step
-	label "The_Wardens_WQ"
-		talk Marin Bladewing##107379 |only if ZGV.questsbyid[42422] and ZGV.questsbyid[42422].complete
-		turnin The Wardens##42422 |goto Azsuna/0 48.17,73.90 |only if ZGV.questsbyid[42422] and ZGV.questsbyid[42422].complete
-		|next "The_Kirin_Tor_Of_Dalaran_WQ"
+	label "Highmountain_Tribe_WQ"
+		talk Ransa Greyfeather##106902
+		turnin Highmountain Tribes##42233 |goto Thunder Totem/0 38.06,46.04
+		|only if readyq(42233)
 	step
-	label "The_Kirin_Tor_Of_Dalaran_WQ"
-		talk Warmage Silva##32725 |only if ZGV.questsbyid[43179] and ZGV.questsbyid[43179].complete
-		turnin The Kirin Tor of Dalaran##43179 |goto Dalaran L/10 33.44,47.35 |only if ZGV.questsbyid[43179] and ZGV.questsbyid[43179].complete
-		|next "Legionfall_WQ"
+		talk Ransa Greyfeather##106902
+		turnin Supplies From Highmountain##46743 |goto Thunder Totem/0 38.06,46.04
+		|only if havequest(46743)
 	step
-	label "Legionfall_WQ"
-		talk Commander Chambers##120183 |only if ZGV.questsbyid[48641] and ZGV.questsbyid[48641].complete
-		turnin Armies of Legionfall##48641 |goto Broken Shore/0 44.54,63.15 |only if ZGV.questsbyid[48641] and ZGV.questsbyid[48641].complete
-		|next "Argussian_Reach_WQ"
+	label "Valarjar_WQ"
+		talk Valdemar Stormseeker##106904
+		turnin The Valarjar##42234 |goto Stormheim/0 60.26,51.38
+		|only if readyq(42234)
+	step
+		talk Valdemar Stormseeker##106904
+		turnin Supplies From the Valarjar##46746 |goto Stormheim/0 60.26,51.38
+		|only if havequest(46746)
+	step
+	label "Nightfallen_WQ"
+		talk First Arcanist Thalyssra##97140
+		turnin The Nightfallen##42421 |goto Suramar/0 36.88,46.61 |region suramar_shalaran
+		|only if readyq(42421)
+	step
+		talk First Arcanist Thalyssra##97140
+		turnin Supplies From the Nightfallen##46748 |goto Suramar/0 36.88,46.61 |region suramar_shalaran
+		|only if havequest(46748)
+	step
+	label "Wardens_WQ"
+		talk Marin Bladewing##107379
+		turnin The Wardens##42422 |goto Azsuna/0 48.17,73.90
+		|only if readyq(42422)
+	step
+		talk Marin Bladewing##107379
+		turnin Supplies From the Wardens##46749 |goto Azsuna/0 48.17,73.90
+		|only if havequest(46749)
+	step
+	label "Kirin_Tor_WQ"
+		talk Warmage Silva##32725
+		turnin The Kirin Tor of Dalaran##43179 |goto Dalaran L/10 33.44,47.35
+		|only if readyq(43179)
+	step
+	label "Armies_of_Legionfall_WQ"
+		talk Commander Chambers##120183
+		turnin Armies of Legionfall##48641 |goto Broken Shore/0 44.54,63.15
+		|only if readyq(48641)
+	step
+		talk Captain Ruysantos##120414
+		turnin The Bounties of Legionfall##46777 |goto Broken Shore/0 42.13,58.84
+		|only if havequest(46777)
 	step
 	label "Argussian_Reach_WQ"
-		talk Toraan the Revered##127151 |only if ZGV.questsbyid[48642] and ZGV.questsbyid[48642].complete
+		talk Toraan the Revered##127151
 		#include "Toraan_the_Revered"
-		|next "Army_Light_WQ"
+		|only if readyq(48642)
 	step
-	label "Army_Light_WQ"
-		talk Vindicator Jaelaana##127120 |only if ZGV.questsbyid[48639] and ZGV.questsbyid[48639].complete
-		#include "Vindicator_Jaelaana"
-		|next "Court_Of_Farondis_Paragon"
-	step
-	label "Court_Of_Farondis_Paragon"
-		talk Veridis Fallon##107376 |only if havequest(46745)
-		|tip Inside the building. |only if havequest(46745)
-		turnin Supplies From the Court##46745 |goto Azsuna/0 46.90,41.43 |only if havequest(46745)
-		|next "The_Dreamweavers_Paragon"
-	step
-	label "The_Dreamweavers_Paragon"
-		talk Sylvia Hartshorn##106901 |only if havequest(46747)
-		turnin Supplies From the Dreamweavers##46747 |goto Val'sharah/0 54.70,73.25 |only if havequest(46747)
-		|next "Highmountain_Tribes_Paragon"
-	step
-	label "Highmountain_Tribes_Paragon"
-		talk Ransa Greyfeather##106902 |only if havequest(46743)
-		turnin Supplies From Highmountain##46743 |goto Thunder Totem/0 38.06,46.04 |only if havequest(46743)
-		|next "The_Valarjar_Paragon"
-	step
-	label "The_Valarjar_Paragon"
-		talk Valdemar Stormseeker##106904 |only if havequest(46746)
-		turnin Supplies From the Valarjar##46746 |goto Stormheim/0 60.26,51.38 |only if havequest(46746)
-		|next "The_Nightfallen_Paragon"
-	step
-	label "The_Nightfallen_Paragon"
-		talk First Arcanist Thalyssra##97140 |only if havequest(46748)
-		turnin Supplies From the Nightfallen##46748 |goto Suramar/0 36.88,46.61 |region suramar_shalaran |only if havequest(46748)
-		|next "The_Wardens_Paragon"
-	step
-	label "The_Wardens_Paragon"
-		talk Marin Bladewing##107379 |only if havequest(46749)
-		turnin Supplies From the Wardens##46749 |goto Azsuna/0 48.17,73.90 |only if havequest(46749)
-		|next "Legionfall_Paragon"
-	step
-	label "Legionfall_Paragon"
-		talk Captain Ruysantos##120414 |only if havequest(46777)
-		turnin The Bounties of Legionfall##46777 |goto Broken Shore/0 42.13,58.84 |only if havequest(46777)
-		|next "Argussian_Reach_Paragon"
-	step
-	label "Argussian_Reach_Paragon"
-		talk Toraan the Revered##127151 |only if havequest(48976)
+		talk Toraan the Revered##127151
 		#include "Toraan_the_Revered_Paragon"
-		|next "Army_Light_Paragon"
+		|only if havequest(48976)
 	step
-	label "Army_Light_Paragon"
-		talk Vindicator Jaelaana##127120 |only if havequest(48977)
+	label "Army_of_the_Light_WQ"
+		talk Vindicator Jaelaana##127120
+		#include "Vindicator_Jaelaana"
+		|only if readyq(48639)
+	step
+		talk Vindicator Jaelaana##127120
 		#include "Vindicator_Jaelaana_Paragon"
+		|only if havequest(48977)
+	step
 		|next "Choose_World_Quest"
 ]])
 
+-- BATTLE FOR AZEROTH
 ZygorGuidesViewer:RegisterInclude("BFA_Choose_World_Quests",[[
 		Choose a World Quest to Complete |confirm
 		|tip With the "World Quests" guide loaded, open your world map.
 		|tip Left-click on a world quest icon to select that world quest.
 		|tip The guide will automatically load the steps for that world quest.
-		'|confirm |next "Tortollan_Seekers_WQ" |condition readyq(50604)
-		'|confirm |next "Horde_War_Effort_WQ" |condition readyq(50606)
-		'|confirm |next "Zandalari_Empire_WQ" |condition readyq(50598)
-		'|confirm |next "Talanjis_Expedition_WQ" |condition readyq(50602)
-		'|confirm |next "Voldunai_WQ" |condition readyq(50603)
-		'|confirm |next "Champions_of_Azeroth_WQ" |condition readyq(50562)
+		'|confirm |next "Tortollan_Seekers_WQ" |condition readyq(50604) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Horde_War_Effort_WQ" |condition readyq(50606) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Zandalari_Empire_WQ" |condition readyq(50598) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Talanjis_Expedition_WQ" |condition readyq(50602) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Voldunai_WQ" |condition readyq(50603) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Champions_of_Azeroth_WQ" |condition readyq(50562) and not ZGV.WorldQuests:QuestsQueued()
+		|worldquestqueue
 ]])
 
-
-
 ZygorGuidesViewer:RegisterInclude("BFA_World_Quest_Emissaries",[[
+		-- if we are running queued world quests, do not move to emissary turnins
+		'|confirm |next "Choose_World_Quest" |condition true |only if ZGV.WorldQuests:QuestsQueued()
+	step		
 		talk Collector Kojo##135793
 		turnin Tortollan Seekers##50604 |goto Zuldazar/0 71.50,30.35
 		|only if readyq(50604)
+	step
+		talk Collector Kojo##135793
+		turnin Baubles from the Seekers##54451 |goto Zuldazar/0 71.50,30.35
+		|only if havequest(54451)
 	step
 	label "Horde_War_Effort_WQ"
 		talk Ransa Greyfeather##135447
 		turnin Horde War Effort##50606 |goto Zuldazar/0 58.07,62.65
 		|only if readyq(50606)
 	step
+		talk Ransa Greyfeather##135447
+		turnin Supplies from the Honorbound##54455 |goto Zuldazar/0 58.07,62.65
+		|only if havequest(54455)
+	step
 	label "Zandalari_Empire_WQ"
 		talk Natal'hakata##131287
 		|tip Inside the building.
 		turnin Zandalari Empire##50598 |goto Dazar'alor/2 67.27,71.60
-		|only if readyq(50598)	
+		|only if readyq(50598)
+	step
+		talk Natal'hakata##131287
+		|tip Inside the building.
+		turnin Supplies from the Zandalari Empire##54462 |goto Dazar'alor/2 67.27,71.60
+		|only if havequest(54462)
 	step
 	label "Talanjis_Expedition_WQ"
 		talk Provisioner Lija##135459
 		turnin Talanji's Expedition##50602 |goto Nazmir/0 39.07,79.52
 		|only if readyq(50602)
 	step
+		talk Provisioner Lija##135459
+		turnin Supplies from Talanji's Expedition##54460 |goto Nazmir/0 39.07,79.52
+		|only if havequest(54460)
+	step
 	label "Voldunai_WQ"
 		talk Hoarder Jena##135804
 		turnin Voldunai##50603 |goto Vol'dun/0 56.69,49.74
 		|only if readyq(50603)
 	step
+		talk Hoarder Jena##135804
+		turnin Supplies from the Voldunai##54461 |goto Vol'dun/0 56.69,49.74
+		|only if havequest(54461)
+	step
 	label "Champions_of_Azeroth_WQ"
+		talk Zidormi##128607
+		Ask her _"Can you return me to the present time?"_
+		Return to the Present |condition not ZGV.InPhase("Old Silithus") |goto Silithus/0 78.93,21.97
+		|only if readyq(50562) or havequest(54453)
+	step
 		talk Magni Bronzebeard##130216
 		turnin Champions of Azeroth##50562 |goto Silithus/0 42.22,44.27
 		|only if readyq(50562)
+	step
+		talk Magni Bronzebeard##130216
+		turnin Supplies from Magni##54453 |goto Silithus/0 42.22,44.27
+		|only if havequest(54453)
 	step
 		|next "Choose_World_Quest"
 ]])

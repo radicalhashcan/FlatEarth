@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DailiesHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Legion\\World Quests Unlock Quest Line",{
 author="support@zygorguides.com",
 startlevel=110.0,
 },[[
@@ -15,19 +15,19 @@ accept Uniting the Isles##43341
 step
 Earn Friendly Reputation with the Court of Farondis |q 43341/2
 |tip Use the Azsuna leveling/questing guide to accomplish this.
-Click here to load the "Azsuna" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Click here to load the "Azsuna" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 step
 Earn Friendly Reputation with the Dreamweavers |q 43341/4
 |tip Use the Val'sharah leveling/questing guide to accomplish this.
-Click here to load the "Val'sharah" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Click here to load the "Val'sharah" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 step
 Earn Friendly Reputation with the Highmountain Tribe |q 43341/3
 |tip Use the Highmountain leveling/questing guide to accomplish this.
-Click here to load the "Highmountain" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Click here to load the "Highmountain" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 step
 Earn Friendly Reputation with the Valarjar |q 43341/5
 |tip Use the Stormheim leveling/questing guide to accomplish this.
-Click here to load the "Stormheim" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Click here to load the "Stormheim" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 step
 Earn Friendly Reputation with the Nightfallen |q 43341/1
 |tip Use the Suramar leveling/questing guide to accomplish this.
@@ -73,20 +73,16 @@ Speak with Havi |q 44721/4 |goto 60.14,50.74
 step
 talk Havi##92539
 turnin Helya's Conquest##44721 |goto 60.14,50.74
-|next "Zygor's Dailies Guides\\Legion\\Stormheim World Quests"
+|next "Dailies Guides\\Legion\\Stormheim World Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\Antoran Wastes World Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Legion\\Antoran Wastes World Quests",{
 author="support@zygorguides.com",
 startlevel=110.0,
 worldquestzone=885,
 },[[
 step
 label "Choose_World_Quest"
-Choose a World Quest to Complete |confirm
-|tip With the "World Quests" guide loaded, open your world map.
-|tip Left-click on a world quest icon to select that world quest.
-|tip The guide will automatically load the steps for that world quest.
-|tip Left-click on Broken Shore rares to load some helpful tips.
+#include "Legion_Choose_World_Quests"
 step
 label quest-48832
 Follow the path up |goto Antoran Wastes/0 71.97,47.26 < 15 |only if walking and knowstaxi("The Veiled Den, Antoran Wastes")
@@ -1019,18 +1015,14 @@ step
 label "Court_Of_Farondis_WQ"
 #include "Legion_World_Quest_Emissaries"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\Azsuna World Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Legion\\Azsuna World Quests",{
 author="support@zygorguides.com",
 startlevel=110.0,
 worldquestzone=630,
 },[[
 step
 label "Choose_World_Quest"
-Choose a World Quest to Complete |confirm
-|tip With the "World Quests" guide loaded, open your world map.
-|tip Left-click on a world quest icon to select that world quest.
-|tip The guide will automatically load the steps for that world quest.
-|tip Left-click on Broken Shore rares to load some helpful tips.
+#include "Legion_Choose_World_Quests"
 step
 label quest-42119
 Follow the path |goto Azsuna/0 43.63,42.29 < 30 |only if walking
@@ -3224,7 +3216,7 @@ step
 label "Court_Of_Farondis_WQ"
 #include "Legion_World_Quest_Emissaries"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\Broken Shore Rares",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Legion\\Broken Shore Rares",{
 author="support@zygorguides.com",
 startlevel=110.0,
 worldquestzone=646,
@@ -3422,18 +3414,14 @@ step
 label "Court_Of_Farondis_WQ"
 #include "Legion_World_Quest_Emissaries"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\Broken Shore World Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Legion\\Broken Shore World Quests",{
 author="support@zygorguides.com",
 startlevel=110.0,
 worldquestzone=646,
 },[[
 step
 label "Choose_World_Quest"
-Choose a World Quest to Complete |confirm
-|tip With the "World Quests" guide loaded, open your world map.
-|tip Left-click on a world quest icon to select that world quest.
-|tip The guide will automatically load the steps for that world quest.
-|tip Left-click on Broken Shore rares to load some helpful tips.
+#include "Legion_Choose_World_Quests"
 step
 label quest-46209
 accept A Flare In The Dark##46209 |goto Broken Shore/0 43.11,55.83
@@ -4715,18 +4703,14 @@ step
 label "Court_Of_Farondis_WQ"
 #include "Legion_World_Quest_Emissaries"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\Dalaran World Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Legion\\Dalaran World Quests",{
 author="support@zygorguides.com",
 startlevel=110.0,
 worldquestzone=625,
 },[[
 step
 label "Choose_World_Quest"
-Choose a World Quest to Complete |confirm
-|tip With the "World Quests" guide loaded, open your world map.
-|tip Left-click on a world quest icon to select that world quest.
-|tip The guide will automatically load the steps for that world quest.
-|tip Left-click on Broken Shore rares to load some helpful tips.
+#include "Legion_Choose_World_Quests"
 step
 label quest-42442
 accept Fight Night: Amalia##42442 |goto Dalaran L/10 29.31,29.24
@@ -4960,18 +4944,14 @@ step
 label "Court_Of_Farondis_WQ"
 #include "Legion_World_Quest_Emissaries"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\Highmountain World Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Legion\\Highmountain World Quests",{
 author="support@zygorguides.com",
 startlevel=110.0,
 worldquestzone=650,
 },[[
 step
 label "Choose_World_Quest"
-Choose a World Quest to Complete |confirm
-|tip With the "World Quests" guide loaded, open your world map.
-|tip Left-click on a world quest icon to select that world quest.
-|tip The guide will automatically load the steps for that world quest.
-|tip Left-click on Broken Shore rares to load some helpful tips.
+#include "Legion_Choose_World_Quests"
 step
 label quest-43985
 Follow the path |goto Highmountain/0 43.12,10.54 < 30 |only if walking
@@ -7066,18 +7046,14 @@ step
 label "Court_Of_Farondis_WQ"
 #include "Legion_World_Quest_Emissaries"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\Krokuun World Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Legion\\Krokuun World Quests",{
 author="support@zygorguides.com",
 startlevel=110.0,
 worldquestzone=830,
 },[[
 step
 label "Choose_World_Quest"
-Choose a World Quest to Complete |confirm
-|tip With the "World Quests" guide loaded, open your world map.
-|tip Left-click on a world quest icon to select that world quest.
-|tip The guide will automatically load the steps for that world quest.
-|tip Left-click on Broken Shore rares to load some helpful tips.
+#include "Legion_Choose_World_Quests"
 step
 label quest-48285
 Follow the path |goto Krokuun/0 36.62,65.86 < 30 |only if walking
@@ -7657,18 +7633,14 @@ step
 label "Court_Of_Farondis_WQ"
 #include "Legion_World_Quest_Emissaries"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\Mac'Aree World Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Legion\\Mac'Aree World Quests",{
 author="support@zygorguides.com",
 startlevel=110.0,
 worldquestzone=882,
 },[[
 step
 label "Choose_World_Quest"
-Choose a World Quest to Complete |confirm
-|tip With the "World Quests" guide loaded, open your world map.
-|tip Left-click on a world quest icon to select that world quest.
-|tip The guide will automatically load the steps for that world quest.
-|tip Left-click on Broken Shore rares to load some helpful tips.
+#include "Legion_Choose_World_Quests"
 step
 label quest-48729
 Follow the path |goto Mac'Aree/0 28.62,43.67 < 15 |only if walking
@@ -8390,18 +8362,14 @@ step
 label "Court_Of_Farondis_WQ"
 #include "Legion_World_Quest_Emissaries"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\Stormheim World Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Legion\\Stormheim World Quests",{
 author="support@zygorguides.com",
 startlevel=110.0,
 worldquestzone=634,
 },[[
 step
 label "Choose_World_Quest"
-Choose a World Quest to Complete |confirm
-|tip With the "World Quests" guide loaded, open your world map.
-|tip Left-click on a world quest icon to select that world quest.
-|tip The guide will automatically load the steps for that world quest.
-|tip Left-click on Broken Shore rares to load some helpful tips.
+#include "Legion_Choose_World_Quests"
 step
 label quest-43964
 Cross the bridge |goto Stormheim/0 40.02,62.82 < 20 |only if walking
@@ -10465,18 +10433,14 @@ step
 label "Court_Of_Farondis_WQ"
 #include "Legion_World_Quest_Emissaries"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\Suramar World Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Legion\\Suramar World Quests",{
 author="support@zygorguides.com",
 startlevel=110.0,
 worldquestzone=680,
 },[[
 step
 label "Choose_World_Quest"
-Choose a World Quest to Complete |confirm
-|tip With the "World Quests" guide loaded, open your world map.
-|tip Left-click on a world quest icon to select that world quest.
-|tip The guide will automatically load the steps for that world quest.
-|tip Left-click on Broken Shore rares to load some helpful tips.
+#include "Legion_Choose_World_Quests"
 step
 label quest-42859
 accept A Draught of Hope##42859 |goto Suramar/0 47.46,81.97
@@ -12384,18 +12348,14 @@ step
 label "Court_Of_Farondis_WQ"
 #include "Legion_World_Quest_Emissaries"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\Val'sharah World Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Legion\\Val'sharah World Quests",{
 author="support@zygorguides.com",
 startlevel=110.0,
 worldquestzone=641,
 },[[
 step
 label "Choose_World_Quest"
-Choose a World Quest to Complete |confirm
-|tip With the "World Quests" guide loaded, open your world map.
-|tip Left-click on a world quest icon to select that world quest.
-|tip The guide will automatically load the steps for that world quest.
-|tip Left-click on Broken Shore rares to load some helpful tips.
+#include "Legion_Choose_World_Quests"
 step
 label quest-45924
 Follow the path |goto Val'sharah/0 39.50,59.68 < 25 |only if walking
@@ -14398,7 +14358,7 @@ step
 label "Court_Of_Farondis_WQ"
 #include "Legion_World_Quest_Emissaries"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Brawler's Guild\\Legion Brawler's Guild", {
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Brawler's Guild\\Legion Brawler's Guild", {
 startlevel=110,
 description="This guide will help you achieve rank 8 in the Brawler's Guild.",
 },[[
@@ -14910,7 +14870,7 @@ step
 Congratulations you are now Rank 8 in the new Brawler's Guild!
 Earn the Achievement "King of the Guild" |achieve 11565
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\The Originals",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Legion\\The Originals",{
 author="support@zygorguides.com",
 description="This guide will walk you through killing Azuregos, Lord Kazzak, and a Dragon of Nightmare for the daily quest \"The Originals\". This quest is available from November 16 to November 30.",
 keywords={"Azuregos","Lord","Kazzak","Dragons","of","Nightmare","Lethon","Taerar","Ysondre","Emeriss"},

@@ -31,6 +31,8 @@ local DEFAULT_DATA = {
 	ROW_PADDING = 5,
 	POSX = 0,
 	POSY = 0,
+	HEADERX = 0,
+	HEADERY = 0,
 	HEADER_FONTSIZE = 13,
 	ROW_FONTSIZE = 12,
 	FONT = FONT,
@@ -61,7 +63,8 @@ local DEFAULT_DATA = {
 				textureskinname="name" -- texture name, used to get file name from skindata
 				textureoffset={1,2,3,4} -- if texture, array to unpack for SetTexCoord
 				texturecolor={1,2,3,4} -- if texture, array to unpack for SetVertexColor
-				onentertooltip=function(row) --do something, GameTooltip is created and placed-- end
+				onentertooltip=function(row) --do something, GameTooltip is created and placed
+				tooltipanchor="anchorpoint" --where the tooltip defined in onentertooltip is to be attached
 			},
 		}
 	Can take optional custom starting options.	
@@ -81,9 +84,9 @@ local DEFAULT_DATA = {
 
 	Other enter/leave/click scripts need to be attached after scrolltable is generated, by referencing the objects.
 	Example:
-		for n=1,SELL_INVENTORY_DATA.ROW_COUNT do
-			container.InventoryList.rows[n]:SetScript("OnClick",function()
-				Appraiser:InventoryClick(container.InventoryList.rows[n])
+		for _,row in ipairs(scrolltable.rows) do
+			row:SetScript("OnClick",function()
+				Appraiser:InventoryClick(row)
 			end)
 		end
 
@@ -128,6 +131,7 @@ function ScrollTable:New(parent,name,COLUMNS,DATA,useparent)
 	local prev = nil
 	for k,col in ipairs(COLUMNS) do
 		local widget
+		local local_offset_x, local_offset_y = 0, 0
 		if col.type=="button" or col.type=="headerbutton" or col.sortable then 
 			widget = CHAIN(ui:Create("Button",parent))
 				:SetSize(col.iconwidth or col.width,col.iconheight or DATA.ROW_HEADER)
@@ -158,6 +162,7 @@ function ScrollTable:New(parent,name,COLUMNS,DATA,useparent)
 				:SetFont(DATA.FONT,DATA.HEADER_FONTSIZE)
 				:SetText(col.title)
 			.__END
+			local_offset_x = 1
 		else
 			widget = CHAIN(frame:CreateFontString())
 				:SetSize(col.headerwidth or col.width,DATA.ROW_HEADER)
@@ -169,7 +174,7 @@ function ScrollTable:New(parent,name,COLUMNS,DATA,useparent)
 		end
 
 		if not prev 
-			then widget:SetPoint("TOPLEFT",frame,"TOPLEFT",(col.titlepadding or col.padding or DATA.ROW_PADDING)+(offset_from_parent and DATA.POSX or 0),0+(offset_from_parent and DATA.POSY or 0))
+			then widget:SetPoint("TOPLEFT",frame,"TOPLEFT",(col.titlepadding or col.padding or DATA.ROW_PADDING)+(offset_from_parent and DATA.POSX or DATA.HEADERX)+local_offset_x,0+(offset_from_parent and DATA.POSY or DATA.HEADERY)+local_offset_y)
 		else
 			widget:SetPoint("LEFT",prev,"RIGHT",(col.titlepadding or col.padding or DATA.ROW_PADDING),0)
 		end
@@ -241,22 +246,39 @@ function ScrollTable:New(parent,name,COLUMNS,DATA,useparent)
 				.__END
 			end
 			if col.onentertooltip then
-				widget.tooltipoverlay = CHAIN(ui:Create("Button",row,name.."Row"..n.."Icon"))
-					:SetPoint("TOPLEFT",widget) 
-					:SetSize(col.width,DATA.ROW_FONTSIZE)
-					:SetFrameLevel(row:GetFrameLevel()+1)
-					:SetBackdropColor(0,0,0,0)
-					:SetBackdropBorderColor(0,0,0,0)
-					:SetScript("OnEnter",function()
-						GameTooltip:SetOwner(widget.tooltipoverlay,"ANCHOR_RIGHT")
+				if not col.type or col.type=="icon" then
+					widget.tooltipoverlay = CHAIN(ui:Create("Button",row,name.."Row"..n.."Icon"))
+						:SetPoint("TOPLEFT",widget) 
+						:SetSize(col.width,DATA.ROW_FONTSIZE)
+						:SetFrameLevel(row:GetFrameLevel()+1)
+						:SetBackdropColor(0,0,0,0)
+						:SetBackdropBorderColor(0,0,0,0)
+						:SetScript("OnEnter",function()
+							GameTooltip:SetOwner(widget.tooltipoverlay,col.tooltipanchor or "ANCHOR_RIGHT")
+							col.onentertooltip(row)
+							GameTooltip:Show()
+						end)
+						:SetScript("OnLeave",function()
+							BattlePetTooltip:Hide()
+							GameTooltip:Hide()
+							if WorldMapTooltip then WorldMapTooltip:Hide() end
+						end)
+						:SetScript("OnClick",function()
+							row:GetScript("OnClick")()
+						end)
+					.__END
+				else
+					widget:SetScript("OnEnter",function()
+						GameTooltip:SetOwner(widget.tooltipoverlay,col.tooltipanchor or "ANCHOR_RIGHT")
 						col.onentertooltip(row)
 						GameTooltip:Show()
 					end)
-					:SetScript("OnLeave",function()
+					widget:SetScript("OnLeave",function()
 						BattlePetTooltip:Hide()
 						GameTooltip:Hide()
+						if WorldMapTooltip then WorldMapTooltip:Hide() end
 					end)
-				.__END		
+				end
 			end
 			if col.texture or col.textureskinname then
 				if type(col.texture)=="function" then col.texture = col.texture() end

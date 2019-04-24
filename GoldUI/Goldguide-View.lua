@@ -648,7 +648,7 @@ function Goldguide:MakeTable_Crafting()
 	for _,skillname in ipairs(CRAFTING_SKILLS) do
 		local skill = ZGV.Professions:GetSkill(skillname)
 		if skillname=="All" or skill.level>0 then
-			local skillid = (skillname=="All" and 0) or skill.skillID
+			local skillid = (skillname=="All" and 0) or skill.parentskillID or skill.skillID
 			local item = container.TypeDropdown:AddItem(skillname,skillid,function(item)
 				ZGV.db.profile.gold_crafting_type = item.userdata.value
 				if container:IsVisible() then Goldguide:Update() end
@@ -712,7 +712,6 @@ function Goldguide:MakeTable_Auctions()
 		
 	for optnum,opt in ipairs(AUCTION_TYPES) do
 		local item = container.TypeDropdown:AddItem(opt[1],opt[2],function(item)
-			print("types function")
 			ZGV.db.profile.gold_auctions_type = item.userdata.value
 			if container:IsVisible() then Goldguide:Update() end
 		end, opt[3])
@@ -980,7 +979,7 @@ function Goldguide:MakeTooltip(name,COLUMNS)
 		:SetPoint("TOPLEFT",0,0)
 		:SetSize(MAIN_WIDTH-21,100)
 		:SetFrameLevel(parent:GetFrameLevel()+5)
-		:SetBackdropColor(unpack(SkinData("MainBackdropColor")))
+		:SetBackdropColor(0,0,0,1)
 		:SetBackdropBorderColor(unpack(SkinData("MainBackdropBorderColor")))
 	.__END
 

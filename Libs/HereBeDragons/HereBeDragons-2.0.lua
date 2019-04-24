@@ -69,6 +69,8 @@ local instanceIDOverrides = {
     [1612] = 1220, -- Feral Druid Artifact Scenario (Suramar)
     [1626] = 1220, -- Suramar Withered Scenario
     [1662] = 1220, -- Suramar Invasion Scenario
+    -- BfA
+    [1917] = 1116, -- Gorgrond - Mag'har scenario
 }
 
 -- gather map info, but only if this isn't an upgrade (or the upgrade version forces a re-map)
@@ -177,6 +179,8 @@ if not oldversion or oldversion < 3 then
     end
 
     gatherMapData()
+
+    HereBeDragons.processMap = processMap
 end
 
 -- Transform a set of coordinates based on the defined map transformations

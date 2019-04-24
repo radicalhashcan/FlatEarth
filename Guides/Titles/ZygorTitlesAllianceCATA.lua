@@ -3,8 +3,9 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("TitlesA") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Brutal Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Burning Crusade Titles\\Player versus Player\\Brutal Gladiator",{
 author="support@zygorguides.com",
+playertitle=49,
 },[[
 step
 This title is _no longer obtainable_!
@@ -14,8 +15,9 @@ Your character had a personal rating within 100 points of the team's rating
 Your character had to have played in at least 20% of the team's total games played
 Your character had to be max level for that time
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Deadly Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Burning Crusade Titles\\Player versus Player\\Deadly Gladiator",{
 author="support@zygorguides.com",
+playertitle=56,
 },[[
 step
 This title is _no longer obtainable_!
@@ -25,24 +27,9 @@ Your character had a personal rating within 100 points of the team's rating
 Your character had to have played in at least 20% of the team's total games played
 Your character had to be max level for that time
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Challenger",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Burning Crusade Titles\\Player versus Player\\Justicar",{
 author="support@zygorguides.com",
-},[[
-step
-This title is gained by finishing a PvP season in the top 35% of of the arena ladder
-You must also have at least 50 games won for the season
-achieve 2090
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Duelist",{
-author="support@zygorguides.com",
-},[[
-step
-This title is gained by finishing a PvP season in the top 3% of of the arena ladder
-You must also have at least 50 games won for the season
-achieve 2092
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Justicar",{
-author="support@zygorguides.com",
+playertitle=35,
 },[[
 step
 This title is earned by completing the _"The Justicar"_ achievement.
@@ -51,8 +38,9 @@ achieve 907
 step
 Congratulations! You have earned the title Justicar!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Merciless Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Burning Crusade Titles\\Player versus Player\\Merciless Gladiator",{
 author="support@zygorguides.com",
+playertitle=37,
 },[[
 step
 This title is _no longer obtainable_!
@@ -62,16 +50,9 @@ Your character had a personal rating within 100 points of the team's rating
 Your character had to have played in at least 20% of the team's total games played
 Your character had to be max level for that time
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Rival",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Burning Crusade Titles\\Player versus Player\\Vengeful Gladiator",{
 author="support@zygorguides.com",
-},[[
-step
-This title is gained by finishing a PvP season in the top 10% of of the arena ladder
-You must also have at least 50 games won for the season
-achieve 2093
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Vengeful Gladiator",{
-author="support@zygorguides.com",
+playertitle=40,
 },[[
 step
 This title is _no longer obtainable_!
@@ -81,8 +62,9 @@ Your character had a personal rating within 100 points of the team's rating
 Your character had to have played in at least 20% of the team's total games played
 Your character had to be max level for that time
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Furious Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Burning Crusade Titles\\Player versus Player\\Furious Gladiator",{
 author="support@zygorguides.com",
+playertitle=132,
 },[[
 step
 This title is _no longer obtainable_!
@@ -92,8 +74,9 @@ Your character had a personal rating within 100 points of the team's rating
 Your character had to have played in at least 20% of the team's total games played
 Your character had to be max level for that time
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Relentless Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Burning Crusade Titles\\Player versus Player\\Relentless Gladiator",{
 author="support@zygorguides.com",
+playertitle=134,
 },[[
 step
 This title is _no longer obtainable_!
@@ -103,8 +86,9 @@ Your character had a personal rating within 100 points of the team's rating
 Your character had to have played in at least 20% of the team's total games played
 Your character had to be max level for that time
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Wrathful Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Burning Crusade Titles\\Player versus Player\\Wrathful Gladiator",{
 author="support@zygorguides.com",
+playertitle=142,
 },[[
 step
 This title is _no longer obtainable_!
@@ -114,8 +98,9 @@ Your character had a personal rating within 100 points of the team's rating
 Your character had to have played in at least 20% of the team's total games played
 Your character had to be max level for that time
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Dungeons & Raids\\Champion of the Naaru",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Burning Crusade Titles\\Dungeons & Raids\\Champion of the Naaru",{
 author="support@zygorguides.com",
+playertitle=36,
 },[[
 step
 This title is _no longer obtainable_!
@@ -123,39 +108,44 @@ This title was gained by completing the attunement quest for Serpentshrine Caver
 Players also had to summon and defeat Nightbane in Karazhan and defeat Gruul and Magtheridon
 achieve 432
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Dungeons & Raids\\Hand of A'dal",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Burning Crusade Titles\\Dungeons & Raids\\Hand of A'dal",{
 author="support@zygorguides.com",
+playertitle=39,
 },[[
 step
 This title is _no longer obtainable_!
 This title was gained by completing the The Vials of Eternity questline before the 3.0.2 patch
 achieve 431
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Reputations\\Of the Shattered Sun",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Burning Crusade Titles\\Reputations\\Of the Shattered Sun",{
 author="support@zygorguides.com",
-description="This Guide will help you get your Reputation to Exalted to earn the title of the Shattered Sun.",
+description="These dailies will walk you through getting the reputation\nneeded to purchase the Title of the Shattered Sun.",
+playertitle=38,
 },[[
 step
 #include "SSO_PreQuest_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Argent Defender",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Argent Defender",{
 author="support@zygorguides.com",
+playertitle=136,
 },[[
 step
 This title is _no longer obtainable_!
 This title was earned by completing the Trial of the Grand Crusader with 50 attempts remaining.
 achieve 4080
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Grand Crusader",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Grand Crusader",{
 author="support@zygorguides.com",
+playertitle=135,
 },[[
 step
 This title is _no longer obtainable_!
 This title was earned by participating in the world's first completion of the Trial of the Grand Crusader with 50 attempts remaining.
 achieve 4078
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Astral Walker",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Astral Walker",{
 author="support@zygorguides.com",
+playertitle=130,
 },[[
 step
 This title is earned by completing the _Observed (25 player)_ achievement from Ulduar.
@@ -165,8 +155,9 @@ achieve 3037
 step
 Congratulations! You have earned the title The Astral Walker
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Bane of the Fallen King",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Bane of the Fallen King",{
 author="support@zygorguides.com",
+playertitle=139,
 },[[
 step
 This title is earned by completing the _Bane of the Fallen King_ achievement from 10 player Heroic: Icecrown Citadel.
@@ -176,75 +167,84 @@ achieve 4583
 step
 Congratulations! You have earned the title Bane of the Fallen King!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Celestial Defender",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Celestial Defender",{
 author="support@zygorguides.com",
+playertitle=125,
 },[[
 step
 This title is _no longer obtainable_!
 This title was earned by participating in the realm first kill of Algalon the Observer in 25 player mode.
 achieve 3259
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Champion of the Frozen Wastes",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Champion of the Frozen Wastes",{
 author="support@zygorguides.com",
-description="This title is earned by completing the \"Champion of the Frozen Wastes\" achievement. You must kill various bosses from dungeons and raids from around Northrend.",
+description="This title is earned by completing the \"Champion of the Frozen Wastes\" achievement. You must kill "..
+"various bosses from dungeons and raids from around Northrend.",
+playertitle=97,
 },[[
 step
 This title is earned by completing the _Champion of the Frozen Wastes_ achievement
 Defeat the following raid and dungeon bosses. Click a boss below to load its guide
-Sartharion |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\The Obsidian Sanctum" |only if not achieved(1658,1)
-Kel'Thuzad |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas" |only if not achieved(1658,2)
-Malygos |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\The Eye of Eternity" |only if not achieved(1658,3)
-Anub'arak |confirm |next "Zygor's Dungeon Guides\\Northrend Dungeons\\Azjol-Nerub" |only if not achieved(1658,4)
-Sjonnir The Ironshaper |confirm |next "Zygor's Dungeon Guides\\Northrend Dungeons\\Halls of Stone" |only if not achieved(1658,5)
-Keristrasza |confirm |next "Zygor's Dungeon Guides\\Northrend Dungeons\\The Nexus" |only if not achieved(1658,6)
-Herald Volazj |confirm |next "Zygor's Dungeon Guides\\Northrend Dungeons\\Ahn'kahet: The Old Kingdom" |only if not achieved(1658,7)
-Loken |confirm |next "Zygor's Dungeon Guides\\Northrend Dungeons\\Halls of Lightning" |only if not achieved(1658,8)
-Ley-Guardian Eregos |confirm |next "Zygor's Dungeon Guides\\Northrend Dungeons\\The Oculus" |only if not achieved(1658,9)
-Ingvar the Plunderer |confirm |next "Zygor's Dungeon Guides\\Northrend Dungeons\\Utgarde Keep" |only if not achieved(1658,10)
-King Ymiron |confirm |next "Zygor's Dungeon Guides\\Northrend Dungeons\\Utgarde Keep: Utgarde Pinnacle" |only if not achieved(1658,11)
-Mal'Ganis |confirm |next "Zygor's Dungeon Guides\\Northrend Dungeons\\Caverns of Time: The Culling of Stratholme" |only if not achieved(1658,12)
-The Prophet Tharon'ja |confirm |next "Zygor's Dungeon Guides\\Northrend Dungeons\\Drak'Tharon Keep" |only if not achieved(1658,13)
-Cyanigosa |confirm |next "Zygor's Dungeon Guides\\Northrend Dungeons\\The Violet Hold" |only if not achieved(1658,14)
-Gal'darah |confirm |next "Zygor's Dungeon Guides\\Northrend Dungeons\\Gundrak" |only if not achieved(1658,15)
+Sartharion |confirm |next "Dungeon Guides\\Northrend Raids\\The Obsidian Sanctum" |only if not achieved(1658,1)
+Kel'Thuzad |confirm |next "Dungeon Guides\\Northrend Raids\\Naxxramas" |only if not achieved(1658,2)
+Malygos |confirm |next "Dungeon Guides\\Northrend Raids\\The Eye of Eternity" |only if not achieved(1658,3)
+Anub'arak |confirm |next "Dungeon Guides\\Northrend Dungeons\\Azjol-Nerub" |only if not achieved(1658,4)
+Sjonnir The Ironshaper |confirm |next "Dungeon Guides\\Northrend Dungeons\\Halls of Stone" |only if not achieved(1658,5)
+Keristrasza |confirm |next "Dungeon Guides\\Northrend Dungeons\\The Nexus" |only if not achieved(1658,6)
+Herald Volazj |confirm |next "Dungeon Guides\\Northrend Dungeons\\Ahn'kahet: The Old Kingdom" |only if not achieved(1658,7)
+Loken |confirm |next "Dungeon Guides\\Northrend Dungeons\\Halls of Lightning" |only if not achieved(1658,8)
+Ley-Guardian Eregos |confirm |next "Dungeon Guides\\Northrend Dungeons\\The Oculus" |only if not achieved(1658,9)
+Ingvar the Plunderer |confirm |next "Dungeon Guides\\Northrend Dungeons\\Utgarde Keep" |only if not achieved(1658,10)
+King Ymiron |confirm |next "Dungeon Guides\\Northrend Dungeons\\Utgarde Keep: Utgarde Pinnacle" |only if not achieved(1658,11)
+Mal'Ganis |confirm |next "Dungeon Guides\\Northrend Dungeons\\Caverns of Time: The Culling of Stratholme" |only if not achieved(1658,12)
+The Prophet Tharon'ja |confirm |next "Dungeon Guides\\Northrend Dungeons\\Drak'Tharon Keep" |only if not achieved(1658,13)
+Cyanigosa |confirm |next "Dungeon Guides\\Northrend Dungeons\\The Violet Hold" |only if not achieved(1658,14)
+Gal'darah |confirm |next "Dungeon Guides\\Northrend Dungeons\\Gundrak" |only if not achieved(1658,15)
 step
 Congratulations!
 You have earned the title "Champion of the Frozen Wastes"!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Champion of Ulduar",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Champion of Ulduar",{
 author="support@zygorguides.com",
+playertitle=127,
 },[[
 step
 This title is _no longer obtainable_!
 This title was earned by completing the Ulduar 10 man raid without any player dying.
 achieve 2903
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Conqueror of Naxxramas",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Conqueror of Naxxramas",{
 author="support@zygorguides.com",
+playertitle=90,
 },[[
 step
 This title is _no longer obtainable_!
 This title was earned by participating in the realm first kill of Kel'Thuzad in Naxxramas in 25-player mode.
 achieve 1402
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Conqueror of Ulduar",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Conqueror of Ulduar",{
 author="support@zygorguides.com",
+playertitle=126,
 },[[
 step
 This title is _no longer obtainable_!
 This title was earned by completing the Ulduar 25 man raid without any player dying.
 achieve 2904
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Death's Demise",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Death's Demise",{
 author="support@zygorguides.com",
+playertitle=124,
 },[[
 step
 This title is _no longer obtainable_!
 This title was earned by participating in the realm first kill of Yogg-Saron in 25 player mode.
 achieve 3117
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Herald of the Titans",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Herald of the Titans",{
 author="support@zygorguides.com",
-description="This title is earned by defeating Algalon the Observer in Ulduar in 10-player mode at level 80. Your armor pieces cannot exceed item level 226 and weapons cannot exceed item level 232.",
+description="This title is earned by defeating Algalon the Observer in Ulduar in 10-player mode at level 80. "..
+"Your armor pieces cannot exceed item level 226 and weapons cannot exceed item level 232.",
+playertitle=131,
 },[[
 step
 This title is earned by defeating Algalon the Observer in Ulduar in 10-player mode at level 80
@@ -254,17 +254,19 @@ achieve 3316
 step
 Congratulations, you have earned the Herald of the Titans title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Immortal",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Immortal",{
 author="support@zygorguides.com",
 description="This title is no longer obtainable. It was earned by completing 25 man Naxxramas without any raid members dying in a single run.",
+playertitle=108,
 },[[
 step
 This title is _no longer obtainable_
 |tip This title was earned by completing the "The Immortal" achievement from Naxxramas.
 |tip You must have completed the Naxxramas raid without any player dying in 25 player mode.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Kingslayer",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Kingslayer",{
 author="support@zygorguides.com",
+playertitle=140,
 },[[
 step
 This title is earned by completing the _"The Frozen Throne"_ achievement from the Icecrown Citadel raid. This can be completed on either 10 or 25 player.
@@ -275,8 +277,9 @@ achieve 4597 |or
 step
 Congratulations! You have earned the title The Kingslayer!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Light of Dawn",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Light of Dawn",{
 author="support@zygorguides.com",
+playertitle=138,
 },[[
 step
 This title is earned by completing the _"The Light of Dawn"_ achievement from 25 player Heroic: Icecrown Citadel.
@@ -286,24 +289,27 @@ achieve 4584
 step
 Congratulations! You have earned the title The Light of Dawn!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Magic Seeker",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Magic Seeker",{
 author="support@zygorguides.com",
 description="This title is no longer obtainable. It was earned by achieving the realm first kill of Malygos on 25 player mode.",
+playertitle=88,
 },[[
 step
 This title is _no longer obtainable_
 |tip This title was earned by participating in the realm first kill of Malygos in 25 player mode.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Obsidian Slayer",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Obsidian Slayer",{
 author="support@zygorguides.com",
 description="This title is no longer obtainable. It was earned by achieving the realm first kill of Sartharion the Onyx Guardian on 25 player mode.",
+playertitle=106,
 },[[
 step
 This title is _no longer obtainable_
 |tip This title was earned by participating in the realm first kill of Sartharion the Onyx Guardian in 25 player mode.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Of the Nightfall",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Of the Nightfall",{
 author="support@zygorguides.com",
+playertitle=107,
 },[[
 step
 This title is earned by completing the _The Twilight Zone (10 player)_ achievement from The Obsidian Sanctum.
@@ -313,9 +319,10 @@ achieve 2051
 step
 Congratulations! You have earned the title "of the Nightfall"!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Patient",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Patient",{
 author="support@zygorguides.com",
 description="This guide will instruct you on how to get The Patient title.",
+playertitle=137,
 },[[
 step
 Getting the title _The Patient_ is obtained by running random heroic dungeons with 50 different people.
@@ -331,8 +338,9 @@ Run random Heroic Dungeons with 50 random people |achieve 4477/1
 step
 Congratulations! You have achieved the title The Patient! |achieve 4477
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Starcaller",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Starcaller",{
 author="support@zygorguides.com",
+playertitle=129,
 },[[
 step
 This title is earned by completing the _Observed (10 player)_ achievement from Ulduar.
@@ -342,17 +350,19 @@ achieve 3036
 step
 Congratulations! You have earned the title Starcaller!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Undying",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Undying",{
 author="support@zygorguides.com",
 description="This title is no longer obtainable. It was earned by completing 10 man Naxxramas without any raid members dying in a single run.",
+playertitle=109,
 },[[
 step
 This title is _no longer obtainable!_
 |tip This title was earned by completing the "The Undying" achievement from Naxxramas.
 |tip You must have completed the Naxxramas raid without any player dying in 10 player mode.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Twilight Vanquisher",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Twilight Vanquisher",{
 author="support@zygorguides.com",
+playertitle=89,
 },[[
 step
 This title is earned by completing the _The Twilight Zone (25 player)_ achievement from The Obsidian Sanctum.
@@ -362,50 +372,22 @@ achieve 2054
 step
 Congratulations! You have earned the title Twilight Vanquisher!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\General\\The Explorer\\Eastern Kingdoms",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\General\\The Explorer",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Explorer achievement.",
+playertitle=47,
 },[[
-leechsteps "Zygor's Achievement Guides\\Exploration\\Eastern Kingdoms\\Eastern Kingdoms Explorer"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\General\\The Explorer\\Kalimdor",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the Explorer achievement.",
-},[[
-leechsteps "Zygor's Achievement Guides\\Exploration\\Kalimdor\\Kalimdor Explorer"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\General\\The Explorer\\Northrend",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the Explorer achievement.",
-},[[
-leechsteps "Zygor's Achievement Guides\\Exploration\\Northrend\\Northrend Explorer"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\General\\The Explorer\\Outland",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the Explorer achievement.",
-},[[
-leechsteps "Zygor's Achievement Guides\\Exploration\\Outland\\Outland Explorer"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\General\\The Explorer\\Pandaria",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the Explorer achievement.",
-},[[
+leechsteps "Achievement Guides\\Exploration\\Eastern Kingdoms\\Eastern Kingdoms Explorer"
+leechsteps "Achievement Guides\\Exploration\\Kalimdor\\Kalimdor Explorer"
+leechsteps "Achievement Guides\\Exploration\\Northrend\\Northrend Explorer"
+leechsteps "Achievement Guides\\Exploration\\Outland\\Outland Explorer"
 #include "Explorer_Pandaria"
+leechsteps "Achievement Guides\\Exploration\\Draenor\\Draenor Explorer"
+leechsteps "Achievement Guides\\Exploration\\Legion\\Broken Isles Explorer"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\General\\The Explorer\\Draenor",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Player versus Player\\Of the Alliance",{
 author="support@zygorguides.com",
-description="This guide section will walk you through completing the Explorer achievement.",
-},[[
-leechsteps "Zygor's Achievement Guides\\Exploration\\Draenor Explorer"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\General\\The Explorer\\Broken Isles",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the Explorer achievement.",
-},[[
-leechsteps "Zygor's Achievement Guides\\Exploration\\Legion\\Broken Isles Explorer"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Player versus Player\\Of the Alliance",{
-author="support@zygorguides.com",
+playertitle=94,
 },[[
 step
 This title is earned by achieving 100,000 honorable kills in any Player vs Player environment.
@@ -413,8 +395,9 @@ achieve 870
 step
 Congratulations! You have earned the title of the Alliance!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Player versus Player\\Arena Master",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Player versus Player\\Arena Master",{
 author="support@zygorguides.com",
+playertitle=50,
 },[[
 step
 This title is earned by completing the _"The Arena Master"_ achievement. |tip This is an incredibly difficult title to obtain.
@@ -422,8 +405,9 @@ achieve 1174
 step
 Congratulations! You have earned the title Arena Master!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Player versus Player\\Battlemaster",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Player versus Player\\Battlemaster",{
 author="support@zygorguides.com",
+playertitle=41,
 },[[
 step
 This title is earned by completing the _Battlemaster_ achievement.
@@ -437,27 +421,30 @@ achieve 230/5
 step
 Congratulations! You have earned the title Battlemaster!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Player versus Player\\The Flawless Victor",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Player versus Player\\The Flawless Victor",{
 author="support@zygorguides.com",
 description="This title is no longer obtainable. It was earned by achieving victory in 10 ranked PvP matches with a rating of at least 2,000. It was removed in patch 3.1.",
+playertitle=96,
 },[[
 step
 This title is _no longer obtainable_
 |tip This title was earned by winning 10 ranked PvP matches in a row with a rating of at least 2,000 at level 80.
 |tip It was removed in patch 3.1.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Player versus Player\\Vanquisher",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Player versus Player\\Vanquisher",{
 author="support@zygorguides.com",
 description="This title is no longer obtainable. It was earned by being rated in the top 1,000 teams participating in the 2013 Tournament Arena Realm.",
+playertitle=128,
 },[[
 step
 This title is _no longer obtainable_!
 |tip This title was earned by being rated in the top 1,000 teams participating in the 2013 Tournament Arena Realm.
 achieve 8392
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Professions\\Cooking\\Chef\\Achievements",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Professions\\Cooking\\Chef\\Achievements",{
 author="support@zygorguides.com",
 description="This guide will show you how to earn the Chef Title",
+playertitle=52,
 },[[
 step
 If you need to level your cooking, click here |confirm |next "Profession Guides\\Cooking\\Cooking 1-600 Leveling Guide"
@@ -472,17 +459,18 @@ Click here if you have already reached 450 Cooking. |confirm
 #include "second_that_emotion"
 #include "the_cake_is_not_a_lie"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Professions\\Cooking\\Chef\\Dailies",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Professions\\Cooking\\Chef\\Dailies",{
 author="support@zygorguides.com",
 description="This guide will help you in obtaining the Chef Title",
+playertitle=52,
 },[[
 #include "Kickin'_It_Up_a_Notch"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Professions\\Fishing\\Salty",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Professions\\Fishing\\Salty",{
+author="support@zygorguides.com",
+description="This guide will walk you through the steps to earn the Salty title.",
+playertitle=51,
 },[[
-description This guide will walk you through the steps
-description to earn the title Chef
-author support@zygorguides.com
 step
 This title is earned once you have completed a majority of the Fishing achievements.
 Click here to proceed. |confirm
@@ -514,42 +502,47 @@ achieve 1516
 step
 Congratulations, you have obtained the _Salty_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Quests\\Loremaster",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Quests\\Loremaster",{
 author="support@zygorguides.com",
 description="This guide will refer you to the correct location to go, to get the Loremaster title.",
+playertitle=93,
 },[[
 step
 You can use our Leveling Guides along with our Loremaster guides in the Main Menu to get the Loremaster achievement.
 Make sure that you use the Leveling guides first, then go through and get the quests with the Loremaster Guides to finish the quests that you need.
 achieve 7520
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Quests\\The Seeker",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Quests\\The Seeker",{
 author="support@zygorguides.com",
 description="This guide will refer you to the correct location to go, to get the Seeker title.",
+playertitle=42,
 },[[
 step
 You can use our Leveling Guides along with our Loremaster guides in the Main Menu to get The Seeker achievement.
 Make sure that you use the Leveling guides first, then go through and get the quests with the Loremaster Guides to finish the quests that you need.
 achieve 978
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Argent Champion\\Argent Crusade Reputation",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\Argent Champion\\Argent Crusade Reputation",{
 author="support@zygorguides.com",
 description="This guide will show you how to earn the Argent Champion title.",
 keywords={"Champion"},
+playertitle=99,
 },[[
 #include "Argent_Crusade_Rep"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Argent Champion\\Argent Dawn Reputation",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\Argent Champion\\Argent Dawn Reputation",{
 author="support@zygorguides.com",
 description="This guide will show you how to earn the Argent Champion title.",
 keywords={"Champion"},
+playertitle=99,
 },[[
 #include "Argent_Dawn_Rep"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Argent Tournament Grounds Aspirant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Argent Tournament Grounds Aspirant Rank Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing your race's Aspirant Rank dailies in order to achieve Argent Tournament Grounds Valiant Rank with your own race and eventually Crusader title.",
 keywords={"Crusader"},
+playertitle=123,
 },[[
 step
 talk Arcanist Taelis##33625
@@ -623,10 +616,11 @@ step
 talk Arcanist Taelis##33625
 turnin Up To The Challenge##13672 |goto 76.5,19.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Argent Tournament Grounds Valiant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Argent Tournament Grounds Valiant Rank Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing your race's Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion Rank with your own race. You must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section in order to have access to the quests in this guide section and earn the Crusader title.",
 keywords={"Crusader"},
+playertitle=123,
 },[[
 step
 talk Arcanist Taelis##33625
@@ -1227,10 +1221,11 @@ talk Eadric the Pure##33759
 turnin Eadric the Pure##13794 |goto 70.0,23.4
 only if not DeathKnight
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Draenei Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Draenei Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Draenei race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section. You cannot complete this section if you are a Draenei.",
 keywords={"Crusader"},
+playertitle=123,
 },[[
 step
 In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
@@ -1337,10 +1332,11 @@ step
 Congratulations, you are now a Champion of The Exodar!
 |tip This is the end of the Draenei Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Dwarf Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Dwarf Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Dwarf race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section. You cannot complete this section if you are a Dwarf.",
 keywords={"Crusader"},
+playertitle=123,
 },[[
 step
 In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
@@ -1450,10 +1446,11 @@ step
 Congratulations, you are now a Champion of Ironforge!
 |tip This is the end of the Dwarf Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Gnome Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Gnome Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Gnome race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section. You cannot complete this section if you are a Gnome.",
 keywords={"Crusader"},
+playertitle=123,
 },[[
 step
 In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
@@ -1561,10 +1558,11 @@ step
 Congratulations, you are now a Champion of Gnomeregan!
 |tip This is the end of the Gnome Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Human Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Human Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Human race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section. You cannot complete this section if you are a Human.",
 keywords={"Crusader"},
+playertitle=123,
 },[[
 step
 In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
@@ -1672,10 +1670,11 @@ step
 Congratulations, you are now a Champion of Stormwind!
 |tip This is the end of the Human Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Night Elf Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Night Elf Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Night Elf race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section. You cannot complete this section if you are a Night Elf.",
 keywords={"Crusader"},
+playertitle=123,
 },[[
 step
 In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
@@ -1783,45 +1782,51 @@ step
 Congratulations, you are now a Champion of Darnassus!
 |tip This is the end of the Night Elf Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Diplomat\\Kurenai Faction",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\The Diplomat\\Kurenai Faction",{
 author="support@zygorguides.com",
 description="This Guide will help you reach Exalted status with the Kurenai Faction",
 keywords={"The, Diplomat"},
+playertitle=48,
 },[[
 #include "Kurenai_Rep"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Diplomat\\Sporeggar Faction",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\The Diplomat\\Sporeggar Faction",{
 author="support@zygorguides.com",
 keywords={"The, Diplomat"},
+playertitle=48,
 },[[
 #include "Sporeggar_Rep"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Diplomat\\Timbermaw Hold Faction",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\The Diplomat\\Timbermaw Hold Faction",{
 author="support@zygorguides.com",
 keywords={"The, Diplomat"},
+playertitle=48,
 },[[
 #include "Timbermaw_Rep"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Guardian of Cenarius\\Cenarion Circle Faction",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\Guardian of Cenarius\\Cenarion Circle Faction",{
 author="support@zygorguides.com",
 description="This title is earned by reaching exalted with the Cenarian Circle and the Cenarian Expedition.",
 keywords={"Guardian, of, Cenarius"},
 achieveid={953},
+playertitle=100,
 },[[
 #include "Cenarion_Circle_Rep"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Guardian of Cenarius\\Cenarion Expedition Faction",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\Guardian of Cenarius\\Cenarion Expedition Faction",{
 author="support@zygorguides.com",
 description="This title is earned by reaching exalted with the Cenarian Circle and the Cenarian Expedition.",
 keywords={"Guardian, of, Cenarius"},
 achieveid={953},
+playertitle=100,
 },[[
 #include "Cenarion_Expedition_Rep"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Bloodsail Buccaneers Group",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Bloodsail Buccaneers Group",{
 author="support@zygorguides.com",
 description="This Guide will help you get Reputation to earn the title _The Insane_.",
 keywords={"The, Insane, In, Membrane"},
+playertitle=112,
 },[[
 step
 label "menu"
@@ -1848,12 +1853,13 @@ step
 label "end"
 End of Guide
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Bloodsail Buccaneers Solo",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Bloodsail Buccaneers Solo",{
 keywords={"The, Insane, In, Membrane"},
+playertitle=112,
 },[[
 step
 You can only kill NPC's in one place alone now as Booty Bay Bruisers require a 5 man group to kill.
-Click here to farm the small cove with NPC's for Bloodsail Buccaneer Reputation. |confirm always "Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Bloodsail Buccaneers Group"
+Click here to farm the small cove with NPC's for Bloodsail Buccaneer Reputation. |confirm always "Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Bloodsail Buccaneers Group"
 or |only if not completedq(26679)
 You can click here to run the pirate questline and farm Booty Bay NPC's without level 85 guards attacking you. |only if not completedq(26679)
 Click here if you would rather run the questline and farm Booty Bay while in a phased zone |confirm always |only if not completedq(26679)
@@ -2194,10 +2200,11 @@ step
 label "end"
 End of Guide
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Darkmoon Faire",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Darkmoon Faire",{
 keywords={"The, Insane, In, Membrane"},
 author="support@zygorguides.com",
 description="This Guide will help you get Reputation with The Darkmoon Faire to earn the title _The Insane_.",
+playertitle=112,
 },[[
 step
 The Darkmoon Faire starts the first Sunday of the month and lasts for one week. The easiest way to earn reputation with
@@ -2222,10 +2229,11 @@ step
 label "end"
 Congratulations, you have reached Exalted with The Darkmoon Faire! |condition rep('Darkmoon Faire')>=Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Ravenholdt",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Ravenholdt",{
 keywords={"The, Insane, In, Membrane"},
 author="support@zygorguides.com",
 description="This Guide will help you get Reputation with Ravenholdt to earn the title _The Insane_.",
+playertitle=112,
 },[[
 step
 In order to get Exalted with Ravenholdt Faction, you need to grind mobs to _11,999/12,000_ Honored reputation.
@@ -2260,10 +2268,11 @@ step
 label "end"
 Congratulations, you have reached Exalted with Ravenholdt!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\The Steamwheedle Cartel",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\The Steamwheedle Cartel",{
 keywords={"The, Insane, In, Membrane"},
 author="support@zygorguides.com",
 description="This Guide will help you get Reputation with the Steamwheedle Cartel to earn the title _The Insane_.",
+playertitle=112,
 },[[
 step
 label "Steam_Menu"
@@ -2489,8 +2498,9 @@ step
 label "end"
 Congratulations! You are honored with the Steamwheedle Cartel!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Ambassador",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\Ambassador",{
 author="support@zygorguides.com",
+playertitle=98,
 },[[
 step
 label "menu"
@@ -2627,7 +2637,8 @@ step
 label "end"
 Congratulations, you have earned the Title _Ambassador_! |achieve 948
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Of the Ashen Verdict",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\Of the Ashen Verdict",{
+playertitle=141,
 },[[
 step
 This title is gained by becoming Exalted with The Ashen Verdict reputation.
@@ -2649,9 +2660,10 @@ step
 label "exalted"
 Congratulations! You have earned the title "of the Ashen Verdict"!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Bloodsail Admiral",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\Bloodsail Admiral",{
 author="support@zygorguides.com",
 description="This Guide will help you get Reputation to earn the title _The Insane_.",
+playertitle=111,
 },[[
 step
 label "menu"
@@ -3025,9 +3037,10 @@ step
 label "end"
 Congratulations, you have earned the _Bloodsail Admiral_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Exalted",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\Reputations\\The Exalted",{
 author="support@zygorguides.com",
 description="This guide will instruct you on how to get The Exalted title.",
+playertitle=46,
 },[[
 step
 Use our Reputations guide to get Exalted reputation with 45 different reputations.
@@ -3035,333 +3048,61 @@ Earn Exalted reputation with 45 different reputations |achieve 5374/1
 step
 Congratulations! You have earn the title The Exalted! |achieve 5374
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Brewmaster\\Brewfest Achievements",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Brewmaster\\Brewfest Achievements",{
 keywords={"Brewmaster"},
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the achievements for the Brewfest event.",
+playertitle=101,
 },[[
-step
-talk Arlen Lochlan##23522
-buy The Essential Brewfest Pretzel##33043 |goto Dun Morogh 55.6,38.2 |achieve 1185
-step
-Click The Essential Brewfest Pretzels in your bags |use The Essential Brewfest Pretzel##33043
-Eat The Essential Brewfest Pretzels |achieve 1185/7
-step
-talk Anne Summers##23521
-buy Spiced Onion Cheese##34065 |achieve 1185 |goto 56.5,37.7
-step
-Click the Spiced Onion Cheese in your bags |use Spiced Onion Cheese##34065
-Eat the Spiced Onion Cheese |achieve 1185/4
-step
-talk Keiran Donoghue##23481
-buy Dried Sausage##34063 |achieve 1185 |goto 56.0,36.4
-buy Succulent Sausage##34064 |achieve 1185 |goto 56.0,36.4
-buy Savory Sausage##33023 |achieve 1185 |goto 56.0,36.4
-buy Pickled Sausage##33024 |achieve 1185 |goto 56.0,36.4
-buy Spicy Smoked Sausage##33025 |achieve 1185 |goto 56.0,36.4
-buy The Golden Link##33026 |achieve 1185 |goto 56.0,36.4
-step
-Do the following:
-Click the Dried Sausage in your bags |use Dried Sausage##34063
-Eat the Dried Sausage |achieve 1185/1
-Click the Succulent Sausage in your bags |use Succulent Sausage##34064
-Eat the Succulent Sausage |achieve 1185/6
-Click the Savory Sausage in your bags |use Savory Sausage##33023
-Eat the Savory Sausage |achieve 1185/3
-Click the Pickled Sausage in your bags |use Pickled Sausage##33024
-Eat the Pickled Sausage |achieve 1185/2
-Click the Spicy Smoked Sausage in your bags |use Spicy Smoked Sausage##33025
-Eat Spicy Smoked Sausage |achieve 1185/5
-Click the Golden Link in your bags |use The Golden Link##33026
-Eat The Golden Link |achieve 1185/8
-Achieve The Brewfest Diet! |achieve 1185
-step
-talk Belbi Quikswitch##23710
-buy Fresh Brewfest Hops##37750 |achieve 303 |goto 56.4,37.8
-|tip You must be at least level 20 to buy these.
-step
-Use your Fresh Brewfest Hops |use Fresh Brewfest Hops##37750
-Make your Mount Festive for Brewfest! |achieve 303
-step
-Complete the Brewfest daily quests each day until you have 200 Brewfest Prize Tokens
-collect 200 Brewfest Prize Token##37829 |achieve 2796
-step
-talk Belbi Quikswitch##23710
-buy 1 "Brew of the Month" Club Membership Form##37736 |goto 56.4,37.9 |n
-Click the "Brew of the Month" Club Membership Form in your bags |use "Brew of the Month" Club Membership Form##37736
-accept Brew of the Month Club##12420
-step
-talk Larkin Thunderbrew##27478
-turnin Brew of the Month Club##12420 |goto Ironforge 18.8,53.1
-Achieve Brew of the Month! |achieve 2796 |goto Ironforge 18.8,53.1
-Achieve Brewmaster! |achieve 1684 |goto Ironforge 18.8,53.1
-step
-If you are on the EU servers go here to buy your Wolpertinger Pet
-buy Wolpertinger's Tankard##32233 |n |goto Dun Morogh 56.4,37.8
-Does Your Wolpertinger Linger? |achieve 1936
-step
-Congratulations, you are a Brewmaster!
+leechsteps "Events Guides\\Brewfest\\Brewfest Achievements"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Brewmaster\\Brewfest Dailies",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Brewmaster\\Brewfest Dailies",{
 keywords={"Brewmaster"},
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests for the Brewfest event.",
+playertitle=101,
 },[[
-step
-You will only be able to do 1 of the first 2 dailies in this guide, per day.
-|tip Quests "Bark for the Barleybrews!" or "Bark for the Thunderbrews!".
-confirm
-step
-talk Becan Barleybrew##23627
-accept Bark for the Barleybrews!##11293 |goto Dun Morogh 56.1,38.0 |or
-Or
-talk Daran Thunderbrew##23628
-accept Bark for the Thunderbrews!##11294 |goto 56.6,36.9 |or
-step
-Ride your ram into Ironforge |goto Ironforge |noway |c |q 11293
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace. If you go too much faster than that, your ram will get tired and you will run out of time.
-only if havequest (11293)
-step
-Ride your ram into Ironforge |goto Ironforge |noway |c |q 11294
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace. If you go too much faster than that, your ram will get tired and you will run out of time.
-only if havequest (11294)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace. If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark Outside the Bank |q 11293/1 |goto Ironforge 31.7,66.7
-only if havequest (11293)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace. If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark in the Military Ward |q 11293/2 |goto 61.2,80.0
-only if havequest (11293)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace. If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark in the Hall of Explorers |q 11293/3 |goto 65.3,24.4
-only if havequest (11293)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace. If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark in the Mystic Ward |q 11293/4 |goto 29.5,14.2
-only if havequest (11293)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace. If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark Outside the Bank |q 11294/1 |goto Ironforge 31.7,66.7
-only if havequest (11294)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace. If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark in the Military Ward |q 11294/2 |goto 61.2,80.0
-only if havequest (11294)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace. If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark in the Hall of Explorers |q 11294/3 |goto 65.3,24.4
-only if havequest (11294)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace. If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark in the Mystic Ward |q 11294/4 |goto 29.5,14.2
-only if havequest (11294)
-step
-talk Becan Barleybrew##23627
-turnin Bark for the Barleybrews!##11293 |goto Dun Morogh 56.1,38.0
-only if havequest (11293)
-step
-talk Daran Thunderbrew##23628
-turnin Bark for the Thunderbrews!##11294 |goto Dun Morogh 56.5,36.9
-only if havequest (11294)
-step
-click Dark Iron Mole Machine Wreckage##189990
-|tip It appears after the Dark Iron dwarves attack the Brewfest festival, so you may have to wait for it to appear.
-accept This One Time, When I Was Drunk...##12020 |goto 56.0,37.2
-step
-Click the Dark Iron Mole Machine Wreckage
-|tip You have to defend the three kegs at these locations in order for it to show up.
-Click the Complimentary Brewfest Sampler here [55.3,37.3]
-Click the Complimentary Brewfest Sampler here [55.7,38.1]
-Thow the Sampler's at the Dark Iron Dwarves and the Mole Machines |use Complimentary Brewfest Sampler##33096 |goto 56.0,37.1
-step
-talk Boxey Boltspinner##27215
-turnin This One Time, When I Was Drunk...##12020 |goto Dun Morogh 54.7,38.1
-Down With The Dark Iron Achievement |achieve 1186 |goto Dun Morogh 54.7,38.1
-step
-talk Neill Ramstein##23558
-accept Brew For Brewfest##29394 |goto 53.7,38.6 |instant
-On your Ram, run to Flynn Firebrew at
-|tip Flynn Firebrew will throw you a keg when you get close.
-Deliver as many kegs as you can within 4 minutes
-|tip You get 2 Brewfest Prize Tokens for each keg you deliver, so this is a good way to get some Brewfest Prize Tokens to join the Brew of the Month Club.
-step
-map Dun Morogh
-path follow strict;loop;ants straight
-path	54.6,43.3	54.5,47.4	53.1,51.3
-path	53.7,51.8	54.5,47.7	54.6,43.4
-path	53.6,38.5
-Follow this path to pick up Kegs from Flynn Firebrew and run them back to Neill Ramstein
-Use your Ram Racing Reins |use Ram Racing Reins##33306
-step
-talk Neill Ramstein##23558
-turnin Brew For Brewfest##29394 |goto 53.7,38.6
+leechsteps "Events Guides\\Brewfest\\Brewfest Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Brewmaster\\Brewfest Quests",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Brewmaster\\Brewfest Quests",{
 keywords={"Brewmaster"},
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the quests for the Brewfest event.",
+playertitle=101,
 },[[
-step
-talk Dwarf Commoner##19148
-accept Brewfest!##11441 |goto Ironforge,30.8,62.9
-step
-talk Ipfelkofer Ironkeg##24710
-turnin Brewfest!##11441 |goto Dun Morogh,55.1,38.1
-step
-NOTE: If you are on an EU server, you will be unable to accept these 2 quests.
-|tip So, just skip them, and also skip the guide steps where you complete the quest goals for these quests.
-talk Goldark Snipehunter##23486
-accept Catch the Wild Wolpertinger!##11117 |goto 55.1,37.7
-accept Pink Elekks On Parade##11118 |goto 55.1,37.7
-step
-talk Goldark Snipehunter##23486
-Ask him if there's another way you can help out if you don't like drinking, then ask for a pair of Synthebrew Goggles
-collect Synthebrew Goggles##46735 |q 11117 |goto 55.1,37.7
-step
-talk Boxey Boltspinner##27215
-accept Chug and Chuck!##12022 |goto 54.7,38.1
-step
-Click the Complimentary Brewfest Samplers
-|tip They looks like mugs of beer on the small tables on either side of you.
-Use your Complimentary Brewfest Samplers |use Complimentary Brewfest Sampler##33096
-Hit S.T.O.U.T. #5# Times |q 12022/1 |goto 54.8,37.9
-step
-talk Boxey Boltspinner##27215
-turnin Chug and Chuck!##12022 |goto 54.7,38.1
-step
-talk Neill Ramstein##23558
-accept Now This is Ram Racing... Almost.##11318 |goto 53.7,38.6
-step
-As you run around on the ram:
-Use your Ram Racing Reins |use Ram Racing Reins##33306
-|tip The ram runs slow by default. You have to use the Ram Racing Reins to make it run at certain speeds for 8 seconds. To the ram Trot for 8 seconds, use the Ram Racing Reins every 2 seconds or so to keep the ram running at the speed just above the slow default speed.  To make the Ram Canter for 8 seconds, use the Ram Racing Reins a little more often than when you made the Ram Trot. To make the Ram Gallop, just spam use the Ram Racing Reins.
-Maintain a Trot for 8 Seconds |q 11318/1
-Maintain a Canter for 8 Seconds |q 11318/2
-Maintain a Gallop for 8 Seconds |q 11318/3
-step
-talk Neill Ramstein##23558
-turnin Now This is Ram Racing... Almost.##11318 |goto 53.7,38.6
-accept There and Back Again##11122 |goto 53.7,38.6
-step
-map Dun Morogh
-path follow strict;loop;ants straight
-path	54.6,43.3	54.5,47.4	53.1,51.3
-path	53.7,51.8	54.5,47.7	54.6,43.4
-path	53.6,38.5
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Stop at every bucket of apples you see on the side of the road to refresh your Ram's fatigue level, allowing the Ram to run faster for longer.
-_FOLLOW THE WAYPOINT PATH_ Flynn Firebrew will throw you a keg when you get close
-Once you have a keg, run back and turn it in to Pol Amberstill at
-|tip Just get near him and you will throw the keg to him.
-Deliver 3 Kegs in Under 4 Minutes |q 11122/1
-step
-talk Neill Ramstein##23558
-turnin There and Back Again##11122 |goto 53.7,38.6
-step
-talk Pol Amberstill##24468
-You will be able to accept one of these quests
-accept Another Year, Another Souvenir.##13932 |goto 53.5,38.6 |or
-or
-accept A New Supplier of Souvenirs##29397 |goto 53.5,38.6 |or
-step
-Use your Synthebrew Goggles |use Synthebrew Goggles##46735
-Equip the Synthebrew Goggles |havebuff 135977 |q 11117
-step
-Use your Wolpertinger Net on Wild Wolpertingers |use Wolpertinger Net##32907
-|tip They look like rabbits with antlers and wings running around on the ground around this area.
-collect 5 Stunned Wolpertinger##32906 |q 11117/1 |goto 54.5,38.5
-step
-talk Goldark Snipehunter##23486
-turnin Catch the Wild Wolpertinger!##11117 |goto 55.1,37.7
-collect Wolpertinger's Tankard##32233 |n
-Does Your Wolpertinger Linger? |achieve 1936
-|tip If you are on the EU server you will be able to achieve this in the Achievments Guide.
-step
-talk Belbi Quikswitch##23710
-turnin Another Year, Another Souvenir.##13932 |goto 56.4,37.8 |or
-or
-turnin A New Supplier of Souvenirs##29397 |goto 56.4,37.8 |or
-step
-Use your Synthebrew Goggles |use Synthebrew Goggles##46735
-Equip the Synthebrew Goggles |havebuff 135977 |q 11118 |goto Elwynn Forest 33.5,50.7
-Use your Elekk Dispersion Ray on Elwynn Pink Elekks |use Elekk Dispersion Ray##32960
-kill 3 Elwynn Pink Elekk+ |q 11118/2
-step
-Use your Synthebrew Goggles |use Synthebrew Goggles##46735
-Equip the Synthebrew Goggles |havebuff 135977 |q 11118 |goto Darnassus 67.3,46.1
-Use your Elekk Dispersion Ray on Azuremyst Pink Elekks |use Elekk Dispersion Ray##32960
-kill 3 Azuremyst Pink Elekk+ |q 11118/3
-step
-Use your Synthebrew Goggles |use Synthebrew Goggles##46735
-Equip the Synthebrew Goggles |havebuff 135977 |q 11118 |goto The Exodar 78.4,57.4
-Use your Elekk Dispersion Ray on Teldrassil Pink Elekks |use Elekk Dispersion Ray##32960
-kill 3 Teldrassil Pink Elekk |q 11118/1 |goto The Exodar,78.4,57.4
-step
-talk Goldark Snipehunter##23486
-turnin Pink Elekks On Parade##11118 |goto Dun Morogh 55.1,37.7
-step
-Use the Dungeon Finder (press I) to queue for Coren Direbrew
-|tip You must be level 80 to complete this quest.
-You will fight Coren Direbrew
-kill Coren Direbrew##23872
-collect 1 Direbrew's Dire Brew##38280 |n
-Click Direbrew's Dire Brew in your bags |use Direbrew's Dire Brew##38280
-accept Direbrew's Dire Brew##12491
-step
-Click the green eye on the edge of your minimap
-Teleport Out of the Dungeon and go to Dun Morogh |goto Dun Morogh |noway |c
-step
-talk Ipfelkofer Ironkeg##24710
-turnin Direbrew's Dire Brew##12491 |goto 55.1,38.1
+leechsteps "Events Guides\\Brewfest\\Brewfest Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Elder\\Lunar Festival Achievements",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Elder\\Lunar Festival Achievements",{
 keywords={"Elder"},
 author="support@zygorguides.com",
+playertitle=43,
 },[[
-step
-#include "Lunar_Festival_Achievements"
+leechsteps "Events Guides\\Lunar Festival\\Achievements\\To Honor One's Elders"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Elder\\Lunar Festival Main Questline",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Elder\\Lunar Festival Main Questline",{
 keywords={"Elder"},
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the main questline for the Lunar Festival event.",
+playertitle=43,
 },[[
-step
-#include "Lunar_Festival_Main_Quests"
+leechsteps "Events Guides\\Lunar Festival\\Lunar Festival Main Questline"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Elder\\Lunar Festival Optimized Elders Path",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Elder\\Lunar Festival Optimized Elders Path",{
 keywords={"Elder"},
 author="support@zygorguides.com",
-description="This guide section will walk you through an optimized path for honoring the elders that are spread out all over Azeroth for the Lunar Festival event. The 13 elders that are inside instances are not included in this guide section. Using this guide section, you will collect 62 of the total 75 Coins of Ancestry.",
+description="This guide section will walk you through an optimized path for honoring the elders that are spread out all "..
+"over Azeroth for the Lunar Festival event. The 13 elders that are inside instances are not included in this "..
+"guide section. Using this guide section, you will collect 62 of the total 75 Coins of Ancestry.",
+playertitle=43,
 },[[
-step
-#include "Lunar_Festival_Elder_Paths"
+leechsteps "Events Guides\\Lunar Festival\\Lunar Festival Optimized Elders Path"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Flame Warden\\Midsummer Fire Festival Achievements",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Flame Warden\\Midsummer Fire Festival Achievements",{
 keywords={"Flame, Warden"},
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will walk you through completing the achievements for the Midsummer Fire Festival event.",
+playertitle=44,
 },[[
 step
 Complete the Midsummer Fire Festival Quests guide section before doing this guide section.
@@ -3396,11 +3137,12 @@ Complete the Torch Juggler Achievement |achieve 272 |goto Dalaran 36.8,44.1
 step
 Congratulations, you are now The Flame Warden!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Flame Warden\\Midsummer Fire Festival Quests",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Flame Warden\\Midsummer Fire Festival Quests",{
 keywords={"Flame, Warden"},
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will walk you through completing the quests for the Midsummer Fire Festival event.",
+playertitle=44,
 },[[
 step
 talk Innkeeper Allison##6740
@@ -3760,206 +3502,133 @@ step
 talk Howling Fjord Flame Warden##32804
 accept Honor the Flame##13488 |goto Howling Fjord 57.8,16.1 |instant
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Hallowed\\Hallow's End Achievements",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\The Hallowed",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the achievements for the Hallow's End event.",
-keywords={"The, Hallowed"},
+playertitle=92,
+keywords={"Hallow's","End","Event"},
 },[[
-#include "Hallow's_End_Achievements"
+leechsteps "Events Guides\\Hallow's End\\Achievements\\Hallowed Be Thy Name"
+step
+Earn "The Hallowed" Title |playertitle the Hallowed##92
+step
+_Congratulations!_
+You Earned "The Hallowed" Title
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Hallowed\\Hallow's End Dailies",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the daily quests for the Hallow's End event.",
-keywords={"The, Hallowed"},
-},[[
-#include "Hallow's_End_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Hallowed\\Hallow's End Quests",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the quests for the Hallow's End event.",
-keywords={"The, Hallowed"},
-},[[
-#include "Hallow's_End_Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Love Fool\\Love is in the Air Achievements",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\The Love Fool\\Love is in the Air Achievements",{
 keywords={"Fool"},
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Love is in the Air event achievements.",
+playertitle=103,
 },[[
-step
-#include "LiitA_Achievements"
+leechsteps "Events Guides\\Love is in the Air\\Love is in the Air Achievements"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Love Fool\\Love is in the Air Dailies",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\The Love Fool\\Love is in the Air Dailies",{
 keywords={"Fool"},
 author="support@zygorguides.com",
-description="This guide section will walk you through completing the Love is in the Air even daily quests.",
+description="This guide section will walk you through completing the Love is in the Air event daily quests.",
+playertitle=103,
 },[[
-step
-#include "LiitA_Dailies"
+leechsteps "Events Guides\\Love is in the Air\\Love is in the Air Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Love Fool\\Love is in the Air Main Questline",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\The Love Fool\\Love is in the Air Main Questline",{
 keywords={"Fool"},
 author="support@zygorguides.com",
-next="Zygor's Alliance Event Guides\\Love is in the Air (February 7th - 20th)\\Love is in the Air Dailies",
 description="This guide section will walk you through completing the main questline for the Love is in the Air event.",
+playertitle=103,
 },[[
-step
-#include "LiitA_Main_Questline"
+leechsteps "Events Guides\\Love is in the Air\\Love is in the Air Main Questline"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Matron/Patron\\Children's Week Achievements",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Matron/Patron\\Children's Week Achievements",{
 keywords={"Matron"},
 author="support@zygorguides.com",
 startlevel=10,
 description="This guide section will walk you through completing the Achievements for the Children's Week event.",
+playertitle={104,105},
 },[[
-step
-#include "Children's_Week_Achievements"
+leechsteps "Events Guides\\Children's Week\\Children's Week Achievements"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Matron/Patron\\Children's Week Dalaran Oracles Quests",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Matron/Patron\\Children's Week Dalaran Oracles Quests",{
 keywords={"Matron"},
 author="support@zygorguides.com",
 startlevel=70,
 description="This guide section will walk you through completing the Dalaran Oracles questline for the Children's Week event.",
+playertitle={104,105},
 },[[
-step
-#include "Children's_Week_Oracles_Quests"
+leechsteps "Events Guides\\Children's Week\\Children's Week Dalaran Oracles Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Matron/Patron\\Children's Week Dalaran Wolvar Quests",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Matron/Patron\\Children's Week Dalaran Wolvar Quests",{
 keywords={"Matron"},
 author="support@zygorguides.com",
 startlevel=70,
 description="This guide section will walk you through completing the Dalaran Wolvar questline for the Children's Week event.",
+playertitle={104,105},
 },[[
-step
-#include "Children's_Week_Wolvar_Quests"
+leechsteps "Events Guides\\Children's Week\\Children's Week Dalaran Wolvar Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Matron/Patron\\Children's Week Shattrath Quests",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Matron/Patron\\Children's Week Shattrath Quests",{
 keywords={"Matron"},
 author="support@zygorguides.com",
 startlevel=60,
 description="This guide section will walk you through completing the Shattrath questline for the Children's Week event.",
+playertitle={104,105},
 },[[
-step
-#include "Children's_Week_Shattrath"
+leechsteps "Events Guides\\Children's Week\\Children's Week Shattrath Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Matron/Patron\\Children's Week Stormwind Quests",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Matron/Patron\\Children's Week Stormwind Quests",{
 keywords={"Matron"},
 author="support@zygorguides.com",
 startlevel=60,
 description="This guide section will walk you through completing the Stormwind questline for the Children's Week event.",
+playertitle={104,105},
 },[[
-step
-#include "Children's_Week_Stormwind"
+leechsteps "Events Guides\\Children's Week\\Children's Week Stormwind Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Merrymaker\\Feast of Winter Veil Achievements",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Merrymaker\\Feast of Winter Veil Achievements",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the achievements for the Feast of Winter Veil event.",
+playertitle=102,
 },[[
-#include "FoWV_Achievements"
+leechsteps "Events Guides\\Feast of Winter Veil\\Achievements\\Merrymaker"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Merrymaker\\Feast of Winter Veil Quests",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\Merrymaker\\Feast of Winter Veil Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the quests for the Feast of Winter Veil event.",
+playertitle=102,
 },[[
-step
-talk Wulmort Jinglepocket##13433
-accept Great-father Winter is Here!##7022 |goto Ironforge 33.7,67.3
-accept Stolen Winter Veil Treats##7042 |goto Ironforge 33.7,67.3
-accept Metzen the Reindeer##8762 |goto Ironforge 33.7,67.3
-step
-talk Greatfather Winter##13444
-turnin Greatfather Winter is Here!##7022 |goto 33.1,65.5
-accept Treats for Greatfather Winter##7025 |goto 33.1,65.5
-step
-talk Goli Krumn##1365
-accept The Reason for the Season##7062 |goto 30.2,59.4
-step
-talk Daryl Riknussun##5159 |goto 60.1,36.4
-Learn the Apprentice Cooking skill, if you don't have it already
-only if skill("Cooking")<=1
-step
-talk Historian Karnik##2916
-turnin The Reason for the Season##7062 |goto 77.5,11.8
-accept The Feast of Winter Veil##7063 |goto 77.5,11.8
-step
-talk Wulmort Jinglepocket##13433
-buy 1 Recipe: Gingerbread Cookie##17200 |goto 33.7,67.3 |n
-Click the Recipe: Gingerbread Cookie recipe in your bags |use Recipe: Gingerbread Cookie##17200
-Learn the Gingerbread Cookie recipe
-confirm
-step
-talk Wulmort Jinglepocket##13433
-buy 5 Holiday Spices##17194 |q 7025 |goto 33.7,67.3
-step
-Buy 5 Small Eggs from the Auction House:
-|tip You can also farm these from mobs, if you'd prefer.
-collect 5 Small Egg##6889 |q 7025
-step
-Use your Cooking profession next to the fire to create Gingerbread Cookies
-collect 5 Gingerbread Cookie##17197 |q 7025/1 |goto 32.1,62.8
-step
-talk Innkeeper Firebrew##5111
-buy Ice Cold Milk##1179 |q 7025 |goto 18.1,51.4
-step
-talk Innkeeper Firebrew##5111
-home Ironforge |goto 18.1,51.4
-step
-talk Greatfather Winter##13444
-turnin Treats for Great-father Winter##7025 |goto 33.1,65.5
-step
-talk Muradin Bronzebeard##42928
-turnin The Feast of Winter Veil##7063 |goto 39.2,56.0
-step
-Use your Smokeywood Satchel |use Smokywood Satchel##21315
-collect Pouch of Reindeer Dust##21211 |q 8762
-step
-talk Strange Snowman##13636
-turnin Stolen Winter Veil Treats##7042 |goto Hillsbrad Foothills 42.3,41.1
-accept You're a Mean One...##7043 |goto Hillsbrad Foothills 42.3,41.1
-step
-kill The Abominable Greench##13602
-|tip He is a level 36 elite that spawns randomly around the outer edge of the Ruins of Alterac. You may need to group if you are a lower level.
-collect Stolen Treats##17662 |q 7043/2 |goto 39.2,34.3
-Free Metzen the Reindeer |q 7043/1 |goto 39.2,34.3
-step
-talk Metzen the Reindeer##15664
-Sprinkle some of the reindeer dust onto Metzen
-Find and Rescue Metzen the Reindeer |q 8762/1 |goto Searing Gorge 68.8,34.2
-step
-talk Wulmort Jinglepocket##13433
-turnin You're a Mean One...##7043 |goto Ironforge 33.7,67.3
-accept A Smokywood Pastures' Thank You!##7045 |goto Ironforge 33.7,67.3
-turnin Metzen the Reindeer##8762 |goto Ironforge 33.7,67.3
-step
-talk Greatfather Winter##13444
-turnin A Smokywood Pastures' Thank You!##7045 |goto 33.1,65.5
+leechsteps "Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Noble",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\The Noble",{
 author="support@zygorguides.com",
 description="This title is earned by completing the following achievements:\n\"I Found One!\"\n\"Chocoholic\"\n\"Desert Rose\"\n\"Blushing Bride\"\n\"Hard Boiled\"\n\"Spring Fling\"\n\"Noble Garden\"\n\"Shake Your Bunny-Maker\"",
+playertitle=122,
 },[[
-#include "Noblegarden_Achievements"
-step
-Congratulations, you have earned The Noble title!
+leechsteps "Events Guides\\Noblegarden\\Achievements\\Blushing Bride" 1-6
+leechsteps "Events Guides\\Noblegarden\\Achievements\\Chocoholic" 1-2
+leechsteps "Events Guides\\Noblegarden\\Achievements\\Chocolate Lover" 1-2
+leechsteps "Events Guides\\Noblegarden\\Achievements\\Desert Rose" 1-10
+leechsteps "Events Guides\\Noblegarden\\Achievements\\Dressed for the Occasion" 1-2
+leechsteps "Events Guides\\Noblegarden\\Achievements\\Hard Boiled" 1-3
+leechsteps "Events Guides\\Noblegarden\\Achievements\\I Found One!" 1-2
+leechsteps "Events Guides\\Noblegarden\\Achievements\\Noble Garden" 1-3
+leechsteps "Events Guides\\Noblegarden\\Achievements\\Shake Your Bunny-Maker" 1-5
+leechsteps "Events Guides\\Noblegarden\\Achievements\\Spring Fling" 1-8
+leechsteps "Events Guides\\Noblegarden\\Achievements\\Sunday's Finest" 1-3
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Pilgrim\\Pilgrim's Bounty Daily Quests",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Wrath of the Lich King Titles\\World Events\\The Pilgrim",{
 keywords={"The, Pilgrim"},
 author="support@zygorguides.com",
 description="This quide will help run through the Pilgrims Bounty Dailies and Achievements to earn the Title Pilgrim.",
+playertitle=133,
 },[[
-#include "Pilgrim's_Bounty_Dailies"
+leechsteps "Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim" 1-162
 step
-Congratulations! You have earned the Title Pilgrim!
+_Congratulations!_
+You Earned "The Pilgrim" Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Pilgrim\\Pilgrim's Bounty Quests and Cooking 1-300 Guide",{
-keywords={"The, Pilgrim"},
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Dungeons & Raids\\Blackwing's Bane",{
 author="support@zygorguides.com",
-description="This guide section will walk you through completing the quests for the Pilgrim's Bounty event, as well as getting your Cooking skill from 1-300.",
-},[[
-#include "Pilgrim's_Bounty_Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Blackwing's Bane",{
-author="support@zygorguides.com",
+playertitle=187,
 },[[
 step
 This title is earned by completing the _Heroic: Nefarian_ achievement from Heroic: Blackwing Descent.
@@ -3969,8 +3638,9 @@ achieve 5116
 step
 Congratulations! You have earned the title Blackwing's Bane!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Defender of a Shattered World",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Dungeons & Raids\\Defender of a Shattered World",{
 author="support@zygorguides.com",
+playertitle=185,
 },[[
 step
 This title is earned by completing the _Defender of a Shattered World_ achievement.
@@ -3980,8 +3650,9 @@ achieve 5506
 step
 Congratulations! You have earned the title "Defender of a Shattered World"!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Destroyer's End",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Dungeons & Raids\\Destroyer's End",{
 author="support@zygorguides.com",
+playertitle=196,
 },[[
 step
 This title is earned by completing the _Destroyer's End_ achievement from the Dragon Soul raid. This can be completed on either 10 or 25 player and on either Normal or Heroic difficulty.
@@ -3991,8 +3662,9 @@ achieve 6177
 step
 Congratulations! You have earned the title Destroyer's End!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Dragonslayer",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Dungeons & Raids\\Dragonslayer",{
 author="support@zygorguides.com",
+playertitle=186,
 },[[
 step
 This title is earned by completing the _Heroic: Sinestra_ achievement from Heroic: The Bastion of Twilight.
@@ -4002,8 +3674,9 @@ achieve 5121
 step
 Congratulations! You have earned the title Dragonslayer!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Firelord",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Dungeons & Raids\\Firelord",{
 author="support@zygorguides.com",
+playertitle=190,
 },[[
 step
 This title is earned by completing the _Heroic: Ragnaros_ achievement from Heroic: Firelands. This can be completed on either 10 or 25 player.
@@ -4013,8 +3686,9 @@ achieve 5803
 step
 Congratulations! You have earned the title Firelord!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Of the Four Winds",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Dungeons & Raids\\Of the Four Winds",{
 author="support@zygorguides.com",
+playertitle=151,
 },[[
 step
 This title is earned by completing the _Heroic: Al'Akir_ achievement from Heroic: Throne of the Four Winds. This can be completed on either 10 or 25 player.
@@ -4024,8 +3698,9 @@ achieve 5123
 step
 Congratulations! You have earned the title "of the Four Winds"!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Savior of Azeroth",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Dungeons & Raids\\Savior of Azeroth",{
 author="support@zygorguides.com",
+playertitle=194,
 },[[
 step
 This title is earned by completing the _Heroic: Madness of Deathwing_ achievement from Heroic. This can be completed on either 10 or 25 player.
@@ -4035,7 +3710,8 @@ achieve 6116
 step
 Congratulations! You have earned the title Savior of Azeroth!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\General\\The Camel-Hoarder",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\General\\The Camel-Hoarder",{
+playertitle=143,
 },[[
 step
 This title is attained when you learn a mount dropped by a rare spawn.
@@ -4052,8 +3728,9 @@ Learn the Grey Riding Camel mount. |achieve 5767
 step
 Congratulations! You have achieved the title The Camel-Hoarder! |achieve 5767
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\The Bloodthirsty",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\The Bloodthirsty",{
 author="support@zygorguides.com",
+playertitle=184,
 },[[
 step
 This title is earned by achieving 250,000 honorable kills in any Player vs Player environment.
@@ -4061,9 +3738,10 @@ achieve 5363
 step
 Congratulations! You have earned the title "The Bloodthirsty"!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Cataclysmic Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Cataclysmic Gladiator",{
 author="support@zygorguides.com",
 description="This title was gained by finishing the PvP Arena Season 11 and meeting the following conditions:\n\nYour team was ranked #1 in the 3v3 or 5v5 bracket.\n\nYour character had a personal rating within 100 points of the team's rating.\n\nYour character had to have played in at least 20% of the team's total games played.\n\nYour character had to be max level for that time.",
+playertitle=193,
 },[[
 step
 This title is _no longer obtainable_!
@@ -4073,7 +3751,8 @@ This title was gained by finishing the PvP Arena Season 11 and meeting the follo
 |tip Your character had to have played in at least 20% of the team's total games played.
 |tip Your character had to be max level for that time.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Commander",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Commander",{
+playertitle=164,
 },[[
 step
 This title is earned by achieving a rated battleground score of 2100.
@@ -4081,7 +3760,8 @@ achieve 5340
 step
 Congratulations! You have earned the title Commander!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Corporal",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Corporal",{
+playertitle=155,
 },[[
 step
 This title is earned by achieving a rated battleground score of 1200.
@@ -4089,7 +3769,8 @@ achieve 5331
 step
 Congratulations! You have earned the title Corporal!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Field Marshal",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Field Marshal",{
+playertitle=166,
 },[[
 step
 This title is earned by achieving a rated battleground score of 2300.
@@ -4097,7 +3778,8 @@ achieve 5357
 step
 Congratulations! You have earned the title Field Marshal!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Grand Marshal",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Grand Marshal",{
+playertitle=167,
 },[[
 step
 This title is earned by achieving a rated battleground score of 2400.
@@ -4105,9 +3787,10 @@ achieve 5343
 step
 Congratulations! You have earned the title Grand Marshal!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Hero of the Alliance",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Hero of the Alliance",{
 author="support@zygorguides.com",
 description="This title is earned by ending a PvP season in the top 0.5% of the rated battleground ladder. This requires at least 50 games won in the current season.",
+playertitle=182,
 },[[
 step
 This title is earned by ending a PvP season in the top 0.5% of the rated battleground ladder
@@ -4116,7 +3799,8 @@ achieve 6942
 step
 Congratulations! You have earned the title Hero of the Alliance!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Knight",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Knight",{
+playertitle=159,
 },[[
 step
 This title is earned by achieving a rated battleground score of 1600.
@@ -4124,7 +3808,8 @@ achieve 5335
 step
 Congratulations! You have earned the title Knight!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Knight-Captain",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Knight-Captain",{
+playertitle=161,
 },[[
 step
 This title is earned by achieving a rated battleground score of 1800.
@@ -4132,7 +3817,8 @@ achieve 5337
 step
 Congratulations! You have earned the title Knight-Captain!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Knight-Champion",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Knight-Champion",{
+playertitle=162,
 },[[
 step
 This title is earned by achieving a rated battleground score of 1900.
@@ -4140,7 +3826,8 @@ achieve 5359
 step
 Congratulations! You have earned the title Knight-Champion!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Knight-Lieutenant",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Knight-Lieutenant",{
+playertitle=160,
 },[[
 step
 This title is earned by achieving a rated battleground score of 1700.
@@ -4148,7 +3835,8 @@ achieve 5336
 step
 Congratulations! You have earned the title Knight-Lieutenant!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Lieutenant Commander",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Lieutenant Commander",{
+playertitle=163,
 },[[
 step
 This title is earned by achieving a rated battleground score of 2000.
@@ -4156,7 +3844,8 @@ achieve 5339
 step
 Congratulations! You have earned the title Lieutenant Commander!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Marshal",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Marshal",{
+playertitle=165,
 },[[
 step
 This title is earned by achieving a rated battleground score of 2200.
@@ -4164,7 +3853,8 @@ achieve 5341
 step
 Congratulations! You have earned the title Marshal!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Master Sergeant",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Master Sergeant",{
+playertitle=157,
 },[[
 step
 This title is earned by achieving a rated battleground score of 1400.
@@ -4172,7 +3862,8 @@ achieve 5333
 step
 Congratulations! You have earned the title Master Sergeant!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Private",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Private",{
+playertitle=154,
 },[[
 step
 This title is earned by achieving a rated battleground score of 1100.
@@ -4180,9 +3871,10 @@ achieve 5330
 step
 Congratulations! You have earned the title Private!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Ruthless Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Ruthless Gladiator",{
 author="support@zygorguides.com",
 description="This title was gained by finishing the PvP Arena Season 10 and meeting the following conditions:\n\nYour team was ranked #1 in the 3v3 or 5v5 bracket.\n\nYour character had a personal rating within 100 points of the team's rating.\n\nYour character had to have played in at least 20% of the team's total games played.\n\nYour character had to be max level for that time.",
+playertitle=192,
 },[[
 step
 This title is _no longer obtainable_!
@@ -4192,7 +3884,8 @@ This title was gained by finishing the PvP Arena Season 10 and meeting the follo
 |tip Your character had to have played in at least 20% of the team's total games played.
 |tip Your character had to be max level for that time.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Sergeant",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Sergeant",{
+playertitle=170,
 },[[
 step
 This title is earned by achieving a rated battleground score of 1300.
@@ -4200,7 +3893,8 @@ achieve 5332
 step
 Congratulations! You have earned the title Sergeant!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Sergeant Major",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Sergeant Major",{
+playertitle=158,
 },[[
 step
 This title is earned by achieving a rated battleground score of 1500.
@@ -4208,7 +3902,8 @@ achieve 5334
 step
 Congratulations! You have earned the title Sergeant Major!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Veteran of the Alliance",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Veteran of the Alliance",{
+playertitle=152,
 },[[
 step
 This title is a reward for completing the _"Veteran of the Alliance"_ achievement.
@@ -4217,9 +3912,13 @@ achieve 5328
 step
 Congratulations! You have earned the title Veteran of the Alliance!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Vicious Gladiator",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Vicious Gladiator",{
 author="support@zygorguides.com",
-description="This title was gained by finishing the PvP Arena Season 9 and meeting the following conditions:\n\nYour team was ranked #1 in the 3v3 or 5v5 bracket.\n\nYour character had a personal rating within 100 points of the team's rating.\n\nYour character had to have played in at least 20% of the team's total games played.\n\nYour character had to be max level for that time.",
+description="This title was gained by finishing the PvP Arena Season 9 and meeting the following conditions:\n\n"..
+"Your team was ranked #1 in the 3v3 or 5v5 bracket.\n\nYour character had a personal rating within "..
+"100 points of the team's rating.\n\nYour character had to have played in at least 20% of the team's"..
+" total games played.\n\nYour character had to be max level for that time.",
+playertitle=191,
 },[[
 step
 This title is _no longer obtainable_!
@@ -4229,7 +3928,8 @@ This title was gained by finishing the PvP Arena Season 9 and meeting the follow
 |tip Your character had to have played in at least 20% of the team's total games played.
 |tip Your character had to be max level for that time.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Warbound",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Player versus Player\\Warbound",{
+playertitle=145,
 },[[
 step
 This title is a reward for completing the _"Warbound Veteran of the Alliance"_ achievement.
@@ -4238,7 +3938,8 @@ achieve 5329
 step
 Congratulations! You have earned the title Warbound!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Professions\\Archaeology\\Assistant Professor, Associate Professor, and Professor",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Professions\\Archaeology\\Assistant Professor, Associate Professor, and Professor",{
+playertitle={148,149,150},
 },[[
 step
 These titles require the solving of rare artifacts of any kind.
@@ -4260,8 +3961,9 @@ Find and solve 20 rare artifacts and earn the Professor title |achieve 4856
 step
 Congratulations! You have earned all of the Archaeology titles!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Quests\\The Flamebreaker",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Quests\\The Flamebreaker",{
 author="support@zygorguides.com",
+playertitle=189,
 },[[
 step
 This title is earned by completing the _Veteran of the Molten Front_ achievement.
@@ -4274,8 +3976,9 @@ achieve 5879
 step
 Congratulations! You have earned the title "The Flamebreaker"!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Reputations\\Avenger of Hyjal",{
+ZygorGuidesViewer:RegisterGuide("Titles\\Cataclysm Titles\\Reputations\\Avenger of Hyjal",{
 author="support@zygorguides.com",
+playertitle=188,
 },[[
 step
 This title is gained by becoming Exalted with The Avengers of Hyjal reputation.

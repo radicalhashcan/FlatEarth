@@ -3,8 +3,8 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("LevelingHWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (90)",{
-next="Zygor's Leveling Guides\\Draenor (90-100)\\Frostfire Ridge (90-100)",
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (90)",{
+next="Leveling Guides\\Draenor (90-100)\\Frostfire Ridge (90-100)",
 condition_suggested=function() return level >= 90 and level <= 100 and not completedq(34446) end,
 image=ZGV.DIR.."\\Guides\\Images\\TanaanJungle",
 startlevel=90,
@@ -327,10 +327,10 @@ Get to the docks |q The Home Stretch##34446/1 |goto 44.4,80.5
 step
 talk Archmage Khadgar##78563
 turnin The Home Stretch##34446 |goto 44.4,80.7
-accept The Home of the Frostwolves##33868 |next "Zygor's Leveling Guides\\Draenor (90-100)\\Frostfire Ridge (90-100)"
+accept The Home of the Frostwolves##33868 |next "Leveling Guides\\Draenor (90-100)\\Frostfire Ridge (90-100)"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Frostfire Ridge (90-100)",{
-next="Zygor's Leveling Guides\\Draenor (90-100)\\Gorgrond (92-100)",
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Draenor (90-100)\\Frostfire Ridge (90-100)",{
+next="Leveling Guides\\Draenor (90-100)\\Gorgrond (92-100)",
 condition_suggested=function() return level >= 90 and level <= 100 and not completedq(34075) end,
 image=ZGV.DIR.."\\Guides\\Images\\FrostfireRidge",
 startlevel=90.5,
@@ -1750,10 +1750,10 @@ _Run up_ the path |goto Frostfire Ridge/0 83.3,75.6 < 20 |only if walking
 kill General Vul'gath##77104 |q Vul'gaths End##34075/1 |goto Frostfire Ridge/0 83.9,74.9
 step
 talk Scout Ruk'Gan##77210
-turnin Vul'gaths End##34075 |goto Frostfire Ridge/0 82.8,76.3 |next "Zygor's Leveling Guides\\Draenor (90-100)\\Gorgrond (92-100)"
+turnin Vul'gaths End##34075 |goto Frostfire Ridge/0 82.8,76.3 |next "Leveling Guides\\Draenor (90-100)\\Gorgrond (92-100)"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Gorgrond (92-100)",{
-next="Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-100)",
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Draenor (90-100)\\Gorgrond (92-100)",{
+next="Leveling Guides\\Draenor (90-100)\\Talador (94-100)",
 condition_suggested=function() return level >= 92 and level <= 100 and not completedq(34681) end,
 image=ZGV.DIR.."\\Guides\\Images\\Gorgrond",
 startlevel=92,
@@ -2468,7 +2468,7 @@ Tell him _"Take me to my base in Talador."_
 Fly to Vol'jin's Pride, Talador |goto Talador/0 72.0,28.3 |noway |c |q 34681
 step
 talk Foreman Grobash##79176
-turnin It's a Matter of Strategy##34681 |goto Talador/0 71.1,29.8 |next "Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-100)"
+turnin It's a Matter of Strategy##34681 |goto Talador/0 71.1,29.8 |next "Leveling Guides\\Draenor (90-100)\\Talador (94-100)"
 step
 label "lowlands_lumber_yard"
 fpath Beastwatch |goto Gorgrond/0 46.0,69.2
@@ -3020,13 +3020,12 @@ talk Bron Skyhorn##79407 |goto Frostwall/0 45.8,50.9 < 5
 Tell him _"Take me to my base in Talador."_ |goto Talador/0 72.0,28.3 < 20 |noway |c |q 34681
 step
 talk Foreman Grobash##79176
-turnin It's a Matter of Strategy##34681 |goto Talador/0 71.1,29.8 |next "Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-100)"
+turnin It's a Matter of Strategy##34681 |goto Talador/0 71.1,29.8 |next "Leveling Guides\\Draenor (90-100)\\Talador (94-100)"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-100)",{
-next="Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-100)",
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Draenor (90-100)\\Talador (94-100)",{
+next="Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-100)",
 condition_suggested=function() return level >= 94 and level <= 100 and not completedq(34706) end,
 image=ZGV.DIR.."\\Guides\\Images\\Talador",
-condition_suggested_exclusive=true,
 startlevel=94,
 },[[
 step
@@ -4013,7 +4012,7 @@ talk Knight-Lord Dranarus##79612
 turnin Come Together##34706 |goto 71.84,29.74
 step
 talk Shadow Hunter Kajassa##79627
-accept News from Spires of Arak##35537 |goto Talador/0 71.24,29.95 |next "Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-100)"
+accept News from Spires of Arak##35537 |goto Talador/0 71.24,29.95 |next "Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-100)"
 step
 label "voljins_arsenal"
 talk Morketh Bladehowl##79210
@@ -4761,7 +4760,7 @@ collect Auchenai Torch##108886 |q Invasion of the Soul Eaters##33988/1 |goto 49.
 stickystart "pilesofbodiesVA"
 step
 _Run up_ the stairs |goto Talador 49.0,89.4 < 10 |only if walking
-_Go through_ the dooway |goto Talador 48.9,90.5 < 10 |walk
+Go through the doorway |goto Talador 48.9,90.5 < 10 |walk
 click Auchenai Prayerbook##227959
 |tip It looks like a floating book with a blue glowing symbol on it inside the building.
 collect Auchenai Prayerbook##109622 |q Never Forget##34013/2 |goto 49.32,90.79
@@ -5038,10 +5037,10 @@ talk Knight-Lord Dranarus##79612
 turnin Come Together##34706 |goto 71.84,29.74
 step
 talk Shadow Hunter Kajassa##79627
-accept News from Spires of Arak##35537 |goto Talador/0 71.24,29.95 |next "Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-100)"
+accept News from Spires of Arak##35537 |goto Talador/0 71.24,29.95 |next "Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-100)"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-100)",{
-next="Zygor's Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)",
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-100)",{
+next="Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)",
 condition_suggested=function() return level >= 96 and level <= 100 and not completedq(35704) end,
 image=ZGV.DIR.."\\Guides\\Images\\SpiresOfArak",
 startlevel=96,
@@ -6347,9 +6346,9 @@ talk Talonpriest Ishaal##83959
 accept Talonpriest Ishaal##37141 |goto 46.52,46.81
 step
 talk Shadow-Sage Iskar##80153
-accept News from Nagrand##36602 |goto 46.58,46.55 |next "Zygor's Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
+accept News from Nagrand##36602 |goto 46.58,46.55 |next "Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)",{
 image=ZGV.DIR.."\\Guides\\Images\\NagrandDraenor",
 condition_suggested=function() return level >= 98 and level <= 100 and not completedq(35171) end,
 startlevel=98,
@@ -7540,7 +7539,7 @@ step
 talk Durotan##81415
 turnin And Justice for Thrall##35171 |goto 66.89,33.70
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (100)",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (100)",{
 description="This guide will walk you through completing the main questline for the level 100 Tanaan Jungle zone.",
 condition_suggested=function() return level == 100 and not completedq(38578) end,
 },[[
@@ -7634,7 +7633,7 @@ turnin Nothing Remains##38573 |goto Frostwall/0 39.1,54.8
 accept All Hands on Deck##38574 |goto Frostwall/0 39.1,54.8
 step
 _Follow_ the path |goto Frostwall/0 36.5,40.9 < 30 |only if walking
-_Go through_ the dooway |goto Frostwall/0 27.0,55.4 < 20 |only if walking
+Go through the doorway |goto Frostwall/0 27.0,55.4 < 20 |only if walking
 talk Solog Roark##91242
 turnin All Hands on Deck##38574 |goto Frostfire Ridge/0 41.5,69.9
 step
@@ -7860,7 +7859,7 @@ turnin A Message of Terrible Import##38578 |goto Tanaan Jungle/0 47.3,70.5
 step
 Congratulations, you've completed the Tanaan Jungle Main Questline!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\The Loremaster\\Loremaster of Draenor",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\The Loremaster\\Loremaster of Draenor",{
 achieveid={9923},
 description="Complete the Draenor quest achievements.",
 },[[
@@ -7869,11 +7868,11 @@ Use these Draenor Leveling Guides to complete Loremaster:
 |tip The Leveling guides cover all required questlines for Loremaster.
 |tip Click one of the lines below to load the Leveling guide for that zone.
 condition achieved(9923) |next
-Frostfire Ridge |condition achieved(9923,4) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Frostfire Ridge (90-100)"
-Gorgrond |condition achieved(9923,5) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Gorgrond (92-100)"
-Talador |condition achieved(9923,1) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-100)"
-Spires of Arak |condition achieved(9923,2) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-100)"
-Nagrand |condition achieved(9923,3) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
+Frostfire Ridge |condition achieved(9923,4) |confirm always |next "Leveling Guides\\Draenor (90-100)\\Frostfire Ridge (90-100)"
+Gorgrond |condition achieved(9923,5) |confirm always |next "Leveling Guides\\Draenor (90-100)\\Gorgrond (92-100)"
+Talador |condition achieved(9923,1) |confirm always |next "Leveling Guides\\Draenor (90-100)\\Talador (94-100)"
+Spires of Arak |condition achieved(9923,2) |confirm always |next "Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-100)"
+Nagrand |condition achieved(9923,3) |confirm always |next "Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
 step
 Congratulations, you earned the _Loremaster of Draenor_ Achievement!
 ]])

@@ -15,5 +15,6 @@
 	<Script file="RadioButton.lua"/>
 	<Script file="ActionButton.lua"/>
 	<Script file="ProgressBar.lua"/>
+	<Script file="Multiselect.lua"/>
 
 </Ui>

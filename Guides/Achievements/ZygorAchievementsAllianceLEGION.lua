@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("AchievementsALEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\A Classy Outfit",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\A Classy Outfit",{
 achieveid={11298},
 author="support@zygorguides.com",
 startlevel=110,
@@ -18,40 +18,40 @@ This item is earned by Reaching Level 110
 Earn the Class Order Hall Helm |achieve 11298/1
 step
 This item is earned by Recruiting 6 Champions for your Class Order Hall
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Earn the Class Order Hall Bracers |achieve 11298/2
 step
 This item is earned by completing your Class Order Hall Campaign
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Earn the Class Order Hall Chestpiece |achieve 11298/5 |or
 step
 This item is earned by Defeating 8 different final bosses found in Legion Dungeons
 Earn the Class Order Hall Leggings |achieve 11298/4
 step
 This item is earned by obtaining Honored reputation with The Nightfallen
-Click here load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)" |or
+Click here load the "Suramar" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)" |or
 Earn the Class Order Hall Gloves |achieve 11298/3 |or
 step
 You will need to obtain 100,000 Artifact power to unlock this
@@ -62,13 +62,13 @@ This item is earned by becoming Revered with 2 Legion factions
 Earn the Class Order Hall Boots |achieve 11298/6
 step
 You will need to reach Exalted with the Nightfallen to unlock this piece
-Click here load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)" |or
+Click here load the "Suramar" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)" |or
 Earn the Class Order Hall Shoulders |achieve 11298/8 |or
 step
 Congratulations!
 You have earned the _A Classy Outfit_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\A Glorious Campaign",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\A Glorious Campaign",{
 achieveid={10994},
 author="support@zygorguides.com",
 startlevel=110,
@@ -77,24 +77,24 @@ description="This guide will walk you through completing the \"A Glorious Campai
 },[[
 step
 To earn this achievement, you will need to complete a Class Order Hall Campaign on a single character
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Complete a Class Order Hall Questline |achieve 10994
 step
 Congratulations!
 You have earned the _A Glorious Campaign_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\A Heroic Campaign",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\A Heroic Campaign",{
 achieveid={11135},
 author="support@zygorguides.com",
 startlevel=110,
@@ -103,24 +103,24 @@ description="This guide will walk you through completing the \"A Heroic Campaign
 },[[
 step
 To earn this achievement, you will need to complete the Class Order Hall Campaigns on _3 different characters_
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Complete 3 Class Order Hall Campaign Questlines |achieve 11135
 step
 Congratulations!
 You have earned the _A Heroic Campaign_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\An Epic Campaign",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\An Epic Campaign",{
 achieveid={11136},
 author="support@zygorguides.com",
 startlevel=110,
@@ -129,24 +129,24 @@ description="This guide will walk you through completing the \"An Epic Campaign\
 },[[
 step
 To earn this achievement, you will need to complete the Class Order Hall Campaigns on _5 different characters_
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Complete 5 Class Order Hall Campaign Questlines |achieve 11136
 step
 Congratulations!
 You have earned the _An Epic Campaign_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Arsenal of Power",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Arsenal of Power",{
 achieveid={11171},
 author="support@zygorguides.com",
 startlevel=110,
@@ -156,24 +156,24 @@ description="This guide will walk you through completing the \"Arsenal of Power\
 step
 To earn this achievement, you will need to unlock each Artifact for your character specializations
 |tip Refer to our Legion Intro & Artifact gudie to accomplish this.
-Click here to load the "Death Knight & Artifacts" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Intro & Artifacts" |only DeathKnight |or
-Click here to load the "Demon Hunter Intro & Artifacts" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Intro & Artifacts" |only DemonHunter |or
-Click here to load the "Druid Intro & Artifacts" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Intro & Artifacts" |only Druid |or
-Click here to load the "Hunter Intro & Artifacts" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Intro & Artifacts" |only Hunter |or
-Click here to load the "Mage Intro & Artifacts" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Intro & Artifacts" |only Mage |or
-Click here to load the "Monk Intro & Artifacts" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Intro & Artifacts" |only Monk |or
-Click here to load the "Paladin Intro & Artifacts" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Intro & Artifacts" |only Paladin |or
-Click here to load the "Priest Intro & Artifacts" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Intro & Artifacts" |only Priest |or
-Click here to load the "Rogue Intro & Artifacts" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Intro & Artifacts" |only Rogue |or
-Click here to load the "Shaman Intro & Artifacts" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Intro & Artifacts" |only Shaman |or
-Click here to load the "Warlock Intro & Artifacts" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Intro & Artifacts" |only Warlock |or
-Click here to load the "Warrior Intro & Artifacts" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Intro & Artifacts" |only Warrior |or
+Click here to load the "Death Knight & Artifacts" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Intro & Artifacts" |only DeathKnight |or
+Click here to load the "Demon Hunter Intro & Artifacts" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Intro & Artifacts" |only DemonHunter |or
+Click here to load the "Druid Intro & Artifacts" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Intro & Artifacts" |only Druid |or
+Click here to load the "Hunter Intro & Artifacts" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Intro & Artifacts" |only Hunter |or
+Click here to load the "Mage Intro & Artifacts" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Intro & Artifacts" |only Mage |or
+Click here to load the "Monk Intro & Artifacts" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Intro & Artifacts" |only Monk |or
+Click here to load the "Paladin Intro & Artifacts" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Intro & Artifacts" |only Paladin |or
+Click here to load the "Priest Intro & Artifacts" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Intro & Artifacts" |only Priest |or
+Click here to load the "Rogue Intro & Artifacts" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Intro & Artifacts" |only Rogue |or
+Click here to load the "Shaman Intro & Artifacts" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Intro & Artifacts" |only Shaman |or
+Click here to load the "Warlock Intro & Artifacts" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Intro & Artifacts" |only Warlock |or
+Click here to load the "Warrior Intro & Artifacts" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Intro & Artifacts" |only Warrior |or
 Earn the _Arsenal of Power_ achievement |achieve 11171 |or
 step
 Congratulations!
 You have earned the _Arsenal of Power_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Broken Isles Pathfinder, Part One",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Broken Isles Pathfinder, Part One",{
 achieveid={11190},
 author="support@zygorguides.com",
 startlevel=100,
@@ -183,28 +183,28 @@ description="This guide will walk you through completing the \"Broken Isles Path
 step
 Earn the _Broken Isles Explorer_ achievement |achieve 11190/1 |or
 |tip Use the "Broken Isles Explorer" achievement guide to accomplish this.
-Click here to load the "Broken Isles Explorer" guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Legion\\Broken Isles Explorer" |or
+Click here to load the "Broken Isles Explorer" guide |confirm |next "Achievement Guides\\Exploration\\Legion\\Broken Isles Explorer" |or
 step
 Earn the _Loremaster of Legion_ achievement |achieve 11190/2 |or
 |tip Use the "Loremaster of Legion" achievement guide to accomplish this.
-Click here to load the "Loremaster of Legion" guide |confirm |next "Zygor's Achievement Guides\\Quests\\Legion\\Loremaster of Legion" |or
+Click here to load the "Loremaster of Legion" guide |confirm |next "Achievement Guides\\Quests\\Legion\\Loremaster of Legion" |or
 step
 Earn the _Variety is the Spice of Life_ achievement |achieve 11190/3 |or
 |tip Use the "Variety is the Spice of Life" achievement guide to accomplish this.
-Click here to load the "Variety is the Spice of Life" guide |confirm |next "Zygor's Achievement Guides\\Quests\\Legion\\Variety is the Spice of Life" |or
+Click here to load the "Variety is the Spice of Life" guide |confirm |next "Achievement Guides\\Quests\\Legion\\Variety is the Spice of Life" |or
 step
 Earn the _Broken Isles Diplomat_ achievement |achieve 11190/4 |or
 |tip Use the "Broken Isles Diplomat" achievement guide to accomplish this.
-Click here to load the "Broken Isles Diplomat" guide |confirm |next "Zygor's Achievement Guides\\Reputations\\Legion\\Broken Isles Diplomat" |or
+Click here to load the "Broken Isles Diplomat" guide |confirm |next "Achievement Guides\\Reputations\\Legion\\Broken Isles Diplomat" |or
 step
 Earn the _A Glorious Campaign_ achievement |achieve 11190/5 |or
 |tip Use the "A Glorious Campaign" achievement guide to accomplish this.
-Click here to load the "A Glorious Campaign" guide |confirm |next "Zygor's Achievement Guides\\Class Hall\\Legion\\A Glorious Campaign" |or
+Click here to load the "A Glorious Campaign" guide |confirm |next "Achievement Guides\\Class Hall\\Legion\\A Glorious Campaign" |or
 step
 Congratulations!
 You have earned the _Broken Isles Pathfinder, Part One_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Champions of Power",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Champions of Power",{
 achieveid={11222},
 author="support@zygorguides.com",
 startlevel=110,
@@ -214,18 +214,18 @@ description="This guide will walk you through completing the \"Champions of Powe
 step
 To earn this achievement, you will need to raise 8 Order Hall champions to the item level of 850
 |tip To accomplish this, use the "Order Hall Quests" guide to unlock all of the champions.
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Click here once you've completed the Order Hall Quest guide |confirm
 step
 To start, you will need to level your followers to 110
@@ -235,7 +235,7 @@ step
 Congratulations!
 You have earned the _Champions of Power_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Champions Rise",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Champions Rise",{
 achieveid={11221},
 author="support@zygorguides.com",
 startlevel=110,
@@ -245,18 +245,18 @@ description="This guide will walk you through completing the \"Champions Rise\" 
 step
 To earn this achievement, you will need to raise 8 Class Order Hall Champions to level 110
 |tip To accomplish this, use the Class Order Hall Quests guide to unlock all of the Champions.
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Click here once you've completed the Class Order Hall Quest guide |confirm
 step
 From this point there are two ways to level your followers
@@ -268,7 +268,7 @@ step
 Congratulations!
 You have earned the _Champions Rise_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Fighting with Style: Classic",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Fighting with Style: Classic",{
 achieveid={10461},
 author="support@zygorguides.com",
 startlevel=110,
@@ -278,45 +278,45 @@ description="This guide will walk you through completing the \"Fighting with Sty
 step
 To earn this achievement, you will need to recover a Pillar of Creation
 The easiest to attain this without doing Dungeons would be attained from questing in Val'sharah
-Click here to complete the "Val'sharah" leveling guide if you haven't done so already |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah" |or
+Click here to complete the "Val'sharah" leveling guide if you haven't done so already |confirm |next "Leveling Guides\\Legion (100-110)\\Val'sharah" |or
 Retrieve the Tears of Elune |achieve 10461/1 |or
 step
 For this, you will need to complete the Light's Charge quest
 To accomplishthis, refer to the Class Order Hall Quests guide
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Complete the Light's Charge quest |achieve 10461/2 |or
 step
 For this, you will need to complete the first chapter of the Class Order Hall Quests
 To accomplish this, refer to the Class Order Hall Quests guide
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Complete the first order campaign effort |achieve 10461/3 |or
 step
 Congratulations!
 You have earned the _Fighting with Style: Classic_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Forged for Battle",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Forged for Battle",{
 achieveid={10746},
 author="support@zygorguides.com",
 startlevel=110,
@@ -326,24 +326,24 @@ description="This guide will walk you through completing the \"Forged for Battle
 step
 To earn this achievement, you will need to complete the Order Campaign
 |tip Refer to our Class Order Hall Quests guide to accomplish this.
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Earn the _Forged for Battle_ achievement |achieve 10746 |or
 step
 Congratulations!
 You have earned the _Forged for Battle_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Improving on History",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Improving on History",{
 achieveid={10459},
 author="support@zygorguides.com",
 startlevel=110,
@@ -354,25 +354,25 @@ step
 For this, you will need to complete the Balance of Power questline
 To unlock the questline, you will need to complete your Class Order Hall Quests
 Once you have completed the Class Order Hall Quests, complete the Balance of Power questline
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
-Click here to load the "Balance of Power" questline |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Balance of Power Questline" |or
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Balance of Power" questline |confirm |next "Leveling Guides\\Legion (100-110)\\Balance of Power Questline" |or
 Complete the Improving on History questline |achieve 10459 |or
 step
 Congratulations!
 You have earned the _Improving on History_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Lead a Legion",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Lead a Legion",{
 achieveid={11213},
 author="support@zygorguides.com",
 startlevel=100,
@@ -383,24 +383,24 @@ step
 For this, you will need to train 100 Troops in your Class Order Hall
 To acheive this, speak to both Recruiters found in your Class Order Hall
 |tip You will need to progress a bit into the Class Order Hall Quests guide to recruit additional Troops.
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Train 100 Troops |achieve 11213
 step
 Congratulations!
 You have earned the _Lead a Legion_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Legendary Research",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Legendary Research",{
 achieveid={11223},
 author="support@zygorguides.com",
 startlevel=110,
@@ -412,13 +412,13 @@ step
 You will need to unlock the "Increase the number of Legendary items you can equip by 1." trait
 |tip Collect Order Hall resources to achieve this.
 |tip Use the World Quests guide to gather resources.
-Click here to load the World Quest Guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the World Quest Guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 Unlock th 6th Tier of your Class Hall Research |achieve 11223
 step
 Congratulations!
 You have earned the _Legendary Research_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Many Many Missions, Handle It!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Many Many Missions, Handle It!",{
 achieveid={11217},
 author="support@zygorguides.com",
 startlevel=100,
@@ -428,25 +428,25 @@ description="This guide will walk you through completing the \"Many Many Mission
 step
 To earn this achievement, you will need to complete 500 Class Order Hall Missions found in your Class Order Hall
 |tip You will need to progress a bit into the Class Order Hall Quests in order to access the mission board.
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Once you have, use Champions and Troops to complete 500 missions
 Complete 500 Class Order Hall Missions |achieve 11217
 step
 Congratulations!
 You have earned the _Many Many Missions, Handle It!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Many Missions",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Many Missions",{
 achieveid={11214},
 author="support@zygorguides.com",
 startlevel=100,
@@ -456,25 +456,25 @@ description="This guide will walk you through completing the \"Many Missions\" A
 step
 To earn this achievement, you will need to complete 10 Class Order Hall Missions found in your Class Order Hall
 |tip You will need to progress a bit into the Class Order Hall Quests in order to access the mission board.
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Once you have, use Champions and Troops to complete 10 missions
 Complete 10 Class Order Hall Missions |achieve 11214
 step
 Congratulations!
 You have earned the _Many Missions_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Need Backup",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Need Backup",{
 achieveid={11219},
 author="support@zygorguides.com",
 startlevel=110,
@@ -487,24 +487,24 @@ Once there, search for a Mission that rewards _a Raid quest_
 |tip These may not always be available.
 The quest can be for _Normal, Heroic or Mythic difficulty_
 |tip You will be at a disadvantage on success chance, so try and counter all of the enemy abilities.
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Obtain a Raid Quest from the Class Order Hall Mission Board |achieve 11219
 step
 Congratulations!
 You have earned the _Need Backup_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Quite a Few Missions",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Quite a Few Missions",{
 achieveid={11215},
 author="support@zygorguides.com",
 startlevel=100,
@@ -514,25 +514,25 @@ description="This guide will walk you through completing the \"Quite a Few Missi
 step
 To earn this achievement, you will need to complete 50 Class Order Hall Missions found in your Class Order Hall
 |tip You will need to progress a bit into the Class Order Hall Quests in order to access the mission board.
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Once you have, use Champions and Troops to complete 50 missions
 Complete 50 Class Order Hall Missions |achieve 11215
 step
 Congratulations!
 You have earned the _Quite a Few Missions_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Raise an Army",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Raise an Army",{
 achieveid={11212},
 author="support@zygorguides.com",
 startlevel=100,
@@ -543,24 +543,24 @@ step
 To earn this achievement, you will need to train 20 Troops in your Class Order Hall
 To acheive this, speak to both Recruiters found in your Class Order Hall
 |tip You will need to progress a bit into the Class Order Hall Quests guide to recruit additional Troops.
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Train 20 Troops |achieve 11212
 step
 Congratulations!
 You have earned the _Raise an Army_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Roster of Champions",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Roster of Champions",{
 achieveid={11220},
 author="support@zygorguides.com",
 startlevel=110,
@@ -570,24 +570,24 @@ description="This guide will walk you through completing the \"Roster of Champio
 step
 To earn this achievement, you will need to collect the 8 Class Order Hall Champions
 To accomplish this, use the Class Order Hall Quests guide
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Collect 8 Champions |achieve 11220
 step
 Congratulations!
 You have earned the _Roster of Champions_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\So Many Missions",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\So Many Missions",{
 achieveid={11216},
 author="support@zygorguides.com",
 startlevel=100,
@@ -597,25 +597,25 @@ description="This guide will walk you through completing the \"So Many Missions\
 step
 To earn this achievement, you will need to complete 100 Class Order Hall Missions found in your Class Order Hall
 |tip You will need to progress a bit into the Class Order Hall Quests in order to access the mission board.
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Once you have, use Champions and Troops to complete 100 missions
 Complete 100 Class Order Hall Missions |achieve 11216
 step
 Congratulations!
 You have earned the _So Many Missions_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\There's a Boss In There",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\There's a Boss In There",{
 achieveid={11218},
 author="support@zygorguides.com",
 startlevel=110,
@@ -628,24 +628,24 @@ Once there, search for a mission that rewards _a Dungeon quest_
 |tip These may not always be available.
 The quest can be for _Normal, Heroic or Mythic difficulty_
 |tip You will be at a disadvantage on success chance, so try and counter all of the enemy abilities.
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Obtain a Dungeon Quest from the Class Order Hall Mission Board |achieve 11218
 step
 Congratulations!
 You have earned the _There's a Boss In There_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Training the Troops",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Class Hall\\Legion\\Training the Troops",{
 achieveid={10706},
 author="support@zygorguides.com",
 startlevel=100,
@@ -656,24 +656,24 @@ step
 To earn this achievement, you will need to train 5 Troops in your Class Order Hall
 To acheive this, speak to both Recruiters found in your Class Order Hall
 |tip You will need to progress a bit into the Class Order Hall Quests guide to recruit additional Troops.
-Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests" |only DemonHunter
-Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests" |only Druid
-Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests" |only Hunter
-Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests" |only Mage
-Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests" |only Monk
-Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests" |only Paladin
-Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests" |only Priest
-Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests" |only Rogue
-Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests" |only Shaman
-Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests" |only Warlock
-Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests" |only Warrior
+Click here to load the "Death Knight Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests" |only DemonHunter
+Click here to load the "Druid Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests" |only Druid
+Click here to load the "Hunter Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests" |only Hunter
+Click here to load the "Mage Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests" |only Mage
+Click here to load the "Monk Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests" |only Monk
+Click here to load the "Paladin Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests" |only Paladin
+Click here to load the "Priest Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests" |only Priest
+Click here to load the "Rogue Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests" |only Rogue
+Click here to load the "Shaman Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests" |only Shaman
+Click here to load the "Warlock Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests" |only Warlock
+Click here to load the "Warrior Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests" |only Warrior
 Train 5 Troops |achieve 10706
 step
 Congratulations!
 You have earned the _Training the Troops_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\The Original",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\The Original",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 1 PvP armor from Netherstorm.",
 achieveid={11706},
@@ -710,7 +710,7 @@ step
 _Congratulations!_
 You Earned "The Original" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\No Mercy",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\No Mercy",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 2 PvP armor from Netherstorm.",
 achieveid={11707},
@@ -747,7 +747,7 @@ step
 _Congratulations!_
 You Earned the "No Mercy" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\With a Vengeance",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\With a Vengeance",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 3 PvP armor from Netherstorm.",
 achieveid={11708},
@@ -784,7 +784,7 @@ step
 _Congratulations!_
 You Earned the "With a Vengeance" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Tough Threads",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Tough Threads",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 4 PvP armor from Netherstorm.",
 achieveid={11709},
@@ -823,7 +823,7 @@ step
 _Congratulations!_
 You Earned the "Tough Threads" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Lethal Looks",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Lethal Looks",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 5 PvP armor from old Dalaran.",
 achieveid={11710},
@@ -862,7 +862,7 @@ step
 _Congratulations!_
 You Earned the "Lethal Looks" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\The Fierce and the Furious",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\The Fierce and the Furious",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 6 PvP armor from old Dalaran.",
 achieveid={11711},
@@ -901,7 +901,7 @@ step
 _Congratulations!_
 You Earned "The Fierce and the Furious" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Relentlessly Good Looking",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Relentlessly Good Looking",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 7 PvP armor from old Dalaran.",
 achieveid={11712},
@@ -940,7 +940,7 @@ step
 _Congratulations!_
 You Earned the "Relentlessly Good Looking" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Wrath of the Stich King",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Wrath of the Stich King",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 8 PvP armor from old Dalaran.",
 achieveid={11713},
@@ -979,7 +979,7 @@ step
 _Congratulations!_
 You Earned the "Wrath of the Stich King" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Viciously Vintage",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Viciously Vintage",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 9 PvP armor from Tanaris.",
 achieveid={11714},
@@ -1018,7 +1018,7 @@ step
 _Congratulations!_
 You Earned the "Viciously Vintage" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Ruth(less) is More",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Ruth(less) is More",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 10 PvP armor from Tanaris.",
 achieveid={11715},
@@ -1057,7 +1057,7 @@ step
 _Congratulations!_
 You Earned the "Ruth(less) is More" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Cataclysmic Catwalk",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Cataclysmic Catwalk",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 11 PvP armor from Tanaris.",
 achieveid={11716},
@@ -1096,7 +1096,7 @@ step
 _Congratulations!_
 You Earned the "Cataclysmic Catwalk" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Why Male(volent) Models?",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Why Male(volent) Models?",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 12 PvP armor from Valley of the Four Winds.",
 achieveid={11717},
@@ -1137,7 +1137,7 @@ step
 _Congratulations!_
 You Earned the "Why Male(volent) Models?" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Dressed to Oppress",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Dressed to Oppress",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 13 PvP armor from Valley of the Four Winds.",
 achieveid={11718},
@@ -1178,7 +1178,7 @@ step
 _Congratulations!_
 You Earned the "Dressed to Oppress" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\It's Not Fashion Unless it Hurts",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\It's Not Fashion Unless it Hurts",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 14 PvP armor from Valley of the Four Winds.",
 achieveid={11719},
@@ -1219,7 +1219,7 @@ step
 _Congratulations!_
 You Earned the "It's Not Fashion Unless it Hurts" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Wear it With Pride",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Wear it With Pride",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 15 PvP armor from Valley of the Four Winds.",
 achieveid={11720},
@@ -1260,7 +1260,7 @@ step
 _Congratulations!_
 You Earned the "Wear it With Pride" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Untamed Beauty",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Untamed Beauty",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 16 PvP armor from Stormshield.",
 achieveid={11629},
@@ -1301,7 +1301,7 @@ step
 _Congratulations!_
 You Earned the "Untamed Beauty" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Wild Style",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Wild Style",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 17 PvP armor from Stormshield.",
 achieveid={11721},
@@ -1342,7 +1342,7 @@ step
 _Congratulations!_
 You Earned the "Wild Style" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\War-Mog-ering",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\War-Mog-ering",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 18 PvP armor from Stormshield.",
 achieveid={11722},
@@ -1383,7 +1383,7 @@ step
 _Congratulations!_
 You Earned the "War-Mog-ering" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\More Like Win-dictive",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\More Like Win-dictive",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 19 or season 20 PvP armor from Dalaran.",
 achieveid={11630},
@@ -1426,7 +1426,7 @@ step
 _Congratulations!_
 You Earned the "More Like Win-dictive" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Cruel Intentions",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Cruel Intentions",{
 author="support@zygorguides.com",
 description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 21 or season 22 PvP armor from Dalaran.",
 achieveid={11723},
@@ -1469,7 +1469,7 @@ step
 _Congratulations!_
 You Earned the "Cruel Intentions" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Accessor-Eyes",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Accessor-Eyes",{
 achieveid={11743},
 author="support@zygorguides.com",
 startlevel=110,
@@ -1483,8 +1483,8 @@ You will need to collect a set from the Temple of Ahn'Qiraj
 |tip If you are a Death Knight, Monk or Demon Hunter, you will be unable to earn this achievement.
 |tip You will need to be Honored with the Brood of Nozdormu
 |tip To accomplish this, you will need to farm the Temple of Ahn'Qiraj as well as kill bosses in the Ruins of Ahn'Qiraj.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
-Click here to load the "Ruins of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Ruins of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Ruins of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Ruins of Ahn'Qiraj"
 Gain Honored reputation with the Brood of Nozdormu |condition rep("Brood of Nozdormu")>=Honored
 '|achieve 11743 |next "End"
 step
@@ -1492,7 +1492,7 @@ kill Viscidus##15299 |goto Ahn'Qiraj/1 70.7,18.4
 collect 2 Qiraji Bindings of Command##20928 |n
 |tip Only one can drop here.
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 '|achieve 11743 |next "End"
 |only Warrior
@@ -1500,7 +1500,7 @@ step
 kill Ouro##15517 |goto 30.6,79.3
 collect 1 Ouro's Intact Hide##20927 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 '|achieve 11743 |next "End"
 |only Warrior
@@ -1510,7 +1510,7 @@ collect 2 Qiraji Bindings of Command##20928 |n
 |tip Only one can drop here.
 collect Hive Defiler Wristguards##21618 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 '|achieve 11743 |next "End"
 |only Warrior
@@ -1519,7 +1519,7 @@ kill Emperor Vek'nilash##15275, Emperor Vek'lor##15276 |goto 57.7,70.7
 collect 1 Vek'nilash's Circlet##20926 |n
 collect Royal Qiraji Belt##21598 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 '|achieve 11743 |next "End"
 |only Warrior
@@ -1528,7 +1528,7 @@ kill C'Thun##15727 |goto Ahn'Qiraj/3 58.4,67.2
 collect 1 Carapace of the Old God##20929 |n
 collect Gauntlets of Annihilation##21581 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 '|achieve 11743 |next "End"
 |only Warrior
@@ -1548,7 +1548,7 @@ collect 5 Gold Scarab##20859 |n
 collect 10 Ivory Scarab##20865 |n
 collect 5 Crystal Scarab##20862 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 '|achieve 11743 |next "End"
 |only Warrior
@@ -1668,14 +1668,14 @@ collect 2 Qiraji Bindings of Dominance##20932 |n
 Only one can drop here
 collect Gauntlets of the Righteous Champion##21623 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Paladin
 step
 kill Ouro##15517
 collect 1 Skin of the Great Sandworm##20931 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Paladin
 step
@@ -1683,7 +1683,7 @@ kill Princess Huhuran##15509
 collect 2 Qiraji Bindings of Dominance##20932 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Paladin
 step
@@ -1691,14 +1691,14 @@ kill Emperor Vek'nilash##15275, Emperor Vek'lor##15276
 collect 1 Vek'lor's Diadem##20930 |n
 collect Belt of the Fallen Emperor##21606 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Paladin
 step
 kill C'Thun##15727
 collect 1 Carapace of the Old God##20929 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Paladin
 step
@@ -1717,7 +1717,7 @@ collect 5 Gold Scarab##20859 |n
 collect 5 Ivory Scarab##20865 |n
 collect 10 Crystal Scarab##20862 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Paladin
 step
@@ -1840,7 +1840,7 @@ step
 kill Ouro##15517
 collect 1 Skin of the Great Sandworm##20931 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Hunter
 step
@@ -1848,7 +1848,7 @@ kill Princess Huhuran##15509
 collect 2 Qiraji Bindings of Dominance##20932 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Hunter
 step
@@ -1856,14 +1856,14 @@ kill Emperor Vek'nilash##15275, Emperor Vek'lor##15276
 collect 1 Vek'lor's Diadem##20930 |n
 collect Vek'lor's Gloves of Devastation##21599 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Hunter
 step
 kill C'Thun##15727
 collect 1 Carapace of the Old God##20929 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Hunter
 step
@@ -1881,7 +1881,7 @@ collect 5 Gold Scarab##20859 |n
 collect 10 Ivory Scarab##20865 |n
 collect 5 Crystal Scarab##20862 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Hunter
 step
@@ -2000,14 +2000,14 @@ collect 2 Qiraji Bindings of Dominance##20932 |n
 Only one can drop here
 collect Gauntlets of Kalimdor##21624
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Shaman
 step
 kill Ouro##15517
 collect 1 Skin of the Great Sandworm##20931 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Shaman
 step
@@ -2015,7 +2015,7 @@ kill Princess Huhuran##15509
 collect 2 Qiraji Bindings of Dominance##20932 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Shaman
 step
@@ -2023,14 +2023,14 @@ kill Emperor Vek'nilash##15275, Emperor Vek'lor##15276
 collect 1 Vek'lor's Diadem##20930 |n
 collect Grasp of the Fallen Emperor##32607
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Shaman
 step
 kill C'Thun##15727
 collect 1 Carapace of the Old God##20929 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Shaman
 step
@@ -2049,7 +2049,7 @@ collect 5 Gold Scarab##20859 |n
 collect 5 Ivory Scarab##20865 |n
 collect 10 Crystal Scarab##20862 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Shaman
 step
@@ -2167,14 +2167,14 @@ kill Viscidus##15299
 collect 2 Qiraji Bindings of Dominance##20932 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Mage
 step
 kill Ouro##15517
 collect 1 Skin of the Great Sandworm##20931 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Mage
 step
@@ -2182,14 +2182,14 @@ kill Princess Huhuran##15509
 collect 2 Qiraji Bindings of Dominance##20932 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Mage
 step
 kill Emperor Vek'nilash##15275, Emperor Vek'lor##15276
 collect 1 Vek'nilash's Circlet##20926 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Mage
 step
@@ -2197,7 +2197,7 @@ kill C'Thun##15727
 collect 1 Husk of the Old God##20933 |n
 collect Grasp of the Old God##21582 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Mage
 step
@@ -2216,7 +2216,7 @@ collect 5 Gold Scarab##20859 |n
 collect 5 Ivory Scarab##20865 |n
 collect 5 Crystal Scarab##20862 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Mage
 step
@@ -2334,7 +2334,7 @@ kill Viscidus##15299
 collect 2 Qiraji Bindings of Command##20928 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Priest
 step
@@ -2343,14 +2343,14 @@ collect Gloves of the Messiah##21619 |n
 collect 2 Qiraji Bindings of Command##20928 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Priest
 step
 kill Ouro##15517
 collect 1 Ouro's Intact Hide##20927 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Priest
 step
@@ -2358,7 +2358,7 @@ kill Princess Huhuran##15509
 collect 2 Qiraji Bindings of Dominance##20932 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Priest
 step
@@ -2366,14 +2366,14 @@ kill Emperor Vek'nilash##15275, Emperor Vek'lor##15276
 collect 1 Vek'nilash's Circlet##20926 |n
 collect Bracelets of Royal Redemption##21604 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Priest
 step
 kill C'Thun##15727
 collect 1 Husk of the Old God##20933 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Priest
 step
@@ -2392,7 +2392,7 @@ collect 10 Gold Scarab##20859 |n
 collect 5 Ivory Scarab##20865 |n
 collect 5 Crystal Scarab##20862 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Priest
 step
@@ -2510,7 +2510,7 @@ kill Viscidus##15299
 collect 2 Qiraji Bindings of Command##20928 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Rogue
 step
@@ -2518,14 +2518,14 @@ kill Princess Huhuran##15509
 collect 2 Qiraji Bindings of Command##20928 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Rogue
 step
 kill Ouro##15517
 collect 1 Ouro's Intact Hide##20927 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Rogue
 step
@@ -2533,21 +2533,21 @@ kill Princess Huhuran##15509
 collect 2 Qiraji Bindings of Dominance##20932 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Rogue
 step
 kill Emperor Vek'nilash##15275, Emperor Vek'lor##15276
 collect 1 Vek'lor's Diadem##20930 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Rogue
 step
 kill C'Thun##15727
 collect 1 Carapace of the Old God##20929 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Rogue
 step
@@ -2566,7 +2566,7 @@ collect 5 Gold Scarab##20859 |n
 collect 10 Crystal Scarab##20862 |n
 collect 5 Ivory Scarab##20865 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Rogue
 step
@@ -2684,7 +2684,7 @@ kill Viscidus##15299
 collect 2 Qiraji Bindings of Dominance##20932 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Druid
 step
@@ -2692,13 +2692,13 @@ kill Princess Huhuran##15509
 collect 2 Qiraji Bindings of Dominance##20932
 collect Wasphide Gauntlets##21617 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 |only Druid
 step
 kill Ouro##15517
 collect 1 Skin of the Great Sandworm##20931 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Druid
 step
@@ -2706,21 +2706,21 @@ kill Princess Huhuran##15509
 collect 2 Qiraji Bindings of Dominance##20932 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Druid
 step
 kill Emperor Vek'nilash##15275, Emperor Vek'lor##15276
 collect 1 Vek'lor's Diadem##20930 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Druid
 step
 kill C'Thun##15727
 collect 1 Husk of the Old God##20933 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Druid
 step
@@ -2739,7 +2739,7 @@ collect 10 Gold Scarab##20859
 collect 5 Crystal Scarab##20862
 collect 5 Ivory Scarab##20865
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Druid
 step
@@ -2857,14 +2857,14 @@ kill Viscidus##15299
 collect 2 Qiraji Bindings of Dominance##20932 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Warlock
 step
 kill Ouro##15517
 collect 1 Skin of the Great Sandworm##20931 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Warlock
 step
@@ -2872,21 +2872,21 @@ kill Princess Huhuran##15509
 collect 2 Qiraji Bindings of Dominance##20932 |n
 Only one can drop here
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Warlock
 step
 kill Emperor Vek'nilash##15275, Emperor Vek'lor##15276
 collect 1 Vek'nilash's Circlet##20926 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Warlock
 step
 kill C'Thun##15727
 collect 1 Husk of the Old God##20933 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Warlock
 step
@@ -2905,7 +2905,7 @@ collect 5 Gold Scarab##20859 |n
 collect 10 Bone Scarab##20864 |n
 collect 10 Clay Scarab##20863 |n
 |tip Refer to the Temple of Ahn'Qiraj raid guide to accomplish this.
-Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
+Click here to load the "Temple of Ahn'Qiraj" raid guide |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj"
 Click here to continue |confirm
 |only Warlock
 step
@@ -3028,7 +3028,7 @@ label "End"
 Congratulations!
 You have earned the _Accessor-Eyes_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Azeroth's Next Top Model",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Azeroth's Next Top Model",{
 achieveid={11761},
 author="support@zygorguides.com",
 startlevel=110,
@@ -3044,43 +3044,43 @@ Earn the Azeroth's Next Top Model Achievement |achieve 11761 |next "End"
 Click here to continue |confirm
 step
 Earn the So Hot Right Now achievement |achieve 11741
-Click here to load the So Hot Right Now guide |confirm |next "Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\So Hot Right Now"
+Click here to load the So Hot Right Now guide |confirm |next "Achievement Guides\\Collections\\Appearances\\Legion\\So Hot Right Now"
 Click here to continue |confirm
 step
 Earn the Dress in Lairs achievement |achieve 11742
-Click here to load the Dress in Lairs guide |confirm |next "Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Dress in Lairs"
+Click here to load the Dress in Lairs guide |confirm |next "Achievement Guides\\Collections\\Appearances\\Legion\\Dress in Lairs"
 Click here to continue |confirm
 step
 Earn the Outlandish Style achievement |achieve 11746
-Click here to load the Outlandish Style guide |confirm |next "Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Outlandish Style"
+Click here to load the Outlandish Style guide |confirm |next "Achievement Guides\\Collections\\Appearances\\Legion\\Outlandish Style"
 Click here to continue |confirm
 step
 Earn the _Merely a Set_ achievement |achieve 11747
-Click here to load the Merely a Set guide |confirm |next "Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Merely a Set"
+Click here to load the Merely a Set guide |confirm |next "Achievement Guides\\Collections\\Appearances\\Legion\\Merely a Set"
 Click here to continue |confirm
 step
 Earn the Black is the New Black achievement |achieve 11748
-Click here to load the Black is the New Black guide |confirm |next "Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Black is the New Black"
+Click here to load the Black is the New Black guide |confirm |next "Achievement Guides\\Collections\\Appearances\\Legion\\Black is the New Black"
 Click here to continue |confirm
 step
 Earn the Suns Out, Thoridals Out achievement |achieve 11749
-Click here to load the Suns Out, Thoridals Out guide |confirm |next "Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Suns Out, Thori'dals Out"
+Click here to load the Suns Out, Thoridals Out guide |confirm |next "Achievement Guides\\Collections\\Appearances\\Legion\\Suns Out, Thori'dals Out"
 Click here to continue |confirm
 step
 Earn the Undying Aesthetic achievement |achieve 11750
-Click here to load the Undying Aesthetic achievement |confirm |next "Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Undying Aesthetic"
+Click here to load the Undying Aesthetic achievement |confirm |next "Achievement Guides\\Collections\\Appearances\\Legion\\Undying Aesthetic"
 Click here to continue |confirm
 step
 Earn the Mogg-Saron achievement |achieve 11751
-Click here to load the Mogg-Saron guide |confirm |next "Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Mogg-Saron"
+Click here to load the Mogg-Saron guide |confirm |next "Achievement Guides\\Collections\\Appearances\\Legion\\Mogg-Saron"
 Click here to continue |confirm
 step
 Earn the Style of the Crusader achievement |achieve 11752
-Click here to load the Style of the Crusader guide |confirm |next "Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Style of the Crusader"
+Click here to load the Style of the Crusader guide |confirm |next "Achievement Guides\\Collections\\Appearances\\Legion\\Style of the Crusader"
 Click here to continue |confirm
 step
 Earn the Winter Catalog achievement |achieve 11753
-Click here to load the Winter Catalog guide |confirm |next "Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Winter Catalog"
+Click here to load the Winter Catalog guide |confirm |next "Achievement Guides\\Collections\\Appearances\\Legion\\Winter Catalog"
 Click here to continue |confirm
 step
 Earn the Azeroth's Next Top Model Achievement |achieve 11761
@@ -3090,7 +3090,7 @@ label "End"
 Congratulations!
 You have earned the _Azeroth's Next Top Model_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Black is the New Black",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Black is the New Black",{
 achieveid={11748},
 author="support@zygorguides.com",
 startlevel=70,
@@ -3112,7 +3112,7 @@ From Hyjal Summit:
 Azgalor drops the Token for the Gloves
 Archimonde drops the Token for the Helmets
 |tip Refer to the Hyjal Summit Raid guide to accomplish this.
-Click here to load the Hyjal Summit guide for more information |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Hyjal Summit (Battle for Mount Hyjal)"
+Click here to load the Hyjal Summit guide for more information |confirm |next "Dungeon Guides\\Outland Raids\\Hyjal Summit (Battle for Mount Hyjal)"
 Click here to continue |confirm
 Earn the Black is the New Black achievement |achieve 11748
 step
@@ -3120,7 +3120,7 @@ From Black Temple:
 Mother Shahraz drops the Token for the Shoulders
 The Illidari Council drops the Token for the Legs
 Illidan Stormrage drops the Token for the Chest
-Refer to the Black Temple guide for more information |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Black Temple"
+Refer to the Black Temple guide for more information |confirm |next "Dungeon Guides\\Outland Raids\\Black Temple"
 Click here to continue |confirm
 Earn the Black is the New Black achievement |achieve 11748
 step
@@ -3129,7 +3129,7 @@ Kalecgos drops the token for Bracers
 Brutallus drops the token for Belts
 Felmyst drops the token for Boots
 The Eredar Twins drop tokens for Bracers, Belts and Boots
-Refer to the Sunwell Plateau guide for more informatio |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Sunwell Plateau"
+Refer to the Sunwell Plateau guide for more informatio |confirm |next "Dungeon Guides\\Outland Raids\\Sunwell Plateau"
 Click here to continue |confirm
 Earn the Black is the New Black achievement |achieve 11748
 step
@@ -3142,7 +3142,7 @@ step
 Congratulations!
 You have earned the _Black is the New Black_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Can I Get A Helya",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Can I Get A Helya",{
 achieveid={11762},
 author="support@zygorguides.com",
 startlevel=110,
@@ -3200,7 +3200,7 @@ kill Odyn##114263
 Defeat Odyn in the Trial of Valor Raid |q 44729/1
 Note: _STAY INSIDE_ the Trial of Valor after defeating Odyn
 Use the Trial of Valor guide to accomplish this
-Click here to load the Trial of Valor (LFR) guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Trial of Valor - (LFR)"
+Click here to load the Trial of Valor (LFR) guide |confirm |next "Dungeon Guides\\Legion Raids\\Trial of Valor - (LFR)"
 step
 stickystart "ValSoulFrag"
 talk Odyn##114263
@@ -3213,7 +3213,7 @@ step
 kill Helya##114537 |q 45088/1
 Note: _STAY INSIDE_ the Trial of Valor after defeating Odyn
 Use the Trial of Valor guide to accomplish this
-Click here to load the Trial of Valor (LFR) guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Trial of Valor - (LFR)"
+Click here to load the Trial of Valor (LFR) guide |confirm |next "Dungeon Guides\\Legion Raids\\Trial of Valor - (LFR)"
 step
 talk Odyn##116760
 |tip He appears where you defeated Helya.
@@ -3246,7 +3246,7 @@ label "End"
 Congratulations!
 You have earned the _Can I Get A Helya_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Dress in Lairs",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Dress in Lairs",{
 achieveid={11742},
 author="support@zygorguides.com",
 startlevel=60,
@@ -3262,55 +3262,55 @@ If you need more pieces, click here |confirm
 step
 kill Ragnaros##11502
 |tip Ragnaros drops leg pieces.
-Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to load the Molten Core guide |confirm |next "Dungeon Guides\\Classic Raids\\Molten Core"
 Earn the _Dress in Lairs_ achievement |achieve 11742 |goto Molten Core/1 55.1,54.5
 If you need more pieces, click here |confirm
 step
 kill Razorgore the Untamed##12435
 |tip Razorgore drops wrist pieces.
-Click here to load the Blackwing Lair guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to load the Blackwing Lair guide |confirm |next "Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Earn the _Dress in Lairs_ achievement |achieve 11742 |goto Blackwing Lair/1 35.7,67.2
 If you need more pieces, click here |confirm
 step
 kill Vaelastrasz the Corrupt##13020
 |tip Vaelastrasz drops waist pieces.
-Click here to load the Blackwing Lair guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to load the Blackwing Lair guide |confirm |next "Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Earn the _Dress in Lairs_ achievement |achieve 11742 |goto 33,27
 If you need more pieces, click here |confirm
 step
 kill Broodlord Lashlayer##12017
 |tip Lashlayer drops boot pieces.
-Click here to load the Blackwing Lair guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to load the Blackwing Lair guide |confirm |next "Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Earn the _Dress in Lairs_ achievement |achieve 11742 |goto Blackwing Lair/3 48,57
 If you need more pieces, click here |confirm
 step
 kill Firemaw##11983
 |tip Firemaw drops glove pieces.
-Click here to load the Blackwing Lair guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to load the Blackwing Lair guide |confirm |next "Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Earn the _Dress in Lairs_ achievement |achieve 11742 |goto Blackwing Lair/3 46.8,44.2
 If you need more pieces, click here |confirm
 step
 kill Ebonroc##14601
 |tip Ebonroc drops glove pieces.
-Click here to load the Blackwing Lair guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to load the Blackwing Lair guide |confirm |next "Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Earn the _Dress in Lairs_ achievement |achieve 11742 |goto Blackwing Lair/4 35,37
 If you need more pieces, click here |confirm
 step
 kill Flamegor##11981
 |tip Flamegor drops glove pieces.
-Click here to load the Blackwing Lair guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to load the Blackwing Lair guide |confirm |next "Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Earn the _Dress in Lairs_ achievement |achieve 11742 |goto 37.5,42.7
 If you need more pieces, click here |confirm
 step
 kill Chromaggus##14020
 |tip Chromaggus drops shoulder pieces.
-Click here to load the Blackwing Lair guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to load the Blackwing Lair guide |confirm |next "Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Earn the _Dress in Lairs_ achievement |achieve 11742 |goto 43.0,69.0
 If you need more pieces, click here |confirm
 step
 kill Nefarian##11583
 |tip Nefarian drops chest and head pieces.
-Click here to load the Blackwing Lair guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to load the Blackwing Lair guide |confirm |next "Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Earn the _Dress in Lairs_ achievement |achieve 11742 |goto 72.6,81.7
 If you need more pieces, click here |confirm
 step
@@ -3322,7 +3322,7 @@ step
 Congratulations!
 You have earned the _Dress in Lairs_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Extreme Makeover: Fel Edition",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Extreme Makeover: Fel Edition",{
 achieveid={11631},
 author="support@zygorguides.com",
 startlevel=100,
@@ -3342,7 +3342,7 @@ collect Shell-Resistant Stompers##124320 |only Warrior |n
 collect Siegemaster Mar'tak##124278 |only Rogue |n
 collect Powder-Singed Bracers##124183 |only Priest |n
 If the bracers didn't drop, there will be another chance for the appearance from the Soulbound Construct  |only Priest
-Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to load the Hellfire Citadel guide |confirm |next "Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
 Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
 Click here to continue |confirm
 |only Warrior, Rogue, Priest
@@ -3355,7 +3355,7 @@ collect Spiked Irontoe Slippers##124249 |only Druid |n
 collect Pedal-Pushing Sandals##124148 |only Mage |n
 collect Torch-Brazed Waistguard##124309 |only Shaman |n
 If the belt didn't drop, there will be another chance for the appearance from trash in the raid |only Shaman
-Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to load the Hellfire Citadel guide |confirm |next "Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
 Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
 Click here to continue |confirm
 |only Hunter, Warrior, Druid, Mage, Shaman
@@ -3374,7 +3374,7 @@ collect Oathclaw Helm##124261 |only Druid |n
 collect Pious Cowl##124161 |only Priest |n
 collect Ferroleather Hood##139627 |only DemonHunter |n
 collect Sludge-Soaked Waistband##124180 |only Priest |m
-Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to load the Hellfire Citadel guide |confirm |next "Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
 Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
 Click here to continue |confirm
 step
@@ -3390,7 +3390,7 @@ collect Bloody Berserker's Bracers##124312 |only Hunter |n
 If the bracers didn't drop, there will be another chance for the appearance from Mannoroth |only Hunter
 collect Girdle of Savage Resolve##124347 |only Paladin |n
 collect Cursed Blood Bracers##124184 |only Warlock |n
-Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to load the Hellfire Citadel guide |confirm |next "Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
 Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
 Click here to continue |confirm
 |only Hunter, Paladin, Warlock
@@ -3410,7 +3410,7 @@ collect Pious Leggings##124166 |only Priest |n
 collect Ferroleather Leggings##139628 |only DemonHunter
 collect Ravenous Girdle##124348 |only DeathKnight |n
 If the belt didn't drop, there will be another chance for the appearance from trash |only DeathKnight
-Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to load the Hellfire Citadel guide |confirm |next "Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
 Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
 Click here to continue |confirm
 step
@@ -3418,7 +3418,7 @@ kill Shadow-Lord Iskar##90316
 collect Belt of Misconceived Loyalty##124275 |only Druid |n
 collect Surefooted Chain Treads##124286 |only Shaman |n
 collect Wristplate of the Wretched##124352 |only DeathKnight |n
-Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to load the Hellfire Citadel guide |confirm |next "Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
 Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
 Click here to continue |confirm
 |only Druid, Shaman, DeathKnight
@@ -3438,7 +3438,7 @@ collect Pious Handwraps##124155 |only Priest |n
 collect Ferroleather Gloves##139626 |only DemonHunter |n
 collect Pristine Man'ari Cuffs##124185 |only Priest |n
 collect Chain Wristguards of the Stricken##124313 |only Shaman |n
-Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to load the Hellfire Citadel guide |confirm |next "Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
 Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
 Click here to continue |confirm
 step
@@ -3446,7 +3446,7 @@ kill Tyrant Velhari##93439
 collect Contemptuous Wristguards##124186 |only Mage |n
 collect Spiked Throatcrusher Boots##124287 |only Shaman |n
 collect Oppressor's Merciless Treads##124251 |only Monk |n
-Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to load the Hellfire Citadel guide |confirm |next "Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
 Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
 Click here to continue |confirm
 |only Mage, Shaman, Monk
@@ -3456,7 +3456,7 @@ collect Girdle of the Legion General##124310 |only Hunter |n
 collect Sash of Undending Anguish##124181 |only Warlock |n
 collect Bloody Dagger-Heeled Pumps##124149 |only Priest |n
 collect Manacles of the Multitudes##124280 |only Druid |n
-Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to load the Hellfire Citadel guide |confirm |next "Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
 Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
 Click here to continue |confirm
 |only Hunter, Warlock, Priest, Druid
@@ -3475,7 +3475,7 @@ collect Oathclaw Mantle##124272 |only Druid |n
 collect Shoulderplates of the Ceaseless Vigil##124345 |only Paladin |n
 collect Ferroleather Spaulders##139629 |only DemonHunter
 collect Breach-Scarred Wristplates##124353 |only Paladin
-Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to load the Hellfire Citadel guide |confirm |next "Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
 Click here to continue |confirm
 Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
 step
@@ -3494,14 +3494,14 @@ collect Robe of the Hurricane's Eye##124247 |only Monk |n
 collect Ferroleather Chestguard##139625 |only DemonHunter |n
 collect Bracers of Fel Empowerment##124314 |only Hunter |n
 collect Annihilan's Waistplate##124349 |only Warrior |n
-Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to load the Hellfire Citadel guide |confirm |next "Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
 Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
 Click here to continue |confirm
 step
 kill Archimonde##91331
 collect Treads of the Defiler##124322 |only Paladin |n
 collect Waistwrap of Banishment##124276 |only Monk |n
-Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to load the Hellfire Citadel guide |confirm |next "Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
 Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
 Click here to continue |confirm
 |only Paladin, Monk
@@ -3515,7 +3515,7 @@ collect Jungle Assassin's Footpads##124252 |only Rogue |n
 collect Cord of Unhinged Malice##124182 |only Mage |n
 collect Cursed Demonchain Belt##124311 |only Shaman |n
 collect Girdle of Demonic Wrath##124350 |only DeathKnight |n
-Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to load the Hellfire Citadel guide |confirm |next "Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
 Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
 Click here to continue |confirm
 |only Hunter, Paladin, Warlock, Rogue, Mage, Shaman, DeathKnight
@@ -3530,7 +3530,7 @@ step
 Congratulations!
 You have earned the _Extreme Makeover: Fel Edition_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Back",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Back",{
 achieveid={10687},
 author="support@zygorguides.com",
 startlevel=100,
@@ -3552,7 +3552,7 @@ step
 Congratulations!
 You have earned the _Fashionista: Back_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Chest",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Chest",{
 achieveid={10682},
 author="support@zygorguides.com",
 startlevel=100,
@@ -3574,7 +3574,7 @@ step
 Congratulations!
 You have earned the _Fashionista: Chest_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Feet",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Feet",{
 achieveid={10685},
 author="support@zygorguides.com",
 startlevel=100,
@@ -3596,7 +3596,7 @@ step
 Congratulations!
 You have earned the _Fashionista: Feet_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Hand",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Hand",{
 achieveid={10693},
 author="support@zygorguides.com",
 startlevel=100,
@@ -3618,7 +3618,7 @@ step
 Congratulations!
 You have earned the _Fashionista: Hand_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Head",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Head",{
 achieveid={10681},
 author="support@zygorguides.com",
 startlevel=100,
@@ -3640,7 +3640,7 @@ step
 Congratulations!
 You have earned the _Fashionista: Head_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Legs",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Legs",{
 achieveid={10684},
 author="support@zygorguides.com",
 startlevel=100,
@@ -3662,7 +3662,7 @@ step
 Congratulations!
 You have earned the _Fashionista: Legs_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Shirt",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Shirt",{
 achieveid={10691},
 author="support@zygorguides.com",
 startlevel=100,
@@ -3740,7 +3740,7 @@ label "congrats"
 Congratulations!
 You have earned the _Fashionista: Shirt_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Shoulder",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Shoulder",{
 achieveid={10692},
 author="support@zygorguides.com",
 startlevel=100,
@@ -3762,7 +3762,7 @@ step
 Congratulations!
 You have earned the _Fashionista: Shoulder_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Tabard",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Tabard",{
 achieveid={10690},
 author="support@zygorguides.com",
 startlevel=100,
@@ -3838,7 +3838,7 @@ label "congrats"
 Congratulations!
 You have earned the _Fashionista: Tabard_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Waist",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Waist",{
 achieveid={10686},
 author="support@zygorguides.com",
 startlevel=100,
@@ -3860,7 +3860,7 @@ step
 Congratulations!
 You have earned the _Fashionista: Waist_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Weapon & Off Hand",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Weapon & Off Hand",{
 achieveid={10689},
 author="support@zygorguides.com",
 startlevel=100,
@@ -3882,7 +3882,7 @@ step
 Congratulations!
 You have earned the _Fashionista: Weapon & Off Hand_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Wrist",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Fashionista: Wrist",{
 achieveid={10688},
 author="support@zygorguides.com",
 startlevel=100,
@@ -3904,7 +3904,7 @@ step
 Congratulations!
 You have earned the _Fashionista: Wrist_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Glamour of Twilight",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Glamour of Twilight",{
 achieveid={11754},
 author="support@zygorguides.com",
 startlevel=85,
@@ -3932,7 +3932,7 @@ _Be sure to set the difficulty to 10-man before entering_
 kill Chimaeron##43296
 collect Chimaeron Armguards##59355 |n
 If you're in a group, equip the item if they drop to unlock the appearance
-Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
+Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
 Earn the Winter Catalog achievement |achieve 11754
 Click here to continue |confirm
 |only Hunter
@@ -3941,7 +3941,7 @@ _Be sure to set the difficulty to 10-man before entering_
 kill Atramedes##41442
 collect Boots of Vertigo##59315 |n
 If you're in a group, equip the item if they drop to unlock the appearance
-Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
+Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
 Earn the Winter Catalog achievement |achieve 11754
 Click here to continue |confirm
 |only Hunter
@@ -3950,7 +3950,7 @@ _Be sure to set the difficulty to 10-man before entering_
 kill Nezir##45871
 collect Star Chaser Belt##63492 |n
 If you're in a group, equip the item if they drop to unlock the appearance
-Click here to refer to the Throne of Thunder raiding guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to refer to the Throne of Thunder raiding guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Winter Catalog achievement |achieve 11754
 Click here to continue |confirm
 |only Hunter
@@ -3979,7 +3979,7 @@ collect Sun King's Girdle##59450 |n
 Corehammer's Riveted Girdle can drop from trash in Blackwing Descent
 If you're in a group, equip the item if they drop to unlock the appearance
 collect Corehammer's Riveted Girdle##59465
-Click here to refer to the Throne of Thunder raiding guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to refer to the Throne of Thunder raiding guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Winter Catalog achievement |achieve 11754
 Click here to continue |confirm
 |only Paladin
@@ -4000,7 +4000,7 @@ _Be sure to set the difficulty to 10-man before entering_
 kill Halfus Wyrmbreaker##44600
 collect Bracers of Impossible Strength##59470 |n
 If you're in a group, equip the item if they drop to unlock the appearance
-Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
+Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
 Earn the Winter Catalog achievement |achieve 11754
 Click here to continue |confirm
 |only Warrior
@@ -4009,10 +4009,10 @@ _Be sure to set the difficulty to 10-man before entering_
 Defeat the Omnotron Defense System
 collect Jumbotron Power Belt##59117 |n
 If you're in a group, equip the item if they drop to unlock the appearance
-Click here to refer to the Blackwing Descent raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
+Click here to refer to the Blackwing Descent raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
 kill Nezir##45871
 collect Thunder Wall Belt##63491 |n
-Click here to refer to the Throne of the Four Winds raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Throne of the Four Winds"
+Click here to refer to the Throne of the Four Winds raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\Throne of the Four Winds"
 Earn the Winter Catalog achievement |achieve 11754
 Click here to continue |confirm
 |only Warrior
@@ -4038,7 +4038,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 Defeat the Omnotron Defense System
 collect Jumbotron Power Belt##59117 |n
-Click here to refer to the Blackwing Descent raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
+Click here to refer to the Blackwing Descent raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
 Click here to continue |confirm
 |only Warlock
 step
@@ -4047,7 +4047,7 @@ Kill trash in the Bastion of Twilight for this to drop
 You can also use the Auction House to purchase these
 collect Bracers of the Dark Pool##60211 |n
 _Remember, equip all items you buy to unlock the appearance for them_
-Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
+Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
 Click here to continue |confirm
 |only Warlock
 step
@@ -4066,7 +4066,7 @@ _Be sure to set the difficulty to 10-man before entering_
 kill Halfus Wyrmbreaker##44600
 collect Storm Rider's Boots##59469 |n
 _Remember, equip all items you buy to unlock the appearance for them_
-Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
+Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
 Earn the Glamour of Twilight achievement |achieve 11754
 Click here to continue |confirm
 |only Rogue
@@ -4075,7 +4075,7 @@ _Be sure to set the difficulty to 10-man before entering_
 kill Elementium Monstrosity##43735
 collect Dispersing Belt##59502 |n
 _Remember, equip all items you buy to unlock the appearance for them_
-Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
+Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
 Earn the Glamour of Twilight achievement |achieve 11754
 Click here to continue |confirm
 |only Rogue
@@ -4084,7 +4084,7 @@ _Be sure to set the difficulty to 10-man before entering_
 kill Magmaw##41570
 collect Parasitic Bands##59329 |n
 _Remember, equip all items you buy to unlock the appearance for them_
-Click here to refer to the Blackwing Descent raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
+Click here to refer to the Blackwing Descent raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
 Earn the Glamour of Twilight achievement |achieve 11754
 Click here to continue |confirm
 |only Rogue
@@ -4104,12 +4104,12 @@ step
 kill Elementium Monstrosity##43735
 collect Treads of Liquid Ice##59508 |n
 _Remember, equip all items you buy to unlock the appearance for them_
-Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
+Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
 or
 kill Nezir##45871
 collect Soul Breath Belt##63498 |n
 _Remember, equip all items you buy to unlock the appearance for them_
-Click here to refer to the Throne of the Four Winds raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Throne of the Four Winds"
+Click here to refer to the Throne of the Four Winds raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\Throne of the Four Winds"
 Earn the Glamour of Twilight achievement |achieve 11754
 Click here to continue |confirm
 |only Priest
@@ -4117,7 +4117,7 @@ step
 kill Atramedes##41442
 collect Bracers of the Burningeye##59322 |n
 _Remember, equip all items you buy to unlock the appearance for them_
-Click here to refer to the Blackwing Descent raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
+Click here to refer to the Blackwing Descent raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
 Earn the Glamour of Twilight achievement |achieve 11754
 Click here to continue |confirm
 |only Priest
@@ -4137,19 +4137,19 @@ step
 kill Chimaeron##43296
 collect Manacles of the Sleeping Beast##59451 |n
 _Remember, equip all items you buy to unlock the appearance for them_
-Click here to refer to the Blackwing Descent raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
+Click here to refer to the Blackwing Descent raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
 Earn the Glamour of Twilight achievement |achieve 11754
 Click here to continue |confirm
 |only Druid
 step
 kill Nefarian##41376
 collect Belt of Nightmare##59321 |n
-Click here to refer to the Blackwing Descent raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
+Click here to refer to the Blackwing Descent raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
 or
 kill Nezir##45871
 collect Gale Rouser Belt##63497 |n
 _Remember, equip all items you buy to unlock the appearance for them_
-Click here to refer to the Throne of the Four Winds raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Throne of the Four Winds"
+Click here to refer to the Throne of the Four Winds raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\Throne of the Four Winds"
 Earn the Glamour of Twilight achievement |achieve 11754
 Click here to continue |confirm
 |only Druid
@@ -4177,7 +4177,7 @@ step
 kill Halfus Wyrmbreaker##44600
 collect Bracers of the Bronze Flight##59475 |n
 _Remember, equip all items you buy to unlock the appearance for them_
-Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
+Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
 Earn the Glamour of Twilight achievement |achieve 11754
 Click here to continue |confirm
 |only Mage
@@ -4197,7 +4197,7 @@ step
 kill Magmaw##41570
 collect Lifecycle Waistguard##59334 |n
 _Remember, equip all items you buy to unlock the appearance for them_
-Click here to refer to the Blackwing Descent raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
+Click here to refer to the Blackwing Descent raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
 Earn the Glamour of Twilight achievement |achieve 11754
 Click here to continue |confirm
 |only Shaman
@@ -4205,7 +4205,7 @@ step
 kill Chimaeron##43296
 collect Chaos Beast Bracers##59310 |n
 _Remember, equip all items you buy to unlock the appearance for them_
-Click here to refer to the Blackwing Descent raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
+Click here to refer to the Blackwing Descent raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\Blackwing Descent"
 Earn the Glamour of Twilight achievement |achieve 11754
 Click here to continue |confirm
 |only Shaman
@@ -4226,7 +4226,7 @@ _Be sure to set the difficulty to 10-man before entering_
 Defeat the Omnotron Defense System
 collect Electron Inductor Coils##59118
 _Remember, equip all items you buy to unlock the appearance for them_
-Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
+Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
 Earn the Winter Catalog achievement |achieve 11754
 Click here to continue |confirm
 |only DeathKnight
@@ -4235,7 +4235,7 @@ _Be sure to set the difficulty to 10-man before entering_
 kill Maloriak##41378
 collect Belt of Absolute Zero##59342
 _Remember, equip all items you buy to unlock the appearance for them_
-Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
+Click here to refer to the Bastion of Twilight raiding guide |confirm |next "Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight"
 Earn the Winter Catalog achievement |achieve 11754
 Click here to continue |confirm
 |only DeathKnight
@@ -4243,7 +4243,7 @@ step
 Congratulations!
 You have earned the _Glamour of Twilight_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Hot Couture",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Hot Couture",{
 achieveid={11755},
 author="support@zygorguides.com",
 startlevel=85,
@@ -4278,7 +4278,7 @@ step
 kill Baleroc##53494
 collect Decimation Treads##71315 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Click here to continue |confirm
 |only Hunter
 step
@@ -4303,14 +4303,14 @@ step
 kill Shannox##53691
 collect Bracers of the Dread Hunter##71026 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Click here to continue |confirm
 |only Paladin
 step
 kill Majordomo Staghelm##52571
 collect Treads of the Penitent Man##71351 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Click here to continue |confirm
 |only Paladin
 step
@@ -4336,7 +4336,7 @@ step
 kill Lord Rhyolith##
 collect Cracked Obsidian Stompers##70912 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Click here to continue |confirm
 |only Warrior
 step
@@ -4355,7 +4355,7 @@ step
 kill Shannox##53691
 collect Coalwalker Sandals##71023 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Click here to continue |confirm
 |only Warlock
 step
@@ -4380,14 +4380,14 @@ step
 kill Alysrazor##52530
 collect Flickering Wristbands##70735 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Click here to continue |confirm
 |only Rogue
 step
 kill Majordomo Staghelm##52571
 collect Sandals of Leaping Coals##71313 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Click here to continue |confirm
 |only Rogue
 step
@@ -4415,7 +4415,7 @@ step
 kill Ragnaros##52409
 collect Majordomo's Chain of Office##71357 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Click here to continue |confirm
 |only Priest
 step
@@ -4440,14 +4440,14 @@ step
 kill Baleroc##53494
 collect Glowing Wing Bracers##71341 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Click here to continue |confirm
 |only Druid
 step
 kill Alysrazor##52530
 collect Phoenix-Down Treads##70987 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Click here to continue |confirm
 |only Druid
 step
@@ -4481,7 +4481,7 @@ step
 kill Majordomo Staghelm##52571
 collect Wristwraps of Arrogant Doom##71350 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Earn the Hot Couture achievement |achieve 11755
 Click here to continue |confirm
 |only Mage
@@ -4507,7 +4507,7 @@ step
 kill Lord Rhyolith##52558
 collect Lava Line Wristbands##71009 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Earn the Hot Couture achievement |achieve 11755
 Click here to continue |confirm
 |only Shaman
@@ -4515,7 +4515,7 @@ step
 kill Shannox##Shannox
 collect Treads of Implicit Obedience##71027 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Earn the Hot Couture achievement |achieve 11755
 Click here to continue |confirm
 |only Shaman
@@ -4541,7 +4541,7 @@ step
 kill Beth'tilac##52498
 collect Arachnaflame Treads##71029 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Earn the Hot Couture achievement |achieve 11755
 Click here to continue |confirm
 |only DeathKnight
@@ -4549,7 +4549,7 @@ step
 kill Majordomo Staghelm##52571
 collect Bracers of the Fiery Path##70920 |n
 _Remember, equip all items to unlock the appearance for them_
-Refer to the Firelands raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands"
+Refer to the Firelands raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Firelands"
 Earn the Hot Couture achievement |achieve 11755
 Click here to continue |confirm
 |only DeathKnight
@@ -4557,7 +4557,7 @@ step
 Congratulations!
 You have earned the _Hot Couture_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Make it W-orc W-orc",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Make it W-orc W-orc",{
 achieveid={11740},
 author="support@zygorguides.com",
 startlevel=100,
@@ -4575,7 +4575,7 @@ step
 kill Kargath Bladefist##78714
 collect Treads of Sand and Blood##113595 |only Shaman |n
 If the boots didn't drop, there will be another chance for the appearance from the Operator Thogar in Blackrock Foundry |only Shaman
-Click here to load the Highmaul guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
+Click here to load the Highmaul guide |confirm |next "Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 |only Shaman
@@ -4585,7 +4585,7 @@ collect Bracers of Spare Skin##113634 |only Rogue |n
 collect Belt of Bloody Guts##113636 |only Druid |n
 collect Entrail Squishers##113633 |only DeathKnight |n
 If the boots didn't drop, there will be another chance for the appearance from Kromog in Blackrock Foundry|only DeathKnight
-Click here to load the Highmaul guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
+Click here to load the Highmaul guide |confirm |next "Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 |only Rogue, Druid
@@ -4595,7 +4595,7 @@ collect Fleshchewer Greatbelt##113659 |only Warrior |n
 collect Mosscrusher Sabatons##113660 |only Paladin |n
 collect Girdle of the Infected Mind##113656 |only Priest |n
 If the belt didn't drop, there will be another chance for the appearance from the trash in the Highmaul |only Priest
-Click here to load the Highmaul guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
+Click here to load the Highmaul guide |confirm |next "Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 |only Warrior, Paladin, Priest
@@ -4604,7 +4604,7 @@ kill Tectus##78948
 collect Mountainwalker's Boots##113649 |only Druid |n
 collect Crystal-Woven Bracers##113642 |only Mage |n
 If the bracer didn't drop, there will be another chance for the appearance from the trash in the Blackrock Foundry |only Mage
-Click here to load the Highmaul guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
+Click here to load the Highmaul guide |confirm |next "Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 |only Druid, Mage
@@ -4614,7 +4614,7 @@ collect Belt of Imminent Lies##113827 |only Hunter |n
 If the belt didn't drop, there will be another chance for the appearance from the trash in the Highmaul |only Hunter
 collect Bracers of the Crying Chorus##113826 |only Shaman |n
 If the bracers didn't drop, there will be another chance for the appearance from the Iron Maidens in Blackrock Foundry |only Shaman
-Click here to load the Highmaul guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
+Click here to load the Highmaul guide |confirm |next "Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 |only Hunter, Shaman
@@ -4623,7 +4623,7 @@ kill Ko'ragh##79015
 collect Bracers of Mirrored Flame##113844 |only Warrior |n
 collect Destablized Sandals##113840 |only Warlock |n
 If the boots didn't drop, there will be another chance for the appearance from the trash in the Blackrock Foundry |only Warlock
-Click here to load the Highmaul guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
+Click here to load the Highmaul guide |confirm |next "Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 |only Warrior, Warlock
@@ -4631,7 +4631,7 @@ step
 kill Imperator Mar'gok##77428
 collect Face Kickers##113849 |only Hunter |n
 If the boots didn't drop, there will be another chance for the appearance from Heart of the Mountain in Blackrock Foundry |only Hunter
-Click here to load the Highmaul guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
+Click here to load the Highmaul guide |confirm |next "Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 |only Hunter
@@ -4642,7 +4642,7 @@ If the belt didn't drop, there will be another chance for the appearance from Op
 collect Ripswallow Plate Belt##119337 |only Paladin |n
 If the belt didn't drop, there will be another chance for the appearance from the Iron Maidens from Blackrock Foundry |only Paladin
 collect Cord of Winsome Sorrows##119336 |only Priest |n
-Click here to load the Highmaul guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
+Click here to load the Highmaul guide |confirm |next "Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 |only Hunter, Paladin, Priest
@@ -4650,7 +4650,7 @@ step
 kill Gruul##76877
 collect Bracers of Martial Perfection##113871 |only Paladin |n
 collect Cavedweller's Climbers##113864 |only Priest |n
-Click here to load the Blackrock Foundry guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
+Click here to load the Blackrock Foundry guide |confirm |next "Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 |only Paladin, Priest
@@ -4667,14 +4667,14 @@ If the boots didn't drop, there will be another chance for the appearance from F
 collect Bracers of Spattered Steel##113887 |only Priest |n
 collect Fleshmelter Bracers##113896 |only DeathKnight |n
 If the bracers didn't drop, there will be another chance for the appearance from trash in Blackrock Foundry|only DeathKnight
-Click here to load the Blackrock Foundry guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
+Click here to load the Blackrock Foundry guide |confirm |next "Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 step
 kill Hans'gar##76973, Franzok##76974
 collect Gauntlets of Dramatic Blows##113906 |only DeathKnight |n
 If the bracers didn't drop, there will be another chance for the appearance from Beastlord Darmac in Blackrock Foundry |only DeathKnight
-Click here to load the Blackrock Foundry guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
+Click here to load the Blackrock Foundry guide |confirm |next "Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 |only DeathKnight
@@ -4687,7 +4687,7 @@ Use the Chest of the Iron Protector |use Chest of the Iron Protector##119318 |on
 collect Chest of the Iron Vanquisher##119315 |only Rogue, DeathKnight, Mage, Druid |n
 Use the Chest of the Iron Vanquisher |use the Chest of the Iron Vanquisher##119315 |only Rogue, DeathKnight, Mage, Druid
 collect Treads of Rekindled Flames##113919 |only Hunter |n
-Click here to load the Blackrock Foundry guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
+Click here to load the Blackrock Foundry guide |confirm |next "Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 step
@@ -4700,7 +4700,7 @@ collect Helm of the Iron Vanquisher##119312 |only Rogue, DeathKnight, Mage, Drui
 Use the Helm of the Iron Vanquisher |use Helm of the Iron Vanquisher##119312 |only Rogue, DeathKnight, Mage, Druid
 collect Earthgrasp Girdle##113930 |only Shaman |n
 Sabatons of Fractal Earth##113936 |only DeathKnight |n
-Click here to load the Blackrock Foundry guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
+Click here to load the Blackrock Foundry guide |confirm |next "Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 step
@@ -4710,7 +4710,7 @@ If the bracers didn't drop, there will be another chance for the appearance from
 collect Seeking Ember Girdle##113941 |only Warlock |n
 collect Inferno Breath Sandals##113942 |only Mage |n
 collect Ironcrusher's Collar##113950 |only DeathKnight |n
-Click here to load the Blackrock Foundry guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
+Click here to load the Blackrock Foundry guide |confirm |next "Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 |only Hunter, Warlock, Mage
@@ -4731,7 +4731,7 @@ collect Squire's Electroplated Bracers##113962 |only Druid |n
 If the bracers didn't drop, there will be another chance for the appearance from the trash in the Blackrock Foundry |only Druid
 collect Railwalker's Ratcheted Boots##113954 |only Shaman |n
 If the boots didn't drop, there will be another chance for the appearance from the trash in the Blackrock Foundry |only Shaman
-Click here to load the Blackrock Foundry guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
+Click here to load the Blackrock Foundry guide |confirm |next "Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 step
@@ -4747,7 +4747,7 @@ collect Treads of the Dark Hunt##113974 |only Rogue |n
 If the boots didn't drop, there will be another chance for the appearance from trash in the Blackrock Foundry |only Rogue
 collect Deckhand's Rope Belt##113967 |only Mage |n
 collect Bloodwhirl Bracers##113968 |only Shaman |n
-Click here to load the Blackrock Foundry guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
+Click here to load the Blackrock Foundry guide |confirm |next "Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 step
@@ -4760,7 +4760,7 @@ collect Bracers of Shattered Limbs##119333 |only Druid |n
 collect Bracers of Darkened Skies##119332 |only Mage |n
 collect Treads of the Veteran Smith##119339 |only Shaman |n
 collect Bracers of Visceral Force##119331 |only DeathKnight |n
-Click here to load the Blackrock Foundry guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
+Click here to load the Blackrock Foundry guide |confirm |next "Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
 Earn the Make it W-orc W-orc Achievement |achieve 11740 |next "End"
 Click here to continue |confirm
 |only Warrior, Hunter, Warlock, Rogue, Druid, Mage, DeathKnight
@@ -4776,7 +4776,7 @@ label "End"
 Congratulations!
 You have earned the _Make it W-orc W-orc_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Merely a Set",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Merely a Set",{
 achieveid={11747},
 author="support@zygorguides.com",
 startlevel=70,
@@ -4794,14 +4794,14 @@ If you need more pieces, click here |confirm
 step
 kill High King Maulgar##18831
 |tip High King Maulgar drops Belt of Divine Inspiration.
-Click here to load the "Gruul's Lair" guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Gruul's Lair"
+Click here to load the "Gruul's Lair" guide |confirm |next "Dungeon Guides\\Outland Raids\\Gruul's Lair"
 Earn the _Merely a Set_ achievement |achieve 11747 |goto Gruul's Lair/1 55,57
 If you need more pieces, click here |confirm
 |only Priest
 step
 kill Hydross the Unstable##21216
 |tip Hydross drops Boots of the Shifting Nightmare.
-Click here to load the "Serpentshrine Cavern" guide |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to load the "Serpentshrine Cavern" guide |confirm |next "Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
 Earn the _Merely a Set_ achievement |achieve 11747 |goto Serpentshrine Cavern 36.8,84.8
 If you need more pieces, click here |confirm
 |only Warlock
@@ -4811,21 +4811,21 @@ kill The Lurker Below##21217
 |tip The Lurker Below drops Boots of Effortless Striking. |only Rogue
 |tip The Lurker Below drops Tempest-Strider Boots. |only Shaman
 |tip The Lurker Below drops Velvet Boots of the Guardian. |only Mage
-Click here to load the "Serpentshrine Cavern" guide |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to load the "Serpentshrine Cavern" guide |confirm |next "Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
 Earn the _Merely a Set_ achievement |achieve 11747 |goto 40,58
 If you need more pieces, click here |confirm
 step
 kill Leotheras the Blind##21215
 |tip Leotheras drops glove piece tokens.
 |tip Leotheras drops Orca-Hide Boots. |only Druid
-Click here to load the "Serpentshrine Cavern" guide |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to load the "Serpentshrine Cavern" guide |confirm |next "Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
 Earn the _Merely a Set_ achievement |achieve 11747 |goto 41.3,26.2
 If you need more pieces, click here |confirm
 step
 kill Fathom-Lord Karathress##21214
 |tip Karathress drops leg piece tokens.
 |tip Karathress drops Soul-Strider Boots. |only Priest
-Click here to load the "Serpentshrine Cavern" guide |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to load the "Serpentshrine Cavern" guide |confirm |next "Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
 Earn the _Merely a Set_ achievement |achieve 11747 |goto 48,17
 If you need more pieces, click here |confirm
 step
@@ -4833,20 +4833,20 @@ kill Lady Vashj##21212
 |tip Lady Vashj drops head piece tokens.
 |tip Lady Vashj drops Cobra-Lash Boots. |only Hunter
 |tip Lady Vashj drops Belt of One-Hundred Deaths. |only Rogue
-Click here to load the "Serpentshrine Cavern" guide |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to load the "Serpentshrine Cavern" guide |confirm |next "Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
 Earn the _Merely a Set_ achievement |achieve 11747 |goto 71.8,59.1
 If you need more pieces, click here |confirm
 step
 Kill trash inside of "The Serpentshrine Cavern" raid
 |tip Trash drops Boots of Courage Unending.
-Click here to load the "Serpentshrine Cavern" guide |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to load the "Serpentshrine Cavern" guide |confirm |next "Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
 Earn the _Merely a Set_ achievement |achieve 11747
 If you need more pieces, click here |confirm
 |only Paladin
 step
 kill Al'ar##19514
 |tip Al'ar drops Mindstorm Wristbands.
-Click here to load "The Eye" guide |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\The Eye"
+Click here to load "The Eye" guide |confirm |next "Horde Dungeon Guides\\Raids\\Outland\\The Eye"
 Earn the _Merely a Set_ achievement |achieve 11747 |goto Tempest Keep 45.4,59.2
 If you need more pieces, click here |confirm
 |only Mage
@@ -4854,26 +4854,26 @@ step
 kill High Astromancer Solarian##18805
 |tip Solarian drops Girdle of the Righteous Path. |only Paladin
 |tip Solarian drops Boots of the Resilient. |only Warrior
-Click here to load "The Eye" guide |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\The Eye"
+Click here to load "The Eye" guide |confirm |next "Horde Dungeon Guides\\Raids\\Outland\\The Eye"
 Earn the _Merely a Set_ achievement |achieve 11747 |goto 73.8,49.2
 If you need more pieces, click here |confirm
 step
 kill Void Reaver##19516
 |tip Void Reaver drops shoulder piece tokens.
 |tip Void Reaver drops Wristguards of Determination. |only Warrior
-Click here to load "The Eye" guide |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\The Eye"
+Click here to load "The Eye" guide |confirm |next "Horde Dungeon Guides\\Raids\\Outland\\The Eye"
 Earn the _Merely a Set_ achievement |achieve 11747 |goto 25.4,49.6
 If you need more pieces, click here |confirm
 step
 kill Kael'thas Sunstrider##19622
 |tip Kael'thas drops chest piece tokens.
-Click here to load "The Eye" guide |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\The Eye"
+Click here to load "The Eye" guide |confirm |next "Horde Dungeon Guides\\Raids\\Outland\\The Eye"
 Earn the _Merely a Set_ achievement |achieve 11747 |goto 50.0,15.0
 If you need more pieces, click here |confirm
 step
 Kill trash inside of "The Eye" raid
 |tip Trash drops Bands of the Celestial Archer.
-Click here to load the "The Eye" guide |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\The Eye"
+Click here to load the "The Eye" guide |confirm |next "Horde Dungeon Guides\\Raids\\Outland\\The Eye"
 Earn the _Merely a Set_ achievement |achieve 11747
 If you need more pieces, click here |confirm
 |only Hunter
@@ -4914,7 +4914,7 @@ step
 Congratulations!
 You have earned the _Merely a Set_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Mogg-Saron",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Mogg-Saron",{
 achieveid={11751},
 author="support@zygorguides.com",
 startlevel=80,
@@ -4959,7 +4959,7 @@ step
 kill Yogg-Saron##33288
 25-Man: Shoulder token drops here
 Use the Mantle of the Wayward Protector if it dropped |use Mantle of the Wayward Protector##45657
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Hunter
@@ -4986,7 +4986,7 @@ Click here to continue |confirm
 step
 For Damek to appear, you will need 425 _Marks of the World Tree_, which are gathered from Molten Front Offensive dailies
 You will need to complete the quests "Druids of the Talon", "The Shadow Wardens" and "Additional Armaments"
-Click here to load the Fireland Dailies and Prequest guide |next "Zygor's Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\Firelands Dailies with Pre-Quests"
+Click here to load the Fireland Dailies and Prequest guide |next "Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\Firelands Dailies with Pre-Quests"
 buy Rickety Belt##70120 |condition itemcount(70120) == 1 |goto Molten Front 47.0,90.6
 buy Ricket's Gun Show##70121 |condition itemcount(70121) == 1 |goto Molten Front 47.0,90.6
 Earn the Mogg-Saron Achievement |achieve 11751
@@ -4994,14 +4994,14 @@ Earn the Mogg-Saron Achievement |achieve 11751
 step
 kill Mimiron##33350
 25-Man: Glove token drops here
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Paladin
 step
 kill Freya##32906
 25-Man: Leg token drops here
-Click here to load the Ulduar guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Paladin
@@ -5009,7 +5009,7 @@ step
 kill Yogg-Saron##33288
 25-Man: Shoulder token drops here
 Use the Chestguard of the Wayward Conqueror if it dropped |use Chestguard of the Wayward Conqueror##45635
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Paladin
@@ -5038,21 +5038,21 @@ Click here to continue |confirm
 step
 kill Freya##32906
 25-Man: Leg token drops here
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Warrior
 step
 kill Mimiron##33350
 25-Man: Glove token drops here
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Warrior
 step
 kill Yogg-Saron##33288
 25-Man: Shoulder token drops here
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Warrior
@@ -5082,7 +5082,7 @@ step
 kill Freya##32906
 25-Man: Leg token drops here
 Use the Legplates of the Wayward Conqueror |use Legplates of the Wayward Conqueror##45653
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Warlock
@@ -5090,7 +5090,7 @@ step
 kill Mimiron##33350
 25-Man: Glove token drops here
 Use the Gauntlets of the Wayward Conqueror |use Gauntlets of the Wayward Conqueror##45641
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Warlock
@@ -5098,7 +5098,7 @@ step
 kill Yogg-Saron##33288
 25-Man: Shoulder token drops here
 Use the Mantle of the Wayward Conqueror |use Mantle of the Wayward Conqueror##45656
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Warlock
@@ -5126,7 +5126,7 @@ step
 kill Freya##32906
 25-Man: Leg token drops here
 Use the Legplates of the Wayward Conqueror |use Legplates of the Wayward Conqueror##45653
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Rogue
@@ -5134,7 +5134,7 @@ step
 kill Mimiron##33350
 25-Man: Glove token drops here
 Use the Gauntlets of the Wayward Conqueror |use Gauntlets of the Wayward Conqueror##45641
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Rogue
@@ -5142,7 +5142,7 @@ step
 kill Yogg-Saron##33288
 25-Man: Shoulder token drops here
 Use the Mantle of the Wayward Conqueror |use Mantle of the Wayward Conqueror##45656
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Rogue
@@ -5170,7 +5170,7 @@ step
 kill Freya##32906
 25-Man: Leg token drops here
 Use the Legplates of the Wayward Conqueror |use Legplates of the Wayward Conqueror##45653
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Priest
@@ -5178,7 +5178,7 @@ step
 kill Mimiron##33350
 25-Man: Glove token drops here
 Use the Gauntlets of the Wayward Conqueror |use Gauntlets of the Wayward Conqueror##45641
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Priest
@@ -5186,7 +5186,7 @@ step
 kill Yogg-Saron##33288
 25-Man: Shoulder token drops here
 Use the Mantle of the Wayward Conqueror |use Mantle of the Wayward Conqueror##45656
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Priest
@@ -5214,7 +5214,7 @@ step
 kill Freya##32906
 25-Man: Leg token drops here
 Use the Legplates of the Wayward Conqueror |use Legplates of the Wayward Conqueror##45653
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Druid
@@ -5222,7 +5222,7 @@ step
 kill Mimiron##33350
 25-Man: Glove token drops here
 Use the Gauntlets of the Wayward Conqueror |use Gauntlets of the Wayward Conqueror##45641
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Druid
@@ -5230,7 +5230,7 @@ step
 kill Yogg-Saron##33288
 25-Man: Shoulder token drops here
 Use the Mantle of the Wayward Conqueror |use Mantle of the Wayward Conqueror##45656
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Druid
@@ -5258,7 +5258,7 @@ step
 kill Freya##32906
 25-Man: Leg token drops here
 Use the Legplates of the Wayward Conqueror |use Legplates of the Wayward Conqueror##45653
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Mage
@@ -5266,7 +5266,7 @@ step
 kill Mimiron##33350
 25-Man: Glove token drops here
 Use the Gauntlets of the Wayward Conqueror |use Gauntlets of the Wayward Conqueror##45641
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Mage
@@ -5274,7 +5274,7 @@ step
 kill Yogg-Saron##33288
 25-Man: Shoulder token drops here
 Use the Mantle of the Wayward Conqueror |use Mantle of the Wayward Conqueror##45656
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Mage
@@ -5300,7 +5300,7 @@ step
 kill Freya##32906
 25-Man: Leg token drops here
 Use the Legplates of the Wayward Conqueror |use Legplates of the Wayward Conqueror##45653
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Shaman
@@ -5308,7 +5308,7 @@ step
 kill Mimiron##33350
 25-Man: Glove token drops here
 Use the Gauntlets of the Wayward Conqueror |use Gauntlets of the Wayward Conqueror##45641
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Shaman
@@ -5316,7 +5316,7 @@ step
 kill Yogg-Saron##33288
 25-Man: Shoulder token drops here
 Use the Mantle of the Wayward Conqueror |use Mantle of the Wayward Conqueror##45656
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only Shaman
@@ -5344,7 +5344,7 @@ step
 kill Freya##32906
 25-Man: Leg token drops here
 Use the Legplates of the Wayward Conqueror |use Legplates of the Wayward Conqueror##45653
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only DeathKnight
@@ -5352,7 +5352,7 @@ step
 kill Mimiron##33350
 25-Man: Glove token drops here
 Use the Gauntlets of the Wayward Conqueror |use Gauntlets of the Wayward Conqueror##45641
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only DeathKnight
@@ -5360,7 +5360,7 @@ step
 kill General Vezax##33271
 25-man:
 collect Boots of the Underdweller##45501 |condition itemcount(45501) == 1
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 Click here to continue |confirm
@@ -5369,7 +5369,7 @@ step
 kill Yogg-Saron##33288
 25-Man: Shoulder token drops here
 Use the Mantle of the Wayward Conqueror |use Mantle of the Wayward Conqueror##45656
-Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to load the Ulduar Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 |only DeathKnight
@@ -5377,7 +5377,7 @@ step
 Congratulations!
 You have earned the _Mogg-Saron_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Outlandish Style",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Outlandish Style",{
 achieveid={11746},
 author="support@zygorguides.com",
 startlevel=70,
@@ -5398,7 +5398,7 @@ kill Attumen the Huntsman##16152
 |tip Attumen drops Stalker's War Bands. |only Hunter
 |tip Attumen drops Whirlwind Bracers. |only Shaman
 |tip Attumen drops Bracers of the White Stag. |only Druid
-Click here to load the Karazhan guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+Click here to load the Karazhan guide |confirm |next "Dungeon Guides\\Outland Raids\\Karazhan"
 Earn the _Outlandish Style_ achievement |achieve 11746 |goto Karazhan/1 42.3,86.2
 If you need more pieces, click here |confirm
 step
@@ -5406,7 +5406,7 @@ kill Moroes##15687
 |tip Moroes drops Nethershard Girdle. |only Mage
 |tip Moroes drops Boots of Valiance. |only Paladin
 |tip Moroes drops Belt of Gale Force. |only Shaman
-Click here to load the Karazhan guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+Click here to load the Karazhan guide |confirm |next "Dungeon Guides\\Outland Raids\\Karazhan"
 Earn the _Outlandish Style_ achievement |achieve 11746 |goto Karazhan/3 28.2,64.2
 If you need more pieces, click here |confirm
 step
@@ -5415,13 +5415,13 @@ kill Maiden of Virtue##16457
 |tip Maiden of Virtue drops Bracers of Maliciousness. |only Rogue
 |tip Maiden of Virtue drops Bands of Indwelling. |only Priest
 |tip Maiden of Virtue drops Bands of Nefarious Deeds. |only Warlock
-Click here to load the Karazhan guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+Click here to load the Karazhan guide |confirm |next "Dungeon Guides\\Outland Raids\\Karazhan"
 Earn the _Outlandish Style_ achievement |achieve 11746 |goto Karazhan/4 82.5,48.5
 If you need more pieces, click here |confirm
 step
 kill The Curator##15691
 |tip The Curator drops glove pieces.
-Click here to load the Karazhan guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+Click here to load the Karazhan guide |confirm |next "Dungeon Guides\\Outland Raids\\Karazhan"
 Earn the _Outlandish Style_ achievement |achieve 11746 |goto Karazhan/9 46.8,31.9
 If you need more pieces, click here |confirm
 step
@@ -5429,7 +5429,7 @@ kill Terestian Illhoof##15688
 |tip The Curator drops Cincture of Will. |only Priest
 |tip The Curator drops Terestian Illhoof. |only Druid
 |tip The Curator drops Malefic Girdle. |only Warlock
-Click here to load the Karazhan guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+Click here to load the Karazhan guide |confirm |next "Dungeon Guides\\Outland Raids\\Karazhan"
 Earn the _Outlandish Style_ achievement |achieve 11746 |goto Karazhan/11 53,69
 If you need more pieces, click here |confirm
 step
@@ -5437,13 +5437,13 @@ kill Shade of Aran##16524
 |tip Shade of Aran drops Rapscallion Boots. |only Rogue
 |tip Shade of Aran drops Boots of the Incorrupt. |only Priest
 |tip Shade of Aran drops Boots of the Infernal Coven. |only Warlock
-Click here to load the Karazhan guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+Click here to load the Karazhan guide |confirm |next "Dungeon Guides\\Outland Raids\\Karazhan"
 Earn the _Outlandish Style_ achievement |achieve 11746 |goto Karazhan/10 71.1,26.6
 If you need more pieces, click here |confirm
 step
 kill Netherspite##15689
 |tip Netherspite drops Girdle of Truth.
-Click here to load the Karazhan guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+Click here to load the Karazhan guide |confirm |next "Dungeon Guides\\Outland Raids\\Karazhan"
 Earn the _Outlandish Style_ achievement |achieve 11746 |goto Karazhan/13 36.6,43.6
 If you need more pieces, click here |confirm
 |only Paladin
@@ -5453,32 +5453,32 @@ Defeat the Chess Event in Karazhan
 |tip Chess drops Girdle of Treachery. |only Rogue
 |tip Chess drops Fiend Slayer Boots. |only Hunter
 |tip Chess drops Forestlord Striders. |only Druid
-Click here to load the Karazhan guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+Click here to load the Karazhan guide |confirm |next "Dungeon Guides\\Outland Raids\\Karazhan"
 Earn the _Outlandish Style_ achievement |achieve 11746 |goto Karazhan/14 39.4,67.6
 If you need more pieces, click here |confirm
 step
 kill Prince Malchezaar##15690
 |tip Prince Malchezaar drops head piece tokens.
-Click here to load the Karazhan guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+Click here to load the Karazhan guide |confirm |next "Dungeon Guides\\Outland Raids\\Karazhan"
 Earn the _Outlandish Style_ achievement |achieve 11746 |goto Karazhan/14 53.9,42.0
 If you need more pieces, click here |confirm
 step
 kill High King Maulgar##18831
 |tip Maulgar drops shoulder piece tokens.
-Click here to load the Gruul's Lair guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Gruul's Lair"
+Click here to load the Gruul's Lair guide |confirm |next "Dungeon Guides\\Outland Raids\\Gruul's Lair"
 Earn the _Outlandish Style_ achievement |achieve 11746 |goto Gruul's Lair/1 55,57
 If you need more pieces, click here |confirm
 step
 kill Gruul the Dragonkiller##19044
 |tip Gruul drops leg piece tokens.
-Click here to load the Gruul's Lair guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Gruul's Lair"
+Click here to load the Gruul's Lair guide |confirm |next "Dungeon Guides\\Outland Raids\\Gruul's Lair"
 Windshear Boots also drop here |only Shaman
 Earn the _Outlandish Style_ achievement |achieve 11746 |goto Gruul's Lair/1 21,27
 If you need more pieces, click here |confirm
 step
 kill Magtheridon##17257
 |tip Magtheridon drops chest piece tokens.
-Click here to load the Magtheridon's Lair guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Magtheridon's Lair"
+Click here to load the Magtheridon's Lair guide |confirm |next "Dungeon Guides\\Outland Raids\\Magtheridon's Lair"
 Earn the _Outlandish Style_ achievement |achieve 11746 |goto Magtheridon's Lair/1 68,78
 If you need more pieces, click here |confirm
 step
@@ -5504,7 +5504,7 @@ step
 Congratulations!
 You have earned the _Outlandish Style_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Retro Trend",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Retro Trend",{
 achieveid={11760},
 author="support@zygorguides.com",
 startlevel=110,
@@ -5531,7 +5531,7 @@ collect Spirebreaker Harness##147027 |only Monk |n
 If the chest didn't drop, you can also get the appearance from Maiden of Vigilance |only Monk
 collect Lava-Slough Legguards##147065 |only DeathKnight |n
 If the legs didn't drop, you can also get the appearance from Mistress Sassz'ine |only DeathKnight
-Click here to load the Tomb of Sargeras guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the Tomb of Sargeras guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 Earn the Retro Trend Achievement |achieve 11760 |next "End"
 Click here to continue |confirm
 |only Hunter, Rogue, Warlock, Monk, DeathKnight
@@ -5571,7 +5571,7 @@ If the gloves didn't drop, you can also get the appearance from the World Boss B
 collect Glacier Walkers##147029 |only DemonHunter |n
 collect Gravewarden Handguards##147123 |only DeathKnight |n
 If the gloves didn't drop, you can also get the appearance from the World Boss Brutallus in the Broken Shore |only DeathKnight
-Click here to load the Tomb of Sargeras guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the Tomb of Sargeras guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 Earn the Retro Trend Achievement |achieve 11760 |next "End"
 Click here to continue |confirm
 step
@@ -5603,7 +5603,7 @@ If the legs didn't drop, you can also get the appearance from Atrigan and Belac 
 collect Demonbane Leggings##147131 |only DemonHunter |n
 If the legs didn't drop, you can also get the appearance from the World Boss Malificus in the Broken Shore |only DemonHunter
 collect Gravewarden Legplates##147125 |only DeathKnight
-Click here to load the Tomb of Sargeras guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the Tomb of Sargeras guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 Earn the Retro Trend Achievement |achieve 11760 |next "End"
 Click here to continue |confirm
 step
@@ -5640,7 +5640,7 @@ collect Demonbane Faceguard##147130 |only DemonHunter |n
 collect Gravewarden Visage##147124 |only DeathKnight |n
 If the helm didn't drop, you can also get the appearance from the Engine of Souls |only DeathKnight
 collect Bonemeal-Crusted Armplates##147073 |only DeathKnight |n
-Click here to load the Tomb of Sargeras guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the Tomb of Sargeras guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 Earn the Retro Trend Achievement |achieve 11760 |next "End"
 Click here to continue |confirm
 step
@@ -5656,7 +5656,7 @@ If the belt didn't drop, you can also get the appearance from trash in the Tomb 
 collect Shoulderpads of Whispering Twilight##146997 |only Warlock |n
 If the shoulders didn't drop, you can also get the appearance from the Fallen Avatar |only Warlock
 collect Moonfire Stranglers##147031 |only Druid |n
-Click here to load the Tomb of Sargeras guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the Tomb of Sargeras guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 Earn the Retro Trend Achievement |achieve 11760 |next "End"
 Click here to continue |confirm
 step
@@ -5681,7 +5681,7 @@ collect Gravewarden Cloak##147122 |only DeathKnight |n
 collect Armet of the Rotten Mind##147063 |only DeathKnight |n
 collect Grave-Dredged Pauldrons##147070 |only DeathKnight |n
 If the shoulders didn't drop, you can also get the appearance from the Fallen Avatar##120436 |only DeathKnight
-Click here to load the Tomb of Sargeras guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the Tomb of Sargeras guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 Earn the Retro Trend Achievement |achieve 11760 |next "End"
 Click here to continue |confirm
 step
@@ -5706,7 +5706,7 @@ If the chest didn't drop, you can also get the appearance from the World Boss Si
 collect Demonbane Harness##147127 |only DemonHunter |n
 collect Gravewarden Chestplate##147121 |only DeathKnight |n
 If the chest didn't drop, you can also get the appearance from the World Boss Si'vash in the Broken Shore |only DeathKnight
-Click here to load the Tomb of Sargeras guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the Tomb of Sargeras guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 Earn the Retro Trend Achievement |achieve 11760 |next "End"
 Click here to continue |confirm
 step
@@ -5734,7 +5734,7 @@ collect Bracers of Rippling Darkness##147042 |only Druid |n
 collect Demonbane Shoulderpads##147132 |only DemonHunter |n
 If the shoulders didn't drop, you can also get appearance from trash in the Tomb of Sargeras |only DemonHunter
 collect Gravewarden Pauldrons##147126 |only DeathKnight |n
-Click here to load the Tomb of Sargeras guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the Tomb of Sargeras guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 Earn the Retro Trend Achievement |achieve 11760 |next "End"
 Click here to continue |confirm
 step
@@ -5747,7 +5747,7 @@ collect Vicegrip of the Unrepentant##147048 |only Shaman |n
 collect Gloves of Furtive Oppression##146988 |only Warlock |n
 collect Waistguard of Profane Duplicity##147347 |only DemonHunter |n
 collect Soul-Render's Greatbelt##147072 |only DeathKnight |n
-Click here to load the Tomb of Sargeras guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the Tomb of Sargeras guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 Earn the Retro Trend Achievement |achieve 11760 |next "End"
 Click here to continue |confirm
 step
@@ -5766,14 +5766,14 @@ collect Cord of Pilfered Rosaries##147425 |only Monk |n
 collect Treads of Violent Intrusion##147424 |only Monk |n
 collect Wakening Horror Spaulders##147038 |only DemonHunter |n
 collect Spiked Terrorwake Greatboots##147428 |only DeathKnight |n
-Click here to load the Tomb of Sargeras guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the Tomb of Sargeras guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 Earn the Retro Trend Achievement |achieve 11760 |next "End"
 Click here to continue |confirm
 step
 kill Malificus##117303
 This is a World Boss, so if it's not available you will need to wait
 collect Cuffs of Fearful Service##147735 |goto Broken Shore/0 60.6,28.2 |only Mage |n
-Click here to load the Tomb of Sargeras guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the Tomb of Sargeras guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 Earn the Retro Trend Achievement |achieve 11760 |next "End"
 Click here to continue |confirm
 |only Mage
@@ -5781,7 +5781,7 @@ step
 kill Apocron##147738
 This is a World Boss, so if it's not available you will need to wait
 collect Doom-Herald's Footpads##147738 |only Druid |n
-Click here to load the Tomb of Sargeras guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the Tomb of Sargeras guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 Earn the Retro Trend Achievement |achieve 11760 |next "End"
 Click here to continue |confirm
 |only Druid
@@ -5796,7 +5796,7 @@ label "End"
 Congratulations!
 You have earned the _Retro Trend_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Sha of Fabulous",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Sha of Fabulous",{
 achieveid={11757},
 author="support@zygorguides.com",
 startlevel=90,
@@ -5820,7 +5820,7 @@ If the boots don't drop, there will be another chance for the appearance from Ga
 collect Bracers of Defiled Earth##86230 |only DeathKnight |n
 collect Deepwater Greatboots##86232 |only DeathKnight |n
 If the boots don't drop, there will be another chance for the appearance from Galleon in Valley of the Four Winds |only DeathKnight
-Click here to load the Terrace of Endless Spring guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
+Click here to load the Terrace of Endless Spring guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
 Earn the Sha of Fabulous Achievement |achieve 11757
 Click here to continue |confirm
 |only Priest, Druid, Priest, Shaman, DeathKnight
@@ -5832,7 +5832,7 @@ collect Sandals of the Blackest Night##86330 |only Warlock |n
 If Tsulong does reward the sandals, there will be another chance from Garalon in Heart of Fear |only Warlock
 collect Belt of Embodied Terror##86326 |only Priest |n
 If the belt doesn't drop from Tsulong's Cache, Galleon in Valley of the Four Winds also drops an identical appearance |only Priest
-Click here to load the Terrace of Endless Spring guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
+Click here to load the Terrace of Endless Spring guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
 Earn the Sha of Fabulous Achievement |achieve 11757
 Click here to continue |confirm
 |only Paladin, Warlock, Priest
@@ -5855,7 +5855,7 @@ collect Sorcerer's Belt of Final Winter##86339 |only Mage |n
 collect Binder's Chain of Unending Summer##86342 |only Shaman |n
 If the waist doesn't drop, Galleon in Valley of the Four Winds has a chance to reward this appearance |only Shaman
 collect Patroller's Girdle of Endless Spring##86385 |only DeathKnight |n
-Click here to load the Terrace of Endless Spring guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
+Click here to load the Terrace of Endless Spring guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
 Earn the Sha of Fabulous Achievement |achieve 11757
 Click here to continue |confirm
 step
@@ -5866,7 +5866,7 @@ collect Helm of the Shadowy Conqueror##89235 |only Paladin, Priest, Warlock |n
 Use the Helm of the Shadowy Conqueror |use Helm of the Shadowy Conqueror##89235 |only Paladin, Priest, Warlock
 collect Helm of the Shadowy Vanquisher##89234 |only Rogue, DeathKnight, Mage, Druid |n
 Use Helm of the Shadowy Vanquisher |use Helm of the Shadowy Vanquisher##89234 |only Rogue, DeathKnight, Mage, Druid
-Click here to load the Terrace of Endless Spring guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
+Click here to load the Terrace of Endless Spring guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
 Earn the Sha of Fabulous Achievement |achieve 11757
 Click here to continue |confirm
 step
@@ -5880,7 +5880,7 @@ collect Scent-Soaked Sandals##89829 |only Priest |n
 If the boots don't drop here, Galleon in Valley of the Four Winds has a chance to drop the appearance |only Priest
 collect Warbelt of Sealed Pods##89826 |only DeathKnight |n
 If the belt doesn't drop, there will be another chance for the appearance from Galleon in Valley of the Four Winds |only DeathKnight
-Click here to load the Terrace of Endless Spring guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
+Click here to load the Terrace of Endless Spring guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
 Earn the Sha of Fabulous Achievement |achieve 11757
 Click here to continue |confirm
 |only Warlock, Rogue, Priest, DeathKnight
@@ -5895,14 +5895,14 @@ collect Boots of the Blowing Wind##86167 |only Mage |n
 If the boots don't drop, Galleon in the Valley of the Four Winds has a chance to drop the appearance |only Mage
 collect Bracers of Tempestuous Fury##86168 |only Shaman |n
 If the bracers don't drop, the appearance can also be attained through trash in the Heart of Fear |only Shaman
-Click here to load the Terrace of Endless Spring guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
+Click here to load the Terrace of Endless Spring guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
 Earn the Sha of Fabulous Achievement |achieve 11757
 Click here to continue |confirm
 |only Warrior, Rogue, Mage, Shaman
 step
 kill Garalon##62164
 collect Sandals of the Unbidden##86178 |only Warlock |n
-Click here to load the Terrace of Endless Spring guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
+Click here to load the Terrace of Endless Spring guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
 Earn the Sha of Fabulous Achievement |achieve 11757
 Click here to continue |confirm
 |only Warlock
@@ -5916,7 +5916,7 @@ collect Gauntlets of the Shadowy Vanquisher##89242 |only Rogue, DeathKnight, Mag
 Use the Gauntlets of the Shadowy Vanquisher |use Gauntlets of the Shadowy Vanquisher##89242  |only Rogue, DeathKnight, Mage, Druid
 collect Impaling Treads##86201 |only Warrior |n
 If Wind Lord Mel'jarak doesn't drop the boots, Galleon in the Valley of the Four Winds drops a pair that are identical |only Warrior
-Click here to load the Heart of Fear guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Heart of Fear"
+Click here to load the Heart of Fear guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Heart of Fear"
 Earn the Sha of Fabulous Achievement |achieve 11757
 Click here to continue |confirm
 step
@@ -5931,7 +5931,7 @@ collect Monstrous Stompers##86214 |only Hunter |n
 If Amber-Shaper Un'sok doesn't drop the boots, Galleon in the Valley of the Four Winds drops a pair that are identical |only Hunter
 collect Belt of Malleable Amber##86210 |only Warlock |n
 If Amber-Shaper Un'sok doesn't drop the belt, Galleon in the Valley of the Four Winds drops one that is identical |only Warlock
-Click here to load the Heart of Fear guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Heart of Fear"
+Click here to load the Heart of Fear guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Heart of Fear"
 Earn the Sha of Fabulous Achievement |achieve 11757
 Click here to continue |confirm
 step
@@ -5942,7 +5942,7 @@ collect Chest of the Shadowy Vanquisher##89239 |only Rogue, DeathKnight, Mage, D
 Use the Chest of the Shadowy Vanquisher |use Chest of the Shadowy Vanquisher##89239 |only Rogue, DeathKnight, Mage, Druid
 collect Chest of the Shadowy Conqueror##89237 |only Paladin, Priest, Warlock |n
 Use the Chest of the Shadowy Conqueror |use Chest of the Shadowy Conqueror##89237 |only Paladin, Priest, Warlock
-Click here to load the Heart of Fear guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Heart of Fear"
+Click here to load the Heart of Fear guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Heart of Fear"
 Earn the Sha of Fabulous Achievement |achieve 11757
 Click here to continue |confirm
 step
@@ -5955,7 +5955,7 @@ collect Pearlescent Butterfly Wristbands##86187 |only Druid |n
 collect Shining Cicada Bracers##86170 |only Mage |n
 collect Luminescent Firefly Wristguards##86184 |only Shaman |n
 The Bracers drop from trash in the Heart of Fear
-Click here to load the Heart of Fear guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Heart of Fear"
+Click here to load the Heart of Fear guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Heart of Fear"
 Earn the Sha of Fabulous Achievement |achieve 11757
 Click here to continue |confirm
 |only Hunter, Paladin, Warrior, Warlock, Priest, Druid, Mage, Shaman
@@ -5977,7 +5977,7 @@ collect Cord of Crazed Strength##90456 |only Warrior |n
 collect Silverspur Warboots##90446 |only Warrior |n
 collect Treads of Gentle Nudges##90444 |only Hunter |n
 collect Belt of Detonation##90449 |only Warlock |n
-Click here to load the Heart of Fear guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Heart of Fear"
+Click here to load the Heart of Fear guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Heart of Fear"
 Earn the Sha of Fabulous Achievement |achieve 11757
 Click here to continue |confirm
 step
@@ -5992,7 +5992,7 @@ label "End"
 Congratulations!
 You have earned the _Sha of Fabulous_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Style of the Crusader",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Style of the Crusader",{
 achieveid={11752},
 author="support@zygorguides.com",
 startlevel=80,
@@ -6023,7 +6023,7 @@ kill Gormok the Impaler##34796
 collect Boneshatter Armplates##46961 |n
 collect Girdle of the Impaler##47614 |n
 |tip These can be acquired from both 10-man and 25-man raids.
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Warrior
@@ -6031,7 +6031,7 @@ step
 kill Anub'arak##34564
 collect Greaves of the 7th Legion##47150 |n
 |tip These can be acquired from both 10-man and 25-man raids.
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Warrior
@@ -6053,7 +6053,7 @@ kill Gormok the Impaler##34796
 collect Dreadscale Armguards##47611 |n
 collect Boots of the Courageous##46985 |n
 |tip These can be acquired from both 10-man and 25-man raids.
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Paladin
@@ -6061,7 +6061,7 @@ step
 kill Anub'arak##34564
 collect Belt of the Forgotton Martyr##47195 |n
 |tip These can be acquired from both 10-man and 25-man raids.
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Paladin
@@ -6078,21 +6078,21 @@ Click here to continue |confirm
 step
 kill Icehowl##34797
 collect Armbands of the Northern Stalker##47610 |n
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Hunter
 step
 kill Eydis Darkbane##34496, Fjola Lightbane##34497
 collect Sabatons of Ruthless Judgment##47106 |n
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Hunter
 step
 kill Anub'arak##34564
 collect Belt of Deathly Dominion##47152 |n
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Hunter
@@ -6109,21 +6109,21 @@ Click here to continue |confirm
 step
 kill Lord Jaraxxus##34780
 collect Felspark Bindings##47663
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Warlock
 step
 kill Icehowl##34797
 collect Icehowl Cinch##47617
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Warlock
 step
 kill Anub'arak##34564
 collect Boots of the Icy Floe##47321
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Warlock
@@ -6140,7 +6140,7 @@ Click here to continue |confirm
 step
 kill Lord Jaraxxus##34780
 collect Bracers of the Autmn Willow##47055
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Rogue
@@ -6148,14 +6148,14 @@ step
 Defeat the Faction Champions
 click Champions' Cache##195709
 collect Treads of the Icewalker##47071
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Rogue
 step
 kill Fjola Lightbane##34497, Eydis Darkbane##34496
 collect Belt of the Merciless Killer##47107
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Rogue
@@ -6166,14 +6166,14 @@ buy Velen's Handwraps of Conquest##48072 |goto 43.71,48.54
 buy Velen's Raiments of Conquest##48075 |goto 43.71,48.54
 buy Velen's Pants of Conquest##48074 |goto 43.71,48.54
 buy Velen's Mantle of Conquest##48076 |goto 43.71,48.54
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Priest
 step
 Defeat the Northrend Beasts
 collect Boots of the Unrelenting Storm##46988 |only Alliance
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Priest
@@ -6181,7 +6181,7 @@ step
 kill Anub'arak##34564
 collect Cinch of the Undying##47837 |only Alliance
 collect Armbands of the Ashen Saint##47203 |only Alliance
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Priest
@@ -6192,14 +6192,14 @@ buy Malfurion's Gloves of Conquest##48162 |goto 51.64,71.20
 buy Malfurion's Vestments of Conquest##48159 |goto 51.64,71.20
 buy Malfurion's Trousers of Conquest##48160 |goto 51.64,71.20
 buy Malfurion's Mantle of Conquest##48161 |goto 51.64,71.20
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Druid
 step
 kill Icehowl##34797
 collect Boots of the Unrelenting Storm##46988
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Druid
@@ -6207,7 +6207,7 @@ step
 Kill Lord Jaraxxus##34780
 collect Belt of the Winter Solstice##47669
 collect Bracers of the Autumn Willow##47055
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Druid
@@ -6218,7 +6218,7 @@ buy Khadgar's Gauntlet of Conquest##47752 |goto 43.71,48.50
 buy Khadgar's Robe of Conquest##47749 |goto 43.71,48.50
 buy Khadgar's Leggings of Conquest##47750 |goto 43.71,48.50
 buy Khadgar's Shoulderpad of Conquest##47751 |goto 43.71,48.50
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Mage
@@ -6226,14 +6226,14 @@ step
 Defeat the Faction Champions
 click Champions' Cache##195709
 collect Cord of Biting Cold##47081
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Mage
 step
 kill Eydis Darkbane##34496, Fjola Lightbane##34497
 collect Bindings of Dark Essence##47141
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Mage
@@ -6244,14 +6244,14 @@ buy Nobundo's Gloves of Conquest##48312 |goto 52.21,72.68
 buy Nobundo's Hauberk of Conquest##48310 |goto 52.21,72.68
 buy Nobundo's Kilt of Conquest##48314 |goto 52.21,72.68
 buy Nobundo's Shoulderpads of Conquest##48315 |goto 52.21,72.68
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Shaman
 step
 kill Lord Jaraxxus##34780
 collect Girdle of the Farseer##47932 |n
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Shaman
@@ -6259,7 +6259,7 @@ step
 Defeat the Faction Champions
 click Champions' Cache##195709
 collect Bracers of the Untold Massacre##47073 |n
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only Shaman
@@ -6280,7 +6280,7 @@ kill Lord Jaraxxus##34780
 collect Dawnbreaker Greaves##46997 |n
 collect Girdle of the Nether Champion##47711 |n
 collect Armguards of the Nether Lord##47680 |n
-Refer to the Trial of the Crusader raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
+Refer to the Trial of the Crusader raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Trial of the Crusader"
 Earn the Style of the Crusader achievement |achieve 11752
 Click here to continue |confirm
 |only DeathKnight
@@ -6288,7 +6288,7 @@ step
 Congratulations!
 You have earned the _Style of the Crusader_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\So Hot Right Now",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\So Hot Right Now",{
 achieveid={11741},
 author="support@zygorguides.com",
 startlevel=60,
@@ -6309,13 +6309,13 @@ kill Lucifron##12118
 |tip Lucifron drops Earthfury Boots. |only Shaman
 |tip Lucifron drops Lawbringer Boots. |only Paladin
 |tip Lucifron drops Cenarion Boots. |only Druid
-Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to load the Molten Core guide |confirm |next "Dungeon Guides\\Classic Raids\\Molten Core"
 Earn the _So Hot Right Now_ achievement |achieve 11741 |goto Molten Core/1 66.3,35.6
 If you need more pieces, click here |confirm
 step
 kill Magmadar##11982
 |tip Magmadar drops leg pieces.
-Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to load the Molten Core guide |confirm |next "Dungeon Guides\\Classic Raids\\Molten Core"
 Earn the _So Hot Right Now_ achievement |achieve 11741 |goto 70.1,19.6
 If you need more pieces, click here |confirm
 step
@@ -6326,13 +6326,13 @@ kill Gehennas##12259
 |tip Gehennas drops Nightslayer Gloves. |only Rogue
 |tip Gehennas drops Giantstalker's Boots |only Hunter
 |tip Gehennas drops Sabatons of Might. |only Warrior
-Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to load the Molten Core guide |confirm |next "Dungeon Guides\\Classic Raids\\Molten Core"
 Earn the _So Hot Right Now_ achievement |achieve 11741 |goto 32,48
 If you need more pieces, click here |confirm
 step
 kill Garr##12057
 |tip Garr drops head pieces.
-Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to load the Molten Core guide |confirm |next "Dungeon Guides\\Classic Raids\\Molten Core"
 Earn the _So Hot Right Now_ achievement |achieve 11741 |goto 30,70
 If you need more pieces, click here |confirm
 step
@@ -6344,7 +6344,7 @@ kill Baron Geddon##12056
 |tip Geddon Drops Earthfury Epaulets. |only Shaman
 Baron Geddon drops 5 different pieces of gear that are required for the achievement
 _Shoulders:_ Mage, Warlock, Shaman, Paladin, Druid
-Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to load the Molten Core guide |confirm |next "Dungeon Guides\\Classic Raids\\Molten Core"
 Earn the _So Hot Right Now_ achievement |achieve 11741 |goto 50.6,75.5
 If you need more pieces, click here |confirm
 step
@@ -6355,7 +6355,7 @@ kill Shazzrah##12264
 |tip Shazzrah drops Felheart Slippers. |only Warlock
 |tip Shazzrah drops Boots of Prophecy. |only Priest
 |tip Shazzrah drops Nightslayer Boots. |only Rogue
-Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to load the Molten Core guide |confirm |next "Dungeon Guides\\Classic Raids\\Molten Core"
 Earn the _So Hot Right Now_ achievement |achieve 11741 |goto 52.7,83.5
 If you need more pieces, click here |confirm
 step
@@ -6364,19 +6364,19 @@ kill Sulfuron Harbinger##12098
 |tip Sulfuron drops Giantstalker's Epaulets. |only Hunter
 |tip Sulfuron drops Mantle of Prophecy. |only Priest
 |tip Sulfuron drops Nightslayer Shoulder Pads. |only Rogue
-Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to load the Molten Core guide |confirm |next "Dungeon Guides\\Classic Raids\\Molten Core"
 Earn the _So Hot Right Now_ achievement |achieve 11741 |goto 83,83.2
 If you need more pieces, click here |confirm
 step
 kill Golemagg the Incinerator##11988
 |tip Golemagg drops chest pieces.
-Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to load the Molten Core guide |confirm |next "Dungeon Guides\\Classic Raids\\Molten Core"
 Earn the _So Hot Right Now_ achievement |achieve 11741 |goto 68.7,59.4
 If you need more pieces, click here |confirm
 step
 The Bracers and Belt are random drops within the Molten Core
 |tip You can also buy them from the Auction House.
-Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to load the Molten Core guide |confirm |next "Dungeon Guides\\Classic Raids\\Molten Core"
 Earn the _So Hot Right Now_ achievement |achieve 11741
 If you need more pieces, click here |confirm
 step
@@ -6386,7 +6386,7 @@ step
 Congratulations!
 You have earned the _So Hot Right Now_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Suns Out, Thori'dals Out",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Suns Out, Thori'dals Out",{
 achieveid={11749},
 author="support@zygorguides.com",
 startlevel=70,
@@ -6411,7 +6411,7 @@ Legplates of the Holy Juggernaut drop here |only Paladin
 The Starstalker Legguards drop here |only Hunter
 The Pantaloons of Calming Strife drop here |only Mage, Priest
 The Breeches of Natural Aggres drop here |only Druid
-Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to load the |confirm |next "Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
 Click here to continue |confirm
 Earn the _Merely a Set_ achievement |achieve 11749
 step
@@ -6419,7 +6419,7 @@ kill Felmyst##25038
 The Token for Boots drop from Felmyst as well as the Eradar Twins
 The Leggings of the Immortal Night drop here |only Rogue
 The Chain Links of the Tumultuous Storm drops here |only Shaman
-Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to load the |confirm |next "Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
 Click here to continue |confirm
 Earn the _Merely a Set_ achievement |achieve 11749
 step
@@ -6434,7 +6434,7 @@ The Shoulderpads of Vehemence drop here |only Rogue
 The Equilibrium Epaulets drop here |only Shamaan
 The Spaulders of Reclamation drop here |only Druid
 The Shawl of Wonderment drops here |only Priest, Mage
-Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to load the |confirm |next "Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
 Click here to continue |confirm
 Earn the _Merely a Set_ achievement |achieve 11749
 step
@@ -6442,7 +6442,7 @@ kill Brutallus##24882
 The Token for Belt can drop from Brutallus as well as The Eradar Twins
 The Felfury Legplates drop here |only Warrior
 The Leggings of Calamity drop here |only Warlock
-Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to load the |confirm |next "Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
 Click here to continue |confirm
 Earn the _Merely a Set_ achievement |achieve 11749
 step
@@ -6457,7 +6457,7 @@ The Shadowed Gauntlets of Paroxysm drops here |only Rogue
 The Garments of Serene Shores drop here |only Shaman
 The Robes of Faltered Light drops here |only Priest, Mage
 The Robes of Sunglow Vest drop here |only Druid
-Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to load the |confirm |next "Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
 Click here to continue |confirm
 Earn the _Merely a Set_ achievement |achieve 11749
 step
@@ -6474,7 +6474,7 @@ The Cowl of Gul'dan drops here |only Shaman
 The Cowl of Light's Purity drops here |only Priest, Mage
 The Handguards of the Dawn drops here |only Priest, Mage
 The Cover of Ursol the Wise drops here |only Druid
-Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to load the |confirm |next "Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
 Click here to continue |confirm
 Earn the _Merely a Set_ achievement |achieve 11749
 step
@@ -6499,7 +6499,7 @@ step
 Congratulations!
 You have earned the _Suns Out, Thori'dals Out_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\That's So Last Mellenium",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\That's So Last Mellenium",{
 achieveid={11628},
 author="support@zygorguides.com",
 startlevel=110,
@@ -6521,7 +6521,7 @@ If the belt didn't drop, you can also get the appearance from Elisande in The Ni
 collect Wristclamps of Mad Dreams##139235 |only DeathKnight |n
 If the bracers didn't drop, you can also get the appearance from Skorpyron in The Nighthold |only DeathKnight
 collect Stained Maggot Squishers##139200 |only DemonHunter |n
-Click here to load the Emerald Nightmare guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic"
+Click here to load the Emerald Nightmare guide |confirm |next "Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 |only Monk, Shaman, DeathKnight, DemonHunter
@@ -6534,7 +6534,7 @@ If the boots didn't drop, you can also get the appearance from Ursoc |only Shama
 collect Wristwraps of Broken Trust##139209 |only DemonHunter |n
 If the bracers didn't drop, you can also get the appearance from the World Boss Drugon the Frostblood |only DemonHunter
 You can also get the appearance as a random world drop in Legion zones |only DemonHunter
-Click here to load the Emerald Nightmare guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic"
+Click here to load the Emerald Nightmare guide |confirm |next "Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 |only Mage, Shaman, DemonHunter
@@ -6544,7 +6544,7 @@ collect Clasp of Cosmic Insignificance##139187 |only Warlock |n
 If the bracers didn't drop, you can also get the appearance from High Botanist Tel'arn in The Nighthold |only Warlock
 collect Waistplate of Nameless Horror##139227 |only DeathKnight |n
 If the belt doesn't drop, you can also get the appearance from Elisande in The Nighthold |only DeathKnight
-Click here to load the Emerald Nightmare guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic"
+Click here to load the Emerald Nightmare guide |confirm |next "Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 |only Warlock, DeathKnight
@@ -6558,7 +6558,7 @@ collect Crimson Wool-Lined Slippers##139195 |only Mage |n
 If the boots didn't drop, you can also get the appearance from Star Augur Etraeus in The Nighthold |only Mage
 collect SCored Ironclaw Sabatons##139220 |only Shaman |n
 If the boots didn't drop, you can also get the appearance from Spellblade Aluriel in The Nighthold |only Shaman
-Click here to load the Emerald Nightmare guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic"
+Click here to load the Emerald Nightmare guide |confirm |next "Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 |only Warior, Priest, Mage, Shaman
@@ -6569,7 +6569,7 @@ If the boots didn't drop, you can also get the appearance from High Botanist Tel
 collect Dragonbone Wristclamps##138218 |only Warrior |n
 If the bracers don't drop, you can also get the appearance from Elisande in The Nighthold |only Warrior
 collect Dragonspur Wristguards##138219 |only Druid |n
-Click here to load the Emerald Nightmare guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic"
+Click here to load the Emerald Nightmare guide |confirm |next "Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 |only Hunter, Warrior, Druid
@@ -6578,7 +6578,7 @@ kill Cenarius##104636
 collect Laughing Sister's Pouch-Chain##139211 |only Hunter |n
 If the belt didn't drop, you can also get the appearance from Spellblade Aluriel in The Nighthold |only Hunter
 collect Cozy Dryad Hoof-Socks##139194 |only Priest |n
-Click here to load the Emerald Nightmare guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic"
+Click here to load the Emerald Nightmare guide |confirm |next "Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 |only Hunter, Priest
@@ -6588,7 +6588,7 @@ collect Eon-Tempered Waistplate##139228 |only Warrior |n
 If the waist didn't drop, you can also get the appearance from Tichondrius in The Nighthold |only Warrior
 Boots of Endless Betrayal##139199 |only Rogue |n
 collect Manacles of the Nightmare Colossus##139222 |only Shaman |n
-Click here to load the Emerald Nightmare guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic"
+Click here to load the Emerald Nightmare guide |confirm |next "Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 |only Warrior, Rogue, Shaman
@@ -6602,7 +6602,7 @@ collect Jagged Carapace Wristclamp##140902 |only DeathKnight |n
 If the bracers didn't drop, you can also get the appearance from the World Boss Drugon the Frostblood in Highmountain |only DeathKnight
 collect Leystone-Toe Kickers##140884 |only DeathKnight |n
 If the boots didn't drop, you can also get the appearance from Star Augur Etraeus |only DeathKnight
-Click here to load The Nighthold guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
+Click here to load The Nighthold guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 |only Hunter, Priest, DeathKnight
@@ -6610,7 +6610,7 @@ step
 kill Chronomatic Anomaly##104415
 collect Stutterstep Treads##140860 |only Monk |n
 If the boots didn't drop, you can also get the appearance from the World Boss Calamir in Azsuna |only Monk
-Click here to load The Nighthold guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
+Click here to load The Nighthold guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 |only Monk
@@ -6642,7 +6642,7 @@ collect Perpetually Muddy Sandals##140854 |only Warlock |n
 If the boots didn't drop, you can also get the appearance from Gul'dan |only Warlock
 collect Cake Carrier's Girdle##140858 |only Druid |n
 If the belt didn't drop, you can also get the appearance from using Relinquished Girdles from the Broken Shore Vendor |only Druid
-Click here to load The Nighthold guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
+Click here to load The Nighthold guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 step
@@ -6653,7 +6653,7 @@ collect Duskwatch Plate Belt##140878 |only Paladin
 collect Bracers of Harnessed Flame##140850 |only Mage |n
 collect Sabatons of Burning Steps##140867 |only Shaman |n
 If the boots didn't drop, you can also get the appearance as a random world drop in Legion zones |only Shaman
-Click here to load The Nighthold guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
+Click here to load The Nighthold guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 |only Hunter, Paladin, Mage, Shaman
@@ -6680,7 +6680,7 @@ Use the Gauntlets of the Foreseen Protector |use Gauntlets of the Foreseen Prote
 collect Treads of Galactic Odyssey##140885 |only Mage |n
 If the boots didn't drop, you can also get the appearance from the World Boss Calamir in Azsuna |only Mage
 collect Sabatons of Unchanging Fate##140891 |only DeathKnight |n
-Click here to load The Nighthold guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
+Click here to load The Nighthold guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 step
@@ -6691,7 +6691,7 @@ collect Shal'dorei Weedstompers##140873 |only Hunter |n
 If the boots didn't drop, you can also get the appearance from the World Boss Calamir in Azsuna |only Hunter
 collect Woven Lasher Tendril Bracers##140886 |only Warlock |n
 collect Grove-Tender's Moccasins##140861 |only Druid |n
-Click here to load The Nighthold guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
+Click here to load The Nighthold guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 |only Hunter, Warlock, Druid
@@ -6712,7 +6712,7 @@ collect Dreadwyrm Breastplate##138349 |only DeathKnight |n
 collect Well-Flattened Wristguards##140857 |only Monk |n
 collect Man'ari Skullbuckled Cinch##140887 |only Warlock |n
 If the belt didn't drop, you can also get the appearance from the World Boss Soultrapper Mevra in Stormheim |only Warlock
-Click here to load The Nighthold guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
+Click here to load The Nighthold guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 step
@@ -6738,7 +6738,7 @@ Use the Shoulders of the Foreseen Protector |use Shoulders of the Foreseen Prote
 collect Goresmeared Abyssal Waistplate##140892 |only Warrior |n
 If the belt didn't drop, you can also get the appearance from the World Boss Soultrapper Mevra in Stormheim |only Warrior
 collect Girdle of Nefarious Strategy##140859 |only Rogue |n
-Click here to load The Nighthold guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
+Click here to load The Nighthold guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 step
@@ -6766,7 +6766,7 @@ collect Bracers of Impossible Choices##140889 |only Rogue |n
 collect Belt of Celestial Alignment##140890 |only Shaman |n
 If the belt didn't drop, you can also get the appearance as a random world drop from Legion zones |only Shaman
 collect Waistplate of Fractured Realities##140912 |only DeathKnight |n
-Click here to load The Nighthold guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
+Click here to load The Nighthold guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 step
@@ -6786,7 +6786,7 @@ collect Dreadwyrm Legplates##138358 |only DeathKnight |n
 collect Outcast Wanderer's Footrags##140914 |only Warlock |n
 collect High Shadow Councilor's Wrap##140919 |only DemonHunter |n
 If the belt didn't drop, you can also get the appearance from the World Boss Soultrapper Mevra in Stormheim |only DemonHunter
-Click here to load The Nighthold guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
+Click here to load The Nighthold guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 step
@@ -6796,7 +6796,7 @@ collect Vinitage Duskwatch Cinch##144406 |only Hunter |n
 If the belt didn't drop, you can also get the appearance from Drugon the World Boss Soultrapper Mevra in Stormheim |only Hunter
 collect Gleaming Celestial Waistguard##144407 |only Paladin |n
 collect Mana-Cord of Deception##144404 |only Mage |n
-Click here to load The Nighthold guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
+Click here to load The Nighthold guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
 Earn the That's So Last Mellennium Achievement |achieve 11628 |next "End"
 Click here to continue |confirm
 |only Monk, Hunter, Paladin, Mage
@@ -6811,7 +6811,7 @@ label "end"
 Congratulations!
 You have earned the _Extreme Makeover: Fel Edition_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Thunderwear",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Thunderwear",{
 achieveid={11758},
 author="support@zygorguides.com",
 startlevel=90,
@@ -6842,7 +6842,7 @@ buy Spiritcaller Cuffs##95132 |goto Townlong Steppes/0 38.01,64.5 |only Shaman |
 buy Cracklebite Links##95087 |goto 38.01,64.5 |only Shaman |n
 buy Axebinder Wristguards##95129 |goto Townlong Steppes/0 38.01,64.5 |only DeathKnight |n
 buy Reinforced Spiritplate Girdle##95084 |goto 38.01,64.5 |only DeathKnight |n
-Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to load the Throne of Thunder guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Thunderwear Achievement |achieve 11758
 Click here to continue |confirm
 |only Hunter, Paladin, Warrior, Rogue, Priest , Mage, Shaman, DeathKnight
@@ -6850,7 +6850,7 @@ step
 kill Jin'rokh the Breaker##69465
 collect Ghostbinder Greatboots##96759 |only Shaman |n
 If the boots don't drop here, there will be another opprotunity for the appearance from trash in the Throne of Thunder |only Shaman
-Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to load the Throne of Thunder guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Thunderwear Achievement |achieve 11758
 Click here to continue |confirm
 |only Shaman
@@ -6858,7 +6858,7 @@ step
 kill Horridon##68476
 collect Bindings of Multiplicative Strikes##94743 |only Druid |n
 If the bracers don't drop here, another chance for the appearance will drop from Tortos |only Druid
-Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to load the Throne of Thunder guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Thunderwear Achievement |achieve 11758
 Click here to continue |confirm
 |only Druid
@@ -6873,14 +6873,14 @@ collect Gauntlets of the Crackling Vanquisher##95570 |only Rogue, DeathKnight, M
 Use the Gauntlets of the Crackling Vanquisher |use Gauntlets of the Crackling Vanquisher##95570 |only Rogue, DeathKnight, Mage, Druid
 collect Mar'li's Bloodstained Sandals##94762 |only Priest |n
 If the boots don't drop, you can get the appearance from trash in Throne of Thunder |only Priest
-Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to load the Throne of Thunder guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Thunderwear Achievement |achieve 11758
 Click here to continue |confirm
 step
 kill Tortos##67977
 collect Quakestompers##94772 |only Hunter |n
 collect Vampire Bat-Hide Bracers##94786 |only Druid |n
-Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to load the Throne of Thunder guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Thunderwear Achievement |achieve 11758
 Click here to continue |confirm
 |only Hunter, Druid
@@ -6891,7 +6891,7 @@ collect Frostborn Wristwraps##94804 |only Warlock |n
 If the Bracers don't drop, there will be another chance for the appearance during the Primordius fight |only Warlock
 collect Sandals of Arcane Fury##94799 |only Mage |n
 If the boots don't drop here, there wiill be another chance at the appearance from Iron Quan |only Mage
-Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to load the Throne of Thunder guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Thunderwear Achievement |achieve 11758
 Click here to continue |confirm
 |only Paladin, Warlock, Mage
@@ -6904,21 +6904,21 @@ Use the Leggings of the Crackling Protector |use Leggings of the Crackling Prote
 collect Leggings of the Crackling Vanquisher##95572 |only Rogue, DeathKnight, Mage, Druid |n
 Use the Leggings of the Crackling Vanquisher |use Leggings of the Crackling Vanquisher##95572 |only Rogue, DeathKnight, Mage, Druid
 collect Cord of Cacophonous Cawing##94813 |only Warlock |n
-Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to load the Throne of Thunder guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Thunderwear Achievement |achieve 11758
 Click here to continue |confirm
 step
 kill Durumu the Forgotten##68036
 collect Treads of the Blind Eye##94817 |only Warrior |n
 If the boots don't drop, there will be another chance to earn the appearance from trash mobs in the Throne of Thunder |only Warrior
-Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to load the Throne of Thunder guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Thunderwear Achievement |achieve 11758
 Click here to continue |confirm
 |only Warrior
 step
 kill Primordius##69017
 collect Bracers of Fragile Bone##94948 |only Warlock |n
-Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to load the Throne of Thunder guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Thunderwear Achievement |achieve 11758
 Click here to continue |confirm
 |only Warlock
@@ -6930,7 +6930,7 @@ collect Chest of the Crackling Protector##95579 |only Warrior, Hunter, Shaman, M
 Use the Chest of the Crackling Protector |use Chest of the Crackling Protector##95579 |only Warrior, Hunter, Shaman, Monk
 collect Chest of the Crackling Vanquisher##95569 |only Rogue, DeathKnight, Mage, Druid |n
 Use the Chest of the Crackling Vanquisher |use Chest of the Crackling Vanquisher##95569 |only Rogue, DeathKnight, Mage, Druid
-Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to load the Throne of Thunder guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Thunderwear Achievement |achieve 11758
 Click here to continue |confirm
 step
@@ -6942,7 +6942,7 @@ Use the Shoulders of the Crackling Protector |use Shoulders of the Crackling Pro
 collect Shoulders of the Crackling Vanquisher##95573 |only Rogue, DeathKnight, Mage, Druid |n
 Use Shoulders of the Crackling Vanquisher |use Shoulders of the Crackling Vanquisher##95573 |only Rogue, DeathKnight, Mage, Druid
 collect Dam'ren's Frozen Footguards##94968 |only Mage |n
-Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to load the Throne of Thunder guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Thunderwear Achievement |achieve 11758
 Click here to continue |confirm
 step
@@ -6956,7 +6956,7 @@ Use the Helm of the Crackling Vanquisher |use Helm of the Crackling Vanquisher##
 collect Girdle of Night and Day##94978 |only Druid |n
 collect Tidal Force Treads##94976 |only DeathKnight |n
 If the boots don't drop here, you can also get the appearance from trash in the Throne of Thunder |only DeathKnight
-Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to load the Throne of Thunder guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Thunderwear Achievement |achieve 11758
 Click here to continue |confirm
 step
@@ -6971,7 +6971,7 @@ collect Deeproot Treads##95221 |only Druid |n
 collect Spiritbound Boots##95222 |only Shaman |n
 collect Scalehide Spurs##95220 |only Shaman |n
 collect Columnbreaker Stompers##95218 |only DeathKnight |n
-Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to load the Throne of Thunder guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
 Earn the Thunderwear Achievement |achieve 11758
 Click here to continue |confirm
 step
@@ -6986,7 +6986,7 @@ label "End"
 Congratulations!
 You have earned the _Thunderwear_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Undying Aesthetic",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Undying Aesthetic",{
 achieveid={11750},
 author="support@zygorguides.com",
 startlevel=80,
@@ -7005,7 +7005,7 @@ kill Anub'Rekhan##15956
 The Arachnoid Gold Band can drop here |only Hunter
 The Boots of Persistence can drop here |only Shaman
 The Agonal Sash can drop here |only Priest
-Click here to load the |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
+Click here to load the |confirm |next "Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
 Earn the Undying Aesthetic Achievement |achieve 11750
 step
@@ -7013,14 +7013,14 @@ kill Grand Widow Faerlina##15953
 The Boots of the Worshiper can drop here |only Rogue
 The Belt of False Dignity can drop here |only Mage
 The Boots of the Follower can drop here |only Druid
-Click here to load the |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
+Click here to load the |confirm |next "Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
 Earn the Undying Aesthetic Achievement |achieve 11750
 step
 kill Noth the Plaguebringer##15954
 The Bone-Framed Bracers can drop here |only Paladin
 The Bands of Impurity can drop here |only Mage
-Click here to load the |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
+Click here to load the |confirm |next "Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
 Earn the Undying Aesthetic Achievement |achieve 11750
 step
@@ -7028,13 +7028,13 @@ kill Heigan the Unclean##15936
 The Cuffs of Dark Shadows can drop here |only Rogue
 The Necrogenic Belt can drop here |only Shaman
 The Saltarello Shoes can drop here |only Priest
-Click here to load the |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
+Click here to load the |confirm |next "Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
 Earn the Undying Aesthetic Achievement |achieve 11750
 step
 kill Patchwerk##16028
 The Tainted Girdle of Mending can drop here |only Paladin
-Click here to load the |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
+Click here to load the |confirm |next "Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
 Earn the Undying Aesthetic Achievement |achieve 11750
 step
@@ -7043,7 +7043,7 @@ The Depraved Linked Belt can drop here |only Hunter
 The Girdle of Chivalry can drop here |only Warrior
 The Blistered Belt of Decay can drop here |only Rogue
 The Putrescent Bands can drop here |only Druid
-Click here to load the |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
+Click here to load the |confirm |next "Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
 Earn the Undying Aesthetic Achievement |achieve 11750
 step
@@ -7069,21 +7069,21 @@ The Bands of Impurity can drop here |only Mage
 The Boots of the Follower can drop here |only Druid
 The Girdle of Lenience can drop here |only Druid
 The Putrescent Bands can drop here |only Druid
-Click here to load the |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
+Click here to load the |confirm |next "Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
 Earn the Undying Aesthetic Achievement |achieve 11750
 step
 kill Thaddius##15928
 The Token for Legs drops here
 The Token for Boots drop from Felmyst as well as the Eradar Twins
-Click here to load the |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
+Click here to load the |confirm |next "Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
 Earn the Undying Aesthetic Achievement |achieve 11750
 step
 kill Instructor Razuvious##16061
 The Necrogenic Belt can drop here |only Shaman
 The Girdle of Lenience can drop here |only Druid
-Click here to load the |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
+Click here to load the |confirm |next "Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
 Earn the Undying Aesthetic Achievement |achieve 11750
 step
@@ -7091,25 +7091,25 @@ kill Gothik the Harvester##16060
 The Sabatons of Deathlike Gloom drop here |only Paladin
 The Bracers of Unrelenting Attack can drop here |only Warrior
 The Resurgent Phantom Bindings can drop here |only Priest
-Click here to load the |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
+Click here to load the |confirm |next "Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
 Earn the Undying Aesthetic Achievement |achieve 11750
 step
 Defeat the 4 Horsemen
 The token for the Chest drops here
-Click here to load the Naxxramas guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
+Click here to load the Naxxramas guide |confirm |next "Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
 Earn the Undying Aesthetic Achievement |achieve 11750
 step
 kill Kel'Thuzad##15990
 The Token for the Headpiece drop here
-Click here to load the Naxxramas Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
+Click here to load the Naxxramas Guide |confirm |next "Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
 Earn the Undying Aesthetic Achievement |achieve 11750
 step
 kill Sartharion##28860
 The Token for the gloves drops here
-Click here to load The Obsidian Sanctum Guide|confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\The Obsidian Sanctum"
+Click here to load The Obsidian Sanctum Guide|confirm |next "Dungeon Guides\\Northrend Raids\\The Obsidian Sanctum"
 Click here to continue |confirm
 Earn the Undying Aesthetic Achievement |achieve 11750
 step
@@ -7141,7 +7141,7 @@ step
 Congratulations!
 You have earned the _Undying Aesthetic_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Wardrobe of the Old Gods",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Wardrobe of the Old Gods",{
 achieveid={11756},
 author="support@zygorguides.com",
 startlevel=85,
@@ -7169,7 +7169,7 @@ step
 kill Yor'sahj the Unsleeping##55312
 collect Leggings of the Corrupted Protector##78176 |n
 Use the Leggings of the Corrupted Protector |use Leggings of the Corrupted Protector##78176
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Hunter
@@ -7177,7 +7177,7 @@ step
 kill Hagara the Stormbinder##55689
 collect Shoulders of the Corrupted Protector##78175 |n
 Use the Shoulders of the Corrupted Protector |use Shoulders of the Corrupted Protector##77032 |goto 48.36,71.64
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Hunter
@@ -7197,7 +7197,7 @@ step
 kill Yor'sahj the Unsleeping##55312
 collect Leggings of the Corrupted Conqueror##78181 |n
 Use the Leggings of the Corrupted Conqueror |use Leggings of the Corrupted Conqueror##78181
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Paladin
@@ -7205,7 +7205,7 @@ step
 kill Hagara the Stormbinder##55689
 collect Shoulders of the Corrupted Conqueror##78180 |n
 Use the Shoulders of the Corrupted Conqueror |use Shoulders of the Corrupted Conqueror##78180 |goto 48.36,71.64
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Paladin
@@ -7225,7 +7225,7 @@ step
 kill Yor'sahj the Unsleeping##55312
 collect Leggings of the Corrupted Protector##78176 |n
 Use the Leggings of the Corrupted Protector |use Leggings of the Corrupted Protector##78176
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Warrior
@@ -7233,7 +7233,7 @@ step
 kill Hagara the Stormbinder##55689
 collect Shoulders of the Corrupted Protector##78175 |n
 Use the Shoulders of the Corrupted Protector |use Shoulders of the Corrupted Protector##78175 |goto 48.36,71.64
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Warrior
@@ -7250,7 +7250,7 @@ step
 kill Warlod Zon'ozz##55308
 collect Gauntlets of the Corrupted Conqueror##78183
 Use the Gauntlets of the Corrupted Conqueror |use Gauntlets of the Corrupted Conqueror##78183 |goto 48.36,71.64
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Warlock
@@ -7258,7 +7258,7 @@ step
 kill Yor'sahj the Unsleeping##55312
 collect Leggings of the Corrupted Conqueror##78181 |n
 Use the Leggings of the Corrupted Conqueror |use Leggings of the Corrupted Conqueror##78181
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Warlock
@@ -7267,7 +7267,7 @@ kill Hagara the Stormbinder##55689
 collect Bracers of the Banished##77249 |n
 collect Shoulders of the Corrupted Conqueror##77249 |n
 Use the Shoulders of the Corrupted Conqueror |use Shoulders of the Corrupted Conqueror##77249 |goto 48.36,71.64
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Warlock
@@ -7275,7 +7275,7 @@ step
 kill Warmaster Blackhorn##56427
 collect Janglespur Jackboots##77234 |n
 _Remember, equip all items you buy to unlock the appearance for them_
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Warlock
@@ -7295,7 +7295,7 @@ step
 kill Yor'sahj the Unsleeping##55312
 collect Leggings of the Corrupted Vanquisher##78171 |n
 Use the Leggings of the Corrupted Vanquisher |use Leggings of the Corrupted Vanquisher##78171
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Rogue
@@ -7303,7 +7303,7 @@ step
 kill Hagara the Stormbinder##55689
 collect Shoulders of the Corrupted Vanquisher##78170 |n
 Use the Shoulders of the Corrupted Vanquisher |use Shoulders of the Corrupted Vanquisher##78170 |goto 48.36,71.64
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Rogue
@@ -7323,7 +7323,7 @@ step
 kill Yor'sahj the Unsleeping##55312
 collect Leggings of the Corrupted Conqueror##78181 |n
 Use the Leggings of the Corrupted Conqueror |use Leggings of the Corrupted Conqueror##78181
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Priest
@@ -7331,7 +7331,7 @@ step
 kill Hagara the Stormbinder##55689
 collect Shoulders of the Corrupted Conqueror##77249 |n
 Use the Shoulders of the Corrupted Conqueror |use Shoulders of the Corrupted Conqueror##77249 |goto 48.36,71.64
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Priest
@@ -7351,7 +7351,7 @@ step
 kill Yor'sahj the Unsleeping##55312
 collect Leggings of the Corrupted Vanquisher##78171 |n
 Use the Leggings of the Corrupted Vanquisher |use Leggings of the Corrupted Vanquisher##78171
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Druid
@@ -7359,7 +7359,7 @@ step
 kill Hagara the Stormbinder##55689
 collect Shoulders of the Corrupted Vanquisher##78170 |n
 Use the Shoulders of the Corrupted Vanquisher |use Shoulders of the Corrupted Vanquisher##78170 |goto 48.36,71.64
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Druid
@@ -7376,7 +7376,7 @@ step
 kill Yor'sahj the Unsleeping##55312
 collect Leggings of the Corrupted Vanquisher##78171 |n
 Use the Leggings of the Corrupted Vanquisher |use Leggings of the Corrupted Vanquisher##78171
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Mage
@@ -7384,7 +7384,7 @@ step
 kill Hagara the Stormbinder##55689
 collect Shoulders of the Corrupted Vanquisher##78170 |n
 Use the Shoulders of the Corrupted Vanquisher |use Shoulders of the Corrupted Vanquisher##78170
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Mage
@@ -7392,7 +7392,7 @@ step
 kill Ultraxion##55294
 collect Chest of the Corrupted Vanquisher##78174 |n
 Use the Chest of the Corrupted Vanquisher##78174 |use collect Chest of the Corrupted Vanquisher##78174
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Mage
@@ -7400,7 +7400,7 @@ step
 kill Warmaster Blackhorn##56427
 collect Crown of the Corrupted Vanquisher##78172 |n
 Use the Crown of the Corrupted Vanquisher |use Crown of the Corrupted Vanquisher##78172
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Mage
@@ -7420,7 +7420,7 @@ step
 kill Yor'sahj the Unsleeping##55312
 collect Leggings of the Corrupted Vanquisher##78171 |n
 Use the Leggings of the Corrupted Vanquisher |use Leggings of the Corrupted Vanquisher##78171
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Shaman
@@ -7428,7 +7428,7 @@ step
 kill Hagara the Stormbinder##55689
 collect Shoulders of the Corrupted Vanquisher##78170 |n
 Use the Shoulders of the Corrupted Vanquisher |use Shoulders of the Corrupted Vanquisher##78170
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only Shaman
@@ -7448,7 +7448,7 @@ step
 kill Yor'sahj the Unsleeping##55312
 collect Leggings of the Corrupted Vanquisher##78171 |n
 Use the Leggings of the Corrupted Vanquisher |use Leggings of the Corrupted Vanquisher##78171
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only DeathKnight
@@ -7456,7 +7456,7 @@ step
 kill Hagara the Stormbinder##55689
 collect Shoulders of the Corrupted Vanquisher##78170 |n
 Use the Shoulders of the Corrupted Vanquisher |use Shoulders of the Corrupted Vanquisher##78170
-Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Refer to the Dragon Soul raid guide to accomplish this |confirm |next "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
 Earn the Wardrobe of the Old Gods achievement |achieve 11756
 Click here to continue |confirm
 |only DeathKnight
@@ -7464,7 +7464,7 @@ step
 Congratulations!
 You have earned the _Wardrobe of the Old Gods_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Winter Catalog",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Winter Catalog",{
 achieveid={11753},
 author="support@zygorguides.com",
 startlevel=80,
@@ -7492,7 +7492,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill High Overlord Saurfang##36939
 collect Icecrown Rampart Bracers##50789 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Hunter
@@ -7500,7 +7500,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Festergut##36626
 collect Taldron's Long Neglected Boots##50812 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Hunter
@@ -7508,7 +7508,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 Kill the Blood Princes
 collect Blood-Drinker's Girdle##51325 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Hunter
@@ -7527,7 +7527,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Lord Marrowgar##36612
 collect Ancient Skeletal Boots##50772 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Paladin
@@ -7535,7 +7535,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Blood-Queen Lana'thel##37955
 collect Tightening Waistband##51555 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Paladin
@@ -7543,7 +7543,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill High Overlord Saurfang##36939
 collect Bracers of Pale Illumination##50796 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Paladin
@@ -7562,7 +7562,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill High Overlord Saurfang##36939
 collect Bone Drake's Enameled Boots##50788 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Warrior
@@ -7570,7 +7570,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 Beat the Valithria Dreamwalker encounter
 collect Taiga Bindings##51563 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Warrior
@@ -7578,7 +7578,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Sindragosa##36853
 collect Etched Dragonbone Girdle##51782 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Warrior
@@ -7608,7 +7608,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Lady Deathwhisper##36855
 collect Soulthief's Braided Belt##50778 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Rogue
@@ -7616,7 +7616,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 Defeat the Blood Princes
 collect Taldaram's Soft Slippers##51023 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Rogue
@@ -7624,7 +7624,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Sindragosa##36853
 collect Vambraces of the Frost Wyrm Queen##51783 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Rogue
@@ -7643,7 +7643,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Lord Marrowgar##36612
 collect Cord of the Patronizing Practitioner##50773 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Priest
@@ -7651,7 +7651,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Lady Deathwhisper##36855
 collect Bracers of Dark Blessings##50785 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Priest
@@ -7659,7 +7659,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 Defeat the Blood Princes
 collect Pale Corpse Boots##51380 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Priest
@@ -7677,7 +7677,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Lady Deathwhisper##36855
 collect Boots of the Frozen Seed##50783 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Druid
@@ -7685,7 +7685,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill High Overlord Saurfang##36939
 collect Cord of Dark Suffering##50795 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Druid
@@ -7693,7 +7693,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Festergut##36626
 collect Wrists of Septic Shock##50985 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Druid
@@ -7711,7 +7711,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Deathbringer Saurfang##37813
 collect Icecrown Spire Sandals##50804 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Mage
@@ -7719,7 +7719,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Rotface##36627
 collect Ether-Soaked Bracers##51007 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Mage
@@ -7727,7 +7727,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Professor Putricide##36678
 collect Cauterized Cord##51017 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Mage
@@ -7745,7 +7745,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Lord Marrowgar##36612
 collect Coldwraith Bracers##50774
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Shaman
@@ -7753,7 +7753,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill lady Deathwhisper##36855
 collect Deathspeaker Disciple's Belt##50784 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Shaman
@@ -7761,7 +7761,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Rotface##36627
 collect Shuffling Shoes##51006 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only Shaman
@@ -7779,7 +7779,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Deathbringer Saurfang##
 collect Gargoyle Spit Bracers##50802 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only DeathKnight
@@ -7787,7 +7787,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 Beat the Valithria Dreamwalker encounter
 collect Ironrope Belt of Ymirjar##51564 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only DeathKnight
@@ -7795,7 +7795,7 @@ step
 _Be sure to set the difficulty to 10-man before entering_
 kill Sindragosa##36853
 collect Scourge Fanged Stompers##51787 |n
-Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+Click here to refer to the Icecrown Citadel raiding guide |confirm |next "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
 Earn the Winter Catalog achievement |achieve 11752
 Click here to continue |confirm
 |only DeathKnight
@@ -7803,7 +7803,7 @@ step
 Congratulations!
 You have earned the _Winter Catalog_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Appearances\\Legion\\Yaass'shaarj",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Yaass'shaarj",{
 achieveid={11759},
 author="support@zygorguides.com",
 startlevel=100,
@@ -7832,7 +7832,7 @@ collect Bracers of Sordid Sleep##112420 |only DeathKnight |n
 If the bracers didn't drop, there will be another chance for the appearance from the Amalgam of Corruption |only DeathKnight
 collect Treads of Unchained Hate##112419 |only DeathKnight |n
 If the bracers didn't drop, there will be another chance for the appearance from the Malkorok |only Deathknight
-Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to load the Siege of Orgrimmar guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
 Earn the Yaass'shaarj Achievement |achieve 11759
 Click here to continue |confirm
 |only Paladin, Warrior, Druid, Shaman, DeathKnight
@@ -7847,7 +7847,7 @@ If the boots didn't drop, there will be another chance for the appearance from t
 collect Sabatons of Defilement##112493 |only Shaman |n
 If the boots didn't drop, there will be another chance for the appearance from the Iron Juggernaut |only Shaman
 collect Poisonbinder Girth##112482 |only DeathKnight |n
-Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to load the Siege of Orgrimmar guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
 Earn the Yaass'shaarj Achievement |achieve 11759
 Click here to continue |confirm
 |only Warlock, Rogue, Priest, Shaman, DeathKnight
@@ -7862,7 +7862,7 @@ collect Bracers of Final Serenity##112563 |only Shaman |n
 If the bracers didn't drop, there will be another chance for the appearance from the Iron Juggernaut |only Shaman
 collect Bracers of Blind Hatred##112545 |only DeathKnight |n
 If the bracers didn't drop, there will be another chance for the appearance from the Iron Juggernaut |only DeathKnight
-Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to load the Siege of Orgrimmar guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
 Earn the Yaass'shaarj Achievement |achieve 11759
 Click here to continue |confirm
 |only Paladin, Priest, Mage, Shaman, DeathKnight
@@ -7876,7 +7876,7 @@ collect Chest of the Cursed Vanquisher##99742 |only Rogue, DeathKnight, Mage, Dr
 Use the Chest of the Cursed Vanquisher |use Chest of the Cursed Vanquisher##99742 |only Rogue, DeathKnight, Mage, Druid
 collect Greaves of Sublime Superiority##112953 |only Paladin |n
 If the boots didn't drop, there will be another chance for the appearance from the Iron Juggernaut |only Paladin
-Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to load the Siege of Orgrimmar guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
 Earn the Yaass'shaarj Achievement |achieve 11759
 Click here to continue |confirm
 step
@@ -7896,7 +7896,7 @@ collect Dragonmaw Emergency Strap##112725 |only Druid |n
 If the belt didn't drop, there will be another chance for the appearance from Garrosh Hellscream |only Druid
 collect Unrepentant Heels##112706 |only Druid |n
 If the boots didn't drop, there will be another chance for the appearance from Malkorok |only Druid
-Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to load the Siege of Orgrimmar guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
 Earn the Yaass'shaarj Achievement |achieve 11759
 Click here to continue |confirm
 |only Hunter, Paladin, Warlock, Priest, Druid
@@ -7918,7 +7918,7 @@ If the belt didn't drop, there will be another chance for the appearance from Ma
 collect Treads of Automnomic Motion##112750 |only Shaman |n
 If the boots didn't drop, there will be another chance for the appearance from Siegecrafter Blackfuse |only Shaman
 collect Wall-Borer Bracers##112733 |only DeathKnight |n
-Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to load the Siege of Orgrimmar guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
 Earn the Yaass'shaarj Achievement |achieve 11759
 Click here to continue |confirm
 |only Hunter, Paladin, Warrior, Priest, Druid, Mage, Shaman
@@ -7932,7 +7932,7 @@ collect Toxic Tornado Treads##112765 |only Mage |n
 collect Belt of the Iron Prison##112771 |only Shaman |n
 If the belt didn't drop, there will be another chance for the appearance from the Stockpile of Pandaren Spoils |only Shaman
 collect Ashen Wall Girdle##112763 |only DeathKnight |n
-Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to load the Siege of Orgrimmar guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
 Earn the Yaass'shaarj Achievement |achieve 11759
 Click here to continue |confirm
 |only Paladin, Warrior, Rogue, Mage, Shaman, DeathKnight
@@ -7946,7 +7946,7 @@ collect Gauntlets of the Cursed Vanquisher##99745 |only Rogue, DeathKnight, Mage
 Use the Gauntlets of the Cursed Vanquisher |use Gauntlets of the Cursed Vanquisher##99745 |only Rogue, DeathKnight, Mage, Druid
 collect Ravager's Pathwalkers##112779 |only Hunter |n
 collect Sandals of Two Little Bees##112782 |only Priest |n
-Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to load the Siege of Orgrimmar guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
 Earn the Yaass'shaarj Achievement |achieve 11759
 Click here to continue |confirm
 step
@@ -7957,7 +7957,7 @@ collect Boots of Perilous Infusion##112819 |only Druid |n
 collect Wristguards of Ruination##112797 |only Shaman |n
 If the bracers didn't drop, there will be another chance for the appearance from the Stockpile of Pandaren Spoils |only Shaman
 collect Treads of Unchained Hate##112796 |only DeathKnight |n
-Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to load the Siege of Orgrimmar guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
 Earn the Yaass'shaarj Achievement |achieve 11759
 Click here to continue |confirm
 |only Warrior, Warlock, Druid, Shaman, DeathKnight
@@ -7972,7 +7972,7 @@ collect Mantid Carapace Augments##112833 |only Druid |n
 collect Avool's Ancestral Bracers##112837 |only Mage |n
 collect Bracers of the Pristine Purifier##112845 |only Shaman |n
 collect Chitin-Link Chain Belt##112844 |only Shaman |n
-Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to load the Siege of Orgrimmar guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
 Earn the Yaass'shaarj Achievement |achieve 11759
 Click here to continue |confirm
 |only Hunter, Paladin, Warrior, Druid, Shaman
@@ -7984,7 +7984,7 @@ collect Helm of the Cursed Protector##99750 |only Warrior, Hunter, Shaman, Monk 
 Use the Helm of the Cursed Protector |use Helm of the Cursed Protector##99750 |only Warrior, Hunter, Shaman, Monk
 collect Helm of the Cursed Vanquisher##99748 |only Rogue, DeathKnight, Mage, Druid |n
 Use the Helm of the Cursed Vanquisher |use Helm of the Cursed Vanquisher##99748 |only Rogue, DeathKnight, Mage, Druid
-Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to load the Siege of Orgrimmar guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
 Earn the Yaass'shaarj Achievement |achieve 11759
 Click here to continue |confirm
 step
@@ -7998,7 +7998,7 @@ Use the Shoulders of the Cursed Vanquisher |use Shoulders of the Cursed Vanquish
 collect Bracers of Infinite Pipes##112895 |only Hunter |n
 collect Bomber's Blackened Wristwatch##112896 |only Rogue |n
 collect Powder-Stained Totemic Treads##112890 |only Shaman |n
-Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to load the Siege of Orgrimmar guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
 Earn the Yaass'shaarj Achievement |achieve 11759
 Click here to continue |confirm
 step
@@ -8010,14 +8010,14 @@ Use the Leggings of the Cursed Protector |use Leggings of the Cursed Protector##
 collect Leggings of the Cursed Vanquisher##99751 |only Rogue, DeathKnight, Mage, Druid |n
 Use the Leggings of the Cursed Vanquisher |use Leggings of the Cursed Vanquisher##99751 |only Rogue, DeathKnight, Mage, Druid
 collect Bracers of Sonic Projection##112914 |only Priest |n
-Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to load the Siege of Orgrimmar guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
 Earn the Yaass'shaarj Achievement |achieve 11759
 Click here to continue |confirm
 step
 kill Garrosh Hellscream##71865
 collect Belt of the Broken Pact##112936 |only Priest |n
 collect Cord of Black Dreams##112929 |only Druid |n
-Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to load the Siege of Orgrimmar guide |confirm |next "Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
 Earn the Yaass'shaarj Achievement |achieve 11759
 Click here to continue |confirm
 |only Priest, Druid
@@ -8033,7 +8033,7 @@ label "End"
 Congratulations!
 You have earned the _Yaass'shaarj_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Collections\\Legion\\The Tangerine Traveler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Legion\\The Tangerine Traveler",{
 achieveid={10770},
 author="support@zygorguides.com",
 startlevel=100,
@@ -8154,7 +8154,7 @@ label "end"
 Congratulations!
 You have earned _The Tangerine Traveler_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\A Specter, Illuminated",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\A Specter, Illuminated",{
 achieveid={10707},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8173,7 +8173,7 @@ step
 Congratulations!
 You have earned the _A Specter, Illuminated_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\A Steamy Romance Saga",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\A Steamy Romance Saga",{
 achieveid={11769},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8196,7 +8196,7 @@ step
 Congratulations!
 You have earned the _A Steamy Romance Saga_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Adds? More Like Bads",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Adds? More Like Bads",{
 achieveid={10711},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8215,7 +8215,7 @@ step
 Congratulations!
 You have earned the _Adds? More Like Bads_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Arcanic Cling",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Arcanic Cling",{
 achieveid={10773},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8232,7 +8232,7 @@ step
 Congratulations!
 You have earned the _Arcanic Cling_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Black Rook Moan",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Black Rook Moan",{
 achieveid={10710},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8251,7 +8251,7 @@ step
 Congratulations!
 You have earned the _Black Rook Hold_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Boom Bloom",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Boom Bloom",{
 achieveid={11768},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8273,7 +8273,7 @@ step
 Congratulations!
 You have earned the _Boom Bloom_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Broken Isles Keymaster",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Broken Isles Keymaster",{
 achieveid={11181},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8297,7 +8297,7 @@ step
 Congratulations!
 You have earned the _Broken Isles Keymaster_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Burn After Reading",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Burn After Reading",{
 achieveid={11433},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8318,7 +8318,7 @@ step
 Congratulations!
 You have earned the _Burn After Reading_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Burning Down the House",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Burning Down the House",{
 achieveid={10769},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8337,7 +8337,7 @@ step
 Congratulations!
 You have earned the _Burning Down the House_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\But you Say He's Just a Friend",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\But you Say He's Just a Friend",{
 achieveid={10456},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8354,7 +8354,7 @@ step
 Congratulations!
 You have earned the _But you Say He's Just a Friend_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Can't Eat Just One",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Can't Eat Just One",{
 achieveid={10875},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8373,7 +8373,7 @@ step
 Congratulations!
 You have earned the _Can't Eat Just One_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Clean House",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Clean House",{
 achieveid={10775},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8391,7 +8391,7 @@ step
 Congratulations!
 You have earned the _Clean House_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Darker Side",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Darker Side",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Darker Side\" achievement.",
 achieveid={12009},
@@ -8400,7 +8400,7 @@ keywords={"L'ura, Seat, of, the, Triumvirate"},
 },[[
 step
 To enter this dungeon, you must complete the Argus storyline on one character |only if not achieved(12066) or not completedq(46734)
-Click here to load "Argus Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign" |or |only if not achieved(12066) or not completedq(46734)
+Click here to load "Argus Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Argus Campaign" |or |only if not achieved(12066) or not completedq(46734)
 Complete the Argus Campaign |achieve 12066
 step
 Enter the Seat of the Triumvirate with your group |goto The Seat of the Triumvirate/0 21.9,86.2 |c
@@ -8409,18 +8409,18 @@ step
 To earn this achievement, your entire party will need to obtain the debuff _Crushing Darkness_ before killing L'ura
 |tip Players must stand within the Black Voids until they get this debuff.
 |tip The Black Holes are around the room where the 2nd boss is at.
-Click here to load the "Seat of the Triumvirate" guide |next "Zygor's Dungeon Guides\\Legion Dungeons\\Seat of the Triumvirate" |confirm |or
+Click here to load the "Seat of the Triumvirate" guide |next "Dungeon Guides\\Legion Dungeons\\Seat of the Triumvirate" |confirm |or
 Get the Crushing Darkness debuff |havebuff Crushing Darkness##132851 |goto 31,64 |or
 |tip Any immunities will remove this debuff.
 step
 kill L'ura##122314 |goto 60.0,31.5
-Click here to load the "Seat of the Triumvirate" guide |next "Zygor's Dungeon Guides\\Legion Dungeons\\Seat of the Triumvirate" |confirm |or
+Click here to load the "Seat of the Triumvirate" guide |next "Dungeon Guides\\Legion Dungeons\\Seat of the Triumvirate" |confirm |or
 Earn the _Darker Side_ achievement |achieve 12009 |or
 step
 Congratulations!
 You have earned the _Darker Side_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Dine and Bash",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Dine and Bash",{
 achieveid={11338},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8439,7 +8439,7 @@ step
 Congratulations!
 You have earned the _Dine and Bash_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Dropping Some Eaves",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Dropping Some Eaves",{
 achieveid={10611},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8462,7 +8462,7 @@ step
 Congratulations!
 You have earned the _Dropping Some Eaves_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Egg-cellent!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Egg-cellent!",{
 achieveid={10766},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8482,7 +8482,7 @@ step
 Congratulations!
 You have earned the _Egg-cellent!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Got to Ketchum All",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Got to Ketchum All",{
 achieveid={10996},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8543,7 +8543,7 @@ step
 Congratulations!
 You have earned the _Got to Ketchum All_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Helheim Hath No Fury",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Helheim Hath No Fury",{
 achieveid={10411},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8566,7 +8566,7 @@ step
 Congratulations!
 You have earned the _Helheim Hath No Fury_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Assault on Violet Hold",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Assault on Violet Hold",{
 achieveid={10799},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8576,13 +8576,13 @@ description="This guide will walk you through completing the \"Heroic: Assault o
 },[[
 step
 To earn this achievement, complete Assault on Violet Hold on Heroic or higher difficulty
-Click here to load the "Assault on Violet Hold" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Assault on Violet Hold"
+Click here to load the "Assault on Violet Hold" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Assault on Violet Hold"
 Defeat the leader of the Assault on Violet Hold on Heroic difficulty or higher |achieve 10799
 step
 Congratulations!
 You have earned the _Heroic: Assault on Violet Hold_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Black Rook Hold",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Black Rook Hold",{
 achieveid={10805},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8592,13 +8592,13 @@ description="This guide will walk you through completing the \"Heroic: Black Roo
 },[[
 step
 To earn this achievement, complete Black Rook Hold on Heroic or higher difficulty
-Click here to load the "Black Rook Hold" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Black Rook Hold"
+Click here to load the "Black Rook Hold" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Black Rook Hold"
 Defeat Lord Kur'talos Ravencrest in Black Rook Hold on Heroic difficulty or higher |achieve 10805
 step
 Congratulations!
 You have earned the _Heroic: Black Rook Hold_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Darkheart Thicket",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Darkheart Thicket",{
 achieveid={10784},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8608,13 +8608,13 @@ description="This guide will walk you through completing the \"Heroic: Darkheart
 },[[
 step
 To earn this achievement, complete Darkheart Thicket on Heroic or higher difficulty
-Click here to load the "Darkheart Thicket" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Darkheart Thicket"
+Click here to load the "Darkheart Thicket" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Darkheart Thicket"
 Defeat Shade of Xavius in Darkheart Thicket on Heroic difficulty or higher |achieve 10784
 step
 Congratulations!
 You have earned the _Heroic: Darkheart Thicket_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Eye of Azshara",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Eye of Azshara",{
 achieveid={10781},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8624,13 +8624,13 @@ description="This guide will walk you through completing the \"Heroic: Eye of Az
 },[[
 step
 To earn this achievement, complete Eye of Azshara on Heroic or higher difficulty
-Click here to load the "Eye of Azshara" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Eye of Azshara"
+Click here to load the "Eye of Azshara" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Eye of Azshara"
 Defeat the Wrath of Azshara in Eye of Azshara on Heroic difficulty or higher |achieve 10781
 step
 Congratulations!
 You have earned the _Heroic: Eye of Azshara_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Halls of Valor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Halls of Valor",{
 achieveid={10788},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8640,13 +8640,13 @@ description="This guide will walk you through completing the \"Heroic: Halls of 
 },[[
 step
 To earn this achievement, complete Halls of Valor on Heroic or higher difficulty
-Click here to load the "Halls of Valor" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Halls of Valor"
+Click here to load the "Halls of Valor" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Halls of Valor"
 Defeat Odyn in Halls of Valor on Heroic difficulty or higher |achieve 10788
 step
 Congratulations!
 You have earned the _Heroic: Halls of Valor_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Neltharion's Lair",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Neltharion's Lair",{
 achieveid={10796},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8656,13 +8656,13 @@ description="This guide will walk you through completing the \"Heroic: Nelthario
 },[[
 step
 To earn this achievement, complete Neltharion's Lair on Heroic or higher difficulty
-Click here to load "Neltharion's Lair" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Neltharion's Lair"
+Click here to load "Neltharion's Lair" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Neltharion's Lair"
 Defeat Dargrul in Neltharion's Lair on Heroic difficulty or higher |achieve 10796
 step
 Congratulations!
 You have earned the _Heroic: Neltharion's Lair_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Maw of Souls",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Maw of Souls",{
 achieveid={10808},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8672,13 +8672,13 @@ description="This guide will walk you through completing the \"Heroic: Maw of So
 },[[
 step
 To earn this achievement, complete Maw of Souls on Heroic or higher difficulty
-Click here to load the "Maw of Souls" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Maw of Souls"
+Click here to load the "Maw of Souls" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Maw of Souls"
 Defeat Helya in Maw of Souls on Heroic difficulty or higher |achieve 10808
 step
 Congratulations!
 You have earned the _Heroic: Maw of Souls_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Return to Karazhan",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Return to Karazhan",{
 achieveid={11929},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8688,13 +8688,13 @@ description="This guide will walk you through completing the \"Heroic: Return to
 },[[
 step
 To earn this achievement, complete Return to Karazhan on Heroic or higher difficulty
-Click here to load the "Return to Karazhan" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Karazhan\\Return to Karazhan"
+Click here to load the "Return to Karazhan" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Karazhan\\Return to Karazhan"
 Defeat Viz'aduum the Watcher in Return to Karazhan on Heroic difficulty or higher |achieve 11929
 step
 Congratulations!
 You have earned the _Heroic: Return to Karazhan_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Seat of the Triumvirate",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Seat of the Triumvirate",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Heroic: Seat of the Triumvirate\" achievement.",
 achieveid={12007},
@@ -8703,19 +8703,19 @@ keywords={"L'ura, Seat, of, the, Triumvirate"},
 },[[
 step
 To enter this dungeon, you must complete the Argus storyline on one character |only if not achieved(12066) or not completedq(46734)
-Click here to load "Argus Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign" |or |only if not achieved(12066) or not completedq(46734)
+Click here to load "Argus Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Argus Campaign" |or |only if not achieved(12066) or not completedq(46734)
 Complete the Argus Campaign |achieve 12066
 step
 Enter the Seat of the Triumvirate with your group |goto The Seat of the Triumvirate/0 21.9,86.2 |c
 |tip This achievement can only be completed on Heroic or Mythic difficulty.
 step
-Click here to load the "Seat of the Triumvirate" guide |next "Zygor's Dungeon Guides\\Legion Dungeons\\Seat of the Triumvirate" |confirm |or
+Click here to load the "Seat of the Triumvirate" guide |next "Dungeon Guides\\Legion Dungeons\\Seat of the Triumvirate" |confirm |or
 Complete the Seat of the Triumvirate on Heroic difficulty or higher |achieve 12007 |or
 step
 Congratulations!
 You have earned the _Heroic: Seat of the Triumvirate_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Vault of the Wardens",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Vault of the Wardens",{
 achieveid={10802},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8725,13 +8725,13 @@ description="This guide will walk you through completing the \"Heroic: Vault of 
 },[[
 step
 To earn this achievement, complete Vault of the Wardens on Heroic or higher difficulty
-Click here to load the "Vault of the Wardens" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Vault of the Wardens"
+Click here to load the "Vault of the Wardens" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Vault of the Wardens"
 Defeat Cordana Felsong in Vault of the Wardens on Heroic difficulty or higher |achieve 10802
 step
 Congratulations!
 You have earned the _Heroic: Vault of the Wardens_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\I Ain't Even Cold",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\I Ain't Even Cold",{
 achieveid={10679},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8752,7 +8752,7 @@ step
 Congratulations!
 You have earned the _I Aint Even Cold_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\I Got What You Mead",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\I Got What You Mead",{
 achieveid={10542},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8778,7 +8778,7 @@ step
 Congratulations!
 You have earned the _I Got What You Mead_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\I Made a Food!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\I Made a Food!",{
 achieveid={10554},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8796,7 +8796,7 @@ step
 Congratulations!
 You have earned the _I Made a Food!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Instant Karma",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Instant Karma",{
 achieveid={10413},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8814,7 +8814,7 @@ step
 Congratulations!
 You have earned the _Instant Karma_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Keystone Challenger",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Keystone Challenger",{
 achieveid={11184},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8835,7 +8835,7 @@ step
 Congratulations!
 You have earned the _Keystone Challenger_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Keystone Conqueror",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Keystone Conqueror",{
 achieveid={11185},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8856,7 +8856,7 @@ step
 Congratulations!
 You have earned the _Keystone Conqueror_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Keystone Initiate",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Keystone Initiate",{
 achieveid={11183},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8877,7 +8877,7 @@ step
 Congratulations!
 You have earned the _Keystone Initiate_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Keystone Master",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Keystone Master",{
 achieveid={11162},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8898,7 +8898,7 @@ step
 Congratulations!
 You have earned the _Keystone Master_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Let it All Out",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Let it All Out",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Let it All Out\" achievement.",
 achieveid={12005},
@@ -8907,7 +8907,7 @@ keywords={"Darkfang, Saprish, Seat, of, the, Triumvirate"},
 },[[
 step
 To enter this dungeon, you must complete the Argus storyline on one character |only if not achieved(12066) or not completedq(46734)
-Click here to load "Argus Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign" |or |only if not achieved(12066) or not completedq(46734)
+Click here to load "Argus Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Argus Campaign" |or |only if not achieved(12066) or not completedq(46734)
 Complete the Argus Campaign |achieve 12066
 step
 Enter the Seat of the Triumvirate with your group |goto The Seat of the Triumvirate/0 21.9,86.2 |c
@@ -8929,7 +8929,7 @@ step
 Congratulations!
 You have earned the _Let it All Out_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Master of Shadows",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Master of Shadows",{
 achieveid={11703},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8951,7 +8951,7 @@ step
 Congratulations!
 You have earned the _Master of Shadows_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Assault on Violet Hold",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Assault on Violet Hold",{
 achieveid={10800},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8962,13 +8962,13 @@ description="This guide will walk you through completing the \"Mythic: Assault o
 step
 To earn this achievement, complete Assault on Violet Hold on Mythic difficulty
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the Assault on "Violet Hold" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Assault on Violet Hold"
+Click here to load the Assault on "Violet Hold" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Assault on Violet Hold"
 Defeat the leader of the Assault on Violet Hold on Mythic difficulty |achieve 10800
 step
 Congratulations!
 You have earned the _Mythic: Assault on Violet Hold_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Black Rook Hold",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Black Rook Hold",{
 achieveid={10806},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8979,13 +8979,13 @@ description="This guide will walk you through completing the \"Mythic: Black Roo
 step
 To earn this achievement, complete Black Rook Hold on Mythic difficulty
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the "Black Rook Hold" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Black Rook Hold"
+Click here to load the "Black Rook Hold" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Black Rook Hold"
 Defeat Lord Kur'talos Ravencrest in Black Rook Hold on Mythic difficulty |achieve 10806
 step
 Congratulations!
 You have earned the _Mythic: Black Rook Hold_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Cathedral of Eternal Night",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Cathedral of Eternal Night",{
 achieveid={11702},
 author="support@zygorguides.com",
 startlevel=110,
@@ -8996,13 +8996,13 @@ description="This guide will walk you through completing the \"Mythic: Cathedral
 step
 To earn this achievement, complete Cathedral of Eternal Night on Mythic difficulty
 |tip You will need to form your own group, rather than using the group finder.
-Click here to load the "Cathedral of Eternal Night" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Cathedral of Eternal Night"
+Click here to load the "Cathedral of Eternal Night" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Cathedral of Eternal Night"
 Defeat Mephistroth in Cathedral of Eternal Night on Mythic difficulty |achieve 11702
 step
 Congratulations!
 You have earned the _Mythic: Cathedral of Eternal Night_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Darkheart Thicket",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Darkheart Thicket",{
 achieveid={10785},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9013,13 +9013,13 @@ description="This guide will walk you through completing the \"Mythic: Darkheart
 step
 To earn this achievement, complete Darkheart Thicket on Mythic difficulty
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the "Darkheart Thicket" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Darkheart Thicket"
+Click here to load the "Darkheart Thicket" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Darkheart Thicket"
 Defeat Shade of Xavius in Darkheart Thicket on Mythic difficulty |achieve 10785
 step
 Congratulations!
 You have earned the _Mythic: Darkheart Thicket_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Eye of Azshara",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Eye of Azshara",{
 achieveid={10782},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9030,13 +9030,13 @@ description="This guide will walk you through completing the \"Mythic: Eye of Az
 step
 To earn this achievement, complete Eye of Azshara on Mythic difficulty
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the "Eye of Azshara" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Eye of Azshara"
+Click here to load the "Eye of Azshara" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Eye of Azshara"
 Defeat the Wrath of Azshara in Eye of Azshara on Mythic difficulty |achieve 10782
 step
 Congratulations!
 You have earned the _Mythic: Eye of Azshara_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Halls of Valor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Halls of Valor",{
 achieveid={10789},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9047,13 +9047,13 @@ description="This guide will walk you through completing the \"Mythic: Halls of 
 step
 To earn this achievement, complete Halls of Valor on Mythic difficulty
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the "Halls of Valor" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Halls of Valor"
+Click here to load the "Halls of Valor" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Halls of Valor"
 Defeat Odyn in Halls of Valor on Mythic difficulty |achieve 10789
 step
 Congratulations!
 You have earned the _Mythic: Halls of Valor_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Maw of Souls",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Maw of Souls",{
 achieveid={10809},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9064,13 +9064,13 @@ description="This guide will walk you through completing the \"Mythic: Maw of So
 step
 To earn this achievement, complete Maw of Souls on Mythic difficulty
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the "Maw of Souls" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Maw of Souls"
+Click here to load the "Maw of Souls" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Maw of Souls"
 Defeat Helya in Maw of Souls on Mythic difficulty |achieve 10809
 step
 Congratulations!
 You have earned the _Mythic: Maw of Souls_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Neltharion's Lair",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Neltharion's Lair",{
 achieveid={10797},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9081,13 +9081,13 @@ description="This guide will walk you through completing the \"Mythic: Nelthario
 step
 To earn this achievement, complete Neltharion's Lair on Mythic difficulty
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the "Neltharion's Lair" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Neltharion's Lair"
+Click here to load the "Neltharion's Lair" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Neltharion's Lair"
 Defeat Dargrul in Neltharion's Lair on Mythic difficulty |achieve 10797
 step
 Congratulations!
 You have earned the _Mythic: Neltharion's Lair_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Return to Karazhan",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Return to Karazhan",{
 achieveid={11429},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9098,15 +9098,15 @@ description="This guide will walk you through completing the \"Return to Karazha
 step
 To earn this achievement, you will need to complete the Karazhan Attunement guide
 Afterwards, complete the Return to Karazhan dungeon
-Click here to load the "Karazhan Attunement" guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Karazhan\\Karazhan Attunement"
+Click here to load the "Karazhan Attunement" guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Karazhan\\Karazhan Attunement"
 If you have already completed the Attunement:
-Click here to load the "Return to Karazhan" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Karazhan\\Return to Karazhan"
+Click here to load the "Return to Karazhan" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Karazhan\\Return to Karazhan"
 Defeat Viz'aduum the Watcher in Return to Karazhan |achieve 11429
 step
 Congratulations!
 You have earned the _Return to Karazhan_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Seat of the Triumvirate",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Seat of the Triumvirate",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mythic: Seat of the Triumvirate\" achievement.",
 achieveid={12008},
@@ -9115,20 +9115,20 @@ keywords={"Urjad, Zuraal, Ascended, Seat, of, the, Triumvirate"},
 },[[
 step
 To enter this dungeon, you must complete the Argus storyline on one character |only if not achieved(12066) or not completedq(46734)
-Click here to load "Argus Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign" |or |only if not achieved(12066) or not completedq(46734)
+Click here to load "Argus Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Argus Campaign" |or |only if not achieved(12066) or not completedq(46734)
 Complete the Argus Campaign |achieve 12066
 step
 Enter the Seat of the Triumvirate with your group |goto The Seat of the Triumvirate/0 21.9,86.2 |c
 |tip This achievement can only be completed on Mythic difficulty.
 step
-Click here to load the "Seat of the Triumvirate" guide |next "Zygor's Dungeon Guides\\Legion Dungeons\\Seat of the Triumvirate" |confirm |or
+Click here to load the "Seat of the Triumvirate" guide |next "Dungeon Guides\\Legion Dungeons\\Seat of the Triumvirate" |confirm |or
 |tip Clear the entire dungeon.
 Earn the _Mythic: Seat of the Triumvirate_ achievement |achieve 12008 |or
 step
 Congratulations!
 You have earned the _Mythic: Seat of the Triumvirate_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Vault of the Wardens",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Mythic: Vault of the Wardens",{
 achieveid={10803},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9139,13 +9139,13 @@ description="This guide will walk you through completing the \"Mythic: Vault of 
 step
 To earn this achievement, complete Vault of the Wardens on Mythic
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the "Vault of the Wardens" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Vault of the Wardens"
+Click here to load the "Vault of the Wardens" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Vault of the Wardens"
 Defeat Cordana Felsong in Vault of the Wardens on Mythic difficulty |achieve 10803
 step
 Congratulations!
 You have earned the _Mythic: Vault of the Wardens_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\No Time to Waste",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\No Time to Waste",{
 achieveid={10776},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9165,7 +9165,7 @@ step
 Congratulations!
 You have earned the _No Time to Waste_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\One Night in Karazhan",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\One Night in Karazhan",{
 achieveid={11430},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9193,7 +9193,7 @@ step
 Congratulations!
 You have earned the _One Night in Karazhan_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Poor Unfortunate Souls",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Poor Unfortunate Souls",{
 achieveid={10412},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9237,7 +9237,7 @@ step
 Congratulations!
 You have earned the _Poor Unfortunate Souls_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\The Rat Pack",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\The Rat Pack",{
 achieveid={11431},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9259,7 +9259,7 @@ step
 Congratulations!
 You have earned the _The Rat Pack_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Ready for Raiding V",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Ready for Raiding V",{
 achieveid={10458},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9277,7 +9277,7 @@ step
 Congratulations!
 You have earned the _Ready for Raiding V_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Scared Straight",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Scared Straight",{
 achieveid={11432},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9293,7 +9293,7 @@ step
 Congratulations!
 You have earned the _Scared Straight_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Season Tickets",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Season Tickets",{
 achieveid={11335},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9312,7 +9312,7 @@ step
 Congratulations!
 You have earned the _Season Tickets_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Stag Party",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Stag Party",{
 achieveid={10544},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9338,7 +9338,7 @@ step
 Congratulations!
 You have earned the _Stag Party_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Stay Salty",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Stay Salty",{
 achieveid={10457},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9357,7 +9357,7 @@ step
 Congratulations!
 You have earned the _Stay Salty_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Surge Protector",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Surge Protector",{
 achieveid={10543},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9373,7 +9373,7 @@ step
 Congratulations!
 You have earned the _Surge Protector_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Waiting for Gerdo",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Waiting for Gerdo",{
 achieveid={10610},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9395,7 +9395,7 @@ step
 Congratulations!
 You have earned the _Waiting for Gerdo_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Welcome the Void",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Welcome the Void",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Welcome the Void\" achievement.",
 achieveid={12004},
@@ -9404,7 +9404,7 @@ keywords={"Urjad, Zuraal, Ascended, Seat, of, the, Triumvirate"},
 },[[
 step
 To enter this dungeon, you must complete the Argus storyline on one character |only if not achieved(12066) or not completedq(46734)
-Click here to load "Argus Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign" |or |only if not achieved(12066) or not completedq(46734)
+Click here to load "Argus Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Argus Campaign" |or |only if not achieved(12066) or not completedq(46734)
 Complete the Argus Campaign |achieve 12066
 step
 Enter the Seat of the Triumvirate with your group |goto The Seat of the Triumvirate/0 21.9,86.2 |c
@@ -9421,7 +9421,7 @@ step
 Congratulations!
 You have earned the _Welcome the Void_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Who's Afraid of the Dark",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Who's Afraid of the Dark",{
 achieveid={10680},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9442,7 +9442,7 @@ step
 Congratulations!
 You have earned the _Who's Afraid of the Dark?_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\You Used to Scrawl Me In Your Fel Tome",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\You Used to Scrawl Me In Your Fel Tome",{
 achieveid={10709},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9492,7 +9492,7 @@ step
 Congratulations!
 You have earned the _You Used to Scrawl Me In Your Fel Tome_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\You're Just Making It WORSE!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\You're Just Making It WORSE!",{
 achieveid={10553},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9502,7 +9502,7 @@ description="This guide will walk you through completing the \"You're Just Makin
 },[[
 step
 Refer to the _Follower Millhouse Manastorm_ guide in order to attain the Manastorm's Duplicator
-Click here to load the "Millhouse Manastorm" follower guide |confirm |next "Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Millhouse Manastorm"
+Click here to load the "Millhouse Manastorm" follower guide |confirm |next "Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Millhouse Manastorm"
 Click here to continue |confirm
 step
 Use Manastorm's Duplicator on yourself at the start of the Millificent Manastorm encounter |use Manastorm's Duplicator##118938
@@ -9514,7 +9514,7 @@ step
 Congratulations!
 You have earned the _You're just Making It WORSE!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\A Change In Scenery",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\A Change In Scenery",{
 achieveid={10817},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9532,7 +9532,7 @@ step
 Congratulations!
 You have earned the _A Change In Scenery_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Arcing Aqueducts",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Arcing Aqueducts",{
 achieveid={10829},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9550,7 +9550,7 @@ step
 Congratulations!
 You have earned the _Arcing Aqueducts_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Betrayer's Rise",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Betrayer's Rise",{
 achieveid={10839},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9567,7 +9567,7 @@ step
 Congratulations!
 You have earned the _Betrayer's Rise_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Bingo!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Bingo!",{
 achieveid={11683},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9589,7 +9589,7 @@ step
 Congratulations!
 You have earned the _Bingo_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Boneafide Tri Tip",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Boneafide Tri Tip",{
 achieveid={11386},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9615,7 +9615,7 @@ step
 Congratulations!
 You have earned the _Boneafide Tri Tip_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Buggy Fight",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Buggy Fight",{
 achieveid={10555},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9635,7 +9635,7 @@ step
 Congratulations!
 You have earned the _Buggy Fight_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Burning Bridges",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Burning Bridges",{
 achieveid={10575},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9644,7 +9644,7 @@ keywords={"krosus, the, nighthold, mythic"},
 description="This guide will walk you through completing the \"Burning Bridges\" achievement.",
 },[[
 step
-Click here to load the "Nighthold - Mythic" guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Mythic"
+Click here to load the "Nighthold - Mythic" guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Mythic"
 |tip To earn this achievement, you will need to kill 15 Embers using the water under the bridge during the Krosus encounter in The Nighthold.
 |tip Periodically during the fight, Krosus will cast Burning Pitch.
 |tip Krosus will place green circles on the ground all across the bridge.
@@ -9659,7 +9659,7 @@ step
 Congratulations!
 You have earned the _Burning Bridges_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Cage Rematch",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Cage Rematch",{
 achieveid={10678},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9676,7 +9676,7 @@ step
 Congratulations!
 You have earned the _Cage Rematch_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Chamber of the Avatar",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Chamber of the Avatar",{
 achieveid={11789},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9685,7 +9685,7 @@ keywords={"tomb, of, sargeras, lfr"},
 description="This guide will walk you through completing the \"Chamber of the Avatar\" achievement.",
 },[[
 step
-Click here to load the "Tomb of Sargeras - Chamber of the Avatar" guide |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Chamber of the Avatar"
+Click here to load the "Tomb of Sargeras - Chamber of the Avatar" guide |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Chamber of the Avatar"
 |tip You must complete the Chamber of the Avatar wing of Tomb of Sargeras.
 |tip Two bosses are required: Maiden of Vigilance and the Fallen Avatar.
 Earn the _Chamber of the Avatar_ achievement |achieve 11787
@@ -9693,7 +9693,7 @@ step
 Congratulations!
 You have earned the _Chamber of the Avatar_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\The Chosen",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\The Chosen",{
 achieveid={11387},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9709,7 +9709,7 @@ step
 Congratulations!
 You have earned the _The Chosen_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Dark Souls",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Dark Souls",{
 achieveid={11770},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9732,7 +9732,7 @@ step
 Congratulations!
 You have earned the _Dark Souls_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Darkbough",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Darkbough",{
 achieveid={10818},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9752,7 +9752,7 @@ step
 Congratulations!
 You have earned the _Darkbough_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Deceiver's Fall",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Deceiver's Fall",{
 achieveid={11790},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9761,15 +9761,15 @@ keywords={"tomb, of, sargeras, lfr"},
 description="This guide will walk you through completing the \"Deceiver's Fall\" achievement.",
 },[[
 step
-Click here to load the "Tomb of Sargeras - Deceiver's Fall" guide |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Deceiver's Fall"
+Click here to load the "Tomb of Sargeras - Deceiver's Fall" guide |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Deceiver's Fall"
 |tip You must complete the Deceiver's Fall wing of Tomb of Sargeras.
-|tip To earn this acheivement, you must defeat Kil'Jaeden.
+|tip To earn this achievement, you must defeat Kil'Jaeden.
 Earn the _Deceiver's Fall_ achievement |achieve 11787
 step
 Congratulations!
 You have earned the _Deceiver's Fall_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Elementalry!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Elementalry!",{
 achieveid={10851},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9794,7 +9794,7 @@ step
 Congratulations!
 You have earned the _Elementalry!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Fel Turkey!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Fel Turkey!",{
 achieveid={11724},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9803,7 +9803,7 @@ keywords={"tomb, of, sargeras"},
 description="This guide will walk you through completing the \"Fel Turkey!\" achievement.",
 },[[
 step
-Click here to load the "Tomb of Sargeras - Normal/Heroic" guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the "Tomb of Sargeras - Normal/Heroic" guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 |tip This achievement cannot be completed on LFR difficulty.
 |tip To earn this achievement, your group will need to destroy 30 Infernal Spikes using Goroth's Shattering Star ability.
 |tip Shattering Star will periodically target a random player. If targeted, try to get as many Infernal Spikes between you and the boss as possible.
@@ -9814,7 +9814,7 @@ step
 Congratulations!
 You have earned the _Fel Turky!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Five Course Seafood Buffet",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Five Course Seafood Buffet",{
 achieveid={11676},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9862,7 +9862,7 @@ step
 Congratulations!
 You have earned the _Five Course Seafood Buffet_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Fruit of All Evil",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Fruit of All Evil",{
 achieveid={10754},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9880,7 +9880,7 @@ step
 Congratulations!
 You have earned the _Fruit of All Evil_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\The Gates of Hell",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\The Gates of Hell",{
 achieveid={11787},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9889,7 +9889,7 @@ keywords={"tomb, of, sargeras, lfr"},
 description="This guide will walk you through completing the \"The Gates of Hell\" Achievement.",
 },[[
 step
-Click here to load the "Tomb of Sargeras - Gates of Hell" guide |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Gates of Hell"
+Click here to load the "Tomb of Sargeras - Gates of Hell" guide |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Gates of Hell"
 |tip You must complete the Gates of Hell wing of Tomb of Sargeras.
 |tip Three bosses are required: Mistress Sassz'ine, Harjatan, and Goroth.
 Earn _The Gates of Hell_ achievement |achieve 11787
@@ -9897,7 +9897,7 @@ step
 Congratulations!
 You have earned the _The Gates of Hell_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Gluten Free",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Gluten Free",{
 achieveid={10742},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9914,7 +9914,7 @@ step
 Congratulations!
 You have earned the _Gluten Free_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Grand Fin-ale",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Grand Fin-ale",{
 achieveid={11699},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9925,11 +9925,11 @@ description="This guide will walk you through completing the \"Grand Fin-ale\" a
 step
 To earn this achievement, someone in your raid will need to have the Mrgrglhjorn toy
 |tip This toy is obtained by completing the "No Shellfish Endeavor" achievement.
-Click here to load the "No Shellfish Endeavor" guide |confirm |or |next "Zygor's Achievement Guides\\Quests\\Legion\\No Shellfish Endeavor"
+Click here to load the "No Shellfish Endeavor" guide |confirm |or |next "Achievement Guides\\Quests\\Legion\\No Shellfish Endeavor"
 Obtain the Mrgrglhjorn toy |toy Mrgrglhjorn##143660
 If someone in your group already has this toy, click here |confirm
 step
-Click here to load the "Tomb of Sargeras - Normal/Heroic" guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the "Tomb of Sargeras - Normal/Heroic" guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 |tip Mrgrglhjorn must be used during the Harjatan encounter.
 Engage Harjatan and use your Mrgrglhjorn |use Mrgrglhjorn##143660
 |tip This will summon a new murloc add.
@@ -9939,7 +9939,7 @@ step
 Congratulations!
 You have earned the _Grand Fin-ale_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Grand Opening",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Grand Opening",{
 achieveid={10697},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9958,7 +9958,7 @@ step
 Congratulations!
 You have earned the _Grand Opening_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Great Soul, Great Purpose",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Great Soul, Great Purpose",{
 achieveid={11674},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9984,7 +9984,7 @@ step
 Congratulations!
 You have earned the _Great Soul, Great Purpose_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Grin and Bear it!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Grin and Bear it!",{
 achieveid={11696},
 author="support@zygorguides.com",
 startlevel=110,
@@ -9993,7 +9993,7 @@ keywords={"tomb, of, sargeras"},
 description="This guide will walk you through completing the \"Grin and Bear it!\" achievement.",
 },[[
 step
-Click here to load the "Tomb of Sargeras - Normal/Heroic" guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
+Click here to load the "Tomb of Sargeras - Normal/Heroic" guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Normal/Heroic"
 |tip This achievement cannot be completed on LFR difficulty.
 |tip To earn this achievement, your entire raid group needs to have full Torment before killing the Demonic Inquisition boss encounter in Tomb of Sargeras.
 |tip Normally, you would use the extra action button provided to enter Belac's cage to reduce your Torment level.
@@ -10003,7 +10003,7 @@ step
 Congratulations!
 You have earned the _Grin and Bear it!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Heroic: Trial of Valor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Heroic: Trial of Valor",{
 achieveid={11426},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10012,14 +10012,14 @@ keywords={"Trial","of","Valor","Heroic"},
 description="This guide will walk you through completing the \"Heroic: Trial of Valor\" achievement.",
 },[[
 step
-Click here to load the "Trial of Valor - Normal/Heroic" guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Trial of Valor - Normal/Heroic" |or
+Click here to load the "Trial of Valor - Normal/Heroic" guide |confirm |next "Dungeon Guides\\Legion Raids\\Trial of Valor - Normal/Heroic" |or
 |tip To earn this achievement, complete Trial of Valor on Heroic difficulty or higher.
 Earn the _Heroic: Trial of Valor_ achievement |achieve 11426
 step
 Congratulations!
 You have earned the _Heroic: Trial of Valor_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\I Attack the Darkness",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\I Attack the Darkness",{
 achieveid={10755},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10039,7 +10039,7 @@ step
 Congratulations!
 You have earned the _I Attack the Darkness_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\I've Got My Eyes On You",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\I've Got My Eyes On You",{
 achieveid={10696},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10056,7 +10056,7 @@ step
 Congratulations!
 You have earned the _I've Got My Eyes On You_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Imagined Dragons World Tour",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Imagined Dragons World Tour",{
 achieveid={10663},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10078,7 +10078,7 @@ step
 Congratulations!
 You have earned the _Imagined Dragons World Tour_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Infinitesimal",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Infinitesimal",{
 achieveid={10699},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10088,7 +10088,7 @@ description="This guide will walk you through completing the \"Burning Bridges\"
 },[[
 step
 You will need the _Infinite Whelpling Battle Pet_ in order to achieve this
-Click here to load the "Infinite Whelpling" Battle Pet guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Infinite Whelpling"
+Click here to load the "Infinite Whelpling" Battle Pet guide |confirm |next "Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Infinite Whelpling"
 Click here to continue |confirm
 step
 First, summon your Infinite Whelpling battle pet
@@ -10101,7 +10101,7 @@ step
 Congratulations!
 You have earned the _Infinitesimal_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Cenarius",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Cenarius",{
 achieveid={10826},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10114,13 +10114,13 @@ Enter the Emerald Nightmare raid |goto The Emerald Nightmare/1 38.0,66.6 < 1000 
 |tip The raid must be set to Mythic difficulty.
 step
 kill Cenarius##104636
-Click here to load the "Emerald Nightmare - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic" |or
+Click here to load the "Emerald Nightmare - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic" |or
 Earn the _Mythic: Cenarius_ achievement |achieve 10826 |or |goto The Emerald Nightmare/11 59.9,33.9
 step
 Congratulations!
 You have earned the _Mythic: Cenarius_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Chronomatic Anomaly",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Chronomatic Anomaly",{
 achieveid={10842},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10133,13 +10133,13 @@ Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_s
 confirm
 step
 kill Chronomatic Anomaly##104415
-Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
+Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
 Earn the _Mythic: Chronomatic Anomaly_ achievement |achieve 10842 |or |goto The Nighthold/1 52.2,47.4
 step
 Congratulations!
 You have earned the _Mythic: Chronomatic Anomaly_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Demonic Inquisition",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Demonic Inquisition",{
 achieveid={11774},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10152,13 +10152,13 @@ Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
 |tip This achievement must be completed on Mythic difficulty.
 step
 kill Atrigan##120996, Belac##116691
-Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
+Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
 Earn the _Mythic: Demonic Inquisition_ achievement |achieve 11774 |goto 45,17
 step
 Congratulations!
 You have earned the _Mythic: Demonic Inquisition_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Desolate Host",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Desolate Host",{
 achieveid={11778},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10171,13 +10171,13 @@ Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
 |tip This achievement must be completed on Mythic difficulty.
 step
 Defeat the Desolate Host
-Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
+Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
 Earn the _Mythic: Desolate Host_ achievement |achieve 11778 |goto Tomb of Sargeras/3 59,20
 step
 Congratulations!
 You have earned the _Mythic: Desolate Host_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Dragons of Nightmare",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Dragons of Nightmare",{
 achieveid={10825},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10190,13 +10190,13 @@ Enter the Emerald Nightmare raid |goto The Emerald Nightmare/1 38.0,66.6 < 1000 
 |tip The raid must be set to Mythic difficulty.
 step
 kill Ysondre##102679
-Click here to load the "Emerald Nightmare - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic" |or
+Click here to load the "Emerald Nightmare - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic" |or
 Earn the _Mythic: Dragons of Nightmare_ achievement |achieve 10825 |or |goto The Emerald Nightmare/5 37.0,48.5
 step
 Congratulations!
 You have earned the _Mythic: Dragons of Nightmare_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Elerethe Renferal",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Elerethe Renferal",{
 achieveid={10822},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10209,13 +10209,13 @@ Enter the Emerald Nightmare raid |goto The Emerald Nightmare/1 38.0,66.6 < 1000 
 |tip The raid must be set to Mythic difficulty.
 step
 kill Elerethe Renferal##106087
-Click here to load the "Emerald Nightmare - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic" |or
+Click here to load the "Emerald Nightmare - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic" |or
 Earn the _Mythic: Elerethe Renferal_ achievement |achieve 10822 |or |goto The Emerald Nightmare/3 33.1,61.3
 step
 Congratulations!
 You have earned the _Mythic: Elerethe Renferal_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Fallen Avatar",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Fallen Avatar",{
 achieveid={11780},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10228,13 +10228,13 @@ Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
 |tip This achievement must be completed on Mythic difficulty.
 step
 kill Fallen Avatar##120436
-Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
+Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
 Earn the _Mythic: Fallen Avatar_ achievement |achieve 11780 |goto Tomb of Sargeras/5 50,19
 step
 Congratulations!
 You have earned the _Mythic: Fallen Avatar_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Goroth",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Goroth",{
 achieveid={11767},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10247,13 +10247,13 @@ Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
 |tip This achievement must be completed on Mythic difficulty.
 step
 kill Goroth##115844
-Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
+Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
 Earn the _Mythic: Goroth_ achievement |achieve 11767 |goto 45,57
 step
 Congratulations!
 You have earned the _Mythic: Goroth_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Grand Magistrix Elisande",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Grand Magistrix Elisande",{
 achieveid={10849},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10266,13 +10266,13 @@ Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_s
 confirm
 step
 kill Grand Magistrix Elisande##110965
-Click here to load the "Trial of Valor - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
+Click here to load the "Trial of Valor - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
 Earn the _Mythic: Grand Magistrix Elisande_ achievement |achieve 10849 |or |goto The Nighthold/7 49.3,53.0
 step
 Congratulations!
 You have earned the _Mythic: Grand Magistrix Elisande_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Guarm",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Guarm",{
 achieveid={11397},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10284,13 +10284,13 @@ step
 Enter the Trial of Valor with your group |goto Trial of Valor/2 51,10 < 1000 |c
 step
 kill Guarm##114344
-Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Trial of Valor - Mythic" |or
+Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Trial of Valor - Mythic" |or
 Earn the _Mythic: Guarm_ achievement |achieve 11397 |or |goto Trial of Valor/3 50.5,31.0
 step
 Congratulations!
 You have earned the _Mythic: Guarm_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Gul'dan",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Gul'dan",{
 achieveid={10850},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10303,13 +10303,13 @@ Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_s
 confirm
 step
 kill Gul'dan##105503
-Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
+Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
 Earn the _Mythic: Gul'dan_ achievement |achieve 10850 |or |goto The Nighthold/9 49.3,52.2
 step
 Congratulations!
 You have earned the _Mythic: Gul'dan_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Harjatan",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Harjatan",{
 achieveid={11775},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10322,13 +10322,13 @@ Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
 |tip This achievement must be completed on Mythic difficulty.
 step
 kill Harjatan##116407
-Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
+Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
 Earn the _Mythic: Harjatan_ achievement |achieve 11775 |goto Tomb of Sargeras/2 43,66
 step
 Congratulations!
 You have earned the _Mythic: Harjatan_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Helya",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Helya",{
 achieveid={11398},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10340,13 +10340,13 @@ step
 Enter the Trial of Valor with your group |goto Trial of Valor/2 51,10 < 1000 |c
 step
 kill Helya##114537
-Click here to load the "Trial of Valor - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Trial of Valor - Mythic" |or
+Click here to load the "Trial of Valor - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Trial of Valor - Mythic" |or
 Earn the _Mythic: Guarm_ achievement |achieve 11398 |or |goto Trial of Valor/3 35.7,24.2
 step
 Congratulations!
 You have earned the _Mythic: Helya_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: High Botanist Tel'arn",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: High Botanist Tel'arn",{
 achieveid={10846},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10359,13 +10359,13 @@ Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_s
 confirm
 step
 kill High Botanist Tel'arn##104528
-Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
+Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
 Earn the _Mythic: High Botanist Tel'arn_ achievement |achieve 10846 |or |goto The Nighthold/4 62.0,39.7
 step
 Congratulations!
 You have earned the _Mythic: High Botanist Tel'arn_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Il'gynoth",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Il'gynoth",{
 achieveid={10823},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10378,13 +10378,13 @@ Enter the Emerald Nightmare raid |goto The Emerald Nightmare/1 38.0,66.6 < 1000 
 |tip The raid must be set to Mythic difficulty.
 step
 kill Il'gynoth##105393
-Click here to load the "Emerald Nightmare - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic" |or
+Click here to load the "Emerald Nightmare - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic" |or
 Earn the _Mythic: Il'gynoth_ achievement |achieve 10823 |or |goto The Emerald Nightmare/4 48.3,48.5
 step
 Congratulations!
 You have earned the _Mythic: Il'gynoth_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Kil'Jaeden",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Kil'Jaeden",{
 achieveid={11781},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10397,13 +10397,13 @@ Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
 |tip This achievement must be completed on Mythic difficulty.
 step
 kill Kil'Jaeden##117269
-Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
+Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
 Earn the _Mythic: Kil'Jaeden_ achievement |achieve 11781 |goto Tomb of Sargeras/7 73,45
 step
 Congratulations!
 You have earned the _Mythic: Kil'Jaeden_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Krosus",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Krosus",{
 achieveid={10848},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10416,13 +10416,13 @@ Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_s
 confirm
 step
 kill Krosus##101002
-Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
+Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
 Earn the _Mythic: Krosus_ achievement |achieve 10848 |or |goto The Nighthold/3 73.9,92.1
 step
 Congratulations!
 You have earned the _Mythic: Krosus_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Maiden of Vigilance",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Maiden of Vigilance",{
 achieveid={11779},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10435,13 +10435,13 @@ Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
 |tip This achievement must be completed on Mythic difficulty.
 step
 kill Maiden of Vigilance##118289
-Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
+Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
 Earn the _Mythic: Maiden of Vigilance_ achievement |achieve 11779 |goto Tomb of Sargeras/4 51,27
 step
 Congratulations!
 You have earned the _Mythic: Maiden of Vigilance_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Mistress Sassz'ine",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Mistress Sassz'ine",{
 achieveid={11776},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10454,13 +10454,13 @@ Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
 |tip This achievement must be completed on Mythic difficulty.
 step
 kill Mistress Sassz'ine##115767
-Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
+Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
 Earn the _Mythic: Mistress Sassz'ine_ achievement |achieve 11776 |goto Tomb of Sargeras/2 85,87
 step
 Congratulations!
 You have earned the _Mythic: Mistress Sassz'ine_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Nythendra",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Nythendra",{
 achieveid={10821},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10473,13 +10473,13 @@ Enter the Emerald Nightmare raid |goto The Emerald Nightmare/1 38.0,66.6 < 1000 
 |tip The raid must be set to Mythic difficulty.
 step
 kill Nythendra##102672
-Click here to load the "Emerald Nightmare - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic" |or
+Click here to load the "Emerald Nightmare - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic" |or
 Earn the _Mythic: Nythendra_ achievement |achieve 10821 |or |goto The Emerald Nightmare/1 55.1,50.0
 step
 Congratulations!
 You have earned the _Mythic: Nythendra_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Odyn",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Odyn",{
 achieveid={11396},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10491,13 +10491,13 @@ step
 Enter the Trial of Valor with your group |goto Trial of Valor/2 51,10 < 1000 |c
 step
 kill Odyn##114263
-Click here to load the "Trial of Valor - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Trial of Valor - Mythic" |or
+Click here to load the "Trial of Valor - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Trial of Valor - Mythic" |or
 Earn the _Mythic: Guarm_ achievement |achieve 11396 |or |goto Trial of Valor/2 51.1,82.1
 step
 Congratulations!
 You have earned the _Mythic: Odyn_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Sisters of the Moon",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Sisters of the Moon",{
 achieveid={11777},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10510,13 +10510,13 @@ Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
 |tip This achievement must be completed on Mythic difficulty.
 step
 kill Huntress Kasparian##118523, Captain Yathae Moonstrike##118374, Priestess Lunaspyre##118518
-Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
+Click here to load the "Tomb of Sargeras - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Mythic"
 Earn the _Mythic: Sisters of the Moon_ achievement |achieve 11777 |goto Tomb of Sargeras/3 52,58
 step
 Congratulations!
 You have earned the _Mythic: Sisters of the Moon_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Skorpyron",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Skorpyron",{
 achieveid={10840},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10529,13 +10529,13 @@ Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_s
 confirm
 step
 kill Skorpyron##102263
-Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
+Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
 Earn the _Mythic: Skorpyron_ achievement |achieve 10840 |or |goto The Nighthold/1 32.0,61.2
 step
 Congratulations!
 You have earned the _Mythic: Skorpyron_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Spellblade Aluriel",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Spellblade Aluriel",{
 achieveid={10844},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10548,13 +10548,13 @@ Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_s
 confirm
 step
 kill Spellblade Aluriel##104881
-Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
+Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
 Earn the _Mythic: Spellblade Aluriel_ achievement |achieve 10844 |or |goto The Nighthold/3 37.2,25.0
 step
 Congratulations!
 You have earned the _Mythic: Spellblade Aluriel_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Star Augur Etraeus",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Star Augur Etraeus",{
 achieveid={10845},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10567,13 +10567,13 @@ Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_s
 confirm
 step
 kill Star Augur Etraeus##103758
-Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
+Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
 Earn the _Mythic: Star Augur Etraeus_ achievement |achieve 10845 |or |goto The Nighthold/6 37.0,21.0
 step
 Congratulations!
 You have earned the _Mythic: Star Augur Etraeus_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Tichondrius",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Tichondrius",{
 achieveid={10847},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10586,13 +10586,13 @@ Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_s
 confirm
 step
 kill Tichondrius##103685
-Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
+Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
 Earn the _Mythic: Tichondrius_ achievement |achieve 10847 |or |goto The Nighthold/5 26.5,63.4
 step
 Congratulations!
 You have earned the _Mythic: Tichondrius_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Trilliax",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Trilliax",{
 achieveid={10843},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10605,13 +10605,13 @@ Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_s
 confirm
 step
 kill Trilliax##104288
-Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
+Click here to load the "Nighthold - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Nighthold - Mythic" |or
 Earn the _Mythic: Trilliax_ achievement |achieve 10843 |or
 step
 Congratulations!
 You have earned the _Mythic: Trilliax_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Ursoc",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Ursoc",{
 achieveid={10824},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10624,13 +10624,13 @@ Enter the Emerald Nightmare raid |goto The Emerald Nightmare/1 38.0,66.6 < 1000 
 |tip The raid must be set to Mythic difficulty.
 step
 kill Ursoc##100497
-Click here to load the "Emerald Nightmare - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic" |or
+Click here to load the "Emerald Nightmare - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic" |or
 Earn the _Mythic: Ursoc_ achievement |achieve 10824 |or |goto The Emerald Nightmare/10 48.1,30.0
 step
 Congratulations!
 You have earned the _Mythic: Ursoc_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Xavius",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Xavius",{
 achieveid={10827},
 author="support@zygorguides.com",
 startlevel=110,
@@ -10643,13 +10643,13 @@ Enter the Emerald Nightmare raid |goto The Emerald Nightmare/1 38.0,66.6 < 1000 
 |tip The raid must be set to Mythic difficulty.
 step
 kill Xavius##103769
-Click here to load the "Emerald Nightmare - Mythic" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic" |or
+Click here to load the "Emerald Nightmare - Mythic" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic" |or
 Earn the _Mythic: Xavius_ achievement |achieve 10827 |or |goto The Emerald Nightmare/12 36.5,78.0
 step
 Congratulations!
 You have earned the _Mythic: Xavius_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Don't Sweat the Technique",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Don't Sweat the Technique",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Don't Sweat the Technique\" achievement.",
 achieveid={11915},
@@ -10669,7 +10669,7 @@ step
 Congratulations!
 You have earned the _Don't Sweat the Technique_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Forbidden Descent",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Forbidden Descent",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Forbidden Descent\" achievement.",
 achieveid={11990},
@@ -10678,15 +10678,15 @@ keywords={"Kin'garoth, Varimathras, Coven, Shivarra, Antorus, Burning, Throne"},
 },[[
 step
 kill Kin'garoth##125050
-Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Defeat Kin'garoth |achieve 11990/1 |or |goto Antorus/6 80.0,49.9
 step
 kill Varimathras##125075
-Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Defeat Varimathras |achieve 11990/2 |or |goto Antorus/8 51.6,81.3
 step
 kill Noura, Mother of Flames##122468, Asara, Mother of Night##122467, Diima, Mother of Gloom##122469
-Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Defeat The Coven of Shivarra |achieve 11990/3 |or |goto Antorus/7 32.1,52.7
 step
 Earn the _Forbidden Descent_ achievement |achieve 11990
@@ -10694,7 +10694,7 @@ step
 Congratulations!
 You have earned the _Forbidden Descent_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Hard to Kill",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Hard to Kill",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Hard to Kill\" achievement.",
 achieveid={11949},
@@ -10716,7 +10716,7 @@ step
 Congratulations!
 You have earned the _Hard to Kill_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Hope's End",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Hope's End",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Hope's End\" achievement.",
 achieveid={11989},
@@ -10725,15 +10725,15 @@ keywords={"Portal, Keeper, Hasabel, Imonar, Soulhunter, Eonar, Antorus, Burning,
 },[[
 step
 kill Portal Keeper Hasabel##124393
-Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Defeat Portal Keeper Hasabel |achieve 11989/1 |or |goto Antorus/3 43.5,51.1
 step
 Defend Eonar
-Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Defend Eonar |achieve 11989/2 |or |goto Antorus/5 40.1,59.1
 step
 kill Imonar the Soulhunter##125055
-Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Defeat Imonar the Soulhunter |achieve 11989/3 |or |goto Antorus/6 17.6,50.1
 step
 Earn the _Hope's End_ achievement |achieve 11989
@@ -10741,7 +10741,7 @@ step
 Congratulations!
 You have earned the _Hope's End_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Hounds Good To Me",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Hounds Good To Me",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Hounds Good To Me\" achievement.",
 achieveid={12065},
@@ -10760,7 +10760,7 @@ step
 Congratulations!
 You have earned the _Hounds Good To Me_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Light's Breach",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Light's Breach",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Light's Breach\" achievement.",
 achieveid={11988},
@@ -10769,15 +10769,15 @@ keywords={"Garothi, Worldbreaker, Hounds, Sargeras, Antoran, Command, Antorus, B
 },[[
 step
 kill Garothi Worldbreaker##123371
-Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Defeat the Garothi Worldbreaker |achieve 11988/1 |or |goto Antorus/1 72.7,58.7
 step
 kill F'harg##126916, Shatug##126915
-Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Defeat the Felhounds of Sargeras |achieve 11988/2 |or |goto 41.2,53.5
 step
 kill Admiral Svirax##122367, Chief Engineer Ishkar##125012, General Erodus##125014
-Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Defeat the Antoran High Command |achieve 11988/3 |or |goto 15,18
 step
 Earn the _Light's Breach_ achievement |achieve 11988
@@ -10785,7 +10785,7 @@ step
 Congratulations!
 You have earned the _Light's Breach_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Aggramar",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Aggramar",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mythic: Aggramar\" achievement.",
 achieveid={12001},
@@ -10794,13 +10794,13 @@ keywords={"Aggramar, Antorus, Burning, Throne"},
 },[[
 step
 kill Aggramar##124691
-Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Earn the _Mythic: Aggramar_ achievement |achieve 12001 |or |goto Antorus/9 24.1,54.0
 step
 Congratulations!
 You have earned the _Mythic: Aggramar_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Antoran High Command",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Antoran High Command",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mythic: Antoran High Command\" achievement.",
 achieveid={11994},
@@ -10809,13 +10809,13 @@ keywords={"Antoran, High, Command, Antorus, Burning, Throne"},
 },[[
 step
 kill Admiral Svirax##122367, Chief Engineer Ishkar##125012, General Erodus##125014
-Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Earn the _Mythic: Antoran High Command_ achievement |achieve 11994 |or |goto Antorus/1 15,18
 step
 Congratulations!
 You have earned the _Mythic: Antoran High Command_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Argus the Unmaker",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Argus the Unmaker",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mythic: Argus the Unmaker\" achievement.",
 achieveid={12002},
@@ -10824,13 +10824,13 @@ keywords={"Argus, Unmaker, Antorus, Burning, Throne"},
 },[[
 step
 kill Argus the Unmaker##124828
-Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Earn the _Mythic: Argus the Unmaker_ achievement |achieve 12002 |or |goto Antorus/10 50.1,53.0
 step
 Congratulations!
 You have earned the _Mythic: Argus the Unmaker_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: The Coven of Shivarra",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: The Coven of Shivarra",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mythic: The Coven of Shivarra\" achievement.",
 achieveid={12000},
@@ -10839,13 +10839,13 @@ keywords={"Coven, Shivarra, Antorus, Burning, Throne"},
 },[[
 step
 kill Noura, Mother of Flames##122468, Asara, Mother of Night##122467, Diima, Mother of Gloom##122469
-Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Earn the _Mythic: The Coven of Shivarra_ achievement |achieve 12000 |or |goto Antorus/7 32.1,52.7
 step
 Congratulations!
 You have earned the _Mythic: The Coven of Shivarra_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Eonar",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Eonar",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mythic: Eonar\" achievement.",
 achieveid={11996},
@@ -10854,13 +10854,13 @@ keywords={"Eonar, Antorus, Burning, Throne"},
 },[[
 step
 Defend the Essence of Eonar
-Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Earn the _Mythic: Eonar_ achievement |achieve 11996 |or |goto Antorus/5 40.1,59.1
 step
 Congratulations!
 You have earned the _Mythic: Eonar_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Garothi Worldbreaker",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Garothi Worldbreaker",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mythic: Garothi Worldbreaker\" achievement.",
 achieveid={11992},
@@ -10869,13 +10869,13 @@ keywords={"Garothi, Worldbreaker, Antorus, Burning, Throne"},
 },[[
 step
 kill Garothi Worldbreaker##123371
-Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Earn the _Mythic: Garothi Worldbreaker_ achievement |achieve 11992 |or |goto Antorus/1 72.7,58.7
 step
 Congratulations!
 You have earned the _Mythic: Garothi Worldbreaker_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Hounds of Sargeras",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Hounds of Sargeras",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mythic: Hounds of Sargeras\" achievement.",
 achieveid={11993},
@@ -10884,13 +10884,13 @@ keywords={"Hounds, Sargeras, Antorus, Burning, Throne"},
 },[[
 step
 kill F'harg##126916, Shatug##126915
-Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Earn the _Mythic: Hounds of Sargeras_ achievement |achieve 11993 |or |goto Antorus/1 41.2,53.5
 step
 Congratulations!
 You have earned the _Mythic: Hounds of Sargeras_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Imonar the Soulhunter",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Imonar the Soulhunter",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mythic: Imonar the Soulhunter\" achievement.",
 achieveid={11997},
@@ -10899,13 +10899,13 @@ keywords={"Imonar, Soulhunter, Antorus, Burning, Throne"},
 },[[
 step
 kill Imonar the Soulhunter##125055
-Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Earn the _Mythic: Imonar the Soulhunter_ achievement |achieve 11997 |or |goto Antorus/6 17.6,50.1
 step
 Congratulations!
 You have earned the _Mythic: Imonar the Soulhunter_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Kin'garoth",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Kin'garoth",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mythic: Kin'garoth\" achievement.",
 achieveid={11998},
@@ -10914,13 +10914,13 @@ keywords={"Kin'garoth, Antorus, Burning, Throne"},
 },[[
 step
 kill Kin�garoth##125050
-Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Earn the _Mythic: Kin'garoth_ achievement |achieve 11998 |or |goto Antorus/6 80.0,49.9
 step
 Congratulations!
 You have earned the _Mythic: Kin'garoth_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Portal Keeper Hasabel",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Portal Keeper Hasabel",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mythic: Portal Keeper Hasabel\" achievement.",
 achieveid={11995},
@@ -10929,13 +10929,13 @@ keywords={"Portal, Keeper, Hasabel, Antorus, Burning, Throne"},
 },[[
 step
 kill Portal Keeper Hasabel##124393
-Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Earn the _Mythic: Portal Keeper Hasabel_ achievement |achieve 11995 |or |goto Antorus/3 43.5,51.1
 step
 Congratulations!
 You have earned the _Mythic: Portal Keeper Hasabel_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Varimathras",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Mythic: Varimathras",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mythic: Varimathras\" achievement.",
 achieveid={11999},
@@ -10944,13 +10944,13 @@ keywords={"Varimathras, Antorus, Burning, Throne"},
 },[[
 step
 kill Varimathras##125075
-Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, The Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Earn the _Mythic: Varimathras_ achievement |achieve 11999 |or |goto Antorus/8 51.6,81.3
 step
 Congratulations!
 You have earned the _Mythic: Varimathras_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Portal Combat",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Portal Combat",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Portal Combat\" achievement.",
 achieveid={11928},
@@ -10974,7 +10974,7 @@ step
 Congratulations!
 You have earned the _Portal Combat_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Remember the Titans",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Remember the Titans",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Remember the Titans\" achievement.",
 achieveid={12046},
@@ -10994,7 +10994,7 @@ step
 Congratulations!
 You have earned the _Remember the Titans_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Seat of the Pantheon",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Seat of the Pantheon",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Seat of the Pantheon\" achievement.",
 achieveid={11991},
@@ -11003,11 +11003,11 @@ keywords={"Aggramar, Argus, Unmaker, Antorus, Burning, Throne"},
 },[[
 step
 kill Aggramar##124691
-Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Defeat Aggramar |achieve 11991/1 |or |goto Antorus/8 24.1,54.0
 step
 kill Argus the Unmaker##124828
-Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
+Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne" |or
 Defeat Argus the Unmaker |achieve 11991/2 |or |goto Antorus/9 50.1,53.0
 step
 Earn the _Seat of the Pantheon_ achievement |achieve 11991
@@ -11015,7 +11015,7 @@ step
 Congratulations!
 You have earned the _Seat of the Pantheon_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Spheres of Influence",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Spheres of Influence",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Spheres of Influence\" achievement.",
 achieveid={12067},
@@ -11039,7 +11039,7 @@ step
 Congratulations!
 You have earned the _Spheres of Influence_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Stardust Crusaders",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Stardust Crusaders",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Stardust Crusaders\" achievement.",
 achieveid={12257},
@@ -11059,7 +11059,7 @@ step
 Congratulations!
 You have earned the _Stardust Crusaders_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\This is the War Room!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\This is the War Room!",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"This is the War Room!\" achievement.",
 achieveid={12129},
@@ -11078,7 +11078,7 @@ step
 Congratulations!
 You have earned the _This is the War Room!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Together We Stand",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Together We Stand",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Together We Stand\" achievement.",
 achieveid={11948},
@@ -11099,7 +11099,7 @@ step
 Congratulations!
 You have earned the _Together We Stand_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\The World Revolves Around Me",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\The World Revolves Around Me",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing \"The World Revolves Around Me\" achievement.",
 achieveid={12030},
@@ -11118,7 +11118,7 @@ step
 Congratulations!
 You have earned _The World Revolves Around Me_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Worm-monger",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Worm-monger",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Worm-monger\" achievement.",
 achieveid={11930},
@@ -11139,7 +11139,7 @@ step
 Congratulations!
 You have earned the _Worm-monger_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion\\Glory of the Argus Raider",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion\\Glory of the Argus Raider",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Glory of the Argus Raider\" achievement.",
 achieveid={11987},
@@ -11152,47 +11152,47 @@ To earn this achievement, you will need to complete several Antorus, The Burning
 |tip It is suggested to complete these achievements on Normal difficulty to make these easier.
 |confirm
 step
-Click here to load the "Worm-monger" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Worm-monger" |or
+Click here to load the "Worm-monger" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Legion Raid\\Worm-monger" |or
 |tip To earn this achievement, you will need to kill Blightscale Worms during the Garothi Worldbreaker encounter.
 Earn the _Worm-monger_ achievement |achieve 11987/3 |or
 step
-Click here to load the "Hounds Good To Me" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Hounds Good To Me" |or
+Click here to load the "Hounds Good To Me" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Legion Raid\\Hounds Good To Me" |or
 |tip To earn this achievement, you will need to apply stacks of Fel Imbuement to both of the Fel Dogs.
 Earn the _Hounds Good To Me_ achievement |achieve 11987/6 |or
 step
-Click here to load the "This is the War Room!" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\This is the War Room!" |or
+Click here to load the "This is the War Room!" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Legion Raid\\This is the War Room!" |or
 |tip To earn this achievement, your group must not put down more than 3 Felshield Emitters.
 Earn the _This is the War Room!_ achievement |achieve 11987/7 |or
 step
-Click here to load the "Portal Combat" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Portal Combat" |or
+Click here to load the "Portal Combat" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Legion Raid\\Portal Combat" |or
 |tip To earn this achievement, you will need to open the Chaotic Rift.
 Earn the _Portal Combat_ achievement |achieve 11987/4 |or
 step
-Click here to load the "Spheres of Influence" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Spheres of Influence" |or
+Click here to load the "Spheres of Influence" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Legion Raid\\Spheres of Influence" |or
 |tip To earn this achievement, you must collect all 5 of the Life Orbs around Eonar's Sanctuary.
 Earn the _Spheres of Influence_ achievement |achieve 11987/8 |or
 step
-Click here to load the "Hard to Kill" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Hard to Kill" |or
+Click here to load the "Hard to Kill" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Legion Raid\\Hard to Kill" |or
 |tip To earn this achievement, you will need to trigger all of the traps on the bridge during the fight against Imonar the Soulhunter.
 Earn the _Hard to Kill_ achievement |achieve 11987/1 |or
 step
-Click here to load the "The World Revolves Around Me" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\The World Revolves Around Me" |or
+Click here to load the "The World Revolves Around Me" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Legion Raid\\The World Revolves Around Me" |or
 |tip To earn this achievement, you will need to have 9 Diabolic Bombs active when you kill Kin-garoth.
 Earn _The World Revolves Around Me_ achievement |achieve 11987/9 |or
 step
-Click here to load the "Together We Stand" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Together We Stand" |or
+Click here to load the "Together We Stand" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Legion Raid\\Together We Stand" |or
 |tip To earn this achievement, you must defeat Varimathras without anyone in your raid triggering the Alone in the Darkness debuff.
 Earn the _Together We Stand_ achievement |achieve 11987/2 |or
 step
-Click here to load the "Remember the Titans" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Remember the Titans" |or
+Click here to load the "Remember the Titans" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Legion Raid\\Remember the Titans" |or
 |tip To earn this achievement, you will need to have one of each type of add active and then defeat the Coven of Shivarra.
 Earn the _Remember the Titans_ achievement |achieve 11987/10 |or
 step
-Click here to load the "Don't Sweat the Technique" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Don't Sweat the Technique" |or
+Click here to load the "Don't Sweat the Technique" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Legion Raid\\Don't Sweat the Technique" |or
 |tip To earn this achievement, you will need to spawn and kill a Manifestation of Taeshalach.
 Earn the _Don't Sweat the Technique_ achievement |achieve 11987/5 |or
 step
-Click here to load the "Stardust Crusaders" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Stardust Crusaders" |or
+Click here to load the "Stardust Crusaders" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Legion Raid\\Stardust Crusaders" |or
 |tip To earn this achievement, your group will need to collect 20 Motes of Titanic Power within 5 seconds and then Defeat Argus the Unmaker.
 Earn the _Stardust Crusaders_ achievement |achieve 11987/11 |or
 step
@@ -11201,7 +11201,7 @@ step
 Congratulations!
 You have earned the _Glory of the Argus Raider_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Nightspire",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Nightspire",{
 achieveid={10838},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11220,7 +11220,7 @@ step
 Congratulations!
 You have earned the _Nightspire_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Not For You",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Not For You",{
 achieveid={10704},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11235,7 +11235,7 @@ step
 Congratulations!
 You have earned the _Not For You_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Patient Zero",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Patient Zero",{
 achieveid={11377},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11255,7 +11255,7 @@ step
 Congratulations!
 You have earned the _Patient Zero_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Rift of Aln",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Rift of Aln",{
 achieveid={10820},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11272,7 +11272,7 @@ step
 Congratulations!
 You have earned the _Rift of Aln_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Royal Athenaeum",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Royal Athenaeum",{
 achieveid={10837},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11291,7 +11291,7 @@ step
 Congratulations!
 You have earned the _Royal Athenaeum_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Scare Bear",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Scare Bear",{
 achieveid={10753},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11308,7 +11308,7 @@ step
 Congratulations!
 You have earned the _Scare Bear_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Sky Walker",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Sky Walker",{
 achieveid={11675},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11336,7 +11336,7 @@ step
 Congratulations!
 You have earned the _Sky Walker_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Terrors of the Shore",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Terrors of the Shore",{
 achieveid={11786},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11345,7 +11345,7 @@ keywords={"Terror","of","the","Shore"},
 description="This guide will walk you through completing the \"Terrors of the Shore\" achievement.",
 },[[
 step
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 |tip To earn this achievement you will need to defeat all 4 of the Broken Shore world bosses.
 |tip Use the "World Quests" guide to accomplish this.
 |tip One World Boss will appear each time the Nether Disruptor is built.
@@ -11357,7 +11357,7 @@ step
 Congratulations!
 You have earned the _Terrors of the Shore_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Took the Red Eye Down",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Took the Red Eye Down",{
 achieveid={10830},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11378,7 +11378,7 @@ step
 Congratulations!
 You have earned the _Took the Red Eye Down_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Tormented Guardians",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Tormented Guardians",{
 achieveid={10819},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11398,7 +11398,7 @@ step
 Congratulations!
 You have earned the _Tormented Guardians_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Trial of Valor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Trial of Valor",{
 achieveid={11394},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11415,7 +11415,7 @@ step
 Congratulations!
 You have earned the _Trial of Valor_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Unleashed Monstrosities",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Unleashed Monstrosities",{
 achieveid={11160},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11426,8 +11426,8 @@ description="This guide will walk you through completing the \"Unleashed Monstro
 step
 For this, you will need to kill _8 of the 11 World Bosses_ that spawn weekly
 You will only be able to get credit for a boss if the "World Quest" for it is currently active
-Click here to load the "Unlock World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "Unlock World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 Here is your progress:
 Na'zak the Fiend |achieve 11160/1 |or 8
 Nithogg |achieve 11160/2 |or 8
@@ -11444,7 +11444,7 @@ step
 Congratulations!
 You have earned the _Unleashed Monstrosities_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Use the Force(s)",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Use the Force(s)",{
 achieveid={10772},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11467,7 +11467,7 @@ step
 Congratulations!
 You have earned the _Use the Force(s)_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Wailing Halls",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Wailing Halls",{
 achieveid={11788},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11476,7 +11476,7 @@ keywords={"tomb, of, sargeras, lfr"},
 description="This guide will walk you through completing the \"Wailing Halls\" achievement.",
 },[[
 step
-Click here to load the "Tomb of Sargeras - Wailing Halls" guide |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Wailing Halls"
+Click here to load the "Tomb of Sargeras - Wailing Halls" guide |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Wailing Halls"
 |tip You must complete the Wailing Halls wing of Tomb of Sargeras.
 |tip Three bosses are required: Desolate Host, Sisters of the Moon, and Demonic Inquisition.
 Earn the _Wailing Halls_ achievement |achieve 11788
@@ -11484,7 +11484,7 @@ step
 Congratulations!
 You have earned the _Wailing Halls_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Wax on, Wax off",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Wax on, Wax off",{
 achieveid={11773},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11506,7 +11506,7 @@ step
 Congratulations!
 You have earned the _Wax on, Wax off_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Webbing Crashers",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\Webbing Crashers",{
 achieveid={10771},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11528,7 +11528,7 @@ step
 Congratulations!
 You have earned the _Webbing Crashers_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\You Ruined Everything!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raid\\You Ruined Everything!",{
 achieveid={11337},
 author="support@zygorguides.com",
 startlevel=110,
@@ -11548,7 +11548,7 @@ step
 Congratulations!
 You have earned the _You Ruined Everything!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon Hero",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeon Hero",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Legion Dungeon Hero\" achievement.",
 achieveid={11164},
@@ -11559,55 +11559,55 @@ step
 Press _I_ and queue for Eye of Azshara or enter the dungeon with your group |goto Eye of Azshara/1 47.4,87.5 < 100 |c
 |tip You must complete this dungeon on Heroic or Mythic difficulty.
 step
-Click here to load the "Eye of Azshara" guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Eye of Azshara" |or
+Click here to load the "Eye of Azshara" guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Eye of Azshara" |or
 Heroic: Eye of Azshara |achieve 11164/1 |or
 step
 Press _I_ and queue for Darkheart Thicket or enter the dungeon with your group |goto Darkheart Thicket/0 36.6,14.1 < 100 |c
 |tip You must complete this dungeon on Heroic or Mythic difficulty.
 step
-Click here to load the "Darkheart Thicket" guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Darkheart Thicket" |or
+Click here to load the "Darkheart Thicket" guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Darkheart Thicket" |or
 Heroic: Darkheart Thicket |achieve 11164/2 |or
 step
 Press _I_ and queue for Halls of Valor or enter the dungeon with your group |goto Halls of Valor/2 47.6,8.6 < 100 |c
 |tip You must complete this dungeon on Heroic or Mythic difficulty.
 step
-Click here to load the "Halls of Valor" guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Halls of Valor" |or
+Click here to load the "Halls of Valor" guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Halls of Valor" |or
 Heroic: Halls of Valor |achieve 11164/3 |or
 step
 Press _I_ and queue for Neltharion's Lair or enter the dungeon with your group |goto Neltharion's Lair/0 96.6,40.0 < 100 |c
 |tip You must complete this dungeon on Heroic or Mythic difficulty.
 step
-Click here to load the "Neltharion's Lair" guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Neltharion's Lair" |or
+Click here to load the "Neltharion's Lair" guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Neltharion's Lair" |or
 Heroic: Neltharion's Lair |achieve 11164/4 |or
 step
 Press _I_ and queue for Assault on Violet Hold or enter the dungeon with your group |goto Violet Hold/1 57.5,70.2 < 100 |c
 |tip You must complete this dungeon on Heroic or Mythic difficulty.
 step
-Click here to load the "Assault on Violet Hold" guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Assault on Violet Hold" |or
+Click here to load the "Assault on Violet Hold" guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Assault on Violet Hold" |or
 Heroic: Assault on Violet Hold |achieve 11164/5 |or
 step
 Press _I_ and queue for Vault of the Wardens or enter the dungeon with your group |goto Vault of the Wardens 2 70.4,77.8 |c
 |tip You must complete this dungeon on Heroic or Mythic difficulty.
 step
-Click here to load the "Vault of the Wardens" guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Vault of the Wardens" |or
+Click here to load the "Vault of the Wardens" guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Vault of the Wardens" |or
 Heroic: Vault of the Wardens |achieve 11164/6 |or
 step
 Press _I_ and queue for Black Rook Hold or enter the dungeon with your group |goto Black Rook Hold/1 29.6,16.3 < 100 |c
 |tip You must complete this dungeon on Heroic or Mythic difficulty.
 step
-Click here to load the "Black Rook Hold" guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Black Rook Hold" |or
+Click here to load the "Black Rook Hold" guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Black Rook Hold" |or
 Heroic: Black Rook Hold |achieve 11164/7 |or
 step
 Press _I_ and queue for Maw of Souls or enter the dungeon with your group |goto Helmouth Cliffs/1 46.8,79.0 < 100 |c
 |tip You must complete this dungeon on Heroic or Mythic difficulty.
 step
-Click here to load the "Maw of Souls" guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Maw of Souls" |or
+Click here to load the "Maw of Souls" guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Maw of Souls" |or
 Heroic: Maw of Souls |achieve 11164/7 |or
 step
 Congratulations!
 You have earned the _Legion Dungeon Hero_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\...And Chew Mana Buns",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\...And Chew Mana Buns",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"...And Chew Mana Buns\" achievement.",
 achieveid={12103},
@@ -11626,7 +11626,7 @@ step
 Congratulations!
 You have earned the _...And Chew Mana Buns_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Adventurer of Argus",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Adventurer of Argus",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Adventurer of Argus\" achievement.",
 achieveid={12077},
@@ -12510,7 +12510,7 @@ step
 Congratulations!
 You have earned the _Adventurer of Argus_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Adventurer of Azsuna",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Adventurer of Azsuna",{
 achieveid={11261},
 author="support@zygorguides.com",
 startlevel=110,
@@ -12689,7 +12689,7 @@ step
 _Congratulation!_
 You have earned the _Adventurer of Azsuna_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Adventurer of Highmountain",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Adventurer of Highmountain",{
 achieveid={11264},
 author="support@zygorguides.com",
 startlevel=110,
@@ -12888,7 +12888,7 @@ step
 Congratulations!
 You have earned the _Adventurer of Highmountain_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Adventurer of Stormheim",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Adventurer of Stormheim",{
 achieveid={11263},
 author="support@zygorguides.com",
 startlevel=110,
@@ -13079,7 +13079,7 @@ step
 Congratulations!
 You have earned the _Adventurer of Stormheim_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Adventurer of Suramar",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Adventurer of Suramar",{
 achieveid={11265},
 author="support@zygorguides.com",
 startlevel=110,
@@ -13325,7 +13325,7 @@ step
 Congratulations!
 You have earned the _Adventurer of Suramar_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Adventurer of Val'sharah",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Adventurer of Val'sharah",{
 achieveid={11262},
 author="support@zygorguides.com",
 startlevel=110,
@@ -13482,7 +13482,7 @@ step
 Congratulations!
 You have earned the _Adventurer of Val'sharah_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\And We're All Out of Mana Buns",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\And We're All Out of Mana Buns",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"And We're All Out of Mana Buns\" achievement.",
 achieveid={12104},
@@ -13501,7 +13501,7 @@ step
 Congratulations!
 You have earned the _And We're All Out of Mana Buns_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Bringing Home the Beacon",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Bringing Home the Beacon",{
 achieveid={11802},
 author="support@zygorguides.com",
 startlevel=110,
@@ -13526,38 +13526,25 @@ step
 Congratulations!
 You have completed the _Bringing Home the Beacon_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Broken Isles Explorer",{
-achieveid={11188},
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Broken Isles Explorer",{
 author="support@zygorguides.com",
+description="Earn the following Broken Isles exploration achievements:\n\nExplore Azsuna\n"..
+"Explore Highmountain\nExplore Suramar\nExplore Val'sharah\nExplore Stormheim",
 startlevel=110,
-keywords={"Broken","Isles","Explorer"},
-description="This guide will walk you through completing the \"Broken Isles Explorer\" Achievement.",
+achieveid={11188},
 },[[
+leechsteps "Achievement Guides\\Exploration\\Legion\\Explore Azsuna" 1-11
+leechsteps "Achievement Guides\\Exploration\\Legion\\Explore Highmountain" 1-14
+leechsteps "Achievement Guides\\Exploration\\Legion\\Explore Stormheim" 1-21
+leechsteps "Achievement Guides\\Exploration\\Legion\\Explore Suramar" 1-11
+leechsteps "Achievement Guides\\Exploration\\Legion\\Explore Val'sharah" 1-13
 step
-Explore Azsuna |achieve 11188/1
-|tip Use the "Explore Azsuna" achievement guide to accomplish this.
-Click here to load the "Explore Azsuna" guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Legion\\Explore Azsuna"
+|achieve 11188
 step
-Explore Val'sharah |achieve 11188/2
-|tip Use the "Explore Val'sharah" achievement guide to accomplish this.
-Click here to load the "Explore Val'sharah" guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Legion\\Explore Val'sharah"
-step
-Explore Highmountain |achieve 11188/3
-|tip Use the "Explore Highmountain" achievement guide to accomplish this.
-Click here to load the "Explore Highmountain" guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Legion\\Explore Highmountain"
-step
-Explore Stormheim |achieve 11188/4
-|tip Use the "Explore Stormheim" achievement guide to accomplish this.
-Click here to load the "Explore Stormheim" guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Legion\\Explore Stormheim"
-step
-Explore Suramar |achieve 11188/5
-|tip Use the "Explore Suramar" achievement guide to accomplish this.
-Click here to load the "Explore Suramar" guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Legion\\Explore Suramar"
-step
-Congratulations!
-You have earned the _Broken Isles Explorer_ achievement
+_Congratulations!_
+You Earned the "Broken Isles Explorer" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Broken Isles Pathfinder, Part Two",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Broken Isles Pathfinder, Part Two",{
 achieveid={11446},
 author="support@zygorguides.com",
 startlevel=110,
@@ -13566,9 +13553,9 @@ description="This guide will walk you through completing the \"Broken Isles path
 },[[
 step
 Earn the _Broken Isles Pathfinder, Part One_ achievement |achieve 11446/1
-Click here to load the "Broken Isles Pathfinder, Part One" achievement guide |next "Zygor's Achievement Guides\\Class Hall\\Legion\\Broken Isles Pathfinder, Part One"
+Click here to load the "Broken Isles Pathfinder, Part One" achievement guide |next "Achievement Guides\\Class Hall\\Legion\\Broken Isles Pathfinder, Part One"
 Earn the _Explore Broken Shore_ achievement |achieve 11446/2
-Click here to load the "Explore Broken Shore" achievement guide |next "Zygor's Achievement Guides\\Exploration\\Legion\\Explore Broken Shore"
+Click here to load the "Explore Broken Shore" achievement guide |next "Achievement Guides\\Exploration\\Legion\\Explore Broken Shore"
 |tip This achievement requires you to explore all areas of the Broken Shore zone.
 Earn the _Legionfall Commander_ achievement |achieve 11446/3
 |tip This achievement requires you to earn revered reputation with the Armies of Legionfall faction.
@@ -13577,7 +13564,7 @@ step
 Congratulations!
 You have earned the _Broken Isles Pathfinder, Part Two_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Commander of Argus",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Commander of Argus",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Commander of Argus\" achievement.",
 achieveid={12078},
@@ -14460,7 +14447,7 @@ step
 Congratulations!
 You have earned the _Commander of Argus_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Envision Invasion Eradication",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Envision Invasion Eradication",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Envision Invasion Eradication\" achievement.",
 achieveid={12028},
@@ -14471,7 +14458,7 @@ step
 To earn this achievement, you will need to kill all of the commanders that can appear within an invasion point
 |tip One Invasion Point is always active in each Argus zone.
 |tip Lesser Invasion Points last 6 hours each.
-Click here to load the "Argus Invasions" guide |confirm |next "Zygor's Dungeon Guides\\Legion Scenarios\\Argus Invasions"
+Click here to load the "Argus Invasions" guide |confirm |next "Dungeon Guides\\Legion Scenarios\\Argus Invasions"
 Defeat Mazgoroth |achieve 12028/1
 Defeat Gorgoloth |achieve 12028/2
 Defeat Dread Knight Zak'gal |achieve 12028/3
@@ -14491,9 +14478,12 @@ step
 Congratulations!
 You have earned the _Envision Invasion Eradication_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Explore Argus",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Explore Argus",{
 author="support@zygorguides.com",
-description="This guide will walk you through completing the \"Explore Argus\" achievement.",
+description="Explore Argus, revealing the following covered areas of the world map:\n\n\n"..
+"\n\n\n\n\n\n\n\n"..
+"\n\n\n\n\n\n\n\n"..
+"\n\n\n\n\n\n\n\n",
 achieveid={12069},
 startlevel=110,
 keywords={"Krokuun, Mac'Aree, Antoran, Wastes"},
@@ -14549,161 +14539,96 @@ step
 Congratulations!
 You have earned the _Explore Argus_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Explore Azsuna",{
-achieveid={10665},
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Explore Azsuna",{
 author="support@zygorguides.com",
+description="Explore Argus, revealing the following covered areas of the world map:\n\nThe Greenway\n"..
+"Faronaar\nLlothien Highlands\nNar'thalas\nRuined Sanctum\nLey-Ruins of Zarkhenar\nLost Orchard\n"..
+"Felblaze Ingress\nIsle of the Watchers\nOceanus Cove\nTemple of Lights",
 startlevel=100,
-keywords={"Explore","Azsuna"},
-description="This guide will walk you through completing the \"Explore Azsuna\" Achievement.",
+achieveid={10665},
 },[[
 step
-Follow the road |goto Azsuna/0 43.05,45.42 < 30 |only if walking
 Discover Faronaar |achieve 10665/1 |goto Azsuna/0 40.71,48.59
-|tip You will discover most of these naturally by using the "Azsuna" leveling guide.
 step
 Discover Felblaze Ingress |achieve 10665/2 |goto 63.77,28.50
 step
-Follow the road |goto 63.36,29.80 < 30 |only if walking
-Continue following the road |goto 63.34,33.77 < 30 |only if walking
 Discover The Greenway |achieve 10665/3 |goto 61.66,34.67
 step
-Follow the water |goto 54.47,60.84 < 30 |only if walking
-Continue following the water |goto 54.58,63.47 < 30 |only if walking
-Cross the water |goto 53.12,67.08 < 30 |only if walking
-Discover Isle of the Watchers |achieve 10665/4 |goto 49.10,71.00
+Discover the Isle of the Watchers |achieve 10665/4 |goto 49.10,71.00
 step
-Discover Llothien Highlands |achieve 10665/5 |goto 46.72,29.18
+Discover the Llothien Highlands |achieve 10665/5 |goto 46.72,29.18
 step
-Discover Lost Orchard |achieve 10665/6 |goto 41.88,11.10
+Discover the Lost Orchard |achieve 10665/6 |goto 41.88,11.10
 step
-Follow the path |goto 46.46,44.33 < 30 |only if walking
-Follow the road |goto 48.98,42.70 < 30 |only if walking
-Cross the bridge |goto 50.45,43.68 < 20 |only if walking
 Discover Nar'thalas |achieve 10665/7 |goto 51.93,44.38
 step
-Discover Oceanus Cove |achieve 10665/8 |goto 54.13,59.23
+Discover the Oceanus Cove |achieve 10665/8 |goto 54.13,59.23
 step
-Follow the road |goto 63.36,29.80 < 30 |only if walking
-Continue following the road |goto 64.04,34.80 < 30 |only if walking
-Cross the bridge |goto 66.24,38.76 < 20 |only if walking
-Follow the path |goto 66.87,44.00 < 30 |only if walking
-Discover Ruined Sanctum |achieve 10665/9 |goto 66.47,47.26
+Discover the Ruined Sanctum |achieve 10665/9 |goto 66.47,47.26
 step
-Follow the path up |goto 55.96,60.31 < 20 |only if walking
-Discover Temple of Lights |achieve 10665/10 |goto 56.29,61.40
+Discover the Temple of Lights |achieve 10665/10 |goto 56.29,61.40
 step
-Follow the path up |goto 49.21,26.56 < 20 |only if walking
-Follow the road up |goto 50.52,26.34 < 20 |only if walking
-Continue following the road |goto 50.70,23.33 < 30 |only if walking
-Continue following the road |goto 50.91,18.77 < 30 |only if walking
-Follow the road |goto 52.32,16.82 < 30 |only if walking
-Discover Ley-Ruins of Zarkhenar |achieve 10665/11 |goto 53.28,16.74
+Discover the Ley-Ruins of Zarkhenar |achieve 10665/11 |goto 53.28,16.74
 step
-Congratulations!
-You have earned the _Explore Azsuna_ achievement
+|achieve 10665
+step
+_Congratulations!_
+You Earned the "Explore Azsuna" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Explore Broken Shore",{
-achieveid={11543},
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Explore Broken Shore",{
 author="support@zygorguides.com",
+description="Explore Argus, revealing the following covered areas of the world map:\n\nSoul Ruin\n"..
+"Deliverance Point\nThe Weeping Terrace\nFelrage Strand\nDeadwood Landing\nBroken Valley\n"..
+"Tomb of Sargeras\nFelfire Pass",
 startlevel=110,
-keywords={"Explore","Broken","Shore"},
-description="This guide will walk you through completing the \"Explore Broken Shore\" Achievement.",
+achieveid={11543},
 },[[
 step
 Explore Deliverance Point |achieve 11543/1 |goto Broken Shore/0 44.66,62.92
 step
-Follow the path |goto 40.67,61.72 < 20 |only if walking
-Drop down |goto 39.07,68.53 < 15 |only if walking
-Cross the water |goto 37.78,67.64 < 20 |only if walking
 Explore Deadwood Landing |achieve 11543/2 |goto 31.80,60.03
 step
-Swim across the water |goto 72.88,48.59 < 25 |only if walking
-Swim across the water |goto 76.43,52.88 < 25 |only if walking
 Explore Felfire Pass |achieve 11543/8 |goto 80.60,51.13
 step
-Follow the path |goto 69.08,47.06 < 20 |only if walking
-Follow the path |goto 66.26,42.03 < 25 |only if walking
-Follow the path |goto 69.99,35.58 < 25 |only if walking
 Explore Felrage Strand |achieve 11543/7 |goto 72.74,29.36
 step
-Go up the stairs |goto 50.86,18.85 < 15 |only if walking
-Go up the stairs |goto 49.68,18.73 < 15 |only if walking
 Explore The Weeping Terrace |achieve 11543/5 |goto 47.19,16.67
 step
-Follow the path |goto 51.17,23.12 < 20 |only if walking
 Explore Broken Valley |achieve 11543/4 |goto 50.85,29.15
 step
-Follow the path |goto 51.07,31.13 < 15 |only if walking
-Follow the path |goto 50.73,35.39 < 25 |only if walking
 Explore Soul Ruin |achieve 11543/3 |goto 52.04,37.80
 step
-Follow the path |goto 52.52,32.80 < 20 |only if walking
-Follow the path |goto 55.71,30.51 < 25 |only if walking
-Follow the path |goto 58.31,27.66 < 25 |only if walking
 Explore Tomb of Sargeras |achieve 11543/6 |goto 62.46,23.04
 step
-Congratulations!
-You have earned the _Explore Broken Shore_ achievement
+|achieve 11543
+step
+_Congratulations!_
+You Earned the "Explore Broken Shore" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Explore Highmountain",{
-achieveid={10667},
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Explore Highmountain",{
 author="support@zygorguides.com",
+description="Explore Argus, revealing the following covered areas of the world map:\n\nBloodhunt Highlands\n"..
+"Frosthoof Watch\nNightwatcher's Perch\nRiverbend\nShipwreck Cove\nStonehoof Watch\nThunder Totem\n"..
+"Blind Marshlands\nIronhorn Enclave\nPinerock Basin\nRockaway Shallows\nSkyhorn\nSylvan Falls\n"..
+"Trueshot Lodge",
 startlevel=100,
-keywords={"Explore","Highmountain"},
-description="This guide will walk you through completing the \"Explore Highmountain\" Achievement.",
+achieveid={10667},
 },[[
 step
-Follow the path down |goto Highmountain/0 39.67,37.80 < 30 |only if walking
-Follow the path |goto Highmountain/0 42.04,35.30 < 30 |only if walking
 Explore Bloodhunt Highlands |achieve 10667/1 |goto Highmountain/0 42.86,31.00
-|tip You will discover most of these naturally by using the "Highmountain" leveling guide.
 step
-Follow the path down |goto 30.81,38.98 < 30 |only if walking
-Continue following the path down |goto 30.98,35.41 < 30 |only if walking
 Explore Blind Marshlands |achieve 10667/2 |goto 30.44,34.42
 step
-Follow the path |goto Thunder Totem/0 49.95,43.28 < 20 |region thunder_totem_circle_platform |only if walking
-Follow the path |goto Highmountain/0 50.86,64.33 < 20 |only if walking
-Cross the bridge |goto Highmountain/0 48.96,67.06 < 20 |only if walking
-Follow the path up |goto Highmountain/0 48.01,68.11 < 30 |only if walking
-Follow the path up |goto Highmountain/0 48.10,69.01 < 20 |only if walking
-Continue up the path |goto Highmountain/0 49.02,69.36 < 20 |only if walking
-Continue following the path up |goto Highmountain/0 48.62,74.88 < 20 |only if walking
-Continue up the path |goto Highmountain/0 51.41,73.29 < 20 |only if walking
-Follow the path up |goto Highmountain/0 50.75,75.91 < 20 |only if walking
-Cross the bridge |goto Highmountain/0 49.88,79.71 < 20 |only if walking
-Follow the path up |goto Highmountain/0 52.39,83.93 < 20 |only if walking
-Cross the bridge |goto Highmountain/0 54.05,87.75 < 20 |only if walking
 Explore Frosthoof Watch |achieve 10667/3 |goto 56.46,89.27
 step
-Follow the path |goto Thunder Totem/0 49.95,43.28 < 20 |region thunder_totem_circle_platform |only if walking
-Follow the path |goto Highmountain/0 50.86,64.33 < 20 |only if walking
-Cross the bridge |goto Highmountain/0 48.96,67.06 < 20 |only if walking
-Follow the path up |goto Highmountain/0 48.01,68.11 < 30 |only if walking
-Follow the path up |goto Highmountain/0 48.10,69.01 < 20 |only if walking
-Continue up the path |goto Highmountain/0 49.02,69.36 < 20 |only if walking
-Continue following the path up |goto Highmountain/0 48.62,74.88 < 20 |only if walking
-Continue up the path |goto Highmountain/0 51.41,73.29 < 20 |only if walking
-Follow the path up |goto Highmountain/0 50.75,75.91 < 20 |only if walking
-Cross the bridge |goto Highmountain/0 49.88,79.71 < 20 |only if walking
-Follow the path |goto Highmountain/0 52.34,83.57 < 30 |only if walking
-Continnue following the path |goto Highmountain/0 54.75,80.30 < 30 |only if walking
-Follow the path |goto Highmountain/0 56.44,80.74 < 30 |only if walking
-Explore Ironhorn Enclave |achieve 10667/4 |goto Highmountain/0 55.63,83.35
+Explore Ironhorn Enclave |achieve 10667/4 |goto 55.63,83.35
 step
-Cross the bridge |goto 35.89,65.02 < 20 |only if walking
-Follow the path |goto 33.38,62.07 < 30 |only if walking
-Follow the path down |goto 30.87,59.40 < 30 |only if walking
-Follow the path down |goto 29.35,56.69 < 30 |only if walking
-Follow the path down |goto 26.79,57.87 < 30 |only if walking
 Explore Nightwatcher's Perch |achieve 10667/5 |goto 27.61,54.81
 step
 Explore Pinerock Basin |achieve 10667/6 |goto 40.50,51.25
 step
 Explore Riverbend |achieve 10667/7 |goto 37.37,66.46
 step
-Follow the path down |goto 57.65,27.10 < 20 |only if walking
-Continue down the path |goto 58.26,25.92 < 20 |only if walking
 Explore Rockaway Shallows |achieve 10667/8 |goto 56.96,25.09
 step
 Explore Shipwreck Cove |achieve 10667/9 |goto 41.88,10.52
@@ -14716,282 +14641,155 @@ Explore Sylvan Falls |achieve 10667/12 |goto 35.91,65.97
 step
 Explore Thunder Totem |achieve 10667/13 |goto Thunder Totem/0 45.69,38.89 |region thunder_totem_circle_platform
 step
-Follow the path up |goto Highmountain/0 40.51,51.52 < 30 |only if walking
-Continue following the path up |goto 38.88,48.30 < 30 |only if walking
-Follow the path up |goto 37.87,48.14 < 20 |only if walking
-Follow the path |goto 36.93,45.85 < 20 |only if walking
-Follow the path |goto 36.08,44.76 < 20 |only if walking
 Explore Trueshot Lodge |achieve 10667/14 |goto 34.21,46.85
 step
-Congratulations!
-You have earned the _Explore Highmountain_ achievement
+|achieve 10667
+step
+_Congratulations!_
+You Earned the "Explore Highmountain" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Explore Stormheim",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Explore Stormheim",{
 achieveid={10668},
 author="support@zygorguides.com",
 startlevel=100,
 keywords={"Explore","Stormheim"},
-description="This guide will walk you through completing the \"Explore Stormheim\" Achievement.",
+description="Explore Argus, revealing the following covered areas of the world map:\n\nAggrammar's Vault\n"..
+"Dreadwake's Landing\nGreywatch\nHaustvald\nMaw of Nashal\nNastrondir\nThe Runewood\nSkold-Ashil\n"..
+"Talonrest\nValdisdall\nBlackbeak Overlook\nDeyrgrot\nGates of Valor\nHrydhal\nMorheim\n"..
+"Watchman's Rock\nShield's Rest\nStorm's Reach\nTideskorn Harbor\nWeeping Bluffs",
 },[[
 step
-Follow the path up |goto Stormheim/0 50.98,33.79 < 30 |only if walking
-Follow the path |goto Stormheim/0 48.68,38.57 < 30 |only if walking
-Jump down here |goto Stormheim/0 47.17,41.27 < 20 |only if walking
-Explore Aggrammar's Vault |achieve 10668/1 |goto Stormheim/0 46.31,44.54
-|tip You will discover most of these naturally by using the "Stormheim" leveling guide.
+click Stormforged Grapple Launcher
+accept Stormforged Grapple Launcher##39775 |goto Stormheim/0 36.96,31.84
 step
-Follow the path |goto 34.28,49.21 < 20 |only if walking and alliance
-Follow the path up |goto 35.14,47.28 < 20 |only if walking and alliance
-Follow the path |goto 37.60,45.57 < 20 |only if walking and alliance
-Follow the path up |goto 37.18,44.26 < 30 |only if walking and alliance
-Cross the bridge |goto 35.80,43.52 < 20 |only if walking and alliance
-Follow the path down |goto 32.91,42.05 < 20 |only if walking and alliance
+Explore Aggrammar's Vault |achieve 10668/1 |goto 46.31,44.54
+step
 Explore Blackbeak Overlook |achieve 10668/2 |goto 35.55,37.43 |only Alliance
-Follow the path up |goto 35.76,30.91 |only if walking and horde
 Explore Blackbeak Overlook |achieve 10668/2 |goto 34.15,31.18 |only Horde
 step
-Jump down into the water |goto 58.94,56.65 < 20 |only if walking and alliance
-Follow the water |goto 57.07,61.12 < 30 |only if walking and alliance
-Continue following the water |goto 55.10,66.86 < 30 |only if walking and alliance
 Explore Dreadwake's Landing |achieve 10668/3 |goto 55.44,69.05 |only Alliance
 Explore Dreadwake's Landing |achieve 10668/3 |goto 54.01,72.29 |only Horde
 step
-Follow the path |goto 72.17,59.32 < 20 |only if walking and alliance
 Explore Deyrgrot |achieve 10668/4 |goto 72.24,56.00 |only Alliance
-Follow the path down |goto 60.55,52.10 < 20 |only if walking and horde
-Follow the road |goto 62.49,55.09 < 30 |only if walking and horde
-Follow the path |goto 66.11,54.63 < 30 |only if walking and horde
-Follow the path |goto 69.22,53.12 < 30 |only if walking and horde
-Follow the path down |goto 72.14,51.88 < 20 |only if walking and horde
 Explore Deyrgrot |achieve 10668/4 |goto 72.71,51.69 |only Horde
 step
 Explore Greywatch |achieve 10668/5 |goto 72.09,59.84 |only Alliance
-Follow the path down |goto 60.55,52.10 < 20 |only if walking and horde
-Follow the road |goto 62.49,55.09 < 30 |only if walking and horde
-Follow the path |goto 65.38,54.68 < 30 |only if walking and horde
-Follow the path up |goto 66.55,57.54 < 20 |only if walking and horde
-Follow the path |goto 67.55,58.99 < 30 |only if walking and horde
-Follow the path down |goto 69.53,58.74 < 30 |only if walking and horde
 Explore Greywatch |achieve 10668/5 |goto 71.31,58.79 |only Horde
 step
-Follow the road |goto 60.08,53.29 < 30 |only if walking
-Continue following the road |goto 61.61,56.06 < 30 |only if walking
 Explore Gates of Valor |achieve 10668/6 |goto 64.50,60.57
 step
-Follow the path down |goto 60.55,52.10 < 20 |only if walking
-Follow the path down |goto 62.63,52.03 < 30 |only if walking
-Follow the path |goto 64.45,47.89 < 30 |only if walking
-Follow the road |goto 66.98,48.70 < 30 |only if walking
 Explore Haustvald |achieve 10668/7 |goto 68.20,47.43
 step
 Explore Hrydhal |achieve 10668/8 |goto 38.26,65.27 |only Alliance
-Cross the bridge |goto 44.15,60.52 < 20 |only if walking and horde
 Explore Hrydhal |achieve 10668/8 |goto 44.42,63.46 |only Horde
 step
-Follow the path |goto 34.24,49.26 < 20 |only if walking and alliance
-Follow the path up |goto 35.08,47.32 < 20 |only if walking and alliance
-Follow the path |goto 37.55,45.63 < 30 |only if walking and alliance
-Follow the path |goto 38.74,45.24 < 30 |only if walking and alliance
-Follow the path down |goto 39.10,41.02 < 30 |only if walking and alliance
-Follow the path |goto 40.86,35.35 < 30 |only if walking and alliance
-Cross the bridge |goto 38.18,33.04 < 20 |only if walking and horde
-Follow the path down |goto 39.06,33.53 < 20 |only if walking
-Follow the path down |goto 40.30,30.15 < 30 |only if walking
 Explore Maw of Nashal |achieve 10668/9 |goto 37.82,29.23
 step
-Follow the path down |goto 60.55,52.10 < 20 |only if walking and horde
-Follow the road |goto 62.49,55.09 < 30 |only if walking and horde
-Follow the path |goto 66.11,54.63 < 30 |only if walking and horde
-Follow the path |goto 69.22,53.12 < 30 |only if walking and horde
-Follow the path down |goto 72.14,51.88 < 20 |only if walking and horde
-Follow the path |goto 72.14,59.37 < 20 |only if walking and alliance
-Follow the path |goto 72.77,57.09 < 30 |only if walking
 Explore Morheim |achieve 10668/10 |goto 78.29,57.01
 step
-Follow the path up |goto 51.20,33.66 < 30 |only if walking
 Explore Nastrondir |achieve 10668/11 |goto 48.59,36.43
 step
-Follow the path down |goto 52.00,33.15 < 30 |only if walking |n
-Follow the path down |goto 53.26,31.49 < 20 |only if walking |n
-Follow the path up |goto 55.98,30.20 < 20 |only if walking |n
-Follow the path |goto 59.59,29.30 < 30 |only if walking |n
-Continue following the path |goto 60.61,25.72 < 30 |only if walking |n
-Follow the path down |goto 64.10,24.11 < 20 |only if walking |n
-Jump down into the water here |goto 64.55,22.83 < 20 |only if walking |n
-clicknpc Grapple Point##110334 |goto 68.11,20.32 |n
-|tip It looks like a grey metal hook on top of the rocks to the east.
-Grapple onto the Rocks |goto 68.68,20.18 < 7 |noway |c |condition achieved(10668,12)
+Explore Watchman's Rock |achieve 10668/12 |goto 69.77,21.22
 step
-clicknpc Grapple Point##110334 |goto 69.77,21.22 |n
-|tip It looks like a grey metal hook on the rocks to the southeast.
-Explore Watchman's Rock |achieve 10668/12
-step
-Follow the path down |goto 60.55,52.10 < 20 |only if walking
-Follow the road |goto 62.49,55.09 < 30 |only if walking
-Follow the path |goto 66.11,54.63 < 30 |only if walking
 Explore The Runewood |achieve 10668/13 |goto 65.22,54.67
 step
-Follow the path down |goto 52.00,33.15 < 30 |only if walking
-Follow the path down |goto 53.26,31.49 < 20 |only if walking
-Follow the path up |goto 55.98,30.20 < 20 |only if walking
-Follow the path |goto 59.59,29.30 < 30 |only if walking
-Continue following the path |goto 60.61,25.72 < 30 |only if walking
-Follow the path down |goto 64.10,24.11 < 20 |only if walking
-Jump down into the water here |goto 64.55,22.83 < 20 |only if walking
-Follow the water |goto 67.84,19.02 < 30 |only if walking
-Continue following the water |goto 73.15,15.39 < 30 |only if walking
 Explore Shield's Rest |achieve 10668/14 |goto 76.67,13.02
 step
-Follow the road |goto 60.19,53.48 < 30 |only if walking
-clicknpc Grapple Point##110334 |goto 62.06,59.73 |n
-|tip It looks like a grey metal hook on the rocks directly below to the south.
 Explore Skold-Ashil |achieve 10668/15
 step
-Follow the path down |goto 52.00,33.15 < 30 |only if walking
-Follow the path down |goto 53.26,31.49 < 20 |only if walking
-Follow the path up |goto 55.98,30.20 < 20 |only if walking
 Explore Storm's Reach |achieve 10668/16 |goto 57.51,30.32
 step
-Cross the bridge |goto 56.72,51.15 < 20 |only if walking
-Follow the path |goto 53.50,54.06 < 30 |only if walking
 Explore Talonrest |achieve 10668/17 |goto 51.28,56.85
 step
 Explore Tideskorn Harbor |achieve 10668/18 |goto 58.47,49.34
 step
 Explore Valdisdall |achieve 10668/19 |goto 60.63,50.96
 step
-Follow the path down |goto Highmountain/0 59.16,66.00 < 20 |only if walking
-Continue down the path |goto Stormheim/0 27.62,40.73 < 30 |only if walking
-Follow the path |goto Stormheim/0 29.56,42.74 < 20 |only if walking
-Follow the path |goto Stormheim/0 29.32,43.76 < 20 |only if walking
-Follow the water |goto Stormheim/0 29.37,45.13 < 20 |only if walking
 Explore Weeping Bluffs |achieve 10668/20 |goto Stormheim/0 31.31,46.59
 step
+|achieve 10668
+step
 Congratulations!
-You have earned the _Explore Stormheim_ achievement
+You Earned the "Explore Stormheim" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Explore Suramar",{
-achieveid={10669},
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Explore Suramar",{
 author="support@zygorguides.com",
+description="Explore Argus, revealing the following covered areas of the world map:\n\nAmbervale\n"..
+"Falanaar\nThe Grand Promenade\nMoon Guard Stronghold\nRuins of Elun'eth\nTel'anor\n"..
+"Crimson Thicket\nFelsoul Hold\nJandvik\nMoonwhisper Gulch\nSuramar City",
 startlevel=100,
-keywords={"Explore","Suramar"},
-description="This guide will walk you through completing the \"Explore Suramar\" Achievement.",
+achieveid={10669},
 },[[
 step
-Follow the path |goto Suramar/0 33.13,47.69 < 30 |only if walking
 Explore Ambervale |achieve 10669/1 |goto Suramar/0 31.54,45.39
-|tip You will discover most of these naturally by using the "Suramar" leveling guide.
 step
 Explore Crimson Thicket |achieve 10669/2 |goto 64.22,41.94
 step
-Follow the path |goto 25.17,32.67 < 30 |only if walking
 Explore Falanaar |achieve 10669/3 |goto 23.03,35.71
 step
-Follow the path |goto 34.92,51.21 < 30 |only if walking
-Follow the path up |goto 34.05,54.42 < 20 |only if walking
-Follow the path |goto 33.05,56.64 < 30 |only if walking
-Follow the path |goto 33.33,58.49 < 20 |only if walking
 Explore Felsoul Hold |achieve 10669/4 |goto 32.63,58.84
 step
-Run up the stairs |goto 35.29,50.87 < 20 |only if walking
-Cross the bridge |goto 36.29,50.62 < 20 |only if walking
-Follow the path |goto 37.51,49.52 < 20 |only if walking
-Follow the road |goto 39.42,49.37 < 30 |only if walking
 Explore The Grand Promenade |achieve 10669/5 |goto 41.98,53.24
 step
-Follow the path down |goto 64.17,42.85 < 20 |only if walking
-Follow the path down |goto 67.29,44.50 < 20 |only if walking
 Explore Jandvik |achieve 10669/6 |goto 67.96,45.21
 step
 Explore Moon Guard Stronghold |achieve 10669/7 |goto 30.79,10.87
 step
-Follow the path |goto 28.66,32.85 < 30 |only if walking
-Follow the path |goto 31.73,30.64 < 30 |only if walking
 Explore Moonwhisper Gulch |achieve 10669/8 |goto 33.05,30.19
 step
 Explore Ruins of Elun'eth |achieve 10669/9 |goto 36.31,46.89
 step
-Run up the stairs |goto 35.29,50.87 < 20 |only if walking
-Cross the bridge |goto 36.29,50.62 < 20 |only if walking
-Follow the path |goto 37.51,49.52 < 20 |only if walking
-Follow the road |goto 39.42,49.37 < 30 |only if walking
-Follow the path |goto 42.25,53.66 < 30 |only if walking
-Run down the stairs |goto 44.32,57.34 < 30 |only if walking
 Explore Suramar City |achieve 10669/10 |goto 46.25,59.69
 step
 Explore Tel'anor |achieve 10669/11 |goto 42.17,35.38
 step
-Congratulations!
-You have earned the _Explore Suramar_ achievement
+|achieve 10669
+step
+_Congratulations!_
+You Earned the "Explore Suramar" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Explore Val'sharah",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Explore Val'sharah",{
 achieveid={10666},
 author="support@zygorguides.com",
 startlevel=100,
 keywords={"Explore","Val'sharah"},
-description="This guide will walk you through completing the \"Explore Val'sharah\" Achievement.",
+description="Explore Argus, revealing the following covered areas of the world map:\n\nAndutalah\n"..
+"Bradenbrook\nGloaming Reef\nLorlathil\nMoonclaw Vale\nSmolderhide Thicket\nThas'talah\n"..
+"Black Rook Hold\nThe Dreamgrove\nGrove of Cenarius\nMistvale\nShala'nir\nTemple of Elune",
 },[[
 step
-Follow the road |goto Val'sharah/0 68.83,53.82 < 30 |only if walking
 Discover Andutalah |achieve 10666/1 |goto Val'sharah/0 68.32,55.48
-|tip You will discover most of these naturally by using the "Val'sharah" leveling guide.
 step
-Follow the path |goto 40.88,58.78 < 30 |only if walking
-Follow the path up |goto 38.57,57.46 < 30 |only if walking
-Continue up the path |goto 37.73,55.80 < 30 |only if walking
 Discover Black Rook Hold |achieve 10666/2 |goto 39.24,53.57
 step
 Discover Bradenbrook |achieve 10666/3 |goto 42.29,58.55
 step
-Follow the road |goto 55.72,56.67 < 30 |only if walking
-Follow the road |goto 54.94,53.29 < 30 |only if walking
-Follow the path |goto 53.25,49.98 < 20 |only if walking
-Cross the bridge |goto 52.55,47.40 < 20 |only if walking
-Cross the bridge |goto 52.23,45.81 < 20 |only if walking
-Follow the path |goto 50.86,42.92 < 30 |only if walking
-Continue following the path |goto 47.49,39.70 < 30 |only if walking
 Discover The Dreamgrove |achieve 10666/4 |goto 45.04,33.28
 step
-Follow the path |goto 40.95,58.81 < 30 |only if walking
-Follow the path up |goto 37.54,59.83 < 30 |only if walking
-Follow the path down |goto 35.50,61.36 < 30 |only if walking
-Cross the water |goto 33.44,63.13 < 30 |only if walking
 Discover Gloaming Reef |achieve 10666/5 |goto 27.10,66.93
 step
-Follow the path |goto 55.74,71.61 < 20 |only if walking
-Follow the path |goto 55.46,67.55 < 30 |only if walking
 Discover Grove of Cenarius |achieve 10666/6 |goto 54.79,66.63
 step
 Discover Lorlathil |achieve 10666/7 |goto 54.96,72.55
 step
-Follow the path up |goto 68.44,48.57 < 20 |only if walking
-Follow the path |goto 69.98,46.74 < 30 |only if walking
 Discover Mistvale |achieve 10666/8 |goto 70.00,45.41
 step
-Follow the path |goto 55.00,74.48 < 20 |only if walking
-Follow the path |goto 58.06,76.08 < 30 |only if walking
 Discover Moonclaw Vale |achieve 10666/9 |goto 59.90,74.71
 step
-Follow the path |goto 68.14,48.48 < 20 |only if walking
-Cross the bridge |goto 66.65,45.74 < 20 |only if walking
-Follow the path |goto 65.05,43.48 < 20 |only if walking
 Discover Shala'nir |achieve 10666/10 |goto 63.28,42.01
 step
-Follow the path |goto 53.45,74.09 < 20 |only if walking
-Cross the bridge |goto 51.46,75.74 < 20 |only if walking
-Follow the path |goto 49.38,79.70 < 30 |only if walking
 Discover Smolderhide Thicket |achieve 10666/11 |goto 48.25,84.42
 step
 Discover Temple of Elune |achieve 10666/12 |goto 56.69,57.80
 step
-Cross the bridge |goto 53.81,72.45 < 20 |only if walking
-Follow the path |goto 52.24,71.62 < 30 |only if walking
 Discover Thas'talah |achieve 10666/13 |goto 50.34,70.47
 step
-Congratulations!
-You have earned the _Explore Val'sharah_ achievement
+|achieve 10666
+step
+_Congratulations!_
+You Earned the "Explore Val'sharah" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Going Up",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Going Up",{
 achieveid={10627},
 author="support@zygorguides.com",
 startlevel=100,
@@ -15007,7 +14805,7 @@ step
 Congratulations!
 You have completed the _Going Up_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Higher Dimensional Learning",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Higher Dimensional Learning",{
 achieveid={11175},
 author="support@zygorguides.com",
 startlevel=110,
@@ -15075,7 +14873,7 @@ step
 Congratulations!
 You have earned the _Higher Dimensional Learning_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Infused and Abused",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Infused and Abused",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Infused and Abused\" achievement.",
 achieveid={12084},
@@ -15093,12 +14891,12 @@ A tornado periodically pats down this road |goto Krokuun/0 48.87,36.28
 Gain the Fel Infused debuff |havebuff Fel Infused##841221
 step
 Once applied, run toward the groups of Wrathful Embers to the North. Aggro 2 packs of these and kill them.
-Earn the _Infused and Abused_ acheivement |achieve 12084 |goto Krokuun/0 50.41,33.85
+Earn the _Infused and Abused_ achievement |achieve 12084 |goto Krokuun/0 50.41,33.85
 step
 Congratulations!
 You have earned the _Infused and Abused_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Invasion Obliteration",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Invasion Obliteration",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Invasion Obliteration\" achievement.",
 achieveid={12026},
@@ -15108,7 +14906,7 @@ keywords={"Demon, Greater, Invasion, Point, General"},
 step
 Defeat the 6 Legion Generals by completing each of the Greater Invasion scenarios
 |tip Only 1 Greater Invasion is up per week.
-Click here to load the "Argus Invasions" guide |next "Zygor's Dungeon Guides\\Legion Scenarios\\Argus Invasions" |confirm |or
+Click here to load the "Argus Invasions" guide |next "Dungeon Guides\\Legion Scenarios\\Argus Invasions" |confirm |or
 Defeat Occularus |achieve 12026/1
 Defeat Sotanathor |achieve 12026/2
 Defeat Matron Folnuna |achieve 12026/3
@@ -15121,7 +14919,7 @@ step
 Congratulations!
 You have earned the _Invasion Obliteration_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\To Kill Demons...",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\To Kill Demons...",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"To Kill Demons...\" achievement.",
 achieveid={12102},
@@ -15140,7 +14938,7 @@ step
 Congratulations!
 You have earned the _To Kill Demons..._ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Naxt Victim",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Naxt Victim",{
 achieveid={11841},
 author="support@zygorguides.com",
 startlevel=110,
@@ -15205,7 +15003,7 @@ step
 Congratulations!
 You have completed the _Naxt Victim_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Paragon of Argus",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Paragon of Argus",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Paragon of Argus\" achievement.",
 achieveid={12083},
@@ -15214,45 +15012,45 @@ keywords={"Argus"},
 },[[
 step
 To earn this achievement, you will need to complete the Argus Campaign quest line
-Click here to load the "You Are Now Prepared!" achievement guide |next "Zygor's Achievement Guides\\Quests\\Legion\\You Are Now Prepared!" |confirm |or
+Click here to load the "You Are Now Prepared!" achievement guide |next "Achievement Guides\\Quests\\Legion\\You Are Now Prepared!" |confirm |or
 Earn the _You Are Now Prepared!_ achievement |achieve 12083/1 |or
 step
 To earn this achievement, you will need to collect all of the Argus Power-Ups
-Click here to load the "Locked and Loaded" achievement guide |next "Zygor's Achievement Guides\\Quests\\Legion\\Locked and Loaded" |confirm |or
+Click here to load the "Locked and Loaded" achievement guide |next "Achievement Guides\\Quests\\Legion\\Locked and Loaded" |confirm |or
 Complete the _Locked and Loaded_ achievement |achieve 12083/2 |or
 step
 To earn this achievement, you will need to gain Exalted reputation with the Army of the Light
-Click here to load the "Officer of the Light" achievement guide |next "Zygor's Achievement Guides\\Reputations\\Legion\\Officer of the Light" |confirm |or
+Click here to load the "Officer of the Light" achievement guide |next "Achievement Guides\\Reputations\\Legion\\Officer of the Light" |confirm |or
 Complete the _Officer of the Light_ achievement |achieve 12083/3 |or
 step
 To earn this achievement, you will need to gain Exalted reputation with Argussian Reach
-Click here to load the "Protector of the Argussian Reach" achievement guide |next "Zygor's Achievement Guides\\Reputations\\Legion\\Protector of the Argussian Reach" |confirm |or
+Click here to load the "Protector of the Argussian Reach" achievement guide |next "Achievement Guides\\Reputations\\Legion\\Protector of the Argussian Reach" |confirm |or
 Complete the _Protector of the Argussian Reach_ achievement |achieve 12083/4 |or
 step
 To earn this achievement, you will need to collect all of the hidden chests around Argus
-Click here to load the "Shoot First, Loot Later" achievement guide |next "Zygor's Achievement Guides\\Exploration\\Legion\\Shoot First, Loot Later" |confirm |or
+Click here to load the "Shoot First, Loot Later" achievement guide |next "Achievement Guides\\Exploration\\Legion\\Shoot First, Loot Later" |confirm |or
 Complete the _Shoot First, Loot Later_ achievement |achieve 12083/5 |or
 step
 To earn this achievement, you will need to kill all of the Commanders in the Invasion points that can be found around Argus
-Click here to load the "Envision Invasion Eradication" achievement guide |next "Zygor's Achievement Guides\\Exploration\\Legion\\Envision Invasion Eradication" |confirm |or
+Click here to load the "Envision Invasion Eradication" achievement guide |next "Achievement Guides\\Exploration\\Legion\\Envision Invasion Eradication" |confirm |or
 Complete the _Envision Invasion Eradication_ achievement |achieve 12083/6 |or
 step
 To earn this achievement, you will need to Defeat all of the Greater Invasion Point bosses, these appear once per week
-Click here to load the "Invasion Obliteration" achievement guide |next "Zygor's Achievement Guides\\Exploration\\Legion\\Invasion Obliteration" |confirm |or
+Click here to load the "Invasion Obliteration" achievement guide |next "Achievement Guides\\Exploration\\Legion\\Invasion Obliteration" |confirm |or
 Complete the _Invasion Obliteration_ achievement |achieve 12083/7 |or
 step
 To earn this achievement, you will need to complete the instance Seat of the Triumvirate on Heroic difficulty or higher
-Click here to load the "Heroic: Seat of the Triumvirate" achievement guide |next "Zygor's Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Seat of the Triumvirate" |confirm |or
+Click here to load the "Heroic: Seat of the Triumvirate" achievement guide |next "Achievement Guides\\Dungeons & Raids\\Legion Dungeon\\Heroic: Seat of the Triumvirate" |confirm |or
 Complete the _Heroic: Seat of the Triumvirate_ achievement |achieve 12083/8 |or
 step
 To earn this achievement, you will need to defeat the last 2 bosses in Antorus, the Burning Throne, this must be done on Normal difficulty or higher
-Click here to load the "Seat of the Pantheon" achievement guide |next "Zygor's Achievement Guides\\Dungeons & Raids\\Legion Raid\\Seat of the Pantheon" |confirm |or
+Click here to load the "Seat of the Pantheon" achievement guide |next "Achievement Guides\\Dungeons & Raids\\Legion Raid\\Seat of the Pantheon" |confirm |or
 Complete the _Seat of the Pantheon_ achievement |achieve 12083/9 |or
 step
 Congratulations!
 You have earned the _Paragon of Argus_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Shoot First, Loot Later",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Shoot First, Loot Later",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Shoot First, Loot Later\" achievement.",
 achieveid={12074},
@@ -15261,7 +15059,7 @@ keywords={"Treasures, Argus"},
 },[[
 step
 To earn this achievement, you will first need to complete the Argus Campaign
-Click here to load the "Argus Campaign" guide |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign" |confirm |or
+Click here to load the "Argus Campaign" guide |next "Leveling Guides\\Legion (100-110)\\Argus Campaign" |confirm |or
 Complete the Argus Campaign |achieve 12066 |or
 stickystart "Info"
 step
@@ -15542,7 +15340,7 @@ step
 Congratulations!
 You have earned the _Shoot First, Loot Later_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Treasures of Azsuna",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Treasures of Azsuna",{
 achieveid={11256},
 author="support@zygorguides.com",
 startlevel=100,
@@ -15558,7 +15356,7 @@ step
 Congratulations!
 You have completed the _Treasures of Azsuna_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Treasures of Highmountain",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Treasures of Highmountain",{
 achieveid={11257},
 author="support@zygorguides.com",
 startlevel=100,
@@ -15574,7 +15372,7 @@ step
 Congratulations!
 You have completed the _Treasures of Highmountain_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Treasures of Stormheim",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Treasures of Stormheim",{
 achieveid={11259},
 author="support@zygorguides.com",
 startlevel=100,
@@ -15590,7 +15388,7 @@ step
 Congratulations!
 You have completed the _Treasures of Stormheim_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Treasures of Suramar",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Treasures of Suramar",{
 achieveid={11260},
 author="support@zygorguides.com",
 startlevel=110,
@@ -15606,7 +15404,7 @@ step
 Congratulations!
 You have completed the _Treasures of Suramar_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Treasures of Val'sharah",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Treasures of Val'sharah",{
 achieveid={11258},
 author="support@zygorguides.com",
 startlevel=100,
@@ -15622,7 +15420,7 @@ step
 Congratulations!
 You have completed the _Treasures of Val'sharah_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Universal Explorer",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Universal Explorer",{
 achieveid={46},
 author="support@zygorguides.com",
 startlevel=100,
@@ -15630,42 +15428,42 @@ endlevel=110,
 description="To earn this achievement, you must explore all of the areas of WoW.",
 },[[
 step
-Load the "Eastern Kingdoms Explorer" Achievement Guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Eastern Kingdoms\\Eastern Kingdoms Explorer"
+Load the "Eastern Kingdoms Explorer" Achievement Guide |confirm |next "Achievement Guides\\Exploration\\Eastern Kingdoms\\Eastern Kingdoms Explorer"
 |tip Click the line above to load the guide.
 Earn the "Eastern Kingdoms Explorer" Achievement |achieve 46/1
 step
-Load the "Kalimdor Explorer" Achievement Guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Kalimdor\\Kalimdor Explorer"
+Load the "Kalimdor Explorer" Achievement Guide |confirm |next "Achievement Guides\\Exploration\\Kalimdor\\Kalimdor Explorer"
 |tip Click the line above to load the guide.
 Earn the "Kalimdor Explorer" Achievement |achieve 46/2
 step
-Load the "Outland Explorer" Achievement Guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Outland\\Outland Explorer"
+Load the "Outland Explorer" Achievement Guide |confirm |next "Achievement Guides\\Exploration\\Outland\\Outland Explorer"
 |tip Click the line above to load the guide.
 Earn the "Outland Explorer" Achievement |achieve 46/3
 step
-Load the "Northrend Explorer" Achievement Guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Northrend\\Northrend Explorer"
+Load the "Northrend Explorer" Achievement Guide |confirm |next "Achievement Guides\\Exploration\\Northrend\\Northrend Explorer"
 |tip Click the line above to load the guide.
 Earn the "Northrend Explorer" Achievement |achieve 46/4
 step
-Load the "Cataclysm Explorer" Achievement Guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Cataclysm\\Cataclysm Explorer"
+Load the "Cataclysm Explorer" Achievement Guide |confirm |next "Achievement Guides\\Exploration\\Cataclysm\\Cataclysm Explorer"
 |tip Click the line above to load the guide.
 Earn the "Cataclysm Explorer" Achievement |achieve 46/5
 step
-Load the "Pandaria Explorer" Achievement Guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Pandaria\\Pandaria Explorer"
+Load the "Pandaria Explorer" Achievement Guide |confirm |next "Achievement Guides\\Exploration\\Mists of Pandaria\\Pandaria Explorer"
 |tip Click the line above to load the guide.
 Earn the "Pandaria Explorer" Achievement |achieve 46/6
 step
-Load the "Draenor Explorer" Achievement Guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Draenor Explorer"
+Load the "Draenor Explorer" Achievement Guide |confirm |next "Achievement Guides\\Exploration\\Draenor Explorer"
 |tip Click the line above to load the guide.
 Earn the "Draenor Explorer" Achievement |achieve 46/7
 step
-Load the "Broken Isles Explorer" Achievement Guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Legion\\Broken Isles Explorer"
+Load the "Broken Isles Explorer" Achievement Guide |confirm |next "Achievement Guides\\Exploration\\Legion\\Broken Isles Explorer"
 |tip Click the line above to load the guide.
 Earn the "Broken Isles Explorer" Achievement |achieve 46/8
 step
 _Congratulations!_
 You Earned the "Universal Explorer" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Underbelly Tycoon",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Underbelly Tycoon",{
 achieveid={11066},
 author="support@zygorguides.com",
 startlevel=100,
@@ -15820,7 +15618,7 @@ label "congrats"
 Congratulations!
 You have completed the _Underbelly Tycoon_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\We Came Here For Two Reasons",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\We Came Here For Two Reasons",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"We Came Here For Two Reasons\" achievement.",
 achieveid={12101},
@@ -15839,7 +15637,7 @@ step
 Congratulations!
 You have earned the _We Came Here For Two Reasons_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Raids\\Legion\\Ahead of the Curve: Argus the Unmaker",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Raids\\Legion\\Ahead of the Curve: Argus the Unmaker",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Ahead of the Curve: Argus the Unmaker\" achievement.",
 achieveid={12110},
@@ -15847,7 +15645,7 @@ startlevel=110,
 keywords={"Argus, Unmaker, Antorus, Burning, Throne"},
 },[[
 step
-Click here to load the "Antorus, the Burning Throne" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne"
+Click here to load the "Antorus, the Burning Throne" dungeon guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne"
 kill Argus the Unmaker##124828
 |tip You must accomplish this on Heroic difficulty or higher.
 Earn the _Ahead of the Curve: Argus the Unmaker_ achievement |achieve 12110 |goto Antorus/10 50.1,53.0
@@ -15855,7 +15653,7 @@ step
 Congratulations!
 You have earned the _Ahead of the Curve: Argus the Unmaker_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Raids\\Legion\\Cutting Edge: Argus the Unmaker",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Raids\\Legion\\Cutting Edge: Argus the Unmaker",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Cutting Edge: Argus the Unmaker\" achievement.",
 achieveid={12111},
@@ -15863,7 +15661,7 @@ startlevel=110,
 keywords={"Argus, Unmaker, Antorus, Burning, Throne"},
 },[[
 step
-Click here to load the "Antorus, the Burning Throne" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne"
+Click here to load the "Antorus, the Burning Throne" dungeon guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne"
 kill Argus the Unmaker##124828
 |tip You must accomplish this on Mythic difficulty.
 Earn the _Cutting Edge: Argus the Unmaker_ achievement |achieve 12111 |goto Antorus/10 50.1,53.0
@@ -15871,7 +15669,7 @@ step
 Congratulations!
 You have earned the _Cutting Edge: Argus the Unmaker_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Raids\\Cutting Edge: Gul'dan",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Raids\\Cutting Edge: Gul'dan",{
 achieveid={11192},
 author="support@zygorguides.com",
 startlevel=110,
@@ -15883,7 +15681,7 @@ step
 This achievement can no longer be earned
 |tip It required you to kill Gul'dan on Mythic difficulty during the height of The Nighthold Raid.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Challenger: Legion Season 5",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Challenger: Legion Season 5",{
 author="support@zygorguides.com",
 description="This achievement can no longer be earned!",
 achieveid={12036},
@@ -15898,7 +15696,7 @@ step
 _Congratulations!_
 You Earned the "Challenger: Legion Season 5" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Defender of the Alliance: Legion Season 5",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Defender of the Alliance: Legion Season 5",{
 author="support@zygorguides.com",
 description="This achievement can no longer be earned!",
 achieveid={12039},
@@ -15913,7 +15711,7 @@ step
 _Congratulations!_
 You Earned the "Defender of the Alliance: Legion Season 5" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Duelist: Legion Season 5",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Duelist: Legion Season 5",{
 author="support@zygorguides.com",
 description="This achievement can no longer be earned!",
 achieveid={12034},
@@ -15928,7 +15726,7 @@ step
 _Congratulations!_
 You Earned the "Duelist: Legion Season 5" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Fierce Gladiator: Legion Season 5",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Fierce Gladiator: Legion Season 5",{
 author="support@zygorguides.com",
 description="This achievement can no longer be earned!",
 achieveid={12010},
@@ -15943,7 +15741,7 @@ step
 _Congratulations!_
 You Earned the "Fierce Gladiator: Legion Season 5" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Gladiator: Legion Season 5",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Gladiator: Legion Season 5",{
 author="support@zygorguides.com",
 description="This achievement can no longer be earned!",
 achieveid={12045},
@@ -15958,7 +15756,7 @@ step
 _Congratulations!_
 You Earned the "Gladiator: Legion Season 5" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Guardian of the Alliance: Legion Season 5",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Guardian of the Alliance: Legion Season 5",{
 author="support@zygorguides.com",
 description="This achievement can no longer be earned!",
 achieveid={12038},
@@ -15973,7 +15771,7 @@ step
 _Congratulations!_
 You Earned the "Guardian of the Alliance: Legion Season 5" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Hero of the Alliance: Fierce",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Hero of the Alliance: Fierce",{
 author="support@zygorguides.com",
 description="This achievement can no longer be earned!",
 achieveid={12037},
@@ -15988,7 +15786,7 @@ step
 _Congratulations!_
 You Earned the "Hero of the Alliance: Fierce" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Rival: Legion Season 5",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Rival: Legion Season 5",{
 author="support@zygorguides.com",
 description="This achievement can no longer be earned!",
 achieveid={12035},
@@ -16003,7 +15801,7 @@ step
 _Congratulations!_
 You Earned the "Rival: Legion Season 5" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Soldier of the Alliance: Legion Season 5",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Soldier of the Alliance: Legion Season 5",{
 author="support@zygorguides.com",
 description="This achievement can no longer be earned!",
 achieveid={12040},
@@ -16018,7 +15816,7 @@ step
 _Congratulations!_
 You Earned the "Soldier of the Alliance: Legion Season 5" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Fierce Elite",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Fierce Elite",{
 author="support@zygorguides.com",
 description="This achievement can no longer be earned!",
 achieveid={12090},
@@ -16033,7 +15831,7 @@ step
 _Congratulations!_
 You Earned the "Fierce Elite" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Fierce Combatant",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Fierce Combatant",{
 author="support@zygorguides.com",
 description="This achievement can no longer be earned!",
 achieveid={12032},
@@ -16048,7 +15846,7 @@ step
 _Congratulations!_
 You Earned the "Fierce Combatant" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Promotions\\Collector's Edition: Seabraid Stallion",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Promotions\\Collector's Edition: Seabraid Stallion",{
 achieveid={12229},
 author="support@zygorguides.com",
 startlevel=110,
@@ -16067,7 +15865,7 @@ step
 Congratulations!
 You Earned the "Collector's Edition: Seabraid Stallion" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Promotions\\Collector's Edition: Tottle",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Promotions\\Collector's Edition: Tottle",{
 achieveid={12232},
 author="support@zygorguides.com",
 startlevel=110,
@@ -16086,7 +15884,7 @@ step
 _Congratulations!_
 You Earned the "Collector's Edition: Tottle" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\General\\Legion\\Brokenly Epic",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Legion\\Brokenly Epic",{
 achieveid={10765},
 author="support@zygorguides.com",
 startlevel=110,
@@ -16097,14 +15895,14 @@ step
 For this, you will need to run _Mythic Dungeons_ for item level 840+ gear
 |tip Mythic dungeons need to be manually entered.
 Alternatively, the gear you recieve from World Quests steadily increases as your overall score rises
-Click here to load the "World Quest" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load the "World Quest" guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 The weekly world boss also has a chance for an 860 item level armor piece to drop
 Earn the _Brokenly Epic_ achievement |achieve 10765 |or
 step
 Congratulations!
 You have earned the _Brokenly Epic_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\General\\Legion\\Brokenly Superior",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Legion\\Brokenly Superior",{
 achieveid={10764},
 author="support@zygorguides.com",
 startlevel=110,
@@ -16115,14 +15913,14 @@ step
 For this, you can run normal dungeons at level 110 to acquire 805 gear
 Press _"I"_ to queue up for a random dungeon
 Alternatively, World Quests will eventually reward you with 795+ gear
-Click here to open the "World Quest" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to open the "World Quest" guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 The weekly world boss also has a chance for an 860 item level armor piece to drop
 Earn the _Brokenly Superior_ achievement |achieve 10764 |or
 step
 Congratulations!
 You have earned the _Brokenly Superior_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Legacy\\Expansion Features\\Artifact or Artifiction",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Expansion Features\\Artifact or Artifiction",{
 achieveid={10852},
 author="support@zygorguides.com",
 startlevel=110,
@@ -16133,7 +15931,7 @@ step
 This achievement can no longer be obtained!
 |tip It was earned prior to patch 8.0,
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Legacy\\Expansion Features\\Crucible's Promise",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Expansion Features\\Crucible's Promise",{
 author="support@zygorguides.com",
 description="This achievement was earned prior to patch 8.0 and can no longer be obtained.",
 achieveid={12071},
@@ -16145,7 +15943,7 @@ step
 This achievement can no longer be obtained!
 |tip It was earned prior to patch 8.0,
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Legacy\\Expansion Features\\Now You're Cooking with Netherlight",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Expansion Features\\Now You're Cooking with Netherlight",{
 author="support@zygorguides.com",
 description="This achievement was earned prior to patch 8.0 and can no longer be obtained.",
 achieveid={12072},
@@ -16157,7 +15955,7 @@ step
 This achievement can no longer be obtained!
 |tip It was earned prior to patch 8.0,
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Legacy\\Expansion Features\\Part of History",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Expansion Features\\Part of History",{
 achieveid={10853},
 author="support@zygorguides.com",
 startlevel=110,
@@ -16168,7 +15966,7 @@ step
 This achievement can no longer be obtained!
 |tip It was earned prior to patch 8.0,
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Legacy\\Expansion Features\\Power Ascended",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Expansion Features\\Power Ascended",{
 achieveid={11772},
 author="support@zygorguides.com",
 startlevel=110,
@@ -16180,7 +15978,7 @@ step
 This achievement can no longer be obtained!
 |tip It was earned prior to patch 8.0,
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Legacy\\Expansion Features\\Power Realized",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Expansion Features\\Power Realized",{
 achieveid={11144},
 author="support@zygorguides.com",
 startlevel=110,
@@ -16191,7 +15989,7 @@ step
 This achievement can no longer be obtained!
 |tip It was earned prior to patch 8.0,
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Legacy\\Expansion Features\\Power Unbound",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Expansion Features\\Power Unbound",{
 achieveid={11609},
 author="support@zygorguides.com",
 startlevel=110,
@@ -16203,7 +16001,7 @@ step
 This achievement can no longer be obtained!
 |tip It was earned prior to patch 8.0,
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Legacy\\Expansion Features\\Power Unleashed",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Expansion Features\\Power Unleashed",{
 achieveid={11610},
 author="support@zygorguides.com",
 startlevel=110,
@@ -16215,7 +16013,7 @@ step
 This achievement can no longer be obtained!
 |tip It was earned prior to patch 8.0,
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Legacy\\Professions\\Is There a Medic in the Zone?",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Professions\\Is There a Medic in the Zone?",{
 achieveid={11138},
 author="support@zygorguides.com",
 startlevel=110,
@@ -16226,7 +16024,7 @@ step
 This achievement can no longer be obtained!
 |tip It was earned prior to patch 8.0,
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Legacy\\Chapter I: Call of the Archmage",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Chapter I: Call of the Archmage",{
 achieveid={9640},
 description="This achievement was part of a legendary quest line that has been removed from the game.",
 },[[
@@ -16238,7 +16036,7 @@ step
 Congratulations!
 You have earned the _Chapter I: Call of the Archmage_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Legacy\\Chapter II: Gul'dan Strikes Back",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Chapter II: Gul'dan Strikes Back",{
 achieveid={9641},
 description="This achievement required you to complete Chapter II of the legendary cloak questline and cannot be earned anymore.",
 },[[
@@ -16250,7 +16048,7 @@ step
 Congratulations!
 You have earned the _Chapter II: Gul'dan Strikes Back_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Legacy\\Chapter III: The Foundry Falls",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Chapter III: The Foundry Falls",{
 achieveid={9642},
 description="This achievement was part of a legendary quest line that has been removed from the game.",
 },[[
@@ -16262,7 +16060,7 @@ step
 Congratulations!
 You have earned the _Chapter III: The Foundry Falls_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Legacy\\Chapter IV: Darkness Incarnate",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Chapter IV: Darkness Incarnate",{
 achieveid={10021},
 description="This achievement was part of a legendary quest line that has been removed from the game.",
 },[[
@@ -16274,7 +16072,7 @@ step
 Congratulations!
 You have earned the _Chapter IV: Darkness Incarnate_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Anomalous Animals of Argus",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Anomalous Animals of Argus",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Anomalous Animals of Argus\" achievement.",
 achieveid={12088},
@@ -16536,7 +16334,7 @@ step
 Congratulations!
 You have earned the _Anomalous Animals of Argus_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Aquatic Acquiescence",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Aquatic Acquiescence",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Aquatic Acquiescence\" achievement.",
 achieveid={9686},
@@ -16732,7 +16530,7 @@ Click here if the World quest for Robert Craig is not up |next "Aulier" |or
 step
 label "Aulier"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Moonshell Crab, Emperor Crab, and Spawn of G'nathus |only if completedq(44052)
 talk Aulier##105250 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -16762,7 +16560,7 @@ Click here if the World quest for Master Tamer Flummox is not up |next "Varenne"
 step
 label "Varenne"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Emperor Crab, and then any other 2 Aquatic pets |or |only if completedq(44052)
 talk Varenne##105674 |or |only if completedq(44052)
 Tell him _"Let's do battle!"_ |or |only if completedq(44052)
@@ -16778,7 +16576,7 @@ step
 Congratulations!
 You have earned the _Aquatic Acquiescence_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Aquatic Assault",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Aquatic Assault",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Aquatic Assault\" achievement.",
 achieveid={12089},
@@ -17062,7 +16860,7 @@ step
 Congratulations!
 You have earned the _Aquatic Assault_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Aquatic Brawler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Aquatic Brawler",{
 author="support@zygorguides.com",
 description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Aquatic pets.",
 achieveid={12280},
@@ -17079,7 +16877,7 @@ step
 Congratulations!
 You have earned the _Aquatic Brawler_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Beast Blitz",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Beast Blitz",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Beast Blitz\" achievement.",
 achieveid={12091},
@@ -17342,7 +17140,7 @@ step
 Congratulations!
 You have earned the _Beast Blitz_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Beast Brawler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Beast Brawler",{
 author="support@zygorguides.com",
 description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Beast pets.",
 achieveid={12281},
@@ -17359,7 +17157,7 @@ step
 Congratulations!
 You have earned the _Beast Brawler_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Best of the Beasts",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Best of the Beasts",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Best of the Beasts\" achievement.",
 achieveid={9687},
@@ -17557,7 +17355,7 @@ Click here if the World quest for Robert Craig is not up |next "Aulier" |or
 step
 label "Aulier"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Feline Familiar, Summit Kid, and any other Beast pet. |only if completedq(44052)
 talk Aulier##105250 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -17587,7 +17385,7 @@ Click here if the World quest for Master Tamer Flummox is not up |next "Varenne"
 step
 label "Varenne"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: 3 Zandalarai Raptors. |or |only if completedq(44052)
 talk Varenne##105674 |or |only if completedq(44052)
 Tell him _"Let's do battle!"_ |or |only if completedq(44052)
@@ -17603,7 +17401,7 @@ step
 Congratulations!
 You have earned the _Best of the Beasts_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Critical Critters",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Critical Critters",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Critical Critters\" achievement.",
 achieveid={12092},
@@ -17875,7 +17673,7 @@ step
 Congratulations!
 You have earned the _Critical Critters_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Critter Brawler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Critter Brawler",{
 author="support@zygorguides.com",
 description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Critter pets.",
 achieveid={12284},
@@ -17892,7 +17690,7 @@ step
 Congratulations!
 You have earned the _Critter Brawler_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Draconic Destruction",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Draconic Destruction",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Draconic Destruction\" achievement.",
 achieveid={12093},
@@ -18170,7 +17968,7 @@ step
 Congratulations!
 You have earned the _Draconic Destruction_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Dragonkin Brawler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Dragonkin Brawler",{
 author="support@zygorguides.com",
 description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Dragonkin pets.",
 achieveid={12287},
@@ -18187,7 +17985,7 @@ step
 Congratulations!
 You have earned the _Dragonkin Brawler_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Dragons!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Dragons!",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Dragons!\" achievement.",
 achieveid={9689},
@@ -18382,7 +18180,7 @@ Click here if the World quest for Robert Craig is not up |next "Aulier" |or
 step
 label "Aulier"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Nether Faerie Dragon, Nexus Whelpling, and then any other Dragon pet. |only if completedq(44052)
 talk Aulier##105250 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -18413,7 +18211,7 @@ Click here if the World quest for Master Tamer Flummox is not up |next "Varenne"
 step
 label "Varenne"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Emerald Proto-Whelp, Chrominius, and any other Dragon pet. |only if completedq(44052)
 talk Varenne##105674 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -18430,7 +18228,7 @@ step
 Congratulations!
 You have earned the _Dragons!_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Elemental Brawler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Elemental Brawler",{
 author="support@zygorguides.com",
 description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Elemental pets.",
 achieveid={12282},
@@ -18447,7 +18245,7 @@ step
 Congratulations!
 You have earned the _Elemental Brawler_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Elemental Escalation",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Elemental Escalation",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Elemental Escalation\" achievement.",
 achieveid={12094},
@@ -18730,7 +18528,7 @@ step
 Congratulations!
 You have earned the _Elemental Escalation_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Family Brawler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Family Brawler",{
 author="support@zygorguides.com",
 description="Complete the following achievements:\nMechanical Brawler\nAquatic Brawler\nBeast Brawler\nElemental Brawler\nMagic Brawler\nCritter Brawler\nUndead Brawler\nFlying Brawler\nDragonkin Brawler\nHumanoid Brawler",
 achieveid={12290},
@@ -18803,7 +18601,7 @@ step
 Congratulations!
 You have earned the _Family Brawler_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Family Familiar",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Family Familiar",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Family Familiar\" achievement.",
 achieveid={9696},
@@ -18815,34 +18613,34 @@ To earn this achievement, you will need to defeat the 12 Pet Battle Masters on t
 |tip You will need many different level 25 pets for all of the 10 different types to complete this achievement.
 confirm
 step
-Click here to load the "Aquatic Acquiescence" achievement guide |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Aquatic Acquiescence" |confirm |or
+Click here to load the "Aquatic Acquiescence" achievement guide |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Aquatic Acquiescence" |confirm |or
 |achieve 9696/1 |or
 step
-Click here to load the "Best of the Beasts" achievement guide |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Best of the Beasts" |confirm |or
+Click here to load the "Best of the Beasts" achievement guide |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Best of the Beasts" |confirm |or
 |achieve 9696/2 |or
 step
-Click here to load the "Mousing Around" achievement guide |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Mousing Around" |confirm |or
+Click here to load the "Mousing Around" achievement guide |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Mousing Around" |confirm |or
 |achieve 9696/3 |or
 step
-Click here to load the "Dragons!" achievement guide |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Dragons!" |confirm |or
+Click here to load the "Dragons!" achievement guide |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Dragons!" |confirm |or
 |achieve 9696/4 |or
 step
-Click here to load the "Ragnaros, Watch and Learn" achievement guide |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Ragnaros, Watch and Learn" |confirm |or
+Click here to load the "Ragnaros, Watch and Learn" achievement guide |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Ragnaros, Watch and Learn" |confirm |or
 |achieve 9696/5 |or
 step
-Click here to load the "Flock Together" achievement guide |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Flock Together" |confirm |or
+Click here to load the "Flock Together" achievement guide |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Flock Together" |confirm |or
 |achieve 9696/6 |or
 step
-Click here to load the "Murlocs, Harpies, and Wolvar, Oh My!" achievement guide |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Murlocs, Harpies, and Wolvar, Oh My!" |confirm |or
+Click here to load the "Murlocs, Harpies, and Wolvar, Oh My!" achievement guide |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Murlocs, Harpies, and Wolvar, Oh My!" |confirm |or
 |achieve 9696/7 |or
 step
-Click here to load the "Master of Magic" achievement guide |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Master of Magic" |confirm |or
+Click here to load the "Master of Magic" achievement guide |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Master of Magic" |confirm |or
 |achieve 9696/8 |or
 step
-Click here to load the "Roboteer" achievement guide |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Roboteer" |confirm |or
+Click here to load the "Roboteer" achievement guide |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Roboteer" |confirm |or
 |achieve 9696/9 |or
 step
-Click here to load the "The Lil'Necromancer" achievement guide |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\The Lil'Necromancer" |confirm |or
+Click here to load the "The Lil'Necromancer" achievement guide |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\The Lil'Necromancer" |confirm |or
 |achieve 9696/10 |or
 step
 Earn the _Family Familiar_ achievement |achieve 9696
@@ -18850,7 +18648,7 @@ step
 Congratulations!
 You have earned the _Family Familiar_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Family Fighter",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Family Fighter",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Family Fighter\" achievement.",
 achieveid={12100},
@@ -18862,34 +18660,34 @@ To earn this achievement you will need to defeat the 18 Pet Battle Masters on Ar
 |tip You will need many different level 25 pets for all of the 10 different types to complete this achievement.
 confirm
 step
-Click here to check out our guide for the Aquatic battle pets |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Aquatic Assault" |confirm |or
+Click here to check out our guide for the Aquatic battle pets |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Aquatic Assault" |confirm |or
 |achieve 12100/1 |or
 step
-Click here to check out our guide for the Beast battle pets |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Beast Blitz" |confirm |or
+Click here to check out our guide for the Beast battle pets |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Beast Blitz" |confirm |or
 |achieve 12100/2 |or
 step
-Click here to check out our guide for the Critter battle pets |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Critical Critters" |confirm |or
+Click here to check out our guide for the Critter battle pets |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Critical Critters" |confirm |or
 |achieve 12100/3 |or
 step
-Click here to check out our guide for the Dragonkin battle pets |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Draconic Destruction" |confirm |or
+Click here to check out our guide for the Dragonkin battle pets |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Draconic Destruction" |confirm |or
 |achieve 12100/4 |or
 step
-Click here to check out our guide for the Elemental battle pets |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Elemental Escalation" |confirm |or
+Click here to check out our guide for the Elemental battle pets |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Elemental Escalation" |confirm |or
 |achieve 12100/5 |or
 step
-Click here to check out our guide for the Flying battle pets |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Fierce Fliers" |confirm |or
+Click here to check out our guide for the Flying battle pets |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Fierce Fliers" |confirm |or
 |achieve 12100/6 |or
 step
-Click here to check out our guide for the Humanoid battle pets |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Humanoid Havoc" |confirm |or
+Click here to check out our guide for the Humanoid battle pets |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Humanoid Havoc" |confirm |or
 |achieve 12100/7 |or
 step
-Click here to check out our guide for the Magic battle pets |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Magical Mayhem" |confirm |or
+Click here to check out our guide for the Magic battle pets |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Magical Mayhem" |confirm |or
 |achieve 12100/8 |or
 step
-Click here to check out our guide for the Mechanical battle pets |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Mechanical Melee" |confirm |or
+Click here to check out our guide for the Mechanical battle pets |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Mechanical Melee" |confirm |or
 |achieve 12100/9 |or
 step
-Click here to check out our guide for the Unstoppable battle pets |next "Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Unstoppable Undead" |confirm |or
+Click here to check out our guide for the Unstoppable battle pets |next "Achievement Guides\\Pet Battles\\Battle\\Legion\\Unstoppable Undead" |confirm |or
 |achieve 12100/10 |or
 step
 Earn the _Family Fighter_ achievement |achieve 12100
@@ -18897,7 +18695,7 @@ step
 Congratulations!
 You have earned the _Family Fighter_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Fierce Fliers",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Fierce Fliers",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Fierce Fliers\" achievement.",
 achieveid={12095},
@@ -19154,7 +18952,7 @@ step
 Congratulations!
 You have earned the _Fierce Fliers_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Flock Together",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Flock Together",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Flock Together\" achievement.",
 achieveid={9691},
@@ -19350,7 +19148,7 @@ Click here if the World quest for Robert Craig is not up |next "Aulier" |or
 step
 label "Aulier"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Ikky, Teroclaw Hatchling and any Moth. |only if completedq(44052)
 talk Aulier##105250 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -19379,7 +19177,7 @@ Click here if the World quest for Master Tamer Flummox is not up |next "Varenne"
 step
 label "Varenne"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Teroclaw Hatchling, any Moth and then any other Flying pet. |only if completedq(44052)
 |tip This fight is very RNG based if you get stunned for frogged you may need to restart the fight. |only if completedq(44052)
 talk Varenne##105674 |only if completedq(44052)
@@ -19399,7 +19197,7 @@ step
 Congratulations!
 You have earned the _Flock Together_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Flying Brawler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Flying Brawler",{
 author="support@zygorguides.com",
 description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Flying pets.",
 achieveid={12286},
@@ -19416,7 +19214,7 @@ step
 Congratulations!
 You have earned the _Flying Brawler_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Humanoid Brawler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Humanoid Brawler",{
 author="support@zygorguides.com",
 description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Humanoid pets.",
 achieveid={12289},
@@ -19433,7 +19231,7 @@ step
 Congratulations!
 You have earned the _Humanoid Brawler_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Humanoid Havoc",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Humanoid Havoc",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Humanoid Havoc\" achievement.",
 achieveid={12096},
@@ -19712,7 +19510,7 @@ step
 Congratulations!
 You have earned the _Humanoid Havoc_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\The Lil'Necromancer",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\The Lil'Necromancer",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"The Lil'Necromancer\" achievement.",
 achieveid={9695},
@@ -19917,7 +19715,7 @@ Click here if the World quest for Robert Craig is not up |next "Aulier" |or
 step
 label "Aulier"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Bone Serpent, Unborn Val'kyr and Fossilized Hatchling. |only if completedq(44052)
 talk Aulier##105250 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -19947,7 +19745,7 @@ Click here if the World quest for Master Tamer Flummox is not up |next "Varenne"
 step
 label "Varenne"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Fragment of Anger, Fossilized Hatchling and Bone Serpent. |only if completedq(44052)
 talk Varenne##105674 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -19965,7 +19763,7 @@ step
 Congratulations!
 You have earned the _The Lil'Necromancer_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Magic Brawler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Magic Brawler",{
 author="support@zygorguides.com",
 description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Magic pets.",
 achieveid={12283},
@@ -19982,7 +19780,7 @@ step
 Congratulations!
 You have earned the _Magic Brawler_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Magical Mayhem",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Magical Mayhem",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Magical Mayhem\" achievement.",
 achieveid={12097},
@@ -20254,7 +20052,7 @@ step
 Congratulations!
 You have earned the _Magical Mayhem_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Master of Magic",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Master of Magic",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Master of Magic\" achievement.",
 achieveid={9693},
@@ -20450,7 +20248,7 @@ Click here if the World quest for Robert Craig is not up |next "Aulier" |or
 step
 label "Aulier"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: any Lantern, Abyssius, and Jade Owl. |only if completedq(44052)
 talk Aulier##105250 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -20482,7 +20280,7 @@ Click here if the World quest for Master Tamer Flummox is not up |next "Varenne"
 step
 label "Varenne"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Abyssius, Twilight Fiendling, and Jade Owl. |only if completedq(44052)
 talk Varenne##105674 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -20502,7 +20300,7 @@ step
 Congratulations!
 You have earned the _Master of Magic_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Mechanical Brawler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Mechanical Brawler",{
 author="support@zygorguides.com",
 description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Mechanical pets.",
 achieveid={12279},
@@ -20519,7 +20317,7 @@ step
 Congratulations!
 You have earned the _Mechanical Brawler_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Mechanical Melee",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Mechanical Melee",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mechanical Melee\" achievement.",
 achieveid={12098},
@@ -20786,7 +20584,7 @@ step
 Congratulations!
 You have earned the _Mechanical Melee_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Mousing Around",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Mousing Around",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mousing Around\" achievement.",
 achieveid={9688},
@@ -20985,7 +20783,7 @@ Click here if the World quest for Robert Craig is not up |next "Aulier" |or
 step
 label "Aulier"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: any Snail, any Rabbit, and any other Critter pet. |only if completedq(44052)
 talk Aulier##105250 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -21017,7 +20815,7 @@ Click here if the World quest for Master Tamer Flummox is not up |next "Varenne"
 step
 label "Varenne"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: any Snail, any Rabbit with 325 Speed or highter, and any other Critter pet.
 talk Varenne##105674 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -21036,7 +20834,7 @@ step
 Congratulations!
 You have earned the _Mousing Around_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Murlocs, Harpies, and Wolvar, Oh My!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Murlocs, Harpies, and Wolvar, Oh My!",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Murlocs, Harpies, and Wolvar, Oh My!\" achievement.",
 achieveid={9692},
@@ -21233,7 +21031,7 @@ Click here if the World quest for Robert Craig is not up |next "Aulier" |or
 step
 label "Aulier"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Anubisath Idol, Kun-Lai Runt, and Flayer Youngling. |only if completedq(44052)
 talk Aulier##105250 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -21262,7 +21060,7 @@ Click here if the World quest for Master Tamer Flummox is not up |next "Varenne"
 step
 label "Varenne"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Anubisath Idol and then any other 2 Humanoid pets. |only if completedq(44052)
 talk Varenne##105674 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -21280,7 +21078,7 @@ step
 Congratulations!
 You have earned the _Murlocs, Harpies, and Wolvar, Oh My!_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Ragnaros, Watch and Learn",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Ragnaros, Watch and Learn",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Ragnaros, Watch and Learn\" achievement.",
 achieveid={9690},
@@ -21470,7 +21268,7 @@ Click here if the World quest for Robert Craig is not up |next "Aulier" |or
 step
 label "Aulier"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Tiny Snowman, Fel Flame, and  Pandaren Air Spirit. |only if completedq(44052)
 talk Aulier##105250 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -21503,7 +21301,7 @@ Click here if the World quest for Master Tamer Flummox is not up |next "Varenne"
 step
 label "Varenne"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Tiny Snowman, Electrified Razortooth, and Pandaren Water Spirit |only if completedq(44052)
 talk Varenne##105674 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -21524,7 +21322,7 @@ step
 Congratulations!
 You have earned the _Ragnaros, Watch and Learn_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Roboteer",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Roboteer",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Roboteer\" achievement.",
 achieveid={9694},
@@ -21719,7 +21517,7 @@ Click here if the World quest for Robert Craig is not up |next "Aulier" |or
 step
 label "Aulier"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Iron Starlette, Mechanical Pandaren Dragonling, and any other Mechanical pet. |only if completedq(44052)
 talk Aulier##105250 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -21749,7 +21547,7 @@ Click here if the World quest for Master Tamer Flummox is not up |next "Varenne"
 step
 label "Varenne"
 This World Quest is only available to players who have completed the "Blood and Wine" Suramar questline
-Click here to load the "Suramar (110)" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar (110)" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 For this fight, the following pets are recommended: Mechanical Pnadaren Dragonling, Darkmoon Zeppelin and Darkmoon Tonk. |only if completedq(44052)
 talk Varenne##105674 |only if completedq(44052)
 Tell him _"Let's do battle!"_ |only if completedq(44052)
@@ -21768,7 +21566,7 @@ step
 Congratulations!
 You have earned the _Roboteer_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\General\\Taming the Wild",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\General\\Taming the Wild",{
 achieveid={6601},
 author="support@zygorguides.com",
 startlevel=110,
@@ -21777,7 +21575,7 @@ keywords={"Pet, Battle"},
 description="This guide will walk you through completing the \"Taming the Wild\" Achievement.",
 },[[
 step
-Load the "Taming Azeroth" Achievement Guide |next "Zygor's Achievement Guides\\Pet Battles\\General\\Taming Azeroth" |confirm
+Load the "Taming Azeroth" Achievement Guide |next "Achievement Guides\\Pet Battles\\General\\Taming Azeroth" |confirm
 |tip Click the line above to load the guide.
 |tip To earn this achievement, defeat any master pet tamer.
 Earn the "Taming the Wild" Achievement |achieve 6601
@@ -21785,7 +21583,7 @@ step
 _Congratulations!_
 You Earned the "Taming the Wild" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\General\\Taming the Great Outdoors",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\General\\Taming the Great Outdoors",{
 achieveid={7498},
 author="support@zygorguides.com",
 startlevel=110,
@@ -21794,7 +21592,7 @@ keywords={"Pet, Battle"},
 description="This guide will walk you through completing the \"Taming the Great Outdoors\" Achievement.",
 },[[
 step
-Load the "Taming Azeroth" Achievement Guide |next "Zygor's Achievement Guides\\Pet Battles\\General\\Taming Azeroth" |confirm
+Load the "Taming Azeroth" Achievement Guide |next "Achievement Guides\\Pet Battles\\General\\Taming Azeroth" |confirm
 |tip Click the line above to load the guide.
 |tip To earn this achievement, defeat any 15 master pet tamers.
 Earn the "Taming the Great Outdoors" Achievement |achieve 7498
@@ -21802,7 +21600,7 @@ step
 _Congratulations!_
 You Earned the "Taming the Great Outdoors" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\General\\Taming the World",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\General\\Taming the World",{
 achieveid={7499},
 author="support@zygorguides.com",
 startlevel=110,
@@ -21811,7 +21609,7 @@ keywords={"Pet, Battle"},
 description="This guide will walk you through completing the \"Taming the Great World\" Achievement.",
 },[[
 step
-Load the "Taming Azeroth" Achievement Guide |next "Zygor's Achievement Guides\\Pet Battles\\General\\Taming Azeroth" |confirm
+Load the "Taming Azeroth" Achievement Guide |next "Achievement Guides\\Pet Battles\\General\\Taming Azeroth" |confirm
 |tip Click the line above to load the guide.
 |tip To earn this achievement, defeat any 40 master pet tamers.
 Earn the "Taming the World" Achievement |achieve 7499
@@ -21819,7 +21617,7 @@ step
 _Congratulations!_
 You Earned the "Taming the World" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Undead Brawler",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Undead Brawler",{
 author="support@zygorguides.com",
 description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Undead pets.",
 achieveid={12285},
@@ -21836,7 +21634,7 @@ step
 Congratulations!
 You have earned the _Undead Brawler_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Battle\\Legion\\Unstoppable Undead",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Unstoppable Undead",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Unstoppable Undead\" achievement.",
 achieveid={12099},
@@ -22108,7 +21906,7 @@ step
 Congratulations!
 You have earned the _Unstoppable Undead_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Collect\\Legion\\Raiding with Leashes V: Cuteaclysm",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Legion\\Raiding with Leashes V: Cuteaclysm",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Raiding with Leashes V: Cuteaclysm\" achievement.",
 achieveid={12079},
@@ -22914,7 +22712,7 @@ label "Leashes 5 Congratz"
 Congratulations!
 You have earned the _Raiding with Leashes V: Cuteaclysm_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Legion\\Pet Battle Challenge: Deadmines",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Legion\\Pet Battle Challenge: Deadmines",{
 achieveid={11856},
 author="support@zygorguides.com",
 startlevel=110,
@@ -22924,13 +22722,13 @@ description="This guide will walk you through completing the \"Pet Battle Challe
 },[[
 step
 To earn this achievement, complete the Pet Battle Challenge: Deadmines
-Click here to load the "Pet Battle Challenge: Wailing Caverns" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Pet Battle\\Deadmines"
+Click here to load the "Pet Battle Challenge: Wailing Caverns" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Pet Battle\\Deadmines"
 Complete the Pet Battle Dungeon in the Deadmines |achieve 11856
 step
 Congratulations!
 You have earned the _Pet Battle Challenge: Deadmines_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Pet Battles\\Legion\\Pet Battle Challenge: Wailing Caverns",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Legion\\Pet Battle Challenge: Wailing Caverns",{
 achieveid={11765},
 author="support@zygorguides.com",
 startlevel=110,
@@ -22940,13 +22738,13 @@ description="This guide will walk you through completing the \"Pet Battle Challe
 },[[
 step
 To earn this achievement, complete the Pet Battle Challenge: Wailing Caverns
-Click here to load the "Pet Battle Challenge: Wailing Caverns" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Pet Battle\\Wailing Caverns"
+Click here to load the "Pet Battle Challenge: Wailing Caverns" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Pet Battle\\Wailing Caverns"
 Complete the Pet Battle Dungeon in the Wailing Caverns |achieve 11765
 step
 Congratulations!
 You have earned the _Pet Battle Challenge: Wailing Caverns_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Crest of Heroism",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Crest of Heroism",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Crest of Heroism\" achievement.",
 achieveid={11165},
@@ -22962,7 +22760,7 @@ step
 Congratulations!
 You have earned the _Crest of Heroism_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Crest of Carnage",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Crest of Carnage",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Crest of Carnage\" achievement.",
 achieveid={11167},
@@ -22978,7 +22776,7 @@ step
 Congratulations!
 You have earned the _Crest of Carnage_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Crest of Devastation",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Crest of Devastation",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Crest of Devastation\" achievement.",
 achieveid={11169},
@@ -22994,7 +22792,7 @@ step
 Congratulations!
 You have earned the _Crest of Devastation_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Top Honors",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Top Honors",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Top Honors\" achievement.",
 achieveid={10990},
@@ -23009,7 +22807,7 @@ step
 Congratulations!
 You have earned the _Top Honors_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\First Step into a Larger World",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\First Step into a Larger World",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"First Step into a Larger World\" achievement.",
 achieveid={10991},
@@ -23025,7 +22823,7 @@ step
 Congratulations!
 You have earned the _First Step into a Larger World_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Here We Go Again",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Here We Go Again",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Here We Go Again\" achievement.",
 achieveid={10992},
@@ -23041,7 +22839,7 @@ step
 Congratulations!
 You have earned the _Here We Go Again_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Third Time's the Charm",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Third Time's the Charm",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Third Time's the Charm\" achievement.",
 achieveid={10993},
@@ -23057,7 +22855,7 @@ step
 Congratulations!
 You have earned the _Third Time's the Charm_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\For Prestige",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\For Prestige",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"For Prestige\" achievement.",
 achieveid={10995},
@@ -23073,7 +22871,7 @@ step
 Congratulations!
 You have earned the _For Prestige_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Alive for Five",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Alive for Five",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Alive for Five\" achievement.",
 achieveid={11468},
@@ -23089,7 +22887,7 @@ step
 Congratulations!
 You have earned the _Alive for Five_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\The River Six",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\The River Six",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"The River Six\" achievement.",
 achieveid={11469},
@@ -23105,7 +22903,7 @@ step
 Congratulations!
 You have earned the _The River Six_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Slayin' to Seven",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Slayin' to Seven",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Slayin' to Seven\" achievement.",
 achieveid={11470},
@@ -23121,7 +22919,7 @@ step
 Congratulations!
 You have earned the _Slayin' to Seven_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Don't Hate. Grind to Eight",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Don't Hate. Grind to Eight",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Don't Hate. Grind to Eight\" achievement.",
 achieveid={11471},
@@ -23137,7 +22935,7 @@ step
 Congratulations!
 You have earned the _Don't Hate. Grind to Eight_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Hell. It's About Nine",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Hell. It's About Nine",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Hell. It's About Nine\" achievement.",
 achieveid={11472},
@@ -23153,7 +22951,7 @@ step
 Congratulations!
 You have earned the _Hell. It's About Nine_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Decade of Dominance",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Decade of Dominance",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Decade of Dominance\" achievement.",
 achieveid={11685},
@@ -23169,7 +22967,7 @@ step
 Congratulations!
 You have earned the _Decade of Dominance_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\These Go To Elevan",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\These Go To Elevan",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"These Go To Elevan\" achievement.",
 achieveid={11686},
@@ -23185,7 +22983,7 @@ step
 Congratulations!
 You have earned the _These Go To Elevan_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Demonic Dozen",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Demonic Dozen",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Demonic Dozen\" achievement.",
 achieveid={11687},
@@ -23201,7 +22999,7 @@ step
 Congratulations!
 You have earned the _Demonic Dozen_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Floor Thirteen",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Floor Thirteen",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Floor Thirteen\" achievement.",
 achieveid={11688},
@@ -23217,7 +23015,7 @@ step
 Congratulations!
 You have earned the _Floor Thirteen_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Fourteen For The Team",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Fourteen For The Team",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Fourteen For The Team\" achievement.",
 achieveid={11689},
@@ -23233,7 +23031,7 @@ step
 Congratulations!
 You have earned the _Fourteen For The Team_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\When You're Fifteen",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\When You're Fifteen",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"When You're Fifteen\" achievement.",
 achieveid={11690},
@@ -23249,7 +23047,7 @@ step
 Congratulations!
 You have earned the _When You're Fifteen_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\You Are Sixteen",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\You Are Sixteen",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"You Are Sixteen\" achievement.",
 achieveid={11691},
@@ -23265,7 +23063,7 @@ step
 Congratulations!
 You have earned the _You Are Sixteen_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Going On Seventeen",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Going On Seventeen",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Going On Seventeen\" achievement.",
 achieveid={11692},
@@ -23281,7 +23079,7 @@ step
 Congratulations!
 You have earned the _Going On Seventeen_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Eighteen and Over",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Eighteen and Over",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Eighteen and Over\" achievement.",
 achieveid={11693},
@@ -23297,7 +23095,7 @@ step
 Congratulations!
 You have earned the _Eighteen and Over_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Hell. It's About Nineteen",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Hell. It's About Nineteen",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Hell. It's About Nineteen\" achievement.",
 achieveid={11694},
@@ -23313,7 +23111,7 @@ step
 Congratulations!
 You have earned the _Hell. It's About Nineteen_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Double Decade of Dominance",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Double Decade of Dominance",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Double Decade of Dominance\" achievement.",
 achieveid={12108},
@@ -23329,7 +23127,7 @@ step
 Congratulations!
 You have earned the _Double Decade of Dominance_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Twenty-One Arms Salute",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Twenty-One Arms Salute",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Twenty-One Arms Salute\" achievement.",
 achieveid={12109},
@@ -23345,7 +23143,7 @@ step
 Congratulations!
 You have earned the _Twenty-One Arms Salute_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Catching Twenty-Two",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Catching Twenty-Two",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Catching Twenty-Two\" achievement.",
 achieveid={12180},
@@ -23361,7 +23159,7 @@ step
 Congratulations!
 You have earned the _Catching Twenty-Two_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Protocol 2.3",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Protocol 2.3",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Protocol 2.3\" achievement.",
 achieveid={12181},
@@ -23377,7 +23175,7 @@ step
 Congratulations!
 You have earned the _Protocol 2.3_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Demonic Double Dozen",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Demonic Double Dozen",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Demonic Double Dozen\" achievement.",
 achieveid={12182},
@@ -23393,7 +23191,7 @@ step
 Congratulations!
 You have earned the _Demonic Double Dozen_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Honor\\Legion\\Prestige Quartermaster",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Prestige Quartermaster",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Prestige Quartermaster\" achievement.",
 achieveid={12183},
@@ -23409,7 +23207,7 @@ step
 Congratulations!
 You have earned the _Prestige Quartermaster_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Legion\\Demonic Elite",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Legion\\Demonic Elite",{
 author="support@zygorguides.com",
 description="Reach 2,000 in any Rated PvP Bracket during Legion Season 7.",
 achieveid={12198},
@@ -23427,7 +23225,7 @@ step
 Congratulations!
 You have earned the _Demonic Elite_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Legion\\Demonic Combatant",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Legion\\Demonic Combatant",{
 author="support@zygorguides.com",
 description="Win 100 Arena (3v3) or 40 Rated Battlegrounds in Legion Season 7.",
 achieveid={12199},
@@ -23445,7 +23243,7 @@ step
 Congratulations!
 You have earned the _Demonic Combatant_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\A Good Start",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\A Good Start",{
 author="support@zygorguides.com",
 description="Collect 100,000 Azerite in Seething Shore.",
 achieveid={12406},
@@ -23463,7 +23261,7 @@ step
 _Congratulations!_
 You Earned the "A Good Start" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\Blood and Sand",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Blood and Sand",{
 author="support@zygorguides.com",
 description="Slay 50 enemies near an Azerite deposit.",
 achieveid={12406},
@@ -23480,7 +23278,7 @@ step
 Congratulations!
 You have earned the _Blood and Sand_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\Claim Jumper",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Claim Jumper",{
 author="support@zygorguides.com",
 description="Within 30 seconds of landing on Seething Shore, collect an Azerite deposit.",
 achieveid={12404},
@@ -23497,7 +23295,7 @@ step
 Congratulations!
 You have earned the _Claim Jumper_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\Death from Above",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Death from Above",{
 author="support@zygorguides.com",
 description="Slay an enemy within 30 seconds of landing on Seething Shore.",
 achieveid={12405},
@@ -23514,7 +23312,7 @@ step
 Congratulations!
 You have earned the _Death from Above_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\Master of Seething Shore",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Master of Seething Shore",{
 author="support@zygorguides.com",
 description="Complete the following Seething Shore achievements:\n\nSeething Shore Victory\nSeething Shore Veteran\nSeething Shore Perfection\nSeething Shore Domination\nDeath from Above\nClaim Jumper\nA Good Start.",
 achieveid={12412},
@@ -23523,31 +23321,31 @@ endlevel=110,
 keywords={"PvP, seething, shore"},
 },[[
 step
-Click here to load the "Seething Shore Victory" achievement guide |confirm |next "Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Victory"
+Click here to load the "Seething Shore Victory" achievement guide |confirm |next "Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Victory"
 |tip You must earn this achievement as part of the Master of Seething Shore requirements.
 Earn the _Seething Shore Victory_ achievement |achieve 12412/1
 step
-Click here to load the "Seething Shore Veteran" achievement guide |confirm |next "Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Veteran"
+Click here to load the "Seething Shore Veteran" achievement guide |confirm |next "Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Veteran"
 |tip You must earn this achievement as part of the Master of Seething Shore requirements.
 Earn the _Seething Shore Veteran_ achievement |achieve 12412/2
 step
-Click here to load the "Seething Shore Perfection" achievement guide |confirm |next "Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Perfection"
+Click here to load the "Seething Shore Perfection" achievement guide |confirm |next "Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Perfection"
 |tip You must earn this achievement as part of the Master of Seething Shore requirements.
 Earn the _Seething Shore Perfection_ achievement |achieve 12412/3
 step
-Click here to load the "Seething Shore Domination" achievement guide |confirm |next "Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Domination"
+Click here to load the "Seething Shore Domination" achievement guide |confirm |next "Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Domination"
 |tip You must earn this achievement as part of the Master of Seething Shore requirements.
 Earn the _Seething Shore Domination_ achievement |achieve 12412/4
 step
-Click here to load the "Death from Above" achievement guide |confirm |next "Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\Death from Above"
+Click here to load the "Death from Above" achievement guide |confirm |next "Achievement Guides\\Player vs. Player\\Seething Shore\\Death from Above"
 |tip You must earn this achievement as part of the Master of Seething Shore requirements.
 Earn the _Death from Above_ achievement |achieve 12412/5
 step
-Click here to load the "Claim Jumper" achievement guide |confirm |next "Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\Claim Jumper"
+Click here to load the "Claim Jumper" achievement guide |confirm |next "Achievement Guides\\Player vs. Player\\Seething Shore\\Claim Jumper"
 |tip You must earn this achievement as part of the Master of Seething Shore requirements.
 Earn the _Claim Jumper_ achievement |achieve 12412/6
 step
-Click here to load the "A Good Start" achievement guide |confirm |next "Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\A Good Start"
+Click here to load the "A Good Start" achievement guide |confirm |next "Achievement Guides\\Player vs. Player\\Seething Shore\\A Good Start"
 |tip You must earn this achievement as part of the Master of Seething Shore requirements.
 Earn the _A Good Start_ achievement |achieve 12412/7
 step
@@ -23556,7 +23354,7 @@ step
 Congratulations!
 You have earned the _Master of Seething Shore_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Domination",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Domination",{
 author="support@zygorguides.com",
 description="Capture Azerite at the following Seething Shore locations:\n\nTar Pits\nTemple\nTide Pools\nTower\nBonfire\nShipwreck\nRuins\nPlunge\nOverlook\nRidge\nCrash Site\nWaterfall.",
 achieveid={12408},
@@ -23592,7 +23390,7 @@ step
 Congratulations!
 You have earned the _Seething Shore Domination_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Perfection",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Perfection",{
 author="support@zygorguides.com",
 description="Win Seething Shore with a score of 1500 to 0.",
 achieveid={12407},
@@ -23610,7 +23408,7 @@ step
 Congratulations!
 You have earned the _Seething Shore Perfection_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Veteran",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Veteran",{
 author="support@zygorguides.com",
 description="Complete 100 victories in Seething Shore.",
 achieveid={12410},
@@ -23627,7 +23425,7 @@ step
 Congratulations!
 You have earned the _Seething Shore Veteran_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Victory",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Victory",{
 author="support@zygorguides.com",
 description="Win Seething Shore.",
 achieveid={12409},
@@ -23644,7 +23442,7 @@ step
 Congratulations!
 You have earned the _Seething Shore Victory_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Archaeology\\A Keen Eye",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Archaeology\\A Keen Eye",{
 achieveid={10603},
 author="support@zygorguides.com",
 startlevel=110,
@@ -23655,7 +23453,7 @@ step
 To earn this achievement, you will have to complete the 13 Legion Archaeology quest lines
 |tip You will need to be level 110 before being able to start these quest lines.
 |tip Only one Archaeology quest line is up every 2 weeks, so this achievement will take a minimum of 26 weeks to complete.
-Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Zygor's Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
+Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
 Click here to see your progress on this achievement |confirm |or
 |only if not achieved(10603)
 step
@@ -23679,7 +23477,7 @@ step
 Congratulations!
 You have earned the _A Keen Eye_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Archaeology\\The Dwarven Dream",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Archaeology\\The Dwarven Dream",{
 achieveid={10606},
 author="support@zygorguides.com",
 startlevel=110,
@@ -23698,7 +23496,7 @@ Complete the quest line beginning with _Bits and Pieces_ |achieve 10603/1
 Complete the quest line beginning with _Fel Fragments_ |achieve 10603/12
 Complete the quest line beginning with _Out of the Frying Pan_ |achieve 10603/7
 Complete the quest line beginning with _One Step Closer_ |achieve 10603/10
-Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Zygor's Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
+Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
 step
 Once you have aquired the 5 pieces for the Titan Disk, Brann will give you a follow up quest
 |tip This quest is given to you as soon as you get the last of the 5 pieces.
@@ -23721,7 +23519,7 @@ step
 Congratulations!
 You have earned _The Dwarven Dream_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Archaeology\\Getting Your Hands Dirty",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Archaeology\\Getting Your Hands Dirty",{
 achieveid={10607},
 author="support@zygorguides.com",
 startlevel=110,
@@ -23737,7 +23535,7 @@ step
 Congratulations!
 You have earned the _Getting Your Hands Dirty_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Archaeology\\Handle With Care",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Archaeology\\Handle With Care",{
 achieveid={10605},
 author="support@zygorguides.com",
 startlevel=110,
@@ -23766,7 +23564,7 @@ step
 Congratulations!
 You have earned the _Handle With Care_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Archaeology\\Legion Archaeologist",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Archaeology\\Legion Archaeologist",{
 achieveid={10600},
 author="support@zygorguides.com",
 startlevel=110,
@@ -23775,13 +23573,13 @@ description="This guide will walk you through completing the \"Legion Archaeolog
 },[[
 step
 To earn this achievement, you need to obtain 800 level in Archaeology
-Click here to load the "Archaeology 700-800 Leveling Guide" profession guide |confirm |next "Zygor's Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 700-800 Leveling Guide"
+Click here to load the "Archaeology 700-800 Leveling Guide" profession guide |confirm |next "Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 700-800 Leveling Guide"
 Earn the _Legion Archaeologist_ achievement |achieve 10600
 step
 Congratulations!
 You have earned the _Legion Archaeologist_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Archaeology\\Legion Curator",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Archaeology\\Legion Curator",{
 achieveid={10604},
 author="support@zygorguides.com",
 startlevel=110,
@@ -23810,7 +23608,7 @@ step
 Congratulations!
 You have earned the _Legion Curator_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Archaeology\\No Stone Unturned",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Archaeology\\No Stone Unturned",{
 achieveid={10609},
 author="support@zygorguides.com",
 startlevel=110,
@@ -23826,7 +23624,7 @@ step
 Congratulations!
 You have earned the _No Stone Unturned_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Archaeology\\This Side Up",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Archaeology\\This Side Up",{
 achieveid={10602},
 author="support@zygorguides.com",
 startlevel=110,
@@ -23837,7 +23635,7 @@ step
 To earn this achievement, you will have to complete 8 out of the 13 Legion Archaeology quest lines
 |tip You will need to be level 110 before being able to start these quest lines.
 |tip Only one Archaeology quest line is up every 2 weeks, so this achievement will take a minimum of 16 weeks to complete.
-Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Zygor's Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
+Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
 Click here to see your progress on this achievement |confirm |or
 |only if not achieved(10602)
 step
@@ -23861,7 +23659,7 @@ step
 Congratulations!
 You have earned the _This Side Up_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Archaeology\\Sifting Through the Sand",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Archaeology\\Sifting Through the Sand",{
 achieveid={10608},
 author="support@zygorguides.com",
 startlevel=110,
@@ -23877,7 +23675,7 @@ step
 Congratulations!
 You have earned the _Sifting Through the Sand_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Archaeology\\Surveying the Land",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Archaeology\\Surveying the Land",{
 achieveid={10601},
 author="support@zygorguides.com",
 startlevel=110,
@@ -23887,7 +23685,7 @@ description="This guide will walk you through completing the \"Surveying the Lan
 step
 To earn this achievement, you will have to complete 1 out of the 13 Legion Archaeology quest lines
 |tip You will need to be level 110 before being able to start these quest lines.
-Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Zygor's Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
+Click here to load the "Legion Archaeology Quest Line" profession guide |confirm |next "Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
 Click here to see your progress on this achievement |confirm |or
 |only if not achieved(10601)
 step
@@ -23911,7 +23709,7 @@ step
 Congratulations!
 You have earned the _Surveying the Land_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Cooking\\Everything Tastes Better",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Cooking\\Everything Tastes Better",{
 achieveid={10593},
 author="support@zygorguides.com",
 startlevel=100,
@@ -23929,7 +23727,7 @@ step
 Congratulations!
 You have earned the _Everything Tastes Better_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Cooking\\Legion Cooking",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Cooking\\Legion Cooking",{
 achieveid={10589},
 author="support@zygorguides.com",
 startlevel=100,
@@ -23939,13 +23737,13 @@ description="This guide will walk you through completing the \"Legion Cooking\" 
 step
 Get your cooking to the new max level "800"
 |tip Check out our Cooking guide to accomplish this.
-Click here to load the "Cooking 700-800" leveling guide |confirm |next "Zygor's Profession Guides\\Cooking\\Leveling Guides\\Cooking 700-800 Leveling Guide" |or
+Click here to load the "Cooking 700-800" leveling guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Cooking 700-800 Leveling Guide" |or
 Obtain 800 skill points in Cooking |achieve 10589 |or
 step
 Congratulations!
 You have earned the _Legion Cooking_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Cooking\\The Legion Menu",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Cooking\\The Legion Menu",{
 achieveid={10762},
 author="support@zygorguides.com",
 startlevel=100,
@@ -23955,7 +23753,7 @@ description="This guide will walk you through completing the \"Legion Cooking\" 
 step
 To earn this achievement you will need to cook up 15 of the Legion Cooking recipes
 |tip Check out our Legion Cooking Quest Line guide to obtain the first few recipes.
-Click here to load the "Legion Cooking Quest Line" guide |confirm |next "Zygor's Profession Guides\\Cooking\\Quest Guides\\Legion Cooking Quest Line"
+Click here to load the "Legion Cooking Quest Line" guide |confirm |next "Profession Guides\\Cooking\\Quest Guides\\Legion Cooking Quest Line"
 confirm
 step
 After that you will need to research by talking to Nomi and placing Cooking Work Orders
@@ -23966,7 +23764,7 @@ step
 Congratulations!
 You have earned the _The Legion Menu_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Fishing\\A Cast Above the Rest",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Fishing\\A Cast Above the Rest",{
 achieveid={10595},
 author="support@zygorguides.com",
 startlevel=100,
@@ -23975,7 +23773,7 @@ description="This guide will walk you through completing the \"A Cast Above the 
 },[[
 step
 Complete the "Drowned Mana" quest |condition completedq(42911) |or
-Click here to load the "Fishing Quest Line" guide |confirm |next "Zygor's Profession Guides\\Fishing\\Quest Guides\\Legion Fishing Quest Line" |or
+Click here to load the "Fishing Quest Line" guide |confirm |next "Profession Guides\\Fishing\\Quest Guides\\Legion Fishing Quest Line" |or
 step
 collect Goblin Glider Kit##109076 |c |q 42911 |future
 |tip You can create these if you have Engineering.
@@ -24040,7 +23838,7 @@ label "Congrats_A_Cast_Above_the_Rest"
 Congratulations!
 You have earned the _A Cast Above the Rest_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Fishing\\Bigger Fish to Fry",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Fishing\\Bigger Fish to Fry",{
 achieveid={10596},
 author="support@zygorguides.com",
 startlevel=100,
@@ -24049,7 +23847,7 @@ description="This guide will walk you through completing the \"Bigger Fish to Fr
 },[[
 step
 Earn the _A Cast Above the Rest_ achievement |condition achieved(10595)
-Click here to load the "A Cast Above the Rest" achievement guide |confirm |next "Zygor's Achievement Guides\\Professions\\Fishing\\A Cast Above the Rest"
+Click here to load the "A Cast Above the Rest" achievement guide |confirm |next "Achievement Guides\\Professions\\Fishing\\A Cast Above the Rest"
 step
 Follow the path |goto Dalaran L/10 38.13,45.34 < 20 |only if walking
 Follow the path |goto Dalaran L/10 30.75,32.64 < 20 |only if walking
@@ -24257,7 +24055,7 @@ step
 Congratulations!
 You have earned the _Bigger Fish to Fry_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Fishing\\Fisherfriend of the Isles",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Fishing\\Fisherfriend of the Isles",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Fisherfriend of the Isles\" achievement.",
 achieveid={11725},
@@ -24268,18 +24066,18 @@ step
 This achievement requires you to become best friends with the 6 Fisherfriends of the Broken Isles
 |tip Only one of the 6 Fisherfriends can be up per day
 |tip There is no set rotation on which Fisherfriend will spawn.
-Click here to load the "Ilyssia of the Waters" reputation guide |next "Zygor's Reputations Guides\\Legion Reputations\\Fishing\\Ilyssia of the Waters" |confirm |or
-Click here to load the "Impus" reputation guide |next "Zygor's Reputations Guides\\Legion Reputations\\Fishing\\Impus" |confirm |or
-Click here to load the "Corbyn" reputation guide |next "Zygor's Reputations Guides\\Legion Reputations\\Fishing\\Corbyn" |confirm |or
-Click here to load the "Keeper Raynae" reputation guide |next "Zygor's Reputations Guides\\Legion Reputations\\Fishing\\Keeper Raynae" |confirm |or
-Click here to load the "Sha'leth" reputation guide |next "Zygor's Reputations Guides\\Legion Reputations\\Fishing\\Sha'leth" |confirm |or
-Click here to load the "Akule Riverhorn" reputation guide |next "Zygor's Reputations Guides\\Legion Reputations\\Fishing\\Akule Riverhorn" |confirm |or
+Click here to load the "Ilyssia of the Waters" reputation guide |next "Reputations Guides\\Legion Reputations\\Fishing\\Ilyssia of the Waters" |confirm |or
+Click here to load the "Impus" reputation guide |next "Reputations Guides\\Legion Reputations\\Fishing\\Impus" |confirm |or
+Click here to load the "Corbyn" reputation guide |next "Reputations Guides\\Legion Reputations\\Fishing\\Corbyn" |confirm |or
+Click here to load the "Keeper Raynae" reputation guide |next "Reputations Guides\\Legion Reputations\\Fishing\\Keeper Raynae" |confirm |or
+Click here to load the "Sha'leth" reputation guide |next "Reputations Guides\\Legion Reputations\\Fishing\\Sha'leth" |confirm |or
+Click here to load the "Akule Riverhorn" reputation guide |next "Reputations Guides\\Legion Reputations\\Fishing\\Akule Riverhorn" |confirm |or
 Earn the _Fisherfriend of the Isles_ achievement |achieve 11725 |confirm |or
 step
 Congratulations!
 You have earned the _Fisherfriend of the Isles_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Fishing\\Fishing 'Round the Isles",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Fishing\\Fishing 'Round the Isles",{
 achieveid={10598},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24288,7 +24086,7 @@ description="This guide will walk you through completing the \"Fishing 'Round th
 },[[
 step
 To earn this achievement, you will need to complete every Fishing World Quest on the Broken Isles
-Click here to load the "World Quests" daily guide |confirm |or |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" daily guide |confirm |or |next "Dailies Guides\\Legion\\World Quests"
 |tip These fishing world quests are not always available, and at most there will only be 2 up at one time.
 confirm
 step
@@ -24305,7 +24103,7 @@ Complete the World Quest "Lively Highmountain Salmon" |achieve 10598/9
 Complete the World Quest "Lively Stormrays" |achieve 10598/10
 Complete the World Quest "Huge Highmountain Salmon" |achieve 10598/11
 Complete the World Quest "Buoy Fishing" |achieve 10598/12
-Click here to load the "World Quests" daily guide |confirm |or |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" daily guide |confirm |or |next "Dailies Guides\\Legion\\World Quests"
 Click here to check your progress on the next list |confirm |or
 Click here if you have completed all of the Fishing World Quests |confirm |or |next "Fishing WQ Complete" |only if achieved(10598)
 step
@@ -24321,7 +24119,7 @@ Complete the World Quest "Rocket Boot Fishing" |achieve 10598/21
 Complete the World Quest "Work Order: Mossgill Perch" |achieve 10598/22
 Complete the World Quest "Work Order: Runescale Koi" |achieve 10598/23
 Complete the World Quest "The Angler Mangler" |achieve 10598/24
-Click here to load the "World Quests" daily guide |confirm |or |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" daily guide |confirm |or |next "Dailies Guides\\Legion\\World Quests"
 Click here to check your progress with the last list |confirm |or |next "Fishing WQ"
 Click here if you have completed all of the Fishing World Quests |confirm |or |next "Fishing WQ Complete" |only if achieved(10598)
 step
@@ -24329,7 +24127,7 @@ label "Fishing WQ Complete"
 Congratulations!
 You have earned the _Fishing 'Round the Isles_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Fishing\\Legion Aquaculture",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Fishing\\Legion Aquaculture",{
 achieveid={10597},
 author="support@zygorguides.com",
 startlevel=100,
@@ -24344,7 +24142,7 @@ step
 Congratulations!
 You have earned the _Legion Aquaculture_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Fishing\\Legion Fisherman",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Fishing\\Legion Fisherman",{
 achieveid={10594},
 author="support@zygorguides.com",
 startlevel=100,
@@ -24353,13 +24151,13 @@ description="This guide will walk you through completing the \"Legion Fisherman\
 },[[
 step
 To earn this achievement, you need to get 800 skill level in fishing
-Click here to load the "Fishing 700-800 Leveling Guide" profession guide |confirm |next "Zygor's Profession Guides\\Fishing\\Leveling Guides\\Fishing 700-800 Leveling Guide"
+Click here to load the "Fishing 700-800 Leveling Guide" profession guide |confirm |next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 700-800 Leveling Guide"
 Earn the _Legion Fisherman_ achievement |achieve 10594
 step
 Congratulations!
 You have earned the _Legion Fisherman_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Fishing\\The Wish Remover",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Fishing\\The Wish Remover",{
 achieveid={10722},
 author="support@zygorguides.com",
 startlevel=100,
@@ -24451,7 +24249,7 @@ label "Coins complete"
 Congratulations!
 You have earned the _The Wish Remover_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\Hot Swapper",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Hot Swapper",{
 achieveid={10587},
 author="support@zygorguides.com",
 startlevel=100,
@@ -24474,7 +24272,7 @@ step
 Congratulations!
 You have earned the _Hot Swapper_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Professions\\The Shortest Distance",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\The Shortest Distance",{
 achieveid={10588},
 author="support@zygorguides.com",
 startlevel=100,
@@ -24496,7 +24294,7 @@ step
 Congratulations!
 You have earned the _The Shortest Distance_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\50 World Quests Completed",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\50 World Quests Completed",{
 achieveid={11126},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24505,14 +24303,14 @@ description="This guide will walk you through completing the \"50 World Quests C
 },[[
 step
 You will need to do the following to complete 50 World Quests:
-Click here to unlock World Quests |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to unlock World Quests |confirm |next "Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 Earn the _50 World Quests Completed_ achievement |achieve 11126
 step
 Congratulations!
 You have earned the _50 World Quests Completed_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\200 World Quests Completed",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\200 World Quests Completed",{
 achieveid={11127},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24521,14 +24319,14 @@ description="This guide will walk you through completing the \"200 World Quests 
 },[[
 step
 You will need to do the following to complete 200 World Quests:
-Click here to unlock World Quests |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to unlock World Quests |confirm |next "Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 Earn the _200 World Quests Completed_ achievement |achieve 11127
 step
 Congratulations!
 You have earned the _200 World Quests Completed_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\500 World Quests Completed",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\500 World Quests Completed",{
 achieveid={11128},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24537,14 +24335,14 @@ description="This guide will walk you through completing the 500 World Quests Co
 },[[
 step
 You will need to do the following to complete 500 World Quests:
-Click here to unlock World Quests |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to unlock World Quests |confirm |next "Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 Earn the _500 World Quests Completed_ achievement |achieve 11128
 step
 Congratulations!
 You have earned the _500 World Quests Completed_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\1000 World Quests Completed",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\1000 World Quests Completed",{
 achieveid={11129},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24553,14 +24351,14 @@ description="This guide will walk you through completing the \"1000 World Quests
 },[[
 step
 You will need to do the following to complete 1,000 World Quests:
-Click here to unlock World Quests |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to unlock World Quests |confirm |next "Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 Earn the _1,000 World Quests Completed_ achievement |achieve 11129
 step
 Congratulations!
 You have earned the _1,000 World Quests Completed_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\2500 World Quests Completed",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\2500 World Quests Completed",{
 achieveid={11130},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24569,14 +24367,14 @@ description="This guide will walk you through completing the \"2500 World Quests
 },[[
 step
 You will need to do the following to complete 2,500 World Quests:
-Click here to unlock World Quests |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to unlock World Quests |confirm |next "Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 Earn the _2,500 World Quests Completed_ achievement |achieve 11130
 step
 Congratulations!
 You have earned the _2,500 World Quests Completed_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\5000 World Quests Completed",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\5000 World Quests Completed",{
 achieveid={11131},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24585,14 +24383,14 @@ description="This guide will walk you through completing the \"5000 World Quests
 },[[
 step
 You will need to do the following to complete 5,000 World Quests:
-Click here to unlock World Quests |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to unlock World Quests |confirm |next "Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 Earn the _5,000 World Quests Completed_ achievement |achieve 11131
 step
 Congratulations!
 You have earned the _5,000 World Quests Completed_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\10,000 World Quests Completed",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\10,000 World Quests Completed",{
 achieveid={11132},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24601,14 +24399,14 @@ description="This guide will walk you through completing the \"10,000 World Ques
 },[[
 step
 You will need to do the following to complete 10,000 World Quests:
-Click here to unlock World Quests |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to unlock World Quests |confirm |next "Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 Earn the _10,000 World Quests Completed_ achievement |achieve 11132
 step
 Congratulations!
 You have earned the _10,000 World Quests Completed_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\A Magic Contribution",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\A Magic Contribution",{
 achieveid={11731},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24626,7 +24424,7 @@ step
 Congratulations!
 You have earned the _A Magic Contribution_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\A Magnificent Contribution",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\A Magnificent Contribution",{
 achieveid={11732},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24644,7 +24442,7 @@ step
 Congratulations!
 You have earned the _A Magnificent Contribution_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Ain't No Mountain High Enough",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Ain't No Mountain High Enough",{
 achieveid={10059},
 author="support@zygorguides.com",
 startlevel=100,
@@ -24662,12 +24460,12 @@ The Rivermane Tribe |achieve 10059/4
 The Bloodtotem Tribe |achieve 10059/5
 Secrets of Highmountain |achieve 10059/6
 Huln's War |achieve 10059/7
-Click here to load the "Highmountain" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Click here to load the "Highmountain" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 step
 Congratulations!
 You have completed the _Ain't No Mountain High Enough_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Assume Command",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Assume Command",{
 achieveid={11736},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24685,7 +24483,7 @@ step
 Congratulations!
 You have earned the _Assume Command_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Azsuna Matata",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Azsuna Matata",{
 achieveid={10763},
 author="support@zygorguides.com",
 startlevel=100,
@@ -24701,12 +24499,12 @@ Defending Azure Wing Repose |achieve 10763/2
 Azsuna versus Azshara |achieve 10763/3
 Against the Giants |achieve 10763/4
 Mak'rana and the Fate of the Queen's Reprisal |achieve 10763/5
-Click here to load the "Azsuna" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Click here to load the "Azsuna" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 step
 Congratulations!
 You have completed the _Azsuna Matata_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Breaching the Tomb",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Breaching the Tomb",{
 achieveid={11546},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24715,7 +24513,7 @@ keywords={"broken, shore, campaign"},
 description="This guide will walk you through completing the \"Breaching the Tomb\" Achievement.",
 },[[
 step
-Click here to load the "Broken Shore Campaign" guide |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |or |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 |tip To earn this achievement, you will need to complete all of the quest lines associated with the Broken Shore.
 |tip Use the "Broken Shore Campaign" guide to accomplish this.
 Earn the _Breaching the Tomb_ achievement |achieve 11546
@@ -24723,7 +24521,7 @@ step
 Congratulations!
 You have earned the _Breaching the Tomb_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Champions of Legionfall",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Champions of Legionfall",{
 achieveid={11846},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24731,25 +24529,25 @@ keywords={"order, hall"},
 description="This guide will walk you through completing the \"Champions of Legionfall\" achievement.",
 },[[
 step
-Click here to load the "Death Knight 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight 7.2 Order Hall Quests" |only DeathKnight
-Click here to load the "Demon Hunter 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter 7.2 Order Hall Quests" |only DemonHunter
-Click here to load the "Druid 7.2 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid 7.2 Order Hall Quests" |only Druid
-Click here to load the "Hunter 7.2 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter 7.2 Order Hall Quests" |only Hunter
-Click here to load the "Mage 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage 7.2 Order Hall Quests" |only Mage
-Click here to load the "Monk 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk 7.2 Order Hall Quests" |only Monk
-Click here to load the "Paladin 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin 7.2 Order Hall Quests" |only Paladin
-Click here to load the "Priest 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest 7.2 Order Hall Quests" |only Priest
-Click here to load the "Rogue 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue 7.2 Order Hall Quests" |only Rogue
-Click here to load the "Shaman 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman 7.2 Order Hall Quests" |only Shaman
-Click here to load the "Warlock 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock 7.2 Order Hall Quests" |only Warlock
-Click here to load the "Warrior 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior 7.2 Order Hall Quests" |only Warrior
+Click here to load the "Death Knight 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight 7.2 Order Hall Quests" |only DeathKnight
+Click here to load the "Demon Hunter 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter 7.2 Order Hall Quests" |only DemonHunter
+Click here to load the "Druid 7.2 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid 7.2 Order Hall Quests" |only Druid
+Click here to load the "Hunter 7.2 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter 7.2 Order Hall Quests" |only Hunter
+Click here to load the "Mage 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage 7.2 Order Hall Quests" |only Mage
+Click here to load the "Monk 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk 7.2 Order Hall Quests" |only Monk
+Click here to load the "Paladin 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin 7.2 Order Hall Quests" |only Paladin
+Click here to load the "Priest 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest 7.2 Order Hall Quests" |only Priest
+Click here to load the "Rogue 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue 7.2 Order Hall Quests" |only Rogue
+Click here to load the "Shaman 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman 7.2 Order Hall Quests" |only Shaman
+Click here to load the "Warlock 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock 7.2 Order Hall Quests" |only Warlock
+Click here to load the "Warrior 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior 7.2 Order Hall Quests" |only Warrior
 |tip To earn this achievement, you will need to complete the quest "Champions of Legionfall."
 Earn the _Champions of Legionfall_ achievement |achieve 11846
 step
 Congratulations!
 You have earned the _Champions of Legionfall_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Crate Expectations",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Crate Expectations",{
 achieveid={11681},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24782,7 +24580,7 @@ step
 Congratulations!
 You have earned the _Crate Expectations_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Defender of the Broken Isles",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Defender of the Broken Isles",{
 achieveid={11544},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24794,7 +24592,7 @@ step
 To earn this achievement you must complete an invasion in each of the 4 leveling zones
 |tip These invasions will appear one at a time in a random zone every 18 hours and last for 6 hours.
 |tip Check out our Legion Invasions guide to help you defeat each invasion.
-Click here to load the "Legion Invasions" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Legion Invasions"
+Click here to load the "Legion Invasions" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Legion Invasions"
 Complete the Battle for Azsuna |achieve 11544/1
 Complete the Battle for Highmountain |achieve 11544/2
 Complete the Battle for Stormheim |achieve 11544/3
@@ -24803,7 +24601,7 @@ step
 Congratulations!
 You have earned the _Defender of the Broken Isles_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Disrupting the Nether",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Disrupting the Nether",{
 achieveid={11737},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24821,7 +24619,7 @@ step
 Congratulations!
 You have earned the _Disrupting the Nether_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Good Suramaritan",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Good Suramaritan",{
 achieveid={11124},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24843,12 +24641,12 @@ Moon Guard Stronghold |achieve 11124/8
 Tidying Tel'anor |achieve 11124/9
 Eminent Grow-main |achieve 11124/10
 Jandvik's Jarl |achieve 11124/11
-Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 step
 Congratulations!
 You have completed the _Good Suramaritan_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Harbinger",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Harbinger",{
 achieveid={11240},
 author="support@zygorguides.com",
 startlevel=100,
@@ -24898,7 +24696,7 @@ step
 Congratulations!
 You have earned the _Harbinger_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Hatchling of the Talon",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Hatchling of the Talon",{
 achieveid={10774},
 author="support@zygorguides.com",
 startlevel=100,
@@ -24917,7 +24715,7 @@ step
 Congratulations!
 You have completed the _Hatchling of the Talon_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Insurrection",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Insurrection",{
 achieveid={11340},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24936,12 +24734,12 @@ March on Suramar |achieve 11340/6
 Elisande's Retort |achieve 11340/7
 As Strong As Our Will |achieve 11340/8
 Breaking the Nighthold |achieve 11340/9
-Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 step
 Congratulations!
 You have earned the _Insurrection_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\It'll Nether Happen",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\It'll Nether Happen",{
 achieveid={11738},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24959,7 +24757,7 @@ step
 Congratulations!
 You have earned the _It'll Nether Happen_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Level 110",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Level 110",{
 achieveid={10671},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24974,7 +24772,7 @@ step
 Congratulations!
 You have earned the _Level 110_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Leyline Bling",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Leyline Bling",{
 achieveid={10756},
 author="support@zygorguides.com",
 startlevel=110,
@@ -24984,7 +24782,7 @@ description="This guide will walk you through completing the \"Leyline Bling\" A
 step
 To earn this achievement, you will need to activate _8_ Leylines found in Suramar
 To do so, refer to our Suramar Guide
-Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 Leylines Activated:
 Anora Hollow |achieve 10756/1
 Elor'shan |achieve 10756/2
@@ -24998,7 +24796,7 @@ step
 Congratulations!
 You have earned the _Leyline Bling_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Lock, Stock and Two Smoking Goblins",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Lock, Stock and Two Smoking Goblins",{
 achieveid={11232},
 author="support@zygorguides.com",
 startlevel=100,
@@ -25007,7 +24805,7 @@ description="This guide will walk you through completing the \"Lock, Stock and T
 },[[
 step
 In order to complete this achievement, you will need to have completed the _What a Ripoff!_ achievement
-Click here to load the "What a Ripoff!" guide |confirm |next "Zygor's Achievement Guides\\Quests\\Legion\\What a Ripoff!"
+Click here to load the "What a Ripoff!" guide |confirm |next "Achievement Guides\\Quests\\Legion\\What a Ripoff!"
 |tip You may need a group of 2 or 3 in order to kill the objective enemies.
 talk Gazrix Gearlock##110018
 accept Time to Collect##43331 |goto Dalaran L/10 50.16,22.67
@@ -25029,7 +24827,7 @@ step
 Congratulations!
 You have completed the _Lock, Stock and Two Smoking Goblins_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Locked and Loaded",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Locked and Loaded",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Locked and Loaded\" achievement.",
 achieveid={12073},
@@ -25038,15 +24836,15 @@ endlevel=110,
 keywords={"Vindicaar, Matrix, Core"},
 },[[
 step
-Click here to load the "Argus Campaign" guide |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign" |confirm |or
+Click here to load the "Argus Campaign" guide |next "Leveling Guides\\Legion (100-110)\\Argus Campaign" |confirm |or
 |tip To earn this achievement, you will need to unlock all 4 of the powers for the Vindicaar Matrix Core.
 |tip You will need to complete the Argus Campaign, along with one other side quest line.
-Earn the _Locked and Loaded_ acheivement |achieve 12073 |or
+Earn the _Locked and Loaded_ achievement |achieve 12073 |or
 step
 Congratulations!
 You have earned the _Locked and Loaded_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Loremaster of Legion",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Loremaster of Legion",{
 achieveid={11157},
 author="support@zygorguides.com",
 startlevel=100,
@@ -25056,28 +24854,28 @@ description="This guide will walk you through completing the \"Loremaster of Leg
 step
 Earn the _Azsuna Matata_ achievement |achieve 10763
 |tip Use the "Azsuna" leveling guide to accomplish this.
-Click here to load the "Azsuna" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Click here to load the "Azsuna" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 step
 Earn the _That's Val'sharah Folks!_ achievement |achieve 10698
 |tip Use the "Val'sharah" leveling guide to accomplish this.
-Click here to load the "Val'sharah" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Click here to load the "Val'sharah" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 step
 Earn the _Vrykul Story, Bro_ achievement |achieve 10790
 |tip Use the "Stormheim" leveling guide to accomplish this.
-Click here to load the "Stormheim" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Click here to load the "Stormheim" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 step
 Earn the _Ain't No Mountain High Enough_ achievement |achieve 10059
 |tip Use the "Highmountain" leveling guide to accomplish this.
-Click here to load the "Highmountain" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Click here to load the "Highmountain" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 step
 Earn the _Good Suramaritan_ achievement |achieve 11124
 |tip Use the "Suramar" leveling guide to accomplish this.
-Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 step
 Congratulations!
 You have earned the _Loremaster of Legion_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Nightfallen But Not Forgotten",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Nightfallen But Not Forgotten",{
 achieveid={10617},
 author="support@zygorguides.com",
 startlevel=110,
@@ -25086,13 +24884,13 @@ description="This guide will walk you through completing the \"Nightfallen But N
 },[[
 step
 Refer to the Suramar guide to complete this achievement
-Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 Earn the _Nightfallen But Not Forgotten_ achievement |achieve 10617
 step
 Congratulations!
 You have earned the _Nightfallen But Not Forgotten_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\No Shellfish Endeavor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\No Shellfish Endeavor",{
 achieveid={11427},
 author="support@zygorguides.com",
 startlevel=110,
@@ -25106,12 +24904,12 @@ _Stormheim_ Now That's Just Clawful! |achieve 11427/1
 _Suramar_ Claws for Alarm! |achieve 11427/3
 _Highmountain_ Oh, the Clawdacity! |achieve 11427/2
 If the quests are available, refer to our World Quest guide
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 step
 Congratulations!
 You have earned the _No Shellfish Endeavor_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Now You're Thinking With Portals",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Now You're Thinking With Portals",{
 achieveid={11125},
 author="support@zygorguides.com",
 startlevel=110,
@@ -25121,13 +24919,13 @@ description="This guide will walk you through completing the \"Now You're Thinki
 step
 To earn this achievement, you will need to activate _9_ portals in Suramar
 To do so, refer to our Suramar Guide
-Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 Earn the _Now You're Thinking With Portals_ achievement |achieve 11125
 step
 Congratulations!
 You have earned the _Now You're Thinking With Portals_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Pillars of Creation",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Pillars of Creation",{
 achieveid={10877},
 author="support@zygorguides.com",
 startlevel=110,
@@ -25142,10 +24940,10 @@ Aegis of Aggramar |achieve 10877/1
 Tidestone of Golganneth |achieve 10877/2
 Hammer of Khaz'goroth |achieve 10877/4
 Tears of Elune |achieve 10877/5
-Click here to load the "Stormheim" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
-Click here to load the "Azsuna" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
-Click here to load the "Highmountain" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
-Click here to load the "Val'sharah" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Click here to load the "Stormheim" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Stormheim"
+Click here to load the "Azsuna" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Azsuna"
+Click here to load the "Highmountain" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Highmountain"
+Click here to load the "Val'sharah" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 Click here to continue |confirm
 step
 Once the leveling guides are completed, you will have the quest to attain the Pillar of Creation
@@ -25155,20 +24953,20 @@ Aegis of Aggramar |achieve 10877/1
 Tidestone of Golganneth |achieve 10877/2
 Hammer of Khaz'goroth |achieve 10877/4
 Tears of Elune |achieve 10877/5
-Click here to load the "Halls of Valor" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Halls of Valor"
-Click here to load the "Neltharion's Lair" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Neltharion's Lair"
-Click here to load the "Darkheart Thicket" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Darkheart Thicket"
-Click here to load the "Eye of Azshara" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Eye of Azshara"
+Click here to load the "Halls of Valor" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Halls of Valor"
+Click here to load the "Neltharion's Lair" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Neltharion's Lair"
+Click here to load the "Darkheart Thicket" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Darkheart Thicket"
+Click here to load the "Eye of Azshara" dungeon guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Eye of Azshara"
 step
 For the Eye of Aman'Thul, you will need to complete the Suramar guide
-Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 You will need to defeat Gul'dan in Nighthold to complete the questline
 Eye of Aman'Thul |achieve 10877/3
 step
 Congratulations!
 You have earned the _Pillars of Creation_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Post Haste",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Post Haste",{
 achieveid={12431},
 author="support@zygorguides.com",
 startlevel=110,
@@ -25317,7 +25115,7 @@ step
 _Congratulations!_
 You have earned the _Post Haste_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Priority Mail",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Priority Mail",{
 achieveid={12439},
 author="support@zygorguides.com",
 startlevel=110,
@@ -25467,7 +25265,7 @@ step
 _Congratulations!_
 You have earned the _Priority Mail_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Take Command",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Take Command",{
 achieveid={11735},
 author="support@zygorguides.com",
 startlevel=110,
@@ -25485,7 +25283,7 @@ step
 Congratulations!
 You have earned the _Take Command_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Tehd & Marius' Excellent Adventure",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Tehd & Marius' Excellent Adventure",{
 achieveid={11186},
 author="support@zygorguides.com",
 startlevel=110,
@@ -25523,7 +25321,7 @@ step
 Congratulations!
 You have earned the _Tehd & Marius' Excellent Adventure_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\That's Val'sharah Folks!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\That's Val'sharah Folks!",{
 achieveid={10698},
 author="support@zygorguides.com",
 startlevel=100,
@@ -25541,12 +25339,12 @@ Archdruid of the Claw |achieve 10698/4
 Into the Nightmare |achieve 10698/5
 All Nightmare Long |achieve 10698/6
 Archdruid of Lore |achieve 10698/7
-Click here to load the "Val'sharah" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Click here to load the "Val'sharah" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 step
 Congratulations!
 You have earned the _That's Val'sharah Folks!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\They See Me Rolling",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\They See Me Rolling",{
 achieveid={11607},
 author="support@zygorguides.com",
 startlevel=100,
@@ -25557,7 +25355,7 @@ description="This guide will walk you through completing the \"They See Me Rolli
 step
 This achievement is earned by delivering a Barrel of Storm Brew without taking any damage
 |tip This must be completed during the world quest "Rolling Thunder."
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 |tip Use our world quest guide to complete this quest.
 |tip Generally speaking, stay to the left side of the path to avoid most of the riders.
 Earn the _They See Me Rolling_ achievement |achieve 11607
@@ -25565,7 +25363,7 @@ step
 Congratulations!
 You have earned the _They See Me Rolling_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\The Total Package",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\The Total Package",{
 achieveid={12416},
 author="support@zygorguides.com",
 startlevel=100,
@@ -25710,7 +25508,7 @@ step
 _Congratulations!_
 You have earned the _The Total Package_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Variety is the Spice of Life",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Variety is the Spice of Life",{
 achieveid={11189},
 author="support@zygorguides.com",
 startlevel=110,
@@ -25720,12 +25518,12 @@ description="This guide will walk you through completing the \"Variety is the Sp
 step
 Complete #100# different World Quests |achieve 11189 |or
 |tip Use the "World Quests" guide to accomplish this.
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\Azsuna World Quests" |or
 step
 Congratulations!
 You have earned the _Variety is the Spice of Life_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Vrykul Story, Bro",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Vrykul Story, Bro",{
 achieveid={10790},
 author="support@zygorguides.com",
 startlevel=100,
@@ -25744,12 +25542,12 @@ The Trial of Valor |achieve 10790/5
 To Helheim and Back |achieve 10790/6
 Secrets of the Shieldmaidens |achieve 10790/7
 The Champion of Stormheim |achieve 10790/8
-Click here to load the "Stormheim" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Click here to load the "Stormheim" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 step
 Congratulations!
 You have completed the _Vrykul Story, Bro_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\What a Ripoff!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\What a Ripoff!",{
 achieveid={10793},
 author="support@zygorguides.com",
 startlevel=100,
@@ -25832,7 +25630,7 @@ step
 Congratulations!
 You have completed the _What a Ripoff!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Why Can't I Hold All This Mana?",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Why Can't I Hold All This Mana?",{
 achieveid={11133},
 author="support@zygorguides.com",
 startlevel=110,
@@ -25895,13 +25693,13 @@ Use the Enchanted Burial Urn##140326 |use Enchanted Burial Urn##140326
 Click here to continue |confirm
 step
 To earn the rest of the unlockable Mana, refer to our Suramar Guide
-Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 Earn the _Why Can't I Hold All This Mana?_ achievement |achieve 11133
 step
 Congratulations!
 You have earned the _Why Can't I Hold All This Mana?_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\You Are Now Prepared!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\You Are Now Prepared!",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"You Are Now Prepared!\" achievement.",
 achieveid={12066},
@@ -25910,14 +25708,14 @@ endlevel=110,
 keywords={"Argus, Campaign"},
 },[[
 step
-Click here to load the "Argus Campaign" guide |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign" |confirm |or
+Click here to load the "Argus Campaign" guide |next "Leveling Guides\\Legion (100-110)\\Argus Campaign" |confirm |or
 |tip To earn this achievement, you will need to complete the Argus Campaign.
-Earn the _You Are Now Prepared!_ acheivement |achieve 12066 |or
+Earn the _You Are Now Prepared!_ achievement |achieve 12066 |or
 step
 Congratulations!
 You have earned the _You Are Now Prepared!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Legion\\Zoom!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Zoom!",{
 achieveid={10626},
 author="support@zygorguides.com",
 startlevel=100,
@@ -25935,7 +25733,7 @@ step
 Congratulations!
 You have earned the _Zoom!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Legion\\Armies of Legionfall",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Legion\\Armies of Legionfall",{
 achieveid={11796},
 author="support@zygorguides.com",
 startlevel=100,
@@ -25944,7 +25742,7 @@ keywords={"reputation, broken, shore"},
 description="This guide will walk you through completing the \"Armies of Legionfall\" achievement.",
 },[[
 step
-Click here to load the "Armies of Legionfall" guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Armies of Legionfall"
+Click here to load the "Armies of Legionfall" guide |confirm |next "Reputations Guides\\Legion Reputations\\Armies of Legionfall"
 |tip To earn this achievement, you will need to become Exalted with the Armies of Legionfall.
 |tip Refer to the Armies of Legionfall reputation guide to accomplish this.
 Earn the _Armies of Legionfall_ achievement |achieve 11796
@@ -25952,7 +25750,7 @@ step
 Congratulations!
 You have earned _Armies of Legionfall_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Legion\\Broken Isles Diplomat",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Legion\\Broken Isles Diplomat",{
 achieveid={10672},
 author="support@zygorguides.com",
 startlevel=100,
@@ -25963,41 +25761,41 @@ step
 Reach _Revered_ reputation with the _Court of Farondis_ |achieve 10672/1
 |tip Use the "Azsuna" leveling guide to accomplish this.
 |tip Use the "World Quests" guide to accomplish this.
-Click here to complete the "Azsuna" leveling guide if you haven't done so already |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to complete the "Azsuna" leveling guide if you haven't done so already |confirm |next "Leveling Guides\\Legion (100-110)\\Azsuna"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 step
 Reach _Revered_ reputation with _The Dreamweavers_ |achieve 10672/2
 |tip Use the "Val'sharah" leveling guide to accomplish this.
 |tip Use the "World Quests" guide to accomplish this.
-Click here to complete the "Val'sharah" leveling guide if you haven't done so already |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to complete the "Val'sharah" leveling guide if you haven't done so already |confirm |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 step
 Reach _Revered_ reputation with the _Highmountain Tribe_ |achieve 10672/3
 |tip Use the "Highmountain" leveling guide to accomplish this.
 |tip Use the "World Quests" guide to accomplish this.
-Click here to complete the "Highmountain" leveling gudie if you haven't done so already |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to complete the "Highmountain" leveling gudie if you haven't done so already |confirm |next "Leveling Guides\\Legion (100-110)\\Highmountain"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 step
 Reach _Revered_ reputation with _The Valarjar_ |achieve 10672/4
 |tip Use the "Stormheim" leveling guide to accomplish this.
 |tip Use the "World Quests" guide to accomplish this.
-Click here to complete the "Stormheim" leveling guide if you haven't done so already |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to complete the "Stormheim" leveling guide if you haven't done so already |confirm |next "Leveling Guides\\Legion (100-110)\\Stormheim"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 step
 Reach _Revered_ reputation with _The Nightfallen_ |achieve 10672/5
 |tip Use the "Suramar" leveling guide to accomplish this.
 |tip Use the "World Quests" guide to accomplish this.
-Click here to complete the "Suramar" guide if you haven't done so already |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to complete the "Suramar" guide if you haven't done so already |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 step
 Reach _Revered_ reputation with _The Wardens_ |achieve 10672/6
 |tip Use the "World Quests" guide to accomplish this.
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 step
 Congratulations!
 You have earned the _Broken Isles Diplomat_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Legion\\Friends in a Broken Land",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Legion\\Friends in a Broken Land",{
 achieveid={11159},
 author="support@zygorguides.com",
 startlevel=100,
@@ -26007,24 +25805,24 @@ description="This guide will walk you through completing the \"Friends in a Brok
 step
 To earn this achievement, you will need to become exalted with one of the 6 factions of Legion, listed below:
 _Become Exalted with The Wardens_ |achieve 11159/1 |next "end" |or
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 _Become Exalted with the Highmountain Tribe_ |achieve 11159/2 |next "end" |or
-Click here to load the "Highmountain" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Click here to load the "Highmountain" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 _Become Exalted with the Court of Farondis_ |achieve 11159/3 |next "end" |or
-Click here to load the "Azsuna" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Click here to load the "Azsuna" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 _Become Exalted with The Nightfallen_ |achieve 11159/4 |next "end" |or
-Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
 _Become Exalted with The Dreamweavers_ |achieve 11159/5 |next "end" |or
-Click here to load the "Val'sharah" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Click here to load the "Val'sharah" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 _Become Exalted with The Valarjar_ |achieve 11159/6 |next "end" |or
-Click here to load the "Stormheim" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Click here to load the "Stormheim" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 |tip To achieve this, complete a leveling guide of the associated faction as well as use our World Quest guide.
 step
 label "end"
 Congratulations!
 You have earned the _Friends in a Broken Land_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Legion\\The Nightfallen",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Legion\\The Nightfallen",{
 achieveid={10778},
 author="support@zygorguides.com",
 startlevel=100,
@@ -26034,14 +25832,14 @@ description="This guide will walk you through completing the \"The Nightfallen\"
 step
 To earn this achievement, you will need to become _Exalted_ with _The Nightfallen_
 |tip Refer to the Suramar guide and complete World Quests in Suramar to accomplish this.
-Click here to load the "Suramar" guide |confirm |next |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
-Click here to load the "World Quests" guide |confirm |next |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "Suramar" guide |confirm |next |next "Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "World Quests" guide |confirm |next |next "Dailies Guides\\Legion\\World Quests"
 Become _Exalted_ with _The Nightfallen_ |achieve 10778
 step
 Congratulations!
 You have earned _The Nightfallen_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Legion\\Officer of the Light",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Legion\\Officer of the Light",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Officer of the Light\" achievement.",
 achieveid={12081},
@@ -26050,10 +25848,10 @@ endlevel=110,
 keywords={"reputation, argus, army"},
 },[[
 step
-Click here to load the Argus guide |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign" |confirm |or
+Click here to load the Argus guide |next "Leveling Guides\\Legion (100-110)\\Argus Campaign" |confirm |or
 |tip Completing the Argus campaign rewards reputation.
 |tip This is also required to unlock various world quest areas.
-Click here to load the world quests guide |next "Zygor's Dailies Guides\\Legion\\World Quests" |confirm |or
+Click here to load the world quests guide |next "Dailies Guides\\Legion\\World Quests" |confirm |or
 |tip World quests in Argus also reward reputation.
 Army of the Light reputation insignias:
 |tip These are awarded from Order Hall missions, Army of the Light emissary quests, and world quests.
@@ -26061,14 +25859,14 @@ Use your Army of the Light Insignia |use Army of the Light Insignia##152957 |onl
 Use your Army of the Light Insignia |use Army of the Light Insignia##152958 |only if itemcount(152958) >= 1
 Use your Greater Army of the Light Insignia |use Greater Army of the Light Insignia##152956 |only if itemcount(152956) >= 1
 Use your Greater Army of the Light Insignia |use Greater Army of the Light Insignia##152955 |only if itemcount(152955) >= 1
-Click here to load the "Argus Invasions" guide |confirm |next "Zygor's Dungeon Guides\\Legion Scenarios\\Argus Invasions"
+Click here to load the "Argus Invasions" guide |confirm |next "Dungeon Guides\\Legion Scenarios\\Argus Invasions"
 |tip Completed the quests "Invasion Point Offensive," "Commander's Downfall," "Invasion Onslaught," and "Supplying the Antoran Campaign."
 Earn the _Officer of the Light_ achievement |achieve 12081 |or
 step
 Congratulations!
 You have earned the _Officer of the Light_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Legion\\Paragon of the Broken Isles",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Legion\\Paragon of the Broken Isles",{
 achieveid={11653},
 author="support@zygorguides.com",
 startlevel=100,
@@ -26077,7 +25875,7 @@ keywords={"reputation, broken, isles"},
 description="This guide will walk you through completing the \"Paragon of the Broken Isles\" achievement.",
 },[[
 step
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 |tip To earn this achievement, you will need to reach exalted with one of the 7 Legion factions.
 |tip Our reputation guides can help you accomplish this.
 |tip Once exalted, you will need to obtain 10,000 more reputation with that faction.
@@ -26088,7 +25886,7 @@ step
 Congratulations!
 You have earned the _Paragon of the Broken Isles_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Legion\\Protector of the Argussian Reach",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Legion\\Protector of the Argussian Reach",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Protector of the Argussian Reach\" achievement.",
 achieveid={12076},
@@ -26097,10 +25895,10 @@ endlevel=110,
 keywords={"reputation, argus"},
 },[[
 step
-Click here to load the Argus guide |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign" |confirm |or
+Click here to load the Argus guide |next "Leveling Guides\\Legion (100-110)\\Argus Campaign" |confirm |or
 |tip Completing the Argus campaign rewards reputation.
 |tip This is also required to unlock various world quest areas.
-Click here to load the world quests guide |next "Zygor's Dailies Guides\\Legion\\World Quests" |confirm |or
+Click here to load the world quests guide |next "Dailies Guides\\Legion\\World Quests" |confirm |or
 |tip World quests in Argus also reward reputation.
 Argussian Reach reputation insignias:
 |tip These are awarded from Order Hall missions, Argussian Reach emissary quests, and world quests.
@@ -26108,14 +25906,14 @@ Use your Argussian Reach Insignia |use Argussian Reach Insignia##152959 |only if
 Use your Argussian Reach Insignia |use Argussian Reach Insignia##152960 |only if itemcount(152960) >= 1
 Use your Greater Argussian Reach Insignia |use Greater Argussian Reach##152961 |only if itemcount(152961) >= 1
 Use your Greater Argussian Reach Insignia |use Greater Argussian Reach##152954 |only if itemcount(152954) >= 1
-Click here to load the "Argus Invasions" guide |confirm |next "Zygor's Dungeon Guides\\Legion Scenarios\\Argus Invasions"
+Click here to load the "Argus Invasions" guide |confirm |next "Dungeon Guides\\Legion Scenarios\\Argus Invasions"
 |tip Completed the quests "Invasion Point Offensive," "Commander's Downfall," "Invasion Onslaught," and "Supplying the Antoran Campaign."
 Earn the _Protector of the Argussian Reach_ achievement |achieve 12076 |or
 step
 Congratulations!
 You have earned the _Protector of the Argussian Reach_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Legion\\The Reputable",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Legion\\The Reputable",{
 achieveid={11652},
 author="support@zygorguides.com",
 startlevel=100,
@@ -26124,7 +25922,7 @@ keywords={"reputation"},
 description="This guide will walk you through completing the \"The Reputable\" achievement.",
 },[[
 step
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 |tip To earn this achievement, you will need to reach exalted with one of the 7 Legion factions.
 |tip Our reputation guides can help you accomplish this.
 |tip Once exalted, you will need to obtain 10,000 more reputation with that faction.
@@ -26134,7 +25932,7 @@ step
 Congratulations!
 You have earned the _The Reputable_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\World Events\\Legion Brawler's Guild\\Educated Guesser",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Legion Brawler's Guild\\Educated Guesser",{
 author="support@zygorguides.com",
 achieveid={11570},
 keywords={"Educated","Guesser"},
@@ -26167,7 +25965,7 @@ step
 Congratulations!
 You have earned the _Educated Guesser_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\World Events\\Legion Brawler's Guild\\I Am Thrall's Complete Lack Of Surprise",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Legion Brawler's Guild\\I Am Thrall's Complete Lack Of Surprise",{
 author="support@zygorguides.com",
 achieveid={11572},
 keywords={"I","Am","Thrall's","Complete","Lack","Of","Surprise"},
@@ -26199,7 +25997,7 @@ step
 Congratulations!
 You have earned the _I Am Thrall's Complete Lack Of Surprise_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\World Events\\Legion Brawler's Guild\\King of the Guild",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Legion Brawler's Guild\\King of the Guild",{
 author="support@zygorguides.com",
 condition_end=function() return achieved(11565) end,
 achieveid={11558,11560,11563,11565,11565},
@@ -26208,13 +26006,13 @@ description="This guide will walk you through completing the \"King of the Guild
 },[[
 step
 For this, you will need to unlock the Legion Brawler Guild
-Click here to load the "Legion Brawler's Guild" guide |confirm |next "Zygor's Events Guides\\Brawler's Guild\\Legion Brawler's Guild"
+Click here to load the "Legion Brawler's Guild" guide |confirm |next "Events Guides\\Brawler's Guild\\Legion Brawler's Guild"
 Reach Rank 8 in Bizmo's Brawlpub |achieve 11566
 step
 Congratulations!
 You have earned the _King of the Guild_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\World Events\\Legion Brawler's Guild\\Rumble Club",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Legion Brawler's Guild\\Rumble Club",{
 author="support@zygorguides.com",
 achieveid={11573},
 keywords={"Rumble","Club"},
@@ -26303,7 +26101,7 @@ step
 Congratulations!
 You have earned the _Rumble Club_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\World Events\\Legion Brawler's Guild\\You Are Not The Contents Of Your Wallet",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Legion Brawler's Guild\\You Are Not The Contents Of Your Wallet",{
 author="support@zygorguides.com",
 achieveid={11567},
 description="Obtain 20,000 Brawler's Gold",
@@ -26318,7 +26116,7 @@ step
 Congratulations!
 You have earned the _You Are Not The Contents Of Your Wallet_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\World Events\\Darkmoon Faire\\Hey, You're a Rockstar!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Darkmoon Faire\\Hey, You're a Rockstar!",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Hey, You're a Rockstar!\" achievement.",
 achieveid={11918},
@@ -26337,7 +26135,7 @@ step
 Congratulations!
 You have earned the _Hey, You're a Rockstar!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\World Events\\Darkmoon Faire\\Mosh Pit",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Darkmoon Faire\\Mosh Pit",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Mosh Pit\" achievement.",
 achieveid={11921},
@@ -26358,7 +26156,7 @@ step
 Congratulations!
 You have earned the _Mosh Pit_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\World Events\\Darkmoon Faire\\Perfect Performance",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Darkmoon Faire\\Perfect Performance",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Perfect Performance\" achievement.",
 achieveid={11920},
@@ -26397,7 +26195,7 @@ step
 Congratulations!
 You have earned the _Perfect Performance_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\World Events\\Darkmoon Faire\\Taking this Show on the Road",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Darkmoon Faire\\Taking this Show on the Road",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Taking this Show on the Road\" achievement.",
 achieveid={11919},

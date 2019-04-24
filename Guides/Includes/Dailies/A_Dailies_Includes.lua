@@ -4236,135 +4236,164 @@ ZygorGuidesViewer:RegisterInclude("Tillers_Dailies",[[
 ----- World  Quests -----
 -------------------------
 
+-- LEGION
+ZygorGuidesViewer:RegisterInclude("Legion_Choose_World_Quests",[[
+		Choose a World Quest to Complete |confirm
+		|tip With the "World Quests" guide loaded, open your world map.
+		|tip Left-click on a world quest icon to select that world quest.
+		|tip The guide will automatically load the steps for that world quest.
+		'|confirm |next "Court_of_Farondis_WQ" |condition readyq(42420) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Dreamweavers_WQ" |condition readyq(42170) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Highmountain_Tribe_WQ" |condition readyq(42233) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Valarjar_WQ" |condition readyq(42234) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Nightfallen_WQ" |condition readyq(42421) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Wardens_WQ" |condition readyq(42422) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Kirin_Tor_WQ" |condition readyq(43179) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Armies_of_Legionfall_WQ" |condition readyq(48641) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Argussian_Reach_WQ" |condition readyq(48642) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Army_of_the_Light_WQ" |condition readyq(48639) and not ZGV.WorldQuests:QuestsQueued()
+		|worldquestqueue
+]])
+
 ZygorGuidesViewer:RegisterInclude("Legion_World_Quest_Emissaries",[[
-		talk Veridis Fallon##107376 |only if ZGV.questsbyid[42420] and ZGV.questsbyid[42420].complete
-		|tip Inside the building. |only if ZGV.questsbyid[42420] and ZGV.questsbyid[42420].complete
-		turnin Court of Farondis##42420 |goto Azsuna/0 46.90,41.43 |only if ZGV.questsbyid[42420] and ZGV.questsbyid[42420].complete
-		|next "The_Dreamweavers_WQ"
+		-- if we are running queued world quests, do not move to emissary turnins
+		'|confirm |next "Choose_World_Quest" |condition true |only if ZGV.WorldQuests:QuestsQueued()
 	step
-	label "The_Dreamweavers_WQ"
-		talk Sylvia Hartshorn##106901 |only if ZGV.questsbyid[42170] and ZGV.questsbyid[42170].complete
-		turnin The Dreamweavers##42170 |goto Val'sharah/0 54.70,73.25 |only if ZGV.questsbyid[42170] and ZGV.questsbyid[42170].complete
-		|next "Highmountain_Tribes_WQ"
+	label "Court_of_Farondis_WQ"
+		talk Veridis Fallon##107376
+		|tip Inside the building.
+		turnin Court of Farondis##42420 |goto Azsuna/0 46.90,41.43
+		|only if readyq(42420)
 	step
-	label "Highmountain_Tribes_WQ"
-		talk Ransa Greyfeather##106902 |only if ZGV.questsbyid[42233] and ZGV.questsbyid[42233].complete
-		turnin Highmountain Tribes##42233 |goto Thunder Totem/0 38.06,46.04 |only if ZGV.questsbyid[42233] and ZGV.questsbyid[42233].complete
-		|next "The_Valarjar_WQ"
+		talk Veridis Fallon##107376
+		|tip Inside the building.
+		turnin Supplies From the Court##46745 |goto Azsuna/0 46.90,41.43
+		|only if havequest(46745)
 	step
-	label "The_Valarjar_WQ"
-		talk Valdemar Stormseeker##106904 |only if ZGV.questsbyid[42234] and ZGV.questsbyid[42234].complete
-		turnin The Valarjar##42234 |goto Stormheim/0 60.26,51.38 |only if ZGV.questsbyid[42234] and ZGV.questsbyid[42234].complete
-		|next "The_Nightfallen_WQ"
+	label "Dreamweavers_WQ"
+		talk Sylvia Hartshorn##106901
+		turnin The Dreamweavers##42170 |goto Val'sharah/0 54.70,73.25
+		|only if readyq(42170)
 	step
-	label "The_Nightfallen_WQ"
-		talk First Arcanist Thalyssra##97140 |only if ZGV.questsbyid[42421] and ZGV.questsbyid[42421].complete
-		turnin The Nightfallen##42421 |goto Suramar/0 36.88,46.61 |only if ZGV.questsbyid[42421] and ZGV.questsbyid[42421].complete |region suramar_shalaran
-		|next "The_Wardens_WQ"
+		talk Sylvia Hartshorn##106901
+		turnin Supplies From the Dreamweavers##46747 |goto Val'sharah/0 54.70,73.25
+		|only if havequest(46747)
 	step
-	label "The_Wardens_WQ"
-		talk Marin Bladewing##107379 |only if ZGV.questsbyid[42422] and ZGV.questsbyid[42422].complete
-		turnin The Wardens##42422 |goto Azsuna/0 48.17,73.90 |only if ZGV.questsbyid[42422] and ZGV.questsbyid[42422].complete
-		|next "The_Kirin_Tor_Of_Dalaran_WQ"
+	label "Highmountain_Tribe_WQ"
+		talk Ransa Greyfeather##106902
+		turnin Highmountain Tribes##42233 |goto Thunder Totem/0 38.06,46.04
+		|only if readyq(42233)
 	step
-	label "The_Kirin_Tor_Of_Dalaran_WQ"
-		talk Warmage Silva##32725 |only if ZGV.questsbyid[43179] and ZGV.questsbyid[43179].complete
-		turnin The Kirin Tor of Dalaran##43179 |goto Dalaran L/10 33.44,47.35 |only if ZGV.questsbyid[43179] and ZGV.questsbyid[43179].complete
-		|next "Legionfall_WQ"
+		talk Ransa Greyfeather##106902
+		turnin Supplies From Highmountain##46743 |goto Thunder Totem/0 38.06,46.04
+		|only if havequest(46743)
 	step
-	label "Legionfall_WQ"
-		talk Commander Chambers##120183 |only if ZGV.questsbyid[48641] and ZGV.questsbyid[48641].complete
-		turnin Armies of Legionfall##48641 |goto Broken Shore/0 44.54,63.15 |only if ZGV.questsbyid[48641] and ZGV.questsbyid[48641].complete
-		|next "Argussian_Reach_WQ"
+	label "Valarjar_WQ"
+		talk Valdemar Stormseeker##106904
+		turnin The Valarjar##42234 |goto Stormheim/0 60.26,51.38
+		|only if readyq(42234)
+	step
+		talk Valdemar Stormseeker##106904
+		turnin Supplies From the Valarjar##46746 |goto Stormheim/0 60.26,51.38
+		|only if havequest(46746)
+	step
+	label "Nightfallen_WQ"
+		talk First Arcanist Thalyssra##97140
+		turnin The Nightfallen##42421 |goto Suramar/0 36.88,46.61 |region suramar_shalaran
+		|only if readyq(42421)
+	step
+		talk First Arcanist Thalyssra##97140
+		turnin Supplies From the Nightfallen##46748 |goto Suramar/0 36.88,46.61 |region suramar_shalaran
+		|only if havequest(46748)
+	step
+	label "Wardens_WQ"
+		talk Marin Bladewing##107379
+		turnin The Wardens##42422 |goto Azsuna/0 48.17,73.90
+		|only if readyq(42422)
+	step
+		talk Marin Bladewing##107379
+		turnin Supplies From the Wardens##46749 |goto Azsuna/0 48.17,73.90
+		|only if havequest(46749)
+	step
+	label "Kirin_Tor_WQ"
+		talk Warmage Silva##32725
+		turnin The Kirin Tor of Dalaran##43179 |goto Dalaran L/10 33.44,47.35
+		|only if readyq(43179)
+	step
+	label "Armies_of_Legionfall_WQ"
+		talk Commander Chambers##120183
+		turnin Armies of Legionfall##48641 |goto Broken Shore/0 44.54,63.15
+		|only if readyq(48641)
+	step
+		talk Captain Ruysantos##120414
+		turnin The Bounties of Legionfall##46777 |goto Broken Shore/0 42.13,58.84
+		|only if havequest(46777)
 	step
 	label "Argussian_Reach_WQ"
-		talk Toraan the Revered##127151 |only if ZGV.questsbyid[48642] and ZGV.questsbyid[48642].complete
+		talk Toraan the Revered##127151
 		#include "Toraan_the_Revered"
-		|next "Army_Light_WQ"
+		|only if readyq(48642)
 	step
-	label "Army_Light_WQ"
-		talk Vindicator Jaelaana##127120 |only if ZGV.questsbyid[48639] and ZGV.questsbyid[48639].complete
-		#include "Vindicator_Jaelaana"
-		|next "Court_Of_Farondis_Paragon"
-	step
-	label "Court_Of_Farondis_Paragon"
-		talk Veridis Fallon##107376 |only if havequest(46745)
-		|tip Inside the building. |only if havequest(46745)
-		turnin Supplies From the Court##46745 |goto Azsuna/0 46.90,41.43 |only if havequest(46745)
-		|next "The_Dreamweavers_Paragon"
-	step
-	label "The_Dreamweavers_Paragon"
-		talk Sylvia Hartshorn##106901 |only if havequest(46747)
-		turnin Supplies From the Dreamweavers##46747 |goto Val'sharah/0 54.70,73.25 |only if havequest(46747)
-		|next "Highmountain_Tribes_Paragon"
-	step
-	label "Highmountain_Tribes_Paragon"
-		talk Ransa Greyfeather##106902 |only if havequest(46743)
-		turnin Supplies From Highmountain##46743 |goto Thunder Totem/0 38.06,46.04 |only if havequest(46743)
-		|next "The_Valarjar_Paragon"
-	step
-	label "The_Valarjar_Paragon"
-		talk Valdemar Stormseeker##106904 |only if havequest(46746)
-		turnin Supplies From the Valarjar##46746 |goto Stormheim/0 60.26,51.38 |only if havequest(46746)
-		|next "The_Nightfallen_Paragon"
-	step
-	label "The_Nightfallen_Paragon"
-		talk First Arcanist Thalyssra##97140 |only if havequest(46748)
-		turnin Supplies From the Nightfallen##46748 |goto Suramar/0 36.88,46.61 |region suramar_shalaran |only if havequest(46748)
-		|next "The_Wardens_Paragon"
-	step
-	label "The_Wardens_Paragon"
-		talk Marin Bladewing##107379 |only if havequest(46749)
-		turnin Supplies From the Wardens##46749 |goto Azsuna/0 48.17,73.90 |only if havequest(46749)
-		|next "Legionfall_Paragon"
-	step
-	label "Legionfall_Paragon"
-		talk Captain Ruysantos##120414 |only if havequest(46777)
-		turnin The Bounties of Legionfall##46777 |goto Broken Shore/0 42.13,58.84 |only if havequest(46777)
-		|next "Argussian_Reach_Paragon"
-	step
-	label "Argussian_Reach_Paragon"
-		talk Toraan the Revered##127151 |only if havequest(48976)
+		talk Toraan the Revered##127151
 		#include "Toraan_the_Revered_Paragon"
-		|next "Army_Light_Paragon"
+		|only if havequest(48976)
 	step
-	label "Army_Light_Paragon"
-		talk Vindicator Jaelaana##127120 |only if havequest(48977)
+	label "Army_of_the_Light_WQ"
+		talk Vindicator Jaelaana##127120
+		#include "Vindicator_Jaelaana"
+		|only if readyq(48639)
+	step
+		talk Vindicator Jaelaana##127120
 		#include "Vindicator_Jaelaana_Paragon"
+		|only if havequest(48977)
+	step
 		|next "Choose_World_Quest"
 ]])
 
-
-
+-- BATTLE FOR AZEROTH
 ZygorGuidesViewer:RegisterInclude("BFA_Choose_World_Quests",[[
 		Choose a World Quest to Complete |confirm
 		|tip With the "World Quests" guide loaded, open your world map.
 		|tip Left-click on a world quest icon to select that world quest.
 		|tip The guide will automatically load the steps for that world quest.
-		'|confirm |next "Tortollan_Seekers_WQ" |condition readyq(50604)
-		'|confirm |next "Alliance_War_Effort_WQ" |condition readyq(50605)
-		'|confirm |next "Order_of_Embers_WQ" |condition readyq(50600)
-		'|confirm |next "Proudmoore_Admiralty_WQ" |condition readyq(50599)
-		'|confirm |next "Storms_Wake_WQ" |condition readyq(50601)
-		'|confirm |next "Champions_of_Azeroth_WQ" |condition readyq(50562)
+		'|confirm |next "Tortollan_Seekers_WQ" |condition readyq(50604) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Alliance_War_Effort_WQ" |condition readyq(50605) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Order_of_Embers_WQ" |condition readyq(50600) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Proudmoore_Admiralty_WQ" |condition readyq(50599) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Storms_Wake_WQ" |condition readyq(50601) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Champions_of_Azeroth_WQ" |condition readyq(50562) and not ZGV.WorldQuests:QuestsQueued()
+		|worldquestqueue
 ]])
 
-
-
 ZygorGuidesViewer:RegisterInclude("BFA_World_Quest_Emissaries",[[
+		-- if we are running queued world quests, do not move to emissary turnins
+		'|confirm |next "Choose_World_Quest" |condition true |only if ZGV.WorldQuests:QuestsQueued()
+	step		
 		talk Collector Kojo##135793
 		turnin Tortollan Seekers##50604 |goto Stormsong Valley/0 40.54,36.41
 		|only if readyq(50604)
 	step
+		talk Collector Kojo##135793
+		turnin Baubles from the Seekers##54451 |goto Stormsong Valley/0 40.54,36.41
+		|only if havequest(54451)
+	step
 	label "Alliance_War_Effort_WQ"
 		talk Vindicator Jaelaana##135446
-		turnin Alliance War Effort##50605 |goto Boralus/0 69.32,24.94
+		turnin Alliance War Effort##50605 |goto Boralus/0 68.97,24.71
 		|only if readyq(50605)
+	step
+		talk Vindicator Jaelaana##135446
+		turnin Supplies from the 7th Legion##54454 |goto Boralus/0 68.97,24.71
+		|only if havequest(54454)
 	step
 	label "Order_of_Embers_WQ"
 		talk Quartermaster Alcorn##135815
 		turnin Order of Embers##50600 |goto Drustvar/0 37.90,49.00
 		|only if readyq(50600)
+	step
+		talk Quartermaster Alcorn##135815
+		turnin Supplies from the Order of Embers##54456 |goto Drustvar/0 37.90,49.00
+		|only if havequest(54456)
 	step
 	label "Proudmoore_Admiralty_WQ"
 		talk Provisioner Fray##135808
@@ -4372,15 +4401,33 @@ ZygorGuidesViewer:RegisterInclude("BFA_World_Quest_Emissaries",[[
 		turnin Proudmoore Admiralty##50599 |goto Tiragarde Sound/0 73.68,24.99
 		|only if readyq(50599)
 	step
+		talk Provisioner Fray##135808
+		|tip Inside the building.
+		turnin Supplies from the Proudmoore Admiralty##54458 |goto Tiragarde Sound/0 73.68,24.99
+		|only if havequest(54458)
+	step
 	label "Storms_Wake_WQ"
 		talk Sister Lilyana##135800
 		turnin Storm's Wake##50601 |goto Stormsong Valley/0 59.29,69.33
 		|only if readyq(50601)
 	step
+		talk Sister Lilyana##135800
+		turnin Supplies from Storm's Wake##54457 |goto Stormsong Valley/0 59.29,69.33
+		|only if havequest(54457)
+	step
 	label "Champions_of_Azeroth_WQ"
+		talk Zidormi##128607
+		Ask her _"Can you return me to the present time?"_
+		Return to the Present |condition not ZGV.InPhase("Old Silithus") |goto Silithus/0 78.93,21.97
+		|only if readyq(50562) or havequest(54453)
+	step
 		talk Magni Bronzebeard##130216
 		turnin Champions of Azeroth##50562 |goto Silithus/0 42.22,44.27
 		|only if readyq(50562)
+	step
+		talk Magni Bronzebeard##130216
+		turnin Supplies from Magni##54453 |goto Silithus/0 42.22,44.27
+		|only if havequest(54453)
 	step
 		|next "Choose_World_Quest"
 ]])

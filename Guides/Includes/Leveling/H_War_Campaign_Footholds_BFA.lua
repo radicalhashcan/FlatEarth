@@ -130,7 +130,7 @@ ZygorGuidesViewer:RegisterInclude("Tiragarde_Sound_Foothold_Quests",[[
 		talk Shadow Hunter Ty'jin##137742
 		|tip Inside the building.
 		accept Thar She Blows!##51441 |goto 87.28,50.01
-	stickystart "Sink_Fogsail_Rowboats"	
+	stickystart "Sink_Fogsail_Rowboats"
 	step
 		Run down the stairs |goto 87.46,50.11 < 5 |only if walking
 		talk Navigator Swink##137807
@@ -155,7 +155,7 @@ ZygorGuidesViewer:RegisterInclude("Tiragarde_Sound_Foothold_Quests",[[
 		talk Quartermaster Killian##137800
 		Tell him _"We're saying no to the Ashvane. Here are orders from the captain."_
 		Watch the dialogue
-		Order Quartermaster Killian |q 51440/2 |goto 87.00,52.01	
+		Order Quartermaster Killian |q 51440/2 |goto 87.00,52.01
 	step
 		talk Shadow Hunter Ty'jin##137742
 		|tip Inside the building.
@@ -183,7 +183,7 @@ ZygorGuidesViewer:RegisterInclude("Tiragarde_Sound_Foothold_Quests",[[
 		Plant the Horde Banner |q 51438/1 |goto 87.46,50.41
 	step
 		talk Skrash##138265
-		fpath Plunder Harbor |goto 87.28,50.66
+		fpath Plunder Harbor |goto 87.28,50.66 |q 51438
 	step
 		talk Shadow Hunter Ty'jin##137742
 		|tip Inside the building.
@@ -215,7 +215,7 @@ ZygorGuidesViewer:RegisterInclude("Drustvar_Foothold_Quests",[[
 		turnin The Kul Tiras Campaign##51803 |goto 58.44,62.67 |only if havequest(51803)
 		turnin The Ongoing Campaign##51979 |goto 58.44,62.67 |only if havequest(51979)
 		turnin The Final Foothold##52444 |goto 58.44,62.67 |only if havequest(52444)
-		accept A Trip Across the Ocean##51332 |goto 58.44,62.67	
+		accept A Trip Across the Ocean##51332 |goto 58.44,62.67
 	step
 		talk Trade Prince Gallywix##136683
 		|tip Downstairs inside the ship.
@@ -240,7 +240,7 @@ ZygorGuidesViewer:RegisterInclude("Drustvar_Foothold_Quests",[[
 	step
 		talk Tan Lotuswind##135988
 		|tip At the top of the tower.
-		fpath Anyport |goto 19.14,43.31
+		fpath Anyport |goto 19.14,43.31 |q 51224
 	step
 		clicknpc Gallywix's War Trike##136723
 		Control Gallywix's War Trike |invehicle |goto 20.72,43.73 |q 51224
@@ -346,7 +346,7 @@ ZygorGuidesViewer:RegisterInclude("Drustvar_Foothold_Quests",[[
 		accept Return to Zuldazar##51985 |goto 37.18,27.18
 	step
 		talk Rixi Rocketboom##138022
-		fpath Krazzlefrazz Outpost |goto 37.37,24.04
+		fpath Krazzlefrazz Outpost |goto 37.37,24.04 |q 51985
 	step
 		talk Swellthrasher##139519
 		Tell her _"Take us back to Zuldazar."_
@@ -469,7 +469,7 @@ ZygorGuidesViewer:RegisterInclude("Stormsong_Valley_Foothold_Quests",[[
 		accept Return to Zuldazar##51986 |goto 52.12,33.66
 	step
 		talk Muka Stormbreaker##138097
-		fpath Warfang Hold |goto 51.43,33.74
+		fpath Warfang Hold |goto 51.43,33.74 |q 51986
 	step
 		talk Muka Stormbreaker##138097
 		Tell her _"Take us back to Zuldazar."_

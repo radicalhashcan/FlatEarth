@@ -157,11 +157,14 @@ do
 					local node_dep,node_arr = Lib.traveltime_dep,taxis[1][1]
 					local dep_nodeID,arr_nodeID = node_dep.taxinodeID,node_arr.taxinodeID
 					if not Lib.fc_by_nodeID[dep_nodeID] or not Lib.fc_by_nodeID[arr_nodeID] then ZGV:Print("Unknown departure or arrival point! Update taxi data!") return end
-					if not Lib.fc_by_nodeID[dep_nodeID].neighbors or not Lib.fc_by_nodeID[dep_nodeID].neighbors[arr_nodeID] then ZGV:Print("That's not a known direct route!") return end
+
+					local s = ("Travel Time from |cff00ff00%s|r to |cff00ff00%s|r = |cffffff00%d|r seconds, "):format(Lib.traveltime_dep.name,taxis[1][1].name,triptime)
+
+					if not Lib.fc_by_nodeID[dep_nodeID].neighbors or not Lib.fc_by_nodeID[dep_nodeID].neighbors[arr_nodeID] then ZGV:Print(s.."but that's not a known direct route.") return end
 
 					local oldtime = Lib.fc_by_nodeID[dep_nodeID].neighbors[arr_nodeID]
 					
-					local dist = Mdist(node_dep.m,node_dep.x,node_dep.y,node_arr.m,node_arr.x,node_arr.y)
+					local dist = ZGV.MapCoords.Mdist(node_dep.m,node_dep.x,node_dep.y,node_arr.m,node_arr.x,node_arr.y)
 					local est = dist * 1.2 / (7*4.5)
 
 					Lib.fc_by_nodeID[dep_nodeID].neighbors[arr_nodeID]=triptime
@@ -172,8 +175,8 @@ do
 						Lib.fc_by_nodeID[arr_nodeID].neighbors[dep_nodeID]=triptime
 					end
 
-					local s = ("Travel Time from |cff00ff00%s|r to |cff00ff00%s|r = |cffffff00%d|r seconds, saved to taxi flight costs. "):format(Lib.traveltime_dep.name,taxis[1][1].name,triptime)
-					if oldtime==0 then s = s .. ("Estimate was |cff888800%d|r s. "):format(est) end
+					if oldtime==0 then s = s .. ("estimate was |cff888800%d|r s. "):format(est)
+					else s = s .. ("was |cff888800%d|r s. "):format(oldtime) end
 					if reversed then s = s .. "Reverse trip added, too." end
 					ZGV:Print("DEV: "..s)
 				end
@@ -375,7 +378,10 @@ do
 	end
 
 	function Lib:GetTaxiDataBySlot()
-		local taxidata = C_TaxiMap.GetAllTaxiNodes()
+		local continent = ZGV:GetCurrentMapContinent()
+		if continent==830 or continent==882 or continent==885 then continent=994 end  -- Argus zones need to have a common continent (not so much for ants!).
+
+		local taxidata = C_TaxiMap.GetAllTaxiNodes(continent)
 		local taxidata_by_slot = {}
 		for i,taxi in ipairs(taxidata) do taxidata_by_slot[taxi.slotIndex]=taxi end
 		return taxidata,taxidata_by_slot
@@ -390,6 +396,7 @@ do
 
 	function Lib:ClearContinentKnowledge(cont,operator,status)
 		if not cont then cont=ZGV.GetCurrentMapContinent() end
+		if cont==830 or cont==882 or cont==885 then cont=994 end  -- Argus zones need to have a common continent (not so much for ants!).
 		for z,zone in pairs(Lib.taxipoints[cont]) do
 			for n,node in ipairs(zone) do
 				if node.factionid~=1031
@@ -576,9 +583,11 @@ do
 
 		local cont = ZGV.GetCurrentMapContinent()
 
+		if cont==830 or cont==882 or cont==885 then cont=994 end  -- Argus zones need to have a common continent (not so much for ants!).
+
 		self:Debug("Scanning map for continent %d...",cont)
 
-		local taxidata = C_TaxiMap.GetAllTaxiNodes()
+		local taxidata = C_TaxiMap.GetAllTaxiNodes(cont)
 
 		-- switch to a specific operator
 		local current_operator
@@ -904,8 +913,8 @@ do
 	end
 
 	function Lib:DEV_FindNodeIDs(operator)
-		local taxidata = C_TaxiMap:GetAllTaxiNodes()
 		local continent = ZGV:GetCurrentMapContinent()
+		local taxidata = C_TaxiMap:GetAllTaxiNodes(continent)
 		local count_ided=0
 		local count_alreadyided=0
 		local count_failed=0

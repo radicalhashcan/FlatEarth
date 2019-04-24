@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ScenarioHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Scenarios\\Whispers of a Frightened World",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Legion Scenarios\\Whispers of a Frightened World",{
 condition_suggested=function() return level>=110 end,
 keywords={"Magni, Hall, Of, Communion"},
 author="support@zygorguides.com",
@@ -79,7 +79,7 @@ step
 talk Archmage Khadgar##90417
 turnin Whispers of a Frightened World##46206 |goto Dalaran L/10 28.48,48.31
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Scenarios\\The Deaths of Chromie Portals",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Legion Scenarios\\The Deaths of Chromie Portals",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing \"The Deaths of Chromie\" scenario.",
 condition_suggested=function() return level>=110 end,
@@ -321,9 +321,9 @@ turnin Chromie##48021 |goto Dalaran L/10 28.46,48.33
 step
 Congratulations!
 You have unlocked all of the portals in "The Deaths of Chromie" scenario
-Click here to load "The Deaths of Chromie (Stratholme Intro)" guide |confirm |next "Zygor's Dungeon Guides\\Legion Scenarios\\The Deaths of Chromie (Stratholme Intro)"
+Click here to load "The Deaths of Chromie (Stratholme Intro)" guide |confirm |next "Dungeon Guides\\Legion Scenarios\\The Deaths of Chromie (Stratholme Intro)"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Scenarios\\The Deaths of Chromie Speed Run",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Legion Scenarios\\The Deaths of Chromie Speed Run",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing \"The Deaths of Chromie\" scenario as quickly as possible.",
 condition_suggested=function() return level>=110 end,
@@ -682,7 +682,7 @@ label "End"
 Your time has expired
 Click here to restart this scenario |confirm |next "Start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Scenarios\\The Deaths of Chromie (Stratholme Intro)",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Legion Scenarios\\The Deaths of Chromie (Stratholme Intro)",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the initial Stratholme portion of \"The Deaths of Chromie\" scenario.",
 condition_suggested=function() return level>=110 end,
@@ -837,9 +837,9 @@ Use the _Sands of Time_ items you collect to gain various buffs
 step
 Congratulations!
 You have completed the Culling of Stratholme intro
-Click here to load "The Deaths of Chromie Speed Run" guide |confirm |next "Zygor's Dungeon Guides\\Legion Scenarios\\The Deaths of Chromie Speed Run"
+Click here to load "The Deaths of Chromie Speed Run" guide |confirm |next "Dungeon Guides\\Legion Scenarios\\The Deaths of Chromie Speed Run"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Scenarios\\Argus Invasions",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Legion Scenarios\\Argus Invasions",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the the various invasion points on Argus.",
 condition_suggested=function() return level>=110 end,
@@ -849,7 +849,7 @@ model={67378, 72943, 78119, 80083, 80144, 80107},
 step
 In order to gain access to invasions on a character, you will need to complete the Argus Campaign up until you have completed the _Dark Awakenings_ chapter
 Complete the "Dark Awakenings" chapter of the Argus campaign |condition completedq(48107)
-Click here to load the Argus Campaign guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign"
+Click here to load the Argus Campaign guide |confirm |next "Leveling Guides\\Legion (100-110)\\Argus Campaign"
 |only if not completedq(48107)
 step
 label "Invasion_Point_Offensive"

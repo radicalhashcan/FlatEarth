@@ -3,7 +3,194 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DailiesHCATA") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Classic Dailies\\Main Cities\\Main City Cooking Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Classic Dailies\\Main Cities\\Orgrimmar Cooking Daily Quests",{
+author="support@zygorguides.com",
+description="Walks you through completing the Cooking daily quests in Orgrimmar. You must be at least level 10 to complete the quests in this guide.",
+},[[
+step
+label "start"
+talk Marogg##42506
+|tip You will only be able to complete 1 of the following quests per day.
+accept Careful, This Fruit Bites Back##26227 |goto Orgrimmar/1 56.53,62.48 |or
+accept Crawfish Creole##26226 |goto 56.53,62.48 |or
+accept Even Thieves Get Hungry##26235 |goto 56.53,62.48 |or
+accept Everything Is Better with Bacon##26220 |goto 56.53,62.48 |or
+accept Stealing From Our Own##26234 |goto 56.53,62.48 |only Troll |or
+accept Stealing From Our Own##26233 |goto 56.53,62.48 |only Orc,Scourge,Tauren,BloodElf,Goblin,Pandaren |or
+step
+click Prickly Pear Fruit##203969
+|tip They look like smaller cactus plants with red round fruit on top of them.
+|tip They are usually found next to walls all around Orgrimmar.
+collect 8 Prickly Pear Fruit##57766 |q 26227/1 |goto 52.81,62.11
+|only if havequest(26227)
+stickystart "hordeinfant"
+step
+clicknpc Muddy Crawfish##42548+
+|tip They look like tiny lobsters in the water around this area.
+collect 10 Muddy Crawfish##57765 |q 26226/1 |goto 65.26,43.47
+|only if havequest(26226)
+step
+label "hordeinfant"
+kill Orgrimmar Thief##42594+
+|tip They are stealthed near wooden crates.
+|tip They are all around Orgrimmar, so you can walk around and find them everywhere.
+|tip They won't be next to every pile of crates, so you'll need to search for them.
+collect 3 Horde Infantry Rations##57879 |q 26235/1 |goto 65.77,39.62
+|only if havequest(26235)
+step
+Kill enemies around this area
+collect 6 Swine Belly##57758 |q 26220/1 |goto Durotar/0 48.71,16.00
+|only if havequest(26220)
+step
+click Barrels of Kezan Rice##9664+
+|tip They look like light brown wooden barrels around this area.
+collect 6 Barrel of Kezan Rice##57878 |q 26234/1 |goto Orgrimmar/1 35.11,69.70
+|only Troll
+|only if havequest(26234)
+step
+click Barrels of Darkspear Rice##6037+
+|tip They looks like dark brown wooden barrels around this area.
+collect 6 Barrel of Darkspear Rice##57877 |q 26233/1 |goto Orgrimmar/1 35.11,69.70
+|only Orc,Scourge,Tauren,BloodElf,Goblin
+|only if havequest(26233)
+step
+talk Marogg##42506
+|tip You will only be able to complete 1 of the following quests per day.
+turnin Careful, This Fruit Bites Back##26227 |goto Orgrimmar/1 56.53,62.48 |only if havequest(26227)
+turnin Crawfish Creole##26226 |goto Orgrimmar/1 56.53,62.48 |only if havequest(26226)
+turnin Even Thieves Get Hungry##26235 |goto Orgrimmar/1 56.53,62.48 |only if havequest(26235)
+turnin Everything Is Better with Bacon##26220 |goto Orgrimmar/1 56.53,62.48 |only if havequest(26220)
+turnin Stealing From Our Own##26234 |goto Orgrimmar/1 56.53,62.48 |only Troll |only if havequest(26234)
+turnin Stealing From Our Own##26233 |goto Orgrimmar/1 56.53,62.48 |only Orc,Scourge,Tauren,BloodElf,Goblin,Pandaren |only if havequest(26233)
+step
+You Have Reached the End of the Daily Quests Available in the Orgrimmar Today
+Click Here to Return to the Start of the Daily Quest Guide |confirm |next "start"
+]])
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Classic Dailies\\Main Cities\\Thunder Bluff Cooking Daily Quests",{
+author="support@zygorguides.com",
+description="Walks you through completing the Cooking daily quests in Thunder Bluff. You must be at least level 10 to complete the quests in this guide.",
+},[[
+step
+label "start"
+talk Aska Mistrunner##3026
+accept Pining for Nuts##29358 |goto Thunder Bluff/0 50.72,53.11 |or
+accept "Magic" Mushrooms##29362 |goto 50.72,53.11 |or
+accept Mulgore Spice Bread##29363 |goto 50.72,53.11 |or
+accept Corn Mash##29364 |goto 50.72,53.11 |or
+accept Perfectly Pickled Portions##29365 |goto 50.72,53.11 |or
+step
+click Mulgore Pine Cone##208875
+|tip They look like sparkling pine cones on the ground next to the base of moss trees in Thunder Bluff.
+_<Create a Cooking Fire>_
+use the Mulgore Pine Cones##69990
+collect 30 Pine Nut##69988 |q 29358/1 |goto 48.52,62.16
+|only if havequest(29358)
+step
+Enter the cave |goto 29.49,29.82 < 5
+click "Magic" Mushroom##208878
+|tip They look like pale grey mushrooms grouped in fours all around the cave.
+collect 6 "Magic" Mushroom##69994 |q 29362/1 |goto 26.16,22.18
+|only if havequest(29362)
+step
+talk Naal Mistrunner##3027
+buy 5 Simple Flour##30817 |q 29363 |goto 51.01,52.46
+buy 5 Mild Spices##2678 |q 29363 |goto 51.01,52.46
+|only if havequest(29363)
+step
+_<Create a Cooking Fire>_
+Open Your Cooking Crafting Panel:
+_<Create 5 Spice Bread>_
+collect 5 Spice Bread##30816 |q 29363/1
+|only if havequest(29363)
+step
+use the Mulgore Spices##69997
+collect 5 Fresh Mulgore Spice Bread##69996 |q 29363/1
+|only if havequest(29363)
+step
+Click the bowls of Corn Kernels
+|tip They look like little bowls of yellow corn in almost all the huts in Thunderbluff.
+Grind #6# Bowls of Corn Kernels |q 29364/1 |goto 52.00,45.53
+|only if havequest(29364)
+step
+collect Succulent Sweet Potatoes##70000 |q 29365/1 |goto 47.96,43.08
+|tip They look like baskets in this little hut.
+|only if havequest(29365)
+step
+collect Savory Spices##70001 |q 29365/2 |goto 49.71,41.54
+|tip It looks like a bag with weeds in it
+|only if havequest(29365)
+step
+collect Fresh-Caught Fish##70002 |q 29365/3 |goto 56.01,44.47
+|tip It looks like a rope hanging down with a bunch of fish on it inside of the tent.
+|only if havequest(29365)
+step
+collect Fresh-Hunted Fowl##70003 |q 29365/4 |goto 51.02,47.12
+|tip It looks like a bird hanging upside down at the side of the tent.
+|only if havequest(29365)
+step
+talk Aska Mistrunner##3026
+turnin Pining for Nuts##29358 |goto 50.72,53.11 |or |only if havequest(29358)
+turnin "Magic" Mushrooms##29362 |goto 50.72,53.11 |or |only if havequest(29362)
+turnin Mulgore Spice Bread##29363 |goto 50.72,53.11 |or |only if havequest(29363)
+turnin Corn Mash##29364 |goto 50.72,53.11 |or |only if havequest(29364)
+turnin Perfectly Pickled Portions##29365 |goto 50.72,53.11 |or |only if havequest(29365)
+step
+You Have Reached the End of the Daily Quests Available in the Thunder Bluff Today
+Click Here to Return to the Start of the Daily Quest Guide |confirm |next "start"
+]])
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Classic Dailies\\Main Cities\\Undercity Cooking Daily Quests",{
+author="support@zygorguides.com",
+description="Walks you through completing the Cooking daily quests in Undercity. You must be at least level 10 to complete the quests in this guide.",
+},[[
+step
+label "start"
+talk Eunice Burch##4552
+accept Roach Coach##29334 |goto Undercity/0 62.15,44.89 |or
+accept Escargot A Go-Go##29333 |goto 62.15,44.89 |or
+accept Would You Like Some Flies With That?##29360 |goto 62.15,44.89 |or
+accept Lily, Oh Lily##29332 |goto 62.15,44.89 |or
+accept Fungus Among Us##29315 |goto 62.15,44.89 |or
+step
+click Cockrach Cabin##336+
+|tip Look in corners and behind crates.
+|tip They are hidden all around Undercity.
+collect 20 Plump Cockroach##69919 |q 29334/1 |goto 61.28,34.06
+|only if havequest(29334)
+step
+click Fly Covered "Meat"##208876
+|tip You will find the fly meat around the wagons in this area.
+collect 25 Bloated Fly##69989 |q 29360/1 |goto 69.26,52.38
+You can find more around [57.08,17.01]
+|only if havequest(29360)
+step
+clicknpc Brightwater Snail##53526+
+|tip They are underneath the water around the area.
+collect 8 Brightwater Snail##69918 |q 29333/1 |goto Tirisfal Glades/0 70.72,39.55
+|only if havequest(29333)
+step
+click Sewer Cap##208816
+|tip They spawn near walls around this area.
+collect 12 Sewer Cap##208816 |q 29315/1 |goto Undercity/0 36.24,30.34
+|only if havequest(29315)
+step
+click Stillwater Lily##208833
+|tip They are floating along the edge of the lake around this area.
+collect 10 Stillwater Lily##69917 |q 29332/1 |goto Tirisfal Glades/0 50.86,55.57
+|only if havequest(29332)
+step
+talk Chef Audrey##53528
+turnin Roach Coach##29334 |goto Undercity/0 62.68,35.51
+step
+talk Eunice Burch##4552
+turnin Escargot A Go-Go##29333 |goto 62.15,44.89 |only if havequest(29333)
+turnin Would You Like Some Flies With That?##29360 |goto 62.15,44.89 |only if havequest(29360)
+turnin Fungus Among Us##29315 |goto 62.15,44.89 |only if havequest(29315)
+turnin Lily, Oh Lily##29332 |goto 62.15,44.89 |only if havequest(29332)
+step
+You Have Reached the End of the Daily Quests Available in the Undercity Today
+Click Here to Return to the Start of the Daily Quest Guide |confirm |next "start"
+]])
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Classic Dailies\\Main Cities\\Main City Cooking Dailies",{
 author="support@zygorguides.com",
 description="Walks you through completing the Cooking daily quests in Orgrimmar, Thunder Bluff and Undercity. You must be at least level 10 to complete the quests in this guide.",
 },[[
@@ -36,7 +223,7 @@ step
 You have reached the end of the dailies for today.
 Click here to go back to the beginning of the Dailies Menu |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Classic Dailies\\Main Cities\\Main City Fishing Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Classic Dailies\\Main Cities\\Main City Fishing Dailies",{
 author="support@zygorguides.com",
 description="Walks you through completing the Fishing daily quests in Orgrimmar. You must be at least level 10 to complete the quests in this guide.",
 },[[
@@ -66,7 +253,7 @@ step
 You have reached the end of the dailies for today
 Click here to go back to the beginning of the Dailies Menu |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Classic Dailies\\Main Cities\\Jewelcrafting Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Classic Dailies\\Main Cities\\Jewelcrafting Dailies",{
 author="support@zygorguides.com",
 description="Walks you through completing the Jewelcrafting daily quests in Orgrimmar.",
 },[[
@@ -121,7 +308,7 @@ turnin Nibbler! No!##25158 |goto Orgrimmar 71.9,35.9
 turnin Ogrezonians in the Mood##25161 |goto Orgrimmar 71.9,35.9
 turnin The Latest Fashion!##25159 |goto Orgrimmar 71.9,35.9
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Neutral)", {
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Neutral)", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will walk you through getting Friendly reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
@@ -280,7 +467,7 @@ Repeat this process daily until you are Friendly with the Netherwing faction.  A
 You have reached the end of the dailies guide. Click here to return to the beginning of the guide. |confirm
 |next "hub"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Friendly)", {
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Friendly)", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will walk you through getting Honored reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Friendly) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
@@ -432,7 +619,7 @@ Repeat this process daily until you are Honored with the Netherwing faction.  Al
 You have reached the end of the dailies guide. Click here to return to the beginning of the guide. |confirm
 |next "hub"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Honored)", {
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Honored)", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will walk you through getting Revered reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Honored) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
@@ -595,7 +782,7 @@ Repeat this process daily until you are Revered with the Netherwing faction.  Al
 You have reached the end of the dailies guide. Click here to return to the beginning of the guide. |confirm
 |next "hub"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Revered)", {
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Revered)", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will walk you through getting Exalted reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Revered) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
@@ -753,7 +940,7 @@ Repeat this process daily until you are Exalted with the Netherwing faction.  Al
 You have reached the end of the dailies guide. Click here to return to the beginning of the guide. |confirm
 |next "hub"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Exalted) - Getting Your Netherdrake!", {
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Exalted) - Getting Your Netherdrake!", {
 author="support@zygorguides.com",
 },[[
 description This guide section will walk you through the final steps of getting your Netherdrake Mount,
@@ -784,7 +971,7 @@ accept Jorus the Cobalt Netherwing Drake##11109 |instant |or |goto 66.8,17.6
 step
 Congratulations, you are now the proud owner of a Netherdrake Mount!  Enjoy!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Netherwing Egg Hunting - Optimized Path", {
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Burning Crusade Dailies\\Netherwing Egg Hunting - Optimized Path", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will walk you through an optimized path of collecting Netherwing Eggs, which you can turn in for 250 Netherwing rep each. You must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section in order to be able to collect and turn in the Netherwing Eggs you find using this guide section.",
@@ -1008,20 +1195,20 @@ step
 This is the end of the path.
 Click here to go back to the beginning of the path. |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Shattrath Cooking Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Burning Crusade Dailies\\Shattrath Cooking Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Cooking daily quests to earn Shattrath Cooking Awards",
 },[[
 #include "H_Shattrath_Cooking_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Shattered Sun Offensive\\Dailies", {
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Burning Crusade Dailies\\Shattered Sun Offensive\\Dailies", {
 author="support@zygorguides.com",
 description="This guide section will walk you through the Shattered Sun Offensive Daily Quests.",
 },[[
 step
 #include "SSO_PreQuest_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Borean Tundra\\Aces High with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Borean Tundra\\Aces High with Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section contains the pre-quests to unlock the daily quests in the Coldarra region of Borean Tundra. The Kaskala region of Borean Tundra does not have any pre-quests to unlock the daily quest that is available there.",
 },[[
@@ -1114,7 +1301,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Borean Tundra\\Kaskala Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Borean Tundra\\Kaskala Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Kaskala region of Borean Tundra. There are no pre-quests needed to unlock the daily quest offered in this guide section.",
 },[[
@@ -1133,7 +1320,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Dalaran\\Dalaran Cooking Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Dalaran\\Dalaran Cooking Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Cooking daily quests in Dalaran.",
 },[[
@@ -1158,7 +1345,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Dalaran\\Fishing Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Dalaran\\Fishing Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Fishing daily quests in Dalaran.",
 },[[
@@ -1210,7 +1397,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Dalaran\\Jewelcrafting Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Dalaran\\Jewelcrafting Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Jewelcrafting daily quests in Dalaran.",
 },[[
@@ -1327,7 +1514,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Dragonblight\\Dragonblight Dailies plus Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Dragonblight\\Dragonblight Dailies plus Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section contains the pre-quests to unlock the daily quests in the Wyrmrest Temple region of Dragonblight. The Moa'ki Harbor region of Dragonblight does not have any pre-quests to unlock the daily quest that is available there.",
 },[[
@@ -1496,7 +1683,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Blackriver Logging Camp Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Blackriver Logging Camp Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quest in the Blackriver Logging Camp region of Grizzly Hills. There are no pre-quests needed to unlock the daily quest offered in this guide section.",
 },[[
@@ -1581,7 +1768,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Blue Sky Logging Grounds Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Blue Sky Logging Grounds Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Blue Sky Logging Grounds region of Grizzly Hills. There are no pre-quests needed to unlock the daily quests offered in this guide section.",
 },[[
@@ -1697,7 +1884,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Granite Springs Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Granite Springs Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quest in the Granite Springs region of Grizzly Hills.",
 },[[
@@ -1782,7 +1969,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Venture Bay Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Venture Bay Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Venture Bay region of Grizzly Hills. There are no pre-quests needed to unlock the daily quests offered in this guide section.",
 },[[
@@ -1912,7 +2099,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Howling Fjord\\Kamagua Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Howling Fjord\\Kamagua Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quest in the Kamagua region of Howling Fjord.",
 },[[
@@ -1985,7 +2172,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing your race's Aspirant Rank dailies in order to achieve Argent Tournament Grounds Valiant Rank with your own race.",
 },[[
@@ -2131,7 +2318,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing your race's Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion Rank with your own race. You must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section in order to have access to the quests in this guide section.",
 },[[
@@ -2736,7 +2923,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only",{
 author="support@zygorguides.com",
 description="You must be a Death Knight to do the quests in this Argent Tournament Grounds guide section. Also, you must have completed the Argent Tournament Grounds Valiant Rank Dailies guide section.",
 },[[
@@ -2828,7 +3015,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only",{
 author="support@zygorguides.com",
 description="You must NOT be a Death Knight to do the quests in this Argent Tournament Grounds guide section. Also, you must have completed the Argent Tournament Grounds Valiant Rank Dailies guide section.",
 },[[
@@ -2920,7 +3107,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Crusader Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Crusader Dailies",{
 author="support@zygorguides.com",
 description="In order to be able to complete the quests in this guide section, you must already be Exalted with the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions. Also, you must have already become a Champion with each of those factions, using the Crusader Title Guide in the Icecrown section of the Dailies guide.",
 },[[
@@ -2977,7 +3164,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Black Knight Quest Chain",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Black Knight Quest Chain",{
 author="support@zygorguides.com",
 description="This Argent Tournament Grounds guide section unlocks a Champion Rank group daily quest. We recommend you complete the Argent Tournament Grounds Valiant Rank Dailies guide section, and achieve Champion Rank with your race, before doing this quest chain. Starting this quest chain when you are already Champion Rank will allow you to do the entire quest chain without having to switch back and forth between guide sections, allowing you to get it done much faster and more efficiently. You will be unable to get some quests in this quest chain if you are not already at Champion Rank with The Argent Tournament Grounds.",
 },[[
@@ -3075,8 +3262,8 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc (1-5)",{
-next="Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc (1-5)",{
+next="Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted reputation with the Darkspear Trolls and Orgrimmar factions. You need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -3200,8 +3387,8 @@ talk Zureetha Fargaze##3145
 turnin Burning Blade Medallion##25132 |goto Durotar 43.5,67.5
 accept Report to Sen'jin Village##25133 |goto Durotar 43.5,67.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Troll (1-5)",{
-next="Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Troll (1-5)",{
+next="Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted reputation with the Darkspear Trolls and Orgrimmar factions. You need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -3601,7 +3788,7 @@ talk Vol'jin##10540
 turnin An Ancient Enemy##24814 |goto 68.9,88.7
 accept Sen'jin Village##25073 |goto 68.9,88.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted reputation with the Darkspear Trolls and Orgrimmar factions. You need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -4017,7 +4204,7 @@ To continue gaining reputation with the Darkspear Trolls faction:
 You can buy a Darkspear Tabard from Champion Uru'zin in Orgrimmar at [50.0,58.5]
 |tip Wear the Darkspear Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Undercity\\Undead (1-20)",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Undercity\\Undead (1-20)",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted reputation with the Undercity faction. You need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -4987,7 +5174,7 @@ To continue gaining reputation with the Undercity faction:
 You can buy an Undercity Tabard from Captain Donald Adams in Undercity at [63.5,48.8]
 |tip Wear the Undercity Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Thunder Bluff\\Tauren (1-13)",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Thunder Bluff\\Tauren (1-13)",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted reputation with the Thunder Bluff faction. You need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -5531,7 +5718,7 @@ map Thunder Bluff
 'To continue gaining reputation with the Thunder Bluff faction:
 .' You can buy a Thunder Bluff Tabard from Brave Tuho in Thunder Bluff at [46.7,49.9]  |tip Wear the Thunder Bluff Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Silvermoon City\\Blood Elf (1-20)",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Silvermoon City\\Blood Elf (1-20)",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted reputation with the Silvermoon City faction. You need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -6485,7 +6672,7 @@ To continue gaining reputation with the Silvermoon City faction:
 You can buy a Silvermoon City Tabard from Magistrix Nizara in Eversong Woods at [54.5,50.9]
 |tip Wear the Silvermoon City Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Orc Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Orc Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Orc race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section. You cannot complete this section if you are an Orc.",
 },[[
@@ -6594,7 +6781,7 @@ step
 Congratulations, you are now a Champion of Orgrimmar!
 |tip This is the end of the Orc Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Tauren Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Tauren Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Tauren race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.",
 },[[
@@ -6705,7 +6892,7 @@ step
 Congratulations, you are now a Champion of Thunder Bluff!
 |tip This is the end of the Tauren Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Troll Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Troll Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Troll race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.",
 },[[
@@ -6815,7 +7002,7 @@ step
 Congratulations, you are now a Champion of Sen'jin!
 |tip This is the end of the Troll Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Blood Elf Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Blood Elf Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Blood Elf race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.",
 },[[
@@ -6932,7 +7119,7 @@ goto 76.5,23.9
 .talk 33379
 ..turnin 13731
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Undead Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Undead Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Undead race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.",
 },[[
@@ -7039,7 +7226,7 @@ step
 talk Deathstalker Visceri##33373
 turnin The Valiant's Challenge##13729 |goto 76.5,24.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Orgrim's Hammer / Ymirheim / Aldur'Thar Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Orgrim's Hammer / Ymirheim / Aldur'Thar Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Orgrim's Hammer, Ymirheim, and Aldur'Thar regions of Icecrown.",
 },[[
@@ -7200,7 +7387,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Shadowvault Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Shadowvault Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Shadowvault region of Icecrown.",
 },[[
@@ -7246,7 +7433,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Death's Rise Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Death's Rise Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Death's Rise region of Icecrown.",
 },[[
@@ -7290,7 +7477,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\The Sunreavers Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\The Sunreavers Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests for The Sunreavers faction in the Argent Tournament Grounds area of Icecrown.",
 },[[
@@ -7374,7 +7561,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Sholazar Basin\\Frenzyheart Tribe Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Sholazar Basin\\Frenzyheart Tribe Dailies",{
 author="support@zygorguides.com",
 achieveid={950},
 description="This guide section will walk you through completing the daily quests for the Frenzyheart Tribe faction in Sholazar Basin.",
@@ -7706,134 +7893,20 @@ step
 Click here to go back to the start of the dailies. Note that this will not actually reset the daily quests |confirm
 |next "daily"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Sholazar Basin\\The Oracles Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Sholazar Basin\\The Oracles Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests for the The Oracles faction in Sholazar Basin.",
 },[[
 step
-#include "Oracles_Dailies"
+Proceeding to Prequests |next |condition rep('The Oracles')<=Friendly |only if rep('The Oracles')<=Friendly
+Proceeding to Dailies |next "daily" |condition rep('The Oracles')>=Friendly |only if rep('The Oracles')>=Friendly
+step
+#include "Oracles_PreQuests"
 step
 label "daily"
-During this next part you will fight a boss.
-If you kill Zepik the Gorloc Hunter during the fight, you will be able to pick up the Oracle quest, and vice versa.
-NOTE** _You must kill Artuis Slowly if you are high level_. This will decrease your Reputation with the _Frenzyheart Tribe_ to _Hated_
-|confirm always
-step
-Enter the cave here
-Follow the path inside the cave up to [72.2,57.3]
-kill Artruis the Heartless##28659 |q 12581/1 |goto 70.8,58.7
-click Artruis' Phylactery##190777
-|tip This will spawn after the fight
-turnin A Hero's Burden##12581 |goto 70.8,58.7
-talk Jaloot##28667
-accept Hand of the Oracles##12689 |goto 70.8,58.7
-accept Return of the Friendly Dryskin##12695 |goto 70.8,58.7
-If you cannot accept than you will need to wait until the next day and try again.  |confirm always
-step
-talk High-Oracle Soo-say##28027
-turnin Return of the Friendly Dryskin##12695 |goto 54.6,56.4
-step
-talk High-Oracle Soo-say##28027
-accept Appeasing the Great Rain Stone##12704 |goto 54.6,56.4
-Tell him you need to find Lafoo
-collect Lafoo's Bug Bag##38622 |q 12704 |goto 54.6,56.4
-step
-talk Oracle Soo-nee##29006
-You will only be able to accept, and turn in, 1 of these 4 daily quests per day:
-accept A Cleansing Song##12735 |or |goto 53.3,56.5
-accept Song of Fecundity##12737 |or |goto 53.3,56.5
-accept Song of Reflection##12736 |or |goto 53.3,56.5
-accept Song of Wind and Water##12726 |or |goto 53.3,56.5
-step
-talk Oracle Soo-dow##29149
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-accept Mastery of the Crystals##12761 |or |goto 54.2,53.8
-accept Power of the Great Ones##12762 |or |goto 54.2,53.8
-accept Will of the Titans##12705 |or |goto 54.2,53.8
-step
-Use Lafoo's Bug Bag if Lafoo is not standing next to you:|use Lafoo's Bug Bag##38622
-Stand on top of the twinkles of light on the ground around this area
-Lafoo will dig up the treasure
-Click the random items that appear on the ground
-collect 6 Shiny Treasures##38575|q 12704/1 |goto 52.4,53.2
-step
-Use your Chime of Cleansing in this spot |use Chime of Cleansing##39572
-kill Spirit of Atha |q 12735/1 |goto 42.7,42.8
-step
-Use your Chime of Cleansing in this spot |use Chime of Cleansing##39572
-kill Spirit of Ha-Khalan |q 12735/2 |goto 49.4,62.7
-step
-Use your Chime of Cleansing in this spot |use Chime of Cleansing##39572
-kill Spirit of Koosu |q 12735/3 |goto 48.8,70.5
-step
-Use your Horn of Fecundity next to Soaked Fertile Dirt piles |use Horn of Fecundity##39599
-Play the Song of Fecundity 8 Times |q 12737/1 |goto 26.2,37.1
-step
-Use your Didgeridoo of Contemplation at the top of The Glimmering Pillar |use Didgeridoo of Contemplation##39598
-Contemplate at the Glimmering Pillar |q 12736/1 |goto 50.0,37.4
-step
-Use your Didgeridoo of Contemplation at the top of The Suntouched Pillar |use Didgeridoo of Contemplation##39598
-Contemplate at the Suntouched Pillar |q 12736/4 |goto 33.6,52.3
-step
-Use your Didgeridoo of Contemplation at the top of The Mosslight Pillar |use Didgeridoo of Contemplation##39598
-Contemplate at the Mosslight Pillar |q 12736/2 |goto 36.4,74.7
-step
-Use your Didgeridoo of Contemplation at the top of The Skyreach Pillar |use Didgeridoo of Contemplation##39598
-Contemplate at the Skyreach Pillar |q 12736/3 |goto 53.3,79.4
-step
-Use your Drums of the Tempest to take control of Haiphoon, the Great Tempest |use Drums of the Tempest##39571
-Haiphoon has 2 forms: Water and Air
-|tip When in Haiphoon's Water form, use Haiphoon's abilities to fight Storm Revenants around this area.  When the Storm Revenants are weak, use Haiphoon's Devour Wind ability to eat them.  When in Haiphoon's Air form, use Haiphoon's abilities to fight Aqueous Spirits around this area.  When the Aqueous Spirits are weak, use Haiphoon's Devour Water ability to eat them.  After eating an elemental, you will take on Haiphoon's matching form of that elemental you last ate.  Keep repeating this process.
-Devour 3 Aqueous Spirits |q 12726/1 |goto 26.2,37.1
-Devour 3 Storm Revenants |q 12726/2 |goto 26.2,37.1
-step
-goto 33.0,75.7
-Click the Sparktouched Crystal Defenses |tip It looks like a small bamboo chest sitting at the base of a tree, next to a small hut.
-collect 1 Crystal of the Violent Storm##39694 |q 12761
-collect 1 Crystal of Unstable Energy##39693 |q 12761
-collect 1 Crystal of the Frozen Grip##39689 |q 12761
-step
-Use your Crystal of the Frozen Grip |use Crystal of the Frozen Grip##39689
-Use your Crystal of the Violent Storm |use Crystal of the Violent Storm##39694
-Use your Crystal of Unstable Energy |use Crystal of Unstable Energy##39693
-Use your crystals near Frenzyheart mobs around this area
-Kill 50 Frenzyheart Attackers |q 12761/1 |goto 22.2,78.0
-step
-Use your Dormant Polished Crystal at the top of the Lifeblood Pillar, next to the big red crystal |use Dormant Polished Crystal##39747
-collect Energized Polished Crystal##39748 |q 12762/2 |goto 65.5,60.2
-step
-Use your Energized Polished Crystal |use Energized Polished Crystal##39748
-|tip This will give you a buff that will heal you a lot every time you do damage to an enemy, so you can fight a LOT of mobs at once.
-Kill 30 Frenzyheart Attackers |q 12762/1 |goto 22.2,78.0
-step
-kill Frenzyheart Ravager##28078+, Frenzyheart Hunter##28079+
-collect 1 Tainted Crystal##39266 |q 12705 |goto 22.9,76.0
-step
-Use your Tainted Crystal next to the tall stone altar |use Tainted Crystal##39266
-Take control of Soo-holu |invehicle |c |q 12705 |goto 33.7,75.0
-step
-Use Soo-holu's abilities to kill Frenzyheart mobs around this area
-kill 50 Frenzyheart Attacker |q 12705/1 |goto 22.2,78.0
-step
-talk Lightningcaller Soo-met##28107
-turnin Mastery of the Crystals##12761 |goto 33.5,74.8
-turnin Power of the Great Ones##12762 |goto 33.5,74.8
-turnin Will of the Titans##12705 |goto 33.5,74.8
-step
-talk Oracle Soo-nee##29006
-You will only be able to accept, and turn in, 1 of these 4 daily quests per day:
-turnin A Cleansing Song##12735 |goto 53.3,56.5
-turnin Song of Fecundity##12737 |goto 53.3,56.5
-turnin Song of Reflection##12736 |goto 53.3,56.5
-turnin Song of Wind and Water##12726 |goto 53.3,56.5
-step
-talk High-Oracle Soo-say##28027
-turnin Appeasing the Great Rain Stone##12704 |goto 54.6,56.4
-step
-After you complete the dailies above, you will need to repeat them in order to attain Exalted.
-Click here to go back to the start of the dailies guide. |confirm |next "daily"
+#include "Oracles_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\The Storm Peaks\\The Storm Peaks Full Zone Quest Path (Includes Pre-Quests)",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\The Storm Peaks\\The Storm Peaks Full Zone Quest Path (Includes Pre-Quests)",{
 author="support@zygorguides.com",
 description="This guide section contains the quest path for the entire The Storm Peaks zone, which includes the pre-quests to unlock the daily quests in the Brunnhildar Village, Dun Niffelem (The Sons of Hodir), and K3 regions of The Storm Peaks.",
 },[[
@@ -9059,7 +9132,7 @@ accept Hodir's Tribute##13559 |n |goto 66.2,61.4
 Click here to return to the beginning of the Dailies |confirm
 |next "hub" |only if rep('The Sons of Hodir')<=Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\The Storm Peaks\\Dun Niffelem (The Sons of Hodir) Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\The Storm Peaks\\Dun Niffelem (The Sons of Hodir) Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Brunnhildar Village region of The Storm Peaks. If you are not Revered with The Sons of Hodir, you will not be able to accept some of the quests in this guide section. To become Revered with The Sons of Hodir, use the The Sons of Hodir (Friendly), The Sons of Hodir (Honored) - Pre-Quest, and The Sons of Hodir (Honored) guide sections in the Reputation section of the Dailies guide.",
 },[[
@@ -9143,7 +9216,7 @@ Click Hodir's Horn
 |tip It's a huge bone war horn.
 turnin Blowing Hodir's Horn##12977 |goto 64.1,65.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\The Storm Peaks\\K-3 and Brunnhildar Village Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\The Storm Peaks\\K-3 and Brunnhildar Village Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Brunnhildar Village region of The Storm Peaks.",
 },[[
@@ -9202,7 +9275,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Zul'Drak\\The Argent Stand Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Zul'Drak\\The Argent Stand Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the The Argent Stand region of Zul'Drak.",
 },[[
@@ -9327,7 +9400,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Speed Gold Runs\\Level 80 Dailies Speed Gold Run (No ATG Dailies)",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Speed Gold Runs\\Level 80 Dailies Speed Gold Run (No ATG Dailies)",{
 author="support@zygorguides.com",
 description="This guide section will walk you through a 25 daily quest speed gold run at level 80, without including any Argent Tournament Grounds dailies. To be able to complete all the quests in this guide section, you must have completed the The Storm Peaks Full Zone Guide (Includes Pre-Quests), The Sons of Hodir Reputation (Honored), and Icecrown Full Zone Quest Path (Includes Regular Dailies Pre-Quests) guide sections.",
 },[[
@@ -9643,7 +9716,7 @@ talk Chief Engineer Copperclaw##30825
 turnin Volatility##13261
 turnin Retest Now##13357
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Speed Gold Runs\\Level 80 Dailies Speed Gold Run (With ATG Dailies)",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Wrath of the Lich King Dailies\\Speed Gold Runs\\Level 80 Dailies Speed Gold Run (With ATG Dailies)",{
 author="support@zygorguides.com",
 description="This guide section will walk you through a 25 daily quest speed gold run at level 80. To be able to complete all the quests in this guide section, you must have completed the The Storm Peaks Full Zone Guide (Includes Pre-Quests), The Sons of Hodir Reputation (Honored), and Icecrown Full Zone Quest Path (Includes Regular Dailies Pre-Quests) guide sections.",
 },[[
@@ -10119,2641 +10192,7 @@ turnin Breakfast Of Champions##14092 }goto 76.1,24.0
 turnin Gormok Wants His Snobolds##14141 }goto 76.1,24.0
 turnin What Do You Feed a Yeti, Anyway?##14145 }goto 76.1,24.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Reputation\\Argent Crusade", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will tell you the various ways you can gain reputation with the Argent Crusade faction with this guide.",
-},[[
-step
-map Icecrown
-To gain reputation with the Argent Crusade faction:
-Complete the Icecrown Full Zone Quest Path guide section in the Icecrown section.
-Complete the Slaves of Saronite daily quest in the Orgrim's Hammer / Ymirheim / Aldur'Thar Dailies guide section in the Icecrown section.
-|tip Do this daily, if you'd like.
-Complete the Zul'Drak Pre-Quests guide section in the Zul'Drak section.
-Complete the The Argent Stand Dailies guide section in the Zul'Drak section.
-|tip Do this daily, if you'd like.
-Complete the ATG Champion Rank Dailies - Non-Death Knight Only guide section in the Icecrown section.
-|tip Do this daily, if you'd like.  You can only do this if you are not a Death Knight.
-Once you earn Friendly reputation with the Argent Crusade faction, you can buy the Tabard of the Argent Crusade.
-|tip Wear the Tabard of the Argent Crusade and use the Dungeon Finder tool to complete random Lich King Heroics.  You will gain reputation with the Argent Crusade for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
-You can buy the Tabard of the Argent Crusade by talking to Veteran Crusader Aliocha Segard at [Icecrown 87.5,75.6]
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Reputation\\Kirin Tor", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will tell you the various ways you can gain reputation with the Kirin Tor faction with this guide.",
-},[[
-step
-map Dalaran
-To gain reputation with the Kirin Tor faction:
-Complete the Cooking Dailies guide section in the Dalaran section.
-|tip Do this daily, if you'd like.
-Complete the Fishing Dailies guide section in the Dalaran section.
-|tip Do this daily, if you'd like.
-Complete the Jewelcrafting Dailies guide section in the Dalaran section.
-|tip Do this daily, if you'd like.
-Once you earn Friendly reputation with the Kirin Tor faction, you can buy the Tabard of the Kirin Tor.
-|tip Wear the Tabard of the Kirin Tor and use the Dungeon Finder tool to complete random Lich King Heroics.  You will gain reputation with the Kirin Tor for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
-You can buy the Tabard of the Argent Crusade by talking to Archmage Alvareaux at [Dalaran 25.2,47.8]
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Reputation\\Knights of the Ebon Blade", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will tell you the various ways you can gain reputation with the Knights of the Ebon Blade faction with this guide.",
-},[[
-step
-map Icecrown
-To gain reputation with the Knights of the Ebon Blade faction:
-Complete the Icecrown Full Zone Quest Path guide section in the Icecrown section.
-Complete the Shadowvault Dailies guide section in the Icecrown section.
-|tip Do this daily, if you'd like.
-Complete the Death's Rise Dailies guide section in the Icecrown section.
-|tip Do this daily, if you'd like.
-Complete the ATG Champion Rank Dailies - Death Knight Only guide section in the Icecrown section.
-|tip Do this daily, if you'd like.  You can only do this if you are a Death Knight.
-Once you earn Friendly reputation with the Knights of the Ebon Blade faction, you can buy the Tabard of the Ebon Blade.
-|tip Wear the Tabard of the Ebon Blade and use the Dungeon Finder tool to complete random Lich King Heroics.  You will gain reputation with the Knights of the Ebon Blade for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
-You can buy the Tabard of the Ebon Blade by talking to Duchess Mynx at [Icecrown 43.4,20.6]
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Reputation\\The Kalu'ak", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will tell you the various ways you can gain reputation with The Kalu'ak faction with this guide.",
-},[[
-step
-To gain reputation with The Kalu'ak faction:
-Complete the Kaskala Dailies guide section in the Borean Tundra section.
-|tip Do this daily, if you'd like.
-Complete the Moa'ki Harbor Dailies guide section in the Dragonblight section.
-|tip Do this daily, if you'd like.
-Complete the Kamagua Dailies guide section in the Howling Fjord section.
-|tip Do this daily, if you'd like.
-There is no tabard for The Kalu'ak available at this time.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Reputation\\The Sons of Hodir", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will tell you the various ways you can gain reputation with The Sons of Hodir faction with this guide.",
-},[[
-step
-To gain reputation with The Sons of Hodir faction:
-Complete The Storm Peaks Full Zone Quest Path guide section in The Storm Peaks section.
-Complete The Sons of Hodir Reputation guide sections in The Storm Peaks section.
-|tip Do this daily, if you'd like.
-There is no tabard for The Sons of Hodir available at this time.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Reputation\\The Wyrmrest Accord", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will tell you the various ways you can gain reputation with The Wyrmrest Accord faction with this guide.",
-},[[
-step
-map Dragonblight
-To gain reputation with The Wyrmrest Accord faction:
-Complete the Coldarra Dailies guide section in the Borean Tundra section.
-|tip Do this daily, if you'd like.
-Complete the Wyrmrest Temple Dailies guide section in the Dragonblight section.
-|tip Do this daily, if you'd like.
-Once you earn Friendly reputation with The Wyrmrest Accord faction, you can buy the Tabard of the Wyrmrest Accord.
-|tip Wear the Tabard of the Wyrmrest Accord and use the Dungeon Finder tool to complete random Lich King Heroics.  You will gain reputation with The Wyrmrest Accord for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
-You can buy the Tabard of the Wyrmrest Accord by talking to Cielstrasza at [Dragonblight 60.0,53.0]
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Reputation\\The Hand of Vengeance", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will tell you the various ways you can gain reputation with The Hand of Vengeance faction with this guide.",
-},[[
-step
-To gain reputation with The Hand of Vengeance faction:3
-Complete the ATG Champion Rank Dailies - Death Knight Only guide section in the Icecrown section.
-|tip Do this daily, if you'd like.  You can only do this if you are a Death Knight.
-Complete the ATG Champion Rank Dailies - Non-Death Knight Only guide section in the Icecrown section.
-|tip Do this daily, if you'd like.  You can only do this if you are not a Death Knight.
-Complete the Orgrim's Hammer / Ymirheim / Aldur'Thar Dailies guide section in the Icecrown section.
-|tip Do this daily, if you'd like.  All of the daily quests in the Orgrim's Hammer / Ymirheim / Aldur'Thar Dailies guide section won't give The Hand of Vengeance reputation, but many will.
-There is no tabard for The Hand of Vengeance available at this time.
-|tip Although there is no tabard for The Hand of Vengeance at this time, you can still gain reputation with The Hand of Vengeance by using the Dungeon Finder tool to complete random Lich King Heroics while not wearing any tabard at all.  You will gain reputation with The Hand of Vengeance for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Reputation\\The Sunreavers", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will tell you the various ways you can gain reputation with The Sunreavers faction with this guide.",
-},[[
-step
-To gain reputation with The Sunreavers faction:
-Complete the Argent Tournament Grounds Dailies guide sections in the Icecrown section.
-|tip Do these daily, if you'd like.
-Complete the guide sections in the Crusader Title section in the Icecrown section.
-|tip Do these daily, if you'd like.
-There is no tabard for The Sunreavers available at this time.
-|tip Although there is no tabard for The Sunreavers at this time, you can still gain reputation with The Sunreavers by using the Dungeon Finder tool to complete random Lich King Heroics while not wearing any tabard at all.  You will gain reputation with The Sunreavers for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Reputation\\The Taunka", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will tell you the various ways you can gain reputation with The Taunka faction with this guide.",
-},[[
-step
-To gain reputation with The Taunka faction:
-Complete The Storm Peaks Full Zone Quest Path guide section in The Storm Peaks section.
-There is no tabard for The Taunka available at this time.
-|tip Although there is no tabard for The Taunka at this time, you can still gain reputation with The Taunka by using the Dungeon Finder tool to complete random Lich King Heroics while not wearing any tabard at all.  You will gain reputation with The Taunka for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Reputation\\Warsong Offensive", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will tell you the various ways you can gain reputation with the Warsong Offensive faction with this guide.",
-},[[
-step
-To gain reputation with the Warsong Offensive faction:
-Complete the Blackriver Logging Camp Dailies guide section in the Grizzly Hills section.
-|tip Do this daily, if you'd like.
-Complete the Blue Sky Logging Grounds Dailies guide section in the Grizzly Hills section.
-|tip Do this daily, if you'd like.
-Complete the Orgrim's Hammer / Ymirheim / Aldur'Thar Dailies guide section in the Icecrown section.
-|tip Do this daily, if you'd like.  All of the daily quests in the Orgrim's Hammer / Ymirheim / Aldur'Thar Dailies guide section won't give Warsong Offensive reputation, but many will.
-There is no tabard for the Warsong Offensive available at this time.
-|tip Although there is no tabard for the Warsong Offensive at this time, you can still gain reputation with the Warsong Offensive by using the Dungeon Finder tool to complete random Lich King Heroics while not wearing any tabard at all.  You will gain reputation with the Warsong Offensive for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Reputation\\Frenzyheart Tribe", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will tell you the various ways you can gain reputation with the Frenzyheart Tribe faction with this guide.",
-},[[
-step
-To gain reputation with the Frenzyheart Tribe faction:
-Complete the Frenzyheart Tribe Dailies guide section in the Sholazar Basin section.
-|tip Do this daily, if you'd like.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Reputation\\The Oracles", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will tell you the various ways you can gain reputation with The Oracles faction with this guide.",
-},[[
-step
-To gain reputation with The Oracles faction:
-Complete The Oracles Dailies guide section in the Sholazar Basin section.
-|tip Do this daily, if you'd like.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Lunar Festival\\Lunar Festival Main Questline",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Lunar Festival') end,
-description="This guide section will walk you through completing the main questline for the Lunar Festival event.",
-},[[
-#include "Lunar_Festival_Main_Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Lunar Festival\\Lunar Festival Optimized Elders Path",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Lunar Festival') end,
-description="This guide section will walk you through an optimized path for honoring the elders that are spread out all over Azeroth for the Lunar Festival event.",
-},[[
-#include "Lunar_Festival_Elder_Paths"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Lunar Festival\\\Lunar Festival",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Lunar Festival') end,
-description="This guide section will walk you through completing the Achievement for the Lunar Festival event.",
-},[[
-#include "Lunar_Festival_Achievements"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Love is in the Air\\Love is in the Air Main Questline",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Love is in the Air') end,
-description="This guide section will walk you through completing the main questline for the Love is in the Air event.",
-},[[
-#include "LiitA_Main_Questline"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Love is in the Air\\Love is in the Air Dailies",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Love is in the Air') end,
-description="This guide section will walk you through completing the Love is in the Air event daily quests.",
-},[[
-#include "LiitA_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Love is in the Air\\Love is in the Air Achievements",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Love is in the Air') end,
-description="This guide section will walk you through completing the Love is in the Air event achievements.",
-},[[
-#include "LiitA_Achievements"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Noblegarden\\Noblegarden Quests and Dailies",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Noblegarden') end,
-description="This guide section will walk you through completing the quests and dailies for the Noblegarden event.",
-},[[
-step
-talk Tauren Commoner##19176
-accept Spring Gatherers##13483 |goto Thunder Bluff/0 40.8,56.1
-step
-talk Spring Gatherer##32798
-turnin Spring Gatherers##13483 |goto Mulgore/0 46.93,59.53
-accept The Great Egg Hunt##13479 |goto Mulgore/0 46.93,59.53
-step
-talk Noblegarden Merchant##32837
-accept A Tisket, a Tasket, a Noblegarden Basket##13503 |goto 47.1,59.9
-step
-click Brightly Colored Egg##113768+
-|tip They look like small colored eggs found on the ground around Bloodhoof Village. There is at least one available at all times.
-|tip If Bloodhoof Village is too crowded with other players looking for eggs, you can also find them at Razor Hill, Falconwing Square, and Brill.
-use Brightly Colored Egg##45072
-collect 20 Brightly Colored Shell Fragment##44806 |q 13479/1 |goto 47.35,58.22
-collect 10 Noblegarden Chocolate##44791 |q 13503/1 |goto 47.35,58.22
-step
-talk Noblegarden Merchant##32837
-turnin A Tisket, a Tasket, a Noblegarden Basket##13503 |goto 47.1,59.9
-step
-talk Spring Gatherer##32798
-turnin The Great Egg Hunt##13479 |goto 46.93,59.53
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Noblegarden\\Noblegarden Achievements",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Noblegarden') end,
-description="This guide section will walk you through getting all 12 achievements for the Noblegarden event.",
-},[[
-#include "Noblegarden_Achievements"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Children's Week\\Children's Week Orgrimmar Quests",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent("Children's Week") end,
-startlevel=10,
-description="This guide section will walk you through completing the Orgrimmar questline for the Children's Week event.",
-},[[
-#include "Children's_Week_Ogrimmar"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Children's Week\\Children's Week Shattrath Quests",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent("Children's Week") end,
-startlevel=60,
-description="This guide section will walk you through completing the Shattrath questline for the Children's Week event.",
-},[[
-#include "Children's_Week_Shattrath"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Children's Week\\Children's Week Dalaran Oracles Quests",{
-author="support@zygorguides.com",
-condition_valid=function() return rep('The Oracles')>=Neutral  end,
-condition_valid_msg=" You're not Neutral with The Oracles.",
-condition_suggested=function() return isevent("Children's Week") end,
-startlevel=70,
-description="This guide section will walk you through completing the Dalaran Oracles questline for the Children's Week event.",
-},[[
-#include "Children's_Week_Oracles_Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Children's Week\\Children's Week Dalaran Wolvar Quests",{
-author="support@zygorguides.com",
-condition_valid=function() return rep('Frenzyheart Tribe')>=Neutral  end,
-condition_valid_msg=" You're not Neutral by the Frenzyheart Tribe.",
-condition_suggested=function() return isevent("Children's Week") end,
-startlevel=70,
-description="This guide section will walk you through completing the Dalaran Wolvar questline for the Children's Week event.",
-},[[
-#include "Children's_Week_Wolvar_Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Children's Week\\Children's Week Achievements",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent("Children's Week") end,
-startlevel=10,
-description="This guide section will walk you through completing the Achievements for the Children's Week event.",
-},[[
-#include "Children's_Week_Achievements"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-startlevel=80,
-description="This guide section will walk you through completing the quests for the Midsummer Fire Festival event.",
-},[[
-#include "MFF_Main_Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Dailies",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-startlevel=80,
-description="This guide section will walk you through completing the dailies for the Midsummer Fire Festival event.",
-},[[
-step
-talk Master Flame Eater##26113
-accept More Torch Tossing##11926 |goto Orgrimmar 46.6,37.2
-accept More Torch Catching##11925 |goto Orgrimmar 46.6,37.2
-step
-|use the Practice Torches##34862
-|tip Throw them at the Torch Target Braziers nearby
-|tip You must throw the torches at the correct braziers.
-|tip Throw the torches at the Torch Target Braziers when they have a floating red arrow point down above them.
-Hit 20 Braziers |q 11926/1 |goto 46.3,36.7
-step
-|use the Unlit Torches##34833
-|tip Use it next to the bonfire.
-|tip As soon as you light the torch, it will fly in the air.
-|tip There will be a small round shadow on the ground indicating where the torch is flying.
-|tip Follow that shadow and catch the torch. When you catch the torch, it will be thrown in the air again.
-|tip Follow the shadow again and catch the torch. Do this until you've caught the torch 10 times in a row without it hitting the ground.
-Catch 10 torches in a row |q More Torch Catching##11925/1 |goto 46.3,36.7
-step
-talk Master Flame Eater##26113
-turnin More Torch Tossing##11926 |goto Orgrimmar 46.6,37.2
-turnin More Torch Catching##11925 |goto Orgrimmar 46.6,37.2
-step
-talk Earthen Ring Elder##26221
-accept Striking Back##11917 |goto Orgrimmar 47.27,37.86 |only if level >= 22 and level <= 31
-accept Striking Back##11947 |goto Orgrimmar 47.27,37.86 |only if level >= 32 and level <= 42
-accept Striking Back##11948 |goto Orgrimmar 47.27,37.86 |only if level >= 43 and level <= 50
-accept Striking Back##11952 |goto Orgrimmar 47.27,37.86 |only if level >= 51 and level <= 59
-accept Striking Back##11953 |goto Orgrimmar 47.27,37.86 |only if level >= 60 and level <= 63
-accept Striking Back##11954 |goto Orgrimmar 47.27,37.86 |only if level >= 64
-step
-kill Frostwave Lieutenant##26116 |q Striking Back##11917/1 |goto Felwood 9.6,12.2 |only if havequest(11917)
-kill Hailstone Lieutenant##26178 |q Striking Back##11947/1 |goto Desolace 40.4,30.2 |only if havequest(11947)
-kill Chillwind Lieutenant##26204 |q Striking Back##11948/1 |goto Northern Stranglethorn 21.6,41.8 |only if havequest(11948)
-kill Frigid Lieutenant##26214 |q Striking Back##11952/1 |goto Searing Gorge 16.2,36.6 |only if havequest(11952)
-kill Glacial Lieutenant##26215 |q Striking Back##11953/1 |goto Silithus 68.4,19.2 |only if havequest(11953)
-click Ice Stone##188149 |only if havequest(11954)
-kill Glacial Templar##26216 |q Striking Back##11954/1 |goto Hellfire Peninsula 84.2,47.0 |only if havequest(11954)
-step
-talk Earthen Ring Elder##26221
-accept Striking Back##11917 |goto Orgrimmar 47.27,37.86 |only if level >= 22 and level <= 31
-accept Striking Back##11947 |goto Orgrimmar 47.27,37.86 |only if level >= 32 and level <= 42
-accept Striking Back##11948 |goto Orgrimmar 47.27,37.86 |only if level >= 43 and level <= 50
-accept Striking Back##11952 |goto Orgrimmar 47.27,37.86 |only if level >= 51 and level <= 59
-accept Striking Back##11953 |goto Orgrimmar 47.27,37.86 |only if level >= 60 and level <= 63
-turnin Striking Back##11954 |goto Orgrimmar 47.27,37.86 |only if level >= 64
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Midsummer Achievement Guide",{
-author="support@zygorguides.com",
-achieveid={271,263,1036,1037,1145},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-startlevel=80,
-keywords={"The","Flame","Warden","Ice","the","Frost","Lord","Burning","Hot","Pole","Dance","King","of","the","Fire","Festival","Torch","Juggler","Fires","of","Azeroth","Desecration","of","the","Alliance"},
-description="This guide section will walk you through completing the Achievements for the Midsummer Fire Festival event: - Ice the Frost Lord - Burning Hot Pole Dance - King of the Fire Festival - The Fires of Azeroth - Desecration of the Alliance",
-},[[
-step
-talk Midsummer Merchant##26124
-|tip If you can't buy these be sure to complete the quests Torch Tossing and More Torch Tossing in our Midsummer Fire Festival Main Questline and Dailies guides.
-buy 15 Juggling Torch##34599 |goto Orgrimmar 47.6,37.8
-|only if not achieved(272)
-step
-|use the Juggling Torch##34599
-|tip You will need to juggle torches 40 times.
-|tip Place the Juggling Torches on your action bar.
-|tip Place the marker over your character and spam toss as fast as you can.
-|tip You must juggle them all in under 15 seconds.
-Earn the "Torch Juggler" Achievement |achieve 272 |goto Dalaran 36.8,44.1
-step
-kill Lord Ahune##25740
-|tip Open up your Dungeon Finder [I], and queue for The Frost Lord Ahune battle.
-|tip You will need to be high enough to enter the dungeon queue.
-Earn the "Ice the Frost Lord" Achievement |achieve 263
-step
-talk Midsummer Merchant##26124
-buy 1 Mantle of the Fire Festival##23324 |goto Undercity 68.1,11.2
-step
-talk Midsummer Merchant##26124
-buy 1 Vestment of Summer##34685 |goto 68.1,11.2
-step
-talk Midsummer Merchant##26124
-buy 1 Sandals of Summer##34683 |goto 68.1,11.2
-step
-Equip your Mantle of the Fire Festival |use Mantle of the Fire Festival##23324
-Equip your Vestment of Summer |use Vestment of Summer##34685
-Equip your Sandals of Summer |use Sandals of Summer##34683
-click Ribbon Pole##181605
-|tip It looks like a tall metal pole with a small fire on top of it
-|tip Let your character spin around for 1 minute.
-Earn the "Burning Hot Pole Dance" Achievement |achieve 271 |goto Undercity 68.0,14.4
-step
-click Flame of Darnassus##181334
-collect Flame of Darnassus##23184 |n
-|use the Flame of Darnassus##23184
-|tip It is recommended that you be level capped when attempting to complete this guide step.
-accept Stealing Darnassus's Flame##9332 |goto Darnassus 64.0,47.1
-step
-click Flame of the Exodar##188128
-collect Flame of the Exodar##35569 |n
-|use the Flame of the Exodar##35569
-|tip It is recommended that you be level capped when attempting to complete this guide step.
-accept Stealing the Exodar's Flame##11933 |goto The Exodar 41.6,26.9
-step
-click Flame of Stormwind##181332
-collect Flame of Stormwind##23182 |n
-|use the Flame of Stormwind##23182
-|tip It is recommended that you be level capped when attempting to complete this guide step.
-accept Stealing Stormwind's Flame##9330 |goto Stormwind City 50.0,72.6
-step
-click Flame of Ironforge##181333
-collect Flame of Ironforge##23183 |n
-|use the Flame of Ironforge##23183
-|tip It is recommended that you be level capped when attempting to complete this guide step.
-accept Stealing Ironforge's Flame##9331 |goto Ironforge 64.3,26.0
-step
-talk Festival Talespinner##16818
-turnin Stealing Darnassus's Flame##9332 |goto Orgrimmar 47.8,38.6
-turnin Stealing the Exodar's Flame##11933 |goto 47.8,38.6
-turnin Stealing Stormwind's Flame##9330 |goto 47.8,38.6
-turnin Stealing Ironforge's Flame##9331 |goto 47.8,38.6
-accept A Thief's Reward##9339 |instant
-Earn the "King of the Fire Festival" Achievement |achieve 1145
-step
-Load the "Flame Keeper of Eastern Kingdoms" guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Eastern Kingdoms"
-|tip Click the line above to load the guide.
-Earn the "Flame Keeper of Eastern Kingdoms" Achievement |achieve 1025
-step
-Load the "Flame Keeper of Kalimdor" guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Kalimdor"
-|tip Click the line above to load the guide.
-Earn the "Flame Keeper of Kalimdor" Achievement |achieve 1026
-step
-Load the "Flame Keeper of Outland" guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Outland"
-|tip Click the line above to load the guide.
-Earn the "Flame Keeper of Outland" Achievement |achieve 1027
-step
-Load the "Flame Keeper of Northrend" guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Northrend"
-|tip Click the line above to load the guide.
-Earn the "Flame Keeper of Northrend" Achievement |achieve 6009
-step
-Load the "Flame Keeper of Cataclysm" guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Cataclysm"
-|tip Click the line above to load the guide.
-Earn the "Flame Keeper of Cataclysm" Achievement |achieve 6012
-step
-Earn the "Fires of Azeroth" Achievement |achieve 1036
-step
-Load the "Extinguishing Eastern Kingdoms" guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Eastern Kingdoms"
-|tip Click the line above to load the guide.
-Earn the "Extinguishing Eastern Kingdoms" Achievement |achieve 1031
-step
-Load the "Extinguishing Kalimdor" guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Kalimdor"
-|tip Click the line above to load the guide.
-Earn the "Extinguishing Kalimdor" Achievement |achieve 1032
-step
-Load the "Extinguishing Outland" guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Outland"
-|tip Click the line above to load the guide.
-Earn the "Extinguishing Outland" Achievement |achieve 1033
-step
-Load the "Extinguishing Northrend" guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Northrend"
-|tip Click the line above to load the guide.
-Earn the "Extinguishing Northrend" Achievement |achieve 6010
-step
-Load the "Extinguishing the Cataclysm" guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing the Cataclysm"
-|tip Click the line above to load the guide.
-Earn the "Extinguishing the Cataclysm" Achievement |achieve 6014
-step
-Earn the "Desecration of the Alliance" Achievement |achieve 1037
-step
-_Congratulations!_
-You Earned "The Flame Keeper" Achievement
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Eastern Kingdoms",{
-achieveid={1031},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-keywords={"Extinguishing","Eastern","Kingdoms"},
-description="This guide will walk you through obtaining the Extinguishing Eastern Kingdoms achievement.",
-},[[
-#include "MFF_Extinguishing_Eastern_Kingdoms"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Kalimdor",{
-achieveid={1032},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-keywords={"Extinguishing","Kalimdor"},
-description="This guide will walk you through obtaining the Extinguishing Kalimdor achievement.",
-},[[
-#include "MFF_Extinguishing_Kalimdor"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Outland",{
-achieveid={1033},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-keywords={"Extinguishing","Outland"},
-description="This guide will walk you through obtaining the Extinguishing Outland achievement.",
-},[[
-#include "MFF_Extinguishing_Outland"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Northrend",{
-achieveid={6010},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-keywords={"Extinguishing","Northrend"},
-description="This guide will walk you through obtaining the Extinguishing Northrend achievement.",
-},[[
-#include "MFF_Extinguishing_Northrend"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing the Cataclysm",{
-achieveid={6014},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-keywords={"Extinguishing","the","Cataclysm"},
-description="This guide will walk you through obtaining the Extinguishing the Cataclysm achievement.",
-},[[
-#include "MFF_Extinguishing_Cataclysm"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Pandaria",{
-achieveid={8043},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-keywords={"Extinguishing","Pandaria"},
-description="This guide will walk you through obtaining the Extinguishing Pandaria achievement.",
-},[[
-#include "MFF_Extinguishing_Pandaria"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Eastern Kingdoms",{
-achieveid={1025},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-keywords={"Flame","Keeper","of","Eastern","Kingdoms"},
-description="This guide will walk you through obtaining the Flame Keeper of Eastern Kingdoms achievement.",
-},[[
-#include "MFF_Extinguishing_Eastern_Kingdoms"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Kalimdor",{
-achieveid={1026},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-keywords={"Flame","Keeper","of","Kalimdor"},
-description="This guide will walk you through obtaining the Flame Keeper of Kalimdor achievement.",
-},[[
-#include "MFF_Extinguishing_Kalimdor"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Outland",{
-achieveid={1027},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-keywords={"Flame","Keeper","of","Outland"},
-description="This guide will walk you through obtaining the Flame Keeper of Outland achievement.",
-},[[
-#include "MFF_Extinguishing_Outland"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Northrend",{
-achieveid={6009},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-keywords={"Flame","Keeper","of","Northrend"},
-description="This guide will walk you through obtaining the Flame Keeper of Northrend achievement.",
-},[[
-#include "MFF_Extinguishing_Northrend"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Cataclysm",{
-achieveid={6012},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-keywords={"Flame","Keeper","of","Cataclysm"},
-description="This guide will walk you through obtaining the Flame Keeper of Cataclysm achievement.",
-},[[
-#include "MFF_Extinguishing_Cataclysm"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Pandaria",{
-achieveid={8044},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-keywords={"Flame","Keeper","of","Pandaria"},
-description="This guide will walk you through obtaining the Flame Keeper of Pandaria achievement.",
-},[[
-#include "MFF_Extinguishing_Pandaria"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Draenor",{
-achieveid={11284},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-keywords={"Flame","Keeper","of","Draenor"},
-description="This guide will walk you through obtaining the Flame Keeper of Draenor achievement.",
-},[[
-step
-talk Frostfire Ridge Flame Keeper##114499
-accept Honor the Flame##44580 |goto Frostfire Ridge/0 72.61,65.08 |instant
-step
-talk Gorgrond Flame Guardian##114491
-accept Honor the Flame##44573 |goto Gorgrond/0 43.92,93.78
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44573 |goto 43.92,93.83
-step
-talk Talador Flame Guardian##114489
-accept Honor the Flame##44571 |goto Talador/0 43.46,71.81
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44571 |goto 43.51,71.81
-step
-talk Spires of Arak Flame Guardian##114488
-accept Honor the Flame##44570 |goto Spires of Arak/0 48.01,44.72
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44570 |goto 48.03,44.76
-step
-talk Nagrand Flame Guardian##114490
-accept Honor the Flame##44572 |goto Nagrand D/0 80.54,47.71
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44572 |goto 80.58,47.67
-step
-_Congratulations_
-You haved eared the Flame Keeper of Draenor Achievement
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of the Broken Isles",{
-achieveid={11282},
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-keywords={"Flame","Keeper","of","the","Broken","Isles"},
-description="This guide will walk you through obtaining the Flame Keeper of the Broken Isles achievement.",
-},[[
-step
-talk Azsuna Flame Guardian##114492
-accept Honor the Flame##44574 |goto Azsuna/0 48.29,29.66
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44574 |goto 48.29,29.66
-step
-talk Val'Sharah Flame Guardian##114493
-accept Honor the Flame##44575 |goto Val'sharah/0 44.88,57.94
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44575 |goto 44.85,57.90
-step
-talk Suramar Flame Keeper##114518
-accept Honor the Flame##44614 |goto Suramar/0 30.47,45.38
-step
-talk Highmountain Flame Guardian##114494
-accept Honor the Flame##44576 |goto Highmountain/0 55.51,84.45
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44576 |goto 55.55,84.45
-step
-talk Stormheim Flame Guardian##114496
-accept Honor the Flame##44577 |goto Stormheim/0 32.49,42.14
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44577 |	goto 32.51,42.09
-step
-_Congratulations_
-You haved eared the Flame Keeper of the Broken Isles Achievement
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Bonfires",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Midsummer Fire Festival') end,
-startlevel=80,
-description="This guide section will walk you through finding all of the bonfires for the Midsummer Fire Festival event.",
-},[[
-step
-talk Stranglethorn Vale Flame Keeper##25920
-accept Honor the Flame##11837 |goto The Cape of Stranglethorn 50.4,70.4 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11761 |goto 51.8,67.4 |instant
-step
-talk Northern Stranglethorn Vale Flame Keeper##51582
-accept Honor the Flame##28924 |goto Northern Stranglethorn 40.6,50.9 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##28910 |goto 51.7,63.3 |instant
-step
-talk Zidormi##88206
-Tell her _"Show me the Blasted Lands before the invasion."_
-Go Back in Time |havebuff Interface\Icons\spell_mage_altertime |goto Blasted Lands/0 48.1,7.3 |future |q 11737
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11737 |goto Blasted Lands 55.2,15.3 |instant
-step
-talk Blasted Lands Flame Keeper##51603
-accept Honor the Flame##28930 |goto Blasted Lands 46.2,13.8 |instant
-step
-talk Swamp of Sorrows Flame Keeper##25941
-accept Honor the Flame##11857 |goto Swamp of Sorrows 76.3,13.8 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##28916 |goto 70.3,14.4 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11743 |goto Duskwood 73.4,55.0 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11581 |goto Westfall 45.1,62.3 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11745 |goto Elwynn Forest 43.1,63.0 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11751 |goto Redridge Mountains 24.5,53.8 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11739 |goto Burning Steppes 68.7,60.1 |instant
-step
-talk Burning Steppes Flame Keeper##25927
-accept Honor the Flame##11844 |goto 51.1,29.2 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##28912 |goto Badlands 18.7,56.0 |instant
-step
-talk Badlands Flame Keeper##25925
-accept Honor the Flame##11842 |goto 23.1,37.4 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11749 |goto Loch Modan 32.4,40.2 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11742 |goto Dun Morogh 53.6,44.8 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11757 |goto Wetlands 13.2,47.1 |instant
-step
-talk Twilight Highlands Flame Keeper##51651
-accept Honor the Flame##28946 |goto Twilight Highlands 53.1,46.2 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##28943 |goto 47.3,28.3 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11732 |goto Arathi Highlands 44.6,46.1 |instant
-step
-talk Arathi Flame Keeper##25923
-accept Honor the Flame##11840 |goto 69.3,42.6 |instant
-step
-talk Hillsbrad Flame Keeper##25935
-accept Honor the Flame##11853 |goto Hillsbrad Foothills 54.7,50.1 |instant
-step
-talk Silverpine Forest Flame Keeper##25939
-accept Honor the Flame##11584 |goto Silverpine Forest 49.6,38.2 |instant
-step
-talk Eversong Woods Flame Keeper##25931
-accept Honor the Flame##11848 |goto Eversong Woods 46.4,50.6 |instant
-step
-talk Ghostlands Flame Keeper##25933
-accept Honor the Flame##11850 |goto Ghostlands 46.9,26.3 |instant
-step
-talk The Hinterlands Flame Keeper##25944
-accept Honor the Flame##11860 |goto The Hinterlands 76.7,75.0 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11755 |goto 14.5,49.9 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11756 |goto Western Plaguelands 43.6,82.5 |instant
-step
-talk Western Plaguelands Flame Keeper##51604
-accept Honor the Flame##28931 |goto Western Plaguelands 29.2,57.4 |instant
-step
-talk Tirisfal Glades Flame Keeper##25946
-accept Honor the Flame##11862 |goto Tirisfal Glades 57.2,51.7 |instant
-step
-talk Mulgore Flame Keeper##25936
-accept Honor the Flame##11852  |goto Mulgore 51.8,59.3 |instant
-step
-talk Southern Barrens Flame Keeper##51587
-accept Honor the Flame##28927 |goto Southern Barrens,40.9,67.8 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##28913 |goto 48.3,72.4 |instant
-step
-talk Dustwallow Marsh Flame Keeper##25930
-accept Honor the Flame##11847 |goto Dustwallow Marsh 33.4,30.9 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11744 |goto 62.1,40.3 |instant
-step
-talk Tanaris Flame Keeper##25921
-accept Honor the Flame##11838 |goto Tanaris 49.8,27.9 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11762 |goto 52.7,30.1 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##28921 |goto Un'Goro Crater 60.0,62.9 |instant
-step
-talk Un'Goro Flame Keeper##51607
-accept Honor the Flame##28933 |goto Un'Goro Crater 56.3,66.3 |instant
-step
-talk Uldum Flame Keeper##51652
-accept Honor the Flame##28949 |goto Uldum 53.15,34.54 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##28947 |goto 53.5,32.0 |instant
-step
-talk Silithus Flame Keeper##25919
-accept Honor the Flame##11836 |goto Silithus,50.9,41.3 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11760 |goto 60.6,33.2 |instant
-step
-talk Feralas Flame Keeper##25932
-accept Honor the Flame##11849 |goto Feralas 72.4,47.8 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11746 |goto 46.6,43.8 |instant
-step
-talk Desolace Flame Keeper##25928
-accept Honor the Flame##11845 |goto Desolace,26.2,76.9 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11741 |goto 65.8,16.9 |instant
-step
-The path up to Sun Rock Retreat starts here |goto Stonetalon Mountains 42.5,68.6 < 20
-talk Stonetalon Flame Keeper##25940
-accept Honor the Flame##11856 |goto 52.9,62.5 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##28915 |goto Stonetalon Mountains 49.5,51.2 |instant
-step
-talk The Northern Barrens Flame Keeper##25943
-accept Honor the Flame##11859 |goto Northern Barrens 50.0,54.6 |instant
-step
-talk Durotar Flame Keeper##25929
-accept Honor the Flame##11846 |goto Durotar 52.2,47.3 |instant
-step
-talk Azshara Flame Keeper##51575
-accept Honor the Flame##28923 |goto Azshara/0 60.8,53.5 |instant
-step
-talk Hyjal Flame Guardian##51682
-accept Honor the Flame##29030 |goto Mount Hyjal 62.8,22.7
-step
-click Earthen Ring Bonfire##208188
-turnin Honor the Flame##29030 |goto 62.8,22.9
-step
-talk Winterspring Flame Keeper##25922
-accept Honor the Flame##11839 |goto Winterspring 58.1,47.5 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11763 |goto 61.3,47.1 |instant
-step
-talk Ashenvale Flame Keeper##25884
-accept Honor the Flame##11841 |goto Ashenvale 51.4,66.2 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11734 |goto 86.8,41.4 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11740 |goto Darkshore 48.9,22.6 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11753 |goto Teldrassil 54.7,52.9 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11735 |goto Azuremyst Isle 44.7,52.7 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11738 |goto Bloodmyst Isle 55.9,68.6 |instant
-step
-talk Vashj'ir Flame Guardian##51697
-accept Honor the Flame##29031 |goto Shimmering Expanse/0 49.4,42.0
-step
-click Earthen Ring Bonfire##208188
-turnin Honor the Flame##29031 |goto Shimmering Expanse 49.4,41.9
-step
-talk Deepholm Flame Guardian##51698
-accept Honor the Flame##29036 |goto Deepholm 49.4,51.3
-step
-click Earthen Ring Bonfire##208188
-turnin Honor the Flame##29036 |goto Deepholm 49.4,51.4
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11747 |goto Hellfire Peninsula 61.9,58.5 |instant
-step
-talk Hellfire Peninsula Flame Keeper##25934
-accept Honor the Flame##11851 |goto Hellfire Peninsula 57.1,42.0 |instant
-step
-talk Netherstorm Flame Keeper##25918
-accept Honor the Flame##11835 |goto Netherstorm 32.1,68.3 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11759 |goto Netherstorm 31.1,62.9 |instant
-step
-talk Blade's Edge Flame Keeper##25926
-accept Honor the Flame##11843 |goto Blade's Edge Mountains 49.9,58.7 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11736 |goto Blade's Edge Mountains 41.8,66.0 |instant
-step
-talk Zangarmarsh Flame Keeper##25947
-accept Honor the Flame##11863 |goto Zangarmarsh 35.4,51.6 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11758 |goto Zangarmarsh 68.6,52.1 |instant
-step
-talk Nagrand Flame Keeper##25937
-accept Honor the Flame##11854 |goto Nagrand 50.9,34.1 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11750 |goto Nagrand 49.7,69.7 |instant
-step
-talk Terokkar Forest Flame Keeper##25942
-accept Honor the Flame##11858 |goto Terokkar Forest 52.0,42.9 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11754 |goto Terokkar Forest 54.2,55.5 |instant
-step
-talk Shadowmoon Valley Flame Keeper##25938
-accept Honor the Flame##11855 |goto Shadowmoon Valley 33.4,30.5 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##11752 |goto Shadowmoon Valley 39.5,54.4 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##13440 |goto Borean Tundra 55.2,20.2 |instant
-step
-talk Borean Tundra Flame Keeper##32809
-accept Honor the Flame##13493 |goto Borean Tundra 51.1,11.5 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##13442 |goto Sholazar Basin 47.9,66.2 |instant
-step
-talk Sholazar Basin Flame Keeper##32810
-accept Honor the Flame##13494 |goto Sholazar Basin 47.1,61.5 |instant
-step
-talk Dragonblight Flame Keeper##32811
-accept Honor the Flame##13495 |goto Dragonblight 38.3,48.5 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##13443 |goto Dragonblight 75.1,43.8 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##13447 |goto Crystalsong Forest 77.6,75.2 |instant
-step
-talk Crystalsong Forest Flame Keeper##32815
-accept Honor the Flame##13499 |goto Crystalsong Forest 80.0,53.2 |instant
-step
-talk Storm Peaks Flame Keeper##32814
-accept Honor the Flame##13498 |goto The Storm Peaks 40.3,85.3 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##13446 |goto The Storm Peaks 41.4,87.0 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##13449 |goto Zul'Drak 40.5,61.0 |instant
-step
-talk Zul'Drak Flame Keeper##32816
-accept Honor the Flame##13500 |goto Zul'Drak 43.4,71.70 |instant
-step
-talk Grizzly Hills Flame Keeper##32813
-accept Honor the Flame##13497 |goto Grizzly Hills 19.3,61.2 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##13445 |goto Grizzly Hills 34.2,60.6 |instant
-step
-talk Howling Fjord Flame Keeper##32812
-accept Honor the Flame##13496 |goto Howling Fjord 48.6,13.1 |instant
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##13444 |goto Howling Fjord 57.8,15.8 |instant
-step
-talk Jade Forest Flame Guardian##69529
-accept Honor the Flame##32498 |goto The Jade Forest 47.2,47.2
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##32498 |goto The Jade Forest 47.2,47.2
-step
-talk Krasarang Wilds Flame Guardian##69533
-accept Honor the Flame##32499 |goto Krasarang Wilds 74.0,9.5
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##32499 |goto Krasarang Wilds 74.0,9.6
-step
-talk Valley of the Four Winds Flame Guardian##69550
-accept Honor the Flame##32502 |goto Valley of the Four Winds 51.8,51.4
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##32502 |goto Valley of the Four Winds 51.8,51.4
-step
-talk Dread Wastes Flame Guardian##69522
-accept Honor the Flame##32497 |goto Dread Wastes 56.1,69.5
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##32497 |goto Dread Wastes 56.1,69.5
-step
-talk Townlong Steppes Flame Guardian##69536
-accept Honor the Flame##32501 |goto Townlong Steppes 71.5,56.3
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##32501 |goto Townlong Steppes 71.5,56.3
-step
-talk Kun-Lai Summit Flame Guardian##69535
-accept Honor the Flame##32500 |goto Kun-Lai Summit 71.1,90.9
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##32500 |goto Kun-Lai Summit 71.1,90.9
-step
-talk Vale of Eternal Blossoms Flame Keeper##69551
-accept Honor the Flame##32509 |instant |goto Vale of Eternal Blossoms 77.8,33.9
-step
-click Alliance Bonfire##194036
-accept Desecrate this Fire!##32503 |instant |goto Vale of Eternal Blossoms 79.7,37.1
-step
-talk Frostfire Ridge Flame Keeper##114499
-accept Honor the Flame##44580 |goto Frostfire Ridge/0 72.61,65.08 |instant
-step
-talk Gorgrond Flame Guardian##114491
-accept Honor the Flame##44573 |goto Gorgrond/0 43.92,93.78
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44573 |goto 43.92,93.83
-step
-talk Talador Flame Guardian##114489
-accept Honor the Flame##44571 |goto Talador/0 43.46,71.81
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44571 |goto 43.51,71.81
-step
-talk Spires of Arak Flame Guardian##114488
-accept Honor the Flame##44570 |goto Spires of Arak/0 48.01,44.72
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44570 |goto 48.03,44.76
-step
-talk Nagrand Flame Guardian##114490
-accept Honor the Flame##44572 |goto Nagrand D/0 80.54,47.71
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44572 |goto 80.58,47.67
-step
-talk Azsuna Flame Guardian##114492
-accept Honor the Flame##44574 |goto Azsuna/0 48.29,29.66
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44574 |goto 48.29,29.66
-step
-talk Val'Sharah Flame Guardian##114493
-accept Honor the Flame##44575 |goto Val'sharah/0 44.88,57.94
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44575 |goto 44.85,57.90
-step
-talk Suramar Flame Keeper##114518
-accept Honor the Flame##44614 |goto Suramar/0 30.47,45.38
-step
-talk Highmountain Flame Guardian##114494
-accept Honor the Flame##44576 |goto Highmountain/0 55.51,84.45
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44576 |goto 55.55,84.45
-step
-talk Stormheim Flame Guardian##114496
-accept Honor the Flame##44577 |goto Stormheim/0 32.49,42.14
-step
-click Midsummer Bonfire##259864
-turnin Honor the Flame##44577 |	goto 32.51,42.09
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Harvest Festival\\Harvest Festival Quest",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Harvest Festival') end,
-description="This guide section will walk you through completing the Harvest Festival event.",
-},[[
-step
-talk Javnir Nashak##15012
-accept Honoring a Hero##8150 |goto Durotar/0 46.25,15.10
-step
-use Grom's Tribute##19851
-Place a Tribute at Grom's Tomb |q 8150/1 |goto Ashenvale/0 82.85,79.04
-step
-talk Javnir Nashak##15012
-turnin Honoring a Hero##8150 |goto Durotar/0 46.25,15.10
-step
-You Can Now Use the Food at the Table Here |goto 46.53,14.80
-|tip Once you have completed the Honoring a Hero quest you will get an item called Bounty of the Harvest in the mail.
-confirm
-step
-_Congratulations!_
-You Have Completed the Harvest Festival.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Brewfest\\Brewfest Quests",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Brewfest') end,
-description="This guide section will walk you through completing the quests for the Brewfest event.",
-},[[
-step
-talk Tapper Swindlekeg##24711
-accept Welcome to Brewfest!##11447 |instant |goto Durotar/0 41.6,18.5
-step
-talk Ram Master Ray##24497 |goto Durotar 42.6,17.8
-accept Now This is Ram Racing... Almost.##11409 |goto Durotar 42.6,17.8
-step
-As you run around on the ram:
-Use the _Giddyup!_ temporary ability
-|tip It will appear on your screen when mounted with the quest mount.
-|tip The ram runs slow by default. You have to use the Giddyup! ability to make it run at certain speeds for 8 seconds. The make the ram Trot for 8 seconds, use the Giddyup! ability every 2 seconds or so to keep the ram running at the speed just above the slow default speed.  To make the Ram Canter for 8 seconds, use the Giddyup! ability a little more often than when you made the Ram Trot. To make the Ram Gallop, just spam use the Giddyup! ability.
-Maintain a Trot for 8 seconds |q 11409/1
-Maintain a Canter for 8 seconds |q 11409/2
-Maintain a Gallop for 8 seconds |q 11409/3
-step
-talk Ram Master Ray##24497
-turnin Now This is Ram Racing... Almost.##11409 |goto Durotar 42.6,17.9
-accept There and Back Again##11412 |goto Durotar 42.6,17.9
-step
-Use the _Giddyup!_ temporary ability
-|tip It will appear on your screen when mounted with the quest mount.
-|tip Run as fast as you can without making your Ram stop from being too tired. Stop at every bucket of apples you see on the side of the road to refresh your Ram's fatigue level, allowing the Ram to run faster for longer.
-Get a keg from Bok Dropcertain |goto Durotar/0 50.6,13.5 < 10
-|tip He will throw you a keg when you get close.
-Click here and run back to turn in the keg |goto 42.6,17.7
-|tip Just get near him and you will throw the keg to him.
-Deliver 3 Kegs |q 11412/1 |goto 42.6,17.7
-step
-talk Ram Master Ray##24497
-turnin There and Back Again##11412 |goto Durotar 42.6,17.8
-step
-talk Driz Tumblequick##24510
-accept A New Supplier of Souvenirs##29396 |or |goto Durotar 42.7,17.7
-accept Another Year, Another Souvenir.##13931 |or |goto Durotar 42.7,17.7
-|tip These quests may not be available to you if you have a stein already.
-step
-talk Bizzle Quicklift##27216
-accept Chug and Chuck!##12191 |goto Durotar 41.6,17.7
-step
-click Alcohol-Free Brewfest Sampler##186189
-|tip They looks like mugs of beer on the small tables on either side of you.
-use Alcohol-Free Brewfest Sampler##33096
-Hit the S.T.O.U.T. #5# Times |q 12191/1 |goto Durotar 41.5,17.5
-step
-talk Bizzle Quicklift##27216
-turnin Chug and Chuck!##12191 |goto 41.6,17.7
-step
-talk Glodrak Huntsniper##24657
-accept Catch the Wild Wolpertinger!##11431 |goto 41.2,18.5
-accept Pink Elekks On Parade##11120 |goto 41.2,18.5
-step
-talk Glodrak Huntsniper##24657
-Ask him _"What are Synthebrew Goggles?"_
-collect Synthebrew Goggles##46735 |q 11431 |goto 41.2,18.5
-step
-talk Blix Fixwidget##24495
-turnin A New Supplier of Souvenirs##29396 |or |goto 40.3,17.9
-turnin Another Year, Another Souvenir.##13931 |or |goto 40.3,17.9
-step
-use Synthebrew Goggles##46735
-Equip the Synthebrew Goggles |havebuff 135977 |q 11431
-step
-clicknpc Wild Wolpertinger##23487
-use Wolpertinger Net##32907
-|tip They look like rabbits with antlers and wings running around on the ground around this area.
-collect 5 Stunned Wolpertinger##32906 |q 11431/1 |goto Durotar 41.2,18.1
-step
-talk Glodrak Huntsniper##24657
-turnin Catch the Wild Wolpertinger!##11431 |goto Durotar 41.2,18.5
-Earn Does Your Wolpertinger Linger? achievement |achieve 1683/6 |goto Durotar 41.2,18.5
-step
-Follow the path |goto Undercity/0 70.72,41.50 |walk
-Follow the path |goto 72.67,40.17 |walk
-Ride the elevator |goto 72.57,44.20 |walk
-Follow the path |goto 66.96,44.22 |walk
-Follow the path |goto 66.58,42.64 |walk
-Follow the path |goto 66.00,32.94 |walk
-clicknpc Tirisfal Pink Elekk##23530
-use Elekk Dispersion Ray##32960
-|tip They are found above Undercity, in Tirisfal Glades.
-kill 3 Tirisfal Pink Elekk##23530 |q 11120/3 |goto Tirisfal Glades/0 62.9,67.7
-step
-clicknpc Eversong Pink Elekk##23531
-use Elekk Dispersion Ray##32960
-kill 3 Eversong Pink Elekk##23531 |q 11120/1 |goto Eversong Woods 57.0,53.1
-step
-clicknpc Mulgore Pink Elekk##23529
-use Elekk Dispersion Ray##32960
-kill 3 Mulgore Pink Elekk##23529 |q 11120/2 |goto Thunder Bluff 34.7,74.7
-step
-talk Glodrak Huntsniper##24657
-turnin Pink Elekks On Parade##11120 |goto Durotar 41.2,18.5
-step
-Use the Dungeon Finder (press _I_) to queue for Coren Direbrew
-|tip You will need to at least be level 46.
-kill Coren Direbrew##23872
-collect Direbrew's Dire Brew##38281 |n
-use Direbrew's Dire Brew##38281
-accept Direbrew's Dire Brew##12492
-achieve 1683/3
-step
-talk Tapper Swindlekeg##24711
-turnin Direbrew's Dire Brew##12492 |goto Durotar 41.6,18.5
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Brewfest\\Brewfest Dailies",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Brewfest') end,
-description="This guide section will walk you through completing the daily quests for the Brewfest event.",
-},[[
-step
-#include "Brewfest_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Brewfest\\Brewfest Achievements",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Brewfest') end,
-description="This guide section will walk you through completing the achievements for the Brewfest event.",
-},[[
-step
-talk Uta Roughdough##23603
-buy The Essential Brewfest Pretzel##33043 |condition itemcount() > 0 or achieved(1185) |goto Durotar 41.0,18.3
-step
-use The Essential Brewfest Pretzel##33043
-achieve 1185/7
-step
-talk Agnes Farwithers##23604
-buy Spiced Onion Cheese##34065 |achieve 1185 |goto 40.2,17.7
-step
-Click the Spiced Onion Cheese in your bags |use Spiced Onion Cheese##34065
-Eat the Spiced Onion Cheese |achieve 1185/4
-step
-talk Bron##23605
-buy Dried Sausage##34063 |achieve 1185 |goto 41.2,17.3
-buy Succulent Sausage##34064 |achieve 1185 |goto 41.2,17.3
-buy Savory Sausage##33023 |achieve 1185 |goto 41.2,17.3
-buy Pickled Sausage##33024 |achieve 1185 |goto 41.2,17.3
-buy Spicy Smoked Sausage##33025 |achieve 1185 |goto 41.2,17.3
-buy The Golden Link##33026 |achieve 1185 |goto 41.2,17.3
-step
-Do the following:
-use Dried Sausage##34063
-Eat the Dried Sausage |achieve 1185/1
-use Succulent Sausage##34064
-Eat the Succulent Sausage |achieve 1185/6
-use Savory Sausage##33023
-Eat the Savory Sausage |achieve 1185/3
-use Pickled Sausage##33024
-Eat the Pickled Sausage |achieve 1185/2
-use Spicy Smoked Sausage##33025
-Eat Spicy Smoked Sausage |achieve 1185/5
-use The Golden Link##33026
-Eat The Golden Link |achieve 1185/8
-Earn The Brewfest Diet achievement |achieve 1683/3
-step
-talk Blix Fixwidget##24495
-buy Fresh Brewfest Hops##37750 |achieve 303 |goto 40.3,17.9
-|tip You must be at least level 20 to buy these.
-step
-use Fresh Brewfest Hops##37750
-Make your Mount Festive for Brewfest!
-Earn Have Keg, Will Travel |achieve 303
-step
-Complete the Brewfest daily quests each day until you have 200 Brewfest Prize Tokens
-collect 200 Brewfest Prize Token##37829 |achieve 2796
-step
-talk Blix Fixwidget##24495
-buy "Brew of the Month" Club Membership Form##37599 |n
-use "Brew of the Month" Club Membership Form##37599
-accept Brew of the Month Club##12306 |goto 40.3,17.9
-step
-talk Ray'ma##27489
-turnin Brew of the Month Club##12306 |goto Orgrimmar 50.4,73.5
-Earn the Brew of the Month achievement |achieve 2796 |goto Orgrimmar 50.4,73.5
-step
-Congratulations, you are a Brewmaster! |achieve 1683
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Hallow's End\\Hallow's End Quests",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent("Hallow's End") end,
-description="This guide section will walk you through completing the quests for the Hallow's End event.",
-},[[
-#include "Hallow's_End_Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Hallow's End\\Hallow's End Dailies",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent("Hallow's End") end,
-description="This guide section will walk you through completing the daily quests for the Hallow's End event.",
-},[[
-#include "Hallow's_End_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Hallow's End\\Hallow's End Warlords of Draenor Dailies",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent("Hallow's End") end,
-description="This guide section will walk you through completing the Draenor daily quests for the Hallow's End event.",
-},[[
-step
-talk Orukan##96705
-accept Smashing Squashlings##39716 |goto Frostwall/0 47.14,37.47
-accept Foul Fertilizer##39720 |goto Frostwall/0 47.14,37.47
-accept Mutiny on the Boneship##39719 |goto Frostwall/0 47.14,37.47
-accept Culling the Crew##39721 |goto Frostwall/0 47.14,37.47
-stickystart "boneshipkills"
-stickystart "squashlings"
-stickystart "fertilizer"
-step
-kill Captain Bonerender##96535 |q Mutiny on the Boneship##39719/1 |goto Shadowmoon Valley D/0 38.7,86.3
-step
-label "boneshipkills"
-kill Brackish Cultivator##96538+, Salty Dreg##96536+, Boneship Reveler##96637+
-|tip These are found all around this small island.
-Kill #12# Boneship Crewmen |q Culling the Crew##39721/1 |goto Shadowmoon Valley D/0 39.8,80.4
-step
-label "squashlings"
-kill 6 Growing Squashling##96545 |q Smashing Squashlings##39716/1 |goto Shadowmoon Valley D/0 40.2,81.8
-step
-label "fertilizer"
-clicknpc Dread Fertilizer##96765+
-|tip These are found all around this small island.
-Destroy #8# Fertilizers |q Foul Fertilizer##39720/1 |goto Shadowmoon Valley D/0 40.1,84.3
-step
-talk Orukan##96705
-turnin Smashing Squashlings##39716 |goto Frostwall/0 47.14,37.47
-turnin Foul Fertilizer##39720 |goto Frostwall/0 47.14,37.47
-turnin Mutiny on the Boneship##39719 |goto Frostwall/0 47.14,37.47
-turnin Culling the Crew##39721 |goto Frostwall/0 47.14,37.47
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Hallow's End\\Hallow's End Achievements",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent("Hallow's End") end,
-description="This guide section will walk you through completing the achievements for the Hallow's End event.",
-},[[
-#include "Hallow's_End_Achievements"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Hallow's End\\Hallow's End Achievements (Pandaria)",{
-condition_suggested=function() return isevent("Hallow's End") end,
-description="Visit all the Candy Buckets in Pandaria",
-},[[
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-Visit the Candy Bucket in The Jade Forest, Honeydew Village |q 32050 |future |goto The Jade Forest/0 28.45,13.27
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-Visit the Candy Bucket in The Jade Forest, Tian Monastery |q 32021 |future |goto The Jade Forest/0 41.68,23.14
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Jade Forest, Greenstone Village |q 32029 |future |goto The Jade Forest/0 48.09,34.62
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Jade Forest, Dawn's Blossom |q 32027 |future |goto The Jade Forest/0 45.77,43.61
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Jade Forest, Sri-La Village |q 32031 |future |goto The Jade Forest/0 55.72,24.41
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Jade Forest, Jade Temple Grounds |q 32032 |future |goto The Jade Forest/0 54.61,63.33
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Jade Forest, Grookin Hill |q 32028 |future |goto The Jade Forest/0 28.01,47.39
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Kun-Lai Summit, Zouchin Village |q 32051 |future |goto Kun-Lai Summit/0 62.50,28.90
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-Visit the Candy Bucket in Kun-Lai Summit, One Keg |q 32037 |future |goto Kun-Lai Summit/0 57.45,59.95
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Kun-Lai Summit, The Grummle Bazaar |q 32041 |future |goto Kun-Lai Summit/0 64.21,61.27
-step
-click Candy Bucket##208144
-|tip You must complete the quest "Challenge Accepted" to access this candy bucket.
-|tip You can complete it by doing the few quests at Binan Village in Kun-Lai Summit.
-|tip These quests will lead you to Eastwind Rest.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Kun-Lai Summit, Eastwind Rest |q 32040 |future |goto Kun-Lai Summit/0 62.77,80.50
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Kun-Lai Summit, Binan Village |q 32039 |future |goto Kun-Lai Summit/0 72.73,92.28
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in The Veiled Stair, Tavern in the Mists |q 32026 |future |goto The Veiled Stair/0 55.10,72.23
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Vale of Eternal Blossoms, Shrine of Two Moons |q 32022 |future |goto Shrine of Two Moons/2 58.84,78.38
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Vale of Eternal Blossoms, Mistfall Village |q 32044 |future |goto Vale of Eternal Blossoms/0 35.13,77.77
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Valley of the Four Winds, Pang's Stead |q 32048 |future |goto Valley of the Four Winds/0 83.64,20.15
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Valley of the Four Winds, Stoneplow |q 32046 |future |goto Valley of the Four Winds/0 19.87,55.79
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Krasarang Wilds, Zhu's Watch |q 32036 |future |goto Krasarang Wilds/0 75.92,6.87
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Krasarang Wilds, Thunder Cleft |q 32047 |future |goto Krasarang Wilds/0 61.03,25.14
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Krasarang Wilds, Marista |q 32034 |future |goto Krasarang Wilds/0 51.40,77.29
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Krasarang Wilds, Dawnchaser Retreat |q 32020 |future |goto Krasarang Wilds/0 28.25,50.74
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-Visit the Candy Bucket in Dread Wastes, Soggy's Gamble |q 32023 |future |goto Dread Wastes/0 55.22,71.19
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-Visit the Candy Bucket in Dread Wastes, Klaxxi'vess |q 32024 |future |goto Dread Wastes 55.93,32.27
-step
-click Candy Bucket##208144
-|tip It's inside the inn.
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-Visit the Candy Bucket in Townlong Steppes, Longying Outpost |q 32043 |future |goto Townlong Steppes/0 71.11,57.78
-step
-Congratulations, you now have the Tricks and Treats of Pandaria achievement!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Hallow's End\\Hallow's End Legion Buckets",{
-condition_suggested=function() return isevent("Hallow's End") end,
-description="Visit all the Candy Buckets in Legion",
-},[[
-step
-Enter the building |goto Dalaran L/10 49.93,37.69 < 10 |walk
-click Candy Bucket##208144
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-Visit the Candy Bucket in The Legerdemain Lounge |q 43055 |future |goto Dalaran L/10 47.96,41.75
-step
-Enter the building |goto Dalaran L/10 63.12,33.13 < 10 |walk
-click Candy Bucket##208144
-|use Handful of Treats##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-Visit the Candy Bucket in The Filithy Animal |q 43057 |future |goto Dalaran L/10 67.04,29.42
-step
-Congratulations, you collected all of the Legion Candy Buckets!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Pilgrim's Bounty Quests",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent("Pilgrim's Bounty") end,
-description="This guide section will walk you through completing the quests for the Pilgrim's Bounty event, as well as getting your Cooking skill from 1-300.",
-},[[
-#include "Pilgrim's_Bounty_Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Pilgrim's Bounty\\Pilgrim's Bounty Achievements and Dailies",{
-condition_suggested=function() return isevent("Pilgrim's Bounty") end,
-},[[
-#include "Pilgrim's_Bounty_Achievements"
-#include "Pilgrim's_Bounty_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Quests",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Feast of Winter Veil') end,
-description="This guide section will walk you through completing the quests for the Feast of Winter Veil event.",
-},[[
-#include "FoWV_Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Achievements",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Feast of Winter Veil') end,
-achieveid={1691},
-description="This guide section will walk you through completing the achievements for the Feast of Winter Veil event.",
-},[[
-#include "FoWV_Achievements"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Dailies",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Feast of Winter Veil') end,
-description="This guide section will walk you through completing the dailies for the Feast of Winter Veil event.",
-},[[
-step
-talk Kaymard Copperpinch##13418
-accept You're a Mean One...##6983 |goto Orgrimmar 52.4,77.1
-only if level >= 80
-step
-kill The Abominable Greench##13602
-|tip This will require a group to kill, but you do not have to be in a party.
-Free Metzen the Reindeer |q 6983/2 |goto Hillsbrad Foothills 43.6,39.0
-click Stolen Treats##209506
-collect Stolen Treats##17662 |q 6983/1 |goto Hillsbrad Foothills 43.6,39.0
-|tip You can pick this up if someone has killed The Abominable Grinch recently.
-only if level >= 80 and havequest(6983)
-step
-talk Kaymard Copperpinch##13418
-turnin You're a Mean One...##6983 |goto Orgrimmar 52.4,76.9
-only if level >= 80 and havequest(6983)
-step
-ding 100
-|tip You must be level 100 to accept the following quests.
-step
-talk Pizzle##96735
-accept Where Are the Children?##39648 |goto Frostwall 47.3,37.7
-accept Menacing Grumplings##39649 |goto Frostwall 47.3,37.7
-accept What Horrible Presents!##39668 |goto Frostwall 47.3,37.7
-accept Grumpus##39651 |goto Frostwall 47.3,37.7
-stickystart "savethechildren"
-stickystart "grumnplingkills"
-step
-kill Grumpus##96448 |q Grumpus##39651/1 |goto Frostfire Ridge/0 45.7,28.2
-|tip Grumpus will require a group to defeat.
-step
-use Spirit Bomb##128675
-|tip Use the Spirit Bomb to destroy Unusual Gifts on the ground. They are found by brown sacks and have the text, "Unusual Gift", above them.
-|tip Press I and look for a group in Custom, it helps to speed up the process.
-Destroy #5# Unusual Gifts |q What Horrible Presents!##39668/1 |goto Frostfire Ridge/0 45.7,27.6
-step
-label "savethechildren"
-click Holding Cage##243905
-Rescue #6# Children |q Where Are the Children?##39648/1 |goto Frostfire Ridge/0 46.4,26.2
-step
-label "grumnplingkills"
-kill 8 Grumpling##96449 |q Menacing Grumplings##39649/1 |goto Frostfire Ridge/0 46.9,27.8
-step
-talk Izzy Hollyfizzle##96362
-turnin Where Are the Children?##39648 |goto Frostwall 47.3,38.5
-turnin Menacing Grumplings##39649 |goto Frostwall 47.3,38.5
-turnin What Horrible Presents!##39668 |goto Frostwall 47.3,38.5
-turnin Grumpus##39651 |goto Frostwall 47.3,38.5
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests",{
-condition_suggested=function() return isevent('Darkmoon Faire') end,
-description="This guide will help you navigate through the Darkmoon Faire Event",
-},[[
-step
-talk Darkmoon Faire Mystic Mage##55382
-|tip Clicking on any of the quests will direct you to one of the four main cities.
-accept The Darkmoon Faire##7926 |goto Orgrimmar 48.12,62.30
-accept The Darkmoon Faire##7926 |goto Undercity/0 61.88,47.28
-accept The Darkmoon Faire##7926 |goto Silvermoon City/0 74.34,81.89
-accept The Darkmoon Faire##7926 |goto Thunder Bluff/0 43.88,54.33
-step
-talk Innkeeper Kauth##6747
-buy 5 Moonberry Juice##1645 |condition itemcount(1645) >= 5 |goto Mulgore 46.8,60.4
-only if skill("Alchemy")>74 and not completedq(29506)
-step
-talk Shadi Mistrunner##8363
-buy 5 Simple Flour##30817 |condition itemcount(30817) >= 5 |goto Thunder Bluff 40.6,62.6
-only if skill("Cooking")>74 and not completedq(29509)
-step
-talk Shadi Mistrunner##8363
-buy 1 Coarse Thread##2320 |condition itemcount(2320) >= 1 |goto Thunder Bluff 40.6,62.6
-buy 1 Blue Dye##6260 |condition itemcount(6260) >= 1 |goto Thunder Bluff 40.6,62.6
-buy 1 Red Dye##2604 |condition itemcount(2604) >= 1 |goto Thunder Bluff 40.6,62.6
-only if skill("Tailoring")>74 and not completedq(29520)
-step
-talk Shadi Mistrunner##8363
-buy 5 Coarse Thread##2320 |condition itemcount(2320) >= 5 |goto Thunder Bluff 40.6,62.6
-buy 5 Blue Dye##6260 |condition itemcount(6260) >= 5 |goto Thunder Bluff 40.6,62.6
-buy 10 Shiny Bauble##6529 |condition itemcount(6529) >= 10 |goto Thunder Bluff 40.6,62.6
-only if skill("Leatherworking")>74 and not completedq(29517)
-step
-talk Gelvas Grimegate##14828
-turnin The Darkmoon Faire##7926 |goto Darkmoon Island/0 47.90,64.74
-step
-talk Selina Dourman##10445
-accept Banners, Banners Everywhere!##29520 |goto Darkmoon Island/0 55.4,54.8
-only if skill("Tailoring")>74
-step
-talk Rinling##14841
-accept Talkin' Tonks##29511 |goto Darkmoon Island/0 49.3,60.8
-only if skill("Engineering")>74
-step
-talk Rinling##14841
-accept Rearm, Reuse, Recycle##29518 |goto Darkmoon Island/0 49.3,60.7
-only if skill("Mining")>74
-step
-talk Rinling##14841
-accept Eyes on the Prizes##29517 |goto 49.3,60.9
-only if skill("Leatherworking")>74
-step
-talk Stamp Thunderhorn##14845
-accept Putting the Crunch in the Frog##29509 |goto Darkmoon Island/0 52.9,68.0
-only if skill("Cooking")>74
-step
-talk Kerri Hicks##14832
-accept Test Your Strength##29433 |goto 47.91,67.09
-step
-talk Malle Earnhard##74056
-accept Welcome to the Darkmoon Races##37819 |goto Darkmoon Island/0 49.1,88.1
-step
-Walk over either the Rocketeer or the Racing Strider at this location |goto Darkmoon Island/0 48.4,87.6
-Choose the _Racing Strider_ |havebuff 179750 |or
-Choose the _Rocketeer_ |havebuff 179252 |or
-only if havequest(37819)
-step
-Enter the Start Banner with a Darkmoon Game Token |q Welcome to the Darkmoon Races##37819/1 |goto 47.59,88.36
-only if havequest(37819)
-step
-map Darkmoon Island/0
-path loop off
-path	40.2,85.5	31.8,76.7	26.5,66.5
-Avoid the _Electrified Chains_ and the _Race MiniZeps_ while traversing the course
-Reach the Island |q Welcome to the Darkmoon Races##37819/2
-only if havequest(37819)
-step
-map Darkmoon Island/0
-path loop off
-path	30.6,73.9	35.8,82.0	40.8,86.3
-path	47.5,88.3
-Hit the Power Ups as you return to the start
-Complete the race |q Welcome to the Darkmoon Races##37819/3
-only if havequest(37819)
-step
-talk Malle Earnhard##74056
-turnin Welcome to the Darkmoon Races##37819 |goto Darkmoon Island/0 49.1,88.1
-step
-Click the Plump Frogs in your bags |use Plump Frogs##72056
-collect 5 Breaded Frog##72057 |n
-Throw the Breaded Frogs in the cauldron |use Breaded Frog##72057
-Fry 5 Crunchy Frogs |q 29509/1 |goto Darkmoon Island/0 52.7,68.1
-only if skill("Cooking")>74
-step
-talk Stamp Thunderhorn##14845
-turnin Putting the Crunch in the Frog##29509 |goto Darkmoon Island/0 52.9,68.0
-only if skill("Cooking")>74
-step
-talk Stamp Thunderhorn##14845
-accept Spoilin' for Salty Sea Dogs##29513 |goto Darkmoon Island/0 52.9,68.0
-only if skill("Fishing")>74
-step
-talk Sayge##14822
-accept Writing the Future##29515 |goto Darkmoon Island/0 53.2,75.8
-only if skill("Inscription")>74
-step
-talk Chronos##14833
-accept Tan My Hide##29519 |goto Darkmoon Island/0 55.0,70.8
-only if skill("Skinning")>74
-step
-talk Chronos##14833
-accept Herbs for Healing##29514 |goto Darkmoon Island/0 55.0,70.8
-only if skill("Herbalism")>74
-step
-talk Sylannia##14844
-accept A Fizzy Fusion##29506 |goto 50.5,69.6
-only if skill("Alchemy")>74
-step
-talk Chronos##14833
-accept Keeping the Faire Sparkling##29516 |goto 55.0,70.8
-only if skill("Jewelcrafting")>74
-step
-talk Sayge##14822
-accept Putting Trash to Good Use##29510 |goto Darkmoon Island/0 53.2,75.8
-only if skill("Enchanting")>74
-step
-talk Yebb Neblegear##14829
-accept Baby Needs Two Pair of Shoes##29508 |goto Darkmoon Island/0 51.1,82.0
-only if skill("Blacksmithing")>74
-step
-buy Fishing Pole##6256 |goto 52.5,88.7
-only if skill("Fishing")>74
-step
-Equip your Fishing Pole |equipped Fishing Pole##6256 |use Fishing Pole##6256 |q 29513
-Use your Fishing ability to catch _Sea Herrings_ |cast Fishing##7620
-Catch 5 Great Sea Herring |q 29513/1 |goto Darkmoon Island 51.7,91.6
-only if skill("Fishing")>74
-step
-All around the Island
-Click Discarded Weapons
-collect 6 Discarded Weapon##72018 |n
-Disenchant the Discarded Weapons |use Discarded Weapon##72018
-Collect 6 Soothsayer's Dust |q 29510/1
-only if skill("Enchanting")>74
-step
-All around the Island
-click Tonk Scrap##209275
-Collect #6# pieces of Tonk Scrap |q 29518/1
-only if skill("Mining")>74
-step
-All around the Island
-click Bits of Glass##238
-collect 5 Bits of Glass##72052 |n
-use Bit of Glass##72052
-Make #5# Sparkling Gemstones |q 29516/1
-only if skill("Jewelcrafting")>74
-step
-All around the Island
-Use your Battered Wrench to repair Damaged Tonk's |use Battered Wrench##72110
-Repair #5# Damaged Tonk's |q 29511/1
-only if skill("Engineering")>74
-step
-All around the Island
-click Darkblossom##209284
-Gather 6 Darkblossom |q 29514/1
-only if skill("Herbalism")>74
-step
-All around the Island
-Click Staked Skins
-Scrape 4 Staked Skins |q 29519/1
-step
-talk Sylannia##14844
-buy 5 Fizzy Faire Drink##19299 |condition itemcount(19299) >= 5 |q 29506 |goto 50.5,69.6
-only if skill("Alchemy")>74
-step
-use Cocktail Shaker##72043
-Create #5# Servings of Moonberry Fizz |q 29506/1 |goto Darkmoon Island/0 50.4,69.5
-only if skill("Alchemy")>74
-step
-use Darkmoon Banner Kit##72048
-Plant a Darkmoon Banner |q 29520/1 |goto Darkmoon Island/0 50.0,66.2
-step
-Use the Iron Stock in your bags to make Horseshoes |use Iron Stock##71964
-collect 4 Horseshoes##71967 |q 29508 |goto 55.3,71.7
-only if skill("Blacksmithing")>74
-step
-use Bundle of Exotic Herbs##71971
-collect Prophetic Ink##71972 |n
-use Prophetic Ink##71972
-|tip Each one requires 1 Light Parchment to create.
-collect 5 Fortune##71974+ |q 29515/1
-only if skill("Inscription")>74
-step
-Use the _Darkmoon Craftsman's Kit_ in your bags to create Darkmoon Prizes |use Darkmoon Craftsman's Kit##71977
-collect 5 Darkmoon Prize##71976 |q 29517/1
-only if skill("Leatherworking")>74
-step
-In order to collect _Grisley Trophies_ you will need to kill enemies that give Honor OR Experience
-|tip This means they absolutely need to be green level minimal.
-You will also need the _Darkmoon Adventurer's Guide_ in your inventory
-collect 250 Grisly Trophy##71096 |q 29433/1
-If you have misplaced your book somehow, you can talk to _Selina Dourman_ located here |goto Darkmoon Island/0 55.5,54.9
-only if havequest(29433)
-step
-talk Stamp Thunderhorn##14845
-turnin Spoilin' for Salty Sea Dogs##29513 |goto Darkmoon Island/0 52.9,68.0
-only if skill("Fishing")>74
-step
-talk Sayge##14822
-turnin Writing the Future##29515 |goto Darkmoon Island/0 53.2,75.8
-only if skill("Inscription")>74
-step
-talk Chronos##14833
-turnin Tan My Hide##29519 |goto Darkmoon Island/0 55.0,70.8
-only if skill("Skinning")>74
-step
-talk Chronos##14833
-turnin Keeping the Faire Sparkling##29516 |goto 55.0,70.8
-only if skill("Jewelcrafting")>74
-step
-talk Rinling##14841
-turnin Eyes on the Prizes##29517 |goto 49.3,60.9
-only if skill("Leatherworking")>74
-step
-talk Rinling##14841
-turnin Talkin' Tonks##29511 |goto Darkmoon Island/0 49.3,60.8
-only if skill("Engineering")>74
-step
-talk Chronos##14833
-turnin Herbs for Healing##29514 |goto Darkmoon Island/0 55.0,70.8
-only if skill("Herbalism")>74
-step
-talk Sylannia##14844
-turnin A Fizzy Fusion##29506 |goto 50.5,69.6
-only if skill("Alchemy")>74
-step
-talk Selina Dourman##10445
-turnin Banners, Banners Everywhere!##29520 |goto Darkmoon Island/0 55.4,54.8
-only if skill("Tailoring")>74
-step
-talk Rinling##14841
-turnin Rearm, Reuse, Recycle##29518 |goto Darkmoon Island/0 49.3,60.7
-only if skill("Mining")>74
-step
-talk Sayge##14822
-turnin Putting Trash to Good Use##29510 |goto Darkmoon Island 53.2,75.8
-only if skill("Enchanting")>74
-step
-Use the Horshoes in your bag on Baby |use Horseshoe##71967
-Put New Horshoes On Baby |q 29508/1 |goto Darkmoon Island/0 51.3,81.8
-only if skill("Blacksmithing")>74
-step
-talk Yebb Neblegear##14829
-turnin Baby Needs Two Pair of Shoes##29508 |goto Darkmoon Island/0 51.1,82.0
-only if skill("Blacksmithing")>74
-step
-talk Kerri Hicks##14832
-turnin Test Your Strength##29433 |goto Darkmoon Island/0 47.9,67.1
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies",{
-condition_suggested=function() return isevent('Darkmoon Faire') end,
-description="This guide will help you navigate through the Darkmoon Faire Event",
-},[[
-#include "Darkmoon_Faire_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Achievements",{
-condition_suggested=function() return isevent('Darkmoon Faire') end,
-description="This guide will help you navigate through the Darkmoon Faire Event",
-},[[
-step
-label "main"
-To earn Achievements for the Darkmoon Faire, you will need to complete Dailies, Quests and other things.
-Click here to do the Dailies Achievments |confirm always |next "dailies" |or
-or
-Click here to do the Profession Quests Achievements |confirm always |next "professions" |or
-or
-Click here for the Non-Questing Achievements |confirm always |next "no_quest" |or
-step
-label "dailies"
-You have earned the Achievement Blastenheimer Bullseye! |achieve 6021 |only if achieved(6021)
-You still need to earn the Achievement Blastenheimer Bullseye! |achieve 6021 |only if not achieved(6021)
-You have earned the Achievement Quick Shot! |achieve 6022 |only if achieved(6022)
-You still need to earn the Achievement Quick Shot! |achieve 6022 |only if not achieved(6022)
-You have earned the Achievement Step Right Up! |achieve 6020 |only if achieved(6020)
-You still need to earn the Achievement Step Right Up! |achieve 6020 |only if not achieved(6020)
-confirm always
-step
-#include "Darkmoon_Faire_Dailies"
-|next "main"
-step
-label "professions"
-You have earned the Achievement Faire Favors |achieve 6032 |only if achieved(6032)
-You still need to earn the Achievement Faire Favors |achieve 6032 |only if not achieved(6032)
-You have earned the Achievement Darkmoon Dungeoneer |achieve 6027 |only if achieved(6027)
-You still need to earn the Achievement Darkmoon Dungeoneer |achieve 6027 |only if not achieved(6027)
-You have earned the Achievement Darkmoon Defender |achieve 6028 |only if achieved(6028)
-You still need to earn the Achievement Darkmoon Defender |achieve 6028 |only if not achieved(6028)
-You have earned the Achievement Darkmoon Despoiler |achieve 6029 |only if achieved(6029)
-You still need to earn the Achievement Darkmoon Despoiler |achieve 6029 |only if not achieved(6029)
-confirm always
-step
-step
-talk Darkmoon Faire Mystic Mage##55382
-|tip Clicking on any of the quests will direct you to one of the four main cities.
-accept The Darkmoon Faire##7926 |goto Orgrimmar 48.12,62.30
-accept The Darkmoon Faire##7926 |goto Undercity/0 61.88,47.28
-accept The Darkmoon Faire##7926 |goto Silvermoon City/0 74.34,81.89
-accept The Darkmoon Faire##7926 |goto Thunder Bluff/0 43.88,54.33
-step
-talk Innkeeper Kauth##6747
-buy 5 Moonberry Juice##1645 |condition itemcount(1645) >= 5 |goto Mulgore 46.8,60.4
-only if skill("Alchemy")>74 and not completedq(29506)
-step
-talk Shadi Mistrunner##8363
-buy 5 Simple Flour##30817 |condition itemcount(30817) >= 5 |goto Thunder Bluff 40.6,62.6
-only if skill("Cooking")>74 and not completedq(29509)
-step
-talk Shadi Mistrunner##8363
-buy 1 Coarse Thread##2320 |condition itemcount(2320) >= 1 |goto Thunder Bluff 40.6,62.6
-buy 1 Blue Dye##6260 |condition itemcount(6260) >= 1 |goto Thunder Bluff 40.6,62.6
-buy 1 Red Dye##2604 |condition itemcount(2604) >= 1 |goto Thunder Bluff 40.6,62.6
-only if skill("Tailoring")>74 and not completedq(29520)
-step
-talk Shadi Mistrunner##8363
-buy 5 Coarse Thread##2320 |condition itemcount(2320) >= 5 |goto Thunder Bluff 40.6,62.6
-buy 5 Blue Dye##6260 |condition itemcount(6260) >= 5 |goto Thunder Bluff 40.6,62.6
-buy 10 Shiny Bauble##6529 |condition itemcount(6529) >= 10 |goto Thunder Bluff 40.6,62.6
-only if skill("Leatherworking")>74 and not completedq(29517)
-step
-talk Gelvas Grimegate##14828
-turnin The Darkmoon Faire##7926 |goto Darkmoon Island/0 47.90,64.74
-step
-talk Selina Dourman##10445
-accept Banners, Banners Everywhere!##29520 |goto Darkmoon Island/0 55.4,54.8
-only if skill("Tailoring")>74
-step
-talk Rinling##14841
-accept Talkin' Tonks##29511 |goto Darkmoon Island/0 49.3,60.8
-only if skill("Engineering")>74
-step
-talk Rinling##14841
-accept Rearm, Reuse, Recycle##29518 |goto Darkmoon Island/0 49.3,60.7
-only if skill("Mining")>74
-step
-talk Rinling##14841
-accept Eyes on the Prizes##29517 |goto 49.3,60.9
-only if skill("Leatherworking")>74
-step
-talk Stamp Thunderhorn##14845
-accept Putting the Crunch in the Frog##29509 |goto Darkmoon Island/0 52.9,68.0
-only if skill("Cooking")>74
-step
-talk Kerri Hicks##14832
-accept Test Your Strength##29433 |goto 47.91,67.09
-step
-talk Malle Earnhard##74056
-accept Welcome to the Darkmoon Races##37819 |goto Darkmoon Island/0 49.1,88.1
-step
-Walk over either the Rocketeer or the Racing Strider at this location |goto Darkmoon Island/0 48.4,87.6
-Choose the _Racing Strider_ |havebuff 179750 |or
-Choose the _Rocketeer_ |havebuff 179252 |or
-only if havequest(37819)
-step
-Enter the Start Banner with a Darkmoon Game Token |q Welcome to the Darkmoon Races##37819/1 |goto 47.59,88.36
-only if havequest(37819)
-step
-map Darkmoon Island/0
-path loop off
-path	40.2,85.5	31.8,76.7	26.5,66.5
-Avoid the _Electrified Chains_ and the _Race MiniZeps_ while traversing the course
-Reach the Island |q Welcome to the Darkmoon Races##37819/2
-only if havequest(37819)
-step
-map Darkmoon Island/0
-path loop off
-path	30.6,73.9	35.8,82.0	40.8,86.3
-path	47.5,88.3
-Hit the Power Ups as you return to the start
-Complete the race |q Welcome to the Darkmoon Races##37819/3
-only if havequest(37819)
-step
-talk Malle Earnhard##74056
-turnin Welcome to the Darkmoon Races##37819 |goto Darkmoon Island/0 49.1,88.1
-step
-Click the Plump Frogs in your bags |use Plump Frogs##72056
-collect 5 Breaded Frog##72057 |n
-Throw the Breaded Frogs in the cauldron |use Breaded Frog##72057
-Fry 5 Crunchy Frogs |q 29509/1 |goto Darkmoon Island/0 52.7,68.1
-only if skill("Cooking")>74
-step
-talk Stamp Thunderhorn##14845
-turnin Putting the Crunch in the Frog##29509 |goto Darkmoon Island/0 52.9,68.0
-only if skill("Cooking")>74
-step
-talk Stamp Thunderhorn##14845
-accept Spoilin' for Salty Sea Dogs##29513 |goto Darkmoon Island/0 52.9,68.0
-only if skill("Fishing")>74
-step
-talk Sayge##14822
-accept Writing the Future##29515 |goto Darkmoon Island/0 53.2,75.8
-only if skill("Inscription")>74
-step
-talk Chronos##14833
-accept Tan My Hide##29519 |goto Darkmoon Island/0 55.0,70.8
-only if skill("Skinning")>74
-step
-talk Chronos##14833
-accept Herbs for Healing##29514 |goto Darkmoon Island/0 55.0,70.8
-only if skill("Herbalism")>74
-step
-talk Sylannia##14844
-accept A Fizzy Fusion##29506 |goto 50.5,69.6
-only if skill("Alchemy")>74
-step
-talk Chronos##14833
-accept Keeping the Faire Sparkling##29516 |goto 55.0,70.8
-only if skill("Jewelcrafting")>74
-step
-talk Sayge##14822
-accept Putting Trash to Good Use##29510 |goto Darkmoon Island/0 53.2,75.8
-only if skill("Enchanting")>74
-step
-talk Yebb Neblegear##14829
-accept Baby Needs Two Pair of Shoes##29508 |goto Darkmoon Island/0 51.1,82.0
-only if skill("Blacksmithing")>74
-step
-buy Fishing Pole##6256 |goto 52.5,88.7
-only if skill("Fishing")>74
-step
-Equip your Fishing Pole |equipped Fishing Pole##6256 |use Fishing Pole##6256 |q 29513
-Use your Fishing ability to catch _Sea Herrings_ |cast Fishing##7620
-Catch 5 Great Sea Herring |q 29513/1 |goto Darkmoon Island 51.7,91.6
-only if skill("Fishing")>74
-step
-All around the Island
-Click Discarded Weapons
-collect 6 Discarded Weapon##72018 |n
-Disenchant the Discarded Weapons |use Discarded Weapon##72018
-Collect 6 Soothsayer's Dust |q 29510/1
-only if skill("Enchanting")>74
-step
-All around the Island
-click Tonk Scrap##209275
-Collect #6# pieces of Tonk Scrap |q 29518/1
-only if skill("Mining")>74
-step
-All around the Island
-click Bits of Glass##238
-collect 5 Bits of Glass##72052 |n
-use Bit of Glass##72052
-Make #5# Sparkling Gemstones |q 29516/1
-only if skill("Jewelcrafting")>74
-step
-All around the Island
-Use your Battered Wrench to repair Damaged Tonk's |use Battered Wrench##72110
-Repair #5# Damaged Tonk's |q 29511/1
-only if skill("Engineering")>74
-step
-All around the Island
-click Darkblossom##209284
-Gather 6 Darkblossom |q 29514/1
-only if skill("Herbalism")>74
-step
-All around the Island
-Click Staked Skins
-Scrape 4 Staked Skins |q 29519/1
-step
-talk Sylannia##14844
-buy 5 Fizzy Faire Drink##19299 |condition itemcount(19299) >= 5 |q 29506 |goto 50.5,69.6
-only if skill("Alchemy")>74
-step
-use Cocktail Shaker##72043
-Create #5# Servings of Moonberry Fizz |q 29506/1 |goto Darkmoon Island/0 50.4,69.5
-only if skill("Alchemy")>74
-step
-use Darkmoon Banner Kit##72048
-Plant a Darkmoon Banner |q 29520/1 |goto Darkmoon Island/0 50.0,66.2
-step
-Use the Iron Stock in your bags to make Horseshoes |use Iron Stock##71964
-collect 4 Horseshoes##71967 |q 29508 |goto 55.3,71.7
-only if skill("Blacksmithing")>74
-step
-use Bundle of Exotic Herbs##71971
-collect Prophetic Ink##71972 |n
-use Prophetic Ink##71972
-|tip Each one requires 1 Light Parchment to create.
-collect 5 Fortune##71974+ |q 29515/1
-only if skill("Inscription")>74
-step
-Use the _Darkmoon Craftsman's Kit_ in your bags to create Darkmoon Prizes |use Darkmoon Craftsman's Kit##71977
-collect 5 Darkmoon Prize##71976 |q 29517/1
-only if skill("Leatherworking")>74
-step
-In order to collect _Grisley Trophies_ you will need to kill enemies that give Honor OR Experience
-|tip This means they absolutely need to be green level minimal.
-You will also need the _Darkmoon Adventurer's Guide_ in your inventory
-collect 250 Grisly Trophy##71096 |q 29433/1
-If you have misplaced your book somehow, you can talk to _Selina Dourman_ located here |goto Darkmoon Island/0 55.5,54.9
-only if havequest(29433)
-step
-talk Stamp Thunderhorn##14845
-turnin Spoilin' for Salty Sea Dogs##29513 |goto Darkmoon Island/0 52.9,68.0
-only if skill("Fishing")>74
-step
-talk Sayge##14822
-turnin Writing the Future##29515 |goto Darkmoon Island/0 53.2,75.8
-only if skill("Inscription")>74
-step
-talk Chronos##14833
-turnin Tan My Hide##29519 |goto Darkmoon Island/0 55.0,70.8
-only if skill("Skinning")>74
-step
-talk Chronos##14833
-turnin Keeping the Faire Sparkling##29516 |goto 55.0,70.8
-only if skill("Jewelcrafting")>74
-step
-talk Rinling##14841
-turnin Eyes on the Prizes##29517 |goto 49.3,60.9
-only if skill("Leatherworking")>74
-step
-talk Rinling##14841
-turnin Talkin' Tonks##29511 |goto Darkmoon Island/0 49.3,60.8
-only if skill("Engineering")>74
-step
-talk Chronos##14833
-turnin Herbs for Healing##29514 |goto Darkmoon Island/0 55.0,70.8
-only if skill("Herbalism")>74
-step
-talk Sylannia##14844
-turnin A Fizzy Fusion##29506 |goto 50.5,69.6
-only if skill("Alchemy")>74
-step
-talk Selina Dourman##10445
-turnin Banners, Banners Everywhere!##29520 |goto Darkmoon Island/0 55.4,54.8
-only if skill("Tailoring")>74
-step
-talk Rinling##14841
-turnin Rearm, Reuse, Recycle##29518 |goto Darkmoon Island/0 49.3,60.7
-only if skill("Mining")>74
-step
-talk Sayge##14822
-turnin Putting Trash to Good Use##29510 |goto Darkmoon Island 53.2,75.8
-only if skill("Enchanting")>74
-step
-Use the Horshoes in your bag on Baby |use Horseshoe##71967
-Put New Horshoes On Baby |q 29508/1 |goto Darkmoon Island/0 51.3,81.8
-only if skill("Blacksmithing")>74
-step
-talk Yebb Neblegear##14829
-turnin Baby Needs Two Pair of Shoes##29508 |goto Darkmoon Island/0 51.1,82.0
-only if skill("Blacksmithing")>74
-step
-talk Kerri Hicks##14832
-turnin Test Your Strength##29433 |goto Darkmoon Island/0 47.9,67.1
-step
-These next 3 items have to be _obtained from Battlegrounds_
-When you kill an opponent, _loot_ their body for a chance to get _each item_.
-collect Adventurer's Journal##71953 |n
-accept The Captured Journal##29458 |use Adventurer's Journal##71953
-collect Banner of the Fallen##71951 |n
-accept A Captured Banner##29456 |use Banner of the Fallen##71951
-collect Captured Insignia##71952 |n
-accept The Enemy's Insignia##29457 |use Captured Insignia##71952
-step
-These next 5 items have to be _obtained from Dungeons_ listed below
-collect Mysterious Grimoire##71637 |n
-|tip You can get this in Heroic Scholomance from Darkmaster Gandling
-accept An Inriguing Grimoire##29445 |use Mysterious Grimoire##71637
-collect Monstrous Egg##71636 |n
-|tip You can get this in Stormstout Brewery from Hoptallus
-accept An Exotic Egg##29444 |use Monstrous Egg##71636
-collect A Treatise on Strategy##7175 |n
-|tip You can get this in Stormstout Brewery from Hoptallus
-accept The Master Strategist##29451 |use A Treatise on Strategy##7175
-collect Ornate Weapon##71638 |n
-|tip You can get this in Heroic Scarlet Monastery from Brother Korloff
-accept A Wondrous Weapon##29446 |use Ornate Weapon##71638
-collect Imbued Crystal##71635 |n
-|tip You can get this in Heroic Scarlet Monastery from High Inquisitor Whitemane
-accept A Curious Crystal##29443 |use Imbued Crystal##71635
-step
-The next item can only be obtained from any 10 man Cataclysm Raid Boss
-collect Soothsayer's Runes##71716 |n
-accept Tools of Divination##29464 |use Soothsayer's Runes##71716
-step
-talk Kerri Hicks##14832
-turnin Test Your Strength##29433 |goto Darkmoon Island/0 47.9,67.1
-step
-talk Professor Thaddeus Paleo##14847
-turnin The Captured Journal##29458 |goto Darkmoon Island/0 51.9,60.9
-turnin A Captured Banner##29456 |goto Darkmoon Island/0 51.9,60.9
-turnin The Enemy's Insignia##29457 |goto Darkmoon Island/0 51.9,60.9
-turnin The Master Strategist##29451 |goto Darkmoon Island/0 51.9,60.9
-turnin A Wondrous Weapon##29446 |goto Darkmoon Island/0 51.9,60.9
-turnin A Curious Crystal##29443 |goto Darkmoon Island/0 51.9,60.9
-turnin Tools of Divination##29464 |goto Darkmoon Island/0 51.9,60.9
-step
-talk Yebb Neblegear##14829
-turnin An Exotic Egg##29444 |goto Darkmoon Island/0 51.0,81.2
-step
-talk Sayge##14822
-turnin An Intriguing Grimoire##29445 |goto Darkmoon Island/0 53.6,76.0
-|next "main"
-step
-label "no_quest"
-You have earned the Achievement Darkmoon Duelist! |achieve 6023 |only if achieved(6023)
-You still need to earn the Achievement Darkmoon Duelist! |achieve 6023 |only if not achieved(6023)
-You have earned the Achievement Fairegoer's Feast! |achieve 6026 |only if achieved(6026)
-You still need to earn the Achievement Fairegoer's Feast! |achieve 6026 |only if not achieved(6026)
-You have earned the Achievement Taking the Show on the Road! |achieve 6031 |only if achieved(6031)
-You still need to earn the Taking the Show on the Road! |achieve 6031 |only if not achieved(6031)
-You have earned the Achievement I Was Promised a Pony! |achieve 6025 |only if achieved(6025)
-You still need to earn the I Was Promised a Pony! |achieve 6025 |only if not achieved(6025)
-confirm always
-step
-talk Sylannia##14844
-buy 1 Cheap Beer##19222 |n |goto Darkmoon Island/0 50.5,69.5
-Drink Cheap Beer |achieve 6026/12 |use Cheap Beer##19222
-buy 1 Darkmoon Special Reserve##19221 |n |goto Darkmoon Island/0 50.5,69.5
-Drink Darkmoon Special Reserve |achieve 6026/13 |use Special Reserve##19221
-buy 1 Fizzy Faire Drink##19299 |n |goto Darkmoon Island/0 50.5,69.5
-Drink Fizzy Faire Drink |achieve 6026/14 |use Fizzy Faire Drink##19299
-buy 1 Bottled Winterspring Water##19300 |n |goto Darkmoon Island/0 50.5,69.5
-Drink Bottled Winterspring Water |achieve 6026/11 |use Bottled Winterspring Water##19300
-buy 1 Iced Berry Slush##33234 |n |goto Darkmoon Island/0 50.5,69.5
-Drink Iced Berry Slush |achieve 6026/17 |use Iced Berry Slush##33234
-buy 1 Fizzy Faire Drink "Classic"##33236 |n |goto Darkmoon Island/0 50.5,69.5
-Drink Fizzy Faire Drink "Classic" |achieve 6026/15 |use Fizzy Faire Drink "Classic"##33236
-buy 1 Fresh-Squeezed Limeade##44941 |n |goto Darkmoon Island/0 50.5,69.5
-Drink Fresh-Squeezed Limeade |achieve 6026/16 |use Fresh-Squeezed Limeade##44941
-buy 1 Sasparilla Sinker##74822 |n |goto Darkmoon Island/0 50.5,69.5
-Drink Sasparilla Sinker |achieve 6026/18 |use Sasparilla Sinker##74822
-step
-talk Stamp Thunderhorn##14845
-buy Darkmoon Dog##19223 |n |goto Darkmoon Island/0 52.8,68.0
-Eat Darkmoon Dog |achieve 6026/3 |use Darkmoon Dog##19223
-buy Spiced Beef Jerky##19304 |n |goto Darkmoon Island/0 52.8,68.0
-Eat Spiced Beef Jerky |achieve 6026/10 |use Spiced Beef Jerky##19304
-buy Pickled Kodo Foot##19305 |n |goto Darkmoon Island/0 52.8,68.0
-Eat Pickled Kodo Foot |achieve 6026/7 |use Pickled Kodo Foot##19305
-buy Red Hot Wings##19224 |n |goto Darkmoon Island/0 52.8,68.0
-Eat Red Hot Wings |achieve 6026/8 |use Red Hot Wings##19224
-buy Crunchy Frog##19306 |n |goto Darkmoon Island/0 52.8,68.0
-Eat Crunchy Frog |achieve 6026/2 |use Crunchy Frog##19306
-buy Deep Fried Candybar##19225 |n |goto Darkmoon Island/0 52.8,68.0
-Eat Deep Fried Candybar |achieve 6026/4 |use Deep Fried Candybar##19225
-buy Funnel Cake##33246 |n |goto Darkmoon Island/0 52.8,68.0
-Eat Funnel Cake |achieve 6026/6 |use Funnel Cake##33246
-buy Forest Strider Drumstick##33254 |n |goto Darkmoon Island/0 52.8,68.0
-Eat Forest Strider Drumstick |achieve 6026/5 |use Forest Strider Drumstick##33254
-buy Corn-Breaded Sausage##44940 |n |goto Darkmoon Island/0 52.8,68.0
-Eat Corn-Breaded Sausage |achieve 6026/1 |use Corn-Breaded Sausage##44940
-buy Salty Sea Dog##73260 |n |goto Darkmoon Island/0 52.8,68.0
-Eat Salty Sea Dog |achieve 6026/9 |use Salty Sea Dog##73260
-Earn the Achievement Fairegoer's Feast |achieve 6026
-step
-clicknpc Darkmoon Pony##55715
-Earn the Achievement I Was Promised a Pony |achieve 6025 |goto Darkmoon Island/0 56.8,81.4
-step
-talk Boomie Sparks##55278
-buy 6 Darkmoon Firework##74142 |future |achieve 6031 |goto Darkmoon Island/0 48.4,71.9
-step
-Use your Darkmoon Firework |achieve 6031/5 |use Darkmoon Firework##74142 |goto Thunder Bluff,32.2,67.0
-step
-Use your Darkmoon Firework |achieve 6031/2 |use Darkmoon Firework##74142 |goto Orgrimmar 49.2,59.3
-step
-Use your Darkmoon Firework |achieve 6031/6 |use Darkmoon Firework##74142 |goto Undercity 66.3,2.2
-step
-Use your Darkmoon Firework |achieve 6031/4 |use Darkmoon Firework##74142 |goto Silvermoon City,50.7,16.4
-step
-Use your Darkmoon Firework |achieve 6031/1 |use Darkmoon Firework##74142 |goto Dalaran 72.5,45.5
-step
-Use your Darkmoon Firework |achieve 6031/3 |use Darkmoon Firework##74142
-Earn the Achievement Taking the Show on the Road! |achieve 6031 |goto Shattrath City 63.8,41.7
-step
-Click Darkmoon Deathmatch Gate and enter the Deathmatch Arena
-Once inside, you will need to fight anyone inside, if you win, you will earn an achievement.
-Earn the Achievement Darkmoon Duelist! |achieve 6023 |goto Darkmoon Island/0 46.8,78.8
-Defeat 12 combatants in the Deathmatch Arena
-Earn the Achievement Darkmoon Dominator |achieve 6024 |goto Darkmoon Island/0 46.8,78.8
-step
-In order to earn the Triumphant Turtle Tossing achievement, you will need to watch carefully
-You will notice the turtle starts off in a specific spot
-It will walk away, then return to the spot of origin
-When it begins to run back to the spot of origin, toss a ring at the said spot
-Earn the Triumphant Turtle Tossing Achievement |achieve 9894
-step
-In order to earn the Ace Tonk Commander achievement, you will need to land 45 hits in _a single session_ of the Tonk Challenge
-The easiest way to earn this achievement is to wait until there are hardly any people around for a better chance at destroying the targets
-|tip Spam 1 on your action bar as soon as you get in the arena
-talk Finlay Coolshot##54605
-Tell him "Ready to play!" |goto Darkmoon Island/0 50.7,65.1
-Earn the Ace Tonk Commander Achievement |achieve 9885
-step
-This portion will cover 4 Achievements, all centering around the Racing Strider
-In order to earn the Darkmoon Racer Achievements, you will need to complete a race with minimal amount of toll build ups
-If you end the race within 11 tolls, you will earn all 4 achievements
-Click here to move onto the racing quests |confirm
-stickystart "4fold"
-step
-talk Malle Earnhard##74056
-accept The Real Race##37910 |goto 49.04,88.21
-step
-Choose the _Racing Strider_ |havebuff 132198 |goto Darkmoon Island/0 48.4,87.7
-only if havequest(37910)
-step
-Enter the Start Banner with a Darkmoon Game Token |q The Real Race##37910/1 |goto 47.71,88.27
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	42.4,86.7	36.7,83.2	31.8,76.9
-path	30.6,71.5	26.7,66.7
-Follow the provided path, using the provided abilities to run the track
-Reach the Blue Post |q The Real Race##37910/2
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	28.8,63.3	27.6,56.7	29.6,45.8
-Follow the provided path, using the provided abilities to run the track
-Reach the Green Post |q The Real Race##37910/3
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	33.4,48.5	36.5,51.2	41.3,51.1
-path	43.6,50.4
-Follow the provided path, using the provided abilities to run the track
-Reach the Red Post |q The Real Race##37910/4
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	44.9,54.7	44.3,60.3	41.7,68.1
-path	41.3,74.2	39.7,80.3	44.3,86.7
-path	47.8,88.3
-Follow the provided path, using the provided abilities to run the track
-Return to the Start Banner |q The Real Race##37910/5
-step
-label "dualrace"
-talk Malle Earnhard##74056
-turnin The Real Race##37910 |goto 49.04,88.21
-accept Let's Keep Racing!##33756 |goto 48.96,88.15
-step
-Choose the _Racing Strider_ |havebuff 132198 |goto Darkmoon Island/0 48.4,87.7
-only if havequest(33756)
-step
-Enter the Start Banner with a Darkmoon Game Token |q Let's Keep Racing##33756/1 |goto 47.71,88.27
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	42.4,86.7	36.7,83.2	31.8,76.9
-path	30.6,71.5	26.7,66.7
-Follow the provided path, using the provided abilities to run the track
-Reach the Blue Post |q The Real Race##33756/2
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	28.8,63.3	27.6,56.7	29.6,45.8
-Follow the provided path, using the provided abilities to run the track
-Reach the Green Post |q The Real Race##33756/3
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	33.4,48.5	36.5,51.2	41.3,51.1
-path	43.6,50.4
-Follow the provided path, using the provided abilities to run the track
-Reach the Red Post |q The Real Race##33756/4
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	44.9,54.7	44.3,60.3	41.7,68.1
-path	41.3,74.2	39.7,80.3	44.3,86.7
-path	47.8,88.3
-Follow the provided path, using the provided abilities to run the track
-Return to the Start Banner |q The Real Race##33756/5
-step
-talk Malle Earnhard##74056
-turnin Let's Keep Racing!##33756 |goto 48.96,88.15
-step
-label "4fold"
-Be sure to hit all of the _Speed Boots_ while racing
-Earn the Darkmoon Racer Novice Achievement |achieve 9756
-Earn the Darkmoon Racer Jockey Achievement |achieve 9759
-Earn the Darkmoon Racer Leadfoot Achievement |achieve 9760
-Earn the Darkmoon Racer Roadhog Achievement |achieve 9761
-Click here to continue on to other achievements |confirm |achieve 9761
-Click here to race again |confirm |next "dualrace" |achieve 9761
-step
-In order to earnt he Big Rocketeer set of achievements, you will need to complete the Real Big Race quest within 30, 25, and 20 tolls, WHILE using the Rocketeer mount
-confirm
-stickystart "rbr"
-step
-talk Patti Earnhard##90473
-accept The Real Big Race##37911 |goto 53.18,87.56
-step
-Choose the _Rocketeer_ |havebuff 298587  |goto Darkmoon Island/0 48.4,87.7
-only if havequest(37911) or havequest(37868)
-step
-Enter the Start Banner with a Darkmoon Game Token |q The Real Big Race##37911/1 |goto Darkmoon Island/0 54.5,88.3
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	60.0,86.6	65.6,88.1	70.3,89.9
-path	74.1,87.0	78.4,80.2	78.5,75.0
-path	76.1,61.2	74.6,62.0	73.5,61.9
-path	71.8,60.6	71.7,67.2	70.3,71.6
-Follow the provided path, using the provided abilities to run the track
-Reach the Purple Post |q The Real Big Race##37911/2
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	69.7,67.1	70.3,57.2	68.0,50.8
-path	67.9,47.3	66.8,36.4	64.5,19.9
-Follow the provided path, using the provided abilities to run the track
-Reach the Green Post |q The Real Big Race##37911/3
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	60.7,24.1	58.1,22.1	57.4,27.6
-path	56.2,27.3	55.8,23.8	54.6,20.3
-path	53.0,18.3	50.9,18.2
-Follow the provided path, using the provided abilities to run the track
-Reach the Red Post |q The Real Big Race##37911/4
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	51.1,25.0	53.1,29.9	52.9,36.5
-path	55.5,37.1	56.7,43.2	57.7,49.6
-path	51.7,59.4	49.3,66.0	49.4,72.3
-path	49.9,81.4	51.7,87.9	54.7,88.2
-Follow the provided path, using the provided abilities to run the track
-Return to the Start Banner |q The Real Big Race##37911/5
-step
-label "race2"
-talk Patti Earnhard##90473
-turnin The Real Big Race##37911 |goto 53.18,87.56
-accept More Big Racing!##37868 |goto 53.11,87.71
-step
-Choose the _Rocketeer_ |havebuff 298587 |goto Darkmoon Island/0 48.4,87.7
-only if havequest(37911) or havequest(37868)
-step
-Enter the Start Banner with a Darkmoon Game Token |q The Real Big Race##37868/1 |goto Darkmoon Island/0 54.5,88.3
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	60.0,86.6	65.6,88.1	70.3,89.9
-path	74.1,87.0	78.4,80.2	78.5,75.0
-path	76.1,61.2	74.6,62.0	73.5,61.9
-path	71.8,60.6	71.7,67.2	70.3,71.6
-Follow the provided path, using the provided abilities to run the track
-Reach the Purple Post |q The Real Big Race##37868/2
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	69.7,67.1	70.3,57.2	68.0,50.8
-path	67.9,47.3	66.8,36.4	64.5,19.9
-Follow the provided path, using the provided abilities to run the track
-Reach the Green Post |q The Real Big Race##37868/3
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	60.7,24.1	58.1,22.1	57.4,27.6
-path	56.2,27.3	55.8,23.8	54.6,20.3
-path	53.0,18.3	50.9,18.2
-Follow the provided path, using the provided abilities to run the track
-Reach the Red Post |q The Real Big Race##37868/4
-step
-map Darkmoon Island/0
-path loop off; dist 15
-path	51.1,25.0	53.1,29.9	52.9,36.5
-path	55.5,37.1	56.7,43.2	57.7,49.6
-path	51.7,59.4	49.3,66.0	49.4,72.3
-path	49.9,81.4	51.7,87.9	54.7,88.2
-Follow the provided path, using the provided abilities to run the track
-Return to the Start Banner |q The Real Big Race##37868/5
-step
-talk Patti Earnhard##90473
-turnin More Big Racing!##37868 |goto 53.11,87.71
-step
-label "rbr"
-Earn the Big Rocketeer: Bronze Achievement |achieve 9801
-Earn the Big Rocketeer: Silver Achievement |achieve 9803
-Earn the Big Rocketeer: Gold Achievement |achieve 9805
-step
-map Darkmoon Island/0
-path follow strict; loop off; dist 15
-path	48.5,71.4	46.5,70.8	45.6,66.5
-path	43.0,56.2	48.2,49.3	51.0,44.4
-path	48.0,44.0	45.4,38.3	42.2,34.8
-path	41.8,43.4	32.1,41.1	29.0,36.5
-path	29.0,36.5	22.5,33.7	20.4,39.2
-path	29.2,44.8	29.6,53.1	31.9,62.1
-path	26.6,66.6	27.8,68.3	31.5,66.7
-path	39.0,67.8	40.7,76.2	44.9,78.6
-path	43.2,86.9	48.7,87.8	53.8,88.3
-path	56.7,86.1	52,77		52,72
-path	57,70		57,64		55,58
-path	50,55		55,50		54,45
-path	59,33		61,40		63,44
-path	61,53		69,51		71,59
-path	66,65		70,66		75,68
-path	71,72		70,79		67,80
-path	67,76		63,77		65,84
-Fly through the rings in order to stack _Blazing Ring_ buffs |tip Zoom your camera out as far as you can, so you can see how high or low the rings are.
-Stack 10 Blazing Ring Buffs and earn the Flying High Achievement |achieve 9250
-Stack 25 Blazing Ring Buffs and earn the Ringmaster Achievement |achieve 9251
-Stack 50 Blazing Ring Buffs and earn the Brood of Alysrazor Achievement |achieve 9252
-step
-For the achievement "That Rabbit's Dynamite!", you will need a large group
-Stand at the back of the cave at the provided Location
-Don't run away once you have engaged; You'll reset the fight and waste time
-If you die, release quickly and run back to your corpse
-Earn the _That Rabbit's Dynamite!_ Achievement |achieve 6332 |goto Darkmoon Island/0 75.4,77.8
-|next "main"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Darkmoon Faire\\Blight Boar Concert", {
-condition_suggested=function() return isevent('Darkmoon Faire') end,
-description="This guide will help you navigate through the Darkmoon Faire Event, Blight Boar Concert",
-},[[
-step
-The Blight Boar Concert is a new event added in patch 7.2.5
-|tip This event happens every hour on the half hour during the Darkmoon Faire.
-|tip The Darkmoon Faire is only active for a week starting on the first Sunday of every month.
-confirm
-step
-Enter the cave |goto Darkmoon Island/0 64.54,67.59 < 5
-Once the Blight Boar Concert starts, the Death Metal Knight will appear |goto Darkmoon Island/1 38.70,39.58
-You and a group of players will need to defeat this boss while dodging a few mechanics
-|tip During the concert he will peridically summon waves of ghosts; dodge these as best as you can.
-|tip He will also do unavoidable area damage, mitigate this as best as possible.
-|tip Just before he dies, he will summons ghouls. These need to be damaged to knock them back. You do not want any to reach Devlynn Styx, who stands in the middle of the room.
-confirm
-step
-_Congratulations!_
-You have completed the new Darkmoon Faire event _Blight Boar Concert_!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Warlords of Draenor\\Iron Horde Invasion",{
-description="Take part in the opening event of the Warlords of Draenor!",
-},[[
-step
-accept Iron Horde Invasion##36499 |goto Orgrimmar 50.6,77.7
-step
-talk Ameri Windblade##85734
-fpath Shattered Landing |goto Blasted Lands 72.9,48.6
-step
-talk Thrall##82851
-turnin Iron Horde Invasion##36499 |goto 71.8,47.7
-accept Attack of the Iron Horde##35745 |goto 71.8,47.7
-accept Under Siege##35746 |goto 71.8,47.7
-step
-talk Rokhan##85247
-accept Peeking Into the Portal##36382 |goto 71.9,49.0
-step
-clicknpc Iron Demolisher##86091
-Destroy 3 Iron Demolishers |q Under Siege##35746/1 |goto 63.5,38.8
-step
-kill 8 Ironmarch Grunt##76189
-Slay eight Ironmarch Grunts |q Attack of the Iron Horde##35745/1 |goto 63.2,33.5
-step
-click Telescope##237144
-Use the telescope at the top of the hill |q Peeking Into the Portal##36382/1 |goto 61.7,36.7
-step
-talk Rokhan##85247
-turnin Peeking Into the Portal##36382 |goto 71.9,49.0
-step
-talk Thrall##82851
-turnin Attack of the Iron Horde##35745 |goto 71.8,47.7
-turnin Under Siege##35746
-step
-talk Thrall##82851
-accept Subversive Scouts##35748 |goto 71.8,47.7
-step
-talk Rokhan##85247
-accept Ending Executions##35744 |goto 71.9,49.0
-step
-kill 5 Ironmarch Scout##76886+
-Slay the Ironmarch Scouts lurking around camp |q Subversive Scouts##35748/1 |goto 72.8,48.1
-step
-talk Thrall##82851
-turnin Subversive Scouts##35748 |goto 71.8,47.7
-step
-kill Ironmarch Executioner##82774+
-Stop the executions |q Ending Executions##35744/1 |goto 59.5,30.0
-step
-talk Rokhan##85247
-turnin Ending Executions##35744 |goto 71.9,49.0
-step
-talk Thrall##82851
-accept Investigating the Invasion##36292 |goto 71.8,47.7
-step
-talk Thrall##84928
-turnin Investigating the Invasion##36292 |goto 48.7,31.8
-accept Attack on Nethergarde##35751 |goto 48.7,31.8
-accept Lunatic Lieutenants##35750 |goto 48.7,31.8
-step
-talk Okrilla##76609
-accept Ransacking Nethergarde##35761 |goto 48.7,31.9
-step
-kill Rukah the Machinist##73458
-Kill Rukah and collect the battleplan |q Lunatic Lieutenants##35750/2 |goto 56.9,17.6
-step
-click Horde Flag##233203
-Plant the flag outside of the main keep |q Attack on Nethergarde##35751/3 |goto 59.9,15.8
-step
-kill Gar Steelcrush##73446
-|tip He's at the top floor of the keep.
-Slay Gar and take Gar's Battleplan |q Lunatic Lieutenants##35750/3 |goto 60.2,13.8
-step
-click Neka's Poison Flask##233224
-Acquire Neka's Poison Flask |q Ransacking Nethergarde##35761/3 |goto 59.4,18.0
-step
-click Overseer Struk's Shield##233227
-Acquire Overseer Struk's Shield |q Ransacking Nethergarde##35761/2 |goto 60.6,20.0
-step
-click Horde Flag##233203
-Plant the flag at the Nethergarde entrance |q Attack on Nethergarde##35751/1 |goto 63.0,22.5
-step
-click Horde Flag##233203
-Plant the flag at the center of Nethergarde |q Attack on Nethergarde##35751/2 |goto 61.6,18.5
-step
-click Aitokk's Axe##233228
-Acquire Aitokk's Axe |q Ransacking Nethergarde##35761/1 |goto 61.9,14.7
-|tip It is stuck in the wood frame on the wall.
-step
-kill Mokrik Blackfingers##73459
-Slay Mokrik and take Mokrik's Battleplan |q Lunatic Lieutenants##35750/1 |goto 62.9,13.1
-step
-talk Thrall##84928
-turnin Attack on Nethergarde##35751 |goto 48.7,31.8
-turnin Lunatic Lieutenants##35750 |goto 48.7,31.8
-step
-talk Okrilla##76609
-turnin Ransacking Nethergarde##35761 |goto 48.7,31.9
-step
-talk Thrall##84928
-accept Toothsmash the Annihilator##35760 |goto 48.7,31.8
-accept Death to the Dreadmaul##35762 |goto 48.7,31.8
-step
-talk Okrilla##76609
-accept Okrilla's Revenge##35764 |goto 48.7,31.9
-step
-click Cooking Pot##232625
-Poison the ogre food supply |q Okrilla's Revenge##35764/1 |goto Blasted Lands 44.3,35.6
-You can find the _2nd Cooking Pot_ here: |goto Blasted Lands 43.5,37.0
-You can find the _3rd Cooking Pot_ here: |goto Blasted Lands 43.9,31.0
-step
-kill Toothsmash the Annihilator##82451 |q Toothsmash the Annihilator##35760/1 |goto 43.6,36.4
-|tip He walks a small area around the camp.
-step
-from Dreadmaul Crusher##78345+, Dreadmaul Packmaster##78488+, Dreadmaul Flamebelcher##78348+
-Kill 8 Dreadmaul ogres |q Death to the Dreadmaul##35762/1 |goto 45.1,35.6
-step
-talk Okrilla##76609
-turnin Okrilla's Revenge##35764 |goto 48.7,31.9
-step
-talk Thrall##84928
-turnin Toothsmash the Annihilator##35760 |goto 48.7,31.8
-turnin Death to the Dreadmaul##35762 |goto 48.7,31.8
-accept Gar'mak Bladetwist##35763 |goto 48.7,31.8
-step
-kill Gar'mak Bladetwist##82918 |tip He's in the hold up the stairs.
-Slay Gar'mak Bladetwist |q Gar'mak Bladetwist##35763/1 |goto 40.0,11.4
-step
-talk Thrall##84928
-turnin Gar'mak Bladetwist##35763 |goto 48.7,31.8
-accept Warning the Warchief##36940 |goto 48.7,31.8
-step
-talk Vol'jin##86832
-turnin Warning the Warchief##36940 |goto Orgrimmar 48.1,70.5
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Deepholm Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cataclysm Dailies\\Deepholm Dailies with Pre-Quests",{
 description="Contains the pre-quests to unlock the daily quests in Deepholm. You must be at least level 82 to complete this guide section.",
 },[[
 step
@@ -12769,13 +10208,13 @@ step
 You have reached the end of these dailies. Click here to return to the beginning of the guide. |confirm
 |next "hub"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Uldum Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cataclysm Dailies\\Uldum Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="Contains the pre-quests to unlock the daily quests in Uldum. You must be at least level 83 to complete this guide section.",
 },[[
 step
 The pre-quests for these dailies are in Uldum. You can quest through the guide, or use our Leveling Guide for help. |only if not ZGV.guidesets['LevelingHCATA']
-Click here to go to the leveling section to work on this rep |confirm |next "Zygor's Leveling Guides\\Cataclysm 80-85\\Uldum (83-84)" |only if ZGV.guidesets['LevelingHCATA']
+Click here to go to the leveling section to work on this rep |confirm |next "Leveling Guides\\Cataclysm 80-85\\Uldum (83-84)" |only if ZGV.guidesets['LevelingHCATA']
 only if not completedq(28633)
 step
 label "hub"
@@ -12803,13 +10242,13 @@ step
 You have reached the end of these dailies. Click here to return to the beginning of the guide. |confirm
 |next "hub"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Twighlight Highlands Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cataclysm Dailies\\Twighlight Highlands Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="Walks you through completing the daily quests in the Bloodgulch region of Twilight Highlands.",
 },[[
 step
 The pre-quests for these dailies are in Uldum. You can quest through the guide, or use our Leveling Guide for help. |only if not ZGV.guidesets['LevelingHCATA']
-Click here to go to the leveling section to work on this rep |confirm |next "Zygor's Leveling Guides\\Cataclysm 80-85\\Twilight Highlands (84-85)" |only if ZGV.guidesets['LevelingHCATA']
+Click here to go to the leveling section to work on this rep |confirm |next "Leveling Guides\\Cataclysm 80-85\\Twilight Highlands (84-85)" |only if ZGV.guidesets['LevelingHCATA']
 only if not completedq(27788)
 step
 talk Harkkan##46318
@@ -12859,7 +10298,7 @@ step
 talk Malkar##50622
 turnin Crushing the Wildhammer##28871 |goto 54.0,41.9
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Tol Barad Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cataclysm Dailies\\Tol Barad Dailies",{
 achieveid={4874},
 description="Walks you through completing the daily quests in Tol Barad.",
 },[[
@@ -13145,7 +10584,7 @@ label "end"
 You have reached the end of the dailies for today
 Click here to return to the beginning of the guide |confirm |next "begin"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Reputation\\Guardians of Hyjal",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cataclysm Dailies\\Reputation\\Guardians of Hyjal",{
 author="support@zygorguides.com",
 description="Walks you through the process of obtaining Exalted reputation with the Guardians of Hyjal faction.",
 },[[
@@ -13157,7 +10596,7 @@ Once you earn Friendly reputation with the Guardians of Hyjal faction, you can b
 |tip Wear the Tabard of the Guardians of Hyjal and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with the Guardians of Hyjal faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of the Guardians of Hyjal by talking to Provisioner Whitecloud at [Mount Hyjal 62.8,23.9]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Reputation\\The Earthen Ring",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cataclysm Dailies\\Reputation\\The Earthen Ring",{
 author="support@zygorguides.com",
 description="Walks you through the process of obtaining Exalted reputation with The Earthen Ring faction.",
 },[[
@@ -13171,7 +10610,7 @@ Once you earn Friendly reputation with The Earthen Ring faction, you can buy the
 |tip Wear the Tabard of the Earthen Ring and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with The Earthen Ring faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of the Earthen Ring by talking to Provisioner Arok at [Shimmering Expanse 49.1,42.2]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Reputation\\Therazane",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cataclysm Dailies\\Reputation\\Therazane",{
 author="support@zygorguides.com",
 description="Walks you through the process of obtaining Exalted reputation with the Therazane faction.",
 },[[
@@ -13185,7 +10624,7 @@ Once you earn Friendly reputation with the Therazane faction, you can buy the Ta
 |tip Wear the Tabard of Therazane and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with the Therazane faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of Therazane by talking to D'lom the Collector at [Deepholm 56.95,13.08]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Reputation\\Ramkahen",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cataclysm Dailies\\Reputation\\Ramkahen",{
 author="support@zygorguides.com",
 description="Walks you through the process of obtaining Exalted reputation with the Ramkahen faction.",
 },[[
@@ -13199,7 +10638,7 @@ Once you earn Friendly reputation with the Ramkahen faction, you can buy the Tab
 |tip Wear the Tabard of Ramkahen and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with the Ramkahen faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of Ramkahen by talking to Blacksmith Abasi at [Uldum 54.1,33.3]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Reputation\\Dragonmaw Clan",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cataclysm Dailies\\Reputation\\Dragonmaw Clan",{
 author="support@zygorguides.com",
 description="Walks you through the process of obtaining Exalted reputation with the Dragonmaw Clan faction.",
 },[[
@@ -13213,7 +10652,7 @@ Once you earn Friendly reputation with the Dragonmaw Clan faction, you can buy t
 |tip Wear the Tabard of the Dragonmaw Clan and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with the Dragonmaw Clan faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of the Dragonmaw Clan by talking to Grot Deathblow at [Twilight Highlands 53.9,42.1]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Reputation\\Hellscream's Reach",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cataclysm Dailies\\Reputation\\Hellscream's Reach",{
 author="support@zygorguides.com",
 description="Walks you through the process of obtaining Exalted reputation with the Hellscream's Reach faction.",
 },[[
@@ -13227,7 +10666,7 @@ Complete the Baradin Hold Dailies guide in the Tol Barad section.
 Once you earn Friendly reputation with the Hellscream's Reach faction, you can buy Hellscream's Reach Commendations from Pogg at [54.5,81.3]
 |tip They cost 10 Tol Barad Commendations each and you can use the Hellscream's Reach Commendations to increase your Hellscream's Reach reputation by 250.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Zandalari Menace Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cataclysm Dailies\\Zandalari Menace Quest Line",{
 author="support@zygorguides.com",
 startlevel=85,
 description="Walks you through completing the Zandalari Menace quest line in Stranglethorn Vale. You must be level 85 to be able to use this guide.",
@@ -13382,7 +10821,7 @@ To continue with the Zul'Gurub dungeon quest line:
 talk Baron Revilgaz##2496
 accept Booty Bay's Interests##29251 |goto 41.2,73.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\How To Use Firelands Guide Sections - READ FIRST",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\How To Use Firelands Guide Sections - READ FIRST",{
 author="support@zygorguides.com",
 description="Walks you through how to use the Firelands guide sections.",
 },[[
@@ -13393,7 +10832,7 @@ _
 You will need to use the Firelands Quests and Firelands Dailies together. Complete as many quests as you can in the Firelands Quests guide section, and use the Firelands Dailies guide section to gain Marks of the World Tree.
 |tip Marks of the World Tree are currency needed to complete certain quests in order to unlock more daily quests.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\Firelands Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\Firelands Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="Contains the pre-quests to unlock the Firelands quest line and daily quests. You must be at least level 80 to complete this guide section.",
 },[[
@@ -14243,7 +11682,7 @@ step
 label "RestartDailies"
 Click this line to return to the beginning of the Firelands Dailies guide section |confirm |next "firelands"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\The Call of the World-Shaman Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\The Call of the World-Shaman Quest Line",{
 author="support@zygorguides.com",
 description="Walks you through completing the Call of the World-Shaman quest line.",
 },[[
@@ -14350,20 +11789,20 @@ turnin Elemental Bonds: The Vow##29331 |goto Mount Hyjal,60.2,29.8
 step
 Congratulations, you saved Thrall!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cooking\\Dalaran Cooking Daily Guide",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cooking\\Dalaran Cooking Daily Guide",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Cooking daily quests to earn Dalaran Cooking Awards and gather Northern Spices.",
 },[[
 step
 #include "H_Dalaran_Cooking_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cooking\\Orgrimmar Cooking Daily Guide",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cooking\\Orgrimmar Cooking Daily Guide",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Cooking daily quests to earn Chef's Awards.",
 },[[
 #include "Org_Cooking_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cooking\\Shattrath Cooking Daily Guide",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Cooking\\Shattrath Cooking Daily Guide",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Cooking daily quests to earn Shattrath Cooking Awards",
 },[[
@@ -14421,7 +11860,7 @@ turnin The Latest Fashion!##25159 |goto 72.5,34.5
 earn 4 Illustrious Jewelcrafter's Token##361
 If you do not have these click this button to go to make another Fire Prism and go to the start of the Jewelcrafting Dailies to do them again |confirm |next "start" |only if skill("Jewelcrafting")<525
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Draenor",{
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Draenor",{
 achieveid={11277},
 condition_suggested=function() return isevent('Midsummer Fire Festival') end,
 keywords={"Extinguishing","Draenor"},
@@ -14435,7 +11874,7 @@ step
 _Congratulations!_
 You Earned the "Extinguishing Draenor" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing the Broken Isles",{
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing the Broken Isles",{
 achieveid={11279},
 condition_suggested=function() return isevent('Midsummer Fire Festival') end,
 keywords={"Extinguishing","the","Broken","Isles"},

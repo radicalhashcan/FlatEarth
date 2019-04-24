@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("PoiRareWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Rares",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Rares",{
 hidden=true,
 poi=true,
 poitype="rare",

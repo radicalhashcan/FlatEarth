@@ -109,4 +109,6 @@
 		</Scripts>
 	</Frame>
 
+	<Frame name="ZygorWorldQuestPinTemplate" inherits="WorldQuestPinTemplate" mixin="WorldMap_WorldQuestPinMixin" virtual="true"/>
+
 </Ui>

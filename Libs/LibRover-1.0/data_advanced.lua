@@ -71,8 +71,8 @@ data.basenodes.advanced = {
 	{"REGION",name="shrine2moon_west",center="Shrine of Two Moons/2 30.3,53.5",radius=75,nofly=1},
 	{"REGION",name="shrine2moon_east",center="Shrine of Two Moons/2 70.4,46.2",radius=75,nofly=1},
 
-	{"REGION",name="shrine7star_west",center="Vale of Eternal Blossoms/4 40.8,69.2",radius=75,nofly=1},
-	{"REGION",name="shrine7star_east",center="Vale of Eternal Blossoms/4 69.5,40.4",radius=75,nofly=1},
+	{"REGION",name="shrine7star_west",center="Shrine of Seven Stars/2 40.8,69.2",radius=75,nofly=1},
+	{"REGION",name="shrine7star_east",center="Shrine of Seven Stars/2 69.5,40.4",radius=75,nofly=1},
 
 	{"REGION",name="endtime_entry",center="End Time/1 80,45",radius=200,nofly=1},  -- One can't rove around the whole End Time map.
 

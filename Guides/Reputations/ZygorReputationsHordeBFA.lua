@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ReputationsHBFA") then return end
 ZygorGuidesViewer.GuideMenuTier = "BFA"
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Battle for Azeroth\\Champions of Azeroth",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Battle for Azeroth\\Champions of Azeroth",{
 author="support@zygorguides.com",
 keywords={"Champions","of","Azeroth"},
 description="This guide will walk you through becoming exalted with the \"Champions of Azeroth\" faction.",
@@ -24,7 +24,7 @@ step
 _Congratulations!_
 You reached Exalted reputation with the "Champions of Azeroth" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Battle for Azeroth\\Talanji's Expedition",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Battle for Azeroth\\Talanji's Expedition",{
 author="support@zygorguides.com",
 keywords={"Talanji's", "Expedition"},
 description="This guide will walk you through becoming exalted with the \"Talanji's Expedition\" faction.",
@@ -45,7 +45,7 @@ step
 _Congratulations!_
 You reached Exalted reputation with the "Talanji's Expedition" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Battle for Azeroth\\The Honorbound",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Battle for Azeroth\\The Honorbound",{
 author="support@zygorguides.com",
 keywords={"Honorbound"},
 description="This guide will walk you through becoming exalted with the \"The Honorbound\" faction.",
@@ -67,7 +67,7 @@ step
 _Congratulations!_
 You reached Exalted reputation with "The Honorbound" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Battle for Azeroth\\Tortollan Seekers",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Battle for Azeroth\\Tortollan Seekers",{
 author="support@zygorguides.com",
 keywords={"Tortollan","Seekers"},
 description="This guide will walk you through becoming exalted with the \"Tortollan Seekers\" faction.",
@@ -88,7 +88,7 @@ step
 _Congratulations!_
 You reached Exalted reputation with the "Tortollan Seekers" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Battle for Azeroth\\Voldunai",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Battle for Azeroth\\Voldunai",{
 author="support@zygorguides.com",
 keywords={"Voldunai"},
 description="This guide will walk you through becoming exalted with the \"Voldunai\" faction.",
@@ -109,7 +109,7 @@ step
 _Congratulations!_
 You reached Exalted reputation with the "Voldunai" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Battle for Azeroth\\Zandalari Empire",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Battle for Azeroth\\Zandalari Empire",{
 author="support@zygorguides.com",
 keywords={"Zandalari","Empire"},
 description="This guide will walk you through becoming exalted with the \"Zandalari Empire\" faction.",

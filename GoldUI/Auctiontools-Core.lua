@@ -211,16 +211,18 @@ function Appraiser:Update()
 		for ii,aucItem in ipairs(self.InventoryAuctions) do 
 			IA_RowNum = ii-IA_RowOff
 			if IA_RowNum>0 and IA_RowNum<INVENTORY_AUCTION_ROW_COUNT+1 then 
-				local row, color, own, desc, unitcolor, stackcolor, unitcolormode, stackcolormode
+				local row, color, own, desc, unitcolor, stackcolor
 				row = InventoryAuctionList.rows[IA_RowNum]
 				color = ZGV.ArrayToStringColor(aucItem.stack_price > 0 and ZGVG:GetPriceStatus(aucItem.itemid,aucItem.unit_price).sellcolor or ZGVG:GetPriceStatus(aucItem.itemid,aucItem.unit_price).stagcolor)
-				unitcolor,unitcolormode = (ZGV.db.profile.aucmode == "stack" and "|cff7f7f7f") or "", ZGV.db.profile.aucmode == "stack" and 5 -- mode for GetMoneyString
-				stackcolor,stackcolormode = (ZGV.db.profile.aucmode == "unit" and "|cff7f7f7f") or "", ZGV.db.profile.aucmode == "unit" and 5 -- mode for GetMoneyString
+
+				unitcolor  = (ZGV.db.profile.aucmode == "stack" and "|cff7f7f7f") or ""
+				stackcolor = (ZGV.db.profile.aucmode == "unit" and "|cff7f7f7f") or ""
+				
 				own = (aucItem.own_auction==1 and "your ") or ""
 				row.icon:SetTexture(aucItem.icon)
 				row.name:SetText(own.. color.. aucItem.count.." stack"..(aucItem.count>1 and "s" or "").." of ".. aucItem.stack_size)
-				row.sprice:SetText(stackcolor..(aucItem.stack_price > 0 and ZGV.GetMoneyString(aucItem.stack_price,stackcolormode) or "no buyout"))
-				row.uprice:SetText(unitcolor..(aucItem.unit_price > 0 and ZGV.GetMoneyString(aucItem.unit_price,unitcolormode) or "no buyout"))
+				row.sprice:SetText(stackcolor..(aucItem.stack_price > 0 and ZGV.GetMoneyString(aucItem.stack_price,stackcolor) or "no buyout"))
+				row.uprice:SetText(unitcolor..(aucItem.unit_price > 0 and ZGV.GetMoneyString(aucItem.unit_price,unitcolor) or "no buyout"))
 				if aucItem.active then
 					row:SetNormalBackdropColor(0.3,0.3,0.3,1)
 				else
@@ -238,6 +240,10 @@ function Appraiser:Update()
 		for r=IL_RowNum+1,INVENTORY_ROW_COUNT do InventoryList.rows[r]:Hide() InventoryList.rows[r].item=nil end
 		for r=IA_RowNum+1,INVENTORY_AUCTION_ROW_COUNT do InventoryAuctionList.rows[r]:Hide() InventoryAuctionList.rows[r].item=nil end
 	
+		if self.ActiveSellingItem then Appraiser:UpdateAuctionCost(self.ActiveSellingItem.stacksize,self.ActiveSellingItem.stackcount) end
+
+
+
 	elseif self.ActiveTab == "Buy" then
 		local SL_RowNum=0
 		local SA_RowNum=0
@@ -305,16 +311,17 @@ function Appraiser:Update()
 		for ii,auction in ipairs(self.ShoppingAuctions) do 
 			SA_RowNum = ii-IA_RowOff
 			if SA_RowNum>0 and SA_RowNum<SHOPPING_AUCTION_ROW_COUNT+1 then 
-				local row, color, own, desc, unitcolor, stackcolor, unitcolormode, stackcolormode
+				local row, color, own, desc, unitcolor, stackcolor
 				row = ShoppingAuctionList.rows[SA_RowNum]
 				color = ZGV.ArrayToStringColor(auction.stack_price > 0 and ZGVG:GetPriceStatus(auction.itemid,auction.unit_price).buycolor or ZGVG:GetPriceStatus(auction.itemid,auction.unit_price).stagcolor)
-				unitcolor,unitcolormode = (ZGV.db.profile.aucmode == "stack" and "|cff7f7f7f") or "", ZGV.db.profile.aucmode == "stack" and 5
-				stackcolor,stackcolormode = (ZGV.db.profile.aucmode == "unit" and "|cff7f7f7f") or "", ZGV.db.profile.aucmode == "unit" and 5
+				unitcolor = (ZGV.db.profile.aucmode == "stack" and "|cff7f7f7f") or "" 
+				stackcolor = (ZGV.db.profile.aucmode == "unit" and "|cff7f7f7f") or ""
+
 				own = (auction.own_auction==1 and "your ") or ""
 				row.icon:SetTexture(auction.icon)
 				row.name:SetText(own..color..auction.count.." stacks of "..auction.stack_size)
-				row.sprice:SetText(stackcolor..(auction.stack_price > 0 and ZGV.GetMoneyString(auction.stack_price,stackcolormode) or "no buyout"))
-				row.uprice:SetText(unitcolor..(auction.unit_price > 0 and ZGV.GetMoneyString(auction.unit_price,unitcolormode) or "no buyout"))
+				row.sprice:SetText(stackcolor..(auction.stack_price > 0 and ZGV.GetMoneyString(auction.stack_price,stackcolor) or "no buyout"))
+				row.uprice:SetText(unitcolor..(auction.unit_price > 0 and ZGV.GetMoneyString(auction.unit_price,unitcolor) or "no buyout"))
 
 				-- does this row's data match any selected auction? It could match many; don't assume it's the first.
 				local foundByIndex=false
@@ -347,7 +354,7 @@ function Appraiser:Update()
 		for ii,addItem in ipairs(self.ShoppingAddAuctions) do 
 			SR_RowNum = ii-SR_RowOff
 			if SR_RowNum>0 and SR_RowNum<SHOPPING_SEARCH_ROW_COUNT+1 then 
-				local row, color, own, desc, unitcolor, stackcolor, unitcolormode, stackcolormode
+				local row, color, own, desc, unitcolor, stackcolor
 				row = SearchResultList.rows[SR_RowNum]
 				row.icon:SetTexture(addItem.icon)
 				row.name:SetText(addItem.itemlink)
@@ -514,6 +521,8 @@ function Appraiser:AbortManualScan()
 	Appraiser.ActiveSearchName=nil
 	Appraiser.GoToPage=nil
 	Appraiser.AttemptingToBuyout=nil
+	Appraiser.ActiveShoppingAddItem = nil
+	ZGVG.Scan:SetState("SS_IDLE")
 
 	ZGV:Debug("&gold EVERYTHING ABORTED.")
 
@@ -641,9 +650,9 @@ local function Appraiser_SetTooltipData(tooltip, itemLink)
 		
 		local trend = ZGV.Gold.servertrends and ZGV.Gold.servertrends.items[itemId]
 		if trend then
-			p_lo = ZGV.GetMoneyString(trend.p_lo,3) or "unknown"
-			p_md = ZGV.GetMoneyString(trend.p_md,3) or "unknown"
-			p_hi = ZGV.GetMoneyString(trend.p_hi,3) or "unknown"
+			p_lo = ZGV.GetMoneyString(trend.p_lo) or "unknown"
+			p_md = ZGV.GetMoneyString(trend.p_md) or "unknown"
+			p_hi = ZGV.GetMoneyString(trend.p_hi) or "unknown"
 			demand = trend.sold or trend.q_md or (trend.q_lo + trend.q_hi)/2
 			
 			trends_known = true
@@ -663,9 +672,9 @@ local function Appraiser_SetTooltipData(tooltip, itemLink)
 		end
 
 		local price,_,empty = ZGVG:GetSellPrice(itemId)
-		local price_g = (price>0 and ZGV.GetMoneyString(price,3)) or "n/a"
+		local price_g = (price>0 and ZGV.GetMoneyString(price)) or "n/a"
 		local minprice = ZGVG.Scan:GetPrice(itemId) or 0
-		local minprice_g = (minprice>0 and ZGV.GetMoneyString(minprice,3)) or "n/a"
+		local minprice_g = (minprice>0 and ZGV.GetMoneyString(minprice)) or "n/a"
 
 		local priceStatus = ZGVG:GetPriceStatus(itemId,empty and 0 or price)
 		local statusName = priceStatus.statusName
@@ -919,21 +928,31 @@ local delay,interval=0,0.05
 local last_delay, last_canscan, last_delay2, last_canscan2, last_state
 local last_work
 
-function Appraiser.GetTrueItemCount(itemid,itemlink)
-	if itemid > 1000000000 then -- battle pet, need spoonfeeding since GetItemCount(link) does not work for pets
+
+local bag_slot_ids = {}
+for bag = 1, NUM_BAG_SLOTS do bag_slot_ids[bag] = ContainerIDToInventoryID(bag) end
+
+function Appraiser.GetTrueItemCount(item)
+	local truecount = GetItemCount(item.link)
+
+	for bag=1, NUM_BAG_SLOTS do -- GIC also grabs equipped bags, so substract them from real count
+		local bagid = GetInventoryItemID("player", bag_slot_ids[bag])
+		if bagid==item.itemid then truecount = truecount - 1 end
+	end
+
+	if item.itemid > 1000000000 then -- battle pet, need spoonfeeding since GetItemCount(link) does not work for pets
 		truecount = 0
 		for bag=0, NUM_BAG_SLOTS do
 			for slot=1, GetContainerNumSlots(bag) do
 				local _, count, _, _, _, _, baglink = GetContainerItemInfo(bag, slot)
-				if itemlink == baglink then
+				if item.link == baglink then
 					truecount = truecount + count
 				end
 			end
 		end
-		return truecount
-	else
-		return GetItemCount(itemlink or itemid)
 	end
+
+	return truecount
 end
 
 local function UpdateHandler(frame, elapsed)
@@ -978,6 +997,7 @@ local function UpdateHandler(frame, elapsed)
 	local buttonAbortScan = self.Inventory_Frame.InventoryScanAbortButton
 	local buttonAbortAppr = self.Inventory_Frame.InventoryAppraiseAbortButton
 	local buttonAbortBuyApp = self.Buy_Frame.ShoppingAppraiseAbortButton
+ 	local buttonSearchAbort = self.Buy_Frame.containerSearch.searchbuttonAbort
 
 	--local buttonReAp = self.AHUpdateButton
 
@@ -1032,7 +1052,7 @@ local function UpdateHandler(frame, elapsed)
 		if self.SellingInProgress then
 			buttonPost.soft_disabled=true
 			buttonPost.tooltip = nil
-		elseif stack_count*stack_size>Appraiser.GetTrueItemCount(Appraiser.ActiveSellingItem.itemid,Appraiser.ActiveSellingItem.link) then
+		elseif stack_count*stack_size>Appraiser.GetTrueItemCount(Appraiser.ActiveSellingItem) then
 			buttonPost.soft_disabled=true
 			buttonPost.tooltip = ("|cffffaa00Warning:|r Unable to post |cffffffff%d|r stack%s of |cffffffff%d|r %s.|nThat's |cffffffff%d|r total, and you only have |cffffffff%d|r."):format(stack_count,stack_count>1 and "s" or "",stack_size,link or "???",stack_count*stack_size,GetItemCount(Appraiser.ActiveSellingItem.itemid))
 		else
@@ -1049,6 +1069,10 @@ local function UpdateHandler(frame, elapsed)
 		buttonPost.tooltip = nil
 	end
 
+	if not Appraiser.DepositValid then
+		buttonPost:SetEnabled(false)
+	end
+
 	if buttonPost:IsEnabled() and not buttonPost.soft_disabled then
 		buttonPost:SetNormalBackdropColor(unpack(ZGV.UI.SkinData("ButtonColor2")))
 		buttonPost:SetHighlightBackdropColor(unpack(ZGV.UI.SkinData("ButtonHighlightColor2")))
@@ -1058,22 +1082,26 @@ local function UpdateHandler(frame, elapsed)
 	end
 
 	--== Scan/AppraiseAll/BuyApp(?)
-		if self.manualScanning or self.manualBuyScanning then
+		if self.manualScanning or self.manualBuyScanning or self.ActiveShoppingAddItem then
 			buttonScan:Hide()
 			buttonAppr:Hide()
 			buttonBuyApp:Hide()
+			buttonSearch:Hide()
 
 			buttonAbortScan:Show()
 			buttonAbortAppr:Show()
 			buttonAbortBuyApp:Show()
+			buttonSearchAbort:Show()
 		else
 			buttonScan:Show()
 			buttonAppr:Show()
 			buttonBuyApp:Show()
+			buttonSearch:Show()
 
 			buttonAbortScan:Hide()
 			buttonAbortAppr:Hide()
 			buttonAbortBuyApp:Hide()
+			buttonSearchAbort:Hide()
 		end
 	--==
 
@@ -1150,7 +1178,7 @@ local function UpdateHandler(frame, elapsed)
 					buttonBuy:SetNormalBackdropColor(0.43,0.43,0.43,1)
 					buttonBuy:SetHighlightBackdropColor(0.53,0.53,0.53,1)
 					buttonBuy.soft_disabled=true
-					buttonBuy.tooltip = "Buying "..itemBuy[1].." "..self.SelectedShoppingItem.name.." for "..ZGV.GetMoneyString(tonumber(itemBuy[2]),3).." ("..ZGV.GetMoneyString(tonumber(itemBuy[3]),3).." ea)"
+					buttonBuy.tooltip = "Buying "..itemBuy[1].." "..self.SelectedShoppingItem.name.." for "..ZGV.GetMoneyString(tonumber(itemBuy[2])).." ("..ZGV.GetMoneyString(tonumber(itemBuy[3])).." ea)"
 				end
 			elseif not self.SelectedShoppingItem.buyoutindex and not self.WaitingForAuctionData then
 				buttonBuy:SetText("Buy")
@@ -1171,7 +1199,7 @@ local function UpdateHandler(frame, elapsed)
 					buttonBuy:SetNormalBackdropColor(unpack(ZGV.UI.SkinData("ButtonColor2")))
 					buttonBuy:SetHighlightBackdropColor(unpack(ZGV.UI.SkinData("ButtonHighlightColor2")))
 					buttonBuy.soft_disabled=false
-					buttonBuy.tooltip = "Buy "..itemBuy[1].." "..self.SelectedShoppingItem.name.." for "..ZGV.GetMoneyString(tonumber(itemBuy[2]),3).." ("..ZGV.GetMoneyString(tonumber(itemBuy[3]),3).." ea)"
+					buttonBuy.tooltip = "Buy "..itemBuy[1].." "..self.SelectedShoppingItem.name.." for "..ZGV.GetMoneyString(tonumber(itemBuy[2])).." ("..ZGV.GetMoneyString(tonumber(itemBuy[3])).." ea)"
 				end
 			end
 		end
@@ -1310,4 +1338,6 @@ tinsert(ZGV.startups,{"Auctiontools core",function(self)
 	ZGV.db.char.GGbuyitems = ZGV.db.char.GGbuyitems or {}
 	Appraiser.Loaded = true	
 	ZGV.db.profile.aucmode = ZGV.db.profile.aucmode or "unit"
+
+	Appraiser:InitQuickSearch()
 end})

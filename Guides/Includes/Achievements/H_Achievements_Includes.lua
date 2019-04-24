@@ -128,7 +128,7 @@ ZygorGuidesViewer:RegisterInclude("Dinner_Impossible",[[
 		Click here to go farm these materials |confirm |next "farm1"
 		|next "usefeast"
 	step
-		#include "trainer_Cooking"
+		#include "Orgrimmar_Cooking_Trainer"
 		learn Great Feast##45554
 	step
 	label "farm1"
@@ -304,7 +304,7 @@ ZygorGuidesViewer:RegisterInclude("Kickin'_It_Up_a_Notch",[[
 ZygorGuidesViewer:RegisterInclude("The_Northrend_Gourmet",[[
 	//Northern Stew
 	step
-		#include "trainer_Cooking"
+		#include "Orgrimmar_Cooking_Trainer"
 		learn Dalaran Clam Chowder##58065
 		learn Grilled Sculpin##45563
 		learn Mammoth Meal##45549
@@ -313,7 +313,7 @@ ZygorGuidesViewer:RegisterInclude("The_Northrend_Gourmet",[[
 		learn Rhino Dogs##45553
 		learn Roasted Worg##45552
 	step
-		#include "trainer_Cooking"
+		#include "Orgrimmar_Cooking_Trainer"
 		learn Shoveltusk Steak##45550
 		learn Smoked Salmon##45564
 		learn Worm Delight##45551
@@ -748,7 +748,7 @@ ZygorGuidesViewer:RegisterInclude("Our_Daily_Bread",[[
 
 ZygorGuidesViewer:RegisterInclude("The_Outland_Gourmet",[[
 	step
-		#include "trainer_Cooking"
+		#include "Orgrimmar_Cooking_Trainer"
 		learn Stewed Trout##42296
 		learn Fisherman's Feast##42302
 		learn Hot Buttered Trout##42305

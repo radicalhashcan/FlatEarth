@@ -92,15 +92,21 @@ end
 -- returns: current, needed, remaining
 local function GetQuestGoalData(questid,objnum,count)
 	local questdata,goaldata,goalcountnow,goalcountneeded,remaining
-	questdata=ZGV.questsbyid[questid]
-	if not questdata or not questdata.inlog or not objnum then return end
+	if objnum then 
+		_, _, _, goalcountnow, goalcountneeded = GetQuestObjectiveInfo(questid,objnum,false)
+	end	
 
-	-- quest-goal completion display; lame 0/5
-	goaldata = questdata.goals[objnum]
-	if not goaldata then return end
+	if not goalcountneeded then
+		questdata=ZGV.questsbyid[questid]
+		if not questdata or not questdata.inlog or not objnum then return end
 
-	goalcountneeded = min(count or 9999,goaldata.needed or 9999)
-	goalcountnow = goaldata.num
+		-- quest-goal completion display; lame 0/5
+		goaldata = questdata.goals[objnum]
+		if not goaldata then return end
+	end
+
+	goalcountneeded = goalcountneeded or min(count or 9999,(goaldata and goaldata.needed) or 9999)
+	goalcountnow = goalcountnow or (goaldata and goaldata.num) or 0
 	remaining = goalcountneeded-goalcountnow
 	if remaining<=0 then remaining=goalcountneeded end
 
@@ -180,7 +186,10 @@ local function Zygor_GetAchievementCriteriaInfo(achieveid, criteria)
 		end
 	end
 
-	local desc, ctype, completed, quantity, requiredQuantity  = GetAchievementCriteriaInfo(achieveid, criteria)
+	--local desc, ctype, completed, quantity, requiredQuantity  = GetAchievementCriteriaInfo(achieveid, criteria)
+	local success, desc, ctype, completed, quantity, requiredQuantity  = pcall(GetAchievementCriteriaInfo, achieveid, criteria) -- 2019, blizz broke some achieves, so we need to have error handling
+	if not success then return "blizzard error",0,0,0,1 end
+	
 	local stop = debugprofilestop()
 	if (stop-start)>1 then -- Single call took more than 1ms. That is insane. Cache it. (we are looking at your, Variety is the spice of life)
 		GACI_cache[achieveid] = GACI_cache[achieveid] or {}
@@ -470,15 +479,22 @@ GOALTYPES['goldcollect'] = {
 	iscomplete = function(self)
 		if not self.targetid then return false,true,0 end -- no known item... what the...
 		local itemdata = ZGV.Gold.servertrends and ZGV.Gold.servertrends.items[self.targetid]
-		local demand = (itemdata and itemdata.sold) or (itemdata and itemdata.q_md) or 1
+		local demand = itemdata and (itemdata.sold or itemdata.q_md or (trend.q_lo + trend.q_hi)/2)
 		local got = GetItemCount(self.targetid)
+		
+		if not itemdata then -- if we do not have trends for this item, never complete the farm
+			return false, true, norm_nums(got,got+1)
+		end
+
+		self.demand = demand
 		if self.exact then
-			return got==demand, true, norm_nums(got,demand)
+			return self.demand>0 and got==demand, true, norm_nums(got,demand)
 		else
-			return got>=demand, true, norm_nums(got,demand)
+			return self.demand>0 and got>=demand, true, norm_nums(got,demand)
 		end
 	end,
 	-- gettext complex; still in Goal:GetText()! What is this doing here!?
+	--[[
 	NOgettext = function(self)
 		local iscomplete,ispossible,numdone,numneeded = self:IsComplete()
 		local progress = norm_progress(numdone,numneeded)
@@ -489,6 +505,7 @@ GOALTYPES['goldcollect'] = {
 			return (L["stepgoal_goldcollect #_done"]):format(COLOR_COUNT(got),COLOR_ITEM(ZGV:GetItemInfo(self.targetid))), nil, ("(%d%%)"):format(progress*100)
 		end
 	end,
+	--]]
 	gettooltip = function(self)
 		local iscomplete,ispossible,numdone,numneeded = self:IsComplete()
 		local progress = norm_progress(numdone,numneeded)
@@ -1040,6 +1057,7 @@ GOALTYPES['skillmax'] = {
 		local err = GOALTYPES['skill'].parse(self,params)
 		if err then return err end
 		local validlevels={[75]=1, [100]=1, [150]=1, [300]=1, -- subskills and primary skills
+				   [950]=1, -- archeology
 				   [150]=1,[225]=1,[375]=1,[450]=1,[525]=1,[600]=1,[700]=1,[800]=1} -- left for now for legacy code
 		if not validlevels[self.skilllevel] then return "skillmax: you can't raise a skill max level to ".. self.skilllevel.."!" end
 	end,
@@ -1144,17 +1162,17 @@ GOALTYPES['equipped'] = {
 		self.target,self.targetid = ParseID(params)
 	end,
 	iscomplete = function(self)
-		if GetItemCount(self.targetid)==0 then return false,false end  -- not even in the bags
+		if GetItemCount(self.targetid or self.itemid)==0 then return false,false,0 end  -- not even in the bags
 		for i,slot in pairs(invslots) do
 			local slotid,_ = GetInventorySlotInfo(slot)
 			if slotid then
 				local id = GetInventoryItemID("player",slotid)
-				if id and id==self.targetid then
-					return true,true  -- equipped!
+				if id and id==(self.targetid or self.itemid) then
+					return true,true,1  -- equipped!
 				end
 			end
 		end
-		return false,true  -- in bags, not equipped
+		return false,true,1  -- in bags, not equipped
 	end,
 	gettext = function(self) return L["stepgoal_equipped"]:format(self.target) end,
 }
@@ -1319,13 +1337,7 @@ GOALTYPES['havebuff'] = {
 		self.buff = tonumber(id) or (name and buff_textures[name]) or name or "unknown"
 	end,
 	iscomplete = function(self)
-		for i=1,30 do
-			local name,fileid,count = UnitBuff("player",i)
-			if name and (self.buff==fileid or name:find(self.buff)) and (not self.count or count>=self.count) then return true,true end
-			local name,fileid,count = UnitDebuff("player",i)
-			if name and (self.buff==fileid or name:find(self.buff)) and (not self.count or count>=self.count) then return true,true end
-		end
-		return false,true
+		return ZGV.Parser.ConditionEnv.hasbuff(self.buff),true
 	end,
 	gettext = function(self) return L["stepgoal_havebuff"]:format(COLOR_ITEM(self.buff)) end,
 	help = "havebuff name##id  -- completes when user has buff with texture id. "
@@ -1466,8 +1478,8 @@ GOALTYPES['achieve'] = {
 
 		if self.achievesub then
 			if GetAchievementNumCriteria(self.achieveid) < self.achievesub then -- Causes errors when blizzard changes crap.
-				ZGV:Print("Guide ".. self.parentStep.parentGuide.title .." step ".. self.parentStep.num .." can not load because achievement ".. self.achieveid .." - criteria ".. self.achievesub .." doesn't exist.")
-				return false,false
+				ZGV:Debug("Guide ".. self.parentStep.parentGuide.title .." step ".. self.parentStep.num .." can not load because achievement ".. self.achieveid .." - criteria ".. self.achievesub .." doesn't exist.")
+				return false,true
 			end
 			-- partial achievement
 			local desc,ctype,completed,quantity,required = Zygor_GetAchievementCriteriaInfo(self.achieveid,self.achievesub)
@@ -2232,6 +2244,22 @@ GOALTYPES['itemset'] = {
 	end, 
 }
 
+GOALTYPES['playertitle'] = {
+	parse = function(self,params)
+		_,self.titleid = ParseID(params)
+		self.title = GetTitleName(self.titleid):sub(0,-2)
+	end,
+	iscomplete = function(self)
+		return IsTitleKnown(self.titleid),true
+	end,
+	gettext = function(self) return L["stepgoal_title"]:format(COLOR_ITEM(self.title)) end,
+}
+
+GOALTYPES['polish'] = {
+	parse = function(self,params,step)
+		step.polish = true
+	end,
+}
 
 GOALTYPES['image'] = {
 	parse = function(self,params,step)
@@ -2256,6 +2284,53 @@ GOALTYPES['image'] = {
 		if not self.inline then
 			ZGV.GoalPopupImage(self.image,self.full_w,self.full_h)
 		end
+	end,
+}
+
+GOALTYPES['worldquestqueue'] = {
+	parse = function(self,params,step) step.WorldQuestQueueRouter=true end,
+}
+
+GOALTYPES['noautoaccept'] = {
+	parse = function(self,params,step) self.noautoaccept=true end,
+}
+
+local appearance_sort = function(source1, source2)
+	if ( source1.isCollected ~= source2.isCollected ) then return source1.isCollected end
+	if ( source1.quality and source2.quality ) then
+		if ( source1.quality ~= source2.quality ) then return source1.quality > source2.quality end
+	else
+		return source1.quality;
+	end
+	return source1.sourceID > source2.sourceID;
+end
+GOALTYPES['appearance'] = {
+	parse = GOALTYPES['_item'].parse,
+	getname = function(self)
+		local sources = C_TransmogCollection.GetAppearanceSources(self.targetid)
+		table.sort(sources, appearance_sort);
+		self.target = sources[1].name
+	end,
+	gettext = function(self)
+		if not self.targetname then
+			local sources = C_TransmogCollection.GetAppearanceSources(self.targetid)
+			if not sources then 
+				self.targetname=self.target
+			else
+				table.sort(sources, appearance_sort);
+				self.targetname = sources[1].name
+			end
+		end
+		return L['stepgoal_appearance']:format(self.targetname or "...")
+	end,
+	iscomplete = function(self)
+		if not self.targetid then return false,true end -- no known item... what the...
+		local sources = C_TransmogCollection.GetAppearanceSources(self.targetid)
+		if not sources then return false,true end
+		for i, source in ipairs(sources) do
+			if source.isCollected then return true,true end
+		end
+		return false,true
 	end,
 }
 
@@ -2340,6 +2415,22 @@ GOALTYPES['debugvar'] = { -- use for debugging step/goal completion.
 }
 
 
+GOALTYPES['webheader'] = {  
+	parse = function(self,params,step) self.value = params end,
+	gettext = function(self) return "" end, -- not visible in viewer
+}
+
+GOALTYPES['webinfo'] = {  
+	parse = function(self,params,step) self.value = params end,
+	gettext = function(self) return "" end, -- not visible in viewer
+}
+
+GOALTYPES['webimage'] = {  
+	parse = function(self,params,step) self.value = params end,
+	gettext = function(self) return "" end, -- not visible in viewer
+}
+
+
 --[[
 
 		█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
@@ -2375,11 +2466,36 @@ function Goal:IsVisible()
 	--if ZGV.db.profile.showwrongsteps then return true end
 	if not self:IsFitting() then return false end
 	if self.hidden then return false end
-	if self.grouprole and self.grouprole~="EVERYONE" and not ZGV.db.profile.showallroles and UnitGroupRolesAssigned("Player")~="NONE" then
+	if self.grouprole and self.grouprole~="EVERYONE" and not ZGV.db.profile.showallroles then
 		local role,role2 = self.grouprole,self.grouprole2
 		if role=="DPS" or role=="DAMAGE" then role="DAMAGER" end
 		if role2=="DPS" or role2=="DAMAGE" then role2="DAMAGER" end
-		if UnitGroupRolesAssigned("Player")~=role and UnitGroupRolesAssigned("Player")~=role2 then return false end
+
+		local current_role = UnitGroupRolesAssigned("Player")
+		if UnitGroupRolesAssigned("Player")=="NONE" then			
+			local pc = ZGV.ItemScore.playerclass
+			local ps = ZGV.ItemScore.playerspec
+			if	(pc=="DRUID" and ps==4) or
+				(pc=="MONK" and ps==2) or
+				(pc=="PALADIN" and ps==1) or
+				(pc=="PRIEST" and ps==1) or
+				(pc=="PRIEST" and ps==2) or
+				(pc=="SHAMAN" and ps==3)
+			then
+				current_role = "HEALER"
+			elseif	(pc=="DEATHKNIGHT" and ps==1) or
+				(pc=="DEMONHUNTER" and ps==2) or
+				(pc=="DRUID" and ps==3) or
+				(pc=="MONK" and ps==1) or
+				(pc=="PALADIN" and ps==2) or
+				(pc=="WARRIOR" and ps==3)
+			then
+				current_role = "TANK"
+			else
+				current_role = "DAMAGER"
+			end
+		end
+		if current_role~=role and current_role~=role2 then return false end
 	end
 	if self.condition_visible then
 		if self.condition_visible_raw=="default" then
@@ -2745,13 +2861,6 @@ function Goal:AutoTranslate()
 			--self.L=true
 			--ZGV:Debug("Translated: '"..tostring(self.action).."' "..tostring(self.target).." ("..(self.Lretries or 'all').." retries left)")
 		elseif self.action=="collect" or self.action=="goldcollect" or self.action=="get" or self.action=="buy" or self.action=="use" or self.action=="equipped" then
-			if self.action=="goldcollect" then
-				local itemdata = ZGV.Gold.servertrends
-				if itemdata and itemdata.items and itemdata.items[self.targetid] then
-					-- Using q_hi for now because that is the maximum amount of quanity that we want, I assume. Could average q_hi and q_lo if that is better. TBD
-					self.demand = floor((itemdata.items[self.targetid].q_hi + itemdata.items[self.targetid].q_lo)/2/demandAdjust)	-- Average and round down.
-				end
-			end
 			local item = ZGV:GetItemInfo(self.targetid)
 			if item then
 				self.target=item
@@ -3022,10 +3131,10 @@ function Goal:GetText(showcompleteness,brief,showtotals,nocolor)
 			-- There is a set demand for this.
 			goalcountneeded = goalcountneeded or self.demand
 			remaining = remaining or goalcountneeded-goalcountnow
-			if remaining<1 then remaining=goalcountneeded end
+			--if remaining<1 then remaining=goalcountneeded end
+			local done = remaining==0 and "_done" or ""
 
-			text = GenericText(brief,self.action,COLOR_ITEM, remaining or self.demand , self.target, self.demand==1, self.demand~=1, goalcountneeded-goalcountnow>0 and "_done" or "")
-
+			text = GenericText(brief,self.action,COLOR_ITEM, remaining or self.demand , self.target, self.demand==1, self.demand~=1, done)
 		else
 			-- if we have 0 demand then just display "Collect item" If we have some of the item display "Collected # item"
 			text = GenericText(brief,self.action,COLOR_ITEM,goalcountnow,self.target,goalcountnow==0,not self.count or self.count==1, "")

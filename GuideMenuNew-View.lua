@@ -295,7 +295,7 @@ function GuideMenu:CreateFrames()
 		.__END
 		MF.FooterVersion = CHAIN(MF.Footer:CreateFontString())
 			:SetFont(FONTBOLD,12)
-			:SetText("VER:")
+			:SetText("Version:")
 		.__END
 
 		MF.FooterVersionVal = CHAIN(MF.Footer:CreateFontString())

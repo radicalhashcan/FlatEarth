@@ -133,7 +133,7 @@ function ZGV:QuestAutoAccept_InDetail()
 	if do_not_autoaccept_these_quests[id] then return end
 	if self.CurrentStep then
 		for i,goal in ipairs(self.CurrentStep.goals) do
-			if goal.action=="accept" and goal.quest and goal.quest.id==id and goal:IsCompleteable() and not goal:IsObsolete() then
+			if goal.action=="accept" and goal.quest and goal.quest.id==id and goal:IsCompleteable() and not goal:IsObsolete() and not goal.noautoaccept then
 				self:Debug("&qauto Accepting quest as guide")
 				if not ZGV.db.char.DEBUG_PRETEND_QUESTAUTO then
 					QuestDetailAcceptButton_OnClick()

@@ -99,7 +99,7 @@ function ActionBar:ToggleFrame()
 		return
 	end
 	
-	if ZGV.db.profile.enable_actionbar then
+	if ZGV.db.profile.enable_actionbar and ZGV.db.profile.enable_actionbuttons then
 		ZGV:SetActionButtons()
 		ActionBar.Frame:Show()
 	else
@@ -108,15 +108,15 @@ function ActionBar:ToggleFrame()
 		
 end
 
-function ActionBar:SetButton(type,object) 
+function ActionBar:SetButton(btype,object) 
 	if not ZGV.db.profile.enable_actionbuttons then return end
 
 	if ActionBar.Timers[timer_id] then ZGV:CancelTimer(ActionBar.Timers[timer_id]) end
 
 	local function retry()
-		local timer_id = type.." "..object
+		local timer_id = btype.." "..object
 		ActionBar.Timers[timer_id] = ZGV:ScheduleTimer(function() 
-			ActionBar:SetButton(type,object)
+			ActionBar:SetButton(btype,object)
 		end, 1)
 	end
 
@@ -125,12 +125,12 @@ function ActionBar:SetButton(type,object)
 	end
 
 	
-	if type and not object then error("ActionButton must have data defined if type is set") end
+	if btype and not object then ZGV:Debug("ActionButton must have data defined if type is set") return end
 
 	local button,action_index = false,false
 	-- look for any unused button, and use it if found
 	for i,v in pairs(ActionBar.Buttons) do
-		if type==v:GetAttribute("rawtype") and object==v:GetAttribute("rawobject") then -- button for that item/spell already exists, show it, and don't create clones
+		if btype==v:GetAttribute("rawtype") and object==v:GetAttribute("rawobject") then -- button for that item/spell already exists, show it, and don't create clones
 			return v
 		elseif not v:GetAttribute("type") then
 			button = v
@@ -157,17 +157,17 @@ function ActionBar:SetButton(type,object)
 
 	local macro_text, macro_texture, macro_name,macro_tooltip = "", 134400
 	-- set data based on type
-	if type=="item" then 
+	if btype=="item" then 
 		macro_name,_,_,_,_,_,_,_,_,macro_texture = ZGV:GetItemInfo(object)
 		if not macro_name then return retry() end
 		macro_text = "#showtooltip "..macro_name.."\n/use item:"..object
 		button:SetAttribute("itemid",object)
-	elseif type=="spell" then
+	elseif btype=="spell" then
 		macro_name,_,macro_texture = GetSpellInfo(object)
 		if not macro_name then return retry() end
 		macro_text = "#showtooltip "..macro_name.."\n/cast "..macro_name
 		button:SetAttribute("spellid",object)
-	elseif type=="petaction" then
+	elseif btype=="petaction" then
 		local num,needsglobal
 		num,macro_name = ZGV.FindPetActionInfo(object)
 		if not macro_name then return retry() end
@@ -179,29 +179,35 @@ function ActionBar:SetButton(type,object)
 		end
 		macro_text = "#showtooltip "..macro_name.."\n/cast "..macro_name
 		button:SetAttribute("petaction",object)
-	elseif type=="emote" then
-		macro_text = GetMacroBody(object)
-		_,macro_texture = GetMacroInfo(object)
+	elseif btype=="emote" then
+		if type(object)=="number" then 
+			macro_text = GetMacroBody(object)
+			_,macro_texture = GetMacroInfo(object)
+		else
+			macro_text = "/run "..object
+			macro_texture = 1505955
+		end
+		--_,macro_texture = GetMacroInfo(object)
 		macro_tooltip = macro_text:sub(15,-3) -- /run DoEmote("blah") -> blah
-	elseif type=="zygor" then
+	elseif btype=="zygor" then
 		button:SetAttribute("zygor","zygor")
 	end
 
 	EditMacro(macro_index,nil,macro_texture,macro_text)
 
-	if type=="item" then 
+	if btype=="item" then 
 		SetMacroItem(macro_index,macro_name)
-	elseif type=="spell" or type=="petaction" then
+	elseif btype=="spell" or btype=="petaction" then
 		SetMacroSpell(macro_index,macro_name)
 	end
 
 	button:SetMacro(macro_index)
 
-	if type=="item" then 
+	if btype=="item" then 
 		button:SetAttribute("itemid",object)
-	elseif type=="spell" then
+	elseif btype=="spell" then
 		button:SetAttribute("spellid",object)
-	elseif type=="petaction" then
+	elseif btype=="petaction" then
 		local num,needsglobal
 		num,macro_name = ZGV.FindPetActionInfo(object)
 		button:SetAttribute("petid",num)
@@ -213,7 +219,7 @@ function ActionBar:SetButton(type,object)
 
 	-- store object in zygor defined field for easier search of existing buttons later
 	button:SetAttribute("rawobject",object)
-	button:SetAttribute("rawtype",type)
+	button:SetAttribute("rawtype",btype)
 
 	-- object added may have been already on cooldown, so update cd timer
 	button:UpdateCooldown()

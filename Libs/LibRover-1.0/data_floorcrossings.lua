@@ -20,54 +20,6 @@ data.basenodes.FloorCrossings = {
 			-- Winterchill Mine, Indoor Floor Cross
 				"Tiragarde Sound/4 47.06,61.74 -x- Tiragarde Sound/3 55.34,30.26 {title_atob:Follow the path up} {title_btoa:Follow the path down}",
 		},
-		
-		["Stormsong Valley"] = {
-			-- Abyssal Melody Ship Entrance #1
-				"Stormsong Valley/0 67.83,43.21 -x- Stormsong Valley/1 67.85,43.20 {title_atob:Run down the stairs} {title_btoa:Run up the stairs}",
-			
-			-- Abyssal Melody Ship Entrance #2		
-				"Stormsong Valley/0 67.05,43.36 -x- Stormsong Valley/1 37.78,49.32 {title_atob:Run down the stairs} {title_btoa:Run up the stairs}",
-			
-			-- Abyssal Melody Ship Interior Floor Crossing			
-				"Stormsong Valley/1 67.81,49.94 -x- Stormsong Valley/2 66.94,39.70 {title_atob:Run down the stairs} {title_btoa:Run up the stairs}",
-		
-			-- Thornheart Cave
-				"Stormsong Valley/0 45.94,74.29 -x- Stormsong Valley/3 86.74,28.13 {template:cave}",
-
-			-- Saltstone Mine
-				"Stormsong Valley/0 46.68,36.29 -x- Stormsong Valley/4 76.24,41.60 {template:mine}",
-		},
-
-		["Dazar'Alor"] = {
-				
-			-- Zanchul Bottom Floor Entrance
-				"Dazar'alor/0 40.95,11.28 <radius:5> -x- Dazar'alor/4 39.25,58.20 <radius:5> {fac:H} {template:building}",
-
-			-- Zanchul Bottom to Top Floor Crossing
-				"Dazar'alor/4 45.42,16.87 <radius:5> -x- Dazar'alor/3 39.13,27.80 <radius:5> {fac:H} {title_atob:Run Up the Stairs} {title_btoa:Run Down the Stairs}",
-
-			-- Zanchul Upstairs Exit
-				"Dazar'alor/0 45.29,13.26 -x- Dazar'alor/3 79.42,84.04 {fac:H} {template:building}",
-		},
-
-		["Zuldazar"] = {
-			-- Top Floor to Middle Floor Crossing of Ship Off Coast Near Zeb'Ahari
-				"Zuldazar/0 81.21,20.16 <radius:3> -x- Zuldazar/1 53.24,27.22 <radius:3> {title_atob:Run down the stairs} {title_btoa:Run up the stairs}",
-			
-			-- Middle Floor to Bottom Floor Crossing of Ship Off Coast Near Zeb'Ahari
-				"Zuldazar/1 45.02,75.68 <radius:3> -x- Zuldazar/2 44.00,80.88 <radius:3> {title_atob:Run down the stairs} {title_btoa:Run up the stairs}",
-
-			-- Breath of Pa'ku Ship Top Floor to Middle Floor
-				"Zuldazar/0 51.86,87.10 <radius:3> -x- Zuldazar/3 27.45,32.86 <radius:3> {title_atob:Run down the stairs} {title_btoa:Run up the stairs}",
-
-			-- Breath of Pa'ku Ship Middle Floor to Bottom Floor
-				"Zuldazar/3 68.32,64.03 <radius:3> -x- Zuldazar/4 71.98,67.55 <radius:3> {title_atob:Run down the stairs} {title_btoa:Run up the stairs}",
-		},
-
-		["Vol'dun"] = {
-			-- Atul'Aman Cave Entrance
-				"Vol'dun/0 43.07,68.05 <radius:5> -x- Vol'dun/1 31.10,81.42 <radius:3> {template:cave}",
-		},
 
 	-- Old Dalaran
 		["Dalaran"] = {
@@ -98,9 +50,9 @@ data.basenodes.FloorCrossings = {
 			"Azuremyst Isle/0 45.3,19.4 -x- Azuremyst Isle/3 21.2,94.6 {template:cave}", -- Stillpine Hold
 		},
 		["Desolace"] = {
-			"Desolace/0  28.9,62.6 -x- Desolace/21 24.6,43.5 {template:building}", -- Wicked Grotto **Only Way to Get To Felspore Cavern**
-			"Desolace/21 29.5,62.5 -x- Desolace/22 47.4,88.1 {template:cave}", -- Felspore Cavern
-			"Desolace/21 27.7,33.7 -x- Desolace/22 45.5,78.2 {template:cave}", -- Felspore Cavern
+			"Desolace/0 29.08,62.56 -x- Desolace/21 24.89,43.33 {template:building}", -- Wicked Grotto **Only Way to Get To Felspore Cavern**
+			"Desolace/21 29.76,42.75 -x- Desolace/22 46.63,88.08 {template:cave}", -- Felspore Cavern
+			"Desolace/21 27.57,33.72 -x- Desolace/22 45.48,77.88 {template:cave}", -- Felspore Cavern
 		},
 		["Durotar"] = {
 			"Durotar/0 83.2,53.6 -x- Durotar/12 54.9,9.5 {template:cave}", -- Skull Rock
@@ -228,10 +180,6 @@ data.basenodes.FloorCrossings = {
 			"Elwynn Forest/1 55.4,36.3 -x- Elwynn Forest/2 56.3,26.0", --Fargodeep Mine Lower
 			"Elwynn Forest/0 38.5,81.5 -x- Elwynn Forest/2 35.2,68.4 {template:mine}", --Fargodeep Mine Lower
 		},
-		["Ghostlands"] = {
-			"Ghostlands/0 66.4,28.5 -x- Ghostlands/1 94.0,35.6 {template:tunnel}", -- Amani Catacombs
-			"Ghostlands/0 58.3,27.5 -x- Ghostlands/1 10.0,26.0 {template:tunnel}", -- Amani Catacombs
-		},
 		["Gilneas 2"] = {
 			"Gilneas 2/0 29.03,51.66 -x- Gilneas 2/2 66.89,58.26 {template:building}", -- Greymane Manor Main Floor
 			"Gilneas 2/2 61.0,47.5 -x- Gilneas 2/3 56.7,47.5 {title_atob:Run up the stairs} {title_btoa:Run down the stairs}", -- Greymane Manor Upper Floor
@@ -303,24 +251,24 @@ data.basenodes.FloorCrossings = {
 			"Townlong Steppes/0 33.02,61.24 -x- Townlong Steppes/13 20.15,68.46 {template:cave}", -- Niuzao Catacombs
 		},
 		["Vale of Eternal Blossoms"] = {
-			"Vale of Eternal Blossoms/0 22.2,26.3 -x- Vale of Eternal Blossoms/18 54.0,88.2 {template:building}", -- Guo-Lai Halls
+			"Vale of Eternal Blossoms/0 22.2,26.3 -x- Vale of Eternal Blossoms/1 54.0,88.2 {template:building}", -- Guo-Lai Halls
 
-			"Vale of Eternal Blossoms/3 38.6,28.4 <nofly:1> -x- Vale of Eternal Blossoms 86.8,64.3 {B:WALK}",  -- main door
-			"Vale of Eternal Blossoms/3 25.5,55.8 <nofly:1> -x- Vale of Eternal Blossoms 85.6,67.4 {B:WALK}",  -- west door
-			"Vale of Eternal Blossoms/3 60.3,18.0 <nofly:1> -x- Vale of Eternal Blossoms 89.1,63.5 {B:WALK}",  -- east door
+			"Shrine of Seven Stars/1 38.6,28.4 <nofly:1> -x- Vale of Eternal Blossoms 86.8,64.3 {B:WALK}",  -- main door
+			"Shrine of Seven Stars/1 25.5,55.8 <nofly:1> -x- Vale of Eternal Blossoms 85.6,67.4 {B:WALK}",  -- west door
+			"Shrine of Seven Stars/1 60.3,18.0 <nofly:1> -x- Vale of Eternal Blossoms 89.1,63.5 {B:WALK}",  -- east door
 
-			"Vale of Eternal Blossoms/3 33.6,78.3 <radius:5> -x- Vale of Eternal Blossoms/4 32.3,75.5 <radius:5>", -- west staircase
-			"Vale of Eternal Blossoms/3 70.4,33.5 <radius:5> -x- Vale of Eternal Blossoms/4 61.7,18.4 <radius:5>", -- east staircase
+			"Shrine of Seven Stars/1 33.6,78.3 <radius:5> -x- Shrine of Seven Stars/2 32.3,75.5 <radius:5>", -- west staircase
+			"Shrine of Seven Stars/1 70.4,33.5 <radius:5> -x- Shrine of Seven Stars/2 61.7,18.4 <radius:5>", -- east staircase
 
-			"Vale of Eternal Blossoms/3 52.4,78.9 <radius:10> -x- Vale of Eternal Blossoms/4 56.1,75.7 <radius:10>", -- west hall
-			"Vale of Eternal Blossoms/3 66.4,63.3 <radius:10> -x- Vale of Eternal Blossoms/4 68.4,63.3 <radius:10>", -- east hall
+			"Shrine of Seven Stars/1 52.4,78.9 <radius:10> -x- Shrine of Seven Stars/2 56.1,75.7 <radius:10>", -- west hall
+			"Shrine of Seven Stars/1 66.4,63.3 <radius:10> -x- Shrine of Seven Stars/2 68.4,63.3 <radius:10>", -- east hall
 
-			"Vale of Eternal Blossoms/4 43.3,44.3 <radius:5> -to- Vale of Eternal Blossoms/3 44.9,47.6 <radius:5>", -- west balcony jump
-			"Vale of Eternal Blossoms/4 52.6,33.7 <radius:5> -to- Vale of Eternal Blossoms/3 46.4,44.8 <radius:5>", -- east balcony jump
+			"Shrine of Seven Stars/2 43.3,44.3 <radius:5> -to- Shrine of Seven Stars/1 44.9,47.6 <radius:5>", -- west balcony jump
+			"Shrine of Seven Stars/2 52.6,33.7 <radius:5> -to- Shrine of Seven Stars/1 46.4,44.8 <radius:5>", -- east balcony jump
 
-			"Vale of Eternal Blossoms/3 38.6,28.4 <nofly:1> -x- Vale of Eternal Blossoms 86.8,64.3",  -- main door
-			"Vale of Eternal Blossoms/3 25.5,55.8 <nofly:1> -x- Vale of Eternal Blossoms 85.6,67.4",  -- west door
-			"Vale of Eternal Blossoms/3 60.3,18.0 <nofly:1> -x- Vale of Eternal Blossoms 89.1,63.5",  -- east door
+			"Shrine of Seven Stars/1 38.6,28.4 <nofly:1> -x- Vale of Eternal Blossoms 86.8,64.3",  -- main door
+			"Shrine of Seven Stars/1 25.5,55.8 <nofly:1> -x- Vale of Eternal Blossoms 85.6,67.4",  -- west door
+			"Shrine of Seven Stars/1 60.3,18.0 <nofly:1> -x- Vale of Eternal Blossoms 89.1,63.5",  -- east door
 		},
 		["The Veiled Stair"] = {
 			"Kun-Lai Summit/0 73.2,94.6 -x- The Veiled Stair/5 25.1,12.5", -- The Ancient Passage
@@ -396,6 +344,10 @@ data.basenodes.FloorCrossings = {
 			"Gorgrond/18 67.4,46.5 <radius:30> -x- Gorgrond/19 63.3,66.7 <radius:30> {title_atob:Continue walking down into the cave} {title_btoa:Run up the ramp to leave the cave}", --Heart of Fury
 			"Gorgrond/0 54.0,55.7 <dist:20> -x- Gorgrond/20 69,73 <dist:20> {template:cave}", --Fissure of Fury
 			"Gorgrond/20 70,51 <dist:30> -x- Gorgrond/21 65,56 <dist:30> {title_atob:Continue walking down into the cave} {title_btoa:Run up the ramp to leave the cave}", --Heart of Fury
+			"Gorgrond/0 47.68,94.31 <dist:20> -x- Gorgrond/16 40.07,34.51 <dist:20> {title_atob:Enter the mine} "..
+				"{title_btoa:Leave the mine}", --Moira's Bastion
+			"Gorgrond/16 57.68,83.52 <dist:20> -x- Gorgrond/17 61.24,82.87 <dist:20> {title_atob:Follow the path down} "..
+				"{title_btoa:Follow the path up}", --Moira's Bastion
 		},
 		["Lunarfall"] = {
 			"Lunarfall/0 66.6,42.0 -x- Lunarfall/23 70.4,70.1 {template:mine}", --Lunarfall Excavation

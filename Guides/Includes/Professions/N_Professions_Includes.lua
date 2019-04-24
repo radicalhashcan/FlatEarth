@@ -538,6 +538,11 @@ ZygorGuidesViewer:RegisterInclude("cooking_fire",[[
 		Stand next to a fire, or create one yourself |cast Cooking fire##818
 ]])
 
+ZygorGuidesViewer:RegisterInclude("Outland_Cooking_Trainer",[[
+		talk Jack Trapper##19185 |goto Shattrath City/0 63.09,68.38
+		|tip Inside the building.
+]])
+
 ------------------------
 ------ Enchanting ------
 ------------------------

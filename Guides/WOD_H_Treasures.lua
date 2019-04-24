@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("PoiTreasureWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Treasures",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Treasures",{
 hidden=true,
 poi=true,
 poitype="treasure",

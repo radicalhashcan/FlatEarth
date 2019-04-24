@@ -1113,11 +1113,11 @@ ZygorGuidesViewer:RegisterInclude("Explorer_Pandaria",[[
 -- Removed Achievements
 ------------------------------------------------------------------------------
 --[=[
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Pandaria\\Chapter I: Trial of the Black Prince",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Chapter I: Trial of the Black Prince",{
 	condition_end="achieved(7533)",
 	description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Pandaria\\Chapter I: Trial of the Black Prince",
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Chapter I: Trial of the Black Prince",
 	step		
 		talk Wrathion##64616
 		accept The Strength of One's Foes##31473 |goto The Veiled Stair/0 54.5,72.6
@@ -1153,7 +1153,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Pandaria\\C
 		Congratulations, you have obtained the _Chapter 1: Trial of the Black Prince_ achievement!
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Pandaria\\Chapter II: Wrathion's War (Horde)",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Chapter II: Wrathion's War (Horde)",{
 	condition_end="achieved(7533)",
 	description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
@@ -1204,7 +1204,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Pandaria\\C
 		Congratulations, you have obtained the _Chapter 2: Trial of the Black Prince_ achievement!
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Pandaria\\Chapter II: Wrathion's War (Alliance)",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Chapter II: Wrathion's War (Alliance)",{
 	condition_end="achieved(7533)",
 	description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
@@ -1255,7 +1255,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Pandaria\\C
 		Congratulations, you have obtained the _Chapter 2: Trial of the Black Prince_ achievement!
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Pandaria\\Chapter III: Two Princes",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Chapter III: Two Princes",{
 	condition_end="achieved(7533)",
 	description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
@@ -1281,7 +1281,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Pandaria\\C
 		collect 80 Black Trillium Ore##72094
 		collect 80 White Trillium Ore##72103
 	step
-		create 40 Trillium Bar##102167 |goto Vale of Eternal Blossoms/3 71.5,51.0
+		create 40 Trillium Bar##102167 |goto Shrine of Seven Stars/1 71.5,51.0
 	step
 	label "done"
 		For this next quest, you will need to join raids. 
@@ -1335,7 +1335,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Pandaria\\C
 		Congratulations, you have obtained the _Chapter III: Trial of the Black Prince_ achievement!
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Pandaria\\Chapter IV: Two Princes",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Chapter IV: Two Princes",{
 	condition_end="achieved(7533)",
 	description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
@@ -1476,7 +1476,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Pandaria\\C
 		Congratulations, you have obtained the _Chapter IV: Celestial Blessings_ achievement!
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Pandaria\\Chapter V: Judgement of the Black Prince",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Chapter V: Judgement of the Black Prince",{
 	condition_end="achieved(7533)",
 	description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
@@ -1524,7 +1524,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Pandaria\\C
 		Congratulations, you have obtained the _Chapter V: Judgement of the Black Prince_ achievement!
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\FARMING",{},[[
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\FARMING",{},[[
 //INSTANCE // // TIME PER RUN
 //-------------------------------
 //COMPLETE

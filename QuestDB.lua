@@ -30,7 +30,7 @@ function ZGV:QDB_Init()
 	end
 
 	for gname,guidequests in pairs(ZGV.Quest_Cache) do
-		for index,questdata in pairs(guidequests) do
+		for index,questdata in pairs(guidequests) do if type(questdata)=="table" then
 			local wipe = false
 			-- only conditions cannot change during single gameplay session, so depending on RCM result either unset the condition (if RCM is valid), or remove whole quest pack (if invalid)
 			if questdata.step_only then 
@@ -50,7 +50,7 @@ function ZGV:QDB_Init()
 
 			if questdata.step_onlyif then setfenv(questdata.step_onlyif,ZGV.Parser.ConditionEnv) end
 			if questdata.goal_onlyif then setfenv(questdata.goal_onlyif,ZGV.Parser.ConditionEnv) end
-		end
+		end end
 	end					
 end
 

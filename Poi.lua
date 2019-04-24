@@ -16,11 +16,6 @@ local ITEM_SLOTS_ARRAY = {INVTYPE_2HWEAPON, INVTYPE_AMMO, INVTYPE_BAG, INVTYPE_B
 
 -- dev\depreceated\poi.lua: removed unsued poi types
 
-local POI_TYPES = {
-	[1] = {keyword="rare",display="Rares"},
-	[2] = {keyword="treasure",display="Treasures"},
-	}
-
 Poi.OwnedTypes = {}
 
 function Poi:RegisterPoiGuide()
@@ -45,6 +40,8 @@ function Poi:CheckValidity(poistep,register)
 	if ZGV.db.profile.hideguide[poistep.poitype] then
 		return false -- poi type hidden
 	end
+
+	if not poistep.poiquest then return false end -- no quest defined? that is bad. 
 
 	if ZGV.db.profile.poitype==1 and poistep.poiaccess then return false end -- quick mode, and point has access completionist
 
@@ -100,17 +97,20 @@ function Poi:RegisterPoints()
 end
 
 local function addline(text,icon,indent)
-	if text then WorldMapTooltip:AddLine(text,1,1,1,1,1) end
-	if icon then WorldMapTooltip:AddTexture(icon) end
-	if indent then WorldMapTooltip:AddTexture(ZGV.DIR .. "\\Skins\\blank") end
+	local tooltip = GameTooltip
+	if WorldMapTooltip then tooltip = WorldMapTooltip end
+
+	if text then tooltip:AddLine(text,1,1,1,1,1) end
+	if icon then tooltip:AddTexture(icon) end
+	if indent then tooltip:AddTexture(ZGV.DIR .. "\\Skins\\blank") end
 end
 
 local function get_tooltip_data(pin)
 	local poi = pin.waypoint.storedData
 	if not poi then return end
 
-	WorldMapTooltip:SetOwner(pin,"ANCHOR_TOP")
-	WorldMapTooltip:ClearLines()
+	GameTooltip:SetOwner(pin,"ANCHOR_TOP")
+	GameTooltip:ClearLines()
 
 	if poi.poitype=="treasure" then	
 		addline("|cffffffffTreasure: "..poi.poiname)
@@ -149,12 +149,13 @@ local function get_tooltip_data(pin)
 
 				addline(((itemdata.value and itemdata.value.." ") or "")..("|c"..(color or "ffffffff")).."Random green"..(tonumber(itemdata.value or 1) > 1 and "s" or ""),ZGV.DIR.."\\Skins\\poirandomgreen")
 			else
-				EmbeddedItemTooltip_SetItemByID(WorldMapTooltip.ItemTooltip,itemdata.item)
+				EmbeddedItemTooltip_SetItemByID(GameTooltip.ItemTooltip,itemdata.item)
 			end
 		end
 	end
 
-	WorldMapTooltip:Show()
+	GameTooltip:Show()
+	GameTooltip.recalculatePadding = true;
 end
 
 local function poi_waypoint_click(way,button)
@@ -369,154 +370,7 @@ function Poi:ChangeState(enable)
 	end
 end
 
-function Poi:ShowMapButtons()
-	if not WorldMapFrame then return end
-	if Poi.MapButtonFrame then return end
-
-	--if not ZGV.DEV then return end  --devwall
-
-	Poi.MapButtonFrame = CHAIN(CreateFrame("FRAME","ZygorPoiMapButtonFrame",WorldMapFrame.BorderFrame))
-		:SetPoint("BOTTOMLEFT",WorldMapFrame.BorderFrame,"BOTTOMLEFT",5,-20)
-		:SetSize(50,50)
-		:SetBackdrop({bgFile="Interface\\Minimap\\MiniMap-TrackingBorder"})--,tile=true, tileSize=50})
-		:SetFrameLevel(610)
-		:Show()
-	.__END
-
-	Poi.MapButton = CHAIN(CreateFrame("Button", "ZygorPoiMapButton" , Poi.MapButtonFrame))
-		:SetSize(20,20)
-		:SetPoint("TOPLEFT", Poi.MapButtonFrame, "TOPLEFT", 5, -5)
-		:SetBackdrop({bgFile=ZGV.DIR.."\\Skins\\zglogo-back"})
-		:SetNormalTexture(ZGV.DIR.."\\Skins\\zglogo")
-		:SetFrameLevel(611)
-		:SetScript("OnClick", function() Poi:ShowMapMenu() end)
-		:Show()
-	.__END
-	Poi.MapButton:GetNormalTexture():SetTexCoord(0,0,0,1/4 , 1,0,1,1/4)
-end
-
-function Poi:ShowMapMenu()
-	--if not ZGV.DEV then return end  --devwall
-
-	local self=ZGV.Poi.MapButtonFrame 
-	if not self.menu then self.menu = CreateFrame("FRAME",self:GetName().."Menu",self,"UIDropDownForkTemplate") end
-	UIDropDownFork_SetAnchor(self.menu, 0, 0, "BOTTOMLEFT", self, "BOTTOMRIGHT")
-	local menu = {}
-
-	if ZGV.db.profile.poienabled then 
-		tinsert(menu,{
-				text = L['opt_poidisable'],
-				tooltipTitle = L['opt_poidisable'],
-				tooltipText = L['opt_poidisable_desc'],
-				tooltipOnButton=1,
-				func = function() ZGV:SetOption("Poi","poienabled off") ZGV.Poi:ChangeState(false) end,
-				notCheckable=0,
-			})
-	--[[
-		tinsert(menu,{
-				text = L['opt_poirange'],
-				tooltipTitle = L['opt_poirange'],
-				tooltipText = L['opt_poirange_desc'],
-				hasArrow = true,
-				menuList = {
-					{ text = L['opt_poirange_50'], checked = function() return (ZGV.db.profile.poirange==50) end, func = function() ZGV.db.profile.poirange=50 end },
-					{ text = L['opt_poirange_100'], checked = function() return (ZGV.db.profile.poirange==100) end, func = function() ZGV.db.profile.poirange=100 end },
-					{ text = L['opt_poirange_150'], checked = function() return (ZGV.db.profile.poirange==150) end, func = function() ZGV.db.profile.poirange=150 end },
-					{ text = L['opt_poirange_200'], checked = function() return (ZGV.db.profile.poirange==200) end, func = function() ZGV.db.profile.poirange=200 end },
-					{ text = L['opt_poirange_250'], checked = function() return (ZGV.db.profile.poirange==250) end, func = function() ZGV.db.profile.poirange=250 end },
-					{ text = L['opt_poirange_300'], checked = function() return (ZGV.db.profile.poirange==300) end, func = function() ZGV.db.profile.poirange=300 end },
-				},
-				notCheckable=1,
-			})
-	--]]
-
-		local poiTypeList = {}
-		for i=1,#POI_TYPES do
-			local keyword,display = POI_TYPES[i].keyword,POI_TYPES[i].display
-			if Poi.OwnedTypes[keyword] then
-				tinsert(poiTypeList,
-						{ text = display,
-						keepShownOnClick=true, 
-						checked = function() return not ZGV.db.profile.hideguide[keyword] end, 
-						func = function() 
-							if ZGV.db.profile.hideguide[keyword] then
-								ZGV.db.profile.hideguide[keyword] = nil
-							else
-								ZGV.db.profile.hideguide[keyword] = true
-							end
-							ZGV.Poi:ChangeState(true) 
-							UIDropDownFork_Refresh(self.menu) 
-						end }
-				)
-			end
-		end
-
-		tinsert(menu,{
-				text = L['opt_poishow'],
-				tooltipTitle = L['optpoishow_'],
-				tooltipText = L['opt_poishow__desc'],
-				hasArrow = true,
-				menuList = poiTypeList,
-				notCheckable=1,
-			})
-
-
-		tinsert(menu,{
-				text = L['opt_poitype'],
-				tooltipTitle = L['opt_poitype'],
-				tooltipText = L['opt_poitype_desc'],
-				hasArrow = true,
-				menuList = {
-					{ text = L['opt_poitype_quick'], 
-					keepShownOnClick=true, 
-					checked = function() return (ZGV.db.profile.poitype==1) end, 
-					func = function() 
-						ZGV.db.profile.poitype=1 
-						ZGV.Poi:ChangeState(true) 
-						UIDropDownFork_Refresh(self.menu) 
-					end },
-					{ text = L['opt_poitype_complete'], 
-					keepShownOnClick=true, 
-					checked = function() return (ZGV.db.profile.poitype==2) end, 
-					func = function() 
-						ZGV.db.profile.poitype=2 
-						ZGV.Poi:ChangeState(true) 
-						UIDropDownFork_Refresh(self.menu) 
-					end },
-				},
-				notCheckable=1,
-			})
-		tinsert(menu,{
-				text = L['opt_poioptions'],
-				tooltipTitle = L['opt_poioptions'],
-				tooltipText = L['opt_poioptions_desc'],
-				tooltipOnButton=1,
-				func = function() ZGV:OpenOptions("poi") end,
-				notCheckable=0,
-			})
-	
-	else
-		tinsert(menu,{
-				text = L['opt_poienabled'],
-				tooltipTitle = L['opt_poienabled'],
-				tooltipText = L['opt_poienabled_desc'],
-				tooltipOnButton=1,
-				func = function() ZGV:SetOption("Poi","poienabled on") ZGV.Poi:ChangeState(true) end,
-				notCheckable=0,
-			})
-		tinsert(menu,{
-				text = L['opt_poioptions'],
-				tooltipTitle = L['opt_poioptions'],
-				tooltipText = L['opt_poioptions_desc'],
-				tooltipOnButton=1,
-				func = function() ZGV:OpenOptions("poi") end,
-				notCheckable=0,
-			})
-	end
-	
-	EasyFork(menu,self.menu,nil,0,0,"MENU",false)
-	UIDropDownFork_SetWidth(self.menu, 300)
-end
+-- map button/menu moved to mapcoords.lua
 
 function Poi:Thread_RegisterPoiGuide()
 	local thread = coroutine.create(function() Poi:RegisterPoiGuide() end)
@@ -526,9 +380,9 @@ function Poi:Thread_RegisterPoiGuide()
 		local ok,msg = coroutine.resume(thread)
 		t1=debugprofilestop()-t1
 		if ok then
-			ZGV:Debug(("Registering POIs in thread: %s, %dms"):format(msg or "-",t1))
+			ZGV:Debug(("&startup_parse POI: Registering POIs in thread: %s, %dms"):format(msg or "-",t1))
 		else error(msg) end
-		ZGV:Debug("POI: %s",msg)
+		ZGV:Debug("&startup_parse POI: %s",msg)
 		if coroutine.status(thread)=="dead" then ZGV:CancelTimer(Poi.registration_timer) end
 	end,
 	0.05)
@@ -559,6 +413,13 @@ local function EventHandler(self, event, ...)
 	end
 end
 
+local function UpdateHandler()
+	if GameTooltip:IsVisible() and GameTooltip.recalculatePadding then
+		GameTooltip.recalculatePadding = false
+		GameTooltip_CalculatePadding(GameTooltip)
+	end
+end
+
 tinsert(ZGV.startups,{"POI hooks",function(self)
 	ZGV.db.char.ActivatedPois = ZGV.db.char.ActivatedPois or {}
 	ZGV.db.profile.hideguide = ZGV.db.profile.hideguide or {}
@@ -575,7 +436,7 @@ tinsert(ZGV.startups,{"POI hooks",function(self)
 	Poi.Events:RegisterEvent("ENCOUNTER_LOOT_RECEIVED")
 	--Poi.Events:RegisterEvent("WORLD_MAP_UPDATE")
 	Poi.Events:SetScript("OnEvent",EventHandler)
-	Poi:ShowMapButtons()
+	Poi.Events:SetScript("OnUpdate",UpdateHandler)
 
 	Poi.DisplayedPoiSet=0
 

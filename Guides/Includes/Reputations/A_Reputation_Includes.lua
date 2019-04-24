@@ -997,21 +997,6 @@ ZygorGuidesViewer:RegisterInclude("Cenarion_Circle_Rep",[[
 	step
 		talk Marshal Bluewall##17080
 		turnin Report to Marshal Bluewall##9415 |goto 39.6,47.0
-		accept Scouring the Desert##9419 |goto 39.6,47.0
-	step
-		Follow the provided path, searching for Silithyst Geysers
-		click Silithyst Geyser##181598
-		map Silithus
-		path loop off
-		path	50.0,49.9	53.2,41.6	57.1,47.2
-		path	60.0,41.1
-		Surround yourself in Silithyst Dust |havebuff 135867 |c |q 9419 --Spell_Holiday_ToW_SpiceCloud
-	step
-		Stand inside the big blue-glowing metal machine
-		Deliver Silithyst |q 9419/1 |goto 39.1,46.9
-	step
-		talk Marshal Bluewall##17080
-		turnin Scouring the Desert##9419 |goto 39.6,47.0
 	stickystart "dredgecrusher"
 	step
 		kill Twilight Keeper Havunth##11804
@@ -2292,9 +2277,9 @@ ZygorGuidesViewer:RegisterInclude("Cenarion_Expedition_Rep",[[
 		If you are not Exalted with the Cenarion Expedition, you can turn in Lackey Ears for a repeatable quest, or run Heroic Dungeons.
 		The Heroic Dungeons are Slave Pens, Underbog and Steamvault.
 		Click here to do the repeatable quest |confirm |next "ears"
-		Click here to be taken to the Slave Pens |confirm |next "Zygor's Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Slave Pens" |only if ZGV.guidesets['DungeonAMOP']
-		Click here to be taken to the Underbog |confirm |next "Zygor's Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Underbog" |only if ZGV.guidesets['DungeonAMOP']
-		Click here to be taken to the Steamvault |confirm |next "Zygor's Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: The Steamvault" |only if ZGV.guidesets['DungeonAMOP']
+		Click here to be taken to the Slave Pens |confirm |next "Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Slave Pens" |only if ZGV.guidesets['DungeonAMOP']
+		Click here to be taken to the Underbog |confirm |next "Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Underbog" |only if ZGV.guidesets['DungeonAMOP']
+		Click here to be taken to the Steamvault |confirm |next "Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: The Steamvault" |only if ZGV.guidesets['DungeonAMOP']
 	step
 	label "ears"
 		kill Northsea Mercenary##25839+, Northsea Thug##25843+
@@ -3231,127 +3216,72 @@ ZygorGuidesViewer:RegisterInclude("Kurenai_Rep",[[
 ---------------------
 
 ZygorGuidesViewer:RegisterInclude("Sporeggar_Rep",[[
-	--step
-	--	Routing to proper section |next "questc" |only if completedq(9919)
-	--	Routing to proper section |next |only if not completedq(9919)
 	step
 		talk Fahssn##17923
-		accept The Sporelings' Plight##9739 |goto Zangarmarsh 19.1,64.2
-		accept Natural Enemies##9743 |goto Zangarmarsh 19.1,64.2
-		|tip Turn in these two quests 4 times to go from unfriendly to friendly.
-		|only if rep('Sporeggar')<=Neutral
+		|tip He walks around this area.
+		accept The Sporelings' Plight##9739 |goto Zangarmarsh/0 18.96,63.45
+		accept Natural Enemies##9743 |goto Zangarmarsh/0 18.96,63.45
+	stickystart "Collect_Mature_Spore_Sacs"
 	step
-		kill Starving Fungal Giant##18125+, Starving Bog Lord##19519+
-		collect 6 Bog Lord Tendril##24291 |q  9743/1 |goto 16.0,60.3
-		click Mature Spore Sac##182069
-		collect 10 Mature Spore Sac##24290 |q 9739/1 |goto 16.0,60.3
-		|tip They are on the ground throughout the area.
-		|only if rep('Sporeggar')<=Neutral
+		Kill Starving enemies around this area
+		collect 6 Bog Lord Tendril##24291 |q 9743/1 |goto 15.90,60.51
 	step
-		talk Fahssn##17923
-		turnin The Sporelings' Plight##9739 |repeatable |goto Zangarmarsh 19.1,64.2
-		turnin Natural Enemies##9743 |repeatable |goto Zangarmarsh 19.1,64.2
-		|only if rep('Sporeggar')<=Neutral
-	step
-		kill Starving Fungal Giant##18125+, Starving Bog Lord##19519+
-		collect 6 Bog Lord Tendril##24291+ |n |goto 16.0,60.3
-		click Mature Spore Sac##182069
-		collect 10 Mature Spore Sac##24290 |n |goto 16.0,60.3
-		|tip They are on the ground throughout the area.
-		Turn in 10 Spore Sacs or 6 Bog Lord Tendrils at a time at this location |goto 19.0,63.3
-		Reach Friendly with Sporeggar |condition rep('Sporeggar')>=Friendly
+	label "Collect_Mature_Spore_Sacs"
+		click Mature Spore Sac##182069+
+		|tip They look like small puffy, balloon-shaped sacs on on the ground around this area.
+		collect 10 Mature Spore Sac##24290 |q 9739/1 |goto 15.90,60.51
 	step
 		talk Fahssn##17923
-		accept Sporeggar##9919 |goto Zangarmarsh,19.1,64.2
+		|tip He walks around this area.
+		turnin The Sporelings' Plight##9739 |goto 18.96,63.45
+		turnin Natural Enemies##9743 |goto 18.96,63.45
 	step
+	label "Collect_Spore_Sacs_Reach_Friendly"
+		click Mature Spore Sac##182069+
+		|tip They look like small puffy, balloon-shaped sacs on on the ground around this area.
+		collect Mature Spore Sac##24290 |n |goto 15.90,60.51
+		|tip Collect them in in stacks of 10.
+		Click here to turn them in |confirm |only if rep('Sporeggar')<Friendly
+	step
+		talk Fahssn##17923
+		|tip He walks around this area.
+		accept More Spore Sacs##9742 |goto 18.96,63.45 |only if rep('Sporeggar')<Friendly
+		Click here to continue farming |next "Collect_Spore_Sacs_Reach_Friendly" |confirm |only if rep('Sporeggar')<Friendly
+		Reach Friendly with Sporeggar |condition rep('Sporeggar')>=Friendly |next "Reached_Friendly_Reputation"
+	step
+	label "Reached_Friendly_Reputation"
+		talk Fahssn##17923
+		|tip He walks around this area.
+		accept Sporeggar##9919 |goto 18.96,63.45
+	step
+		Enter the building |goto 19.54,51.82 < 5 |walk
 		talk Msshi'fn##17924
-		turnin Sporeggar##9919 |goto 19.7,52.0
+		|tip Inside the building.
+		turnin Sporeggar##9919 |goto 19.68,52.07
 	step
-	label "questc"
-		Once you have reached friendly, you can farm the quest Now That We're Friends... and Bring Me A Shrubbery!
-		Grinding mobs at The Spawning Glen no longer will give you reputation
-		Collecting 265 Sanguine Hibiscus from The Underbog will give you enough
-		Click here if you want to grind out Sanguine Hibiscus |confirm always |next "hibiscus_1"
-		Click here if you want to grind Naga mobs |confirm always |next "grind_1"
+		The fastest way to go reach Exalted is to farm The Underbog dungeon
+		|tip You can complete the dungeon once pery day on Heroic and as many times as you want on Normal.
+		Enter The Underbog |goto The Underbog/1 30.02,67.39 < 1000 |c
+		only if rep('Sporeggar')<Exalted
 	step
-	label "hibiscus_1"
-		talk T'shu##54674
-		accept Bring Me A Shrubbery!##29691 |goto The Underbog 31.6,65.4
-		accept Stalk the Stalker##29567 |goto The Underbog 31.6,65.4
-	step
-	label "hibiscus"
-		You can find the Sanguine Hibiscus on the ground scattered through out the instance
-		You can also get Sanguine Hibiscus from Underbat, Underbog Lurkers, Underbog Shamblers, Bog Overlords, Bog Giants and Underbog Lords
+	label "Farm_Dungeon_Collect_Sanguine_Hibiscus"
+		Kill everything in the dungeon
+		click Sanguine Hibiscus##183385+
+		|tip They look like small red flowery plants on the ground throughout the dungeon.
+		|tip They can also drop from creatures in the dungeon.
 		collect Sanguine Hibiscus##24246 |n
-		You need 5 Sanguine Hibiscus for 750 Reputation
-		40 Sanguine Hibiscus = 6,000 Reputation
-		80 Sanguine Hibiscus = 12,000 Reputation
-		Click when you are ready to turn in |confirm always
-	step
-		kill The Black Stalker##17882+
-		collect Brain of the Black Stalker##24248 |q 29567/1 |goto The Underbog 25.7,44.1
+		|tip Collect these and turn them in for more reputation after each run.
+		Click here to turn them in |confirm |only if rep('Sporeggar')<Exalted
 	step
 		talk T'shu##54674
-		turnin Bring Me A Shrubbery!##29691 |goto The Underbog 31.6,65.4
-		turnin Stalk the Stalker##29567 |goto The Underbog 31.6,65.4
+		accept Bring Me Another Shrubbery!##29692 |goto 31.48,65.21 |only if rep('Sporeggar')<Exalted
+		Click here to continue farming |next "Farm_Dungeon_Collect_Sanguine_Hibiscus" |confirm |only if rep('Sporeggar')<Exalted
+		|tip You can complete the dungeon once pery day on Heroic and as many times as you want on Normal.
+		Earn Exalted status with the Sporeggar |condition rep('Sporeggar')==Exalted |next "Reached_Exalted_Status"
 	step
-	label "hibiscus_r"
-		talk T'shu##54674
-		accept Bring Me Another Shrubbery!##9714 |instant |repeatable |or |goto The Underbog 31.6,65.4
-		Click here to go farming for more _Sanguine Hibiscus_ |confirm always |next "hibiscus" |or
-		Click here if you would like to farm Naga for more reputation |confirm always |next "grind_1" |or
-	step
-		talk Gzhun'tt##17856
-		turnin Bring Me A Shrubbery!##9715 |goto 19.5,50.0
-		|next "hibiscus_r" |only if rep('Sporeggar')<=Revered
-		|next "exalted" |only if rep('Sporeggar')==Exalted
-		|only if havequest(9715)
-	step
-		talk Gzhun'tt##17856
-		turnin Bring Me Another Shrubbery!##9714 |goto 19.5,50.0
-		|next "hibiscus_r" |only if rep('Sporeggar')<=Revered
-		|next "exalted" |only if rep('Sporeggar')==Exalted
-		|only if havequest(9714)
-	step
-	label "grind_1"
-		talk Gzhun'tt##17856
-		accept Now That We're Friends...##9726 |goto Zangarmarsh 19.5,50.0
-		|only if rep('Sporeggar')>=Friendly
-		|next "grind_2" |only if not completedq(9726)
-		|next |only if default
-	step
-	label "grind_r"
-		talk Gzhun'tt##17856
-		accept Now That We're Still Friends...##9727 |repeatable |next "grind" |or |goto 19.5,50.0
-		Click here to go farming for _Sanguine Hibiscus_ |confirm |next "hibiscus_1" |or
-		|only if rep('Sporeggar')>=Friendly
-	step
-	label "grind_2"
-		kill 12 Bloodscale Slavedriver##18089+ |q 9726/1 |goto Zangarmarsh 26.9,41.7
-		kill 6 Bloodscale Enchantress##18088+ |q 9726/2 |goto Zangarmarsh 26.9,41.7
-		|only if havequest(9726)
-		|next "grind_3"
-	step
-	label "grind"
-		kill 12 Bloodscale Slavedriver##18089+ |q 9727/1 |repeatable |goto Zangarmarsh 26.9,41.7
-		kill 6 Bloodscale Enchantress##18088+ |q 9727/2 |repeatable |goto Zangarmarsh 26.9,41.7
-		|only if havequest(9727)
-		|next "grind_4"
-	step
-	label "grind_3"
-		talk Gzhun'tt##17856
-		turnin Now That We're Friends...##9726 |goto 19.5,50.0
-		|next "grind_r" |only if rep('Sporeggar')<=Revered
-		|next "exalted" |only if rep('Sporeggar')==Exalted
-	step
-	label "grind_4"
-		talk Gzhun'tt##17856
-		turnin Now That We're Still Friends...##9727 |goto 19.5,50.0
-		|next "grind_r" |only if rep('Sporeggar')<=Revered
-		|next "exalted" |only if rep('Sporeggar')==Exalted
-	step
-	label "exalted"
-		Congratulations, you are now exalted with Sporeggar!
+	label "Reached_Exalted_Status"
+		_Congratulations!_
+		You reached Exalted reputation with the "Sporeggar" faction.
 ]])
 
 -------------------------

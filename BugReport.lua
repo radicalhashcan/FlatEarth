@@ -567,52 +567,34 @@ function ZGV:GetBugReport(maint)
 
 	if BugReportFlags.itemscore then
 		local ItemScore = ZGV.ItemScore
-		local AutoEquip = ItemScore.AutoEquip
+		local Upgrades = ItemScore.Upgrades
 
 		s = s .. "\n\n-- Auto Equip Information --"
 
 		s = s .. ("Class: %s\nLevel: %s\nSpec: %s\n"):format(ItemScore.playerclass,ItemScore.playerlevel,select(2,GetSpecializationInfo(ItemScore.playerspec or 0)))
-		if AutoEquip.CurrentGear then
+		if Upgrades.EquippedItems then
 			s = s.."\nCurrent Gear\n"
 
-			for slot,info in pairs(AutoEquip.CurrentGear) do
-				s = s.."   "..slot.. (" - %s scored: %d Id: %d\n"):format(info.link, info.score,info.itemid)
+			for slot,info in pairs(Upgrades.EquippedItems) do
+				s = s.."   "..slot.. (" - %s scored: %d\n"):format(info.itemlink or "no item", info.score or 0)
 			end
 		end
-		if AutoEquip.PossibleUpgrades then
+		if Upgrades.UpgradeQueue then
 			s = s.."\nPossible Upgrades\n"
 
-			for slot,info in pairs(AutoEquip.PossibleUpgrades) do
-				s = s.."   "..slot.. (" - %s scored: %d Id: %d Equipslot: %s\n"):format(info.link, info.score,info.itemid, info.equipslot)
+			for slot,info in pairs(Upgrades.UpgradeQueue) do
+				if info.itemlink then
+					s = s.."   "..slot.. (" - %s scored: %d\n"):format(info.itemlink or "no item", info.score or 0)
+				end
 			end
 		end
-		if AutoEquip.Popup then
-			s = s..(AutoEquip.Popup:IsVisible() and "\nCurrent Popup\n" or "\nLast Popup\n" )
-			local f = AutoEquip.Popup
 
-			if f.edit and f.edit:IsShown() then
-				s = s .. ("\n  --==TRYING TO EQUIP==--\n     Name: %s\n     Link: %s\n     Quality: %s\n     iLevel: %d\n     reqLevel: %d\n     Class: %s\n     Subclass: %s\n     maxStack: %s\n     Equipslot: %s\n  --Stats--\n"):format(ZGV:GetItemInfo(f.edit:GetText()))
-
-				local stattable = GetItemStats(f.edit:GetText())
-
-				for statname,statvalue in pairs(stattable) do
-					s = s .."     " .. statname .. ": " .. statvalue .. "\n"
-				end
+		if ZGV.db.profile.autogear then
+			s = s.."\nGearfinder Dungeons\n"
+			for dungeon,dungeondata in pairs(ZygorGuidesViewer.ItemScore.Items) do
+				local valid, future, ident, maxscale, mythic, comment = ZGV.ItemScore.GearFinder:IsValidDungeon(dungeondata.dungeon, dungeondata.instanceId)
+				s = s..(" - %s %s %s\n"):format(dungeon, (valid and "valid" or "invalid"), comment or "")
 			end
-			if f.edit1 and f.edit1:IsShown() then
-				s = s .. ("\n  --==TRYING TO REPLACE==--\n     Name: %s\n     Link: %s\n     Quality: %s\n     iLevel: %d\n     reqLevel: %d\n     Class: %s\n     Subclass: %s\n     maxStack: %s\n     Equipslot: %s\n  --Stats--\n"):format(ZGV:GetItemInfo(f.edit1:GetText()))
-
-				local stattable = GetItemStats(f.edit1:GetText())
-
-				for statname,statvalue in pairs(stattable) do
-					s = s .."     " .. statname .. ": " .. statvalue .. "\n"
-				end
-			end
-
-			s = s .. "\n  --==Stat text==--\n"
-			s = s .. f.stattext:GetText() --This is a current popup.
-		else
-			s = s .. "No Popup Shown"
 		end
 	end
 

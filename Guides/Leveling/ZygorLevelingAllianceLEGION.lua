@@ -3,140 +3,16 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("LevelingALEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Intro & Artifacts",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the introductory Legion quests and unlocking your class artifacts.",
 condition_suggested=function() return level >= 100 and level <= 110 and raceclass('DeathKnight') end,
-condition_suggested_exclusive=true,
-condition_valid=function() return raceclass('DeathKnight') end,
-condition_valid_msg="You must be a Death Knight to complete this guide!",
+condition_valid=function() return raceclass('DeathKnight') and level >= 98 end,
+condition_valid_msg="You must be a Death Knight and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
-startlevel=100.0,
+startlevel=98.0,
 },[[
 step
-_Checking for Boosted Character..._
-|next "Boosted_Start" |only if intutorial
-|next "Non_Boosted_Start" |only if not intutorial
-step
-label "Boosted_Start"
-_On the Deck of the Airship:_
-You Can Skip the Combat Training Scenario
-|tip Use your Hearthstone now if you want to skip the Combat Training scenario.
-|tip You can complete it or skip it, it doesn't matter, and is purely personal preference.
-Click Here to Complete the Combat Training Scenario |confirm |or |next "Start_Combat_Training"
-_Or_
-Click Here to Skip the Combat Training Scenario |confirm |or |next "Non_Boosted_Start"
-|only if not completedq(43806) or not completedq(40519)
-step
-label "Start_Combat_Training"
-_On the Deck of the Airship:_
-talk General Bret Hughes##100448
-Talk to General Bret Hughes |scenariostage 1 |q 43806 |future
-|only if intutorial
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Raise Dead ability
-|tip It is already on your action bar.
-Cast Raise Dead |scenariostage 2 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Outbreak ability on the Target Dummy
-|tip It appears on your action bar.
-Use Outbreak on the Target Dummy |scenariostage 3 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Festering Strike ability on the Target Dummy
-|tip It appears on your action bar.
-Use Festering Strike on the Target Dummy #3# Times |scenariogoal 4/30664 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Scourge Strike ability on the Target Dummy
-|tip It appears on your action bar.
-|tip Use Festering Strike on the Target Dummy, then use Scourge Strike on the Target Dummy.
-Use Festering Strike then Scourge Strike on the Target Dummy #3# Times |scenariogoal 5/30665 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Death Coil ability on the Target Dummy
-|tip It appears on your action bar.
-|tip Use your other abilities to generate Runic Power, so you can use Death Coil.
-Use Death Coil on the Target Dummy #3# Times |scenariogoal 6/30666 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Use your abilities on the Target Dummy
-Use Outbreak |scenariogoal 7/30663 |q 43806 |future
-Use Festering Strike #2# Times |scenariogoal 7/30664 |q 43806 |future
-Use Scourge Strike #4# Times |scenariogoal 7/30665 |q 43806 |future
-Use Death Coil #4# Times |scenariogoal 7/30666 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Death Strike ability on the Target Dummy
-|tip It appears on your action bar.
-Use Death Strike #2# Times |scenariogoal 8/31703 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Death Grip ability on the Alliance Infantry
-|tip It appears on your action bar.
-Use Death Grip |scenariostage 9 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Army of the Dead ability
-|tip It appears on your action bar.
-Use Army of the Dead |scenariostage 10 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592
-Defeat the Soldier |scenariostage 11 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592+
-|tip Two of them will attack you.
-Defeat the Attacking Soldiers |scenariostage 12 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Kill enemies around this area
-Defend the Airship |scenariostage 13 |q 43806 |future
-|only if intutorial()
-step
-_On the Airship:_
-Prepare Your Character
-|tip Open your Talents panel (press N) and choose your talents.
-|tip Open your Spellbook (press P) and move the rest of your abilities to your action bars.
-clicknpc Armored Snowy Gryphon##32335
-|tip Up the stairs, at the top of the airship.
-Take the Gryphon on the Back of the Airship and Join the Fleet |scenarioend |q 43806 |future
-|only if intutorial
-step
-accept The Battle for Broken Shore##43806
-|tip You will accept this quest automatically.
-|only if intutorial
-step
-Travel to the Broken Shore |goto Broken Shore/0 52.97,111.90 < 50 |q 43806 |future
-|only if intutorial
-|next "Begin_Broken_Shore_Scenario"
-step
-label "Non_Boosted_Start"
 click Hero's Call Board##250720
 accept The Legion Returns##40519 |goto Stormwind City/0 62.89,71.57
 |only if not havequest(43806)
@@ -172,7 +48,6 @@ talk Captain Angelica##108920
 Take the Ship to the Broken Shore |q 42740/1 |goto 19.9,29.4
 |only if not havequest(43806)
 step
-label "Begin_Broken_Shore_Scenario"
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 42740 |only if havequest(42740) or completedq(42740)
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 43806 |only if havequest(43806) or completedq(43806)
 step
@@ -613,7 +488,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.5,45.6
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 |only if havequest(41220)
 step
 click Portal to Dalaran##251123
@@ -627,7 +502,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 70.52,44.10
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludane, I have urgent business in Val'sharah. Can you secure a flight for me?"_
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 |only if havequest(39861)
 step
 talk Warbrave Oro##97666
@@ -640,7 +515,7 @@ Fly to Thunder Totem in Highmountain |q 38907/1 |goto 69.84,51.11
 |only if havequest(38907)
 step
 talk Aludane Whitecloud##96813 |goto 69.84,51.11 |n
-Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 |only if havequest(38907)
 step
 click Portal to Dalaran##251123
@@ -728,15 +603,15 @@ step
 kill Nathanos Blightcaller##95852
 |tip Upstairs on the deck of the airship.
 Defeat Nathanos Blightcaller |scenarioend |goto 70.70,76.23
-Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 |only if havequest(39800)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the various quests available in your Class Order Hall.",
 condition_suggested=function() return level >= 101 and level <= 110 and raceclass('DeathKnight') and not completedq(46031) end,
-condition_valid=function() return raceclass('DeathKnight') end,
-condition_valid_msg="You must be a Death Knight to complete this guide!",
+condition_valid=function() return raceclass('DeathKnight') and level >= 98 end,
+condition_valid_msg="You must be a Death Knight and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=101,
 },[[
@@ -795,7 +670,7 @@ accept Troops in the Field##43267 |goto 49.64,51.28
 step
 clicknpc Scouting Map##120832
 Begin the "Troops in the Field" Mission
-|tip The mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 49.87,51.41 |q 43267
 step
 talk Archmage Khadgar##90417
@@ -921,7 +796,7 @@ turnin Light's Charge##44153 |goto Broken Shore/1 54.17,74.19
 step
 clicknpc Scouting Map##120832
 Begin the "Troops in the Field" Mission
-|tip The mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Troops in the Field" Mission |q 43267/1 |goto Broken Shore/2 49.81,51.35
 step
 talk Siouxsie the Banshee##93568
@@ -931,7 +806,7 @@ accept Salanar the Horseman##43539 |goto 49.70,51.32
 step
 clicknpc Scouting Map##120832
 Begin the "Salanar the Horseman" Mission
-|tip The mission will take 1 hour to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 49.81,51.35 |q 43539
 step
 talk Archivist Zubashi##97485
@@ -942,7 +817,7 @@ turnin Tech It Up A Notch##43268 |goto 49.70,51.32
 step
 clicknpc Scouting Map##120832
 Begin the "Salanar the Horseman" Mission
-|tip The mission will take 1 hour to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Salanar the Horseman" Mission |q 43539/1 |goto 49.81,51.35
 step
 talk Siouxsie the Banshee##93568
@@ -1040,7 +915,7 @@ accept Champion: Koltira Deathweaver##44244 |instant |goto 66.19,64.44
 step
 clicknpc Scouting Map##120832
 Begin the "Fallen Steeds: Saddle of the Frozen Crown" Mission
-|tip This mission will take up to 16 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 50.62,51.44 |q 43899
 stickystart "Steeds_Of_The_Damned_DeathKnight"
 step
@@ -1059,7 +934,7 @@ step
 label "Steeds_Of_The_Damned_DeathKnight"
 clicknpc Scouting Map##120832
 Begin the "Fallen Steeds: Saddle of the Frozen Crown" Mission
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# "Fallen Steeds: Saddle of the Frozen Crown" Missions |q 43899/1 |goto Broken Shore/2 49.77,50.67
 step
 talk Siouxsie the Banshee##93568
@@ -1166,7 +1041,7 @@ accept A Masterpiece of Flesh##44286 |goto 63.18,69.51
 step
 clicknpc Scouting Map##120832
 Begin the "Unholy Attainment: Essence of Shadow" Mission
-|tip This mission will take up to 24 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 50.64,51.38 |q 43928
 stickystart "World_Quests_DeathKnight"
 step
@@ -1218,7 +1093,7 @@ step
 label "Aggregates_Of_Anguish_DeathKnight"
 clicknpc Scouting Map##120832
 Begin "Unholy Attainment" Missions
-|tip Each of these missions will take up to 24 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# "Unholy Attainment" Missions |q 43928/1 |goto 49.79,50.67
 step
 talk Siouxsie the Banshee##93568
@@ -1482,14 +1357,14 @@ Complete the "Menace on the Broken Shore" mission |q 46031/1 |goto 49.66,51.25
 step
 talk Siouxsie the Banshee##93568
 turnin Investigate the Broken Shore##46031 |goto 49.66,51.25
-|next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight 7.2 Order Hall Quests"
+|next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight 7.2 Order Hall Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Death Knight 7.2 Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight 7.2 Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the new Class Order Hall quests introduced in patch 7.2.",
 condition_suggested=function() return level == 110 and raceclass('DeathKnight') and not completedq(46813) end,
-condition_valid=function() return raceclass('DeathKnight') end,
-condition_valid_msg="You must be a Death Knight to complete this guide!",
+condition_valid=function() return raceclass('DeathKnight') and level >= 98 end,
+condition_valid_msg="You must be a Death Knight and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=110.0,
 },[[
@@ -1911,7 +1786,7 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.74,63.27
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 step
@@ -1975,13 +1850,12 @@ clicknpc Deep Crack##121128
 |tip It is located near the green mound.
 turnin The Lost Glacier##46813
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Intro & Artifacts",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the introductory Demon Hunter quests and unlocking the Havoc and Vengeance artifacts.",
 condition_suggested=function() return raceclass('DemonHunter') and level >= 98 and level <= 110 end,
-condition_suggested_exclusive=true,
-condition_valid=function() return raceclass('DemonHunter') end,
-condition_valid_msg="You must be a Demon Hunter to complete this guide!",
+condition_valid=function() return raceclass('DemonHunter') and level >= 98 end,
+condition_valid_msg="You must be a Demon Hunter and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\Mardum",
 startlevel=98.0,
 },[[
@@ -2841,7 +2715,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.49,45.67
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.49,45.67 |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Fly Down with Khadgar |q 41220/1 |goto 72.49,45.67 |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 |only if havequest(41220) and not completedq(41220)
 step
 click Illidari Gateway##251579
@@ -2855,7 +2729,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 72.49,45.67
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludance, I have urgent business in Val'sharah. Can you secure a flight for me?"
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 |only if havequest(39861) and not completedq(39861)
 step
 click Illidari Gateway##251579 |goto Mardum, the Shattered Abyss/2 59.31,91.97 > 100
@@ -2865,7 +2739,7 @@ accept Keepers of the Hammer##38907 |goto Dalaran L/10 70.58,44.47
 |only if havequest(39733) or completedq(39733)
 step
 talk Aludane Whitecloud##96813
-Fly to Thunder Totem in Highmountain |q 38907/1	|goto 69.84,51.11 |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Fly to Thunder Totem in Highmountain |q 38907/1	|goto 69.84,51.11 |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 |only if havequest(38907) and not completedq(38907)
 step
 click Illidari Gateway##251579
@@ -2954,15 +2828,15 @@ step
 kill Nathanos Blightcaller##95852
 |tip Upstairs on the deck of the airship.
 Defeat Nathanos Blightcaller |scenarioend |goto 70.70,76.23
-Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 |only if havequest(39800)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the various quests available in your Class Order Hall.",
 condition_suggested=function() return raceclass('DemonHunter') and level >= 101 and level <= 110 and not completedq(45994) end,
-condition_valid=function() return raceclass('DemonHunter') end,
-condition_valid_msg="You must be a Demon Hunter to complete this guide!",
+condition_valid=function() return raceclass('DemonHunter') and level >= 98 end,
+condition_valid_msg="You must be a Demon Hunter and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=101,
 },[[
@@ -3050,7 +2924,7 @@ accept Loramus, Is That You?##42681 |goto 59.25,57.28
 step
 clicknpc Scouting Map##120832
 Begin the "Loramus, Is That You?" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Loramus, Is That You?" Mission |q 42681/1 |goto 58.87,54.94
 step
 talk Kor'vas Bloodthorn##103761
@@ -3366,7 +3240,7 @@ turnin Green Adepts##42808 |goto 57.58,52.19
 step
 clicknpc Scouting Map##120832
 Complete "Working With the Wardens" Missions
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete the "Working With the Wardens: Isle of the Watchers" Mission |q 42731/1 |goto 58.48,53.23
 Complete the "Working With the Wardens: Skul'vrax" Mission |q 42731/2 |goto 58.48,53.23
 Complete the "Working With the Wardens: Mellok, Son of Torok" Mission |q 42731/3 |goto 58.48,53.23
@@ -3555,7 +3429,7 @@ step
 Follow the path |goto Mardum, the Shattered Abyss/2 68.62,66.64 < 15 |walk
 clicknpc Scouting Map##120832
 Complete "Preparations for Invasion" Missions
-|tip Each of these missions will take up to 12 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete the "Preparations for Invasion: Scouting their Hold" Mission |q 42669/1 |goto 58.83,54.94
 Complete the "Preparations for Invasion: Weapon Improvements" Mission |q 42669/2 |goto 58.83,54.94
 Complete the "Preparations for Invasion: Snatch and Grab" Mission |q 42669/3 |goto 58.83,54.94
@@ -3963,14 +3837,14 @@ Complete the "Menace on the Broken Shore" mission |q 45994/1 |goto 58.60,54.84
 step
 talk Kor'vas Bloodthorn##108311
 turnin Investigate the Broken Shore##45994 |goto 59.33,57.67
-|next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter 7.2 Order Hall Quests"
+|next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter 7.2 Order Hall Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter 7.2 Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter 7.2 Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the new Class Order Hall quests introduced in patch 7.2.",
 condition_suggested=function() return level == 110 and raceclass('DemonHunter') and not completedq(46334) end,
-condition_valid=function() return raceclass('DemonHunter') end,
-condition_valid_msg="You must be a Demon Hunter to complete this guide!",
+condition_valid=function() return raceclass('DemonHunter') and level >= 98 end,
+condition_valid_msg="You must be a Demon Hunter and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=110.0,
 },[[
@@ -4300,7 +4174,7 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.74,63.27
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 step
@@ -4355,219 +4229,16 @@ step
 talk Matron Mother Malevolence##108784
 turnin To Fel and Back##46334 |goto Mardum, the Shattered Abyss/2 60.03,48.87
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Druid Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Druid\\Druid Intro & Artifacts",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the introductory Legion quests and unlocking your class artifacts.",
 condition_suggested=function() return level >= 100 and level <= 110 and raceclass('Druid') end,
-condition_suggested_exclusive=true,
-condition_valid=function() return raceclass('Druid') end,
-condition_valid_msg="You must be a Druid to complete this guide!",
+condition_valid=function() return raceclass('Druid') and level >= 98 end,
+condition_valid_msg="You must be a Druid and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
-startlevel=100.0,
+startlevel=98.0,
 },[[
 step
-_Checking for Boosted Character..._
-|next "Boosted_Start" |only if intutorial
-|next "Non_Boosted_Start" |only if not intutorial
-step
-label "Boosted_Start"
-_On the Deck of the Airship:_
-You Can Skip the Combat Training Scenario
-|tip Use your Hearthstone now if you want to skip the Combat Training scenario.
-|tip You can complete it or skip it, it doesn't matter, and is purely personal preference.
-Click Here to Complete the Combat Training Scenario |confirm |or |next "Start_Combat_Training"
-_Or_
-Click Here to Skip the Combat Training Scenario |confirm |or |next "Non_Boosted_Start"
-|only if not completedq(43806) or not completedq(40519)
-step
-label "Start_Combat_Training"
-_On the Deck of the Airship:_
-talk General Bret Hughes##100448
-Talk to General Bret Hughes |scenariostage 1 |q 43806 |future
-|only if intutorial
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Moonkin Form ability
-|tip It is already on your action bar.
-Cast Moonkin Form |scenariostage 2 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(24858)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Moonfire ability on the Target Dummy
-|tip It appears on your action bar.
-Cast Moonfire on the Target Dummy |scenariogoal 3/32841 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(24858)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Sunfire ability on the Target Dummy
-|tip It is already on your action bar.
-Cast Sunfire on the Target Dummy |scenariostage 3 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(24858)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Solar Wrath ability on the Target Dummy
-|tip It appears on your action bar.
-Cast Solar Wrath on the Target Dummy #3# Times |scenariogoal 4/32843 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(24858)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Starsurge ability on the Target Dummy
-|tip It appears on your action bar.
-|tip Use your other abilties on the Target Dummy to generate Astral Power, so you can cast Starsurge.
-Cast Starsurge on the Target Dummy #3# Times |scenariogoal 5/32844 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(24858)
-step
-_On the Deck of the Airship:_
-Use your abilities on the Target Dummy
-Cast Moonfire |scenariogoal 6/32841 |q 43806 |future
-Cast Sunfire |scenariogoal 6/32842 |q 43806 |future
-Cast Solar Wrath #6# Times |scenariogoal 6/32843 |q 43806 |future
-Cast Starsurge #2# Times |scenariogoal 6/32844 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(24858)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Healing Touch ability
-|tip It appears on your action bar.
-|tip Make sure you are not targeting an NPC.
-Use Healing Touch to Heal Yourself #3# Times |scenariogoal 7/30432 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(24858)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Entangling Roots ability on the Alliance Infantry
-|tip It appears on your action bar.
-Cast Entangling Roots |scenariostage 8 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(24858)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592
-Defeat the Soldier |scenariostage 9 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(24858)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592+
-|tip Two of them will attack you.
-Defeat the Attacking Soldiers |scenariostage 10 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(24858)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Kill enemies around this area
-Defend the Airship |scenariostage 11 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(24858)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Cat Form ability
-|tip It is already on your action bar.
-Use Cat Form to Shapeshift into a Cat |scenariostage 2 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(768)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Prowl ability on the Target Dummy
-|tip It is already on your action bar.
-Use Prowl to Enter Stealth |scenariostage 3 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(768)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Rake ability on the Target Dummy
-|tip It appears on your action bar.
-Use Rake on the Target Dummy |scenariostage 4 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(768)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Shred ability on the Target Dummy
-|tip It appears on your action bar.
-Use Shred on the Target Dummy #3# Times |scenariogoal 5/30427 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(768)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Ferocious Bite ability on the Target Dummy
-|tip It appears on your action bar.
-|tip Use your other abilities on the Target Dummy to generate Combo Points, so that you can use Ferocious Bite.
-Use Ferocious Bite with Combo Points on the Target Dummy #3# Times |scenariogoal 6/30430 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(768)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Rip ability on the Target Dummy
-|tip It appears on your action bar.
-|tip Use your other abilities on the Target Dummy to generate Combo Points, so that you can use Rip.
-Use Rip with Combo Points on the Target Dummy |scenariostage 7 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(768)
-step
-_On the Deck of the Airship:_
-Use your abilities on the Target Dummy
-Use Rake |scenariogoal 8/30428 |q 43806 |future
-Use Shred #4# Times |scenariogoal 8/30427 |q 43806 |future
-Use Ferocious Bite |scenariogoal 8/30430 |q 43806 |future
-Use Rip |scenariogoal 8/30429 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(768)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Dash ability
-|tip It appears on your action bar.
-Use Dash to Move Faster in Cat Form |scenariostage 9 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(768)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Healing Touch ability
-|tip It appears on your action bar.
-|tip Make sure you are not targeting an NPC.
-Use Healing Touch to Heal Yourself |scenariostage 10 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(768)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592
-Defeat the Soldier |scenariostage 11 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(768)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592+
-|tip Two of them will attack you.
-Defeat the Attacking Soldiers |scenariostage 12 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(768)
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Kill enemies around this area
-Defend the Airship |scenariostage 13 |q 43806 |future
-|only if intutorial() and _G.IsPlayerSpell(768)
-step
-_On the Airship:_
-Prepare Your Character
-|tip Open your Talents panel (press N) and choose your talents.
-|tip Open your Spellbook (press P) and move the rest of your abilities to your action bars.
-clicknpc Armored Snowy Gryphon##32335
-|tip Up the stairs, at the top of the airship.
-Take the Gryphon on the Back of the Airship and Join the Fleet |scenarioend |q 43806 |future
-|only if intutorial
-step
-accept The Battle for Broken Shore##43806
-|tip You will accept this quest automatically.
-|only if intutorial
-step
-Travel to the Broken Shore |goto Broken Shore/0 52.97,111.90 < 50 |q 43806 |future
-|only if intutorial
-|next "Begin_Broken_Shore_Scenario"
-step
-label "Non_Boosted_Start"
 click Hero's Call Board##250720
 accept The Legion Returns##40519 |goto Stormwind City/0 62.89,71.57
 |only if not havequest(43806)
@@ -4603,7 +4274,6 @@ talk Captain Angelica##108920
 Take the Ship to the Broken Shore |q 42740/1 |goto 19.9,29.4
 |only if not havequest(43806)
 step
-label "Begin_Broken_Shore_Scenario"
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 42740 |only if havequest(42740) or completedq(42740)
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 43806 |only if havequest(43806) or completedq(43806)
 step
@@ -5324,7 +4994,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.5,45.6
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 |only if havequest(41220)
 step
 Follow the path up |goto The Dreamgrove/0 56.23,48.67 < 10
@@ -5339,7 +5009,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 70.52,44.10
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludane, I have urgent business in Val'sharah. Can you secure a flight for me?"_
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 |only if havequest(39861)
 step
 talk Warbrave Oro##97666
@@ -5352,7 +5022,7 @@ Fly to Thunder Totem in Highmountain |q 38907/1 |goto 69.84,51.11
 |only if havequest(38907)
 step
 talk Aludane Whitecloud##96813 |goto 69.84,51.11 |n
-Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 |only if havequest(38907)
 step
 Follow the path up |goto The Dreamgrove/0 56.23,48.67 < 10
@@ -5441,15 +5111,15 @@ step
 kill Nathanos Blightcaller##95852
 |tip Upstairs on the deck of the airship.
 Defeat Nathanos Blightcaller |scenarioend |goto 70.70,76.23
-Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 |only if havequest(39800)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Druid Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Druid\\Druid Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the various quests available in your Class Order Hall.",
 condition_suggested=function() return level >= 101 and level <= 110 and raceclass('Druid') and not completedq(45177) end,
-condition_valid=function() return raceclass('Druid') end,
-condition_valid_msg="You must be a Druid to complete this guide!",
+condition_valid=function() return raceclass('Druid') and level >= 98 end,
+condition_valid_msg="You must be a Druid and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=101,
 },[[
@@ -5517,7 +5187,7 @@ accept A Glade Defense##42586 |goto 52.67,51.49
 step
 clicknpc Scouting Map##120832
 Begin the "A Glade Defense" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "A Glade Defense" Mission |q 42586/1 |goto 52.68,51.13
 step
 talk Skylord Omnuron##98002
@@ -5751,7 +5421,7 @@ accept Gathering the Dreamweavers##42037 |goto 52.65,51.46
 step
 clicknpc Scouting Map##120832
 Begin a "Gathering the Dreamweavers" Mission
-|tip This mission will take up to 16 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 52.71,51.06 |q 42037
 stickystart "Gathering_The_Dreamers_Druid"
 step
@@ -5815,7 +5485,7 @@ step
 label "Gathering_The_Dreamers_Druid"
 clicknpc Scouting Map##120832
 Begin "Gathering the Dreamweavers" Missions
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# "Gathering the Dreamweavers" Missions |q 42037/1 |goto 52.71,51.06
 step
 talk Keeper Remulos##103832
@@ -5924,7 +5594,7 @@ accept Focusing the Energies##42365 |goto 44.64,50.14
 step
 clicknpc Scouting Map##120832
 Begin the "Powering the Portal: Sylvan Falls" Mission
-|tip This mission will take up to 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 52.71,51.06 |q 42049
 stickystart "Plant_Dream_Seeds_Druid"
 step
@@ -5991,7 +5661,7 @@ step
 label "Powering_The_Portal_Druid"
 clicknpc Scouting Map##120832
 Complete "Powering the Portal: Sylvan Falls" Missions
-|tip Each of these missions will take up to 4 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 |tip They are the missions that reward Shards of Nightmare.
 Collect #10# Shards of Nightmare |q 42049/1 |goto 52.71,51.06
 step
@@ -6236,14 +5906,14 @@ Claim #40# Lingering Soul Fragments |q 45175/1
 step
 talk Allari the Souleater##89398
 turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
-|next "Zygor's Leveling Guides\\Legion (100-110)\\Druid 7.2 Order Hall Quests"
+|next "Leveling Guides\\Legion (100-110)\\Druid\\Druid 7.2 Order Hall Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Druid 7.2 Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Druid\\Druid 7.2 Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the new Class Order Hall quests introduced in patch 7.2.",
 condition_suggested=function() return level == 110 and raceclass('Druid') and not completedq(46319) end,
-condition_valid=function() return raceclass('Druid') end,
-condition_valid_msg="You must be a Druid to complete this guide!",
+condition_valid=function() return raceclass('Druid') and level >= 98 end,
+condition_valid_msg="You must be a Druid and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=110.0,
 },[[
@@ -6744,7 +6414,7 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto Broken Shore/0 44.73,63.27
 step
 You must complete the Broken Shore campaign to continue
-Use the Broken Shore Campaign guide to accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Use the Broken Shore Campaign guide to accomplish this |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 step
 talk Grovewarden Proudhorn##118105
@@ -6801,136 +6471,16 @@ Go up the path |goto The Dreamgrove/0 33.91,21.50 < 10 |only if walking
 clicknpc Corrupted Idol of Aviana##120947
 turnin You Can't Take the Sky From Me##46319 |goto The Dreamgrove/0 29.97,4.27
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Hunter Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Intro & Artifacts",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the introductory Legion quests and unlocking your class artifacts.",
 condition_suggested=function() return level >= 100 and level <= 110 and raceclass('Hunter') end,
-condition_valid=function() return raceclass('Hunter') end,
-condition_valid_msg="You must be a Hunter to complete this guide!",
-condition_suggested_exclusive=true,
+condition_valid=function() return raceclass('Hunter') and level >= 98 end,
+condition_valid_msg="You must be a Hunter and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
-startlevel=100.0,
+startlevel=98.0,
 },[[
 step
-_Checking for Boosted Character..._
-|next "Boosted_Start" |only if intutorial
-|next "Non_Boosted_Start" |only if not intutorial
-step
-label "Boosted_Start"
-_On the Deck of the Airship:_
-You Can Skip the Combat Training Scenario
-|tip Use your Hearthstone now if you want to skip the Combat Training scenario.
-|tip You can complete it or skip it, it doesn't matter, and is purely personal preference.
-Click Here to Complete the Combat Training Scenario |confirm |or |next "Start_Combat_Training"
-_Or_
-Click Here to Skip the Combat Training Scenario |confirm |or |next "Non_Boosted_Start"
-|only if not completedq(43806) or not completedq(40519)
-step
-label "Start_Combat_Training"
-_On the Deck of the Airship:_
-talk General Bret Hughes##100448
-Talk to General Bret Hughes |scenariostage 1 |q 43806 |future
-|only if intutorial
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Call Pet ability
-|tip It is already on your action bar.
-Use Call Pet |scenariostage 2 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Kill Command ability on the Target Dummy
-|tip It appears on your action bar.
-Use Kill Command to Command your Pet to Attack the Target Dummy #3# Times |scenariogoal 3/29829 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Dire Beast ability on the Target Dummy
-|tip It appears on your action bar.
-Use Dire Beast on the Target Dummy #2# Times |scenariogoal 4/29830 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Cobra Shot ability on the Target Dummy
-|tip It appears on your action bar.
-Use Cobra Shot on the Target Dummy #3# Times |scenariogoal 5/29831 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Bestial Wrath ability
-|tip It appears on your action bar.
-Use Bestial Wrath |scenariostage 6 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Use your abilities on the Target Dummy
-Use Kill Command #2# Times |scenariogoal 7/29829 |q 43806 |future
-Use Dire Beast #2# Times |scenariogoal 7/29830 |q 43806 |future
-Use Cobra Shot #5# Times |scenariogoal 7/29831 |q 43806 |future
-Use Beastial Wrath |scenariogoal 7/29832 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Multi-Shot ability on Arcane Constructs
-|tip It appears on your action bar.
-Use Multi-Shot on the Arcane Constructs |scenariogoal 8/29839 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-kill Arcane Construct##101738+
-Destroy the Arcane Constructs |scenariostage 8 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Feign Death ability
-|tip It appears on your action bar.
-Use Feign Death |scenariostage 9 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592
-Defeat the Attacker |scenariostage 10 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592+
-|tip Two of them will attack you.
-Defeat Both Attackers |scenariostage 11 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Kill enemies around this area
-Defend the Airship |scenariostage 12 |q 43806 |future
-|only if intutorial()
-step
-_On the Airship:_
-Prepare Your Character
-|tip Open your Talents panel (press N) and choose your talents.
-|tip Open your Spellbook (press P) and move the rest of your abilities to your action bars.
-clicknpc Armored Snowy Gryphon##32335
-|tip Up the stairs, at the top of the airship.
-Take the Gryphon on the Back of the Airship and Join the Fleet |scenarioend |q 43806 |future
-|only if intutorial
-step
-accept The Battle for Broken Shore##43806
-|tip You will accept this quest automatically.
-|only if intutorial
-step
-Travel to the Broken Shore |goto Broken Shore/0 52.97,111.90 < 50 |q 43806 |future
-|only if intutorial
-|next "Begin_Broken_Shore_Scenario"
-step
-label "Non_Boosted_Start"
 click Hero's Call Board##250720
 accept The Legion Returns##40519 |goto Stormwind City/0 62.89,71.57
 |only if not havequest(43806)
@@ -6966,7 +6516,6 @@ talk Captain Angelica##108920
 Take the Ship to the Broken Shore |q 42740/1 |goto 19.9,29.4
 |only if not havequest(43806)
 step
-label "Begin_Broken_Shore_Scenario"
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 42740 |only if havequest(42740) or completedq(42740)
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 43806 |only if havequest(43806) or completedq(43806)
 step
@@ -7494,7 +7043,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.5,45.6
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 |only if havequest(41220)
 step
 click Portal to Dalaran##251123
@@ -7509,7 +7058,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 70.52,44.10
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludane, I have urgent business in Val'sharah. Can you secure a flight for me?"_
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 |only if havequest(39861)
 step
 talk Warbrave Oro##97666
@@ -7522,7 +7071,7 @@ Fly to Thunder Totem in Highmountain |q 38907/1 |goto 69.84,51.11
 |only if havequest(38907)
 step
 talk Aludane Whitecloud##96813 |goto 69.84,51.11 |n
-Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 |only if havequest(38907)
 step
 click Portal to Dalaran##251123
@@ -7611,15 +7160,15 @@ step
 kill Nathanos Blightcaller##95852
 |tip Upstairs on the deck of the airship.
 Defeat Nathanos Blightcaller |scenarioend |goto 70.70,76.23
-Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 |only if havequest(39800)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Hunter Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the various quests available in your Class Order Hall.",
 condition_suggested=function() return level >= 101 and level <= 110 and raceclass('Hunter') and not completedq(46023) end,
-condition_valid=function() return raceclass('Hunter') end,
-condition_valid_msg="You must be a Hunter to complete this guide!",
+condition_valid=function() return raceclass('Hunter') and level >= 98 end,
+condition_valid_msg="You must be a Hunter and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=101,
 },[[
@@ -7678,7 +7227,7 @@ accept Troops in the Field##42525 |goto 42.81,46.93
 step
 clicknpc Scouting Map##120832
 Begin the "Troops in the Field" Mission
-|tip The mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Troops in the Field" Mission |q 42525/1 |goto 42.49,46.59
 step
 talk Tactician Tinderfell##103023
@@ -7695,7 +7244,7 @@ accept Scouting Reports##42384 |goto 42.77,46.91
 step
 clicknpc Scouting Map##120832
 Begin the "Scouting Reports" Mission
-|tip The mission will take 1 hour to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Scouting Reports" Mission |q 42384/1 |goto 42.49,46.59
 step
 talk Emmarel Shadewarden##107317
@@ -7978,7 +7527,7 @@ turnin Light's Charge##44153 |goto 47.30,43.50
 step
 clicknpc Scouting Map##120832
 Complete "Unseen Protection" Missions
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# Unseen Protection Missions |q 42394/1 |goto 42.54,46.62
 step
 Follow the path up |goto 38.65,49.74 < 20 |only if walking
@@ -8231,7 +7780,7 @@ label "Arcane_Vessel_Fragments_Hunter"
 clicknpc Scouting Map##120832
 |tip Inside the building.
 Complete "The Missing Vessel" Missions
-|tip Each of these missions will take up to 1 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 |tip They are the missions that reward Arcane Vessel Fragments.
 collect 4 Arcane Vessel Fragment##139041 |q 43182/1 |goto Trueshot Lodge/0 42.48,46.63
 step
@@ -8471,14 +8020,14 @@ Complete the "Menace on the Broken Shore" mission |q 46023/1 |goto 42.49,46.59
 step
 talk Tactician Tinderfell##103023
 turnin Investigate the Broken Shore##46023 |goto 42.80,46.92
-|next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter 7.2 Order Hall Quests"
+|next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter 7.2 Order Hall Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Hunter 7.2 Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Hunter\\Hunter 7.2 Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the new Class Order Hall quests introduced in patch 7.2.",
 condition_suggested=function() return level == 110 and raceclass('Hunter') and not completedq(46337) end,
-condition_valid=function() return raceclass('Hunter') end,
-condition_valid_msg="You must be a Hunter to complete this guide!",
+condition_valid=function() return raceclass('Hunter') and level >= 98 end,
+condition_valid_msg="You must be a Hunter and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=110.0,
 },[[
@@ -8878,7 +8427,7 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.74,63.27
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 step
@@ -8948,137 +8497,16 @@ step
 clicknpc Empty Saddle##119958
 turnin Night of the Wilds##46337 |goto Trueshot Lodge/0 44.23,21.44
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Mage Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Mage\\Mage Intro & Artifacts",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the introductory Legion quests and unlocking your class artifacts.",
 condition_suggested=function() return level >= 100 and level <= 110 and raceclass('Mage') end,
-condition_valid=function() return raceclass('Mage') end,
-condition_valid_msg="You must be a Mage to complete this guide!",
-condition_suggested_exclusive=true,
+condition_valid=function() return raceclass('Mage') and level >= 98 end,
+condition_valid_msg="You must be a Mage and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
-startlevel=100.0,
+startlevel=98.0,
 },[[
 step
-_Checking for Boosted Character..._
-|next "Boosted_Start" |only if intutorial
-|next "Non_Boosted_Start" |only if not intutorial
-step
-label "Boosted_Start"
-_On the Deck of the Airship:_
-You Can Skip the Combat Training Scenario
-|tip Use your Hearthstone now if you want to skip the Combat Training scenario.
-|tip You can complete it or skip it, it doesn't matter, and is purely personal preference.
-Click Here to Complete the Combat Training Scenario |confirm |or |next "Start_Combat_Training"
-_Or_
-Click Here to Skip the Combat Training Scenario |confirm |or |next "Non_Boosted_Start"
-|only if not completedq(43806) or not completedq(40519)
-step
-label "Start_Combat_Training"
-_On the Deck of the Airship:_
-talk General Bret Hughes##100448
-Talk to General Bret Hughes |scenariostage 1 |q 43806 |future
-|only if intutorial
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Summon Water Elemental ability
-|tip It is already on your action bar.
-Cast Summon Water Elemental |scenariostage 2 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Frostbolt ability on the Target Dummy
-|tip It appears on your action bar.
-Cast Frostbolt on the Target Dummy #3# Times |scenariogoal 3/30560 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Ice Lance ability on the Target Dummy
-|tip It appears on your action bar.
-Cast Ice Lance on the Target Dummy #3# Times |scenariogoal 4/30561 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Ice Lance ability on the Target Dummy
-|tip Use your Frostbolt ability on the Target Dummy to gain the Fingers of Frost buff.
-|tip Fingers of Frost appears as a buff to your character at the top right of the screen.
-|tip The icon for Fingers of Frost is a blue hand.
-Cast Ice Lance with Fingers of Frost #2# Times |scenariogoal 5/30614 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Use your abilities on the Target Dummy
-Cast Frostbolt #6# Times |scenariogoal 6/30560 |q 43806 |future
-Cast Ice Lance #2# Times |scenariogoal 6/30561 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Blink ability
-|tip It appears on your action bar.
-Cast Blink |scenariostage 7 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Frost Nova ability
-|tip It appears on your action bar.
-|tip Wait untilt he enemy is text to you.
-Cast Frost Nova to Freeze the Enemy |scenariostage 8 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Blizzard ability on the Arcane Constructs
-|tip It appears on your action bar.
-Cast Blizzard on the Arcane Constructs |scenariogoal 9/30622 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-kill Arcane Construct##101738+
-Destroy the Arcane Constructs |scenariostage 9 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592
-Defeat the Soldier |scenariostage 10 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592+
-|tip Two of them will attack you.
-Defeat the Attacking Soldiers |scenariostage 11 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Kill enemies around this area
-Defend the Airship |scenariostage 12 |q 43806 |future
-|only if intutorial()
-step
-_On the Airship:_
-Prepare Your Character
-|tip Open your Talents panel (press N) and choose your talents.
-|tip Open your Spellbook (press P) and move the rest of your abilities to your action bars.
-clicknpc Armored Snowy Gryphon##32335
-|tip Up the stairs, at the top of the airship.
-Take the Gryphon on the Back of the Airship and Join the Fleet |scenarioend |q 43806 |future
-|only if intutorial
-step
-accept The Battle for Broken Shore##43806
-|tip You will accept this quest automatically.
-|only if intutorial
-step
-Travel to the Broken Shore |goto Broken Shore/0 52.97,111.90 < 50 |q 43806 |future
-|only if intutorial
-|next "Begin_Broken_Shore_Scenario"
-step
-label "Non_Boosted_Start"
 click Hero's Call Board##250720
 accept The Legion Returns##40519 |goto Stormwind City/0 62.89,71.57
 |only if not havequest(43806)
@@ -9114,7 +8542,6 @@ talk Captain Angelica##108920
 Take the Ship to the Broken Shore |q 42740/1 |goto 19.9,29.4
 |only if not havequest(43806)
 step
-label "Begin_Broken_Shore_Scenario"
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 42740 |only if havequest(42740) or completedq(42740)
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 43806 |only if havequest(43806) or completedq(43806)
 step
@@ -9767,7 +9194,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.5,45.6
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 |only if havequest(41220)
 step
 Run up the stairs |goto Hall of the Guardian/1 76.23,66.25 < 10
@@ -9782,7 +9209,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 70.52,44.10
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludane, I have urgent business in Val'sharah. Can you secure a flight for me?"_
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 |only if havequest(39861)
 step
 talk Warbrave Oro##97666
@@ -9795,7 +9222,7 @@ Fly to Thunder Totem in Highmountain |q 38907/1 |goto 69.84,51.11
 |only if havequest(38907)
 step
 talk Aludane Whitecloud##96813 |goto 69.84,51.11 |n
-Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 |only if havequest(38907)
 step
 Run up the stairs |goto Hall of the Guardian/1 76.23,66.25 < 10
@@ -9884,15 +9311,15 @@ step
 kill Nathanos Blightcaller##95852
 |tip Upstairs on the deck of the airship.
 Defeat Nathanos Blightcaller |scenarioend |goto 70.70,76.23
-Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 |only if havequest(39800)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Mage Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Mage\\Mage Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the various quests available in your Class Order Hall.",
 condition_suggested=function() return level >= 101 and level <= 110 and raceclass('Mage') and not completedq(44207) end,
-condition_valid=function() return raceclass('Mage') end,
-condition_valid_msg="You must be a Mage to complete this guide!",
+condition_valid=function() return raceclass('Mage') and level >= 98 end,
+condition_valid_msg="You must be a Mage and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=101,
 },[[
@@ -9955,7 +9382,7 @@ accept Troops in the Field##42687 |goto 80.68,62.71
 step
 clicknpc Scouting Map##120832
 Begin the "Troops in the Field" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Troops in the Field" Mission |q 42687/1 |goto 81.36,60.95
 step
 talk Archmage Melis##108515
@@ -10123,7 +9550,7 @@ step
 Follow the path |goto 51.46,41.58 < 15 |walk
 clicknpc Scouting Map##120832
 Complete "Archmage Vargoth's Travels" Missions
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# "Archmage Vargoth's Travels" Missions |q 42424/1 |goto 81.36,61.01
 step
 talk Archmage Melis##108515
@@ -10401,7 +9828,7 @@ Follow the path |goto 70.20,65.41 < 10 |walk
 Run down the stairs |goto 72.04,77.27 > 10000 |walk
 clicknpc Scouting Map##120832
 Begin an "Oculus Preparations" Mission
-|tip This mission will take up to 10 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Begin the Mission |confirm |goto Hall of the Guardian/1 81.37,60.96 |q 42940
 stickystart "Oculus_Preparations_Mage"
 step
@@ -10456,7 +9883,7 @@ step
 label "Oculus_Preparations_Mage"
 clicknpc Scouting Map##120832
 Complete "Oculus Preparations" Missions
-|tip Each of these missions will take up to 10 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# "Oculus Preparations" Missions |q 42940/1 |goto Hall of the Guardian/1 81.37,60.96
 step
 Run up the stairs |goto 71.30,62.42 < 10 |walk
@@ -10705,14 +10132,14 @@ Place a Work Order for Champion Armaments |q 44207/1 |goto 82.87,56.70
 step
 talk Minuette##110427
 turnin Portal Full of Shiny Things##44207 |goto 82.87,56.70
-|next "Zygor's Leveling Guides\\Legion (100-110)\\Mage 7.2 Order Hall Quests"
+|next "Leveling Guides\\Legion (100-110)\\Mage\\Mage 7.2 Order Hall Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Mage 7.2 Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Mage\\Mage 7.2 Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the new Class Order Hall quests introduced in patch 7.2.",
 condition_suggested=function() return level == 110 and raceclass('Mage') and not completedq(45354) end,
-condition_valid=function() return raceclass('Mage') end,
-condition_valid_msg="You must be a Mage to complete this guide!",
+condition_valid=function() return raceclass('Mage') and level >= 98 end,
+condition_valid_msg="You must be a Mage and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=110.0,
 },[[
@@ -11251,7 +10678,7 @@ turnin Down the Rabbit Hole##46723 |goto Hall of the Guardian/1 81.38,59.91
 accept Champion: The Great Akazamzarak##46724 |instant |goto Hall of the Guardian/1 81.38,59.91
 step
 You must first complete the Broken Shore Campaign quest line before being able to start the quest line to obtain your Class Hall mount
-Check out our Broken Shore Campaign guide to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Check out our Broken Shore Campaign guide to accomplish this |confirm |or |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Click here to proceed |confirm
 |only if not achieved(11546)
 step
@@ -11333,128 +10760,16 @@ step
 talk Archmage Kalec##108247
 turnin Dispersion of the Discs##45354 |goto Hall of the Guardian/2 56.42,38.21
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Monk Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Monk\\Monk Intro & Artifacts",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the introductory Legion quests and unlocking your class artifacts.",
 condition_suggested=function() return level >= 100 and level <= 110 and raceclass('Monk') end,
-condition_suggested_exclusive=true,
-condition_valid=function() return raceclass('Monk') end,
-condition_valid_msg="You must be a Monk to complete this guide!",
+condition_valid=function() return raceclass('Monk') and level >= 98 end,
+condition_valid_msg="You must be a Monk and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
-startlevel=100.0,
+startlevel=98.0,
 },[[
 step
-_Checking for Boosted Character..._
-|next "Boosted_Start" |only if intutorial
-|next "Non_Boosted_Start" |only if not intutorial
-step
-label "Boosted_Start"
-_On the Deck of the Airship:_
-You Can Skip the Combat Training Scenario
-|tip Use your Hearthstone now if you want to skip the Combat Training scenario.
-|tip You can complete it or skip it, it doesn't matter, and is purely personal preference.
-Click Here to Complete the Combat Training Scenario |confirm |or |next "Start_Combat_Training"
-_Or_
-Click Here to Skip the Combat Training Scenario |confirm |or |next "Non_Boosted_Start"
-|only if not completedq(43806) or not completedq(40519)
-step
-label "Start_Combat_Training"
-_On the Deck of the Airship:_
-talk General Bret Hughes##100448
-Talk to General Bret Hughes |scenariostage 1 |q 43806 |future
-|only if intutorial
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Tiger Palm ability on the Target Dummy
-|tip It appears on your action bar.
-Use Tiger Palm on the Target Dummy #3# Times |scenariogoal 2/30392 |q 43806 |future
-|only if intutorial() and raceclass("Monk")
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Rising Sun Kick ability on the Target Dummy
-|tip It appears on your action bar.
-|tip Use your Tiger Palm ability to generate Chi, so you can use Rising Sun Kick.
-Use Rising Sun Kick on the Target Dummy #2# Times |scenariogoal 3/30393 |q 43806 |future
-|only if intutorial() and raceclass("Monk")
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Blackout Kick ability on the Target Dummy
-|tip It appears on your action bar.
-|tip Use your Tiger Palm ability to generate Chi, so you can use Blackout Kick.
-Use Blackout Kick on the Target Dummy #3# Times |scenariogoal 4/30395 |q 43806 |future
-|only if intutorial() and raceclass("Monk")
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Fists of Fury ability on the Target Dummy
-|tip It appears on your action bar.
-|tip Use your Tiger Palm ability to generate Chi, so you can use Fists of Fury.
-Use Fists of Fury on the Target Dummy |scenariostage 5 |q 43806 |future
-|only if intutorial() and raceclass("Monk")
-step
-_On the Deck of the Airship:_
-Use your abilities on the Target Dummy
-Use Tiger Palm #5# Times |scenariogoal 6/30392 |q 43806 |future
-Use Rising Sun Kick #2# Times |scenariogoal 6/30393 |q 43806 |future
-Use Blackout Kick #3# Times |scenariogoal 6/30395 |q 43806 |future
-Use Fists of Fury |scenariogoal 6/30396 |q 43806 |future
-|only if intutorial() and raceclass("Monk")
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Roll ability
-|tip It appears on your action bar.
-Use Roll #2# Times |scenariogoal 7/30397 |q 43806 |future
-|only if intutorial() and raceclass("Monk")
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Effuse ability
-|tip It appears on your action bar.
-|tip Make sure you are not targeting an NPC.
-Use Effuse to Heal Yourself #3# Times |scenariogoal 8/30409 |q 43806 |future
-|only if intutorial() and raceclass("Monk")
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592
-Defeat the Soldier |scenariostage 9 |q 43806 |future
-|only if intutorial() and raceclass("Monk")
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592+
-|tip Two of them will attack you.
-Defeat the Attacking Soldiers |scenariostage 10 |q 43806 |future
-|only if intutorial() and raceclass("Monk")
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Kill enemies around this area
-Defend the Airship |scenariostage 11 |q 43806 |future
-|only if intutorial() and raceclass("Monk")
-step
-_On the Airship:_
-Prepare Your Character
-|tip Open your Talents panel (press N) and choose your talents.
-|tip Open your Spellbook (press P) and move the rest of your abilities to your action bars.
-clicknpc Armored Snowy Gryphon##32335
-|tip Up the stairs, at the top of the airship.
-Take the Gryphon on the Back of the Airship and Join the Fleet |scenarioend |q 43806 |future
-|only if intutorial
-step
-accept The Battle for Broken Shore##43806
-|tip You will accept this quest automatically.
-|only if intutorial
-step
-Travel to the Broken Shore |goto Broken Shore/0 52.97,111.90 < 50 |q 43806 |future
-|only if intutorial
-|next "Begin_Broken_Shore_Scenario"
-step
-label "Non_Boosted_Start"
 click Hero's Call Board##250720
 accept The Legion Returns##40519 |goto Stormwind City/0 62.89,71.57
 |only if not havequest(43806)
@@ -11490,7 +10805,6 @@ talk Captain Angelica##108920
 Take the Ship to the Broken Shore |q 42740/1 |goto 19.9,29.4
 |only if not havequest(43806)
 step
-label "Begin_Broken_Shore_Scenario"
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 42740 |only if havequest(42740) or completedq(42740)
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 43806 |only if havequest(43806) or completedq(43806)
 step
@@ -11997,7 +11311,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.5,45.6
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 |only if havequest(41220)
 step
 click Portal to Dalaran##251123
@@ -12011,7 +11325,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 70.52,44.10
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludane, I have urgent business in Val'sharah. Can you secure a flight for me?"_
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 |only if havequest(39861)
 step
 talk Warbrave Oro##97666
@@ -12024,7 +11338,7 @@ Fly to Thunder Totem in Highmountain |q 38907/1 |goto 69.84,51.11
 |only if havequest(38907)
 step
 talk Aludane Whitecloud##96813 |goto 69.84,51.11 |n
-Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 |only if havequest(38907)
 step
 click Portal to Dalaran##251123
@@ -12112,15 +11426,15 @@ step
 kill Nathanos Blightcaller##95852
 |tip Upstairs on the deck of the airship.
 Defeat Nathanos Blightcaller |scenarioend |goto 70.70,76.23
-Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 |only if havequest(39800)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Monk Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Monk\\Monk Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the various quests available in your Class Order Hall.",
 condition_suggested=function() return level >= 101 and level <= 110 and raceclass('Monk') and not completedq(45177) end,
-condition_valid=function() return raceclass('Monk') end,
-condition_valid_msg="You must be a Monk to complete this guide!",
+condition_valid=function() return raceclass('Monk') and level >= 98 end,
+condition_valid_msg="You must be a Monk and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=101,
 },[[
@@ -12175,7 +11489,7 @@ accept Scrolls of Knowledge##42210 |goto 52.78,59.77
 step
 clicknpc Scouting Map##120832
 Begin the "Scrolls of Knowledge" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Scrolls of Knowledge" Mission |q 42210/1 |goto 52.92,60.16
 step
 talk Master Hsu##99179
@@ -12432,7 +11746,7 @@ accept An Ample Stockpile##43054 |goto 48.89,58.36
 step
 clicknpc Scouting Map##120832
 Begin the "Tracking the Tideskorn: Highlands" Mission
-|tip This mission will take up to 8 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 52.92,60.16 |q 41909
 stickystart "Tracking_The_Tideskorn_Monk"
 step
@@ -12466,7 +11780,7 @@ step
 label "Tracking_The_Tideskorn_Monk"
 clicknpc Scouting Map##120832
 Begin "Tracking the Tideskorn" Missions
-|tip Each of these missions will take up to 8 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# "Tracking the Tideskorn" Missions |q 41909/1 |goto 52.93,60.16
 step
 talk High Elder Cloudfall##104744
@@ -12908,14 +12222,14 @@ accept The Nighthold##45177 |goto The Wandering Isle L/0 51.78,48.13
 step
 talk Archmage Khadgar##90417
 turnin The Nighthold##45177 |goto Dalaran L/10 28.54,48.31
-|next "Zygor's Leveling Guides\\Legion (100-110)\\Monk 7.2 Order Hall Quests"
+|next "Leveling Guides\\Legion (100-110)\\Monk\\Monk 7.2 Order Hall Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Monk 7.2 Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Monk\\Monk 7.2 Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the new Class Order Hall quests introduced in patch 7.2.",
 condition_suggested=function() return level == 110 and raceclass('Monk') and not completedq(46350) end,
-condition_valid=function() return raceclass('Monk') end,
-condition_valid_msg="You must be a Monk to complete this guide!",
+condition_valid=function() return raceclass('Monk') and level >= 98 end,
+condition_valid_msg="You must be a Monk and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=110.0,
 },[[
@@ -13324,7 +12638,7 @@ talk Yiska##118214
 accept Master Who?##46353 |goto Broken Shore/0 44.98,61.98
 |tip You will need to have completed the quest Strike Them Down in the Broken Shore Campaign guide.
 |tip You will also need to have earned the Broken Isles Pathfinder, Part One and Part Two for this to appear.
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 step
 Enter the Teleportation Mandala |goto The Wandering Isle L/0 49.89,47.12 < 10
 Follow the path |goto 50.04,48.73 < 20
@@ -13428,139 +12742,16 @@ Follow the path |goto 42.89,27.63 < 20
 talk Ban-Lu##121173
 turnin The Trial of Ban-Lu##46350 |goto 41.68,25.41
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Paladin Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Intro & Artifacts",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the introductory Legion quests and unlocking your class artifacts.",
 condition_suggested=function() return level >= 100 and level <= 110 and raceclass('Paladin') end,
-condition_valid=function() return raceclass('Paladin') end,
-condition_valid_msg="You must be a Paladin to complete this guide!",
-condition_suggested_exclusive=true,
+condition_valid=function() return raceclass('Paladin') and level >= 98 end,
+condition_valid_msg="You must be a Paladin and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
-startlevel=100.0,
+startlevel=98.0,
 },[[
 step
-_Checking for Boosted Character..._
-|next "Boosted_Start" |only if intutorial
-|next "Non_Boosted_Start" |only if not intutorial
-step
-label "Boosted_Start"
-_On the Deck of the Airship:_
-You Can Skip the Combat Training Scenario
-|tip Use your Hearthstone now if you want to skip the Combat Training scenario.
-|tip You can complete it or skip it, it doesn't matter, and is purely personal preference.
-Click Here to Complete the Combat Training Scenario |confirm |or |next "Start_Combat_Training"
-_Or_
-Click Here to Skip the Combat Training Scenario |confirm |or |next "Non_Boosted_Start"
-|only if not completedq(43806) or not completedq(40519)
-step
-label "Start_Combat_Training"
-_On the Deck of the Airship:_
-talk General Bret Hughes##100448
-Talk to General Bret Hughes |scenariostage 1 |q 43806 |future
-|only if intutorial
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Judgement ability on the Target Dummy
-|tip It appears on your action bar.
-Use Judgement on the Target Dummy #2# Times |scenariogoal 2/29793 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Blade of Justice ability on the Target Dummy
-|tip It appears on your action bar.
-Use Blade of Justice on the Target Dummy #2# Times |scenariogoal 3/29773 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Crusader Strike ability on the Target Dummy
-|tip It appears on your action bar.
-Use Crusader Strike on the Target Dummy #3# Times |scenariogoal 4/29769 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Templar's Verdict ability on the Target Dummy
-|tip It appears on your action bar.
-Use Templar's Verdict on the Target Dummy #3# Times |scenariogoal 5/29770 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Use your abilities on the Target Dummy
-Use Judgement #2# Times |scenariogoal 6/29793 |q 43806 |future
-Use Blade of Justice #2# Times |scenariogoal 6/29773 |q 43806 |future
-Use Crusader Strike #2# Times |scenariogoal 6/29769 |q 43806 |future
-Use Templar's Verdict #2# Times |scenariogoal 6/29770 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Divine Storm ability on Arcane Constructs
-|tip It appears on your action bar.
-|tip Use your other abilities on the Arcane Constructs to earn 3 Holy Power so that you can use Divine Storm.
-|tip Stand in the middle of the group of Arcane Constructs.
-Earn 3 Holy Power and then Use Divine Storm |scenariogoal 7/32067 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-kill Arcane Construct##101738+
-Destroy the Arcane Constructs |scenariostage 7 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Divine Shield ability
-|tip It appears on your action bar.
-Use Divine Shield |scenariostage 8 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Flash of Light ability
-|tip It appears on your action bar.
-|tip Make sure you're not targeting an NPC.
-Use Flash of Light to Heal Yourself #3# Times |scenariogoal 9/29772 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592
-Defeat the Soldier |scenariostage 10 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592+
-|tip Two of them will attack you.
-Defeat the Attacking Soldiers |scenariostage 11 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Kill enemies around this area
-Defend the Airship |scenariostage 12 |q 43806 |future
-|only if intutorial()
-step
-_On the Airship:_
-Prepare Your Character
-|tip Open your Talents panel (press N) and choose your talents.
-|tip Open your Spellbook (press P) and move the rest of your abilities to your action bars.
-clicknpc Armored Snowy Gryphon##32335
-|tip Up the stairs, at the top of the airship.
-Take the Gryphon on the Back of the Airship and Join the Fleet |scenarioend |q 43806 |future
-|only if intutorial
-step
-accept The Battle for Broken Shore##43806
-|tip You will accept this quest automatically.
-|only if intutorial
-step
-Travel to the Broken Shore |goto Broken Shore/0 52.97,111.90 < 50 |q 43806 |future
-|only if intutorial
-|next "Begin_Broken_Shore_Scenario"
-step
-label "Non_Boosted_Start"
 click Hero's Call Board##250720
 accept The Legion Returns##40519 |goto Stormwind City/0 62.89,71.57
 |only if not havequest(43806)
@@ -13596,7 +12787,6 @@ talk Captain Angelica##108920
 Take the Ship to the Broken Shore |q 42740/1 |goto 19.9,29.4
 |only if not havequest(43806)
 step
-label "Begin_Broken_Shore_Scenario"
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 42740 |only if havequest(42740) or completedq(42740)
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 43806 |only if havequest(43806) or completedq(43806)
 step
@@ -14183,7 +13373,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.5,45.6
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 |only if havequest(41220)
 step
 click Portal to Dalaran##251123
@@ -14197,7 +13387,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 70.52,44.10
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludane, I have urgent business in Val'sharah. Can you secure a flight for me?"_
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 |only if havequest(39861)
 step
 click Portal to Dalaran##251123
@@ -14214,7 +13404,7 @@ Fly to Thunder Totem in Highmountain |q 38907/1 |goto 69.84,51.11
 |only if havequest(38907)
 step
 talk Aludane Whitecloud##96813 |goto 69.84,51.11 |n
-Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 |only if havequest(38907)
 step
 click Portal to Dalaran##251123
@@ -14302,15 +13492,15 @@ step
 kill Nathanos Blightcaller##95852
 |tip Upstairs on the deck of the airship.
 Defeat Nathanos Blightcaller |scenarioend |goto 70.70,76.23
-Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 |only if havequest(39800)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Paladin Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the various quests available in your Class Order Hall.",
 condition_suggested=function() return level >= 101 and level <= 110 and raceclass('Paladin') and not completedq(45177) end,
-condition_valid=function() return raceclass('Paladin') end,
-condition_valid_msg="You must be a Paladin to complete this guide!",
+condition_valid=function() return raceclass('Paladin') and level >= 98 end,
+condition_valid_msg="You must be a Paladin and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=101,
 },[[
@@ -14361,7 +13551,7 @@ accept Wrath and Justice##42849 |goto 52.26,78.03
 step
 clicknpc Scouting Map##120832
 Begin the "Wrath and Justice" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Wrath and Justice" Mission |q 42849/1 |goto 53.49,78.43
 step
 talk Lord Grayson Shadowbreaker##90250
@@ -14649,7 +13839,7 @@ accept Blood of Our Enemy##43488 |goto Dalaran L/10 44.60,23.07
 step
 clicknpc Scouting Map##120832
 Complete "Blood of Our Enemy" Missions
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 |tip They are the missions that reward Flasks of Demon Blood.
 collect 5 Flask of Demon Blood##139465 |q 43488/1 |goto Eastern Plaguelands/20 53.45,78.60
 step
@@ -14840,7 +14030,7 @@ step
 label "Lumenstones_Paladin"
 clicknpc Scouting Map##120832
 Complete "Lumenstone" Missions
-|tip Each of these missions will take up to 24 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Collect #50# Lumenstone |q 43698/1 |goto 53.44,78.63
 step
 talk Lord Grayson Shadowbreaker##90250
@@ -15081,14 +14271,14 @@ accept The Nighthold##45177 |goto Eastern Plaguelands/20 52.15,69.42
 step
 talk Archmage Khadgar##90417
 turnin The Nighthold##45177 |goto Dalaran L/10 28.54,48.31
-|next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin 7.2 Order Hall Quests"
+|next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin 7.2 Order Hall Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Paladin 7.2 Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Paladin\\Paladin 7.2 Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the new Class Order Hall quests introduced in patch 7.2.",
 condition_suggested=function() return level == 110 and raceclass('Paladin') and not completedq(45770) end,
-condition_valid=function() return raceclass('Paladin') end,
-condition_valid_msg="You must be a Paladin to complete this guide!",
+condition_valid=function() return raceclass('Paladin') and level >= 98 end,
+condition_valid_msg="You must be a Paladin and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=110.0,
 },[[
@@ -15526,7 +14716,7 @@ talk Champion Cyssa Dawnrose##118376
 accept Worthy of the Title##46069 |goto 43.80,63.10
 |tip You will need to have completed the quest Strike Them Down in the Broken Shore Campaign guide.
 |tip You will also need to have earned the Broken Isles Pathfinder, Part One and Part Two for this to appear.
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 step
 talk Lord Grayson Shadowbreaker##90250
 turnin Worthy of the Title##46069 |goto Eastern Plaguelands/20 52.28,78.10
@@ -15644,123 +14834,16 @@ step
 talk Lord Grayson Shadowbreaker##90250
 turnin Stirring in the Shadows##45770 |goto Eastern Plaguelands/20 52.15,77.80
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Priest Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Priest\\Priest Intro & Artifacts",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the introductory Legion quests and unlocking your class artifacts.",
 condition_suggested=function() return level >= 100 and level <= 110 and raceclass('Priest') end,
-condition_suggested_exclusive=true,
-condition_valid=function() return raceclass('Priest') end,
-condition_valid_msg="You must be a Priest to complete this guide!",
+condition_valid=function() return raceclass('Priest') and level >= 98 end,
+condition_valid_msg="You must be a Priest and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
-startlevel=100.0,
+startlevel=98.0,
 },[[
 step
-_Checking for Boosted Character..._
-|next "Boosted_Start" |only if intutorial
-|next "Non_Boosted_Start" |only if not intutorial
-step
-label "Boosted_Start"
-_On the Deck of the Airship:_
-You Can Skip the Combat Training Scenario
-|tip Use your Hearthstone now if you want to skip the Combat Training scenario.
-|tip You can complete it or skip it, it doesn't matter, and is purely personal preference.
-Click Here to Complete the Combat Training Scenario |confirm |or |next "Start_Combat_Training"
-_Or_
-Click Here to Skip the Combat Training Scenario |confirm |or |next "Non_Boosted_Start"
-|only if not completedq(43806) or not completedq(40519)
-step
-label "Start_Combat_Training"
-_On the Deck of the Airship:_
-talk General Bret Hughes##100448
-Talk to General Bret Hughes |scenariostage 1 |q 43806 |future
-|only if intutorial
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Shadow Word: Pain ability on the Target Dummy
-|tip It appears on your action bar.
-Cast Shadow Word: Pain on the Target Dummy |scenariostage 2 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Penance ability on the Target Dummy
-|tip It appears on your action bar.
-Cast Penance on the Target Dummy #2# Times |scenariogoal 3/30503 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Smite ability on the Target Dummy
-|tip It appears on your action bar.
-Cast Smite on the Target Dummy #3# Times |scenariogoal 4/30504 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Use your abilities on the Target Dummy
-Cast Shadow Word: Pain |scenariogoal 5/30502 |q 43806 |future
-Cast Penance #2# Times |scenariogoal 5/30503 |q 43806 |future
-Cast Smite #4# Times |scenariogoal 5/30504 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Psychic Scream ability
-|tip It appears on your action bar.
-Cast Psychic Scream to Fear the Enemies Around You |scenariostage 6 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Power Word: Shield ability
-|tip It appears on your action bar.
-Cast Power Word: Shield on Yourself |scenariostage 7 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Plea ability
-|tip It appears on your action bar.
-Cast Plea to Heal Yourself #3# Times |scenariogoal 8/30523 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592
-Defeat the Soldier |scenariostage 9 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592+
-|tip Two of them will attack you.
-Defeat the Attacking Soldiers |scenariostage 10 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Kill enemies around this area
-Defend the Airship |scenariostage 11 |q 43806 |future
-|only if intutorial()
-step
-_On the Airship:_
-Prepare Your Character
-|tip Open your Talents panel (press N) and choose your talents.
-|tip Open your Spellbook (press P) and move the rest of your abilities to your action bars.
-clicknpc Armored Snowy Gryphon##32335
-|tip Up the stairs, at the top of the airship.
-Take the Gryphon on the Back of the Airship and Join the Fleet |scenarioend |q 43806 |future
-|only if intutorial
-step
-accept The Battle for Broken Shore##43806
-|tip You will accept this quest automatically.
-|only if intutorial
-step
-Travel to the Broken Shore |goto Broken Shore/0 52.97,111.90 < 50 |q 43806 |future
-|only if intutorial
-|next "Begin_Broken_Shore_Scenario"
-step
-label "Non_Boosted_Start"
 click Hero's Call Board##250720
 accept The Legion Returns##40519 |goto Stormwind City/0 62.89,71.57
 |only if not havequest(43806)
@@ -15796,7 +14879,6 @@ talk Captain Angelica##108920
 Take the Ship to the Broken Shore |q 42740/1 |goto 19.9,29.4
 |only if not havequest(43806)
 step
-label "Begin_Broken_Shore_Scenario"
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 42740 |only if havequest(42740) or completedq(42740)
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 43806 |only if havequest(43806) or completedq(43806)
 step
@@ -16341,7 +15423,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.5,45.6
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 |only if havequest(41220)
 step
 click Portal to Dalaran##251123
@@ -16355,7 +15437,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 70.52,44.10
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludane, I have urgent business in Val'sharah. Can you secure a flight for me?"_
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 |only if havequest(39861)
 step
 talk Warbrave Oro##97666
@@ -16368,7 +15450,7 @@ Fly to Thunder Totem in Highmountain |q 38907/1 |goto 69.84,51.11
 |only if havequest(38907)
 step
 talk Aludane Whitecloud##96813 |goto 69.84,51.11 |n
-Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 |only if havequest(38907)
 step
 click Portal to Dalaran##251123
@@ -16456,15 +15538,15 @@ step
 kill Nathanos Blightcaller##95852
 |tip Upstairs on the deck of the airship.
 Defeat Nathanos Blightcaller |scenarioend |goto 70.70,76.23
-Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 |only if havequest(39800)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Priest Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Priest\\Priest Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the various quests available in your Class Order Hall.",
 condition_suggested=function() return level >= 101 and level <= 110 and raceclass('Priest') and not completedq(46029) end,
-condition_valid=function() return raceclass('Priest') end,
-condition_valid_msg="You must be a Priest to complete this guide!",
+condition_valid=function() return raceclass('Priest') and level >= 98 end,
+condition_valid_msg="You must be a Priest and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=101,
 },[[
@@ -16516,7 +15598,7 @@ accept Troops in the Field##43276 |goto 51.36,48.02
 step
 clicknpc Command Map##102589
 Begin the "Troops in Training" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Troops in Training" Mission |q 43276/1 |goto 50.54,48.23
 step
 talk Alonsus Faol##110564
@@ -16796,7 +15878,7 @@ step
 clicknpc Command Map##102589
 Complete "Holy Ground" Missions
 |tip They are the missions that reward Pure Holy Light.
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 collect 5 Pure Holy Light##139368 |q 43383/1 |goto 50.59,48.00
 step
 Follow the path |goto 66.74,40.62 < 15 |walk
@@ -16820,7 +15902,7 @@ accept Goddess Watch Over You##44337 |goto 50.91,47.84
 step
 clicknpc Command Map##102589
 Begin the "Infiltrating Our Enemies" Mission
-|tip This mission will take up to 2 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 50.59,48.03 |q 43385
 step
 talk Meridelle Lightspark##112401
@@ -16843,7 +15925,7 @@ turnin In the House of Light and Shadow##44448 |goto Dalaran L/10 28.50,48.31
 step
 clicknpc Command Map##102589
 Begin the "Infiltrating Our Enemies" Mission
-|tip This mission will take up to 2 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Infiltrating Our Enemies" Mission |q 43385/1 |goto 50.59,48.03
 step
 talk Alonsus Faol##110564
@@ -17012,7 +16094,7 @@ stickystart "World_Quests_Priest"
 step
 clicknpc Command Map##102589
 Begin the "Lumenstone: Suramar City" Mission
-|tip This mission will take up to 12 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 50.56,48.13 |q 43400
 step
 Enter the cave |goto Azsuna/0 49.37,25.96 < 20 |walk
@@ -17033,7 +16115,7 @@ step
 label "Lumenstones_Priest"
 clicknpc Command Map##102589
 Complete "Lumenstone" Missions
-|tip Each of these missions will take up to 24 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Collect #50# Lumenstone |q 43400/1 |goto 50.56,48.13
 step
 talk Alonsus Faol##110564
@@ -17269,14 +16351,14 @@ Complete the "Menace on the Broken Shore" mission |q 46029/1 |goto 49.68,45.94
 step
 talk Moira Thaurissan##109776
 turnin Investigate the Broken Shore##46029 |goto 51.45,45.97
-|next "Zygor's Leveling Guides\\Legion (100-110)\\Priest 7.2 Order Hall Quests"
+|next "Leveling Guides\\Legion (100-110)\\Priest\\Priest 7.2 Order Hall Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Priest 7.2 Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Priest\\Priest 7.2 Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the new Class Order Hall quests introduced in patch 7.2.",
 condition_suggested=function() return level == 110 and raceclass('Priest') and not completedq(45789) end,
-condition_valid=function() return raceclass('Priest') end,
-condition_valid_msg="You must be a Priest to complete this guide!",
+condition_valid=function() return raceclass('Priest') and level >= 98 end,
+condition_valid_msg="You must be a Priest and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=110.0,
 },[[
@@ -17704,7 +16786,7 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.74,63.27
 step
 You must complete the Broken Shore campaign to continue
-Use the Broken Shore Campaign guide to accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Use the Broken Shore Campaign guide to accomplish this |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 step
 talk Grand Priest##118536
@@ -17739,132 +16821,16 @@ step
 talk Betild Deepanvil##102709
 turnin The Sunken Vault##45789 |goto Netherlight Temple/1 49.77,20.64
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Rogue Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Intro & Artifacts",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the introductory Legion quests and unlocking your class artifacts.",
 condition_suggested=function() return level >= 100 and level <= 110 and raceclass('Rogue') end,
-condition_suggested_exclusive=true,
-condition_valid=function() return raceclass('Rogue') end,
-condition_valid_msg="You must be a Rogue to complete this guide!",
+condition_valid=function() return raceclass('Rogue') and level >= 98 end,
+condition_valid_msg="You must be a Rogue and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
-startlevel=100.0,
+startlevel=98.0,
 },[[
 step
-_Checking for Boosted Character..._
-|next "Boosted_Start" |only if intutorial
-|next "Non_Boosted_Start" |only if not intutorial
-step
-label "Boosted_Start"
-_On the Deck of the Airship:_
-You Can Skip the Combat Training Scenario
-|tip Use your Hearthstone now if you want to skip the Combat Training scenario.
-|tip You can complete it or skip it, it doesn't matter, and is purely personal preference.
-Click Here to Complete the Combat Training Scenario |confirm |or |next "Start_Combat_Training"
-_Or_
-Click Here to Skip the Combat Training Scenario |confirm |or |next "Non_Boosted_Start"
-|only if not completedq(43806) or not completedq(40519)
-step
-label "Start_Combat_Training"
-_On the Deck of the Airship:_
-talk General Bret Hughes##100448
-Talk to General Bret Hughes |scenariostage 1 |q 43806 |future
-|only if intutorial
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Deadly Poison ability
-|tip It is already on your action bar.
-Use Deadly Poison |scenariostage 2 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Stealth ability
-|tip It appears on your action bar.
-Use Stealth |scenariostage 3 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Garrote ability on the Target Dummy
-|tip It appears on your action bar.
-Use Garrote on the Target Dummy |scenariostage 4 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Mutilate ability on the Target Dummy
-|tip It appears on your action bar.
-Use Mutilate on the Target Dummy #3# Times |scenariogoal 5/30646 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Rupture ability on the Target Dummy
-|tip It appears on your action bar.
-Use Rupture on the Target Dummy |scenariostage 6 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Envenom ability on the Target Dummy
-|tip It appears on your action bar.
-|tip Use your other abilities on the target dummy to build combo points so that you can use Envenom.
-Use Envenom on the Target Dummy |scenariostage 7 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Use your abilities on the Target Dummy
-Use Garrote #2# Times |scenariogoal 8/30645 |q 43806 |future
-Use Mutilate #4# Times |scenariogoal 8/30646 |q 43806 |future
-Use Rupture |scenariogoal 8/30647 |q 43806 |future
-Use Envenom |scenariogoal 8/30648 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Vanish ability
-|tip It appears on your action bar.
-Use Vanish |scenariostage 9 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592
-Defeat the Soldier |scenariostage 10 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592+
-|tip Two of them will attack you.
-Defeat the Attacking Soldiers |scenariostage 11 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Kill enemies around this area
-Defend the Airship |scenariostage 12 |q 43806 |future
-|only if intutorial()
-step
-_On the Airship:_
-Prepare Your Character
-|tip Open your Talents panel (press N) and choose your talents.
-|tip Open your Spellbook (press P) and move the rest of your abilities to your action bars.
-clicknpc Armored Snowy Gryphon##32335
-|tip Up the stairs, at the top of the airship.
-Take the Gryphon on the Back of the Airship and Join the Fleet |scenarioend |q 43806 |future
-|only if intutorial
-step
-accept The Battle for Broken Shore##43806
-|tip You will accept this quest automatically.
-|only if intutorial
-step
-Travel to the Broken Shore |goto Broken Shore/0 52.97,111.90 < 50 |q 43806 |future
-|only if intutorial
-|next "Begin_Broken_Shore_Scenario"
-step
-label "Non_Boosted_Start"
 click Hero's Call Board##250720
 accept The Legion Returns##40519 |goto Stormwind City/0 62.89,71.57
 |only if not havequest(43806)
@@ -17900,7 +16866,6 @@ talk Captain Angelica##108920
 Take the Ship to the Broken Shore |q 42740/1 |goto 19.9,29.4
 |only if not havequest(43806)
 step
-label "Begin_Broken_Shore_Scenario"
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 42740 |only if havequest(42740) or completedq(42740)
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 43806 |only if havequest(43806) or completedq(43806)
 step
@@ -18488,7 +17453,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.5,45.6
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 |only if havequest(41220)
 step
 click Knocker##249908 |goto Dalaran L/4 39.67,21.45 |n
@@ -18502,7 +17467,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 70.52,44.10
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludane, I have urgent business in Val'sharah. Can you secure a flight for me?"_
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 |only if havequest(39861)
 step
 talk Warbrave Oro##97666
@@ -18515,7 +17480,7 @@ Fly to Thunder Totem in Highmountain |q 38907/1 |goto 69.84,51.11
 |only if havequest(38907)
 step
 talk Aludane Whitecloud##96813 |goto 69.84,51.11 |n
-Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 |only if havequest(38907)
 step
 click Knocker##249908 |goto Dalaran L/4 39.67,21.45 |n
@@ -18603,15 +17568,15 @@ step
 kill Nathanos Blightcaller##95852
 |tip Upstairs on the deck of the airship.
 Defeat Nathanos Blightcaller |scenarioend |goto 70.70,76.23
-Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 |only if havequest(39800)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Rogue Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the various quests available in your Class Order Hall.",
 condition_suggested=function() return level >= 101 and level <= 110 and raceclass('Rogue') and not completedq(44195) end,
-condition_valid=function() return raceclass('Rogue') end,
-condition_valid_msg="You must be a Rogue to complete this guide!",
+condition_valid=function() return raceclass('Rogue') and level >= 98 end,
+condition_valid_msg="You must be a Rogue and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=101,
 },[[
@@ -18669,7 +17634,7 @@ accept The Big Bad Wolfe##43014 |goto 37.87,45.00
 step
 clicknpc Scouting Map##120832
 Begin the "The Big Bad Wolfe" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "The Big Bad Wolfe" Mission |q 43014/1 |goto 37.37,44.15
 step
 talk Nikki the Gossip##98092
@@ -18806,7 +17771,7 @@ Follow the path up |goto 42.79,65.29 < 15 |walk
 Click the Torch and run through the doorway |goto 45.34,58.85 < 10 |walk
 clicknpc Scouting Map##120832
 Begin a "Throwing SI:7 Off the Trail" Mission
-|tip This mission will take 8 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 37.46,44.21 |q 42684
 step
 collect 20 Aethril##124101 |q 42730/1 |goto Stormwind City/0 61.19,70.99
@@ -18986,7 +17951,7 @@ turnin Light's Charge##44153 |goto Dalaran L/4 40.69,54.57
 step
 clicknpc Scouting Map##120832
 Begin "Throwing SI:7 Off the Trail" Missions
-|tip Each of these missions will take up to 16 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete the "Throwing SI:7 Off the Trail: Dalaran" Mission |q 42684/1 |goto 37.46,44.21
 Complete the "Throwing SI:7 Off the Trail: Stormheim" Mission |q 42684/2 |goto 37.46,44.21
 Complete the "Throwing SI:7 Off the Trail: Azsuna" Mission |q 42684/3 |goto 37.46,44.21
@@ -19107,7 +18072,7 @@ Follow the path up |goto 42.79,65.29 < 15 |walk
 Click the Torch and run through the doorway |goto 45.34,58.85 < 10 |walk
 clicknpc Scouting Map##120832
 Begin the "Where In the World is Mathias? Obvious Start" Mission
-|tip This mission will take up to 12 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 37.41,44.25 |q 43469
 stickystart "Where_Mathias_Rogue"
 step
@@ -19117,7 +18082,7 @@ step
 label "Where_Mathias_Rogue"
 clicknpc Scouting Map##120832
 Begin "Where In the World is Mathias?" Missions
-|tip Each of these missions will take up to 12 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# "Where In the World is Mathias?" Missions |q 43469/1 |goto 37.41,44.25
 step
 Click the Torch and run through the doorway |goto 45.02,54.87 < 10 |walk
@@ -19442,14 +18407,14 @@ Start a Workorder for Champion Armaments |q 44195/1 |goto 75.08,56.49
 step
 talk Mal##110348
 turnin Workorders for Armaments##44195 |goto 75.08,56.49
-|next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue 7.2 Order Hall Quests"
+|next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue 7.2 Order Hall Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Rogue 7.2 Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Rogue\\Rogue 7.2 Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the new Class Order Hall quests introduced in patch 7.2.",
 condition_suggested=function() return level == 110 and raceclass('Rogue') and not completedq(46089) end,
-condition_valid=function() return raceclass('Rogue') end,
-condition_valid_msg="You must be a Rogue to complete this guide!",
+condition_valid=function() return raceclass('Rogue') and level >= 98 end,
+condition_valid_msg="You must be a Rogue and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=110.0,
 },[[
@@ -19886,7 +18851,7 @@ talk Maiev Shadowsong##116576
 turnin Champions of Legionfall##47137 |goto Broken Shore/0 44.57,63.50
 step
 You must first complete the Broken Shore Campaign quest line before being able to start the quest line to obtain your Class Hall mount
-Check out our Broken Shore Campaign guide to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Check out our Broken Shore Campaign guide to accomplish this |confirm |or |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Click here to proceed |confirm
 |only if not achieved(11546)
 step
@@ -19931,145 +18896,16 @@ step
 talk Lilian Voss##98099
 turnin Hiding In Plain Sight##46089 |goto Dalaran L/4 41.93,78.62
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Shaman Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Intro & Artifacts",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the introductory Legion quests and unlocking your class artifacts.",
 condition_suggested=function() return level >= 100 and level <= 110 and raceclass('Shaman') end,
-condition_suggested_exclusive=true,
-condition_valid=function() return raceclass('Shaman') end,
-condition_valid_msg="You must be a Shaman to complete this guide!",
+condition_valid=function() return raceclass('Shaman') and level >= 98 end,
+condition_valid_msg="You must be a Shaman and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
-startlevel=100.0,
+startlevel=98.0,
 },[[
 step
-_Checking for Boosted Character..._
-|next "Boosted_Start" |only if intutorial
-|next "Non_Boosted_Start" |only if not intutorial
-step
-label "Boosted_Start"
-_On the Deck of the Airship:_
-You Can Skip the Combat Training Scenario
-|tip Use your Hearthstone now if you want to skip the Combat Training scenario.
-|tip You can complete it or skip it, it doesn't matter, and is purely personal preference.
-Click Here to Complete the Combat Training Scenario |confirm |or |next "Start_Combat_Training"
-_Or_
-Click Here to Skip the Combat Training Scenario |confirm |or |next "Non_Boosted_Start"
-|only if not completedq(43806) or not completedq(40519)
-step
-label "Start_Combat_Training"
-_On the Deck of the Airship:_
-talk General Bret Hughes##100448
-Talk to General Bret Hughes |scenariostage 1 |q 43806 |future
-|only if intutorial
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Flame Shock ability on the Target Dummy
-|tip It appears on your action bar.
-Cast Flame Shock on the Target Dummy |scenariostage 2 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Lava Burst ability on the Target Dummy
-|tip It appears on your action bar.
-Cast Lava Burst on the Target Dummy #3# Times |scenariogoal 3/29960 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Lightning Bolt ability on the Target Dummy
-|tip It appears on your action bar.
-Cast Lightning Bolt on the Target Dummy #3# Times |scenariogoal 4/29961 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Earth Shock ability on the Target Dummy
-|tip It appears on your action bar.
-|tip Use your other abilities on the Target Dummy to generat Maelstrom, so that you can use Earth Shock.
-Cast Earth Shock on the Target Dummy #2# Times |scenariogoal 5/29962 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Use your abilities on the Target Dummy
-Cast Flame Shock |scenariogoal 6/29959 |q 43806 |future
-Cast Lava Burst #2# Times |scenariogoal 6/29960 |q 43806 |future
-Cast Lightning Bolt #4# Times |scenariogoal 6/29961 |q 43806 |future
-Cast Earth Shock #2# Times |scenariogoal 6/29962 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Hex ability on the Alliance Infantry
-|tip It appears on your action bar.
-Cast Hex on the Soldier |scenariostage 7 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Chain Lightning ability on the Arcane Constructs
-|tip It appears on your action bar.
-Cast Chain Lightning on the Arcane Constructs |scenariogoal 8/29964 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-kill Arcane Construct##101738+
-Destroy the Arcane Constructs |scenariostage 8 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Healing Surge ability
-|tip It appears on your action bar.
-|tip Make sure you are not targeting an NPC.
-Cast Healing Surge to Heal Yourself #3# Times |scenariogoal 9/32737 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Fire Elemental ability
-|tip It appears on your action bar.
-Cast Fire Elemental |scenariostage 10 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592
-Defeat the Soldier |scenariostage 11 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592+
-|tip Two of them will attack you.
-Defeat the Attacking Soldiers |scenariostage 12 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Kill enemies around this area
-Defend the Airship |scenariostage 13 |q 43806 |future
-|only if intutorial()
-step
-_On the Airship:_
-Prepare Your Character
-|tip Open your Talents panel (press N) and choose your talents.
-|tip Open your Spellbook (press P) and move the rest of your abilities to your action bars.
-clicknpc Armored Snowy Gryphon##32335
-|tip Up the stairs, at the top of the airship.
-Take the Gryphon on the Back of the Airship and Join the Fleet |scenarioend |q 43806 |future
-|only if intutorial
-step
-accept The Battle for Broken Shore##43806
-|tip You will accept this quest automatically.
-|only if intutorial
-step
-Travel to the Broken Shore |goto Broken Shore/0 52.97,111.90 < 50 |q 43806 |future
-|only if intutorial
-|next "Begin_Broken_Shore_Scenario"
-step
-label "Non_Boosted_Start"
 click Hero's Call Board##250720
 accept The Legion Returns##40519 |goto Stormwind City/0 62.89,71.57
 |only if not havequest(43806)
@@ -20105,7 +18941,6 @@ talk Captain Angelica##108920
 Take the Ship to the Broken Shore |q 42740/1 |goto 19.9,29.4
 |only if not havequest(43806)
 step
-label "Begin_Broken_Shore_Scenario"
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 42740 |only if havequest(42740) or completedq(42740)
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 43806 |only if havequest(43806) or completedq(43806)
 step
@@ -20336,10 +19171,10 @@ step
 Travel to the Guo-Lai Halls |q 43338/1 |goto Vale of Eternal Blossoms/0 22.51,27.01
 stickystart "Mogu"
 step
-Run down the stairs |goto Vale of Eternal Blossoms/18 47.74,80.55 < 15
-Follow the path |goto Vale of Eternal Blossoms/18 59.95,64.28 < 15
+Run down the stairs |goto Vale of Eternal Blossoms/1 47.74,80.55 < 15
+Follow the path |goto Vale of Eternal Blossoms/1 59.95,64.28 < 15
 kill Xioliang##110582
-collect Blood Guard's Tooth##139432 |q 43338/2 |goto Vale of Eternal Blossoms/18 75.01,50.68
+collect Blood Guard's Tooth##139432 |q 43338/2 |goto Vale of Eternal Blossoms/1 75.01,50.68
 step
 Follow the path |goto 65.62,67.60 < 15
 Follow the path |goto 46.25,56.33 < 15
@@ -20361,7 +19196,7 @@ Run down the stairs |goto 68.70,23.95 < 15
 Follow the path |goto 68.98,16.42 < 15
 Follow the path |goto 63.52,21.16 < 15
 kill Thunder Serpent Nalak'Ra##110675
-collect Hag's Belongings##139434 |q 43338/4 |goto Vale of Eternal Blossoms/19 58.65,48.83
+collect Hag's Belongings##139434 |q 43338/4 |goto Vale of Eternal Blossoms/2 58.65,48.83
 step
 label "Mogu"
 kill Shao-Tien enemies around this area
@@ -20370,12 +19205,12 @@ Purge #8# Mogu Spirits |q 43338/5 |goto 51.00,75.00
 step
 Run up the stairs |goto 62.20,33.62 < 15
 Follow the path |goto 67.16,16.40 < 10
-Run up the stairs |goto Vale of Eternal Blossoms/18 60.36,12.39 < 10
-click Ancient Guo-Lai Door |goto Vale of Eternal Blossoms/18 62.67,23.73 < 10
+Run up the stairs |goto Vale of Eternal Blossoms/1 60.36,12.39 < 10
+click Ancient Guo-Lai Door |goto Vale of Eternal Blossoms/1 62.67,23.73 < 10
 talk Rehgar Earthfury##96541
 |tip Walk only on the tiles with green arrows on them to reach get through the hallway.
-turnin The Codex of Ra##43338 |goto Vale of Eternal Blossoms/18 47.11,83.09
-accept The Voice of Thunder##39771 |goto Vale of Eternal Blossoms/18 47.11,83.09
+turnin The Codex of Ra##43338 |goto Vale of Eternal Blossoms/1 47.11,83.09
+accept The Voice of Thunder##39771 |goto Vale of Eternal Blossoms/1 47.11,83.09
 step
 Run up the stairs |goto 49.12,84.20 < 10
 Leave the building |goto 56.09,93.83 < 10
@@ -20663,7 +19498,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.5,45.6
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 |only if havequest(41220)
 step
 click Portal to Dalaran##251123
@@ -20677,7 +19512,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 70.52,44.10
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludane, I have urgent business in Val'sharah. Can you secure a flight for me?"_
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 |only if havequest(39861)
 step
 talk Warbrave Oro##97666
@@ -20690,7 +19525,7 @@ Fly to Thunder Totem in Highmountain |q 38907/1 |goto 69.84,51.11
 |only if havequest(38907)
 step
 talk Aludane Whitecloud##96813 |goto 69.84,51.11 |n
-Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 |only if havequest(38907)
 step
 click Portal to Dalaran##251123
@@ -20778,15 +19613,15 @@ step
 kill Nathanos Blightcaller##95852
 |tip Upstairs on the deck of the airship.
 Defeat Nathanos Blightcaller |scenarioend |goto 70.70,76.23
-Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 |only if havequest(39800)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Shaman Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the various quests available in your Class Order Hall.",
 condition_suggested=function() return level >= 101 and level <= 110 and raceclass('Shaman') and not completedq(45996) end,
-condition_valid=function() return raceclass('Shaman') end,
-condition_valid_msg="You must be a Shaman to complete this guide!",
+condition_valid=function() return raceclass('Shaman') and level >= 98 end,
+condition_valid_msg="You must be a Shaman and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=101,
 },[[
@@ -20854,7 +19689,7 @@ accept Troops in the Field##41741 |goto 33.00,60.47
 step
 clicknpc Scouting Map##120832
 Begin the "Troops in the Field" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Troops in the Field" Mission |q 41741/1 |goto 33.49,59.35
 step
 talk Advisor Sevel##96746
@@ -21064,7 +19899,7 @@ accept Champion: Celestos##41742 |instant |goto 28.21,45.00
 step
 clicknpc Scouting Map##120832
 Begin a "Thunderaan's Enemies" Mission
-|tip This mission will take up to 8 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 33.51,59.34 |q 42986
 stickystart "Enemies_Of_Air_Shaman"
 step
@@ -21110,7 +19945,7 @@ step
 label "Enemies_Of_Air_Shaman"
 clicknpc Scouting Map##120832
 Begin "Thunderaan's Enemies" Missions
-|tip Each of these missions will take up to 8 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #4# "Thunderaan's Enemies" Missions |q 42986/1 |goto 33.51,59.34
 step
 talk Advisor Sevel##96746
@@ -21122,7 +19957,7 @@ accept Champion: Nobundo##41743 |instant |goto 30.25,51.54
 step
 clicknpc Scouting Map##120832
 Begin the "Investigating Deepholm" Mission
-|tip This mission will take up to 8 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Investigating Deepholm" Mission |q 42200/1 |goto 33.51,59.34
 step
 talk Advisor Sevel##96746
@@ -21557,14 +20392,14 @@ Complete the _Menace on the Broken Shore_ mission |q 45996/1 |goto The Maelstrom
 step
 talk Advisor Sevel##96746
 turnin Investigate the Broken Shore##45996 |goto The Maelstrom L/0 33.10,60.28
-|next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman 7.2 Order Hall Quests"
+|next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman 7.2 Order Hall Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Shaman 7.2 Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Shaman\\Shaman 7.2 Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the new Class Order Hall quests introduced in patch 7.2.",
 condition_suggested=function() return level == 110 and raceclass('Shaman') and not completedq(46792) end,
-condition_valid=function() return raceclass('Shaman') end,
-condition_valid_msg="You must be a Shaman to complete this guide!",
+condition_valid=function() return raceclass('Shaman') and level >= 98 end,
+condition_valid_msg="You must be a Shaman and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=110.0,
 },[[
@@ -22024,7 +20859,7 @@ talk Maiev Shadowsong##116576
 turnin Champions of Legionfall##47137 |goto Broken Shore/0 44.55,63.50
 step
 You must first complete the Broken Shore Campaign quest line before being able to start the quest line to obtain your Class Hall mount
-Check out our Broken Shore Campaign guide to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Check out our Broken Shore Campaign guide to accomplish this |confirm |or |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Click here to proceed |confirm
 |only if not achieved(11546)
 step
@@ -22064,139 +20899,16 @@ step
 talk Consular Celestos##106521
 turnin Gathering of the Storms##46792 |goto The Maelstrom L/0 28.35,45.12
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Warlock Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Intro & Artifacts",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the introductory Legion quests and unlocking your class artifacts.",
 condition_suggested=function() return level >= 100 and level <= 110 and raceclass('Warlock') end,
-condition_suggested_exclusive=true,
-condition_valid=function() return raceclass('Warlock') end,
-condition_valid_msg="You must be a Warlock to complete this guide!",
+condition_valid=function() return raceclass('Warlock') and level >= 98 end,
+condition_valid_msg="You must be a Warlock and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
-startlevel=100.0,
+startlevel=98.0,
 },[[
 step
-_Checking for Boosted Character..._
-|next "Boosted_Start" |only if intutorial
-|next "Non_Boosted_Start" |only if not intutorial
-step
-label "Boosted_Start"
-_On the Deck of the Airship:_
-You Can Skip the Combat Training Scenario
-|tip Use your Hearthstone now if you want to skip the Combat Training scenario.
-|tip You can complete it or skip it, it doesn't matter, and is purely personal preference.
-Click Here to Complete the Combat Training Scenario |confirm |or |next "Start_Combat_Training"
-_Or_
-Click Here to Skip the Combat Training Scenario |confirm |or |next "Non_Boosted_Start"
-|only if not completedq(43806) or not completedq(40519)
-step
-label "Start_Combat_Training"
-_On the Deck of the Airship:_
-talk General Bret Hughes##100448
-Talk to General Bret Hughes |scenariostage 1 |q 43806 |future
-|only if intutorial
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Summon Voidwalker ability
-|tip It is already on your action bar.
-Cast Summon Voidwalker |scenariostage 2 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Agony ability on the Target Dummy
-|tip It appears on your action bar.
-Cast Agony on the Target Dummy |scenariostage 3 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Corruption ability on the Target Dummy
-|tip It appears on your action bar.
-Cast Corruption on the Target Dummy |scenariostage 4 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Drain Life ability on the Target Dummy
-|tip It appears on your action bar.
-Cast Drain Life on the Target Dummy #2# Times |scenariogoal 5/29813 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Unstable Affliction ability on the Target Dummy
-|tip It appears on your action bar.
-|tip Use your Agony ability on the Target Dummy to generate Soul Shards, so you can use Unstable Affliction.
-Cast Unstable Affliction on the Target Dummy #3# Times |scenariogoal 6/29814 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Use your abilities on the Target Dummy
-Cast Agony |scenariogoal 7/29811 |q 43806 |future
-Cast Corruption |scenariogoal 7/29812 |q 43806 |future
-Cast Unstable Affliction #2# Times |scenariogoal 7/29814 |q 43806 |future
-Cast Drain Life #2# Times |scenariogoal 7/29813 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Life Tap ability
-|tip It appears on your action bar.
-Cast Life Tap #2# Times |scenariogoal 8/29816 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Fear ability on the Alliance Infantry
-|tip It appears on your action bar.
-Cast Fear on the Soldier |scenariostage 9 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Summon Doomguard ability on the Target Dummy
-|tip It appears on your action bar.
-Cast Summon Doomguard |scenariostage 10 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592
-Defeat the Attacker |scenariostage 11 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592+
-|tip Two of them will attack you.
-Defeat Both Attackers |scenariostage 12 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Kill enemies around this area
-Defend the Airship |scenariostage 13 |q 43806 |future
-|only if intutorial()
-step
-_On the Airship:_
-Prepare Your Character
-|tip Open your Talents panel (press N) and choose your talents.
-|tip Open your Spellbook (press P) and move the rest of your abilities to your action bars.
-clicknpc Armored Snowy Gryphon##32335
-|tip Up the stairs, at the top of the airship.
-Take the Gryphon on the Back of the Airship and Join the Fleet |scenarioend |q 43806 |future
-|only if intutorial
-step
-accept The Battle for Broken Shore##43806
-|tip You will accept this quest automatically.
-|only if intutorial
-step
-Travel to the Broken Shore |goto Broken Shore/0 52.97,111.90 < 50 |q 43806 |future
-|only if intutorial
-|next "Begin_Broken_Shore_Scenario"
-step
-label "Non_Boosted_Start"
 click Hero's Call Board##250720
 accept The Legion Returns##40519 |goto Stormwind City/0 62.89,71.57
 |only if not havequest(43806)
@@ -22232,7 +20944,6 @@ talk Captain Angelica##108920
 Take the Ship to the Broken Shore |q 42740/1 |goto 19.9,29.4
 |only if not havequest(43806)
 step
-label "Begin_Broken_Shore_Scenario"
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 42740 |only if havequest(42740) or completedq(42740)
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 43806 |only if havequest(43806) or completedq(43806)
 step
@@ -22852,7 +21563,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.5,45.6
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 |only if havequest(41220)
 step
 Follow the path |goto Dreadscar Rift 67.31,37.09 < 20
@@ -22866,7 +21577,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 70.52,44.10
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludane, I have urgent business in Val'sharah. Can you secure a flight for me?"_
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 |only if havequest(39861)
 step
 talk Warbrave Oro##97666
@@ -22879,7 +21590,7 @@ Fly to Thunder Totem in Highmountain |q 38907/1 |goto 69.84,51.11
 |only if havequest(38907)
 step
 talk Aludane Whitecloud##96813 |goto 69.84,51.11 |n
-Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 |only if havequest(38907)
 step
 Follow the path |goto Dreadscar Rift 67.31,37.09 < 20
@@ -22967,15 +21678,15 @@ step
 kill Nathanos Blightcaller##95852
 |tip Upstairs on the deck of the airship.
 Defeat Nathanos Blightcaller |scenarioend |goto 70.70,76.23
-Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 |only if havequest(39800)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Warlock Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the various quests available in your Class Order Hall.",
 condition_suggested=function() return level >= 101 and level <= 110 and raceclass('Warlock') and not completedq(45990) end,
-condition_valid=function() return raceclass('Warlock') end,
-condition_valid_msg="You must be a Warlock to complete this guide!",
+condition_valid=function() return raceclass('Warlock') and level >= 98 end,
+condition_valid_msg="You must be a Warlock and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=101,
 },[[
@@ -23033,7 +21744,7 @@ accept Troops in the Field##42602 |goto 67.01,46.44
 step
 clicknpc Dreadscar Battle Plans##101979
 Begin the "Troops in Training" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After Starting the Mission |confirm |goto 66.26,46.95 |q 42602
 step
 talk Archmage Khadgar##90417
@@ -23275,7 +21986,7 @@ turnin Recruiting More Troops##41798 |goto 61.49,51.81
 step
 clicknpc Dreadscar Battle Plans##101979
 Complete "Empowered Soul Shard" Missions
-|tip Each of these missions will take up to 8 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 |tip They are the missions that reward Empowered Soul Shards.
 collect 50 Empowered Soul Shard##136834	|q 42100/1 |goto 66.27,46.95
 step
@@ -23410,7 +22121,7 @@ accept Unparalleled Power##44682 |goto 67.01,46.41
 step
 clicknpc Dreadscar Battle Plans##101979
 Begin the "One Who's Worthy" Mission
-|tip This mission will take up to over 19 hours to complete.
+|tip This mission will take 1 hour to complete.
 Click Here After You Start the Mission |confirm |goto 66.22,46.97 |q 42102
 stickystart "Felsworn_Heart_Warlock"
 stickystart "One_Who's_Worthy_Warlock"
@@ -23434,7 +22145,7 @@ step
 label "One_Who's_Worthy_Warlock"
 clicknpc Dreadscar Battle Plans##101979
 Begin "One Who's Worthy" Missions
-|tip Each of these missions will take up to over 19 hours to complete.
+|tip Each of these missions will take 1 hour to complete.
 Complete #5# "One Who's Worthy" Missions |q 42102/1 |goto Dreadscar Rift/0 66.22,46.97
 step
 talk Gakin the Darkbinder##106199
@@ -23735,14 +22446,14 @@ Complete the "Menace on the Broken Shore" mission |q 45990/1 |goto 66.19,47.01
 step
 talk Gakin the Darkbinder##106199
 turnin Investigate the Broken Shore##45990 |goto 67.01,46.41
-|next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock 7.2 Order Hall Quests"
+|next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock 7.2 Order Hall Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Warlock 7.2 Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Warlock\\Warlock 7.2 Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the new Class Order Hall quests introduced in patch 7.2.",
 condition_suggested=function() return level == 110 and raceclass('Warlock') and not completedq(46243) end,
-condition_valid=function() return raceclass('Warlock') end,
-condition_valid_msg="You must be a Warlock to complete this guide!",
+condition_valid=function() return raceclass('Warlock') and level >= 98 end,
+condition_valid_msg="You must be a Warlock and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=110.0,
 },[[
@@ -24230,7 +22941,7 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.74,63.27
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 step
@@ -24310,138 +23021,16 @@ talk Mor'zul Bloodbringer##119823
 turnin The Wrathsteed of Xoroth##46243
 |tip Wait for the dialogue to complete.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Warrior Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Intro & Artifacts",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the introductory Legion quests and unlocking your class artifacts.",
 condition_suggested=function() return level >= 100 and level <= 110 and raceclass('Warrior') end,
-condition_suggested_exclusive=true,
-condition_valid=function() return raceclass('Warrior') end,
-condition_valid_msg="You must be a Warrior to complete this guide!",
+condition_valid=function() return raceclass('Warrior') and level >= 98 end,
+condition_valid_msg="You must be a Warrior and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
-startlevel=100.0,
+startlevel=98.0,
 },[[
 step
-_Checking for Boosted Character..._
-|next "Boosted_Start" |only if intutorial
-|next "Non_Boosted_Start" |only if not intutorial
-step
-label "Boosted_Start"
-_On the Deck of the Airship:_
-You Can Skip the Combat Training Scenario
-|tip Use your Hearthstone now if you want to skip the Combat Training scenario.
-|tip You can complete it or skip it, it doesn't matter, and is purely personal preference.
-Click Here to Complete the Combat Training Scenario |confirm |or |next "Start_Combat_Training"
-_Or_
-Click Here to Skip the Combat Training Scenario |confirm |or |next "Non_Boosted_Start"
-|only if not completedq(43806) or not completedq(40519)
-step
-label "Start_Combat_Training"
-_On the Deck of the Airship:_
-talk General Bret Hughes##100448
-Talk to General Bret Hughes |scenariostage 1 |q 43806 |future
-|only if intutorial
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Charge ability on the Target Dummy
-|tip It appears on your action bar.
-Use Charge on the Target Dummy |scenariostage 2 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Mortal Strike ability on the Target Dummy
-|tip It appears on your action bar.
-Use Mortal Strike on the Target Dummy #3# Times |scenariogoal 3/30116 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Slam ability on the Target Dummy
-|tip It appears on your action bar.
-Use Slam on the Target Dummy #3# Times |scenariogoal 4/30117 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Colossus Smash ability on the Target Dummy
-|tip It appears on your action bar.
-Use Colossus Smash on the Target Dummy |scenariostage 5 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Use your abilities on the Target Dummy
-Use Colossus Smash #2# Times |scenariogoal 6/30118 |q 43806 |future
-Use Mortal Strike #3# Times |scenariogoal 6/30116 |q 43806 |future
-Use Slam #6# Times |scenariogoal 6/30117 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Arcane Construct##101738+
-Use your Victory Rush ability on Arcane Constructs
-|tip It appears on your action bar.
-|tip You can only use the Victory Rush ability after killing an enemy.
-Kill an Arcane Construct and then Use Victory Rush on the Others #2# Times |scenariogoal 7/30119 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Whirlwind ability on Arcane Constructs
-|tip It appears on your action bar.
-|tip Stand in the middle of the group of Arcane Constructs.
-Use Whirlwind on the Arcane Constructs |scenariogoal 8/30120 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-kill Arcane Construct##101738+
-Destroy the Arcane Constructs |scenariostage 8 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Use your Heroic Leap ability
-|tip It appears on your action bar.
-|tip It doesn't matter where you leap to.
-Use Heroic Leap |scenariostage 9 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592
-Defeat the Soldier |scenariostage 10 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-kill Alliance Infantry##102592+
-|tip Two of them will attack you.
-Defeat the Attacking Soldiers |scenariostage 11 |q 43806 |future
-|only if intutorial()
-step
-_On the Deck of the Airship:_
-Watch the dialogue
-Kill enemies around this area
-Defend the Airship |scenariostage 12 |q 43806 |future
-step
-_On the Airship:_
-Prepare Your Character
-|tip Open your Talents panel (press N) and choose your talents.
-|tip Open your Spellbook (press P) and move the rest of your abilities to your action bars.
-clicknpc Armored Snowy Gryphon##32335
-|tip Up the stairs, at the top of the airship.
-Take the Gryphon on the Back of the Airship and Join the Fleet |scenarioend |q 43806 |future
-|only if intutorial
-step
-accept The Battle for Broken Shore##43806
-|tip You will accept this quest automatically.
-|only if intutorial
-step
-Travel to the Broken Shore |goto Broken Shore/0 52.97,111.90 < 50 |q 43806 |future
-|only if intutorial
-|next "Begin_Broken_Shore_Scenario"
-step
-label "Non_Boosted_Start"
 click Hero's Call Board##250720
 accept The Legion Returns##40519 |goto Stormwind City/0 62.89,71.57
 |only if not havequest(43806)
@@ -24477,7 +23066,6 @@ talk Captain Angelica##108920
 Take the Ship to the Broken Shore |q 42740/1 |goto 19.9,29.4
 |only if not havequest(43806)
 step
-label "Begin_Broken_Shore_Scenario"
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 42740 |only if havequest(42740) or completedq(42740)
 Begin the "Battle for Broken Shore" Scenario |scenariostart |q 43806 |only if havequest(43806) or completedq(43806)
 step
@@ -24887,7 +23475,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.5,45.6
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next "Leveling Guides\\Legion (100-110)\\Azsuna"
 |only if havequest(41220)
 step
 talk Aerylia##96679
@@ -24901,7 +23489,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 70.52,44.10
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludane, I have urgent business in Val'sharah. Can you secure a flight for me?"_
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next "Leveling Guides\\Legion (100-110)\\Val'sharah"
 |only if havequest(39861)
 step
 talk Aerylia##96679
@@ -24918,7 +23506,7 @@ Fly to Thunder Totem in Highmountain |q 38907/1 |goto 69.84,51.11
 |only if havequest(38907)
 step
 talk Aludane Whitecloud##96813 |goto 69.84,51.11 |n
-Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next "Leveling Guides\\Legion (100-110)\\Highmountain"
 |only if havequest(38907)
 step
 talk Aerylia##96679
@@ -25006,15 +23594,15 @@ step
 kill Nathanos Blightcaller##95852
 |tip Upstairs on the deck of the airship.
 Defeat Nathanos Blightcaller |scenarioend |goto 70.70,76.23
-Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next "Leveling Guides\\Legion (100-110)\\Stormheim"
 |only if havequest(39800)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Warrior Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the various quests available in your Class Order Hall.",
 condition_suggested=function() return level >= 101 and level <= 110 and raceclass('Warrior') and not completedq(44221) end,
-condition_valid=function() return raceclass('Warrior') end,
-condition_valid_msg="You must be a Warrior to complete this guide!",
+condition_valid=function() return raceclass('Warrior') and level >= 98 end,
+condition_valid_msg="You must be a Warrior and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=101,
 },[[
@@ -25065,7 +23653,7 @@ accept Troops in the Field##42610 |goto 59.77,13.40
 step
 clicknpc Eye of Odyn##97389
 Begin the "Troops in the Field" Mission
-|tip This mission will take 4 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Troops in the Field" Mission |q 42610/1 |goto 59.21,13.44
 step
 talk Skyseer Ghrent##100635
@@ -25732,14 +24320,14 @@ Place a Workorder for Champion Armaments |q 44221/1 |goto 62.29,26.09
 step
 talk Haklang Ulfsson##110437
 turnin Champion Armaments##44221 |goto 62.29,26.09
-|next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior 7.2 Order Hall Quests"
+|next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior 7.2 Order Hall Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Warrior 7.2 Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Warrior\\Warrior 7.2 Order Hall Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the new Class Order Hall quests introduced in patch 7.2.",
 condition_suggested=function() return level == 110 and raceclass('Warrior') and not completedq(46207) end,
-condition_valid=function() return raceclass('Warrior') end,
-condition_valid_msg="You must be a Warrior to complete this guide!",
+condition_valid=function() return raceclass('Warrior') and level >= 98 end,
+condition_valid_msg="You must be a Warrior and at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 startlevel=110.0,
 },[[
@@ -26162,7 +24750,7 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto Broken Shore/0 44.73,63.27
 step
 You must complete the Broken Shore campaign to continue
-Use the Broken Shore Campaign guide to accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Use the Broken Shore Campaign guide to accomplish this |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 step
 talk Valarjar Warsinger##119527
@@ -26208,12 +24796,14 @@ step
 talk Odyn##96469
 turnin The Trial of Rage##46207 |goto Skyhold/1 58.40,84.56
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Azsuna",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Azsuna",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Azsuna zone in the Broken Isles.",
 condition_suggested=function() return level >= 100 and level <= 110 and not completedq(42367) end,
+condition_valid=function() return level >= 98 end,
+condition_valid_msg="You must be at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\Azsuna",
-startlevel=100.0,
+startlevel=98.0,
 endlevel=110.0,
 },[[
 step
@@ -27248,25 +25838,27 @@ turnin Arkethrax##42367 |goto 63.87,28.87
 step
 Enter the building |goto Dalaran L/10 40.27,55.78 < 10 |walk
 talk Lieutenant Surtees##106930
-turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Intro & Artifacts" |only DeathKnight
-turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Intro & Artifacts" |only DemonHunter
-turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Intro & Artifacts" |only Druid
-turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Intro & Artifacts" |only Hunter
-turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Intro & Artifacts" |only Mage
-turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Intro & Artifacts" |only Monk
-turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Intro & Artifacts" |only Paladin
-turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Intro & Artifacts" |only Priest
-turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Intro & Artifacts" |only Rogue
-turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Intro & Artifacts" |only Shaman
-turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Intro & Artifacts" |only Warlock
-turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Intro & Artifacts" |only Warrior
+turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Intro & Artifacts" |only DeathKnight
+turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Intro & Artifacts" |only DemonHunter
+turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Intro & Artifacts" |only Druid
+turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Intro & Artifacts" |only Hunter
+turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Intro & Artifacts" |only Mage
+turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Intro & Artifacts" |only Monk
+turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Intro & Artifacts" |only Paladin
+turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Intro & Artifacts" |only Priest
+turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Intro & Artifacts" |only Rogue
+turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Intro & Artifacts" |only Shaman
+turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Intro & Artifacts" |only Warlock
+turnin Fate of the Queen's Reprisal##40794 |goto Dalaran L/10 28.68,74.81 |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Intro & Artifacts" |only Warrior
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Highmountain",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Highmountain",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Highmountain zone in the Broken Isles.",
 condition_suggested=function() return level >= 100 and level <= 110 and not completedq(39780) end,
+condition_valid=function() return level >= 98 end,
+condition_valid_msg="You must be at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\Highmountain",
-startlevel=100.0,
+startlevel=98.0,
 endlevel=110.0,
 },[[
 step
@@ -28597,25 +27189,27 @@ kill Wrath of Dargrul##97266 |q 39780/2 |goto 53.07,70.52
 step
 talk Mayla Highmountain##93846
 turnin The Underking##39780 |goto 53.20,70.02
-accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Intro & Artifacts" |only DeathKnight
-accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Intro & Artifacts" |only DemonHunter
-accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Intro & Artifacts" |only Druid
-accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Intro & Artifacts" |only Hunter
-accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Intro & Artifacts" |only Mage
-accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Intro & Artifacts" |only Monk
-accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Intro & Artifacts" |only Paladin
-accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Intro & Artifacts" |only Priest
-accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Intro & Artifacts" |only Rogue
-accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Intro & Artifacts" |only Shaman
-accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Intro & Artifacts" |only Warlock
-accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Intro & Artifacts" |only Warrior
+accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Intro & Artifacts" |only DeathKnight
+accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Intro & Artifacts" |only DemonHunter
+accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Intro & Artifacts" |only Druid
+accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Intro & Artifacts" |only Hunter
+accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Intro & Artifacts" |only Mage
+accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Intro & Artifacts" |only Monk
+accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Intro & Artifacts" |only Paladin
+accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Intro & Artifacts" |only Priest
+accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Intro & Artifacts" |only Rogue
+accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Intro & Artifacts" |only Shaman
+accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Intro & Artifacts" |only Warlock
+accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Intro & Artifacts" |only Warrior
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Stormheim",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Stormheim",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Stormheim zone in the Broken Isles.",
 condition_suggested=function() return level >= 100 and level <= 110 and not completedq(40005) end,
+condition_valid=function() return level >= 98 end,
+condition_valid_msg="You must be at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\Stormheim",
-startlevel=100.0,
+startlevel=98.0,
 endlevel=110.0,
 },[[
 step
@@ -29895,25 +28489,27 @@ accept Securing the Aegis##40072 |goto 70.25,69.24
 step
 Cross the bridge |goto 56.74,51.16 < 20 |only if walking
 click Snaggle's Note##250612
-turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Intro & Artifacts" |only DeathKnight
-turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Intro & Artifacts" |only DemonHunter
-turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Intro & Artifacts" |only Druid
-turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Intro & Artifacts" |only Hunter
-turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Intro & Artifacts" |only Mage
-turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Intro & Artifacts" |only Monk
-turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Intro & Artifacts" |only Paladin
-turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Intro & Artifacts" |only Priest
-turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Intro & Artifacts" |only Rogue
-turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Intro & Artifacts" |only Shaman
-turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Intro & Artifacts" |only Warlock
-turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Intro & Artifacts" |only Warrior
+turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Intro & Artifacts" |only DeathKnight
+turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Intro & Artifacts" |only DemonHunter
+turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Intro & Artifacts" |only Druid
+turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Intro & Artifacts" |only Hunter
+turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Intro & Artifacts" |only Mage
+turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Intro & Artifacts" |only Monk
+turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Intro & Artifacts" |only Paladin
+turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Intro & Artifacts" |only Priest
+turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Intro & Artifacts" |only Rogue
+turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Intro & Artifacts" |only Shaman
+turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Intro & Artifacts" |only Warlock
+turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Intro & Artifacts" |only Warrior
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Suramar (110)",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Suramar zone in the Broken Isles.",
 condition_suggested=function() return level == 110 and not completedq(45420) end,
+condition_valid=function() return level >= 98 end,
+condition_valid_msg="You must be at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\Suramar",
-startlevel=100.0,
+startlevel=98.0,
 endlevel=110.0,
 },[[
 step
@@ -33795,12 +32391,14 @@ step
 talk Archmage Khadgar##106522
 turnin The Eye of Aman'Thul##45420 |goto Dalaran L/12 46.22,55.94
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Val'sharah",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Val'sharah zone in the Broken Isles.",
 condition_suggested=function() return level >= 100 and level <= 110 and not completedq(38721) end,
+condition_valid=function() return level >= 98 end,
+condition_valid_msg="You must be at least level 98 to complete this guide!",
 image=ZGV.DIR.."\\Guides\\Images\\Valsharah",
-startlevel=100.0,
+startlevel=98.0,
 endlevel=110.0,
 },[[
 step
@@ -34696,20 +33294,20 @@ Enter the building |goto Dalaran L/10 52.88,51.99 < 10 |walk
 Use the Central Dalaran Teleport |q 40890/1 |goto Dalaran L/10 49.28,47.59
 step
 click Tears of Elune##248534
-turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight Intro & Artifacts" |only DeathKnight
-turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Intro & Artifacts" |only DemonHunter
-turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid Intro & Artifacts" |only Druid
-turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter Intro & Artifacts" |only Hunter
-turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage Intro & Artifacts" |only Mage
-turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk Intro & Artifacts" |only Monk
-turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin Intro & Artifacts" |only Paladin
-turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest Intro & Artifacts" |only Priest
-turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Intro & Artifacts" |only Rogue
-turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman Intro & Artifacts" |only Shaman
-turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock Intro & Artifacts" |only Warlock
-turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior Intro & Artifacts" |only Warrior
+turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight Intro & Artifacts" |only DeathKnight
+turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Intro & Artifacts" |only DemonHunter
+turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid Intro & Artifacts" |only Druid
+turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter Intro & Artifacts" |only Hunter
+turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage Intro & Artifacts" |only Mage
+turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk Intro & Artifacts" |only Monk
+turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin Intro & Artifacts" |only Paladin
+turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest Intro & Artifacts" |only Priest
+turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue Intro & Artifacts" |only Rogue
+turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman Intro & Artifacts" |only Shaman
+turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock Intro & Artifacts" |only Warlock
+turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior Intro & Artifacts" |only Warrior
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Balance of Power Questline",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Balance of Power Questline",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Balance of Power\" questline.",
 condition_suggested=function() return level >= 110 and not completedq(43533) end,
@@ -34719,7 +33317,7 @@ step
 Complete the quest "Runas Knows the Way" in Azsuna |q 37857 |future |or
 |tip This quest is essential to being able to interact with Archmage Kalec.
 |tip Use our Azsuna leveling guide to complete this.
-Click here to load the "Azsuna" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna" |or
+Click here to load the "Azsuna" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Azsuna" |or
 step
 talk Image of Kalec##110768
 accept The Power Within##43496 |goto Mardum, the Shattered Abyss/2 60.27,28.84 |only DemonHunter
@@ -35022,10 +33620,10 @@ talk Ashildir##100738
 turnin Odyn's Blessing##40615 |goto 62.76,68.10
 step
 talk Archmage Kalec##111814
-accept Planning the Assault##43528 |goto 62.52,68.22
+accept Preparing to Move##43898 |goto 62.52,68.22
 step
 talk Archmage Kalec##111826
-turnin Planning the Assault##43528 |goto Suramar/0 37.84,47.40 |region suramar_shalaran
+turnin Preparing to Move##43898 |goto Suramar/0 37.84,47.40 |region suramar_shalaran
 accept Delusions of Grandeur##43530 |goto 37.84,47.40 |region suramar_shalaran
 accept Into the Nighthold##43531 |goto 37.84,47.40 |region suramar_shalaran
 step
@@ -35077,14 +33675,14 @@ step
 Congratulations!
 You have completed the _Balance of Power_ questline
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Broken Shore Campaign",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Broken Shore Campaign story.",
 condition_suggested=function() return level == 110 and not completedq(46805) end,
 startlevel=110.0,
 },[[
 step
-Load the "World Quests Unlock Quest Line" Dailies Guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Load the "World Quests Unlock Quest Line" Dailies Guide |confirm |next "Dailies Guides\\Legion\\World Quests Unlock Quest Line"
 |tip Click the line above to load the guide.
 |tip You must complete the "Uniting the Isles" quest in this guide to start the Broken Shore Campaign.
 |tip If you already have a character that has completed this quest, you can just talk to Khadgar to complete it.
@@ -35268,7 +33866,7 @@ talk Lord Illidan Stormrage##117873 |only if achieved(11846)
 accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
 |achieve 11846 |only if not achieved(11846)
 |tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
-Click here to load the "Death Knight 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Death Knight 7.2 Order Hall Quests" |only if not achieved(11846)
+Click here to load the "Death Knight 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Death Knight\\Death Knight 7.2 Order Hall Quests" |only if not achieved(11846)
 |only DeathKnight
 step
 collect 50 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
@@ -35288,7 +33886,7 @@ accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 step
 Complete #8# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
 |tip Use our World Quest guide to accomplish this.
-To load the World Quest guide, click here |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+To load the World Quest guide, click here |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only DeathKnight
 step
 talk Prophet Velen##120372
@@ -35330,7 +33928,7 @@ Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,
 |tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
 |tip These icons look like green skulls.
 |tip Rare spawns remain up for a short period of time, and change randomly.
-Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load the World Quest guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only DeathKnight
 step
 talk Maiev Shadowsong##116576
@@ -35544,7 +34142,7 @@ talk Lord Illidan Stormrage##117873 |only if achieved(11846)
 accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
 |achieve 11846 |only if not achieved(11846)
 |tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
-Click here to load the "Demon Hunter 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter 7.2 Order Hall Quests" |only if not achieved(11846)
+Click here to load the "Demon Hunter 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter 7.2 Order Hall Quests" |only if not achieved(11846)
 |only DemonHunter
 step
 collect 50 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
@@ -35564,7 +34162,7 @@ accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 step
 Complete #8# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
 |tip Use our World Quest guide to accomplish this.
-To load the World Quest guide, click here |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+To load the World Quest guide, click here |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only DemonHunter
 step
 talk Prophet Velen##120372
@@ -35606,7 +34204,7 @@ Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,
 |tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
 |tip These icons look like green skulls.
 |tip Rare spawns remain up for a short period of time, and change randomly.
-Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load the World Quest guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only DemonHunter
 step
 talk Maiev Shadowsong##116576
@@ -35834,7 +34432,7 @@ talk Lord Illidan Stormrage##117873 |only if achieved(11846)
 accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
 |achieve 11846 |only if not achieved(11846)
 |tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
-Click here to load the "Druid 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Druid 7.2 Order Hall Quests" |only if not achieved(11846)
+Click here to load the "Druid 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Druid\\Druid 7.2 Order Hall Quests" |only if not achieved(11846)
 |only Druid
 step
 collect 50 Mark of the Sentinax##147582 |q 47139/1
@@ -35891,7 +34489,7 @@ Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,
 |tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
 |tip These icons look like green skulls.
 |tip Rare spawns remain up for a short period of time, and change randomly.
-Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load the World Quest guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only Druid
 step
 talk Maiev Shadowsong##116576
@@ -36103,7 +34701,7 @@ talk Lord Illidan Stormrage##117873 |only if achieved(11846)
 accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
 |achieve 11846 |only if not achieved(11846)
 |tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
-Click here to load the "Hunter 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter 7.2 Order Hall Quests" |only if not achieved(11846)
+Click here to load the "Hunter 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter 7.2 Order Hall Quests" |only if not achieved(11846)
 |only Hunter
 step
 collect 50 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
@@ -36123,7 +34721,7 @@ accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 step
 Complete #8# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
 |tip Use our World Quest guide to accomplish this.
-To load the World Quest guide, click here |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+To load the World Quest guide, click here |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only Hunter
 step
 talk Prophet Velen##120372
@@ -36165,7 +34763,7 @@ Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,
 |tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
 |tip These icons look like green skulls.
 |tip Rare spawns remain up for a short period of time, and change randomly.
-Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load the World Quest guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only Hunter
 step
 talk Maiev Shadowsong##116576
@@ -36364,7 +34962,7 @@ talk Archmage Khadgar##116302
 turnin Altar of the Aegis##46244 |goto 44.73,63.27
 |only Mage
 step
-Click here to load the "Mage 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Mage 7.2 Order Hall Quests"
+Click here to load the "Mage 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Mage\\Mage 7.2 Order Hall Quests"
 |tip You must earn the "Champions of Legionfall" achievement to progress further.
 Earn the _Champions of Legionfall_ achievement |achieve 11846
 |only Mage
@@ -36389,7 +34987,7 @@ step
 You must go under the Sentinax that pats around the Broken Shore
 |tip Summon portals and defeat the enemies that come out.
 collect 50 Mark of the Sentinax##147582 |q 47139/1
-|tip Boss summons give quite alot of marks, use these beacons as soon as you get them.
+|tip Boss summons give quite a lot of marks, use these beacons as soon as you get them.
 |only Mage
 step
 talk Lord Illidan Stormrage##117873
@@ -36442,7 +35040,7 @@ Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,
 |tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
 |tip These icons look like green skulls.
 |tip Rare spawns remain up for a short period of time, and change randomly.
-Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load the World Quest guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only Mage
 step
 talk Maiev Shadowsong##116576
@@ -36659,7 +35257,7 @@ talk Commander Chambers##120183
 accept The Nether Disruptor##46774 |goto 44.54,63.16
 |only Monk
 step
-Click here to load the "Monk 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Monk 7.2 Order Hall Quests"
+Click here to load the "Monk 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Monk\\Monk 7.2 Order Hall Quests"
 |tip You must earn the "Champions of Legionfall" achievement to progress further.
 Earn the _Champions of Legionfall_ achievement |achieve 11846
 |only Monk
@@ -36696,7 +35294,7 @@ accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 step
 Complete #8# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
 |tip Use our World Quest guide to accomplish this.
-To load the World Quest guide, click here |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+To load the World Quest guide, click here |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only Monk
 step
 talk Prophet Velen##120372
@@ -36738,7 +35336,7 @@ Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,
 |tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
 |tip These icons look like green skulls.
 |tip Rare spawns remain up for a short period of time, and change randomly.
-Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load the World Quest guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only Monk
 step
 talk Maiev Shadowsong##116576
@@ -36927,7 +35525,7 @@ talk Commander Chambers##120183
 accept The Nether Disruptor##46774 |goto 44.54,63.16
 |only Paladin
 step
-Click here to load the "Paladin 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin 7.2 Order Hall Quests"
+Click here to load the "Paladin 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin 7.2 Order Hall Quests"
 |tip You must earn the "Champions of Legionfall" achievement to progress further.
 Earn the _Champions of Legionfall_ achievement |achieve 11846
 |only Paladin
@@ -36964,7 +35562,7 @@ accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 step
 Complete #8# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
 |tip Use our World Quest guide to accomplish this.
-To load the World Quest guide, click here |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+To load the World Quest guide, click here |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only Paladin
 step
 talk Prophet Velen##120372
@@ -37006,7 +35604,7 @@ Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,
 |tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
 |tip These icons look like green skulls.
 |tip Rare spawns remain up for a short period of time, and change randomly.
-Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load the World Quest guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only Paladin
 step
 talk Maiev Shadowsong##116576
@@ -37220,7 +35818,7 @@ talk Lord Illidan Stormrage##117873 |only if achieved(11846)
 accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
 |achieve 11846 |only if not achieved(11846)
 |tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
-Click here to load the "Priest 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Priest 7.2 Order Hall Quests" |only if not achieved(11846)
+Click here to load the "Priest 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Priest\\Priest 7.2 Order Hall Quests" |only if not achieved(11846)
 |only Priest
 step
 collect 50 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
@@ -37279,7 +35877,7 @@ Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,
 |tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
 |tip These icons look like green skulls.
 |tip Rare spawns remain up for a short period of time, and change randomly.
-Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load the World Quest guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only Priest
 step
 talk Maiev Shadowsong##116576
@@ -37476,7 +36074,7 @@ talk Archmage Khadgar##116302
 turnin Altar of the Aegis##46244 |goto 44.73,63.27
 |only Rogue
 step
-Click here to load the "Rogue 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue 7.2 Order Hall Quests"
+Click here to load the "Rogue 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue 7.2 Order Hall Quests"
 |tip You must earn the "Champions of Legionfall" achievement to progress further.
 Earn the _Champions of Legionfall_ achievement |achieve 11846
 |only Rogue
@@ -37501,7 +36099,7 @@ step
 You must go under the Sentinax that pats around the Broken Shore
 |tip Summon portals and defeat the enemies that come out.
 collect 50 Mark of the Sentinax##147582 |q 47139/1
-|tip Boss summons give quite alot of marks, use these beacons as soon as you get them.
+|tip Boss summons give quite a lot of marks, use these beacons as soon as you get them.
 |only Rogue
 step
 talk Lord Illidan Stormrage##117873
@@ -37554,7 +36152,7 @@ Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,
 |tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
 |tip These icons look like green skulls.
 |tip Rare spawns remain up for a short period of time, and change randomly.
-Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load the World Quest guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only Rogue
 step
 talk Maiev Shadowsong##116576
@@ -37752,7 +36350,7 @@ talk Archmage Khadgar##116302
 turnin Altar of the Aegis##46244 |goto 44.73,63.27
 |only Shaman
 step
-Click here to load the "Shaman 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Shaman 7.2 Order Hall Quests"
+Click here to load the "Shaman 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Shaman\\Shaman 7.2 Order Hall Quests"
 |tip You must earn the "Champions of Legionfall" achievement to progress further.
 Earn the _Champions of Legionfall_ achievement |achieve 11846
 |only Shaman
@@ -37778,7 +36376,7 @@ step
 You must go under the Sentinax that pats around the Broken Shore
 |tip Summon portals and defeat the enemies that come out.
 collect 50 Mark of the Sentinax##147582 |q 47139/1
-|tip Boss summons give quite alot of marks, use these beacons as soon as you get them.
+|tip Boss summons give quite a lot of marks, use these beacons as soon as you get them.
 |only Shaman
 step
 talk Lord Illidan Stormrage##117873
@@ -37831,7 +36429,7 @@ Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,
 |tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
 |tip These icons look like green skulls.
 |tip Rare spawns remain up for a short period of time, and change randomly.
-Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load the World Quest guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only Shaman
 step
 talk Maiev Shadowsong##116576
@@ -38044,7 +36642,7 @@ talk Lord Illidan Stormrage##117873 |only if achieved(11846)
 accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
 |achieve 11846 |only if not achieved(11846)
 |tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
-Click here to load the "Warlock 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock 7.2 Order Hall Quests" |only if not achieved(11846)
+Click here to load the "Warlock 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock 7.2 Order Hall Quests" |only if not achieved(11846)
 |only Warlock
 step
 collect 50 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
@@ -38064,7 +36662,7 @@ accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 step
 Complete #8# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
 |tip Use our World Quest guide to accomplish this.
-To load the World Quest guide, click here |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+To load the World Quest guide, click here |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only Warlock
 step
 talk Prophet Velen##120372
@@ -38106,7 +36704,7 @@ Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,
 |tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
 |tip These icons look like green skulls.
 |tip Rare spawns remain up for a short period of time, and change randomly.
-Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load the World Quest guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only Warlock
 step
 talk Maiev Shadowsong##116576
@@ -38348,7 +36946,7 @@ talk Lord Illidan Stormrage##117873 |only if achieved(11846)
 accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
 |achieve 11846 |only if not achieved(11846)
 |tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
-Click here to load the "Warrior 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warrior 7.2 Order Hall Quests" |only if not achieved(11846)
+Click here to load the "Warrior 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warrior\\Warrior 7.2 Order Hall Quests" |only if not achieved(11846)
 |only Warrior
 step
 collect 50 Mark of the Sentinax##147582 |q 47139/1
@@ -38405,7 +37003,7 @@ Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,
 |tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
 |tip These icons look like green skulls.
 |tip Rare spawns remain up for a short period of time, and change randomly.
-Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load the World Quest guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |only Warrior
 step
 talk Maiev Shadowsong##116576
@@ -38447,17 +37045,17 @@ talk Archmage Khadgar##116302
 accept Pillars of Creation##46253 |goto Broken Shore/0 44.73,63.26
 step
 kill Mistress Sassz'ine##115767
-Click here to load the "Tomb of Sargeras - The Gates of Hell" guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Gates of Hell"
+Click here to load the "Tomb of Sargeras - The Gates of Hell" guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Gates of Hell"
 |tip Mistress Sassz'ine is the last boss in The Gates of Hell wing of the Tomb of Sargeras.
 Retrieve the Tidestone of Golganneth |q 46253/2
 step
 kill Atrigan##120996
-Click here to load the "Tomb of Sargeras - Wailing Halls" guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Wailing Halls"
+Click here to load the "Tomb of Sargeras - Wailing Halls" guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Wailing Halls"
 |tip Atrigan is the first boss in the Wailing Halls wing of the Tomb of Sargeras.
 Retrieve the Hammer of Khaz'goroth |q 46253/1
 step
 kill Huntress Kasparian##118523
-Click here to load the "Tomb of Sargeras - Wailing Halls" guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Wailing Halls"
+Click here to load the "Tomb of Sargeras - Wailing Halls" guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Wailing Halls"
 |tip Huntress Kasparian is the second boss in the Wailing Halls wing of the Tomb of Sargeras.
 Retrieve the Tears of Elune |q 46253/3
 step
@@ -38471,12 +37069,12 @@ In the Tomb of Sargeras:
 kill Kil'jaeden##117269 |q 46805/1
 |tip He is the final boss in the Tomb of Sargeras raid.
 |tip Refer to our Raid guides to accomplish this.
-Click here to load the "Tomb of Sargeras - Deceiver's Fall" guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Deceiver's Fall"
+Click here to load the "Tomb of Sargeras - Deceiver's Fall" guide |confirm |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Deceiver's Fall"
 step
 talk Prophet Velen##120372
 turnin The Deceiver's Downfall##46805 |goto Broken Shore/0 44.56,63.38
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Legion Invasions",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Legion Invasions",{
 author="support@zygorguides.com",
 description="This guide will walk you through successfully completing the various Legion invasions.",
 condition_suggested=function() return level >= 98 and level <= 110 end,
@@ -38835,7 +37433,7 @@ step
 You have completed the battle for Val'sharah!
 Click here to return to the menu |confirm |next "Menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore\\Excavator Karla Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Broken Shore\\Excavator Karla Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the treasure hunting quests offered by Excavator Karla on Broken Shore.",
 condition_suggested=function() return level >= 110 and completedq(46734) and not completedq(46666) end,
@@ -38972,7 +37570,7 @@ step
 Congratulations!
 You have completed the Excavator Karla questline
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore\\Anduin Wrynn Questline",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Broken Shore\\Anduin Wrynn Questline",{
 author="support@zygorguides.com",
 condition_suggested=function() return level == 110 and not completedq(46282) end,
 startlevel=110.0,
@@ -39057,7 +37655,7 @@ step
 talk Anduin Wrynn##120288
 turnin The King's Path##46282 |goto 60.44,25.04
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Dalaran Postmaster Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Dalaran Postmaster Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Dalaran Postmaster quests to unlock The Postmaster's Office.",
 condition_suggested=function() return level >= 98 and level <= 110 and not completedq(50247) end,
@@ -39194,12 +37792,12 @@ step
 talk The Postmaster##103976
 turnin The Mail Must Flow##50247 |goto 37.61,40.13
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Rogue Pickpocketing Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Rogue Pickpocketing Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Rogue pickpocketing quest line.",
 condition_suggested=function() return level >= 100 and level <= 110 and raceclass('Rogue') and not completedq(47594) end,
 condition_end=function() return completedq(47594) end,
-startlevel=100.0,
+startlevel=98.0,
 },[[
 step
 This quest line is only available to Rogues |confirm
@@ -39307,7 +37905,7 @@ _Congratulations!_
 You have completed the Rogue Pickpocketing Quest Line!
 |only Rogue
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Meatball Order Hall Champion",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Meatball Order Hall Champion",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining Meatball as a Class Order Hall champion.",
 condition_suggested=function() return level == 110 and not completedq(45312) end,
@@ -39475,13 +38073,13 @@ step
 Congratulations!
 You have earned _Meatball_ as an Order Hall Champion
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Argus Campaign",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the new Argus zone added in patch 7.3.",
 condition_suggested=function() return level == 110 and not completedq(49077) end,
 },[[
 step
-Load the "Broken Shore Campaign" Leveling Guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Load the "Broken Shore Campaign" Leveling Guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 |tip Click the line above to load the guide.
 |tip You must complete the first two quests in this guide to start the Argus Campaign.
 Complete the "Assault on Broken Shore" Quest |condition completedq(46734)
@@ -40774,7 +39372,7 @@ kill L'ura##124729 |q 47654/1
 |tip This is the last encounter of the instance.
 collect The Crest of Knowledge##151090 |q 47654/2
 Use the Seat of the Triumvirate instance guide to accomplish this
-Click here to load the Seat of the Triumvirate guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Seat of the Triumvirate"
+Click here to load the Seat of the Triumvirate guide |confirm |next "Dungeon Guides\\Legion Dungeons\\Seat of the Triumvirate"
 step
 click Crest of Knowledge##273716
 Crest of Knowledge placed on Mac'aree |q 47654/3 |goto Mac'Aree/3 54.32,54.89
@@ -40955,7 +39553,7 @@ accept The Death of a Titan##49015 |goto Antoran Wastes/5 32.41,59.52
 step
 kill Argus the Unmaker##124828
 |tip Use our Antorus raid guide to accomplish this.
-Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Zygor's Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne"
+Click here to load the "Antorus, the Burning Throne" raid guide |confirm |next "Dungeon Guides\\Legion Raids\\Antorus, the Burning Throne"
 Defeat Argus the Unmaker |q 49015/1 |goto Antorus/9 50.1,53.0
 step
 accept Moments of Reflection##49077
@@ -41097,7 +39695,7 @@ label "Time_Travel_Off"
 talk Zidormi##128607
 |tip She is at the top of the ramp leading from Un'Goro Crater to Silithus.
 Ask her _"Can you return me to the present time?"_
-Lose the Time Travelling buff |nobuff Time Travelling##609811 |goto Silithus/0 78.93,21.97
+Travel to the Present |condition not ZGV.InPhase('Old Silithus') |goto Silithus/0 78.93,21.97 |q 50374 |future
 step
 talk Malfurion Stormrage##91462
 Show Illidan's Crystal to Malfurion |q 49077/1 |goto Val'sharah/0 54.69,72.84
@@ -41114,8 +39712,7 @@ step
 Congratulations!
 You have completed the _Argus Campaign_ guide
 ]])
-ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Uuna Scenario",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Uuna Scenario",{
 author="support@zygorguides.com",
 description="This guide will walk you through the Uuna Scenario.",
 },[[
@@ -41257,4 +39854,3 @@ Click here to continue |confirm
 step
 You have now completed A Dark Place scenario!
 ]])
-ZGV.BETAEND()

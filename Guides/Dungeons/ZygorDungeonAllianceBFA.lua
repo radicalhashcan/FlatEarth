@@ -3,10 +3,10 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("DungeonABFA") then return end
 ZygorGuidesViewer.GuideMenuTier = "BFA"
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Atal'Dazar",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Dungeons\\Atal'Dazar",{
 mapid=934,
 achieveid={12824},
-condition_suggested=function() return level>=110 and level<=120 end,
+condition_suggested=function() return level>=110 and level <= 120 end,
 keywords={"battle","for","azeroth","priestess","alun'za","Vol'kaal","rezan","yazma","zuldazar","Atal'Dazar"},
 author="support@zygorguides.com",
 description="To complete this dungeon, you will need to kill the following bosses:\n\nPriestess Alun'za\nVol'kaal\nRezan\nYazma",
@@ -68,10 +68,10 @@ step
 _Congratulations!_
 You Completed the "Atal'Dazar" Dungeon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Freehold",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Dungeons\\Freehold",{
 mapid=936,
 achieveid={12831},
-condition_suggested=function() return level>=110 and level<=120 end,
+condition_suggested=function() return level>=110 and level <= 120 end,
 keywords={"battle", "for", "azeroth", "skycap'n", "kragg", "captain", "eudora", "jolly", "raoul", "trothak", "harlan", "sweete", "tiragarde", "sound"},
 author="support@zygorguides.com",
 description="To complete this dungeon, you will need to kill the following bosses:\n\nSkycap'n Kragg\nCouncil o' Captains\nRing of Booty\nHarlan Sweete",
@@ -123,10 +123,10 @@ step
 _Congratulations!_
 You Completed the "Freehold" Dungeon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\King's Rest",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Dungeons\\Kings' Rest",{
 mapid=1004,
 achieveid={12848},
-condition_suggested=function() return level>=110 and level<=120 end,
+condition_suggested=function() return level>=110 and level <= 120 end,
 keywords={"battle","for","azeroth","zuldazar","king's","rest","the","golden","serpent","mchimba","embalmer","council","of","tribes","dazar","first"},
 author="support@zygorguides.com",
 description="To complete this dungeon, you will need to kill the following bosses:\n\nThe Golden Serpent\nMchimba the Embalmer\nThe Council of Tribes\nKing Dazar",
@@ -196,19 +196,19 @@ _DAMAGE:_ |grouprole DAMAGE
 Defeat Dazar, the First King |scenariogoal Dazar, The First King defeated##1/40354
 step
 _Congratulations!_
-You Completed the "King's Rest" Dungeon.
+You Completed the "Kings' Rest" Dungeon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\The MOTHERLODE!!",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Dungeons\\The MOTHERLODE!!",{
 mapid=1010,
 achieveid={12844},
-condition_suggested=function() return level>=110 and level<=120 end,
+condition_suggested=function() return level>=110 and level <= 120 end,
 keywords={"battle","for","azeroth","zuldazar","the","motherlode!!","coin","operated","crowd","pummeler","azerokk","rixxa","fluxflame","mogul","razdunk"},
 author="support@zygorguides.com",
 description="To complete this dungeon, you will need to kill the following bosses:\n\nCoin-Operated Crowd Pummeler\nAzerokk\nRixxa Fluxflame\nMogul Razdunk",
 image=ZGV.DIR.."\\Guides\\Images\\TheMotherlode",
 },[[
 step
-Press _I_ and Queue for The MOTHERLODE!! or Enter the Dungeon with your Group |goto King's Rest/0 0.00,0.00 < 1000
+Press _I_ and Queue for The MOTHERLODE!! or Enter the Dungeon with your Group |goto The MOTHERLODE!!/0 0.00,0.00 < 1000
 step
 kill Coin-Operated Crowd Pummeler##139904
 _HEALER:_ |grouprole HEALER
@@ -254,10 +254,10 @@ step
 _Congratulations!_
 You Completed "The MOTHERLODE!!" Dungeon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Shrine of the Storm",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Dungeons\\Shrine of the Storm",{
 mapid=1039,
 achieveid={12835},
-condition_suggested=function() return level>=110 and level<=120 end,
+condition_suggested=function() return level>=110 and level <= 120 end,
 keywords={"battle","for","azeroth","stormsong","valley","aqu'sirr","tidesage","council","lord","vol'zith","whisperer"},
 author="support@zygorguides.com",
 description="To complete this dungeon, you will need to kill the following bosses:\n\nAqu'sirr\nTidesage Council\nLord Stormsong\nVol'zith the Whisperer",
@@ -325,10 +325,10 @@ step
 _Congratulations!_
 You Completed the "Shrine of the Storm" Dungeon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Siege of Boralus",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Dungeons\\Siege of Boralus",{
 mapid=1162,
 achieveid={12847},
-condition_suggested=function() return level>=110 and level<=120 end,
+condition_suggested=function() return level>=110 and level <= 120 end,
 keywords={"battle","for","azeroth","tiragarde","sound","chopper","redhook","dread","captain","lockwood","hadal","darkfathom","viq'goth"},
 author="support@zygorguides.com",
 description="To complete this dungeon, you will need to kill the following bosses:\n\nChopper Redhook\nDread Captain Lockwood\nHadal Darkfathom\nViq'Goth",
@@ -383,10 +383,10 @@ step
 _Congratulations!_
 You Completed the "Siege of Boralus" Dungeon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Temple of Sethraliss",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Dungeons\\Temple of Sethraliss",{
 mapid=1038,
 achieveid={12504},
-condition_suggested=function() return level>=110 and level<=120 end,
+condition_suggested=function() return level>=110 and level <= 120 end,
 keywords={"battle","for","azeroth","Adderis","and","Aspix","Merektha","Galvazzt","Avatar","Vol'dun"},
 author="support@zygorguides.com",
 description="To complete this dungeon, you will need to kill the following bosses:\n\nAdderis and Aspix\nMerektha\nGalvazzt\nAvatar of Sethraliss",
@@ -455,10 +455,10 @@ step
 _Congratulations!_
 You Completed the "Temple of Sethraliss" Dungeon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Tol Dagor",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Dungeons\\Tol Dagor",{
 mapid=974,
 achieveid={12840},
-condition_suggested=function() return level>=110 and level<=120 end,
+condition_suggested=function() return level>=110 and level <= 120 end,
 keywords={"battle","for","azeroth","tiragarde","sound","The","Sand","Queen","Howlis","Jes","Valyri","Captain","Knight","Overseer","Korgus"},
 author="support@zygorguides.com",
 description="To complete this dungeon, you will need to kill the following bosses:\n\nThe Sand Queen\nJes Howlis\nKnight Captain Valyri\nOverseer Korgus",
@@ -506,10 +506,10 @@ step
 _Congratulations!_
 You Completed the "Tol Dagor" Dungeon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\The Underrot",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Dungeons\\The Underrot",{
 mapid=1041,
 achieveid={12500},
-condition_suggested=function() return level>=110 and level<=120 end,
+condition_suggested=function() return level>=110 and level <= 120 end,
 keywords={"battle","for","azeroth","nazmir","Elder","Leaxa","Cragmaw","Infested","Sporecaller","Zancha","Abomination","Unbound"},
 author="support@zygorguides.com",
 description="To complete this dungeon, you will need to kill the following bosses:\n\nElder Leaxa\nCragmaw the Infested\nSporecaller Zancha\nUnbound Abomination",
@@ -564,10 +564,10 @@ step
 _Congratulations!_
 You Completed "The Underrot" Dungeon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Waycrest Manor",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Dungeons\\Waycrest Manor",{
 mapid=1015,
 achieveid={12483},
-condition_suggested=function() return level>=110 and level<=120 end,
+condition_suggested=function() return level>=110 and level <= 120 end,
 keywords={"battle","for","azeroth","heartsbane","triad","soulbound","goliath","raal","the","gluttonous","lady","lord","gorak","tul","drustvar"},
 author="support@zygorguides.com",
 description="To complete this dungeon, you will need to kill the following bosses:\n\nHeartsbane Triad\nSoulbound Goliath\nRaal the Gluttonous\nLord and Lady Waycrest\nGorak Tul",
@@ -644,10 +644,10 @@ step
 _Congratulations!_
 You Completed the "Waycrest Manor" Dungeon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Battle for Azeroth Raids\\Uldir - Halls of Containment",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Raids\\Uldir - Halls of Containment",{
 mapid=1148,
 achieveid={12521},
-condition_suggested=function() return level>=120 and level<=120 end,
+condition_suggested=function() return level >= 120 and level <= 120 end,
 keywords={"battle","for","azeroth","nazmir","zandalar","taloc","remnant","of","corruption","zek'voz"},
 author="support@zygorguides.com",
 description="To complete Uldir - Halls of Containment, you will need to kill the following bosses:\n\nTaloc\nRemnant of Corruption\nZek'voz",
@@ -697,10 +697,10 @@ step
 _Congratulations!_
 You Completed the "Uldir - Halls of Containment" Raid.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Battle for Azeroth Raids\\Uldir - Crimson Descent",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Raids\\Uldir - Crimson Descent",{
 mapid=1148,
 achieveid={12522},
-condition_suggested=function() return level>=120 and level<=120 end,
+condition_suggested=function() return level >= 120 and level <= 120 end,
 keywords={"battle","for","azeroth","nazmir","zandalar","vectis","fetid","devourer","zul"},
 author="support@zygorguides.com",
 description="To complete Uldir - Crimson Descent, you will need to kill the following bosses:\n\nVectis\nFetid Devourer\nZul",
@@ -754,10 +754,10 @@ step
 _Congratulations!_
 You Completed the "Uldir - Crimson Descent" Raid.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Battle for Azeroth Raids\\Uldir - Heart of Corruption",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Raids\\Uldir - Heart of Corruption",{
 mapid=1148,
 achieveid={12523},
-condition_suggested=function() return level>=120 and level<=120 end,
+condition_suggested=function() return level >= 120 and level <= 120 end,
 keywords={"battle","for","azeroth","nazmir","zandalar","vectis","fetid","devourer","zul"},
 author="support@zygorguides.com",
 description="To complete Uldir - Heart of Corruption, you will need to kill the following bosses:\n\nMythrax the Unraveler\nG'huun",
@@ -785,4 +785,173 @@ Defeat G'huun |confirm
 step
 _Congratulations!_
 You Completed the "Uldir - Heart of Corruption" Raid.
+]])
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Raids\\Battle of Dazar'alor - Siege of Dazar'alor",{
+mapid=1148,
+achieveid={12523},
+condition_suggested=function() return level >= 120 and level <= 120 end,
+keywords={"Ra'wani","Kanae","Revenant","Grong","Grimfang","Firecaller","Ma'ra","Anathos"},
+author="support@zygorguides.com",
+description="To complete the Battle of Dazar'alor - Siege of Dazar'alor, you will need to kill the following bosses:\n\n"..
+"Ra'wani\nJadefire Masters\nGrong, the Revenant",
+},[[
+step
+kill Ra'wani Kanae##144683
+|tip Interrupt heals on cooldown. |grouprole DAMAGE
+|tip Don't attack Ra'wani when she is using Seal of Reckoning. |grouprole DAMAGE
+|tip Turn away from Crusader allies when they cast Blinding Faith. |grouprole DAMAGE or HEALER
+|tip Be ready for increased healing during Seal of Retribution. |grouprole HEALER
+|tip Be mindful of Sacred Blade stacks and tank swap accordingly. |grouprole TANK
+|tip Move adds to prevent them from being hit by Wave of Light. |grouprole TANK
+|tip Move adds out of Consecration areas. |grouprole TANK
+|confirm |goto Battle of Dazar'alor/0 49.36,69.93
+step
+Kill the Jadefire Masters
+|tip Switch targets when appropriate to keep both bosses at similar health levels. |grouprole DAMAGE
+|tip DPS Spirits of Xuen quickly before they reach their Stalk targets. |grouprole DAMAGE
+|tip Burn down Fire Shield to allow Pyroblast to be interrupted. |grouprole DAMAGE
+|tip The tank cannot be healed during Multi-Sided Strike. |grouprole HEALER
+|tip Dispel Searing Embers in order of least remaining duration first. |grouprole HEALER
+|tip You cannot heal players inside Chi-Ji's Song unless you step in with them. |grouprole HEALER
+|tip When Blazing Phoenix is active, the entire raid will take damage. |grouprole HEALER
+|tip During Multi-Sided Strike, you must survive without heals and should face each attack directly. |grouprole TANK
+|tip Communicate with other tanks to manage stacks of Rising Flames. |grouprole TANK
+|tip Whirling Crane Kick will continue until the caster is engaged. |grouprole TANK
+|tip Chi-Ji's Song makes targeting within it impossible. |grouprole EVERYONE
+|tip Walking on Magma Traps will launch you into the air and kill you with fall damage. |grouprole EVERYONE
+|confirm |goto 49.36,52.13
+step
+kill Grong the Revenant##144638
+|tip Death Specters should be interrupted and killed immediately. |grouprole DAMAGE
+|tip When Grong's Death Energy reaches 75 or more, use cooldowns to mitigate Death Knell. |grouprole HEALER
+|tip Don't take more than one Bestial Smash in a row. |grouprole TANK
+|tip Group near allies to avoid Ferocious Roar's fear. |grouprole EVERYONE
+|confirm |goto 49.36,31.06
+step
+_Congratulations!_
+You completed the "Battle of Dazar'alor - Siege of Dazar'alor" raid.
+|tip
+Click Here to Load the "Empire's Fall" Raid Guide |confirm |next "Dungeon Guides\\Battle for Azeroth Raids\\Battle of Dazar'alor - Empire's Fall"
+]])
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Raids\\Battle of Dazar'alor - Empire's Fall",{
+mapid=1148,
+achieveid={12523},
+condition_suggested=function() return level >= 120 and level <= 120 end,
+keywords={"Ra'wani","Kanae","Revenant","Grong","Grimfang","Firecaller","Treasure","Guardian","Loa","Council","King","Rastakhan"},
+author="support@zygorguides.com",
+description="To complete the Battle of Dazar'alor - Empire's Fall, you will need to kill the following bosses:\n\n"..
+"Opulence\nConclave of the Chosen\nKing Rastakhan",
+},[[
+step
+kill Opulence##147564
+|tip Kill Spirits of Gold quickly. |grouprole DAMAGE
+|tip Stack on other players to split the damage of Coin Shower. |grouprole DAMAGE
+|tip Pick up an Amethyst of the Shadow King. |grouprole HEALER
+|tip Dispel Hex of Lethargy. |grouprole HEALER
+|tip Tank the Bulwark and Hand with ample room to both sides. |grouprole TANK
+|tip Tank swap when afflicted by Depleted Diamond. |grouprole TANK
+|tip Cooldowns are helpful for Coin Sweep. |grouprole TANK
+|confirm |goto Battle of Dazar'alor/1 42.14,51.34
+step
+Kill the Conclave of the Chosen
+|tip Kill Ravenous Stalkers quickly. |grouprole DAMAGE
+|tip Kimbul's Wrath spreads throughout the raid and will require increased healing. |grouprole HEALER
+|tip Dispel Mind Wipe on cooldown. |grouprole HEALER
+|tip Keep the aspects separated to prevent them from gaining Loa's Pact. |grouprole TANK
+|tip Avoid standing near allies when afflicted by Akunda's Wrath. |grouprole EVERYONE
+|tip Move to Paku during Paku's Wrath or you will die. |grouprole EVERYONE
+|confirm |goto Battle of Dazar'alor/2 47.44,67.56
+step
+kill King Rastakhan##145616
+|tip Drop Death Rifts in areas that shield allies in the death realm from Dread Reaping. |grouprole EVERYONE
+|tip Coordinate with the raid to clear Deathly Withering in Death Rifts. |grouprole DAMAGE or HEALER
+|tip Avoid killing the allies linked to the Voodoo Dolls you attack. |grouprole DAMAGE
+|tip Avoid healing allies affected by Caress of Death. |grouprole HEALER
+|tip Players affected by Grievous Axe and Focused Demise will require additional healing. |grouprole HEALER
+|tip Run away from Rastakhan when targeted by Scorching Detonation. |grouprole TANK
+|tip Run away from Bwonsamdi or Rastakhan when targeted by Caress of Death. |grouprole TANK
+|confirm |goto Battle of Dazar'alor/4 47.25,57.27
+step
+_Congratulations!_
+You completed the "Battle of Dazar'alor - Empire's Fall" raid.
+|tip
+Click Here to Load the "Might of the Alliance" Raid Guide |confirm |next "Dungeon Guides\\Battle for Azeroth Raids\\Battle of Dazar'alor - Might of the Alliance"
+]])
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Raids\\Battle of Dazar'alor - Might of the Alliance",{
+mapid=1148,
+achieveid={12523},
+condition_suggested=function() return level >= 120 and level <= 120 end,
+keywords={"Ra'wani","Kanae","Revenant","Grong","Grimfang","Firecaller","Treasure","Guardian","Loa","Council","King","Rastakhan"},
+author="support@zygorguides.com",
+description="To complete the Battle of Dazar'alor - Might of the Alliance, you will need to kill the following bosses:\n\n"..
+"High Tinker Mekkatorque\nStormwall Blockade\nLady Jaina Proudmoore",
+},[[
+step
+kill High Tinker Mekkatorque##144838
+|tip Make sure you're out of line of sight from any allies when Gigavolt Charge expires. |grouprole EVERYONE
+|tip When affected by Shrunken, await instructions from allies to input the correct shutdown code on Stun Bots. |grouprole EVERYONE
+|tip Raid members debuffed with Gigavolt Blast will take large amounts of damage. |grouprole HEALER
+|tip Crowd control Stun Bots to prevent them from coming within 8 yards of players. |grouprole DAMAGE or TANK
+|tip Coordinate with your offtank to manage Electroshock Strikes. |grouprole TANK
+|tip Taunt quickly if your offtank is affected by Gigavolt Charge or Shrunk. |grouprole TANK
+|confirm |goto Battle of Dazar'alor/0 49.36,31.06
+step
+Kill the Stormwall Blockade
+|tip Attack Energizing Storms with Kelp-Wrapped Fists to slow them. |grouprole TANK
+|tip Interrupt Greater Storm's Empowerment. |grouprole TANK
+|tip If debuffed with Tempting Song, move as far away from the Siren as possible. |grouprole HEALER or DAMAGE
+|tip Move constantly to avoid Voltaic Flashes. |grouprole HEALER or DAMAGE
+|tip Use Storm's Wail to remove Freezing Tidepools. |grouprole DAMAGE
+|confirm |goto 49.29,91.20
+step
+kill Lady Jaina Proudmoore##149684
+|tip Use the ballistas to fire at Kul Tiran Corsairs. |grouprole DAMAGE
+|tip Throw munition barrels overboard before they explode. |grouprole DAMAGE
+|tip Free allies trapped by Frozen Solid. |grouprole DAMAGE
+|tip Clear stacks of Chilling Touch by standing near a Burning Explosion or entering patches of Searing Pitch. |grouprole DAMAGE or TANK
+|tip Ring of Ice will inflict heavy raid-wide damage. |grouprole HEALER
+|tip Dispel Grasp of Frost and Hand of Frost on cooldown. |grouprole HEALER
+|tip Players hit with Siegebreaker Blast will take heavy damage. |grouprole HEALER
+|tip Remove Searing Pitch patches with Jaina's Avalanche or Freezing Blast abilities. |grouprole TANK
+|tip Run away from Jaina when targeted by Avalanche. |grouprole TANK
+|confirm |goto Battle of Dazar'alor/6 65.38,23.54
+step
+_Congratulations!_
+You completed the "Battle of Dazar'alor - Might of the Alliance" raid.
+]])
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Battle for Azeroth Raids\\Crucible of Storms",{
+mapid=1363,
+achieveid={13414},
+condition_suggested=function() return level >= 120 and level <= 120 end,
+keywords={"lfr"},
+author="support@zygorguides.com",
+description="To complete Crucible of Storms, you will need to kill the following bosses:\n\n"..
+"The Restless Cabal\nUu'nat, Harbinger of the Void",
+},[[
+step
+kill Zaxasj the Speaker##146497
+kill Fa'thuul the Feared##146495
+|tip Manage stacks of "Shear Mind" to avoid taking critical damage. |grouprole TANK
+|tip When "Trident of the Deep Ocean" is activated, move enemies into "Custody of the Deep." |grouprole TANK
+|tip Keep Fa'thuul near an unactivated Relic of Power at 75%, 50%, and 25% health. |grouprole TANK
+|tip Only one ranged player should take "Aphotic Blast" at a time. |grouprole DAMAGE
+|tip Interrupt "Witness the End" on cooldown, preferrably with a group rotation. |grouprole DAMAGE
+|tip Quickly kill "Visage from Beyond" to avoid "Terrifying Echo." |grouprole DAMAGE
+|tip Avoid stacking "Promises of Power" too high. |grouprole HEALER
+|tip Top off players before "Embrace of the Void," as they cannot be healed while affected. |grouprole HEALER
+|tip "Annihilate" will kill allies during "Storm of Annihilation" if players are not topped off. |grouprole HEALER
+|confirm
+step
+kill Uu'nat##145371
+|tip Use the Trident of Deep Ocean to provide shelter to allies with "Custody of the Deep.". |grouprole TANK
+|tip Keep Undying Guardians away from Uu'nat or they will gain "Sightless Bond.". |grouprole TANK
+|tip Use the Tempest Caller to kill Undying Guardians with "Storm of Annihilation." |grouprole DAMAGE
+|tip Interrupt Primordial Mindbenders when casting "Consume Essence" or they will heal. |grouprole DAMAGE
+|tip Use "Embrace of the Void" from the Void Stone to prevent healing from "Oblivion Tear." |grouprole HEALER
+|tip When activating the Void Stone, you must take damage to break "Umbral Shell." |grouprole HEALER
+|tip Keep players topped off during "Storm of Annihilation." |grouprole HEALER
+|confirm
+step
+_Congratulations!_
+You Completed the "Crucible of Storms" Raid.
 ]])

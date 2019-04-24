@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ReputationsABFA") then return end
 ZygorGuidesViewer.GuideMenuTier = "BFA"
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Battle for Azeroth\\7th Legion",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Battle for Azeroth\\7th Legion",{
 author="support@zygorguides.com",
 keywords={"7th","Legion"},
 description="This guide will walk you through becoming exalted with the \"7th Legion\" faction.",
@@ -25,7 +25,7 @@ step
 _Congratulations!_
 You reached Exalted reputation with the "7th Legion" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Battle for Azeroth\\Champions of Azeroth",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Battle for Azeroth\\Champions of Azeroth",{
 author="support@zygorguides.com",
 keywords={"Champions","of","Azeroth"},
 description="This guide will walk you through becoming exalted with the \"Champions of Azeroth\" faction.",
@@ -46,7 +46,7 @@ step
 _Congratulations!_
 You reached Exalted reputation with the "Champions of Azeroth" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Battle for Azeroth\\Order of Embers",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Battle for Azeroth\\Order of Embers",{
 author="support@zygorguides.com",
 keywords={"Order","of","Embers"},
 description="This guide will walk you through becoming exalted with the \"Order of Embers\" faction.",
@@ -67,7 +67,7 @@ step
 _Congratulations!_
 You reached Exalted reputation with the "Order of Embers" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Battle for Azeroth\\Proudmoore Admiralty",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Battle for Azeroth\\Proudmoore Admiralty",{
 author="support@zygorguides.com",
 keywords={"Proudmoore","Admiralty"},
 description="This guide will walk you through becoming exalted with the \"Proudmoore Admiralty\" faction.",
@@ -88,7 +88,7 @@ step
 _Congratulations!_
 You reached Exalted reputation with the "Proudmoore Admiralty" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Battle for Azeroth\\Storm's Wake",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Battle for Azeroth\\Storm's Wake",{
 author="support@zygorguides.com",
 keywords={"Storm's","Wake"},
 description="This guide will walk you through becoming exalted with the \"Storm's Wake\" faction.",
@@ -109,7 +109,7 @@ step
 _Congratulations!_
 You reached Exalted reputation with the "Storm's Wake" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Battle for Azeroth\\Tortollan Seekers",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Battle for Azeroth\\Tortollan Seekers",{
 author="support@zygorguides.com",
 keywords={"Tortollan","Seekers"},
 description="This guide will walk you through becoming exalted with the \"Tortollan Seekers\" faction.",

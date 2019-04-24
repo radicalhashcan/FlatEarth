@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DailiesHMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Anglers Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\The Anglers Dailies",{
 startlevel=90,
 description="This guide will take you through The Anglers dailies Becoming Exalted with The Anglers allows you to purchase a companion pet, fishing poles, and water mounts.",
 },[[
@@ -166,7 +166,7 @@ step
 You have reached the end of this guide
 Click here to go back to the dailies |confirm |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The August Celestials Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\The August Celestials Dailies",{
 completion={"quests"},
 startlevel=90,
 description="This guide will take you through The August Celestials dailies Becoming Exalted with The August Celestials allows you to purchase flying mounts and armor for your character.",
@@ -591,7 +591,7 @@ step
 You have reached the end of this daily guide
 Click here to return to the start of the dailies |next "startaug" |confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Order of the Cloud Serpent Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\The Order of the Cloud Serpent Dailies",{
 completion={"quests",10,11,18},
 startlevel=90,
 description="This guide will take you through the Order of the Cloud Serpent dailies Becoming Exalted with The Order of the Cloud Serpent allows you to purchase flying mounts and designs for companion pets.",
@@ -1051,7 +1051,7 @@ label "end"
 This the end of our daily guide
 Click here to go back to the beginning |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies",{
 completion={"quests"},
 startlevel=90,
 description="This guide will take you through the Shado-Pan dailies Becoming Exalted with The Shado-Pan allows you to purchase ground mounts and armor for your character.",
@@ -1579,7 +1579,7 @@ step
 You have reached the end of this daily guide
 Click here to return to the start of the dailies |next "shado_dailies" |confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies",{
 startlevel=90,
 completion={"quests"},
 description="This guide will take you through The Tillers dailies Becoming Exalted with The Tillers allows you to purchase ground mounts and recipes for your character.",
@@ -1587,7 +1587,7 @@ description="This guide will take you through The Tillers dailies Becoming Exalt
 step
 #include "Tillers_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Golden Lotus Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\The Golden Lotus Dailies",{
 achieveid={7315,6546},
 startlevel=90,
 description="This guide will take you through The Golden Lotus dailies Becoming Exalted with the Golden Lotus allows you to purchase a crowd control trinket and some armor. At Honored, you can purchase chest armor, rings, and shoulders. At Revered, you can purchase 3 ground mounts.",
@@ -1695,12 +1695,12 @@ Traverse the following rooms by only stepping on the _green_ or _red_ tiles, oth
 confirm
 only if havequest(30280) or havequest(30277)
 step
-kill Milau##64965 |q 30280/1 |goto Vale of Eternal Blossoms/18 53.9,68.3
+kill Milau##64965 |q 30280/1 |goto Vale of Eternal Blossoms/1 53.9,68.3
 |tip Milau has several deadly abilities. He will cast a Lightning Breath in any direction, do not be in front of him when he does this. He also starts casting Lightning Pools, constantly move until he is done. Periodically he will pull you to the middle of the room and cast Lightning Sweep. While he is casting get as much distance on him as you can.
 only if havequest(30280)
 step
 click Deactivate Final Spirit Wall##214477
-Deactivate the Final Spirit Wall |q 30277/1 |goto Vale of Eternal Blossoms/18 42.1,27.2
+Deactivate the Final Spirit Wall |q 30277/1 |goto Vale of Eternal Blossoms/1 42.1,27.2
 only if havequest(30277)
 step
 click Ancient Guo-Lai Artifact##214394
@@ -1727,7 +1727,7 @@ label "end"
 You have reached the end of the guide for today
 Click here to go back to the beginning of the dailies |confirm |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Klaxxi Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\The Klaxxi Dailies",{
 startlevel=90,
 description="This guide will take you through The Klaxxi dailies Becoming Exalted with The Klaxxi allows you to purchase ground mounts, plans for blacksmithing, armor, and weapons for your character.",
 },[[
@@ -1739,7 +1739,7 @@ Falling to Pieces |achieve 6540/2
 Blood of Ancients |achieve 6540/3
 Mazu's Bounty |achieve 6540/4
 Please refer to Zygor's Leveling and Loremaster guides for assistance in completing these questlines
-Click here to go to Zygor's Leveling and Loremaster guides for assistance in completing these questlines |confirm |next "Zygor's Leveling Guides\\Pandaria (80-90)\\Dread Wastes (84-90)"
+Click here to go to Zygor's Leveling and Loremaster guides for assistance in completing these questlines |confirm |next "Leveling Guides\\Pandaria (80-90)\\Dread Wastes (84-90)"
 confirm
 step
 label "klaxxi start"
@@ -2182,7 +2182,7 @@ label "end"
 This is the end of this guide.
 Click here to return to the beginning of the dailies |confirm |next "klaxxi start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Pandaria Cooking Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\Pandaria Cooking Dailies",{
 completion={"quests"},
 startlevel=90,
 description="This guide will take you through the Cooking dailies",
@@ -2197,26 +2197,26 @@ step
 label "cookday"
 #include "MoP_Cooking_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Dominance Offensive Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\Dominance Offensive Dailies",{
 startlevel=90,
 description="This guide will take you through The Dominance Offensive dailies Becoming Exalted with the Dominance Offensive allows you to purchase an epic flying mount, epic armor, and battle pets for your character.",
 },[[
 #include "Dominance_Offensive"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Beast Master Dailies (Dominance Offensive)",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\Beast Master Dailies (Dominance Offensive)",{
 startlevel=90,
 description="This guide will take you through the bonus Dominance Offensive Dailies.",
 },[[
 #include "Sturdy_Traps"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Sunreaver Onslaught Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\Sunreaver Onslaught Dailies",{
 startlevel=90,
 description="This guide will take you through the Sunreaver Onslaught Dailies.",
 },[[
 step
 #include "Sunreavers_dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Timeless Isle Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\Timeless Isle Dailies",{
 startlevel=90,
 description="This guide will help you complete the dailies on the Timeless Isle. Completing these dailies awards you with Timeless Coins.",
 },[[

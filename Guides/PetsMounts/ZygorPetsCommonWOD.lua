@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if ZGV:DoMutex("PetsCWOD") then return end
 if ZGV:DoMutex("PetsCommonWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Blorp",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Blorp",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Blorp",
 model={63693},
@@ -17,7 +17,7 @@ step
 use Blorp's Bubble##126925
 learnpet Blorp##93814
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Fen Crab",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Fen Crab",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Fen Crab",
 model={60916},
@@ -30,7 +30,7 @@ Use the _Capture_ ability
 |tip Battle it until it's low health, then capture it.
 learnpet Fen Crab##88473 |goto Tanaan Jungle/0 62.3,41.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Ghostshell Crab",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Ghostshell Crab",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Ghostshell Crab",
 model={63691},
@@ -44,7 +44,7 @@ step
 use Translucent Shell##126926
 learnpet Ghostshell Crab##93808
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Bloodthorn Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Bloodthorn Hatchling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Bloodthorn Hatchling",
 model={58613},
@@ -60,7 +60,7 @@ step
 use Bloodthorn Hatchling##127704
 learnpet Bloodthorn Hatchling##88514
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Fel Pup",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Fel Pup",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Fel Pup",
 model={61986},
@@ -77,7 +77,7 @@ talk Abandoned Fel Pup##90426
 |tip It's a tiny green wolf puppy that appears nearby after killing Ceraxas.
 accept A Fel Puppy Of My Own##38428
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Lost Netherpup",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Lost Netherpup",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Lost Netherpup",
 model={63447},
@@ -93,7 +93,7 @@ step
 use Lost Netherpup##127705
 learnpet Lost Netherpup##93142
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Periwinkle Calf",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Periwinkle Calf",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Periwinkle Calf",
 model={58760},
@@ -121,7 +121,7 @@ use Periwinkle Calf##127754
 |tip There is only a chance to get this item in the Fel-Touched Pet Supplies.
 learnpet Periwinkle Calf##93352 |goto Tanaan Jungle/0 47.3,52.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Savage Cub",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Savage Cub",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Savage Cub",
 model={64720},
@@ -135,7 +135,7 @@ step
 use Savage Cub##128477
 learnpet Savage Cub##96126
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Nibbles",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Nibbles",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Nibbles",
 model={64585},
@@ -145,7 +145,7 @@ step
 This pet is a reward from ordering the Legion Collector's Edition.
 learnpet Nibbles##95841
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Shard of Cyrukh",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Shard of Cyrukh",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Shard of Cyrukh",
 model={64425},
@@ -161,7 +161,7 @@ click Forgotten Shard of the Cipher##241671
 use Shard of Cyrukh##128309
 learnpet Shard of Cyrukh##95572 |goto Tanaan Jungle/0 63.3,28.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Blazing Firehawk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Blazing Firehawk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Blazing Firehawk",
 model={38310},
@@ -176,7 +176,7 @@ step
 use Blazing Firehawk##128478
 learnpet Blazing Firehawk##96123
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Bloodbeak",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Bloodbeak",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Bloodbeak",
 model={58826},
@@ -189,7 +189,7 @@ Use the _Capture_ ability
 |tip Battle it until it's low health, then capture it.
 learnpet Bloodbeak##85388 |goto Tanaan Jungle/0 62.3,41.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Cerulean Moth",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Cerulean Moth",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Cerulean Moth",
 model={60618},
@@ -203,7 +203,7 @@ Use the _Capture_ ability
 |tip Battle it until it's low health, then capture it.
 learnpet Cerulean Moth##88422 |goto Tanaan Jungle/0 56.0,66.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Crimsonwing Moth",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Crimsonwing Moth",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Crimsonwing Moth",
 model={60888},
@@ -224,7 +224,7 @@ Point 5: [Talador/0 37.0,63.8]
 Point 6: [Talador/0 38.8,79.2]
 Point 7: [Talador/0 49.4,85.8]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Dusty Sporewing",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Dusty Sporewing",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Dusty Sporewing",
 model={60889},
@@ -240,7 +240,7 @@ step
 use Dusty Sporewing##127703
 learnpet Dusty Sporewing##88415
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Glowing Sporebat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Glowing Sporebat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Glowing Sporebat",
 model={60972},
@@ -256,7 +256,7 @@ step
 Glowing Sporewing##127701
 learnpet Glowing Sporebat##88575
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Sapphire Firefly",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Sapphire Firefly",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Sapphire Firefly",
 model={60862},
@@ -275,7 +275,7 @@ Point 3: [Spires of Arak/0 59.0,68.6]
 Point 4: [Spires of Arak/0 58.0,51.0]
 Point 5: [Spires of Arak/0 55.4,32.4]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Seaborne Spore",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Seaborne Spore",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Seaborne Spore",
 model={61550},
@@ -303,7 +303,7 @@ use Seaborne Spore##118105
 |tip There is only a chance to get this item in the Fel-Touched Pet Supplies.
 learnpet Seaborne Spore##86718
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Violet Firefly",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Violet Firefly",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Violet Firefly",
 model={60863},
@@ -316,7 +316,7 @@ Use the _Capture_ ability
 |tip Battle it until it's low health, then capture it.
 learnpet Violet Firefly##88357 |goto Tanaan Jungle/0 26.6,55.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Zangar Spore",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Zangar Spore",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Zangar Spore",
 model={59885},
@@ -344,7 +344,7 @@ use Zangar Spore##118101
 |tip There is only a chance to get this item in the Fel-Touched Pet Supplies.
 learnpet Zangar Spore##86715 |goto Tanaan Jungle/0 47.3,52.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Baby Winston",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Baby Winston",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humaniod pet: Baby Winston",
 model={68067},
@@ -354,7 +354,7 @@ step
 This pet is a reward from ordering the Overwatch Collector's Edition.
 learnpet Baby Winston##103159
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Crusher",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Crusher",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Crusher",
 model={64222},
@@ -369,7 +369,7 @@ step
 use Crusher##127868
 learnpet Crusher##94927
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Grumpling",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Grumpling",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humaniod pet: Grumpling",
 model={65128},
@@ -379,7 +379,7 @@ step
 This pet will be part of the 2015 Feast of Winter Vale event.
 learnpet Grumpling##97229
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Hogs",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Hogs",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Hogs",
 model={53502},
@@ -396,7 +396,7 @@ step
 use Hogs' Studded Collar##123862
 learnpet Hogs##76873
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Murkidan",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Murkidan",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humaniod pet: Murkidan",
 model={64589},
@@ -406,7 +406,7 @@ step
 This pet is a reward from ordering a blizzcon 2015 virtual ticket.
 learnpet Murkidan##85009
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Terky",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Terky",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Terky",
 model={15398},
@@ -422,7 +422,7 @@ collect White Murloc Egg##22780 |goto Borean Tundra/0 54.6,89.3
 use White Murloc Egg##22780
 learnpet Terky##16445
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Brightpaw",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Brightpaw",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Brightpaw",
 model={64621},
@@ -432,7 +432,7 @@ step
 This pet will be a blizzard in-store pet.
 learnpet Brightpaw##85283
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Energized Manafiend",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Energized Manafiend",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Energized Manafiend",
 model={65713},
@@ -447,7 +447,7 @@ use Vibrating Arcane Crystal##129216
 |tip This has a small chance to drop, it is not 100 percent.
 learnpet Energized Manafiend##98236
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Empowered Manafiend",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Empowered Manafiend",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Empowered Manafiend",
 model={65717},
@@ -462,7 +462,7 @@ use Warm Arcane Crystal##129217
 |tip This has a small chance to drop, it is not 100 percent.
 learnpet Empowered Manafiend##98237
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Empyreal Manafiend",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Empyreal Manafiend",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Empyreal Manafiend",
 model={65714},
@@ -477,7 +477,7 @@ use Glittering Arcane Crystal##129218
 |tip This has a small chance to drop, it is not 100 percent.
 learnpet Empyreal Manafiend##98238
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Nethaera's Light",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Nethaera's Light",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Nethaera's Light",
 model={61133},
@@ -491,7 +491,7 @@ Target _Nethaera's Light_ and _cheer_ at it |script DoEmote("CHEER")
 |tip This pet is a non combat pet, It can not fight and has no level.
 learnpet Nethaera's Light##88814 |goto Dalaran/1 45.3,23.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Nightmare Bell",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Nightmare Bell",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Nightmare Bell",
 model={63584},
@@ -519,7 +519,7 @@ use Nightmare Bell##127753
 |tip There is only a chance to get this item in the Fel-Touched Pet Supplies.
 learnpet Nightmare Bell##93483 |goto Tanaan Jungle/0 47.3,52.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Zeradar",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Zeradar",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Zeradar",
 model={64587},
@@ -529,7 +529,7 @@ step
 This pet is a reward for ordering the Starcraft 2: Legacy of the Void Collector's Edition.
 learnpet Zeradar##71655
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Corrupted Nest Guardian",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Corrupted Nest Guardian",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Mechanical pet: Corrupted Nest Guardian",
 model={64097},

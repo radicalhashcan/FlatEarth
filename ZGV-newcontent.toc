@@ -1,4 +1,4 @@
-## Interface: 80000
+## Interface: 80100
 ## Title: ZGV Content Branch
 ## Notes: Free multi-purpose leveling guide viewer.|n|nDesigned for use with Zygor Guides, but supporting user-supplied guides as well.
 ## Author: Zygor Guides

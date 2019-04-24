@@ -48,7 +48,7 @@ end
 
 function Node:AddNeigh(node,meta)
 	self.n[#self.n+1]={node,meta}
-	assert(node.type,"Node "..node.num.." has no type? wtf?")
+	assert(node.type,"Node "..(node.num or "<no num>").." has no type? wtf?")
 	self.n_iftype[node.type]=1
 end
 
@@ -114,6 +114,9 @@ end
 function Node:DoLinkage(n2,dryrun)
 	local n1=self
 
+	local D_DL = DEBUG_DOLINKAGE
+	local _t = debugprofilestop()
+
 	if n1.type=="end" then return false,false,"src is end" end
 	if n2.type=="start" or n2.type=="inn" then return false,false,"dest is start or inn" end
 
@@ -130,7 +133,11 @@ function Node:DoLinkage(n2,dryrun)
 
 	local canwalk,canfly,reasonwalk,reasonfly
 	
-	canfly,reasonfly = n1:CanFlyTo(n2)
+	if D_DL then ZGV:Debug("Before fly in %.3fms",debugprofilestop()-_t) _t=debugprofilestop() end
+
+	canfly,reasonfly = n1:CanFlyTo(n2,dryrun)
+
+	if D_DL then ZGV:Debug("Before walk in %.3fms",debugprofilestop()-_t) _t=debugprofilestop() end
 
 	local meta
 	if canfly then
@@ -142,7 +149,7 @@ function Node:DoLinkage(n2,dryrun)
 
 		if reasonfly=="dest is a ground border so ignored" then return nil,false,"you can fly so ignore ground borders",reasonfly end  -- don't try to walk, either, if borders are to be ignored
 
-		canwalk,reasonwalk,penalty = n1:CanWalkTo(n2,"debug")
+		canwalk,reasonwalk,penalty = n1:CanWalkTo(n2,dryrun)
 		if canwalk then
 			-- do ground connections
 
@@ -161,6 +168,8 @@ function Node:DoLinkage(n2,dryrun)
 			--]]
 		end
 	end
+
+	if D_DL then ZGV:Debug("Before neigh in %.3fms",debugprofilestop()-_t) _t=debugprofilestop() end
 
 	if meta then
 
@@ -189,6 +198,8 @@ function Node:DoLinkage(n2,dryrun)
 		end
 
 	end
+
+	if D_DL then ZGV:Debug("Done in %.3fms",debugprofilestop()-_t) _t=debugprofilestop() end
 
 	--debuggy return:
 	return canwalk,canfly,reasonwalk,reasonfly,meta and meta.mode
@@ -341,6 +352,7 @@ end
 -- Checks if player can walk towards the destination. If this returns true, DoLinkage will create a "walk"-type connection.
 local ZGV_Pointer_phasedMaps
 local Lib_data_basenodes_FloorCrossings
+local Lib_greenborders
 local neighbourhood_cache
 function Node:CanWalkTo(dest,debugmode)
 	--if type(dest)=="number" then dest=Lib.nodes.all[dest] end
@@ -357,7 +369,7 @@ function Node:CanWalkTo(dest,debugmode)
 	if neighbourhood_cache then
 		local n1hood = neighbourhood_cache[n1.num]
 		if n1hood then
-			local n12hood = n1hood and n1hood[n2.num]
+			local n12hood = n1hood[n2.num]
 			if n12hood then  return (n12hood==1 or n12hood==3),"cached"  end
 		end
 	end
@@ -372,7 +384,7 @@ function Node:CanWalkTo(dest,debugmode)
 		if n1.region~=n2.region then reason=reason.."diff region; " end
 		if n1.region and n1.region==n2.region then reason=reason.."same region; " end
 		if (n2.ms and n2.ms[n1_m]) then reason=reason.."n2 visible from n1.ms; " end
-		if Lib.greenborders:CanCross(n1_m,n2_m) then reason=reason.."greenborder cancross: "..n1_m.." "..n2_m.."; " end
+		if Lib_greenborders:CanCross(n1_m,n2_m) then reason=reason.."greenborder cancross: "..n1_m.." "..n2_m.."; " end
 		if (n1.regionobj and n1.regionobj:HasGreenBorder(n2_m,n2.f)) then reason=reason.."n1.regionobj has green border to n2.m "..n2_m.."; " end
 		if (n2.regionobj and n2.regionobj:HasGreenBorder(n1_m,n1.f)) then reason=reason.."n2.regionobj has green border to n1.m "..n1_m.."; " end
 	end
@@ -430,6 +442,7 @@ local MAPENUM_ORGRIMMAR=85
 local MAPENUM_ORGRIMMAR_CLEFT=86
 local MAPENUM_DALARANWOTLK=125
 local MAPENUM_DALARANLEG=625
+local MAPENUM_IRONFORGE=87
 
 local MAPENUMARRAY_ISLEOFTHUNDER = { [MAPENUM_ISLEOFTHUNDER]=1,[MAPENUM_ISLEOFTHUNDER_LVMINE]=1,[MAPENUM_ISLEOFTHUNDER_SWVAULT]=1,[MAPENUM_ISLEOFTHUNDER_SCENARIO1]=1,[MAPENUM_ISLEOFTHUNDER_SCENARIO2]=1}
 
@@ -474,6 +487,7 @@ function Node:CanFlyTo(dest,debug)
 	if (dest.type~="border" or dest.border_in_flight) and not Lib.zone_same_eastern_part(dest_m,m) then return false,debug and "not same eastern part" end  -- DO save SOME borders for flight, like Ironforge entry
 	if not Lib.zone_is_barad[dest_m]==Lib.zone_is_barad[m] then return false,debug and "either is barad" end
 	if not Lib.zone_is_vash[dest_m]==Lib.zone_is_vash[m] then return false,debug and "either is vash" end
+	if (m==MAPENUM_IRONFORGE)~=(dest_m==MAPENUM_IRONFORGE) then return false,debug and "no flying in/out of Ironforge" end
 	--if ((dest_m==321 and dest.f==2) or (m==321 and self.f==2))  then return false,"dest is orgri cleft" end
 	--if ((dest_m==504 and dest.f==2) or (m==504 and self.f==2)) then return false,"dest is dala sewer" end
 
@@ -618,6 +632,7 @@ function Node:InterfaceWithLib(lib)
 	Lib=lib
 	Lib_GetDist = Lib.GetDist
 	Lib_IsSegmentWalled=Lib.IsSegmentWalled
+	Lib_greenborders=Lib.greenborders
 	ZGV=ZygorGuidesViewer
 	ZGV_Pointer_phasedMaps=	ZGV.Pointer.phasedMaps
 	Lib_data_basenodes_FloorCrossings=Lib.data.basenodes.FloorCrossings

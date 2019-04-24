@@ -5,7 +5,7 @@ if ZGV:DoMutex("InvasionDailiesHLEGION") then return end
 
 ZygorGuidesViewer.GuideMenuTier = "TRI"
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Event Guides\\Legion\\Pre-Launch Invasion Event",{
+ZygorGuidesViewer:RegisterGuide("Horde Event Guides\\Legion\\Pre-Launch Invasion Event",{
 	author="support@zygorguides.com",
 	condition_suggested="level==100",
 	startlevel=10,
@@ -167,7 +167,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Horde Event Guides\\Legion\\Pre-Launch 
 
 
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Legion Intro",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Legion (100-110)\\Legion Intro",{
 	author="support@zygorguides.com",
 	image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 	startlevel=100.0,

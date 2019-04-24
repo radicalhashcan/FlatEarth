@@ -190,6 +190,7 @@ function Guide:GetCompletion(mode)
 		or (self.type=="DUNGEONS" and "none")
 		or (self.headerdata and self.headerdata.mounts and "mounts")
 		or (self.headerdata and self.headerdata.pet and "battlepet")
+		or (self.headerdata and self.headerdata.playertitle and "playertitle")
 		or (type(self.condition_end)=="function" and "function_end")
 		or "steps"
 	local mode = mode or self.completionmode
@@ -236,9 +237,10 @@ function Guide:GetCompletion(mode)
 	elseif mode=="steps" then
 		local count,comp = 0,0
 		for si,step in ipairs(self.steps) do
-			if not step:IsAuxiliary() and step:AreRequirementsMet() then
+			local iscomplete, ispossible = step:IsComplete()
+			if step:AreRequirementsMet() then -- (iscomplete or ispossible) and not step:IsAuxiliary() and 
 				count=count+1
-				if step:IsComplete() then comp=comp+1 end
+				if iscomplete then comp=comp+1 end
 			end
 		end
 		return count>0 and comp/count or 0, comp,count
@@ -290,6 +292,17 @@ function Guide:GetCompletion(mode)
 	elseif mode=="battlepet" then
 		local c,m = C_PetJournal.GetNumCollectedInfo(self.headerdata.pet)
 		return c>0 and 1 or 0		
+	elseif mode=="playertitle" then
+		local pt = self.headerdata.playertitle
+		if type(pt)=="number" then return IsTitleKnown(pt) and 1 or 0 end
+		if type(pt)=="table" then
+			for _,titleid in ipairs(pt) do
+				if IsTitleKnown(titleid) then return 1 end
+			end
+			return 0
+		end
+		geterrorhandler()("Bad playertitle in guide "..self.title)
+		return 0
 	end
 	-- other completions might not need a full parse.
 	return "error","we don't know if this guide completes or not"
@@ -444,12 +457,13 @@ function Guide:GetQuests()
 
 	if ZGV.Quest_Cache and ZGV.Quest_Cache[self.title] then
 		for _,questpack in pairs(ZGV.Quest_Cache[self.title]) do
-			if 	(not questpack.step_onlyif or (questpack.step_onlyif and questpack.step_onlyif())) and
+			if 	type(questpack)=="table" and
+				(not questpack.step_onlyif or (questpack.step_onlyif and questpack.step_onlyif())) and
 				(not questpack.goal_onlyif or (questpack.goal_onlyif and questpack.goal_onlyif())) 
 			then
 				if not questpack.ids then
-					Spoo(ZGV.Quest_Cache[self.title])
-					print("wtf",self.title)
+					ZGV:Debug("Guide: wtf, quest with no ids: %s",self.title)
+					if Spoo then Spoo(ZGV.Quest_Cache[self.title]) end
 				else
 					for quest in questpack.ids:gmatch('([^,]+)') do
 						guidequests[tonumber(quest)] = true
@@ -712,9 +726,7 @@ function GuideFuncs:SuggestDungeonGuide(dungeonguide)
 			if ZGV.CurrentGuide.type~="DUNGEON" then -- to avoid guides overwriters when player chains dungeons without leaving them (lfg/lfr spam)
 				ZGV.db.char.PreDungeonGuide = ZGV.CurrentGuide.title
 			end
-			local tab = ZGV.Tabs:GetTabFromPool()
-			tab:SetAsCurrent()
-			ZGV:SetGuide(self.guide)
+			ZGV.Tabs:LoadGuideToTab(self.guide,1,"mapid")
 		end
 
 		self.DungPopup.OnDecline = function(self)
@@ -862,7 +874,7 @@ function GuideFuncs:MonkQuest(level)
 		self.MonkPopup = ZGV.PopupHandler:NewPopup("ZygorMonkPopup","monk")
 
 		self.MonkPopup.OnAccept = function(self)
-			ZGV:SetGuide(self.guide)
+			ZGV.Tabs:LoadGuideToTab(self.guide,1,"monkquest")
 		end
 		--[[ --Decline option has been moved into an option in Notifications tab
 		self.MonkPopup.OnDecline = function(self)
@@ -952,7 +964,7 @@ local function OnEvent(self,event,arg1,...)
 			GuideFuncs:MonkQuest(arg1)
 		end
 
-		if (arg1<91 and arg1%20==0) or arg1==90 then -- Mount Levels: 20,40,60,80,90
+		if (arg1<91 and arg1%20==0) then -- Mount Levels: 20,40,60,80
 			if arg1==20 and (ZGV:RaceClassMatch("WARLOCK") or ZGV:RaceClassMatch("PALADIN") or ZGV:RaceClassMatch("WORGEN")) then return end -- they get basic riding from class or racial skills
 			GuideFuncs:LearnMountGuideSuggestion(arg1)
 		end

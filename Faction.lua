@@ -94,6 +94,8 @@ local defaultReps = {
 	["Gina Mudclaw"]=5,
 	["Jogu the Drunk"]=5,
 	["Sho"]=5,
+	["The Aldor"]=3, -- The Aldor: unfriendly
+	["The Scryers"]=3, -- The Scryers: unfriendly
 }
 
 local function GetNewRep(name)

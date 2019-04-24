@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ReputationsHWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Arakkoa Outcasts faction.",
 condition_suggested=function() return level >= 90 and level <= 100 and rep('Arakkoa Outcasts') < Exalted end,
@@ -34,7 +34,7 @@ _Honored_ |only if rep('Arakkoa Outcasts')==Honored
 _Revered_ |only if rep('Arakkoa Outcasts')==Revered
 _Exalted_ |only if rep('Arakkoa Outcasts')==Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Frostwolf Orcs",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\Frostwolf Orcs",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Frostwolf Orcs faction.",
 condition_suggested=function() return level >= 90 and level <= 100 and rep('Frostwolf Orcs') < Exalted end,
@@ -72,7 +72,7 @@ _Honored_ |only if rep('Frostwolf Orcs')==Honored
 _Revered_ |only if rep('Frostwolf Orcs')==Revered
 _Exalted_ |only if rep('Frostwolf Orcs')==Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Laughing Skull Orcs",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\Laughing Skull Orcs",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Laughing Skull Orcs faction.",
 condition_suggested=function() return level >= 90 and level <= 100 and rep('Laughing Skull Orcs') < Exalted end,
@@ -111,7 +111,7 @@ label "end"
 You must have at least a _level 2 Trading Post_ in your Garrison to gain Laughing Skull Orcs reputation!
 |tip Use the Garrison Buildings guide to accomplish this.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Order of the Awakened",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\Order of the Awakened",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Order of the Awakened faction.",
 achieveid={10350},
@@ -119,7 +119,7 @@ achieveid={10350},
 step
 Complete the following guide before continuing:
 _Tanaan Jungle (100) Main Questline_
-Click here to check out our Tanaan Jungle Questline guide |next "Zygor's Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (100)" |confirm |or
+Click here to check out our Tanaan Jungle Questline guide |next "Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (100)" |confirm |or
 confirm |only if not completedq(38578) |or
 step
 label "order_awakened_start"
@@ -211,7 +211,7 @@ step
 You've completed the daily for today
 Click to restart the dailies run |confirm |next "order_awakened_start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\The Saberstalkers",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\The Saberstalkers",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Saberstalkers faction.",
 achieveid={10350},
@@ -275,7 +275,7 @@ step
 You've completed the dailies for today
 Click to restart the dailies run |confirm |next "saberstalkers_start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Steamwheedle Preservation Society faction.",
 condition_suggested=function() return level >= 90 and level <= 100 and rep('Steamwheedle Preservation Society') < Exalted end,
@@ -356,7 +356,7 @@ accept Xelganak's Stinger##37226 |or |only if itemcount(118661) >= 1 |instant |o
 accept Vileclaw's Claw##37520 |or |only if itemcount(120172) >= 1 |instant |or
 _Click_ to return to the menu |confirm always |next "menu" |only if default
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Vol'jin's Headhunters",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\Vol'jin's Headhunters",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Vol'jin's Headhunters faction.",
 condition_suggested=function() return level >= 90 and level <= 100 and rep('Vol\'jin\'s Headhunters') < Exalted end,
@@ -544,7 +544,7 @@ step
 You've completed the dailies for today
 Click to restart the dailies run |confirm |next "voljin_headhunters_start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Vol'jin's Spear",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\Vol'jin's Spear",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Vol'jin's Spear faction.",
 achieveid={9473, 9215},

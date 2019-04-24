@@ -38,8 +38,13 @@ ZygorGuidesViewer:RegisterInclude("vendor_Blacksmithing",[[
 ------ Cooking ------
 ---------------------
 
-ZygorGuidesViewer:RegisterInclude("trainer_Cooking",[[
-		talk Arugi##46709 |goto Orgrimmar 56.3,61.5
+ZygorGuidesViewer:RegisterInclude("Orgrimmar_Cooking_Trainer",[[
+		talk Marogg##42506 |goto Orgrimmar/1 56.53,62.49
+]])
+
+ZygorGuidesViewer:RegisterInclude("Old_Dalaran_Cooking_Trainer",[[
+		talk Awilo Lon'gomba##29631 |goto Dalaran/1 70.06,38.80
+		|tip He walks around inside the building.
 ]])
 
 ZygorGuidesViewer:RegisterInclude("vendor_Cooking",[[

@@ -38,8 +38,15 @@ ZygorGuidesViewer:RegisterInclude("vendor_Blacksmithing",[[
 ------ Cooking ------
 ---------------------
 
-ZygorGuidesViewer:RegisterInclude("trainer_Cooking",[[
-		talk Stephen Ryback##5482 |goto Stormwind City,77.3,53.2
+ZygorGuidesViewer:RegisterInclude("Stormwind_Cooking_Trainer",[[
+		talk Stephen Ryback##5482 |goto Stormwind City/0 77.29,53.22
+		|tip Inside the building.
+]])
+
+ZygorGuidesViewer:RegisterInclude("Old_Dalaran_Cooking_Trainer",[[
+		talk Katherine Lee##28705 |goto Dalaran/1 40.53,65.62
+		|tip She walks around the table.
+		|tip Inside the building.
 ]])
 
 ZygorGuidesViewer:RegisterInclude("vendor_Cooking",[[

@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("HunterPetHMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Devilsaurs\\Greater Devilsaurs\\Blue Greater Devilsaur",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Devilsaurs\\Greater Devilsaurs\\Blue Greater Devilsaur",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue Greater Devilsaur pet.",
 model={47811},
@@ -18,7 +18,7 @@ step
 Use your Tame Beast ability on a _Young Primal Devilsaur_. |cast Tame Beast##1515 |goto Isle of Giants 71.0,55.2
 |tip The Young Primal Devilsaurs in this area are level 90.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Devilsaurs\\Greater Devilsaurs\\Black Greater Devilsaur",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Devilsaurs\\Greater Devilsaurs\\Black Greater Devilsaur",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Black Greater Devilsaur pet.",
 model={47573},
@@ -33,7 +33,7 @@ step
 Use your Tame Beast ability on a _Young Primal Devilsaur_. |cast Tame Beast##1515 |goto Isle of Giants 73.2,68.0
 |tip The Young Primal Devilsaurs in this area are level 90.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Devilsaurs\\Greater Devilsaurs\\Bronze Greater Devilsaur",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Devilsaurs\\Greater Devilsaurs\\Bronze Greater Devilsaur",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Bronze Greater Devilsaur pet.",
 model={47577},
@@ -48,7 +48,7 @@ step
 Use your Tame Beast ability on a _Young Primal Devilsaur_. |cast Tame Beast##1515 |goto Isle of Giants 24.1,58.9
 |tip The Young Primal Devilsaurs in this area are level 90.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Devilsaurs\\Greater Devilsaurs\\Green Greater Devilsaur",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Devilsaurs\\Greater Devilsaurs\\Green Greater Devilsaur",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green Greater Devilsaur pet.",
 model={47574},
@@ -63,7 +63,7 @@ step
 Use your Tame Beast ability on a _Young Primal Devilsaur_. |cast Tame Beast##1515 |goto Isle of Giants 32.9,58.6
 |tip The Young Primal Devilsaurs in this area are level 90.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Devilsaurs\\Greater Devilsaurs\\Light Brown Greater Devilsaur",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Devilsaurs\\Greater Devilsaurs\\Light Brown Greater Devilsaur",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Light Brown Greater Devilsaur pet.",
 model={47355},
@@ -79,7 +79,7 @@ Use your Tame Beast ability on _Kroshik_. |cast Tame Beast##1515 |goto Isle of T
 |tip Kroshik is a level 90 elite that wanders around this area.
 |tip This NPC goes through 4 life phases over several days, so you will need to come back another time if he is not in his adult phase.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Armored Stone Quilens\\Blue Armored Stone Quilen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Armored Stone Quilens\\Blue Armored Stone Quilen",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue Armored Stone Quilen pet.",
 model={45427},
@@ -122,7 +122,7 @@ Once you find the Dusty Tracks, you will want to search for more, following the 
 A new dusty track will appear about every 10 seconds. Follow them until they stop appearing. At that point, use _Flare_ and search for _Portent_. |cast Flare##1543
 Use your Tame Beast ability on _Portent_. |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Armored Stone Quilens\\Green Armored Stone Quilen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Armored Stone Quilens\\Green Armored Stone Quilen",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green Armored Stone Quilen pet.",
 model={45427},
@@ -165,7 +165,7 @@ Once you find the Dusty Tracks, you will want to search for more, following the 
 A new dusty track will appear about every 10 seconds. Follow them until they stop appearing. At that point, use _Flare_ and search for _Portent_. |cast Flare##1543
 Use your Tame Beast ability on _Portent_. |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Armored Stone Quilens\\Purple Armored Stone Quilen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Armored Stone Quilens\\Purple Armored Stone Quilen",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Purple Armored Stone Quilen pet.",
 model={45427},
@@ -208,7 +208,7 @@ Once you find the Dusty Tracks, you will want to search for more, following the 
 A new dusty track will appear about every 10 seconds. Follow them until they stop appearing. At that point, use _Flare_ and search for _Portent_. |cast Flare##1543
 Use your Tame Beast ability on _Portent_. |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Armored Stone Quilens\\Red Armored Stone Quilen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Armored Stone Quilens\\Red Armored Stone Quilen",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red Armored Stone Quilen pet.",
 model={45427},
@@ -251,7 +251,7 @@ Once you find the Dusty Tracks, you will want to search for more, following the 
 A new dusty track will appear about every 10 seconds. Follow them until they stop appearing. At that point, use _Flare_ and search for _Portent_. |cast Flare##1543
 Use your Tame Beast ability on _Portent_. |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Stone Quilen\\Blue Stone Quilen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Stone Quilen\\Blue Stone Quilen",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue Stone Quilen pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -306,7 +306,7 @@ Search for a Quilen Watcher
 |tip Quilen Watchers are level 90 elites.
 Use your _Tame Beast_ ability on a _Quilen Watcher_ |cast Tame Beast##1515 |goto 64.23,80.67
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Stone Quilen\\Purple Stone Quilen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Stone Quilen\\Purple Stone Quilen",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Purple Stone Quilen pet.",
 model={45432},
@@ -322,7 +322,7 @@ Search for _Terracota Defenders_ around the area.
 |tip They are level 87.
 Use your Tame Beast ability on a _Terracota Defender_. |cast Tame Beast##1515 |goto Kun-Lai Summit 61.0,73.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Stone Quilen\\Stone Quilen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Stone Quilen\\Stone Quilen",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Stone Quilen pet.",
 model={40217},
@@ -338,7 +338,7 @@ Search for _Sleeping Guardians_ around the area.
 |tip They are level 86.
 Use your Tame Beast ability on a _Sleeping Guardian_. |cast Tame Beast##1515 |goto Krasarang Wilds 52.0,32.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Brown Quilen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Brown Quilen",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Brown Quilen pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -353,7 +353,7 @@ Search for a Bronze Quilen
 |tip Bronze Quilens are level 90.
 Use your _Tame Beast_ ability on a _Bronze Quilen_ |cast Tame Beast##1515 |goto Townlong Steppes/0 34.43,23.18
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Gray Quilen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Gray Quilen",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Gray Quilen pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -371,7 +371,7 @@ Search for a Stone Quilen
 |tip Stone Quilens are level 90 elites.
 Use your _Tame Beast_ ability on a _Stone Quilen_ |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Red Quilen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\Red Quilen",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red Quilen pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -387,7 +387,7 @@ Search for a Terracotta Guardian
 |tip You will need to move close to them to aggro.
 Use your _Tame Beast_ ability on a _Terracotta Guardian_ |cast Tame Beast##1515 |goto Kun-Lai Summit/0 59.6,75.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\White Quilen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Quilen\\White Quilen",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a White Quilen pet.",
 model={40155},
@@ -403,7 +403,7 @@ Search for _Yachi_ around the area.
 |tip It is level 87.
 Use your Tame Beast ability on _Yachi_. |cast Tame Beast##1515 |goto Kun-Lai Summit 43.6,51.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Spirit Porcupines\\Ghostly Blue Spirit Porcupine",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Spirit Porcupines\\Ghostly Blue Spirit Porcupine",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Ghostly Blue Spirit Porcupine pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -420,7 +420,7 @@ Search for Gumi
 |tip Interrupt Spirit Heal when it casts it.
 Use your _Tame Beast_ ability on _Gumi_ |cast Tame Beast##1515 |goto Kun-Lai Summit/0 54.6,57.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Spirit Porcupines\\Ghostly Green Spirit Porcupine",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Spirit Porcupines\\Ghostly Green Spirit Porcupine",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Ghostly Green Spirit Porcupine pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -437,7 +437,7 @@ Search for Hutia
 |tip Interrupt Spirit Heal when it casts it.
 Use your _Tame Beast_ ability on _Hutia_ |cast Tame Beast##1515 |goto The Jade Forest/0 48.2,27.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Spirit Porcupines\\Ghostly Red Spirit Porcupine",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Spirit Porcupines\\Ghostly Red Spirit Porcupine",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Ghostly Red Spirit Porcupine pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -458,7 +458,7 @@ Search for Degu
 |tip Interrupt Spirit Heal when it casts it.
 Use your _Tame Beast_ ability on _Degu_ |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Fen Striders\\Black Fen Strider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Fen Striders\\Black Fen Strider",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Black Fen Strider pet.",
 model={18194},
@@ -474,7 +474,7 @@ Search for _Coilfang Striders_ around the area.
 |tip They are level 70 Elite.
 Use your Tame Beast ability on a _Coilfang Strider_. |cast Tame Beast##1515 |goto Serpentshrine Cavern 70.6,56.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Fen Striders\\Blue Fen Strider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Fen Striders\\Blue Fen Strider",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue Fen Strider pet.",
 model={17781},
@@ -490,7 +490,7 @@ Search for _Fen Striders_ around the area.
 |tip They are level 61-62.
 Use your Tame Beast ability on a _Fen Strider_. |cast Tame Beast##1515 |goto Zangarmarsh 63.4,53.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Fen Striders\\Green Fen Strider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Fen Striders\\Green Fen Strider",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green Fen Strider pet.",
 model={18615},
@@ -506,7 +506,7 @@ Search for _Marsh Walkers_ around the area.
 |tip They are level 63.
 Use your Tame Beast ability on a _Marsh Walker_. |cast Tame Beast##1515 |goto Zangarmarsh 28.0,29.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Fen Striders\\White Fen Strider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Fen Striders\\White Fen Strider",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a White Fen Strider pet.",
 model={20917},
@@ -532,7 +532,7 @@ Follow the provided path, searching for _Flooded Tracks_.
 A new flooded track will appear about every 10 seconds. Follow them until they stop appearing. At that point, use _Flare_ and search for _Glimmer_. |cast Flare##1543
 Use your Tame Beast ability on _Hexapos_. |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Plated Water Striders\\Blue Plated Water Strider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Plated Water Striders\\Blue Plated Water Strider",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue Plated Water Strider pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -547,7 +547,7 @@ Search for a Lake Strider
 |tip Lake Striders are level 90.
 Use your _Tame Beast_ ability on a _Lake Strider_ |cast Tame Beast##1515 |goto Dread Wastes/0 65.8,57.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Plated Water Striders\\Green Plated Water Strider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Plated Water Striders\\Green Plated Water Strider",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green Plated Water Strider pet.",
 model={40001},
@@ -563,7 +563,7 @@ Search for _Jungle Skitterers_ around the area.
 |tip They are level 86.
 Use your Tame Beast ability on a _Jungle Skitterer_. |cast Tame Beast##1515 |goto Krasarang Wilds 62.0,23.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Plated Water Striders\\Orange Plated Water Strider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Plated Water Striders\\Orange Plated Water Strider",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining an Orange Plated Water Strider pet.",
 model={42243},
@@ -579,7 +579,7 @@ Search for _Lightfooted Snapclaws_ around the area.
 |tip They are level 86.
 Use your Tame Beast ability on a _Lightfooted Snapclaw_. |cast Tame Beast##1515 |goto Kun-Lai Summit 59.0,26.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Plated Water Striders\\Red Plated Water Strider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Plated Water Striders\\Red Plated Water Strider",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red Plated Water Strider pet.",
 model={42271},
@@ -606,7 +606,7 @@ Once you find the Flooded Tracks, you will want to search for more, going the op
 A new worn track will appear about every 10 seconds. Follow them until they stop appearing. At that point, use _Flare_ and search for _Glimmer_. |cast Flare##1543
 Use your Tame Beast ability on _Glimmer_. |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Plated Water Striders\\Yellow Plated Water Strider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Plated Water Striders\\Yellow Plated Water Strider",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Yellow Plated Water Strider pet.",
 model={42272},
@@ -622,7 +622,7 @@ Search for _Vale Striders_ around the area.
 |tip They are level 90.
 Use your Tame Beast ability on a _Vale Strider_. |cast Tame Beast##1515 |goto Vale of Eternal Blossoms 22.6,19.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Blue-Black Water Strider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Blue-Black Water Strider",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue-Black Water Strider pet.",
 model={40000},
@@ -638,7 +638,7 @@ Search for _Stream Striders_ around the area.
 |tip They are level 85.
 Use your Tame Beast ability on a _Stream Strider_. |cast Tame Beast##1515 |goto The Jade Forest 33.0,46.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Blue-Green Water Strider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Blue-Green Water Strider",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue-Green Water Strider pet.",
 model={40001},
@@ -654,7 +654,7 @@ Search for _Fallstriders_ around the area.
 |tip They are level 85.
 Use your Tame Beast ability on a _Fallstrider_. |cast Tame Beast##1515 |goto Krasarang Wilds 35.2,36.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Dark Yellow Water Strider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Dark Yellow Water Strider",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Dark Yellow Water Strider pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -669,7 +669,7 @@ Search for a Summit Strider
 |tip Summit Striders are level 88.
 Use your _Tame Beast_ ability on a _Summit Strider_ |cast Tame Beast##1515 |goto Kun-Lai Summit/0 73.2,49.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Light Yellow Water Strider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Water Striders\\Light Yellow Water Strider",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Light Yellow Water Strider pet.",
 model={39999},
@@ -685,7 +685,7 @@ Search for _River Striders_ around the area.
 |tip They are level 85.
 Use your Tame Beast ability on a _River Strider_. |cast Tame Beast##1515 |goto Valley of the Four Winds 81.8,38.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Worms\\Silkworms\\Blue Silkworm",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Worms\\Silkworms\\Blue Silkworm",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue Silkworm pet.",
 model={43324},
@@ -701,7 +701,7 @@ Search for _Mottled Caterpillars_ around the area.
 |tip They are level 85.
 Use your Tame Beast ability on a _Mottled Caterpillar_. |cast Tame Beast##1515 |goto The Jade Forest 50.8,71.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Worms\\Silkworms\\Green Silkworm",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Worms\\Silkworms\\Green Silkworm",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green Silkworm pet.",
 model={45081},
@@ -717,7 +717,7 @@ Search for _Bookworms_ around the area.
 |tip They are level 85.
 Use your Tame Beast ability on a _Bookworms_. |cast Tame Beast##1515 |goto The Jade Forest 56.8,60.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Worms\\Silkworms\\Purple Silkworm (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Worms\\Silkworms\\Purple Silkworm (Rare Spawn)",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Purple Silkworm pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -738,7 +738,7 @@ Area 2 |goto 31,42
 Area 3 |goto 32,48
 Use your _Tame Beast_ ability on _Bombyx_ |cast Tame Beast##1515 |goto Krasarang Wilds/0 31.44,46.12
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Worms\\Silkworms\\Red Silkworm",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Worms\\Silkworms\\Red Silkworm",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red Silkworm pet.",
 model={40520},
@@ -754,7 +754,7 @@ Search for _Mutated Silkworms_ around the area.
 |tip They are level 85.
 Use your Tame Beast ability on a _Mutated Silkworms_. |cast Tame Beast##1515 |goto Valley of the Four Winds 66.0,56.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Worms\\Silkworms\\Yellow Silkworm",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Worms\\Silkworms\\Yellow Silkworm",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Yellow Silkworm pet.",
 model={40225},
@@ -770,7 +770,7 @@ Search for _Hungry Silkworms_ around the area.
 |tip They are level 86.
 Use your Tame Beast ability on a _Hungry Silkworms_. |cast Tame Beast##1515 |goto Valley of the Four Winds 66.0,56.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Black and Blue Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Black and Blue Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Black and Blue Crested Basilisk pet.",
 model={46055},
@@ -783,7 +783,7 @@ Search for Ironeye the Invincible around the area.
 |tip It is a level 45 beast.
 Use your Tame Beast ability on _Ironeye the Invincible_. |cast Tame Beast##1515 |goto Thousand Needles 61.2,67.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Black and Jade Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Black and Jade Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Black and Jade Crested Basilisk pet.",
 model={45950},
@@ -796,7 +796,7 @@ Search for Greystone Basilisks around the area.
 |tip They are level 11-12.
 Use your Tame Beast ability on a _Greystone Basilisk_. |cast Tame Beast##1515 |goto Azshara 24.6,68.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Black and Orange Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Black and Orange Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Black and Orange Crested Basilisk pet.",
 model={46058},
@@ -809,7 +809,7 @@ Search for _Chomper_ around the area.
 |tip It is level 27 Elite.
 Use your Tame Beast ability on _Chomper_. |cast Tame Beast##1515 |goto Gnomeregan 76.6,65.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Black and Purple Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Black and Purple Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Black and Purple Crested Basilisk pet.",
 model={45445},
@@ -822,7 +822,7 @@ Search for _Hissperak_ around the area.
 |tip It is a level 32 Rare Spawn.
 Use your Tame Beast ability on _Hissperak_. |cast Tame Beast##1515 |goto Desolace 43.6,61.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Blue Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Blue Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue Crested Basilisk pet.",
 model={8797},
@@ -835,7 +835,7 @@ Search for _Cold Eye Basilisks_ around the area.
 |tip They are level 29-30.
 Use your Tame Beast ability on a _Cold Eye Basilisk_. |cast Tame Beast##1515 |goto The Cape of Stranglethorn 44.6,10.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Blue and Jade Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Blue and Jade Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue and Jade Crested Basilisk pet.",
 model={45446},
@@ -848,7 +848,7 @@ Search for _Ironjaw Basilisks_ around the area.
 |tip They are level 29-30.
 Use your Tame Beast ability on a _Ironjaw Basilisk_. |cast Tame Beast##1515 |goto The Cape of Stranglethorn 67.2,24.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Blue and Orange Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Blue and Orange Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue and Orange Crested Basilisk pet.",
 model={45947},
@@ -861,7 +861,7 @@ Search for _Ironjaw Behemoths_ around the area.
 |tip They are level 29-30.
 Use your Tame Beast ability on a _Ironjaw Behemoth_. |cast Tame Beast##1515 |goto The Cape of Stranglethorn 66.2,26.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Blue and Purple Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Blue and Purple Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue and Purple Crested Basilisk pet.",
 model={45945},
@@ -874,7 +874,7 @@ Search for _Scale Belly_ around the area.
 |tip It is a level 31 Rare Spawn
 Use your Tame Beast ability on _Scale Belly_. |cast Tame Beast##1515 |goto The Cape of Stranglethorn 67.6,25.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Burgandy and Blue Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Burgandy and Blue Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Burgandy and Blue Crested Basilisk pet.",
 model={7345},
@@ -887,7 +887,7 @@ Search for _Sul'lithuz Sandcrawlers_ around the area.
 |tip They are level 47-48 Elite.
 Use your Tame Beast ability on a _Sul'lithuz Sandcrawler_. |cast Tame Beast##1515 |goto Zul'Farrak 64.6,26.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Burgandy and Orange Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Burgandy and Orange Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Burgandy and Orange Crested Basilisk pet.",
 model={44843},
@@ -900,7 +900,7 @@ Search for _Amberscale Basilisks_ around the area.
 |tip They are level 90.
 Use your Tame Beast ability on a _Amberscale Basilisk_. |cast Tame Beast##1515 |goto Dread Wastes 65.2,43.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Burgandy and Purple Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Burgandy and Purple Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Burgandy and Purple Crested Basilisk pet.",
 model={46053},
@@ -913,7 +913,7 @@ Search for _Deatheye_ around the area.
 |tip It is a level 56 Rare Spawn.
 Use your Tame Beast ability on _Deatheye_. |cast Tame Beast##1515 |goto Blasted Lands 53.6,27.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Green and Blue Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Green and Blue Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green and Blue Crested Basilisk pet.",
 model={45449},
@@ -926,7 +926,7 @@ Search for _Thrashtail Basilisks_ around the area.
 |tip They are level 29-30.
 Use your Tame Beast ability on a _Thrashtail Basilisk_. |cast Tame Beast##1515 |goto The Cape of Stranglethorn 60.6,30.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Green and Jade Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Green and Jade Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green and Jade Crested Basilisk pet.",
 model={4486},
@@ -939,7 +939,7 @@ Search for _Jadespine Basilisks_ around the area.
 |tip They are level 37-38 Elite.
 Use your Tame Beast ability on a _Jadespine Basilisk_. |cast Tame Beast##1515 |goto Uldaman 44.8,54.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Green and Orange Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Green and Orange Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green and Orange Crested Basilisk pet.",
 model={45450},
@@ -952,7 +952,7 @@ Search for _Stone Maw Basilisks_ around the area.
 |tip They are level 24-25.
 Use your Tame Beast ability on a _Stone Maw Basilisk_. |cast Tame Beast##1515 |goto Northern Stranglethorn 42.6,16.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Green and Purple Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Green and Purple Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green and Purple Crested Basilisk pet.",
 model={45451},
@@ -965,7 +965,7 @@ Search for _Lurking Basilisks_ around the area.
 |tip They are level 75-76.
 Use your Tame Beast ability on a _Lurking Basilisk_. |cast Tame Beast##1515 |goto Zul'Drak 44.8,62.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Orange-Purple and Blue Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Orange-Purple and Blue Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining an Orange-Purple and Blue Crested Basilisk pet.",
 model={1075},
@@ -978,7 +978,7 @@ Search for _Sul'lithuz Broodlings_ around the area.
 |tip They are level 47-48 Elite.
 Use your Tame Beast ability on a _Sul'lithuz Broodling_. |cast Tame Beast##1515 |goto Zul'Farrak 64.6,26.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Orange-Purple and Jade Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Orange-Purple and Jade Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining an Orange-Purple and Jade Crested Basilisk pet.",
 model={46056},
@@ -991,7 +991,7 @@ Search for _Crystal Spine Basilisks_ around the area.
 |tip They are level 25-26.
 Use your Tame Beast ability on a _Crystal Spine Basilisk_. |cast Tame Beast##1515 |goto Northern Stranglethorn 63.0,24.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Orange-Purple and Orange Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Orange-Purple and Orange Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining an Orange-Purple and Orange Crested Basilisk pet.",
 model={45462},
@@ -1004,7 +1004,7 @@ Search for _Ambereye Reavers_ around the area.
 |tip They are level 34-35 Elite.
 Use your Tame Beast ability on a _Ambereye Reaver_. |cast Tame Beast##1515 |goto Maraudon 34.6,62.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Orange-Purple and Purple Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Orange-Purple and Purple Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining an Orange-Purple and Purple Crested Basilisk pet.",
 model={45505},
@@ -1017,7 +1017,7 @@ Search for _Veiled Basilisks_ around the area.
 |tip They are level 88.
 Use your Tame Beast ability on a _Veiled Basilisk_. |cast Tame Beast##1515 |goto Townlong Steppes 34.6,64.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Purple and Blue Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Purple and Blue Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Purple and Blue Crested Basilisk pet.",
 model={45464},
@@ -1051,7 +1051,7 @@ Once you find the Worn Tracks, you will want to search for more, going the oppos
 A new worn track will appear about every 10 seconds. Follow them until they stop appearing. At that point, use _Flare_ and search for _Glimmer_. |cast Flare##1543
 Use your Tame Beast ability on _Rockhide the Immovable_. |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Red and Blue Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Red and Blue Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red and Blue Crested Basilisk pet.",
 model={2743},
@@ -1064,7 +1064,7 @@ Search for _Redstone Basilisks_ around the area.
 |tip They are level 55-56.
 Use your Tame Beast ability on a _Veiled Basilisk_. |cast Tame Beast##1515 |goto Blasted Lands 53.0,28.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Red and Orange Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Red and Orange Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red and Orange Crested Basilisk pet.",
 model={46059},
@@ -1077,7 +1077,7 @@ Search for _Ambereye Basilisks_ around the area.
 |tip They are level 34 Elite.
 Use your Tame Beast ability on a _Ambereye Basilisk_. |cast Tame Beast##1515 |goto Maraudon 35.2,63.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\White and Blue Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\White and Blue Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a White and Blue Crested Basilisk pet.",
 model={31939},
@@ -1090,7 +1090,7 @@ Search for _Glasshide Gazers_ around the area.
 |tip They are level 46-47.
 Use your Tame Beast ability on a _Glasshide Gazer_. |cast Tame Beast##1515 |goto Tanaris 55.2,55.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\White and Jade Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\White and Jade Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a White and Jade Crested Basilisk pet.",
 model={45474},
@@ -1103,7 +1103,7 @@ Search for _Jadecrest Basilisks_ around the area.
 |tip They are level 81-82.
 Use your Tame Beast ability on a _Jadecrest Basilisk_. |cast Tame Beast##1515 |goto Deepholm 56.6,85.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\White and Orange Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\White and Orange Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a White and Orange Crested Basilisk pet.",
 model={45455},
@@ -1116,7 +1116,7 @@ Search for _Gorgonite_ around the area.
 |tip It is a level 83 quest mob.
 Use your Tame Beast ability on _Gorgonite_. |cast Tame Beast##1515 |goto Deepholm 48.6,25.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\White and Purple Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\White and Purple Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a White and Purple Crested Basilisk pet.",
 model={45456},
@@ -1129,7 +1129,7 @@ Search for _Crystal Gorged Basilisks_ around the area.
 |tip They are level 83.
 Use your Tame Beast ability on a _Crystal Gorged Basilisk_. |cast Tame Beast##1515 |goto Deepholm 70.6,31.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Yellow and Blue Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Yellow and Blue Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Yellow and Blue Crested Basilisk pet.",
 model={7345},
@@ -1142,7 +1142,7 @@ Search for _Glasshide Basilisks_ around the area.
 |tip They are level 44-45.
 Use your Tame Beast ability on a _Glasshide Basilisk_. |cast Tame Beast##1515 |goto Tanaris 49.0,32.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Yellow and Jade Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Yellow and Jade Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Yellow and Jade Crested Basilisk pet.",
 model={45475},
@@ -1155,7 +1155,7 @@ Search for _Gritjaw Basilisks_ around the area.
 |tip They are level 30-31.
 Use your Tame Beast ability on a _Gritjaw Basilisk_. |cast Tame Beast##1515 |goto Desolace 67.2,23.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Yellow and Orange Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Yellow and Orange Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Yellow and Orange Crested Basilisk pet.",
 model={45458},
@@ -1168,7 +1168,7 @@ Search for _Stoneskin Basilisks_ around the area.
 |tip They are level 85.
 Use your Tame Beast ability on a _Stoneskin Basilisk_. |cast Tame Beast##1515 |goto The Jade Forest 61.8,76.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Yellow and Purple Crested Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Crested Basilisks\\Yellow and Purple Crested Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Yellow and Purple Crested Basilisk pet.",
 model={45946},
@@ -1181,7 +1181,7 @@ Search for _Hellgazer_ around the area.
 |tip It is a level 46 Rare Spawn.
 Use your Tame Beast ability on _Hellgazer_. |cast Tame Beast##1515 |goto Tanaris 40.8,41.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Three-Eyed Basilisks\\Green Three-Eyed Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Three-Eyed Basilisks\\Green Three-Eyed Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green Three-Eyed Basilisk pet.",
 model={16876},
@@ -1194,7 +1194,7 @@ Search for _Dampscale Basilisks_ around the area.
 |tip They are level 62-63.
 Use your Tame Beast ability on a _Dampscale Basilisk_. |cast Tame Beast##1515 |goto Terokkar Forest 38.6,12.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Three-Eyed Basilisks\\Purple Three-Eyed Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Three-Eyed Basilisks\\Purple Three-Eyed Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Purple Three-Eyed Basilisk pet.",
 model={16878},
@@ -1207,7 +1207,7 @@ Search for _Ironspine Petrifiers_ around the area.
 |tip They are level 62.
 Use your Tame Beast ability on a _Ironspine Petrifier_. |cast Tame Beast##1515 |goto Terokkar Forest 46.2,35.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Three-Eyed Basilisks\\Red Three-Eyed Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Three-Eyed Basilisks\\Red Three-Eyed Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red Three-Eyed Basilisk pet.",
 model={16877},
@@ -1220,7 +1220,7 @@ Search for _Scalded Basilisks_ around the area.
 |tip They are level 67-68.
 Use your Tame Beast ability on a _Scalded Basilisk_. |cast Tame Beast##1515 |goto Blade's Edge Mountains 72.2,23.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Three-Eyed Basilisks\\Yellow Three-Eyed Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Basilisks\\Three-Eyed Basilisks\\Yellow Three-Eyed Basilisk",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Yellow Three-Eyed Basilisk pet.",
 model={16879},
@@ -1233,7 +1233,7 @@ Search for _Marshrock Threshalisks_ around the area.
 |tip They are level 61-62.
 Use your Tame Beast ability on a _Marshrock Threshalisk_. |cast Tame Beast##1515 |goto Zangarmarsh 83.6,28.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Lion\\Grand Lion (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Lion\\Grand Lion (Rare Spawn)",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Grand Lion pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -1245,7 +1245,7 @@ Search for _Sambas_
 |tip Sambas is level 85.
 Use your _Tame Beast_ ability on _Sambas_ |cast Tame Beast##1515 |goto Kun-Lai Summit/0 66.0,25.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\Black Grand Tiger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\Black Grand Tiger",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Black Grand Tiger pet.",
 model={40718},
@@ -1258,7 +1258,7 @@ Search for _Wild Stalkers_ around the area.
 |tip They are level 85.
 Use your Tame Beast ability on a _Wild Stalker_. |cast Tame Beast##1515 |goto The Jade Forest 63.0,76.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\Black-Nosed Orange Grand Tiger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\Black-Nosed Orange Grand Tiger",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Black-Nosed Orange Grand Tiger pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -1270,7 +1270,7 @@ Search for _Zouchin Tiger_
 |tip Zouchin Tigers are level 88.
 Use your _Tame Beast_ ability on a _Zouchin Tiger_ |cast Tame Beast##1515 |goto Kun-Lai Summit/0 66.0,25.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\Brown Grand Tiger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\Brown Grand Tiger",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Brown Grand Tiger pet.",
 model={40358},
@@ -1283,7 +1283,7 @@ Search for _Wary Forest Prowlers_ around the area.
 |tip They are level 84.
 Use your Tame Beast ability on a _Wary Forest Prowler_. |cast Tame Beast##1515 |goto The Jade Forest 31.6,10.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\Grey Grand Tiger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\Grey Grand Tiger",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Grey Grand Tiger pet.",
 model={41445},
@@ -1296,7 +1296,7 @@ Search for _Summit Prowlers_ around the area.
 |tip They are level 87.
 Use your Tame Beast ability on a _Summit Prowler_. |cast Tame Beast##1515 |goto Kun-Lai Summit 64.2,63.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\Orange-Striped Green Grand Tiger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\Orange-Striped Green Grand Tiger",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining an Orange-Striped Green Grand Tiger pet.",
 model={44662},
@@ -1309,7 +1309,7 @@ Search for _Gorge Stalkers_ around the area.
 |tip They are level 87.
 Use your Tame Beast ability on a _Gorge Stalker_. |cast Tame Beast##1515 |goto Valley of the Four Winds 13.6,71.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\Pink-Nosed Orange Grand Tiger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\Pink-Nosed Orange Grand Tiger",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Pink-Nosed Orange Grand Tiger pet.",
 model={39579},
@@ -1322,7 +1322,7 @@ Search for _Waxwood Hunters_ around the area.
 |tip They are level 87.
 Use your Tame Beast ability on a _Waxwood Hunter_. |cast Tame Beast##1515 |goto The Jade Forest 34.8,22.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\Red Grand Tiger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\Red Grand Tiger",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red Grand Tiger pet.",
 model={40848},
@@ -1335,7 +1335,7 @@ Search for _Krasari Huntress_ around the area.
 |tip They are level 86.
 Use your Tame Beast ability on a _Krasari Huntress_. |cast Tame Beast##1515 |goto Krasarang Wilds 65.0,29.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\White Grand Tiger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grand Tigers\\White Grand Tiger",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a White Grand Tiger pet.",
 model={44486},
@@ -1363,7 +1363,7 @@ Once you find the Bloody Tracks, you will want to search for more, going the opp
 A new bloody track will appear about every 10 seconds. Follow them until they stop appearing. At that point, use _Flare_ and search for _Savage_. |cast Flare##1543
 Use your Tame Beast ability on _Savage_. |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Mystic Cats\\Jade Mystic Cat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Mystic Cats\\Jade Mystic Cat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Jade Mystic Cat pet.",
 model={39179},
@@ -1376,7 +1376,7 @@ Search for _Jade Guardians_ around the area.
 |tip They are level 85.
 Use your Tame Beast ability on a _Jade Guardian_. |cast Tame Beast##1515 |goto The Jade Forest 39.4,43.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cranes\\Black Crane",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cranes\\Black Crane",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Black Crane pet.",
 model={40347},
@@ -1389,7 +1389,7 @@ Search for _Great Cranes_ around the area.
 |tip They are level 90.
 Use your Tame Beast ability on a _Great Crane_. |cast Tame Beast##1515 |goto Krasarang Wilds 64.6,47.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cranes\\Blue Crane",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cranes\\Blue Crane",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue Crane pet.",
 model={39726},
@@ -1402,7 +1402,7 @@ Search for _Lotus Cranes_ around the area.
 |tip They are level 84-85.
 Use your Tame Beast ability on a _Lotus Crane_. |cast Tame Beast##1515 |goto The Jade Forest 57.6,70.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cranes\\Brown Crane",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cranes\\Brown Crane",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Brown Crane pet.",
 model={39727},
@@ -1415,7 +1415,7 @@ Search for _Sunrise Cranes_ around the area.
 |tip They are level 84-85.
 Use your Tame Beast ability on a _Sunrise Crane_. |cast Tame Beast##1515 |goto The Jade Forest 46.0,37.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cranes\\Green Crane",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cranes\\Green Crane",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green Crane pet.",
 model={39728},
@@ -1428,7 +1428,7 @@ Search for _Carp Hunters_ around the area.
 |tip They are level 86.
 Use your Tame Beast ability on a _Carp Hunter_. |cast Tame Beast##1515 |goto Krasarang Wilds 65.6,29.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cranes\\Pink Crane",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cranes\\Pink Crane",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Pink Crane pet.",
 model={39729},
@@ -1478,7 +1478,7 @@ _Search for_ Brilliant Windfeather around the area
 |tip They are level 90 Elite
 _Use_ your Tame Beast ability on Brilliant Windfeather |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cranes\\White Crane",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cranes\\White Crane",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a White Crane pet.",
 model={39553},
@@ -1491,7 +1491,7 @@ Search for _Ink-Tipped Cranes_ around the area.
 |tip They are level 85.
 Use your Tame Beast ability on an _Ink-Tipped Crane_. |cast Tame Beast##1515 |goto The Jade Forest 56.0,47.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Direhorns\\Blue Direhorn",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Direhorns\\Blue Direhorn",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue Direhorn pet.",
 model={46565},
@@ -1510,7 +1510,7 @@ step
 Use your Tame Beast ability on a _Primal Direhorn Hatchling_. |cast Tame Beast##1515 |goto Isle of Giants 48.7,72.5
 |tip The Primal Direhorn Hatchlings in this area are level 90.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Direhorns\\Brown Direhorn",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Direhorns\\Brown Direhorn",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Brown Direhorn pet.",
 model={47236},
@@ -1529,7 +1529,7 @@ step
 |tip The Primal Direhorn Hatchlings in this area are level 90.
 Use your Tame Beast ability on a _Primal Direhorn Hatchling_. |cast Tame Beast##1515 |goto Isle of Giants 48.7,72.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Direhorns\\Green Direhorn",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Direhorns\\Green Direhorn",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green Direhorn pet.",
 model={47233},
@@ -1548,7 +1548,7 @@ step
 Use your Tame Beast ability on a _Primal Direhorn Hatchling_. |cast Tame Beast##1515 |goto Isle of Giants 48.7,72.5
 |tip The Primal Direhorn Hatchlings in this area are level 90.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Direhorns\\Pale Direhorn",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Direhorns\\Pale Direhorn",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Pale Direhorn pet.",
 model={47235},
@@ -1567,7 +1567,7 @@ step
 |tip The Primal Direhorn Hatchlings in this area are level 90. |goto Isle of Giants 48.7,72.5
 Use your Tame Beast ability on a _Primal Direhorn Hatchling_. |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Direhorns\\Red Direhorn",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Direhorns\\Red Direhorn",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red Direhorn pet.",
 model={47234},
@@ -1586,7 +1586,7 @@ step
 Use your Tame Beast ability on a _Primal Direhorn Hatchling_. |cast Tame Beast##1515 |goto Isle of Giants 65.0,61.2
 |tip The Primal Direhorn Hatchlings in this area are level 90.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Goats\\Black Goat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Goats\\Black Goat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Black Goat pet.",
 model={41073},
@@ -1599,7 +1599,7 @@ Search for _Battle Goats_ around the area.
 |tip They are level 87.
 Use your Tame Beast ability on a _Battle Goat_. |cast Tame Beast##1515 |goto Kun-Lai Summit 51.4,66.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Goats\\Black Spotted Goat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Goats\\Black Spotted Goat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Black Spotted Goat pet.",
 model={45149},
@@ -1612,7 +1612,7 @@ Search for _Black Bengal Goats_ around the area.
 |tip They are level 90.
 Use your Tame Beast ability on a _Black Bengal Goat_. |cast Tame Beast##1515 |goto Vale of Eternal Blossoms 58.0,58.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Goats\\Brown Goat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Goats\\Brown Goat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Brown Goat pet.",
 model={40020},
@@ -1625,7 +1625,7 @@ Search for _Wild Staghorns_ around the area.
 |tip They are level 87.
 Use your Tame Beast ability on a _Wild Staghorn_. |cast Tame Beast##1515 |goto Valley of the Four Winds 27.8,55.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Goats\\Brown Spotted Goat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Goats\\Brown Spotted Goat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Brown Spotted Goat pet.",
 model={45138},
@@ -1638,7 +1638,7 @@ Search for _Stout Staghorns_ around the area.
 |tip They are level 90.
 Use your Tame Beast ability on a _Stout Staghorn_. |cast Tame Beast##1515 |goto Valley of the Four Winds 28.0,36.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Goats\\Grey Goat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Goats\\Grey Goat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Grey Goat pet.",
 model={40022},
@@ -1666,7 +1666,7 @@ Once you find the Heavy Tracks, you will want to search for more, going the oppo
 A new heavy track will appear about every 10 seconds. Follow them until they stop appearing. At that point, use _Flare_ and search for _Stompy_. |cast Flare##1543
 Use your Tame Beast ability on _Stompy_. |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Goats\\White Goat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Goats\\White Goat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a White Goat pet.",
 model={40024},
@@ -1679,7 +1679,7 @@ Search for _Wild Mountain Goats_ around the area.
 |tip They are level 88.
 Use your Tame Beast ability on a _Wild Mountain Goat_. |cast Tame Beast##1515 |goto The Veiled Stair 56.6,62.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Porcupines\\Blue Porcupine",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Porcupines\\Blue Porcupine",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue Porcupine pet.",
 model={41003},
@@ -1707,7 +1707,7 @@ Once you find the Puzzling Tracks, you will want to search for more, going the o
 A new puzzling track will appear about every 10 seconds. Follow them until they stop appearing. At that point, use _Flare_ and search for _Stompy_. |cast Flare##1543
 Use your Tame Beast ability on _Bristlespine_. |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Porcupines\\Brown Porcupine",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Porcupines\\Brown Porcupine",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Brown Porcupine pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -1719,7 +1719,7 @@ Search for a _Lowland Porcupine_
 |tip Lowland Porcupines are level 87 to 88.
 Use your _Tame Beast_ ability on a _Lowland Porcupine_ |cast Tame Beast##1515 |goto Kun-Lai Summit/0 66.2,22.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Porcupines\\Gray Porcupine",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Porcupines\\Gray Porcupine",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Gray Porcupine pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -1732,7 +1732,7 @@ Search for a _Smoky Porcupine_
 |tip They are all around the area.
 Use your _Tame Beast_ ability on a _Smoky Porcupine_ |cast Tame Beast##1515 |goto The Jade Forest/0 47.0,37.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Porcupines\\Red Porcupine",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Porcupines\\Red Porcupine",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red Porcupine pet.",
 model={44620},
@@ -1745,7 +1745,7 @@ Search for _Razorquill Porcupines_ around the area.
 |tip They are level 87.
 Use your Tame Beast ability on a _Razorquill Porcupine_. |cast Tame Beast##1515 |goto Kun-Lai Summit 61.2,83.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Porcupines\\White Porcupine",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Porcupines\\White Porcupine",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a White Porcupine pet.",
 model={43647},
@@ -1758,7 +1758,7 @@ Search for _Lowland Porcupines_ around the area.
 |tip They are level 84.
 Use your Tame Beast ability on a _Lowland Porcupine_. |cast Tame Beast##1515 |goto Kun-Lai Summit 65.8,26.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Porcupines\\Yellow Porcupine",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Porcupines\\Yellow Porcupine",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Yellow Porcupine pet.",
 model={45410},
@@ -1771,7 +1771,7 @@ Search for _Docile Porcupines_ around the area.
 |tip They are level 84.
 Use your Tame Beast ability on a _Docile Porcupine_. |cast Tame Beast##1515 |goto Vale of Eternal Blossoms 47.0,55.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Raptors\\Saddled Raptors\\Orange Saddled Raptor",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Raptors\\Saddled Raptors\\Orange Saddled Raptor",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining an Orange Saddled Raptor pet.",
 model={14342},
@@ -1784,7 +1784,7 @@ Search for _Gurubashi Riding Raptors_ around the area.
 |tip They are level 87.
 Use your Tame Beast ability on a _Gurubashi Riding Raptor_. |cast Tame Beast##1515 |goto Kun-Lai Summit 77.0,12.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Raptors\\Armored Raptors\\Orange Armored Raptor",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Raptors\\Armored Raptors\\Orange Armored Raptor",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining an Orange Armored Raptor pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -1797,7 +1797,7 @@ Search for a _Gurubashi Riding Raptor_
 |tip Gurubashi Riding Raptors are level 87.
 Use your _Tame Beast_ ability on a _Gurubashi Riding Raptor_ |cast Tame Beast##1515 |goto Kun-Lai Summit/0 75.0,12.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Raptors\\Armored Raptors\\Red Armored Raptor",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Raptors\\Armored Raptors\\Red Armored Raptor",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red Armored Raptor pet.",
 model={14341},
@@ -1810,7 +1810,7 @@ Search for _Gurubashi Raptors_ around the area.
 |tip They are level 87.
 Use your Tame Beast ability on a _Gurubashi Raptor_. |cast Tame Beast##1515 |goto Kun-Lai Summit 65.0,31.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Scorpids\\Crystal Scorpions\\Amber Crystal Scorpion",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Scorpids\\Crystal Scorpions\\Amber Crystal Scorpion",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining an Amber Crystal Scorpion pet.",
 condition_suggested=function() return level>=90 and level<=94 end,
@@ -1823,7 +1823,7 @@ Search for _Kor'thik Scorpids_ around the area.
 |tip They are level 90.
 Use your Tame Beast ability on a _Kor'thik Scorpid_. |cast Tame Beast##1515 |goto Dread Wastes 46.6,14.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Scorpids\\Rugged Scorpions\\Black Rugged Scorpion",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Scorpids\\Rugged Scorpions\\Black Rugged Scorpion",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Black Rugged Scorpion pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -1835,7 +1835,7 @@ Search for an _Amber-Fed Hatchling_
 |tip Amber-Fed Hatchlings are level 90.
 Use your _Tame Beast_ ability on an _Amber-Fed Hatchling_ |cast Tame Beast##1515 |goto Dread Wastes/0 24.6,76.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Scorpids\\Rugged Scorpions\\Red Rugged Scorpion",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Scorpids\\Rugged Scorpions\\Red Rugged Scorpion",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red Rugged Scorpion pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -1847,7 +1847,7 @@ Search for a _Horrorscale Scorpid_
 |tip Horrorscale Scorpids are level 90.
 Use your _Tame Beast_ ability on a _Horrorscale Scorpid_ |cast Tame Beast##1515 |goto Dread Wastes/0 59.8,50.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Wolves\\Saber Worgs\\Ghostly White Saber Worg",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Wolves\\Saber Worgs\\Ghostly White Saber Worg",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Ghostly White Saber Worg pet.",
 condition_suggested=function() return level>=87 and level<=91 end,
@@ -1860,7 +1860,7 @@ Search for _Spirit Worgs_ around the area.
 |tip They are level 87.
 Use your Tame Beast ability on a _Spirit Worg_. |cast Tame Beast##1515 |goto Kun-Lai Summit 48.8,76.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Wolves\\Saber Worgs\\Stormy Dark Grey Saber Worg",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Wolves\\Saber Worgs\\Stormy Dark Grey Saber Worg",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Stormy Dark Grey Saber Worg pet.",
 condition_suggested=function() return level>=90 and level<=94 end,
@@ -1873,7 +1873,7 @@ Search for _Thundermaw_ around the area.
 |tip It is level 90.
 Use your Tame Beast ability on _Thundermaw_. |cast Tame Beast##1515 |goto Vale of Eternal Blossoms 29.4,67.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Brown Parrot",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Brown Parrot",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Brown Parrot pet.",
 model={45321},
@@ -1886,7 +1886,7 @@ Search for _Dusky Lory_ around the area.
 |tip It is level 87.
 Use your Tame Beast ability on a _Dusky Lory_. |cast Tame Beast##1515 |goto Krasarang Wilds 48.2,66.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Raven",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Raven",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Raven pet.",
 model={44480},
@@ -1899,7 +1899,7 @@ Search for _Upland Ravens_ around the area.
 |tip They are level 87.
 Use your Tame Beast ability on an _Upland Raven_. |cast Tame Beast##1515 |goto Kun-Lai Summit 54.4,46.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Blue-Magenta and Yellow Moth",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Blue-Magenta and Yellow Moth",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue-Magenta and Yellow Moth pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -1911,7 +1911,7 @@ Search for a _Fluttering Swallowtail_
 |tip Fluttering Swallowtails are level 86.
 Use your _Tame Beast_ ability on a _Fluttering Swallowtail_ |cast Tame Beast##1515 |goto Krasarang Wilds/0 23.8,40.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Green and Yellow Moth",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Green and Yellow Moth",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green and Yellow Moth pet.",
 model={44605},
@@ -1924,7 +1924,7 @@ Search for _Fluttering Swallowtails_ around the area.
 |tip They are level 87.
 Use your Tame Beast ability on a _Fluttering Swallowtails_. |cast Tame Beast##1515 |goto Krasarang Wilds 36.2,33.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Boss Wasps\\Purple Boss Wasp",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Boss Wasps\\Purple Boss Wasp",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Purple Boss Wasp pet.",
 model={37906},
@@ -1937,7 +1937,7 @@ Search for the _Florawing Hive Queen_ around the area.
 |tip It is level 85 Elite.
 Use your Tame Beast ability on _Florawing Hive Queen_. |cast Tame Beast##1515 |goto Zul'Gurub 33.2,37.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Blue-Marked Blue Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Blue-Marked Blue Spiked Crab",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue-Marked Blue Spiked Crab pet.",
 model={45062},
@@ -1950,7 +1950,7 @@ Search for _Snapclaw_ around the area.
 |tip It is a level 90 Elite.
 Use your Tame Beast ability on _Snapclaw_. |cast Tame Beast##1515 |goto Krasarang Wilds 73.6,38.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Blue-Marked Dark Blue Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Blue-Marked Dark Blue Spiked Crab",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue-Marked Dark Blue Spiked Crab pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -1959,14 +1959,14 @@ model={32640},
 },[[
 step
 You will need to unlock the Isle of Thunder in order to attain this pet
-Click here to load the "Sunreaver Onslaught Dailies" guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Sunreaver Onslaught Dailies"
+Click here to load the "Sunreaver Onslaught Dailies" guide |confirm |next "Dailies Guides\\Mists of Pandaria Dailies\\Sunreaver Onslaught Dailies"
 Unlock the Isle of Thunder |condition completedq(32680)
 step
 Search for a _Luminescent Crawler_
 |tip Luminescent Crawlers are level 100.
 Use your _Tame Beast_ ability on a _Luminescent Crawler_ |cast Tame Beast##1515 |goto Isle of Thunder/0 38.6,83.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Blue-Marked Deep Red Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Blue-Marked Deep Red Spiked Crab",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red-Blue Deep Sea Crab pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -1985,7 +1985,7 @@ Monstrous Spineclaw also spawns at the locations below:
 [70.8,64.2]
 Use your Tame Beast ability on _Monstrous Spineclaw_. |cast Tame Beast##1515 |goto Timeless Isle 23.0,32.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Blue-Marked Orange Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Blue-Marked Orange Spiked Crab",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue-Marked Orange Spiked Crab pet.",
 model={42974},
@@ -1998,7 +1998,7 @@ Search for _Spineclaw Scuttlers_ around the area.
 |tip They are level 90.
 Use your Tame Beast ability on a _Spineclaw Scuttler_. |cast Tame Beast##1515 |goto Kun-Lai Summit 56.4,21.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Blue-Marked Red Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Blue-Marked Red Spiked Crab",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue-Marked Red Spiked Crab pet.",
 model={45058},
@@ -2011,7 +2011,7 @@ Search for _Elder Viseclaws_ around the area.
 |tip They are level 87 Elite.
 Use your Tame Beast ability on an _Elder Viseclaw_. |cast Tame Beast##1515 |goto Krasarang Wilds 57.0,47.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Greenish-Blue Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Greenish-Blue Spiked Crab",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Greenish-Blue Deep Sea Crab pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -2023,7 +2023,7 @@ Search for an Ancient Spineclaw around the area
 |tip It is a level 91 Elite beast.
 Use your Tame Beast ability on an _Ancient Spineclaw_ |cast Tame Beast##1515 |goto Timeless Isle 23.4,28.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Metallic Blue Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Metallic Blue Spiked Crab",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Metallic Blue Spiked Crab pet.",
 model={45167},
@@ -2036,7 +2036,7 @@ Search for _King Spineclaw_ around the area.
 |tip It is a level 88 Elite.
 Use your Tame Beast ability on _King Spineclaw_. |cast Tame Beast##1515 |goto Kun-Lai Summit 55.2,21.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Purple-Marked Dark Purple Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Purple-Marked Dark Purple Spiked Crab",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Purple-Marked Dark Purple Spiked Crab pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -2045,14 +2045,14 @@ model={32640},
 },[[
 step
 You will need to unlock the Isle of Thunder in order to attain this pet
-Click here to load the "Sunreaver Onslaught Dailies" guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Sunreaver Onslaught Dailies"
+Click here to load the "Sunreaver Onslaught Dailies" guide |confirm |next "Dailies Guides\\Mists of Pandaria Dailies\\Sunreaver Onslaught Dailies"
 Unlock the Isle of Thunder |condition completedq(32680)
 step
 Search for a _Luminescent Crawler_
 |tip Luminescent Crawlers are level 100.
 Use your _Tame Beast_ ability on a _Luminescent Crawler_ |cast Tame Beast##1515 |goto Isle of Thunder/0 38.6,83.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Purple-Marked Green Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Purple-Marked Green Spiked Crab",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Purple-Marked Green Spiked Crab pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -2065,7 +2065,7 @@ Search for a _Mosstide Crab_
 |tip Swim to the bottom of to water to find these.
 Use your _Tame Beast_ ability on a _Mosstide Crab_ |cast Tame Beast##1515 |goto The Jade Forest/0 40.22,1.78
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Purple-Marked Orange Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Purple-Marked Orange Spiked Crab",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Purple-Marked Orange Spiked Crab pet.",
 model={46050},
@@ -2078,7 +2078,7 @@ Search for _Amberglass Crabs_ around the area.
 |tip They are level 84-85.
 Use your Tame Beast ability on an _Amberglass Crab_. |cast Tame Beast##1515 |goto The Jade Forest 59.6,80.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Purple-Marked Red Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Spiked Crabs\\Purple-Marked Red Spiked Crab",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Purple-Marked Red Spiked Crab pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -2091,7 +2091,7 @@ Search for a _Viseclaw Fry_
 |tip They are accompanied by Viseclaw Scuttlers.
 Use your _Tame Beast_ ability on a _Viseclaw Fry_ |cast Tame Beast##1515 |goto Krasarang Wilds/0 63.20,38.62
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Black Dragon Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Black Dragon Turtle",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Black Dragon Turtle pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -2103,7 +2103,7 @@ Search for a _Brineshell Snapper_
 |tip Brineshell Snappers are level 90.
 Use your _Tame Beast_ ability on a _Brineshell Snapper_ |cast Tame Beast##1515 |goto Dread Wastes/0 39.0,61.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Blue Dragon Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Blue Dragon Turtle",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue Dragon Turtle pet.",
 model={47800},
@@ -2116,7 +2116,7 @@ Search for _Slateshell Wanderers_ around the area.
 |tip They are level 90.
 Use your Tame Beast ability on a _Slateshell Wanderer_. |cast Tame Beast##1515 |goto Isle of Thunder 54.2,57.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Blue Glowing Dragon Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Blue Glowing Dragon Turtle",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue Glowing Dragon Turtle pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -2125,14 +2125,14 @@ model={47800},
 },[[
 step
 You will need to unlock the Isle of Thunder in order to attain this pet
-Click here to load the "Sunreaver Onslaught Dailies" guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Sunreaver Onslaught Dailies"
+Click here to load the "Sunreaver Onslaught Dailies" guide |confirm |next "Dailies Guides\\Mists of Pandaria Dailies\\Sunreaver Onslaught Dailies"
 Unlock the Isle of Thunder |condition completedq(32680)
 step
 Search for a _Slateshell Wanderer_
 |tip Slateshell Wanderers are level 90.
 Use your _Tame Beast_ ability on a _Slateshell Wanderer_ |cast Tame Beast##1515 |goto Isle of Thunder/0 53.6,53.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Brown Dragon Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Brown Dragon Turtle",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Brown Dragon Turtle pet.",
 model={44778},
@@ -2145,7 +2145,7 @@ Search for _Seadragons_ around the area.
 |tip They are level 86.
 Use your Tame Beast ability on a _Seadragon_. |cast Tame Beast##1515 |goto Krasarang Wilds 72.6,32.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Camo Dragon Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Camo Dragon Turtle",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Camo Dragon Turtle pet.",
 model={42233},
@@ -2158,7 +2158,7 @@ Search for _Pearly Tortoises_ around the area.
 |tip They are level 84-85.
 Use your Tame Beast ability on a _Pearly Tortoise_. |cast Tame Beast##1515 |goto The Jade Forest 59.8,81.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Gold Dragon Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Gold Dragon Turtle",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Gold Dragon Turtle pet.",
 model={42658},
@@ -2171,7 +2171,7 @@ Search for _Wyrmhorn Turtles_ around the area.
 |tip They are level 86.
 Use your Tame Beast ability on a _Wyrmhorn Turtle_. |cast Tame Beast##1515 |goto Valley of the Four Winds 67.8,31.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Green Dragon Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Green Dragon Turtle",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green Dragon Turtle pet.",
 model={42234},
@@ -2184,7 +2184,7 @@ Search for _Jade Snapping Turtles_ around the area.
 |tip They are level 86.
 Use your Tame Beast ability on a _Jade Snapping Turtle_. |cast Tame Beast##1515 |goto The Jade Forest 33.2,10.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Red Dragon Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Dragon Turtles\\Red Dragon Turtle",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red Dragon Turtle pet.",
 condition_valid=function() return raceclass('Hunter') end,
@@ -2196,7 +2196,7 @@ Search for a _Chillwater Turtle_
 |tip Chillwater Turtles are level 90.
 Use your _Tame Beast_ ability on a _Chillwater Turtle_ |cast Tame Beast##1515 |goto Dread Wastes/0 60.2,50.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Spiked Dragon Turtles\\Black Spiked Dragon Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Spiked Dragon Turtles\\Black Spiked Dragon Turtle",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Black Spiked Dragon Turtle pet.",
 model={45487},
@@ -2231,7 +2231,7 @@ Once you find the Muddy Tracks, you will want to search for more, going the oppo
 A new muddy track will appear about every 10 seconds. Follow them until they stop appearing. At that point, use _Flare_ and search for _Bloodtooth_. |cast Flare##1543
 Use your Tame Beast ability on _Bloodtooth_. |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Spiked Dragon Turtles\\Blue Spiked Dragon Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Spiked Dragon Turtles\\Blue Spiked Dragon Turtle",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Blue Spiked Dragon Turtle pet.",
 model={47804},
@@ -2244,7 +2244,7 @@ Search for _Slateshell Ancients_ around the area.
 |tip They are level 90.
 Use your Tame Beast ability on a _Slateshell Ancient_. |cast Tame Beast##1515 |goto Isle of Thunder 54.2,57.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Spiked Dragon Turtles\\Brown Spiked Dragon Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Spiked Dragon Turtles\\Brown Spiked Dragon Turtle",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Brown Spiked Dragon Turtle pet.",
 model={46045},
@@ -2257,7 +2257,7 @@ Search for _Elder Shoreshell Snappers_ around the area.
 |tip They are level 86 Elite.
 Use your Tame Beast ability on a _Elder Shoreshell Snapper_. |cast Tame Beast##1515 |goto Kun-Lai Summit 75.1,33.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Spiked Dragon Turtles\\Gold Spiked Dragon Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Spiked Dragon Turtles\\Gold Spiked Dragon Turtle",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Gold Spiked Dragon Turtle pet.",
 model={44784},
@@ -2270,7 +2270,7 @@ Search for _Elder Seadragons_ around the area.
 |tip They are level 86 Elite.
 Use your Tame Beast ability on an _Elder Seadragon_. |cast Tame Beast##1515 |goto Krasarang Wilds 71.6,33.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Spiked Dragon Turtles\\Green Spiked Dragon Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Spiked Dragon Turtles\\Green Spiked Dragon Turtle",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Green Spiked Dragon Turtle pet.",
 model={46046},

@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("PetsMountsA") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Paladin\\Warhorse",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Paladin\\Warhorse",{
 keywords={"paladin","warhorse","ground","mount"},
 mounts={13819},
 model={8469},
@@ -22,7 +22,7 @@ _Congratulations!_
 You are now the proud owner of a Warhorse.
 |only Paladin
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Paladin\\Charger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Paladin\\Charger",{
 keywords={"paladin","Charger","ground","mount"},
 mounts={23214},
 model={14584},
@@ -41,7 +41,7 @@ _Congratulations!_
 You are now the proud owner of a Charger.
 |only Paladin
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Paladin\\Exarch's Elekk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Paladin\\Exarch's Elekk",{
 keywords={"paladin","Exarch's","Elekk","ground","mount"},
 mounts={73629},
 model={31367},
@@ -60,7 +60,7 @@ _Congratulations!_
 You are now the proud owner of a Exarch's Elekk.
 |only Paladin
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Paladin\\Great Exarch's Elekk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Paladin\\Great Exarch's Elekk",{
 keywords={"paladin","Great","Exarch's","Elekk","ground","mount"},
 mounts={73630},
 model={31368},
@@ -79,7 +79,7 @@ _Congratulations!_
 You are now the proud owner of a Great Exarch's Elekk.
 |only Paladin
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Warlock\\Felsteed",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Warlock\\Felsteed",{
 keywords={"warlock","Felsteed","ground","mount"},
 mounts={5784},
 model={2346},
@@ -98,7 +98,7 @@ _Congratulations!_
 You are now the proud owner of a Felsteed.
 |only Warlock
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Warlock\\Dreadsteed",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Warlock\\Dreadsteed",{
 keywords={"warlock","Dreadsteed","ground","mount"},
 mounts={23161},
 model={14554},
@@ -117,7 +117,7 @@ _Congratulations!_
 You are now the proud owner of a Dreadsteed.
 |only Warlock
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Argent Warhorse",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Argent Warhorse",{
 keywords={"argent","warhorse","charger","tournament","ground","mount"},
 mounts={67466},
 model={28918,28919},
@@ -137,7 +137,7 @@ step
 learnmount Argent Charger##66906 |use Argent Charger##47179 |only Paladin
 learnmount Argent Warhorse##67466 |use Argent Warhorse##47180
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Darnassus Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Darnassus Mounts",{
 keywords={"darnassus","darnassian","nightsaber","swift","moonsaber","argent","tournament","ground","mount"},
 mounts={63637,65638},
 model={29256,14333},
@@ -156,7 +156,7 @@ step
 learnmount Darnassian Nightsaber##63637 |use Darnassian Nightsaber##45591
 learnmount Swift Moonsaber##65638 |use Swift Moonsaber##46744
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Exodar Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Exodar Mounts",{
 keywords={"exodar","elekk","great","red","argent","tournament","ground","mount"},
 mounts={63639,65637},
 model={29255,28606},
@@ -175,7 +175,7 @@ step
 learnmount Exodar Elekk##63639 |use Exodar Elekk##45590
 learnmount Great Red Elekk##65637 |use Great Red Elekk##46745
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Gnomeregan Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Gnomeregan Mounts",{
 keywords={"gnomeregan","mechanostrider","turbostrider","argent","tournament","ground","mount"},
 mounts={63638,65642},
 model={14375,28571},
@@ -194,7 +194,7 @@ step
 learnmount Gnomeregan Mechanostrider##63638 |use Gnomeregan Mechanostrider##45589
 learnmount Turbostrider##65642 |use Turbostrider##46747
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Ironforge Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Ironforge Mounts",{
 keywords={"ironforge","swift","violet","ram","argent","tournament","ground","mount"},
 mounts={63636,65643},
 model={29258,28612},
@@ -213,7 +213,7 @@ step
 learnmount Ironforge Ram##63636 |use Ironforge Ram##45586
 learnmount Swift Violet Ram##65643 |use Swift Violet Ram##46748
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Quel'dorei Steed",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Quel'dorei Steed",{
 keywords={"quel'dorei","steed","argent","tournament","ground","mount"},
 mounts={66090},
 model={28888},
@@ -229,7 +229,7 @@ buy 1 Quel'dorei Steed##46815 |goto Icecrown,76.2,19.6
 step
 learnmount Quel'dorei Steed##66090 |use Quel'dorei Steed##46815
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Stormwind Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Stormwind Mounts",{
 keywords={"stormwind","steed","swift","gray","argent","tournament","ground","mount"},
 mounts={63232,65640},
 model={29043,28912},
@@ -248,7 +248,7 @@ step
 learnmount Stormwind Steed##63232 |use Stormwind Steed##45125
 learnmount Swift Gray Steed##65640 |use Swift Gray Steed##46752
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\Darkmoon Faire Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\Darkmoon Faire Mounts",{
 keywords={"darkmoon","dancing","bear","swift","forest","strider","ground","mount"},
 mounts={103081},
 model={39060},
@@ -261,7 +261,7 @@ step
 Complete daily quests on Darkmoon Island until you have 360 Darkmoon Prize Tickets
 earn 360 Darkmoon Prize Ticket##515 |goto Darkmoon Island 48.6,69.8
 _
-Click here to load the Darkmoon Faire Dailies Guide |confirm |next "Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies" |only if ZGV.guidesets['DailiesACATA']
+Click here to load the Darkmoon Faire Dailies Guide |confirm |next "Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies" |only if ZGV.guidesets['DailiesACATA']
 step
 talk Lhara##14846
 buy Darkmoon Dancing Bear##73766 |goto Darkmoon Island 48.6,69.8
@@ -270,7 +270,7 @@ step
 learnmount Darkmoon Dancing Bear##103081 |use Darkmoon Dancing Bear##73766
 learnmount Swift Forest Strider##102346 |use Swift Forest Strider##72140
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\White Polar Bear",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\White Polar Bear",{
 keywords={"white","polar","bear","ground","mount"},
 mounts={54753},
 model={28428},
@@ -328,7 +328,7 @@ step
 learnmount White Polar Bear##54753 |use Reins of the White Polar Bear##43962
 Click here to return to the beginning of this guide. |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\Winterspring Frostsaber",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\Winterspring Frostsaber",{
 keywords={"winterspring","frostsaber","ground","mount"},
 mounts={17229},
 model={10426},
@@ -477,7 +477,7 @@ collect 1 Reins of the Winterspring Frostsaber##13086 |goto 46.6,17.6
 step
 learnmount Winterspring Frostsaber##17229 |use Reins of the Winterspring Frostsaber##13086
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Grey Riding Camel",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Grey Riding Camel",{
 keywords={"grey","riding","camel","ground","mount"},
 mounts={88750},
 model={35135},
@@ -490,293 +490,293 @@ This mount drops off a rare spawn called Dormus the Camel-Hoarder. You get to hi
 Check all the waypoints in each step for a chance to find the Camel Figurine.
 confirm
 step
-Next to this table in the inn. |goto 22.0,64.2
-confirm
+Next to this table in the inn.
+confirm |goto Uldum/0 22.0,64.2
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Under the this tent, next to some boxes. |goto 22.2,64.0
-confirm
+Under the this tent, next to some boxes.
+confirm |goto 22.2,64.0
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-In between the wagon and the stone rock. |goto 24.2,59.8
-confirm
+In between the wagon and the stone rock.
+confirm |goto 24.2,59.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Behind this wagon. |goto 24.6,60.0
-confirm
+Behind this wagon.
+confirm |goto 24.6,60.0
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this tall wooden post. |goto 25.4,65.6
-confirm
+Next to this tall wooden post.
+confirm |goto 25.4,65.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to the boxes with nets over them. |goto 25.6,65.8
-confirm
+Next to the boxes with nets over them.
+confirm |goto 25.6,65.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this wagon with the back down. |goto 26.2,64.8
-confirm
+Next to this wagon with the back down.
+confirm |goto 26.2,64.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this light colored log in the sand. |goto 26.2,65.2
-confirm
+Next to this light colored log in the sand.
+confirm |goto 26.2,65.2
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to the stairs at this wall. |goto 28.6,63.6
-confirm
+Next to the stairs at this wall.
+confirm |goto 28.6,63.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to the corner of this wall. |goto 30.2,62.8
-confirm
+Next to the corner of this wall.
+confirm |goto 30.2,62.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this tall and wide pillar. |goto 30.4,60.6
-confirm
+Next to this tall and wide pillar.
+confirm |goto 30.4,60.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-At the bottom of these stairs. |goto 30.8,67.4
-confirm
+At the bottom of these stairs.
+confirm |goto 30.8,67.4
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-At the top of these stairs, next to the stone ramp and pillar. |goto 31.0,66.2
-confirm
+At the top of these stairs, next to the stone ramp and pillar.
+confirm |goto 31.0,66.2
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this pillar, near the stairs going down. |goto 31.6,69.2
-confirm
+Next to this pillar, near the stairs going down.
+confirm |goto 31.6,69.2
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this tall wide pillar. |goto 33.0,59.8
-confirm
+Next to this tall wide pillar.
+confirm |goto 33.0,59.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-At the top of these stairs. |goto 33.0,67.6
-confirm
+At the top of these stairs.
+confirm |goto 33.0,67.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-On this platform in the water. |goto 33.0,71.8
-confirm
+On this platform in the water.
+confirm |goto 33.0,71.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this door and small stairway. |goto 33.2,62.8
-confirm
+Next to this door and small stairway.
+confirm |goto 33.2,62.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this pillar and ledge. |goto 37.0,64.2
-confirm
+Next to this pillar and ledge.
+confirm |goto 37.0,64.2
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-At the bottom of these stairs. |goto 38.2,60.4
-confirm
+At the bottom of these stairs.
+confirm |goto 38.2,60.4
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-At the edge of this small cliff. |goto 38.6,54.8
-confirm
+At the edge of this small cliff.
+confirm |goto 38.6,54.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this bench. |goto 47.2,76.8
-confirm
+Next to this bench.
+confirm |goto 47.2,76.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-At the top of these stairs. |goto 49.0,75.8
-confirm
+At the top of these stairs.
+confirm |goto 49.0,75.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this tree. |goto 49.2,75.8
-confirm
+Next to this tree.
+confirm |goto 49.2,75.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to these carts with items inside. |goto 50.2,73.4
-confirm
+Next to these carts with items inside.
+confirm |goto 50.2,73.4
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to these tables with weapons on them. |goto 50.4,73.6
-confirm
+Next to these tables with weapons on them.
+confirm |goto 50.4,73.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to these tables with weapons on them. |goto 50.4,72.4
-confirm
+Next to these tables with weapons on them.
+confirm |goto 50.4,72.4
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to these tables with weapons on them. |goto 50.6,72.2
-confirm
+Next to these tables with weapons on them.
+confirm |goto 50.6,72.2
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to these wagons and this table with weapons. |goto 51.0,79.6
-confirm
+Next to these wagons and this table with weapons.
+confirm |goto 51.0,79.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to these square stones. |goto 51.8,70.6
-confirm
+Next to these square stones.
+confirm |goto 51.8,70.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Inside this room, check all 4 corners. |goto 73.4,73.8
-confirm
+Inside this room, check all 4 corners.
+confirm |goto 73.4,73.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Look around both sets of stairs here. |goto 70.0,58.2
-confirm
+Look around both sets of stairs here.
+confirm |goto 70.0,58.2
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this little stone house. |goto 72.0,44.0
-confirm
+Next to this little stone house.
+confirm |goto 72.0,44.0
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-In this corner with piles of sand. |goto 64.6,30.4
-confirm
+In this corner with piles of sand.
+confirm |goto 64.6,30.4
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-On the edge of this tile in a star formation. |goto 52.4,28.0
-confirm
+On the edge of this tile in a star formation.
+confirm |goto 52.4,28.0
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this pillar and rocks on the ground. |goto 52.2,27.8
-confirm
+Next to this pillar and rocks on the ground.
+confirm |goto 52.2,27.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this tropical tree. |goto 50.6,31.6
-confirm
+Next to this tropical tree.
+confirm |goto 50.6,31.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this burried pillar. |goto 45.2,15.8
-confirm
+Next to this burried pillar.
+confirm |goto 45.2,15.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this tent with a bonfire nearby. |goto 34.2,21.4
-confirm
+Next to this tent with a bonfire nearby.
+confirm |goto 34.2,21.4
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this wall. |goto 34.2,19.6
-confirm
+Next to this wall.
+confirm |goto 34.2,19.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this group of tents. |goto 33.8,25.4
-confirm
+Next to this group of tents.
+confirm |goto 33.8,25.4
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-On top of this pillar. |goto 33.2,28.8
-confirm
+On top of this pillar.
+confirm |goto 33.2,28.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-In this rubble, next to the building. |goto 33.2,28.2
-confirm
+In this rubble, next to the building.
+confirm |goto 33.2,28.2
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-In between these two trees with shrubbery. |goto 29.8,25.0
-confirm
+In between these two trees with shrubbery.
+confirm |goto 29.8,25.0
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this Rock and Tree. |goto 29.8,20.6
-confirm
+Next to this Rock and Tree.
+confirm |goto 29.8,20.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this group of trees. |goto 51.8,49.6
-confirm
+Next to this group of trees.
+confirm |goto 51.8,49.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-In this middle area of these houses. |goto 52.0,51.0
-confirm
+In this middle area of these houses.
+confirm |goto 52.0,51.0
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this small building. |goto 51.4,51.2
-confirm
+Next to this small building.
+confirm |goto 51.4,51.2
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-At the bottom of this ramp. |goto 50.6,50.6
-confirm
+At the bottom of this ramp.
+confirm |goto 50.6,50.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this group of trees, on this cliff. |goto 48.0,46.6
-confirm
+Next to this group of trees, on this cliff.
+confirm |goto 48.0,46.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to these group of trees. |goto 46.2,44.8
-confirm
+Next to these group of trees.
+confirm |goto 46.2,44.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this rock formation. |goto 40.8,49.8
-confirm
+Next to this rock formation.
+confirm |goto 40.8,49.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-In the middle of this rubble. |goto 40.2,43.2
-confirm
+In the middle of this rubble.
+confirm |goto 40.2,43.2
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this very little doorway with a triangle on it. |goto 40.0,44.8
-confirm
+Next to this very little doorway with a triangle on it.
+confirm |goto 40.0,44.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this large pillar and wall with birds on it. |goto 40.0,38.6
-confirm
+Next to this large pillar and wall with birds on it.
+confirm |goto 40.0,38.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-At the bottom of these stairs. |goto 32.6,47.8
-confirm
+At the bottom of these stairs.
+confirm |goto 32.6,47.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to the Pile of bones and this small cliff. |goto 32.0,45.0
-confirm
+Next to the Pile of bones and this small cliff.
+confirm |goto 32.0,45.0
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this wagon with items inside it. |goto 25.4,51.2
-confirm
+Next to this wagon with items inside it.
+confirm |goto 25.4,51.2
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
@@ -789,7 +789,7 @@ collect 1 Reins of the Grey Riding Camel##63046 |n
 _
 learnmount Grey Riding Camel##88750 |use Reins of the Grey Riding Camel##63046
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Amani Battle Bear",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Amani Battle Bear",{
 keywords={"amani","battle","bear","ground","mount"},
 mounts={98204},
 model={38261},
@@ -820,7 +820,7 @@ collect 1 Amani Battle Bear##69747 |tip As long as you saved all 4 sacrifices th
 step
 learnmount Amani Battle Bear##98204 |use Amani Battle Bear##69747
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Raven Lord",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Raven Lord",{
 keywords={"raven","lord","ground","mount"},
 mounts={41252},
 model={21427},
@@ -837,7 +837,7 @@ Note that if it doesn't drop, you will have to wait until tomorrow for a chance 
 step
 learnmount Raven Lord##41252 |use Reins of the Raven Lord##32768
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Rivendare's Deathcharger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Rivendare's Deathcharger",{
 keywords={"rivendare's","deathcharger","skeletal","warhorse","ground","mount"},
 mounts={17481},
 model={16937},
@@ -869,7 +869,7 @@ collect 1 Deathcharger's Reins##13335 |goto Stratholme/2 37.1,19.9
 step
 learnmount Rivendare's Deathcharger##17481 |use Deathcharger's Reins##13335
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Swift White Hawkstrider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Swift White Hawkstrider",{
 keywords={"swift","white","hawkstrider","ground","mount"},
 mounts={46628},
 model={19483},
@@ -886,7 +886,7 @@ Note that if it doesn't drop, you will have to wait until tomorrow for a chance 
 step
 learnmount Swift White Hawkstrider##46628 |use Reins of the Swift White Hawkstrider##35513
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Swift Zulian Panther and Armored Razzashi Raptor",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Swift Zulian Panther and Armored Razzashi Raptor",{
 keywords={"swift","zulian","panther","armored","razzashi","raptor","ground","mount"},
 mounts={96499,96491},
 model={37799},
@@ -917,7 +917,7 @@ label "end0"
 learnmount Swift Zulian Panther##96499 |use Swift Zulian Panther##68824
 learnmount Armored Razzashi Raptor##96491 |use Armored Razzashi Raptor##68823
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Wooly Mammoth",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Wooly Mammoth",{
 keywords={"wooly","mammoth","ground","mount"},
 mounts={59791},
 model={26424},
@@ -932,7 +932,7 @@ talk Mei Francis##32216
 buy 1 Reins of the Wooly Mammoth##44230 |goto Dalaran 58.1,42.1
 learnmount Wooly Mammoth##59791 |goto Dalaran 58.1,42.1 |use Reins of the Wooly Mammoth##44230
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Brewfest\\Brewfest Rams",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Brewfest\\Brewfest Rams",{
 keywords={"brewfest","ram","swift","ground","mount"},
 mounts={24368},
 model={22350},
@@ -950,7 +950,7 @@ step
 learnmount Swift Brewfest Ram##24368 |use Swift Brewfest Ram##33977
 learnmount Brewfest Ram##23588 |use Swift Brewfest Ram##33976
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Brewfest\\Great Brewfest Kodo",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Brewfest\\Great Brewfest Kodo",{
 author="support@zygorguides.com",
 keywords={"great","brewfest","kodo","ground","mount"},
 mounts={49379},
@@ -970,7 +970,7 @@ collect 1 Great Brewfest Kodo##37828
 step
 learnmount Great Brewfest Kodo##49379 |use Great Brewfest Kodo##37828
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Darkmoon Faire\\Moonfang",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Darkmoon Faire\\Moonfang",{
 keywords={"moonfang","darkmoon","faire","ground","mount"},
 model={49249},
 mounts={145133},
@@ -987,7 +987,7 @@ step
 Use the _Shimmering Moonstone_ in your bags |use Shimmering Moonstone##101675
 learnmount Moonfang##145133
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Love is in the Air\\Swift Lovebird",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Love is in the Air\\Swift Lovebird",{
 author="support@zygorguides.com",
 keywords={"swift","lovebird","tallstrider","ground","mount"},
 mounts={102350},
@@ -1005,7 +1005,7 @@ buy Swift Lovebird##72146 |goto Stormwind City,62.5,75.3
 step
 learnmount Swift Lovebird##102350 |use Swift Lovebird##72146
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Noblegarden\\Swift Springstrider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Noblegarden\\Swift Springstrider",{
 author="support@zygorguides.com",
 keywords={"swift","springstrider","tallstrider","ground","mount"},
 mounts={102349},
@@ -1023,7 +1023,7 @@ buy 1 Swift Springstrider##72145 |goto Teldrassil 55.7,51.3
 step
 learnmount Swift Springstrider##102349 |use Swift Springstrider##72145
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Elekk Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Elekk Mounts",{
 keywords={"elekk","great","blue","green","purple","gray","brown","ground","mount"},
 mounts={35711,35710,35714,34406,35712,35713},
 model={19873},
@@ -1050,7 +1050,7 @@ learnmount Brown Elekk##34406 |use Brown Elekk##28481
 learnmount Gray Elekk##35710 |use Gray Elekk##29744
 learnmount Purple Elekk##35711 |use Purple Elekk##29743
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Horse Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Horse Mounts",{
 keywords={"swift","brown","steed","palomino","stallion","horse","mare","pinto","chestnut","ground","mount"},
 mounts={23229,23227,23228,458,6648,472},
 model={14338},
@@ -1079,7 +1079,7 @@ learnmount Brown Horse##458 |use Brown Horse Bridle##5656
 learnmount Chestnut Mare##6648 |use Chestnut Mare Bridle##5655
 learnmount Pinto##472 |use Pinto Bridle##2414
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Mechanostrider Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Mechanostrider Mounts",{
 kewords="swift green mechanostrider white yellow blue red unpainted ground mount",
 mounts={23225,23223,23222,10969,17453,10873,17454},
 model={31670},
@@ -1106,7 +1106,7 @@ learnmount Green Mechanostrider##17453 |use Green Mechanostrider##13321
 learnmount Red Mechanostrider##10873 |use Red Mechanostrider##8563
 learnmount Unpainted Mechanostrider##17454 |use Unpainted Mechanostrider##13322
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Ram Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Ram Mounts",{
 keywords={"swift","brown","ram","gray","white","ground","mount"},
 mounts={6898,6777,6899,23240,23239,23238},
 model={14347},
@@ -1131,7 +1131,7 @@ learnmount Brown Ram##6899 |use Brown Ram##5872
 learnmount Gray Ram##6777 |use Gray Ram##5864
 learnmount White Ram##6898 |use White Ram##5873
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Tiger Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Tiger Mounts",{
 keywords={"swift","frostsaber","mistsaber","stormsaber","dawnsaber","spotted","striped","ground","mount"},
 mounts={23221,23219,23338,10789,66847,8394,10793},
 model={14332},
@@ -1161,7 +1161,7 @@ learnmount Striped Dawnsaber##66847 |use Reins of the Striped Dawnsaber##47100
 learnmount Striped Frostsaber##8394 |use Reins of the Striped Frostsaber##8631
 learnmount Striped Nightsaber##10793 |use Reins of the Striped Nightsaber##8629
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black Battlestrider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black Battlestrider",{
 keywords={"black","battlestrider","ground","mount"},
 mounts={22719},
 model={14372},
@@ -1178,7 +1178,7 @@ talk Lieutenant Karter##12783
 buy 1 Black Battlestrider##29465 |n |goto Stormwind City,76.2,65.6
 learnmount Black Battlestrider##22719 |use Black Battlestrider##29465
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Bear",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Bear",{
 keywords={"black","war","bear","ground","mount"},
 mounts={60119},
 model={27819},
@@ -1192,7 +1192,7 @@ collect 1 Black War Bear##44224 |n
 |tip When you complete the achievement check your in-game mailbox for the mount.
 learnmount Black War Bear##60119 |use Black War Bear##44224
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Elekk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Elekk",{
 keywords={"black","war","elekk","ground","mount"},
 mounts={48027},
 model={23928},
@@ -1209,7 +1209,7 @@ talk Lieutenant Karter##12783
 buy 1 Reins of the Black War Elekk##35906 |n |goto Stormwind City,76.2,65.6
 learnmount Black War Elekk##48027 |use Reins of the Black War Elekk##35906
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Mammoth",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Mammoth",{
 keywords={"black","war","mammoth","ground","mount"},
 mounts={59785},
 model={25450},
@@ -1227,7 +1227,7 @@ buy 1 Reins of the Black War Mammoth##43956 |n |goto Wintergrasp 51.6,17.6
 |tip You cannot buy this mount unless your faction controls Wintergrasp.
 learnmount Black War Mammoth##59785 |use Reins of the Black War Mammoth##43956
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Ram",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Ram",{
 keywords={"black","war","ram","ground","mount"},
 mounts={22720},
 model={14577},
@@ -1244,7 +1244,7 @@ talk Lieutenant Karter##12783
 buy 1 Black War Ram##29467 |n |goto Stormwind City,76.2,65.6
 learnmount Black War Ram##22720 |use Black War Ram##29467
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Steed",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Steed",{
 keywords={"black","war","steed","ground","mount"},
 mounts={22717},
 model={14337},
@@ -1261,7 +1261,7 @@ talk Lieutenant Karter##12783
 buy 1 Black War Steed Bridle##29468 |n |goto Stormwind City,76.2,65.6
 learnmount Black War Steed##22717 |use Black War Steed Bridle##29468
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Tiger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Tiger",{
 keywords={"black","war","tiger","ground","mount"},
 mounts={22723},
 model={14330},
@@ -1278,7 +1278,7 @@ talk Lieutenant Karter##12783
 buy 1 Reins of the Black War Tiger##29471 |n |goto Stormwind City,76.2,65.6
 learnmount Black War Tiger##22723 |use Reins of the Black War Tiger##29471
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Dark War Talbuk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Dark War Talbuk",{
 keywords={"dark","war","talbuk","ground","mount"},
 mounts={34790},
 model={19303},
@@ -1302,7 +1302,7 @@ talk Aldraan##21485
 buy 1 Reins of the Dark War Talbuk##29228 |n |goto 42.8,42.6
 learnmount Dark War Talbuk##34790 |use Reins of the Dark War Talbuk##29228
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Dark Riding Talbuk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Dark Riding Talbuk",{
 keywords={"dark","riding","talbuk","ground","mount"},
 mounts={39316},
 model={21074},
@@ -1328,7 +1328,7 @@ talk Aldraan##21485
 buy 1 Reins of the Dark Riding Talbuk##28915 |n |goto 42.8,42.6
 learnmount Dark Riding Talbuk##39316 |use Reins of the Dark Riding Talbuk##28915
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Stormpike Battle Charger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Stormpike Battle Charger",{
 keywords={"stormpike","battle","charger","ram","ground","mount"},
 mounts={23510},
 model={14777},
@@ -1345,7 +1345,7 @@ talk Thanthaldis Snowgleam##13217
 buy 1 Stormpike Battle Charger##19030 |n |goto Hillsbrad Foothills,44.6,46.6
 learnmount Stormpike Battle Charger##23510 |use Stormpike Battle Charger##19030
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Archaeology\\Fossilized Raptor",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Archaeology\\Fossilized Raptor",{
 keywords={"fossilized","raptor","archaeology","ground","mount"},
 mounts={84751},
 model={34410},
@@ -1368,7 +1368,7 @@ collect 1 Fossilized Raptor##60954
 step
 learnmount Fossilized Raptor##84751 |use Fossilized Raptor##60954
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Archaeology\\Ultramarine Qiraji Battle Tank",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Archaeology\\Ultramarine Qiraji Battle Tank",{
 keywords={"silithid","bug","ground","mount"},
 mounts={92155},
 model={15678},
@@ -1392,7 +1392,7 @@ collect 1 Scepter of Azj'Aqir##64883
 step
 learnmount Ultramarine Qiraji Battle Tank##92155 |use Scepter of Azj'Aqir##64883
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Engineering\\Mekgineer's Chopper",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Engineering\\Mekgineer's Chopper",{
 keywords={"chopper","motorcycle","mekengineer's","mekgineer's","ground","mount"},
 mounts={60424},
 model={25870},
@@ -1524,7 +1524,7 @@ step
 learnmount Mekgineer's Chopper##60424 |use Mekgineer's Chopper##44413
 |tip Get to the Choppa!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Flametalon of Alysrazor",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Flametalon of Alysrazor",{
 author="support@zygorguides.com",
 keywords={"Flametalon","of","Alysrazor","mount","ground"},
 mounts={101542},
@@ -1539,7 +1539,7 @@ collect 1 Flametalon of Alysrazor##71665 |goto Firelands/1 63.1,49.3
 step
 learnmount Flametalon of Alysrazor##101542 |use Flametalon of Alysrazor##71665
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Fiery Warhorse",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Fiery Warhorse",{
 keywords={"fiery","warhorse","horse","karazhan","ground","mount"},
 mounts={36702},
 model={19640},
@@ -1553,7 +1553,7 @@ collect 1 Fiery Warhorse's Reins##30480 |goto Karazhan 45.7,83.3
 step
 learnmount Fiery Warhorse##36702 |use Fiery Warhorse's Reins##30480
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Grand Black War Mammoth",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Grand Black War Mammoth",{
 keywords={"grand","black","war","mammoth","vault","archavon","ground","mount"},
 mounts={61467},
 model={27241},
@@ -1570,7 +1570,7 @@ collect 1 Reins of the Grand Black War Mammoth##44083 |goto Vault of Archavon 50
 step
 learnmount Grand Black War Mammoth##61467 |use Reins of the Grand Black War Mammoth##44083
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Qiraji Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Qiraji Mounts",{
 keywords={"blue","green","red","yellow","qiraji","resonating","crystal","battle","tank","ahn'qiraj","fallen","kingdom","ground","mount"},
 mounts={25953,26056,26054,26055},
 model={15681},
@@ -1593,7 +1593,7 @@ learnmount Green Qiraji Battle Tank##26056 |use Green Qiraji Resonating Crystal#
 learnmount Red Qiraji Battle Tank##26054 |use Red Qiraji Resonating Crystal##21321
 learnmount Yellow Qiraji Battle Tank##26055 |use Yellow Qiraji Resonating Crystal##21324
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Camel Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Camel Mounts",{
 keywords={"camel","brown","riding","tan","ramkahen","exalted","ground","mount"},
 mounts={88748,88749},
 model={37492},
@@ -1609,7 +1609,7 @@ You can use our _dailies guide_ to earn reputation, or use our _leveling guide_ 
 Lastly, you can run dungeons with the _Ramkahen Tabard_ and continue to earn rep this way.
 Click here to use the Dailies guide |confirm |next "dailies"
 _
-Click here to go to the leveling section to work on this rep |confirm |next "Zygor's Leveling Guides\\Cataclysm 80-85\\Uldum (83-84)" |only if ZGV.guidesets['LevelingACATA']
+Click here to go to the leveling section to work on this rep |confirm |next "Leveling Guides\\Cataclysm 80-85\\Uldum (83-84)" |only if ZGV.guidesets['LevelingACATA']
 step
 label "dailies"
 talk Nomarch Teneth##46603
@@ -1643,7 +1643,7 @@ _
 learnmount Brown Riding Camel##88748 |goto Uldum,54.0,33.3 |use Reins of the Brown Riding Camel##63044
 learnmount Tan Riding Camel##88749 |goto Uldum,54.0,33.3 |use Reins of the Tan Riding Camel##63045
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Golden King",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Golden King",{
 keywords={"golden","king","lion","guild","exalted","ground","mount"},
 mounts={90621},
 model={36213},
@@ -1659,7 +1659,7 @@ buy 1 Reins of the Golden Lion King##62298 |goto Stormwind City,64.6,76.8
 step
 learnmount Golden King##90621 |use Reins of the Golden Lion King##62298
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Ice Mammoth & Grand Ice Mammoth",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Ice Mammoth & Grand Ice Mammoth",{
 keywords={"grand","ice","mammoth","the","sons","of","hodir","exalted","ground","mount"},
 achieveid={2082,2083},
 mounts={59799},
@@ -1925,7 +1925,7 @@ step
 learnmount Ice Mammoth##59799 |use Reins of the Ice Mammoth##43958
 learnmount Grand Ice Mammoth##61470 |use Reins of the Grand Ice Mammoth##43961
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Mountain Horse Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Mountain Horse Mounts",{
 keywords={"swift","mountain","horse","gilneas","exalted","ground","mount"},
 mounts={103196,103195},
 model={65},
@@ -1948,7 +1948,7 @@ learnmount Swift Mountain Horse##103196 |use Swift Mountain Horse##73839
 learnmount Mountain Horse##103195 |use Mountain Horse##73838
 |tip These mounts are Alliance only.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Spectral Steed",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Spectral Steed",{
 keywords={"spectral","steed","exalted","the","baradin","wardens","tol","barad","ground","mount"},
 mounts={92231},
 model={37259},
@@ -2192,7 +2192,7 @@ talk Quartermaster Brazie##47328
 buy 1 Reins of the Spectral Steed##64998 |n
 learnmount Spectral Steed##92231 |goto Tol Barad Peninsula,72.6,62.6 |use Reins of the Spectral Steed##64998
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Talbuk Mounts",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Talbuk Mounts",{
 keywords={"talbuk","cobalt","war","silver","riding","tan","white","the","kurenai","exalted","ground","mount"},
 mounts={39315,34896,39317,34898,39318,34899,39319,34897},
 model={19377},
@@ -2591,7 +2591,7 @@ learnmount Tan War Talbuk##34899 |use Reins of the Tan War Talbuk##29230
 learnmount White Riding Talbuk##39319 |use Reins of the White Riding Talbuk##31836
 learnmount White War Talbuk##34897 |use Reins of the White War Talbuk##29231
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Big Battle Bear",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Big Battle Bear",{
 keywords={"trading","card","game","big","battle","bear","ground","mount"},
 mounts={51412},
 model={25335},
@@ -2602,7 +2602,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually they are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Magic Rooster",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Magic Rooster",{
 keywords={"trading","card","game","magic","rooster","ground","mount"},
 mounts={65917},
 model={29344},
@@ -2613,7 +2613,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually they are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Riding Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Riding Turtle",{
 keywords={"trading","card","game","riding","turtle","ground","mount"},
 mounts={30174},
 model={17158},
@@ -2633,7 +2633,7 @@ kill Lunarfall Cavedweller##85715
 collect Riding Turtle##23720
 |tip The Riding Turtle has an even lower chance to drop off of every Lunarfall Cavedweller.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Savage Raptor",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Savage Raptor",{
 keywords={"trading","card","game","savage","raptor","ground","mount"},
 mounts={97581},
 model={38048},
@@ -2644,7 +2644,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually they are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Spectral Tiger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Spectral Tiger",{
 keywords={"trading","card","game","spectral","tiger","ground","mount"},
 mounts={42777},
 model={21974},
@@ -2655,7 +2655,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually they are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Swift Shorestrider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Swift Shorestrider",{
 keywords={"trading","card","game","swift","shorestrider","tallstrider","ground","mount"},
 mounts={101573},
 model={17011},
@@ -2666,7 +2666,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually they are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\White Riding Camel",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\White Riding Camel",{
 keywords={"trading","card","game","white","riding","camel","ground","mount"},
 mounts={102488},
 model={35899},
@@ -2677,7 +2677,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually they are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Wooly White Rhino",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Wooly White Rhino",{
 keywords={"trading","card","game","wooly","white","rhino","ground","mount"},
 mounts={74918},
 model={31721},
@@ -2688,7 +2688,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually they are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Amani War Bear",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Amani War Bear",{
 keywords={"amani","war","bear","zul","aman","zul'aman"},
 mounts={43688},
 model={22464},
@@ -2698,7 +2698,7 @@ step
 The Amani War Bear was the reward for completing the timed even in the original version of Zul'Aman
 This mount was retired from service in patch 3.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Ancient Frostsaber",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Ancient Frostsaber",{
 keywords={"acient","frost","saber","frostsaber"},
 mounts={16056},
 model={9695},
@@ -2708,7 +2708,7 @@ step
 The Ancient Frostsaber was one of the original level 60 epic mounts
 This mount was retired from service in patch 1.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Black Nightsaber",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Black Nightsaber",{
 keywords={"black","night","saber","nightsaber"},
 mounts={16055},
 model={9991},
@@ -2718,7 +2718,7 @@ step
 The Black Nightsaber was one of the original level 60 epic mounts
 This mount was retired from service in patch 1.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Black Qiraji Battle Tank",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Black Qiraji Battle Tank",{
 keywords={"black","qiraji","battle","tank","bug"},
 mounts={26656},
 model={15676},
@@ -2728,7 +2728,7 @@ step
 The Black Qiraji Battle Tank was awarded to anyone who rang the gong within 10 hours on each server to complete the questline required to open the Temple of An'Qiraj
 This mount was retired from service in patch 4.0.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Black Ram",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Black Ram",{
 keywords={"black","ram"},
 mounts={17461},
 model={2784},
@@ -2738,7 +2738,7 @@ step
 The Black Ram was one of the original level 60 epic mounts
 This mount was retired from service in patch 1.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Brewfest Ram",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Brewfest Ram",{
 keywords={"brewfest","brew","fest","ram"},
 mounts={43899},
 model={22265},
@@ -2748,7 +2748,7 @@ step
 The Brewfest Ram was the original reward for the 2007 Brewfest in-game event.
 This mount is only available if you completed the Brewfest event in 2007, in which case it can be purchased from the mount vendor in Amberstill Ranch.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Crusader's White Warhorse",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Crusader's White Warhorse",{
 keywords={"crusaders","crusader's","white","war","horse","warhorse"},
 mounts={68187},
 model={29937},
@@ -2758,7 +2758,7 @@ step
 The Crusader's White Warhorse was the reward for completing the achievement "A Tribute to Immortality"
 This mount was retired from service in patch 4.0.3 along with the Tribute Chest in Trial of the Grand Crusader
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Frost Ram",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Frost Ram",{
 keywords={"frost","ram"},
 mounts={17460},
 model={2787},
@@ -2768,7 +2768,7 @@ step
 The Frost Ram was one of the original level 60 epic mounts
 This mount was retired from service in patch 1.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Icy Blue Mechanostrider Mod A",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Icy Blue Mechanostrider Mod A",{
 keywords={"icy","blue","mechano","strider","mod","a","mechanostrider"},
 mounts={17459},
 model={10666},
@@ -2778,7 +2778,7 @@ step
 The Icy Blue Mechanostrider Mod A was one of the original level 60 epic mounts
 This mount was retired from service in patch 1.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Palomino",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Palomino",{
 keywords={"palomino","palamino"},
 mounts={16082},
 model={2408},
@@ -2788,7 +2788,7 @@ step
 The Palomino was one of the original level 60 epic mounts
 This mount was retired from service in patch 1.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Swift Alliance Steed",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Swift Alliance Steed",{
 keywords={"swift","alliance","steed"},
 mounts={68057},
 model={29284},
@@ -2798,7 +2798,7 @@ step
 The Swift Alliance Steed dropped from the Argent Crusader Tribute Chest in Trial of the Grand Crusader (10H) with all 50 attempts left
 This mount was retired from service in patch 4.0.3 along with the Tribute Chest in Trial of the Grand Crusader
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Swift Razzashi Raptor",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Swift Razzashi Raptor",{
 keywords={"swift","razzashi","raptor"},
 mounts={24242},
 model={15289},
@@ -2809,7 +2809,7 @@ The Swift Razzashi Raptor dropped from the original Zul'Gurub 10 man raid instan
 This mount was removed from the drop table when the Cataclsym expansion release and Zul'Gurub was remade.
 |tip This mount will sometimes be on the BMAH to bid on.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Swift Zulian Tiger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Swift Zulian Tiger",{
 keywords={"swift","zulian","tigar"},
 mounts={24252},
 model={15290},
@@ -2820,7 +2820,7 @@ The Swift Zulian Tiger dropped from the original Zul'Gurub 10 man raid instance
 This mount was removed from the drop table when the Cataclsym expansion release and Zul'Gurub was remade.
 |tip This mount will sometimes be on the BMAH to bid on.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\White Mechanostrider Mod B",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\White Mechanostrider Mod B",{
 keywords={"white","mechano","strider","mod","b","mechanostrider"},
 mounts={15779},
 model={9474},
@@ -2830,7 +2830,7 @@ step
 The White Mechanostrider Mod B was one of the original level 60 epic mounts
 This mount was retired from service in patch 1.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\White Stallion",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\White Stallion",{
 keywords={"white","stallion"},
 mounts={16083},
 model={2410},
@@ -2840,7 +2840,7 @@ step
 The White Stallion was one of the original level 60 epic mounts
 This mount was retired from service in patch 1.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Armored Brown Bear",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Armored Brown Bear",{
 keywords={"armored","brown","bear","ground","mount"},
 mounts={60114},
 model={27821},
@@ -2856,7 +2856,7 @@ buy 1 Reins of the Armored Brown Bear##44225 |goto Dalaran,58.1,42.1
 step
 learnmount Armored Brown Bear##60116 |use Reins of the Armored Brown Bear##44225
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Traveler's Tundra Mammoth",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Traveler's Tundra Mammoth",{
 keywords={"traveler's","tundra","mammoth","vendor","mount","ground"},
 mounts={61425},
 model={25451},
@@ -2871,7 +2871,7 @@ talk Mei Francis##32216
 buy Reins of the Traveler's Tundra Mammoth##44235 |n
 learnmount Traveler's Tundra Mammoth##61425 |goto Dalaran 58.1,42.1 |use Reins of the Traveler's Tundra Mammoth##44235
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Albino Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Albino Drake",{
 keywords={"albino","drake","flying","mount"},
 mounts={60025},
 model={6372},
@@ -2884,7 +2884,7 @@ collect 1 Reins of the Albino Drake##44178
 step
 learnmount Albino Drake##60025 |use Reins of the Albino Drake##44178
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Bloodbathed Frostbrood Vanquisher",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Bloodbathed Frostbrood Vanquisher",{
 keywords={"bloodbathed","frostbrood","vanquisher","flying","mount"},
 mounts={72808},
 model={31156},
@@ -2897,7 +2897,7 @@ collect Reins of the Bloodbathed Frostbrood Vanquisher##51954
 step
 learnmount Bloodbathed Frostbrood Vanquisher##72808 |use Reins of the Bloodbathed Frostbrood Vanquisher##51954
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Blue Dragonhawk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Blue Dragonhawk",{
 keywords={"blue","dragonhawk","flying","mount"},
 mounts={61996},
 model={27525},
@@ -2910,7 +2910,7 @@ collect 1 Blue Dragonhawk##44843
 step
 learnmount Blue Dragonhawk##61996 |use Blue Dragonhawk##44843
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Corrupted Fire Hawk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Corrupted Fire Hawk",{
 keywords={"corrupted","fire","hawk","firehawk","flying","mount"},
 mounts={97560},
 model={38046},
@@ -2923,7 +2923,7 @@ collect Corrupted Egg of Millagazor##69230
 step
 learnmount Corrupted Fire Hawk##97560 |use Corrupted Egg of Millagazor##69230
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Drake of the East Wind",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Drake of the East Wind",{
 keywords={"drake","of","the","east","wind","flying","mount"},
 mounts={88335},
 model={35757},
@@ -3067,7 +3067,7 @@ collect Reins of the Drake of the East Wind##62901
 step
 learnmount Drake of the East Wind##88335 |use Reins of the Drake of the East Wind##62901
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Flameward Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Flameward Hippogryph",{
 keywords={"flameward","hippogryph","flying","mount"},
 mounts={97359},
 model={38018},
@@ -3080,7 +3080,7 @@ collect Flameward Hippogryph##69213
 step
 learnmount Flameward Hippogryph##97359 |use Flameward Hippogryph##69213
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Green Proto-Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Green Proto-Drake",{
 keywords={"green","proto","drake","proto-drake","the","oracles","exalted","flying","mount"},
 mounts={61294},
 model={28053},
@@ -3114,7 +3114,7 @@ collect Reins of the Green Proto-Drake##44707 |n
 _
 learnmount Green Proto-Drake##61294 |use Reins of the Green Proto-Drake##44707
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Icebound Frostbrood Vanquisher",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Icebound Frostbrood Vanquisher",{
 keywords={"icebound","frostbrood","vanquisher","flying","mount"},
 mounts={72807},
 model={31154},
@@ -3127,7 +3127,7 @@ collect Reins of the Icebound Frostbrood Vanquisher##51955
 step
 learnmount Icebound Frostbrood Vanquisher##72807 |use Reins of the Icebound Frostbrood Vanquisher##51955
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Ironbound Proto-Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Ironbound Proto-Drake",{
 keywords={"ironbound","proto-drake","proto","drake","flying","mount"},
 mounts={63956},
 model={28953},
@@ -3135,67 +3135,67 @@ description="This guide will help you acquire the Ironbound Proto-Drake mount.",
 },[[
 step
 kill Flame Leviathan##33113
-Click here to load the "Orbit-uary" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Orbit-uary"
+Click here to load the "Orbit-uary" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Orbit-uary"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Orbit-uary_ achievement |achieve 12401/1 |goto Ulduar/1 49,40
 step
 kill Ignis the Furnace Master##33118
-Click here to load the "Stokin' the Furnace" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Stokin' the Furnace"
+Click here to load the "Stokin' the Furnace" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Stokin' the Furnace"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Stokin' the Furnace_ achievement |achieve 12401/2 |goto 37.5,26.5
 step
 kill Razorscale##33186
-Click here to load the "Iron Dwarf, Medium Rare" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Iron Dwarf, Medium Rare"
+Click here to load the "Iron Dwarf, Medium Rare" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Iron Dwarf, Medium Rare"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Iron Dwarf, Medium Rare_ achievement |achieve 12401/3 |goto 54.1,26.3
 step
 kill XT-002 Deconstructor##33293
-Click here to load the "Heartbreaker" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Heartbreaker"
+Click here to load the "Heartbreaker" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Heartbreaker"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Heartbreaker_ achievement |achieve 12401/4 |goto 48.5,13.9
 step
 Kill the Assembly of Iron
-Click here to load the "I Choose You, Steelbreaker" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\I Choose You, Steelbreaker"
+Click here to load the "I Choose You, Steelbreaker" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\I Choose You, Steelbreaker"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _I Choose You, Steelbreaker_ achievement |achieve 12401/5 |goto Ulduar/2 15,56
 step
 kill Kologarn##32930
-Click here to load the "Disarmed" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Disarmed"
+Click here to load the "Disarmed" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Disarmed"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Disarmed_ achievement |achieve 12401/6 |goto 37.3,14.0
 step
 kill Auriaya##33515
-Click here to load the "Crazy Cat Lady" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Crazy Cat Lady"
+Click here to load the "Crazy Cat Lady" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Crazy Cat Lady"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Crazy Cat Lady_ achievement |achieve 12401/7 |goto Ulduar/3 52.90,74.15
 step
 kill Hodir##32845
-Click here to load the "I Could Say That This Cache Was Rare" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\I Could Say That This Cache Was Rare"
+Click here to load the "I Could Say That This Cache Was Rare" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\I Could Say That This Cache Was Rare"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _I Could Say That This Cache Was Rare_ achievement |achieve 12401/8 |goto 66.0,63.7
 step
 kill Thorim##32865
-Click here to load the "Lose Your Illusion" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Lose Your Illusion"
+Click here to load the "Lose Your Illusion" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Lose Your Illusion"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Lose Your Illusion_ achievement |achieve 12401/9 |goto 70.32,48.82
 step
 kill Freya##32906
-Click here to load the "Knock, Knock, Knock on Wood" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Knock, Knock, Knock on Wood"
+Click here to load the "Knock, Knock, Knock on Wood" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Knock, Knock, Knock on Wood"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Knock, Knock, Knock on Wood_ achievement |achieve 12401/10 |goto 53,23
 step
 kill Mimiron##33350
-Click here to load the "Firefighter" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Firefighter"
+Click here to load the "Firefighter" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Firefighter"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Firefighter_ achievement |achieve 12401/11 |goto Ulduar/5 43.6,41.1
 step
 kill General Vezax##33271
-Click here to load the "I Love the Smell of Saronite in the Morning" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\I Love the Smell of Saronite in the Morning"
+Click here to load the "I Love the Smell of Saronite in the Morning" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\I Love the Smell of Saronite in the Morning"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _I Love the Smell of Saronite in the Morning_ achievement |achieve 12401/12 |goto Ulduar/4 52.6,57.1
 step
 kill Yogg-Saron##33288
-Click here to load the "One Light in the Darkness" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\One Light in the Darkness"
+Click here to load the "One Light in the Darkness" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\One Light in the Darkness"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _One Light in the Darkness_ achievement |achieve 12401/13 |goto 68,40.8
 step
@@ -3204,7 +3204,7 @@ collect Reins of the Ironbound Proto-Drake##45801
 step
 learnmount Ironbound Proto-Drake##63956 |use Reins of the Ironbound Proto-Drake##45801
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Red Proto-Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Red Proto-Drake",{
 author="support@zygorguides.com",
 keywords={"red","proto-drake","flying","mount"},
 mounts={59961},
@@ -3514,7 +3514,7 @@ collect Reins of the Red Proto-Drake##44160
 step
 learnmount Red Proto-Drake##59961 |use Reins of the Red Proto-Drake##44160
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Rusted Proto-Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Rusted Proto-Drake",{
 keywords={"rusted","proto-drake","proto","drake","flying","mount"},
 mounts={63963},
 model={28954},
@@ -3522,67 +3522,67 @@ description="This guide will help you acquire the Rusted Proto-Drake mount.",
 },[[
 step
 kill Flame Leviathan##33113
-Click here to load the "Orbit-uary" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Orbit-uary"
+Click here to load the "Orbit-uary" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Orbit-uary"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Orbit-uary_ achievement |achieve 12401/1 |goto Ulduar/1 49,40
 step
 kill Ignis the Furnace Master##33118
-Click here to load the "Stokin' the Furnace" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Stokin' the Furnace"
+Click here to load the "Stokin' the Furnace" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Stokin' the Furnace"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Stokin' the Furnace_ achievement |achieve 12401/2 |goto 37.5,26.5
 step
 kill Razorscale##33186
-Click here to load the "Iron Dwarf, Medium Rare" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Iron Dwarf, Medium Rare"
+Click here to load the "Iron Dwarf, Medium Rare" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Iron Dwarf, Medium Rare"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Iron Dwarf, Medium Rare_ achievement |achieve 12401/3 |goto 54.1,26.3
 step
 kill XT-002 Deconstructor##33293
-Click here to load the "Heartbreaker" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Heartbreaker"
+Click here to load the "Heartbreaker" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Heartbreaker"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Heartbreaker_ achievement |achieve 12401/4 |goto 48.5,13.9
 step
 Kill the Assembly of Iron
-Click here to load the "I Choose You, Steelbreaker" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\I Choose You, Steelbreaker"
+Click here to load the "I Choose You, Steelbreaker" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\I Choose You, Steelbreaker"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _I Choose You, Steelbreaker_ achievement |achieve 12401/5 |goto Ulduar/2 15,56
 step
 kill Kologarn##32930
-Click here to load the "Disarmed" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Disarmed"
+Click here to load the "Disarmed" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Disarmed"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Disarmed_ achievement |achieve 12401/6 |goto 37.3,14.0
 step
 kill Auriaya##33515
-Click here to load the "Crazy Cat Lady" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Crazy Cat Lady"
+Click here to load the "Crazy Cat Lady" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Crazy Cat Lady"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Crazy Cat Lady_ achievement |achieve 12401/7 |goto Ulduar/3 52.90,74.15
 step
 kill Hodir##32845
-Click here to load the "I Could Say That This Cache Was Rare" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\I Could Say That This Cache Was Rare"
+Click here to load the "I Could Say That This Cache Was Rare" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\I Could Say That This Cache Was Rare"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _I Could Say That This Cache Was Rare_ achievement |achieve 12401/8 |goto 66.0,63.7
 step
 kill Thorim##32865
-Click here to load the "Lose Your Illusion" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Lose Your Illusion"
+Click here to load the "Lose Your Illusion" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Lose Your Illusion"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Lose Your Illusion_ achievement |achieve 12401/9 |goto 70.32,48.82
 step
 kill Freya##32906
-Click here to load the "Knock, Knock, Knock on Wood" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Knock, Knock, Knock on Wood"
+Click here to load the "Knock, Knock, Knock on Wood" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Knock, Knock, Knock on Wood"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Knock, Knock, Knock on Wood_ achievement |achieve 12401/10 |goto 53,23
 step
 kill Mimiron##33350
-Click here to load the "Firefighter" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Firefighter"
+Click here to load the "Firefighter" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\Firefighter"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _Firefighter_ achievement |achieve 12401/11 |goto Ulduar/5 43.6,41.1
 step
 kill General Vezax##33271
-Click here to load the "I Love the Smell of Saronite in the Morning" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\I Love the Smell of Saronite in the Morning"
+Click here to load the "I Love the Smell of Saronite in the Morning" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\I Love the Smell of Saronite in the Morning"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _I Love the Smell of Saronite in the Morning_ achievement |achieve 12401/12 |goto Ulduar/4 52.6,57.1
 step
 kill Yogg-Saron##33288
-Click here to load the "One Light in the Darkness" achievement guide |confirm |next "Zygor's Achievement Guides\\Dungeons & Raids\\Lich King Raid\\One Light in the Darkness"
+Click here to load the "One Light in the Darkness" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Lich King Raid\\One Light in the Darkness"
 |tip You must earn this achievement as part of the Glory of the Ulduar Raider criteria.
 Earn the _One Light in the Darkness_ achievement |achieve 12401/13 |goto 68,40.8
 step
@@ -3591,7 +3591,7 @@ collect Reins of the Rusted Proto-Drake##45802
 step
 learnmount Rusted Proto-Drake##63963 |use Reins of the Rusted Proto-Drake##45802
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Twilight Harbinger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Twilight Harbinger",{
 keywords={"twilight","harbinger","flying","mount"},
 mounts={107844},
 model={39562},
@@ -3604,7 +3604,7 @@ collect Reins of the Twilight Harbinger##77068
 step
 learnmount Twilight Harbinger##107844 |use Reins of the Twilight Harbinger##77068
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Violet Proto-Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Violet Proto-Drake",{
 author="support@zygorguides.com",
 keywords={"violet","proto-drake","proto","drake","flying","mount"},
 model={28043},
@@ -3625,59 +3625,56 @@ Merrymaker |achieve 2144/8
 confirm
 step
 _Lunar Festival_
-Click here for the base questline. |next "Zygor's Events Guides\\Lunar Festival\\Lunar Festival Main Questline" |confirm
-Click here for the _Elders_ portion of the event. |next "Zygor's Events Guides\\Lunar Festival\\Lunar Festival Optimized Elders Path" |confirm
-Click here for the _Event Achievement_ portion. |next "Zygor's Events Guides\\Lunar Festival\\Lunar Festival Achievements" |confirm
+Click here for the base questline. |next "Events Guides\\Lunar Festival\\Lunar Festival Main Questline" |confirm
+Click here for the _Elders_ portion of the event. |next "Events Guides\\Lunar Festival\\Lunar Festival Optimized Elders Path" |confirm
+Click here for the _Event Achievement_ portion. |next "Events Guides\\Lunar Festival\\Lunar Festival Achievements" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/1)
 step
 _Love is in the Air_
-Click here for the base questline. |next "Zygor's Events Guides\\Love is in the Air\\Love is in the Air Main Questline" |confirm
-Click here for the Dailies portion of the event. |next "Zygor's Events Guides\\Love is in the Air\\Love is in the Air Dailies" |confirm
-Click here for the _Event Achievement_ portion. |next "Zygor's Events Guides\\Love is in the Air\\Love is in the Air Achievements" |confirm
+Click here for the base questline. |next "Events Guides\\Love is in the Air\\Love is in the Air Main Questline" |confirm
+Click here for the Dailies portion of the event. |next "Events Guides\\Love is in the Air\\Love is in the Air Dailies" |confirm
+Click here for the _Event Achievement_ portion. |next "Events Guides\\Love is in the Air\\Love is in the Air Achievements" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/2)
 step
 _Noblegarden_
-Click here to cover the _Quests and Dailies_ for this event. |next "Zygor's Events Guides\\Noblegarden\\Noblegarden Quests and Dailies" |confirm
-Click here for the _Event Achievement_ portion. |next "Zygor's Events Guides\\Noblegarden\\Noblegarden Achievements" |confirm
+Click here to cover the Quests for this event. |next "Events Guides\\Noblegarden\\Noblegarden Quests" |confirm
+Click here to cover the Dailies for this event. |next "Events Guides\\Noblegarden\\Noblegarden Dailies" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/3)
 step
 _Children's Week_
-Click here for the _Stormwind Quests_ portion. |next "Zygor's Events Guides\\Children's Week\\Children's Week Stormwind Quests" |confirm
-Click here for the _Shattrath Quests_ portion. |next "Zygor's Events Guides\\Children's Week\\Children's Week Shattrath Quests" |confirm
-Click here for the _Oracle Quests_ portion. You can only do This _OR_ the Wolvar version. |next "Zygor's Events Guides\\Children's Week\\Children's Week Dalaran Oracles Quests" |confirm
-Click here for the _Oracle Quests_ portion. You can only do This _OR_ the Oracle version. |next "Zygor's Events Guides\\Children's Week\\Children's Week Dalaran Wolvar Quests" |confirm
-Click here for the _Event Achievement_ portion. |next "Zygor's Events Guides\\Children's Week\\Children's Week Achievements" |confirm
+Click here for the _Stormwind Quests_ portion. |next "Events Guides\\Children's Week\\Children's Week Stormwind Quests" |confirm
+Click here for the _Shattrath Quests_ portion. |next "Events Guides\\Children's Week\\Children's Week Shattrath Quests" |confirm
+Click here for the _Oracle Quests_ portion. You can only do This _OR_ the Wolvar version. |next "Events Guides\\Children's Week\\Children's Week Dalaran Oracles Quests" |confirm
+Click here for the _Oracle Quests_ portion. You can only do This _OR_ the Oracle version. |next "Events Guides\\Children's Week\\Children's Week Dalaran Wolvar Quests" |confirm
+Click here for the _Event Achievement_ portion. |next "Events Guides\\Children's Week\\Children's Week Achievements" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/4)
 step
 _Midsummer Festival_
-Click here for the _Quest_ portion. |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests" |confirm
-Click here the _Event Achievement_ portion. |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements" |confirm
-Click here for the _Pandaria Quest_ portion. |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests (Pandaria)" |confirm
+Click here for the _Quest_ portion. |next "Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests" |confirm
+Click here the _Event Achievement_ portion. |next "Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements" |confirm
+Click here for the _Pandaria Quest_ portion. |next "Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests (Pandaria)" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/5)
 step
 _Brewfest_
-Click here for the _quest_ portion. |next "Zygor's Events Guides\\Brewfest\\Brewfest Quests" |confirm
-Click here for the _daily_ portion. |next "Zygor's Events Guides\\Brewfest\\Brewfest Dailies" |confirm
-Click ehre for the _Event Achievement_ portion. |next "Zygor's Events Guides\\Brewfest\\Brewfest Achievements" |confirm
+Click here for the _quest_ portion. |next "Events Guides\\Brewfest\\Brewfest Quests" |confirm
+Click here for the _daily_ portion. |next "Events Guides\\Brewfest\\Brewfest Dailies" |confirm
+Click ehre for the _Event Achievement_ portion. |next "Events Guides\\Brewfest\\Brewfest Achievements" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/6)
 step
 _Hallow's End_
-Click here for the _Quest Portion_ of the event. |next "Zygor's Events Guides\\Hallow's End\Hallow's End Quests" |confirm
-Click here for the _Daily Portion_ of the event. |next "Zygor's Events Guides\\Hallow's End\\Hallow's End Dailies" |confirm
-Click here for the _Achievement Portion_ of the event. |next "Zygor's Events Guides\\Hallow's End\\Hallow's End Achievements" |confirm
-Click here for the _Pandaria Achievement Portion_ of the event. |next "Zygor's Events Guides\\Hallow's End\\Hallow's End Achievements (Pandaria)" |confirm
+Click here for the _Achievement Portion_ of the event. |next "Events Guides\\Hallow's End\\Achievements\\Hallowed Be Thy Name" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/7)
 step
 _Merrymaker_
-Click here for the _Quest Portion_ of the event. |next "Zygor's Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Quests" |confirm
-|next "Zygor's Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Achievements" |confirm
+Click here for the _Quest Portion_ of the event. |next "Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Quests" |confirm
+|next "Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Achievements" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/8)
 step
@@ -3687,7 +3684,7 @@ collect 1 Violet Proto-Drake##44177
 step
 Congratulations, you have earned the Violet Proto-Drake.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Volcanic Stone Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Volcanic Stone Drake",{
 keywords={"volcanic","stone","drake","flying","mount"},
 mounts={88331},
 model={35551},
@@ -3936,7 +3933,7 @@ collect Reins of the Volcanic Stone Drake##62900
 step
 learnmount Volcanic Stone Drake##88331 |use Reins of the Volcanic Stone Drake##62900
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Argent Tournament Mounts\\Argent Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Argent Tournament Mounts\\Argent Hippogryph",{
 keywords={"argent","tournament","hippogryph","flying","mount"},
 mounts={63844},
 model={31714},
@@ -3955,7 +3952,7 @@ buy 1 Argent Hippogryph##45725
 step
 learnmount Argent Hippogryph##63844 |use Argent Hippogryph##45725
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Argent Tournament Mounts\\Silver Covenant Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Argent Tournament Mounts\\Silver Covenant Hippogryph",{
 keywords={"silver","covenant","hippogryph","argent","tournament","flying","mount"},
 mounts={66087},
 model={27561},
@@ -3971,7 +3968,7 @@ buy 1 Silver Covenant Hippogryph##46813 |goto Icecrown,76.2,19.6
 step
 learnmount Silver Covenant Hippogryph##66087 |use Silver Covenant Hippogryph##46813
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Celestial Steed",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Celestial Steed",{
 author="support@zygorguides.com",
 keywords={"blizzard","store","celestial","steed","flying","mount"},
 mounts={75614},
@@ -3986,7 +3983,7 @@ step
 learnmount Celestial Steed##75614
 use Celestial Steed##54811
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Heart of the Aspects",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Heart of the Aspects",{
 author="support@zygorguides.com",
 keywords={"blizzard","store","heart","of","the","aspects","flying","mount"},
 mounts={110051},
@@ -4000,7 +3997,7 @@ collect Heart of the Aspects##78924
 step
 learnmount Heart of the Aspects##110051 |use Heart of the Aspects##78924
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Iron Skyreaver",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Iron Skyreaver",{
 author="support@zygorguides.com",
 keywords={"blizzard","store","iron","sky","reaver","flying","mount"},
 mounts={153489},
@@ -4014,7 +4011,7 @@ collect Iron Skyreaver##107951
 step
 learnmount Iron Skyreaver##153489 |use Iron Skyreaver##107951
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Swift Windsteed",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Swift Windsteed",{
 author="support@zygorguides.com",
 keywords={"blizzard","store","swift","wind","steed","flying","mount"},
 mounts={110051},
@@ -4028,7 +4025,7 @@ collect Swift Windsteed##78924
 step
 learnmount Swift Windsteed##134573 |use Swift Windsteed##92724
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Winged Guardian",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Winged Guardian",{
 author="support@zygorguides.com",
 keywords={"blizzard","store","winged","guardian","flying","mount"},
 mounts={98727},
@@ -4042,7 +4039,7 @@ collect Winged Guardian##69846
 step
 learnmount Winged Guardian##98727 |use Winged Guardian##69846
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Phosphorescent Stone Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Phosphorescent Stone Drake",{
 keywords={"phosphorescent","stone","drake","aeonaxx","flying","mount"},
 mounts={88718},
 model={35740},
@@ -4064,7 +4061,7 @@ collect 1 Reins of the Phosphorescent Stone Drake##63042
 step
 learnmount Phosphorescent Stone Drake##88718 |use Reins of the Phosphorescent Stone Drake##63042
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Time-Lost Proto-Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Time-Lost Proto-Drake",{
 keywords={"time","lost","proto","drake","flying","mount"},
 mounts={60002},
 model={26711},
@@ -4083,7 +4080,7 @@ collect 1 Reins of the Time-Lost Proto-Drake##44168
 step
 learnmount Time-Lost Proto Drake##60002 |use Reins of the Time-Lost Proto-Drake##44168
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Blue Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Blue Drake",{
 keywords={"blue","drake","cache","of","eregos","flying","mount"},
 mounts={59568},
 model={25256},
@@ -4103,7 +4100,7 @@ step
 Congratulations!
 You have collected the _Blue Drake_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Blue Proto-Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Blue Proto-Drake",{
 keywords={"blue","proto","drake","skadi","the","ruthless","flying","mount"},
 mounts={59996},
 model={28041},
@@ -4119,7 +4116,7 @@ collect 1 Reins of the Blue Protodrake##44151 |n
 |tip This has a 1.2% drop rate, do this everyday to have a higher chance of obtaining it!
 learnmount Blue Protodrake##59996 |goto Utgarde Pinnacle,68.3,35.5 |use Reins of the Blue Protodrake##44151
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Bronze Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Bronze Drake",{
 keywords={"bronze","drake","flying","mount"},
 mounts={59569},
 model={27812},
@@ -4148,7 +4145,7 @@ collect 1 Reins of the Bronze Drake##43951 |goto 51.6,41.6
 step
 learnmount Bronze Drake##59569 |use Reins of the Bronze Drake##43951
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Drake of the North Wind",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Drake of the North Wind",{
 keywords={"drake","of","the","north","wind","flying","mount"},
 mounts={88742},
 model={35755},
@@ -4166,7 +4163,7 @@ collect 1 Reins of the Drake of the North Wind##63040
 step
 learnmount Drake of the North Wind##88742 |use Reins of the Drake of the North Wind##63040
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Vitreous Stone Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Vitreous Stone Drake",{
 keywords={"vitreous","stone","drake","slabhide","flying","mount"},
 mounts={88746},
 model={35751},
@@ -4185,7 +4182,7 @@ collect 1 Reins of the Vitreous Stone Drake##63043 |goto The Stonecore,36.6,45.8
 step
 learnmount Vitreous Stone Drake##88746 |use Reins of the Vitreous Stone Drake##63043
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Event Mounts\\Love is in the Air\\Big Love Rocket",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Event Mounts\\Love is in the Air\\Big Love Rocket",{
 keywords={"big","love","rocket","love","is","in","the","air","flying","mount"},
 mounts={38207},
 model={30989},
@@ -4205,42 +4202,70 @@ collect Big Love Rocket##50250
 step
 learnmount Big Love Rocket##71342 |use Big Love Rocket##50250
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Event Mounts\\Hallows End\\Headless Horseman's Mount",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Event Mounts\\Hallow's End\\Headless Horseman's Mount",{
 author="support@zygorguides.com",
-keywords={"headless","horsemans","flying","mount"},
+condition_suggested=function() return isevent("Hallow's End") end,
+keywords={"Flying","Mount","Hallow's","End","Event"},
 mounts={48025},
 model={25159},
-description="This guide will help you acquire the Headless Horseman's mount",
+description="This mount has a very low chance to drop from the Headless Horseman during the Hallow's End event.",
 },[[
 step
-This requires the _Hallow's End_ Holiday
-Use the _Dungeon Finder_ to go to the _World Event Dungeon - Headless Horsemen_ |goto Scarlet Monastery |noway |c
+label "Start"
+Wait for the Hallow's End Event to Start |condition isevent("Hallow's End")
+|tip Hallow's End runs from October 18th to November 1st.
+step
+Enter "The Headless Horseman" Dungeon |goto Scarlet Monastery |noway |c
+|tip Use the Dungeon Finder tool to queue for "The Headless Horseman."
 step
 kill Headless Horseman##23682
 collect 1 Loot-Filled Pumpkin##117392
-|tip This will appear in your bags once you kill the Headless Horsemen and can only be won once a day
-use Loot-Filled Pumpkin##54516
-collect The Horseman's Reins##37012
-|tip This item has an extremely low drop rate.
+|tip This will appear in your bags after killing the Headless Horseman.
+|tip It can only be looted once per day.
 step
-learnmount Headless Horseman's Mount##48025 |use The Horseman's Reins##37012
+use the Loot-Filled Pumpkin##54516
+collect The Horseman's Reins##37012 |next "Mount_Dropped" |or
+|tip The mount has a very low chance to drop.
+'|condition itemcount(54516) == 0 |next "Mount_Did_Not_Drop" |or
+step
+label "Mount_Did_Not_Drop"
+You can try again tomorrow for another chance
+|tip The mount has a very low chance to drop.
+Click Here to Start Again |confirm |next "Start"
+step
+label "Mount_Dropped"
+use The Horseman's Reins##37012
+learnmount Headless Horseman's Mount##48025
+step
+_Congratulations!_
+You Collected the "Headless Horseman's Mount."
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Event Mounts\\Hallows End\\Magic Broom",{
-keywords={"magic","broom","flying","mount"},
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Event Mounts\\Hallow's End\\Magic Broom",{
+author="support@zygorguides.com",
+description="This mount can be purchased from Dorothy in Elwynn Forest for 150 Tricky Treats.",
+condition_suggested=function() return isevent("Hallow's End") end,
+keywords={"Flying","Mount","Hallow's","End","Event"},
 mounts={47977},
 model={21939},
-description="This guide will help you acquire the Magic Broom mount.",
 },[[
 step
-This mount can only be obtained during the Hallows End event, and it disappears once the event is over.
+Wait for the Hallow's End Event to Start |condition isevent("Hallow's End")
+|tip Hallow's End runs from October 18th to November 1st.
+step
 collect 150 Tricky Treat##33226
+|tip These can be obtained from the various candy bucket quests around WoW zones.
+|tip Use the "Tricks and Treats" guide to find their locations.
 step
 talk Dorothy##53728
-buy Magic Broom##37011 |goto Elwynn Forest,31.8,50.0
+buy 1 Magic Broom##37011 |goto Elwynn Forest/0 31.81,50.11
 step
-Congratulations, you have obtained the _Magic Broom_ mount!
+use the Magic Broom##37011
+learnmount Magic Broom##47977
+step
+_Congratulations!_
+You Collected the "Magic Broom" Mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Obsidian Nightwing",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Obsidian Nightwing",{
 keywords={"recruit","a","friend","recruit-a-friend","flying","mount"},
 model={42498},
 mounts={121820},
@@ -4256,7 +4281,7 @@ step
 _Congratulations!_
 You collected the _Obsidian Nightwing_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\X-53 Touring Rocket",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\X-53 Touring Rocket",{
 author="support@zygorguides.com",
 keywords={"x","53","touring","rocket","recruit","a","friend","recruit-a-friend","flying","mount"},
 mounts={75973},
@@ -4273,7 +4298,7 @@ step
 _Congratulations!_
 You collected the _X-53 Touring Rocket_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Swift Zhevra",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Swift Zhevra",{
 author="support@zygorguides.com",
 keywords={"swift","zhevra","recruit","a","friend","recruit-a-friend","ground","mount"},
 mounts={49322},
@@ -4290,7 +4315,7 @@ step
 _Congratulations!_
 You collected the _Swift Zhevra_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Emerald Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Emerald Hippogryph",{
 author="support@zygorguides.com",
 keywords={"emerald","hippogryph","recruit","a","friend","recruit-a-friend","flying","mount"},
 mounts={149801},
@@ -4307,7 +4332,7 @@ step
 _Congratulations!_
 You collected the _Emerald Hippogryph_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Engineering\\Flying Machine",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Engineering\\Flying Machine",{
 keywords={"engineering","flying","mount"},
 mounts={44153},
 model={22719},
@@ -4362,7 +4387,7 @@ step
 learnmount Flying Machine##44153 |use Flying Machine##34060
 _Warning!_ If you _drop Engineering_ you _will not_ be able to _use this mount anymore_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Engineering\\Turbo-Charged Flying Machine",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Engineering\\Turbo-Charged Flying Machine",{
 keywords={"turbo","charged","flying","machine","engineering","mount"},
 mounts={44151},
 model={22720},
@@ -4411,7 +4436,7 @@ step
 learnmount Turbo-Charged Flying Machine##44151 |use Turbo-Charged Flying Machine##34061
 _Warning!_ If you _drop Engineering_ you _will not_ be able to _use this mount anymore_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Tailoring\\Flying Carpet",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Tailoring\\Flying Carpet",{
 keywords={"tailoring","flying","carpet","mount","flying"},
 mounts={61451},
 model={28060},
@@ -4471,7 +4496,7 @@ collect 1 Flying Carpet##44554 |n
 learnmount Flying Carpet##61451 |use Flying Carpet##44554
 _Warning!_ If you _drop Tailoring_ you _will not_ be able to _use this mount anymore_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Tailoring\\Frosty Flying Carpet",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Tailoring\\Frosty Flying Carpet",{
 keywords={"tailoring","frosty","flying","carpet","mount"},
 mounts={75596},
 model={31837},
@@ -4510,7 +4535,7 @@ step
 learnmount Frost Flying Carpet##75596 |use Frosty Flying Carpet##54797
 _Warning!_ If you _drop Tailoring_ you _will not_ be able to _use this mount anymore_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Tailoring\\Magnificent Flying Carpet",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Tailoring\\Magnificent Flying Carpet",{
 keywords={"tailoring","magnificent","flying","carpet","mount"},
 mounts={61309},
 model={28064},
@@ -4553,7 +4578,7 @@ step
 learnmount Magnificent Flying Carpet##61309 |use Magnificent Flying Carpet##44558
 _Warning!_ If you _drop Tailoring_ you _will not_ be able to _use this mount anymore_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Ashes of Al'ar",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Ashes of Al'ar",{
 author="support@zygorguides.com",
 keywords={"mount","ashes","of","al'ar","alar","flying"},
 mounts={40192},
@@ -4568,7 +4593,7 @@ collect 1 Ashes of Al'ar##32458 |goto Tempest Keep 50,15.2
 step
 learnmount Ashes of Al'ar##40192 |use Ashes of Al'ar##32458
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Azure Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Azure Drake",{
 author="support@zygorguides.com",
 keywords={"azure","drake","mount","flying"},
 mounts={59567},
@@ -4584,7 +4609,7 @@ collect 1 Reins of the Azure Drake##43952 |goto The Eye of Eternity 38.4,49.8
 step
 learnmount Azure Drake##59567 |use Reins of the Azure Drake##43952
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Black Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Black Drake",{
 author="support@zygorguides.com",
 keywords={"black","drake","mount","flying"},
 mounts={59650},
@@ -4598,7 +4623,7 @@ collect Reins of the Black Drake##43986 |goto The Obsidian Sanctum/0 52.9,48.0
 step
 learnmount Black Drake##59650 |use Reins of the Black Drake##43986
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Blazing Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Blazing Drake",{
 author="support@zygorguides.com",
 keywords={"blazing","drake","mount","flying"},
 mounts={107842},
@@ -4614,7 +4639,7 @@ collect 1 Reins of the Blazing Drake##77067 |goto Dragon Soul/7 33.5,79.6
 step
 learnmount Blazing Drake##107842 |use Reins of the Blazing Drake##77067
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Experiment 12-B",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Experiment 12-B",{
 author="support@zygorguides.com",
 keywords={"experiment","12","b","12-b","flying","mount"},
 mounts={110039},
@@ -4630,7 +4655,7 @@ collect 1 Experiment 12-B##78919 |goto Dragon Soul/1 50.1,57.3
 step
 learnmount Experiment 12-B##110039 |use Experiment 12-B##78919
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Invincible",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Invincible",{
 author="support@zygorguides.com",
 keywords={"invincible","lich","king","mount","flying"},
 mounts={72286},
@@ -4645,7 +4670,7 @@ collect 1 Invincible's Reins##50818 |goto Icecrown Citadel/7 49.8,52.8
 step
 learnmount Invincible##72286 |use Invincible's Reins##50818
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Life-Binder's Handmaiden",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Life-Binder's Handmaiden",{
 author="support@zygorguides.com",
 keywords={"life","binder's","binders","handmaiden","mount","flying"},
 mounts={107845},
@@ -4661,7 +4686,7 @@ collect 1 Life-Binder's Handmaiden##77069 |goto Dragon Soul/7 33.5,79.6
 step
 learnmount Life-Binder's Handmaiden##107845 |use Life-Binder's Handmaiden##77069
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Mimiron's Head",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Mimiron's Head",{
 author="support@zygorguides.com",
 keywords={"mimirons","head","mount","flying"},
 mounts={63796},
@@ -4690,7 +4715,7 @@ step
 label "end"
 learnmount Mimiron's Head##63796 |use Mimiron's Head##45693
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Onyxian Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Onyxian Drake",{
 author="support@zygorguides.com",
 keywords={"onyxia","onyxian","drake","mount","flying"},
 mounts={69395},
@@ -4705,7 +4730,7 @@ collect 1 Reins of the Onyxian Drake##49636 |goto Onyxia's Lair 68.0,31.4
 step
 learnmount Onyxian Drake##69395 |use Reins of the Onyxian Drake##49636
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Pureblood Fire Hawk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Pureblood Fire Hawk",{
 author="support@zygorguides.com",
 keywords={"pureblood","pure","blood","fire","hawk","firehawk","mount","flying"},
 mounts={97493},
@@ -4722,7 +4747,7 @@ collect 1 Smoldering Egg of Millagazor##69224 |goto Firelands/3 50.4,15.4
 step
 learnmount Pureblood Fire Hawk##97493 |use Smoldering Egg of Millagazor##69224
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Twilight Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Twilight Drake",{
 author="support@zygorguides.com",
 keywords={"twilight","drake","mount","flying"},
 mounts={59571},
@@ -4736,7 +4761,7 @@ collect Reins of the Twilight Drake##43954 |goto The Obsidian Sanctum/0 52.9,48.
 step
 learnmount Twilight Drake##59571 |use Reins of the Twilight Drake##43954
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Drake of the South Wind",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Drake of the South Wind",{
 author="support@zygorguides.com",
 keywords={"south","wind","drake","mount","flying"},
 mounts={88744},
@@ -4753,7 +4778,7 @@ collect Reins of the Drake of the South Wind##63041 |goto Throne of the Four Win
 step
 learnmount Drake of the South Wind##88744 |use Reins of the Drake of the South Wind##63041
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Cenarion War Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Cenarion War Hippogryph",{
 keywords={"cenarion","war","hippogryph","mount","expedition","exalted","flying"},
 achieveid={893},
 mounts={43927},
@@ -4768,7 +4793,7 @@ buy 1 Cenarion War Hippogryph##33999 |goto Zangarmarsh,79.2,63.8
 step
 learnmount Cenarion War Hippogryph##43927 |use Cenarion War Hippogryph##33999
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Dark Phoenix",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Dark Phoenix",{
 keywords={"dark","phoenix","pheonix","mount","guild","exalted","flying"},
 mounts={88990},
 model={37145},
@@ -4784,7 +4809,7 @@ buy 1 Reins of the Dark Phoenix##63125 |goto Stormwind City,64.6,76.8
 step
 learnmount Dark Pheonix##88990 |use Reins of the Dark Phoenix##63125
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Drake of the West Wind",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Drake of the West Wind",{
 keywords={"drake","of","the","west","wind","mount","tol","barad","baradin's","baradins","warens","exalted","flying"},
 mounts={88741},
 model={35754},
@@ -5032,7 +5057,7 @@ buy 1 Reins of the Drake of the West Wind##63039 |n
 _
 learnmount Drake of the West Wind##88741 |goto Tol Barad Peninsula,72.6,62.6 |use Reins of the Drake of the West Wind##63039
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Netherwing Drakes\\Quests & Dailies",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Netherwing Drakes\\Quests & Dailies",{
 keywords={"Azure","netherwing","drake","cobalt","violet","purple","veridan","onyx","mount","flying"},
 condition_end=function() return hasmount(41514) and hasmount(41515) and hasmount(41513) and hasmount(41516) and hasmount(41517) and hasmount(41518) end,
 model={21524},
@@ -5662,7 +5687,7 @@ learnmount Purple Netherwing Drake##41516 |use Reins of the Purple Netherwing Dr
 learnmount Veridian Netherwing Drake##41517 |use Reins of the Veridian Netherwing Drake##32861
 learnmount Oynx Netherwing Drake##41513 |use Reins of the Onyx Netherwing Drake##32857
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Netherwing Drakes\\Netherwing Egg Hunting - Optimized Path",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Netherwing Drakes\\Netherwing Egg Hunting - Optimized Path",{
 keywords={"Azure","netherwing","drake","cobalt","violet","purple","veridan","onyx","mount","flying"},
 condition_end=function() return hasmount(41514) and hasmount(41515) and hasmount(41513) and hasmount(41516) and hasmount(41517) and hasmount(41518) end,
 model={21524},
@@ -5887,7 +5912,7 @@ step
 This is the end of the path.
 Click here to go back to the beginning of the path. |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Red Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Red Drake",{
 keywords={"red","drake","exalted","the","wyrmrest","accord","mount","flying"},
 mounts={59570},
 model={23522},
@@ -5918,7 +5943,7 @@ buy 1 Reins of the Red Drake##43955 |goto Dragonblight,59.8,53.0
 _
 learnmount Red Drake##59570 |use Reins of the Red Drake##43955
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Riding Nether Ray\\Skyguard Faction Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Riding Nether Ray\\Skyguard Faction Dailies with Pre-Quests",{
 keywords={"green","red","purple","blue","silver","riding","nether","ray","skyguard","exalted","mount","flying"},
 author="support@zygorguides.com",
 condition_end=function() return hasmount(39803) and hasmount(39798) and hasmount(39801) and hasmount(39800) and hasmount(39802) end,
@@ -6176,7 +6201,7 @@ learnmount Blue Riding Nether Ray##39803 |use Blue Riding Nether Ray##32319
 learnmount Purple Riding Nether Ray##39801 |use Purple Riding Nether Ray##32316
 learnmount Silver Riding Nether Ray##39802 |use Silver Riding Nether Ray##32318
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Amani Dragonhawk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Amani Dragonhawk",{
 keywords={"trading","card","game","amani","dragonhawk","mount","flying"},
 mounts={96503},
 model={37800},
@@ -6187,7 +6212,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually they are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Mottled Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Mottled Drake",{
 keywords={"trading","card","game","mottled","drake","mount","flying"},
 mounts={93623},
 model={37231},
@@ -6198,7 +6223,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually they are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Blazing Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Blazing Hippogryph",{
 keywords={"blazing","hippogryph","mount","trading","card","game","flying"},
 mounts={74856},
 model={31803},
@@ -6209,7 +6234,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually they are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Corrupted Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Corrupted Hippogryph",{
 keywords={"trading","card","game","corrupted","hippogryph","mount","flying"},
 mounts={102514},
 model={38972},
@@ -6220,7 +6245,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually they are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\X-51 Nether-Rocket",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\X-51 Nether-Rocket",{
 keywords={"x","51","X-51","nether","rocket","nether-rocket","trading","card","game","mount","flying"},
 mounts={46197},
 model={23656},
@@ -6231,7 +6256,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually they are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\X-51 Nether-Rocket X-TREME",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\X-51 Nether-Rocket X-TREME",{
 keywords={"x-51","x","51","nether","rocket","nether-rocket","x-treme","treme","trading","card","game","mount","flying"},
 mounts={46199},
 model={23647},
@@ -6242,7 +6267,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually they are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Feldrake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Feldrake",{
 keywords={"Feldrake","trading","card","game","mount","flying"},
 mounts={113120},
 model={40568},
@@ -6253,7 +6278,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually they are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Black Proto-Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Black Proto-Drake",{
 keywords={"black","proto","drake","proto-drake"},
 mounts={59976},
 model={28040},
@@ -6263,7 +6288,7 @@ step
 The Black Proto-Drake was the reward for completing the achievement "Glory of the Raider (25 Player)"
 This mount was retired from service in patch 3.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Brutal Nether Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Brutal Nether Drake",{
 keywords={"brutal","nether","drake","arena"},
 mounts={58615},
 model={27507},
@@ -6273,7 +6298,7 @@ step
 The Brutal Nether Drake was the reward for top ranking arena teams at the conclusion of Arena Season 4
 This mount was retired from service at the conclusion of Arena Season 4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Cataclysmic Gladiator's Twilight Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Cataclysmic Gladiator's Twilight Drake",{
 keywords={"cataclysmic","gladiators","gladiator's","twilight","drake","arena"},
 mounts={124550},
 model={38757},
@@ -6283,7 +6308,7 @@ step
 The Cataclysmic Gladiator's Twilight Drake was the reward for top ranking arena teams at the conclusion of Arena Season 11
 This mount was retired from service at the conclusion of Arena Season 11
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Deadly Gladiator's Frost Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Deadly Gladiator's Frost Wyrm",{
 keywords={"deadly","gladiators","gladiator's","frost","wyrm","arena"},
 mounts={64927},
 model={25511},
@@ -6293,7 +6318,7 @@ step
 The Deadly Gladiator's Frost Wyrm was the reward for top ranking arena teams at the conclusion of Arena Season 5
 This mount was retired from service at the conclusion of Arena Season 5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Furious Gladiator's Frost Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Furious Gladiator's Frost Wyrm",{
 keywords={"furious","gladiators","gladiator's","frost","wyrm","arena"},
 mounts={65439},
 model={25593},
@@ -6303,7 +6328,7 @@ step
 The Furious Gladiator's Frost Wyrm was the reward for top ranking arena teams at the conclusion of Arena Season 6
 This mount was retired from service at the conclusion of Arena Season 6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Merciless Nether Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Merciless Nether Drake",{
 keywords={"merciless","nether","drake","arena"},
 mounts={44744},
 model={22620},
@@ -6313,7 +6338,7 @@ step
 The Merciless Nether Drake was the reward for top ranking arena teams at the conclusion of Arena Season 2
 This mount was retired from service at the conclusion of Arena Season 2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Relentless Gladiator's Frost Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Relentless Gladiator's Frost Wyrm",{
 keywords={"relentless","gladiators","gladiator's","frost","wyrm","arena"},
 mounts={67336},
 model={29794},
@@ -6323,7 +6348,7 @@ step
 The Relentless Gladiator's Frost Wyrm was the reward for top ranking arena teams at the conclusion of Arena Season 7
 This mount was retired from service at the conclusion of Arena Season 7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Ruthless Gladiator's Twilight Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Ruthless Gladiator's Twilight Drake",{
 keywords={"ruthless","gladiators","gladiator's","twilight","drake","arena"},
 mounts={101821},
 model={38755},
@@ -6333,7 +6358,7 @@ step
 The Ruthless Gladiator's Twilight Drake was the reward for top ranking arena teams at the conclusion of Arena Season 10
 This mount was retired from service at the conclusion of Arena Season 10
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Spectral Gryphon",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Spectral Gryphon",{
 keywords={"spectral","gryphon"},
 mounts={107516},
 model={39546},
@@ -6343,7 +6368,7 @@ step
 The Spectral Gryphon was the Alliance version of the Scroll of Resurrection reward
 This mount was retired from service in patch 5.4.7 with the Scroll of Resurrection program
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Swift Nether Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Swift Nether Drake",{
 keywords={"swift","nether","drake","arena"},
 mounts={37015},
 model={20344},
@@ -6353,7 +6378,7 @@ step
 The Swift Nether Drake was the reward for top ranking arena teams at the conclusion of Arena Season 1
 This mount was retired from service at the conclusion of Arena Season 1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Tyrael's Charger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Tyrael's Charger",{
 keywords={"tyraels","tyrael's","charger","annual","pass"},
 mounts={107203},
 model={39530},
@@ -6363,7 +6388,7 @@ step
 Tyrael's Charger was a reward for subscribing to Blizzard's Annual Pass promotion.
 This mount was retired from service in patch 5.4.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Vengeful Nether Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Vengeful Nether Drake",{
 keywords={"vengeful","nether","drake","arena"},
 mounts={49193},
 model={24725},
@@ -6373,7 +6398,7 @@ step
 The Vengeful Nether Drake was the reward for top ranking arena teams at the conclusion of Arena Season 3
 This mount was retired from service at the conclusion of Arena Season 3
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Vicious Gladiator's Twilight Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Vicious Gladiator's Twilight Drake",{
 keywords={"vicious","gladiators","gladiator's","twilight","drake","arena"},
 mounts={101282},
 model={38756},
@@ -6383,7 +6408,7 @@ step
 The Vicious Gladiator's Twilight Drake was the reward for top ranking arena teams at the conclusion of Arena Season 9
 This mount was retired from service at the conclusion of Arena Season 9
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Wrathful Gladiator's Frost Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Wrathful Gladiator's Frost Wyrm",{
 keywords={"wrathful","gladiators","gladiator's","frost","wyrm","arena"},
 mounts={71810},
 model={31047},
@@ -6393,7 +6418,7 @@ step
 The Wrathful Gladiator's Frost Wyrm was the reward for top ranking arena teams at the conclusion of Arena Season 8
 This mount was retired from service at the conclusion of Arena Season 8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Armored Snowy Gryphon",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Armored Snowy Gryphon",{
 keywords={"armored","snowy","gryphon","mount","flying"},
 mounts={61229},
 model={34889},
@@ -6409,7 +6434,7 @@ buy 1 Armored Snowy Gryphon##44689 |goto Dalaran 58.1,42.1
 step
 learnmount Armored Snowy Gryphon##61229 |use Armored Snowy Gryphon##44689
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Gryphons",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Gryphons",{
 keywords={"swift","blue","green","purple","red","ebon","golden","snowy","gryphon","mount","flying"},
 condition_end=function() return hasmount(32240) and hasmount(32235) and hasmount(32239) and hasmount(32289) and hasmount(32292) and hasmount(32290) and hasmount(32242) end,
 model={35521,36787,35534,35548,34878,34879,35358},
@@ -6433,7 +6458,7 @@ learnmount Ebon Gryphon##32239 |use Ebon Gryphon##25471
 learnmount Golden Gryphon##32235 |use Golden Gryphon##25470
 learnmount Snowy Gryphon##32240 |use Snowy Gryphon##25472
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Sandstone Drake",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Sandstone Drake",{
 keywords={"vial","of","the","sands","sandstone","drake","mount","flying"},
 mounts={93326},
 model={35750},
@@ -6485,7 +6510,7 @@ step
 label "learn"
 learnmount Sandstone Drake##93326 |use Vial of the Sands##65891
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Winged Steed of the Ebon Blade",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Winged Steed of the Ebon Blade",{
 keywords={"death","knight","winged","steed","of","the","ebon","blade","flying","mount"},
 mounts={54729},
 model={28108},
@@ -6502,7 +6527,7 @@ collect 1 Winged Steed of the Ebon Blade##40775 |goto Eastern Plaguelands 84,49.
 step
 learnmount Winged Steed of the Ebon Blade##54729 |use Winged Steed of the Ebon Blade##40775
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Aquatic Mounts\\Sea Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Aquatic Mounts\\Sea Turtle",{
 keywords={"sea","turtle","aquatic","water","mount"},
 mounts={64731},
 model={29161},
@@ -6519,7 +6544,7 @@ collect 1 Sea Turtle##46109
 step
 learnmount Sea Turtle##64731 |use Sea Turtle##46109
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Aquatic Mounts\\Subdued Seahorse",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Aquatic Mounts\\Subdued Seahorse",{
 keywords={"subdued","seahorse","aquatic","water","mount"},
 mounts={98718},
 model={34955},
@@ -6544,7 +6569,7 @@ collect 1 Reins of Poseidus##67151
 step
 learnmount Subdued Seahorse##98718 |use Reins of Poseidus##67151
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Aquatic Mounts\\Vashj'ir Seahorse",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Aquatic Mounts\\Vashj'ir Seahorse",{
 keywords={"vashj'ir","seahorse","aquatic","water","mount"},
 mounts={75207},
 model={34956},
@@ -6663,7 +6688,7 @@ collect 1 Vashj'ir Seahorse##54465 |goto 46.0,46.9
 step
 learnmount Vashj'ir Seahorse##75207 |use Vashj'ir Seahorse##54465
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title Guide\\Draenei Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title Guide\\Draenei Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Draenei race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section. You cannot complete this section if you are a Draenei.",
 },[[
@@ -6771,7 +6796,7 @@ step
 Congratulations, you are now a Champion of The Exodar!
 |tip This is the end of the Gnome Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title Guide\\Dwarf Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title Guide\\Dwarf Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Dwarf race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section. You cannot complete this section if you are a Dwarf.",
 },[[
@@ -6875,7 +6900,7 @@ step
 talk Jaelyne Evensong##33592
 turnin The Valiant's Challenge##13713 |goto 76.3,19.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title Guide\\Gnome Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title Guide\\Gnome Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Gnome race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section. You cannot complete this section if you are a Gnome.",
 },[[
@@ -6980,7 +7005,7 @@ step
 talk Ambrose Boltspark##33335
 turnin The Valiant's Challenge##13723 |goto 76.5,19.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title Guide\\Human Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title Guide\\Human Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Human race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section. You cannot complete this section if you are a Human.",
 },[[
@@ -7088,7 +7113,7 @@ step
 Congratulations, you are now a Champion of Stormwind!
 |tip This is the end of the Human Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title Guide\\Night Elf Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title Guide\\Night Elf Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Night Elf race. You must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section. You cannot complete this section if you are a Night Elf.",
 },[[
@@ -7196,7 +7221,7 @@ step
 Congratulations, you are now a Champion of Darnassus!
 |tip This is the end of the Night Elf Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\The Exodar\\Draenei",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\The Exodar\\Draenei",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted reputation with the Exodar faction. You need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -8048,8 +8073,8 @@ To continue gaining reputation with the Exodar faction:
 You can buy an Exodar Tabard from Kadu at [The Exodar 69.6,61.7]
 |tip Wear the Exodar Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Ironforge & Gnomeregan\\Dwarf",{
-next="Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Ironforge & Gnomeregan\\Dwarf & Gnome",
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Ironforge & Gnomeregan\\Dwarf",{
+next="Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Ironforge & Gnomeregan\\Dwarf & Gnome",
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted reputation with the Ironforge and Gnomeregan factions. You need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -8254,7 +8279,7 @@ step
 talk Tharek Blackstone##1872
 turnin Don't Forget About Us##24493 |goto Dun Morogh/0 53.1,50.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Ironforge & Gnomeregan\\Dwarf & Gnome",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Ironforge & Gnomeregan\\Dwarf & Gnome",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted reputation with the Ironforge and Gnomeregan factions. You need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -8860,8 +8885,8 @@ To continue gaining reputation with the Gnomeregan faction:
 You can buy a Gnomeregan Tabard from Master Tinker Trini at [Ironforge 56.2,48.5]
 |tip Wear the Gnomeregan Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Ironforge & Gnomeregan\\Gnome",{
-next="Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Ironforge & Gnomeregan\\Dwarf & Gnome (5-15)",
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Ironforge & Gnomeregan\\Gnome",{
+next="Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Ironforge & Gnomeregan\\Dwarf & Gnome (5-15)",
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted reputation with the Ironforge and Gnomeregan factions. You need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -9103,7 +9128,7 @@ talk Jarvi Shadowstep##42353
 turnin Down with Crushcog!##26364 |goto 48.7,52.9
 accept On to Kharanos##26373 |goto 48.7,52.9
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Stormwind\\Human",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Stormwind\\Human",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted reputation with the Stormwind faction. You need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 endlevel=10
@@ -10232,7 +10257,7 @@ To continue gaining reputation with the Stormwind faction:
 You can buy a Stormwind Tabard from Captain Lancy Revshon at [Stormwind City 67.7,72.8]
 |tip Wear the Stormwind Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Darnassus\\Night Elf",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Darnassus\\Night Elf",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted reputation with the Darnassus faction. You need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -11389,7 +11414,7 @@ To continue gaining reputation with the Darnassus faction:
 You can buy a Darnassus Tabard from Moon Priestess Lasara at [Darnassus 36.5,48.5]
 |tip Wear the Darnassus Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Argent Tournament Grounds Aspirant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Argent Tournament Grounds Aspirant Rank Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing your race's Aspirant Rank dailies in order to achieve Argent Tournament Grounds Valiant Rank with your own race.",
 },[[
@@ -11463,7 +11488,7 @@ step
 talk Arcanist Taelis##33625
 turnin Up To The Challenge##13672 |goto 76.5,19.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Argent Tournament Grounds Champion Rank Dailies - Death Knight Only",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Argent Tournament Grounds Champion Rank Dailies - Death Knight Only",{
 author="support@zygorguides.com",
 description="You must be a Death Knight to do the quests in this Argent Tournament Grounds guide section. Also, you must have completed the Argent Tournament Grounds Valiant Rank Dailies guide section.",
 },[[
@@ -11531,7 +11556,7 @@ You will need to get a group of at least 3 people to do the daily quest in the n
 only DeathKnight
 step
 This is how this fight will happen:
-|tip You will pull Chillmaw first and fight him until he is at about 75% health.  At that point, a Cultist Bombardier will spawn to help Chillmaw fight.  Kill the Cultist Bombardier IMMEDIATELY, as they do alot of damage, compared to Chillmaw.  Continuing fighting Chillmaw and 2 other Cultist Bombardiers will spawn: 1 when Chillmaw is at about 50% health, and 1 when Chillmaw is at about 25% health.  Again, kill the Cultist Bombardiers immediately when they spawn and this fight will be a fairly easy one.
+|tip You will pull Chillmaw first and fight him until he is at about 75% health.  At that point, a Cultist Bombardier will spawn to help Chillmaw fight.  Kill the Cultist Bombardier IMMEDIATELY, as they do a lot of damage, compared to Chillmaw.  Continuing fighting Chillmaw and 2 other Cultist Bombardiers will spawn: 1 when Chillmaw is at about 50% health, and 1 when Chillmaw is at about 25% health.  Again, kill the Cultist Bombardiers immediately when they spawn and this fight will be a fairly easy one.
 kill Chillmaw |q 13788/1 |goto 44.1,32.6
 |tip Chillmaw is a big skeletal dragon that flies around this area.
 kill 3 Cultist Bombardier |q 13788/2 |goto 44.1,32.6
@@ -11550,7 +11575,7 @@ talk Illyrie Nightfall##33770
 turnin Among the Champions##13793 |goto 73.6,20.1
 only DeathKnight
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Argent Tournament Grounds Champion Rank Dailies - Non-Death Knight Only",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Argent Tournament Grounds Champion Rank Dailies - Non-Death Knight Only",{
 author="support@zygorguides.com",
 description="You must NOT be a Death Knight to do the quests in this Argent Tournament Grounds guide section. Also, you must have completed the Argent Tournament Grounds Valiant Rank Dailies guide section.",
 },[[
@@ -11607,7 +11632,7 @@ You will need to get a group of at least 3 people to do the daily quest in the n
 only if not DeathKnight
 step
 This is how this fight will happen:
-|tip You will pull Chillmaw first and fight him until he is at about 75% health.  At that point, a Cultist Bombardier will spawn to help Chillmaw fight.  Kill the Cultist Bombardier IMMEDIATELY, as they do alot of damage, compared to Chillmaw.  Continuing fighting Chillmaw and 2 other Cultist Bombardiers will spawn: 1 when Chillmaw is at about 50% health, and 1 when Chillmaw is at about 25% health.  Again, kill the Cultist Bombardiers immediately when they spawn and this fight will be a fairly easy one.
+|tip You will pull Chillmaw first and fight him until he is at about 75% health.  At that point, a Cultist Bombardier will spawn to help Chillmaw fight.  Kill the Cultist Bombardier IMMEDIATELY, as they do a lot of damage, compared to Chillmaw.  Continuing fighting Chillmaw and 2 other Cultist Bombardiers will spawn: 1 when Chillmaw is at about 50% health, and 1 when Chillmaw is at about 25% health.  Again, kill the Cultist Bombardiers immediately when they spawn and this fight will be a fairly easy one.
 kill Chillmaw |q 13682/1 |goto 44.1,32.6
 |tip Chillmaw is a big skeletal dragon that flies around this area.
 kill 3 Cultist Bombardier |q 13682/2 |goto 44.1,32.6
@@ -11637,7 +11662,7 @@ talk Cellian Daybreak##33763
 turnin Taking Battle To The Enemy##13789 |goto 69.9,23.5
 only if not DeathKnight
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Argent Tournament Grounds Crusader Dailies",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Argent Tournament Grounds Crusader Dailies",{
 author="support@zygorguides.com",
 description="In order to be able to complete the quests in this guide section, you must already be Exalted with the Ironforge, Stormwind City, Exodar, Darnassus and Gnomeregan. Also, you must have already become a Champion with each of those factions, using the Crusader Title Guide in the Icecrown section of the Dailies guide.",
 },[[
@@ -11689,7 +11714,7 @@ You will only be able to accept, and turn in, 1 of these 2 daily quests per day:
 turnin Get Kraken!##14108 |goto 69.5,23.1
 turnin The Fate Of The Fallen##14107 |goto 69.5,23.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Argent Tournament Grounds Valiant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Argent Tournament Grounds Valiant Rank Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing your race's Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion Rank with your own race. You must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section in order to have access to the quests in this guide section.",
 },[[
@@ -12286,7 +12311,7 @@ talk Eadric the Pure##33759
 turnin Eadric the Pure##13794 |goto 70.0,23.4
 only if not DeathKnight
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section contains the pre-quests to unlock most of the daily quests in the Argent Tournament Grounds region of Icecrown. You will need to achieve the Crusader title, using the Crusader Title Guide section in the Icecrown section, to unlock more daily quests.",
 },[[
@@ -12342,7 +12367,7 @@ step
 talk Scout Shalyndria##33647
 turnin Mastery Of The Shield-Breaker##13835 |goto Icecrown,76.5,19.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mount Training",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mount Training",{
 },[[
 step
 label "Main_Menu"

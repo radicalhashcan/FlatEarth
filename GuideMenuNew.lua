@@ -79,7 +79,8 @@ function GuideMenu:Search()
 	-- Get list of search results, and separate them to category folders
 	local nresults=0
 	for _,object in pairs(ZGV:FindGuides(searchtext)) do
-		if object.GetStatus and not (ZGV.db.profile.gmhidecompleted and (object:GetStatus()=="OUTLEVELED" or object:GetStatus()=="COMPLETE")) then
+		if (not object.condition_visible or object.condition_visible()==true) -- don't show guides with invalid condition_visible
+		   and object.GetStatus and not (ZGV.db.profile.gmhidecompleted and (object:GetStatus()=="OUTLEVELED" or object:GetStatus()=="COMPLETE")) then -- don't show outleveled/completed if option is set
 			category,_ = (object.fullpath or object.title):match("^([^\\]+)\\(.*)$")
 			temp_structure[category]=temp_structure[category] or {}
 			table.insert(temp_structure[category],object)
@@ -151,8 +152,8 @@ function GuideMenu:ShowGuides(path,iscurrent)
 		tinsert(GuideMenu.Guides,g)
 	end
 	for gi,g in ipairs(self.group.guides) do
-		if not g.hidden then 
-		--Dont Put guides that are hidden into the flatgroup. Hidden guides can still be searched for. They should not be suggested though.
+		--Dont Put guides that are hidden into the flatgroup. Guides hidden with simple switch can still be searched for. They should not be suggested though.	
+		if (not g.hidden) and (not g.condition_visible or g.condition_visible()==true) then 
 			if g.GetStatus and not (ZGV.db.profile.gmhidecompleted and (g:GetStatus()=="OUTLEVELED" or g:GetStatus()=="COMPLETE")) then
 				tinsert(GuideMenu.Guides,g)
 				g:GetCompletion()

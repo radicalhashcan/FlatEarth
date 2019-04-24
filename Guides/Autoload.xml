@@ -12,7 +12,6 @@
 		<!-- NEUTRAL -->
 		<Script file="Includes\Achievements\N_Achievements_Includes.lua"/>
 		<Script file="Includes\Dailies\N_Dailies_Includes.lua"/>
-		<Script file="Includes\Dailies\N_Events_Includes.lua"/>
 		<Script file="Includes\General\N_General_Includes.lua"/>
 		<Script file="Includes\General\N_Quest_Includes.lua"/>
 		<Script file="Includes\Leveling\N_Garrisons_Includes.lua"/>
@@ -25,7 +24,6 @@
 		<!-- ALLIANCE -->
 		<Script file="Includes\Achievements\A_Achievements_Includes.lua"/>
 		<Script file="Includes\Dailies\A_Dailies_Includes.lua"/>
-		<Script file="Includes\Dailies\A_Events_Includes.lua"/>
 		<Script file="Includes\General\A_General_Includes.lua"/>
 		<Script file="Includes\General\A_Quest_Includes.lua"/>
 		<Script file="Includes\Leveling\A_Garrisons_Includes.lua"/>
@@ -39,7 +37,6 @@
 		<!-- HORDE -->
 		<Script file="Includes\Achievements\H_Achievements_Includes.lua"/>
 		<Script file="Includes\Dailies\H_Dailies_Includes.lua"/>
-		<Script file="Includes\Dailies\H_Events_Includes.lua"/>
 		<Script file="Includes\General\H_General_Includes.lua"/>
 		<Script file="Includes\General\H_Quest_Includes.lua"/>
 		<Script file="Includes\Leveling\H_Garrisons_Includes.lua"/>
@@ -192,13 +189,13 @@
 
 	<!-- GEAR -->
 		<Script file="Dungeons\ZygorGearHorde.lua"/>
-		<Script file="Dungeons\ZygorGearHordeTrial.lua"/>
 		
 		<Script file="Dungeons\ZygorGearAlliance.lua"/>
-		<Script file="Dungeons\ZygorGearAllianceTrial.lua"/>
 
-		<Script file="Dungeons\ZygorGearCommon.lua"/>
-		<Script file="Dungeons\ZygorGearCommonTrial.lua"/>
+		<Script file="Dungeons\ZygorGearCommonMOP.lua"/>
+		<Script file="Dungeons\ZygorGearCommonWOD.lua"/>
+		<Script file="Dungeons\ZygorGearCommonLEGION.lua"/>
+		<Script file="Dungeons\ZygorGearCommonBFA.lua"/>
 
 	<!-- PROFESSIONS -->
 		<!-- CATA -->
@@ -492,27 +489,41 @@
 		<Script file="Reputations\ZygorReputationsHordeBFA.lua"/>
 		<Script file="Reputations\ZygorReputationsHordeBFATrial.lua"/>
 
+	<!-- EVENTS -->
+		<Script file="Events\ZygorEventsAlliance.lua"/>
+		<Script file="Events\ZygorEventsAllianceTrial.lua"/>
+
+		<Script file="Events\ZygorEventsHorde.lua"/>
+		<Script file="Events\ZygorEventsHordeTrial.lua"/>
+
 		<!-- GOLD -->
-		<Script file="Gold\CraftingTablesScrolls.lua" />
-		<Script file="Gold\CraftingTablesLevels.lua" />
-		<Script file="Gold\AHItemStatus.lua" />
+		<Script file="Gold\CraftingTablesScrolls.lua"/>
+		<Script file="Gold\CraftingTablesLevels.lua"/>
+		<Script file="Gold\AHItemStatus.lua"/>
 
 		<!-- WOD -->
-		<Script file="Gold\ZygorFarmingCommonWOD.lua" />
-		<Script file="Gold\ZygorFarmingAllianceWOD.lua" />
-		<Script file="Gold\ZygorFarmingHordeWOD.lua" />
-		<Script file="Gold\ZygorGatheringCommonWOD.lua" />
-		<Script file="Gold\ZygorGatheringAllianceWOD.lua" />
-		<Script file="Gold\ZygorGatheringHordeWOD.lua" />
-		<Script file="Gold\ZygorGoldRunsCommonWOD.lua" />
-		<Script file="Gold\ZygorGoldRunsAllianceWOD.lua" />
-		<Script file="Gold\ZygorGoldRunsHordeWOD.lua" />
+		<Script file="Gold\ZygorFarmingCommonWOD.lua"/>
+		<Script file="Gold\ZygorFarmingAllianceWOD.lua"/>
+		<Script file="Gold\ZygorFarmingHordeWOD.lua"/>
+		<Script file="Gold\ZygorGatheringCommonWOD.lua"/>
+		<Script file="Gold\ZygorGatheringAllianceWOD.lua"/>
+		<Script file="Gold\ZygorGatheringHordeWOD.lua"/>
+		<Script file="Gold\ZygorGoldRunsCommonWOD.lua"/>
+		<Script file="Gold\ZygorGoldRunsAllianceWOD.lua"/>
+		<Script file="Gold\ZygorGoldRunsHordeWOD.lua"/>
 
 		<!-- LEGION -->
-		<Script file="Gold\ZygorGatheringCommonLEGION.lua" />
+		<Script file="Gold\ZygorGatheringCommonLEGION.lua"/>
+		<Script file="Gold\ZygorGatheringAllianceLEGION.lua"/>
+		<Script file="Gold\ZygorGatheringHordeLEGION.lua"/>
 	
 		<!-- BFA -->
-		<Script file="Gold\ZygorGatheringCommonBFA.lua" />
+		<Script file="Gold\ZygorFarmingCommonBFA.lua"/>
+		<Script file="Gold\ZygorFarmingAllianceBFA.lua"/>
+		<Script file="Gold\ZygorFarmingHordeBFA.lua"/>
+		<Script file="Gold\ZygorGatheringCommonBFA.lua"/>
+		<Script file="Gold\ZygorGatheringAllianceBFA.lua"/>
+		<Script file="Gold\ZygorGatheringHordeBFA.lua"/>
 	
 	<!--
 	<Script file="ZygorMacros.lua"/>
@@ -529,6 +540,10 @@
 	<Script file="LEG_H_Rares.lua" />
 	<Script file="LEG_A_Treasures.lua" />
 	<Script file="LEG_H_Treasures.lua" />
+	<Script file="BFA_A_Rares.lua" />
+	<Script file="BFA_H_Rares.lua" />
+	<Script file="BFA_A_Treasures.lua" />
+	<Script file="BFA_H_Treasures.lua" />
 
 
 	<!-- user guides -->

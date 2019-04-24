@@ -142,9 +142,9 @@ local function loot_sellgreyitems_thread() --Auto Sell Grey Items
 	if not MerchantFrame:IsVisible() then ZGV:Print("Selling of grey items interrupted. Results may not be accurate.") end
 	if Loot.SellingGreyTotal>0 then
 		for i,v in pairs(Loot.SellingGreyStatus) do
-			ZGV:Print(v,false,true)
+			ZGV:Print(v)
 		end
-		ZGV:Print(L['loot_sellgreys_total']:format(GetMoneyString(Loot.SellingGreyTotal)),false,true)
+		ZGV:Print(L['loot_sellgreys_total']:format(GetMoneyString(Loot.SellingGreyTotal)))
 	end
 end
 

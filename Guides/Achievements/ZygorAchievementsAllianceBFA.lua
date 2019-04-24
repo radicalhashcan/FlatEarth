@@ -3,8 +3,145 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("AchievementsABFA") then return end
 ZygorGuidesViewer.GuideMenuTier = "BFA"
-ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\A Fish Out of Water",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character\\Epic", {
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to equip an item of at least Epic quality, with a minimum item level of 340, in every slot.",
+achieveid={12547},
+startlevel=110,
+keywords={"BFA, Battle, for, Azeroth, Epic"},
+},[[
+step
+Equip purple-quality or higher gear of an item level of 340 or higher in every slot:
+|tip If you only have 1 ring or trinket that counts for this achievement, you can swap it into the other item slot to gain credit for that slot as well.
+Head |achieve 12547/1
+Neck |achieve 12547/2
+Shoulder |achieve 12547/3
+Chest |achieve 12547/4
+Waist |achieve 12547/5
+Legs |achieve 12547/6
+Feet |achieve 12547/7
+Wrist |achieve 12547/8
+Hands |achieve 12547/9
+Left Ring |achieve 12547/10
+Right Ring |achieve 12547/11
+Right Trinket |achieve 12547/12
+Second Trinket |achieve 12547/13
+Cloak |achieve 12547/14
+Weapon |achieve 12547/15
+step
+Equip Items of at least Epic Quality With a Minimum Item Level of 340, In Every Slot |achieve 12547
+step
+_Congratulations!_
+You Earned the "Epic" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character\\Level 120", {
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to reach level 120.",
+achieveid={12544},
+startlevel=110,
+keywords={"BFA, Battle, for, Azeroth, Level, 120"},
+},[[
+step
+Reach Level 120 |achieve 12544
+|tip Use the leveling guides to accomplish this.
+step
+_Congratulations!_
+You Earned the "Level 120" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character\\Superior", {
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to equip an item of at least Superior quality, with a minimum item level of 310, in every slot.",
+achieveid={12546},
+startlevel=110,
+keywords={"BFA, Battle, for, Azeroth, Superior"},
+},[[
+step
+Equip blue-quality or higher gear of an item level of 310 or higher in every slot:
+|tip If you only have 1 ring or trinket that counts for this achievement, you can swap it into the other item slot to gain credit for that slot as well.
+Head |achieve 12546/1
+Neck |achieve 12546/2
+Shoulder |achieve 12546/3
+Chest |achieve 12546/4
+Waist |achieve 12546/5
+Legs |achieve 12546/6
+Feet |achieve 12546/7
+Wrist |achieve 12546/8
+Hands |achieve 12546/9
+Left Ring |achieve 12546/10
+Right Ring |achieve 12546/11
+Right Trinket |achieve 12546/12
+Second Trinket |achieve 12546/13
+Cloak |achieve 12546/14
+Weapon |achieve 12546/15
+step
+Equip Items of at least Superior Quality With a Minimum Item Level of 310, In Every Slot |achieve 12546
+step
+_Congratulations!_
+You Earned the "Superior" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\New Mog, G'huun This?", {
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you must collect an armor set from Uldir.",
+achieveid={12991},
+startlevel=120,
+keywords={"BFA, Battle, for, Azeroth, Raid, New, Mog, G'huun, This?"},
+},[[
+step
+To earn this achievement, you must collect an armor set from Uldir
+|tip Use the "Battle of Dazar'alor" raid guides to accomplish this.
+|tip The "Raid" section of the Adventure Guide (shift + J) lists the items each boss drops, if you are looking for specific pieces to finish an armor set.
+Collect an Armor Set From Uldir |achieve 12991
+step
+_Congratulations!_
+You Earned the "New Mog, G'huun This?" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Daz'aling Attire", {
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you must collect an armor set from the Battle of Dazar'alor.",
+achieveid={13385},
+startlevel=110,
+keywords={"BFA, Battle, for, Azeroth, Raid, Daz'aling, Attire"},
+},[[
+step
+To earn this achievement, you must collect an armor set from the Battle of Dazar'alor
+|tip Use the "Battle of Dazar'alor" raid guides to accomplish this.
+|tip The "Raid" section of the Adventure Guide (shift + J) lists the items each boss drops, if you are looking for specific pieces to finish an armor set.
+Collect an Armor Set From the Battle of Dazar'alor |achieve 13385
+step
+_Congratulations!_
+You Earned the "Daz'aling Attire" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Mounts\\A Horde of Hoofbeats", {
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you must collect 400 mounts (usable by a single character).",
+achieveid={12933},
+startlevel=110,
+keywords={"BFA, Battle, for, Azeroth, Mounts, A, Horde, Hoofbeats"},
+},[[
+step
+Please refer to our individual mount guides to earn this achievement
+|tip You can select any mount from the Mounts panel by pressing "Shift+P" and searching our database.
+Obtain #400# Mounts |achieve 12933
+step
+_Congratulations!_
+You Earned the "A Horde of Hoofbeats" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Mounts\\No Stable Big Enough", {
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you must collect 350 mounts (usable by a single character).",
+achieveid={12932},
+startlevel=110,
+keywords={"BFA, Battle, for, Azeroth, Mounts, No, Stable, Big, Enough"},
+},[[
+step
+Please refer to our individual mount guides to earn this achievement
+|tip You can select any mount from the Mounts panel by pressing "Shift+P" and searching our database.
+Obtain #350# Mounts |achieve 12932
+step
+_Congratulations!_
+You Earned the "No Stable Big Enough" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\A Fish Out of Water",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to kick fifteen Gasping Flounders back into the water then defeat Viq'Goth in the Siege of Boralus on Mythic difficulty.",
 achieveid={12726},
@@ -21,7 +158,7 @@ step
 _Congratulations!_
 You Earned the "A Fish Out of Water" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Alchemical Romance",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Alchemical Romance",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to destroy three Deathtouched Slavers' corspes using a single Alchemical Fire before defeating Gorak Tul on Mythic Difficulty in Waycrest Manor.",
 achieveid={12490},
@@ -38,7 +175,7 @@ step
 _Congratulations!_
 You Earned the "Alchemical Romance" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Atal'Dazar",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Atal'Dazar",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Yazma in Atal'Dazar.",
 achieveid={12824},
@@ -48,13 +185,37 @@ keywords={"Yazma, Dungeon, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Atal'Dazar
-Click here to load the "Atal'Dazar" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Atal'Dazar"
+Click here to load the "Atal'Dazar" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Atal'Dazar"
 Defeat Yazma in Atal'Dazar |achieve 12824
 step
 _Congratulations!_
 You Earned the "Atal'Dazar" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Battle for Azeroth Keymaster",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Battle for Azeroth Dungeon Hero",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to complete all Battle for Azeroth dungeons on Heroic difficulty.",
+achieveid={12807},
+startlevel=120,
+endlevel=120,
+keywords={"Heroic, Dungeon, BFA, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, you must complete all Battle for Azeroth dungeons on Heroic difficulty
+Heroic: Temple of Sethraliss |achieve 12807/1
+Heroic: Underrot |achieve 12807/2
+Heroic: Waycrest Manor |achieve 12807/3
+Heroic: Freehold |achieve 12807/4
+Heroic: Shrine of the Storm |achieve 12807/5
+Heroic: Atal'Dazar |achieve 12807/6
+Heroic: Tol Dagor |achieve 12807/7
+Heroic: The MOTHERLODE!! |achieve 12807/8
+step
+Complete all Battle for Azeroth dungeons on Heroic difficulty |achieve 12807
+step
+_Congratulations!_
+You Earned the "Battle for Azeroth Dungeon Hero" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Battle for Azeroth Keymaster",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to complete all Battle for Azeroth dungeons using a Mythic Keystone.",
 achieveid={13075},
@@ -80,7 +241,7 @@ step
 _Congratulations!_
 You Earned the "Battle for Azeroth Keymaster" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Breath of the Shrine",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Breath of the Shrine",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to light the ceremonial fires within the temple using the Shrine's Breath in Shrine of the Storm on Mythic difficulty",
 achieveid={12600},
@@ -100,7 +261,7 @@ step
 _Congratulations!_
 You Earned the "Breath of the Shrine" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Bringing Hexy Back",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Bringing Hexy Back",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat all bosses in Atal'Dazar on Mythic difficulty with at least one party member affected by Unstable Hex.",
 achieveid={12270},
@@ -118,7 +279,7 @@ step
 _Congratulations!_
 You Earned the "Bringing Hexy Back" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Freehold",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Freehold",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Harlan Sweete in Freehold.",
 achieveid={12831},
@@ -128,13 +289,132 @@ keywords={"Harlan, Dungeon, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Freehold
-Click here to load the "Freehold" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Freehold"
+Click here to load the "Freehold" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Freehold"
 Defeat Harlan Sweete in Freehold |achieve 12831
 step
 _Congratulations!_
 You Earned the "Freehold" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Gold Fever",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Glory of the Wartorn Hero",{
+author="support@zygorguides.com",
+description="This guide will walk you through completing the \"Glory of the Wartorn Hero\" Achievement.",
+achieveid={12812},
+startlevel=120,
+keywords={"Raid, BFA, Battle, for, Azeroth, Glory, of, Wartorn, Hero"},
+},[[
+step
+Earn the _Pecking Order_ Achievement |achieve 12812/1
+|tip Use the "Pecking Order" achievement guide to accomplish this.
+Click here to load the "Pecking Order" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Pecking Order"
+step
+Earn the _I'm in Charge Now!_ Achievement |achieve 12812/2
+|tip Use the "I'm in Charge Now!" achievement guide to accomplish this.
+Click here to load the "I'm in Charge Now!" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\I'm in Charge Now!"
+step
+Earn the _That Sweete Booty_ Achievement |achieve 12812/3
+|tip Use the "That Sweete Booty" achievement guide to accomplish this.
+Click here to load the "That Sweete Booty" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\That Sweete Booty"
+step
+Earn the _Losing My Profession_ Achievement |achieve 12812/4
+|tip Use the "Losing My Profession" achievement guide to accomplish this.
+Click here to load the "Losing My Profession" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Losing My Profession"
+step
+Earn the _Run Wild Like a Man On Fire_ Achievement |achieve 12812/5
+|tip Use the "Run Wild Like a Man On Fire" achievement guide to accomplish this.
+Click here to load the "Run Wild Like a Man On Fire" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Run Wild Like a Man On Fire"
+step
+Earn the _Alchemical Romance_ Achievement |achieve 12812/6
+|tip Use the "Alchemical Romance" achievement guide to accomplish this.
+Click here to load the "Alchemical Romance" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Alchemical Romance"
+step
+Earn the _Breath of the Shrine_ Achievement |achieve 12812/7
+|tip Use the "Breath of the Shrine" achievement guide to accomplish this.
+Click here to load the "Breath of the Shrine" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Breath of the Shrine"
+step
+Earn the _The Void Lies Sleeping_ Achievement |achieve 12812/8
+|tip Use the "The Void Lies Sleeping" achievement guide to accomplish this.
+Click here to load the "The Void Lies Sleeping" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\The Void Lies Sleeping"
+step
+Earn the _Trust No One_ Achievement |achieve 12812/9
+|tip Use the "Trust No One" achievement guide to accomplish this.
+Click here to load the "Trust No One" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Trust No One"
+step
+Earn the _Bringing Hexy Back_ Achievement |achieve 12812/10
+|tip Use the "Bringing Hexy Back" achievement guide to accomplish this.
+Click here to load the "Bringing Hexy Back" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Bringing Hexy Back"
+step
+Earn the _Gold Fever_ Achievement |achieve 12812/11
+|tip Use the "Gold Fever" achievement guide to accomplish this.
+Click here to load the "Gold Fever" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Gold Fever"
+step
+Earn the _It's Lit!_ Achievement |achieve 12812/12
+|tip Use the "It's Lit!" achievement guide to accomplish this.
+Click here to load the "It's Lit!" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\It's Lit!"
+step
+Earn the _Not a Fun Guy_ Achievement |achieve 12812/13
+|tip Use the "Not a Fun Guy" achievement guide to accomplish this.
+Click here to load the "Not a Fun Guy" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Not a Fun Guy"
+step
+Earn the _Taint Nobody Got Time For That_ Achievement |achieve 12812/14
+|tip Use the "Taint Nobody Got Time For That" achievement guide to accomplish this.
+Click here to load the "Taint Nobody Got Time For That" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Taint Nobody Got Time For That"
+step
+Earn the _Sporely Alive_ Achievement |achieve 12812/15
+|tip Use the "Sporely Alive" achievement guide to accomplish this.
+Click here to load the "Sporely Alive" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Sporely Alive"
+step
+Earn the _Snake Eyes_ Achievement |achieve 12812/16
+|tip Use the "Snake Eyes" achievement guide to accomplish this.
+Click here to load the "Snake Eyes" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Snake Eyes"
+step
+Earn the _Snake Eater_ Achievement |achieve 12812/17
+|tip Use the "Snake Eater" achievement guide to accomplish this.
+Click here to load the "Snake Eater" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Snake Eater"
+step
+Earn the _Good Night, Sweet Prince_ Achievement |achieve 12812/18
+|tip Use the "Good Night, Sweet Prince" achievement guide to accomplish this.
+Click here to load the "Good Night, Sweet Prince" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Good Night, Sweet Prince"
+step
+Earn the _Remix to Ignition_ Achievement |achieve 12812/19
+|tip Use the "Remix to Ignition" achievement guide to accomplish this.
+Click here to load the "Remix to Ignition" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Remix to Ignition"
+step
+Earn the _Shot Through the Heart_ Achievement |achieve 12812/20
+|tip Use the "Shot Through the Heart" achievement guide to accomplish this.
+Click here to load the "Shot Through the Heart" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Shot Through the Heart"
+step
+Earn the _Pitch Invasion_ Achievement |achieve 12812/21
+|tip Use the "Pitch Invasion" achievement guide to accomplish this.
+Click here to load the "Pitch Invasion" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Pitch Invasion"
+step
+Earn the _Ready for Raiding VI_ Achievement |achieve 12812/22
+|tip Use the "Ready for Raiding VI" achievement guide to accomplish this.
+Click here to load the "Ready for Raiding VI" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Ready for Raiding VI"
+step
+Earn the _Stand by Me_ Achievement |achieve 12812/23
+|tip Use the "Stand by Me" achievement guide to accomplish this.
+Click here to load the "Stand by Me" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Stand By Me"
+step
+Earn the _A Fish Out of Water_ Achievement |achieve 12812/24
+|tip Use the "A Fish Out of Water" achievement guide to accomplish this.
+Click here to load the "A Fish Out of Water" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\A Fish Out of Water"
+step
+Earn the _It Belongs in a Mausoleum!_ Achievement |achieve 12812/25
+|tip Use the "It Belongs in a Mausoleum!" achievement guide to accomplish this.
+Click here to load the "It Belongs in a Mausoleum!" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\It Belongs in a Mausoleum!"
+step
+Earn the _How to Keep a Mummy_ Achievement |achieve 12812/26
+|tip Use the "How to Keep a Mummy" achievement guide to accomplish this.
+Click here to load the "How to Keep a Mummy" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\How to Keep a Mummy"
+step
+Earn the _Wrap God_ Achievement |achieve 12812/27
+|tip Use the "Wrap God" achievement guide to accomplish this.
+Click here to load the "Wrap God" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Wrap God"
+step
+_Congratulations!_
+You Earned the "Glory of the Wartorn Hero" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Gold Fever",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Priestess Alun'za after destroying the Fatal Corruption in Atal'Dazar on Mythic difficulty.",
 achieveid={12272},
@@ -152,7 +432,7 @@ step
 _Congratulations!_
 You Earned the "Gold Fever" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Good Night, Sweet Prince",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Good Night, Sweet Prince",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you must restore the Avatar of Sethraliss with the Prince active in the Temple of Sethraliss on Mythic difficulty.",
 achieveid={12508},
@@ -171,7 +451,7 @@ step
 _Congratulations!_
 You Earned the "Good Night, Sweet Prince" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Heroic: Atal'Dazar",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Heroic: Atal'Dazar",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Yazma in Atal'Dazar on Heroic difficulty or higher.",
 achieveid={12825},
@@ -181,13 +461,13 @@ keywords={"Yazma, Dungeon, Heroic, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Atal'Dazar on Heroic difficulty or higher
-Click here to load the "Atal'Dazar" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Atal'Dazar"
+Click here to load the "Atal'Dazar" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Atal'Dazar"
 Defeat Yazma in Atal'Dazar on Heroic difficulty or higher |achieve 12825
 step
 _Congratulations!_
 You Earned the "Heroic: Atal'Dazar" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Heroic: Freehold",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Heroic: Freehold",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Harlan Sweete in Freehold on Heroic difficulty or higher.",
 achieveid={12832},
@@ -197,13 +477,13 @@ keywords={"Harlan, Dungeon, Heroic, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Freehold on Heroic difficulty or higher
-Click here to load the "Freehold" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Freehold"
+Click here to load the "Freehold" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Freehold"
 Defeat Harlan Sweete in Freehold on Heroic difficulty or higher |achieve 12832
 step
 _Congratulations!_
 You Earned the "Heroic: Freehold" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Heroic: Shrine of the Storm",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Heroic: Shrine of the Storm",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Vol'zith the Whisperer in Shrine of the Storm on Heroic difficulty or higher.",
 achieveid={12837},
@@ -213,13 +493,13 @@ keywords={"Vol'zith, Dungeon, Heroic, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Shrine of the Storm on Heroic difficulty or higher
-Click here to load the "Shrine of the Storm" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Shrine of the Storm"
+Click here to load the "Shrine of the Storm" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Shrine of the Storm"
 Defeat Vol'zith the Whisperer in Shrine of the Storm on Heroic difficulty or higher |achieve 12837
 step
 _Congratulations!_
 You Earned the "Heroic: Shrine of the Storm" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Heroic: The Temple of Sethraliss",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Heroic: The Temple of Sethraliss",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to restore the Avatar of Sethraliss in the Temple of Sethraliss on Heroic difficulty or higher.",
 achieveid={12505},
@@ -229,13 +509,13 @@ keywords={"Avatar, Dungeon, Heroic, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete the Temple of Sethraliss on Heroic difficulty or higher
-Click here to load the "Temple of Sethraliss" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Temple of Sethraliss"
+Click here to load the "Temple of Sethraliss" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Temple of Sethraliss"
 Complete the Avatar of Sethraliss encounter in the Temple of Sethraliss on Heroic difficulty or higher |achieve 12505
 step
 _Congratulations!_
 You Earned the "Heroic: The Temple of Sethraliss" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Heroic: The MOTHERLODE!!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Heroic: The MOTHERLODE!!",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Mogul Razdunk in The MOTHERLODE!! on Heroic difficulty or higher.",
 achieveid={12845},
@@ -245,13 +525,13 @@ keywords={"Razdunk, Dungeon, Heroic, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete The MOTHERLODE!! on Heroic difficulty or higher
-Click here to load "The MOTHERLODE!!" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\The MOTHERLODE!!"
+Click here to load "The MOTHERLODE!!" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\The MOTHERLODE!!"
 Defeat Mogul Razdunk in The MOTHERLODE!! on Heroic difficulty or higher |achieve 12845
 step
 _Congratulations!_
 You Earned the "Heroic: The MOTHERLODE!!" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Heroic: Tol Dagor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Heroic: Tol Dagor",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Overseer Korgus in Tol Dagor on Heroic difficulty or higher.",
 achieveid={12841},
@@ -261,13 +541,13 @@ keywords={"Korgus, Dungeon, Heroic, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Tol Dagor on Heroic difficulty or higher
-Click here to load the "Tol Dagor" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Tol Dagor"
+Click here to load the "Tol Dagor" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Tol Dagor"
 Defeat Overseer Korgus in Tol Dagor on Heroic difficulty or higher |achieve 12841
 step
 _Congratulations!_
 You Earned the "Heroic: Tol Dagor" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Heroic: Underrot",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Heroic: Underrot",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat the Unbound Abomination in Underrot on Heroic difficulty or higher.",
 achieveid={12501},
@@ -277,13 +557,13 @@ keywords={"Unbound, Abomination, Heroic, Dungeon, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete the Underrot on Heroic difficulty or higher
-Click here to load the "Underrot" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\The Underrot"
+Click here to load the "Underrot" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\The Underrot"
 Defeat the Unbound Abomination in the Underrot on Heroic difficulty or higher |achieve 12501
 step
 _Congratulations!_
 You Earned the "Heroic: Underrot" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Heroic: Waycrest Manor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Heroic: Waycrest Manor",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat the Gorak Tul in Waycrest Manor on Heroic difficulty or higher.",
 achieveid={12484},
@@ -293,13 +573,13 @@ keywords={"Gorak, Tul, Heroic, Dungeon, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Waycrest Manor on Heroic difficulty or higher
-Click here to load the "Waycrest Manor" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Waycrest Manor"
+Click here to load the "Waycrest Manor" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Waycrest Manor"
 Defeat Gorak Tul in Waycrest Manor on Heroic difficulty or higher |achieve 12484
 step
 _Congratulations!_
 You Earned the "Heroic: Waycrest Manor" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\How to Keep a Mummy",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\How to Keep a Mummy",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to free Miimii the Mummy in Kings' Rest on Mythic difficulty.",
 achieveid={12723},
@@ -318,7 +598,7 @@ step
 _Congratulations!_
 You Earned the "How to Keep a Mummy" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\I'm in Charge Now!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\I'm in Charge Now!",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Skycap'n Kragg after summoning and defeating Patches on Mythic difficulty in Freehold.",
 achieveid={12548},
@@ -335,7 +615,7 @@ step
 _Congratulations!_
 You Earned the "I'm in Charge Now!" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\It Belongs in a Mausoleum!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\It Belongs in a Mausoleum!",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to find four ancient trinkets in Kings' Rest on Mythic difficulty.",
 achieveid={12722},
@@ -366,7 +646,7 @@ step
 _Congratulations!_
 You Earned the "It Belongs in a Mausoleum!" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\It's Lit!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\It's Lit!",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Yazma while all four Shadowflame Sconces are lit in Atal'Dazar on Mythic difficulty",
 achieveid={12273},
@@ -384,7 +664,25 @@ step
 _Congratulations!_
 You Earned the "It's Lit!" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Losing My Profession",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Kings' Rest",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat King Dazar in Kings' Rest on Mythic difficulty.",
+achieveid={12848},
+startlevel=120,
+endlevel=120,
+keywords={"Mythic, Dungeon, BFA, Battle, for, Azeroth, Kings', Rest"},
+},[[
+step
+To earn this achievement, you must defeat Dazar in Kings' Rest on Mythic difficulty
+kill King Dazar##136160
+|tip He is the last boss of the dungeon.
+|tip Use the "Kings' Rest" dungeon guide to accomplish this.
+Defeat Dazar in Kings' Rest on Mythic Difficulty |achieve 12848
+step
+_Congratulations!_
+You Earned the "Kings' Rest" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Losing My Profession",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to find and kill the following dungeon creatures in Waycrest Manor on Mythic difficulty:\n\nGoverness Tabitha\nGroundskeeper Lilith\nHuntmaster Grath\nHead Vintner Justin\nSeamstress Johanna",
 achieveid={12489},
@@ -452,7 +750,7 @@ step
 _Congratulations!_
 You Earned the "Losing My Profession" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Mythic: Atal'Dazar",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Mythic: Atal'Dazar",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Yazma in Atal'Dazar on Mythic difficulty or higher.",
 achieveid={12826},
@@ -462,13 +760,13 @@ keywords={"Yazma, Dungeon, Mythic, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Atal'Dazar on Mythic difficulty or higher
-Click here to load the "Atal'Dazar" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Atal'Dazar"
+Click here to load the "Atal'Dazar" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Atal'Dazar"
 Defeat Yazma in Atal'Dazar on Mythic difficulty or higher |achieve 12826
 step
 _Congratulations!_
 You Earned the "Mythic: Atal'Dazar" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Mythic: Freehold",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Mythic: Freehold",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Harlan Sweete in Freehold on Mythic difficulty or higher.",
 achieveid={12833},
@@ -478,13 +776,13 @@ keywords={"Harlan, Dungeon, Mythic, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Freehold on Mythic difficulty or higher
-Click here to load the "Freehold" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Freehold"
+Click here to load the "Freehold" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Freehold"
 Defeat Harlan Sweete in Freehold on Mythic difficulty or higher |achieve 12833
 step
 _Congratulations!_
 You Earned the "Mythic: Freehold" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Mythic: Shrine of the Storm",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Mythic: Shrine of the Storm",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Vol'zith the Whisperer in Shrine of the Storm on Mythic difficulty or higher.",
 achieveid={12838},
@@ -494,29 +792,30 @@ keywords={"Vol'zith, Dungeon, Mythic, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Shrine of the Storm on Mythic difficulty or higher
-Click here to load the "Shrine of the Storm" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Shrine of the Storm"
+Click here to load the "Shrine of the Storm" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Shrine of the Storm"
 Defeat Vol'zith the Whisperer in Shrine of the Storm on Mythic difficulty or higher |achieve 12838
 step
 _Congratulations!_
 You Earned the "Mythic: Shrine of the Storm" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Mythic: The Temple of Sethraliss",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Mythic: The Temple of Sethraliss",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will be required to restore the Avatar of Sethraliss in the Temple of Sethraliss on Mythic difficulty or higher.",
+description="This guide will walk you through Earning Mythic: Temple of Sethraliss Achievement.",
 achieveid={12506},
 startlevel=120,
 endlevel=120,
-keywords={"Avatar, Dungeon, Mythic, BFA, Battle, for, Azeroth"},
+keywords={"The, Temple, of, Sethraliss, Mythic, Temple, of, Sethraliss, Dungeon, BFA, Battle, for, Azeroth"},
 },[[
 step
-To earn this achievement, complete the Temple of Sethraliss on Mythic difficulty or higher
-Click here to load the "Temple of Sethraliss" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Temple of Sethraliss"
-Complete the Avatar of Sethraliss encounter in the Temple of Sethraliss on Mythic difficulty or higher |achieve 12506
+kill Avatar of Sethraliss##133392
+|tip This is the final boss of the instance.
+|tip Form your group and set the dungeon to Mythic or higher difficulty.
+Earn the "Mythic: The Temple of Sethraliss" Achievement |achieve 12506 |goto Temple of Sethraliss/0 37.8,23.7
 step
 _Congratulations!_
-You Earned the "Mythic: The Temple of Sethraliss" Achievement.
+You Earned the "Mythic: Temple of Sethraliss" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Mythic: The MOTHERLODE!!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Mythic: The MOTHERLODE!!",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Mogul Razdunk in The MOTHERLODE!! on Mythic difficulty or higher.",
 achieveid={12846},
@@ -526,13 +825,13 @@ keywords={"Razdunk, Dungeon, Mythic, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete The MOTHERLODE!! on Mythic difficulty or higher
-Click here to load "The MOTHERLODE!!" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\The MOTHERLODE!!"
+Click here to load "The MOTHERLODE!!" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\The MOTHERLODE!!"
 Defeat Mogul Razdunk in The MOTHERLODE!! on Mythic difficulty or higher |achieve 12846
 step
 _Congratulations!_
 You Earned the "Mythic: The MOTHERLODE!!" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Mythic: Tol Dagor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Mythic: Tol Dagor",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Overseer Korgus in Tol Dagor on Mythic difficulty or higher.",
 achieveid={12842},
@@ -542,13 +841,13 @@ keywords={"Korgus, Dungeon, Mythic, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Tol Dagor on Mythic difficulty or higher
-Click here to load the "Tol Dagor" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Tol Dagor"
+Click here to load the "Tol Dagor" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Tol Dagor"
 Defeat Overseer Korgus in Tol Dagor on Mythic difficulty or higher |achieve 12842
 step
 _Congratulations!_
 You Earned the "Mythic: Tol Dagor" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Mythic: Underrot",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Mythic: Underrot",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat the Unbound Abomination in Underrot on Mythic difficulty or higher.",
 achieveid={12502},
@@ -558,13 +857,13 @@ keywords={"Unbound, Abomination, Mythic, Dungeon, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete the Underrot on Mythic difficulty or higher
-Click here to load the "Underrot" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\The Underrot"
+Click here to load the "Underrot" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\The Underrot"
 Defeat the Unbound Abomination in the Underrot on Mythic difficulty or higher |achieve 12502
 step
 _Congratulations!_
 You Earned the "Mythic: Underrot" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Mythic: Waycrest Manor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Mythic: Waycrest Manor",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat the Gorak Tul in Waycrest Manor on Mythic difficulty or higher.",
 achieveid={12488},
@@ -574,13 +873,13 @@ keywords={"Gorak, Tul, Mythic, Dungeon, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Waycrest Manor on Mythic difficulty or higher
-Click here to load the "Waycrest Manor" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Waycrest Manor"
+Click here to load the "Waycrest Manor" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Waycrest Manor"
 Defeat Gorak Tul in Waycrest Manor on Mythic difficulty or higher |achieve 12488
 step
 _Congratulations!_
 You Earned the "Mythic: Waycrest Manor" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Not a Fun Guy",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Not a Fun Guy",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Musashitake, then defeat Sporecaller Zancha in Underrot on Mythic difficulty.",
 achieveid={12549},
@@ -597,7 +896,7 @@ step
 _Congratulations!_
 You Earned the "Not a Fun Guy" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Pecking Order",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Pecking Order",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to serve Sharkbait his favorite meal in Freehold on Heroic difficulty or higher.",
 achieveid={12550},
@@ -616,7 +915,7 @@ step
 _Congratulations!_
 You Earned the "Pecking Order" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Pitch Invasion",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Pitch Invasion",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat the Coin-Operated Crowd Pummeler after defeating Ledley the Bold in The MOTHERLODE!! on Mythic difficulty.",
 achieveid={12855},
@@ -635,7 +934,7 @@ step
 _Congratulations!_
 You Earned the "Pitch Invasion" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Ready for Raiding VI",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Ready for Raiding VI",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Mogul Razdunk in The MOTHERLODE!! on Mythic difficulty without being struck by:\n\nGatling Gun\nMicro Missiles\nBig Red Rocket\nA direct hit from Drill Smash.",
 achieveid={12854},
@@ -652,7 +951,7 @@ step
 _Congratulations!_
 You Earned the "Ready for Raiding VI" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Remix to Ignition",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Remix to Ignition",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Knight Captain Valyri without detonating any Munitions in Tol Dagor on Mythic difficulty.",
 achieveid={12457},
@@ -671,7 +970,7 @@ step
 _Congratulations!_
 You Earned the "Remix to Ignition" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Run Wild Like a Man On Fire",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Run Wild Like a Man On Fire",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat the Soulbound Goliath without it gaining 12 stacks of Soul Harvest in Waycrest Manor.",
 achieveid={12495},
@@ -688,7 +987,7 @@ step
 _Congratulations!_
 You Earned the "Run Wild Like a Man On Fire" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Shot Through the Heart",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Shot Through the Heart",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Overseer Korgus after all party members have been stunned by Heartstopper Venom at the same time in Tol Dagor on Mythic difficulty.",
 achieveid={12462},
@@ -705,7 +1004,7 @@ step
 _Congratulations!_
 You Earned the "Shot Through the Heart" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Shrine of the Storm",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Shrine of the Storm",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Vol'zith the Whisperer in Shrine of the Storm.",
 achieveid={12835},
@@ -715,13 +1014,29 @@ keywords={"Vol'zith, Dungeon, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Shrine of the Storm
-Click here to load the "Shrine of the Storm" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Shrine of the Storm"
+Click here to load the "Shrine of the Storm" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Shrine of the Storm"
 Defeat Vol'zith the Whisperer in Shrine of the Storm |achieve 12835
 step
 _Congratulations!_
 You Earned the "Shrine of the Storm" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Snake Eater",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Siege of Boralus",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat Viq'goth in Siege of Boralus.",
+achieveid={12847},
+startlevel=120,
+endlevel=120,
+keywords={"Dungeon, BFA, Battle, for, Azeroth, Viq'goth, Siege, Boralus"},
+},[[
+step
+To earn this achievement, complete Siege of Boralus
+Click here to load the "Siege of Boralus" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Siege of Boralus"
+Defeat Viq'goth in Siege of Boralus |achieve 12847
+step
+_Congratulations!_
+You Earned the "Siege of Boralus" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Snake Eater",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you must force the Solid Egg to hatch during the Merektha encounter, defeat the Solid Snake, and become the Snake Eater in the Temple of Sethraliss on Mythic difficulty.",
 achieveid={12507},
@@ -741,7 +1056,7 @@ step
 _Congratulations!_
 You Earned the "Snake Eater" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Snake Eyes",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Snake Eyes",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to activate both of the eyes to exit the Bazaar in the Temple of Sethraliss within 10 seconds on Mythic difficulty.",
 achieveid={12503},
@@ -758,7 +1073,7 @@ step
 _Congratulations!_
 You Earned the "Snake Eyes" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Sporely Alive",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Sporely Alive",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat the Unbound Abomination without any Rotting Spores dying in Underrot on Mythic difficulty.",
 achieveid={12499},
@@ -777,7 +1092,7 @@ step
 _Congratulations!_
 You Earned the "Sporely Alive" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Stand By Me",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Stand By Me",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to never let Dread Captain Lockwood leap away while she has the evasive aura before defeating her in the Siege of Boralus on Mythic difficulty.",
 achieveid={12727},
@@ -796,7 +1111,7 @@ step
 _Congratulations!_
 You Earned the "Stand By Me" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Taint Nobody Got Time For That",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Taint Nobody Got Time For That",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Elder Leaxa without any party member receiving the Taint of G'huun in Underrot on Mythic difficulty.",
 achieveid={12498},
@@ -813,7 +1128,7 @@ step
 _Congratulations!_
 You Earned the "Taint Nobody Got Time For That" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\That Sweete Booty",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\That Sweete Booty",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Harlan Sweete after destroying three Chests o' Booty in Freehold on Mythic Difficulty",
 achieveid={12998},
@@ -832,7 +1147,7 @@ step
 _Congratulations!_
 You Earned the "That Sweete Booty" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\The MOTHERLODE!!",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\The MOTHERLODE!!",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Mogul Razdunk in The MOTHERLODE!!.",
 achieveid={12844},
@@ -842,13 +1157,13 @@ keywords={"Razdunk, Dungeon, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete The MOTHERLODE!!
-Click here to load "The MOTHERLODE!!" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\The MOTHERLODE!!"
+Click here to load "The MOTHERLODE!!" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\The MOTHERLODE!!"
 Defeat Mogul Razdunk in The MOTHERLODE!! |achieve 12844
 step
 _Congratulations!_
 You Earned the "The MOTHERLODE!!" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\The Temple of Sethraliss",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\The Temple of Sethraliss",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to restore the Avatar of Sethraliss in the Temple of Sethraliss.",
 achieveid={12504},
@@ -858,13 +1173,13 @@ keywords={"Avatar, Dungeon, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete the Temple of Sethraliss
-Click here to load the "Temple of Sethraliss" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Temple of Sethraliss"
+Click here to load the "Temple of Sethraliss" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Temple of Sethraliss"
 Complete the Avatar of Sethraliss encounter in the Temple of Sethraliss |achieve 12504
 step
 _Congratulations!_
 You Earned the "The Temple of Sethraliss" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\The Void Lies Sleeping",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\The Void Lies Sleeping",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Lord Stormsong without coming into contact with any Awoken Void in Shrine of the Storm on Mythic difficulty",
 achieveid={12601},
@@ -881,7 +1196,7 @@ step
 _Congratulations!_
 You Earned "The Void Lies Sleeping" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Tol Dagor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Tol Dagor",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Overseer Korgus in Tol Dagor.",
 achieveid={12840},
@@ -891,13 +1206,13 @@ keywords={"Korgus, Dungeon, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Tol Dagor
-Click here to load the "Tol Dagor" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Tol Dagor"
+Click here to load the "Tol Dagor" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Tol Dagor"
 Defeat Overseer Korgus in Tol Dagor |achieve 12840
 step
 _Congratulations!_
 You Earned the "Tol Dagor" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Trust No One",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Trust No One",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Vol'zith the Whisperer while all party members are afflicted with Maddening Dreams in Shrine of the Storm on Mythic difficulty",
 achieveid={12602},
@@ -918,7 +1233,7 @@ step
 _Congratulations!_
 You Earned the "Trust No One" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Underrot",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Underrot",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat the Unbound Abomination in Underrot.",
 achieveid={12500},
@@ -928,13 +1243,13 @@ keywords={"Unbound, Abomination, Dungeon, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete the Underrot
-Click here to load the "Underrot" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\The Underrot"
+Click here to load the "Underrot" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\The Underrot"
 Defeat the Unbound Abomination in the Underrot |achieve 12500
 step
 _Congratulations!_
 You Earned the "Underrot" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Waycrest Manor",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Waycrest Manor",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat the Gorak Tul in Waycrest Manor.",
 achieveid={12483},
@@ -944,13 +1259,13 @@ keywords={"Gorak, Tul, Dungeon, BFA, Battle, for, Azeroth"},
 },[[
 step
 To earn this achievement, complete Waycrest Manor
-Click here to load the "Waycrest Manor" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Battle for Azeroth Dungeons\\Waycrest Manor"
+Click here to load the "Waycrest Manor" dungeon guide |confirm |next "Dungeon Guides\\Battle for Azeroth Dungeons\\Waycrest Manor"
 Defeat Gorak Tul in Waycrest Manor |achieve 12483
 step
 _Congratulations!_
 You Earned the "Waycrest Manor" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeon\\Wrap God",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Dungeons\\Wrap God",{
 author="support@zygorguides.com",
 description="\nTo earn this achievement, you will be required to defeat Mchimba the Embalmer without him finishing a cast of Open Coffin and with entombed players using Struggle no more than once per cast of Entomb in Kings' Rest on Mythic Difficulty.",
 achieveid={12721},
@@ -970,7 +1285,126 @@ step
 _Congratulations!_
 You Earned the "Wrap God" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Double Dribble",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Barrel of Monkeys",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat Grong in the Battle of Dazar'alor after destroying 6 Barrels on Normal Difficulty or higher.",
+achieveid={13383},
+startlevel=120,
+endlevel=120,
+keywords={"Barrel, Monkeys, Raid, BFA, Battle, for, Azeroth, Dazar'alor"},
+},[[
+step
+To earn this achievement, you must defeat Grong after destroying 6 Barrels on Normal Difficulty or higher
+kill Grong##148117
+|tip He is the second boss of the raid.
+The barrels are found just before the stairs leading to the boss
+Stack the barrels next to Grong, they will be destroyed when he casts Deathly Slam
+|tip Each barrel that is destroyed will increase his damage by 20%, so stagger the barrels if the damage increase is too much.
+Defeat Grong After Destroying 6 Barrels |achieve 13383
+step
+_Congratulations!_
+You Earned the "Barrel of Monkeys" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Can I Get a Hek Hek Hek Yeah?",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat the Champion of the Light in the Battle of Dazar'alor after stealing 3 shinies from each of the Crusaders, Disciples and Champion of the Light on Normal Difficulty or higher.",
+achieveid={13316},
+startlevel=120,
+endlevel=120,
+keywords={"Raid, BFA, Battle, for, Azeroth, Dazar'alor, Can, I, Get, Hek, Hek, Yeah?"},
+},[[
+step
+To earn this achievement, you must defeat the Champion of Light after stealing 9 shinies
+To start, have the whole raid click the trash pile, which will give a buff
+click Mysterious Trashpile##316841
+|tip It looks like a pile of trash with a sword sticking out of it in the bottom left side of the boss room.
+Gain Jani's Favor |havebuff 2399239 |condition achieved(13316)
+step
+When the adds spawn, 3 players will be turned into saurid dinosaurs and they must steal shinies from the adds before the adds are killed
+Steal 3 shinies from Crusader adds, 3 from Disciple adds, and 3 from Ra'wani Kanae
+Use the "Steal Shiny" ability
+|tip It appears as a button on your screen.
+After stealing a shiny, return to the Mysterious Trashpile
+Once all 9 shinies have been stolen and returned to the trash pile, kill the boss
+kill Ra'wani Kanae##144683
+|tip She is the first boss of the raid.
+Defeat the Champion of Light After Stealing 9 Shinies |achieve 13316
+step
+_Congratulations!_
+You Earned the "Can I Get a Hek Hek Hek Yeah?" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Crimson Descent",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat all of the bosses in the Crimson Descent of Uldir.",
+achieveid={12522},
+startlevel=120,
+endlevel=120,
+keywords={"Uldir, Raid, BFA, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, you must defeat the bosses in the Crimson Descent of Uldir:
+kill Vectis##134442
+|tip Use the "Uldir - Crimson Descent" raid guide to accomplish this.
+Defeat Vectis |achieve 12522/1
+step
+kill Fetid Devourer##133298
+|tip Use the "Uldir - Crimson Descent" raid guide to accomplish this.
+Defeat the Fetid Devourer |achieve 12522/2
+step
+kill Zul##138967
+|tip Use the "Uldir - Crimson Descent" raid guide to accomplish this.
+Defeat Zul |achieve 12522/3
+step
+_Congratulations!_
+You Earned the "Crimson Descent" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Crucible of Storms",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat all of the bosses in the Crucible of Storms.",
+achieveid={13414},
+startlevel=120,
+endlevel=120,
+keywords={"Crucible, of, Storms, Raid, BFA, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, you must defeat the bosses in the Crucible of Storms
+kill Zaxasj the Speaker##146497, Fa'thuul the Feared##146495
+|tip Use the "Crucible of Storms" raid guide to accomplish this.
+Defeat The Restless Cabal |achieve 13414/1
+step
+kill Uu'nat##145371
+|tip Use the "Crucible of Storms" raid guide to accomplish this.
+Defeat Uu'nat, Harbinger of the Void |achieve 13414/2
+step
+_Congratulations!_
+You Earned the "Crucible of Storms" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\De Lurker Be'loa",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to fish up the De Lurker Be'loa, then defeat the Stormwall Blockade on Normal Difficulty or higher.",
+achieveid={13430},
+startlevel=120,
+endlevel=120,
+keywords={"Raid, BFA, Battle, for, Azeroth, De, Lurker, Be'loa, Stormwall, Blockade"},
+},[[
+step
+To earn this achievement, you must fish up the De Lurker Be'loa, then defeat the Stormwall Blockade on Normal Difficulty or higher
+There is a fishing pool at the end of the dock on the east side that one player will have to click and "fish" up the De Lurker Be'loa while the rest of the group fights the Stormwall Blockade
+clicknpc Ominous Pool##149345
+It takes two minutes to fish up the De Lurker Be'loa
+During these two minutes the Lurker will be trying to pull you into the water and will use two AoE abilities that must be dodged
+After the two minutes the Lurker will rise out of the water and use two new abilities
+_Hydro Blast_: knocks players off the dock - keep the Lurker turned away from the group while they're fighting at the end of the dock
+_Undertow_: sucks in all nearby players and kills them if they are in melee range
+|tip Stun abilities can be used to interrupt these abilities.
+|tip Once the Lurker has risen out of the water, kill Laminaria.
+kill Laminaria##146256
+Fish up the De Lurker Be'loa, Then Defeat the Stormwall Blockade |achieve 13430
+step
+_Congratulations!_
+You Earned the "De Lurker Be'loa" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Double Dribble",{
 author="support@zygorguides.com",
 description="This mount will walk you through earning the Double Dribble achievement.",
 achieveid={12551},
@@ -988,7 +1422,24 @@ step
 _Congratulations!_
 You Earned the "Double Dribble" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Elevator Music",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Edgelords",{
+author="support@zygorguides.com",
+description="This mount will walk you through earning the Edgelords achievement.",
+achieveid={12830},
+startlevel=120,
+endlevel=120,
+keywords={"Uldir, Raid, BFA, Battle, for, Azeroth, Edgelords"},
+},[[
+step
+kill Zul, Reborn##138967
+|tip During the first phase, a portal will open that summons adds.
+|tip To earn this achievement, defeat Zul without any raid member stepping onto the inner ring of the Oblivion Door.
+Earn the "Edgelords" Achievement |achieve 12830
+step
+_Congratulations!_
+You Earned the "Edgelords" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Elevator Music",{
 author="support@zygorguides.com",
 description="This mount will walk you through earning the Elevator Music achievement.",
 achieveid={12937},
@@ -1005,61 +1456,405 @@ step
 _Congratulations!_
 You Earned the "Elevator Music" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Parental Controls",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Empire's Fall",{
 author="support@zygorguides.com",
-description="This mount will walk you through earning the Parental Controls achievement.",
-achieveid={12938},
+description="\nTo earn this achievement, you will be required to defeat the following bosses in the Battle of Dazar'alor:\n\nOpulence\nLoa Council\nKing Rastakhan.",
+achieveid={13287},
 startlevel=120,
 endlevel=120,
-keywords={"Uldir, Raid, BFA, Battle, for, Azeroth, Parental, Controls"},
+keywords={"Raid, BFA, Battle, for, Azeroth, Empire's, Fall, Dazar'alor"},
 },[[
 step
-kill MOTHER##135452
-|tip There are two buttons in each chamber during the encounter.
-|tip To earn the achievement, click on all of them when they become available before defeating MOTHER.
-Earn the "Parental Controls" Achievement |achieve 12938
+kill Opulence##147564
+|tip Use the "Battle of Dazar'alor - Empire's Fall" raid guide to accomplish this.
+Defeat Opulence |achieve 13287/1
+step
+Kill the Conclave of the Chosen
+|tip Use the "Battle of Dazar'alor - Empire's Fall" raid guide to accomplish this.
+Defeat the Loa Council |achieve 13287/2
+step
+kill King Rastakhan##145616
+|tip Use the "Battle of Dazar'alor - Empire's Fall" raid guide to accomplish this.
+Defeat King Rastakhan |achieve 13287/3
 step
 _Congratulations!_
-You Earned the "Parental Controls" Achievement.
+You Earned the "Empire's Fall" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Thrash Mouth - All Stars",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Existential Crisis",{
 author="support@zygorguides.com",
-description="This mount will walk you through earning the Thrash Mouth - All Stars achievement.",
-achieveid={12823},
+description="This mount will walk you through earning the Edgelords achievement.",
+achieveid={12836},
 startlevel=120,
 endlevel=120,
-keywords={"Uldir, Raid, BFA, Battle, for, Azeroth, Thrash, Mouth, All, Stars"},
+keywords={"Uldir, Raid, BFA, Battle, for, Azeroth, Existential, Crisis"},
 },[[
 step
-kill Fetid Devourer##133298
-|tip After every four melee attacks, the Fetid Devourer will cast Terrible Thrash on the target closest to the current tank.
-|tip To earn this achievement, you will need to cycle raid members to stand next to the main tank either 10 or 25 times, depending on your raid size.
-|tip Once everyone has been hit, defeat the Fetid Devourer for the achievement.
-Earn the "Thrash Mouth - All Stars" Achievement |achieve 12823
+kill Mythrax the Unraveler##136383
+|tip During the encounter, Existence Fragments will spawn on players who recently gained a stack of Annihilation.
+|tip To earn the achievement, you will need to defeat Mythrax without anyone in the raid touching the Existence Fragment.
+|tip This will be a DPS race, as the more stacks of Annihilation you get, the less your health pool will be and the more damage over time you will take.
+Earn the "Existential Crisis" Achievement |achieve 12836
 step
 _Congratulations!_
-You Earned the "Thrash Mouth - All Stars" Achievement.
+You Earned the "Existential Crisis" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\What's in the Box?",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Glory of the Dazar'alor Raider",{
 author="support@zygorguides.com",
-description="This mount will walk you through earning the What's in the Box? achievement.",
-achieveid={12828},
+description="To earn this achievement, you will be required to complete the following achievements:\n\nCan I Get a Hek Hek Hek Yeah?\nWalk the Dinosaur\nPraise the Sunflower\nBarrel of Monkeys\nSnow Fun Allowed\nI Got Next!\nHidden Dragon\nDe Lurker Be'loa\nWe Got Spirit, How About You?.",
+achieveid={13315},
+startlevel=120,
+keywords={"Raid, BFA, Battle, for, Azeroth, Glory, of, Dazar'alor, Raider"},
+},[[
+step
+Earn the _Can I Get a Hek Hek Hek Yeah?_ Achievement |achieve 13315/1
+|tip Use the "Can I Get a Hek Hek Hek Yeah?" achievement guide to accomplish this.
+Click here to load the "Can I Get a Hek Hek Hek Yeah?" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Can I Get a Hek Hek Hek Yeah?"
+step
+Earn the _Walk the Dinosaur_ Achievement |achieve 13315/2
+|tip Use the "Walk the Dinosaur" achievement guide to accomplish this.
+Click here to load the "Walk the Dinosaur" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Walk the Dinosaur"
+step
+Earn the _Praise the Sunflower_ Achievement |achieve 13315/3
+|tip Use the "Praise the Sunflower" achievement guide to accomplish this.
+Click here to load the "Praise the Sunflower" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Praise the Sunflower"
+step
+Earn the _Barrel of Monkeys_ Achievement |achieve 13315/4
+|tip Use the "Barrel of Monkeys" achievement guide to accomplish this.
+Click here to load the "Barrel of Monkeys" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Barrel of Monkeys"
+step
+Earn the _Snow Fun Allowed_ Achievement |achieve 13315/5
+|tip Use the "Snow Fun Allowed" achievement guide to accomplish this.
+Click here to load the "Snow Fun Allowed" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Snow Fun Allowed"
+step
+Earn the _I Got Next!_ Achievement |achieve 13315/6
+|tip Use the "I Got Next!" achievement guide to accomplish this.
+Click here to load the "I Got Next!" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\I Got Next!"
+step
+Earn the _Hidden Dragon_ Achievement |achieve 13315/7
+|tip Use the "Hidden Dragon" achievement guide to accomplish this.
+Click here to load the "Hidden Dragon" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Hidden Dragon"
+step
+Earn the _De Lurker Be'loa_ Achievement |achieve 13315/8
+|tip Use the "De Lurker Be'loa" achievement guide to accomplish this.
+Click here to load the "De Lurker Be'loa" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\De Lurker Be'loa"
+step
+Earn the _We Got Spirit, How About You?_ Achievement |achieve 13315/9
+|tip Use the "We Got Spirit, How About You?" achievement guide to accomplish this.
+Click here to load the "We Got Spirit, How About You?" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\We Got Spirit, How About You?"
+step
+_Congratulations!_
+You Earned the "Glory of the Dazar'alor Raider" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Glory of the Uldir Raider",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to complete the following achievements:\n\nDouble Dribble\nElevator Music\nParental Controls\nThrash Mouth - All Stars\nWhat's in the Box?\nNow We Got Bad Blood\nEdgelords\nExistential Crisis.",
+achieveid={12806},
+startlevel=120,
+keywords={"Raid, BFA, Battle, for, Azeroth, Glory, of, Uldir, Raider"},
+},[[
+step
+Earn the _Double Dribble_ Achievement |achieve 12806/1
+|tip Use the "Double Dribble" achievement guide to accomplish this.
+Click here to load the "Double Dribble" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Double Dribble"
+step
+Earn the _Elevator Music_ Achievement |achieve 12806/2
+|tip Use the "Elevator Music" achievement guide to accomplish this.
+Click here to load the "Elevator Music" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Elevator Music"
+step
+Earn the _Parental Controls_ Achievement |achieve 12806/3
+|tip Use the "Parental Controls" achievement guide to accomplish this.
+Click here to load the "Parental Controls" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Parental Controls"
+step
+Earn the _Thrash Mouth - All Stars_ Achievement |achieve 12806/4
+|tip Use the "Thrash Mouth - All Stars" achievement guide to accomplish this.
+Click here to load the "Thrash Mouth - All Stars" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Thrash Mouth - All Stars"
+step
+Earn the _What's in the Box?_ Achievement |achieve 12806/5
+|tip Use the "What's in the Box?" achievement guide to accomplish this.
+Click here to load the "What's in the Box?" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\What's in the Box?"
+step
+Earn the _Now We Got Bad Blood_ Achievement |achieve 12806/6
+|tip Use the "Now We Got Bad Blood" achievement guide to accomplish this.
+Click here to load the "Now We Got Bad Blood" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Now We Got Bad Blood"
+step
+Earn the _Edgelords_ Achievement |achieve 12806/7
+|tip Use the "Edgelords" achievement guide to accomplish this.
+Click here to load the "Edgelords" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Edgelords"
+step
+Earn the _Existential Crisis_ Achievement |achieve 12806/8
+|tip Use the "Existential Crisis" achievement guide to accomplish this.
+Click here to load the "Existential Crisis" achievement guide |confirm |next "Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Existential Crisis"
+step
+_Congratulations!_
+You Earned the "Glory of the Uldir Raider" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Halls of Containment",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat all of the bosses in the Halls of Containment of Uldir.",
+achieveid={12521},
 startlevel=120,
 endlevel=120,
-keywords={"Uldir, Raid, BFA, Battle, for, Azeroth, What's, in, the, Box?"},
+keywords={"Uldir, Raid, BFA, Battle, for, Azeroth"},
 },[[
+step
+To earn this achievement, you must defeat the bosses in the Halls of Containment of Uldir:
+kill Taloc##137119
+|tip Use the "Uldir - Halls of Containment" raid guide to accomplish this.
+Defeat Taloc |achieve 12521/1
+step
+kill MOTHER##140853
+|tip Use the "Uldir - Halls of Containment" raid guide to accomplish this.
+Defeat MOTHER |achieve 12521/2
 step
 kill Zek'voz##134445
-|tip You will need to have at least one person in the raid to have the Archaeology skill leveled to the max in order to earnt his achievement.
-|tip During the encounter, you will need to use your Archaeology skill to unearth the Puzzle Box of Yogg-Saron.
-|tip Once it is found, you will need to present it to the Projection of Yogg-Saron.
-|tip Defeat Zek'voz after this for the achievement.
-Earn the "What's in the Box?" Achievement |achieve 12828
+|tip Use the "Uldir - Halls of Containment" raid guide to accomplish this.
+Defeat Zek'voz |achieve 12521/3
 step
 _Congratulations!_
-You Earned the "What's in the Box?" Achievement.
+You Earned the "Halls of Containment" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Now We Got Bad Blood",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Heart of Corruption",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat all of the bosses in the Heart of Corruption of Uldir.",
+achieveid={12523},
+startlevel=120,
+endlevel=120,
+keywords={"Uldir, Raid, BFA, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, you must defeat the bosses in the Heart of Corruption of Uldir:
+kill Mythrax the Unraveler##136383
+|tip Use the "Uldir - Heart of Corruption" raid guide to accomplish this.
+Defeat Mythrax |achieve 12523/1
+step
+kill G'huun##132998
+|tip Use the "Uldir - Heart of Corruption" raid guide to accomplish this.
+Defeat G'huun |achieve 12523/2
+step
+_Congratulations!_
+You Earned the "Heart of Corruption" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Heroic: Crucible of Storms",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat all of the bosses in the Crucible of Storms on Heroic difficulty or higher.",
+achieveid={13415},
+startlevel=120,
+endlevel=120,
+keywords={"Crucible, of, Storms, Heroic, Raid, BFA, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, you must defeat the bosses in the Crucible of Storms on Heroic difficulty or higher
+kill Zaxasj the Speaker##146497, Fa'thuul the Feared##146495
+|tip Use the "Crucible of Storms" raid guide to accomplish this.
+Defeat The Restless Cabal on Heroic Difficulty or Higher |achieve 13415/1
+step
+kill Uu'nat##145371
+|tip Use the "Crucible of Storms" raid guide to accomplish this.
+Defeat Uu'nat, Harbinger of the Void on Heroic Difficulty or Higher |achieve 13415/2
+step
+_Congratulations!_
+You Earned the "Heroic: Crucible of Storms" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Hidden Dragon",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to hatch the cloud serpent egg during the Jadefire Masters encounter in the Battle of Dazar'alor on Normal difficulty or higher.",
+achieveid={13431},
+startlevel=120,
+endlevel=120,
+keywords={"Hidden, Dragon, Heroic, Raid, Battle, of, Dazar'alor, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, you must hatch the cloud serpent egg during the Jadefire Masters encounter in the Battle of Dazar'alor on Normal difficulty or higher
+|tip They are the second boss in the raid.
+The egg must be protected from fire damage and then hit by the Jadefire Serpent's _Dragon's Breath_
+The egg will only appear when standing next to it
+It is between two piles of baskets that are next to a large tree and two small huts
+Pick up the egg after the first set of _Living Bomb_s go off
+|tip The player carrying the egg can easily avoid fire damage by staying near the entrance of the room.
+Once the Monk reaches 100 Energy and the Jade Serpent comes out, the raid should stack on the egg carrier to bait _Dragon's Breath_ and ensure the egg carrier is hit by it
+Then defeat the boss
+kill Anathos Firecaller##146100, Ma'ra Grimfang##148238
+Hatch the Could Serpend Egg During the Jadefire Masters Encounter in the Battle of Dazar'alor |achieve 13431 |goto Battle of Dazar'alor/0 46.63,53.30
+step
+_Congratulations!_
+You Earned the "Hidden Dragon" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\I Got Next!",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat High Tinker Mekkatorque in the Battle of Dazar'alor after defeating the Blingtron MK2 on Normal difficulty or higher.",
+achieveid={13401},
+startlevel=120,
+endlevel=120,
+keywords={"Raid, Battle, of, Dazar'alor, Battle, for, Azeroth, I, Got, Next!"},
+},[[
+step
+To earn this achievement, you must defeat High Tinker Mekkatorque in the Battle of Dazar'alor after defeating the Blingtron MK2 on Normal difficulty or higher
+You will need an Engineer with Blingtron 4000 and another Engineer with Blingtron 5000
+Summon them at the same time and allow them to fight, once one of them dies Blingtron MK2 will spawn
+kill Blingtron MK2##149240
+|tip It has two abilities.
+|tip Blingstorm is an AoE ability; melee classes should move away from Blingtron when cast.
+|tip Gold Chain Lightning should be avoided by staying spread out or by interrupting the cast.
+|tip Defeat Blingtron MK2 then defeat High Tinker Mekkatorque.
+kill High Tinker Mekkatorque##144838
+Defeat High Tinker Mekkatorque After Defeating Blingtron MK2 |achieve 13401
+step
+_Congratulations!_
+You Earned the "I Got Next!" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Might of the Alliance",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat the following bosses in the Battle of Dazar'alor:\n\nMekkatorque\nStormwall Blockade\nLady Jaina Proudmoore.",
+achieveid={13288},
+startlevel=120,
+endlevel=120,
+keywords={"Raid, BFA, Battle, for, Azeroth, Might, of, the, Alliance, Dazar'alor"},
+},[[
+step
+kill High Tinker Mekkatorque##144838
+|tip Use the "Battle of Dazar'alor - Might of the Alliance" raid guide to accomplish this.
+Defeat Mekkatorque |achieve 13288/1
+step
+kill Laminaria##146256, Sister Katherine##146251, Brother Joseph##146253
+|tip Use the "Battle of Dazar'alor - Might of the Alliance" raid guide to accomplish this.
+Defeat the Stormwall Blockade |achieve 13288/2
+step
+kill Lady Jaina Proudmoore##149684
+|tip Use the "Battle of Dazar'alor - Might of the Alliance" raid guide to accomplish this.
+Defeat Lady Jaina Proudmoore |achieve 13288/3
+step
+_Congratulations!_
+You Earned the "Might of the Alliance" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Mythic: Vectis",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat Vectis in Uldir on Mythic difficulty.",
+achieveid={12529},
+startlevel=120,
+endlevel=120,
+keywords={"Uldir, Mythic, Raid, BFA, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, defeat Vectis in Uldir on Mythic difficulty
+Click here to load the "Uldir - Crimson Descent" raid guide |confirm |next "Dungeon Guides\\Battle for Azeroth Raids\\Uldir - Crimson Descent"
+Defeat Vectis in Uldir on Mythic difficulty |achieve 12529
+step
+_Congratulations!_
+You Earned the "Mythic: Vectis" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Mythic: Fetid Devourer",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat the Fetid Devourer in Uldir on Mythic difficulty.",
+achieveid={12530},
+startlevel=120,
+endlevel=120,
+keywords={"Uldir, Mythic, Raid, BFA, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, defeat the Fetid Devourer in Uldir on Mythic difficulty
+Click here to load the "Uldir - Crimson Descent" raid guide |confirm |next "Dungeon Guides\\Battle for Azeroth Raids\\Uldir - Crimson Descent"
+Defeat the Fetid Devourer in Uldir on Mythic difficulty |achieve 12530
+step
+_Congratulations!_
+You Earned the "Mythic: Fetid Devourer" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Mythic: G'huun",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat G'huun in Uldir on Mythic difficulty.",
+achieveid={12533},
+startlevel=120,
+endlevel=120,
+keywords={"Uldir, Mythic, Raid, BFA, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, defeat G'huun in Uldir on Mythic difficulty
+Click here to load the "Uldir - Heart of Corruption" raid guide |confirm |next "Dungeon Guides\\Battle for Azeroth Raids\\Uldir - Heart of Corruption"
+Defeat G'huun in Uldir on Mythic difficulty |achieve 12533
+step
+_Congratulations!_
+You Earned the "Mythic: G'huun" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Mythic: MOTHER",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat MOTHER in Uldir on Mythic difficulty.",
+achieveid={12526},
+startlevel=120,
+endlevel=120,
+keywords={"Uldir, Mythic, Raid, BFA, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, defeat MOTHER in Uldir on Mythic difficulty
+Click here to load the "Uldir - Halls of Containment" raid guide |confirm |next "Dungeon Guides\\Battle for Azeroth Raids\\Uldir - Halls of Containment"
+Defeat MOTHER in Uldir on Mythic difficulty |achieve 12526
+step
+_Congratulations!_
+You Earned the "Mythic: MOTHER" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Mythic: Mythrax",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat Mythrax in Uldir on Mythic difficulty.",
+achieveid={12532},
+startlevel=120,
+endlevel=120,
+keywords={"Uldir, Mythic, Raid, BFA, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, defeat Mythrax in Uldir on Mythic difficulty
+Click here to load the "Uldir - Heart of Corruption" raid guide |confirm |next "Dungeon Guides\\Battle for Azeroth Raids\\Uldir - Heart of Corruption"
+Defeat Mythrax in Uldir on Mythic difficulty |achieve 12532
+step
+_Congratulations!_
+You Earned the "Mythic: Mythrax" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Mythic: Taloc",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat Taloc in Uldir on Mythic difficulty.",
+achieveid={12524},
+startlevel=120,
+endlevel=120,
+keywords={"Uldir, Mythic, Raid, BFA, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, defeat Taloc in Uldir on Mythic difficulty
+Click here to load the "Uldir - Halls of Containment" raid guide |confirm |next "Dungeon Guides\\Battle for Azeroth Raids\\Uldir - Halls of Containment"
+Defeat Taloc in Uldir on Mythic difficulty |achieve 12524
+step
+_Congratulations!_
+You Earned the "Mythic: Taloc" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Mythic: Zek'vohj",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat Zek'vohj in Uldir on Mythic difficulty.",
+achieveid={12527},
+startlevel=120,
+endlevel=120,
+keywords={"Uldir, Mythic, Raid, BFA, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, defeat Zek'vohj in Uldir on Mythic difficulty
+Click here to load the "Uldir - Halls of Containment" raid guide |confirm |next "Dungeon Guides\\Battle for Azeroth Raids\\Uldir - Halls of Containment"
+Defeat Zek'vohj in Uldir on Mythic difficulty |achieve 12527
+step
+_Congratulations!_
+You Earned the "Mythic: Zek'vohj" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Mythic: Zul",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to defeat Zul in Uldir on Mythic difficulty.",
+achieveid={12531},
+startlevel=120,
+endlevel=120,
+keywords={"Uldir, Mythic, Raid, BFA, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, defeat Zul in Uldir on Mythic difficulty
+Click here to load the "Uldir - Crimson Descent" raid guide |confirm |next "Dungeon Guides\\Battle for Azeroth Raids\\Uldir - Crimson Descent"
+Defeat Zul in Uldir on Mythic difficulty |achieve 12531
+step
+_Congratulations!_
+You Earned the "Mythic: Zul" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Now We Got Bad Blood",{
 author="support@zygorguides.com",
 description="This mount will walk you through earning the Now We Got Bad Blood achievement.",
 achieveid={12772},
@@ -1078,44 +1873,1464 @@ step
 _Congratulations!_
 You Earned the "Now We Got Bad Blood" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Edgelords",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Parental Controls",{
 author="support@zygorguides.com",
-description="This mount will walk you through earning the Edgelords achievement.",
-achieveid={12830},
+description="This mount will walk you through earning the Parental Controls achievement.",
+achieveid={12938},
 startlevel=120,
 endlevel=120,
-keywords={"Uldir, Raid, BFA, Battle, for, Azeroth, Edgelords"},
+keywords={"Uldir, Raid, BFA, Battle, for, Azeroth, Parental, Controls"},
 },[[
 step
-kill Zul, Reborn##138967
-|tip During the first phase, a portal will open that summons adds.
-|tip To earn this achievement, defeat Zul without any raid member stepping onto the inner ring of the Oblivion Door.
-Earn the "Edgelords" Achievement |achieve 12830
+kill MOTHER##135452
+|tip There are two buttons in each chamber during the encounter.
+|tip To earn the achievement, click on all of them when they become available before defeating MOTHER.
+Earn the "Parental Controls" Achievement |achieve 12938
 step
 _Congratulations!_
-You Earned the "Edgelords" Achievement.
+You Earned the "Parental Controls" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Existential Crisis",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Praise the Sunflower",{
 author="support@zygorguides.com",
-description="This mount will walk you through earning the Edgelords achievement.",
-achieveid={12836},
+description="To earn this achievement, you will be required to defeat the Opulence in Battle of Dazar'alor after /praising a Singing Sunflower while under the effects of Brilliant Aura on Normal difficulty or higher.",
+achieveid={13345},
 startlevel=120,
 endlevel=120,
-keywords={"Uldir, Raid, BFA, Battle, for, Azeroth, Existential, Crisis"},
+keywords={"Battle, Dazar'alor, Raid, BFA, Battle, for, Azeroth, Praise, the, Sunflower"},
 },[[
 step
-kill Mythrax the Unraveler##136383
-|tip During the encounter, Existence Fragments will spawn on players who recently gained a stack of Annihilation.
-|tip To earn the achievement, you will need to defeat Mythrax without anyone in the raid touching the Existence Fragment.
-|tip This will be a DPS race, as the more stacks of Annihilation you get, the less your health pool will be and the more damage over time you will take.
-Earn the "Existential Crisis" Achievement |achieve 12836
+_Enter the Battle of Dazar'alor Raid_
+|tip This achievement can only be completed on Normal difficulty or higher.
+To earn this achievement, you must defeat the Opulence in Battle of Dazar'alor after /praising a Singing Sunflower while under the effects of Brilliant Aura
+Someone in the raid will need to have the Singing Sunflower pet
+Brilliant Aura is gained by picking up a Topaz of Brilliant Sunlight which will slowly give you stacks of Incandescence while standing alone
+After Incandescence reaches 100 stacks, you and nearby players will gain Brilliant Aura
+Target the Singing Sunflower and do the emote /praise, then defeat Opulence
+kill Opulence##147564
+|tip It is the fourth boss in the raid.
+Earn the "Praise the Sunflower" Achievement |achieve 13345
 step
 _Congratulations!_
-You Earned the "Existential Crisis" Achievement.
+You Earned the "Praise the Sunflower" Achievement.
 ]])
-ZGV.BETAEND()
-ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Tiragarde Sound",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Siege of Dazar'alor",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to defeating the following bosses in the Battle of Dazar'alor:\n\nChampion of the Light\nGrong the Revenant\nJadefire Masters.",
+achieveid={13286},
+startlevel=120,
+endlevel=120,
+keywords={"Siege, Battle, Dazar'alor, Raid, BFA, Battle, for, Azeroth"},
+},[[
+step
+To earn this achievement, you must defeat the bosses in the Siege of Dazar'alor:
+kill Ra'wani Kanae##144683
+|tip Use the "Battle of Dazar'alor - Siege of Dazar'alor" raid guide to accomplish this.
+Defeat the Champion of the Light |achieve 13286/1
+step
+kill Anathos Firecaller##146100, Ma'ra Grimfang##148238
+|tip Use the "Battle of Dazar'alor - Siege of Dazar'alor" raid guide to accomplish this.
+Defeat the Jadefire Masters |achieve 13286/3
+step
+kill Grong the Revenant##144638
+|tip Use the "Battle of Dazar'alor - Siege of Dazar'alor" raid guide to accomplish this.
+Defeat Grong the Revenant |achieve 13286/2
+step
+Earn the "Siege of Dazar'alor" Achievement |achieve 13286
+step
+_Congratulations!_
+You Earned the "Siege of Dazar'alor" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Snow Fun Allowed",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to build a Frosty Snowmon then destroy it before defeating Lady Jaina Proudmoore in the Battle of Dazar'alor on Normal Difficulty or higher.",
+achieveid={13410},
+startlevel=120,
+endlevel=120,
+keywords={"Battle, of, Dazar'alor, Snow, Fun, Allowed, Raid, BFA, Battle, for, Azeroth"},
+},[[
+step
+kill Lady Jaina Proudmoore##146409
+|tip Coordinate with 2 other players and collect "Snow Mounds" during the encounter.
+|tip They only appear during the Howling Winds phase of the fight.
+|tip Use any speed boosting ability you can to collect the mounds.
+|tip Once all 3 players have a snowflake next to them, move into the next phase of the battle.
+|tip The 3 players with snowflakes need to stack near one of the barrels to create the "Frosty Snowmon".
+|tip Next, Jaina will target a player with the "Broadside" ability.
+|tip the Targeted player needs to stand on top of the barrel.
+|tip When the Broadside debuff fades, a canon will fire making the barrel vulnerable.
+|tip Destroy the barrel, causing it do melt the snowmon.
+Earn the "Snow Fun Allowed" Achievement |achieve 13410
+step
+_Congratulations!_
+You Earned the "Snow Fun Allowed" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Thrash Mouth - All Stars",{
+author="support@zygorguides.com",
+description="This mount will walk you through earning the Thrash Mouth - All Stars achievement.",
+achieveid={12823},
+startlevel=120,
+endlevel=120,
+keywords={"Uldir, Raid, BFA, Battle, for, Azeroth, Thrash, Mouth, All, Stars"},
+},[[
+step
+kill Fetid Devourer##133298
+|tip After every four melee attacks, the Fetid Devourer will cast Terrible Thrash on the target closest to the current tank.
+|tip To earn this achievement, you will need to cycle raid members to stand next to the main tank either 10 or 25 times, depending on your raid size.
+|tip Once everyone has been hit, defeat the Fetid Devourer for the achievement.
+Earn the "Thrash Mouth - All Stars" Achievement |achieve 12823
+step
+_Congratulations!_
+You Earned the "Thrash Mouth - All Stars" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Walk the Dinosaur",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to defeat the Conclave of the Chosen in Battle of Dazar'alor without killing the initial raptors summoned by Gonk's Wrath on normal difficulty or higher.",
+achieveid={13325},
+startlevel=120,
+endlevel=120,
+keywords={"Battle, of, Dazar'alor, Battle, for, Azeroth, Walk, the, Dinosaur"},
+},[[
+step
+Defeat the Conclave of the Chosen
+|tip During the enounter, Gonk's Wrath will summon raptors.
+|tip In order to earn this achievement, mark at least one of the raptors he initially spawns and move it away from the raid group.
+|tip Once you have moved the raptor away, clear the enounter for the achievement.
+Earn the "Walk the Dinosaur" Achievement |achieve 13325
+step
+_Congratulations!_
+You Earned the "Walk the Dinosaur" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\We Got Spirit, How About You?",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to to defeat King Rastakhan with all phantoms still alive.",
+achieveid={13425},
+startlevel=120,
+endlevel=120,
+keywords={"Battle, for, Azeroth, Battle, of, Dzar'alor, We, Got, Spirit, How, About, You?"},
+},[[
+step
+kill King Rastakhan##147012
+|tip During the encounter, have someone, preferably another tank, move ghosts away from the group as they spawn.
+|tip Interrupt the spell "Grave Bolt" and defeat the boss for the achievement.
+Earn the "We Got Spirit, How About You?" Achievement |achieve 13425
+step
+_Congratulations!_
+You Earned the "We Got Spirit, How About You?" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\What's in the Box?",{
+author="support@zygorguides.com",
+description="This mount will walk you through earning the What's in the Box? achievement.",
+achieveid={12828},
+startlevel=120,
+endlevel=120,
+keywords={"Uldir, Raid, BFA, Battle, for, Azeroth, What's, in, the, Box?"},
+},[[
+step
+kill Zek'voz##134445
+|tip You will need to have at least one person in the raid to have the Archaeology skill leveled to the max in order to earnt his achievement.
+|tip During the encounter, you will need to use your Archaeology skill to unearth the Puzzle Box of Yogg-Saron.
+|tip Once it is found, you will need to present it to the Projection of Yogg-Saron.
+|tip Defeat Zek'voz after this for the achievement.
+Earn the "What's in the Box?" Achievement |achieve 12828
+step
+_Congratulations!_
+You Earned the "What's in the Box?" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\A Loa of a Tale",{
+achieveid={13036},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,loa,of,tale",},
+description="This guide will walk you through completing the \"A Loa of a Tale\" Achievement.",
+},[[
+step
+click Tales of de Loa: Kimbul##297494
+Find and Read the Tales of de Loa: Kimbul |achieve 13036/7 |goto Vol'dun/0 27.70,62.12
+step
+click Tales of de Loa: Akunda##297495
+Find and Read the Tales of de Loa: Akunda |achieve 13036/1 |goto 42.17,62.13
+step
+Cross the bridge |goto 51.82,35.04 < 10 |only if walking
+Run up the stairs |goto 51.96,31.10 < 15 |only if walking
+click Tales of de Loa: Sethraliss##297485
+Find and Read the Tales of de Loa: Sethraliss |achieve 13036/11 |goto 49.57,24.43
+step
+click Tales of de Loa: Bwonsamdi##297491
+Find and Read the Tales of de Loa: Bwonsamdi |achieve 13036/2 |goto Nazmir/0 39.10,38.69
+step
+click Tales of de Loa: Hir'eek##297522
+Find and Read the Tales of de Loa: Hir'eek |achieve 13036/5 |goto 39.53,54.65
+step
+click Tales of de Loa: Krag'wa##297489
+Find and Read the Tales of de Loa: Krag'wa |achieve 13036/8 |goto 58.90,48.64
+step
+click Tales of de Loa: Torga##297523
+|tip Underwater.
+Find and Read the Tales of de Loa: Torga |achieve 13036/14 |goto 72.79,7.66
+step
+click Tales of de Loa: Torcali##297885
+Find and Read the Tales of de Loa: Torcali |achieve 13036/13 |goto Zuldazar/0 67.29,17.63
+step
+click Tales of de Loa: Gonk##297521
+Find and Read the Tales of de Loa: Gonk |achieve 13036/3 |goto 51.68,28.25
+step
+click Tales of de Loa: Shadra##297493
+Find and Read the Tales of de Loa: Shadra |achieve 13036/12 |goto 47.83,28.80
+step
+Run up the stairs |goto 49.42,38.70 < 10 |only if walking
+Continue following the path |goto 48.31,40.09 < 10 |only if walking
+click Tales of de Loa: Pa'ku##297524
+Find and Read the Tales of de Loa: Pa'ku |achieve 13036/9 |goto 49.01,41.27
+step
+click Tales of de Loa: Jani##297528
+|tip It looks like an open brown scroll sitting up against a large broken pillar.
+Find and Read the Tales of de Loa: Jani |achieve 13036/6 |goto 48.54,54.60
+step
+Follow the path up |goto 41.88,76.79 < 10 |only if walking
+Continue up the path |goto 42.78,78.61 < 10 |only if walking
+click Tales of de Loa: Rezan##297490
+Find and Read the Tales of de Loa: Rezan |achieve 13036/10 |goto 43.74,76.73
+step
+click Tales of de Loa: Gral##297074
+Find and Read the Tales of de Loa: Gral |achieve 13036/4 |goto 75.49,67.58
+step
+Cross the bridge |goto Dazar'alor/0 56.14,2.02 < 10 |only if walking
+Enter the building |goto 53.51,9.42 < 5 |walk
+click Tales of de Loa: Zandalar##297700
+|tip Inside the building.
+Find and Read the Tales of de Loa: Zandalar |achieve 13036/15 |goto 53.25,9.30
+step
+_Congratulations!_
+You Earned the "A Loa of a Tale" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Adventurer of Drustvar",{
+achieveid={12941},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,adventurer,drustvar",},
+description="This guide will walk you through completing the \"Adventurer of Drustvar\" Achievement.",
+},[[
+step
+kill Betsy##124548
+Defeat Betsy |achieve 12941/1 |goto Drustvar/0 58.46,33.18
+step
+kill Quillrat Matriarch##125453
+Defeat the Quillrat Matriarch |achieve 12941/2 |goto 66.59,42.73
+step
+Enter the cave |goto 58.87,18.42 < 5 |walk
+kill Barbthorn Queen##127333
+|tip Inside the cave.
+Defeat the Barbthorn Queen |achieve 12941/3 |goto 59.12,16.67
+step
+clicknpc Untended Fishing Rod##127652
+kill Vicemaul##127651
+Defeat Vicemaul |achieve 12941/4 |goto 72.85,60.48
+step
+kill Bonesquall##126621
+Defeat Bonesquall |achieve 12941/5 |goto 66.68,50.94
+step
+Follow the path up |goto 61.88,68.11 < 10 |only if walking
+clicknpc Lost Goat##127979
+Tell it _"Dumb goat. Let's go before you get eaten by monsters."_
+kill Gluttonous Yeti##127844
+Defeat the Gluttonous Yeti |achieve 12941/6 |goto 63.03,69.68
+step
+clicknpc Longfang##127877
+Select _"<Choose to help Longfang and end the stalemate.>"_
+kill Henry Breakwater##127901
+Assist Longfang |achieve 12941/7 |goto 59.26,55.31
+step
+Enter the cave |goto 43.36,36.31 < 10 |walk
+click Ancient Sarcophagus##277333
+|tip Inside the cave.
+Kill the enemies that attack
+Open the Ancient Sarcophagus |achieve 12941/8 |goto 41.95,36.48
+step
+Enter the cave |goto 52.49,46.72 < 5 |walk
+click Beastly Ritual Skull##277389
+|tip Inside the cave.
+kill Cottontail Matron##129904
+Complete the Beastly Ritual Skull |achieve 12941/9 |goto 52.07,46.96
+step
+Enter the cave |goto 59.77,70.17 < 5 |walk
+kill Rimestone##128707
+|tip Inside the cave.
+Defeat Rimestone |achieve 12941/10 |goto 59.62,71.83
+step
+kill Whargarble the Ill-Tempered##128973
+Defeat Whargarble the Ill-Tempered |achieve 12941/11 |goto 64.97,21.40
+step
+Enter the building |goto 68.13,66.88 < 5 |walk
+click Seething Cache##277896
+|tip Inside the building.
+Kill the enemies that attack
+Open the Seething Cache |achieve 12941/12 |goto 67.99,66.89
+step
+kill Grozgore##127129
+Defeat Grozgore |achieve 12941/13 |goto 50.34,20.64
+step
+kill Gorehorn##129835
+Defeat Gorehorn |achieve 12941/14 |goto 57.11,44.31
+step
+Enter the cave |goto 51.10,29.70 < 5 |walk
+click Obviously Safe Chest##278432
+|tip Inside the cave.
+kill Beshol##129805
+Defeat Beshol|achieve 12941/15 |goto 50.54,30.06
+step
+kill Talon##129950
+Defeat Talon |achieve 12941/16 |goto 31.95,40.63
+step
+talk Emily Mayville##129995
+Ask her _"Why are you crying?"_
+kill Emily Mayville##129995
+Defeat Emily Mayville |achieve 12941/17 |goto 63.41,40.09
+step
+kill Nevermore##130138
+Defeat Nevermore |achieve 12941/18 |goto 59.96,45.50
+step
+kill Balethorn##130143
+|tip He walks around this area.
+Defeat Balethorn |achieve 12941/19 |goto 56.22,29.30
+step
+Enter the cave |goto 36.00,31.66 < 5 |walk
+kill Bilefang Mother##132319
+|tip Inside the cave.
+Defeat Bilefang Mother |achieve 12941/20 |goto 35.05,33.27
+step
+kill Executioner Blackwell##134213
+Defeat Executioner Blackwell |achieve 12941/21 |goto 30.88,18.38
+step
+Enter the cave |goto 18.70,59.52 < 5 |walk
+kill Deathcap##134706
+|tip Inside the cave.
+Defeat Deathcap |achieve 12941/22 |goto 18.72,61.43
+step
+kill Hyo'gi##134754
+Defeat Hyo'gi |achieve 12941/23 |goto 22.95,49.47
+step
+kill Captain Leadfist##135796
+|tip He walks around this area.
+Defeat Captain Leadfist |achieve 12941/24 |goto 27.48,14.06
+step
+kill Arvon the Betrayed##137529
+Defeat Arvon the Betrayed |achieve 12941/25 |goto 34.88,69.23
+step
+kill Arclight##137824
+Defeat Arclight |achieve 12941/26 |goto 29.22,68.99
+step
+kill Avalanche##137825
+|tip It flies around this area.
+Defeat Avalanche |achieve 12941/27 |goto 44.31,86.61
+step
+kill Haywire Golem##138618
+|tip It walks around this area.
+Defeat the Haywire Golem |achieve 12941/28 |goto 23.96,30.40
+step
+kill Gorged Boar##138675
+Defeat the Gorged Boar |achieve 12941/29 |goto 28.00,25.96
+step
+Enter the building |goto 32.97,56.88 < 5 |walk
+kill Sister Martha##138863
+|tip Inside the building.
+Defeat Sister Martha |achieve 12941/30 |goto 32.98,57.12
+step
+Enter the cave |goto 24.21,21.93 < 5 |walk
+kill Mack##138866, Ernie##138871, Mick##138870
+|tip Inside the cave.
+Defeat the Fungi Trio |achieve 12941/31 |goto 24.48,22.00
+step
+kill Braedan Whitewall##139321
+Defeat Braedan Whitewall |achieve 12941/32 |goto 27.63,59.59
+step
+kill Whitney "Steelclaw" Ramsay##139322
+Defeat the Hexed Hunter |achieve 12941/33 |goto 29.50,64.11
+step
+_Congratulations!_
+You Earned the "Adventurer of Drustvar" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Adventurer of Nazmir",{
+achieveid={12942},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,adventurer,nazmir",},
+description="This guide will walk you through completing the \"Adventurer of Nazmir\" Achievement.",
+},[[
+step
+kill Ancient Jawbreaker##125250
+Defeat the Ancient Jawbreaker |achieve 12942/1 |goto Nazmir/0 67.80,29.52
+step
+kill Azerite-Infused Elemental##134298
+Defeat the Azerite Infused Elemental |achieve 12942/2 |goto 54.07,81.09
+step
+kill Azerite-Infused Slag##134293
+Defeat the Azerite Infused Slag |achieve 12942/3 |goto 33.15,27.03
+step
+Enter the cave |goto 43.22,90.46 < 5 |walk
+kill Blood Priest Xak'lar##126635
+|tip Inside the cave.
+Defeat Blood Priest Xak'lar |achieve 12942/4 |goto 43.21,91.37
+step
+kill Uroku the Bound##128965
+Defeat Uroku the Bound |achieve 12942/5 |goto 44.26,48.77
+step
+Run up the stairs |goto 52.63,43.84 < 10 |only if walking
+kill King Kooba##129005
+Defeat King Kooba |achieve 12942/6 |goto 53.42,42.84
+step
+talk Chag##134297
+Tell him _"I'll fight your summoned creature."_
+kill Lucille##134296
+Complete Chag's Challenge |achieve 12942/7 |goto 67.99,19.81
+step
+kill Corpse Bringer Yal'kar##126187
+Defeat Corpse Bringer Yal'kar |achieve 12942/8 |goto 41.32,53.43
+step
+click Cursed Chest##272633
+Select _<Attempt to open the chest.>_
+kill Captain Mu'kala##125232
+Open the Cursed Chest |achieve 12942/9 |goto 81.79,30.53
+step
+Follow the path up |goto 33.32,82.57 < 10 |only if walking
+Follow the path |goto 32.95,86.36 < 5 |only if walking
+Enter the cave |goto 33.53,87.05 < 5 |walk
+kill Gwugnug the Cursed##127001
+|tip Inside the cave.
+Defeat Gwugnug the Cursed |achieve 12942/10 |goto 33.81,86.00
+step
+kill Glompmaw##121242
+|tip Underwater.
+Defeat Glompmaw |achieve 12942/11 |goto 68.48,57.20
+step
+kill Gutrip##128426
+Gutrip the Hungry |achieve 12942/12 |goto 32.75,43.06
+step
+kill Queen Tzxi'kik##128974
+Defeat Queen Tzxi'kik |achieve 12942/13 |goto 57.73,67.69
+step
+Enter the cave |goto 25.15,77.78 < 5 |walk
+|tip Behind the waterfall.
+kill Infected Direhorn##124399
+|tip Inside the cave.
+Defeat Infected Direhorn |achieve 12942/14 |goto 24.40,77.93
+step
+kill Jax'teb the Reanimated##133373
+Defeat Jax'teb the Reanimated |achieve 12942/15 |goto 45.18,51.89
+step
+kill Juba the Scarred##133527
+Defeat Juba the Scarred |achieve 12942/16 |goto 28.14,34.01
+step
+kill Kal'draxa##124397
+Defeat Kal'draxa |achieve 12942/17 |goto 52.90,13.11
+step
+Enter the building |goto 75.89,36.30 < 5 |only if walking
+kill Krubbs##125214
+|tip Inside the building.
+Defeat Krubbs |achieve 12942/18 |goto 75.73,36.01
+step
+clicknpc Lost Scroll##134295
+kill Enraged Water Elemental##134294
+Collect the Lost Scroll |achieve 12942/19 |goto 81.68,61.07
+step
+kill Bajiatha##126142
+Defeat Bajiatha |achieve 12942/20 |goto 42.84,60.53
+step
+kill Scout Skrasniss##127820
+Defeat Scout Skrasniss |achieve 12942/21 |goto 59.14,38.78
+step
+kill Scrounger Patriarch##127873
+Defeat Scrounger Patriarch |achieve 12942/22 |goto 58.08,8.93
+step
+kill Tainted Guardian##126460
+Defeat the Tainted Guardian |achieve 12942/23 |goto 31.47,38.19
+step
+Enter the building |goto 49.42,37.42 < 5 |walk
+kill Totem Maker Jash'ga##126056
+|tip Inside the building.
+Defeat Totem Maker Jash'ga |achieve 12942/24 |goto 49.42,37.70
+step
+click Urn of Agussu##282666
+kill Guardian of Agussu##135565+
+click Urn of Agussu##282666
+Open the Urn of Agussu |achieve 12942/25 |goto 38.11,57.68
+step
+kill Venomjaw##126926
+Defeat Venomjaw |achieve 12942/26 |goto 29.59,50.78
+step
+Follow the path up |goto 48.71,50.82 < 10 |only if walking
+kill Wardrummer Zurula##126907
+|tip At the top of the tower.
+Defeat Wardrummer Zurula |achieve 12942/27 |goto 48.98,50.78
+step
+kill Xu'ba##133531
+Defeat Xu'ba the Bone Collector |achieve 12942/28 |goto 36.54,50.52
+step
+Enter the crypt |goto 38.77,28.80 < 5 |walk
+kill Za'amar the Queen's Blade##129657
+|tip Inside the crypt.
+Defeat Za'amar the Queen's Blade |achieve 12942/29 |goto 38.79,26.76
+step
+kill Zanxib##133812
+Defeat Zanxib the Engorged |achieve 12942/30 |goto 38.72,71.41
+step
+kill Lo'kuno##133539
+Defeat Lo'kuno |achieve 12942/31 |goto 77.73,45.11
+step
+kill Mala'kili##128935, Rohnkor##128930
+Defeat Mala'kili and Rohnkor |achieve 12942/32 |goto 53.07,54.40
+step
+_Congratulations!_
+You Earned the "Adventurer of Nazmir" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Adventurer of Stormsong Valley",{
+achieveid={12940},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,adventurer,stormsong,valley",},
+description="This guide will walk you through completing the \"Adventurer of Stormsong Valley\" Achievement.",
+},[[
+step
+kill Song Mistress Dadalea##141175
+Defeat Song Mistress Dadalea |achieve 12940/1 |goto Stormsong Valley/0 70.88,32.22
+step
+kill Severus the Outcast##140997
+Defeat Severus the Outcast |achieve 12940/2 |goto 22.56,73.17
+step
+kill Seabreaker Skoloth##138938
+|tip He walks around this area.
+Defeat Seabreaker Skoloth |achieve 12940/3 |goto 33.73,38.21
+step
+Enter the cave |goto 34.95,32.60 < 5 |walk
+kill Sabertron##139328
+|tip Inside the cave.
+Defeat Sabertron |achieve 12940/4 |goto 33.91,31.89
+step
+Enter the cave |goto 51.79,79.27 < 5 |walk
+kill The Lichen King##136189
+|tip Inside the cave.
+Defeat The Lichen King |achieve 12940/5 |goto 51.78,79.81
+step
+kill Ragna##134884
+Defeat Ragna |achieve 12940/6 |goto 41.60,74.19
+step
+kill Slickspill##139319
+Defeat Slickspill |achieve 12940/7 |goto 41.82,28.44
+step
+Run down the stairs |goto 29.50,69.58 < 5 |walk
+kill Broodmother##137025
+|tip Downstairs inside the building.
+Defeat Broodmother |achieve 12940/8 |goto 29.40,69.60
+step
+kill Galestorm##132007
+Defeat Galestorm |achieve 12940/9 |goto 71.45,54.36
+step
+kill Whirlwing##142088
+|tip It flies around this area.
+Defeat Whirlwing |achieve 12940/10 |goto 46.78,42.38
+step
+kill Kickers##141029
+Defeat Kickers |achieve 12940/11 |goto 31.28,61.75
+step
+kill Foreman Scripps##131404
+Defeat Foreman Scripps |achieve 12940/12 |goto 64.43,65.92
+step
+kill Poacher Zane##141286
+Defeat Poacher Zane |achieve 12940/13 |goto 34.65,67.98
+step
+kill Pinku'shon##139298
+|tip It walks around this area.
+Defeat Pinku'shon |achieve 12940/14 |goto 38.33,50.90
+step
+kill Grimscowl the Harebrained##141059
+|tip It walks around this area.
+Defeat Grimscowl the Harebrained |achieve 12940/15 |goto 62.14,73.74
+step
+kill Deepfang##139385
+|tip It walks around this area.
+Defeat Deepfang |achieve 12940/16 |goto 52.99,50.92
+step
+kill Croaker##140938
+Defeat Croaker |achieve 12940/17 |goto 62.93,32.84
+step
+kill Corrupted Tideskipper##139968
+|tip It swims around this area.
+Defeat the Corrupted Pod |achieve 12940/18 |goto 65.81,51.40
+step
+Enter the cave |goto 51.75,55.32 < 5 |walk
+kill Crushtacean##136183
+|tip Inside the cave.
+Defeat Crushtacean |achieve 12940/19 |goto 51.26,55.52
+step
+kill Dagrus the Scorned##134897
+Defeat Dagrus the Scorned |achieve 12940/20 |goto 67.85,39.84
+step
+Enter the cave |goto 51.00,68.60 < 5 |walk
+Continue down the path |goto 50.75,68.22 < 5 |walk
+kill Vinespeaker Ratha##135939
+|tip Inside the cave.
+Defeat Vinespeaker Ratha |achieve 12940/21 |goto 49.61,68.07
+step
+Enter the cave |goto 53.64,71.98 < 5 |walk
+Continue down the path |goto 53.19,70.91 < 5 |walk
+kill Stormcap Warrior##135944+
+|tip Inside the cave.
+Defeat the Strange Mushroom Ring |achieve 12940/22 |goto 53.08,69.11
+step
+Follow the path up |goto 33.52,76.14 < 10 |only if walking
+kill Haegol the Hammer##141226
+|tip He walks around this area.
+Defeat Haegol the Hammer |achieve 12940/23 |goto 35.14,77.81
+step
+kill Squall##141088
+|tip It walks around this area.
+Defeat Squall |achieve 12940/24 |goto 57.08,76.12
+step
+kill Ice Sickle##141039
+Defeat Ice Sickle |achieve 12940/25 |goto 63.50,83.47
+step
+Follow the path down |goto 46.61,64.76 < 10 |walk
+Enter the cave |goto 47.35,65.35 < 5 |walk
+kill Captain Razorspine##130897
+|tip Inside the cave.
+Defeat Captain Razorspine |achieve 12940/26 |goto 47.24,65.92
+step
+kill Sister Absinthe##141143
+Defeat Sister Absinthe |achieve 12940/28 |goto 61.57,57.06
+step
+Follow the path down |goto 45.83,74.34 < 10 |only if walking
+Continue following the path |goto Stormsong Valley/3 54.69,69.47 < 10 |only if walking
+Enter the cave |goto 40.69,51.59 < 5 |walk
+kill Wagga Snarltusk##130079
+|tip Inside the cave.
+Defeat Wagga Snarltusk |achieve 12940/29 |goto 12.14,28.63
+step
+Follow the path up |goto Stormsong Valley/0 41.11,44.58 < 10 |only if walking
+click Acada's Nest##291089
+kill Nestmother Acada##138963
+Defeat Nestmother Acada |achieve 12940/30 |goto 43.46,45.00
+step
+kill Osca the Bloodied##141239
+Defeat Osca the Bloodied |achieve 12940/31 |goto 42.27,63.25
+step
+kill Sandfang##139988
+Defeat Sandfang |achieve 12940/32 |goto 73.51,60.65
+step
+kill Taja the Tidehowler##139980
+Defeat Taja the Tidehowler |achieve 12940/33 |goto 59.97,45.85
+step
+Run down the stairs |goto 53.40,64.48 < 5 |walk
+talk Doc Marrtens##140925
+|tip Downstairs inside the building.
+Tell him _"I hear something..."_
+Watch the dialogue
+kill Jakala the Cruel##141043
+Defeat Jakala the Cruel |achieve 12940/34 |goto 53.41,64.36
+step
+accept Whiplash##52299 |goto 46.61,64.76 |condition achieved(12940,27)
+|tip You will accept this quest automatically.
+|tip This quest will only be available when it is an active World Quest.
+step
+Follow the path down |goto 46.61,64.76 < 10 |walk
+Enter the cave |goto 47.35,65.35 < 5 |walk
+kill Whiplash##129803
+|tip Inside the cave.
+Defeat Whiplash |achieve 12940/27 |goto 47.24,65.92
+step
+_Congratulations!_
+You Earned the "Adventurer of Stormsong Valley" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Adventurer of Tiragarde Sound",{
+achieveid={12939},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,adventurer,tiragarde,sound",},
+description="This guide will walk you through completing the \"Adventurer of Tiragarde Sound\" Achievement.",
+},[[
+step
+kill Auditor Dolp##132182
+Defeat Auditor Dolp |achieve 12939/1 |goto Tiragarde Sound/0 74.93,78.94
+step
+kill Barman Bill##129181
+Defeat Barman Bill |achieve 12939/2 |goto 76.09,82.90
+step
+kill Bashmu##132068
+Defeat Bashmu |achieve 12939/3 |goto 34.50,30.37
+step
+Follow the path up |goto 55.78,69.90 < 10 |only if walking
+kill Black-Eyed Bart##132086
+Defeat Black-Eyed Bart |achieve 12939/4 |goto 56.33,69.95
+step
+Follow the path up |goto 84.10,72.34 < 10 |only if walking
+kill Blackthorne##139145
+Defeat Blackthorne |achieve 12939/5 |goto 85.28,73.47
+step
+kill Broodmother Razora##130508
+Defeat Broodmother Razora |achieve 12939/6 |goto 83.55,44.83
+step
+Enter the cave |goto 38.76,21.94 < 5 |walk
+click Smuggler's Cache##280649
+kill Captain Wintersail##132088
+Defeat Captain Wintersail |achieve 12939/7 |goto 38.44,20.71
+step
+kill Carla Smirk##139152
+|tip She walks around the deck of the ship.
+Defeat Carla Smirk |achieve 12939/8 |goto 72.49,81.02
+step
+kill Fowlmouth##132211
+|tip He flies around this area.
+Defeat Fowlmouth |achieve 12939/9 |goto 90.60,77.48
+step
+kill Foxhollow Skyterror##132127
+Defeat Foxhollow Skyterror |achieve 12939/10 |goto 60.10,22.19
+step
+kill Gulliver##139233
+Defeat Gulliver |achieve 12939/11 |goto 57.85,55.90
+step
+kill Kulett the Ornery##131520
+Defeat Kulett the Ornery |achieve 12939/12 |goto 47.84,22.24
+step
+kill Lumbergrasp Sentinel##134106
+|tip It walks around this area.
+Defeat the Lumbergrasp Sentinel |achieve 12939/13 |goto 67.99,20.08
+step
+kill Maison the Portable##139290
+Defeat Maison the Portable |achieve 12939/14 |goto 58.05,49.37
+step
+talk Walter Ferrell##137176
+Tell him _"Let's do this!"_
+Kill the enemies that attack
+Defend the Imperiled Merchants |achieve 12939/15 |goto 64.31,19.30
+step
+Enter the cave |goto 43.48,17.19 < 5 |walk
+|tip Inside the cave.
+|tip Behind the waterfall.
+kill Merianae##131252
+Defeat Merianae |achieve 12939/16 |goto 43.05,16.76
+step
+kill P4-N73R4##139205
+Defeat P4-N73R4 |achieve 12939/17 |goto 65.23,64.52
+step
+Follow the path up |goto 43.57,20.74 < 10 |only if walking
+Continue up the path |goto 42.16,17.33 < 10 |only if walking
+Enter the cave |goto 39.82,14.95 < 5 |walk
+kill Pack Leader Asenya##131262
+|tip Inside the cave.
+Defeat Pack Leader Asenya |achieve 12939/18 |goto 38.89,15.29
+step
+kill Raging Swell##132179
+Defeat Raging Swell |achieve 12939/19 |goto 64.77,58.60
+step
+kill Ranja##139278
+Defeat Ranja |achieve 12939/20 |goto 68.30,63.57
+step
+kill Saurolisk Tamer Mugg##127289
+Defeat Saurolisk Tamer Mugg |achieve 12939/21 |goto 58.64,14.80
+step
+kill Sawtooth##139287
+|tip It swims around this area.
+Defeat Sawtooth |achieve 12939/22 |goto Boralus/0 80.17,47.29
+step
+kill Shiverscale the Toxic##139285
+Defeat Shiverscale the Toxic |achieve 12939/23 |goto Tiragarde Sound/0 55.12,32.40
+step
+kill Squacks##132280
+Defeat Squacks |achieve 12939/24 |goto 80.92,82.85
+step
+kill Squirgle of the Depths##139135
+Defeat Squirgle of the Depths |achieve 12939/25 |goto 48.89,37.02
+step
+kill Sythian the Swift##139280
+|tip It runs around this area.
+Defeat Sythian the Swift |achieve 12939/26 |goto 66.25,13.83
+step
+click Suspicious Pile of Meat##281172
+kill Tempestria##133356
+Defeat Tempestria |achieve 12939/27 |goto 60.53,17.54
+step
+kill Tentulos the Drifter##139289
+|tip Underwater.
+Defeat Tentulos the Drifter |achieve 12939/28 |goto 55.28,51.58
+step
+kill Teres##131389
+Defeat Teres |achieve 12939/29 |goto 63.66,50.37
+step
+kill Tort Jaw##139235
+Defeat Tort Jaw |achieve 12939/30 |goto 70.41,55.75
+step
+Enter the cave |goto 46.70,20.42 < 5 |walk
+kill Totes##132076
+|tip Inside the cave.
+Defeat Totes |achieve 12939/31 |goto 46.85,20.65
+step
+Enter the cave |goto 70.30,12.78 < 5 |walk
+click Ritual Effigy##280603
+|tip Inside the cave.
+kill Twin-hearted Construct##131984
+Defeat the Twin-hearted Construct |achieve 12939/32 |goto 70.34,12.47
+step
+_Congratulations!_
+You Earned the "Adventurer of Tiragarde Sound" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Adventurer of Vol'dun",{
+achieveid={12943},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,adventurer,vol'dun",},
+description="This guide will walk you through completing the \"Adventurer of Vol'dun\" Achievement.",
+},[[
+step
+kill Ak'tar##135852
+Defeat Ak'tar |achieve 12943/1 |goto Vol'dun/0 50.33,81.64
+step
+Follow the path up |goto 55.73,16.68 < 10 |only if walking
+kill Ashmane##130439
+Defeat Ashmane |achieve 12943/2 |goto 54.70,15.14
+step
+Enter the mine |goto 47.89,88.19 < 5 |walk
+kill Azer'tor##128553
+|tip Inside the mine.
+Defeat Azer'tor |achieve 12943/3 |goto 49.02,89.04
+step
+kill Bajiani the Slick##128497
+Defeat Bajiani the Slick |achieve 12943/4 |goto 31.00,81.09
+step
+kill Bloated Krolusk##129476
+Defeat Bloated Krolusk |achieve 12943/5 |goto 48.90,50.03
+step
+Follow the path up |goto 58.32,53.15 < 10 |only if walking
+clicknpc Enormous Egg##136390
+kill Bloodwing Bonepicker##136393
+Defeat Bloodwing Bonepicker |achieve 12943/6 |goto 56.07,53.59
+step
+kill Captain Stef "Marrow" Quin##136346
+Defeat Captain Stef "Marrow" Quin |achieve 12943/7 |goto 41.27,24.31
+step
+Follow the path up |goto 43.00,92.30 < 15 |only if walking
+Cross the bridge |goto 43.47,91.70 < 15 |only if walking
+kill Commodore Calhoun##124722
+|tip Up on the wooden dock.
+Defeat Commodore Calhoun |achieve 12943/8 |goto 42.51,92.08
+step
+kill Enraged Krolusk##136335
+Defeat Enraged Krolusk |achieve 12943/9 |goto 61.97,37.86
+step
+Follow the path up |goto 62.45,48.09 < 10 |only if walking
+Enter the cave |goto 63.97,47.91 < 5 |walk
+kill Gut-Gut the Glutton##128674
+|tip Inside the cave.
+Defeat Gut-Gut the Glutton |achieve 12943/10 |goto 64.02,47.51
+step
+Enter the cave |goto 53.91,51.66 < 5 |walk
+kill Hivemother Kraxi##130443
+|tip Inside the cave.
+Defeat Hivemother Kraxi |achieve 12943/11 |goto 53.62,53.70
+step
+kill Jumbo Sandsnapper##129283
+|tip Underwater.
+|tip It swims around this area.
+Defeat Jumbo Sandsnapper |achieve 12943/12 |goto 37.38,84.93
+step
+kill Jungleweb Hunter##136341
+Defeat Jungleweb Hunter |achieve 12943/13 |goto 60.55,18.01
+step
+Follow the path up |goto 36.55,50.19 < 10 |only if walking
+Cross the bridge |goto 35.19,50.05 < 10 |only if walking
+Enter the cave |goto 35.25,51.56 < 5 |walk
+kill Kamid the Trapper##128686
+|tip Inside the cave.
+Defeat Kamid the Trapper |achieve 12943/14 |goto 35.07,51.83
+step
+Enter the cave |goto 37.46,40.50 < 5 |walk
+kill King Clickyclack##137681
+|tip Inside the cave.
+Defeat King Clickyclack |achieve 12943/15 |goto 38.28,41.39
+step
+Enter the cave |goto 43.97,87.14 < 5 |walk
+clicknpc Stake##128952+
+kill Nez'ara##128951
+|tip Inside the cave.
+|tip Click the four stakes around Nez'ara to release her.
+Defeat Nez'ara |achieve 12943/16 |goto 43.76,86.24
+step
+Enter the building |goto 48.94,72.05 < 10 |walk
+kill Relic Hunter Hazaak##136340
+|tip Inside the building.
+Defeat Relic Hunter Hazaak |achieve 12943/17 |goto 48.99,72.17
+step
+kill Scaleclaw Broodmother##127776
+Defeat Scaleclaw Broodmother |achieve 12943/18 |goto 44.54,80.22
+step
+kill Scorpox##136336
+Defeat Scorpox |achieve 12943/19 |goto 32.72,65.07
+step
+Follow the path up |goto 25.01,69.73 < 10 |only if walking
+kill Sirokar##136338
+Defeat Sirokar |achieve 12943/20 |goto 24.57,68.45
+step
+Enter the cave |goto 46.38,27.13 < 5 |walk
+kill Skycaller Teskris##134571
+|tip Inside the cave.
+Defeat Skycaller Teskris |achieve 12943/21 |goto 46.97,25.18
+step
+kill Skycarver Krakit##134745
+Defeat Skycarver Krakit |achieve 12943/22 |goto 51.30,36.45
+step
+kill Songstress Nahjeen##136304
+Defeat Songstress Nahjeen |achieve 12943/23 |goto 66.96,24.51
+step
+Follow the path up |goto 55.48,71.21 < 10 |only if walking
+kill Pit Snake##126894+
+kill Vathikur##130401
+Defeat Vathikur |achieve 12943/24 |goto 57.32,73.29
+step
+kill Warbringer Hozzik##129180
+Defeat Warbringer Hozzik |achieve 12943/25 |goto 37.07,46.05
+step
+Run up the stairs |goto 29.79,52.57 < 10 |only if walking
+kill Warlord Zothix##134638
+Defeat Warlord Zothix |achieve 12943/26 |goto 30.19,52.56
+step
+Follow the path up |goto 52.78,35.64 < 10 |only if walking
+Cross the bridge |goto 51.88,34.55 < 10 |only if walking
+kill Warmother Captive##134625
+Defeat the Warmother Captive |achieve 12943/27 |goto 50.72,30.89
+step
+Enter the cave |goto 43.97,52.57 < 5 |walk
+kill Zunashi the Exile##129411
+|tip Inside the cave.
+Defeat Zunashi the Exile |achieve 12943/28 |goto 43.91,54.04
+step
+_Congratulations!_
+You Earned the "Adventurer of Vol'dun" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Adventurer of Zuldazar",{
+achieveid={12944},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,adventurer,zuldazar",},
+description="This guide will walk you through completing the \"Adventurer of Zuldazar\" Achievement.",
+},[[
+step
+clicknpc Rope##144585 |goto Zuldazar/0 80.83,20.50 < 5 |only if walking
+clicknpc Rope##144585 |goto 80.88,20.30 < 5 |only if walking
+kill Atal'zul Gotaka##129961
+|tip On the deck of the ship.
+Defeat Atal'zul Gotaka |achieve 12944/1 |goto 80.97,21.61
+step
+kill Gahz'ralka##129954
+|tip At the bottom of the waterfall.
+Defeat Gahz'ralka |achieve 12944/2 |goto 64.26,32.70
+step
+Follow the path up |goto 41.96,76.59 < 10 |only if walking
+Follow the path |goto 42.48,77.18 < 10 |only if walking
+Enter the cave |goto 43.28,76.39 < 5 |walk
+kill Dark Chronicler##136428
+|tip Inside the cave.
+Defeat the Dark Chronicler |achieve 12944/3 |goto 44.12,76.51
+step
+Enter the cave |goto 53.88,44.88 < 5 |walk
+kill Syrawon the Dominus##136413
+|tip Inside the cave.
+Defeat Syrawon the Dominus |achieve 12944/4 |goto 53.36,44.62
+step
+kill Zayoos##131476
+Defeat Zayoos |achieve 12944/5 |goto 48.00,54.23
+step
+kill Lei-zhi##131233
+Defeat Lei-Zhi |achieve 12944/6 |goto 58.68,74.18
+step
+Enter the cave |goto 49.55,59.00 < 5 |walk
+kill Avatar of Xolotal##129343
+|tip Inside the cave.
+Defeat the Avatar of Xolotal |achieve 12944/7 |goto 49.83,57.43
+step
+kill Bloodbulge##128699
+Bloodbulge |achieve 12944/8 |goto 59.85,18.29
+step
+kill Torraske the Eternal##127939
+Defeat Torraske the Eternal |achieve 12944/9 |goto 46.64,65.37
+step
+Enter the cave |goto 68.84,47.11 < 5 |walk
+kill Kandak##126637
+|tip Inside the cave.
+Defeat Kandak |achieve 12944/10 |goto 68.67,48.75
+step
+kill Kul'krazahn##120899
+Defeat Kul'krazahn |achieve 12944/11 |goto Dazar'alor/0 55.00,82.51
+step
+kill Golrakahn##124185
+Defeat Golrakahn |achieve 12944/12 |goto Zuldazar/0 74.12,28.50
+step
+Enter the cave |goto 70.42,32.84 < 5 |walk
+kill Umbra'jin##122004
+|tip Inside the cave.
+Defeat Umbra'jin |achieve 12944/13 |goto 71.41,32.40
+step
+kill Darkspeaker Jo'la##134760
+Defeat Darkspeaker Jo'la |achieve 12944/14 |goto 65.37,10.24
+step
+Follow the path |goto 49.45,38.70 < 10 |only if walking
+Run up the stairs |goto 48.89,38.70 < 10 |only if walking
+Continue up the stairs |goto 48.79,39.69 < 10 |only if walking
+Follow the path up |goto 48.60,37.53 < 10 |only if walking
+Continue up the path |goto 46.05,34.19 < 10 |only if walking
+Cross the bridge |goto 45.97,36.18 < 10 |only if walking
+Follow the path up |goto 44.03,38.04 < 10 |only if walking
+Continue following the path |goto 43.25,36.49 < 10 |only if walking
+kill Hakbi the Risen##134738
+Defeat Hakbi the Risen |achieve 12944/15 |goto 42.03,36.21
+step
+Enter the cave |goto 62.02,46.24 < 5 |walk
+clicknpc Strange Egg##134049
+|tip Inside the cave.
+Select _"Investigate the egg."_
+Kill the enemies that attack
+kill Vukuba##134048
+Defeat Vukuba |achieve 12944/16 |goto 61.90,46.22
+step
+Enter the cave |goto 44.23,25.21 < 5 |walk
+kill Warcrawler Karkithiss##133842
+|tip Inside the cave.
+Defeat Warcrawler Karkithiss |achieve 12944/17 |goto 43.92,25.44
+step
+click Chum Bucket##281130
+Select _"Toss chum into the sea."_
+Kill the enemies that attack
+kill Murderbeak##134782
+Defeat Murderbeak |achieve 12944/18 |goto 60.67,66.17
+step
+kill Daggerjaw##133190
+Defeat Daggerjaw |achieve 12944/19 |goto 74.21,39.39
+step
+kill G'Naat##133155
+Defeat G'Naat |achieve 12944/20 |goto 79.98,35.96
+step
+kill Kiboku##132244
+Defeat Kiboku |achieve 12944/21 |goto 75.62,35.91
+step
+kill Bramblewing##131718
+Defeat Bramblewing |achieve 12944/22 |goto 66.75,32.28
+step
+kill Tambano##131687
+|tip It walks around this area.
+Defeat Tambano |achieve 12944/23 |goto 77.53,11.40
+step
+_Congratulations!_
+You Earned the "Adventurer of Zuldazar" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Battle for Azeroth Explorer",{
+achieveid={12988},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle","for","Azeroth","Explorer"},
+description="This guide will walk you through completing the \"Battle for Azeroth Explorer\" Achievement.",
+},[[
+leechsteps "Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Tiragarde Sound" 1-11
+leechsteps "Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Drustvar" 1-12
+leechsteps "Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Stormsong Valley" 1-9
+leechsteps "Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Zuldazar" 1-12
+leechsteps "Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Nazmir" 1-9
+leechsteps "Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Vol'dun" 1-13
+step
+|achieve 12988
+step
+_Congratulations!_
+You Earned the "Battle for Azeroth Explorer" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Battle for Azeroth Pathfinder, Part One",{
+achieveid={12989},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle","for","Azeroth","Pathfinder","Part","One"},
+description="This guide will walk you through completing the \"Battle for Azeroth Pathfinder, Part One\" Achievement.",
+},[[
+step
+Earn the _Battle for Azeroth Explorer_ achievement |achieve 12989/1 |or
+|tip Use the "Battle for Azeroth Explorer" achievement guide to accomplish this.
+Click here to load the "Battle for Azeroth Explorer" guide |confirm |next "Achievement Guides\\Exploration\\Battle for Azeroth\\Battle for Azeroth Explorer" |or
+step
+Earn the _Azerothian Diplomat_ achievement |achieve 12989/2 |or
+|tip Use the "Azerothian Diplomat" achievement guide to accomplish this.
+Click here to load the "Azerothian Diplomat" guide |confirm |next "Achievement Guides\\Reputations\\Battle for Azeroth\\Azerothian Diplomat" |or
+step
+Earn the _Wide World of Quests_ achievement |achieve 12989/3 |or
+|tip Use the "Wide World of Quests" achievement guide to accomplish this.
+Click here to load the "Wide World of Quests" guide |confirm |next "Achievement Guides\\Quests\\Battle for Azeroth\\Wide World of Quests" |or
+step
+Earn the _Loremaster of Kul Tiras_ achievement |achieve 12989/4 |or
+|tip Use the "Loremaster of Kul Tiras" achievement guide to accomplish this.
+Click here to load the "Loremaster of Kul Tiras" guide |confirm |next "Achievement Guides\\Quests\\Battle for Azeroth\\Loremaster of Kul Tiras" |or
+step
+Earn the _Ready for War_ achievement |achieve 12989/5 |or
+|tip Use the "War Campaign" leveling guide to accomplish this.
+Click here to load the "War Campaign" guide |confirm |next "Leveling Guides\\Battle for Azeroth (110-120)\\War Campaign" |or
+step
+_Congratulations!_
+You Earned the "Battle for Azeroth Pathfinder, Part One" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Better, Faster, Stronger",{
+achieveid={13083},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,Better,Faster,Stronger"},
+description="To earn this achievement, you will be required to simultaneously have have all four Witch's Boon effects on you, as well as Witch's Curse: Newt, in Drustvar.",
+},[[
+step
+This achievement is earned by gaining all 4 Witch's Boon buffs simultaneously and then gaining the Witch's Curse: Newt debuff
+map Drustvar/0
+path follow strict; loop on; ants curved; dist 5
+path	19.15,53.44	19.19,54.19	19.93,52.94
+path	19.97,54.62	19.98,55.15	20.43,55.32
+path	22.64,54.18	23.17,52.68	23.00,51.07
+path	22.98,49.57	24.56,49.35	25.27,49.89
+path	25.00,53.35	23.04,55.62	25.36,55.57
+path	26.10,54.56	27.30,53.21	27.13,58.16
+path	24.73,59.22	23.76,60.86	21.93,59.37
+path	21.17,57.45	19.00,58.29	18.83,56.81
+click Mysterious Brew##281659+
+|tip They look like a small blue-green vials laying on the ground around this area.
+|tip Clicking the Mysterious Brew will give you a random buff for 5 minutes or a random debuff for a few seconds, so go as fast as possible.
+|tip Follow the path around Drustvar, looking for Mysterious Brews at each location.
+|tip Be careful of the group of Elite enemies near the first 3 locations.
+|tip Keep an eye out for additional Mysterious Brews you may find as you go.
+Gain Buffs:
+Witch's Boon: Excellence |havebuff 610679 |condition achieved(13083)
+Witch's Boon: Extra Pep |havebuff 132125 |condition achieved(13083)
+Witch's Boon: Fortitude |havebuff 132316 |condition achieved(13083)
+Witch's Boon: Rage |havebuff 132277 |condition achieved(13083)
+Then Gain Debuff:
+Witch's Curse: Newt |havebuff 463491 |condition achieved(13083)
+step
+Have All Four Witch's Boon Effects As Well as Witch's Curse: Newt |achieve 13083
+step
+_Congratulations!_
+You Earned the "Better, Faster, Stronger" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Carved in Stone, Written in Blood",{
+achieveid={13024},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,Carved,Stone,Written,Blood",},
+description="This guide will walk you through completing the \"Carved in Stone, Written in Blood\" Achievement.",
+},[[
+step
+click Fractured Tablet##299073
+Fractured Tablet |achieve 13024/4 |goto Nazmir/0 42.56,57.10
+step
+click Weathered Nazmani Tablet##298963
+Weathered Nazmani Tablet |achieve 13024/2 |goto 43.35,48.16
+step
+click Ancient Nazmani Tablet##298921
+|tip Down on the ground inside the ruined building.
+Ancient Hazmani Tablet |achieve 13024/1 |goto 56.37,57.21
+step
+click Cracked Tablet##298965
+Cracked Tablet |achieve 13024/3 |goto 51.24,85.12
+step
+_Congratulations!_
+You Earned the "Carved in Stone, Written in Blood" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Cursed Game Hunter",{
+achieveid={13094},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,Cursed,Game,Hunter",},
+description="This guide will walk you through completing the \"Cursed Game Hunter\" Achievement.",
+},[[
+step
+Follow the path up |goto Drustvar/0 58.03,20.12 < 10 |only if walking
+Continue up the path |goto 56.89,24.51 < 10 |only if walking
+Continue following the path |goto 53.80,25.80 < 15 |only if walking
+Continue following the path |goto 51.96,23.58 < 10
+Continue up the path |goto 51.52,19.70 < 10 |only if walking
+kill Hexed Craghopper##143929
+Slay a Cursed Goat |achieve 13094/1 |goto 53.87,20.72
+step
+kill Bonepicker Raven##124382
+Slay a Cursed Raven |achieve 13094/6 |goto 53.17,36.02
+step
+kill Fallhaven Pig##124170
+Slay a Cursed Pig |achieve 13094/3 |goto 58.62,34.61
+step
+kill Hexcrazed Doe##129764
+Slay a Cursed Deer |achieve 13094/2 |goto 56.80,41.48
+step
+kill Ensorcelled Hare##129877
+Slay a Cursed Rabbit |achieve 13094/7 |goto 53.33,42.70
+step
+kill Bewitched Darkmaw##124885
+Slay a Cursed Wolf |achieve 13094/5 |goto 58.95,29.92
+step
+Follow the path up |goto 72.73,62.34 < 15 |only if walking
+kill Cursed Snapclaw##143928
+Slay a Cursed Crab |achieve 13094/13 |goto Tiragarde Sound/0 53.74,72.18
+step
+kill Bewitched Seal##143953
+Slay a Cursed Sea Lion |achieve 13094/10 |goto Drustvar/0 21.90,22.60
+step
+kill Hexthralled Guardsman##131534
+Slay a Cursed Horse |achieve 13094/11 |goto 30.28,25.28
+step
+kill Cursed Falcon##132240
+Slay a Cursed Falcon |achieve 13094/8 |goto 31.29,25.11
+step
+kill Cursed Brambleback##134753
+Slay a Cursed Brambleback |achieve 13094/9 |goto 24.00,49.02
+step
+kill Hexed Thornclaw##142278
+Slay a Cursed Thornclaw |achieve 13094/4 |goto 32.21,61.70
+step
+kill Hexed Dreadmaw##143951
+|tip Underwater.
+Slay a Cursed Shark |achieve 13094/12 |goto 22.36,69.47
+step
+_Congratulations!_
+You Earned the "Cursed Game Hunter" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Drust the Facts, Ma'am",{
+achieveid={13064},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,drust,the,facts,ma'am",},
+description="This guide will walk you through completing the \"Drust the Facts, Ma'am\" Achievement.",
+},[[
+step
+click Drust Stele: The Tree##296917
+|tip Underwater.
+Find and Read Drust Stele: The Tree |achieve 13064/3 |goto Drustvar/0 27.36,48.29
+step
+click Drust Stele: The Cycle##297629
+Find and Read Drust Stele: The Cycle |achieve 13064/7 |goto 19.08,57.87
+step
+click Drust Stele: Sacrifice##297627
+|tip Underwater.
+Find and Read Drust Stele: Sacrifice |achieve 13064/5 |goto 27.60,57.60
+step
+Follow the road up |goto 34.52,67.36 < 10 |only if walking
+Continue up the path |goto 38.09,67.94 < 10 |only if walking
+Jump down here |goto 37.01,63.66 < 10 |only if walking
+click Drust Stele: The Circle##296915
+|tip Up near the top section of the waterfall.
+Find and Read Drust Stele: The Circle |achieve 13064/1 |goto 36.80,64.51
+step
+Follow the path up |goto 41.72,74.29 < 20 |only if walking
+click Drust Stele: The Ritual##296916
+Find and Read Drust Stele: The Ritual |achieve 13064/2 |goto 50.77,73.68
+step
+Follow the path up |goto 58.86,74.95 < 10 |only if walking
+Continue up the path |goto 58.14,76.92 < 10 |only if walking
+Continue up the path |goto 60.11,79.47 < 10 |only if walking
+Continue following the path |goto 57.75,83.08 < 10 |only if walking
+Jump down carefully here |goto 56.39,85.13 < 10 |only if walking
+click Drust Stele: The Flayed Man##297631
+Find and Read Drust Stele: The Flayed Man |achieve 13064/9 |goto 56.52,86.02
+step
+click Drust Stele: Breath Into Stone##296918
+Find and Read Drust Stele: Breath Into Stone |achieve 13064/4 |goto 59.42,66.66
+step
+click Drust Stele: Constructs##297628
+Find and Read Drust Stele: Constructs |achieve 13064/6 |goto 50.15,42.32
+step
+Follow the path up |goto 49.00,32.24 < 10 |only if walking
+click Drust Stele: Conflict##297630
+Find and Read Drust Stele: Conflict |achieve 13064/8 |goto 46.44,37.23
+step
+Follow the path up |goto 43.87,38.26 < 10 |only if walking
+Follow the path |goto 44.98,39.74 < 10 |only if walking
+Continue up the path |goto 46.71,39.63 < 10 |only if walking
+Enter the cave |goto 46.03,45.32 < 5 |walk
+Follow the path |goto 44.75,45.55 < 5 |only if walking
+click Drust Stele: Protectors of the Forest##297632
+|tip Inside the cave.
+Find and Read Drust Stele: Protectors of the Forest |achieve 13064/10 |goto 44.58,45.64
+step
+_Congratulations!_
+You Earned the "Drust the Facts, Ma'am" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Dune Rider",{
+achieveid={13018},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,Dune,Rider",},
+description="To earn this achievement, you will be required to ride all of the rickety planks in Vol'dun.",
+},[[
+step
+clicknpc Rickety Plank##123535 |goto Vol'dun/0 38.03,70.99
+confirm |condition achieved(13018)
+step
+clicknpc Rickety Plank##123535 |goto 32.12,69.08
+confirm |condition achieved(13018)
+step
+clicknpc Rickety Plank##123535 |goto 47.91,62.46
+|tip At the bottom of the pyramid.
+confirm |condition achieved(13018)
+step
+Jump up here |goto 47.88,62.61 < 5 |only if walking
+Follow the path |goto 47.15,62.28 < 10 |only if walking
+Continue following the path |goto 46.87,62.74 < 5 |only if walking
+Continue following the path |goto 45.98,62.73 < 5 |only if walking
+Run up the sand pile |goto 46.06,62.96 < 5 |only if walking
+Jump across here |goto 45.89,63.38 < 10 |only if walking
+clicknpc Rickety Plank##123535 |goto 45.78,63.58
+|tip Up on the side of the pyramid.
+confirm |condition achieved(13018)
+step
+Cross the bridge |goto 51.89,34.51 < 10 |only if walking
+Follow the path |goto 52.48,31.35 < 10 |only if walking
+Follow the path up |goto 54.08,32.05 < 10 |only if walking
+Continue up the path |goto 54.95,30.99 < 10 |only if walking
+Continue up the path |goto 56.73,28.33 < 10 |only if walking
+Follow the path |goto 57.71,26.96 < 10 |only if walking
+Continue following the path |goto 57.33,22.47 < 10 |only if walking
+Follow the path up |goto 56.25,21.77 < 10 |only if walking
+clicknpc Rickety Plank##123535
+Ride All of the Rickety Planks in Vol'dun |achieve 13018 |goto 54.88,21.39
+step
+_Congratulations!_
+You Earned the "Dune Rider" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Eat Your Greens",{
+achieveid={12588},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,Eat,Your,Greens",},
+description="To earn this achievement, you will be required to sample all of the edible plants within Nazmir.",
+},[[
+step
+click Saurolisk Tail##291233
+|tip It looks like a green reed plant with yellow tips.
+|tip Usually found in shallow water.
+Sample the Saurolisk Tail Nibs |achieve 12588/1 |goto Nazmir/0 30.28,52.69
+It can also be found at [34.12,52.78]
+step
+click Bwonsamdi's Tears##291238
+|tip It looks like a small green plant with many leaves.
+Sample Bwonsamdi's Tears |achieve 12588/2 |goto 41.22,58.03
+It can also be found at [46.07,71.87]
+step
+click Krag'wa's Ire##292823
+|tip It looks like a small green plant with large red flowers.
+Sample Krag'wa's Ire |achieve 12588/5 |goto 52.58,35.80
+It can also be found at [50.40,39.76]
+step
+click Gnarl Root##291241
+|tip It looks like a small green viny plant with yellow flowers.
+Sample Gnarl Root |achieve 12588/3 |goto 54.39,37.50
+It can also be found at [58.88,42.18]
+step
+click Stonebloom##292825
+|tip It looka like a small yellow and green plant sprouting out of a brown pile of dirt.
+Sample Stonebloom |achieve 12588/6 |goto 48.53,46.72
+It can also be found at [49.40,48.92]
+step
+click Sapphire Amaraina##292812
+|tip It looks like a small green plant with blue-purple flowers.
+Sample Sapphire Amaraina |achieve 12588/4 |goto 73.72,39.73
+It can also be found at [78.77,35.13]
+step
+Sample All of the Edible Plants Within Nazmir |achieve 12588
+step
+_Congratulations!_
+You Earned the "Eat Your Greens" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Eating Out of the Palm of My Tiny Hand",{
+achieveid={13029},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,Eating,Out,Palm,My,Tiny,Hand",},
+description="To earn this achievement, you will be required to feed brutosaurs their favorite food in Zandalar.",
+},[[
+step
+Enter the cave |goto Nazmir/0 34.68,54.95 < 5 |walk
+talk Blind Wunja##126833
+|tip Inside the cave.
+buy 1 Primitive Watermelon##163563 |goto 35.43,55.31 |condition achieved(13029,1)
+step
+clicknpc Goramor##143644
+use Primitive Watermelon##163563
+Feed the Brutosaur of Nazmir |achieve 13029/1 |goto 32.28,35.62
+step
+talk Rikati##133833
+buy 1 Snake on a Stick##163567 |goto Vol'dun/0 40.45,55.35 |condition achieved(13029,2)
+step
+clicknpc Ol' Stompy##143332
+use Snake on a Stick##163567
+Feed the Brutosaur of Vol'dun |achieve 13029/2 |goto 61.87,9.22
+step
+talk Golkada##124034
+buy 1 Extra-dry Fruitcake##163564 |goto Zuldazar/0 71.25,29.51 |condition achieved(13029,3)
+step
+clicknpc Irritable Maka'fon##130922
+use Extra-dry Fruitcake##163564
+Feed the Brutosaur of Zuldazar |achieve 13029/3 |goto 64.20,39.32
+step
+Feed Brutosaurs Their Favorite Food in Zandalar |achieve 13029
+step
+_Congratulations!_
+You Earned the "Eating Out of the Palm of My Tiny Hand" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Everything Old Is New Again",{
+achieveid={13082},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,everything,old,new,again",},
+description="This guide will walk you through completing the \"Everything Old Is New Again\" Achievement.",
+},[[
+step
+click Old Crossbow##298766
+collect Old Crossbow##163749 |condition achieved(13082,1) |goto Drustvar/0 35.57,51.88
+step
+click Old Knife##298767
+collect Old Knife##163747 |condition achieved(13082,4) |goto 32.59,58.91
+step
+Cross the water |goto 62.43,67.94 < 15 |only if walking
+Jump down here |goto 64.39,68.11 < 10 |only if walking
+click Old Flask##298768
+|tip Underwater.
+collect Old Flask##163746 |condition achieved(13082,2) |goto 64.87,67.79
+step
+Follow the path up |goto 56.51,30.84 < 10 |only if walking
+click Old Hat##298769
+collect Old Hat##163748 |condition achieved(13082,3) |goto 55.43,27.10
+step
+Enter the cave |goto 44.83,27.41 < 5 |walk
+Continue down the path |goto 43.71,25.33 < 10 |only if walking
+click Order Of Embers Crossbow##297939
+|tip Inside the cave.
+accept Order of Embers Crossbow##53430 |goto 42.58,25.07
+step
+click Order Of Embers Crossbow##297939
+|tip Inside the cave.
+Find and Return the Crossbow |achieve 13082/1 |goto 42.58,25.07
+step
+click Order Of Embers Hat##297941
+|tip Inside the cave.
+accept Order of Embers Hat##53433 |goto 42.60,25.09
+step
+click Order Of Embers Hat##297941
+|tip Inside the cave.
+Find and Return the Hat |achieve 13082/3 |goto 42.60,25.09
+step
+click Order of Embers Knife##297940
+|tip Inside the cave.
+accept Order of Embers Knife##53432 |goto 42.61,25.12
+step
+click Order of Embers Knife##297940
+|tip Inside the cave.
+Find and Return the Knife |achieve 13082/4 |goto 42.61,25.12
+step
+click Order of Embers Flask##297942
+|tip Inside the cave.
+accept Order of Embers Flask##53431 |goto 42.62,25.14
+step
+click Order of Embers Flask##297942
+|tip Inside the cave.
+Find and Return the Flask |achieve 13082/2 |goto 42.62,25.14
+step
+_Congratulations!_
+You Earned the "Everything Old Is New Again" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Tiragarde Sound",{
 achieveid={12556},
 author="support@zygorguides.com",
 startlevel=110,
@@ -1151,7 +3366,7 @@ step
 _Congratulations!_
 You Earned the "Explore Tiragarde Sound" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Drustvar",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Drustvar",{
 achieveid={12557},
 author="support@zygorguides.com",
 startlevel=110,
@@ -1197,7 +3412,7 @@ step
 _Congratulations!_
 You Earned the "Explore Drustvar" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Stormsong Valley",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Stormsong Valley",{
 achieveid={12558},
 author="support@zygorguides.com",
 startlevel=110,
@@ -1229,7 +3444,7 @@ step
 _Congratulations!_
 You Earned the "Explore Stormsong Valley" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Zuldazar",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Zuldazar",{
 achieveid={12559},
 author="support@zygorguides.com",
 startlevel=110,
@@ -1275,7 +3490,7 @@ step
 _Congratulations!_
 You Earned the "Explore Zuldazar" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Nazmir",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Nazmir",{
 achieveid={12561},
 author="support@zygorguides.com",
 startlevel=110,
@@ -1299,7 +3514,7 @@ Explore Zalamar |achieve 12561/5 |goto 35.74,46.45
 step
 Explore Primal Wetlands |achieve 12561/1 |goto 35.42,72.52
 step
-Explore The Rivermarsh |achieve 12561/3 |goto 41.54,77.60
+Explore The Rivermarsh |achieve 12561/3 |goto 42.82,83.27
 step
 Follow the path |goto 54.13,63.02 < 5 |walk
 Explore Heart of Darkness |achieve 12561/2 |goto 53.89,62.71
@@ -1307,7 +3522,7 @@ step
 _Congratulations!_
 You Earned the "Explore Nazmir" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Vol'dun",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Vol'dun",{
 achieveid={12560},
 author="support@zygorguides.com",
 startlevel=110,
@@ -1349,92 +3564,1010 @@ step
 _Congratulations!_
 You Earned the "Explore Vol'dun" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Battle for Azeroth Explorer",{
-achieveid={12988},
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Get Hek'd",{
 author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to find four boons of Jani in each of the following zones in Zandalar:\n\nNazmir\nVol'dun\nZuldazar",
+achieveid={12482},
 startlevel=110,
-keywords={"Battle","for","Azeroth","Explorer"},
-description="This guide will walk you through completing the \"Battle for Azeroth Explorer\" Achievement.",
+endlevel=120,
+keywords={"Boon, Jani, Nazmir, Vol'dun, Zuldazar, Zandalar, BFA, Battle, for, Azeroth"},
 },[[
 step
-Explore Tiragarde Sound |achieve 12988/1
-|tip Use the "Explore Tiragarde Sound" achievement guide to accomplish this.
-Click here to load the "Explore Tiragarde Sound" guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Tiragarde Sound"
+talk Quartermaster Alfin##136562
+accept Pests##51142 |goto Vol'dun/0 36.57,32.30
 step
-Explore Drustvar |achieve 12988/2
-|tip Use the "Explore Drustvar" achievement guide to accomplish this.
-Click here to load the "Explore Drustvar" guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Drustvar"
+kill 8 Thieving Snapper##136566 |q 51142/1 |goto 37.41,33.13
 step
-Explore Stormsong Valley |achieve 12988/3
-|tip Use the "Explore Stormsong Valley" achievement guide to accomplish this.
-Click here to load the "Explore Stormsong Valley" guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Stormsong Valley"
+click Mysterious Trashpile
+Follow the Big One |q 51142/2 |goto 36.18,36.79
 step
-Explore Zuldazar |achieve 12988/4
-|tip Use the "Explore Zuldazar" achievement guide to accomplish this.
-Click here to load the "Explore Zuldazar" guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Zuldazar"
+talk Jani##136559
+turnin Pests##51142 |goto 36.18,36.79
+accept Curse of Jani##51145 |goto 36.18,36.79
 step
-Explore Nazmir |achieve 12988/5
-|tip Use the "Explore Nazmir" achievement guide to accomplish this.
-Click here to load the "Explore Nazmir" guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Nazmir"
+Reach Quartermaster Alfin |q 51145/1 |goto 36.57,32.30
+|tip Avoid enemies or they'll catch you and you'll have to start over.
 step
-Explore Vol'dun |achieve 12988/6
-|tip Use the "Explore Vol'dun" achievement guide to accomplish this.
-Click here to load the "Explore Vol'dun" guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Vol'dun"
+kill Quartermaster Alfin##136563
+|tip Right-click him.
+Watch the dialogue
+Bite Quartermaster Alfin |q 51145/2 |goto 36.57,32.30
+step
+talk Jani##136559
+turnin Curse of Jani##51145 |goto 36.19,36.85
+step
+kill Ranishu Ravager##135727+
+collect 1 Charged Ranishu Antennae##158910 |goto 46.90,47.80 |only if not achieved(12482,3)
+step
+Enter the building |goto 46.87,46.87 < 10 |walk
+click Mysterious Trashpile##273660
+talk Jani##135536
+Tell him _"I have a shiny trinket for you, Jani."_
+click Jani's Stash##282664
+Give Jani the Charged Ranishu Antennae |achieve 12482/3 |goto 46.98,46.55
+step
+kill Ringhorn Strider##130316+
+collect 1 Polished Ringhorn Hoof##158915 |goto 56.40,15.66 |only if not achieved(12482,6)
+step
+click Mysterious Trashpile##273660
+talk Jani##135536
+Tell him _"I have a shiny trinket for you, Jani."_
+click Jani's Stash##282664
+Give Jani the Polished Ringhorn Hoof |achieve 12482/6 |goto 56.27,15.28
+step
+kill Redrock Scavenger##134718+
+collect 1 Sturdy Redrock Jaw##158916 |goto 50.84,85.63 |only if not achieved(12482,9)
+step
+click Mysterious Trashpile##273660
+|tip Underneath the stone bridge.
+talk Jani##135536
+Tell him _"I have a shiny trinket for you, Jani."_
+click Jani's Stash##282664
+Give Jani the Sturdy Redrock Jaw |achieve 12482/9 |goto 49.35,84.41
+step
+click Mysterious Trashpile##273660
+talk Jani##133859
+accept Saurid Surprise##50901 |goto 42.18,72.08
+step
+Reach Sezahjin |q 50901/1 |goto 43.70,76.78
+|tip Avoid enemies or they'll catch you and you'll have to start over.
+step
+Use the "Summon Swarm" ability on your hotbar
+Summon the Swarm |q 50901/2 |goto 43.70,76.78
+step
+clicknpc Sezahjin##126108
+Steal Sezahjin's Hat |q 50901/3 |goto  |goto 43.70,76.78
+step
+Bring Chef's Hat to Jani |q 50901/4 |goto 42.18,72.08
+|tip Avoid enemies or they'll catch you and you'll have to start over.
+step
+click Mysterious Trashpile##273660
+talk Jani##133859
+turnin Saurid Surprise##50901 |goto 42.18,72.08
+step
+kill Nazwathan Guardian##131155+
+collect 1 Nazwathan Relic##157802 |goto Nazmir/0 69.86,33.36 |only if not achieved(12482,8)
+step
+click Mysterious Trashpile##273660
+talk Jani##135536
+Tell him _"I have a shiny trinket for you, Jani."_
+click Jani's Stash##282664
+Give Jani the Nazwathan Relic |achieve 12482/8 |goto 68.53,32.84
+step
+kill Vilescale Guardian##125393+
+collect 1 Vilescale Pearl##157797 |goto 83.01,50.26 |only if not achieved(12482,2)
+step
+click Mysterious Trashpile##273660
+talk Jani##135536
+Tell him _"I have a shiny trinket for you, Jani."_
+click Jani's Stash##282664
+Give Jani the Vilescale Pearl |achieve 12482/2 |goto 80.91,46.80
+step
+kill Primal Snapjaw##126723+
+collect 1 Snapjaw Tail##157801 |goto 34.32,76.29 |only if not achieved(12482,5)
+step
+click Mysterious Trashpile##273660
+talk Jani##135536
+Tell him _"I have a shiny trinket for you, Jani."_
+click Jani's Stash##282664
+Give Jani the Snapjaw Tail |achieve 12482/5 |goto 34.00,75.11
+step
+click Mysterious Trashpile##273660
+talk Jani##135536
+accept Taking the Loa Road##50444 |goto 53.99,74.08
+step
+Reach the Ideal Prank Spot |q 50444/1 |goto 59.72,68.61
+|tip Avoid enemies or they'll catch you and you'll have to start over.
+step
+click Cursed Coin##281406
+Plant the Cursed Coin |q 50444/2 |goto 59.72,68.61
+step
+Watch the dialogue
+Play a Prank |q 50444/3 |goto 59.72,68.61
+step
+click Mysterious Trashpile##273660
+talk Jani##135536
+turnin Taking the Loa Road##50444 |goto 53.99,74.08
+step
+kill Savagemane Ravasaur##122504+
+collect 1 Golden Ravasaur Egg##156963 |goto Zuldazar/0 70.68,40.14 |only if not achieved(12482,1)
+step
+click Mysterious Trashpile##273660
+talk Jani##135536
+Tell him _"I have a shiny trinket for you, Jani."_
+click Jani's Stash##282664
+Give Jani the Golden Ravasaur Egg |achieve 12482/1 |goto 71.68,41.28
+step
+kill Feathered Viper##132410+
+collect 1 Feathered Viper Scale##157794 |goto 63.41,19.93 |only if not achieved(12482,10)
+step
+click Mysterious Trashpile##273660
+talk Jani##135536
+Tell him _"I have a shiny trinket for you, Jani."_
+click Jani's Stash##282664
+Give Jani the Feathered Viper Scale |achieve 12482/10 |goto 62.73,20.57
+step
+click Mysterious Trashpile##273660
+talk Jani##135536
+accept Big Hunter Mon##50332 |goto 66.20,16.61
+step
+Reach Nesingwary's Stores |q 50332/1 |goto 67.79,17.70
+|tip Avoid enemies or they'll catch you and you'll have to start over.
+step
+Run down the stairs |goto 67.65,17.69 < 5 |walk
+click Bullet Box##281251
+|tip Downstairs inside the building.
+Plant the Stink Bombs |q 50332/2 |goto 67.46,17.69
+step
+Watch the dialogue
+Wait for Nesingwary to Trigger the Stink Bombs |q 50332/3 |goto 67.46,17.69
+step
+clicknpc Hemet Nesingwary##133495
+|tip Downstairs inside the building.
+Steal Nesingwary's Boot |q 50332/4 |goto 67.48,17.70
+step
+Bring Nesingwary's Boot to Jani |q 50332/5 |goto 66.20,16.61
+step
+click Mysterious Trashpile##273660
+talk Jani##135536
+turnin Big Hunter Mon##50332 |goto 66.20,16.61
+step
+click Mysterious Trashpile##273660
+talk Jani##135536
+accept The Great Hat Robbery##50381 |goto 61.91,46.89
+step
+clicknpc Caravan Brutosaur##133615
+|tip Right-click them.
+|tip They walk up and down the road.
+Bite #3# Caravan Brutosaur |q 50381/1 |goto 63.04,46.44
+step
+clicknpc Tik'su##133614
+|tip He will appear underneath the Caravan Brutosaur.
+Steal Tik'su's Hat |q 50381/2 |goto 63.04,46.44
+step
+Bring Tik'su's Hat to Jani |q 50381/3 |goto 61.91,46.89
+step
+click Mysterious Trashpile##273660
+talk Jani##135536
+turnin The Great Hat Robbery##50381 |goto 61.91,46.89
+step
+Earn the "Get Hek'd" Achievement |achieve 12482
 step
 _Congratulations!_
-You Earned the "Battle for Azeroth Explorer" Achievement.
+You Earned the "Get Hek'd" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Battle for Azeroth Pathfinder, Part One",{
-achieveid={12989},
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Hoppin' Sad",{
 author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to shoo the 10 Lost Spawns of Krag'wa towards home in Nazmir.",
+achieveid={13028},
 startlevel=110,
-keywords={"Battle","for","Azeroth","Pathfinder","Part","One"},
-description="This guide will walk you through completing the \"Battle for Azeroth Pathfinder, Part One\" Achievement.",
+endlevel=120,
+keywords={"Battle, for, Azeroth, Exploration, Hoppin', Sad"},
 },[[
 step
-Earn the _Battle for Azeroth Explorer_ achievement |achieve 12989/1 |or
-|tip Use the "Battle for Azeroth Explorer" achievement guide to accomplish this.
-Click here to load the "Battle for Azeroth Explorer" guide |confirm |next "Zygor's Achievement Guides\\Exploration\\Battle for Azeroth\\Battle for Azeroth Explorer" |or
+Enter the building |goto Nazmir/0 52.53,42.38 < 10 |walk
+clicknpc Lost Spawn of Krag'wa##143317
+|tip Inside the building.
+Shoo the First Lost Spawn of Krag'wa |q 53426 |future |goto 52.82,42.86
 step
-Earn the _Azerothian Diplomat_ achievement |achieve 12989/2 |or
-|tip Use the "Azerothian Diplomat" achievement guide to accomplish this.
-Click here to load the "Azerothian Diplomat" guide |confirm |next "Zygor's Achievement Guides\\Reputations\\Battle for Azeroth\\Azerothian Diplomat" |or
+Enter the underwater cave |goto 65.76,50.12 < 5 |walk
+clicknpc Lost Spawn of Krag'wa##143317
+|tip Underwater inside the cave.
+Shoo the Second Lost Spawn of Krag'wa |q 53418 |future |goto 65.57,50.93
 step
-Earn the _Wide World of Quests_ achievement |achieve 12989/3 |or
-|tip Use the "Wide World of Quests" achievement guide to accomplish this.
-Click here to load the "Wide World of Quests" guide |confirm |next "Zygor's Achievement Guides\\Quests\\Battle for Azeroth\\Wide World of Quests" |or
+Enter the underwater cave |goto 69.24,58.04 < 5 |walk
+clicknpc Lost Spawn of Krag'wa##143317
+|tip Underwater inside the cave.
+Shoo the Third Lost Spawn of Krag'wa |q 53417 |future |goto 69.57,58.65
 step
-Earn the _Kul Tourist_ achievement |achieve 12989/4 |or
-|tip Use the "Kul Tourist" achievement guide to accomplish this.
-Click here to load the "Kul Tourist" guide |confirm |next "Zygor's Achievement Guides\\Quests\\Battle for Azeroth\\Kul Tourist" |or
+Behind the tree
+clicknpc Lost Spawn of Krag'wa##143317
+|tip On the ground, at the base of the large trees.
+Shoo the Fourth Lost Spawn of Krag'wa |q 53419 |future |goto 56.00,65.06
 step
-Earn the _Ready for War_ achievement |achieve 12989/5 |or
-|tip Use the "War Campaign" leveling guide to accomplish this.
-Click here to load the "War Campaign" guide |confirm |next "Zygor's Leveling Guides\\Battle for Azeroth (110-120)\\War Campaign" |or
+Follow the path |goto 46.45,89.32 < 20 |only if walking
+Enter the cave |goto 45.32,91.45 < 5 |walk
+clicknpc Lost Spawn of Krag'wa##143317
+|tip Inside the cave.
+Shoo the Fifth Lost Spawn of Krag'wa |q 53422 |future |goto 44.58,92.80
+step
+Follow the path up |goto 33.30,82.40 < 10 |only if walking
+Cross the bridge |goto 32.69,85.03 < 10 |only if walking
+Continue up the path |goto 30.35,87.30 < 10 |only if walking
+Continue following the path |goto 24.41,88.96 < 15 |only if walking
+clicknpc Lost Spawn of Krag'wa##143317
+Shoo the Sixth Lost Spawn of Krag'wa |q 53424 |future |goto 24.17,91.72
+step
+Follow the path |goto 26.63,80.28 < 10 |only if walking
+Follow the path up |goto 27.28,81.60 < 5 |only if walking
+Continue up the path |goto 27.27,82.24 < 5 |only if walking
+Enter the cave |goto 28.42,82.27 < 5 |walk
+clicknpc Lost Spawn of Krag'wa##143317
+|tip Inside the cave.
+Shoo the Seventh Lost Spawn of Krag'wa |q 53423 |future |goto 28.89,83.16
+step
+clicknpc Lost Spawn of Krag'wa##143317
+Shoo the Eighth Lost Spawn of Krag'wa |q 53425 |future |goto 21.86,69.35
+step
+Enter the cave |goto 33.49,61.59 < 5 |walk
+clicknpc Lost Spawn of Krag'wa##143317
+|tip Inside the cave.
+Shoo the Ninth Lost Spawn of Krag'wa |q 53421 |future |goto 34.13,61.85
+step
+clicknpc Lost Spawn of Krag'wa##143317
+Shoo the Final Lost Spawn of Krag'wa |q 53420 |future |goto 25.68,40.58
+step
+Shoo the Lost Spawns of Krag'wa Towards Home in Nazmir |achieve 13028
 step
 _Congratulations!_
-You Earned the "Battle for Azeroth Pathfinder, Part One" Achievement.
+You Earned the "Hoppin' Sad" Achievement.
 ]])
-ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Allied Races: Void Elf",{
-achieveid={12242},
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Kul Tiran Up the Dance Floor",{
+achieveid={13058},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,kul,tiran,up,dance,floor",},
+description="This guide will walk you through completing the \"Kul Tiran Up the Dance Floor\" Achievement.",
+},[[
+step
+Target another player and type "/dance" while on the dance floor in Norwington Estate
+Dance With Another Player on The Dance Floor |achieve 13058 |goto Tiragarde Sound/0 50.28,25.12
+step
+_Congratulations!_
+You Earned the "Kul Tiran Up the Dance Floor" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Legends of the Tidesages",{
+achieveid={13051},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,Legends,of,the,Tidesages",},
+description="To earn this achievement, you will be required to discover each of the lore objects in Stormsong Valley that tell the legacy of the tidesages.",
+},[[
+step
+Follow the path up |goto Stormsong Valley/0 48.67,75.41 < 10 |only if walking
+Continue up the path |goto 48.60,79.05 < 5 |only if walking
+click Ancient Tidesage Scroll##296854
+Discover the Legends of the Tidesages - Part 1 |achieve 13051/1 |goto 49.51,80.93
+step
+Follow the path up |goto 57.80,61.23 < 10 |only if walking
+Continue up the path |goto 57.61,60.45 < 10 |only if walking
+click Ancient Tidesage Scroll##296902
+Discover the Legends of the Tidesages - Part 2 |achieve 13051/2 |goto 59.02,59.57
+step
+Follow the path up |goto 58.72,40.56 < 10 |only if walking
+Continue up the path |goto 58.34,42.03 < 5 |only if walking
+Continue up the path |goto 57.76,40.31 < 5 |only if walking
+Continue up the path |goto 56.95,42.26 < 5 |only if walking
+click Ancient Tidesage Scroll##296905
+Discover the Legends of the Tidesages - Part 5 |achieve 13051/5 |goto 56.05,38.48
+step
+click Ancient Tidesage Scroll##296907
+Discover the Legends of the Tidesages - Part 7 |achieve 13051/7 |goto 62.09,30.19
+step
+click Ancient Tidesage Scroll##296908
+Discover the Legends of the Tidesages - Part 8 |achieve 13051/8 |goto 75.07,31.15
+step
+Follow the road up |goto 49.12,48.25 < 10 |only if walking
+Follow the path up |goto 47.26,35.48 < 10 |only if walking
+Continue following the path |goto 46.47,35.55 < 10 |only if walking
+Continue up the path |goto 45.44,37.98 < 10 |only if walking
+click Ancient Tidesage Scroll##296906
+Discover the Legends of the Tidesages - Part 6 |achieve 13051/6 |goto 44.13,36.61
+step
+Follow the path up |goto 35.47,32.63 < 10 |only if walking
+click Ancient Tidesage Scroll##296904
+Discover the Legends of the Tidesages - Part 4 |achieve 13051/4 |goto 33.80,33.24
+step
+click Ancient Tidesage Scroll##296903
+Discover the Legends of the Tidesages - Part 3 |achieve 13051/3 |goto 31.92,72.94
+step
+_Congratulations!_
+You Earned the "Legends of the Tidesages" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Mushroom Harvest",{
+achieveid={13027},
+author="support@zygorguides.com",
+startlevel=120,
+keywords={"Battle,for,Azeroth,Mushroom,Harvest",},
+description="To earn this achievement, you will be required to kill the following fungarian villains in Zandalar:\n\nSkullcap\nBane of the Woods\nPortakilio\nToadcruel.",
+},[[
+step
+Follow the path up |goto Vol'dun/0 61.04,17.80 < 10 |only if walking
+kill Portakillo##143313 |achieve 13027/3 |goto 61.03,18.33
+step
+Enter the cave |goto Nazmir/0 73.26,49.45 < 5 |walk
+kill Toadcruel##143311
+|tip Inside the cave.
+Slay Toadcruel |achieve 13027/4 |goto 73.62,48.68
+step
+Enter the building |goto 52.36,69.51 < 5 |walk
+kill Skullcap##143316
+|tip Inside the building.
+Slay Skullcap |achieve 13027/1 |goto 52.36,70.30
+step
+Follow the path |goto Zuldazar/0 44.89,70.41 < 20 |only if walking
+Follow the path down |goto 46.22,71.97 < 20 |only if walking
+Continue following the path |goto 46.80,78.47 < 15 |only if walking
+kill Bane of the Woods##143314 |achieve 13027/2 |goto 45.50,79.22
+step
+Kill the Fungarian Villains in Zandalar |achieve 13027
+step
+_Congratulations!_
+You Earned the "Mushroom Harvest" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Sausage Sampler",{
+achieveid={13087},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,sausage,sampler",},
+description="This guide will walk you through completing the \"Sausage Sampler\" Achievement.",
+},[[
+step
+Enter the building |goto Drustvar/0 26.71,72.29 < 5 |walk
+|tip Inside the building.
+talk Alisha Darkwater##136655
+buy 1 Fried Boar Sausage##163110 |condition achieved(13087,1) |goto 26.67,72.55
+step
+use the Fried Boar Sausage##163110
+Eat Fried Boar Sausage |achieve 13087/1
+step
+talk Charisse Payton##142167
+buy 1 Goldshire Farms Smoked Sausage##155812 |condition achieved(13087,2) |goto Boralus/0 70.63,21.32
+step
+talk Charisse Payton##142167
+buy 1 Roland's Famous Frankfurter##155811 |condition achieved(13087,4) |goto 70.63,21.32
+step
+talk Charisse Payton##142167
+buy 1 Rosco Fryer's Mostly-Meat Brat##155813 |condition achieved(13087,5) |goto 70.63,21.32
+step
+talk Charisse Payton##142167
+buy 1 Timmy Gene Sunrise Pork##155814 |condition achieved(13087,6) |goto 70.63,21.32
+step
+use the Goldshire Farms Smoked Sausage##155812
+Eat Goldshire Farms Smoked Sausage |achieve 13087/2
+step
+use Roland's Famous Frankfurter##155811
+Eat Roland's Famous Frankfurter |achieve 13087/4
+step
+use Rosco Fryer's Mostly-Meat Brat##155813
+Eat Rosco Fryer's Mostly-Meat Brat |achieve 13087/5
+step
+use Timmy Gene Sunrise Pork##155814
+Eat Timmy Gene Sunrise Pork |achieve 13087/6
+step
+talk Auctioneer Fitch##8719
+|tip Inside the building.
+collect 1 Heartsbane Hexwurst##163781 |condition achieved(13087,3) |goto Stormwind City/0 61.12,70.62
+step
+use Heartsbane Hexwurst##163781
+Eat Heartsbane Hexenwurst |achieve 13087/3
+step
+_Congratulations!_
+You Earned the "Sausage Sampler" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Scavenger of the Sands",{
+achieveid={13016},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,Scavenger,of,the,Sands",},
+description="To earn this achievement, you will be required to collect all the junk items lost in the sands of Vol'dun.",
+},[[
+step
+Enter the building |goto Vol'dun/0 27.21,51.52 < 10 |walk
+click Ofer's Bound Journal##296580
+|tip Inside the building.
+collect Ofer's Bound Journal##163325 |achieve 13016/5 |goto 26.78,52.91
+step
+click Skye's Pet Rock##296581
+collect Skye's Pet Rock##163326 |achieve 13016/6 |goto 29.46,59.38
+step
+click Ian's Empty Bottle##296574
+collect Ian's Empty Bottle##163322 |achieve 13016/2 |goto 36.21,78.37
+step
+click Navarro's Flask##296583
+collect Navarro's Flask##163328 |achieve 13016/8 |goto 43.21,77.00
+step
+Enter the building |goto 46.78,75.75 < 10 |walk
+click Zach's Canteen##296584
+|tip Inside the building.
+collect Zach's Canteen##163329 |achieve 13016/9 |goto 47.08,75.78
+step
+Follow the path up |goto 45.42,83.78 < 10 |only if walking
+Run up the stairs |goto 45.29,89.61 < 5 |only if walking
+Enter the building |goto 45.19,90.81 < 5 |walk
+click Portrait of Commander Martens##296588
+|tip Inside the building.
+collect Portrait of Commander Martens##163375 |achieve 13016/13 |goto 45.21,91.16
+step
+click Julie's Cracked Dish##296575
+collect Julie's Cracked Dish##163323 |achieve 13016/3 |goto 53.56,89.80
+step
+click Jason's Rusty Blade##296573
+|tip Underneath the bridge.
+collect Jason's Rusty Blade##163321 |achieve 13016/1 |goto 56.31,70.08
+step
+Follow the path |goto 60.90,35.35 < 10 |only if walking
+Follow the path up |goto 61.13,33.11 < 10 |only if walking
+Continue up the path |goto 62.74,33.12 < 10 |only if walking
+Continue following the path |goto 63.95,33.05 < 10 |only if walking
+Enter the building |goto 64.92,36.33 < 5 |walk
+click Rachel's Flute##296586
+|tip Inside the cave.
+collect Rachel's Flute##163373 |achieve 13016/11 |goto 66.42,35.90
+step
+click Kurt's Ornate Key##296589
+collect Kurt's Ornate Key##163376 |achieve 13016/14 |goto 62.84,22.67
+step
+Enter the cave |goto 47.95,35.61 < 5 |walk
+|tip Inside the cave.
+click Josh's Fang Necklace##296587
+collect Josh's Fang Necklace##163374 |achieve 13016/12 |goto 47.92,36.74
+step
+click Damarcus' Backpack##296585
+collect Damarcus' Backpack##163372 |achieve 13016/10 |goto 45.88,30.72
+step
+Follow the path |goto 45.72,26.18 < 10 |only if walking
+Continue following the path |goto 46.06,24.34 < 10 |only if walking
+Follow the path up |goto 46.72,20.84 < 10 |only if walking
+Cross the bridge |goto 49.22,17.40 < 10 |only if walking
+Continue following the path |goto 51.33,16.58 < 10 |only if walking
+click Julien's Left Boot##296582
+collect Julien's Left Boot##163327 |achieve 13016/7 |goto 52.43,14.40
+step
+click Brian's Broken Compass##296579
+|tip Underneath the rock.
+collect Brian's Broken Compass##163324 |achieve 13016/4 |goto 37.82,30.49
+step
+Collect All the Junk Items Lost in the Sands of Vol'dun |achieve 13016
+step
+_Congratulations!_
+You Earned the "Scavenger of the Sands" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Shanty Raid",{
+achieveid={13057},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle,for,Azeroth,shanty,raid",},
+description="This guide will walk you through completing the \"Shanty Raid\" Achievement.",
+},[[
+step
+Enter the building |goto Boralus/0 73.35,68.85 < 5 |walk
+click Russel's Songbook##297906
+|tip Inside the building.
+|tip On top of the mantle of the fireplace.
+collect Forbidden Sea Shanty of the Lively Men##163714 |n
+Find the Shanty of Lively Men |achieve 13057/1 |goto 72.42,69.40
+step
+Enter the cave |goto Tiragarde Sound/0 43.40,25.81 < 5 |walk
+click Dusty Songbook##297933
+|tip Inside the cave.
+collect Forbidden Sea Shanty of Fruit Counting##163715 |n
+Find the Shanty of Fruit Counting |achieve 13057/2 |goto 43.48,25.59
+step
+Enter the building |goto Boralus/0 52.94,17.98 < 5 |walk
+click Jay's Songbook##297905
+|tip Inside the building.
+collect Forbidden Sea Shanty of Inebriation##163716 |n
+Find the Shanty of Inebriation |achieve 13057/3 |goto 53.15,17.67
+step
+kill Barman Bill##129181
+collect Forbidden Sea Shanty of Josephus##163717 |n
+Find the Shanty of Josephus |achieve 13057/4 |goto Tiragarde Sound/0 76.10,82.88
+step
+kill Black-Eyed Bart##132086
+collect Forbidden Sea Shanty of the Black Sphere##163718 |n
+Find the Shanty of Black Sphere |achieve 13057/5 |goto 56.27,69.94
+step
+Enter the building |goto 73.39,84.12 < 5 |walk
+click Scoundrel's Songbook##297934
+|tip Inside the building.
+collect Forbidden Sea Shanty of the Horse##163719 |n
+Find the Shanty of the Horse |achieve 13057/6 |goto 73.18,84.15
+step
+_Congratulations!_
+You Earned the "Shanty Raid" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Treasures of Drustvar",{
+achieveid={12995},
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-condition_end=function() return achieved(12242) end,
-keywords={"battle, of, azeroth, preorder"},
-description="To acquire this achievement, you must purchase the Battle of Azeroth collector's edition.",
+condition_end=function() return achieved(12995) end,
+keywords={"treasure, drustvar"},
+description="This guide will walk you through completing the \"Treasures of Drustvar\" achievement.",
 },[[
 step
-Load the "Void Elf Race Unlock" Leveling Guide |confirm |next "Zygor's Leveling Guides\\Battle for Azeroth\\Void Elf Race Unlock"
-|tip Click the line above to load the guide.
-|tip Completing this guide will grant you this achievment.
-Earn the "Allied Races: Void Elf" Achievement |achieve 12242
+click Web-Covered Chest##297825
+Discover the Web-Covered CHest |achieve 12995/1 |goto Drustvar/0 33.71,30.08
+step
+kill Gorging Raven##137468
+|tip They fly around the chest and one of them has the Merchant's Key in its claws.
+collect Merchant's Key##163710 |goto 25.75,19.94 |achieve 12995/2
+step
+click Merchant's Chest##297828
+Discover the Merchant's Chest |achieve 12995/2 |goto 25.75,19.94
+step
+Enter the cave |goto 63.05,65.29 < 5 |walk
+click Runic Ward##143687+
+|tip Click the Runic Wards in the following order: left, down, up, right.
+click Runebound Cache##297891
+|tip Inside the cave.
+Discover the Runebound Cache |achieve 12995/3 |goto 63.30,65.85
+step
+click Runic Ward##143689+
+|tip Click the Runic Wards in the following order: left, right, down, up.
+click Runebound Chest##297892
+Discover the Runebound Chest |achieve 12995/4 |goto 44.22,27.71
+step
+click Runic Ward##143687+
+|tip Click the Runic Wards in the following order: right, up, left, down.
+click Runebound Coffer##297893
+Discover the Runebound Coffer |achieve 12995/5 |goto 33.68,71.73
+step
+Follow the path |goto 18.85,50.14 < 10 |only if walking
+Follow the path up |goto 18.59,50.83 < 5 |only if walking
+clicknpc Witch Torch##143608+
+click Hexed Chest##297878
+Discover the Hexed Chest |achieve 12995/6 |goto 18.53,51.32
+step
+Follow the path |goto 56.88,52.91 < 10 |only if walking
+Follow the path up |goto 55.94,51.93 < 10 |only if walking
+clicknpc Witch Torch##143608+
+click Bespelled Chest##297879
+Discover the Bespelled Chest |achieve 12995/7 |goto 55.59,51.83
+step
+Follow the path |goto 69.58,66.59 < 10 |only if walking
+Continue following the path |goto 68.49,68.61 < 10 |only if walking
+Follow the path up |goto 68.38,69.28 < 5 |only if walking
+Continue up the path |goto 67.36,71.23 < 10 |only if walking
+Continue up the path |goto 67.21,73.00 < 10 |only if walking
+clicknpc Witch Torch##143608+
+click Ensorcelled Chest##297880
+Discover the Ensorcelled Chest |achieve 12995/8 |goto 67.77,73.67
+step
+Enter the cave |goto 25.40,23.56 < 5 |walk
+clicknpc Witch Torch##143608+
+click Enchanted Chest##297881
+|tip Inside the cave.
+Discover the Enchanted Chest |achieve 12995/9 |goto 25.45,24.17
+step
+Enter the cave |goto 24.69,48.94 < 5 |walk
+click Stolen Thornspeaker Cache##298920
+|tip Inside the cave.
+Discover the Stolen Thornspeaker Cache |achieve 12995/10 |goto 24.27,48.32
 step
 _Congratulations!_
-You Earned the "Allied Races: Void Elf" Achievement.
+You Earned the "Treasures of Drustvar" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Feats of Strength\\Allied Races: Lightforged Draenei",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Treasures of Nazmir",{
+achieveid={12771},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12771) end,
+keywords={"treasure, nazmir"},
+description="This guide will walk you through completing the \"Treasures of Nazmir\" achievement.",
+},[[
+step
+click Lucky Horace's Lucky Chest##279253
+Discover Lucky Horace's Lucky Chest |achieve 12771/1 |goto Nazmir/0 77.68,36.14
+step
+click Partially-Digested Treasure##280522
+Discover Partially-Digested Treasure |achieve 12771/2 |goto 77.90,46.36
+step
+Enter the cave |goto 42.33,50.53 < 5 |walk
+click Cursed Nazmani Chest##277715
+|tip Inside the cave.
+Discover Cursed Nazmani Chest |achieve 12771/3 |goto 43.06,50.79
+step
+Enter the cave |goto 35.87,85.41 < 5 |walk
+click "Cleverly" Disguised Chest##279260
+|tip Inside the cave.
+Discover Cleverly Disguised Chest |achieve 12771/4 |goto 35.64,85.61
+step
+Enter the underwater cave |goto 62.31,36.06 < 5 |walk
+click Lost Nazmani Treasure##279689
+|tip Underwater inside the cave.
+Discover Lost Nazmani Treasure |achieve 12771/5 |goto 62.10,34.87
+step
+Follow the path |goto 42.36,26.19 < 10 |only if walking
+Follow the path up |goto 42.64,25.85 < 5 |only if walking
+Jump onto the building |goto 42.70,26.00 < 5 |only if walking
+Jump down here |goto 42.97,26.01 < 5 |only if walking
+click Offering to Bwonsamdi##278437
+|tip Inside the building.
+Discover Offering to Bwonsamdi |achieve 12771/6 |goto 42.77,26.20
+step
+Follow the path |goto 67.91,16.79 < 10 |only if walking
+Follow the path up |goto 67.38,17.09 < 5 |only if walking
+Jump across to the ship |goto 66.98,16.83 < 5 |only if walking
+Run up the vine |goto 66.76,17.03 < 5 |only if walking
+click Shipwrecked Chest##278436
+|tip On the deck of the ship.
+Discover Shipwrecked Chest |achieve 12771/7 |goto 66.79,17.34
+step
+Enter the building |goto 45.97,82.73 < 5 |only if walking
+click Venomous Seal##279299
+|tip Inside the building.
+Discover Venomous Seal |achieve 12771/8 |goto 46.23,82.96
+step
+Follow the path |goto 73.92,61.06 < 15 |only if walking
+click Swallowed Chest##280504
+Discover Swallowed Naga Chest |achieve 12771/9 |goto 76.88,62.15
+step
+Enter the cave |goto 34.71,54.92 < 5 |walk
+click Wunja's Trove##277885
+|tip Inside the cave.
+Discover Wunja's Trove |achieve 12771/10 |goto 35.45,54.99
+step
+_Congratulations!_
+You Earned the "Treasures of Nazmir" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Treasures of Stormsong Valley",{
+achieveid={12853},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12853) end,
+keywords={"treasure, stormsong, valley"},
+description="This guide will walk you through completing the \"Treasures of Stormsong Valley\" achievement.",
+},[[
+step
+Follow the path |goto Stormsong Valley/0 65.88,10.80 < 10 |only if walking
+Follow the path up |goto 65.56,11.14 < 5 |only if walking
+Continue up the path |goto 65.30,11.70 < 5 |only if walking
+Enter the cave |goto 65.50,11.89 < 5 |walk
+|tip The cave entrance is hidden behind a large tree.
+click Weathered Treasure Chest##289647
+Discover the Weathered Treasure Chest |achieve 12853/1 |goto 66.93,12.06
+step
+Enter the cave |goto 43.61,48.26 < 5 |walk
+click Old Ironbound Chest##280619
+|tip Inside the cave.
+Discover the Old Ironbound Chest |achieve 12853/2 |goto 42.86,47.22
+step
+Follow the path |goto 49.41,75.07 < 10 |only if walking
+Follow the path up |goto 48.25,76.45 < 10 |only if walking
+Continue up the path |goto 48.70,80.12 < 10 |only if walking
+Continue up the path |goto 47.54,79.76 < 5 |only if walking
+Continue up the path |goto 47.56,82.03 < 5 |only if walking
+click Frosty Treasure Chest##281494
+Discover the Frosty Treasure Chest |achieve 12853/3 |goto 48.97,84.10
+step
+click Sunken Strongbox##282153
+|tip Underwater.
+Discover the Sunken Strongbox |achieve 12853/4 |goto 67.22,43.21
+step
+Follow the path |goto 59.27,41.24 < 5 |only if walking
+Run up the stairs |goto 58.94,41.56 < 10 |only if walking
+Continue following the path |goto 59.06,39.87 < 10 |only if walking
+click Hidden Scholar's Chest##284448
+Discover the Hidden Scholar's Chest |achieve 12853/5 |goto 59.91,39.06
+step
+click Smuggler's Stash##279042
+Discover the Smuggler's Stash |achieve 12853/6 |goto 58.60,83.88
+step
+Enter the building |goto 58.34,63.99 < 5 |walk
+Jump onto the boxes and shelves |goto 58.35,63.60 < 5 |only if walking
+click Discarded Lunchbox##293349
+|tip Inside the building.
+Discover the Discarded Lunchbox |achieve 12853/7 |goto 58.21,63.67
+step
+Follow the path |goto 42.44,67.44 < 10 |only if walking
+Continue following the path |goto 42.98,69.46 < 10 |only if walking
+Continue following the path |goto 43.32,73.02 < 10 |only if walking
+Follow the path up |goto 44.11,73.95 < 10 |only if walking
+Jump down carefully here |goto Stormsong Valley/3 61.36,40.84 < 5 |only if walking
+|tip Land on the small ledge below, don't jump all the way down.
+Enter the cave |goto Stormsong Valley/0 44.35,75.30 < 5 |walk
+click Carved Wooden Chest##293350
+|tip Inside the cave.
+Discover the Carved Wooden Chest |achieve 12853/8 |goto 44.44,73.53
+step
+click Rope Ladder##302780 |goto 36.54,23.50 < 5 |only if walking
+click Venture Co. Supply Chest##294173
+|tip On the deck of the ship.
+Discover the Venture Co. Supply Chest |achieve 12853/9 |goto 36.69,23.23
+step
+Follow the road up |goto 48.08,45.01 < 10 |only if walking
+Follow the path up |goto 47.17,35.27 < 10 |only if walking
+Continue up the path |goto 45.44,38.05 < 10 |only if walking
+click Forgotten Chest##294174
+Discover the Forgotten Chest |achieve 12853/10 |goto 46.00,30.69
+step
+_Congratulations!_
+You Earned the "Treasures of Stormsong Valley" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Treasures of Tiragarde Sound",{
+achieveid={12852},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12852) end,
+keywords={"treasure, tiragarde, sound"},
+description="This guide will walk you through completing the \"Treasures of Tiragarde Sound\" achievement.",
+},[[
+step
+clicknpc Guardian of the Spring##130350
+|tip It walks around this small pond.
+Jump on the Horse |invehicle |goto Tiragarde Sound/0 61.41,51.28 |achieve 12852/1
+step
+talk Roan Berthold##131453
+|tip Ride the horse back to Roan Berthold.
+click Hay Covered Chest##279750
+Discover the Hay Covered Chest |achieve 12852/1 |goto 67.36,51.65
+step
+Enter the cave |goto 73.20,58.06 < 5 |walk
+click Cutwater Treasure Chest##281397
+|tip Inside the cave.
+Discover the Cutwater Treasure Chest |achieve 12852/2 |goto 72.65,21.33
+step
+Follow the path |goto 54.32,30.45 < 10 |only if walking
+Jump across the rocks |goto 55.30,31.26 < 10 |only if walking
+Continue across the rocks |goto 55.54,31.71 < 5 |only if walking
+click Precarious Noble Cache##293962
+Discover the Precarious Noble Cache |achieve 12852/3 |goto 56.03,33.19
+step
+Enter the cave |goto 61.55,61.67 < 5 |walk
+click Forgotten Smuggler's Stash##293964
+|tip Inside the cave.
+Discover the Forgotten Smuggler's Stash |achieve 12852/4 |goto 61.78,62.75
+step
+Enter the cave |goto Boralus/0 61.70,10.29 < 5 |walk
+click Scrimshaw Cache##293965
+|tip Inside the cave.
+Discover the Scrimshaw Cache |achieve 12852/5 |goto Tiragarde Sound/0 72.65,21.33
+step
+Kill enemies around this area
+collect Soggy Treasure Map##162571 |goto 74.95,84.02 |achieve 12852/7
+step
+click Buried Treasure Chest##293852
+|tip Underwater.
+Discover the Soggy Treasure Map |achieve 12852/7 |goto 54.99,46.07
+step
+Kill enemies around this area
+collect Fading Treasure Map##162580 |goto 74.95,84.02 |achieve 12852/8
+step
+click Buried Treasure Chest##293880
+Discover the Faded Treasure Map |achieve 12852/8 |goto 29.23,25.34
+step
+Kill enemies around this area
+collect Yellowed Treasure Map##162581 |goto 74.95,84.02 |achieve 12852/9
+step
+click Buried Treasure Chest##293881
+Discover the Yellowed Treasure Map |achieve 12852/9 |goto 90.50,75.50
+step
+Kill enemies around this area
+collect Singed Treasure Map##162584 |goto 74.95,84.02 |achieve 12852/10
+step
+click Buried Treasure Chest##293884
+Discover the Singed Treasure Map |achieve 12852/10 |goto 48.98,37.59
+step
+Run down the stairs |goto Boralus/0 70.32,85.76 < 5 |walk
+click A Damp Scroll##292676 |goto 71.02,84.41
+|tip Downstairs.
+|tip It looks like a small rolled-up white and blue scroll on the ground near two bookcases.
+confirm |achieve 12852/6
+step
+click A Damp Scroll##292677 |goto 67.08,79.67
+|tip It looks like a small rolled-up white and blue scroll underneath the wooden platforms.
+confirm |achieve 12852/6
+step
+Run down the stairs |goto 61.49,77.68 < 5 |walk
+click A Damp Scroll##292674 |goto 61.16,77.90
+|tip Downstairs.
+|tip It looks like a small rolled-up white and blue scroll on the ground next to the stairs.
+confirm |achieve 12852/6
+step
+Enter the building |goto 63.16,81.33 < 5 |walk
+Run up the stairs |goto 62.46,82.18 < 5 |walk
+click A Damp Scroll##292675 |goto 63.13,81.88
+|tip Upstairs inside the building.
+|tip It looks like a small rolled-up white and blue scroll upstairs next to a stack of books.
+confirm |achieve 12852/6
+step
+Swim underwater here |goto 61.31,84.03 < 5 |walk
+click A Damp Scroll##292673 |goto 55.99,91.31
+|tip Underwater inside the cave.
+|tip It looks like a small rolled-up white and blue scroll on the ground next to a skeleton.
+confirm |achieve 12852/6
+step
+click Ominous Altar##292686 |goto 55.73,91.06
+|tip Underwater inside the cave.
+Select "_Drink deep the shimmering tide..._"
+|tip After clicking through the dialogue you will be teleported.
+click Gem of Acquiescence##292843
+|tip Underwater after being teleported.
+Discover the Secrets of the Depths |achieve 12852/6 |goto Kul Tiras/0 62.31,91.18 |noway
+step
+_Congratulations!_
+You Earned the "Treasures of Tiragarde Sound" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Treasures of Vol'dun",{
+achieveid={12849},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12849) end,
+keywords={"treasure, vol'dun"},
+description="This guide will walk you through completing the \"Treasures of Vol'dun\" achievement.",
+},[[
+step
+clicknpc Mine Cart##132662 |goto Vol'dun/0 46.59,88.02 < 5 |only if walking
+click Ashvane Spoils##280951
+Discover the Ashvane Spoils |achieve 12849/1 |goto 44.33,92.21
+step
+Enter the crypt |goto 49.13,64.69 < 5 |walk
+click Ancient Altar##287238
+|tip Inside the crypt.
+click Grayal's Last Offering##287239
+Discover the Grayal's Last Offering |achieve 12849/2 |goto 48.18,64.69
+step
+Follow the path |goto 49.91,77.48 < 10 |only if walking
+Follow the path up |goto 50.92,79.54 < 10 |only if walking
+Continue following the path |goto 51.15,78.84 < 5 |only if walking
+Continue following the path |goto 50.81,78.54 < 5 |only if walking
+Enter the cave |goto 49.93,79.08 < 5 |walk
+click Lost Explorer's Bounty##287304
+|tip Inside the cave.
+Discover the Lost Explorer's Bounty |achieve 12849/3 |goto 49.78,79.41
+step
+Follow the path |goto 47.44,59.96 < 10 |only if walking
+Jump onto the building |goto 47.43,59.59 < 5 |only if walking
+Jump down carefully here |goto 47.43,58.49 < 5 |only if walking
+click Sandfury Reserve##287318
+|tip At the top of the large stone pillar.
+Discover the Sandfury Reserve |achieve 12849/4 |goto 47.19,58.46
+step
+Follow the path |goto 44.89,26.67 < 10 |only if walking
+Continue following the path |goto 44.74,24.78 < 5 |only if walking
+Run up the log |goto 44.51,25.80 < 5 |only if walking
+click Stranded Cache##287320
+Discover the Stranded Cache |achieve 12849/5 |goto 44.50,26.16
+step
+Follow the path |goto 56.28,64.71 < 15 |only if walking
+Enter the cave |goto 56.96,64.68 < 10 |walk
+click Excavator's Greed##287324
+|tip Inside the cave.
+Discover the Excavator's Greed |achieve 12849/6 |goto 57.74,64.64
+step
+click Disturbed Sand##287314
+click Zem'lan's Buried Treasure##287326
+Discover the Zem'lan's Buried Treasure |achieve 12849/7 |goto 29.38,87.42
+step
+Follow the path |goto 58.06,11.41 < 10 |only if walking
+Follow the path up |goto 58.22,10.52 < 5 |only if walking
+Continue up the path |goto 57.75,10.22 < 5 |only if walking
+Continue up the path |goto 56.71,10.05 < 10 |only if walking
+click Lost Offerings of Kimbul##294316
+|tip At the very top of the temple.
+Discover the Lost Offerings of Kimbul |achieve 12849/8 |goto 57.05,11.20
+step
+Follow the path |goto 38.68,82.62 < 10 |only if walking
+Follow the path up |goto 39.15,83.17 < 5 |only if walking
+Continue following the path |goto 40.52,84.04 < 10 |only if walking
+Cross the bridge |goto 40.60,84.88 < 10 |only if walking
+click Deadwood Chest##294317 |q 52994
+Discover the Deadwood Chest |achieve 12849/9 |goto 40.57,85.74
+step
+click Abandoned Bobber##294318
+click Sandsunken Treasure##294319
+Discover the Sandsunken Treasure |achieve 12849/10 |goto 26.48,45.35
+step
+_Congratulations!_
+You Earned the "Treasures of Vol'dun" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Battle for Azeroth\\Treasures of Zuldazar",{
+achieveid={12851},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12851) end,
+keywords={"treasure, zuldazar"},
+description="This guide will walk you through completing the \"Treasures of Zuldazar\" achievement.",
+},[[
+step
+Enter the building |goto Dazar'alor/0 41.16,10.96 < 5 |only if walking
+Run up the stairs |goto Dazar'alor/4 37.70,26.96 < 5 |only if walking
+Follow the path |goto 44.76,15.73 < 5 |only if walking
+Continue up the stairs |goto Dazar'alor/3 39.16,27.81 < 5 |only if walking
+Continue following the path |goto 64.28,66.09 < 5 |only if walking
+Leave the building |goto 77.40,87.34 < 5 |only if walking
+Follow the path |goto Dazar'alor/0 42.45,13.21 < 5 |only if walking
+Continue following the path |goto 40.78,10.64 < 5 |only if walking
+click Offerings of the Chosen##276735
+Discover the Offerings of the Chosen |achieve 12851/1 |goto 38.29,7.16
+step
+Follow the path |goto Zuldazar/0 66.18,22.82 < 10 |only if walking
+Continue following the path |goto 65.62,22.77 < 10 |only if walking
+Follow the path up |goto 65.46,21.89 < 10 |only if walking
+click Witch Doctor's Hoard##281092
+Discover the Witch Doctor's Hoard |achieve 12851/2 |goto 64.71,21.67
+step
+Follow the path |goto 52.34,86.69 < 10 |only if walking
+Enter the ship |goto 51.99,87.03 < 5 |walk
+Run down the stairs |goto Zuldazar/3 28.83,32.06 < 5 |walk
+Follow the path |goto 62.85,43.85 < 5 |walk
+Run down the stairs |goto Zuldazar/4 72.15,67.31 < 5 |walk
+Follow the path |goto 33.27,44.58 < 5 |walk
+click Spoils of Pandaria##279609
+|tip Downstairs inside the ship.
+Discover the Spoils of Pandaria |achieve 12851/3 |goto 23.04,23.67
+step
+Follow the path |goto Zuldazar/0 49.90,27.00 < 10 |only if walking
+Continue following the path |goto 50.85,27.56 < 10 |only if walking
+Follow the path up |goto 51.74,27.08 < 10 |only if walking
+click Incense##284456
+click Gift of the Brokenhearted##281655
+Discover the Gift of the Brokenhearted |achieve 12851/4 |goto 51.44,26.62
+step
+Follow the path |goto 49.00,64.47 < 15 |only if walking
+Run up the ramp |goto 50.17,64.99 < 10 |only if walking
+Run up the stairs |goto 49.90,65.10 < 5 |only if walking
+Continue up the stairs |goto 49.63,65.37 < 5 |only if walking
+click Warlord's Cache##277561
+|tip At the top of the ship.
+Discover the Warlord's Cache |achieve 12851/5 |goto 49.50,65.27
+step
+Follow the road |goto 44.0,38.0 < 10 |only if walking
+Follow the path |goto 43.59,36.76 < 10 |only if walking
+Continue following the path |goto 41.85,35.30 < 10 |only if walking
+Continue following the path |goto 41.02,33.28 < 5 |only if walking
+Continue following the path |goto 40.07,32.63 < 5 |only if walking
+click Dazar's Forgotten Chest##281898
+Discover the Dazar's Forgotten Chest |achieve 12851/6 |goto 38.79,34.44
+step
+Follow the path |goto 62.44,68.30 < 10 |only if walking
+Continue following the path |goto 62.90,63.71 < 10 |only if walking
+Enter the tunnel |goto 61.92,62.75 < 10 |only if walking
+Run up the stairs |goto Dazar'alor/0 58.73,90.75 < 10 |only if walking
+Watch the dialogue
+kill Da White Shark##133208
+click Da White Shark's Bounty##284454
+Discover the Da White Shark's Bounty |achieve 12851/7 |goto 59.29,88.67
+step
+Enter the cave |goto Zuldazar/0 71.25,17.52 < 5 |walk
+click The Exile's Lament##284455
+|tip Inside the cave.
+Discover the The Exile's Lament |achieve 12851/8 |goto 71.83,16.78
+step
+Follow the path |goto 52.93,40.17 < 10 |only if walking
+Jump down here |goto 53.90,38.91 < 10 |only if walking
+Enter the cave |goto Dazar'alor/0 46.56,26.61 < 10 |walk
+|tip Behind the waterfall.
+click Cache of Secrets##288596
+|tip Inside the cave.
+Discover the Cache of Secrets |achieve 12851/9 |goto 44.47,26.92
+step
+Follow the path |goto Zuldazar/0 52.50,46.97 < 10 |only if walking
+Jump down here |goto 52.80,47.15 < 5 |only if walking
+click Riches of Tor'nowa##290725
+Discover the Riches of Tor'nowa |achieve 12851/10 |goto 52.96,47.20
+step
+_Congratulations!_
+You Earned the "Treasures of Zuldazar" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Allied Races: Lightforged Draenei",{
 achieveid={12243},
 author="support@zygorguides.com",
 startlevel=110,
@@ -1444,7 +4577,7 @@ keywords={"battle, of, azeroth, preorder"},
 description="To acquire this achievement, you must purchase the Battle of Azeroth collector's edition.",
 },[[
 step
-Load the "Lightforged Draenei Race Unlock" Leveling Guide |confirm |next "Zygor's Leveling Guides\\Battle for Azeroth\\Lightforged Draenei Race Unlock"
+Load the "Lightforged Draenei Race Unlock" Leveling Guide |confirm |next "Leveling Guides\\Battle for Azeroth (110-120)\\Allied Races\\Lightforged Draenei Race Unlock"
 |tip Click the line above to load the guide.
 |tip Completing this guide will grant you this achievment.
 Earn the "Allied Races: Lightforged Draenei" Achievement |achieve 12243
@@ -1452,9 +4585,3400 @@ step
 _Congratulations!_
 You Earned the "Allied Races: Lightforged Draenei" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Battle for Azeroth\\The Pride of Kul Tiras",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Allied Races: Void Elf",{
+achieveid={12242},
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you must first earn the \"Kul Tourist\" achievement.\nYou will then complete a string of quests to rescue Jaina Proudmoore.",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12242) end,
+keywords={"battle, of, azeroth, preorder"},
+description="To acquire this achievement, you must purchase the Battle of Azeroth collector's edition.",
+},[[
+step
+Load the "Void Elf Race Unlock" Leveling Guide |confirm |next "Leveling Guides\\Battle for Azeroth (110-120)\\Allied Races\\Void Elf Race Unlock"
+|tip Click the line above to load the guide.
+|tip Completing this guide will grant you this achievment.
+Earn the "Allied Races: Void Elf" Achievement |achieve 12242
+step
+_Congratulations!_
+You Earned the "Allied Races: Void Elf" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Events\\At Least You're Being Careful",{
+achieveid={12850},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12850) end,
+keywords={"Battle, of, Azeroth, At, Least, You're, Being, Careful"},
+description="To acquire this achievement, you were required to claim the Toy Armor Set during the 2018 Vintage Winter Veil event.",
+},[[
+step
+This achievement was earned by opening a Winter's Veil gift and looting a Toy Armor Set during the Vintage Winter's Veil event
+This achievement is no longer available
+Be a Proud Owner of the 2018 Vintage Winter Veil Gift, the Toy Armor Set |achieve 12850
+step
+_Congratulations!_
+You Earned the "At Least You're Being Careful" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Archipelago Explorer",{
+achieveid={13142},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13142) end,
+keywords={"Battle,For,Azeroth,Archipelago,Explorer,Island,Expedition"},
+description="To earn this achievement, you will be required to complete Island Expeditions on five different islands.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for Island Expeditions and complete them until you get five different islands.
+|tip There are only three different islands available for Island Expeditions each week, so this achievement can take at least two weeks to get.
+Complete Expeditions on Five Different Islands |achieve 13142 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Archipelago Explorer" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Azerite Admiral",{
+achieveid={13125},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13125) end,
+keywords={"Battle,For,Azeroth,Azerite,Admiral,Island,Expedition"},
+description="To earn this achievement, you will be required to collect 1,000,000 azerite on Island Expeditions.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for Island Expeditions and complete them until you've collected 1,000,000 Azerite.
+Collect #1000000# Azerite on Island Expeditions |achieve 13125 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Azerite Admiral" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Bane of the Chain",{
+achieveid={13098},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13098) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,PvP,Bane,Chain"},
+description="To earn this achievement, you will be required to achieve victory on a PvP expedition to Dread Chain.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Player vs. Player" Island Expeditions.
+|tip You will need a group of 3.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Dread Chain is shown.
+Win a PvP Island Expedition at Dread Chain |achieve 13098 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Bane of the Chain" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Bayside Brawler",{
+achieveid={12597},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12597) end,
+keywords={"Battle,For,Azeroth,Bayside,Brawler,Island,Expedition,PvP"},
+description="To earn this achievement, you will be required to win 10 PvP Island Expeditions.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Player vs. Player" Island Expeditions.
+|tip You will need a group of 3.
+Win 10 PvP Island Expeditions |achieve 12597 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Bayside Brawler" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Blood in the Water",{
+achieveid={13120},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13120) end,
+keywords={"Battle,For,Azeroth,Blood,Water,Island,Expedition,PvP"},
+description="To earn this achievement, you will be required to win 20 PvP Island Expeditions.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Player vs. Player" Island Expeditions.
+|tip You will need a group of 3.
+Win 20 PvP Island Expeditions |achieve 13120 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Blood in the Water" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Clash at the Cay",{
+achieveid={13102},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13102) end,
+keywords={"Battle,For,Azeroth,Clash,at,the,Cay,Island,Expedition,PvP"},
+description="To earn this achievement, you will be required to win a PvP Island Expedition at Molten Cay.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Player vs. Player" Island Expeditions.
+|tip You will need a group of 3.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Molten Cay is shown.
+Win a PvP Island Expedition at Molten Cay |achieve 13102 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Clash at the Cay" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Competent Captain",{
+achieveid={12594},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12594) end,
+keywords={"Battle,For,Azeroth,Competent,Captain,Island,Expedition"},
+description="To earn this achievement, you will be required to win 20 Island Expeditions on Heroic or higher difficulty.",
+},[[
+step
+clicknpc Expedition Map##143968
+Win 20 Island Expeditions on Heroic or Higher Difficulty |achieve 12594 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Competent Captain" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Dread Chain",{
+achieveid={13095},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13095) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Dread,Chain"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Dread Chain on any difficulty.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for any type of Island Expedition.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Dread Chain is shown.
+Achieve Victory on an Expedition to Dread Chain |achieve 13095 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Dread Chain" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Expert Expeditioner",{
+achieveid={12595},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12595) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Mythic,Expert,Expeditioner"},
+description="To earn this achievement, you will be required to win 50 Island Expeditions on Mythic difficulty.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Mythic" Island Expeditions.
+|tip You will need a group of 3.
+Win 50 Island Expeditions on Mythic Difficulty |achieve 12595 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Expert Expeditioner" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Give Me The Energy",{
+achieveid={13126},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13126) end,
+keywords={"Battle,For,Azeroth,Give,Me,The,Energy,Island,Expedition"},
+description="To earn this achievement, you will be required to collect 30 globes of Azerite Energy on Island Expeditions.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for any type of Island Expedition.
+Azerite-empowered enemies will drop blue-ish orbs that give the Azerite Energy buff
+|tip Azerite empowered enemies have a blue-ish aura around them and are usually Elite enemies.
+Collect 30 Globes of Azerite Energy on Island Expeditions |achieve 13126 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Give Me The Energy" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Havenswood",{
+achieveid={13396},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13396) end,
+keywords={"Battle,For,Azeroth,Havenswood,Island,Expedition"},
+description="To earn this achievement, you will be required to achieve victory on an Expedition to Havenswood on any difficulty.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for any type of Island Expedition.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Havenswood is shown.
+Achieve Victory on an Expedition to Havenswood |achieve 13396 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Havenswood" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Havenswood Hero",{
+achieveid={13400},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13400) end,
+keywords={"Battle,For,Azeroth,Havenswood,Hero,Island,Expedition,PvP"},
+description="To earn this achievement, you will be required to achieve victory on a PvP Expedition to Havenswood.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Player vs. Player" Island Expeditions.
+|tip You will need a group of 3.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Havenswood is shown.
+Achieve Victory on an Expedition to Havenswood in PvP |achieve 13400 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Havenswood Hero" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Heroic: Dread Chain",{
+achieveid={13096},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13096) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Heroic,Dread,Chain"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Dread Chain on Heroic difficulty or higher.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for a "Heroic" Island Expedition.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Dread Chain is shown.
+Achieve Victory on an Expedition to Dread Chain on Heroic Difficulty or Higher |achieve 13096 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Heroic: Dread Chain" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Heroic: Havenswood",{
+achieveid={13397},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13397) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Heroic,Havenswood"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Havenswood on Heroic difficulty or higher.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for a "Heroic" Island Expedition.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Havenswood is shown.
+Achieve Victory on an Expedition to Havenswood on Heroic Difficulty or Higher |achieve 13397 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Heroic: Havenswood" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Heroic: Jorundall",{
+achieveid={13394},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13394) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Heroic,Jorundall"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Jorundall on Heroic difficulty or higher.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for a "Heroic" Island Expedition.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Jorundall is shown.
+Achieve Victory on an Expedition to Jorundall on Heroic Difficulty or Higher |achieve 13394 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Heroic: Jorundall" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Heroic: Molten Cay",{
+achieveid={13100},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13100) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Heroic,Molten,Cay"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Molten Cay on Heroic difficulty or higher.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for a "Heroic" Island Expedition.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Molten Cay is shown.
+Achieve Victory on an Expedition to Molten Cay on Heroic Difficulty or Higher |achieve 13100 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Heroic: Molten Cay" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Heroic: Rotting Mire",{
+achieveid={13104},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13104) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Heroic,Rotting,Mire"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Rotting Mire on Heroic difficulty or higher.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for a "Heroic" Island Expedition.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Rotting Mire is shown.
+Achieve Victory on an Expedition to Rotting Mire on Heroic Difficulty or Higher |achieve 13104 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Heroic: Rotting Mire" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Heroic: Skittering Hollow",{
+achieveid={13108},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13108) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Heroic,Skittering,Hollow"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Skittering Hollow on Heroic difficulty or higher.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for a "Heroic" Island Expedition.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Skittering Hollow is shown.
+Achieve Victory on an Expedition to Skittering Hollow on Heroic Difficulty or Higher |achieve 13108 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Heroic: Skittering Hollow" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Heroic: Un'gol Ruins",{
+achieveid={12589},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12589) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Heroic,Un'gol,Ruins"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Un'gol Ruins on Heroic difficulty or higher.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for a "Heroic" Island Expedition.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Un'gol Ruins is shown.
+Achieve Victory on an Expedition to Un'gol Ruins on Heroic Difficulty or Higher |achieve 12589 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Heroic: Un'gol Ruins" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Heroic: Verdant Wilds",{
+achieveid={13112},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13112) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Heroic,Verdant,Wilds"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Verdant Wilds on Heroic difficulty or higher.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for a "Heroic" Island Expedition.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Verdant Wilds is shown.
+Achieve Victory on an Expedition to Verdant Wilds on Heroic Difficulty or Higher |achieve 13112 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Heroic: Verdant Wilds" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Heroic: Whispering Reef",{
+achieveid={13118},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13118) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Heroic,Whispering,Reef"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Whispering Reef on Heroic difficulty or higher.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for a "Heroic" Island Expedition.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Whispering Reef is shown.
+Achieve Victory on an Expedition to Whispering Reef on Heroic Difficulty or Higher |achieve 13118 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Heroic: Whispering Reef" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Island Conqueror",{
+achieveid={13122},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13122) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Island,Conqueror"},
+description="To earn this achievement, you will be required to complete the following Mythic Island Expeditions achievements:\n\nMythic: Dread Chain\nMythic: Molten Cay\nMythic: Rotting Mire\nMythic: Skittering Hollow\nMythic: Un'gol Ruins\nMythic: Verdant Wilds\nMythic: Whispering Reef\nMythic: Jorundall\nMythic: Havenswood.",
+},[[
+step
+Complete Mythic: Dread Chain |achieve 13122/1
+|tip Use the "Mythic: Dread Chain" achievement guide to accomplish this.
+step
+Complete Mythic: Molten Cay |achieve 13122/2
+|tip Use the "Mythic: Molten Cay" achievement guide to accomplish this.
+step
+Complete Mythic: Rotting Mire |achieve 13122/3
+|tip Use the "Mythic: Rotting Mire" achievement guide to accomplish this.
+step
+Complete Mythic: Skittering Hollow |achieve 13122/4
+|tip Use the "Mythic: Skittering Hollow" achievement guide to accomplish this.
+step
+Complete Mythic: Un'gol Ruins |achieve 13122/5
+|tip Use the "Mythic: Un'gol Ruins" achievement guide to accomplish this.
+step
+Complete Mythic: Verdant Wilds |achieve 13122/6
+|tip Use the "Mythic: Verdant Wilds" achievement guide to accomplish this.
+step
+Complete Mythic: Whispering Reef |achieve 13122/7
+|tip Use the "Mythic: Whispering Reef" achievement guide to accomplish this.
+step
+Complete Mythic: Jorundall |achieve 13122/8
+|tip Use the "Mythic: Jorundall" achievement guide to accomplish this.
+step
+Complete Mythic: Havenswood |achieve 13122/9
+|tip Use the "Mythic: Havenswood" achievement guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Island Conqueror" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Island Slayer",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to earn the following PvP Island Expeditions achievements:\n\nReef Madness\nWar for the Wilds\nSkittering Smashed\nMire Marauder\nClash at the Cay\nBane of the Chain\nRuined the Ruins\nJorundall Justice\nHavenswood Hero.",
+achieveid={13141},
+startlevel=120,
+keywords={"Raid, BFA, Battle, for, Azeroth, Glory, of, Wartorn, Hero"},
+},[[
+step
+Earn the _Reef Madness_ Achievement |achieve 13141/1
+|tip Use the "Reef Madness" achievement guide to accomplish this.
+Click here to load the "Reef Madness" achievement guide |confirm |next "Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Reef Madness"
+step
+Earn the _War for the Wilds_ Achievement |achieve 13141/2
+|tip Use the "War for the Wilds" achievement guide to accomplish this.
+Click here to load the "War for the Wilds" achievement guide |confirm |next "Achievement Guides\\Island Expeditions\\Battle for Azeroth\\War for the Wilds"
+step
+Earn the _Skittering Smashed_ Achievement |achieve 13141/3
+|tip Use the "Skittering Smashed" achievement guide to accomplish this.
+Click here to load the "Skittering Smashed" achievement guide |confirm |next "Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Skittering Smashed"
+step
+Earn the _Mire Marauder_ Achievement |achieve 13141/4
+|tip Use the "Mire Marauder" achievement guide to accomplish this.
+Click here to load the "Mire Marauder" achievement guide |confirm |next "Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Mire Marauder"
+step
+Earn the _Clash at the Cay_ Achievement |achieve 13141/5
+|tip Use the "Clash at the Cay" achievement guide to accomplish this.
+Click here to load the "Clash at the Cay" achievement guide |confirm |next "Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Clash at the Cay"
+step
+Earn the _Bane of the Chain_ Achievement |achieve 13141/6
+|tip Use the "Bane of the Chain" achievement guide to accomplish this.
+Click here to load the "Bane of the Chain" achievement guide |confirm |next "Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Bane of the Chain"
+step
+Earn the _Ruined the Ruins_ Achievement |achieve 13141/7
+|tip Use the "Ruined the Ruins" achievement guide to accomplish this.
+Click here to load the "Ruined the Ruins" achievement guide |confirm |next "Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Ruined the Ruins"
+step
+Earn the _Jorundall Justice_ Achievement |achieve 13141/8
+|tip Use the "Jorundall Justice" achievement guide to accomplish this.
+Click here to load the "Jorundall Justice" achievement guide |confirm |next "Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Jorundall Justice"
+step
+Earn the _Havenswood Hero_ Achievement |achieve 13141/9
+|tip Use the "Havenswood Hero" achievement guide to accomplish this.
+Click here to load the "Havenswood Hero" achievement guide |confirm |next "Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Havenswood Hero"
+step
+_Congratulations!_
+You Earned the "Island Slayer" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Jorundall",{
+achieveid={13389},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13389) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Jorundall"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Jorundall.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for any type of Island Expedition.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Jorundall is shown.
+Achieve Victory on an Expedition to Jorundall |achieve 13389 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Jorundall" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Jorundall Justice",{
+achieveid={13399},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13399) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,PvP,Jorundall,Justice"},
+description="To earn this achievement, you will be required to achieve victory on a PvP expedition to Jorundall.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Player vs. Player" Island Expeditions.
+|tip You will need a group of 3.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Jorundall is shown.
+Win a PvP Island Expedition at Jorundall |achieve 13399 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Jorundall Justice" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Metal Detector",{
+achieveid={13124},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13124) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Metal,Detector"},
+description="To earn this achievement, you will be required to loot 100 Seafarer's Dubloons from Island Expeditions.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for any type of Island Expedition.
+Complete Island Expeditions
+|tip After completing an Island Expedition you will sometimes be rewarded with a pouch that contains Seafarer's Dubloons.
+use Seafarer's Coin Pouch##163611 |only if itemcount(163611) >= 1
+use Wayfinder's Satchel##163612 |only if itemcount(163612) >= 1
+use Sack of Plunder##163613 |only if itemcount(163613) >= 1
+Loot 100 Seafarer's Dubloons |achieve 13124 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Metal Detector" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Mire Marauder",{
+achieveid={13106},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13106) end,
+keywords={"Battle,For,Azeroth,Mire,Marauder,Island,Expedition,PvP"},
+description="To earn this achievement, you will be required to achieve victory on an PvP expedition to Rotting Mire.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Player vs. Player" Island Expeditions.
+|tip You will need a group of 3.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Rotting Mire is shown.
+Win a PvP Island Expedition at Rotting Mire |achieve 13106 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Mire Marauder" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Molten Cay",{
+achieveid={13099},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13099) end,
+keywords={"Battle,For,Azeroth,Molten,Cay,Island,Expedition"},
+description="To earn this achievement, you will be required to achieve victory on an Expedition to Molten Cay on any difficulty.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for any type of Island Expedition.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Molten Cay is shown.
+Achieve Victory on an Expedition to Molten Cay |achieve 13099 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Molten Cay" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\My Dubs",{
+achieveid={13123},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13123) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,My,Dubs"},
+description="To earn this achievement, you will be required to loot 10 Seafarer's Dubloons from Island Expeditions.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for any type of Island Expedition.
+Complete Island Expeditions
+|tip After completing an Island Expedition you will sometimes be rewarded with a pouch that contains Seafarer's Dubloons.
+use Seafarer's Coin Pouch##163611 |only if itemcount(163611) >= 1
+use Wayfinder's Satchel##163612 |only if itemcount(163612) >= 1
+use Sack of Plunder##163613 |only if itemcount(163613) >= 1
+Loot 10 Seafarer's Dubloons |achieve 13123 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "My Dubs" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Mythic: Dread Chain",{
+achieveid={13097},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13097) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Mythic,Dread,Chain"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Dread Chain on Mythic difficulty.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Mythic" Island Expeditions.
+|tip You will need a group of 3.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Dread Chain is shown.
+Achieve Victory on an Expedition to Dread Chain on Mythic Difficulty |achieve 13097 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Mythic: Dread Chain" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Mythic: Havenswood",{
+achieveid={13398},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13398) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Mythic,Havenswood"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Havenswood on Mythic difficulty.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Mythic" Island Expeditions.
+|tip You will need a group of 3.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Havenswood is shown.
+Achieve Victory on an Expedition to Havenswood on Mythic Difficulty |achieve 13398 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Mythic: Havenswood" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Mythic: Jorundall",{
+achieveid={13395},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13395) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Mythic,Jorundall"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Jorundall on Mythic difficulty.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Mythic" Island Expeditions.
+|tip You will need a group of 3.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Jorundall is shown.
+Achieve Victory on an Expedition to Jorundall on Mythic Difficulty |achieve 13395 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Mythic: Jorundall" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Mythic: Molten Cay",{
+achieveid={13101},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13101) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Mythic,Molten,Cay"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Molten Cay on Mythic difficulty.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Mythic" Island Expeditions.
+|tip You will need a group of 3.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Molten Cay is shown.
+Achieve Victory on an Expedition to Molten Cay on Mythic Difficulty |achieve 13101 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Mythic: Molten Cay" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Mythic: Rotting Mire",{
+achieveid={13105},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13105) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Mythic,Rotting,Mire"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Rotting Mire on Mythic difficulty.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Mythic" Island Expeditions.
+|tip You will need a group of 3.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Rotting Mire is shown.
+Achieve Victory on an Expedition to Rotting Mire on Mythic Difficulty |achieve 13105 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Mythic: Rotting Mire" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Mythic: Skittering Hollow",{
+achieveid={13109},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13109) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Mythic,Skittering,Hollow"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Skittering Hollow on Mythic difficulty.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Mythic" Island Expeditions.
+|tip You will need a group of 3.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Skittering Hollow is shown.
+Achieve Victory on an Expedition to Skittering Hollow on Mythic Difficulty |achieve 13109 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Mythic: Skittering Hollow" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Mythic: Un'gol Ruins",{
+achieveid={12591},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12591) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Mythic,Un'gol,Ruins"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Un'gol Ruins on Mythic difficulty.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Mythic" Island Expeditions.
+|tip You will need a group of 3.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Un'gol Ruins is shown.
+Achieve Victory on an Expedition to Un'gol Ruins on Mythic Difficulty |achieve 12591 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Mythic: Un'gol Ruins" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Mythic: Verdant Wilds",{
+achieveid={13113},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13113) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Mythic,Verdant,Wilds"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Verdant Wilds on Mythic difficulty.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Mythic" Island Expeditions.
+|tip You will need a group of 3.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Verdant Wilds is shown.
+Achieve Victory on an Expedition to Verdant Wilds on Mythic Difficulty |achieve 13113 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Mythic: Verdant Wilds" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Mythic: Whispering Reef",{
+achieveid={13116},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13116) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Mythic,Whispering,Reef"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Whispering Reef on Mythic difficulty.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Mythic" Island Expeditions.
+|tip You will need a group of 3.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Whispering Reef is shown.
+Achieve Victory on an Expedition to Whispering Reef on Mythic Difficulty |achieve 13116 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Mythic: Whispering Reef" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\No Tourist",{
+achieveid={12596},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12596) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,No,Tourist"},
+description="To earn this achievement, you will be required to win 10 Island Expeditions on Normal difficulty or higher.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for any type of Island Expedition.
+Win 10 Island Expeditions on Normal Difficulty or Higher |achieve 12596 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "No Tourist" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Notorious",{
+achieveid={13121},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13121) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,PvP,Notorious"},
+description="To earn this achievement, you will be required to win 50 PvP Island Expeditions.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Player vs. Player" Island Expeditions.
+|tip You will need a group of 3.
+Win 50 PvP Island Expeditions |achieve 13121 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Notorious" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Reef Madness",{
+achieveid={13115},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13115) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,PvP,Reef,Madness"},
+description="To earn this achievement, you will be required to achieve victory on a PvP expedition to Whispering Reef.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Player vs. Player" Island Expeditions.
+|tip You will need a group of 3.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Whispering Reef is shown.
+Win a PvP Island Expedition at Whispering Reef |achieve 13115 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Reef Madness" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Rotting Mire",{
+achieveid={13103},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13103) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Rotting,Mire"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Rotting Mire.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for any type of Island Expedition.
+|tip There are a total of 9 maps but only 3 will be available each week.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Rotting Mire is shown.
+Achieve Victory on an Expedition to Rotting Mire |achieve 13103 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Rotting Mire" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Ruined the Ruins",{
+achieveid={12592},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12592) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,PvP,Ruined,Ruins"},
+description="To earn this achievement, you will be required to achieve victory on a PvP expedition to Un'gol Ruins.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Player vs. Player" Island Expeditions.
+|tip You will need a group of 3.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Un'gol Ruins is shown.
+Win a PvP Island Expedition at Un'gol Ruins |achieve 12592 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Ruined the Ruins" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Skittering Hollow",{
+achieveid={13107},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13107) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,Skittering,Hollow"},
+description="To earn this achievement, you will be required to achieve victory on an expedition to Skittering Hollow.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Queue for any type of Island Expedition.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Skittering Hollow is shown.
+Achieve Victory on an Expedition to Skittering Hollow |achieve 13107 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Skittering Hollow" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Skittering Smashed",{
+achieveid={13110},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13110) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,PvP,Skittering,Smashed"},
+description="To earn this achievement, you will be required to achieve victory on a PvP expedition to Skittering Hollow.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Player vs. Player" Island Expeditions.
+|tip You will need a group of 3.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Skittering Hollow is shown.
+Win a PvP Island Expedition at Skittering Hollow |achieve 13110 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "Skittering Smashed" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\Sucker Punch",{
+achieveid={13129},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13129) end,
+keywords={"Battle,For,Azeroth,Island,Expedition,PvP,Sucker,Punch"},
+description="To earn this achievement, you will be required to kill a player that is affected by a Sticky Starfish on Island Expeditions.",
+},[[
+step
+clicknpc Expedition Map##143968
+|tip Select "Player vs. Player" Island Expeditions.
+|tip You will need a group of 3.
+Start an Island Expedition |goto Boralus/0 66.76,33.23
+confirm |condition achieved(13129)
+step
+Sticky Starfish is an item found on the ground throughout the Expedition
+After picking it up it can be thrown at a target
+|tip It appears as a button on the screen.
+Throw it at an enemy player and then kill them
+|tip It disorients the target and increases the damage they take by 10% for 20 seconds.
+Kill a Player Affected by a Sticky Starfish on Island Expeditions |achieve 13129
+step
+_Congratulations!_
+You Earned the "Sucker Punch" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Island Expeditions\\Battle for Azeroth\\War for the Wilds",{
+author="support@zygorguides.com",
+achieveid={13114},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Island,Expedition,War,for,the,Wilds",},
+description="To earn this achievement, you will be required to achieve victory on a PvP expedition to the Verdant Wilds.",
+},[[
+step
+clicknpc Expedition Map##143967
+|tip Select "Player vs. Player" Island Expeditions.
+|tip You will need a group of 3.
+|tip The 3 that are currently available are shown on the Weekly Scouting Report (the screen where you select expedition type and queue), make sure Verdant Wilds is shown.
+Win a PvP Island Expedition at Verdant Wilds |achieve 12735 |goto Boralus/0 66.76,33.23
+step
+_Congratulations!_
+You Earned the "War for the Wilds" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle for Azeroth\\Polished Pet Charmer",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to collect 500 Polished Pet Charms.",
+achieveid={12927},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Pets,Polished,Pet,Charmer"},
+},[[
+step
+collect 500 Polished Pet Charm##163036 |achieve 12927
+|tip These are earned from questing in Zandalar and Kul Tiras as well as War Campaign Missions, World Quests, treasures and rares.
+step
+Collect 500 Polished Pet Charms |achieve 12927
+step
+_Congratulations!_
+You Earned the "Polished Pet Charmer" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Battle on Zandalar and Kul Tiras",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to complete 20 Pet Battle World Quests on Zandalar and Kul Tiras with a full team of level 25 pets.",
+achieveid={12936},
+startlevel=120,
+keywords={"Battle,for,Azeroth,Battle,on,Zadalari,Kul,Tiras"},
+},[[
+step
+Complete 20 of the following Pet Battle World Quests With a Full Team of Level 25 Pets:
+Crab People |achieve 12936/1 |condition achieved(12936)
+This Little Piggy Has Shark Tusks |achieve 12936/2 |condition achieved(12936)
+Automated Chaos |achieve 12936/3 |condition achieved(12936)
+Night Horrors |achieve 12936/4 |condition achieved(12936)
+Rogue Azerite |achieve 12936/5 |condition achieved(12936)
+What's the Buzz? |achieve 12936/6 |condition achieved(12936)
+Sea Creatures Are Weird |achieve 12936/7 |condition achieved(12936)
+Captured Evil |achieve 12936/8 |condition achieved(12936)
+Not So Bad Down Here |achieve 12936/9 |condition achieved(12936)
+Unbreakable |achieve 12936/10 |condition achieved(12936)
+That's a Big Carcass |achieve 12936/11 |condition achieved(12936)
+Strange Looking Dogs |achieve 12936/12 |condition achieved(12936)
+Marshdwellers |achieve 12936/13 |condition achieved(12936)
+Crawg in the Bog |achieve 12936/14 |condition achieved(12936)
+Pack Leader |achieve 12936/15 |condition achieved(12936)
+Accidental Dread |achieve 12936/16 |condition achieved(12936)
+Keeyo's Champions of Vol'dun |achieve 12936/17 |condition achieved(12936)
+Snakes on a Terrace |achieve 12936/18 |condition achieved(12936)
+What Do You Mean, Mind Controlling Plants? |achieve 12936/19 |condition achieved(12936)
+Desert Survivors |achieve 12936/20 |condition achieved(12936)
+Critters are Friends, Not Food |achieve 12936/21 |condition achieved(12936)
+Add More to the Collection |achieve 12936/22 |condition achieved(12936)
+You've Never Seen Jammer Upset |achieve 12936/23 |condition achieved(12936)
+Small Beginnings |achieve 12936/24 |condition achieved(12936)
+|tip Use the Battle for Azeroth dailies guides to accomplish this.
+step
+Complete 20 Pet Battle World Quests on Zandalar and Kul Tiras With a Full Team of Level 25 Pets |achieve 12936
+step
+_Congratulations!_
+You Earned the "Battle on Zandalar and Kul Tiras" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Beast Mode",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to defeat 15 Master Tamers on Kul Tiras or Zandalar with a team of all level 25 Beast pets.",
+achieveid={13270},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Beast,Mode"},
+},[[
+step
+talk Captain Hermes##139489
+Defeat Captain Hermes with a Team of Level 25 Beast Pets |achieve 13270/1 |goto Drustvar/0 21.40,66.45
+step
+talk Fizzie Sparkwhistle##140813
+Defeat Fizzie Sparkwhistle with a Team of Level 25 Beast Pets |achieve 13270/4 |goto 38.15,38.60
+step
+talk Michael Skarn##140880
+Defeat Michael Skarn with a Team of Level 25 Beast Pets |achieve 13270/5 |goto 61.05,17.71
+step
+talk Dilbert McClint##140461
+Defeat Dilbert McClint with a Team of Level 25 Beast Pets |achieve 13270/3 |goto 63.60,59.70
+step
+talk Eddie Fixit##140315
+Defeat Eddie Fixit with a Team of Level 25 Beast Pets |achieve 13270/2 |goto Stormsong Valley/0 36.53,33.64
+step
+talk Ellie Vern##141002
+Defeat Ellie Vern with a Team of Level 25 Beast Pets |achieve 13270/6 |goto 65.03,50.82
+step
+talk Leana Darkwind##141046
+Defeat Leana Darkwind with a Team of Level 25 Beast Pets |achieve 13270/7 |goto 77.17,29.15
+step
+talk Burly##141479
+Defeat Burly with a Team of Level 25 Beast Pets |achieve 13270/10 |goto Tiragarde Sound/0 67.72,12.85
+step
+talk Delia Hanako##141292
+Defeat Delia Hanako with a Team of Level 25 Beast Pets |achieve 13270/9 |goto 59.58,33.31
+step
+talk Kwint##141077
+|tip Underwater.
+Defeat Kwint with a Team of Level 25 Beast Pets |achieve 13270/8 |goto 86.21,38.63
+step
+talk Grady Prett##141799
+Defeat Grady Prett with a Team of Level 25 Beast Pets |achieve 13270/12 |goto Nazmir/0 35.93,54.59
+step
+talk Korval Darkbeard##141814
+Defeat Korval Darkbeard with a Team of Level 25 Beast Pets |achieve 13270/13 |goto 43.02,38.86
+step
+Enter the cave |goto 72.85,49.02 < 5 |walk
+talk Lozu##141529
+|tip Inside the cave.
+Defeat Lozu with a Team of Level 25 Beast Pets |achieve 13270/11 |goto 72.85,48.59
+step
+talk Keeyo##141879
+Defeat Keeyo with a Team of Level 25 Beast Pets |achieve 13270/14 |goto Vol'dun/0 57.13,48.95
+step
+talk Kusa##142054
+Defeat Kusa with a Team of Level 25 Beast Pets |achieve 13270/16 |goto 45.13,46.42
+step
+Follow the path |goto 26.97,54.40 < 10 |only if walking
+talk Sizzik##141945
+Defeat Sizzik with a Team of Level 25 Beast Pets |achieve 13270/15 |goto 26.59,54.92
+step
+talk Karaga##142096
+Defeat Karaga with a Team of Level 25 Beast Pets |achieve 13270/17 |goto Zuldazar/0 70.56,29.59
+step
+talk Zujai##142234
+Defeat Zujai with a Team of Level 25 Beast Pets |achieve 13270/19 |goto 50.56,23.90
+step
+talk Talia Sparkbrow##142114
+Defeat Talia Sparkbrow with a Team of Level 25 Beast Pets |achieve 13270/18 |goto 48.42,35.17
+step
+_Congratulations!_
+You Earned the "Beast Mode" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Critters With Huge Teeth",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to defeat 15 Master Tamers on Kul Tiras or Zandalar with a team of all level 25 Critter pets.",
+achieveid={13271},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Critters,With,Huge,Teeth"},
+},[[
+step
+talk Captain Hermes##139489
+Defeat Captain Hermes with a Team of Level 25 Critter Pets |achieve 13271/1 |goto Drustvar/0 21.40,66.45
+step
+talk Fizzie Sparkwhistle##140813
+Defeat Fizzie Sparkwhistle with a Team of Level 25 Critter Pets |achieve 13271/4 |goto 38.15,38.60
+step
+talk Michael Skarn##140880
+Defeat Michael Skarn with a Team of Level 25 Critter Pets |achieve 13271/5 |goto 61.05,17.71
+step
+talk Dilbert McClint##140461
+Defeat Dilbert McClint with a Team of Level 25 Critter Pets |achieve 13271/3 |goto 63.60,59.70
+step
+talk Eddie Fixit##140315
+Defeat Eddie Fixit with a Team of Level 25 Critter Pets |achieve 13271/2 |goto Stormsong Valley/0 36.53,33.64
+step
+talk Ellie Vern##141002
+Defeat Ellie Vern with a Team of Level 25 Critter Pets |achieve 13271/6 |goto 65.03,50.82
+step
+talk Leana Darkwind##141046
+Defeat Leana Darkwind with a Team of Level 25 Critter Pets |achieve 13271/7 |goto 77.17,29.15
+step
+talk Burly##141479
+Defeat Burly with a Team of Level 25 Critter Pets |achieve 13271/10 |goto Tiragarde Sound/0 67.72,12.85
+step
+talk Delia Hanako##141292
+Defeat Delia Hanako with a Team of Level 25 Critter Pets |achieve 13271/9 |goto 59.58,33.31
+step
+talk Kwint##141077
+|tip Underwater.
+Defeat Kwint with a Team of Level 25 Critter Pets |achieve 13271/8 |goto 86.21,38.63
+step
+talk Grady Prett##141799
+Defeat Grady Prett with a Team of Level 25 Critter Pets |achieve 13271/12 |goto Nazmir/0 35.93,54.59
+step
+talk Korval Darkbeard##141814
+Defeat Korval Darkbeard with a Team of Level 25 Critter Pets |achieve 13271/13 |goto 43.02,38.86
+step
+Enter the cave |goto 72.85,49.02 < 5 |walk
+talk Lozu##141529
+|tip Inside the cave.
+Defeat Lozu with a Team of Level 25 Critter Pets |achieve 13271/11 |goto 72.85,48.59
+step
+talk Keeyo##141879
+Defeat Keeyo with a Team of Level 25 Critter Pets |achieve 13271/14 |goto Vol'dun/0 57.13,48.95
+step
+talk Kusa##142054
+Defeat Kusa with a Team of Level 25 Critter Pets |achieve 13271/16 |goto 45.13,46.42
+step
+Follow the path |goto 26.97,54.40 < 10 |only if walking
+talk Sizzik##141945
+Defeat Sizzik with a Team of Level 25 Critter Pets |achieve 13271/15 |goto 26.59,54.92
+step
+talk Karaga##142096
+Defeat Karaga with a Team of Level 25 Critter Pets |achieve 13271/17 |goto Zuldazar/0 70.56,29.59
+step
+talk Zujai##142234
+Defeat Zujai with a Team of Level 25 Critter Pets |achieve 13271/19 |goto 50.56,23.90
+step
+talk Talia Sparkbrow##142114
+Defeat Talia Sparkbrow with a Team of Level 25 Critter Pets |achieve 13271/18 |goto 48.42,35.17
+step
+_Congratulations!_
+You Earned the "Critters With Huge Teeth" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Dragons Make Everything Better",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to defeat 15 Master Tamers on Kul Tiras or Zandalar with a team of all level 25 Dragon pets.",
+achieveid={13272},
+startlevel=110,
+keywords={"Pet, Battle, BFA, Dragons, Make, Everything, Better"},
+},[[
+step
+talk Captain Hermes##139489
+Defeat Captain Hermes with a Team of Level 25 Dragon Pets |achieve 13272/1 |goto Drustvar/0 21.40,66.45
+step
+talk Fizzie Sparkwhistle##140813
+Defeat Fizzie Sparkwhistle with a Team of Level 25 Dragon Pets |achieve 13272/4 |goto 38.15,38.60
+step
+talk Michael Skarn##140880
+Defeat Michael Skarn with a Team of Level 25 Dragon Pets |achieve 13272/5 |goto 61.05,17.71
+step
+talk Dilbert McClint##140461
+Defeat Dilbert McClint with a Team of Level 25 Dragon Pets |achieve 13272/3 |goto 63.60,59.70
+step
+talk Eddie Fixit##140315
+Defeat Eddie Fixit with a Team of Level 25 Dragon Pets |achieve 13272/2 |goto Stormsong Valley/0 36.53,33.64
+step
+talk Ellie Vern##141002
+Defeat Ellie Vern with a Team of Level 25 Dragon Pets |achieve 13272/6 |goto 65.03,50.82
+step
+talk Leana Darkwind##141046
+Defeat Leana Darkwind with a Team of Level 25 Dragon Pets |achieve 13272/7 |goto 77.17,29.15
+step
+talk Burly##141479
+Defeat Burly with a Team of Level 25 Dragon Pets |achieve 13272/10 |goto Tiragarde Sound/0 67.72,12.85
+step
+talk Delia Hanako##141292
+Defeat Delia Hanako with a Team of Level 25 Dragon Pets |achieve 13272/9 |goto 59.58,33.31
+step
+talk Kwint##141077
+|tip Underwater.
+Defeat Kwint with a Team of Level 25 Dragon Pets |achieve 13272/8 |goto 86.21,38.63
+step
+talk Grady Prett##141799
+Defeat Grady Prett with a Team of Level 25 Dragon Pets |achieve 13272/12 |goto Nazmir/0 35.93,54.59
+step
+talk Korval Darkbeard##141814
+Defeat Korval Darkbeard with a Team of Level 25 Dragon Pets |achieve 13272/13 |goto 43.02,38.86
+step
+Enter the cave |goto 72.85,49.02 < 5 |walk
+talk Lozu##141529
+|tip Inside the cave.
+Defeat Lozu with a Team of Level 25 Dragon Pets |achieve 13272/11 |goto 72.85,48.59
+step
+talk Keeyo##141879
+Defeat Keeyo with a Team of Level 25 Dragon Pets |achieve 13272/14 |goto Vol'dun/0 57.13,48.95
+step
+talk Kusa##142054
+Defeat Kusa with a Team of Level 25 Dragon Pets |achieve 13272/16 |goto 45.13,46.42
+step
+Follow the path |goto 26.97,54.40 < 10 |only if walking
+talk Sizzik##141945
+Defeat Sizzik with a Team of Level 25 Dragon Pets |achieve 13272/15 |goto 26.59,54.92
+step
+talk Karaga##142096
+Defeat Karaga with a Team of Level 25 Dragon Pets |achieve 13272/17 |goto Zuldazar/0 70.56,29.59
+step
+talk Zujai##142234
+Defeat Zujai with a Team of Level 25 Dragon Pets |achieve 13272/19 |goto 50.56,23.90
+step
+talk Talia Sparkbrow##142114
+Defeat Talia Sparkbrow with a Team of Level 25 Dragon Pets |achieve 13272/18 |goto 48.42,35.17
+step
+_Congratulations!_
+You Earned the "Dragons Make Everything Better" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Element of Success",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to defeat 15 Master Tamers on Kul Tiras or Zandalar with a team of all level 25 Elemental pets.",
+achieveid={13273},
+startlevel=110,
+keywords={"Pet, Battle, BFA, Element, of, Success"},
+},[[
+step
+talk Captain Hermes##139489
+Defeat Captain Hermes with a Team of Level 25 Elemental Pets |achieve 13273/1 |goto Drustvar/0 21.40,66.45
+step
+talk Fizzie Sparkwhistle##140813
+Defeat Fizzie Sparkwhistle with a Team of Level 25 Elemental Pets |achieve 13273/4 |goto 38.15,38.60
+step
+talk Michael Skarn##140880
+Defeat Michael Skarn with a Team of Level 25 Elemental Pets |achieve 13273/5 |goto 61.05,17.71
+step
+talk Dilbert McClint##140461
+Defeat Dilbert McClint with a Team of Level 25 Elemental Pets |achieve 13273/3 |goto 63.60,59.70
+step
+talk Eddie Fixit##140315
+Defeat Eddie Fixit with a Team of Level 25 Elemental Pets |achieve 13273/2 |goto Stormsong Valley/0 36.53,33.64
+step
+talk Ellie Vern##141002
+Defeat Ellie Vern with a Team of Level 25 Elemental Pets |achieve 13273/6 |goto 65.03,50.82
+step
+talk Leana Darkwind##141046
+Defeat Leana Darkwind with a Team of Level 25 Elemental Pets |achieve 13273/7 |goto 77.17,29.15
+step
+talk Burly##141479
+Defeat Burly with a Team of Level 25 Elemental Pets |achieve 13273/10 |goto Tiragarde Sound/0 67.72,12.85
+step
+talk Delia Hanako##141292
+Defeat Delia Hanako with a Team of Level 25 Elemental Pets |achieve 13273/9 |goto 59.58,33.31
+step
+talk Kwint##141077
+|tip Underwater.
+Defeat Kwint with a Team of Level 25 Elemental Pets |achieve 13273/8 |goto 86.21,38.63
+step
+talk Grady Prett##141799
+Defeat Grady Prett with a Team of Level 25 Elemental Pets |achieve 13273/12 |goto Nazmir/0 35.93,54.59
+step
+talk Korval Darkbeard##141814
+Defeat Korval Darkbeard with a Team of Level 25 Elemental Pets |achieve 13273/13 |goto 43.02,38.86
+step
+Enter the cave |goto 72.85,49.02 < 5 |walk
+talk Lozu##141529
+|tip Inside the cave.
+Defeat Lozu with a Team of Level 25 Elemental Pets |achieve 13273/11 |goto 72.85,48.59
+step
+talk Keeyo##141879
+Defeat Keeyo with a Team of Level 25 Elemental Pets |achieve 13273/14 |goto Vol'dun/0 57.13,48.95
+step
+talk Kusa##142054
+Defeat Kusa with a Team of Level 25 Elemental Pets |achieve 13273/16 |goto 45.13,46.42
+step
+Follow the path |goto 26.97,54.40 < 10 |only if walking
+talk Sizzik##141945
+Defeat Sizzik with a Team of Level 25 Elemental Pets |achieve 13273/15 |goto 26.59,54.92
+step
+talk Karaga##142096
+Defeat Karaga with a Team of Level 25 Elemental Pets |achieve 13273/17 |goto Zuldazar/0 70.56,29.59
+step
+talk Zujai##142234
+Defeat Zujai with a Team of Level 25 Elemental Pets |achieve 13273/19 |goto 50.56,23.90
+step
+talk Talia Sparkbrow##142114
+Defeat Talia Sparkbrow with a Team of Level 25 Elemental Pets |achieve 13273/18 |goto 48.42,35.17
+step
+_Congratulations!_
+You Earned the "Element of Success" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Family Battler",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to complete the following achievements:\n\nHobbyist Aquarist\nBeast Mode\nCritters With Huge Teeth\nDragons Make Everything Better\nElement of Success\nFun With Flying\nHuman Resources\nMagician's Secrets\nMachine Learning\nNot Quite Dead Yet.",
+achieveid={13279},
+startlevel=110,
+keywords={"Pet, Battle, BFA, Family, Battler"},
+},[[
+step
+Earn the _Hobbyist Aquarist_ Achievement |achieve 13279/1
+|tip Use the "Hobbyist Aquarist" achievement guide to accomplish this.
+Click here to load the "Hobbyist Aquarist" achievement guide |confirm |next "Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Hobbyist Aquarist"
+step
+Earn the _Beast Mode_ Achievement |achieve 13279/2
+|tip Use the "Beast Mode" achievement guide to accomplish this.
+Click here to load the "Beast Mode" achievement guide |confirm |next "Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Beast Mode"
+step
+Earn the _Critters With Huge Teeth_ Achievement |achieve 13279/3
+|tip Use the "Critters With Huge Teeth" achievement guide to accomplish this.
+Click here to load the "Critters With Huge Teeth" achievement guide |confirm |next "Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Critters With Huge Teeth"
+step
+Earn the _Dragons Make Everything Better_ Achievement |achieve 13279/4
+|tip Use the "Dragons Make Everything Better" achievement guide to accomplish this.
+Click here to load the "Dragons Make Everything Better" achievement guide |confirm |next "Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Dragons Make Everything Better"
+step
+Earn the _Element of Success_ Achievement |achieve 13279/5
+|tip Use the "Element of Success" achievement guide to accomplish this.
+Click here to load the "Element of Success" achievement guide |confirm |next "Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Element of Success"
+step
+Earn the _Fun With Flying_ Achievement |achieve 13279/6
+|tip Use the "Fun With Flying" achievement guide to accomplish this.
+Click here to load the "Fun With Flying" achievement guide |confirm |next "Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Fun With Flying"
+step
+Earn the _Human Resources_ Achievement |achieve 13279/7
+|tip Use the "Human Resources" achievement guide to accomplish this.
+Click here to load the "Human Resources" achievement guide |confirm |next "Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Human Resources"
+step
+Earn the _Magician's Secrets_ Achievement |achieve 13279/8
+|tip Use the "Magician's Secrets" achievement guide to accomplish this.
+Click here to load the "Magician's Secrets" achievement guide |confirm |next "Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Magician's Secrets"
+step
+Earn the _Machine Learning_ Achievement |achieve 13279/9
+|tip Use the "Machine Learning" achievement guide to accomplish this.
+Click here to load the "Machine Learning" achievement guide |confirm |next "Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Machine Learning"
+step
+Earn the _Not Quite Dead Yet_ Achievement |achieve 13279/10
+|tip Use the "Not Quite Dead Yet" achievement guide to accomplish this.
+Click here to load the "Not Quite Dead Yet" achievement guide |confirm |next "Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Not Quite Dead Yet"
+step
+_Congratulations!_
+You Earned the "Family Battler" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Fun With Flying",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to defeat 15 Master Tamers on Kul Tiras or Zandalar with a team of all level 25 Flying pets.",
+achieveid={13274},
+startlevel=110,
+keywords={"Pet, Battle, BFA, Fun, With, Flying"},
+},[[
+step
+talk Captain Hermes##139489
+Defeat Captain Hermes with a Team of Level 25 Flying Pets |achieve 13274/1 |goto Drustvar/0 21.40,66.45
+step
+talk Fizzie Sparkwhistle##140813
+Defeat Fizzie Sparkwhistle with a Team of Level 25 Flying Pets |achieve 13274/4 |goto 38.15,38.60
+step
+talk Michael Skarn##140880
+Defeat Michael Skarn with a Team of Level 25 Flying Pets |achieve 13274/5 |goto 61.05,17.71
+step
+talk Dilbert McClint##140461
+Defeat Dilbert McClint with a Team of Level 25 Flying Pets |achieve 13274/3 |goto 63.60,59.70
+step
+talk Eddie Fixit##140315
+Defeat Eddie Fixit with a Team of Level 25 Flying Pets |achieve 13274/2 |goto Stormsong Valley/0 36.53,33.64
+step
+talk Ellie Vern##141002
+Defeat Ellie Vern with a Team of Level 25 Flying Pets |achieve 13274/6 |goto 65.03,50.82
+step
+talk Leana Darkwind##141046
+Defeat Leana Darkwind with a Team of Level 25 Flying Pets |achieve 13274/7 |goto 77.17,29.15
+step
+talk Burly##141479
+Defeat Burly with a Team of Level 25 Flying Pets |achieve 13274/10 |goto Tiragarde Sound/0 67.72,12.85
+step
+talk Delia Hanako##141292
+Defeat Delia Hanako with a Team of Level 25 Flying Pets |achieve 13274/9 |goto 59.58,33.31
+step
+talk Kwint##141077
+|tip Underwater.
+Defeat Kwint with a Team of Level 25 Flying Pets |achieve 13274/8 |goto 86.21,38.63
+step
+talk Grady Prett##141799
+Defeat Grady Prett with a Team of Level 25 Flying Pets |achieve 13274/12 |goto Nazmir/0 35.93,54.59
+step
+talk Korval Darkbeard##141814
+Defeat Korval Darkbeard with a Team of Level 25 Flying Pets |achieve 13274/13 |goto 43.02,38.86
+step
+Enter the cave |goto 72.85,49.02 < 5 |walk
+talk Lozu##141529
+|tip Inside the cave.
+Defeat Lozu with a Team of Level 25 Flying Pets |achieve 13274/11 |goto 72.85,48.59
+step
+talk Keeyo##141879
+Defeat Keeyo with a Team of Level 25 Flying Pets |achieve 13274/14 |goto Vol'dun/0 57.13,48.95
+step
+talk Kusa##142054
+Defeat Kusa with a Team of Level 25 Flying Pets |achieve 13274/16 |goto 45.13,46.42
+step
+Follow the path |goto 26.97,54.40 < 10 |only if walking
+talk Sizzik##141945
+Defeat Sizzik with a Team of Level 25 Flying Pets |achieve 13274/15 |goto 26.59,54.92
+step
+talk Karaga##142096
+Defeat Karaga with a Team of Level 25 Flying Pets |achieve 13274/17 |goto Zuldazar/0 70.56,29.59
+step
+talk Zujai##142234
+Defeat Zujai with a Team of Level 25 Flying Pets |achieve 13274/19 |goto 50.56,23.90
+step
+talk Talia Sparkbrow##142114
+Defeat Talia Sparkbrow with a Team of Level 25 Flying Pets |achieve 13274/18 |goto 48.42,35.17
+step
+_Congratulations!_
+You Earned the "Fun With Flying" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Hobbyist Aquarist",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to defeat 15 Master Tamers on Kul Tiras or Zandalar with a team of all level 25 Aquatic pets.",
+achieveid={13280},
+startlevel=110,
+keywords={"Pet, Battle, BFA, Hobbyist, Aquarist"},
+},[[
+step
+talk Captain Hermes##139489
+Defeat Captain Hermes with a Team of Level 25 Aquatic Pets |achieve 13280/1 |goto Drustvar/0 21.40,66.45
+step
+talk Fizzie Sparkwhistle##140813
+Defeat Fizzie Sparkwhistle with a Team of Level 25 Aquatic Pets |achieve 13280/4 |goto 38.15,38.60
+step
+talk Michael Skarn##140880
+Defeat Michael Skarn with a Team of Level 25 Aquatic Pets |achieve 13280/5 |goto 61.05,17.71
+step
+talk Dilbert McClint##140461
+Defeat Dilbert McClint with a Team of Level 25 Aquatic Pets |achieve 13280/3 |goto 63.60,59.70
+step
+talk Eddie Fixit##140315
+Defeat Eddie Fixit with a Team of Level 25 Aquatic Pets |achieve 13280/2 |goto Stormsong Valley/0 36.53,33.64
+step
+talk Ellie Vern##141002
+Defeat Ellie Vern with a Team of Level 25 Aquatic Pets |achieve 13280/6 |goto 65.03,50.82
+step
+talk Leana Darkwind##141046
+Defeat Leana Darkwind with a Team of Level 25 Aquatic Pets |achieve 13280/7 |goto 77.17,29.15
+step
+talk Burly##141479
+Defeat Burly with a Team of Level 25 Aquatic Pets |achieve 13280/10 |goto Tiragarde Sound/0 67.72,12.85
+step
+talk Delia Hanako##141292
+Defeat Delia Hanako with a Team of Level 25 Aquatic Pets |achieve 13280/9 |goto 59.58,33.31
+step
+talk Kwint##141077
+|tip Underwater.
+Defeat Kwint with a Team of Level 25 Aquatic Pets |achieve 13280/8 |goto 86.21,38.63
+step
+talk Grady Prett##141799
+Defeat Grady Prett with a Team of Level 25 Aquatic Pets |achieve 13280/12 |goto Nazmir/0 35.93,54.59
+step
+talk Korval Darkbeard##141814
+Defeat Korval Darkbeard with a Team of Level 25 Aquatic Pets |achieve 13280/13 |goto 43.02,38.86
+step
+Enter the cave |goto 72.85,49.02 < 5 |walk
+talk Lozu##141529
+|tip Inside the cave.
+Defeat Lozu with a Team of Level 25 Aquatic Pets |achieve 13280/11 |goto 72.85,48.59
+step
+talk Keeyo##141879
+Defeat Keeyo with a Team of Level 25 Aquatic Pets |achieve 13280/14 |goto Vol'dun/0 57.13,48.95
+step
+talk Kusa##142054
+Defeat Kusa with a Team of Level 25 Aquatic Pets |achieve 13280/16 |goto 45.13,46.42
+step
+Follow the path |goto 26.97,54.40 < 10 |only if walking
+talk Sizzik##141945
+Defeat Sizzik with a Team of Level 25 Aquatic Pets |achieve 13280/15 |goto 26.59,54.92
+step
+talk Karaga##142096
+Defeat Karaga with a Team of Level 25 Aquatic Pets |achieve 13280/17 |goto Zuldazar/0 70.56,29.59
+step
+talk Zujai##142234
+Defeat Zujai with a Team of Level 25 Aquatic Pets |achieve 13280/19 |goto 50.56,23.90
+step
+talk Talia Sparkbrow##142114
+Defeat Talia Sparkbrow with a Team of Level 25 Aquatic Pets |achieve 13280/18 |goto 48.42,35.17
+step
+_Congratulations!_
+You Earned the "Hobbyist Aquarist" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Human Resources",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to defeat 15 Master Tamers on Kul Tiras or Zandalar with a team of all level 25 Humanoid pets.",
+achieveid={13281},
+startlevel=110,
+keywords={"Pet, Battle, BFA, Human, Resources"},
+},[[
+step
+talk Captain Hermes##139489
+Defeat Captain Hermes with a Team of Level 25 Humanoid Pets |achieve 13281/1 |goto Drustvar/0 21.40,66.45
+step
+talk Fizzie Sparkwhistle##140813
+Defeat Fizzie Sparkwhistle with a Team of Level 25 Humanoid Pets |achieve 13281/4 |goto 38.15,38.60
+step
+talk Michael Skarn##140880
+Defeat Michael Skarn with a Team of Level 25 Humanoid Pets |achieve 13281/5 |goto 61.05,17.71
+step
+talk Dilbert McClint##140461
+Defeat Dilbert McClint with a Team of Level 25 Humanoid Pets |achieve 13281/3 |goto 63.60,59.70
+step
+talk Eddie Fixit##140315
+Defeat Eddie Fixit with a Team of Level 25 Humanoid Pets |achieve 13281/2 |goto Stormsong Valley/0 36.53,33.64
+step
+talk Ellie Vern##141002
+Defeat Ellie Vern with a Team of Level 25 Humanoid Pets |achieve 13281/6 |goto 65.03,50.82
+step
+talk Leana Darkwind##141046
+Defeat Leana Darkwind with a Team of Level 25 Humanoid Pets |achieve 13281/7 |goto 77.17,29.15
+step
+talk Burly##141479
+Defeat Burly with a Team of Level 25 Humanoid Pets |achieve 13281/10 |goto Tiragarde Sound/0 67.72,12.85
+step
+talk Delia Hanako##141292
+Defeat Delia Hanako with a Team of Level 25 Humanoid Pets |achieve 13281/9 |goto 59.58,33.31
+step
+talk Kwint##141077
+|tip Underwater.
+Defeat Kwint with a Team of Level 25 Humanoid Pets |achieve 13281/8 |goto 86.21,38.63
+step
+talk Grady Prett##141799
+Defeat Grady Prett with a Team of Level 25 Humanoid Pets |achieve 13281/12 |goto Nazmir/0 35.93,54.59
+step
+talk Korval Darkbeard##141814
+Defeat Korval Darkbeard with a Team of Level 25 Humanoid Pets |achieve 13281/13 |goto 43.02,38.86
+step
+Enter the cave |goto 72.85,49.02 < 5 |walk
+talk Lozu##141529
+|tip Inside the cave.
+Defeat Lozu with a Team of Level 25 Humanoid Pets |achieve 13281/11 |goto 72.85,48.59
+step
+talk Keeyo##141879
+Defeat Keeyo with a Team of Level 25 Humanoid Pets |achieve 13281/14 |goto Vol'dun/0 57.13,48.95
+step
+talk Kusa##142054
+Defeat Kusa with a Team of Level 25 Humanoid Pets |achieve 13281/16 |goto 45.13,46.42
+step
+Follow the path |goto 26.97,54.40 < 10 |only if walking
+talk Sizzik##141945
+Defeat Sizzik with a Team of Level 25 Humanoid Pets |achieve 13281/15 |goto 26.59,54.92
+step
+talk Karaga##142096
+Defeat Karaga with a Team of Level 25 Humanoid Pets |achieve 13281/17 |goto Zuldazar/0 70.56,29.59
+step
+talk Zujai##142234
+Defeat Zujai with a Team of Level 25 Humanoid Pets |achieve 13281/19 |goto 50.56,23.90
+step
+talk Talia Sparkbrow##142114
+Defeat Talia Sparkbrow with a Team of Level 25 Humanoid Pets |achieve 13281/18 |goto 48.42,35.17
+step
+_Congratulations!_
+You Earned the "Human Resources" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Machine Learning",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to defeat 15 Master Tamers on Kul Tiras or Zandalar with a team of all level 25 Mechanical pets.",
+achieveid={13277},
+startlevel=110,
+keywords={"Pet, Battle, BFA, Machine, Learning"},
+},[[
+step
+talk Captain Hermes##139489
+Defeat Captain Hermes with a Team of Level 25 Mechanical Pets |achieve 13277/1 |goto Drustvar/0 21.40,66.45
+step
+talk Fizzie Sparkwhistle##140813
+Defeat Fizzie Sparkwhistle with a Team of Level 25 Mechanical Pets |achieve 13277/4 |goto 38.15,38.60
+step
+talk Michael Skarn##140880
+Defeat Michael Skarn with a Team of Level 25 Mechanical Pets |achieve 13277/5 |goto 61.05,17.71
+step
+talk Dilbert McClint##140461
+Defeat Dilbert McClint with a Team of Level 25 Mechanical Pets |achieve 13277/3 |goto 63.60,59.70
+step
+talk Eddie Fixit##140315
+Defeat Eddie Fixit with a Team of Level 25 Mechanical Pets |achieve 13277/2 |goto Stormsong Valley/0 36.53,33.64
+step
+talk Ellie Vern##141002
+Defeat Ellie Vern with a Team of Level 25 Mechanical Pets |achieve 13277/6 |goto 65.03,50.82
+step
+talk Leana Darkwind##141046
+Defeat Leana Darkwind with a Team of Level 25 Mechanical Pets |achieve 13277/7 |goto 77.17,29.15
+step
+talk Burly##141479
+Defeat Burly with a Team of Level 25 Mechanical Pets |achieve 13277/10 |goto Tiragarde Sound/0 67.72,12.85
+step
+talk Delia Hanako##141292
+Defeat Delia Hanako with a Team of Level 25 Mechanical Pets |achieve 13277/9 |goto 59.58,33.31
+step
+talk Kwint##141077
+|tip Underwater.
+Defeat Kwint with a Team of Level 25 Mechanical Pets |achieve 13277/8 |goto 86.21,38.63
+step
+talk Grady Prett##141799
+Defeat Grady Prett with a Team of Level 25 Mechanical Pets |achieve 13277/12 |goto Nazmir/0 35.93,54.59
+step
+talk Korval Darkbeard##141814
+Defeat Korval Darkbeard with a Team of Level 25 Mechanical Pets |achieve 13277/13 |goto 43.02,38.86
+step
+Enter the cave |goto 72.85,49.02 < 5 |walk
+talk Lozu##141529
+|tip Inside the cave.
+Defeat Lozu with a Team of Level 25 Mechanical Pets |achieve 13277/11 |goto 72.85,48.59
+step
+talk Keeyo##141879
+Defeat Keeyo with a Team of Level 25 Mechanical Pets |achieve 13277/14 |goto Vol'dun/0 57.13,48.95
+step
+talk Kusa##142054
+Defeat Kusa with a Team of Level 25 Mechanical Pets |achieve 13277/16 |goto 45.13,46.42
+step
+Follow the path |goto 26.97,54.40 < 10 |only if walking
+talk Sizzik##141945
+Defeat Sizzik with a Team of Level 25 Mechanical Pets |achieve 13277/15 |goto 26.59,54.92
+step
+talk Karaga##142096
+Defeat Karaga with a Team of Level 25 Mechanical Pets |achieve 13277/17 |goto Zuldazar/0 70.56,29.59
+step
+talk Zujai##142234
+Defeat Zujai with a Team of Level 25 Mechanical Pets |achieve 13277/19 |goto 50.56,23.90
+step
+talk Talia Sparkbrow##142114
+Defeat Talia Sparkbrow with a Team of Level 25 Mechanical Pets |achieve 13277/18 |goto 48.42,35.17
+step
+_Congratulations!_
+You Earned the "Machine Learning" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Magician's Secrets",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to defeat 15 Master Tamers on Kul Tiras or Zandalar with a team of all level 25 Magic pets.",
+achieveid={13275},
+startlevel=110,
+keywords={"Pet, Battle, BFA, Magician's, Secrets"},
+},[[
+step
+talk Captain Hermes##139489
+Defeat Captain Hermes with a Team of Level 25 Magic Pets |achieve 13275/1 |goto Drustvar/0 21.40,66.45
+step
+talk Fizzie Sparkwhistle##140813
+Defeat Fizzie Sparkwhistle with a Team of Level 25 Magic Pets |achieve 13275/4 |goto 38.15,38.60
+step
+talk Michael Skarn##140880
+Defeat Michael Skarn with a Team of Level 25 Magic Pets |achieve 13275/5 |goto 61.05,17.71
+step
+talk Dilbert McClint##140461
+Defeat Dilbert McClint with a Team of Level 25 Magic Pets |achieve 13275/3 |goto 63.60,59.70
+step
+talk Eddie Fixit##140315
+Defeat Eddie Fixit with a Team of Level 25 Magic Pets |achieve 13275/2 |goto Stormsong Valley/0 36.53,33.64
+step
+talk Ellie Vern##141002
+Defeat Ellie Vern with a Team of Level 25 Magic Pets |achieve 13275/6 |goto 65.03,50.82
+step
+talk Leana Darkwind##141046
+Defeat Leana Darkwind with a Team of Level 25 Magic Pets |achieve 13275/7 |goto 77.17,29.15
+step
+talk Burly##141479
+Defeat Burly with a Team of Level 25 Magic Pets |achieve 13275/10 |goto Tiragarde Sound/0 67.72,12.85
+step
+talk Delia Hanako##141292
+Defeat Delia Hanako with a Team of Level 25 Magic Pets |achieve 13275/9 |goto 59.58,33.31
+step
+talk Kwint##141077
+|tip Underwater.
+Defeat Kwint with a Team of Level 25 Magic Pets |achieve 13275/8 |goto 86.21,38.63
+step
+talk Grady Prett##141799
+Defeat Grady Prett with a Team of Level 25 Magic Pets |achieve 13275/12 |goto Nazmir/0 35.93,54.59
+step
+talk Korval Darkbeard##141814
+Defeat Korval Darkbeard with a Team of Level 25 Magic Pets |achieve 13275/13 |goto 43.02,38.86
+step
+Enter the cave |goto 72.85,49.02 < 5 |walk
+talk Lozu##141529
+|tip Inside the cave.
+Defeat Lozu with a Team of Level 25 Magic Pets |achieve 13275/11 |goto 72.85,48.59
+step
+talk Keeyo##141879
+Defeat Keeyo with a Team of Level 25 Magic Pets |achieve 13275/14 |goto Vol'dun/0 57.13,48.95
+step
+talk Kusa##142054
+Defeat Kusa with a Team of Level 25 Magic Pets |achieve 13275/16 |goto 45.13,46.42
+step
+Follow the path |goto 26.97,54.40 < 10 |only if walking
+talk Sizzik##141945
+Defeat Sizzik with a Team of Level 25 Magic Pets |achieve 13275/15 |goto 26.59,54.92
+step
+talk Karaga##142096
+Defeat Karaga with a Team of Level 25 Magic Pets |achieve 13275/17 |goto Zuldazar/0 70.56,29.59
+step
+talk Zujai##142234
+Defeat Zujai with a Team of Level 25 Magic Pets |achieve 13275/19 |goto 50.56,23.90
+step
+talk Talia Sparkbrow##142114
+Defeat Talia Sparkbrow with a Team of Level 25 Magic Pets |achieve 13275/18 |goto 48.42,35.17
+step
+_Congratulations!_
+You Earned the "Magician's Secrets" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Battle for Azeroth\\Not Quite Dead Yet",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to defeat 15 Master Tamers on Kul Tiras or Zandalar with a team of all level 25 Undead pets.",
+achieveid={13278},
+startlevel=110,
+keywords={"Pet, Battle, BFA, Not, Quite, Dead, Yet"},
+},[[
+step
+talk Captain Hermes##139489
+Defeat Captain Hermes with a Team of Level 25 Undead Pets |achieve 13278/1 |goto Drustvar/0 21.40,66.45
+step
+talk Fizzie Sparkwhistle##140813
+Defeat Fizzie Sparkwhistle with a Team of Level 25 Undead Pets |achieve 13278/4 |goto 38.15,38.60
+step
+talk Michael Skarn##140880
+Defeat Michael Skarn with a Team of Level 25 Undead Pets |achieve 13278/5 |goto 61.05,17.71
+step
+talk Dilbert McClint##140461
+Defeat Dilbert McClint with a Team of Level 25 Undead Pets |achieve 13278/3 |goto 63.60,59.70
+step
+talk Eddie Fixit##140315
+Defeat Eddie Fixit with a Team of Level 25 Undead Pets |achieve 13278/2 |goto Stormsong Valley/0 36.53,33.64
+step
+talk Ellie Vern##141002
+Defeat Ellie Vern with a Team of Level 25 Undead Pets |achieve 13278/6 |goto 65.03,50.82
+step
+talk Leana Darkwind##141046
+Defeat Leana Darkwind with a Team of Level 25 Undead Pets |achieve 13278/7 |goto 77.17,29.15
+step
+talk Burly##141479
+Defeat Burly with a Team of Level 25 Undead Pets |achieve 13278/10 |goto Tiragarde Sound/0 67.72,12.85
+step
+talk Delia Hanako##141292
+Defeat Delia Hanako with a Team of Level 25 Undead Pets |achieve 13278/9 |goto 59.58,33.31
+step
+talk Kwint##141077
+|tip Underwater.
+Defeat Kwint with a Team of Level 25 Undead Pets |achieve 13278/8 |goto 86.21,38.63
+step
+talk Grady Prett##141799
+Defeat Grady Prett with a Team of Level 25 Undead Pets |achieve 13278/12 |goto Nazmir/0 35.93,54.59
+step
+talk Korval Darkbeard##141814
+Defeat Korval Darkbeard with a Team of Level 25 Undead Pets |achieve 13278/13 |goto 43.02,38.86
+step
+Enter the cave |goto 72.85,49.02 < 5 |walk
+talk Lozu##141529
+|tip Inside the cave.
+Defeat Lozu with a Team of Level 25 Undead Pets |achieve 13278/11 |goto 72.85,48.59
+step
+talk Keeyo##141879
+Defeat Keeyo with a Team of Level 25 Undead Pets |achieve 13278/14 |goto Vol'dun/0 57.13,48.95
+step
+talk Kusa##142054
+Defeat Kusa with a Team of Level 25 Undead Pets |achieve 13278/16 |goto 45.13,46.42
+step
+Follow the path |goto 26.97,54.40 < 10 |only if walking
+talk Sizzik##141945
+Defeat Sizzik with a Team of Level 25 Undead Pets |achieve 13278/15 |goto 26.59,54.92
+step
+talk Karaga##142096
+Defeat Karaga with a Team of Level 25 Undead Pets |achieve 13278/17 |goto Zuldazar/0 70.56,29.59
+step
+talk Zujai##142234
+Defeat Zujai with a Team of Level 25 Undead Pets |achieve 13278/19 |goto 50.56,23.90
+step
+talk Talia Sparkbrow##142114
+Defeat Talia Sparkbrow with a Team of Level 25 Undead Pets |achieve 13278/18 |goto 48.42,35.17
+step
+_Congratulations!_
+You Earned the "Not Quite Dead Yet" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Battle for Azeroth\\Battle Safari",{
+author="support@zygorguides.com",
+description="This guide will walk you through completing the \"Battle Safari\" achievement.",
+achieveid={12930},
+startlevel=110,
+keywords={"Pet, Battle, Safari"},
+},[[
+step
+This achievement is earned by collecting every battle pet in Zandalar and Kul Tiras:
+Collect a Shadowback Crawler |achieve 12930/1
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Collect a River Frog |achieve 12930/2
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Freshwater Crawler |achieve 12930/3
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Vale Marmot |achieve 12930/4
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Valley Chicken |achieve 12930/5
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Sandyback Crawler |achieve 12930/6
+|tip Refer to the Battle pet guides to accomplish this.
+step
+River Otter |achieve 12930/7
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Parasitic Boarfly |achieve 12930/8
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Shack Crab |achieve 12930/9
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Inland Croaker |achieve 12930/10
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Giant Woodworm |achieve 12930/11
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Shore Butterfly |achieve 12930/12
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Barrier Hermit |achieve 12930/13
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Coastal Scuttler |achieve 12930/14
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Golden Beetle |achieve 12930/15
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Bloodfever Tarantula |achieve 12930/16
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Elusive Skimmer |achieve 12930/17
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Leafy Flutterwing |achieve 12930/18
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Young Sand Sifter |achieve 12930/19
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Sticky Oozeling |achieve 12930/20
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Returned Hatchling |achieve 12930/21
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Glutted Bleeder |achieve 12930/22
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Spectral Raven |achieve 12930/23
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Boghopper |achieve 12930/24
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Hermit Crab |achieve 12930/25
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Coastal Bounder |achieve 12930/26
+|tip Refer to the Battle pet guides to accomplish this.
+step
+Honey Bee |achieve 12930/27
+|tip Refer to the Battle pet guides to accomplish this.
+step
+_Congratulations!_
+You Earned the "Battle Safari" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Battle for Azeroth\\Master of Minons",{
+author="support@zygorguides.com",
+description="This guide will walk you through completing the \"Master of Minons\" achievement.",
+achieveid={12958},
+startlevel=110,
+keywords={"Pet, Battle, Master, of, Minions"},
+},[[
+step
+Collect 1000 Unique Battle Pets |achieve 12958
+|tip Refer to the Battle pet guides to accomplish this.
+step
+_Congratulations!_
+You Earned the "Master of Minons" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Battle for Azeroth\\Pet Emporium",{
+author="support@zygorguides.com",
+description="This guide will walk you through completing the \"Pet Emporium\" achievement.",
+achieveid={12992},
+startlevel=110,
+keywords={"Pet, Battle, Pet, Emporium"},
+},[[
+step
+Collect 800 Unique Battle Pets |achieve 12992
+|tip Refer to the Battle pet guides to accomplish this.
+step
+_Congratulations!_
+You Earned the "Pet Emporium" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Battle for Azeroth\\Azerfighter",{
+achieveid={13429},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13429) end,
+keywords={"Battle,For,Azeroth,Azerfighter"},
+description="This guide will walk you through completing the \"Azerfighter\" achievement.",
+},[[
+step
+accept Azerfight!##53768 |goto Stormsong Valley/0 47.62,55.88
+|tip You will accept this quest automatically.
+|tip This quest will only be available when it is an active World Quest.
+step
+click Unstable Azerite Flare
+Gain the Unstable Azerite Flare Buff |havebuff 2065618 |goto 47.62,55.88 |condition achieved(13429)
+step
+Kill enemy players around this area
+Kill 5 Players While Buffed By Unstable Azerite Flare |achieve 13429 |goto 47.80,53.88
+|tip Be careful to not finish the world quest or you won't be able to complete the achievement.
+|tip Forming a raid group will stop quest progress to guarantee you don't accidentally finish the world quest.
+step
+_Congratulations!_
+You Earned the "Azerfighter" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Kul Tiran Master of All",{
+author="support@zygorguides.com",
+achieveid={12736},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Kul,Tiran,Master,of,All",},
+description="To earn this achievement, you will be required to raise all primary Kul Tiran professions to 150 skill points.",
+},[[
+step
+Reach Level 150 in Kul Tiran Alchemy |achieve 12736/1
+|tip Use the "Kul Tiran Alchemy 1-150" profession guide to accomplish this.
+step
+Reach Level 150 in Kul Tiran Blacksmithing |achieve 12736/2
+|tip Use the "Kul Tiran Blacksmithing 1-150" profession guide to accomplish this.
+step
+Reach Level 150 in Kul Tiran Enchanting |achieve 12736/3
+|tip Use the "Kul Tiran Enchanting 1-150" profession guide to accomplish this.
+step
+Reach Level 150 in Kul Tiran Engineering |achieve 12736/4
+|tip Use the "Kul Tiran Engineering 1-150" profession guide to accomplish this.
+step
+Reach Level 150 in Kul Tiran Herbalism |achieve 12736/5
+|tip Use the "Kul Tiran Herbalism 1-150" profession guide to accomplish this.
+step
+Reach Level 150 in Kul Tiran Inscription |achieve 12736/6
+|tip Use the "Kul Tiran Inscription 1-150" profession guide to accomplish this.
+step
+Reach Level 150 in Kul Tiran Jewelcrafting |achieve 12736/7
+|tip Use the "Kul Tiran Jewelcrafting 1-150" profession guide to accomplish this.
+step
+Reach Level 150 in Kul Tiran Leatherworking |achieve 12736/8
+|tip Use the "Kul Tiran Leatherworking 1-150" profession guide to accomplish this.
+step
+Reach Level 150 in Kul Tiran Mining |achieve 12736/9
+|tip Use the "Kul Tiran Mining 1-150" profession guide to accomplish this.
+step
+Reach Level 150 in Kul Tiran Skinning |achieve 12736/10
+|tip Use the "Kul Tiran Skinning 1-150" profession guide to accomplish this.
+step
+Reach Level 150 in Kul Tiran Tailoring |achieve 12736/11
+|tip Use the "Kul Tiran Tailoring 1-150" profession guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Kul Tiran Master of All" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Professional Kul Tiran Master",{
+author="support@zygorguides.com",
+achieveid={12731},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Professional,Kul,Tiran,Master",},
+description="To earn this achievement, you will be required to reach level 150 in any Kul Tiran profession.",
+},[[
+step
+Reach Level 150 in any Kul Tiran Profession |achieve 12731
+|tip Use the "Kul Tiran" profession guides to accomplish this.
+step
+_Congratulations!_
+You Earned the "Professional Kul Tiran Master" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Archaeology\\Kul Tiran Archaeologist",{
+author="support@zygorguides.com",
+achieveid={12760},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Kul,Tiran,Archaeologist",},
+description="To earn this achievement, you will be required to reach level 950 in Archaeology.",
+},[[
+step
+Reach Level 950 in Archaeology |achieve 12760
+|tip Use the "Archaeology 800-950" profession guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Kul Tiran Archaeologist" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Cooking\\Catering for Combat",{
+author="support@zygorguides.com",
+achieveid={12747},
+startlevel=120,
+keywords={"Battle,for,Azeroth,Catering,for,Combat",},
+description="To earn this achievement, you will be required to cook any combination of 50 Galley Banquets, Bountiful Captain's Feasts, or Sanguinated Feasts.",
+},[[
+step
+Reach Level 75 Kul Tiran Cooking |skill Kul Tiran Cooking,75
+|tip Use the "Kul Tiran Cooking 1-150" profession guide to accomplish this.
+step
+talk "Cap'n" Byron Mehlsack##136052
+Learn the Recipe for Galley Banquet |learn Galley Banquet##259418 |goto Boralus/0 71.22,10.69
+step
+talk "Cap'n" Byron Mehlsack##136052
+Learn the Rank 2 Recipe for Galley Banquet |learn Galley Banquet##259419 |goto 71.22,10.69
+step
+Reach _Revered_ reputation with the _Tortollan Seekers_ |achieve 12947/6
+|tip Use the Battle for Azeroth "World Quests" guides to complete "Tortollan Seekers" world quests.
+|tip Complete Missions at your mission table that reward reputation with the Tortollan Seekers.
+step
+talk Collector Kojo##135793
+buy 1 Recipe: Galley Banquet##162287 |n
+use Recipe: Galley Banquet##162287
+Learn the Rank 3 Recipe for Galley Banquet |learn Galley Banquet##259420 |goto Stormsong Valley/0 40.54,36.41
+step
+Load the "Briny Flesh" guide |confirm |next "Profession Guides\\Cooking\\Farming Guides\\Battle for Azeroth\\Briny Flesh"
+|tip Click the line above to load the guide.
+collect 400 Briny Flesh##152631 |condition achieved(12747)
+|tip You can also purchase them from the Auction House.
+step
+Load the "Thick Paleo Steak" guide |confirm |next "Profession Guides\\Cooking\\Farming Guides\\Battle for Azeroth\\Thick Paleo Steak"
+|tip Click the line above to load the guide.
+collect 400 Thick Paleo Steak##154899 |condition achieved(12747)
+|tip You can also purchase them from the Auction House.
+step
+Load the "Sand Shifter" guide |confirm |next "Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Sand Shifter"
+|tip Click the line above to load the guide.
+|tip You will need the "Fishing" skill in order to utilize the guide.
+collect 400 Sand Shifter##152543 |condition achieved(12747)
+|tip You can also purchase them from the Auction House.
+step
+Load the "Tiragarde Perch" guide |confirm |next "Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Tiragarde Perch"
+|tip Click the line above to load the guide.
+|tip You will need the "Fishing" skill in order to utilize the guide.
+collect 400 Tiragarde Perch##152548 |condition achieved(12747)
+|tip You can also purchase them from the Auction House.
+step
+Load the "Midnight Salmon" guide |confirm |next "Profession Guides\\Fishing\\Farming Guides\\Battle for Azeroth\\Midnight Salmon"
+|tip Click the line above to load the guide.
+|tip You will need the "Fishing" skill in order to utilize the guide.
+collect 50 Midnight Salmon##162515 |condition achieved(12747)
+|tip You can also purchase them from the Auction House.
+step
+talk Sara Bartlett##123635
+buy 500 Foosaka##160400 |goto Boralus/0 72.96,15.58 |condition achieved(12747)
+step
+talk Sara Bartlett##123635
+buy 1250 Fresh Potato##160709 |goto 72.96,15.58 |condition achieved(12747)
+step
+_<Create a Cooking Fire>_
+Open Your Cooking Crafting Panel:
+_<Create 50 Galley Banquet>_
+Cook Any Combination of 50 Galley Banquets, Bountiful Captain's Feasts, or Sanguinated Feasts  |achieve 12747
+step
+_Congratulations!_
+You Earned the "Catering for Combat" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Cooking\\Kul Tiran Cook",{
+author="support@zygorguides.com",
+achieveid={12742},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Kul,Tiran,Cook",},
+description="To earn this achievement, you will be required to reach level 150 in Kul Tiran Cooking.",
+},[[
+step
+Reach Level 150 in Kul Tiran Cooking |achieve 12742
+|tip Use the "Kul Tiran Cooking 1-150" profession guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Kul Tiran Cook" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Fishing\\Angling for Battle",{
+author="support@zygorguides.com",
+achieveid={12757},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Angling,For,Battle",},
+description="This guide will walk you through completing the \"Angling for Battle\" Achievement.",
+},[[
+step
+Run up the stairs |goto Boralus/0 75.82,9.10 < 10 |only if walking
+talk Alan Goyle##136102
+Train Kul Tiran Fishing |skillmax Kul Tiran Fishing,150 |goto 74.16,5.58
+step
+Fish in the open water
+Catch 100 Normal Fish In Kul Tiras or Zandalar |achieve 12757 |goto 73.97,5.55
+step
+_Congratulations!_
+You Earned the "Angling for Battle" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Fishing\\Baiting the Enemy",{
+author="support@zygorguides.com",
+achieveid={12758},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Baiting,the,Enemy",},
+description="This guide will walk you through completing the \"Baiting the Enemy\" Achievement.",
+},[[
+step
+Fish from an U'taka School
+collect 1 U'taka##162517 |n
+|tip Walking through this area will most likely flag you for PvP.
+|tip A safe way to get here without being flagged is to use a Goblin Glider Kit from Veiled Grotto.
+Fish Up an U'taka in Dazar'alor |achieve 12758 |goto Dazar'alor/0 42.99,42.14
+step
+_Congratulations!_
+You Earned the "Baiting the Enemy" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Fishing\\Catchin' Some Rays",{
+author="support@zygorguides.com",
+achieveid={12990},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Catchin,Some,Rays",},
+description="This guide will walk you through completing the \"Catchin' Some Rays\" Achievement.",
+},[[
+step
+Fish from the open ocean
+collect 1 Great Sea Ray##163131 |n
+|tip This is a rare drop so it may take a while to get.
+Fish Up a Great Sea Ray From Kul Tiras or Zandalar |achieve 12990 |goto Boralus/0 74.16,25.05
+step
+_Congratulations!_
+You Earned the "Catchin' Some Rays" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Fishing\\Fish Me In the Moonlight",{
+author="support@zygorguides.com",
+achieveid={12756},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Fish,Me,In,The,Moonlight",},
+description="To earn this achievement, you will be required to fish up 50 Midnight Salmon.",
+},[[
+step
+Fish from the open ocean
+|tip You can fish anywhere in Kul Tiras or Zandalar.
+|tip Their drop rate is slightly increased when fishing at night.
+|tip These are a rare drop so it may take a while to get all 50.
+Fish Up 50 Midnight Salmon |achieve 12756 |goto Boralus/0 74.16,25.05
+step
+_Congratulations!_
+You Earned the "Fish Me In the Moonlight" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Fishing\\Kul Tiran Fisherman",{
+author="support@zygorguides.com",
+achieveid={12753},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Kul,Tiran,Fisherman",},
+description="To earn this achievement, you will be required to reach level 150 in Kul Tiran Fishing.",
+},[[
+step
+Reach Level 150 in Kul Tiran Fishing |achieve 12753
+|tip Use the "Kul Tiran Fishing 1-150" profession guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Kul Tiran Fisherman" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Fishing\\Scent of the Sea",{
+author="support@zygorguides.com",
+achieveid={12755},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Scent,of,the,Sea",},
+description="To earn this achievement, you will be required to convert 100 fish from Kul Tiras and Zandalar into Aromatic Fish Oil.",
+},[[
+step
+Fish from the open ocean and collect the fish
+|tip You can fish anywhere in Kul Tiras or Zandalar.
+Right-click any common fish to turn it into Aromatic Fish Oil
+Convert 100 Fish from Kul Tiras and Zandalar into Aromatic Fish Oil |achieve 12755 |goto Boralus/0 74.16,25.05
+step
+_Congratulations!_
+You Earned the "Scent of the Sea" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Scrapping\\Full of Scrap!",{
+author="support@zygorguides.com",
+achieveid={12740},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Full,Scrap",},
+description="To earn this achievement, you will be required to scrap 500 items using the Scrap-O-Matic 1000 or Shred-Master Mk1.",
+},[[
+step
+click Scrap-O-Matic 1000##293132
+|tip Use this device to scrap green/blue/purple Battle for Azeroth gear.
+|tip Scrapped items will be permanently destroyed.
+Scrap 500 Items Using the Scrap-O-Matic 1000 |achieve 12740 |goto Boralus/0 77.12,16.32
+step
+_Congratulations!_
+You Earned the "Full of Scrap!" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Scrapping\\Giving a Scrap",{
+author="support@zygorguides.com",
+achieveid={12741},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Giving,Scrap",},
+description="To earn this achievement, you will be required to learn how to use the Scrap-O-Matic 1000.",
+},[[
+step
+talk Crenzo Sparkshatter##141274
+accept A Load of Scrap##52462 |goto Boralus/0 77.17,16.45
+step
+click Scrap-O-Matic 1000##293132
+Place the Tattered Pants into the Scrap-O-Matic 1000 and click Scrap
+|tip Scrapped items will be permanently destroyed.
+collect Scrapped Cloth##160266 |q 52462/1 |goto 77.12,16.32
+step
+talk Crenzo Sparkshatter##141274
+turnin A Load of Scrap##52462 |goto 77.17,16.45
+step
+_Congratulations!_
+You Earned the "Giving a Scrap" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Scrapping\\Holy Scrap!",{
+author="support@zygorguides.com",
+achieveid={12738},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Holy,Scrap",},
+description="To earn this achievement, you will be required to scrap 100 items using the Scrap-O-Matic 1000 or Shred-Master Mk1.",
+},[[
+step
+click Scrap-O-Matic 1000##293132
+|tip Use this device to scrap green/blue/purple Battle for Azeroth gear.
+|tip Scrapped items will be permanently destroyed.
+Scrap 100 Items Using the Scrap-O-Matic 1000 |achieve 12738 |goto Boralus/0 77.12,16.32
+step
+_Congratulations!_
+You Earned the "Holy Scrap!" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Battle for Azeroth\\Scrapping\\Scraptastic!",{
+author="support@zygorguides.com",
+achieveid={12739},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Scraptastic",},
+description="To earn this achievement, you will be required to scrap 250 items using the Scrap-O-Matic 1000 or Shred-Master Mk1.",
+},[[
+step
+click Scrap-O-Matic 1000##293132
+|tip Use this device to scrap green/blue/purple Battle for Azeroth gear.
+|tip Scrapped items will be permanently destroyed.
+Scrap 250 Items Using the Scrap-O-Matic 1000 |achieve 12739 |goto Boralus/0 77.12,16.32
+step
+_Congratulations!_
+You Earned the "Scraptastic!" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\7th Legion Spycatcher",{
+author="support@zygorguides.com",
+achieveid={13026},
+startlevel=120,
+keywords={"Battle,for,Azeroth,7th,legion,spycatcher",},
+description="This guide will walk you through completing the \"7th Legion Spycatcher\" Achievement.",
+},[[
+step
+To earn this achievement, kill all of the invaders in the world quest "Don't Stalk Me, Troll" in 60 seconds while not in a group
+accept Don't Stalk Me, Troll##50717 |goto Nazmir/0 35.70,76.42 |condition achieved(13026)
+|tip You will accept this quest automatically.
+|tip This quest will only be available when it is an active World Quest.
+step
+use Talanji's Mojo##158324
+Use Talanji's Mojo Potion |q 50717/1 |goto 35.70,76.42 |future |condition achieved(13026)
+step
+Kill Blood Troll enemies around this area
+|tip They will appear on your minimap as red dots.
+Try to aggro them and group them up and then kill them all at once
+You can coordinate your efforts with other players who also want the achievement
+|tip Work together to pull the enemies to one area but don't form a group or it won't count for the achievement.
+Kill All Invaders in 60 Seconds While Solo |achieve 13026 |goto 35.70,76.42
+step
+_Congratulations!_
+You Earned the "7th Legion Spycatcher" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\A Nation United",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you must complete the following quests and achievements on Kul Tiras:\n\nA Nation United\nLoremaster of Kul Tiras\nThe Pride of Kul Tiras\n",
+achieveid={12891},
+startlevel=110,
+endlevel=120,
+keywords={"nation, united, Battle, for, Azeroth"},
+},[[
+step
+Earn the "Loremaster of Kul Tiras" achievement |achieve 12891/1
+|tip Use the "Loremaster of Kul Tiras" guide to accomplish this.
+step
+Earn "The Pride of Kul Tiras" achievement |achieve 12891/2
+|tip Use "The Pride of Kul Tiras" guide to accomplish this.
+step
+talk Katherine Proudmoore##121144
+accept Siege of Boralus: Lady Ashvane's Return##52153 |goto Boralus/0 44.64,62.77
+step
+Enter the Siege of Boralus dungeon with a group |goto Siege of Boralus/0 75.25,20.80 < 1000 |c |q 52153
+step
+Complete the Siege of Boralus |q 52153/1
+|tip Use the "Siege of Boralus" dungeon guide to accomplish this.
+step
+talk Taelia##121235
+|tip Inside the building.
+turnin Siege of Boralus: Lady Ashvane's Return##52153 |goto Boralus/0 68.17,21.98
+step
+talk Genn Greymane##120788
+|tip Inside the building.
+accept A Nation United##52151 |goto 68.04,22.17
+step
+Attend the Council Meeting |q 52151/1 |goto 49.21,85.39
+step
+Watch the dialogue
+talk Katherine Proudmoore##121144
+turnin A Nation United##52151 |goto 49.31,85.72
+step
+Complete "A Nation United" |achieve 12891/3
+step
+_Congratulations!_
+You Earned the "A Nation United" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\A Sound Plan",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to complete the following story chapters in Tiragarde Sound:\n\nA Nation Divided\nCastaways and Cutouts\nDefenders of Daelin's Gate\nThe Norwington Estate\nThe Ashvane Trading Company\nFreehold\nThe Shadow Over Anglepoint",
+achieveid={12473},
+startlevel=110,
+keywords={"Tiragarde, Sound, BFA, Battle, for, Azeroth"},
+},[[
+step
+Complete the following story chapters in Tiragarde Sound:
+The Ashvane Trading Company |achieve 12473/1
+Freehold |achieve 12473/2
+Defenders of Daelin's Gate |achieve 12473/3
+Enemies Within |achieve 12473/4
+The Shadow Over Anglepoint |achieve 12473/5
+The Norwington Estate |achieve 12473/6
+Castaways and Cutouts |achieve 12473/7
+|tip Use the "Tiragarde Sound" leveling guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "A Sound Plan" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\About To Break",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to suffer from all three negative Strain effects at once in Stormsong Valley.",
+achieveid={13042},
+endlevel=120,
+keywords={"BFA, Battle, for, Azeroth, About, To, Break"},
+},[[
+step
+accept Iconoclasm##53108 |goto Stormsong Valley/0 80.53,56.58 |condition achieved(13042)
+|tip You will accept this quest automatically.
+|tip This quest will only be available when it is an active World Quest.
+step
+kill Foul Larva##141986+
+|tip Don't kill them, let them attack you.
+|tip When they use "Grave Bite", you will generate Strain.
+|tip It appears as a bar on your screen.
+|tip When the Strain bar is full, you'll get a random debuff.
+|tip Let the Strain bar completely fill multiple times to get all 3 debuffs.
+Gain the Afraid Debuff |havebuff 136122 |goto 77.34,56.18 |condition achieved(13042)
+Gain the Lost Cause Debuff |havebuff 136194 |goto 77.34,56.18 |condition achieved(13042)
+Gain the Sadistic Debuff |havebuff 132334 |goto 77.34,56.18 |condition achieved(13042)
+step
+Suffer From All Three Negative Strain Effects at Once in Stormsong Valley |achieve 13042
+step
+_Congratulations!_
+You Earned the "About To Break" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Bless the Rains Down in Freehold",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to hit the following targets with Vile Bombardment during 'Swab This!' in Tiragarde Sound:\n\nBanana Hoard\nSweete's Feast\nCart o' Cutlasses\nBlacktooth Brew.",
+achieveid={13050},
+startlevel=120,
+keywords={"Battle, for, Azeroth, Bless, Rains, Down, in, Freehold"},
+},[[
+step
+accept Swab This!##53196 |goto Tiragarde Sound/0 77.06,82.91 |condition achieved(13050)
+|tip You will accept this quest automatically.
+|tip This quest will only be available when it is an active World Quest.
+step
+clicknpc Riding Macaw##143068
+Mount the Riding Macaw |invehicle |goto 77.06,82.62 |condition achieved(13050)
+step
+Bomb enemies as you fly:
+|tip Use the ability on your action bar.
+Bomb a Blacktooth Brew |achieve 13050/4 |goto 76.69,81.80
+|tip They are on the ground around this area.
+|tip Be careful to not finish the world quest or you won't be able to complete the achievement.
+|tip Forming a raid group will stop quest progress to guarantee you don't accidentally finish the world quest.
+step
+Bomb enemies as you fly:
+|tip Use the ability on your action bar.
+Bomb Sweete's Feast |achieve 13050/2 |goto 73.38,83.92
+|tip They are on the ground around this area.
+|tip Be careful to not finish the world quest or you won't be able to complete the achievement.
+|tip Forming a raid group will stop quest progress to guarantee you don't accidentally finish the world quest.
+step
+Bomb enemies as you fly:
+|tip Use the ability on your action bar.
+Bomb the Cart o' Cutlasses |achieve 13050/3 |goto 75.05,82.94
+|tip They are on the ground around this area.
+|tip Be careful to not finish the world quest or you won't be able to complete the achievement.
+|tip Forming a raid group will stop quest progress to guarantee you don't accidentally finish the world quest.
+step
+Bomb enemies as you fly:
+|tip Use the ability on your action bar.
+Bomb a Banana Hoard |achieve 13050/1 |goto 76.15,84.60
+|tip They are on the ground around this area.
+|tip Be careful to not finish the world quest or you won't be able to complete the achievement.
+|tip Forming a raid group will stop quest progress to guarantee you don't accidentally finish the world quest.
+step
+Bomb All of the Targets During the "Swab This!" World Quest in Tiragarde Sound |achieve 13050
+step
+_Congratulations!_
+You Earned the "Bless the Rains Down in Freehold" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\By de Power of de Loa!",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to complete the World Quest 'Hundred Troll Holdout' in Zuldazar without dropping any of the four totem buffs.",
+achieveid={13035},
+startlevel=120,
+keywords={"Battle, for, Azeroth, By, Power, de, Loa!"},
+},[[
+step
+accept Hundred Troll Holdout##51232 |goto Zuldazar/0 66.25,30.67 |condition achieved(13035)
+|tip You will accept this quest automatically.
+|tip This quest will only be available when it is an active World Quest.
+step
+The totems at the top of the stairs each give a different buff
+|tip Each buff lasts for 45 seconds.
+Maintain all four buffs, click the gong and then kill attackers as they come to you
+|tip Stay at the top of the stairs and move back and forth to maintain all 4 buffs.
+Gain "Sharp Fang" buff |havebuff 1385914 |condition achieved(13035)
+Gain "Swift Wing" buff |havebuff 838682 |condition achieved(13035)
+Gain "Rejuvenating Breath" buff |havebuff 1029739 |condition achieved(13035)
+Gain "Earthen Claw" buff |havebuff 1016245 |condition achieved(13035)
+clicknpc Forest Gong##136960
+|tip Gain the 4 buffs and then click the gong at the top of the stairs.
+kill Gurubashi Attacker##136699+
+Slay #100# Gurubashi Attackers |achieve 13035 |goto 65.51,30.15
+step
+Complete the World Quest "Hundred Troll Holdout" Without Dropping Any of the Four Totem Buffs |achieve 13035
+step
+_Congratulations!_
+You Earned the "By de Power of de Loa!" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Clever Use of Mechanical Explosives",{
+author="support@zygorguides.com",
+description="This guide will walk you through completing the \"Clever Use of Mechanical Explosives\" Achievement.",
+achieveid={13047},
+startlevel=110,
+endlevel=120,
+keywords={"Clever, Use, Mechanical, Explosives, Battle, for, Azeroth"},
+},[[
+step
+Follow the path |goto Stormsong Valley/0 42.44,67.44 < 10 |only if walking
+Continue following the path |goto 42.98,69.46 < 10 |only if walking
+Continue following the path |goto 43.32,73.02 < 10 |only if walking
+Follow the path up |goto 44.11,73.95 < 10 |only if walking
+Jump down carefully here |goto Stormsong Valley/3 61.36,40.84 < 5 |only if walking
+|tip Land on the small ledge below, don't jump all the way down.
+Enter the cave |goto Stormsong Valley/0 44.35,75.30 < 5 |walk
+click Carved Wooden Chest##293350
+|tip Inside the cave.
+collect 1 Pig Nose##162000 |goto 44.44,73.53
+only if not completedq(52429)
+step
+Kill Briarback enemies around this area
+collect 25 Briarback Quills##155838 |goto 49.15,65.71 |only if itemcount(162000) == 0 and completedq(52429)
+step
+Enter the building |goto 58.77,70.45 < 5 |walk
+talk Hobbs##130786
+|tip Inside the building.
+buy 1 Pig Nose##162000 |goto 58.68,70.33 |only if completedq(52429)
+step
+use the Pig Nose##162000
+Gain the Pig Snout buff |havebuff 2114667 |goto 26.14,76.21 |condition achieved(13047)
+step
+click Truffle##296855+
+|tip They look like tiny groups of mushrooms found at the base of trees around this area.
+|tip You can only see them while the Pig Snout buff is active.
+collect 1 Sporonite Bomb##163558 |goto 26.14,76.21 |condition achieved(13047)
+step
+Enter the cave |goto 51.79,79.23 < 5 |walk
+kill The Lichen King##136189
+|tip Inside the cave.
+use Sporonite Bomb##163558
+|tip Use the Sporonite Bomb on The Lichen King AFTER pulling him; using it while not in combat will not count.
+Use a Sporonite Bomb on the Lichen King |achieve 13047 |goto 51.78,79.79
+step
+_Congratulations!_
+You Earned the "Clever Use of Mechanical Explosives" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Come Sail Away",{
+author="support@zygorguides.com",
+achieveid={12582},
+startlevel=110,
+keywords={"Battle,for,Azeroth,Come,Sail,Away",},
+description="This guide will walk you through completing the \"Come Sail Away\" Achievement.",
+},[[
+step
+Complete the Intro to Kul Tiras |achieve 12582
+|tip Use the "Intro & Quest Zone Choice" leveling guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Come Sail Away" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Come On and Slam",{
+achieveid={13426},
+author="support@zygorguides.com",
+startlevel=120,
+endlevel=120,
+condition_end=function() return achieved(13426) end,
+keywords={"Battle,For,Azeroth,Come,On,Slam"},
+description="This guide will walk you through completing the \"Come On and Slam\" achievement.",
+},[[
+step
+accept Cleansing Tide##54512 |goto Nazmir/0 60.27,13.89
+|tip You will accept this quest automatically.
+|tip This World Quest will only be available during a Nazmir Assault.
+step
+Summon the Coursing Tidesurger |q 54512/1 |goto 60.27,13.89 |condition achieved(13426)
+|tip Step into the swirling pool of water on the ground.
+step
+Kill 20 Sin'dorei With a Single Cast of Rising Tide |achieve 13426 |goto 62.05,13.99
+|tip Be careful to not finish the world quest or you won't be able to complete the achievement.
+|tip Forming a raid group will stop quest progress to guarantee you don't accidentally finish the world quest.
+step
+_Congratulations!_
+You Earned the "Come On and Slam" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Deadliest Cache",{
+achieveid={13053},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13053) end,
+keywords={"Battle,For,Azeroth,Deadliest,Cache"},
+description="To earn this achievement, you will be required to listen to the tall tales of Coxswain Hook, Master Gunner Line, and 'Sinker' at Thresher's Wharf in Stormsong Valley.",
+},[[
+step
+talk Coxswain Hook##133576
+|tip On top of the building.
+accept Deadliest Cache: Reel Big Fish##50376 |goto Stormsong Valley/0 26.00,55.22
+step
+talk Coxswain Hook##133576
+Ask him _"And then what happened?"_
+Listen to Coxswain Hook's Tale |q 50376/1 |goto 26.00,55.22
+step
+Watch the dialogue
+kill 12 Land Shark##133613 |q 50376/2 |goto 26.49,55.37
+|tip Use the abilities on your action bar.
+step
+kill Tidemaw##133650
+|tip Use the abilities on your action bar.
+Slay the Land Shark Alpha |q 50376/3 |goto 26.34,52.69
+step
+Watch the dialogue
+Return to Coxswain Hook |goto 26.00,55.38 < 7 |noway |c |q 50376
+|tip You will be transported automatically.
+step
+talk Coxswain Hook##133576
+turnin Deadliest Cache: Reel Big Fish##50376 |goto 26.00,55.22
+step
+talk Master Gunner Line##133577
+accept Deadliest Cache: Gun Fishin'##50391 |goto 25.90,55.17
+step
+talk Master Gunner Line##133577
+Ask him _"And then what happened?"_
+Listen to Master Gunner Line's Tale |q 50391/1 |goto 25.90,55.17
+step
+Watch the dialogue
+click Slagshot Slammer
+Gather the Fishin' Rod |q 50391/2 |goto 25.92,55.18
+stickystart "Kill_Drowned_Horrors"
+step
+click Slagshot Fishflayer+
+|tip They look like metal cannons on the wooden docks around this area.
+|tip They will appear on your minimap as yellow dots.
+Create #3# Mountains of Fish |q 50391/3 |goto 25.60,54.81
+step
+label "Kill_Drowned_Horrors"
+kill 25 Drowned Horror##140524 |q 50391/4 |goto 25.60,54.81
+|tip Use the abilities on your action bar.
+step
+kill 4 Writhing Horror##133792 |q 50391/5 |goto 25.87,54.47
+|tip They are in the water.
+|tip Use the abilties on your action bar.
+step
+kill Ozumat##133797 |q 50391/6 |goto 25.87,54.47
+|tip It is further out in the water.
+|tip Use the ability on your action bar.
+step
+Watch the dialogue
+Return to Master Gunner Line |goto 26.00,55.38 < 7 |noway |c |q 50391
+|tip You will be transported automatically.
+step
+talk Master Gunner Line##133577
+turnin Deadliest Cache: Gun Fishin'##50391 |goto 25.90,55.17
+step
+talk "Sinker"##133578
+accept Deadliest Cache: Sink and Swim##50418 |goto 25.84,55.23
+step
+talk "Sinker"##133578
+Ask him _"And then what happened?"_
+Mph Mph |q 50418/1 |goto 25.84,55.23
+step
+Watch the dialogue
+Mph, Mph Mph Mph |q 50418/2 |goto 25.97,55.14
+|tip Use the ability on your action bar.
+step
+clicknpc Experimental Tideskipper##140818
+|tip Underwater.
+Mph Mph Mph |q 50418/3 |goto 25.54,52.84
+stickystart "Slay_Mph_Mph_Mph"
+step
+Destroy the Western Mph |q 50418/5 |goto 22.83,50.24
+|tip Use the "Bombs Away!" ability on your action bar next to the Abyssal Idol.
+|tip It looks like a tall rock underwater.
+step
+Destroy the Southern Mph |q 50418/6 |goto 25.39,48.29
+|tip Use the "Bombs Away!" ability on your action bar next to the Abyssal Idol.
+|tip It looks like a tall rock underwater.
+step
+Destroy the Eastern Mph |q 50418/7 |goto 23.50,46.35
+|tip Use the "Bombs Away!" ability on your action bar next to the Abyssal Idol.
+|tip It looks like a tall rock underwater.
+step
+label "Slay_Mph_Mph_Mph"
+Kill enemies around this area
+|tip Underwater.
+|tip Use the abilities on your action bar.
+Slay #15# Mph Mph Mph |q 50418/4 |goto 23.85,46.86
+step
+Watch the dialogue
+Return to "Sinker" |goto 25.97,55.33 < 7 |noway |c |q 50418
+|tip You will be transported automatically.
+step
+talk "Sinker"##133578
+turnin Deadliest Cache: Sink and Swim##50418 |goto 25.84,55.24
+step
+talk Coxswain Hook##133576
+accept Deadliest Cache: Carpe Diem##52130 |goto 26.01,55.22
+step
+talk Coxswain Hook##133576
+Ask him _"And then what happened?"_
+Listen to Coxswain Hook's Tale |q 52130/1 |goto 26.01,55.22
+step
+Watch the dialogue
+click Signal Fire
+Light the Southern Signal Fire |q 52130/3 |goto 25.04,54.26
+step
+click Signal Fire
+Light the Northern Signal Fire |q 52130/2 |goto 26.34,52.81
+step
+Run up the stairs |goto 26.31,53.19 < 10 |only if walking
+click Spyglass
+Watch the dialogue
+Scan the Horizon |q 52130/4 |goto 26.26,54.58
+step
+Make the Final Stand |q 52130/5 |goto 26.26,54.58
+|tip Use the ability on your action bar.
+step
+Watch the dialogue
+Jump Down Barathruum's Gullet |q 52130/6 |goto 26.26,54.58
+Cut Up Barathruum from the Inside Out |q 52130/7 |goto 26.26,54.58
+Earn Eternal Honor and Glory |q 52130/8 |goto 26.26,54.58
+step
+Watch the dialogue
+Return to Coxswain Hook |goto 26.00,55.38 < 7 |noway |c |q 52130
+|tip You will be transported automatically.
+step
+talk Coxswain Hook##133576
+turnin Deadliest Cache: Carpe Diem##52130 |goto 26.00,55.22
+step
+Listen to the Tall Tales of Coxswain Hook, Master Gunner Line, and "Sinker" |achieve 13053
+step
+_Congratulations!_
+You Earned the "Deadliest Cache" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Drag Race",{
+achieveid={13059},
+author="support@zygorguides.com",
+startlevel=120,
+endlevel=120,
+condition_end=function() return achieved(13059) end,
+keywords={"Battle,For,Azeroth,Drag,Race"},
+description="To earn this achievement, you will be required to use the Bolas to drag 5 invading troggs behind Cooper at the same time in the Norwington Estate.",
+},[[
+step
+accept Trogg Tromping##53346 |goto Tiragarde Sound/0 51.65,26.20 |condition achieved(13059)
+|tip You will accept this quest automatically.
+|tip This quest will only be available when it is an active World Quest.
+step
+clicknpc Cooper##127718
+Mount Cooper |invehicle |goto 51.65,26.20 |condition achieved(13059)
+step
+Use the "Bolas" ability on Grimstone enemies and then run over them to start dragging them
+Find a large group and "Drag" five of them
+Drag 5 Invading Troggs Behind Cooper |achieve 13059 |goto 50.15,25.75
+|tip Be careful to not finish the world quest or you won't be able to complete the achievement.
+|tip Forming a raid group will stop quest progress to guarantee you don't accidentally finish the world quest.
+step
+_Congratulations!_
+You Earned the "Drag Race" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Drust Do It.",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to complete the following story chapters in Drustvar:\n\nThe Final Effigy\nAn Airtight Alibi\nA New Order\nStorming the Manor\nFighting With Fire\nThe Burden of Proof\nThe Order of Embers\nBreak on Through\nClear Victory\nStick It To 'Em!",
+achieveid={12497},
+startlevel=110,
+endlevel=120,
+keywords={"Drustvar, Kul, Tiras, BFA, Battle, for, Azeroth"},
+},[[
+step
+Complete the following story chapters in Drustvar:
+The Final Effigy |achieve 12497/1
+The Burden of Proof |achieve 12497/2
+An Airtight Alibi |achieve 12497/3
+The Order of Embers |achieve 12497/4
+A New Order |achieve 12497/5
+Break on Through |achieve 12497/6
+Storming the Manor |achieve 12497/7
+Drustfall |achieve 12497/8
+Fighting With Fire |achieve 12497/9
+Stick It To 'Em! |achieve 12497/10
+|tip Use the "Drustvar" leveling guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Drust Do It." Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Every Day I'm Truffling",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be requried to have all four Stormsong Valley truffle effects on you at the same time.",
+achieveid={13045},
+startlevel=110,
+keywords={"Battle, for, Azeroth, Every, Day, I'm, Truffling"},
+},[[
+step
+Follow the path |goto Stormsong Valley/0 42.44,67.44 < 10 |only if walking
+Continue following the path |goto 42.98,69.46 < 10 |only if walking
+Continue following the path |goto 43.32,73.02 < 10 |only if walking
+Follow the path up |goto 44.11,73.95 < 10 |only if walking
+Jump down carefully here |goto Stormsong Valley/3 61.36,40.84 < 5 |only if walking
+|tip Land on the small ledge below, don't jump all the way down.
+Enter the cave |goto Stormsong Valley/0 44.35,75.30 < 5 |walk
+click Carved Wooden Chest##293350
+|tip Inside the cave.
+collect 1 Pig Nose##162000 |goto 44.44,73.53
+only if not completedq(52429)
+step
+Kill Briarback enemies around this area
+collect 25 Briarback Quills##155838 |goto 49.15,65.71 |condition achieved(13045)
+only if itemcount(162000) == 0 and completedq(52429)
+step
+Enter the building |goto 58.77,70.45 < 5 |walk
+talk Hobbs##130786
+|tip Inside the building.
+buy 1 Pig Nose##162000 |goto 58.68,70.33 |condition achieved(13045)
+only if completedq(52429)
+step
+use the Pig Nose##162000
+Gain the Pig Snout buff |havebuff 2114667 |condition achieved(13045)
+step
+Find Truffles in Stormsong Valley:
+click Truffle##296855+
+|tip They look like tiny groups of mushrooms found at the base of trees all around Stormsong Valley.
+|tip You can only see them while the Pig Snout buff is active.
+|tip If the Pig Snout buff wears off, farm more Briarback Quills and buy another Pig Nose from Hobbs.
+collect Violet Truffle##162011 |condition achieved(13045)
+|tip Violet Truffles look like a single pointy, purple mushroom with a black tip.
+collect Valley Truffle##162010 |condition achieved(13045)
+|tip Valley Truffle look like small white, blocky clusters of mushrooms.
+collect Magic Truffle##162012 |condition achieved(13045)
+|tip Magic Truffles look like small clusters of blue mushrooms.
+step
+Find a Turbo Truffle, but _don't click it yet_
+|tip Turbo Truffles look like a mushroom with a yellow-orange center and is blue-green around the outside edge.
+Click here once you've found a Turbo Truffle |confirm |condition achieved(13045)
+step
+Use the Truffles in the following order:
+use the Violet Truffle##162011
+Gain the Violet Truffle Buff |havebuff 1386549 |condition achieved(13045)
+step
+click Turbo Truffle
+|tip Click the yellow-orange and blue-green truffle you're standing next to that you should have found in a previous step.
+Gain the Turbo Truffle Buff |havebuff 965900 |condition achieved(13045)
+step
+use the Valley Truffle##162010
+Gain the Valley Truffle Buff |havebuff 136090 |condition achieved(13045)
+step
+use the Magic Truffle##162012
+Gain the Magic Truffle Buff |havebuff 464341 |condition achieved(13045)
+step
+Have All Four Stormsong Valley Truffle Effects on You at the Same Time |achieve 13045
+step
+_Congratulations!_
+You Earned the "Every Day I'm Truffling" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Have a Heart",{
+achieveid={12918},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12918) end,
+keywords={"Battle,For,Azeroth,Have,Heart"},
+description="To earn this achievement, you will be required to obtain the Heart of Azeroth.",
+},[[
+step
+Obtain the Heart of Azeroth |achieve 12918
+|tip Use the "Intro & Quest Zone Choice" leveling guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Have a Heart" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\In Teldrassil's Shadow",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will complete the \"Tyrande's Ascension\" storyline in Darkshore.",
+achieveid={13251},
+startlevel=120,
+endlevel=120,
+keywords={"Kul, Tiras, BFA, Battle, Azeroth, Pride, Jaina, Proudmoore"},
+},[[
+leechsteps "Events Guides\\Battle for Azeroth\\Tyrande's Ascension (Darkshore Warfront Unlock)"
+step
+Earn the "In Teldrassil's Shadow" Achievement |achieve 13251
+step
+_Congratulations!_
+You Earned the "In Teldrassil's Shadow" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\It's Really Getting Out of Hand",{
+author="support@zygorguides.com",
+description="To earn this achievement, you will be required to become the Hand of Fate and complete the Nazmir world quest 'Getting Out of Hand' in 20 seconds while not in a group.",
+achieveid={13023},
+startlevel=120,
+endlevel=120,
+keywords={"BFA, Battle, Azeroth, It's, Really, Getting, Out, of, Hand"},
+},[[
+step
+To earn this achievement, you must complete the world quest "Getting Out of Hand" in 20 seconds while not in a group
+accept Getting Out of Hand##50559 |goto Nazmir/0 59.11,14.78 |condition achieved(13023)
+|tip You will accept this quest automatically.
+|tip This quest will only be available when it is an active World Quest.
+step
+Become the Hand of Fate |invehicle |goto 59.11,14.78 |q 50559 |future |condition achieved(13023)
+|tip Use the "Scroll of Fate's Hand" ability.
+|tip It appears as a button on the screen.
+|tip The 20 second completion timer counts down once you use this ability.
+|tip Pulling enemies before using this can help make completing the achievement easier.
+step
+Kill enemies around this area
+|tip Use the "Beckon the Hand of Fate" ability on your action bar.
+Destroy #40# Undead |q 50559/1 |goto 62.67,13.99 |future |condition achieved(13023)
+step
+Complete the World Quest "Getting Out of Hand" in 20 Seconds While Solo |achieve 13023
+step
+_Congratulations!_
+You Earned the "It's Really Getting Out of Hand" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Kul Runnings",{
+achieveid={13060},
+author="support@zygorguides.com",
+startlevel=120,
+endlevel=120,
+condition_end=function() return achieved(13060) end,
+keywords={"Battle,For,Azeroth,Kul,Runnings"},
+description="To earn this achievement, you will be required to complete the following World Quests in Kul Tiras:\n\nSliding With Style\nFrozen Freestyle\nSlippery Slopes.",
+},[[
+step
+To earn this achievement, you will be required to complete the following World Quests:
+Complete Sliding with Style |achieve 13060/1
+Complete Frozen Freestyle |achieve 13060/2
+Complete Slippery Slopes |achieve 13060/3
+|tip These quests will only be available when they are an active World Quest.
+|tip Use the Battle for Azeroth dailies guides to accomplish this.
+step
+Complete All of the Pengling Sledding World Quests on Kul Tiras |achieve 13060
+step
+_Congratulations!_
+You Earned the "Kul Runnings" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Kul Tirans Don't Look at Explosions",{
+achieveid={13384},
+author="support@zygorguides.com",
+startlevel=120,
+endlevel=120,
+condition_end=function() return achieved(13384) end,
+keywords={"Battle,For,Azeroth,Kul,Turans,Don't,Look,at,Explosions"},
+description="To earn this achievement, you will be required to complete the quest 'Express Delivery' in the Alliance War Campaign.",
+},[[
+step
+To earn this achievement, you will be required to complete the quest "Express Delivery" in the Alliance War Campaign
+Complete the Quest "Express Delivery" |achieve 13384
+|tip This quest takes place during the "War Marches On" section of Tides of Vengeance.
+|tip Use the "War Campaign" guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Kul Tirans Don't Look at Explosions" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Let's Bee Friends",{
+achieveid={13062},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(13062) end,
+keywords={"Battle,For,Azeroth,Let's,Bee,Friends"},
+description="To earn this achievement, you will be required to feed Bumbles in Stormsong Valley the Mildenhall Growth Formula.",
+},[[
+step
+talk Ancel Mildenhall##131793
+accept Mayhem at Mildenhall Meadery##50343 |goto Stormsong Valley/0 68.88,65.16
+step
+Investigate the Meadery |q 50343/1 |goto 68.50,67.61
+step
+_Next to you:_
+talk Ancel Mildenhall
+turnin Mayhem at Mildenhall Meadery##50343
+accept Detective Mildenhall##50070
+accept Cleanup Duty##50359
+stickystart "Kill_Flowing_Honey"
+stickystart "Kill_Bubbling_Mead"
+step
+click Honey Soaked Boot
+Find the Clue |q 50070/1 |goto 68.52,69.00 |count 1
+step
+click Brewmaster's Treatise Vol. 1
+Find the Clue |q 50070/1 |goto 69.16,69.34 |count 2
+step
+click Misplaced Flask
+Find the Clue |q 50070/1 |goto 67.92,70.94 |count 3
+step
+click Rough Map
+Find the Clue |q 50070/1 |goto 69.24,70.77 |count 4
+step
+click Crystalized Honey Fragment
+|tip Inside the building.
+Find the Clue |q 50070/1 |goto 70.83,69.67 |count 5
+step
+label "Kill_Flowing_Honey"
+kill 4 Flowing Honey##131663 |q 50359/1 |goto 70.34,69.46
+step
+label "Kill_Bubbling_Mead"
+kill 4 Bubbling Mead##133429 |q 50359/2 |goto 70.34,69.46
+step
+_Next to you:_
+talk Ancel Mildenhall
+turnin Detective Mildenhall##50070
+turnin Cleanup Duty##50359
+accept Don't Go in the Basement##50064
+step
+Run down the stairs |goto 70.75,69.13 < 5 |walk
+click Mead Barrel
+|tip Downstairs inside the building.
+Examine Mead Barrel |q 50064/1 |goto 70.82,69.07
+step
+kill The Brue##131861 |q 50064/2 |goto 70.82,69.07
+|tip Downstairs inside the building.
+step
+talk Ancel Mildenhall##132647
+|tip Downstairs inside the building.
+turnin Don't Go in the Basement##50064 |goto 71.05,69.24
+accept Recovering Raimond##50161 |goto 71.05,69.24
+step
+Leave the building |goto 70.75,69.15 < 5 |walk
+click Honey Soaked Boot
+collect Sticky Boot##156717 |q 50161/1 |goto 71.63,67.98 |count 2
+step
+click Discarded Pages
+collect Journal Pages##156808 |q 50161/2 |goto 72.42,68.64 |count 1
+step
+click Discarded Pages
+collect Journal Pages##156808 |q 50161/2 |goto 72.32,70.56 |count 2
+step
+click Discarded Pages
+collect Journal Pages##156808 |q 50161/2 |goto 73.37,72.27 |count 3
+step
+Enter the cave |goto 73.83,72.44 < 10 |walk
+talk Raimond Mildenhall##132292
+|tip Inside the cave.
+turnin Recovering Raimond##50161 |goto 74.13,72.74
+accept Royal Succession##50168 |goto 74.13,72.74
+accept Sticky Situation##50162 |goto 74.13,72.74
+stickystart "Collect_Royal_Jelly"
+step
+Leave the cave |goto 73.79,72.42 < 10 |walk
+Enter the cave |goto 74.62,71.07 < 10 |walk
+kill Hive Mother##132341
+|tip Inside the cave.
+collect Hive Mother's Stinger##157839 |q 50168/1 |goto 74.81,71.51
+step
+label "Collect_Royal_Jelly"
+Kill enemies around this area
+click Bee Hive+
+|tip They look like small rope huts wih handles on top of them sitting on wooden boxes on the ground around this area.
+collect 60 Royal Jelly##156709 |q 50162/1 |goto 73.52,69.77
+step
+Enter the cave |goto 73.81,72.44 < 10 |walk
+talk Raimond Mildenhall##132292
+|tip Inside the cave.
+turnin Royal Succession##50168 |goto 74.13,72.74
+turnin Sticky Situation##50162 |goto 74.13,72.74
+accept Honey Glazed Sam##50504 |goto 74.13,72.74
+step
+clicknpc Sam Robinson##134013
+Rescue Sam Robinson |q 50504/1 |goto 72.80,72.25
+step
+talk Sam Robinson##134028
+turnin Honey Glazed Sam##50504 |goto 72.80,72.25
+accept Free the Farmhands##50264 |goto 72.80,72.25
+accept Fetching Wrex##50493 |goto 72.80,72.25
+step
+_Next to you:_
+talk Raimond Mildenhall
+accept The Bee Team##50165
+accept Wendigo Away##50534
+stickystart "Rescue_Wrex"
+stickystart "Rescue_Honey_Encased_Farmhands"
+stickystart "Slay_Highlands_Maulers"
+step
+Enter the cave |goto 66.91,77.82 < 10 |walk
+use the Bee Pheromones##157851
+|tip Use it on Bonerender inside the cave.
+kill Bonerender##131537 |q 50534/1 |goto 65.87,79.43
+step
+_Next to you:_
+talk Raimond Mildenhall
+turnin Wendigo Away##50534
+step
+label "Rescue_Wrex"
+Leave the cave |goto 66.94,77.83 < 10 |walk
+click Crystallized Honey+
+|tip They look like big yellow rocks on the ground inside the caves around this area.
+|tip He will eventually be in one of them, it's random.
+|tip They will appear on your minimap as yellow dots.
+Rescue Wrex |q 50493/1 |goto 68.44,74.73
+step
+label "Rescue_Honey_Encased_Farmhands"
+clicknpc Honey Encased Farmhand##133154+
+|tip They look like people frozen in yellow globs on the ground around this area.
+Rescue #8# Honey Encased Farmhands |q 50264/1 |goto 68.44,74.73
+step
+label "Slay_Highlands_Maulers"
+use the Bee Pheromones##157851
+|tip Use it on Honey-Crazed Maulers around this area.
+Kill Mauler enemies around this area
+Slay #12# Highlands Maulers |q 50165/1 |goto 68.44,74.73
+step
+_Next to you:_
+talk Raimond Mildenhall
+turnin Free the Farmhands##50264
+turnin Fetching Wrex##50493
+turnin The Bee Team##50165
+accept Back to the Lab##50553
+step
+Run down the stairs |goto 70.75,69.13 < 5 |walk
+talk Raimond Mildenhall##133204
+|tip Downstairs inside the building.
+turnin Back to the Lab##50553 |goto 71.00,69.23
+step
+Kill enemies around this area
+collect Annealed Honey Amulet##163699 |goto Stormsong Valley/0 69.55,68.58 |condition achieved(13062)
+|tip This has an extremely low drop rate.
+You can find more around [68.79,70.75]
+You can find more around [70.69,72.09]
+step
+label "Rosaline_Loop"
+talk Rosaline Mildenhall##143128
+|tip Inside the building.
+Ask her _"I found this amulet, does it belong to you?"_|goto Boralus/0 52.71,48.00
+|tip Give Rosaline the Annealed Honey Amulet.
+collect Rosaline's Letter##163702 |next "Meadery"  |condition achieved(13062)
+Click Here to Continue |confirm
+|tip Click the line above if she isn't here.
+step
+talk Rosaline Mildenhall##143128
+|tip Upstairs inside the building.
+Ask her _"I found this amulet, does it belong to you?"_ |goto 55.5,62.9
+|tip Give Rosaline the Annealed Honey Amulet.
+collect Rosaline's Letter##163702 |next "Meadery" |condition achieved(13062)
+Click Here to Continue |confirm
+|tip Click the line above if she isn't here.
+step
+talk Rosaline Mildenhall##143128
+Ask her _"I found this amulet, does it belong to you?"_ |goto 58.1,55.3
+|tip Give Rosaline the Annealed Honey Amulet.
+collect Rosaline's Letter##163702 |next "Meadery" |condition achieved(13062)
+Click Here to Continue |confirm
+|tip Click the line above if she isn't here.
+step
+talk Rosaline Mildenhall##143128
+Ask her _"I found this amulet, does it belong to you?"_ |goto 72.4,73.3
+|tip Give Rosaline the Annealed Honey Amulet.
+Click Here to Continue |confirm |next "Rosaline_Loop" |condition achieved(13062)
+|tip Click the line above if she isn't here.
+step
+label "Meadery"
+talk Ancel Mildenhall##131793
+Tell him _"I met your mom. She Says hello!"_
+|tip Give Ancel the Letter.
+accept Bumbles the Bee##53347 |goto Stormsong Valley/0 68.88,65.16
+step
+Enter the cave |goto 73.87,72.47 < 5 |walk
+click Raimond's Secret Ingredient##298774
+|tip Inside the cave.
+collect Raimond's Secret Ingredient##163780 |q 53347/1 |goto 74.15,72.77
+step
+Enter the building |goto 70.75,69.13 < 5 |walk
+talk Ancel Mildenhall##132647
+|tip Inside the building.
+turnin Bumbles the Bee##53347 |goto 71.11,69.18
+step
+label "daily"
+Enter the building |goto 70.75,69.13 < 5 |walk
+talk Ancel Mildenhall##132647
+|tip Inside the building.
+accept Let's Bee Friends##53371 |goto 71.11,69.17
+step
+Kill enemies around this area
+collect 8 Vial of Honey Slime##156825 |q 53371 |goto 69.22,68.90
+step
+Enter the building |goto 70.75,69.13 < 5 |walk
+click Mildenhall Growth Formula
+|tip Inside the building.
+collect Mildenhall Growth Formula##163720 |q 53371/1 |goto 71.12,69.19
+step
+clicknpc Bumbles##143658
+|tip Inside the building.
+use the Mildenhall Growth Formula##163720
+Feed the Formula to Bumbles |q 53371/2 |goto 71.11,69.20
+step
+talk Ancel Mildenhall##132647
+|tip Inside the building.
+turnin Let's Bee Friends##53371 |goto 71.11,69.17
+step
+You Will Need to Complete This Daily 7 Times to Earn Bumbles
+Click Here to Continue |confirm |next "daily"
+|tip Click the line above to do the daily again.
+Earn the "Let's Bee Friends" Achievement |achieve 13062
+step
+_Congratulations!_
+You Earned the "Let's Bee Friends" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Life Finds a Way... To Die!",{
+achieveid={13048},
+author="support@zygorguides.com",
+startlevel=114,
+endlevel=114,
+condition_end=function() return achieved(13048) end,
+keywords={"Battle,For,Azeroth,Life,Finds,Way,To,Die!"},
+description="To earn this achievement, you will be required to hunt down and kill a fearsome dinosaur of each species in Zuldazar and Nazmir.",
+},[[
+step
+kill Sabertusk Empress##129323
+|tip You may need help with this.
+Slay The Sabertusk Empress |achieve 13048/5 |goto Zuldazar/0 52.41,47.77
+step
+kill Nol'ixwan##130741
+|tip You may need help with this.
+Slay Nol'ixwan the Direhorn |achieve 13048/7 |goto 61.56,25.44
+step
+kill Sludgecrusher##143910
+|tip You may need help with this.
+Slay Sludgecrusher the Anklyodon |achieve 13048/6 |goto 66.09,22.47
+step
+kill King K'tal##123502
+|tip He walks around this area.
+|tip You may need help with this.
+Slay King K'tal the Devilsaur |achieve 13048/8 |goto 71.37,21.65
+step
+kill Azuresail the Ancient##135510
+|tip If Azuresail isn't here go to the next step and kill Thunderfoot to make Azuresail spawn.
+|tip You may need help with this.
+Slay Azuresail the Diemetrodon |achieve 13048/2 |goto 67.03,26.62
+step
+kill Thunderfoot##135512
+|tip If Thunderfoot isn't here go to the previous step and kill Azuresail to make Thunderfoot spawn.
+|tip You may need help with this.
+Slay Thunderfoot the Brutosaur |achieve 13048/1 |goto 67.76,28.93
+step
+kill Queenfeather##139365
+|tip She walks around this area.
+|tip You may need help with this.
+Slay Queenfeather the Ravasaur |achieve 13048/3 |goto 71.18,40.28
+step
+Follow the path |goto Nazmir/0 26.70,68.94 < 20 |only if walking
+kill Makatau##143898
+|tip It looks like a large blue-green pterrordax that flies around this area and along the road to the west, you may have to search for it.
+|tip You may need help with this.
+Slay Makatau the Pterrordax |achieve 13048/4 |goto Nazmir/0 25.7,69.7
+step
+Hunt Down and Kill a Fearsome Dinosaur of Each Species in Zuldazar and Nazmir |achieve 13048
+step
+_Congratulations!_
+You Earned the "Life Finds a Way... To Die!" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Loremaster of Kul Tiras",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to complete the following achievements in Zandalar:\n\nA Sound Plan\nDrust Do It.\nStormsong and Dance",
+achieveid={12593},
+startlevel=110,
+keywords={"Kul, Tourist"},
+},[[
+step
+Earn the _A Sound Plan_ achievement |achieve 12593/1
+|tip Use the "Tiragarde Sound" leveling guide to accomplish this.
+Click here to load the "Tiragarde Sound" leveling guide |confirm |next "Leveling Guides\\Battle for Azeroth (110-120)\\Kul Tiras\\Tiragarde Sound"
+step
+Earn the _Drust Do It._ achievement |achieve 12593/2
+|tip Use the "Drustvar" leveling guide to accomplish this.
+Click here to load the "Drustvar" leveling guide |confirm |next "Leveling Guides\\Battle for Azeroth (110-120)\\Kul Tiras\\Drustvar"
+step
+Earn the _Stormsong and Dance_ achievement |achieve 12593/3
+|tip Use the "Stormsong Valley" leveling guide to accomplish this.
+Click here to load the "Stormsong Valley" leveling guide |confirm |next "Leveling Guides\\Battle for Azeroth (110-120)\\Kul Tiras\\Stormsong Valley"
+step
+_Congratulations!_
+You Earned the "Loremaster of Kul Tiras" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Pushing the Payload",{
+achieveid={13440},
+author="support@zygorguides.com",
+startlevel=120,
+endlevel=120,
+condition_end=function() return achieved(13440) end,
+keywords={"Battle,For,Azeroth,Pushing,Payload"},
+description="To earn this achievement, you will be required to slay 6 enemies while on the assault world quest 'Stack on the Tank'.",
+},[[
+step
+accept Stack on the Tank##54498 |goto Zuldazar/0 75.28,40.08 |condition achieved(13440)
+|tip Search around for the giant tank.
+|tip You will accept this quest automatically.
+|tip This quest will only be available when it is an active World Quest.
+step
+Defeat the enemies that attack in waves
+Slay 6 Enemies During the "Stack on the Tank" World Quest |achieve 13440 |goto 75.28,40.08
+|tip Be careful to not finish the world quest or you won't be able to complete the achievement.
+|tip Forming a raid group will stop quest progress to guarantee you don't accidentally finish the world quest.
+step
+_Congratulations!_
+You Earned the "Pushing the Payload" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Ready for War",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to complete the war campaign in Kul Tiras and Zandalar.",
+achieveid={12510},
+startlevel=110,
+endlevel=120,
+keywords={"Campaign, Zandalar, Kul, Tiras, BFA, Battle, Azeroth"},
+},[[
+step
+Complete the War Campaign in Kul Tiras and Zandalar:
+Nazmir Foothold |achieve 12510/1
+Vol'dun Foothold |achieve 12510/2
+Zuldazar Foothold |achieve 12510/3
+Blood on the Sand |achieve 12510/4
+Chasing Darkness |achieve 12510/5
+A Golden Opportunity |achieve 12510/6
+Blood in the Water |achieve 12510/7
+The Strike on Zuldazar |achieve 12510/8
+|tip Use the "War Campaign" guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Ready for War" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Sabertron Assemble",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to destroy each color of Sabertron in Stormsong Valley.",
+achieveid={13054},
+startlevel=120,
+endlevel=120,
+keywords={"BFA, Battle, for, Azeroth, Sabertron, Assemble"},
+},[[
+step
+accept Sabertron##51974 |goto Stormsong Valley/0 34.93,32.60 |condition achieved(13054)
+|tip You will accept this quest automatically.
+|tip This quest will only be available when it is an active World Quest.
+step
+Enter the cave |goto 34.93,32.60 < 10 |walk
+kill Sabertron Technician##139334
+|tip He walks around this area inside the cave.
+kill Sabertron##139328
+|tip One of the nearby metal cats will attack after you kill the Sabertron Technician.
+|tip Doing this when it is a World Quest allows you to kill the different colored Sabertrons.
+|tip When it is not a World Quest it will always be the red Sabertron.
+|tip The other 4 colored Sabertrons will activate when doing the World Quest.
+|tip You will have to do this World Quest multiple times to get all 5 colors.
+Destroy the Red Sabertron |achieve 13054/1 |goto 33.88,31.89
+Destroy the Yellow Sabertron |achieve 13054/2 |goto 33.88,31.89
+Destroy the Orange Sabertron |achieve 13054/3 |goto 33.88,31.89
+Destroy the Green Sabertron |achieve 13054/4 |goto 33.88,31.89
+Destroy the Copper Sabertron |achieve 13054/5 |goto 33.88,31.89
+step
+Destroy Each Color of Sabertron in Stormsong Valley |achieve 13054
+step
+_Congratulations!_
+You Earned the "Sabertron Assemble" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Scourge of Zem'lan",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to kill pirates while accompanied by Ol' Bonebite at the Port of Zem'lan in Vol'dun.",
+achieveid={13011},
+startlevel=110,
+endlevel=110,
+keywords={"BFA, Battle, for, Azeroth, Scourge, Zem'lan"},
+},[[
+stickystart "Thirst_for_Brew_Buff"
+stickystart "Thirst_for_Treasure_Buff"
+step
+To earn this achievement, you will be required to kill pirates while accompanied by Ol' Bonebite
+Ol' Bonebite is summoned after claiming 3 clickable buffs found around the Port of Zem'lan in Vol'dun
+|tip The buffs last for 10 minutes and have a respawn timer of about 15 minutes.
+click Pirate Hat##220362
+|tip It looks like a small blue and white hate with a skull and bones symbol on it.
+Gain the Thirst for Adventure Buff |havebuff 1140282 |goto Vol'dun/0 33.77,78.76 |condition achieved(13011)
+It can also be found around [34.13,78.35]
+step
+label "Thirst_for_Brew_Buff"
+click Zem'lan Blackeye Brew##287498
+|tip It looks like a small tan buried bottle in the sand.
+Gain the Thirst for Brew Buff |havebuff 132790 |goto 36.80,79.90 |condition achieved(13011)
+It can also be found around [37.08,79.98] |only if not sticky
+step
+label "Thirst_for_Treasure_Buff"
+click Treasure Map##287496
+|tip It looks like a square tan and blue parchment map.
+Gain the Thirst for Treasure Buff |havebuff 1064187 |goto 35.80,76.65 |condition achieved(13011)
+It can also be found around [34.83,76.75] |only if not sticky
+step
+Summon Ol' Bonebite |havebuff 648726 |condition achieved(13011)
+|tip Ol' Bonebite is summoned by having all 3 buffs at the same time.
+step
+kill enemies around this area
+Kill 20 Pirates While Accompanied by Ol' Bonebite |achieve 13011 |goto 35.41,78.97
+step
+Kill 20 Pirates While Accompanied by Ol' Bonebite at the Port of Zem'lan in Vol'dun |achieve 13011
+step
+_Congratulations!_
+You Earned the "Scourge of Zem'lan" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Stormsong and Dance",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to complete the following story chapters in Stormsong Valley:\n\nThe Tidesages of Stormsong\nThe Growing Tempest\nCycle of Hatred\nBriarback Kraul\nA House in Peril\nAt the Edge of Madness\nFrom the Depths They Come\nTreasure in Deadwash",
+achieveid={12496},
+startlevel=110,
+endlevel=120,
+keywords={"Valley, BFA, Battle, for, Azeroth"},
+},[[
+step
+Complete the following story chapters in Stormsong Valley:
+The Tidesages of Stormsong |achieve 12496/1
+A House in Peril |achieve 12496/2
+The Growing Tempest |achieve 12496/3
+At the Edge of Madness |achieve 12496/4
+Cycle of Hatred |achieve 12496/5
+From the Depths They Come |achieve 12496/6
+Briarback Kraul |achieve 12496/7
+Treasure in Deadwash |achieve 12496/8
+|tip Use the "Stormsong Valley" leveling guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Stormsong and Dance" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\The Pride of Kul Tiras",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you must first earn the \"Loremaster of Kul Tiras\" achievement.\nYou will then complete a string of quests to rescue Jaina Proudmoore.",
 achieveid={12997},
 startlevel=120,
 endlevel=120,
@@ -1574,11 +8098,13 @@ step
 talk Flynn Fairwind##140732
 turnin Sweete's Strongbox##52311 |goto 75.35,48.86
 accept Tol Dagor: The Fourth Key##52445 |goto 75.35,48.86
+step
+Enter the Tol Dagor Dungeon |goto Tol Dagor/0 0.00,0.00 < 1000 |c |q 52445
 stickystart "Kill_Overseer_Korgus"
 step
 click Ashvane Skeleton Keys##293959
 |tip It looks like a metal ring with keys on it on the wall of the room with Knight Captain Valyri.
-|tip He's the third boss in the Tol Dagor dungeon.
+|tip She's the third boss in the Tol Dagor dungeon.
 |tip Use the Group Finder to enter the dungeon.
 |tip Use the Tol Dagor dungeon guide to accomplish this.
 collect Ashvane Skeleton Key##162008 |q 52445/2
@@ -1651,7 +8177,7 @@ step
 use the Staff of Storms##162462
 |tip Use it next to the Scroll of Safe Passage.
 click Scroll of Safe Passage##293699
-|tip It looks like a dark piece of paper floating in a pink orb inside the building after you kill Brother Ironhull.
+|tip It looks like a dark piece of paper floating in a pink orb inside the building after you defeat the Tidesage Council.
 |tip He is the second boss in the Shrine of the Storm dungeon.
 |tip Use the Group Finder to enter the dungeon.
 |tip Use the Shrine of the Storm dungeon guide to accomplish this.
@@ -1797,7 +8323,13 @@ kill Gorak Tul##144324
 |tip Use the Waycrest Manor dungeon guide to accomplish this.
 Defeat Gorak Tul |q 52486/2
 step
-Enter the building |goto Drustvar/0 37.14,50.19 < 10 |walk
+talk Lucille Waycrest##131638
+|tip You have not accepted this quest.
+|tip Until you accept it, you won't be able to turn the next quest in.
+accept Waycrest Manor: The Fallen Mother##50639 |goto Drustvar/0 32.82,15.34
+|only if not havequest(50639) or completedq(50639)
+step
+Enter the building |goto 37.14,50.19 < 10 |walk
 talk Lucille Waycrest##129642
 |tip Inside the building.
 turnin Waycrest Manor: Draining the Heartsbane##52486 |goto 36.86,50.11
@@ -1875,8 +8407,56 @@ step
 _Congratulations!_
 You Earned the "Pride of Kul Tiras" Achievement.
 ]])
-ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Battle for Azeroth\\Wide World of Quests",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\The Reining Champion",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you will be required to score at least 600 points in the Norwington Estate horse show.",
+achieveid={12087},
+startlevel=110,
+endlevel=120,
+keywords={"Norwington, Estate, horse, show, Battle, for, Azeroth, BFA"},
+},[[
+step
+To earn this achievement, you must score at least 600 points in the Norwington Estate horse show
+clicknpc Cooper##127718
+Mount Cooper |invehicle |goto Tiragarde Sound/0 51.65,26.20 |achieve 12087
+step
+Score 600 Points |achieve 12087 |goto 51.01,26.43
+|tip Jump over fences to keep the stacks of Style as high as possible.
+|tip Use the "Harpoon Jab" ability on your action bar while facing Targets around this area.
+|tip They look like a yellow puppets in wooden barrels on the ground around this area.
+|tip You will hear "Zeppelin out!" yelled nearby, then a Paper Zeppelin will appear, flying overhead.
+|tip Use the "Bolas" ability on your action bar on the Paper Zeppelins.
+|tip They look like small blimps flying in the air around this area.
+|tip The zeppelins count for a lot of points, so don't miss any.
+step
+_Congratulations!_
+You Earned "The Reining Champion" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Tides of Vengeance",{
+author="support@zygorguides.com",
+description="\nTo earn this achievement, you must complete the Tides of Vengeance war campaigns:\n\nWar Marches On\nThe Sleeper Agent\nMischief Managed\nHe Who Walks in the Light",
+achieveid={13467},
+startlevel=110,
+endlevel=120,
+keywords={"tides, of, vengeance, Battle, for, Azeroth"},
+},[[
+step
+Complete War Marches On |achieve 13467/1
+|tip Use the "War Campaign" guide to accomplish this.
+step
+Complete The Sleeper Agent |achieve 13467/2
+|tip Use the "War Campaign" guide to accomplish this.
+step
+Complete Mischief Managed |achieve 13467/3
+|tip Use the "War Campaign" guide to accomplish this.
+step
+Complete He Who Walks in the Light |achieve 13467/4
+|tip Use the "War Campaign" guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Tides of Vengeance" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Wide World of Quests",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the \"Wide World of Quests\" Achievement.",
 achieveid={13144},
@@ -1890,32 +8470,78 @@ step
 _Congratulations!_
 You Earned the "Wide World of Quests" Achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Quests\\Battle for Azeroth\\Kul Tourist",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Battle for Azeroth\\80 Exalted Reputations",{
+achieveid={12864},
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will be required to complete the following achievements in Zandalar:\n\nA Sound Plan\nDrust Do It.\nStormsong and Dance",
-achieveid={12593},
 startlevel=110,
-keywords={"Kul, Tourist"},
+keywords={"80","Exalted","Reputations"},
+description="This guide will walk you through completing the \"80 Exalted Reputations\" Achievement.",
 },[[
 step
-Earn the _A Sound Plan_ achievement |achieve 12593/1
-|tip Use the "Tiragarde Sound" leveling guide to accomplish this.
-Click here to load the "Tiragarde Sound" leveling guide |confirm |next "Zygor's Leveling Guides\\Battle for Azeroth (110-120)\\Kul Tiras\\Tiragarde Sound"
-step
-Earn the _Drust Do It._ achievement |achieve 12593/2
-|tip Use the "Drustvar" leveling guide to accomplish this.
-Click here to load the "Drustvar" leveling guide |confirm |next "Zygor's Leveling Guides\\Battle for Azeroth (110-120)\\Kul Tiras\\Drustvar"
-step
-Earn the _Stormsong and Dance_ achievement |achieve 12593/3
-|tip Use the "Stormsong Valley" leveling guide to accomplish this.
-Click here to load the "Stormsong Valley" leveling guide |confirm |next "Zygor's Leveling Guides\\Battle for Azeroth (110-120)\\Kul Tiras\\Stormsong Valley"
+Reach _Revered_ Reputation with 80 Factions |achieve 12864
+|tip Use the Reputation guides to accomplish this.
 step
 _Congratulations!_
-You Earned the "Kul Tourist" Achievement.
+You Earned the "80 Exalted Reputations" Achievement.
 ]])
-ZGV.BETAEND()
-ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Reputations\\Battle for Azeroth\\Azerothian Diplomat",{
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Battle for Azeroth\\90 Exalted Reputations",{
+achieveid={12865},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"90","Exalted","Reputations"},
+description="This guide will walk you through completing the \"90 Exalted Reputations\" Achievement.",
+},[[
+step
+Reach _Revered_ Reputation with 90 Factions |achieve 12865
+|tip Use the Reputation guides to accomplish this.
+step
+_Congratulations!_
+You Earned the "90 Exalted Reputations" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Battle for Azeroth\\100 Exalted Reputations",{
+achieveid={12866},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"100","Exalted","Reputations"},
+description="This guide will walk you through completing the \"100 Exalted Reputations\" Achievement.",
+},[[
+step
+Reach _Revered_ Reputation with 100 Factions |achieve 12866
+|tip Use the Reputation guides to accomplish this.
+step
+_Congratulations!_
+You Earned the "100 Exalted Reputations" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Battle for Azeroth\\Allied Races: Dark Iron Dwarf",{
+achieveid={12515},
+author="support@zygorguides.com",
+startlevel=120,
+keywords={"Battle, for, Azeroth, Allied, Races, Dark, Iron, Dwarf"},
+description="To earn this achievement, you will be required to earn the allegiance of the Dark Iron dwarves and welcome them into the Alliance.",
+},[[
+step
+Unlock the Dark Iron Dwarf race |achieve 12515
+|tip Use the "Dark Iron Dwarf Race Unlock" guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Allied Races: Dark Iron Dwarf" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Battle for Azeroth\\Allied Races: Mag'har Orc",{
+achieveid={12518},
+author="support@zygorguides.com",
+startlevel=120,
+keywords={"Battle, for, Azeroth, Allied, Races, Mag'har, Orc"},
+description="To earn this achievement, you will be required to earn the allegiance of the Mag'har orcs and welcome them into the Horde.",
+},[[
+step
+Unlock the Mag'har Orc race |achieve 12518
+|tip Use the "Mag'har Orc Race Unlock" guide to accomplish this.
+|tip This must be done on a Horde character.
+step
+_Congratulations!_
+You Earned the "Allied Races: Mag'har Orc" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Battle for Azeroth\\Azerothian Diplomat",{
 achieveid={12947},
 author="support@zygorguides.com",
 startlevel=110,
@@ -1954,4 +8580,595 @@ step
 _Congratulations!_
 You Earned the "Azerothian Diplomat" Achievement.
 ]])
-ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Battle for Azeroth\\Champion of the 7th Legion",{
+achieveid={12954},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Champion, 7th, Legion"},
+description="To earn this achievement, you will be requried to earn Exalted status with the 7th Legion.",
+},[[
+step
+Reach _Exalted_ reputation with the _7th Legion_ |achieve 12954
+|tip Use the Battle for Azeroth "World Quests" guides to complete "7th Legion" world quests.
+|tip Complete the weekly Island Expeditions quest "Azerite for the Alliance".
+|tip Complete Missions at your mission table that reward reputation with the 7th Legion.
+step
+_Congratulations!_
+You Earned the "Champion of the 7th Legion" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Battle for Azeroth\\Champion of Azeroth",{
+achieveid={12955},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Champion, Azeroth, Battle, for, Azeroth"},
+description="To earn this achievement, you will be requried to earn Exalted status with the Champions of Azeroth.",
+},[[
+step
+Reach _Exalted_ reputation with the _Champions of Azeroth_ |achieve 12955
+|tip Use the Battle for Azeroth "World Quests" guides to complete "Champions of Azeroth" world quests.
+|tip Complete Missions at your mission table that reward reputation with the Champions of Azeroth.
+step
+_Congratulations!_
+You Earned the "Champion of Azeroth" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Battle for Azeroth\\Heritage of the Dark Iron",{
+achieveid={13076},
+author="support@zygorguides.com",
+startlevel=120,
+keywords={"Battle, for, Azeroth, Heritage, Dark, Iron, Dwarf, Race"},
+description="To earn this achievement, you will be required to reach level 110 on a newly created Dark Iron dwarf character.",
+},[[
+step
+Unlock the Dark Iron Dwarf race |achieve 12515
+|tip Use the "Dark Iron Dwarf Race Unlock" guide to accomplish this.
+step
+Raise a new Dark Iron Dwarf Character to Level 110 |achieve 13076
+|tip Use the leveling guides to accomplish this.
+step
+_Congratulations!_
+You Earned the "Heritage of the Dark Iron" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Battle for Azeroth\\Heritage of the Mag'har",{
+achieveid={13077},
+author="support@zygorguides.com",
+startlevel=120,
+keywords={"Battle, for, Azeroth, Heritage, Mag'har, Orc, Race"},
+description="To earn this achievement, you will be required to reach level 110 on a newly created Mag'har orc character.",
+},[[
+step
+Unlock the Mag'har Orc race |achieve 12518
+|tip Use the "Mag'har Orc Race Unlock" guide to accomplish this.
+|tip This must be done on a Horde character.
+step
+Raise a new Mag'har Orc Character to Level 110 |achieve 13077
+|tip Use the leveling guides to accomplish this.
+|tip This must be done on a Horde character.
+step
+_Congratulations!_
+You Earned the "Heritage of the Mag'har" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Battle for Azeroth\\Order of Embers",{
+achieveid={12952},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle, for, Azeroth, BFA, Reputation, Order, Embers"},
+description="To earn this achievement, you will be requried to earn Exalted status with the Order of Embers.",
+},[[
+step
+Reach _Exalted_ reputation with the _Order of Embers_ |achieve 12952
+|tip Use the "Drustvar" leveling guide to accomplish this.
+|tip Use the Battle for Azeroth "World Quests" guides to complete "Order of Embers" world quests.
+|tip Complete Missions at your mission table that reward reputation with the Order of Embers.
+step
+_Congratulations!_
+You Earned the "Order of Embers" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Battle for Azeroth\\Proudmoore Admiralty",{
+achieveid={12951},
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Battle, for, Azeroth, BFA, Reputation, Proudmoore, Admiralty"},
+description="To earn this achievement, you will be requried to earn Exalted status with Proudmoore Admiralty.",
+},[[
+step
+Reach _Exalted_ reputation with _Proudmoore Admiralty_ |achieve 12951
+|tip Use the "Tiragarde Sound" leveling guide to accomplish this.
+|tip Use the Battle for Azeroth "World Quests" guides to complete "Proudmoore Admiralty" world quests.
+|tip Complete Missions at your mission table that reward reputation with the Proudmoore Admiralty.
+step
+_Congratulations!_
+You Earned the "Proudmoore Admiralty" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Battle for Azeroth\\Storm's Wake",{
+achieveid={12953},
+author="support@zygorguides.com",
+startlevel=120,
+keywords={"Battle, for, Azeroth, BFA, Reputation, Storm's, Wake"},
+description="To earn this achievement, you will be requried to earn Exalted status with Storm's Wake.",
+},[[
+step
+Reach _Exalted_ reputation with _Storm's Wake_ |achieve 12953
+|tip Use the "Stormsong Valley" leveling guide to accomplish this.
+|tip Use the Battle for Azeroth "World Quests" guides to complete "Storm's Wake" world quests.
+|tip Complete Missions at your mission table that reward reputation with the Storm's Wake.
+step
+_Congratulations!_
+You Earned the "Storm's Wake" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\War Effort\\Battle for Azeroth\\An Eventful Battle",{
+achieveid={12874},
+author="support@zygorguides.com",
+startlevel=120,
+endlevel=120,
+condition_end=function() return achieved(12874) end,
+keywords={"Battle,For,Azeroth,War,Effort,An,Eventful,Battle"},
+description="To earn this achievement, you will be required to complete the following random events in the Battle for Stromgarde:\n\nFozruk\nHostage Rescue\nLost Caravan\nThe Branchlord\nRumbling Goliath\nYogursa\nThundering Goliath\nPlaguefeather\nRagebeak\nSkullripper\nVenomarus\nCresting Goliath."
+},[[
+step
+clicknpc War Table##140552
+|tip Queue for the Battle for Darkshore.
+|tip The Battle for Darkshore won't always be available.
+Enter the Battle for Darkshore |scenariostart |goto Boralus/0 66.05,25.97 |condition achieved(12874)
+step
+Complete the following random events in the Battle for Stromgarde:
+|tip These encounters are random and usually 2 or 3 take place throughout the battle.
+|tip They are marked by a gold star on the map.
+Fozruk |achieve 12874/1
+|tip Fozruk spawns to the southeast of High Perch.
+Hostage Rescue |achieve 12874/2
+|tip The Hostage Rescue takes place south of the Circle of Elements.
+Lost Caravan |achieve 12874/3
+|tip The Lost Caravan takes place at Drywhisker Mine and needs to be escorted back to Bashal'Aran.
+The Branchlord |achieve 12874/4
+|tip The Branchlord spawns north of Highlands Mill.
+Rumbling Goliath |achieve 12874/5
+|tip The Rumbling Goliath spawns by the Circle of Inner Bindings just east of Stromgarde Keep.
+Yogursa |achieve 12874/6
+|tip Yogursa spawns between Newstead and Hatchet Ridge.
+Thundering Goliath |achieve 12874/7
+|tip The Thundering Goliath spawns on top of the hill between High Perch and the Circle of Elements.
+Plaguefeather |achieve 12874/8
+|tip Plaguefeather spawns east of Drywhisker Mine.
+Ragebeak |achieve 12874/9
+|tip Ragebeak spawns southwest of Newstead.
+Skullripper |achieve 12874/10
+|tip Skullripper spawns south of the Circle of Elements.
+Venomarus |achieve 12874/11
+|tip Venomarus spawns north of Hatchet Ridge.
+Cresting Goliath |achieve 12874/12
+|tip The Cresting Goliath spawns north of Highlands Mill.
+step
+_Congratulations!_
+You Earned the "An Eventful Battle" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\War Effort\\Battle for Azeroth\\Azeroth at War: After Lordaeron",{
+achieveid={12898},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12898) end,
+keywords={"Battle,For,Azeroth,War,After,Lordaeron"},
+description="This guide will walk you through completing the \"Azeroth at War: After Lordaeron\" achievement.",
+},[[
+step
+Complete the following missions:
+clicknpc Mission Command Table##138704
+|tip These missions spawn randomly so check back often.
+Lordamere Lake |achieve 12898/1 |goto Boralus/0 70.56,27.17
+Undead Rising |achieve 12898/2 |goto 70.56,27.17
+Shadowfang Plague |achieve 12898/3 |goto 70.56,27.17
+Alterac Scouting |achieve 12898/4 |goto 70.56,27.17
+Damming Them All |achieve 12898/5 |goto 70.56,27.17
+Destroying The Keep |achieve 12898/6 |goto 70.56,27.17
+Dalaran Ritual |achieve 12898/7 |goto 70.56,27.17
+Dancing with the Dark Rangers |achieve 12898/8 |goto 70.56,27.17
+Exorcising Dun Control |achieve 12898/9 |goto 70.56,27.17
+Hillsbrad Mine |achieve 12898/10 |goto 70.56,27.17
+Silverpine Reinforcements |achieve 12898/11 |goto 70.56,27.17
+Deep Elem Mine |achieve 12898/12 |goto 70.56,27.17
+Southshore Sabotage |achieve 12898/13 |goto 70.56,27.17
+step
+_Congratulations!_
+You Earned the "Azeroth at War: After Lordaeron" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\War Effort\\Battle for Azeroth\\Azeroth at War: Kalimdor on Fire",{
+achieveid={12899},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12899) end,
+keywords={"Battle,For,Azeroth,War,Kalimdor,Fire"},
+description="This guide will walk you through completing the \"Azeroth at War: Kalimdor on Fire\" achievement.",
+},[[
+step
+Complete the following missions:
+clicknpc Mission Command Table##138704
+|tip These missions spawn randomly so check back often.
+Bilgewater Sabotage |achieve 12899/1 |goto Boralus/0 70.56,27.17
+Siege of Astranaar |achieve 12899/2 |goto 70.56,27.17
+Teldrassil Evacuation |achieve 12899/3 |goto 70.56,27.17
+Ashenvale Pass |achieve 12899/4 |goto 70.56,27.17
+Shreds of Warsong |achieve 12899/5 |goto 70.56,27.17
+Out of Our Depth |achieve 12899/6 |goto 70.56,27.17
+Deeps Scouting |achieve 12899/7 |goto 70.56,27.17
+Darkshore Drilling |achieve 12899/8 |goto 70.56,27.17
+Stardust Spire Counterattack |achieve 12899/9 |goto 70.56,27.17
+Ancient Defenses |achieve 12899/10 |goto 70.56,27.17
+Posting Reinforcements |achieve 12899/11 |goto 70.56,27.17
+Recapture Silverwind Refuge |achieve 12899/12 |goto 70.56,27.17
+Return to Auberdine |achieve 12899/13 |goto 70.56,27.17
+step
+_Congratulations!_
+You Earned the "Azeroth at War: Kalimdor on Fire" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\War Effort\\Battle for Azeroth\\Azeroth at War: The Barrens",{
+achieveid={12896},
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+condition_end=function() return achieved(12896) end,
+keywords={"Battle,For,Azeroth,War,Barrens"},
+description="This guide will walk you through completing the \"Azeroth at War: The Barrens\" achievement.",
+},[[
+step
+Complete the following missions:
+clicknpc Mission Command Table##138704
+|tip These missions spawn randomly so check back often.
+Our Fort Was a Triumph |achieve 12896/1 |goto Boralus/0 70.56,27.17
+At a Crossroads |achieve 12896/2 |goto 70.56,27.17
+Razor Hill Supplies |achieve 12896/3 |goto 70.56,27.17
+Lingering in Theramore |achieve 12896/4 |goto 70.56,27.17
+Salvaging Tiragarde |achieve 12896/5 |goto 70.56,27.17
+The Defense of Northwatch Hold |achieve 12896/6 |goto 70.56,27.17
+Barrens at War |achieve 12896/7 |goto 70.56,27.17
+Great Gate of Mulgore |achieve 12896/8 |goto 70.56,27.17
+Azerite Weaponry |achieve 12896/9 |goto 70.56,27.17
+Steamwheedle Alliance |achieve 12896/10 |goto 70.56,27.17
+Echo Isles Navy |achieve 12896/11 |goto 70.56,27.17
+Investigate Wailing Caverns |achieve 12896/12 |goto 70.56,27.17
+Barren Supplies |achieve 12896/13 |goto 70.56,27.17
+step
+_Congratulations!_
+You Earned the "Azeroth at War: The Barrens" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\War Effort\\Battle for Azeroth\\By Nature's Call",{
+achieveid={13310},
+author="support@zygorguides.com",
+startlevel=120,
+endlevel=120,
+condition_end=function() return achieved(13310) end,
+keywords={"Battle,For,Azeroth,War,Effort,By,Nature's,Call"},
+description="To earn this achievement, you will be required to embody every Alliance Hero in the Battle for Darkshore:\n\nDryad\nFaerie Dragon\nKeeper of the Grove.",
+},[[
+step
+clicknpc War Table##140552
+|tip Queue for the Battle for Darkshore.
+|tip The Battle for Darkshore won't always be available.
+Enter the Battle for Darkshore |scenariostart |goto Boralus/0 66.05,25.97 |condition achieved(13310)
+step
+Kill enemies and help your group progress through the Battle for Darkshore
+Collect Iron and Wood
+|tip Forsaken Plague Wagon and Forsaken Blight Throwers usually drop Iron.
+clicknpc Verdant Seedling##144905
+|tip Donate your Iron and Wood to help build the Altar of Elders in Bashal'Aran.
+|tip You will have to progress through the scenario before doing this.
+Construct the Altar of Elders |scenariogoal 8/43822 |condition achieved(13310)
+step
+Kill enemies throughout the Battle for Darkshore
+Eventually one will drop an Essence of Storms
+Become Chosen |havebuff 136111 |condition achieved(13310,1)
+step
+talk Moon Priestess Lasara##144908
+|tip She is standing outside the Altar of Elders in Bashal'Aran.
+Select _Dryad_
+Embody a Dryad |achieve 13310/1
+step
+Kill enemies throughout the Battle for Darkshore
+Eventually one will drop an Essence of Storms
+Become Chosen |havebuff 136111 |condition achieved(13310,2)
+step
+talk Moon Priestess Lasara##144908
+|tip She is standing outside the Altar of Elders in Bashal'Aran.
+Select _Faerie Dragon_
+Embody a Faerie Dragon |achieve 13310/2
+step
+Kill enemies throughout the Battle for Darkshore
+Eventually one will drop an Essence of Storms
+Become Chosen |havebuff 136111 |condition achieved(13310,3)
+step
+talk Moon Priestess Lasara##144908
+|tip She is standing outside the Altar of Elders in Bashal'Aran.
+Select _Keeper of the Grove_
+Embody a Keeper of the Grove |achieve 13310/3
+step
+Embody Every Alliance Hero in the Battle for Darkshore |achieve 13310
+step
+_Congratulations!_
+You Earned the "By Nature's Call" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\War Effort\\Battle for Azeroth\\Leader of Troops",{
+achieveid={12884},
+author="support@zygorguides.com",
+startlevel=120,
+endlevel=120,
+condition_end=function() return achieved(12884) end,
+keywords={"Battle,For,Azeroth,Leader,of,Troops"},
+description="To earn this achievement, you will be required to recruit one of every troop type in the Battle for Stromgarde:\n\nFootman\nRifleman\nPriest\nKnight\nSiege Engine.",
+},[[
+step
+clicknpc War Table##140552
+|tip Queue for the Battle for Stromgarde.
+|tip The Battle for Stromgarde won't always be available.
+Enter the Battle for Stromgarde |scenariostart |goto Boralus/0 66.05,25.97 |condition achieved(12884)
+step
+Kill enemies throughout the Battle for Stromgarde
+Collect 20 Iron
+|tip The Galsoin's Lode mine is a good place to loot Iron.
+|tip It is the southeastern point of interest on the map.
+talk Ralston Karn##139726
+|tip He is standing outside the Barracks in Stromgarde Keep.
+Select _Footman_
+|tip They cost 20 Iron to recruit.
+Recruit a Footman |achieve 12884/1
+step
+Kill enemies throughout the Battle for Stromgarde
+Collect 30 Iron
+|tip The Galsoin's Lode mine is a good place to loot Iron.
+|tip It is the southeastern point of interest on the map.
+talk Ralston Karn##139726
+|tip He is standing outside the Barracks in Stromgarde Keep.
+Select _Rifleman_
+|tip They cost 30 Iron to recruit.
+Recruit a Rifleman |achieve 12884/2
+step
+Kill enemies throughout the Battle for Stromgarde
+Collect 50 Iron
+|tip The Galsoin's Lode mine is a good place to loot Iron.
+|tip It is the southeastern point of interest on the map.
+talk Ralston Karn##139726
+|tip He is standing outside the Barracks in Stromgarde Keep.
+Select _Priest_
+|tip They cost 50 Iron to recruit.
+|tip The Circle of Elements must be under Alliance control before a Priest can be recruited.
+Recruit a Priest |achieve 12884/3
+step
+Kill enemies throughout the Battle for Stromgarde
+Collect 50 Iron
+|tip The Galsoin's Lode mine is a good place to loot Iron.
+|tip It is the southeastern point of interest on the map.
+talk Ralston Karn##139726
+|tip He is standing outside the Barracks in Stromgarde Keep.
+Select _Knight_
+|tip They cost 50 Iron to recruit.
+|tip Newstead must be under Alliance control before a Knight can be recruited.
+Recruit a Knight |achieve 12884/4
+step
+Kill enemies throughout the Battle for Stromgarde
+Collect Iron and Wood
+clicknpc Construction Table##126482
+|tip Donate your Iron and Wood to help build the Workshop in Stromgarde Keep.
+Construct the Workshop |scenariogoal 2/41128 |condition achieved(12884)
+step
+Kill enemies throughout the Battle for Stromgarde
+Collect 80 Iron
+|tip The Galsoin's Lode mine is a good place to loot Iron.
+|tip It is the southeastern point of interest on the map.
+talk Grumble##139099
+|tip He is standing outside the Workshop in Stromgarde Keep.
+Select _Siege Engine_
+|tip It costs 80 Iron to build.
+|tip There can only be 3 Siege Engines active on the map at a time.
+Recruit a Siege Engine |achieve 12884/5
+step
+Recruit One of Every Troop Type in the Battle for Stromgarde |achieve 12884
+step
+_Congratulations!_
+You Earned the "Leader of Troops" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\War Effort\\Battle for Azeroth\\Night Moves",{
+achieveid={13305},
+author="support@zygorguides.com",
+startlevel=120,
+endlevel=120,
+condition_end=function() return achieved(13305) end,
+keywords={"Battle,For,Azeroth,War,Effort,Night,Moves"},
+description="To earn this achievement, you will be required to capture every location in the Battle for Darkshore.",
+},[[
+step
+clicknpc War Table##140552
+|tip Queue for the Battle for Darkshore.
+|tip The Battle for Darkshore won't always be available.
+Enter the Battle for Darkshore |scenariostart |goto Boralus/0 66.05,25.97 |condition achieved(13305)
+step
+Capture every location in the Battle for Darkshore:
+|tip After clearing each location of enemies there will be a flag you must click to capture the location.
+|tip Only one person will get credit for capturing the location so try and click the flag as fast as possible.
+Bashal'Aran |achieve 13305/1
+Gloomtide Strand |achieve 13305/2
+Cinderfall Grove |achieve 13305/3
+Lornesta Mine |achieve 13305/4
+Forlorn Crossing |achieve 13305/5
+Ashwood Depot |achieve 13305/6
+Lor'danel Landing |achieve 13305/7
+step
+Capture Every Location in the Battle for Darkshore |achieve 13305
+step
+_Congratulations!_
+You Earned the "Night Moves" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\War Effort\\Battle for Azeroth\\Recruitment Officer",{
+achieveid={13308},
+author="support@zygorguides.com",
+startlevel=120,
+endlevel=120,
+condition_end=function() return achieved(13308) end,
+keywords={"Battle,For,Azeroth,Recruitment,Officer"},
+description="To earn this achievement, you will be required to recruit one of every troop type in the Battle for Darkshore:\n\nKaldorei Archer\nDruid of the Branch\nKaldorei Hunter\nKaldorei Sentinel\nGlaive Thrower.",
+},[[
+step
+clicknpc War Table##140552
+|tip Queue for the Battle for Darkshore.
+|tip The Battle for Darkshore won't always be available.
+Enter the Battle for Darkshore |scenariostart |goto Boralus/0 66.05,25.97 |condition achieved(13308)
+step
+Follow your group and clear out enemies
+Reclaim Bashal'Aran |scenariogoal 7/43207 |condition achieved(13308)
+step
+Kill enemies throughout the Battle for Darkshore
+click Pile of Wood
+|tip They will appear as a gold dot on your mini map.
+Collect 20 Wood
+talk Jarod Shadowsong##145066
+|tip He is standing next to the Ancient of War in Bashal'Aran.
+Select _Sentinel_
+|tip They cost 20 Wood to recruit.
+Recruit a Kaldorei Sentinel |achieve 13308/4
+step
+Kill enemies throughout the Battle for Darkshore
+Collect 30 Wood
+talk Jarod Shadowsong##145066
+|tip He is standing next to the Ancient of War in Bashal'Aran.
+Select _Archer_
+|tip They cost 30 Wood to recruit.
+Recruit a Kaldorei Archer |achieve 13308/1
+step
+Kill enemies throughout the Battle for Darkshore
+Collect 50 Wood
+talk Jarod Shadowsong##145066
+|tip He is standing next to the Ancient of War in Bashal'Aran.
+Select _Huntress_
+|tip They cost 50 Wood to recruit.
+|tip Ashwood Depot must be under Alliance control before a Huntress can be recruited.
+Recruit a Kaldorei Hunter |achieve 13308/3
+step
+Kill enemies throughout the Battle for Darkshore
+Collect 50 Wood
+talk Jarod Shadowsong##145066
+|tip He is standing next to the Ancient of War in Bashal'Aran.
+Select _Druid_
+|tip They cost 50 Wood to recruit.
+|tip Gloomtide Strand must be under Alliance control before a Druid of the Branch can be recruited.
+Recruit a Druid of the Branch |achieve 13308/2
+step
+Kill enemies throughout the Battle for Darkshore
+|tip Forsaken Plague Wagon and Forsaken Blight Throwers usually drop Iron.
+Collect Iron and Wood
+clicknpc Verdant Seedling##144903
+|tip Donate your Iron and Wood to help build the Glaiveworks in Bashal'Aran.
+Construct the Glaiveworks |scenariogoal 9/43326 |condition achieved(13308)
+step
+Kill enemies throughout the Battle for Darkshore
+|tip Forsaken Plague Wagon and Forsaken Blight Throwers usually drop Iron.
+Collect 80 Iron
+|tip The Lornesta Mine is a good place to loot Iron from Darkscale enemies and Ore Crates.
+|tip It is the southeastern point of interest on the map.
+talk Erion Shadewhisper##145068
+|tip He is standing next to the Glaiveworks in Bashal'Aran.
+Select _Glaive Thrower_
+|tip It costs 80 Iron to build.
+|tip There can only be 3 siege vehicles active on the map at a time.
+Recruit a Glaive Thrower |achieve 13308/5
+step
+Recruit One of Every Troop Type in the Battle for Darkshore |achieve 13308
+step
+_Congratulations!_
+You Earned the "Recruitment Officer" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\War Effort\\Battle for Azeroth\\Strike Fast",{
+achieveid={12889},
+author="support@zygorguides.com",
+startlevel=120,
+endlevel=120,
+condition_end=function() return achieved(12889) end,
+keywords={"Battle,For,Azeroth,War,Effort,Strike,Fast"},
+description="To earn this achievement, you will be required to capture every location in the Battle for Stromgarde.",
+},[[
+step
+clicknpc War Table##140552
+|tip Queue for the Battle for Stromgarde.
+|tip The Battle for Stromgarde won't always be available.
+Enter the Battle for Stromgarde |scenariostart |goto Boralus/0 66.05,25.97 |condition achieved(12889)
+step
+Capture every location in the Battle for Stromgarde:
+|tip After clearing each location of enemies there will be a flag you must click to capture the location.
+|tip Only one person will get credit for capturing the location so try and click the flag as fast as possible.
+Circle of Elements |achieve 12889/1
+Hatchet Ridge |achieve 12889/2
+High Perch |achieve 12889/3
+Northfold Crossing |achieve 12889/4
+Newstead |achieve 12889/5
+Valorcall Pass |achieve 12889/6
+Drywhisker Mine |achieve 12889/7
+step
+Capture Every Location in the Battle for Stromgarde |achieve 12889
+step
+_Congratulations!_
+You Earned the "Strike Fast" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\War Effort\\Battle for Azeroth\\Strike Hard",{
+achieveid={12877},
+author="support@zygorguides.com",
+startlevel=120,
+endlevel=120,
+condition_end=function() return achieved(12877) end,
+keywords={"Battle,For,Azeroth,War,Effort,Under,Strike,Hard"},
+description="To earn this achievement, you will be required to capture a location in the Battle for Stromgarde.",
+},[[
+step
+clicknpc War Table##140552
+|tip Queue for the Battle for Stromgarde.
+|tip The Battle for Stromgarde won't always be available.
+Enter the Battle for Stromgarde |scenariostart |goto Boralus/0 66.05,25.97 |condition achieved(12877)
+step
+Capture any location in the Battle for Stromgarde:
+|tip After clearing each location of enemies there will be a flag you must click to capture the location.
+|tip Only one person will get credit for capturing the location so try and click the flag as fast as possible.
+Capture a Location in the Battle for Stromgarde |achieve 12877
+step
+_Congratulations!_
+You Earned the "Strike Hard" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\War Effort\\Battle for Azeroth\\The Dirty Five",{
+achieveid={12872},
+author="support@zygorguides.com",
+startlevel=120,
+endlevel=120,
+condition_end=function() return achieved(12872) end,
+keywords={"Battle,For,Azeroth,The,Dirty,Five"},
+description="To earn this achievement, you will be required to raise 5 War Campaign Champions to Epic Level.",
+},[[
+step
+Earn the "Ready for War" Achievement |achieve 12510
+|tip Use the "Ready for War" achievement guide to accomplish this.
+step
+clicknpc Mission Command Table##138704
+Completing missions will grant XP to the assigned Champions
+|tip Complete missions until 5 War Champions have reached Epic level.
+Raise 5 War Campaign Champions to Epic Level |achieve 12872 |goto Boralus/0 70.56,27.17
+step
+_Congratulations!_
+You Earned the "The Dirty Five" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\War Effort\\Battle for Azeroth\\Under Cover of Darkness",{
+achieveid={13302},
+author="support@zygorguides.com",
+startlevel=120,
+endlevel=120,
+condition_end=function() return achieved(13302) end,
+keywords={"Battle,For,Azeroth,War,Effort,Under,Cover,of,Darkness"},
+description="To earn this achievement, you will be required to capture a location in the Battle for Darkshore.",
+},[[
+step
+clicknpc War Table##140552
+|tip Queue for the Battle for Darkshore.
+|tip The Battle for Darkshore won't always be available.
+Enter the Battle for Darkshore |scenariostart |goto Boralus/0 66.05,25.97 |condition achieved(13302)
+step
+Capture any location in the Battle for Darkshore:
+|tip After clearing each location of enemies there will be a flag you must click to capture the location.
+|tip Only one person will get credit for capturing the location so try and click the flag as fast as possible.
+Capture a Location in the Battle for Darkshore |achieve 13302
+step
+_Congratulations!_
+You Earned the "Under Cover of Darkness" Achievement.
+]])

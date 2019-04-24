@@ -111,6 +111,23 @@ function Tabs:Initialize()
 	Tabs:ReanchorTabs()
 end
 
+function Tabs:LoadGuideToTab(guide,step,special,shared)
+	if Tabs:TryToActivateGuide(guide) then 
+		Tabs:AssignGuide(guidetitle,step,shared)
+		return
+	else
+		local tab
+		if special then
+			tab = Tabs:GetSpecialTabFromPool(special)
+		else
+			tab = Tabs:GetTabFromPool()
+		end
+		tab:SetAsCurrent()
+		tab:AssignGuide(guide,step,shared)
+		tab:ActivateGuide()
+	end
+end
+
 -- get one of unused tabs, or create new one
 function Tabs:GetTabFromPool()
 	for i,tab in pairs(Tabs.Pool) do
@@ -176,6 +193,7 @@ end
 
 -- resize tabs, maybe hide tabs that are outside of visible area and show dropdown
 function Tabs:ReanchorTabs()
+	if not Tabs.lastUpdated then return end
 	if not (ZGV.Frame and ZGV.Frame:IsVisible()) then return end
 	local prev = nil
 	local count = 0
@@ -295,6 +313,15 @@ function Tabs:DoesTabExist(title)
 	return false
 end
 
+function Tabs:DoesSpecialTabExist(mode)
+	for i,tab in pairs(Tabs.Pool) do
+		if tab.guide and tab.guide.headerdata and tab.guide.headerdata[mode]  then 
+			return true
+		end
+	end
+
+	return false
+end
 
 -- tab over/out are not as simple as they could be, since for nested buttons mouse out event sometimes does not trigger, so we need to keep track of over/out states by ourselves.
 function Tabs:HideInteraction()
@@ -506,7 +533,12 @@ function Tabs:AssignGuide(guidetitle,step,shared)
 	if shared then
 		guide = ZGV.Sync.SharedGuide
 	else
-		guide = ZGV:GetGuideByTitle(guidetitle)
+		if type(guidetitle)=="string" then 
+			guide = ZGV:GetGuideByTitle(guidetitle)
+		else
+			guide = guidetitle
+			guidetitle = guide.title
+		end
 	end
 
 	if not guide then

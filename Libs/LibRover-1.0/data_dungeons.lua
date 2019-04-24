@@ -9,31 +9,47 @@ data.basenodes.DungeonEntrances = {
 
 		--Kalimdor
 			-- RAGEFIRE CHASM
-			"Orgrimmar/2 70.10,48.95 <region:cleftofshadow> -x- Ragefire Chasm 62.41,7.88 {autotype:portal_dungeon}",
+			"Orgrimmar/2 70.33,48.92 -x- Ragefire Chasm/1 0.00,0.00 {autotype:portal_dungeon}",
 
 			-- WAILING CAVERNS
-			"Northern Barrens/20 33.8,22.7",
-			"@+ -x- Northern Barrens/20 55.3,65.4 <dark:1> <nofly:1>",
-			"@+ -x- Wailing Caverns 45.8,59.7 {autotype:portal_dungeon}",
+			"Northern Barrens/20 28.59,69.26 <radius:15> <nofly:1>",
+			"@+ -x- Northern Barrens/20 25.41,50.67 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Northern Barrens/20 24.08,26.47 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Northern Barrens/20 32.28,22.43 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Northern Barrens/20 41.54,29.02 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Northern Barrens/20 49.10,31.95 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Northern Barrens/20 50.62,48.50 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Northern Barrens/20 55.03,66.11 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Wailing Caverns/1 0.00,0.00 {autotype:portal_dungeon}",
 
 			-- BLACKFATHOM DEEPS
-			"Ashenvale 14.2,13.9",
-			"@+ -x- Ashenvale 13.76,9.24 <dark:1>  <radius:5> <nofly:1>",
-			"@+ -x- Ashenvale 16.52,11.03 <dark:1> <nofly:1>",
-			"@+ -x- Blackfathom Deeps 44.29,10.66 {autotype:portal_dungeon}",
+			"Ashenvale/0 13.94,13.76 <radius:10> <nofly:1> <title:Enter the underwater cave>",
+			"@+ -x- Ashenvale/0 13.16,13.09 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Ashenvale/0 13.63,11.90 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Ashenvale/0 13.93,11.14 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Ashenvale/0 13.68,9.39 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Ashenvale/0 14.32,9.08 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Ashenvale/0 14.81,10.39 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Ashenvale/0 15.69,11.35 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Ashenvale/0 16.53,11.67 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Ashenvale/0 16.49,10.99 <radius:15> <dark:1> <nofly:1>",
+			"@+ -x- Blackfathom Deeps/1 0.00,0.00 {autotype:portal_dungeon}",
 
 			-- ZUL'FARRAK
-			"Tanaris 39.22,21.27 -x- Zul'Farrak 56.60,90.95 {autotype:portal_dungeon}",
+			"Tanaris/0 39.21,21.21 -x- Zul'Farrak/0 0.00,0.00 {autotype:portal_dungeon}",
 
 			-- RAZORFEN DOWNS
-			"Thousand Needles 47.65,23.65 -x- Razorfen Downs 23.79,18.80 {autotype:portal_dungeon}",
+			"Thousand Needles 47.65,23.65 -x- Razorfen Downs/1 0.00,0.00 {autotype:portal_dungeon}",
+
 			-- RAZORFEN KRAUL
 			"Southern Barrens 40.72,94.39 -x- Razorfen Kraul 69.89,82.97 {autotype:portal_dungeon}",
 
 			-- MARAUDON: EARTHSONG FALLS
 			"Desolace/22 44.3,76.7 -to- Maraudon 28.1,35.5 {template:cityportal}",
+
 			-- MARAUDON: THE WICKED GROTTO
 			"Desolace/22 52.4,23.8 -x- Maraudon 78.48,68.45 {autotype:portal_dungeon}",
+
 			-- MARAUDON: FOULSPORE CAVERN
 			"Desolace/21 78.4,55.3 -x- Maraudon 62.16,28.18 {autotype:portal_dungeon}",
 
@@ -83,8 +99,8 @@ data.basenodes.DungeonEntrances = {
 			"@+ -x- Swamp of Sorrows/0 72.89,43.97 <dark:1> <onlyhardwire:1> <title:Follow the stairs down>",
 			"@+ -x- Swamp of Sorrows/0 73.94,44.38 <dark:1> <onlyhardwire:1> <title:Follow the path>",
 			"@+ -x- Swamp of Sorrows/0 75.00,45.44 <dark:1> <onlyhardwire:1> <title:Continue following the path>",
-			"@+ -x- Swamp of Sorrows/0 75.97,45.21 <dark:1> <onlyhardwire:1> <title:Go through the portal>",
-			"@+ -x- The Temple of Atal'Hakkar/1 50.0,15.8 <title:You're inside>",
+			"@+ -x- Swamp of Sorrows/0 76.09,45.25 <dark:1> <onlyhardwire:1> <title:Go through the portal>",
+			"@+ -x- The Temple of Atal'Hakkar/1 0.00,0.00 {autotype:portal_dungeon}",
 
 			--Scarlet Halls
 			"Tirisfal Glades/13 78.5,58.2 -x- Scarlet Halls/1 34.3,90.1 {autotype:portal_dungeon}",
@@ -167,9 +183,9 @@ data.basenodes.DungeonEntrances = {
 
 		--Northrend
 			-- UTGARDE KEEP
-			"Howling Fjord 57.28,46.73 -x- Utgarde Keep 69.27,73.00 {autotype:portal_dungeon}",
+			"Howling Fjord/0 57.28,46.70 -x- Utgarde Keep/1 69.15,73.98 {autotype:portal_dungeon}",
 			-- UTGARDE PINNACLE
-			"Howling Fjord 57.26,46.66 -x- Utgarde Pinnacle 44.49,16.12 {autotype:portal_dungeon}",
+			"Howling Fjord/0 57.27,46.69 -x- Utgarde Pinnacle/2 44.33,14.19 {autotype:portal_dungeon}",
 
 			-- THE NEXUS
 			"Borean Tundra 27.50,25.98 -x- The Nexus 36.20,88.0 {autotype:portal_dungeon}",
@@ -187,7 +203,7 @@ data.basenodes.DungeonEntrances = {
 			-- VIOLET HOLD
 			"Dalaran 68.60,70.39 -x- The Violet Hold 46.15,98.03 {autotype:portal_dungeon}",
 			-- GUNDRAK
-			"Zul'Drak 76.12,20.95 -x- Gundrak 58.99,30.92 {autotype:portal_dungeon}",
+			"Zul'Drak/0 76.12,20.92 -x- Gundrak/1 58.99,30.92 {autotype:portal_dungeon}",
 
 			-- HALLS OF STONE
 			"The Storm Peaks 39.50,26.92 -x- Halls of Stone 34.4,36.2 {autotype:portal_dungeon}",
@@ -287,12 +303,13 @@ data.basenodes.DungeonEntrances = {
 			"Tiragarde Sound/0 84.45,78.88 -x- Freehold/0 0.00,0.00 {autotype:portal_dungeon}",
 			"Drustvar/0 33.68,12.33 -x- Waycrest Manor/0 0.00,0.00 {autotype:portal_dungeon}",
 			"Stormsong Valley/0 78.97,26.48 -x- Shrine of the Storm/0 45.50,7.97 {autotype:portal_dungeon}",
-			"Zuldazar/0 39.24,71.41 -x- The MOTHERLODE!!/0 0.00,0.00 {autotype:portal_dungeon}",
+			"Zuldazar/0 39.24,71.41 -x- The MOTHERLODE!!/0 0.00,0.00 {fac:A} {autotype:portal_dungeon}",
+			"Dazar'alor/0 44.25,92.62 -x- The MOTHERLODE!!/0 0.00,0.00 {fac:H} {autotype:portal_dungeon}",
 			"Zuldazar/0 43.35,39.48 -x- Atal'Dazar/0 0.00,0.00 {autotype:portal_dungeon}",
-			"Zuldazar/0 37.49,39.47 -x- King's Rest/0 0.00,0.00 {autotype:portal_dungeon}",
+			"Zuldazar/0 37.49,39.47 -x- King's Rest/0 87.94,47.17 {autotype:portal_dungeon}",
 			"Nazmir/0 51.38,64.83 -x- The Underrot/0 0.00,0.00 {autotype:portal_dungeon}",
 			"Vol'dun/0 51.94,24.78 -x- Temple of Sethraliss/0 0.00,0.00 {autotype:portal_dungeon}",
-			--"Tol Dagor/0 0.00,0.00 -x- Tol Dagor/0 0.00,0.00 {autotype:portal_dungeon}",
+			"Tol Dagor Isle/0 39.43,68.52 -x- Tol Dagor/0 0.00,0.00 {autotype:portal_dungeon}",
 
 	-- RAID ENTRANCE/EXITS
 		--Eastern Kingdom
@@ -450,7 +467,8 @@ data.basenodes.DungeonEntrances = {
 			"Invasion Point Sotanathor/0 26.29,46.22 -x- Mac'Aree/0 45.24,50.79 <subtype:portalclick> {mode:PORTAL}",
 
 		--BFA
-			--"Nazmir/0 53.80,62.63 -x-  {autotype:portal_dungeon}", --Uldir not yet available
+			"Nazmir/0 53.80,62.62 -x- Uldir/0 52.21,93.83 {autotype:portal_dungeon}",
+			"Dazar'alor/0 38.90,2.79 -x- Battle of Dazar'alor/0 49.29,91.20 {autotype:portal_dungeon}",
 }
 
 data.basenodes.DungeonFloors = {
@@ -847,7 +865,18 @@ data.basenodes.DungeonFloors = {
 		["Highmountain Invasion"] = {
 			"Highmountain Invasion/1 33.73,36.75 <radius:10> -x- Highmountain Invasion/2 38.80,28.00 <radius:15>"..
 			"{title_atob:Follow the path down} {title_btoa:Follow the path up}",
-		},		
+		},
+
+		----------------------------
+		--- BATTLE OF DAZAR'ALOR ---
+		----------------------------
+		["Battle of Dazar'alor"] = {
+			"Battle of Dazar'alor/0 49.09,11.84 <radius:15> -x- Battle of Dazar'alor/1 42.14,86.65 <radius:15>",
+			"Battle of Dazar'alor/1 33.37,8.70 <radius:15> -x- Battle of Dazar'alor/2 47.44,15.53 <radius:15>",
+			"Battle of Dazar'alor/2 64.19,80.61 <radius:15> -x- Battle of Dazar'alor/3 64.82,70.72 <radius:15>",
+			"Battle of Dazar'alor/3 36.14,58.85 <radius:15> -x- Battle of Dazar'alor/4 47.44,42.53 <radius:15>",
+			"Battle of Dazar'alor/4 47.38,16.42 <radius:15> -x- Battle of Dazar'alor/5 48.93,75.17 <radius:15>",
+		},
 }
 
 --[[

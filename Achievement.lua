@@ -21,7 +21,7 @@ function Achievement.Icon_OnClick(self,but)
 	local achievebut=self:GetParent()
 	local achieveID = achievebut.id
 	if achieveID and Achievement.AvailGuides[achieveID] then
-		ZGV:SetGuide(Achievement.AvailGuides[achieveID])
+		ZGV.Tabs:LoadGuideToTab(Achievement.AvailGuides[achieveID],1,"achieveid")
 		return
 	end
 	ZGV:Error("How odd. Achievement Zygor Button clicked, but we don't seem to have a guide for %s",achievebut.label:GetText())

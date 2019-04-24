@@ -3,129 +3,75 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ProfessionsALEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Alchemy\\Leveling Guides\\Alchemy 700-800 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Legion\\Legion Alchemy 1-100",{
 author="support@zygorguides.com",
-description="This guide will walk you through leveling your Alchemy profession from 700-800.",
+description="This guide will walk you through leveling your Legion Alchemy skill from 1-100.",
 startlevel=100.0,
 condition_end=function() return skill('Legion Alchemy') >= 100 end,
 condition_suggested=function() return skill('Legion Alchemy') > 0 and skill('Legion Alchemy') < 100 and level >= 100 end,
 },[[
 step
 _Before Starting This Guide:_
-Complete the "Alchemy Quest Line" Guide
-Click Here to Continue |confirm
+Complete the "Legion Alchemy Quest Line" Guide
+Click here to load the "Legion Alchemy Quest Line" guide |confirm |next "Profession Guides\\Alchemy\\Quest Guides\\Legion Alchemy Quest Line"
+only if not completedq(42081)
+step
+collect 184 Yseralline Seed##128304
+|tip Farm them with Herbalism or purchase them from the Auction House.
+step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
+talk Patricia Egan##92457
+|tip Inside the building.
+buy 130 Crystal Vial##3371 |goto 42.17,32.32
 step
 talk Patricia Egan##92457
 |tip Inside the building.
-buy Recipe: Ancient Healing Potion##127935 |n
-Use the Recipe: Ancient Healing Potion |use Recipe: Ancient Healing Potion##127935
-Learn the Rank 2 Recipe for Ancient Healing Potion |learn Ancient Healing Potion##188300
+buy 1 Recipe: Ancient Healing Potion##127917 |n
+use the buy Recipe: Ancient Healing Potion##127917
+Train Ancient Healing Potion (Rank 2) |learn Ancient Healing Potion##188299 |goto 42.17,32.32
 step
-talk Patricia Egan##92457
+click Dalaran Alchemy Station
 |tip Inside the building.
-buy 600 Crystal Vial##3371 |n
-|tip They're cheap, so just stock up on a lot now, so you don't have to buy more constantly.
-collect 600 Crystal Vial##3371 |goto Dalaran L/10 42.18,32.31
+_<Create 5 Ancient Mana Potion>_
+|tip Keep these, you will need them later.
+Reach Level 9 Legion Alchemy |skill Legion Alchemy,9 |goto 41.41,33.41
 step
-collect 80 Yseralline Seed##128304
-|tip You get these by gathering any herb in Legion, if you have Herbalism.
-|tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to accomplish this.
-|tip You can also purchase them from the Auction House.
+click Dalaran Alchemy Station
+|tip Inside the building.
+_<Create 6 Ancient Healing Potion>_
+|tip Keep these, you will need them later.
+Reach Level 15 Legion Alchemy |skill Legion Alchemy,15 |goto 41.41,33.41
 step
-Open Your Alchemy Crafting Panel:
-_<Create 20 Ancient Healing Potion>_
-Reach Level 720 Alchemy |skill Alchemy,720
+click Dalaran Alchemy Station
+|tip Inside the building.
+_<Create 5 Ancient Rejuvenation Potion>_
+Reach Level 20 Legion Alchemy |skill Legion Alchemy,20 |goto 41.41,33.41
 step
-Open Your Alchemy Crafting Panel:
-_<Create Ancient Healing Potion>_
-|tip You will need 4 Yseralline Seeds per potion.
-|tip The number you will need to create is random, since you will discover the recipe randomly while crafting.
-|tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to gather
-|tip Yseralline Seeds, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
-|tip A good method would be to make 100 potions at a time until you discover the Rank 3 recipe.
-collect Recipe: Ancient Healing Potion##127935 |n
-|tip This item will randomly be placed in your bags at some point while crafting Rank 2 Ancient Healing Potions.
-Use Recipe: Ancient Healing Potion |use Recipe: Ancient Healing Potion##127935
-Learn the Rank 3 Recipe for Ancient Healing Potion |learn Ancient Healing Potion##188300
+click Dalaran Alchemy Station
+|tip Inside the building.
+_<Create 35 Ancient Healing Potion>_
+Reach Level 50 Legion Alchemy |skill Legion Alchemy,50 |goto 41.41,33.41
 step
-collect 80 Yseralline Seed##128304
-|tip You get these by gathering any herb in Legion, if you have Herbalism.
-|tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to accomplish this.
-|tip You can also purchase them from the Auction House.
+collect 420 Starlight Rose##124105
+|tip Farm them with Herbalism or purchase them from the Auction House.
+step
+collect 600 Aethril##124101
+|tip Farm them with Herbalism or purchase them from the Auction House.
+step
+collect 600 Dreamleaf##124102
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
 Open Your Alchemy Crafting Panel:
-_<Create 20 Ancient Healing Potion>_
-Reach Level 740 Alchemy |skill Alchemy,740
-step
-collect 70 Aethril##124101
-|tip Use the Aethril farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
-step
-collect 70 Dreamleaf##124102
-|tip Use the Dreamleaf farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
-step
-collect 49 Starlight Rose##124105
-|tip Use the Starlight Rose farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
-step
-Open Your Alchemy Crafting Panel:
-_<Create 7 Flask of Ten Thousand Scars>_
-Reach Level 761 Alchemy |skill Alchemy,761
-step
-Open Your Alchemy Crafting Panel:
-_<Create Ancient Healing Potion>_
-|tip You will need 7 Starlight Rose, 10 Aethril, and 10 Dreamleaf per potion.
-|tip The number you will need to create is random, since you will discover the recipe randomly while crafting.
-|tip Use the farming guides for Aethril, Dreamleaf, and Starlight Rose to gather them, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
-|tip A good method would be to make 100 potions at a time until you discover the Rank 3 recipe.
-collect Recipe: Flask of Ten Thousand Scars##127951 |n
-|tip This item will randomly be placed in your bags at some point while crafting Rank 2 Flasks of Ten Thousand Scars.
-Use Recipe: Flask of Ten Thousand Scars |use Recipe: Flask of Ten Thousand Scars##127951
-Learn the Rank 3 Recipe for Flask of Ten Thousand Scars |learn Flask of Ten Thousand Scars##188348
-step
-collect 70 Aethril##124101
-|tip Use the Aethril farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
-step
-collect 70 Dreamleaf##124102
-|tip Use the Dreamleaf farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
-step
-collect 49 Starlight Rose##124105
-|tip Use the Starlight Rose farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
-step
-Open Your Alchemy Crafting Panel:
-_<Create 7 Flask of Ten Thousand Scars>_
-Reach Level 782 Alchemy |skill Alchemy,782
-step
-collect 400 Aethril##124101
-|tip Use the Aethril farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
-step
-collect 400 Dreamleaf##124102
-|tip Use the Dreamleaf farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
-step
-collect 280 Starlight Rose##124105
-|tip Use the Starlight Rose farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
-step
-Open Your Alchemy Crafting Panel:
-|tip You may have to make a few more or less, depending on your luck.
-|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
-_<Create 40 Flask of Ten Thousand Scars>_
-|tip If you need more, use the farming guides for Aethril, Dreamleaf, and Starlight Rose to gather them, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
-Reach Level 800 Alchemy |skill Alchemy,800
+_<Create 60 Flask of Ten Thousand Scars>_
+|tip You can randomly learn the rank 3 recipe while making these, which will reduce the amount of materials you'll use.
+Reach Level 100 Legion Alchemy |skill Legion Alchemy,100
 step
 _Congratulations!_
-You reached level 800 with the Alchemy profession.
+You Reached 100 Legion Alchemy Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Alchemy\\Quest Guides\\Legion Alchemy Quest Line",{
+ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Quest Guides\\Legion\\Legion Alchemy Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Alchemy quest line.",
 startlevel=100.0,
@@ -133,9 +79,15 @@ condition_end=function() return completedq(42081) end,
 condition_suggested=function() return skill('Legion Alchemy') > 0 and level >= 100 and not completedq(42081) end,
 },[[
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
-Learn the Alchemy Profession |condition skill("Alchemy")>=1 |goto Dalaran L/10 41.32,33.41
+Train Alchemy |condition skill("Alchemy")>=1 |goto 41.32,33.41
+step
+talk Deucus Valdera##92458
+|tip Inside the building.
+Train Legion Alchemy |skillmax Legion Alchemy,100 |goto 41.32,33.41
+|tip You must be at least level 98.
 step
 talk Deucus Valdera##92458
 |tip Inside the building.
@@ -143,43 +95,45 @@ accept Get Your Mix On##39325 |goto 41.32,33.41
 step
 talk Patricia Egan##92457
 |tip Inside the building.
-buy Recipe: Ancient Healing Potion##127898 |n
-Use the Recipe: Ancient Healing Potion |use Recipe: Ancient Healing Potion##127898
-Learn the Rank 1 Recipe for Ancient Healing Potion |learn Ancient Healing Potion##188297 |goto 42.18,32.31
+buy 1 Recipe: Ancient Healing Potion##127898 |n
+use the Recipe: Ancient Healing Potion##127898
+Train Ancient Healing Potion (Rank 1) |learn Ancient Healing Potion##188297 |goto 42.18,32.31
 step
 talk Patricia Egan##92457
 |tip Inside the building.
-buy Recipe: Ancient Mana Potion##127899 |n
-Use the Recipe: Ancient Mana Potion |use Recipe: Ancient Mana Potion##127899
-Learn the Rank 1 Recipe for Ancient Mana Potion |learn Ancient Healing Potion##188301 |goto 42.18,32.31
+buy 1 Recipe: Ancient Mana Potion##127899 |n
+use the Recipe: Ancient Mana Potion##127899
+Train Ancient Mana Potion (Rank 1) |learn Ancient Healing Potion##188301 |goto 42.18,32.31
 step
 talk Patricia Egan##92457
 |tip Inside the building.
-buy Recipe: Ancient Rejuvination Potion##127900 |n
-Use the Recipe: Ancient Rejuvination Potion |use Recipe: Ancient Rejuvination Potion##127900
-Learn the Rank 1 Recipe for Ancient Rejuvenation Potion |learn Ancient Rejuvination Potion##188304 |goto 42.18,32.31
+buy 1 Recipe: Ancient Rejuvination Potion##127900 |n
+use the Recipe: Ancient Rejuvination Potion##127900
+Train Ancient Rejuvenation Potion (Rank 1) |learn Ancient Rejuvination Potion##188304 |goto 42.18,32.31
 step
 talk Patricia Egan##92457
 |tip Inside the building.
-buy 10 Crystal Vial##3371 |n
-collect 10 Crystal Vial##3371 |goto 42.18,32.31 |q 39325
+buy 10 Crystal Vial##3371 |goto 42.18,32.31 |q 39325
 step
 collect 9 Yseralline Seed##128304 |q 39325
-|tip You get these by gathering any herb in Legion, if you have Herbalism.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 |tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to accomplish this.
-|tip You can also purchase them from the Auction House.
 step
+Enter the building |goto 41.26,31.56 < 5 |walk
 click Dalaran Alchemy Station
+|tip Inside the building.
 _<Create 1 Ancient Healing Potion>_
 |tip Save the potion you create.
 Craft an Ancient Healing Potion |q 39325/1 |goto 41.41,33.41
 step
 click Dalaran Alchemy Station
+|tip Inside the building.
 _<Create 1 Ancient Mana Potion>_
 |tip Save the potion you create.
 Craft an Ancient Mana Potion |q 39325/2 |goto 41.41,33.41
 step
 click Dalaran Alchemy Station
+|tip Inside the building.
 _<Create 1 Ancient Rejuvination Potion>_
 Craft an Ancient Rejuvination Potion |q 39325/3 |goto 41.41,33.41
 step
@@ -203,17 +157,21 @@ click Basket of Dried Herbs##243564
 |tip Inside the broken ship.
 collect Basket of Dried Herbs##128357 |q 39326/3 |goto 44.90,53.46
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
-turnin Missing Shipments##39326 |goto Dalaran L/10 41.32,33.41
-turnin A Mysterious Text##39390 |goto Dalaran L/10 41.32,33.41
-accept There's a Scribe for That##39327 |goto Dalaran L/10 41.32,33.41
+turnin Missing Shipments##39326 |goto 41.32,33.41
+turnin A Mysterious Text##39390 |goto 41.32,33.41
+accept There's a Scribe for That##39327 |goto 41.32,33.41
 step
+Enter the building |goto 41.91,37.72 < 5 |walk
 talk Professor Pallin##92195
 |tip Inside the building.
+Tell him _"Deucus said you owe him a favor. I have a tome in need of translation."_
 Watch the dialogue
 Receive the Translated Tome |q 39327/1 |goto 41.29,37.03
 step
+Enter the building |goto 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
 turnin There's a Scribe for That##39327 |goto 41.32,33.41
@@ -227,11 +185,13 @@ talk Deucus Valdera##92458
 turnin Ancient Knowledge##39328 |goto 41.32,33.41
 accept A Dormant Burner##39329 |goto 41.32,33.41
 step
+Enter the building |goto 38.54,27.03 < 5 |walk
 talk Hobart Grapplehammer##93539
 |tip Inside the building.
-buy Depleted Leyflame Burner##127871 |n
+buy 1 Depleted Leyflame Burner##127871 |n
 collect Depleted Leyflame Burner##127871 |q 39329/1 |goto 38.35,24.59
 step
+Enter the building |goto 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
 turnin A Dormant Burner##39329 |goto 41.32,33.41
@@ -243,7 +203,7 @@ Leave the water here |goto Azsuna/0 51.85,40.50 < 20 |only if walking
 Follow the path |goto Azsuna/0 53.11,41.14 < 30 |only if walking
 Run up the stairs |goto Azsuna/0 53.82,40.83 < 20 |only if walking
 Carefully jump down into the water |goto Azsuna/17 62.21,76.43 < 10 |walk
-Use the Depleted Leyflame Burner |use Depleted Leyflame Burner##128329
+use the Depleted Leyflame Burner##128329
 |tip Don't move until it finishes channeling.
 Collect the Nar'thalas Energy |q 39330/1 |goto Azsuna/17 62.21,76.43
 step
@@ -255,7 +215,7 @@ Follow the path |goto Azsuna/0 54.48,40.54 < 30 |only if walking
 Follow the path up |goto Azsuna/0 54.52,33.37 < 30 |only if walking
 Follow the path |goto Azsuna/0 53.20,28.84 < 30 |only if walking
 Follow the path |goto Azsuna/0 50.31,29.64 < 30 |only if walking
-Use the Depleted Leyflame Burner |use Depleted Leyflame Burner##128329
+use the Depleted Leyflame Burner##128329
 |tip Don't move until it finishes channeling.
 Collect the Dragon Pool Energy |q 39330/2 |goto Azsuna/0 48.06,26.54
 step
@@ -265,13 +225,14 @@ Follow the road |goto 50.51,23.71 < 20 |only if walking
 Continue following the road |goto 51.11,18.34 < 20 |only if walking
 Follow the path |goto 52.35,16.77 < 30 |only if walking
 Follow the path down |goto 56.14,15.15 < 20 |only if walking
-Use the Depleted Leyflame Burner |use Depleted Leyflame Burner##128329
+use the Depleted Leyflame Burner##128329
 |tip Don't move until it finishes channeling.
 Collect the Zarkhenar Energy |q 39330/3 |goto 56.88,14.79
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
-turnin Ley Hunting##39330 |goto Dalaran L/10 41.32,33.41
+turnin Ley Hunting##39330 |goto 41.32,33.41
 step
 Reach Level 102 |ding 102
 |tip Use the Leveling guides to accomplish this.
@@ -280,19 +241,23 @@ talk Deucus Valdera##92458
 |tip Inside the building.
 accept Put a Cork in It##39331 |goto 41.32,33.41
 step
-Enter the Eye of Azshara Dungeon |goto Eye of Azshara/1 47.59,87.41 < 10000 |noway |c |q 39331
-|tip Use the Group Finder to enter the dungeon.
+Press _I_ and queue for the Eye of Azshara Dungeon, or enter it normally
+Enter the Eye of Azshara |goto Eye of Azshara/1 50.00,83.00 < 1000 |q 39331
+only if skill('Legion Alchemy') <= 75
 step
 kill Wrath of Azshara##96028 |q 39331/2
+|tip It is the last boss of the dungeon.
 |tip Use the Eye of Azshara dungeon guide to accomplish this.
 step
 click Crate of Corks##248930
+|tip It looks like a small brown crate sitting in the water on the southeast part of the dungeon, near the Wrath of Azshara.
 collect Advanced Corks##127873 |q 39331/1 |goto Eye of Azshara/1 61.57,57.47
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
-turnin Put a Cork in It##39331 |goto Dalaran L/10 41.32,33.41
-accept Furbolg Firewater##39332 |goto Dalaran L/10 41.32,33.41
+turnin Put a Cork in It##39331 |goto 41.32,33.41
+accept Furbolg Firewater##39332 |goto 41.32,33.41
 step
 Follow the path |goto Val'sharah/0 53.43,74.13 < 20 |only if walking
 Cross the bridge |goto Val'sharah/0 51.46,75.71 < 20 |only if walking
@@ -302,9 +267,10 @@ click Smolderhide Firewater##248931
 |tip They look like brown leather drinking pouches on the ground around this area.
 collect 8 Smolderhide Firewater##128335 |q 39332/1 |goto Val'sharah/0 47.45,85.19
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
-turnin Furbolg Firewater##39332 |goto Dalaran L/10 41.32,33.41
+turnin Furbolg Firewater##39332 |goto 41.32,33.41
 step
 Reach Level 104 |ding 104
 |tip Use the Leveling guides to accomplish this.
@@ -314,37 +280,37 @@ talk Deucus Valdera##92458
 accept Flasking for a Favor##39430 |goto 41.32,33.41
 step
 collect 60 Foxflower##124103 |q 39430
-|tip Use the Foxflower farming guide to accomplish this, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
 Follow the path |goto Thunder Totem/0 50.81,45.57 < 30 |only if walking
 Follow the path |goto Highmountain/0 50.83,64.38 < 30 |only if walking
-Follow the path up |goto Highmountain/0 47.99,68.22 < 30 |only if walking
-Follow the path up |goto Highmountain/0 48.10,69.01 < 20 |only if walking
-Follow the path up |goto Highmountain/0 49.09,69.27 < 20 |only if walking
-Follow the path up the mountain |goto Highmountain/0 48.27,70.64 < 20 |only if walking
-Follow the path up |goto Highmountain/0 48.51,74.89 < 20 |only if walking
-Follow the narrow path up |goto Highmountain/0 49.80,73.44 < 20 |only if walking
-Continue following the path up |goto Highmountain/0 51.41,73.37 < 20 |only if walking
-Follow the path up |goto Highmountain/0 50.76,76.11 < 20 |only if walking
-Crossing the hanging bridge |goto Highmountain/0 49.89,79.69 < 20 |only if walking
-Follow the path |goto Highmountain/0 51.89,83.50 < 20 |only if walking
-Follow the path down |goto Highmountain/0 53.52,81.90 < 30 |only if walking
-Follow the path |goto Highmountain/0 56.20,80.17 < 30 |only if walking
-Follow the path down |goto Highmountain/0 56.21,81.79 < 20 |only if walking
-Follow the path up |goto Highmountain/0 55.93,85.31 < 20 |only if walking
+Follow the path up |goto 47.99,68.22 < 30 |only if walking
+Follow the path up |goto 48.10,69.01 < 20 |only if walking
+Follow the path up |goto 49.09,69.27 < 20 |only if walking
+Follow the path up the mountain |goto 48.27,70.64 < 20 |only if walking
+Follow the path up |goto 48.51,74.89 < 20 |only if walking
+Follow the narrow path up |goto 49.80,73.44 < 20 |only if walking
+Continue following the path up |goto 51.41,73.37 < 20 |only if walking
+Follow the path up |goto 50.76,76.11 < 20 |only if walking
+Crossing the hanging bridge |goto 49.89,79.69 < 20 |only if walking
+Follow the path |goto 51.89,83.50 < 20 |only if walking
+Follow the path down |goto 53.52,81.90 < 30 |only if walking
+Follow the path |goto 56.20,80.17 < 30 |only if walking
+Follow the path down |goto 56.21,81.79 < 20 |only if walking
+Follow the path up |goto 55.93,85.31 < 20 |only if walking
 talk Poca Firemantle##98966
-fpath Ironhorn Enclave |goto Highmountain/0 56.82,83.85
+fpath Ironhorn Enclave |goto 56.82,83.85
 step
 talk Barm Stonebreaker##92242
+Ask him _"Would you be able to repair this flask for me?"_
 Seek out Barm Stonebreaker in Highmountain |q 39430/1 |goto 55.18,84.19
 step
 Follow the path |goto 42.40,53.39 < 30 |only if walking
-click Ripe Pumpkins##249000
-|tip They are the larger orange pumpkins on the ground around this area.
+click Ripe Pumpkins##249000+
+|tip They look like larger orange pumpkins on the ground around this area.
 collect 15 Ripe Pumpkin Juice##136674 |q 39430 |goto 43.16,56.27
 step
-Use Barm's Mortar and Pestle |use Barm's Mortar and Pestle##136675
+use Barm's Mortar and Pestle##136675
 |tip Use it 15 times.
 collect Rivermane Remedy##136673 |q 39430/2 |goto 43.30,58.14
 step
@@ -352,64 +318,74 @@ talk Barm Stonebreaker##92242
 turnin Flasking for a Favor##39430 |goto 55.18,84.20
 accept Thanks for Flasking##39334 |goto 55.18,84.20
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
-turnin Thanks for Flasking##39334 |goto Dalaran L/10 41.32,33.41
+turnin Thanks for Flasking##39334 |goto 41.32,33.41
 step
 Reach Level 106 |ding 106
 |tip Use the Leveling guides to accomplish this.
 step
+Enter the building |goto 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
 accept Potent Powder##39335 |goto 41.32,33.41
 step
-Enter the Neltharion's Lair Dungeon |goto Neltharion's Lair/0 96.35,40.19 < 10000 |noway |c |q 39335
-|tip Use the Group Finder to enter the dungeon.
+Press _I_ and queue for the Neltharion's Lair Dungeon, or enter it normally
+Enter Neltharion's Lair |goto Neltharion's Lair/0 96.35,40.19 < 1000 |q 39335
+only if skill('Legion Alchemy') <= 75
 step
 click Precipitating Powder##249024
+|tip It is on a stone table in the tunnel right after the second boss, Ularogg Cragshaper.
 collect Precipitating Powder##127874 |q 39335/1 |goto Neltharion's Lair/0 44.19,48.14
 step
 kill Dargrul##91007 |q 39335/2
+|tip It is the last boss of the dungeon.
 |tip Use the Neltharion's Lair dungeon guide to accomplish this.
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
-turnin Potent Powder##39335 |goto Dalaran L/10 41.32,33.41
-accept We Need More Powder!##39336 |goto Dalaran L/10 41.32,33.41
+turnin Potent Powder##39335 |goto 41.32,33.41
+accept We Need More Powder!##39336 |goto 41.32,33.41
 step
 Follow the path |goto Stormheim/0 53.60,31.66 < 30 |only if walking
-Follow the path up |goto Stormheim/0 55.72,30.18 < 30 |only if walking
-Follow the path |goto Stormheim/0 58.04,30.52 < 20 |only if walking
-Follow the path down |goto Stormheim/0 58.80,29.54 < 30 |only if walking
-Continue following the path down |goto Stormheim/0 58.80,27.01 < 20 |only if walking
-Enter the cave |goto Stormheim/0 57.43,25.47 < 20 |walk
+Follow the path up |goto 55.72,30.18 < 30 |only if walking
+Follow the path |goto 58.04,30.52 < 20 |only if walking
+Follow the path down |goto 58.80,29.54 < 30 |only if walking
+Continue following the path down |goto 58.80,27.01 < 20 |only if walking
+Enter the cave |goto 57.43,25.47 < 20 |walk
 kill Katterin the Blistered##95748
-collect Katterin's Alchemy Kit##128345 |q 39336/1 |goto Stormheim/0 58.66,25.98
+|tip Inside the cave.
+collect Katterin's Alchemy Kit##128345 |q 39336/1 |goto 58.66,25.98
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
-turnin We Need More Powder!##39336 |goto Dalaran L/10 41.32,33.41
+turnin We Need More Powder!##39336 |goto 41.32,33.41
 step
 Reach Level 108 |ding 108
 |tip Use the Leveling guides to accomplish this.
 step
+Enter the building |goto 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
 accept Forlorn Filter##39337 |goto 41.32,33.41
 step
 collect 5 Dreamleaf##124102 |q 39337
-|tip Use the Dreamleaf farming guide to accomplish this, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
 Run up the stairs |goto Val'sharah/0 55.25,55.26 < 20 |only if walking
 talk Temple Priestess##105760
-Speak with the Temple Priestess |q 39337/1 |goto Val'sharah/0 54.17,54.83
+Ask her _"I'm looking for some Shaldorei Silk. Do you have any to spare?"_
+Speak with the Temple Priestess |q 39337/1 |goto 54.17,54.83
 step
 click Torn Shaldorei Silk##249211
 turnin Forlorn Filter##39337 |goto 54.26,54.63
 accept Mending the Filter##39431 |goto 54.26,54.63
 step
 talk Temple Priestess##105760
+Ask her _"Would you happen to know of a tailor in these parts?"_
 Talk with the Priestess |q 39431/1 |goto 54.17,54.83
 step
 Follow the path up |goto 68.47,48.60 < 20 |only if walking
@@ -422,7 +398,7 @@ Run up the stairs |goto 73.73,40.94 < 20 |only if walking
 click Dreamer's Tear##249514
 collect Dreamer's Tear Leaves##136835 |q 44112 |goto 73.44,38.63
 step
-Use the Nightborne Flask |use Nightborne Flask##136836
+use the Nightborne Flask##136836
 collect Ysera's Dream Draught##136827 |q 44112/1
 step
 Run down the stairs |goto 73.76,40.58 < 20 |only if walking
@@ -431,9 +407,10 @@ talk Leyweaver Erenyi##93974
 turnin Trading for Dreams##44112 |goto 70.46,46.40
 accept Return the Filter##39338 |goto 70.46,46.40
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
-turnin Return the Filter##39338 |goto Dalaran L/10 41.32,33.41
+turnin Return the Filter##39338 |goto 41.32,33.41
 step
 Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
@@ -441,25 +418,27 @@ step
 Unlock World Quests |condition completedq(43341)
 |tip Use the "World Quests" dailies guide to accomplish this.
 step
+Enter the building |goto 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
 accept A Fragile Crucible##39339 |goto 41.32,33.41
 step
 Follow the path |goto Suramar/0 34.93,51.14 < 30 |only if walking
-Follow the path up |goto Suramar/0 34.07,54.39 < 20 |only if walking
-Follow the path down |goto Suramar/0 32.80,58.75 < 20 |only if walking
-Follow the path |goto Suramar/0 32.00,63.64 < 20 |only if walking
-Follow the path |goto Suramar/0 33.44,65.99 < 30 |only if walking
-Follow the path down |goto Suramar/0 31.56,68.59 < 30 |only if walking
-Follow the path down |goto Suramar/0 30.11,74.97 < 30 |only if walking
-Follow the path |goto Suramar/0 29.55,79.18 < 30 |only if walking
+Follow the path up |goto 34.07,54.39 < 20 |only if walking
+Follow the path down |goto 32.80,58.75 < 20 |only if walking
+Follow the path |goto 32.00,63.64 < 20 |only if walking
+Follow the path |goto 33.44,65.99 < 30 |only if walking
+Follow the path down |goto 31.56,68.59 < 30 |only if walking
+Follow the path down |goto 30.11,74.97 < 30 |only if walking
+Follow the path |goto 29.55,79.18 < 30 |only if walking
 click Fragile Demonsbreath Crucible##249344
-collect Fragile Demonsbreath Crucible##128681 |q 39339/1 |goto Suramar/0 29.73,82.98
+collect Fragile Demonsbreath Crucible##128681 |q 39339/1 |goto 29.73,82.98
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
-turnin A Fragile Crucible##39339 |goto Dalaran L/10 41.32,33.41
-accept Lining the Crucible##39340 |goto Dalaran L/10 41.32,33.41
+turnin A Fragile Crucible##39339 |goto 41.32,33.41
+accept Lining the Crucible##39340 |goto 41.32,33.41
 step
 collect Blood of Sargeras##124124 |q 39340/1
 |tip You can get these as rewards for certain world quests or killing dungeon bosses.
@@ -478,14 +457,12 @@ collect 2 Felwort##124106 |q 39340/3
 |tip You can also purchase them from the Auction House.
 step
 collect 105 Yseralline Seed##128304 |q 39341 |future
-|tip You can also get them by gathering herbs, if you have Herbalism.
-|tip Use the Herbalism Farming guides to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
 collect 5 Fjarnskaggl##124104 |q 39341 |future
-|tip Use the farming guide for Fjarnskaggl to accomplish this, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
+Enter the building |goto 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
 turnin Lining the Crucible##39340 |goto 41.32,33.41
@@ -493,55 +470,64 @@ accept Demon's Bile##39341 |goto 41.32,33.41
 step
 talk Patricia Egan##92457
 |tip Inside the building.
-buy Recipe: Skaggldrynk##127904 |n
-Use the Recipe: Skaggldrynk |use Recipe: Skaggldrynk##127904
-Learn the Rank 1 Recipe for Skaggldrynk |learn Skaggldrynk##188316 |goto 42.18,32.31
+buy 1 Recipe: Skaggldrynk##127904 |n
+use the Recipe: Skaggldrynk##127904
+Train Skaggldrynk (Rank 1) |learn Skaggldrynk##188316 |goto 42.18,32.31
 step
 talk Patricia Egan##92457
 |tip Inside the building.
-buy 1 Crystal Vial##3371 |n
-collect 1 Crystal Vial##3371 |goto 42.18,32.31 |q 39341
+buy 1 Crystal Vial##3371 |goto 42.18,32.31 |q 39341
 step
 click Dalaran Alchemy Station
+|tip Inside the building.
 _<Create 1 Ancient Mana Potion>_
 |tip Save the potion you create.
 collect Ancient Mana Potion##127835 |goto 41.41,33.41 |q 39341
 step
 click Dalaran Alchemy Station
+|tip Inside the building.
 _<Create 1 Skaggldrynk>_
 |tip Save the potion you create.
 collect Skaggldrynk##127840 |goto 41.41,33.41 |q 39341
 step
-Enter the Vault of the Wardens Dungeon |goto Vault of the Wardens/1 < 10000 |noway |c |q 39341
-|tip Use the Group Finder to enter the dungeon.
-|tip If possible, try to group with a friend who is a Tank, so they can control what the group does.
+Press _I_ and queue for the Vault of the Wardens Dungeon, or enter it normally
+Enter the Vault of the Wardens |goto Vault of the Wardens 2/1 67.00,77.00 < 1000 |q 39341
+only if skill('Legion Alchemy') <= 75
 |tip The boss you need to kill is optional, so most groups skip it.
-|tip If you can't, just ask your group to help you kill the Alchemy quest boss, Grimoira.
+|tip If you can't join with a pre-made group, just ask your group to help you kill the Alchemy quest boss, Grimoira.
 step
-Enter the Second Level of the Vault of the Wardens Dungeon |goto Vault of the Wardens/2 46.73,36.58 < 10000 |noway |c |q 39341
-|tip Follow the group through the dungeon.
-step
-Drink the Skaggldrynk Potion |use Skaggldrynk##127840
+kill Inquisitor Tormentorum##96015
+|tip Defeat Inquisitor Tormentorum before continuing.
+use the Skaggldrynk##127840
+|tip This buff only lasts a few seconds and has a 10 minute cooldown, do not use it early!
 |tip This will reveal the Rune Lock you need to click to get through the door.
-click Rune Lock##249692 |goto Vault of the Wardens/2 46.72,36.45 < 10
+click Rune Lock##249692
+|tip It is on the north door inside the central elevator room of the Vault of the Wardens.
+|tip It is the same room as Inquisitor Tormentorum.
 kill Grimoira##105824
-Defeat Grimoira |q 39341/2 |goto Vault of the Wardens/2 46.70,17.26
-accept Bendy Glass Tubes##39343 |goto Vault of the Wardens/2 46.70,17.26
+|tip Get hit by Grimoira's fel attacks.
+Submerge the Demonsbreath Crucible in Grimoira's Bile |q 39341/1
+step
+kill Grimoira##105824 |q 39341/2
+accept Bendy Glass Tubes##39343
 |tip You will automatically accept this quest after looting her.
-Submerge the Demonsbreath Crucible in Grimoira's Bile |q 39341/1 |goto Vault of the Wardens/2 46.70,17.26
 step
 kill Cordana Felsong##95888 |q 39341/3
+|tip She is the last boss of the dungeon.
 |tip Use the Vault of the Wardens dungeon guide to accomplish this.
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
-turnin Demon's Bile##39341 |goto Dalaran L/10 41.32,33.41
-turnin Bendy Glass Tubes##39343 |goto Dalaran L/10 41.32,33.41
-accept Going Underground##39344 |goto Dalaran L/10 41.32,33.41
+turnin Demon's Bile##39341 |goto 41.32,33.41
+turnin Bendy Glass Tubes##39343 |goto 41.32,33.41
+accept Going Underground##39344 |goto 41.32,33.41
 step
-Follow the path |goto Dalaran L/11 59.79,39.17 < 15 |walk
+Follow the path |goto Dalaran L/11 48.80,47.21 < 10 |walk
+Continue following the path |goto 59.99,38.86 < 5 |walk
 talk Ms. Xiulan##101492
-Talk to Ms. Xiulan |q 39344/1 |goto Dalaran L/11 71.34,19.67
+Tell her _"Mum."_
+Talk to Ms. Xiulan |q 39344/1 |goto 71.34,19.67
 step
 talk Ms. Xiulan##101492
 turnin Going Underground##39344 |goto 71.34,19.67
@@ -554,25 +540,24 @@ collect Blood of Sargeras##124124 |q 39342/2
 |tip Use the Farming guides to accomplish this.
 step
 collect 5 Yseralline Seed##128304 |q 39342
-|tip You can also get them by gathering herbs, if you have Herbalism.
-|tip Use the Herbalism Farming guides to accomplish this.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
 collect 5 Fjarnskaggl##124104 |q 39342
-|tip Use the farming guide for Fjarnskaggl to accomplish this, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Patricia Egan##92457
 |tip Inside the building.
-buy 1 Crystal Vial##3371 |n
-collect 1 Crystal Vial##3371 |goto Dalaran L/10 42.18,32.31 |q 39342
+buy 1 Crystal Vial##3371 |goto 42.18,32.31 |q 39342
 step
 click Dalaran Alchemy Station
+|tip Inside the building.
 _<Create 1 Ancient Mana Potion>_
 |tip Save the potion you create.
 collect Ancient Mana Potion##127835 |goto 41.41,33.41 |q 39342
 step
 click Dalaran Alchemy Station
+|tip Inside the building.
 _<Create 1 Skaggldrynk>_
 |tip Save the potion you create.
 collect Skaggldrynk##127840 |goto 41.41,33.41 |q 39342
@@ -581,124 +566,140 @@ talk Fialla Sweetberry##96784
 buy 5 Kaldorei Ginger Wine##128833 |q 39342/3 |goto 53.01,34.74
 buy 5 Moist Azsunian Feta##128764 |q 39342/4 |goto 53.06,34.74
 step
-Drink the Skaggldrynk Potion |use Skaggldrynk##127840
+Enter the building |goto 32.63,49.25 < 5 |walk
+use the Skaggldrynk##127840
+clicknpc Archmage Khadgar##90417
 |tip Inside the building.
-talk Archmage Khadgar##90417
+Select _"Carefully pluck a single strand of hair from Khadgar's head."_
 collect Silver Hair of Khadgar##136723 |q 39342/1 |goto 28.51,48.35
 step
-Follow the path |goto Dalaran L/11 59.79,39.17 < 15 |walk
+Follow the path |goto Dalaran L/11 48.80,47.21 < 10 |walk
+Continue following the path |goto 59.99,38.86 < 5 |walk
 talk Ms. Xiulan##101492
-turnin The Price of the Black Market##39342 |goto Dalaran L/11 71.27,19.67
-accept An Imprecise Burette##39333 |goto Dalaran L/11 71.27,19.67
+turnin The Price of the Black Market##39342 |goto 71.27,19.67
+accept An Imprecise Burette##39333 |goto 71.27,19.67
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
-turnin An Imprecise Burette##39333 |goto Dalaran L/10 41.32,33.41
-accept Calibration Experts##39645 |goto Dalaran L/10 41.32,33.41 |only Alliance
-accept Calibration Experts##39345 |goto Dalaran L/10 41.32,33.41 |only Horde
+turnin An Imprecise Burette##39333 |goto 41.32,33.41
+accept Calibration Experts##39645 |goto 41.32,33.41 |only Alliance
+accept Calibration Experts##39345 |goto 41.32,33.41 |only Horde
 step
+Follow the path |goto Feralas/0 46.24,43.51 < 5 |only if walking
+Enter the building |goto 46.51,43.22 < 5 |walk
 talk Myshalla Streambreeze##96485
-|tip Inside the tree.
+|tip Inside the building.
+Tell her _"Deucus sent me. He says you can help calibrate this bruette."_
 Watch the dialogue
-Consult Myshalla Streambreeze |q 39645/1 |goto Feralas/0 46.83,42.84
-|only Alliance
+Consult Myshalla Streambreeze |q 39645/1 |goto 46.83,42.84
+only Alliance
 step
 talk Krimple Proxmeasure##96490
+Tell him _"Deucus sent me. He says you can help calibrate this bruette."_
 Watch the dialogue
 Consult Krimple Proxmeasure |q 39645/2 |goto Ironforge/0 66.42,54.01
-|only Alliance
+only Alliance
 step
+Enter the building |goto The Cape of Stranglethorn/0 42.59,74.59 < 5 |walk
 talk Tryks Pourtrue##96474
 |tip Inside the building.
+Tell him _"Deucus sent me. He says you can help calibrate this bruette."_
 Watch the dialogue
-Consult Tryks Pourtrue |q 39645/3 |goto The Cape of Stranglethorn/0 42.68,74.91
-|only Alliance
+Consult Tryks Pourtrue |q 39645/3 |goto 42.68,74.91
+only Alliance
 step
 Follow the path |goto Undercity/0 57.00,77.00 < 20 |walk
 talk Emmara Marie##96368
+Tell her _"Deucus sent me. He says you can help calibrate this bruette."_
 Watch the dialogue
 Consult Emmara Marie |q 39345/1 |goto Undercity/0 48.50,71.4
-|only Horde
+only Horde
 step
+Enter the building |goto Thunder Bluff/0 47.61,35.43 < 5 |walk
 talk Jana Winterhoof##96470
+|tip Inside the building.
+Tell her _"Deucus sent me. He says you can help calibrate this bruette."_
 Watch the dialogue
-Consult Jana Winterhoof |q 39345/2 |goto Thunder Bluff/0 46.93,33.88
-|only Horde
+Consult Jana Winterhoof |q 39345/2 |goto 46.93,33.88
+only Horde
 step
+Enter the building |goto The Cape of Stranglethorn/0 42.59,74.59 < 5 |walk
 talk Tryks Pourtrue##96474
+Tell him _"Deucus sent me. He says you can help calibrate this bruette."_
 |tip Inside the building.
 Watch the dialogue
-Consult Tryks Pourtrue |q 39345/3 |goto The Cape of Stranglethorn/0 42.68,74.91
-|only Horde
+Consult Tryks Pourtrue |q 39345/3 |goto 42.68,74.91
+only Horde
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
-turnin Calibration Experts##39645 |goto Dalaran L/10 41.32,33.41 |only Alliance
-turnin Calibration Experts##39345 |goto Dalaran L/10 41.32,33.41 |only Horde
-accept Testing the Calibration##39346 |goto Dalaran L/10 41.32,33.41
+turnin Calibration Experts##39645 |goto 41.32,33.41 |only Alliance
+turnin Calibration Experts##39345 |goto 41.32,33.41 |only Horde
+accept Testing the Calibration##39346 |goto 41.32,33.41
 step
 talk Patricia Egan##92457
 |tip Inside the building.
-buy Recipe: Potion of Deadly Grace##127907 |n
-Use the Recipe: Potion of Deadly Grace |use Recipe: Potion of Deadly Grace##127907
-Learn the Rank 1 Recipe for Potion of Deadly Grace |learn Potion of Deadly Grace##188325 |goto 42.18,32.30
+buy 1 Recipe: Potion of Deadly Grace##127907 |n
+use the Recipe: Potion of Deadly Grace##127907
+Train Potion of Deadly Grace (Rank 1) |learn Potion of Deadly Grace##188325 |goto 42.18,32.30
 step
 talk Patricia Egan##92457
 |tip Inside the building.
-buy Recipe: Potion of the Old War##127908 |n
-Use the Recipe: Potion of the Old War |use Recipe: Potion of the Old War##127908
-Learn the Rank 1 Recipe for Potion of the Old War |learn Potion of the Old War##188328 |goto 42.18,32.30
+buy 1 Recipe: Potion of the Old War##127908 |n
+use the Recipe: Potion of the Old War##127908
+Train Potion of the Old War (Rank 1) |learn Potion of the Old War##188328 |goto 42.18,32.30
 step
 talk Patricia Egan##92457
 |tip Inside the building.
-buy Recipe: Unbending Potion##127909 |n
-Use the Recipe: Unbending Potion |use Recipe: Unbending Potion##127909
-Learn the Rank 1 Recipe for Unbending Potion |learn Unbending Potion##188331 |goto 42.18,32.30
+buy 1 Recipe: Unbending Potion##127909 |n
+use the Recipe: Unbending Potion##127909
+Train Unbending Potion (Rank 1) |learn Unbending Potion##188331 |goto 42.18,32.30
 step
 talk Patricia Egan##92457
 |tip Inside the building.
-buy Recipe: Leytorrent Potion##127910 |n
+buy 1 Recipe: Leytorrent Potion##127910 |n
 Use the Recipe: Leytorrent Potion |use Recipe: Leytorrent Potion##127910
-Learn the Rank 1 Recipe for Leytorrent Potion |learn Leytorrent Potion##188334 |goto 42.18,32.30
+Train Leytorrent Potion (Rank 1) |learn Leytorrent Potion##188334 |goto 42.18,32.30
 step
 talk Patricia Egan##92457
 |tip Inside the building.
-buy 40 Crystal Vial##3371 |n
-collect 40 Crystal Vial##3371 |goto Dalaran L/10 42.18,32.31 |q 39346
+buy 40 Crystal Vial##3371 |goto 42.18,32.31 |q 39346
 step
 collect 80 Aethril##124101 |q 39346
-|tip Use the Aethril farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
 collect 80 Dreamleaf##124102 |q 39346
-|tip Use the Dreamleaf farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
 collect 80 Foxflower##124103 |q 39346
-|tip Use the Foxflower farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
 collect 80 Fjarnskaggl##124104 |q 39346
-|tip Use the Fjarnskaggl farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
 collect 80 Starlight Rose##124105 |q 39346
-|tip Use the Starlight Rose farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
+Enter the building |goto 41.26,31.56 < 5 |walk
 click Dalaran Alchemy Station
+|tip Inside the building.
 _<Create 10 Potion of Deadly Grace>_
 collect 10 Potion of Deadly Grace##127843 |q 39346/1 |goto 41.41,33.41
 step
 click Dalaran Alchemy Station
+|tip Inside the building.
 _<Create 10 Potion of the Old War>_
 collect 10 Potion of the Old War##127844 |q 39346/2 |goto 41.41,33.41
 step
 click Dalaran Alchemy Station
+|tip Inside the building.
 _<Create 10 Unbending Potion>_
 collect 10 Unbending Potion##127845 |q 39346/3 |goto 41.41,33.41
 step
 click Dalaran Alchemy Station
+|tip Inside the building.
 _<Create 10 Leytorrent Potion>_
 collect 10 Leytorrent Potion##127846 |q 39346/4 |goto 41.41,33.41
 step
@@ -707,6 +708,7 @@ talk Deucus Valdera##92458
 turnin Testing the Calibration##39346 |goto 41.32,33.41
 accept Channeling Our Efforts##39347 |goto 41.32,33.41
 step
+Enter the building |goto 44.03,29.79 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 turnin Channeling Our Efforts##39347 |goto 44.17,28.71
@@ -714,142 +716,149 @@ accept The Prime Ingredient##39348 |goto 44.17,28.71
 accept Heavy, But Helpful##39349 |goto 44.17,28.71
 accept A Hope in Helheim##39350 |goto 44.17,28.71
 step
+Enter the building |goto 41.26,31.56 < 5 |walk
 talk Patricia Egan##92457
 |tip Inside the building.
 buy 1 Recipe: Flask of the Seventh Demon##127912 |n
-Use the Recipe: Flask of the Seventh Demon |use Recipe: Flask of the Seventh Demon##127912
-Learn the Rank 1 Recipe for Flask of the Seventh Demon |learn Flask of the Seventh Demon##188340 |goto 42.18,32.30
+use the Recipe: Flask of the Seventh Demon##127912
+Train Flask of the Seventh Demon (Rank 1) |learn Flask of the Seventh Demon##188340 |goto 42.18,32.30
 step
 talk Patricia Egan##92457
 |tip Inside the building.
 buy 1 Recipe: Flask of the Countless Armies##127913 |n
-Use the Recipe: Flask of the Countless Armies |use Recipe: Flask of the Countless Armies##127913
-Learn the Rank 1 Recipe for Flask of the Countless Armies |learn Flask of the Countless Armies##188343 |goto 42.18,32.30
+use the Recipe: Flask of the Countless Armies##127913
+Train Flask of the Countless Armies (Rank 1) |learn Flask of the Countless Armies##188343 |goto 42.18,32.30
 step
 talk Patricia Egan##92457
 |tip Inside the building.
 buy 1 Recipe: Flask of Ten Thousand Scars##127914 |n
-Use the Recipe: Flask of Ten Thousand Scars |use Recipe: Flask of Ten Thousand Scars##127914
-Learn the Rank 1 Recipe for Flask of Ten Thousand Scars |learn Flask of Ten Thousand Scars##188346 |goto 42.18,32.30
+use the Recipe: Flask of Ten Thousand Scars##127914
+Train Flask of Ten Thousand Scars (Rank 1) |learn Flask of Ten Thousand Scars##188346 |goto 42.18,32.30
 step
 talk Patricia Egan##92457
 |tip Inside the building.
-buy 3 Crystal Vial##3371 |n
-collect 3 Crystal Vial##3371 |goto 42.18,32.31 |q 39348
+buy 3 Crystal Vial##3371 |goto 42.18,32.31 |q 39348
 step
 collect 20 Aethril##124101 |q 39348
-|tip Use the Aethril farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
 collect 10 Dreamleaf##124102 |q 39348
-|tip Use the Dreamleaf farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
 collect 20 Foxflower##124103 |q 39348
-|tip Use the Foxflower farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
 collect 10 Fjarnskaggl##124104 |q 39348
-|tip Use the Fjarnskaggl farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
 collect 21 Starlight Rose##124105 |q 39348
-|tip Use the Starlight Rose farming guide to gather these, if you have Herbalism.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Herbalism or purchase them from the Auction House.
 step
+Enter the building |goto 41.26,31.56 < 5 |walk
 click Dalaran Alchemy Station
+|tip Inside the building.
 _<Create 1 Flask of the Seventh Demon>_
 collect Flask of the Seventh Demon##127848 |q 39350/2 |goto 41.41,33.41
 step
 click Dalaran Alchemy Station
+|tip Inside the building.
 _<Create 1 Flask of the Countless Armies>_
 collect Flask of the Countless Armies##127849 |q 39349/2 |goto 41.41,33.41
 step
 click Dalaran Alchemy Station
+|tip Inside the building.
 _<Create 1 Flask of Ten Thousand Scars>_
 collect Flask of Ten Thousand Scars##127850 |q 39348/2 |goto 41.41,33.41
 step
-Enter the Black Rook Hold (Heroic) Dungeon |goto Black Rook Hold/1 |c |q 39349
-|tip Use the Group Finder to enter the dungeon.
+Press _I_ and queue for the Black Rook Hold (Heroic) Dungeon, or enter it normally
+Enter the Black Rook Hold (Heroic) |goto Black Rook Hold/1 29.00,10.00 < 1000 |q 39349
 |tip You must complete the Heroic version of this dungeon.
-step
-Enter the Third Level of the Black Rook Hold Dungeon |goto Black Rook Hold/3 |c |q 39349
-|tip Follow the group through the dungeon.
+only if skill('Legion Alchemy') <= 75
 step
 click Crate of Sabelite Sulfate##249460
-collect Sabelite Sulfate##136812 |q 39349/1 |goto Black Rook Hold/3 16.42,59.56
+|tip It looks like a small brown and grey crate sitting on the ground near the bottom of the main stairs, in the Ravenshold section of the dungeon.
+|tip It is found before reaching the third boss, Smashspite the Hateful.
+collect Sabelite Sulfate##136812 |q 39349/1
 step
 kill Dantalionax##98970
+|tip He is the last boss of the dungeon.
 |tip Use the Black Rook Hold dungeon guide to accomplish this.
 Slay Dantalionax |q 39349/3
 step
-Enter the Maw of Souls (Heroic) Dungeon |goto Helmouth Cliffs/1 |c |q 39350
-|tip Use the Group Finder to enter the dungeon.
+Press _I_ and queue for the Maw of Souls (Heroic) Dungeon, or enter it normally
+Enter the Maw of Souls (Heroic) |goto Helmouth Cliffs/1 47.00,79.00 < 1000 |q 39350
 |tip You must complete the Heroic version of this dungeon.
-step
-Enter the Third Level of the Maw of Souls Dungeon |goto Helmouth Cliffs/3 |c |q 39350
-|tip Follow the group through the dungeon.
+only if skill('Legion Alchemy') <= 75
 step
 click Crate of Dragur Dust##249462
-collect Dragur Dust##136819 |q 39350/1 |goto Helmouth Cliffs/3 21.38,56.00
+|tip It looks like a small brown box found right before the last boss, Helya.
+collect Dragur Dust##136819 |q 39350/1
 step
 kill Helya##96759
+|tip She is the last boss of the dungeon.
 |tip Use the Maw of Souls dungeon guide to accomplish this.
 Slay Helya |q 39350/3
 step
-collect Recipe: Flask of the Countless Armies##127932 |n
-|tip You loot this from Helya in the Maw of Souls (Heroic) dungeon.
-Use Recipe: Flask of the Countless Armies |use Recipe: Flask of the Countless Armies##127932
-Learn the Rank 2 Recipe for Flask of the Countless Armies |learn Flask of the Countless Armies##188344
+kill Helya##96759
+collect 1 Recipe: Flask of the Countless Armies##127932 |n
+use the Recipe: Flask of the Countless Armies##127932
+Train Flask of the Countless Armies (Rank 2) |learn Flask of the Countless Armies##188344
 step
-Enter the Halls of Valor (Heroic) Dungeon |goto Halls of Valor/2 |c |q 39348
-|tip Use the Group Finder to enter the dungeon.
+Press _I_ and queue for the Halls of Valor (Heroic) Dungeon, or enter it normally
+Enter the Halls of Valor (Heroic) |goto Halls of Valor/2 47.00,11.00 < 1000 |q 39348
 |tip You must complete the Heroic version of this dungeon.
-step
-Enter the Third Level of the Halls of Valor Dungeon |goto Halls of Valor/3 |c |q 39348
-|tip Follow the group through the dungeon.
-step
-click Spoils##260526
-collect Eternity Sand##136784 |q 39348/1 |goto Halls of Valor/3 51.35,85.60
+only if skill('Legion Alchemy') <= 75
 step
 kill Odyn##95676
+|tip He is the last boss of the dungeon.
 |tip Use the Halls of Valor dungeon guide to accomplish this.
 Defeat Odyn |q 39348/3
 step
-collect Recipe: Flask of Ten Thousand Scars##127933 |n
-|tip You loot this from Odyn in the Halls of Valor (Heroic) dungeon.
-Use Recipe: Flask of Ten Thousand Scars |use Recipe: Flask of Ten Thousand Scars##127933
-Learn the Rank 2 Recipe for Flask of Ten Thousand Scars |learn Flask of Ten Thousand Scars##188347
+click Spoils of the Worthy##245847
+|tip It looks like a large chest the appears after completing the dungeon.
+collect Eternity Sand##136784 |q 39348/1
 step
+kill Odyn##95676
+collect 1 Recipe: Flask of Ten Thousand Scars##127933 |n
+use the Recipe: Flask of Ten Thousand Scars##127933
+Train Flask of Ten Thousand Scars (Rank 2) |learn Flask of Ten Thousand Scars##188347
+step
+Enter the building |goto Dalaran L/10 44.03,29.79 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
-turnin The Prime Ingredient##39348 |goto Dalaran L/10 44.17,28.71
-turnin Heavy, But Helpful##39349 |goto Dalaran L/10 44.17,28.71
-turnin A Hope in Helheim##39350 |goto Dalaran L/10 44.17,28.71
-accept Rage Fire##39351 |goto Dalaran L/10 44.17,28.71
+turnin The Prime Ingredient##39348 |goto 44.17,28.71
+turnin Heavy, But Helpful##39349 |goto 44.17,28.71
+turnin A Hope in Helheim##39350 |goto 44.17,28.71
+accept Rage Fire##39351 |goto 44.17,28.71
 step
-_Enter the Emerald Nightmare Raid:_
-|tip Use the Group Finder to enter the raid.
+Press _I_ and queue for the Darkbough section of the Emerald Nightmare Raid, or enter it normally
+Enter the Emerald Nightmare |goto The Emerald Nightmare/1 39.00,61.00 < 1000 |q 39351
+only if skill('Legion Alchemy') <= 75
+step
 kill Nythendra##103160
-|tip Enter the "Darkbough" raid.
+|tip It is the first boss of the raid.
+|tip Use the "Emerald Nightmare - Darkbough (LFR)" guide to accomplish this.
 collect Nythendra's Heart##136820 |q 39351/1
 step
+Enter the building |goto Dalaran L/10 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
 turnin Rage Fire##39351 |goto 41.32,33.41
 step
+Enter the building |goto 44.03,29.79 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
-accept In With the New##42081 |goto Dalaran L/10 44.15,28.71
+accept In With the New##42081 |goto 44.15,28.71
 step
+Enter the building |goto 41.26,31.56 < 5 |walk
 talk Deucus Valdera##92458
 |tip Inside the building.
 turnin In With the New##42081 |goto 41.32,33.41
 step
 _Congratulations!_
-You completed the Alchemy questline.
+You completed the Legion Alchemy questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Alchemy\\Quest Guides\\Argus Alchemy Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Quest Guides\\Legion\\Argus Alchemy Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Argus Alchemy quest line.",
 startlevel=110.0,
@@ -889,15 +898,15 @@ step
 collect 75 Astral Glory##151565 |q 48016/1
 |tip Use the "Astral Glory" farming guide to accomplish this, if you have Herbalism.
 |tip You can also purchase them from the Auction House.
-Click here to load the "Astral Glory" farming guide |confirm |next "Zygor's Profession Guides\\Herbalism\\Farming Guides\\Astral Glory"
+Click here to load the "Astral Glory" farming guide |confirm |next "Profession Guides\\Herbalism\\Farming Guides\\Astral Glory"
 step
 collect 5 Primal Sargerite##151568 |q 48016/2
 |tip You can get these as rewards for certain world quests, from gathering profession, or killing dungeon bosses.
 |tip Use the "World Quests" guide and dungeon guides to accomplish this.
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 step
 For the Infernal Alchemist Stone, you can either create it yourself, which requires completing the previous Alchemy Quest line to obtain the pattern, or you can buy it from the AH.
-Click here to load the "Legion Alchemy Quest Line" guide |next "Zygor's Profession Guides\\Alchemy\\Quest Guides\\Legion Alchemy Quest Line" |confirm |or
+Click here to load the "Legion Alchemy Quest Line" guide |next "Profession Guides\\Alchemy\\Quest Guides\\Legion Alchemy Quest Line" |confirm |or
 Click here to create it yourself |next "Alchemy Create" |confirm |or
 Click here if you bought it from the AH |next "Alchemy AH" |confirm |or
 step
@@ -908,7 +917,7 @@ collect 1 Infernal Brimstone##124444 |future |q 48016
 |tip The world quest will have a Mining icon.
 |tip Use the "World Quests" dailies guide to accomplish this.
 |tip You can also purchase them from the Auction House.
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 step
 collect 5 Felwort##124106 |future |q 48016
 |tip These come from Felwort world quests requiring the Herbalism profession.
@@ -916,14 +925,14 @@ collect 5 Felwort##124106 |future |q 48016
 |tip The world quest will have an Herbalism icon.
 |tip Use the "World Quests" dailies guide to accomplish this.
 |tip You can also purchase them from the Auction House.
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 step
 collect 3 Blood of Sargeras##124124 |future |q 48016
 |tip You can get these as rewards for certain world quests or killing dungeon bosses.
 |tip Use the "World Quests" guide and dungeon guides to accomplish this.
 |tip You can also get them by gathering with gathering professions at rank 2 or higher.
 |tip Use the Farming guides for to accomplish this.
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 step
 Open up your Alchemy spellbook
 _<Create 1 Infernal Alchemist Stone>_
@@ -941,7 +950,7 @@ step
 _Congratulations!_
 You completed the Argus Alchemy questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 700-800 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Archaeology\\Leveling Guides\\Legion\\Archaeology 700-800 Leveling Guide",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Archaeology profession from 700-800.",
 startlevel=100.0,
@@ -974,7 +983,7 @@ step
 _Congratulations!_
 You reached level 800 with the Achaeology profession.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Archaeology\\Quest Guides\\Legion\\Legion Archaeology Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Archaeology quest line.",
 startlevel=100.0,
@@ -1499,140 +1508,85 @@ label "Archaeology_Quests_Finished"
 _Congratulations!_
 You completed the Archaeology questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Blacksmithing\\Leveling Guides\\Blacksmithing 700-800 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Legion\\Legion Blacksmithing 1-100",{
 author="support@zygorguides.com",
-description="This guide will walk you through leveling your Blacksmithing profession from 700-800.",
+description="This guide will walk you through leveling your Legion Blacksmithing skill from 1-100.",
 startlevel=100.0,
 condition_end=function() return skill('Legion Blacksmithing') >= 100 end,
 condition_suggested=function() return skill('Legion Blacksmithing') > 0 and skill('Legion Blacksmithing') < 100 and level >= 100 end,
 },[[
 step
 _Before Starting This Guide:_
-Complete the "Blacksmithing Quest Line" Guide
-Click Here to Continue |confirm
+Complete the "Legion Blacksmithing Quest Line" Guide
+Click here to load the "Legion Blacksmithing Quest Line" guide |confirm |next "Profession Guides\\Blacksmithing\\Quest Guides\\Legion Blacksmithing Quest Line"
+only if not completedq(38533)
 step
-collect 39 Leystone Ore##123918 |c |skill Blacksmithing,739
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
+collect 8 Demonsteel Bar##124461
+|tip Farm and Smelt them with Mining or purchase them from the Auction House.
 step
-collect 78 Felslate##123919 |c |skill Blacksmithing,739
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-step
-Follow the path up |goto Highmountain/0 54.90,83.99 < 20 |only if walking
-click Firmament Stone
-_<Create 39 Demonsteel Bar>_
-|tip Save the Demonsteel Bars you create.
-Reach Level 739 Blacksmithing |skill Blacksmithing,739 |goto Highmountain/0 54.56,84.08
-step
-collect 20 Felslate##123919 |c |learn Demonsteel Waistguard##182945
-|tip Use the "Leystone Ore & Felslate (Mining Route)" farming guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-step
-collect 20 Unbroken Tooth##124439 |c |learn Demonsteel Waistguard##182945
+collect 40 Unbroken Tooth##124439
 |tip Use the "Stonehide Leather" or "Stormscale" farming guides to gather them, if you have Skinning.
 |tip You can also purchase them from the Auction House.
 step
-Follow the path up |goto Suramar/0 32.96,48.33 < 20 |only if walking
-Follow the path |goto Suramar/0 30.94,53.17 < 30 |only if walking
-talk Urael##92265
-buy Recipe: Demonsteel Waistguard##123921 |n
-Use the Recipe: Demonsteel Waistguard |use Recipe: Demonsteel Waistguard##123921
-Learn the Rank 1 Recipe for Demonsteel Waistguard |learn Demonsteel Waistguard##182945
+collect 140 Felslate##123919
+|tip Farm them with Mining or purchase them from the Auction House.
 step
-collect 20 Unbroken Tooth##124439 |c |skill Blacksmithing,743
-|tip Use the "Stonehide Leather" or "Stormscale" farming guides to gather them, if you have Skinning.
-|tip You can also purchase them from the Auction House.
+collect 60 Leystone Ore##123918
+|tip Farm them with Mining or purchase them from the Auction House.
 step
-collect 3 Blood of Sargeras##124124 |c |skill Blacksmithing,743
+collect 31 Blood of Sargeras##124124
 |tip You can get these as rewards for certain world quests or killing dungeon bosses.
 |tip Use the "World Quests" guide and dungeon guides to accomplish this.
 |tip You can also get them by gathering with gathering professions at rank 2 or higher.
 |tip Use the Farming guides to accomplish this.
 step
-Follow the path up |goto Highmountain/0 54.90,83.99 < 20 |only if walking
+talk Urael##92265
+|tip He walks around this small camp.
+buy 1 Recipe: Demonsteel Waistguard |n
+use the Recipe: Demonsteel Waistguard
+Train Demonsteel Waistguard (Rank 1) |learn Demonsteel Waistguard##182945 |goto Suramar/0 30.11,53.26
+step
 click Firmament Stone
 _<Create 1 Demonsteel Waistguard>_
-Reach Level 743 Blacksmithing |skill Blacksmithing,743 |goto Highmountain/0 54.56,84.08
+collect 1 Demonsteel Waistguard##123916 |goto Highmountain/0 54.63,84.07
+only if skill('Legion Blacksmithing') <= 75
 step
 talk Muirn Ironhorn##92243
-accept Demonsteel Waistguard##38536 |instant |goto 54.55,84.14
+accept Demonsteel Waistguard##38536 |goto 54.55,84.15
 step
-Use the Recipe: Demonsteel Waistguard |use Recipe: Demonsteel Waistguard##123941
-Learn the Rank 2 Recipe for Demonsteel Waistguard |learn Demonsteel Waistguard##182975
+Open Your Blacksmithing Crafting Panel:
+_<Create 60 Demonsteel Bar>_
+|tip Make all of these, you will need them later.
+Reach Level 60 Legion Blacksmithing |skill Legion Blacksmithing,60 |goto 54.63,84.07
 step
 talk Raethan##97359
-|tip For 5 gold, you can hire a bodyguard that will prevent you from attacking, or being attacked by, other players.
+|tip For 5 gold, you can hire a bodyguard that will prevent you from attacking or being attacked by other players.
 |tip The bodyguard lasts for 5 minutes.
 Kill enemies around this area
-|tip Named enemies will appear throughtout the Underbelly.
+|tip Named enemies will appear throughout the Underbelly.
 |tip You can see them on your minimap as gold star icons.
-|tip You can also kill other players, if you enjoy PvP.
+|tip You can also kill other players if you enjoy PvP.
 |tip If you have the "No Guards" debuff, this means the area is currently free-for-all PvP.
 |tip When the guards are present, the named PvE enemies will appear.
 collect 500 Sightless Eyes |condition curcount(1149) >= 500 |goto Dalaran L/11 68.95,58.41
 step
-Follow the path down |goto 64.41,58.55 < 15 |walk
-Run up the stairs |goto 59.34,76.48 < 15 |walk
+Run up the stairs |goto 60.64,78.01 < 5 |only if walking
 talk Strap Bucklebolt##107760
-buy Recipe: Demonsteel Waistguard##123949 |n
-Use the Recipe: Demonsteel Waistguard |use Recipe: Demonsteel Waistguard##123949
-Learn the Rank 3 Recipe for Demonsteel Waistguard |learn Demonsteel Waistguard##182983 |goto 66.42,81.48
-step
-collect 9 Leystone Ore##123918 |c |skill Blacksmithing,783
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-step
-collect 18 Felslate##123919 |c |skill Blacksmithing,783
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-step
-collect 20 Blood of Sargeras##124124 |c |skill Blacksmithing,783
-|tip You can get these as rewards for certain world quests or killing dungeon bosses.
-|tip Use the "World Quests" guide and dungeon guides to accomplish this.
-|tip You can also get them by gathering with gathering professions at rank 2 or higher.
-|tip Use the Farming guides to accomplish this.
-step
-Follow the path up |goto Highmountain/0 54.90,83.99 < 20 |only if walking
-click Firmament Stone
-_<Create 9 Demonsteel Bar>_
-|tip Save the Demonsteel Bars you create.
-collect 40 Demonsteel Bar##124461 |c |skill Blacksmithing,783 |goto Highmountain/0 54.56,84.08
+buy 1 Recipe: Demonsteel Waistguard##123949 |n
+|tip It costs 500 Sightless Eyes and 1,500 gold.
+use the Recipe: Demonsteel Waistguard##123949
+Train Demonsteel Waistguard (Rank 3) |learn Demonsteel Waistguard##182983 |goto 66.37,81.42
 step
 click Firmament Stone
-_<Create 10 Demonsteel Waistguard>_
-Reach Level 783 Blacksmithing |skill Blacksmithing,783 |goto 54.56,84.08
-step
-collect 180 Leystone Ore##123918 |c |skill Blacksmithing,800
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-step
-collect 360 Felslate##123919 |c |skill Blacksmithing,800
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-step
-collect 90 Blood of Sargeras##124124 |c |skill Blacksmithing,800
-|tip You can get these as rewards for certain world quests or killing dungeon bosses.
-|tip Use the "World Quests" guide and dungeon guides to accomplish this.
-|tip You can also get them by gathering with gathering professions at rank 2 or higher.
-|tip Use the Farming guides to accomplish this.
-step
-Follow the path up |goto Highmountain/0 54.90,83.99 < 20 |only if walking
-click Firmament Stone
-_<Create 180 Demonsteel Bar>_
-|tip Save the Demonsteel Bars you create.
-collect 180 Demonsteel Bar##124461 |c |skill Blacksmithing,800
-step
-click Firmament Stone
-|tip You may have to make a few more or less, depending on your luck.
-|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
-_<Create 45 Demonsteel Waistguard>_
-Reach Level 800 Blacksmithing |skill Blacksmithing,800 |goto 54.56,84.08
+_<Create 14 Demonsteel Waistguard>_
+Reach Level 100 Legion Blacksmithing |skill Legion Blacksmithing,100 |goto Highmountain/0 54.63,84.07
 step
 _Congratulations!_
-You reached level 800 with the Blacksmithing profession.
+You Reached 100 Legion Blacksmithing Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Blacksmithing\\Quest Guides\\Legion Blacksmithing Quest Line",{
+ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Quest Guides\\Legion\\Legion Blacksmithing Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Blacksmithing quest line.",
 startlevel=100.0,
@@ -1640,10 +1594,12 @@ condition_end=function() return completedq(38533) end,
 condition_suggested=function() return skill('Legion Blacksmithing') > 0 and level >= 100 and not completedq(38533) end,
 },[[
 step
+Enter the building |goto Dalaran L/10 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
-Learn the Blacksmithing Profession |condition skill("Blacksmithing")>=1 |goto Dalaran L/10 44.15,28.71
+Learn the Blacksmithing Profession |condition skill("Blacksmithing")>=1 |goto 44.15,28.71
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 accept Strange New Ores##38499 |goto 44.15,28.71
@@ -1652,12 +1608,14 @@ collect 10 Leystone Ore##123918 |q 38499/1
 |tip Use the "Leystone Ore & Felslate (Mining Route)" farming guide to accomplish this, if you have Mining.
 |tip You can also purchase them from the Auction House.
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 turnin Strange New Ores##38499 |goto 44.15,28.71
 accept The Properties of Leystone##39681 |goto 44.15,28.71
 step
 Watch the dialogue
+|tip Inside the building.
 Observe Alard's Work |q 39681/1 |goto 44.15,28.71
 step
 talk Alard Schmied##97261
@@ -1667,15 +1625,15 @@ accept The Methods of the Nightfallen##38502 |goto 44.15,28.71
 accept Hatecoil Hammerwork##38501 |goto 44.15,28.71
 step
 Follow the path |goto Azsuna/0 46.43,44.40 < 30 |only if walking
-Follow the road |goto Azsuna/0 49.02,42.78 < 30 |only if walking
-Cross the bridge |goto Azsuna/0 50.43,43.65 < 20 |only if walking
-Enter the building |goto Azsuna/0 51.93,43.92 < 15 |walk
+Follow the road |goto 49.02,42.78 < 30 |only if walking
+Cross the bridge |goto 50.43,43.65 < 20 |only if walking
+Enter the building |goto 51.93,43.92 < 15 |walk
 kill Ancient Sentry Construct##104640
 |tip Downstairs inside the building.
-collect Ancient Sentry Construct Memory Core##123976 |q 38502/1 |goto Azsuna/0 52.02,43.84
+collect Ancient Sentry Construct Memory Core##123976 |q 38502/1 |goto 52.02,43.84
 stickystart "Masterwork_Hatecoil_Pauldrons_Blacksmithing"
 step
-Leave the building |goto Azsuna/0 52.23,43.08 < 15 |walk
+Leave the building |goto 52.23,43.08 < 15 |walk
 Kill enemies around this area
 |tip The Hatecoil Harpooners won't drop the quest items.
 collect Masterwork Hatecoil Breastplate##123971 |q 38501/1 |goto 54.36,42.63
@@ -1685,31 +1643,37 @@ Kill enemies around this area
 |tip The Hatecoil Harpooners won't drop the quest items.
 collect Masterwork Hatecoil Pauldrons##123972 |q 38501/2 |goto 54.36,42.63
 step
+Enter the building |goto Dalaran L/10 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
-turnin The Methods of the Nightfallen##38502 |goto Dalaran L/10 44.15,28.71
-turnin Hatecoil Hammerwork##38501 |goto Dalaran L/10 44.15,28.71
+turnin The Methods of the Nightfallen##38502 |goto 44.15,28.71
+turnin Hatecoil Hammerwork##38501 |goto 44.15,28.71
 step
 Reach Level 102 |ding 102
 |tip Use the Leveling guides to accomplish this.
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 accept Engineers: Not COMPLETELY Useless##38505 |goto 44.15,28.71
 step
+Enter the building |goto 38.53,27.15 < 5 |walk
 talk Timofey Oshenko##92194
 |tip Inside the building.
 turnin Engineers: Not COMPLETELY Useless##38505 |goto 37.90,26.12
 accept Chicken Scratch##38506 |goto 37.90,26.12
 step
 Watch the dialogue
+|tip Inside the building.
 collect Ancient Highborne Data Printout##123978 |q 38506/1 |goto 37.90,26.12
 step
+Enter the building |goto 41.90,37.70 < 5 |walk
 talk Professor Pallin##92195
 |tip Inside the building.
 turnin Chicken Scratch##38506 |goto 41.29,37.05
 accept Secrets of Leysmithing##38507 |goto 41.29,37.05
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 turnin Secrets of Leysmithing##38507 |goto 44.15,28.71
@@ -1719,32 +1683,38 @@ collect 10 Foxflower##124103 |q 38515
 |tip Use the Foxflower farming guide to accomplish this, if you have Herbalism.
 |tip You can also purchase them from the Auction House.
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 turnin Nature Provides##38515 |goto 44.15,28.71
 accept Leysmithing Mastery##38500 |goto 44.15,28.71
 step
 click Alard's Forge
-_<Create 4 Leystone Bar>_
+|tip Inside the building.
+Select _<Create 4 Leystone Bar>_
 |tip Save the bars you create.
 collect 4 Leystone Bar##124007 |goto 44.01,28.16 |q 38500
 step
 click Alard's Forge
-_<Create 4 Heated Leystone Bar>_
+|tip Inside the building.
+Select _<Create 4 Heated Leystone Bar>_
 |tip Save the bars you create.
 collect 4 Heated Leystone Bar##128777 |goto 44.01,28.16 |q 38500
 step
 click Alard's Anvil
+|tip Inside the building.
 _<Create 1 Leystone Cuffplate>_
 |tip Save the Leystone Cuffplate you create.
 collect Leystone Cuffplate##124009 |goto 45.00,29.16 |q 38500
 step
 click Alard's Anvil
+|tip Inside the building.
 _<Create 1 Leystone Fingerguard>_
 |tip Save the Leystone Fingerguard you create.
 collect Leystone Fingerguard##124010 |goto 45.00,29.16 |q 38500
 step
 click Alard's Workbench
+|tip Inside the building.
 _<Create 1 Handcrafted Leystone Gauntlets>_
 collect Handcrafted Leystone Gauntlets##124049 |q 38500/1 |goto 45.72,28.67
 step
@@ -1753,15 +1723,19 @@ talk Alard Schmied##92183
 turnin Leysmithing Mastery##38500 |goto 44.15,28.71
 accept Flower-Pickers and Potion-Quaffers##38563 |goto 44.15,28.71
 step
+Enter the building |goto 43.39,35.16 < 5 |walk
 talk Kuhuine Tenderstride##92464
 |tip Inside the building.
+Tell her _"Alard at the blacksmith shop will need a regular supply of foxflower. Do you have any?"_
 Speak with Kuhuine Tenderstride |q 38563/2 |goto 43.00,33.37
 step
+Enter the building |goto 41.23,31.54 < 5 |walk
 talk Linzy Blackbolt##92456
 |tip Inside the building.
 Tell her _"Alard at the blacksmith shop will need a regular supply of foxflower flux. Can you make any?"_
 Speak with Linzy Blackbolt |q 38563/1 |goto 42.01,31.80
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 turnin Flower-Pickers and Potion-Quaffers##38563 |goto 44.15,28.71
@@ -1769,17 +1743,18 @@ step
 Reach Level 104 |ding 104
 |tip Use the Leveling guides to accomplish this.
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 accept The Highmountain Smiths##38513 |goto 44.15,28.71
 step
 talk Imindril Spearsong##92184
-buy Blacksmith Hammer##5956 |n
-collect Blacksmith Hammer##5956 |goto 46.56,26.83 |q 38519 |future
+|tip Inside the building.
+buy 1 Blacksmith Hammer##5956 |goto 46.56,26.83 |q 38519 |future
 step
 talk Imindril Spearsong##92184
-buy 3 Foxflower Flux##124436 |n
-collect 3 Foxflower Flux##124436 |goto 46.56,26.83 |q 38519 |future
+|tip Inside the building.
+buy 3 Foxflower Flux##124436 |goto 46.56,26.83 |q 38519 |future
 step
 collect 24 Leystone Ore##123918 |q 38519 |future
 |tip Use the "Leystone Ore & Felslate (Mining Route)" farming guide to gather these, if you have Mining.
@@ -1787,30 +1762,30 @@ collect 24 Leystone Ore##123918 |q 38519 |future
 step
 Follow the path |goto Thunder Totem/0 50.81,45.57 < 30 |only if walking
 Follow the path |goto Highmountain/0 50.83,64.38 < 30 |only if walking
-Follow the path up |goto Highmountain/0 47.99,68.22 < 30 |only if walking
-Follow the path up |goto Highmountain/0 48.10,69.01 < 20 |only if walking
-Follow the path up |goto Highmountain/0 49.09,69.27 < 20 |only if walking
-Follow the path up the mountain |goto Highmountain/0 48.27,70.64 < 20 |only if walking
-Follow the path up |goto Highmountain/0 48.51,74.89 < 20 |only if walking
-Follow the narrow path up |goto Highmountain/0 49.80,73.44 < 20 |only if walking
-Continue following the path up |goto Highmountain/0 51.41,73.37 < 20 |only if walking
-Follow the path up |goto Highmountain/0 50.76,76.11 < 20 |only if walking
-Crossing the hanging bridge |goto Highmountain/0 49.89,79.69 < 20 |only if walking
-Follow the path |goto Highmountain/0 51.89,83.50 < 20 |only if walking
-Follow the path down |goto Highmountain/0 53.52,81.90 < 30 |only if walking
-Follow the path |goto Highmountain/0 56.20,80.17 < 30 |only if walking
-Follow the path down |goto Highmountain/0 56.21,81.79 < 20 |only if walking
-Follow the path up |goto Highmountain/0 55.93,85.31 < 20 |only if walking
+Follow the path up |goto 47.99,68.22 < 30 |only if walking
+Follow the path up |goto 48.10,69.01 < 20 |only if walking
+Follow the path up |goto 49.09,69.27 < 20 |only if walking
+Follow the path up the mountain |goto 48.27,70.64 < 20 |only if walking
+Follow the path up |goto 48.51,74.89 < 20 |only if walking
+Follow the narrow path up |goto 49.80,73.44 < 20 |only if walking
+Continue following the path up |goto 51.41,73.37 < 20 |only if walking
+Follow the path up |goto 50.76,76.11 < 20 |only if walking
+Crossing the hanging bridge |goto 49.89,79.69 < 20 |only if walking
+Follow the path |goto 51.89,83.50 < 20 |only if walking
+Follow the path down |goto 53.52,81.90 < 30 |only if walking
+Follow the path |goto 56.20,80.17 < 30 |only if walking
+Follow the path down |goto 56.21,81.79 < 20 |only if walking
+Follow the path up |goto 55.93,85.31 < 20 |only if walking
 talk Poca Firemantle##98966
-fpath Ironhorn Enclave |goto Highmountain/0 56.82,83.85
+fpath Ironhorn Enclave |goto 56.82,83.85
 step
 talk Barm Stonebreaker##92242
-turnin The Highmountain Smiths##38513 |goto Highmountain/0 55.18,84.19
-accept You Are Not Worthy##38514 |goto Highmountain/0 55.18,84.19
+turnin The Highmountain Smiths##38513 |goto 55.18,84.19
+accept You Are Not Worthy##38514 |goto 55.18,84.19
 step
 click Greenhoof's Anvil
 _<Create 1 Leystone Gauntlets>_
-Craft Leystone Gauntlets |q 38514/1 |goto 54.90,84.42
+Craft Leystone Gauntlets |q 38514/1 |goto 54.88,84.41
 step
 talk Barm Stonebreaker##92242
 turnin You Are Not Worthy##38514 |goto 55.18,84.19
@@ -1818,12 +1793,12 @@ accept Ironhorn Leysmithing##39699 |goto 55.18,84.19
 stickystart "Medium_Metal_Scraps_Blacksmithing"
 stickystart "Large_Metal_Scraps_Blacksmithing"
 step
-click Small Metal Scraps##241633
+click Small Metal Scraps##241633+
 |tip They look like pieces of metal on the ground around this area.
 collect 5 Small Metal Scrap##124402 |goto 55.11,84.53 |q 39699
 step
 label "Medium_Metal_Scraps_Blacksmithing"
-click Medium Metal Scraps##241634
+click Medium Metal Scraps##241634+
 |tip They look like pieces of metal on the ground around this area.
 collect 2 Medium Metal Scrap##124403 |goto 55.11,84.53 |q 39699
 step
@@ -1864,7 +1839,7 @@ talk Barm Stonebreaker##92242
 turnin Ironhorn Leysmithing##39699 |goto 55.18,84.19
 step
 talk Thala Steeltotem##92245
-|tip She walks around.
+|tip She walks around this area.
 accept Grayheft##38519 |goto 54.95,84.49
 step
 Cross the bridge |goto 58.52,64.43 < 20 |only if walking
@@ -1878,64 +1853,61 @@ Enter the cave |goto 53.48,76.08 < 20 |walk
 Cross the bridge |goto 52.46,74.08 < 20 |walk
 Jump down here |goto 51.67,73.14 < 10 |walk
 kill Kubrul##93021
+|tip Inside the cave.
 Retrieve Grayheft, Ancent Hammer of the Highmountain Tauren |q 38519/1 |goto 53.14,73.12
 step
-Follow the path up |goto 51.00,73.94 < 20 |walk
-Continue up the path |goto 51.15,73.09 < 30 |walk
-Cross the bridge |goto 51.95,73.04 < 20 |walk
-Leave the cave |goto 53.48,76.08 < 20 |walk
-Follow the path down |goto 54.06,75.86 < 20 |only if walking
-Follow the path down |goto 54.81,72.34 < 20 |only if walking
-Follow the path |goto 55.59,70.50 < 30 |only if walking
-Follow the path |goto 54.58,66.42 < 30 |only if walking
-Follow the path down |goto 56.21,63.62 < 30 |only if walking
-Cross the bridge |goto 57.94,63.64 < 20 |only if walking
-talk Lassa Skymane##100559 |goto 59.23,65.05 |n
-Fly to Ironhorn Enclave, Highmountain |goto 56.87,83.96 < 50 |noway |c |q 38519
-step
 talk Thala Steeltotem##92245
-|tip She walks around.
+|tip She walks around this area.
 turnin Grayheft##38519 |goto 54.95,84.49
 step
 talk Barm Stonebreaker##92242
 accept From One Master to Another##38518 |goto 55.18,84.20
 step
+Enter the building |goto Dalaran L/10 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
-turnin From One Master to Another##38518 |goto Dalaran L/10 44.15,28.73
+turnin From One Master to Another##38518 |goto 44.15,28.73
 step
 Reach Level 106 |ding 106
 |tip Use the Leveling guides to accomplish this.
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 accept Not Just Weapons and Armor##38522 |goto 44.15,28.73
 step
 click Alard's Forge
+|tip Inside the building.
 _<Create 4 Leystone Slag>_
 collect 4 Leystone Slag##124418 |goto 44.04,28.14 |q 38522
 step
 click Alard's Quenching Trough
+|tip Inside the building.
 _<Create 4 Hard Leystone Bar>_
 collect 4 Hard Leystone Bar##124419 |q 38522/1 |goto 44.73,29.87
 step
 click Alard's Anvil
+|tip Inside the building.
 _<Create 1 Leystone Shards>_
 collect 24 Leystone Shard##124420 |goto 45.00,29.18 |q 38522
 step
 click Alard's Forge
+|tip Inside the building.
 _<Create 1 Lumps of Leystone Slag>_
 collect 24 Lump of Leystone Slag##124421 |goto 44.04,28.14 |q 38522
 step
 click Alard's Quenching Trough
+|tip Inside the building.
 _<Create 1 Hard Leystone Ingots>_
 collect 24 Hard Leystone Ingot##124422 |goto 44.73,29.87 |q 38522
 step
 click Alard's Forge
+|tip Inside the building.
 _<Create 24 Heated Hard Leystone Ingots>_
 collect 24 Heated Hard Leystone Ingot##124423 |goto 44.04,28.14 |q 38522
 step
 click Alard's Anvil
+|tip Inside the building.
 _<Create 1 Hard Leystone Nail>_
 collect 24 Hard Leystone Nail##124424 |q 38522/2 |goto 45.00,29.18
 step
@@ -1951,6 +1923,7 @@ Tell her _"Can you fit these hoofplates on my mount?"_
 Watch the dialogue
 Bring the Mount to Mei Francis |q 38523/1 |goto 57.65,42.08
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 turnin Leystone Hoofplates##38523 |goto 44.15,28.73
@@ -1958,19 +1931,20 @@ step
 Reach Level 108 |ding 108
 |tip Use the Leveling guides to accomplish this.
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 accept Legend of Black Rook Hold##39702 |goto 44.15,28.73
 step
 Follow the path |goto Val'sharah/0 40.50,59.10 < 30 |only if walking
-Follow the path up |goto Val'sharah/0 38.48,57.29 < 20 |only if walking
-Continue up the path |goto Val'sharah/0 37.71,55.82 < 30 |only if walking
-Run up the stairs |goto Val'sharah/0 39.14,53.61 < 20 |only if walking
-Run up the stairs |goto Val'sharah/0 39.77,53.04 < 20 |only if walking
-Run down the stairs |goto Val'sharah/0 41.44,52.99 < 20 |only if walking
+Follow the path up |goto 38.48,57.29 < 20 |only if walking
+Continue up the path |goto 37.71,55.82 < 30 |only if walking
+Run up the stairs |goto 39.14,53.61 < 20 |only if walking
+Run up the stairs |goto 39.77,53.04 < 20 |only if walking
+Run down the stairs |goto 41.44,52.99 < 20 |only if walking
 click Ancient Anvil##243969
 kill Saris Swifthammer##96726
-Find Saris Swifthammer |q 39702/1 |goto Val'sharah/0 42.08,52.02
+Find Saris Swifthammer |q 39702/1 |goto 42.08,52.02
 step
 Run up the stairs |goto 41.81,52.98 < 20 |only if walking
 talk Saris Swifthammer##96763
@@ -1984,6 +1958,7 @@ Follow the path down |goto 37.56,54.79 < 20 |only if walking
 Enter the cave |goto 36.13,53.01 < 20 |walk
 Follow the path down |goto 36.86,52.13 < 20 |walk
 click Saris' Hammer##244000
+|tip Inside the cave.
 collect Saris' Hammer##128745 |q 39680/1 |goto 38.14,54.55
 step
 Follow the path up |goto 37.55,52.89 < 20 |walk
@@ -2005,43 +1980,49 @@ step
 click Saris' Research##244001
 collect Saris' Research##128746 |q 39729/1 |goto 39.86,54.81
 step
+Enter the building |goto Dalaran L/10 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
-turnin The Knowledge of Black Rook##39729 |goto Dalaran L/10 44.13,28.74
-accept A Sweet Bargain##38564 |goto Dalaran L/10 44.13,28.74
+turnin The Knowledge of Black Rook##39729 |goto 44.13,28.74
+accept A Sweet Bargain##38564 |goto 44.13,28.74
 step
 talk Glaciela Rimebang##92438
 Speak with Glaciela Rimebang |q 38564/1 |goto 50.30,29.60
 step
 talk Aimee##92936
-buy 20 Nightberry Truffle##124398 |n
-collect 20 Nightberry Truffle##124398 |q 38564/2 |goto 50.85,29.09
+buy 20 Nightberry Truffle##124398 |q 38564/2 |goto 50.85,29.09
 step
 clicknpc Glaciela Rimebang##92438
 Speak with Glaciela Rimebang Again |q 38564/3 |goto 50.30,29.62
 step
+Enter the building |goto 46.48,28.35 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 turnin A Sweet Bargain##38564 |goto 44.15,28.73
 accept Advanced Quenching##44449 |goto 44.15,28.73
 step
 click Alard's Forge
+|tip Inside the building.
 _<Create 2 Leystone Slag>_
 collect 2 Leystone Slag##124393 |goto 44.04,28.14 |q 44449
 step
 click Alard's Quenching Trough
+|tip Inside the building.
 _<Create 2 Hard Leystone Bar>_
 collect 2 Hard Leystone Bar##124394 |goto 44.73,29.87 |q 44449
 step
 click Alard's Forge
+|tip Inside the building.
 _<Create 2 Heated Hard Leystone Bar>_
 collect 2 Heated Hard Leystone Bar##124395 |goto 44.04,28.14 |q 44449
 step
 click Alard's Anvil
+|tip Inside the building.
 _<Create 1 Dull Hard Leystone Armguards>_
 collect Dull Hard Leystone Armguards##124396 |goto 45.00,29.18 |q 44449
 step
 click Alard's Whetstone
+|tip Inside the building.
 _<Create 1 Hard Leystone Armguards>_
 collect Hard Leystone Armguards##124397 |q 44449/1 |goto 43.95,28.91
 step
@@ -2055,13 +2036,13 @@ step
 Unlock World Quests |condition completedq(43341)
 |tip Use the "World Quests" dailies guide to accomplish this.
 step
+Enter the building |goto 43.94,29.92 < 5 |walk
 talk Alard Schmied##92183
 |tip Inside the building.
 accept Felsmith Nal'ryssa##38524 |goto 44.15,28.73
 step
 talk Imindril Spearsong##92184
-buy 1 Foxflower Flux##124436 |n
-collect 1 Foxflower Flux##124436 |goto 46.56,26.83 |q 38527 |future
+buy 1 Foxflower Flux##124436 |goto 46.56,26.83 |q 38527 |future
 stickystart "Felslate_Blacksmithing_Nalryssas_Technique"
 step
 collect 60 Leystone Ore##123918 |q 38527 |future
@@ -2190,7 +2171,7 @@ _<Create 1 Brimstone-Crusted Armguards>_
 collect Brimstone-Crusted Leystone Armguards##124454 |goto 29.88,53.38 |q 38528
 step
 click Felsmith Anvil
-_<Create 1 Chiseled Masterwork Armguards>_
+_<Create 1 Masterwork Leystone Armguards>_
 collect Masterwork Leystone Armguards##124455 |q 38528/1 |goto 29.83,53.34
 step
 talk Felsmith Nal'ryssa##92264
@@ -2198,24 +2179,22 @@ talk Felsmith Nal'ryssa##92264
 turnin Leystone's Potential##38528 |goto 29.99,53.33
 accept The Firmament Stone##38530 |goto 29.99,53.33
 step
-collect 162 Leystone Ore##123918 |q 38532
+collect 162 Leystone Ore##123918 |q 38532 |future
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
 |tip You can also purchase them from the Auction House.
 step
 talk Barm Stonebreaker##92242
 turnin The Firmament Stone##38530 |goto Highmountain/0 55.18,84.19
-accept Leystone Mastery##38531 |goto Highmountain/0 55.18,84.19
-accept Hammered By The Storm##38532 |goto Highmountain/0 55.18,84.19
+accept Leystone Mastery##38531 |goto 55.18,84.19
+accept Hammered By The Storm##38532 |goto 55.18,84.19
 step
 talk Thala Steeltotem##92245
 |tip She walks around.
-buy Leystone Armor Stand##124024 |n
-collect Leystone Armor Stand##124024 |goto 54.96,84.48 |q 38531
+buy Leystone Armor Stand##124024 |goto 54.96,84.48 |q 38531
 step
 talk Thala Steeltotem##92245
 |tip She walks around.
-buy 8 Foxflower Flux##124436 |n
-collect 8 Foxflower Flux##124436 |goto 54.96,84.48 |q 38531
+buy 8 Foxflower Flux##124436 |goto 54.96,84.48 |q 38531
 step
 click Greenhoof's Anvil
 _<Create 1 Leystone Gauntlets>_
@@ -2249,24 +2228,26 @@ click Greenhoof's Anvil
 _<Create 1 Leystone Waistguard>_
 collect Leystone Waistguard##123897 |goto 54.89,84.40 |q 38531
 step
-Use the Leystone Armor Stand |use Leystone Armor Stand##124024
+use the Leystone Armor Stand##124024
 Assemble the Leystone Armor Set |q 38531/1
 step
 talk Barm Stonebreaker##92242
 turnin Leystone Mastery##38531 |goto 55.18,84.20
 step
-_Enter the Maw of Souls Dungeon:_
-|tip Use the Group Finder to enter the dungeon.
+Press _I_ and queue for the Maw of Souls Dungeon, or enter it normally
+Enter the Maw of Souls |goto Helmouth Cliffs/1 47.49,77.69 < 1000  |q 38532
+only if skill('Legion Blacksmithing') <= 75
+step
 kill Helya##96759
+|tip She is the last boss of the dungeon.
 |tip Use the Maw of Souls dungeon guide to accomplish this.
 collect Ancient Vrykul Hammer##124025 |q 38532/1
 step
 talk Barm Stonebreaker##92242
-turnin Hammered By The Storm##38532 |goto 55.18,84.19
+turnin Hammered By The Storm##38532 |goto Highmountain/0 55.18,84.19
 accept Worthy of the Stone##38559 |goto 55.18,84.20
 step
 talk Muirn Ironhorn##92243
-|tip Up on the platform.
 turnin Worthy of the Stone##38559 |goto 54.55,84.15
 accept The Art of Demonsteel##38833 |goto 54.55,84.15
 step
@@ -2280,20 +2261,16 @@ click Firmament Stone
 Strike HARDER!! |q 38833/3 |goto 54.58,84.10
 step
 talk Muirn Ironhorn##92243
-|tip Up on the platform.
 turnin The Art of Demonsteel##38833 |goto 54.55,84.15
 accept Tribal Knowledge##38533 |goto 54.55,84.15
 step
 Follow the path up |goto Suramar/0 32.96,48.34 < 20 |only if walking
-Follow the path |goto Suramar/0 30.88,53.21 < 30 |only if walking
+Follow the path |goto 30.88,53.21 < 30 |only if walking
 talk Felsmith Nal'ryssa##92264
 |tip She walks around this small camp.
-turnin Tribal Knowledge##38533 |goto Suramar/0 29.93,53.29
-step
-_Congratulations!_
-You completed the Blacksmithing questline.
+turnin Tribal Knowledge##38533 |goto 29.93,53.29
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Blacksmithing\\Quest Guides\\Argus Blacksmithing Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Quest Guides\\Legion\\Argus Blacksmithing Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Argus Blacksmithing quest line.",
 startlevel=110.0,
@@ -2311,12 +2288,12 @@ step
 collect 42 Empyrium##151564 |future |q 48055
 |tip Use the "Empyrium Ore" farming guide to accomplish this, if you have Mining.
 |tip You can also purchase them from the Auction House.
-Click here to load the "Empyrium Ore" farming guide |confirm |next "Zygor's Profession Guides\\Mining\\Farming Guides\\Empyrium"
+Click here to load the "Empyrium Ore" farming guide |confirm |next "Profession Guides\\Mining\\Farming Guides\\Empyrium"
 step
 collect 2 Primal Sargerite##151568 |future |q 48055
 |tip You can get these as rewards for certain world quests, from gathering profession, or killing dungeon bosses.
 |tip Use the "World Quests" guide and dungeon guides to accomplish this.
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 step
 Open up your Blacksmithing spellbook
 _<Create 1 Empyrial Back Plate>_
@@ -2353,7 +2330,7 @@ step
 _Congratulations!_
 You completed the Argus Blacksmithing questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Cooking\\Farming Guides\\Big Gamy Ribs",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Legion\\Big Gamy Ribs",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Big Gamy Ribs for various cooking recipes.",
 startlevel=100.0,
@@ -2363,7 +2340,7 @@ kill Sated Hillstrider##98808+
 |tip Other mobs around this area drop Big Gamy Ribs too, but these respawn very quickly.
 collect Big Gamy Ribs##124119 |n |goto Highmountain/0 41.38,54.03
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Cooking\\Farming Guides\\Fatty Bearsteak",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Legion\\Fatty Bearsteak",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Fatty Bearsteaks for various cooking recipes.",
 startlevel=100.0,
@@ -2376,7 +2353,7 @@ Follow the path down |goto Stormheim/0 69.66,52.98 < 30 |only if walking
 kill Voracious Bear##93095+
 collect Fatty Bearsteak##124118 |n |goto Stormheim/0 72.49,49.96
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Cooking\\Farming Guides\\Lean Shank",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Legion\\Lean Shank",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Lean Shanks for various cooking recipes.",
 startlevel=100.0,
@@ -2386,7 +2363,7 @@ kill Pinerock Prowler##94149+
 kill Pinerock Stalker##99481+
 collect Lean Shank##124117 |n |goto Highmountain/0 42.98,49.26
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Cooking\\Farming Guides\\Leyblood",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Legion\\Leyblood",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Leyblood for various cooking recipes.",
 startlevel=100.0,
@@ -2396,7 +2373,7 @@ Enter the cave |goto Azsuna/0 49.35,25.97 < 20 |walk
 kill Flashwyrm##107098+
 collect Leyblood##124120 |n |goto Azsuna/0 49.72,25.41
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Cooking\\Farming Guides\\Wildfowl Egg",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Legion\\Wildfowl Egg",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Wildfowl Eggs for various cooking recipes.",
 startlevel=100.0,
@@ -2415,7 +2392,7 @@ kill Coastal Seagull##97809+
 |tip If you kill them up on the rocks and can't reach them to loot them, kill a crab on the ground nearby to AoE loot them.
 collect Wildfowl Egg##124121 |n |goto Stormheim/0 80.57,69.32
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Cooking\\Leveling Guides\\Cooking 700-800 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Legion\\Cooking 700-800 Leveling Guide",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Cooking profession from 700-800.",
 startlevel=100.0,
@@ -2639,7 +2616,7 @@ step
 _Congratulations!_
 You reached level 800 with the Cooking profession.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Cooking\\Quest Guides\\Legion Cooking Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Quest Guides\\Legion\\Legion Cooking Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Cooking quest line.",
 startlevel=100.0,
@@ -2774,100 +2751,110 @@ step
 _Congratulations!_
 You completed the Cooking questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 700-800 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Legion\\Legion Enchanting 1-100",{
 author="support@zygorguides.com",
-description="This guide will walk you through leveling your Enchanting profession from 700-800.",
+description="This guide will walk you through leveling your Legion Enchanting skill from 1-100.",
 startlevel=100.0,
 condition_end=function() return skill('Legion Enchanting') >= 100 end,
 condition_suggested=function() return skill('Legion Enchanting') > 0 and skill('Legion Enchanting') < 100 and level >= 100 end,
 },[[
 step
 _Before Starting This Guide:_
-Complete the "Enchanting Quest Line" Guide
-Click Here to Continue |confirm
+Complete the "Legion Enchanting Quest Line" Guide
+Click here to load the "Legion Enchanting Quest Line" guide |confirm |next "Profession Guides\\Enchanting\\Quest Guides\\Legion Enchanting Quest Line"
+only if not completedq(39923)
 step
-Reach Honored Reputation with the Dreamweavers Faction |condition rep("Dreamweavers")>=Honored
-|tip Use the "Val'sharah" Leveling guide to accomplish this.
-|tip Use the "World Quests" guide and complete Val'sharah world quests to accomplish this.
+Enter the building |goto Dalaran L/10 39.47,41.99 < 5 |walk
+talk Ildine Sorrowspear##93530
+|tip Inside the building.
+buy 1 Copper Rod##6217 |goto 38.24,41.78
+only if itemcount(6218) == 0
 step
 talk Ildine Sorrowspear##93530
 |tip Inside the building.
-buy 115 Enchanting Vellum##38682 |n
-collect 115 Enchanting Vellum##38682 |goto Dalaran L/10 38.23,41.75
-|only if skill("Enchanting") < 800
+buy 1 Strange Dust##10940 |goto 38.24,41.78
+only if itemcount(6218) == 0
 step
 talk Ildine Sorrowspear##93530
 |tip Inside the building.
-buy Formula: Enchant Ring - Word of Versatility##128582 |n
-Use the Formula: Enchant Ring - Word of Versatility |use Formula: Enchant Ring - Word of Versatility##128582
-Learn the Rank 2 Formula for Enchant Ring - Word of Versatility |learn Enchant Ring - Word of Versatility##190995 |goto 38.24,41.81
+buy 1 Lesser Magic Essence##10938 |goto 38.24,41.78
+only if itemcount(6218) == 0
+step
+talk Ildine Sorrowspear##93530
+|tip Inside the building.
+buy 100 Enchanting Vellum##38682 |goto 38.24,41.78
+step
+Open Your Enchanting Crafting Panel:
+_<Create 1 Runed Copper Rod>_
+collect 1 Runed Copper Rod##6218
+step
+talk Ildine Sorrowspear##93530
+|tip Inside the building.
+buy 1 Formula: Enchant Ring - Word of Versatility##128582 |goto 38.24,41.78
+step
+use the Formula: Enchant Ring - Word of Versatility##128582
+Train Enchant Ring: Word of Versatility |learn Word of Versatility##190995 |goto 38.24,41.78
 step
 talk Sylvia Hartshorn##106901
-buy Formula: Enchant Ring - Word of Versatility##128599 |n
-Use the Formula: Enchant Ring - Word of Versatility |use Formula: Enchant Ring - Word of Versatility##128599
-Learn the Rank 3 Formula for Enchant Ring - Word of Versatility |learn Enchant Ring - Word of Versatility##191012 |goto Val'sharah/0 54.70,73.25
+buy 1 Formula: Enchant Ring - Word of Versatility##128599 |goto Val'sharah/0 54.70,73.25
 step
-collect 400 Arkhana##124440 |c
-|tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons.
+use the Formula: Enchant Ring - Word of Versatility##128599
+Train Enchant Ring: Word of Versatility |learn Word of Versatility##191012 |goto Val'sharah/0 54.70,73.25
+only if rep("Dreamweavers") >= Honored
+step
+collect 720 Arkhana##124440
+|tip You can get these by disenchanting Legion Uncommon (green) armor and weapons.
 |tip You can also purchase them from the Auction House.
-|only if skill("Enchanting") < 740
+only if rep("Dreamweavers") <= Friendly
+step
+collect 600 Arkhana##124440
+|tip You can get these by disenchanting Legion Uncommon (green) armor and weapons.
+|tip You can also purchase them from the Auction House.
+only if rep("Dreamweavers") >= Honored
 step
 Open Your Enchanting Crafting Panel:
-_<Create 40 Word of Versatility>_
+_<Create 60 Enchant Ring: Word of Versatility>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 740 Enchanting |skill Enchanting,740
+Reach Level 60 Legion Enchanting |skill Legion Enchanting,60
 step
+Enter the building |goto Dalaran L/10 39.47,41.99 < 5 |walk
 talk Ildine Sorrowspear##93530
 |tip Inside the building.
-buy Formula: Enchant Ring - Binding of Haste##128584 |n
-Use the Formula: Enchant Ring - Binding of Haste |use Formula: Enchant Ring - Binding of Haste##128584
-Learn the Rank 2 Formula for Enchant Ring - Binding of Haste |learn Enchant Ring - Binding of Haste##190997 |goto Dalaran L/10 38.24,41.79
+buy 1 Formula: Enchant Ring - Binding of Haste##128584 |goto 38.24,41.78
 step
-Reach Exalted Reputation with the Dreamweavers Faction |condition rep("Dreamweavers")>=Exalted
-|tip Use the "Val'sharah" Leveling guide to accomplish this.
-|tip Use the "World Quests" guide and complete Val'sharah world quests to accomplish this.
+use the Formula: Enchant Ring - Binding of Haste##128584
+Train Binding of Haste |learn Binding of Haste##190997 |goto 38.24,41.78
 step
 talk Sylvia Hartshorn##106901
-buy Formula: Enchant Ring - Binding of Haste##128601 |n
-Use the Formula: Enchant Ring - Binding of Haste |use Formula: Enchant Ring - Binding of Haste##128601
-Learn the Rank 3 Formula for Enchant Ring - Binding of Haste |learn Enchant Ring - Binding of Haste##191014 |goto Val'sharah/0 54.70,73.25
+buy 1 Formula: Enchant Ring - Binding of Haste##128601 |goto Val'sharah/0 54.70,73.25
 step
-collect 1400 Arkhana##124440 |c
-|tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons.
-|tip You can also purchase them from the Auction House.
-|only if skill("Enchanting") < 780
+use the Formula: Enchant Ring - Binding of Haste##128601
+Train Binding of Haste |learn Binding of Haste##191014 |goto Val'sharah/0 54.70,73.25
+only if rep("Dreamweavers")>=Exalted
 step
-collect 160 Chaos Crystal##124442 |c
-|tip You can get these by disenchanting Legion level Epic (purple) armor and weapons.
+collect 2000 Arkhana##124440
+|tip You can get these by disenchanting Legion Uncommon (green) armor and weapons.
 |tip You can also purchase them from the Auction House.
-|only if skill("Enchanting") < 780
+only if rep("Dreamweavers")<=Honored
+step
+collect 1400 Arkhana##124440
+|tip You can get these by disenchanting Legion Uncommon (green) armor and weapons.
+|tip You can also purchase them from the Auction House.
+only if rep("Dreamweavers")>=Exalted
+step
+collect 160 Chaos Crystal##124442
+|tip You can get these by disenchanting Legion Epic (purple) armor and weapons.
+|tip You can also purchase them from the Auction House.
 step
 Open Your Enchanting Crafting Panel:
-_<Create 40 Binding of Haste>_
+_<Create 40 Enchant Ring: Binding of Haste>_
 |tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 780 Enchanting |skill Enchanting,780
-step
-collect 1225 Arkhana##124440 |c
-|tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons.
-|tip You can also purchase them from the Auction House.
-|only if skill("Enchanting") < 800
-step
-collect 140 Chaos Crystal##124442 |c
-|tip You can get these by disenchanting Legion level Epic (purple) armor and weapons.
-|tip You can also purchase them from the Auction House.
-|only if skill("Enchanting") < 800
-step
-Open Your Enchanting Crafting Panel:
-|tip You may have to make a few more or less, depending on your luck.
-|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
-_<Create 35 Binding of Haste>_
-|tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
-Reach Level 800 Enchanting |skill Enchanting,800
+Reach Level 100 Legion Enchanting |skill Legion Enchanting,100
 step
 _Congratulations!_
-You reached level 800 with the Enchanting profession.
+You Reached 100 Legion Enchanting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Enchanting\\Quest Guides\\Legion Enchanting Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Quest Guides\\Legion\\Legion Enchanting Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Enchanting quest line.",
 startlevel=100.0,
@@ -2877,7 +2864,7 @@ condition_suggested=function() return skill('Legion Enchanting') > 0 and level >
 step
 talk Enchanter Nalthanis##93531
 |tip Inside the building.
-Learn the Enchanting Profession |condition skill("Enchanting")>=1 |goto Dalaran L/10 38.28,40.33
+Learn the Enchanting Profession |condition skill("Legion Enchanting") >= 1 |goto Dalaran L/10 38.28,40.33
 step
 talk Enchanter Nalthanis##93531
 |tip Inside the building.
@@ -2890,21 +2877,16 @@ accept The Last Few##39875 |goto 38.24,41.77
 step
 talk Ildine Sorrowspear##93530
 |tip Inside the building.
-buy 1 Copper Rod##6217 |n
-collect Copper Rod##6217 |c |goto 38.23,41.77
-|only if itemcount(6218) < 1
+buy 1 Copper Rod##6217 |goto 38.23,41.77
+'|condition itemcount(164766) >= 1 or itemcount(6218)
 step
 talk Ildine Sorrowspear##93530
 |tip Inside the building.
-buy 1 Strange Dust##10940 |n
-collect Strange Dust##10940 |c |goto 38.23,41.77
-|only if itemcount(6218) < 1
+buy 1 Strange Dust##10940 |goto 38.23,41.77
 step
 talk Ildine Sorrowspear##93530
 |tip Inside the building.
-buy 1 Lesser Magic Essence##10938 |n
-collect Lesser Magic Essence##10938 |c |goto 38.23,41.77
-|only if itemcount(6218) < 1
+buy 1 Lesser Magic Essence##10938 |goto 38.23,41.77
 step
 Open Your Enchanting Crafting Panel:
 _<Create 1 Runed Copper Rod>_
@@ -3381,123 +3363,206 @@ step
 _Congratulations!_
 You completed the Enchanting questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Engineering\\Leveling Guides\\Engineering 700-800 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Legion\\Legion Engineering 1-100",{
 author="support@zygorguides.com",
-description="This guide will walk you through leveling your Engineering profession from 700-800.",
+description="This guide will walk you through leveling your Legion Engineering skill from 1-100.",
 startlevel=100.0,
 condition_end=function() return skill('Legion Engineering') >= 100 end,
 condition_suggested=function() return skill('Legion Engineering') > 0 and skill('Legion Engineering') < 100 and level >= 100 end,
 },[[
 step
-_Before Starting This Guide:_
-Complete the "Engineering Quest Line" Guide
-Click Here to Continue |confirm
+Enter the building |goto Dalaran L/10 38.52,27.18 < 5 |walk
+talk Timofey Oshenko##92194
+|tip Inside the building.
+Learn the Engineering Profession |condition skill("Engineering") >= 1 |goto Dalaran L/10 37.89,26.10
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+accept Aww Scrap!##40545 |goto Dalaran L/10 38.35,24.53
+step
+Leave the building |goto 38.52,27.15 < 5 |walk
+talk Filgo Scrapbottom##102193
+turnin Aww Scrap!##40545 |goto Dalaran L/11 65.96,52.82
+accept Endless Possibilities##40854 |goto Dalaran L/11 65.96,52.82
+step
+click Fel Reaver Husk##246519
+collect Fel Reaver Husk##133752 |q 40854/1 |goto 66.36,51.98
+step
+Enter the building |goto 38.53,27.23 < 5 |walk
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+turnin Endless Possibilities##40854 |goto Dalaran L/10 38.83,24.70
+accept Our Man in Azsuna##40855 |goto Dalaran L/10 38.83,24.70
+step
+Leave the building |goto 38.53,27.23 < 5 |walk
+talk Fargo Flintlocke##102195
+turnin Our Man in Azsuna##40855 |goto Azsuna/0 65.22,24.91
+accept It'll Cost You##40856 |goto Azsuna/0 65.22,24.91
+accept The Latest Fashion: Headguns!##40859 |goto Azsuna/0 65.22,24.91
+stickystart "Test_Headgun_On_Fel_Critters_Engineering"
+step
+click Fel Reaver Arm##246522
+collect Fel Reaver Arm##133753 |q 40856/1 |goto 66.87,27.02
+step
+click Fel Reaver Leg##246523
+collect Fel Reaver Leg##133754 |q 40856/2 |goto 68.35,25.81
+step
+label "Test_Headgun_On_Fel_Critters_Engineering"
+use Flintlocke's Headgun Prototype##133761
+|tip Use it on Felspiders and Fel-Tainted Squirrels.
+|tip They look like small spiders and squirrels running around on the ground around this area.
+Test the Headgun on #10# Fel Critters |q 40859/1 |goto 66.87,25.83
+step
+Follow the path up |goto 65.80,25.43 < 20 |only if walking
+talk Fargo Flintlocke##102195
+turnin It'll Cost You##40856 |goto 65.22,24.91
+accept The Missing Pieces##40858 |goto 65.22,24.91
+turnin The Latest Fashion: Headguns!##40859 |goto 65.22,24.91
+step
+Enter the building |goto 38.53,27.23 < 5 |walk
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+turnin The Missing Pieces##40858 |goto Dalaran L/10 38.83,24.70
+step
+Reach Level 102 |ding 102
+|tip Use the Leveling guides to accomplish this.
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+accept Always the Last Thing##40863 |goto Dalaran L/10 38.83,24.70
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+accept Resupplying the Line##40860 |goto 38.35,24.53
+step
+Enter the building |goto 38.97,35.15 < 5 |walk
+talk Tiffany Cartier##93526
+|tip Inside the building.
+Tell her _"Didi sent me to retrieve a Prismatic Felslate Diamond."_
+Get the Prismatic Felslate Diamond |q 40863/1 |goto 40.27,34.68
+step
+Enter the building |goto 38.53,27.23 < 5 |walk
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+Tell her _"Here's the diamond you requested."_
+Watch the dialogue
+Have Didi Test the Diamond |q 40863/2 |goto 38.83,24.70
+step
+Enter the building |goto 41.27,31.56 < 5 |walk
+talk Deucus Valdera##92458
+|tip Inside the building.
+Tell him _"Didi sent me to retrieve a Volatile Leytorrent Potion."_
+Get the Volatile Leytorrent Potion |q 40863/3 |goto 41.33,33.41
+step
+Enter the building |goto 38.53,27.23 < 5 |walk
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+Tell her _"Here's the potion you requested."_
+Watch the dialogue
+Have Didi Test the Potion |q 40863/4 |goto 38.83,24.70
+step
+Enter the building |goto 46.32,38.41 < 5 |walk
+talk Bonegrim##97863
+|tip Inside the building.
+Ask him _"Would you happen to have a Fel-infused Core?"_
+Watch the dialogue
+Find a Fel-Infused Core |q 40863/5 |goto 47.96,38.49
+step
+Run up the stairs |goto 50.53,40.11 < 5 |walk
+talk Catriona Macrae##96198
+|tip Talk to Catriona Macrae to get her to leave the room.
+click Catriona's Jewel##246701
+|tip Upstairs inside the building.
+collect Catriona's Jewel##133895 |q 40863/6 |goto 49.51,38.18
+step
+Run down the stairs |goto 49.65,41.27 < 5 |walk
+talk Bonegrim##97863
+|tip Downstairs inside the building.
+Tell him _"Here's the jewel, now give me the core."_
+collect Fel-Infused Core##133881 |q 40863/7 |goto 47.96,38.49
+step
+Enter the building |goto 38.53,27.23 < 5 |walk
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+Tell her _"Here's the core you requested."_
+Watch the dialogue
+Have Didi Test the Core |q 40863/8 |goto 38.83,24.70
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+turnin Always the Last Thing##40863 |goto 38.83,24.70
+accept Modular Modifications##40864 |goto 38.83,24.70
+step
+Follow the road |goto Val'sharah/0 59.12,59.65 < 30 |only if walking
+talk Fargo Flintlocke##102197
+turnin Resupplying the Line##40860 |goto Val'sharah/0 59.82,62.26
+accept All Charged Up##40862 |goto Val'sharah/0 59.82,62.26
+accept In My Sights##40861 |goto Val'sharah/0 59.82,62.26
+stickystart "Deployable_Bullet_Dispenser_Parts_Engineering"
+step
+Cross the bridge |goto 61.56,61.61 < 20 |only if walking
+Follow the path |goto 63.32,61.09 < 30 |only if walking
+Follow the path |goto 63.78,59.64 < 30 |only if walking
+Follow the path up |goto 63.14,58.36 < 30 |only if walking
+use the Gunpowder Charges##133775
+|tip Use it on Shimmering Oleanders.
+|tip They look like wilted red-glowing plants around this area.
+Explode #15# Shimmering Oleanders |q 40862/1 |goto 62.99,56.01
+step
+label "Deployable_Bullet_Dispenser_Parts_Engineering"
+click Destroyed Deployable Bullet Dispensers##246875
+|tip They look like large metal objects on the ground around this area.
+collect 10 Deployable Bullet Dispenser Parts##133978 |q 40861/1 |goto 62.99,56.01
+step
+Follow the path down |goto 62.90,57.66 < 20 |only if walking
+Follow the path up |goto 63.64,59.67 < 30 |only if walking
+Cross the bridge |goto 62.33,61.64 < 20 |only if walking
+talk Fargo Flintlocke##102197
+turnin All Charged Up##40862 |goto 59.82,62.26
+turnin In My Sights##40861 |goto 59.82,62.26
 step
 talk Raethan##97359
-|tip For 5 gold, you can hire a bodyguard that will prevent you from attacking, or being attacked by, other players.
+|tip For 5 gold, you can hire a bodyguard that will prevent you from attacking or being attacked by other players.
 |tip The bodyguard lasts for 5 minutes.
 Kill enemies around this area
-|tip Named enemies will appear throughtout the Underbelly.
+|tip Named enemies will appear throughout the Underbelly.
 |tip You can see them on your minimap as gold star icons.
-|tip You can also kill other players, if you enjoy PvP.
+|tip You can also kill other players if you enjoy PvP.
 |tip If you have the "No Guards" debuff, this means the area is currently free-for-all PvP.
 |tip When the guards are present, the named PvE enemies will appear.
 collect 750 Sightless Eyes |condition curcount(1149) >= 750 |goto Dalaran L/11 68.95,58.41
 step
-Follow the path |goto 59.77,39.31 < 20 |walk
 talk The Widow##97366
-buy Schematic: Gunpowder Charge##137706 |n
-Use the Schematic: Gunpowder Charge |use Schematic: Gunpowder Charge##137706
-Learn the Rank 2 Schematic for Gunpowder Charge |learn Gunpowder Charge##199000
+buy Schematic: Gunpowder Charge##137706 |goto 72.19,24.44
+|tip It costs 250 Sightless Eyes.
+step
+use the Schematic: Gunpowder Charge##137706
+Train Gunpowder Charge (Rank 2) |learn Gunpowder Charge##199000 |goto 72.19,24.44
 step
 talk The Widow##97366
-buy Schematic: Gunpowder Charge##137720 |n
-Use the Schematic: Gunpowder Charge |use Schematic: Gunpowder Charge##137720
-Learn the Rank 3 Schematic for Gunpowder Charge |learn Gunpowder Charge##199014
+buy Schematic: Gunpowder Charge##137720 |goto 72.19,24.44
+|tip It costs 500 Sightless Eyes and 1,500 gold.
 step
-collect 95 Leystone Ore##123918 |c
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-|only if skill("Engineering") < 779
+use the Schematic: Gunpowder Charge##137720
+Train Gunpowder Charge (Rank 3) |learn Gunpowder Charge##199014 |goto 72.19,24.44
 step
+Enter the building |goto Dalaran L/10 38.53,27.33 < 5 |walk
 talk Hobart Grapplehammer##93539
-buy 400 Oversized Blasting Cap##136637 |n
-collect 1900 Oversized Blasting Cap##136637 |c
-|only if skill("Engineering") < 779
+|tip Inside the building.
+buy 2800 Oversized Blasting Cap##136637	|goto 38.36,24.58
+step
+collect 140 Leystone Ore##123918
+|tip Use the "Leystone Ore & Felslate (Mining Route)" farming guide to gather Leystone, if you have Mining.
+|tip You can also purchase them from the Auction House.
 step
 Open Your Engineering Crafting Panel:
-|tip You may have to make a few more or less, depending on your luck.
-|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
-_<Create 95 Gunpowder Charge>_
-|tip NOTE: Make sure to stop crafting when you reach level 779 Engineering.
-|tip This will save you a lot of gold later.
-Reach Level 779 Engineering |skill Engineering,779
-step
-Cross the bridge |goto Azsuna/0 43.06,45.38 < 30 |only if walking
-Follow the road |goto Azsuna/0 40.63,48.63 < 30 |only if walking
-Continue following the road |goto Azsuna/0 39.32,51.64 |only if walking
-Follow the path |goto Azsuna/0 38.79,55.36 < 30 |only if walking
-Continue following the path |goto Azsuna/0 38.99,57.96 |only if walking
-Follow the path |goto Azsuna/0 40.11,58.80 < 30 |only if walking
-Cross the water |goto Azsuna/0 41.60,60.71 < 30 |only if walking
-talk Fargo Flintlocke##102196
-buy 1 Schematic: Double-Barreled Cranial Cannon##137703 |n
-Use the Schematic: Double-Barreled Cranial Cannon |use Schematic: Double-Barreled Cranial Cannon##137703
-Learn the Rank 2 Schematic for Double-Barreled Cranial Cannon |learn Double-Barreled Cranial Cannon##198997 |goto Azsuna/0 42.99,62.84
-step
-Enter the Halls of Valor Dungeon:
-|tip Use the Group Finder to enter the dungeon.
-Kill enemies inside the Halls of Valor Dungeon
-|tip Use the "Halls of Valor" dungeon guide to accomplish this.
-collect Schematic: Double-Barreled Cranial Cannon##137717 |n
-|tip This recipe seems to drop most commonly from trash mobs inside the Halls of Valor dungeon.
-|tip Run the dungeon repeatedly until the schematic drops for you.
-|tip This may take a while.
-Use the Schematic: Double-Barreled Cranial Cannon |use Schematic: Double-Barreled Cranial Cannon##137717
-Learn the Rank 3 Schematic for Double-Barreled Cranial Cannon |learn Double-Barreled Cranial Cannon##199011
-step
-collect 390 Stormscale##124115 |c
-|tip Use the "Stormscale" farming guide to gather these, if you have Skinning.
-|tip You can also purchase them from the Auction House.
-|only if skill("Engineering") < 800
-step
-collect 26 Felhide##124116 |c
-|tip Use the "World Quests" guide to complete Felhide world quests, if you have Skinning.
-|tip You can also purchase them from the Auction House.
-|only if skill("Engineering") < 800
-step
-collect 26 Blood of Sargeras##124124 |c
-|tip You can get these as rewards for certain world quests or killing dungeon bosses.
-|tip Use the "World Quests" guide and dungeon guides to accomplish this.
-|tip You can also get them by gathering with gathering professions at rank 2 or higher.
-|tip Use the Farming guides for to accomplish this.
-|only if skill("Engineering") < 800
-step
-talk Hobart Grapplehammer##93539
-buy 26 Sniping Scope##136636 |n
-collect 26 Sniping Scope##136636 |c
-|only if skill("Engineering") < 800
-step
-talk Hobart Grapplehammer##93539
-buy 26 Loose Trigger##136633 |n
-collect 26 Loose Trigger##136633 |c
-|only if skill("Engineering") < 800
-step
-talk Hobart Grapplehammer##93539
-buy 13 Surface-to-Infernal Rocket Launcher##136631 |n
-collect 13 Surface-to-Infernal Rocket Launcher##136631 |c
-|only if skill("Engineering") < 800
-step
-Open Your Engineering Crafting Panel:
-|tip You may have to make a few more or less, depending on your luck.
-|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
-_<Create 13 Double-Barreled Cranial Cannon>_
-Reach Level 800 Engineering |skill Engineering,800
+_<Create 140 Gunpowder Charge>_
+Reach Level 100 Legion Engineering |skill Legion Engineering,100
 step
 _Congratulations!_
-You reached level 800 with the Engineering profession.
+You Reached 100 Legion Engineering Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Engineering\\Quest Guides\\Legion Engineering Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Quest Guides\\Legion\\Legion Engineering Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Engineering quest line.",
 startlevel=100.0,
@@ -3934,7 +3999,7 @@ step
 _Congratulations!_
 You completed the Engineering questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Engineering\\Quest Guides\\Argus Engineering Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Quest Guides\\Legion\\Argus Engineering Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Argus Engineering quest line.",
 startlevel=110.0,
@@ -3948,7 +4013,7 @@ Learn the Engineering Profession |condition skill("Engineering")>=1 |goto Dalara
 step
 Complete the Quest _"The Defiler's Legacy"_ |condition completedq(47690)
 |tip This is part of the Argus campaign guide.
-Check out our Argus campaign guide to accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign"
+Check out our Argus campaign guide to accomplish this |confirm |next "Leveling Guides\\Legion (100-110)\\Argus Campaign"
 step
 talk Durael##125525
 accept The Wrench Calls##48069 |goto Krokuun/2 41.86,76.27
@@ -4029,7 +4094,7 @@ step
 _Congratulations!_
 You completed the Argus Engineering questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Fishing\\Farming Guides\\Black Barracuda",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Legion\\Black Barracuda",{
 author="support@zygorguides.com",
 description="This guide will walk you through fishing up Black Barracudas for various cooking recipes.",
 startlevel=100.0,
@@ -4046,7 +4111,7 @@ Fish in Black Barracuda Schools
 |tip Follow the beach east from this spot.
 collect Black Barracuda##124112 |n |goto Suramar/0 74.20,49.90
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Fishing\\Farming Guides\\Highmountain Salmon",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Legion\\Highmountain Salmon",{
 author="support@zygorguides.com",
 description="This guide will walk you through fishing up Highmountain Salmon for various cooking recipes.",
 startlevel=100.0,
@@ -4056,7 +4121,7 @@ Fish in the Rapid-Moving River
 |tip Highmountain Salmon seems to be pretty rare to catch, so it may take a while.
 collect Highmountain Salmon##124109 |n |goto Highmountain/0 41.84,51.65
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Fishing\\Farming Guides\\Silver Mackerel",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Legion\\Silver Mackerel",{
 author="support@zygorguides.com",
 description="This guide will walk you through fishing up Silver Mackerels for various cooking recipes.",
 startlevel=100.0,
@@ -4065,7 +4130,7 @@ step
 Fish in the water
 collect Silver Mackerel##133607 |n |goto Azsuna/0 52.47,31.86
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Fishing\\Leveling Guides\\Fishing 700-800 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Legion\\Fishing 700-800 Leveling Guide",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Fishing profession from 700-800.",
 startlevel=100.0,
@@ -4091,7 +4156,7 @@ step
 _Congratulations!_
 You reached level 800 with the Fishing profession.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Fishing\\Quest Guides\\Legion Fishing Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Quest Guides\\Legion\\Legion Fishing Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Fishing quest line.",
 startlevel=100.0,
@@ -4128,7 +4193,7 @@ step
 _Congratulations!_
 You completed the Fishing questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Fishing\\Quest Guides\\Underlight Angler (Legion Fishing Artifact)",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Quest Guides\\Legion\\Underlight Angler (Legion Fishing Artifact)",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Legion Fishing artifact.",
 startlevel=110.0,
@@ -4205,7 +4270,7 @@ You earned the Underlight Angler fishing artifact.
 |tip Continue fishing rare fish, like you did while earning the "Bigger Fish to Fry" achievement.
 |tip Each rare fish will give 50 Artifact Power.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Herbalism\\Farming Guides\\Aethril",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Legion\\Aethril",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Aethril for various Alchemy recipes.",
 startlevel=100.0,
@@ -4232,7 +4297,7 @@ kill Withered Hungerer##98232+
 |tip They have a chance to spawn when you gather Aethril.
 collect Aethril##124101 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Herbalism\\Farming Guides\\Astral Glory",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Legion\\Astral Glory",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Astral Glory for various Alchemy recipes.",
 startlevel=110.0,
@@ -4267,7 +4332,7 @@ click Fel-Encrusted Herb##273052
 collect Astral Glory##151565 |n
 Follow the path until you reach the end |goto 57.97,61.39 |noway |c |next "path"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Herbalism\\Farming Guides\\Dreamleaf",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Legion\\Dreamleaf",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Dreamleaf for various Alchemy recipes.",
 startlevel=100.0,
@@ -4290,7 +4355,19 @@ kill Nightmare Creeper##98234+
 |tip They have a chance to spawn when you gather Dreamleaf.
 collect Dreamleaf##124102 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Herbalism\\Farming Guides\\Fjarnskaggl",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Legion\\Felwort",{
+author="support@zygorguides.com",
+description="Felwort can be gathered from Legion World Quests in the Broken Isles.",
+condition_end=function() return skill('Legion Herbalism') >= 50 end,
+},[[
+step
+click Felwort##252404+
+|tip These can only be gathered when a corresponding World Quest in a Legion zone is active.
+|tip You must have the herbalism skill for the quests to show up.
+|tip Refer to the World Quest guide to accomplish this.
+collect Felwort##124106 |n
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Legion\\Fjarnskaggl",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Fjarnskaggl for various Alchemy recipes.",
 startlevel=100.0,
@@ -4317,7 +4394,7 @@ click Fjarnskaggl##244777
 |tip Track them on your minimap with "Find Herbs".
 collect Fjarnskaggl##124104 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Herbalism\\Farming Guides\\Foxflower",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Legion\\Foxflower",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Foxflower for various Alchemy recipes.",
 startlevel=100.0,
@@ -4347,7 +4424,7 @@ click Foxflower##241641
 collect Foxflower##124103 |n
 |tip Fly back to Prepfoot, Highmountain when you finish the route.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Herbalism\\Farming Guides\\Starlight Rose",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Legion\\Starlight Rose",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Starlight Rose for various Alchemy recipes.",
 startlevel=110.0,
@@ -4379,7 +4456,7 @@ kill Withered Hungerer##98232+
 |tip They have a chance to spawn when you gather Starlight Rose.
 collect Starlight Rose##124105 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 700-800 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Legion\\Herbalism 700-800 Leveling Guide",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Herbalism profession from 700-800.",
 startlevel=100.0,
@@ -4513,7 +4590,7 @@ label "Congratulations_Herbalism"
 _Congratulations!_
 You reached level 800 with the Herbalism profession.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Herbalism\\Quest Guides\\Legion Herbalism Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Quest Guides\\Legion\\Legion Herbalism Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Herbalism quest line.",
 startlevel=100.0,
@@ -5296,7 +5373,7 @@ step
 _Congratulations!_
 You completed the Herbalism questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Herbalism\\Quest Guides\\Argus Herbalism Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Quest Guides\\Legion\\Argus Herbalism Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Argus Herbalism quest line.",
 startlevel=110.0,
@@ -5377,66 +5454,111 @@ step
 _Congratulations!_
 You completed the Argus Herbalism questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Inscription\\Leveling Guides\\Inscription 700-800 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Legion\\Legion Inscription 1-100",{
 author="support@zygorguides.com",
-description="This guide will walk you through leveling your Inscription profession from 700-800.",
+description="This guide will walk you through leveling your Legion Inscription skill from 1-100.",
 startlevel=100.0,
 condition_end=function() return skill('Legion Inscription') >= 100 end,
 condition_suggested=function() return skill('Legion Inscription') > 0 and skill('Legion Inscription') < 100 and level >= 100 end,
 },[[
 step
-_Before Starting This Guide:_
-Complete the "Inscription Quest Line" Guide
-Click Here to Continue |confirm
+Enter the building |goto Dalaran L/10 41.99,37.85 < 5 |walk
+talk Professor Pallin##92195
+|tip Inside the building.
+Train the Inscription Profession |condition skill("Inscription") >= 1 |goto 41.27,37.02
+step
+talk Professor Pallin##92195
+|tip Inside the building.
+accept Sign This##39847 |goto 41.26,37.01
+step
+use the Unsigned Contract##129047
+Sign the Contract |q 39847/1
+step
+talk Professor Pallin##92195
+|tip Inside the building.
+turnin Sign This##39847 |goto 41.26,37.01
+accept Smashing Herbs##39931 |goto 41.26,37.01
+step
+collect 20 Roseate Pigment##129032
+|tip Use the "Aethril" farming guide to gather and Mill Aethril, if you have Herbalism.
+|tip You can also purchase them from the Auction House.
+step
+collect 2 Sallow Pigment##129034
+|tip Use the "Aethril" farming guide to gather and Mill Aethril, if you have Herbalism.
+|tip You can also purchase them from the Auction House.
+step
+Enter the building |goto 41.99,37.85 < 5 |walk
+talk Professor Pallin##92195
+|tip Inside the building.
+turnin Smashing Herbs##39931 |goto 41.26,37.01
+step
+click Technique: Tome of the Tranquil Mind##257999
+|tip Inside the building.
+use the Technique: Tome of the Tranquil Mind##141447
+Train Technique: Tome of the Tranquil Mind |learn Technique: Tome of the Tranquil Mind##227043 |goto 41.25,35.74
 step
 talk Jang Quillpaw##93544
-buy 500 Light Parchment##39354 |n
-collect 500 Light Parchment##39354 |goto Dalaran L/10 41.08,36.40
-|only if skill("Inscription") < 719
+|tip Inside the building.
+buy 880 Light Parchment##39354 |goto 41.09,36.38
 step
-collect 25 Sallow Pigment##129034 |c
-collect 250 Roseate Pigment##129032 |c
-|tip You get these by gathering and milling any herb in Legion, if you have Herbalism.
-|tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to accomplish this.
+collect 44 Sallow Pigment##129034
+|tip Use the "Aethril" farming guide to gather and Mill Aethril, if you have Herbalism.
 |tip You can also purchase them from the Auction House.
-|tip Use your Milling ability on Legion herbs to accomplish this.
-|only if skill("Inscription") < 719
 step
 Open Your Inscription Crafting Panel:
-_<Create 25 Tome of the Tranquil Mind>_
-Reach Level 719 Inscription |skill Inscription,719
+_<Create 44 Tome of the Tranquil Mind>_
+Reach Level 40 Legion Inscription |skill Legion Inscription,40
 step
-collect 35 Darkmoon Prize Tickets |condition curcount(515) >= 35
-|tip Use the Darkmoon Faire guide to accomplish this.
+Press _I_ and queue for the Arcing Aquaducts wing of The Nighthold raid, or enter it normally
+Enter the Nighthold |goto The Nighthold/1 24.0,91.1 |c
+only if skill('Legion Inscription') <= 75
 step
-talk Professor Thaddeus Paleo##14847
-|tip The Darkmoon Faire event must be active in order to reach him.
-buy Technique: Prophecy Tarot##137746 |n
-Use the Technique: Prophecy Tarot |use Technique: Prophecy Tarot##137746
-Learn the Rank 3 Technique for Prophecy Tarot |learn Prophecy Tarot##192856 |goto Darkmoon Island/0 51.9,60.9
+kill Skorpyron##102263
+|tip Use the "Nighthold - Arcing Aquaducts (LFR)" raid guide to accomplish this.
+collect 1 Vantus Rune Technique: Skorpyron##139642
 step
-talk Jang Quillpaw##93544
-buy 48 Light Parchment##39354 |n
-collect 48 Light Parchment##39354 |goto Dalaran L/10 41.08,36.40
-|only if skill("Inscription") < 800
+use the Vantus Rune Technique: Skorpyron##139642
+Train Vantus Rune Technique: Skorpyron |learn Vantus Rune Technique: Skorpyron##192815
 step
-collect 192 Sallow Pigment##129034 |c
-collect 1920 Roseate Pigment##129032 |c
-|tip You get these by gathering and milling any herb in Legion, if you have Herbalism.
-|tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to accomplish this.
+kill Skorpyron##102263
+|tip Use the "Nighthold - Arcing Aquaducts (LFR)" raid guide to accomplish this.
+|tip You will need to kill Skorpyron twice.
+|tip The first kill can be from LFR, but then the second kill will need to be from Normal or Heroic difficulty, or just wait until the following week to get another LFR kill.
+collect 1 Vantus Rune Technique: Skorpyron##137754
+step
+use the Vantus Rune Technique: Skorpyron##137754
+Train Vantus Rune Technique: Skorpyron |learn Vantus Rune Technique: Skorpyron##192867
+step
+talk Veridis Fallon##107376
+buy 1 Vantus Rune Technique: Skorpyron##137774 |goto Azsuna/0 46.90,41.43
+|tip It costs around 1,700 gold.
+step
+use the Vantus Rune Technique: Skorpyron##137774
+Train Vantus Rune Technique: Skorpyron |learn Vantus Rune Technique: Skorpyron##192898 |goto 46.90,41.43
+only if rep("Court of Farondis") >= Revered
+step
+collect 180 Sallow Pigment##129034
+|tip Use the "Aethril" farming guide to gather and Mill Aethril, if you have Herbalism.
 |tip You can also purchase them from the Auction House.
-|tip Use your Milling ability on Legion herbs to accomplish this.
+step
+collect 900 Roseate Pigment##129032
+|tip Use the "Aethril" farming guide to gather and Mill Aethril, if you have Herbalism.
+|tip You can also purchase them from the Auction House.
+only if rep("Court of Farondis") >= Revered
+step
+collect 1200 Roseate Pigment##129032
+|tip Use the "Aethril" farming guide to gather and Mill Aethril, if you have Herbalism.
+|tip You can also purchase them from the Auction House.
+only if rep("Court of Farondis") <= Honored
 step
 Open Your Inscription Crafting Panel:
-|tip You may have to make a few more or less, depending on your luck.
-|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
-_<Create 48 Prophecy Tarot>_
-Reach Level 800 Inscription |skill Inscription,800
+_<Create 60 Vantus Rune Technique: Skorpyron>_
+Reach Level 100 Legion Inscription |skill Legion Inscription,100
 step
 _Congratulations!_
-You reached level 800 with the Inscription profession.
+You Reached 100 Legion Inscription Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Inscription\\Quest Guides\\Legion Inscription Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Quest Guides\\Legion\\Legion Inscription Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Inscription quest line.",
 startlevel=100.0,
@@ -5872,180 +5994,96 @@ step
 _Congratulations!_
 You completed the Inscription questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 700-800 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Legion\\Legion Jewelcrafting 1-100",{
 author="support@zygorguides.com",
-description="This guide will walk you through leveling your Jewelcrafting profession from 700-800.",
+description="This guide will walk you through leveling your Legion Jewelcrafting skill from 1-100.",
 startlevel=100.0,
 condition_end=function() return skill('Legion Jewelcrafting') >= 100 end,
 condition_suggested=function() return skill('Legion Jewelcrafting') > 0 and skill('Legion Jewelcrafting') < 100 and level >= 100 end,
 },[[
 step
 _Before Starting This Guide:_
-Complete the "Jewelcrafting Quest Line" Guide
-Click Here to Continue |confirm
+Complete the "Legion Jewelcrafting Quest Line" Guide
+Click here to load the "Legion Jewelcrafting Quest Line" guide |confirm |next "Profession Guides\\Jewelcrafting\\Quest Guides\\Legion Jewelcrafting Quest Line"
+only if not completedq(40561)
 step
-talk Jabrul##100500
-|tip Inside the building.
-buy 1 Design: Quick Azsunite##138452 |n
-Use the Design: Quick Azsunite |use Design: Quick Azsunite##138452
-Learn the Design for Quick Azsunite |learn Quick Azsunite##195849 |goto Dalaran L/10 39.70,34.26
-step
-collect Leystone Ore##123918 |n
-collect Felslate##123919 |n
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-Use Your Prospecting Ability:
-_<Prospect Leystone Ore & Felslate>_
-|tip They're in your bags.
-|tip You may need to prospect more or less Leystone Ore & Felslate, depending on your luck.
-collect 25 Azsunite##130174
-|tip You can also purchase them from the Auction House.
-|only if skill("Jewelcrafting") < 715
+collect 45 Deep Amber##130173
+|tip Farm Leystone Ore or Felslate with Mining and Prospect them or purchase them from the Auction House.
+|only if skill("Legion Jewelcrafting") < 35
 step
 Open Your Jewelcrafting Crafting Panel:
-|tip You may have to make a few more or less, depending on your luck.
-_<Create 25 Quick Azsunite>_
-Reach Level 715 Jewelcrafting |skill Jewelcrafting,715
+_<Create 45 Deadly Deep Amber>_
+Reach Level 35 Legion Jewelcrafting |skill Legion Jewelcrafting,35
 step
+Enter the building |goto Dalaran L/10 38.99,35.14 < 5 |walk
 talk Jabrul##100500
 |tip Inside the building.
 buy 1 Design: Skystone Loop##137793 |n
-Use the Design: Skystone Loop |use Design: Skystone Loop##137793
-Learn the Rank 1 Design for Skystone Loop |learn Skystone Loop##195857 |goto 39.70,34.26
+use the Design: Skystone Loop##137793
+Train Skystone Loop (Rank 1) |learn Skystone Loop Rank 1##195857 |goto 39.82,34.09
 step
 talk Tiffany Cartier##93526
 |tip Inside the building.
 buy 1 Design: Skystone Loop##137818 |n
-Use the Design: Skystone Loop |use Design: Skystone Loop##137818
-Learn the Rank 2 Design for Skystone Loop |learn Skystone Loop##195903 |goto 40.26,34.68
+use the Design: Skystone Loop##137818
+Train Skystone Loop (Rank 2) |learn Skystone Loop Rank 2##195903 |goto 40.29,34.70
 step
-Reach Honored Reputation with the Highmountain Tribe Faction |condition rep("Highmountain Tribe")>=Honored
-|tip Use the "Highmountain" Leveling guide to accomplish this.
-|tip Use the "World Quests" guide and complete Highmountain world quests to accomplish this.
+Reach Honored with the Highmountain Tribe |condition rep("Highmountain Tribe") >= Honored
+|tip Use the "Highmountain Tribe" guide to accomplish this.
 step
 talk Ransa Greyfeather##106902
 buy 1 Design: Skystone Loop##137839 |n
-Use the Design: Skystone Loop |use Design: Skystone Loop##137839
-Learn the Rank 3 Design for Skystone Loop |learn Skystone Loop##195924 |goto Thunder Totem/0 38.07,46.05
+use the Design: Skystone Loop##137839
+Train Skystone Loop (Rank 3) |learn Skystone Loop Rank 3##195924 |goto Thunder Totem/0 38.07,46.01
 step
-collect Leystone Ore##123918 |n
-collect Felslate##123919 |n
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-Use Your Prospecting Ability:
-_<Prospect Leystone Ore & Felslate>_
-|tip They're in your bags.
-|tip You may need to prospect more or less Leystone Ore & Felslate, depending on your luck.
-collect 50 Skystone##130176 |c
-collect 25 Chaotic Spinel##130175 |c
-|tip You can also purchase them from the Auction House.
-|only if skill("Jewelcrafting") < 740
+collect 50 Skystone##130176
+|tip Farm Leystone Ore or Felslate with Mining and Prospect them or purchase them from the Auction House.
+|only if skill("Legion Jewelcrafting") < 60
+step
+collect 25 Chaotic Spinel##130175
+|tip Farm Leystone Ore or Felslate with Mining and Prospect them or purchase them from the Auction House.
+|only if skill("Legion Jewelcrafting") < 60
 step
 Open Your Jewelcrafting Crafting Panel:
 _<Create 25 Skystone Loop>_
-Reach Level 740 Jewelcrafting |skill Jewelcrafting,740
+Reach Level 60 Legion Jewelcrafting |skill Legion Jewelcrafting,60
 step
+Enter the building |goto Dalaran L/10 38.99,35.14 < 5 |walk
 talk Jabrul##100500
 |tip Inside the building.
-buy 1 Design: Azsunite Pendant##137797 |n
-Use the Design: Azsunite Pendant |use Design: Azsunite Pendant##137797
-Learn the Rank 1 Design for Azsunite Pendant |learn Azsunite Pendant##195861 |goto Dalaran L/10 39.70,34.26
+buy 1 Design: Deep Amber Pendant##137795 |n
+use the Design: Deep Amber Pendant##137795
+Train Deep Amber Pendant (Rank 1) |learn Deep Amber Pendant Rank 1##195859 |goto 39.82,34.09
 step
 talk Tiffany Cartier##93526
 |tip Inside the building.
-buy 1 Design: Azsunite Pendant##137822 |n
-Use the Design: Azsunite Pendant |use Design: Azsunite Pendant##137822
-Learn the Rank 2 Design for Azsunite Pendant |learn Azsunite Pendant##195907 |goto 40.26,34.68
+buy 1 Design: Deep Amber Pendant##137820 |n
+use the Design: Deep Amber Pendant##137820
+Train Deep Amber Pendant (Rank 2) |learn Deep Amber Pendant Rank 2##195905 |goto 40.29,34.70
 step
-Complete the _"Work Order: Azsunite Pendant"_ World Quest
-|tip This world quest appears in Azsuna when it is available.
-|tip Use the "World Quests" dailies guide to accomplish this.
-collect Design: Azsunite Pendant##137843 |n
-|tip This design can only be obtained from this world quest.
-Use the Design: Azsunite Pendant |use Design: Azsunite Pendant##137843
-Learn the Rank 3 Design for Azsunite Pendant |learn Azsunite Pendant##195928
+Kill Nightborne enemies around this area
+collect 1 Design: Deep Amber Pendant##137841 |n
+use the Design: Deep Amber Pendant##137841
+Train Deep Amber Pendant (Rank 3) |learn Deep Amber Pendant Rank 3##195926 |goto Azsuna/0 66.50,48.95
 step
-collect Leystone Ore##123918 |n
-collect Felslate##123919 |n
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-Use Your Prospecting Ability:
-_<Prospect Leystone Ore & Felslate>_
-|tip They're in your bags.
-|tip You may need to prospect more or less Leystone Ore & Felslate, depending on your luck.
-collect 125 Azsunite##130174 |c
-collect 25 Sangrite##130172 |c
-|tip You can also purchase them from the Auction House.
-|only if skill("Jewelcrafting") < 764
+collect 400 Deep Amber##130173
+|tip Farm Leystone Ore or Felslate with Mining and Prospect them or purchase them from the Auction House.
+|only if skill("Legion Jewelcrafting") < 100
+step
+collect 80 Sangrite##130172
+|tip Farm Leystone Ore with Mining and Prospect them or purchase them from the Auction House.
+|only if skill("Legion Jewelcrafting") < 100
 step
 Open Your Jewelcrafting Crafting Panel:
-|tip You may have to make a few more or less, depending on your luck.
-_<Create 25 Azsunite Pendant>_
-|tip Make sure to stop crafting when you reach level 764 Jewelcrafting.
-Reach Level 764 Jewelcrafting |skill Jewelcrafting,764
-step
-talk Jabrul##100500
-|tip Inside the building.
-buy 1 Design: Raging Furystone Gorget##137811 |n
-Use the Design: Azsunite Pendant |use Design: Raging Furystone Gorget##137811
-Learn the Rank 1 Design for Raging Furystone Gorget |learn Raging Furystone Gorget##195875 |goto 39.70,34.26
-step
-talk Tiffany Cartier##93526
-|tip Inside the building.
-buy 1 Design: Raging Furystone Gorget##137836 |n
-Use the Design: Azsunite Pendant |use Design: Raging Furystone Gorget##137836
-Learn the Rank 2 Design for Raging Furystone Gorget |learn Raging Furystone Gorget##195921 |goto 40.26,34.68
-step
-_Enter the Halls of Valor (Heroic) Dungeon:_
-|tip Use the Group Finder to enter the dungeon.
-kill Odyn##95676
-|tip Use the Halls of Valor dungeon guide to accomplish this.
-click Spoils of the Worthy##245847
-|tip It appears after you defeat Odyn.
-collect Design: Raging Furystone Gorget##137857 |n
-|tip You may have to run the dungeon multiple times before this drops.
-Use the Design: Raging Furystone Gorget |use Design: Raging Furystone Gorget##137857
-Learn the Rank 3 Design for Raging Furystone Gorget |learn Raging Furystone Gorget##195942
-step
-collect Leystone Ore##123918 |n
-collect Felslate##123919 |n
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
-Use Your Prospecting Ability:
-_<Prospect Leystone Ore & Felslate>_
-|tip They're in your bags.
-|tip You may need to prospect more or less Leystone Ore & Felslate, depending on your luck.
-collect 90 Furystone##130178 |c
-collect 30 Pandemonite##130181 |c
-|tip You can also purchase them from the Auction House.
-|only if skill("Jewelcrafting") < 800
-step
-_Complete "Brimstone Destroyer" World Quests:_
-|tip These world quests require you to have the Mining profession.
-|tip Look on your world map in all of the Legion zones.
-|tip The world quest will have a Mining icon.
-|tip Use the "World Quests" dailies guide to accomplish this.
-collect 60 Infernal Brimstone##124444
-|tip You can also purchase them from the Auction House.
-|only if skill("Jewelcrafting") < 800
-step
-collect 150 Blood of Sargeras##124124 |c
-|tip You can get these as rewards for certain world quests or killing dungeon bosses.
-|tip Use the "World Quests" guide and dungeon guides to accomplish this.
-|tip You can also get them by gathering with gathering professions at rank 2 or higher.
-|tip Use the Farming guides for to accomplish this.
-|only if skill("Jewelcrafting") < 800
-step
-Open Your Jewelcrafting Crafting Panel:
-|tip You may have to make a few more or less, depending on your luck.
-|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
-_<Create 30 Raging Furystone Gorget>_
-Reach Level 800 Jewelcrafting |skill Jewelcrafting,800
+_<Create 80 Deep Amber Pendant>_
+Reach Level 100 Legion Jewelcrafting |skill Legion Jewelcrafting,100
 step
 _Congratulations!_
-You reached level 800 with the Jewelcrafting profession.
+You Reached Level 100 Legion Jewelcrafting Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Jewelcrafting\\Quest Guides\\Legion Jewelcrafting Quest Line",{
+ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Quest Guides\\Legion\\Legion Jewelcrafting Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Jewelcrafting quest line.",
 startlevel=100.0,
@@ -6053,9 +6091,10 @@ condition_end=function() return completedq(40561) end,
 condition_suggested=function() return skill('Legion Jewelcrafting') > 0 and level >= 100 and not completedq(40561) end,
 },[[
 step
+Enter the building |goto Dalaran L/10 38.99,35.14 < 5 |walk
 talk Timothy Jones##93527
 |tip Inside the building.
-Learn the Jewelcrafting Profession |condition skill("Jewelcrafting")>=1 |goto Dalaran L/10 40.06,35.30
+Learn the Jewelcrafting Profession |condition skill("Jewelcrafting")>=1 |goto 40.06,35.30
 step
 talk Tiffany Cartier##93526
 |tip Inside the building.
@@ -6080,44 +6119,54 @@ talk Timothy Jones##93527
 |tip Inside the building.
 accept A Familiar Ring to It##40524 |goto 40.05,35.28
 step
-collect 15 Leystone Ore##123918 |c |q 40524
-|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also purchase them from the Auction House.
+collect 25 Leystone Ore##123918 |c |q 40524
+|tip Farm them with Mining or purchase them from the Auction House.
 step
 Use Your Prospecting Ability:
-_<Prospect 15 Leystone Ore>_
-|tip They're in your bags.
-|tip You may need to prospect more or less Leystone Ore, depending on your luck.
+_<Prospect 25 Leystone Ore>_
 collect 5 Gem Chip##129100 |q 40529/1
+|tip You get these by gathering and prospecting Leystone Ore, if you have Mining.
+|tip You can also purchase them from the Auction House.
 step
+Enter the building |goto 38.99,35.14 < 5 |walk
 talk Tiffany Cartier##93526
 |tip Inside the building.
 turnin Truly Outrageous##40529 |goto 40.27,34.70
 accept An Eye for Detail##40530 |goto 40.27,34.70
 step
+Enter the building |goto 46.36,38.44 < 5 |walk
+Run up the stairs |goto 50.32,39.87 < 5 |walk
 talk Catriona Macrae##96198
 |tip Upstairs inside the building.
+Tell her _"I'm here to inspect the jewel Tiffany Cartier crafted for you."_
 Talk to Catriona Macrae |q 40530/1 |goto 49.49,39.37
 step
 click Catriona's Jewel##246701
+|tip Upstairs inside the building.
 Examine the Gem |q 40530/2 |goto 49.51,38.15
 step
+Enter the building |goto 38.53,27.22 < 5 |walk
 talk Didi the Wrench##93520
 |tip Inside the building.
 Tell her _"I'm here to inspect the gem chips Tiffany Cartier gave you."_
 Talk to Didi the Wrench |q 40530/3 |goto 38.84,24.74
 step
 click Gem Chips##245691
+|tip Inside the building.
 Examine the Gem Chips |q 40530/4 |goto 38.74,24.43
 step
+Enter the building |goto 48.49,57.42 < 5 |walk
 talk Debbi Moore##97005
 |tip Inside the building.
 Tell her _"I'm here to inspect the jewels Tiffany Cartier gave you."_
+Watch the dialogue
 Talk to Debbi Moore |q 40530/5 |goto 49.36,55.25
 step
 click Bag of Jewels##245692
+|tip Inside the building.
 Examine the Bag of Jewels |q 40530/6 |goto 49.50,55.60
 step
+Enter the building |goto 38.99,35.14 < 5 |walk
 talk Tiffany Cartier##93526
 |tip Inside the building.
 Bring the Bag of Jewels to Tiffany Cartier |q 40530/7 |goto 40.26,34.70
@@ -6129,18 +6178,19 @@ accept Swift Vengeance##40531 |goto 40.26,34.70
 step
 talk Raethan##97359
 Tell him _"I want to hire a personal bodyguard."_
-|tip This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area.
+|tip This will cost 5 gold, but will prevent other players from attacking you for 5 minutes in this PvP area.
 Hire a Bodyguard |havebuff 237433 |goto Dalaran L/11 68.99,58.38 |q 40531
 step
-Follow the path down |goto 64.30,58.65 < 15 |walk
+Follow the path down |goto 64.30,58.65 < 10 |walk
 talk Harold Winston##100671
 Tell him _"I'm here to reclaim the jewels you stole."_
 kill Harold Winston##100671
 collect Bag of Real Jewels##132259 |q 40531/1 |goto 49.37,65.62
 step
+Enter the building |goto Dalaran L/10 38.99,35.14 < 5 |walk
 talk Tiffany Cartier##93526
 |tip Inside the building.
-turnin Swift Vengeance##40531 |goto Dalaran L/10 40.26,34.70
+turnin Swift Vengeance##40531 |goto 40.26,34.70
 step
 label "Menu"
 talk Tiffany Cartier##93526
@@ -6153,6 +6203,7 @@ accept Making the Cut##40534 |goto 40.27,34.68 |or |next "Master_Opal_Jewelcraft
 step
 label "Deadly_Amber_Jewelcrafting"
 click Tiffany's Carving Machine
+|tip Inside the building.
 |tip Use the abilities on your action bar to rotate the gem.
 |tip Right-click the jagged shards to cut the gem.
 Cut a Deadly Deep Amber |q 40532/1 |goto 39.99,34.32
@@ -6160,6 +6211,7 @@ Cut a Deadly Deep Amber |q 40532/1 |goto 39.99,34.32
 step
 label "Quick_Azsunite_Jewelcrafting"
 click Tiffany's Carving Machine
+|tip Inside the building.
 |tip Use the abilities on your action bar to rotate the gem.
 |tip Right-click the jagged shards to cut the gem.
 Cut a Quick Azsunite |q 40533/1 |goto 39.99,34.32
@@ -6167,6 +6219,7 @@ Cut a Quick Azsunite |q 40533/1 |goto 39.99,34.32
 step
 label "Master_Opal_Jewelcrafting"
 click Tiffany's Carving Machine
+|tip Inside the building.
 |tip Use the abilities on your action bar to rotate the gem.
 |tip Right-click the jagged shards to cut the gem.
 Cut a Masterful Queen's Opal |q 40534/1 |goto 39.99,34.32
@@ -6184,6 +6237,7 @@ label "Finish"
 Follow the path up |goto Azsuna/0 45.45,42.27 < 20 |only if walking
 talk Lady Irisse##88798
 |tip Inside the building.
+Ask her _"Do you know anything about the Band of Farondis?"_
 Find Someone Who Knows About the Band of Farondis |q 40524/1 |goto Azsuna/0 47.06,41.48
 step
 talk Timothy Jones##100538
@@ -6231,6 +6285,7 @@ accept Finishing Touches##40528 |goto 46.67,41.36 |or |next "Design_Azsunite_Loo
 step
 label "Design_Skystone_Loop_Jewelcrafting"
 click Timothy's Gem Vice
+|tip Inside the building.
 |tip Use the abilities on your action bar to rotate the gem.
 |tip Right-click the jagged shards to cut the gem.
 Cut the Skystone |q 40526/1 |goto 46.68,41.31
@@ -6238,6 +6293,7 @@ Cut the Skystone |q 40526/1 |goto 46.68,41.31
 step
 label "Design_Deep_Amber_Loop_Jewelcrafting"
 click Timothy's Gem Vice
+|tip Inside the building.
 |tip Use the abilities on your action bar to rotate the gem.
 |tip Right-click the jagged shards to cut the gem.
 Cut the Deep Amber |q 40527/1 |goto 46.68,41.31
@@ -6245,6 +6301,7 @@ Cut the Deep Amber |q 40527/1 |goto 46.68,41.31
 step
 label "Design_Azsunite_Loop_Jewelcrafting"
 click Timothy's Gem Vice
+|tip Inside the building.
 |tip Use the abilities on your action bar to rotate the gem.
 |tip Right-click the jagged shards to cut the gem.
 Cut the Azsunite |q 40528/1 |goto 46.68,41.31
@@ -6260,21 +6317,25 @@ step
 Reach Level 102 |ding 102
 |tip Use the Leveling guides to accomplish this.
 step
+Enter the building |goto Dalaran L/10 38.99,35.14 < 5 |walk
 talk Tiffany Cartier##93526
 |tip Inside the building.
-accept Raising the Drogbar##40535 |goto Dalaran L/10 40.26,34.70
+accept Raising the Drogbar##40535 |goto 40.26,34.70
 step
 Cross the bridge |goto Val'sharah/0 53.81,72.47 < 20 |only if walking
-Follow the path |goto Val'sharah/0 53.02,71.67 < 30 |only if walking
-Continue following the path |goto Val'sharah/0 51.00,70.64 < 30 |only if walking
-Follow the path down |goto Val'sharah/0 48.32,68.85 < 30 |only if walking
+Follow the path |goto 53.02,71.67 < 30 |only if walking
+Continue following the path |goto 51.00,70.64 < 30 |only if walking
+Follow the path down |goto 48.32,68.85 < 30 |only if walking
+Enter the building |goto 45.63,67.64 < 5 |walk
 talk Lasune Starblade##100884
 |tip Inside the building.
+Tell her _"I'm looking for a master jewelcrafter."_
 Watch the dialogue
-Talk to the Locals |q 40535/1 |goto Val'sharah/0 45.65,67.21
+Talk to the Locals |q 40535/1 |goto 45.65,67.21
 step
 Follow the path |goto 45.07,72.33 < 20 |only if walking
 talk Jabrul##100498
+Ask him _"What happened to you?"_
 Find Jabrul |q 40535/2 |goto 45.37,73.33
 step
 Follow the path |goto 44.56,73.51 < 20 |only if walking
@@ -6283,6 +6344,7 @@ click Jabrul's Bag of Jewels##245843
 collect Jabrul's Jewels##132446 |q 40535/3 |goto 44.72,74.78
 step
 talk Jabrul##100498
+Tell him _"Here's your bag, Jabrul."_
 Watch the dialogue
 Bring Jabrul His Jewels |q 40535/4 |goto 45.37,73.33
 step
@@ -6307,6 +6369,7 @@ Cross the bridge |goto 45.08,73.73 < 20 |only if walking
 Continue following the path |goto 45.08,72.26 < 20 |only if walking
 Escort Jabrul to the Night Elf Camp |q 40536/3 |goto 45.61,69.11
 step
+Enter the building |goto 45.63,67.64 < 5 |walk
 talk Jabrul##100776
 |tip Inside the building.
 turnin Bruls Before Jewels##40536 |goto 45.45,67.37
@@ -6315,9 +6378,9 @@ Reach Level 104 |ding 104
 |tip Use the Leveling guides to accomplish this.
 step
 talk Clive Cozen##100939
-|tip Outside next to the building.
 accept Hidden Intentions##40539 |goto Dalaran L/10 38.96,35.83
 step
+Enter the building |goto 38.99,35.14 < 5 |walk
 talk Tiffany Cartier##93526
 |tip Inside the building.
 accept Lapidary Lessons##40538 |goto 40.26,34.70
@@ -6335,6 +6398,7 @@ Hire a Bodyguard |havebuff 237433 |goto Dalaran L/11 68.99,58.38 |q 40539
 step
 Follow the path |goto 59.77,39.48 < 15 |walk
 talk Ms. Xiulan##101492
+Tell her _"I'm looking for some diamonds. Do you have any?"_
 Ask Around the Underbelly for Diamonds |q 40539/2 |goto 71.41,19.60
 step
 talk Ms. Xiulan##101492
@@ -6346,21 +6410,23 @@ Follow the path |goto 67.16,25.53 < 15 |walk
 Run down the stairs |goto 57.84,50.87 < 15 |walk
 talk Inkrot##97756
 |tip Under the stairs.
+Tell him _"Ms. Xiulan sends her regards!"_
 kill Inkrot##97756
 Take Care of Inkrot |q 40539/3 |goto 60.41,78.22
 step
 Run up the stairs |goto 54.94,55.97 < 15 |walk
 Follow the path |goto 59.79,39.07 < 15 |walk
 talk Ms. Xiulan##101492
+Tell her _"Yes."_
 collect Black Market Diamond##137624 |q 40539/4 |goto 71.30,19.70
 step
-Use the Black Market Diamond |use Black Market Diamond##137624
+use the Black Market Diamond##137624
 Carve the Black Market Diamond into a Diamond Lockpick |condition itemcount(137624) == 0 |q 40539
 step
 talk Clive Cozen##100939
-|tip Outside next to the building.
 turnin Hidden Intentions##40539 |goto Dalaran L/10 38.95,35.81
 step
+Enter the building |goto 38.99,35.14 < 5 |walk
 click Tiffany's Carving Machine
 |tip Inside the building.
 |tip Use the abilities on your action bar to rotate the gem.
@@ -6374,23 +6440,24 @@ step
 Reach Level 106 |ding 106
 |tip Use the Leveling guides to accomplish this.
 step
+Enter the building |goto 38.99,35.14 < 5 |walk
 talk Tiffany Cartier##93526
 |tip Inside the building.
 accept Come at Me, Brul##40540 |goto 40.27,34.68
 step
 Follow the path |goto Stormheim/0 34.24,49.26 < 20 |only if walking and alliance
-Follow the path up |goto Stormheim/0 35.08,47.32 < 20 |only if walking and alliance
-Follow the path |goto Stormheim/0 37.55,45.63 < 30 |only if walking and alliance
-Follow the path |goto Stormheim/0 38.74,45.24 < 30 |only if walking and alliance
-Follow the path down |goto Stormheim/0 39.10,41.02 < 30 |only if walking and alliance
-Follow the path |goto Stormheim/0 37.66,32.15 < 30 |only if walking and horde
-Follow the path up |goto Stormheim/0 39.79,34.30 < 30 |only if walking and horde
-Follow the path up |goto Stormheim/0 41.30,35.73 < 20 |only if walking
-Run up the rocks |goto Stormheim/0 42.11,35.75 < 15 |only if walking
+Follow the path up |goto 35.08,47.32 < 20 |only if walking and alliance
+Follow the path |goto 37.55,45.63 < 30 |only if walking and alliance
+Follow the path |goto 38.74,45.24 < 30 |only if walking and alliance
+Follow the path down |goto 39.10,41.02 < 30 |only if walking and alliance
+Follow the path |goto 37.66,32.15 < 30 |only if walking and horde
+Follow the path up |goto 39.79,34.30 < 30 |only if walking and horde
+Follow the path up |goto 41.30,35.73 < 20 |only if walking
+Run up the rocks |goto 42.11,35.75 < 15 |only if walking
 talk Jabrul##100499
-turnin Come at Me, Brul##40540 |goto Stormheim/0 42.25,34.99
-accept The Charge Within##40541 |goto Stormheim/0 42.25,34.99
-accept Mysteries of Nature##40546 |goto Stormheim/0 42.25,34.99
+turnin Come at Me, Brul##40540 |goto 42.25,34.99
+accept The Charge Within##40541 |goto 42.25,34.99
+accept Mysteries of Nature##40546 |goto 42.25,34.99
 stickystart "The_Charge_Within_Jewelcrafting"
 step
 Follow the path up |goto 42.84,36.98 < 20 |only if walking
@@ -6408,7 +6475,7 @@ Collect #10# Storm Dragon Charges |q 40541/1 |goto 46.85,34.74
 step
 Follow the path down |goto 45.08,36.93 < 30 |only if walking
 Follow the path down |goto 42.58,36.58 < 20 |only if walking
-Run up the rocks |goto Stormheim/0 42.11,35.75 < 15 |only if walking
+Run up the rocks |goto 42.11,35.75 < 15 |only if walking
 talk Jabrul##100499
 turnin The Charge Within##40541 |goto 42.25,35.00
 turnin Mysteries of Nature##40546 |goto 42.25,35.00
@@ -6443,13 +6510,14 @@ step
 Reach Level 108 |ding 108
 |tip Use the Leveling guides to accomplish this.
 step
+Enter the building |goto Dalaran L/10 38.99,35.14 < 5 |walk
 click Letter From Jabrul##246250
 |tip Inside the building.
-accept Jabrul Needs You##40556 |goto Dalaran L/10 40.03,33.95
+accept Jabrul Needs You##40556 |goto 40.03,33.95
 step
 talk Jabrul##100521
 turnin Jabrul Needs You##40556 |goto Azsuna/0 56.37,59.62
-accept To Dalaran, With Love##40547 |goto Azsuna/0 56.37,59.62
+accept To Dalaran, With Love##40547 |goto 56.37,59.62
 step
 click Floating Planks##246228
 |tip They look like brown wooden boards floating in the water around this area.
@@ -6462,9 +6530,11 @@ click Inconspicuous Crate##246238
 Crate Up and Mail Jabrul |q 40547/2 |goto 56.36,59.57
 step
 click Inconspicuous Crate##246238
+Select _Break open the crate._
 Watch the dialogue
 Make Sure Jabrul Arrived Safely |q 40547/3 |goto Dalaran L/10 40.16,32.28
 step
+Enter the building |goto 38.99,35.14 < 5 |walk
 talk Jabrul##100500
 |tip Inside the building.
 turnin To Dalaran, With Love##40547 |goto 39.78,34.05
@@ -6480,6 +6550,7 @@ _Using the Suramar Questing Guide:_
 |tip This is the quest when you unlock the action button ability to disguise yourself in Suramar City.
 Complete the "Masquerade" Quest in Suramar |condition completedq(42079)
 step
+Enter the building |goto 38.99,35.14 < 5 |walk
 click Broken Toy Box##246154
 |tip Inside the building.
 accept Socket to Me##40558 |goto 40.06,34.90
@@ -6489,27 +6560,6 @@ talk Timothy Jones##93527
 accept Jewel of the Heavens##40561 |goto 40.05,35.30
 accept Spiriting Away##40560 |goto 40.05,35.30
 accept The Raven's Wisdom##40559 |goto 40.05,35.30
-step
-Reach Level 600 Jewelcrafting |skill Jewelcrafting,600
-|tip Use the "Jewelcrafting 1-600" profession guide to accomplish this.
-step
-talk Sminx Glasseye##93543
-accept A Personal Touch##40562 |goto 39.60,35.49
-step
-Cross the bridge |goto Suramar/0 48.37,80.46 < 20 |only if walking
-Run up the stairs |goto Suramar/0 48.51,79.08 < 20 |only if walking
-click Nightborne Jewelry Cases##252692
-|tip They look like display boxes with various colored gems in them on the counters around this area.
-collect 5 Nightborne Jewelry Case##139887 |q 40562/2 |goto Suramar/0 49.70,77.42
-step
-click Custom Jewelry Order##246266
-collect Custom Jewelry Order##139886 |q 40562/1 |goto 50.03,75.99
-step
-Run down the stairs |goto 48.41,78.78 < 20 |only if walking
-Cross the bridge |goto 51.20,82.48 < 20 |only if walking
-kill Duskwatch Shroud##111619+
-|tip You will likely need to kill several to get the item.
-collect Nightborne Loupe##132867 |q 40562/3 |goto 50.81,84.05
 step
 kill Adult Truesilver Crab##101624
 |tip Underwater inside the sunken ship.
@@ -6521,82 +6571,85 @@ step
 click Jade Plume##246267
 collect Crystal Plume##132843 |q 40558/6 |goto Moonglade/0 31.07,47.63
 step
-click Portal to Deepholm |goto Stormwind City/0 73.20,19.64 |n |only Alliance
-click Portal to Deepholm |goto Orgrimmar/1 50.8,36.4 |n |only Horde
-Travel to Deepholm |goto Deepholm/0 48.73,53.56 < 10000 |noway |c |q 40558
-step
 kill Crimson Geode##108950
 collect Crystal Core##132839 |q 40558/2 |goto Deepholm/0 51.99,20.17
 step
 clicknpc Golden Hare##101629
-|tip It looks like a small yellow rabbit running around on the ground.
-Use the Golden Hare |use Golden Hare##132976
+|tip It looks like a small yellow rabbit running around this area.
+use the Golden Hare##132976
 collect Crystal Heart##132841 |q 40558/4 |goto Vale of Eternal Blossoms/0 14.03,67.19
 step
 Cross the bridge |goto Highmountain/0 58.53,64.44 < 20 |only if walking
-Follow the path up |goto Highmountain/0 57.40,63.31 < 30 |only if walking
-Follow the path up |goto Highmountain/0 55.90,63.94 < 30 |only if walking
-Follow the path up |goto Highmountain/0 54.70,67.09 < 30 |only if walking
-Continue following the path up |goto Highmountain/0 55.33,71.95 < 30 |only if walking
-Continue up the path |goto Highmountain/0 54.52,73.24 < 30 |only if walking
-Enter the cave |goto Highmountain/0 54.59,75.32 < 20 |walk
-Follow the path down |goto Highmountain/0 54.96,78.00 < 20 |walk
-Follow the path down |goto Highmountain/0 55.25,80.14 < 30 |walk
+Follow the path up |goto 57.40,63.31 < 30 |only if walking
+Follow the path up |goto 55.90,63.94 < 30 |only if walking
+Follow the path up |goto 54.70,67.09 < 30 |only if walking
+Continue following the path up |goto 55.33,71.95 < 30 |only if walking
+Continue up the path |goto 54.52,73.24 < 30 |only if walking
+Enter the cave |goto 54.59,75.32 < 20 |walk
+Follow the path down |goto 54.96,78.00 < 20 |walk
+Follow the path down |goto 55.25,80.14 < 30 |walk
 kill Amberstone Earthrender##101630
-collect Crystal Shard##132842 |q 40558/5 |goto Highmountain/0 53.41,81.35
+|tip Inside the cave.
+collect Crystal Shard##132842 |q 40558/5 |goto 53.41,81.35
 step
-talk Sminx Glasseye##93543
-|tip Inside the building.
-turnin A Personal Touch##40562 |goto Dalaran L/10 39.61,35.49
-step
+Enter the building |goto Dalaran L/10 38.99,35.14 < 5 |walk
 talk Tiffany Cartier##93526
 |tip Inside the building.
 turnin Socket to Me##40558 |goto 40.26,34.68
 step
-_Enter the Black Rook Hold Dungeon:_
-|tip Use the Group Finder to enter the dungeon.
+Press _I_ and queue for the Black Rook Hold Dungeon, or enter it normally
+Enter the Black Rook Hold |goto Black Rook Hold/1 70.77,84.51 < 1000 |q 40559
+only if skill('Legion Jewelcrafting') <= 75
+step
 click Delayeth's Journal: The Jewels of the Is
 |tip This is located on the bottom floor of The Grand Hall.
 |tip Use the Black Rook Hold dungeon guide to navigate the dungeon.
 collect Delayeth's Journal: The Jewels of the Is##132859 |q 40559/1 |goto Black Rook Hold/2 57.21,40.74
 step
 kill Dantalionax##98970 |q 40559/2
+|tip He is part of the final boss fight of the dungeon.
 |tip Use the Black Rook Hold dungeon guide to accomplish this.
 step
+Enter the building |goto Dalaran L/10 38.99,35.14 < 5 |walk
 talk Timothy Jones##93527
 |tip Inside the building.
-turnin The Raven's Wisdom##40559 |goto Dalaran L/10 40.06,35.30
+turnin The Raven's Wisdom##40559 |goto 40.06,35.30
 step
-_Enter the Maw of Souls Dungeon:_
-|tip Use the Group Finder to enter the dungeon.
+Press _I_ and queue for the Maw of Souls Dungeon, or enter it normally
+Enter the Maw of Souls |goto Helmouth Cliffs/1 47.20,79.84 < 1000 |q 40560
+only if skill('Legion Jewelcrafting') <= 75
+step
 click Musty Crate##246125
-|tip Under the stairs on the right side.
+|tip Under the stairs on the right side of The Naglfar.
 |tip Use the Maw of Souls dungeon guide to navigate the dungeon.
 collect Ring of the Fallen##132862 |q 40560/1 |goto Helmouth Cliffs/2 68.88,66.13
 step
 kill Helya##96759 |q 40560/2
+|tip She is the last boss of the dungeon.
 |tip Use the Maw of Souls dungeon guide to accomplish this.
 step
+Enter the building |goto Dalaran L/10 38.99,35.14 < 5 |walk
 talk Timothy Jones##93527
 |tip Inside the building.
-turnin Spiriting Away##40560 |goto Dalaran L/10 40.06,35.30
+turnin Spiriting Away##40560 |goto 40.06,35.30
 step
-_Enter the Halls of Valor Dungeon:_
-|tip Use the Group Finder to enter the dungeon.
+Press _I_ and queue for the Halls of Valor Dungeon, or enter it normally
+Enter the Halls of Valor |goto Halls of Valor/2 47.55,10.45 < 1000 |q 40561
+only if skill('Legion Jewelcrafting') <= 75
+step
 kill Odyn##95676
+|tip He is the last boss of the dungeon.
 |tip Use the Halls of Valor dungeon guide to accomplish this.
 click Spoils of the Worthy##245847
 |tip It appears after you defeat Odyn.
 collect Thrymja, Ring of the Gods##132866 |q 40561/1
 step
+Enter the building |goto Dalaran L/10 38.99,35.14 < 5 |walk
 talk Timothy Jones##93527
 |tip Inside the building.
 turnin Jewel of the Heavens##40561 |goto 40.06,35.30
-step
-_Congratulations!_
-You completed the Jewelcrafting questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Jewelcrafting\\Quest Guides\\Argus Jewelcrafting Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Quest Guides\\Legion\\Argus Jewelcrafting Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Argus Jewelcrafting quest line.",
 startlevel=110.0,
@@ -6610,7 +6663,7 @@ Learn the Jewelcrafting Profession |condition skill("Jewelcrafting")>=1 |goto Da
 step
 Complete the Quest _"The Path Forward"_ |condition completedq(46941)
 |tip This is part of the Argus campaign guide.
-Check out our Argus campaign guide to accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign"
+Check out our Argus campaign guide to accomplish this |confirm |next "Leveling Guides\\Legion (100-110)\\Argus Campaign"
 step
 talk Vorel##125343
 accept A Colorful Key##48075 |goto Mac'Aree/4 44.37,66.16
@@ -6619,7 +6672,7 @@ Collect 1 of each epic gem
 |tip You can get these from prospecting Empyrium Ore.
 |tip Use the "Empyrium Ore" farming guide to accomplish this, if you have Mining.
 |tip You can also buy them from the AH.
-Click here to load the "Empyrium Ore" farming guide |confirm |next "Zygor's Profession Guides\\Mining\\Farming Guides\\Empyrium"
+Click here to load the "Empyrium Ore" farming guide |confirm |next "Profession Guides\\Mining\\Farming Guides\\Empyrium"
 collect 1 Florid Malachite##151722 |q 48075
 collect 1 Hesselian##151721 |q 48075
 collect 1 Chemirine##151720 |q 48075
@@ -6646,12 +6699,12 @@ step
 collect 50 Empyrium##151564 |q 48076
 |tip Use the "Empyrium Ore" farming guide to accomplish this, if you have Mining.
 |tip You can also purchase them from the Auction House.
-Click here to load the "Empyrium Ore" farming guide |confirm |next "Zygor's Profession Guides\\Mining\\Farming Guides\\Empyrium"
+Click here to load the "Empyrium Ore" farming guide |confirm |next "Profession Guides\\Mining\\Farming Guides\\Empyrium"
 step
 collect 1 Primal Sargerite##151568 |q 48076
 |tip You can get these as rewards for certain world quests, from gathering profession, or killing dungeon bosses.
 |tip Use the "World Quests" guide and dungeon guides to accomplish this.
-Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests"
 step
 collect 29 Gem Chip##129100 |q 48076
 |tip You can get these from prospecting any legion ore.
@@ -6661,13 +6714,13 @@ collect 3 Hesselian##151721 |q 48076
 |tip You can get these from prospecting Empyrium Ore.
 |tip Use the "Empyrium Ore" farming guide to accomplish this, if you have Mining.
 |tip You can also buy them from the AH.
-Click here to load the "Empyrium Ore" farming guide |confirm |next "Zygor's Profession Guides\\Mining\\Farming Guides\\Empyrium"
+Click here to load the "Empyrium Ore" farming guide |confirm |next "Profession Guides\\Mining\\Farming Guides\\Empyrium"
 step
 collect 3 Florid Malachite##151722 |q 48076
 |tip You can get these from prospecting Empyrium Ore.
 |tip Use the "Empyrium Ore" farming guide to accomplish this, if you have Mining.
 |tip You can also buy them from the AH.
-Click here to load the "Empyrium Ore" farming guide |confirm |next "Zygor's Profession Guides\\Mining\\Farming Guides\\Empyrium"
+Click here to load the "Empyrium Ore" farming guide |confirm |next "Profession Guides\\Mining\\Farming Guides\\Empyrium"
 step
 Open Your Jewelcrafting Crafting Panel:
 _<Create 1 Empyrial Circlet>_
@@ -6691,73 +6744,93 @@ step
 _Congratulations!_
 You completed the Argus Jewelcrafting questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 700-800 Leveling Guide",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Legion\\Legion Leatherworking 1-100",{
 author="support@zygorguides.com",
-description="This guide will walk you through leveling your Leatherworking profession from 700-800.",
+description="This guide will walk you through leveling your Legion Leatherworking skill from 1-100.",
 startlevel=100.0,
 condition_end=function() return skill('Legion Leatherworking') >= 100 end,
 condition_suggested=function() return skill('Legion Leatherworking') > 0 and skill('Legion Leatherworking') < 100 and level >= 100 end,
 },[[
 step
 _Before Starting This Guide:_
-Complete the "Leatherworking Quest Line" Guide
-Click Here to Continue |confirm
+Complete the "Legion Leatherworking Quest Line" Guide
+Click here to load the "Legion Leatherworking Quest Line" guide |confirm |next "Profession Guides\\Leatherworking\\Quest Guides\\Legion Leatherworking Quest Line"
+only if not completedq(40214)
+step
+Press _I_ and queue for the Darkheart Thicket dungeon, or enter it normally
+Enter the Darkheart Thicket |goto Darkheart Thicket/0 81.2,85.6 < 10 |c
+only if skill('Legion Leatherworking') <= 75
+step
+kill Shade of Xavius##99192
+|tip It is the last boss of the dungeon.
+collect 1 Recipe: Warhide Bindings##137876 |n
+use the Recipe: Warhide Bindings##137876
+Train Warhide Bindings |learn Warhide Bindings##194711
+step
+collect 810 Stonehide Leather##124113
+|tip Farm them with Skinning or purchase them from the Auction House.
 step
 Open Your Leatherworking Crafting Panel:
-_<Create 15 Warhide Pants (Rank 3)>_
-|tip You will need 240 Stonehide Leather.
-|tip Use the "Stonehide Leather" farming guide to collect them, if you have Skinning.
-|tip You can also purchase them from the Auction House.
-Reach Level 743 Leatherworking |skill Leatherworking,743
+_<Create 90 Warhide Bindings>_
+Reach Level 75 Legion Leatherworking |skill Legion Leatherworking,75
 step
-Follow the path |goto Azsuna/0 66.99,26.52 < 50 |only if walking
-Follow the path down |goto Azsuna/0 69.07,26.09 < 20 |only if walking
-Follow the path up |goto Suramar/0 26.29,74.09 < 20 |only if walking
-Enter the cave |goto Suramar/0 27.31,72.95 < 15 |walk
+collect 20 Stormscale##124115
+|tip Farm them with Skinning or purchase them from the Auction House.
+step
+collect 20 Unbroken Tooth##124439
+|tip Farm them with Skinning or purchase them from the Auction House.
+step
+Enter the cave |goto Suramar/0 27.22,72.70 < 10 |walk
 talk Stalriss Dawnrunner##98969
-buy Recipe: Gravenscale Grips##140649 |n
-|tip It costs 20 Stormscale and 20 Stonehide Leather.
-|tip Use the "Stonehide Leather" and "Stormscale" farming guides to collect them, if you have Skinning.
-|tip You can also purchase them from the Auction House.
-Use the Recipe: Gravenscale Grips |use Recipe: Gravenscale Grips##140649
-Learn the Rank 1 Recipe for Gravenscale Grips |learn Gravenscale Grips##194799 |goto Suramar/0 26.53,71.61
+|tip Inside the cave.
+buy 1 Recipe: Gravenscale Girdle##140645 |n
+use the Recipe: Gravenscale Girdle##140645
+Train Gravenscale Girdle |learn Gravenscale Girdle##194797 |goto 26.53,71.61
 step
-talk Ranid Glowergold##93521
-|tip Inside the building.
-buy Recipe: Gravenscale Grips##137921 |n
-|tip It costs 135 gold.
-Use the Recipe: Gravenscale Grips |use Recipe: Gravenscale Grips##137921
-Learn the Rank 2 Recipe for Gravenscale Grips |learn Gravenscale Grips##194764 |goto Dalaran L/10 34.46,28.18
+talk Raethan##97359
+|tip For 5 gold, you can hire a bodyguard that will prevent you from attacking or being attacked by other players.
+|tip The bodyguard lasts for 5 minutes.
+Kill enemies around this area
+|tip Named enemies will appear throughout the Underbelly.
+|tip You can see them on your minimap as gold star icons.
+|tip You can also kill other players if you enjoy PvP.
+|tip If you have the "No Guards" debuff, this means the area is currently free-for-all PvP.
+|tip When the guards are present, the named PvE enemies will appear.
+collect 750 Sightless Eyes |condition curcount(1149) >= 750 |goto Dalaran L/11 68.95,58.41
 step
-_Enter the Court of Stars Dungeon:_
-|tip Use the Group Finder to form a group.
-kill Advisor Melandrus##104218
-|tip Use the Court of Stars dungeon guide to accomplish this.
-collect Recipe: Gravenscale Grips##137929 |n
-|tip You may have to run the dungeon and kill him multiple times before he eventually drops this.
-Use the Recipe: Gravenscale Grips |use Recipe: Gravenscale Grips##137929
-Learn the Rank 3 Recipe for Gravenscale Grips |learn Gravenscale Grips##194772
+talk Strap Bucklebolt##107760
+buy Recipe: Gravenscale Girdle##137917 |goto 66.40,81.49
+|tip It costs 250 Sightless Eyes.
+step
+use the Recipe: Gravenscale Girdle##137917
+Train Gravenscale Girdle (Rank 2) |learn Gravenscale Girdle##194760
+step
+talk Strap Bucklebolt##107760
+buy Recipe: Gravenscale Girdle##137925 |goto 66.40,81.49
+|tip It costs 500 Sightless Eyes and 1,500 gold.
+step
+use the Recipe: Gravenscale Girdle##137925
+Train Gravenscale Girdle (Rank 3) |learn Gravenscale Girdle##194768
+step
+collect 300 Stormscale##124115
+|tip Farm them with Skinning or purchase them from the Auction House.
+step
+collect 50 Blood of Sargeras##124124
+|tip You can get these as rewards for certain world quests or killing dungeon bosses.
+|tip Use the "World Quests" guide and dungeon guides to accomplish this.
+|tip You can also get them by gathering with gathering professions at rank 2 or higher.
+|tip Use the Farming guides to accomplish this.
 step
 Open Your Leatherworking Crafting Panel:
-_<Create 10 Gravenscale Grips (Rank 3)>_
-|tip You will need 1,100 Stormscale.
-|tip Use the "Stormscale" farming guide to collect them, if you have Skinning.
-|tip You can also purchase them from the Auction House.
-Reach Level 783 Leatherworking |skill Leatherworking,783
-step
-Open Your Leatherworking Crafting Panel:
-|tip You may have to make a few more or less, depending on your luck.
-|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
-_<Create 40 Gravenscale Grips (Rank 3)>_
-|tip You will need 4,400 Stormscale.
-|tip Use the "Stormscale" farming guide to collect them, if you have Skinning.
-|tip You can also purchase them from the Auction House.
-Reach Level 800 Leatherworking |skill Leatherworking,800
+_<Create 25 Gravenscale Girdle>_
+Reach Level 100 Legion Leatherworking |skill Legion Leatherworking,100
 step
 _Congratulations!_
-You reached level 800 with the Leatherworking profession.
+You Reached 100 Legion Leatherworking Skill.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Leatherworking\\Quest Guides\\Legion Leatherworking Quest Line",{
+ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Quest Guides\\Legion\\Legion Leatherworking Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Leatherworking quest line.",
 startlevel=100.0,
@@ -6765,49 +6838,54 @@ condition_end=function() return completedq(40214) end,
 condition_suggested=function() return skill('Legion Leatherworking') > 0 and level >= 100 and not completedq(40214) end,
 },[[
 step
+Enter the building |goto Dalaran L/10 36.28,29.89 < 5 |walk
 talk Namha Moonwater##93523
 |tip Inside the building.
-Learn the Leatherworking Profession |condition skill("Leatherworking")>=1 |goto Dalaran L/10 35.06,29.40
+Learn the Leatherworking Profession |condition skill("Leatherworking")>=1 |goto 35.06,29.40
 step
 talk Namha Moonwater##93523
 |tip Inside the building.
 accept Skin Deep##39958 |goto 35.06,29.40
 step
 collect 20 Stonehide Leather##124113 |q 39958/1
-_Have Skinning?_
-|tip Use the Stonehide Leather farming guide to get these.
-_Don't Have Skinning?_
-|tip Buy these from the Auction House in Stormwind City. |only if _G.UnitFactionGroup("player")=="Alliance"
-|tip Buy these from the Auction House in Orgrimmar. |only if _G.UnitFactionGroup("player")=="Horde"
+|tip Farm them with Skinning or purchase them from the Auction House.
 step
 collect 5 Stormscale##124115 |q 39958/2
-|tip Use the "Stormscale" farming guide to gather these, if you have Skinning.
-|tip You can also purchase them from the Auction House.
+|tip Farm them with Skinning or purchase them from the Auction House.
 step
+Enter the building |goto 36.28,29.89 < 5 |walk
 talk Namha Moonwater##93523
 |tip Inside the building.
 turnin Skin Deep##39958 |goto 35.06,29.40
 accept Over Your Head##40183 |goto 35.06,29.40
 step
 click Namha's Tanning Rack
+|tip Inside the building.
 _<Create Shaved Stonehide Pelts>_
 collect 7 Shaved Stonehide Pelt##130869 |c |goto 35.30,28.47 |q 40183
 step
 click Namha's Tanning Rack
+|tip Inside the building.
 _<Create Tanned Stonehide Leather>_
 collect 7 Tanned Stonehide Leather##130870 |c |goto 35.30,28.47 |q 40183
 step
 click Namha's Workbench
+|tip Inside the building.
 _<Create Stonehide Leather Linings>_
 collect 2 Stonehide Leather Lining##130872 |c |goto 34.66,28.94 |q 40183
 step
 click Namha's Workbench
+|tip Inside the building.
 _<Create Stonehide Leather Strips>_
 collect 10 Stonehide Leather Strip##130875 |c |goto 34.66,28.94 |q 40183
 step
 click Namha's Workbench
+|tip Inside the building.
 _<Create Rough Warhide Mask>_
 collect Rough Warhide Mask##129975 |q 40183/1 |goto 34.66,28.94
+step
+Reach level 104 |ding 104
+|tip Use the leveling guides to accomplish this.
 step
 talk Namha Moonwater##93523
 |tip Inside the building.
@@ -6832,48 +6910,53 @@ talk Mei Francis##92489
 Tell her _"Namha asked me to talk to you about mount barding."_
 Talk to Mei Francis |q 40196/1 |goto 57.62,42.12
 step
+Enter the building |goto 36.28,29.89 < 5 |walk
 talk Namha Moonwater##93523
 |tip Inside the building.
 turnin Adventuring Anxieties##40196 |goto 35.06,29.40
 accept The Necessary Materials##40197 |goto 35.06,29.40
 step
-collect 100 Stonehide Leather##124113 |c |q 40197
-_Have Skinning?_
-|tip Use the Stonehide Leather farming guide to get these.
-_Don't Have Skinning?_
-|tip Buy these from the Auction House in Stormwind City. |only if _G.UnitFactionGroup("player")=="Alliance"
-|tip Buy these from the Auction House in Orgrimmar. |only if _G.UnitFactionGroup("player")=="Horde"
+collect 100 Stonehide Leather##124113 |q 40197
+|tip Farm them with Skinning or purchase them from the Auction House.
 step
+Enter the building |goto 36.28,29.89 < 5 |walk
 talk Namha Moonwater##93523
 |tip Inside the building.
 turnin The Necessary Materials##40197 |goto 35.06,29.40
 accept Dazed of the Past##41889 |goto 35.06,29.40
 step
 click Namaha's Tanning Mixture
-|tip It's a glass bottle with red liquid inside of it sitting on the table.
-collect 10 Namaha's Tanning Mixture##130891 |c |goto 34.77,28.94 |q 41889
+|tip Inside the building.
+|tip It looks like a small glass bottle with red liquid inside of it sitting on a table.
+collect 10 Namaha's Tanning Mixture##130891 |goto 34.77,28.94 |q 41889
 step
 click Namaha's Tanning Rack
+|tip Inside the building.
 _<Create 10 Tanned Stonehide Pelts>_
 collect 100 Tanned Stonehide Leather##136539 |goto 35.31,28.49 |q 41889
 step
 click Namaha's Workbench
+|tip Inside the building.
 _<Create 5 Stonehide Leather Strips>_
 collect 10 Stonehide Leather Strip##130875 |goto 34.66,28.94 |q 41889
 step
 click Namaha's Workbench
+|tip Inside the building.
 _<Create 1 Stonehide Caparison>_
 collect Stonehide Caparison##130896 |goto 34.66,28.94 |q 41889
 step
 click Namaha's Workbench
+|tip Inside the building.
 _<Create 1 Stonehide Champron>_
 collect Stonehide Champron##130894 |goto 34.66,28.94 |q 41889
 step
 click Namaha's Workbench
+|tip Inside the building.
 _<Create 1 Stonehide Crinet>_
 collect Stonehide Crinet##130895 |goto 34.66,28.94 |q 41889
 step
 click Namaha's Workbench
+|tip Inside the building.
 _<Create 1 Stonehide Leather Barding>_
 collect Stonehide Leather Barding##130887 |q 41889/1 |goto 34.66,28.94
 step
@@ -6883,23 +6966,30 @@ turnin Dazed of the Past##41889 |goto 35.06,29.40
 accept Battle Bonds##40200 |goto 35.06,29.40 |only Alliance
 accept Battle Bonds##40241 |goto 35.06,29.40 |only Horde
 step
+Enter the building |goto 57.84,40.37 < 5 |walk
 talk Lio the Lioness##98725
 |tip Inside the building.
 Tell her _"Namha told me you had some new pet toy ideas?"_
 Talk to Lio the Lioness |q 40200/1 |goto 59.45,39.55
 |only Alliance
 step
+Enter the building |goto 57.84,40.37 < 5 |walk
 talk Serr'ah##115287
 |tip Inside the building.
 Tell her _"Namha told me you had some new pet toy ideas?"_
 Talk to Serr'ah |q 40241/1 |goto 58.55,37.56
 |only Horde
 step
+Reach level 106 |ding 106
+|tip Use the leveling guides to accomplish this.
+step
+Enter the building |goto 36.28,29.89 < 5 |walk
 talk Namha Moonwater##93523
 |tip Inside the building.
 Return to Namha |q 40200/2 |goto 35.06,29.40
 |only Alliance
 step
+Enter the building |goto 36.28,29.89 < 5 |walk
 talk Namha Moonwater##93523
 |tip Inside the building.
 Return to Namha |q 40241/2 |goto 35.06,29.40
@@ -6912,26 +7002,32 @@ turnin Battle Bonds##40241 |goto 35.06,29.40 |only Horde
 accept Playthings##40201 |goto 35.06,29.40
 step
 click Namaha's Tanning Mixture
+|tip Inside the building.
 |tip It's a glass bottle with red liquid inside of it sitting on the table.
 collect 10 Namaha's Tanning Mixture##130891 |c |goto 34.77,28.94 |q 40201
 step
 click Namaha's Tanning Rack
+|tip Inside the building.
 _<Create Shaved Stonehide Pelts>_
 collect 8 Shaved Stonehide Pelt##130869 |c |goto 35.29,28.47 |q 40201
 step
 click Namaha's Tanning Rack
+|tip Inside the building.
 _<Create 8 Tanned Stonehide Leather>_
 collect 8 Tanned Stonehide Leather##130870 |c |goto 35.29,28.47 |q 40201
 step
 click Namaha's Workbench
+|tip Inside the building.
 _<Create 5 Stonehide Leather Strips>_
 collect 10 Stonehide Leather Strip##130875 |c |goto 34.57,29.07 |q 40201
 step
 click Namaha's Workbench
+|tip Inside the building.
 _<Create 2 Stonehide Leather Linings>_
 collect 2 Stonehide Leather Lining##130872 |c |goto 34.57,29.07 |q 40201
 step
 click Namaha's Workbench
+|tip Inside the building.
 _<Create 1 Stonehide Leather Bed>_
 collect Stonehide Leather Bed##130090 |q 40201/1 |goto 34.57,29.07
 step
@@ -6963,18 +7059,9 @@ collect Black Rook Armor##129973 |q 40181/1 |count 4 |goto 40.79,50.70
 step
 click Black Rook Armor##245198
 collect Black Rook Armor##129973 |q 40181/1 |count 5 |goto 40.72,51.05
-step
-Cross the bridge |goto Stormheim/0 40.09,62.68 < 20 |only if walking and alliance
-Follow the path |goto Stormheim/0 42.85,59.15 < 20 |only if walking and alliance
-Cross the bridge |goto Stormheim/0 44.15,60.48 < 20 |only if walking
-Follow the path |goto Stormheim/0 44.64,63.30 < 20 |only if walking
-Follow the path up |goto Stormheim/0 46.85,65.59 < 20 |only if walking
-Climb on top of the rock |goto Stormheim/0 46.48,67.81 <20 |only if walking
-clicknpc Grapple Point##110334
-|tip It's on top of the wall nearby.
-Grapple onto the Wall |goto Stormheim/0 45.86,67.84 < 7 |noway |c |q 40179
 stickystart "Vrykul_Leather_Bindings_Leatherworking"
 step
+Enter the building |goto Stormheim/0 45.30,67.12 < 5 |walk
 kill Jann Harnelor##105216
 |tip Inside the building.
 collect Hideshaper's Vestment##129971 |q 40178/1 |goto 45.62,67.19
@@ -6983,10 +7070,11 @@ label "Vrykul_Leather_Bindings_Leatherworking"
 Kill enemies around this area
 collect 7 Vrykul Leather Binding##129972 |q 40179/1 |goto 44.72,66.86
 step
+Enter the building |goto Dalaran L/10 36.28,29.89 < 5 |walk
 talk Diane Cannings##93522
 |tip Inside the building.
-turnin Stormheim Savagery##40179 |goto Dalaran L/10 35.44,30.29
-turnin Vestment Opportunity##40178 |goto Dalaran L/10 35.44,30.29
+turnin Stormheim Savagery##40179 |goto 35.44,30.29
+turnin Vestment Opportunity##40178 |goto 35.44,30.29
 step
 talk Thanid Glowergold##98931
 |tip Inside the building.
@@ -6998,35 +7086,38 @@ talk Namha Moonwater##93523
 accept From Head to Toe##40176 |goto 35.05,29.40
 step
 click Namaha's Tanning Mixture
+|tip Inside the building.
 |tip It's a glass bottle with red liquid inside of it sitting on the table.
 collect 10 Namaha's Tanning Mixture##130891 |c |goto 34.77,28.94 |q 40176
 step
 click Namaha's Tanning Rack
+|tip Inside the building.
 _<Create 5 Shaved Stonehide Pelts>_
 collect 5 Shaved Stonehide Pelt##130869 |c |goto 35.31,28.47 |q 40176
 step
 click Namaha's Tanning Rack
+|tip Inside the building.
 _<Create 5 Tanned Stonehide Leather>_
 collect 5 Tanned Stonehide Leather##130870 |c |goto 35.31,28.47 |q 40176
 step
 click Namaha's Workbench
+|tip Inside the building.
 _<Create 1 Stonehide Boot Exterior>_
 collect Stonehide Boot Exterior##130873 |c |goto 34.66,28.91 |q 40176
 step
 click Namaha's Workbench
+|tip Inside the building.
 _<Create 2 Stonehide Leather Linings>_
 collect 2 Stonehide Leather Lining##130872 |c |goto 34.66,28.91 |q 40176
 step
 click Namaha's Workbench
+|tip Inside the building.
 _<Create 1 Sturdy Stonehide Boots>_
 collect Sturdy Stonehide Boots##129964 |q 40176/1 |goto 34.66,28.91
 step
 talk Namha Moonwater##93523
 |tip Inside the building.
 turnin From Head to Toe##40176 |goto 35.05,29.40
-step
-Reach Level 102 |ding 102
-|tip Use the Leveling guides to accomplish this.
 step
 talk Diane Cannings##93522
 |tip Inside the building.
@@ -7060,14 +7151,10 @@ talk Celea##98964
 turnin Naga Know-How##40189 |goto 47.50,44.17
 turnin Best Served Cold##40188 |goto 47.50,44.17
 step
-Reach Level 104 |ding 104
-|tip Use the Leveling guides to accomplish this.
-step
 talk Celea##98964
 accept A Daring Rescue##40195 |goto 47.50,44.17
 accept Reclaimed Cargo##40194 |goto 47.50,44.17
 step
-Run up the rocks here |goto 53.51,57.87 < 20 |only if walking
 click Crate of Mail Armor##245221+
 |tip They look like brown wooden boxes on the ground inside this cave.
 collect 5 Mail Armor Shipment##130072 |q 40194/1 |goto Azsuna/18 73.92,79.80
@@ -7087,7 +7174,9 @@ talk Taldranis##99635
 Tell him _"I'm ready, Taldranis. Let's go."_
 Talk to Taldranis |q 40327/1 |goto 82.66,85.29
 step
-Escort Taldranis to Safety |q 40327/2 |goto Azsuna/0 52.61,59.61
+Follow the path |goto 74.75,80.93 < 10 |walk
+Leave the cave |goto Azsuna/0 51.07,59.28 < 10 |walk
+Escort Taldranis to Safety |q 40327/2 |goto 52.61,59.61
 step
 talk Celea##98964
 turnin Testing the Metal##40327 |goto 47.49,44.17
@@ -7146,23 +7235,23 @@ Cross the bridge |goto Thunder Totem/0 42.01,64.19 < 15 |only if walking
 talk Hrul Sharphoof##98948
 turnin Claw of the Land##40192 |goto Thunder Totem/0 36.68,79.44
 step
-Reach Level 106 |ding 106
-|tip Use the Leveling guides to accomplish this.
-step
+Enter the building |goto Dalaran L/10 36.28,29.89 < 5 |walk
 talk Diane Cannings##93522
 |tip Inside the building.
-accept Rats!##40198 |goto Dalaran L/10 35.41,30.31
+accept Rats!##40198 |goto 35.41,30.31
 step
 talk Thanid Glowergold##98931
 |tip Inside the building.
 accept Leather Legwork##40199 |goto 34.28,28.65
 step
+Enter the building |goto 50.38,71.37 < 5 |walk
 talk Bragund Brightlink##96979
 |tip Inside the building.
 Ask him _"Do you happen to have an extra crowbar?"_
 Watch the dialogue
 Talk to Bragund Brightlink |q 40199/1 |goto 50.96,73.98
 step
+Enter the building |goto 46.48,28.37 < 5 |walk
 talk Imindril Spearsong##92184
 |tip Inside the building.
 Ask her _"Do you have any armor stands you could part with?"_
@@ -7170,8 +7259,8 @@ Watch the dialogue
 Ask Imindril Spearsong About Armor Stands |q 40199/2 |goto 46.56,26.83
 step
 Run up the stairs |goto 40.78,48.42 < 10 |only if walking
-Enter the building |goto 42.86,50.92 < 10 |walk
-Run up the stairs |goto 44.24,50.75 < 10 |walk
+Enter the building |goto 42.86,50.92 < 10 |only if walking
+Run up the stairs |goto 44.24,50.75 < 10 |only if walking
 talk Shandy Glossgleam##96967
 |tip Upstairs on the balcony of the building.
 Ask him _"Can you clean this dress for me, Shandy?"_
@@ -7183,11 +7272,13 @@ Choose _"Pay the 2 gold."_
 Watch the dialogue
 Pay Shandy Glossgleam 2 Gold |q 40199/4 |goto 42.93,48.90
 step
+Enter the building |goto 46.48,28.37 < 5 |walk
 talk Imindril Spearsong##92184
 |tip Inside the building.
 Tell her _"Here is your dress. Can I have the armor stands now?"_
 Return the Dress to Imindril Spearsong |q 40199/5 |goto 46.56,26.83
 step
+Enter the building |goto 50.38,71.37 < 5 |walk
 talk Bragund Brightlink##96979
 |tip Inside the building.
 Tell him _"Here are your stands. May I have the crowbar now?"_
@@ -7196,6 +7287,7 @@ step
 Watch the dialogue
 Aquire the Crowbar |q 40199/7 |goto 50.96,73.98
 step
+Enter the building |goto Dalaran L/10 36.28,29.89 < 5 |walk
 talk Thanid Glowergold##98931
 |tip Inside the building.
 turnin Leather Legwork##40199 |goto 34.28,28.65
@@ -7208,9 +7300,10 @@ Use the Leatherworking Pattern Scraps |use Leatherworking Pattern Scrap##130078
 |tip You need 3 Leatherworking Pattern Scraps.
 collect 3 Highmountain Leatherworking Pattern##130077 |q 40198/1 |goto Dalaran L/11 37.17,43.46
 step
+Enter the building |goto Dalaran L/10 36.28,29.89 < 5 |walk
 talk Diane Cannings##93522
 |tip Inside the building.
-turnin Rats!##40198 |goto Dalaran L/10 35.44,30.22
+turnin Rats!##40198 |goto 35.44,30.22
 step
 Reach Level 108 |ding 108
 |tip Use the Leveling guides to accomplish this.
@@ -7231,7 +7324,7 @@ accept Scales of the Arcane##40207 |goto Azsuna/0 47.49,44.17
 step
 Enter the cave |goto 53.29,29.71 < 15 |walk
 kill Axetail Basilisk Matriarch##99598
-|tip She walks around in the cave.
+|tip Inside the cave.
 collect Axetail Basilisk Matriarch Scales##130110 |q 40209/1 |goto 53.42,27.74
 step
 Leave the cave |goto 53.28,29.65 < 15 |walk
@@ -7268,9 +7361,9 @@ kill Wrath of Azshara##96028 |q 40208/2 |goto Eye of Azshara/1 55.69,53.20
 |tip Save the Rank 3 Recipe for Warhide Pants.
 step
 talk Celea##98964
-turnin Scales of the Earth##40209 |goto Azsuna/0 47.49,44.17
-turnin Scales of the Sea##40208 |goto Azsuna/0 47.49,44.17
 turnin Scales of the Arcane##40207 |goto Azsuna/0 47.49,44.17
+turnin Scales of the Sea##40208 |goto Azsuna/0 47.49,44.17
+turnin Scales of the Earth##40209 |goto Azsuna/0 47.49,44.17
 accept Time Well Spent##40210 |goto Azsuna/0 47.49,44.17
 step
 Cross the bridge |goto Thunder Totem/0 42.01,64.19
@@ -7345,23 +7438,24 @@ step
 Follow the path |goto Highmountain/30 52.90,65.01 < 20 |walk
 Cross the bridge |goto Thunder Totem/0 42.01,64.19 < 15 |only if walking
 talk Hrul Sharphoof##98948
-turnin Respect for the Past##40205 |goto Thunder Totem/0 36.71,79.15
-turnin Evolution of the Past##40204 |goto Thunder Totem/0 36.71,79.15
-turnin Strength of the Past##40203 |goto Thunder Totem/0 36.71,79.15
-accept Well Spent Time##40415 |goto Thunder Totem/0 36.71,79.15
+turnin Respect for the Past##40205 |goto Thunder Totem/0 36.69,79.44
+turnin Evolution of the Past##40204 |goto Thunder Totem/0 36.69,79.44
+turnin Strength of the Past##40203 |goto Thunder Totem/0 36.69,79.44
+accept Well Spent Time##40415 |goto Thunder Totem/0 36.69,79.44
 step
 Use the Recipe: Warhide Pants |use Recipe: Warhide Pants##137871
 |tip You received this as a reward from the "Respect for the Past" quest.
-Learn the Rank 2 Recipe for Warhide Pants |learn Warhide Pants##216233
+Learn the Rank 2 Recipe for Warhide Pants |learn Warhide Pants##194706
 step
 Use the Recipe: Warhide Pants |use Recipe: Warhide Pants##137877
 |tip The Wrath of Azshara boss in the Eye of Azshara dropped this when you killed him.
 Learn the Rank 3 Recipe for Warhide Pants |learn Warhide Pants##194712
 step
+Enter the building |goto Dalaran L/10 36.28,29.89 < 5 |walk
 talk Namha Moonwater##93523
 |tip Inside the building.
-turnin Well Spent Time##40415 |goto Dalaran L/10 35.05,29.42
-turnin Time Well Spent##40210 |goto Dalaran L/10 35.05,29.42
+turnin Well Spent Time##40415 |goto 35.05,29.42
+turnin Time Well Spent##40210 |goto 35.05,29.42
 step
 Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
@@ -7374,14 +7468,16 @@ _Using the Suramar Questing Guide:_
 |tip This is the quest when you unlock the action button ability to disguise yourself in Suramar City.
 Complete the "Masquerade" Quest in Suramar |condition completedq(42079)
 step
+Enter the building |goto Dalaran L/10 36.28,29.89 < 5 |walk
 talk Namha Moonwater##93523
-accept Demon Flesh##40211 |goto Dalaran L/10 35.05,29.42
+accept Demon Flesh##40211 |goto 35.05,29.42
 step
 Follow the path |goto Azsuna/0 66.99,26.52 < 50 |only if walking
 Follow the path down |goto Azsuna/0 69.07,26.09 < 20 |only if walking
 Follow the path up |goto Suramar/0 26.29,74.09 < 20 |only if walking
 Enter the cave |goto Suramar/0 27.31,72.95 < 15 |walk
 talk Stalriss Dawnrunner##98969
+|tip Inside the cave.
 turnin Demon Flesh##40211 |goto Suramar/0 26.53,71.61
 accept Hounds Abound##40213 |goto Suramar/0 26.53,71.61
 accept Wrong End of the Knife##40212 |goto Suramar/0 26.53,71.61
@@ -7401,11 +7497,13 @@ Follow the path up |goto 30.03,78.58 < 20 |only if walking
 Follow the path up |goto 29.30,71.88 < 20 |only if walking
 Enter the cave |goto 27.31,72.95 < 15 |walk
 talk Stalriss Dawnrunner##98969
+|tip Inside the cave.
 turnin Hounds Abound##40213 |goto 26.53,71.61
 step
 Cross the bridge |goto 46.75,80.34 < 20 |only if walking
 Follow the path |goto 45.57,76.45 < 20 |only if walking
 Cross the bridge |goto 46.58,75.86 < 20 |only if walking
+Enter the building |goto 47.30,75.91 < 5 |walk
 kill Tallian##99588 |q 40212/2 |goto 47.33,76.34
 |tip Inside the building.
 step
@@ -7416,33 +7514,38 @@ step
 Run down the stairs |goto 50.38,76.50 < 20 |only if walking
 kill Syana##99589 |q 40212/3 |goto 50.78,76.77
 step
+collect 5 Unbroken Claw##124438 |q 40214
+|tip Farm them with Skinning or purchase them from the Auction House.
+step
 Follow the path |goto Azsuna/0 66.99,26.52 < 50 |only if walking
 Follow the path down |goto Azsuna/0 69.07,26.09 < 20 |only if walking
 Follow the path up |goto Suramar/0 26.29,74.09 < 20 |only if walking
 Enter the cave |goto Suramar/0 27.31,72.95 < 15 |walk
 talk Stalriss Dawnrunner##98969
+|tip Inside the cave.
 turnin Wrong End of the Knife##40212 |goto Suramar/0 26.53,71.61
 accept Fel Tanning##40214 |goto Suramar/0 26.53,71.61
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 2 Fel Leather Cuffs>_
-collect 2 Fel Leather Cuff##130937 |c |goto 26.53,71.61 |q 40214
+collect 2 Fel Leather Cuff##130937 |goto 26.53,71.61 |q 40214
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 5 Fel Leather Straps>_
-collect 10 Fel Leather Strap##130880 |c |goto 26.53,71.61 |q 40214
+collect 10 Fel Leather Strap##130880 |goto 26.53,71.61 |q 40214
 step
 Open Your Leatherworking Crafting Panel:
 _<Create 1 Felhide Bracers>_
-collect Felhide Bracer##130130 |q 40214/1 |goto 26.57,71.64
+collect Felhide Bracer##130130 |goto 26.53,71.61 |q 40214/1
 step
 talk Stalriss Dawnrunner##98969
+|tip Inside the cave.
 turnin Fel Tanning##40214 |goto 26.53,71.61
 step
 _Congratulations!_
 You completed the Leatherworking questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Leatherworking\\Quest Guides\\Argus Leatherworking Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Quest Guides\\Legion\\Argus Leatherworking Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Argus Leatherworking quest line.",
 startlevel=110.0,
@@ -7474,21 +7577,22 @@ step
 _Congratulations!_
 You completed the Argus Leatherworking questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Mining\\Farming Guides\\Empyrium",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Legion\\Empyrium",{
 author="support@zygorguides.com",
-description="This guide will walk you through farming Empyrium for various Engineering and Blacksmithing recipes.",
-startlevel=110.0,
+description="Empyrium can be gathered from Krokuun.",
+condition_end=function() return skill('Legion Mining') >= 50 end,
 },[[
 step
-label "path"
+label "Start_Path"
 map Krokuun/0
 path loop off; ants curved; dist 20
 path	59.69,61.63	58.57,57.77	58.09,54.90
 path	60.47,53.83	61.68,49.79	61.62,46.21
 path	62.70,44.86	64.21,41.74	64.72,38.52
 path	67.08,36.65	69.20,34.09	71.48,34.17
-click Empyrium Seam##272780
-click Empyrium Deposit##272768
+click Empyrium Seam##272780+
+click Empyrium Deposit##272768+
+click Rich Empyrium Deposit##272778+
 collect Empyrium##151564 |n
 Follow the path until you reach the end |goto 71.48,34.17 |noway |c
 step
@@ -7506,116 +7610,161 @@ path	39.81,70.77	42.39,74.66	44.71,71.86
 path	47.54,68.02	49.10,68.93	51.63,70.30
 path	51.72,67.52	52.57,64.76	55.67,61.81
 path	57.97,61.39
-click Empyrium Seam##272780
-click Empyrium Deposit##272768
+click Empyrium Seam##272780+
+click Empyrium Deposit##272768+
+click Rich Empyrium Deposit##272778+
 collect Empyrium##151564 |n
-Follow the path until you reach the end |goto 57.97,61.39 |noway |c |next "path"
+Follow the path until you reach the end |goto 57.97,61.39 |noway |c |next "Start_Path"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Mining\\Farming Guides\\Felslate (Killing & Mining Enemies)",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Legion\\Felslate",{
 author="support@zygorguides.com",
-description="This guide will walk you through farming Felslate for various Engineering and Blacksmithing recipes.",
-startlevel=100.0,
-},[[
-step
-label "Start_Farming_Felslate"
-_Where Do You Want to Farm Felslate?_
-Azsuna (Level 100+) |confirm |next "Felslate_Azsuna"
-Suramar (Level 110) |confirm |next "Felslate_Suramar"
-step
-label "Felslate_Azsuna"
-kill Infernal Brutalizer##93619+
-|tip They're the big rock demon enemies.
-|tip Loot and mine them.
-collect Felslate##123919 |n |goto Azsuna/0 42.55,44.25
-Click here to return to the menu |confirm |next "Start_Farming_Felslate"
-step
-label "Felslate_Suramar"
-Follow the path |goto Suramar/0 34.96,51.12 < 30 |only if walking
-Follow the path up |goto Suramar/0 34.10,54.37 < 20 |only if walking
-Follow the path |goto Suramar/0 33.10,56.60 < 30 |only if walking
-Follow the path down |goto Suramar/0 32.78,58.75 < 20 |only if walking
-Follow the path |goto Suramar/0 31.95,63.26 < 20 |only if walking
-kill Felslate Basilisk##114113+
-|tip They are all around this area near the green liquid pools.
-|tip Loot and mine them.
-collect Felslate##123919 |n |goto Suramar/0 28.41,60.77
-Click here to return to the menu |confirm |next "Start_Farming_Felslate"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Mining\\Farming Guides\\Leystone & Felslate Seam Route",{
-author="support@zygorguides.com",
-description="This guide will walk you through farming Leystone and Felslate for various Engineering and Blacksmithing recipes.",
-startlevel=110.0,
+description="Felslate can be gathered from Suramar.",
+condition_end=function() return skill('Legion Mining') >= 50 end,
 },[[
 step
 label "Start_Seams_Route"
-Follow the path |goto Suramar/0 24.63,32.33 < 30 |n |walk
-Follow the path |goto Suramar/0 24.92,35.02 < 30 |n |walk
-Follow the path |goto Suramar/0 25.26,37.98 < 30 |n |walk
-Follow the path |goto Suramar/0 25.50,40.80 < 30 |n |walk
-Follow the path |goto Suramar/0 25.03,44.34 < 30 |n |walk
-Follow the path |goto Suramar/0 25.67,46.85 < 30 |n |walk
-Enter the cave |goto Suramar/0 24.33,50.87 < 20 |c
+Follow the path |goto Suramar/0 24.63,32.33 < 30 |walk
+Follow the path |goto 24.92,35.02 < 30 |walk
+Follow the path |goto 25.26,37.98 < 30 |walk
+Follow the path |goto 25.50,40.80 < 30 |walk
+Follow the path |goto 25.03,44.34 < 30 |walk
+Follow the path |goto 25.67,46.85 < 30 |walk
+Enter the cave |goto 24.33,50.87 < 20 |c
 step
 Check for Leystone or Felslate Seams |goto 24.63,52.66 < 20 |c
 step
-Leave the cave |goto 24.29,50.82 < 20 |n |walk
-Follow the path up |goto 24.47,50.22 < 20 |n |walk
-Follow the path up |goto 25.19,50.35 < 20 |n |walk
-Follow the path |goto 24.68,52.67 < 30 |n |walk
-Run up the hill |goto 25.63,54.17 < 30 |n |walk
-Dismount and carefull follow the path down |goto 26.70,55.22 < 20 |n |walk
+Leave the cave |goto 24.29,50.82 < 20 |walk
+Follow the path up |goto 24.47,50.22 < 20 |walk
+Follow the path up |goto 25.19,50.35 < 20 |walk
+Follow the path |goto 24.68,52.67 < 30 |walk
+Run up the hill |goto 25.63,54.17 < 30 |walk
+Dismount and carefull follow the path down |goto 26.70,55.22 < 20 |walk
 Enter the cave |goto 28.42,56.13 < 20 |c
 step
-Follow the path |goto 29.30,55.61 < 20 |n |walk
-Follow the path |goto 30.22,56.07 < 20 |n |walk
+Follow the path |goto 29.30,55.61 < 20 |walk
+Follow the path |goto 30.22,56.07 < 20 |walk
 Check for Leystone or Felslate Seams |goto 30.86,55.42 < 30 |c
 step
-Follow the path |goto 30.47,55.74 < 20 |n |walk
-Leave the cave |goto 28.42,56.10 < 20 |n |walk
-Follow the path up |goto 28.51,57.27 < 20 |n |walk
-Follow the path up |goto 29.52,56.69 < 20 |n |walk
-Follow the path up |goto 29.63,55.40 < 20 |n |walk
-Follow the path up |goto 29.95,54.85 < 20 |n |walk
-Follow the path up |goto 29.16,53.82 < 20 |n |walk
-Follow the path |goto 30.97,53.04 < 30 |n |walk
-Follow the path |goto 30.32,49.71 < 30 |n |walk
+Follow the path |goto 30.47,55.74 < 20 |walk
+Leave the cave |goto 28.42,56.10 < 20 |walk
+Follow the path up |goto 28.51,57.27 < 20 |walk
+Follow the path up |goto 29.52,56.69 < 20 |walk
+Follow the path up |goto 29.63,55.40 < 20 |walk
+Follow the path up |goto 29.95,54.85 < 20 |walk
+Follow the path up |goto 29.16,53.82 < 20 |walk
+Follow the path |goto 30.97,53.04 < 30 |walk
+Follow the path |goto 30.32,49.71 < 30 |walk
 Enter the cave |goto 29.36,50.83 < 20 |c
 step
-Follow the path |goto 29.71,51.71 < 20 |n |walk
+Follow the path |goto 29.71,51.71 < 20 |walk
 Check for Leystone or Felslate Seams |goto 29.32,53.27 < 30 |c
 step
-Follow the path |goto 29.71,51.71 < 20 |n |walk
-Leave the cave |goto 29.36,50.83 < 20 |n |walk
-Follow the path |goto 30.70,47.16 < 30 |n |walk
-Follow the path |goto 32.03,42.43 < 30 |n |walk
-Follow the path |goto 32.79,40.18 < 30 |n |walk
-Follow the path up |goto 34.61,39.03 < 30 |n |walk
-Follow the water |goto 37.65,36.97 < 30 |n |walk
-Follow the path up |goto 39.10,33.36 < 30 |n |walk
+Follow the path |goto 29.71,51.71 < 20 |walk
+Leave the cave |goto 29.36,50.83 < 20 |walk
+Follow the path |goto 30.70,47.16 < 30 |walk
+Follow the path |goto 32.03,42.43 < 30 |walk
+Follow the path |goto 32.79,40.18 < 30 |walk
+Follow the path up |goto 34.61,39.03 < 30 |walk
+Follow the water |goto 37.65,36.97 < 30 |walk
+Follow the path up |goto 39.10,33.36 < 30 |walk
 Enter the cave |goto 40.39,29.33 < 20 |c
 step
-Follow the path |goto 40.09,28.80 < 20 |n |walk
+Follow the path |goto 40.09,28.80 < 20 |walk
 Check for Leystone or Felslate Seams |goto 40.01,27.15 < 30 |c
 step
-Follow the path |goto 40.09,28.80 < 20 |n |walk
-Leave the cave |goto 40.39,29.33 < 20 |n |walk
-Follow the path |goto 38.63,32.60 < 30 |n |walk
-Follow the path |goto 36.72,30.10 < 30 |n |walk
-Follow the path |goto 36.50,26.35 < 30 |n |walk
-Jump down and follow the path |goto 34.63,24.79 < 30 |n |walk
-Jump down the small waterfall |goto 32.05,26.46 < 30 |n |walk
+Follow the path |goto 40.09,28.80 < 20 |walk
+Leave the cave |goto 40.39,29.33 < 20 |walk
+Follow the path |goto 38.63,32.60 < 30 |walk
+Follow the path |goto 36.72,30.10 < 30 |walk
+Follow the path |goto 36.50,26.35 < 30 |walk
+Jump down and follow the path |goto 34.63,24.79 < 30 |walk
+Jump down the small waterfall |goto 32.05,26.46 < 30 |walk
 Enter the cave |goto 31.52,25.79 < 20 |c
 step
-Follow the path |goto 31.80,24.95 < 20 |n |walk
+Follow the path |goto 31.80,24.95 < 20 |walk
 Check for Leystone or Felslate Seams |goto 33.07,24.58 < 30 |c
 step
-Follow the path |goto 32.55,24.86 < 20 |n |walk
-Leave the cave |goto 31.52,25.79 < 20 |n |walk
-Jump down the waterfall |goto 29.16,27.97 < 20 |n |walk
-Follow the path |goto 27.46,28.21 < 30 |n |walk
+Follow the path |goto 32.55,24.86 < 20 |walk
+Leave the cave |goto 31.52,25.79 < 20 |walk
+Jump down the waterfall |goto 29.16,27.97 < 20 |walk
+Follow the path |goto 27.46,28.21 < 30 |walk
 Follow the path up |goto 26.21,29.55 < 30 |c |next "Start_Seams_Route"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Mining\\Leveling Guides\\Mining 700-800 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Legion\\Leystone",{
+author="support@zygorguides.com",
+description="Leystone can be gathered from Suramar.",
+condition_end=function() return skill('Legion Mining') >= 50 end,
+},[[
+step
+label "Start_Seams_Route"
+Follow the path |goto Suramar/0 24.63,32.33 < 30 |walk
+Follow the path |goto 24.92,35.02 < 30 |walk
+Follow the path |goto 25.26,37.98 < 30 |walk
+Follow the path |goto 25.50,40.80 < 30 |walk
+Follow the path |goto 25.03,44.34 < 30 |walk
+Follow the path |goto 25.67,46.85 < 30 |walk
+Enter the cave |goto 24.33,50.87 < 20 |c
+step
+Check for Leystone or Felslate Seams |goto 24.63,52.66 < 20 |c
+step
+Leave the cave |goto 24.29,50.82 < 20 |walk
+Follow the path up |goto 24.47,50.22 < 20 |walk
+Follow the path up |goto 25.19,50.35 < 20 |walk
+Follow the path |goto 24.68,52.67 < 30 |walk
+Run up the hill |goto 25.63,54.17 < 30 |walk
+Dismount and carefull follow the path down |goto 26.70,55.22 < 20 |walk
+Enter the cave |goto 28.42,56.13 < 20 |c
+step
+Follow the path |goto 29.30,55.61 < 20 |walk
+Follow the path |goto 30.22,56.07 < 20 |walk
+Check for Leystone or Felslate Seams |goto 30.86,55.42 < 30 |c
+step
+Follow the path |goto 30.47,55.74 < 20 |walk
+Leave the cave |goto 28.42,56.10 < 20 |walk
+Follow the path up |goto 28.51,57.27 < 20 |walk
+Follow the path up |goto 29.52,56.69 < 20 |walk
+Follow the path up |goto 29.63,55.40 < 20 |walk
+Follow the path up |goto 29.95,54.85 < 20 |walk
+Follow the path up |goto 29.16,53.82 < 20 |walk
+Follow the path |goto 30.97,53.04 < 30 |walk
+Follow the path |goto 30.32,49.71 < 30 |walk
+Enter the cave |goto 29.36,50.83 < 20 |c
+step
+Follow the path |goto 29.71,51.71 < 20 |walk
+Check for Leystone or Felslate Seams |goto 29.32,53.27 < 30 |c
+step
+Follow the path |goto 29.71,51.71 < 20 |walk
+Leave the cave |goto 29.36,50.83 < 20 |walk
+Follow the path |goto 30.70,47.16 < 30 |walk
+Follow the path |goto 32.03,42.43 < 30 |walk
+Follow the path |goto 32.79,40.18 < 30 |walk
+Follow the path up |goto 34.61,39.03 < 30 |walk
+Follow the water |goto 37.65,36.97 < 30 |walk
+Follow the path up |goto 39.10,33.36 < 30 |walk
+Enter the cave |goto 40.39,29.33 < 20 |c
+step
+Follow the path |goto 40.09,28.80 < 20 |walk
+Check for Leystone or Felslate Seams |goto 40.01,27.15 < 30 |c
+step
+Follow the path |goto 40.09,28.80 < 20 |walk
+Leave the cave |goto 40.39,29.33 < 20 |walk
+Follow the path |goto 38.63,32.60 < 30 |walk
+Follow the path |goto 36.72,30.10 < 30 |walk
+Follow the path |goto 36.50,26.35 < 30 |walk
+Jump down and follow the path |goto 34.63,24.79 < 30 |walk
+Jump down the small waterfall |goto 32.05,26.46 < 30 |walk
+Enter the cave |goto 31.52,25.79 < 20 |c
+step
+Follow the path |goto 31.80,24.95 < 20 |walk
+Check for Leystone or Felslate Seams |goto 33.07,24.58 < 30 |c
+step
+Follow the path |goto 32.55,24.86 < 20 |walk
+Leave the cave |goto 31.52,25.79 < 20 |walk
+Jump down the waterfall |goto 29.16,27.97 < 20 |walk
+Follow the path |goto 27.46,28.21 < 30 |walk
+Follow the path up |goto 26.21,29.55 < 30 |c |next "Start_Seams_Route"
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Legion\\Mining 700-800 Leveling Guide",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Mining profession from 700-800.",
 startlevel=100.0,
@@ -7711,7 +7860,7 @@ step
 _Congratulations!_
 You reached level 800 with the Mining profession.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Mining\\Quest Guides\\Legion Mining Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Quest Guides\\Legion\\Legion Mining Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Mining quest line.",
 startlevel=100.0,
@@ -8178,7 +8327,7 @@ step
 _Congratulations!_
 You completed the Mining questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Mining\\Quest Guides\\Argus Mining Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Quest Guides\\Legion\\Argus Mining Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Argus Mining quest line.",
 startlevel=110,
@@ -8325,22 +8474,17 @@ step
 _Congratulations!_
 You completed the Argus Mining questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Skinning\\Farming Guides\\Fiendish Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Legion\\Fiendish Leather",{
 author="support@zygorguides.com",
-description="This guide will walk you through farming Fiendish Leather for various Leatherworking recipes.",
-startlevel=110.0,
+description="Fiendish Leather can be gathered from Krokuun in Argus.",
+condition_end=function() return skill('Legion Skinning') >= 50 end,
 },[[
 step
-kill Ruinwalker Calf##126952, Chitinbuk Ruinwalker##122363, Ruinwalker Stag##126939
-map Mac'Aree/0
-path	dist 35
-path	50.43,64.32	54.93,59.94	58.49,57.15
-path	57.99,53.14	56.56,49.90	54.62,47.18
-path	52.90,52.12	52.42,58.37	50.75,58.93
-kill Duskcloak Alpha##123076, Young Duskcloak##124486, Duskcloak Panthara##124303
-collect Fiendish Leather##151566 |n
+Kill Duskcloak enemies around this area
+|tip They are found all around the Petrified Forest.
+collect Fiendish Leather##151566 |n |goto Krokuun/0 72.45,70.40
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Skinning\\Farming Guides\\Stonehide Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Legion\\Stonehide Leather",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Stonehide Leather for various Leatherworking recipes.",
 startlevel=100.0,
@@ -8351,7 +8495,30 @@ Kill enemies around this area
 |tip Loot and skin them.
 collect Stonehide Leather##124113 |n |goto Stormheim/0 49.36,56.91
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Skinning\\Leveling Guides\\Skinning 700-800 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Legion\\Stormscale",{
+author="support@zygorguides.com",
+description="Stormscale can be gathered from Highmountain in the Broken Isles.",
+condition_end=function() return skill('Legion Skinning') >= 50 end,
+},[[
+step
+label "Start_Farming"
+map Highmountain/0
+path follow smart; loop off; ants curved
+path	50.00,67.89	50.54,65.90	51.38,65.22	51.85,64.31	52.01,63.31
+path	51.96,62.31	51.73,61.05	51.76,60.02	51.20,59.23	51.28,57.98
+kill Coldscale Gazecrawler##108185+
+collect Stormscale##124115 |n
+'|goto 51.28,57.98 < 25 |noway |c
+step
+map Highmountain/0
+path follow smart; loop off; ants curved
+path	51.28,57.98	51.20,59.23	51.76,60.02	51.73,61.05	51.96,62.31
+path	52.01,63.31	51.85,64.31	51.38,65.22	50.54,65.90	50.00,67.89
+kill Coldscale Gazecrawler##108185+
+collect Stormscale##124115 |n
+'|goto 50.00,67.89 < 25 |noway |c |next "Start_Farming"
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Legion\\Skinning 700-800 Leveling Guide",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Skinning profession from 700-800.",
 startlevel=100.0,
@@ -8386,7 +8553,7 @@ label "Congratulations_Skinning"
 _Congratulations!_
 You reached level 800 with the Skinning profession.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Skinning\\Quest Guides\\Legion Skinning Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Quest Guides\\Legion\\Legion Skinning Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Skinning quest line.",
 startlevel=100.0,
@@ -8795,7 +8962,7 @@ step
 _Congratulations!_
 You completed the Skinning questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Skinning\\Quest Guides\\Argus Skinning Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Quest Guides\\Legion\\Argus Skinning Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Argus Skinning quest line.",
 startlevel=110.0,
@@ -8846,7 +9013,7 @@ step
 _Congratulations!_
 You completed the Argus Skinning questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Tailoring\\Farming Guides\\Lightweave Cloth",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Legion\\Lightweave Cloth",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Lightweave Cloth for various Tailoring recipes.",
 startlevel=110.0,
@@ -8888,7 +9055,7 @@ collect Lightweave Cloth##151567 |n
 Click here to continue |confirm |next "loop"
 |tip Enter the buildings near the provided path.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Tailoring\\Farming Guides\\Shal'dorei Silk",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Legion\\Shal'dorei Silk",{
 author="support@zygorguides.com",
 description="This guide will walk you through farming Shal'dorei Silk for various Tailoring recipes.",
 startlevel=100.0,
@@ -8906,7 +9073,7 @@ kill Crawliac Hagfeather##95266+, Crawliac Deathscreamer##95265+, Skywhisker Loy
 |tip You can also purchase it from the Auction House.
 collect Shal'dorei Silk##124437 |n
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 700-800 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Legion\\Tailoring 700-800 Leveling Guide",{
 author="support@zygorguides.com",
 description="This guide will walk you through leveling your Tailoring profession from 700-800.",
 startlevel=100.0,
@@ -8978,7 +9145,7 @@ step
 _Congratulations!_
 You reached level 800 with the Tailoring profession.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Tailoring\\Quest Guides\\Legion Tailoring Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Quest Guides\\Legion\\Legion Tailoring Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Legion Tailoring quest line.",
 startlevel=100.0,
@@ -9741,7 +9908,7 @@ step
 _Congratulations!_
 You completed the Tailoring questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Tailoring\\Quest Guides\\Argus Tailoring Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Quest Guides\\Legion\\Argus Tailoring Quest Line",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Argus Tailoring quest line.",
 startlevel=110.0,
@@ -9755,7 +9922,7 @@ Learn the Tailoring Profession |condition skill("Tailoring")>=1 |goto Dalaran L/
 step
 Complete the Quest _"The Sigil of Awakening"_ |condition completedq(48107)
 |tip This is part of the Argus campaign guide.
-Check out our Argus campaign guide to accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Argus Campaign"
+Check out our Argus campaign guide to accomplish this |confirm |next "Leveling Guides\\Legion (100-110)\\Argus Campaign"
 step
 talk Khaela##125351
 accept Looming Over Me##48074 |goto Mac'Aree/4 42.28,62.16

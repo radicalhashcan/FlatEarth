@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("DungeonAMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Blackfathom Deeps",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Blackfathom Deeps",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Blackfathom Deeps dungeon. This dungeon is located in Ashenvale on the continent of Kalimdor and is home to the Twilight's Hammer, naga, and satyr. This dungeon ranges from level 22 to 25.",
 mapid=221,
@@ -173,7 +173,7 @@ only if not completedq(34672)
 step
 Congratulations, you have completed Blackfathom Deeps!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Blackrock Depths: Detention Block",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Blackrock Depths: Detention Block",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Blackrock Depths: Detention Block dungeon. This dungeon is located in Blackrock Mountain on the continent of Eastern Kingdoms. It is home to the Dark Iron dwarves and led by Emperor Dagran Thaurissan. This dungeon ranges from level 53 to 56.",
 mapid=242,
@@ -543,7 +543,7 @@ only if havequest(27578)
 step
 Congratulations, you have completed Blackrock Depths!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Deadmines",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Deadmines",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Deadmines dungeon. This dungeon is located in Westfall on the continent of Eastern Kingdoms and is home to the Defias Brotherhood, led by Edwin VanCleef. This dungeon ranges from level 15 to 16.",
 mapid=291,
@@ -814,7 +814,7 @@ step
 Congratulations, you have completed The Deadmines! |only if not heroic_dung()
 Congratulations, you have completed The Deadmines (Heroic)! |only if heroic_dung()
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Dire Maul: Capital Gardens",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Dire Maul: Capital Gardens",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Dire Maul: Capital Gardens dungeon. This dungeon is located in Feralas on the continent of Kalimdor and is home to undead and arcane creatures imprisoned by Prince Tortheldrin. This dungeon ranges from level 44 to 47.",
 mapid=699,
@@ -1050,7 +1050,7 @@ only if not completedq(27111)
 step
 Congratulations, you have completed Dire Maul: Capital Gardens!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Dire Maul: Gordock Commons",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Dire Maul: Gordock Commons",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Dire Maul: Gordock Commons dungeon. This dungeon is located in Feralas on the continent of Kalimdor and is home to the Gordok ogres, led by King Gordok. This dungeon ranges from level 44 to 47.",
 mapid=699,
@@ -1337,7 +1337,7 @@ label "end"
 Congratulations, you have completed Dire Maul: Gordock Commons
 Click here to restart the instance |confirm |next "Start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Dire Maul: Warpwood Quarter",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Dire Maul: Warpwood Quarter",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Dire Maul: Warpwood Quarter dungeon. This dungeon is located in Feralas on the continent of Kalimdor and has been corrupted by the satyr Alzzin the Wildshaper. This dungeon ranges from level 44 to 47.",
 mapid=699,
@@ -1546,7 +1546,7 @@ only if not completedq(27105)
 step
 Congratulations, you have completed Dire Maul: Warpwood Quarter!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Gnomeregan",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Gnomeregan",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Gnomeregan dungeon. This dungeon is located in Dun Morogh on the continent of Eastern Kingdoms. Gnomeregan was the former capital city of the gnomes until it fell to a trogg invasion. This dungeon ranges from level 26 to 29.",
 mapid=226,
@@ -1686,7 +1686,7 @@ only if not completedq(26942)
 step
 Congratulations, you have completed Gnomeregan!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Lower Blackrock Spire",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Lower Blackrock Spire",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Lower Blackrock Spire dungeon. This dungeon is located in Blackrock Mountain on the continent of Eastern Kingdoms and is home to Warchief Rend Blackhand's Dark Horde. This dungeon ranges from level 57 to 58.",
 mapid=250,
@@ -1877,7 +1877,7 @@ only if havequest(27440)
 step
 Congratulations, you have completed Lower Blackrock Spire!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Maraudon: Earth Song Falls",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Maraudon: Earth Song Falls",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Maraudon: Earth Song Falls dungeon. This dungeon is located in Desolace on the continent of Kalimdor and is a vibrant cavern home to Princess Theradras. This dungeon ranges from level 36 to 39. Also known as Inner Dire Maul.",
 mapid=280,
@@ -1952,7 +1952,7 @@ confirm
 step
 Congratulations, you have completed Maraudon: Earth Song Falls!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Maraudon: Foulspore Cavern",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Maraudon: Foulspore Cavern",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Maraudon: Foulspore Cavern dungeon. This dungeon is located in Desolace on the continent of Kalimdor and is a putrid, diseased cavern. This dungeon ranges from level 36 to 39. Also known as Dire Maul Orange.",
 mapid=280,
@@ -2009,7 +2009,7 @@ only if not completedq(27698)
 step
 Congratulations, you have completed Maraudon: Foulspore Caverns!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Maraudon: The Wicked Grotto",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Maraudon: The Wicked Grotto",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Maraudon: The Wicked Grotto dungeon. This dungeon is located in Desolace on the continent of Kalimdor and is tainted by demon corruption. This dungeon ranges from level 36 to 39. Also known as Dire Maul Purple.",
 mapid=280,
@@ -2083,7 +2083,7 @@ Defeat Celebras the Cursed |scenariogoal 25053 |goto Maraudon/2 24.5,14.3
 step
 Congratulations, you have completed Maraudon: The Wicked Grotto!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Ragefire Chasm",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Ragefire Chasm",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Ragefire Chasm dungeon. This dungeon is located in Orgrimmar on the continent of Kalimdor and is home to the Burning Blade cultists and troggs. This dungeon ranges from level 15 to 16.",
 mapid=213,
@@ -2212,7 +2212,7 @@ only if not completedq(30995)
 step
 Congratulations, you have completed Ragefire Chasm
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Razorfen Downs",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Razorfen Downs",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Razorfen Downs dungeon. This dungeon is located in Thousand Needles on the continent of Kalimdor and is the capital of the quilboars. This dungeon ranges from level 42 to 45.",
 mapid=300,
@@ -2322,7 +2322,7 @@ turnin The Ritual##33514 |goto 44.73,59.21
 step
 Congratulations, you have completed Razorfen Downs!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Razorfen Kraul",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Razorfen Kraul",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Razorfen Kraul dungeon. This dungeon is located in the Southern Barrens on the continent of Kalimdor and is the ancestral home of the quilboars. This dungeon ranges from level 32 to 35.",
 mapid=301,
@@ -2458,7 +2458,7 @@ only if not completedq(26901) or not completedq(26907)
 step
 Congratulations, you have completed Razorfen Kraul!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Scarlet Halls",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Scarlet Halls",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Scarlet Halls dungeon. This dungeon is located in the Tirisfal Glades on the continent of Eastern Kingdoms and is home to the Scarlet Crusade. This dungeon ranges from level 28 to 31.",
 mapid=431,
@@ -2558,7 +2558,7 @@ step
 Congratulations, you have completed Scarlet Halls! |only if not heroic_dung()
 Congratulations, you have completed Scarlet Halls (Heroic)! |only if heroic_dung()
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Scarlet Monastery",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Scarlet Monastery",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Scarlet Monastery dungeon. This dungeon is located in the Tirisfal Glades on the continent of Eastern Kingdoms and is home to the Scarlet Crusade. This dungeon ranges from level 30 to 33.",
 mapid=302,
@@ -2655,7 +2655,7 @@ step
 Congratulations, you have completed Scarlet Monastery! |only if not heroic_dung()
 Congratulations, you have completed Scarlet Monastery (Heroic)! |only if heroic_dung()
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Scholomance",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Scholomance",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Scholomance dungeon. This dungeon is located in the Western Plaguelands on the continent of Eastern Kingdoms and is the academy for Scourge necromancers. This dungeon ranges from level 40 to 43.",
 mapid=476,
@@ -2804,7 +2804,7 @@ step
 Congratulations, you have completed Scholomance |only if default
 Congratulations, you have completed Scholomance (Heroic) |only if heroic_dung()
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Shadowfang Keep",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Shadowfang Keep",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Shadowfang Keep dungeon. This dungeon is located in the Silverpine Forest on the continent of Eastern Kingdoms and is home to Vincent Godrey and his renegades. This dungeon ranges from level 18 to 21.",
 mapid=310,
@@ -2999,7 +2999,7 @@ step
 Congratulations, you have completed Shadowfang Keep! |only if not heroic_dung()
 Congratulations, you have completed Shadowfang Keep (Heroic)! |only if heroic_dung()
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\The Stormwind Stockade",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\The Stormwind Stockade",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing The Stormwind Stockade dungeon. This dungeon is located in Stormwind City on the continent of Eastern Kingdoms and is a guarded prison containing prominent Defias criminals. This dungeon ranges from level 22 to 25.",
 mapid=225,
@@ -3085,7 +3085,7 @@ only if not completedq(27733)
 step
 Congratulations, you have completed The Stockade!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Stratholme: Main Gate",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Stratholme: Main Gate",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Stratholme: Main Gate dungeon. This dungeon is located in the Eastern Plaguelands on the continent of Eastern Kingdoms and is the city in which the Order of the Silver Hand was founded. This dungeon ranges from level 48 to 51.",
 mapid=317,
@@ -3298,7 +3298,7 @@ only if not completedq(27185)
 step
 Congratulations, you have completed Stratholme: Main Gate!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Stratholme: Service Entrance",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Stratholme: Service Entrance",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Stratholme: Service Entrance dungeon. This dungeon is located in the Eastern Plaguelands on the continent of Eastern Kingdoms and is the city in which the Order of the Silver Hand was founded. This dungeon ranges from level 48 to 51.",
 mapid=317,
@@ -3433,7 +3433,7 @@ turnin Liquid Gold##27352 |goto 49.7,22.4
 step
 Congratulations, you have completed Stratholme: Service Entrance!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Sunken Temple",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Sunken Temple",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Sunken Temple dungeon. This dungeon is located in the Swamp of Sorrows on the continent of Eastern Kingdoms and is a shrine to the Atal'ai trolls. This dungeon ranges from level 52 to 55.",
 mapid=220,
@@ -3527,7 +3527,7 @@ turnin The Blood God Hakkar##27633 |goto The Temple of Atal'Hakkar 50.0,17.2
 step
 Congratulations, you have completed Sunken Temple!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Uldaman",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Uldaman",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Uldaman dungeon. This dungeon is located in the Badlands on the continent of Kalimdor and is an ancient titan city currently inhabited by Dark Iron dwarves. This dungeon ranges from level 37 to 40.",
 mapid=230,
@@ -3747,7 +3747,7 @@ only if not completedq(27673)
 step
 Congratulations, you have completed Uldaman!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Wailing Caverns",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Wailing Caverns",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Wailing Caverns dungeon. This dungeon is located in the Northern Barrens on the continent of Kalimdor and is home to the Druids of the Fang. This dungeon ranges from level 17 to 20.",
 mapid=279,
@@ -3958,7 +3958,7 @@ Defeat Mutanus the Devourer |scenariogoal 2/34405 |goto 34.0,15.6
 step
 Congratulations, you have completed Wailing Caverns!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Zul'Farrak",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Zul'Farrak",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Zul'Farrak dungeon. This dungeon is located in the Tanaris on the continent of Kalimdor and is home to the Sandfury trolls. This dungeon ranges from level 46 to 49.",
 mapid=686,
@@ -4112,7 +4112,7 @@ turnin Breaking and Entering##27076 |goto 58.3,88.7
 step
 Congratulations, you have completed Zul'Farrak!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Raids\\Blackwing Lair",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Blackwing Lair raid. This dungeon is located in Blackrock Mountain on the continent of Eastern Kingdoms and is home to Nefarian and the Blackrock clan orcs. This raid is level 60.",
 mapid=287,
@@ -4289,7 +4289,7 @@ turnin The Lord of Blackrock##7782 |goto Stormwind City 71.4,80.5
 step
 Congratulations, you have finished the Blackwing Lair raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Raids\\Molten Core",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Raids\\Molten Core",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the Molten Core raid. This dungeon is located in Blackrock Mountain on the continent of Eastern Kingdoms and is home to Ragnaros the Firelord. This raid is level 60.",
 mapid=232,
@@ -4479,7 +4479,7 @@ kill Ragnaros##11502 |goto 55.1,54.5
 step
 Congratulations, you have finished the Molten Core raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Raids\\Ruins of Ahn'Qiraj",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Raids\\Ruins of Ahn'Qiraj",{
 mapid=772,
 achieveid={689},
 condition_suggested=function() return level>=60 and level<=65 end,
@@ -4877,7 +4877,7 @@ turnin The Fall of Ossirian##8791 |goto Silithus 53.2,32.5
 step
 Congratulations, you have finished the Ruins of Ahn'Qiraj raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj",{
 mapid=319,
 achieveid={687},
 condition_suggested=function() return level>=60 and level<=65 end,
@@ -5373,7 +5373,7 @@ turnin Mortal Champions##8579 |instant
 step
 Congratulations, you have finished the Temple of Ahn'Qiraj raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Auchindoun: Auchenai Crypts",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Auchindoun: Auchenai Crypts",{
 mapid=256,
 achieveid={666},
 condition_suggested=function() return level>=62 and level<=80 end,
@@ -5470,7 +5470,7 @@ only if not completedq(29590) or not completedq(29596)
 step
 Congratulations! You have completed Auchenai Crypts.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Auchindoun: Mana-Tombs",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Auchindoun: Mana-Tombs",{
 mapid=272,
 achieveid={651},
 condition_suggested=function() return level>=62 and level<=80 end,
@@ -5544,7 +5544,7 @@ only if not completedq(29574)
 step
 Congratulations! You have completed Mana-Tombs
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Auchindoun: Sethekk Halls",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Auchindoun: Sethekk Halls",{
 mapid=272,
 achieveid={653},
 condition_suggested=function() return level>=62 and level<=80 end,
@@ -5656,7 +5656,7 @@ only if havequest(29607)
 step
 Congratulations! You have completed Sethekk Halls
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Auchindoun: Shadow Labyrinth",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Auchindoun: Shadow Labyrinth",{
 mapid=272,
 achieveid={654},
 condition_suggested=function() return level>=62 and level<=80 end,
@@ -5776,7 +5776,7 @@ only if havequest(29641)
 step
 Congratulations! You have completed Shadow Labyrinth.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Caverns of Time: The Black Morass",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Caverns of Time: The Black Morass",{
 mapid=733,
 achieveid={655},
 condition_suggested=function() return level>=62 and level<=80 end,
@@ -5840,7 +5840,7 @@ step
 talk Sa'at##20201
 turnin The Opening of the Dark Portal##10297 |goto 49.3,6.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Caverns of Time: Escape from Durnholde Keep",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Caverns of Time: Escape from Durnholde Keep",{
 mapid=734,
 achieveid={652},
 condition_suggested=function() return level>=62 and level<=80 end,
@@ -5943,7 +5943,7 @@ only if havequest(29599)
 step
 Congratulations! You have completed Escape from Durnholde Keep.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Slave Pens",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Slave Pens",{
 mapid=265,
 achieveid={649},
 condition_suggested=function() return level>=60 and level<=80 end,
@@ -6055,7 +6055,7 @@ only if not completedq(29563) or not completedq(29565)
 step
 Congratulations! You have completed The Slave Pens.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: The Steamvault",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: The Steamvault",{
 mapid=263,
 achieveid={656},
 condition_suggested=function() return level>=60 and level<=80 end,
@@ -6160,7 +6160,7 @@ only if havequest(29614)
 step
 Congratulations! You have completed The Steamvault
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Underbog",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Underbog",{
 mapid=262,
 achieveid={650},
 condition_suggested=function() return level>=60 and level<=80 end,
@@ -6270,7 +6270,7 @@ turnin Bring Me A Shrubbery!##29691 |goto 31.6,65.5
 step
 Congratulations! You have completed The Underbog
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Hellfire Citadel: The Blood Furnace",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Hellfire Citadel: The Blood Furnace",{
 mapid=261,
 achieveid={648},
 condition_suggested=function() return level>=58 and level<=80 end,
@@ -6360,7 +6360,7 @@ only if not completedq(29538) or not completedq(29539) or not completedq(29540)
 step
 Congratulations! You have completed The Blood Furnace
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Hellfire Citadel: Hellfire Ramparts",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Hellfire Citadel: Hellfire Ramparts",{
 mapid=347,
 achieveid={647},
 condition_suggested=function() return level>=58 and level<=80 end,
@@ -6445,7 +6445,7 @@ only if not completedq(29528) or not completedq(29528) or not completedq(29594)
 step
 Congratulations! You have completed Hellfire Ramparts.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Hellfire Citadel: Shattered Halls",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Hellfire Citadel: Shattered Halls",{
 mapid=246,
 achieveid={657},
 condition_suggested=function() return level>=58 and level<=80 end,
@@ -6562,7 +6562,7 @@ only if havequest(29652) or havequest(29649) or havequest(29656) or havequest(29
 step
 Congratulations! You have completed Shattered Halls
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Magister's Terrace",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Magister's Terrace",{
 mapid=348,
 achieveid={661},
 condition_suggested=function() return level>=68 and level<=80 end,
@@ -6668,7 +6668,7 @@ only if havequest(29686) or havequest(29687) or havequest(29685)
 step
 Congratulations! You have completed Magister's Terrace
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Tempest Keep: The Arcatraz",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Tempest Keep: The Arcatraz",{
 mapid=269,
 achieveid={660},
 condition_suggested=function() return level>=67 and level<=80 end,
@@ -6751,7 +6751,7 @@ turnin Maximum Security Breakout##29681
 step
 Congratulations! You have completed Arcatraz
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Tempest Keep: Botanica",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Tempest Keep: Botanica",{
 mapid=266,
 achieveid={659},
 condition_suggested=function() return level>=67 and level<=80 end,
@@ -6832,7 +6832,7 @@ turnin A Most Somber Task##29669
 step
 Congratulations! You have completed the Botanica
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Dungeons\\Tempest Keep: The Mechanar",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Dungeons\\Tempest Keep: The Mechanar",{
 mapid=267,
 achieveid={658},
 condition_suggested=function() return level>=67 and level<=80 end,
@@ -6923,7 +6923,7 @@ turnin The Calculator##29658 |only if havequest(29658)
 step
 Congratulations! You have completed The Mechanar
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Raids\\Black Temple",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Raids\\Black Temple",{
 mapid=339,
 achieveid={697},
 condition_suggested=function() return level>=70 and level<=75 end,
@@ -7194,7 +7194,7 @@ _Phase 4_
 step
 Congratulations, you have finished the Black Temple raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Raids\\The Eye",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Raids\\The Eye",{
 mapid=334,
 achieveid={696},
 condition_suggested=function() return level>=70 and level<=75 end,
@@ -7308,7 +7308,7 @@ turnin Kael'thas and the Verdant Sphere##11007 |goto Shattrath City 54.2,44.4
 step
 Congratulations, you have finished The Eye raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Raids\\Gruul's Lair",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Raids\\Gruul's Lair",{
 mapid=330,
 achieveid={692},
 condition_suggested=function() return level>=70 and level<=75 end,
@@ -7355,7 +7355,7 @@ kill Gruul the Dragonkiller## |goto 21,27
 step
 Congratulations, you have finished the Gruul's Lair raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Raids\\Hyjal Summit (Battle for Mount Hyjal)",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Raids\\Hyjal Summit (Battle for Mount Hyjal)",{
 mapid=161,
 achieveid={695},
 condition_suggested=function() return level>=70 and level<=75 end,
@@ -7545,7 +7545,7 @@ turnin The Caverns of Time##10277 |goto Tanaris/18 41.7,38.7
 step
 Congratulations, you have completed the Battle for Mount Hyjal raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Raids\\Karazhan",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Raids\\Karazhan",{
 mapid=350,
 achieveid={690},
 condition_suggested=function() return level>=70 and level<=75 end,
@@ -7894,7 +7894,7 @@ step
 label "raidend"
 Congratulations, you have finished the Karazhan raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Raids\\Magtheridon's Lair",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Raids\\Magtheridon's Lair",{
 mapid=331,
 achieveid={693},
 condition_suggested=function() return level>=70 and level<=75 end,
@@ -7935,7 +7935,7 @@ only if not completedq(11002)
 step
 Congratulations, you have finished the Magtheridon's Lair raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Raids\\Serpentshrine Cavern",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Raids\\Serpentshrine Cavern",{
 mapid=332,
 achieveid={694},
 condition_suggested=function() return level>=70 and level<=75 end,
@@ -8098,7 +8098,7 @@ _Phase 3_
 step
 Congratulations, you have finished the Magtheridon's Lair raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Outland Raids\\Sunwell Plateau",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Outland Raids\\Sunwell Plateau",{
 mapid=335,
 achieveid={698},
 condition_suggested=function() return level>=70 and level<=75 end,
@@ -8293,7 +8293,7 @@ _Phase 5_
 step
 Congratulations, you have finished the Sunwell Plateau raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\Ahn'kahet: The Old Kingdom",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\Ahn'kahet: The Old Kingdom",{
 mapid=132,
 achieveid={481},
 condition_suggested=function() return level>=61 and level<=80 end,
@@ -8459,7 +8459,7 @@ only if havequest(13187)
 step
 Congratulations! You have completed Ahn'kahet: The Old Kingdom
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\Azjol-Nerub",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\Azjol-Nerub",{
 mapid=157,
 achieveid={480},
 condition_suggested=function() return level>=61 and level<=80 end,
@@ -8546,7 +8546,7 @@ only if havequest(29807) or havequest(29808) or havequest(29811)
 step
 Congratulations! You have completed Azjol-Nerub
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\Caverns of Time: The Culling of Stratholme",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\Caverns of Time: The Culling of Stratholme",{
 mapid=130,
 achieveid={479},
 condition_suggested=function() return level>=67 and level<=80 end,
@@ -8704,7 +8704,7 @@ only if havequest(13151)
 step
 Congratulations! You have completed The Culling of Stratholme
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\Drak'Tharon Keep",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\Drak'Tharon Keep",{
 mapid=160,
 achieveid={482},
 condition_suggested=function() return level>=64 and level<=80 end,
@@ -8839,7 +8839,7 @@ only if havequest(13129) or havequest(29828)
 step
 Congratulations! You have completed Drak'Tharon Keep
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\Forge of Souls",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\Forge of Souls",{
 mapid=183,
 achieveid={4516},
 condition_suggested=function() return level>=67 and level<=80 end,
@@ -8901,7 +8901,7 @@ only if not completedq(24683)
 step
 Congratulations! You have completed The Forge of Souls.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\Gundrak",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\Gundrak",{
 mapid=530,
 achieveid={484},
 condition_suggested=function() return level>=64 and level<=80 end,
@@ -9036,7 +9036,7 @@ only if havequest(29834) or havequest(29839) or havequest(29844)
 step
 Congratulations! You have completed Gundrak
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\Halls of Lightning",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\Halls of Lightning",{
 mapid=138,
 achieveid={486},
 condition_suggested=function() return level>=67 and level<=80 end,
@@ -9154,7 +9154,7 @@ only if havequest(29860) or havequest(29861) or havequest(29862)
 step
 Congratulations! You have completed Halls of Lightning
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\Halls of Reflection",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\Halls of Reflection",{
 mapid=185,
 achieveid={4518},
 condition_suggested=function() return level>=67 and level<=80 end,
@@ -9259,7 +9259,7 @@ only if not completedq(24500)
 step
 Congratulations! You have completed Halls of Reflection |tip Your loot is in the chest aboard the ship.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\Halls of Stone",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\Halls of Stone",{
 mapid=140,
 achieveid={485},
 condition_suggested=function() return level>=67 and level<=80 end,
@@ -9380,7 +9380,7 @@ only if havequest(29848) or havequest(29850)
 step
 Congratulations! You have completed Halls of Stone
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\The Nexus",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\The Nexus",{
 mapid=129,
 achieveid={478},
 condition_suggested=function() return level>=58 and level<=80 end,
@@ -9553,7 +9553,7 @@ only if havequest(11905)
 step
 Congratulations! You have completed The Nexus
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\The Oculus",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\The Oculus",{
 mapid=528,
 achieveid={487},
 condition_suggested=function() return level>=58 and level<=80 end,
@@ -9725,8 +9725,8 @@ only if havequest(13128)
 step
 Congratulations! You have completed The Oculus
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\Pit of Saron",{
-mapid=602,
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\Pit of Saron",{
+mapid=184,
 achieveid={4517},
 condition_suggested=function() return level>=67 and level<=80 end,
 keywords={"PoS, ICC, Icecrown, Citadel"},
@@ -9821,7 +9821,7 @@ only if not completedq(24711)
 step
 Congratulations! You have completed the Pit of Saron.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\Trial of the Champion",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\Trial of the Champion",{
 mapid=171,
 achieveid={4296},
 condition_suggested=function() return level>=67 and level<=80 end,
@@ -9923,7 +9923,7 @@ only if havequest(29851)
 step
 Congratulations! You have completed Trial of the Champion.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\Utgarde Keep",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\Utgarde Keep",{
 mapid=133,
 achieveid={477},
 condition_suggested=function() return level>=58 and level<=80 end,
@@ -10032,7 +10032,7 @@ only if havequest(29763) or havequest(29764) or havequest(29803)
 step
 Congratulations! You have completed Utgarde Keep
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\Utgarde Keep: Utgarde Pinnacle",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\Utgarde Keep: Utgarde Pinnacle",{
 mapid=136,
 achieveid={488},
 condition_suggested=function() return level>=58 and level<=80 end,
@@ -10145,7 +10145,7 @@ only if havequest(13131) or havequest(13132)
 step
 Congratulations! You have completed Utgarde Pinnacle.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Dungeons\\The Violet Hold",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Dungeons\\The Violet Hold",{
 mapid=168,
 achieveid={483},
 condition_suggested=function() return level>=58 and level<=80 end,
@@ -10301,7 +10301,7 @@ only if havequest(29830)
 step
 Congratulations! You have completed The Violet Hold
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Raids\\The Eye of Eternity",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Raids\\The Eye of Eternity",{
 mapid=141,
 achieveid={1391, 1394},
 condition_suggested=function() return level>=80 and level<=85 end,
@@ -10347,7 +10347,7 @@ _Phase 3_
 step
 Congratulations, you have finished the Eye of Eternity raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Raids\\Icecrown Citadel",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Raids\\Icecrown Citadel",{
 mapid=186,
 achieveid={4532, 4608},
 condition_suggested=function() return level>=80 and level<=85 end,
@@ -10790,7 +10790,7 @@ _Phase 4_
 step
 Congratulations, you have finished the Icecrown Citadel raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Raids\\Naxxramas",{
 mapid=162,
 achieveid={576, 577},
 condition_suggested=function() return level>=80 and level<=85 end,
@@ -11385,7 +11385,7 @@ turnin The Heroic Key to the Focusing Iris##13375 |goto Dragonblight/0 59.8,54.6
 step
 Congratulations, you have finished the Naxxramas raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Raids\\The Obsidian Sanctum",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Raids\\The Obsidian Sanctum",{
 mapid=531,
 achieveid={1876, 625},
 condition_suggested=function() return level>=80 and level<=85 end,
@@ -11456,7 +11456,7 @@ kill Sartharion##28860 |goto 53.3,47.8
 step
 Congratulations, you have finished the Obsidian Sanctum raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Raids\\Onyxia's Lair",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Raids\\Onyxia's Lair",{
 mapid=248,
 achieveid={4396, 4397},
 condition_suggested=function() return level>=80 and level<=85 end,
@@ -11495,7 +11495,7 @@ confirm
 step
 Congratulations! You have completed Onyxia's Lair.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Raids\\The Ruby Sanctum",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Raids\\The Ruby Sanctum",{
 mapid=609,
 achieveid={4817, 4815},
 condition_suggested=function() return level>=80 and level<=85 end,
@@ -11554,7 +11554,7 @@ _Phase 2_
 step
 Congratulations, you have finished the Ruby Sanctum raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Crusader",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Raids\\Trial of the Crusader",{
 mapid=172,
 achieveid={3917, 3916},
 condition_suggested=function() return level>=80 and level<=85 end,
@@ -11818,7 +11818,7 @@ label "anucomplete"
 Congratulations, you have finished the Trial of the Crusader raid guide!
 There is a portal to Dalaran at this spot. [Trial of the Crusader/2 51.3,56.9]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Raids\\Trial of the Grand Crusader",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Raids\\Trial of the Grand Crusader",{
 mapid=172,
 achieveid={3918, 3812},
 condition_suggested=function() return level>=80 and level<=85 end,
@@ -12084,7 +12084,7 @@ label "anucomplete"
 Congratulations, you have finished the Trial of the Grand Crusader raid guide!
 There is a portal to Dalaran at this spot. [Trial of the Crusader/2 51.3,56.9]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Raids\\Ulduar",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Raids\\Ulduar",{
 mapid=529,
 achieveid={2894, 2895},
 condition_suggested=function() return level>=80 and level<=85 end,
@@ -12810,7 +12810,7 @@ step
 label "raidcomplete"
 Congratulations, you have finished the Ulduar raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Northrend Raids\\Vault of Archavon",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Northrend Raids\\Vault of Archavon",{
 mapid=156,
 achieveid={1722, 1721, 3136, 3137, 3836, 3837, 4585, 4586},
 condition_suggested=function() return level>=80 and level<=85 end,
@@ -12941,7 +12941,7 @@ step
 label "torcomplete"
 Congratulations, you have finished the Vault of Archavon raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Dungeons\\Blackrock Caverns",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Dungeons\\Blackrock Caverns",{
 mapid=283,
 achieveid={4833},
 condition_suggested=function() return level>=80 and level<=90 end,
@@ -13105,7 +13105,7 @@ turnin Ascendant Lord Obsidius##28741 |goto 68.8,56.0
 step
 Congratulations! You have completed Blackrock Caverns
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Dungeons\\End Time",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Dungeons\\End Time",{
 mapid=401,
 achieveid={6117},
 condition_suggested=function() return level>=85 and level<=90 end,
@@ -13275,7 +13275,7 @@ Tell him "Take me to the Well of Eternity" |goto Well of Eternity |noway |c
 step
 Congratulations! You have completed End Time
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Dungeons\\Grim Batol",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Dungeons\\Grim Batol",{
 mapid=293,
 achieveid={4840},
 condition_suggested=function() return level>=84 and level<=90 end,
@@ -13406,7 +13406,7 @@ turnin Closing a Dark Chapter##28854 |goto 19.4,53
 step
 Congratulations! You have completed Grim Batol
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Dungeons\\Halls of Origination",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Dungeons\\Halls of Origination",{
 mapid=297,
 achieveid={4841},
 condition_suggested=function() return level>=84 and level<=90 end,
@@ -13536,7 +13536,7 @@ Defeat Rajh |scenariogoal 1/34418 |goto 47.2,19.7
 step
 Congratulations you have completed _Halls of Origination_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Dungeons\\Hour of Twilight",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Dungeons\\Hour of Twilight",{
 mapid=399,
 achieveid={6119},
 condition_suggested=function() return level>=85 and level<=90 end,
@@ -13649,7 +13649,7 @@ turnin The Twilight Prophet##30105 |goto 46.9,45.0
 step
 Congratulations! You have completed Hour of Twilight
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Dungeons\\Lost City of the Tol'vir",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Dungeons\\Lost City of the Tol'vir",{
 dungeonn=747,
 achieveid={4848},
 condition_suggested=function() return level>=84 and level<=90 end,
@@ -13751,7 +13751,7 @@ turnin Targets of Opportunity##28781 |goto Lost City of the Tol'vir 31.7,16.3
 step
 Congratulations! You have completed Lost City of the Tol'vir
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Dungeons\\The Stonecore",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Dungeons\\The Stonecore",{
 mapid=324,
 achieveid={4846},
 condition_suggested=function() return level>=81 and level<=90 end,
@@ -13853,7 +13853,7 @@ turnin Followers and Leaders##28814 |goto 53.6,95.0
 step
 Congratulations! You have completed The Stonecore
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Dungeons\\Throne of the Tides",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Dungeons\\Throne of the Tides",{
 mapid=322,
 achieveid={4839},
 condition_suggested=function() return level>=80 and level<=90 end,
@@ -13964,7 +13964,7 @@ only if havequest(28836)
 step
 Congratulations! You have completed Throne of the Tides
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Dungeons\\Vortex Pinnacle",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Dungeons\\Vortex Pinnacle",{
 mapid=325,
 achieveid={4847},
 condition_suggested=function() return level>=80 and level<=90 end,
@@ -14061,7 +14061,7 @@ turnin Vengeance for Orsis##28760 |goto 54.5,15.9
 step
 Congratulations! You have completed The Vortex Pinnacle
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Dungeons\\Well of Eternity",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Dungeons\\Well of Eternity",{
 mapid=816,
 achieveid={6118},
 condition_suggested=function() return level>=85 and level<=90 end,
@@ -14213,7 +14213,7 @@ Tell her "I am ready to help Thrall, back in my present time."  |goto Hour of Tw
 step
 Congratulations! You have completed Well of Eternity
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Dungeons\\Zul'Aman",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Dungeons\\Zul'Aman",{
 mapid=781,
 achieveid={691, 5769},
 condition_suggested=function() return level>=85 and level<=90 end,
@@ -14462,7 +14462,7 @@ turnin Warlord of the Amani##11196 |goto 93.0,53.6
 step
 Congratulations! You have completed Zul'Aman
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Dungeons\\Zul Gurub",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Dungeons\\Zul Gurub",{
 mapid=793,
 achieveid={688, 5768},
 condition_suggested=function() return level>=85 and level<=90 end,
@@ -14737,7 +14737,7 @@ turnin Putting a Price on Priceless##29242 |goto 30.5,50.9
 step
 Congratulations! You have completed Zul'Gurub
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Raids\\Baradin Hold",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Raids\\Baradin Hold",{
 mapid=282,
 condition_suggested=function() return level>=85 and level<=90 end,
 keywords={"BH, TB, Tol, Barad"},
@@ -14781,7 +14781,7 @@ kill Alizabal##55869 |goto 47.9,17.9
 step
 Congratulations, you have finished the Baradin Hold raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Raids\\The Bastion of Twilight",{
 mapid=294,
 achieveid={4850},
 condition_suggested=function() return level>=85 and level<=90 end,
@@ -14948,7 +14948,7 @@ step
 label "raidend"
 Congratulations, you have finished the Bastion of Twilight raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Raids\\Blackwing Descent",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Raids\\Blackwing Descent",{
 mapid=285,
 achieveid={4842},
 condition_suggested=function() return level>=85 and level<=90 end,
@@ -15117,7 +15117,7 @@ _Phase 3_
 step
 Congratulations, you have finished the Blackwing Descent raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Raids\\Dragon Soul",{
 mapid=409,
 achieveid={6177},
 condition_suggested=function() return level>=85 and level<=90 end,
@@ -15281,7 +15281,7 @@ confirm
 step
 Congratulations, you have finished the _Dragon Soul_ raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Raids\\Firelands",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Raids\\Firelands",{
 mapid=800,
 achieveid={5802},
 condition_suggested=function() return level>=85 and level<=90 end,
@@ -15422,7 +15422,7 @@ confirm
 step
 Congratulations, you have finished the Firelands raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Raids\\Throne of the Four Winds",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Cataclysm Raids\\Throne of the Four Winds",{
 mapid=328,
 achieveid={688, 5768},
 condition_suggested=function() return level>=85 and level<=90 end,
@@ -15488,7 +15488,7 @@ _Phase 3_ - 25% health.
 step
 Congratulations, you have finished the Throne of the Four Winds raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Dungeons\\Gate of the Setting Sun",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Dungeons\\Gate of the Setting Sun",{
 mapid=437,
 achieveid={10010, 6759},
 condition_suggested=function() return level>=88 and level<=90 end,
@@ -15580,7 +15580,7 @@ turnin That's a Big Bug!##31364 |goto Gate of the Setting Sun/1 52.0,60.6
 step
 Congratulations! You have completed Gate of the Setting Sun
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Dungeons\\Mogu'shan Palace",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Dungeons\\Mogu'shan Palace",{
 mapid=453,
 achieveid={6755, 6756},
 condition_suggested=function() return level>=87 and level<=90 end,
@@ -15687,7 +15687,7 @@ turnin A New Lesson for the Master##31360 |goto 38.7,81.5
 step
 Congratulations! You have completed Mogu'shan Palace
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Dungeons\\Scarlet Halls",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Dungeons\\Scarlet Halls",{
 mapid=431,
 achieveid={6760},
 condition_suggested=function() return level>=90 and level<=90 end,
@@ -15763,7 +15763,7 @@ turnin Just for Safekeeping, Of Course##31497 |goto 39.3,17.0
 step
 Congratulations! You have completed Scarlet Halls
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Dungeons\\Scarlet Monastery",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Dungeons\\Scarlet Monastery",{
 mapid=302,
 achieveid={6761},
 condition_suggested=function() return level>=90 and level<=90 end,
@@ -15851,7 +15851,7 @@ turnin Unto Dust Thou Shalt Return##31516 |goto 48.9,78.9
 step
 Congratulations! You have completed Scarlet Monastery
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Dungeons\\Scholomance",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Dungeons\\Scholomance",{
 mapid=476,
 achieveid={6762},
 condition_suggested=function() return level>=90 and level<=90 end,
@@ -15979,7 +15979,7 @@ turnin An End to the Suffering##31448 |goto Scholomance/3 49.2,21.2
 step
 Congratulations! You have completed Scholomance
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Dungeons\\Shado-Pan Monastery",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Dungeons\\Shado-Pan Monastery",{
 mapid=443,
 achieveid={6469},
 condition_suggested=function() return level>=87 and level<=90 end,
@@ -16072,7 +16072,7 @@ turnin The Path to Respect Lies in Violence##31342 |goto 68.4,50.1
 step
 Congratulations! You have completed Shado-Pan Monastery
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Dungeons\\Siege of Niuzao Temple",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Dungeons\\Siege of Niuzao Temple",{
 mapid=457,
 achieveid={6763},
 condition_suggested=function() return level>=90 and level<=90 end,
@@ -16161,7 +16161,7 @@ turnin Take Down the Wing Leader##31366 |goto Siege of Niuzao Temple/1 58.1,23.1
 step
 Congratulations! You have completed Siege of Niuzao Temple
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Dungeons\\Stormstout Brewery",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Dungeons\\Stormstout Brewery",{
 mapid=439,
 achieveid={6457},
 condition_suggested=function() return level>=85 and level<=90 end,
@@ -16249,7 +16249,7 @@ turnin Trouble Brewing##31327 |goto 41.1,55.2
 step
 Congratulations! You have completed Stormstout Brewery
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Dungeons\\Temple of the Jade Serpent",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Dungeons\\Temple of the Jade Serpent",{
 mapid=429,
 achieveid={6757},
 condition_suggested=function() return level>=85 and level<=90 end,
@@ -16374,7 +16374,7 @@ turnin Deep Doubts, Deep Wisdom##31356 |goto 36.0,44.4
 step
 Congratulations! You have completed Temple of the Jade Serpent
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Raids\\Heart of Fear",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Raids\\Heart of Fear",{
 mapid=474,
 achieveid={6845, 6718},
 condition_suggested=function() return level>=90 and level<=95 end,
@@ -16525,7 +16525,7 @@ kill Grand Empress Shek'zeer##62837 |goto 28.9,73.9
 step
 Congratulations, you have finished Heart of Fear!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Raids\\Mogu'shan Vaults",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Raids\\Mogu'shan Vaults",{
 mapid=471,
 achieveid={6458, 6844},
 condition_suggested=function() return level>=90 and level<=95 end,
@@ -16693,7 +16693,7 @@ _Heroic_
 step
 Congratulations, you have finished the Mogu'shan Vaults raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar",{
 mapid=953,
 achieveid={8458, 8461, 8459, 8462},
 condition_suggested=function() return level>=90 and level<=95 end,
@@ -17040,7 +17040,7 @@ only if not completedq(33138)
 step
 Congratulations, you have finished the Siege of Orgrimmar raid and witnessed the downfall of Garrosh Hellscream!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring",{
 mapid=886,
 achieveid={6689},
 condition_suggested=function() return level>=90 and level<=95 end,
@@ -17123,7 +17123,7 @@ _Heroic_
 step
 Congratulations, you have finished the Terrace of Endless Spring raid!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Pandaria Raids\\Throne of Thunder",{
 mapid=508,
 achieveid={8070, 8071, 8072},
 condition_suggested=function() return level>=90 and level<=95 end,

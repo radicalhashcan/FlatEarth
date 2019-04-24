@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("PetsMountsHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Antoran Gloomhound",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Antoran Gloomhound",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount","glory","of","the","argus","raider","antorus","burning","throne"},
@@ -12,7 +12,7 @@ model={79480},
 description="This guide will help you acquire an \"Antoran Gloomhound\" mount.",
 },[[
 step
-Load the "Glory of the Argus Raider" Achievement Guide |next "Zygor's Achievement Guides\\Dungeons & Raids\\Legion\\Glory of the Argus Raider" |confirm |or
+Load the "Glory of the Argus Raider" Achievement Guide |next "Achievement Guides\\Dungeons & Raids\\Legion\\Glory of the Argus Raider" |confirm |or
 |tip Click the line above to load the guide.
 Earn the "Glory of the Argus Raider" Achievement |achieve 11987
 step
@@ -23,7 +23,7 @@ step
 _Congratulations!_
 You Collected the _Antoran Gloomhound_ Mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Defiled Reins",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Defiled Reins",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"defiled","reins","flying","mount"},
@@ -42,7 +42,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Defiled Reins.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Leyfeather Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Leyfeather Hippogryph",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"leyfeather","hippogryph","flying","mount"},
@@ -61,7 +61,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Leyfeather Hippogryph.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Mechanized Lumber Extractor",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Mechanized Lumber Extractor",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"mechanized","lumber","extractor","flying","mount"},
@@ -80,7 +80,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Mechanized Lumber Extractor.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Achievement Mounts\\Bleakhoof Ruinstrider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Achievement Mounts\\Bleakhoof Ruinstrider",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount","...and","chew","mana","buns","achievement"},
@@ -100,7 +100,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Bleakhoof Ruinstrider.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Achievement Mounts\\Gilded Ravasaur",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Achievement Mounts\\Gilded Ravasaur",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground, mount, battle, of, azeroth, preorder, collector, edition"},
@@ -117,7 +117,7 @@ step
 _Congratulations!_
 You Collected the "Gilded Ravasaur" Mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Achievement Mounts\\Seabraid Stallion",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Achievement Mounts\\Seabraid Stallion",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground, mount, battle, of, azeroth, preorder, collector, edition"},
@@ -130,7 +130,7 @@ step
 This Mount is Alliance Only
 |tip The Horde reward is the "Gilded Ravasaur" mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Battle Pet Mounts\\Brilliant Direbeak",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Battle Pet Mounts\\Brilliant Direbeak",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"brilliant","direbeak","ground","mount"},
@@ -385,7 +385,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Brilliant Direbeak.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Battle Pet Mounts\\Predatory Bloodgazer",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Battle Pet Mounts\\Predatory Bloodgazer",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"predatoryt","bloodgazer","ground","mount"},
@@ -620,7 +620,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Predatory Bloodgazer.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Battle Pet Mounts\\Snowfeather Hunter",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Battle Pet Mounts\\Snowfeather Hunter",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"snowfeather","hunter","ground","mount"},
@@ -651,7 +651,7 @@ talk Snowfeather Hatchling##115784
 accept The Smell of Orcs##44971
 |tip To Start the next quest you will have to wait for dailies to reset.
 step
-Acclimate your Snowfeather to the Orcs |q 44971/1 |goto Orgrimmar/0 54.3,78.7
+Acclimate your Snowfeather to the Orcs |q 44971/1 |goto Orgrimmar/1 54.3,78.7
 step
 Summon your Snowfeather Hatchling
 Next to you
@@ -873,7 +873,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Snowfeather Hunter.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Battle Pet Mounts\\Viridian Sharptalon",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Battle Pet Mounts\\Viridian Sharptalon",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"viridian","sharptalon","ground","mount"},
@@ -1130,7 +1130,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Viridian Sharptalon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Death Knight\\Deathlord's Vilebrood Vanquisher",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Death Knight\\Deathlord's Vilebrood Vanquisher",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"deathlord's","vilebrood","vanquisher","mount","death","knight"},
@@ -1144,7 +1144,7 @@ This mount is only available to Death Knights |confirm
 |only if not DeathKnight
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only DeathKnight
@@ -1230,7 +1230,7 @@ _Congratulations!_
 You collected the _Deathlord's Vilebrood Vanquisher_ mount
 |only DeathKnight
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Demon Hunter\\Slayer's Felbroken Shrieker",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Demon Hunter\\Slayer's Felbroken Shrieker",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"slayer's","felbroken","shrieker","demon","hunter","mount"},
@@ -1244,7 +1244,7 @@ This mount is only available to Demon Hunters |confirm
 |only if not DemonHunter
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only DemonHunter
@@ -1317,7 +1317,7 @@ _Congratulations!_
 You collected the _Slayer's Felbroken Shrieker_ mount
 |only DemonHunter
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Hunter\\Huntmaster's Dire Wolfhawk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Hunter\\Huntmaster's Dire Wolfhawk",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"huntmaster's","Dire","wolfhawk","mount","hunter"},
@@ -1331,13 +1331,13 @@ This mount is only available to Hunters |confirm
 |only if not Hunter
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Hunter
 step
 Once the Broken Shore Campaign is completed, you will then need to complete your Class Hall mount quest line
-Click here to load the "Hunter 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter 7.2 Order Hall Quests" |only Hunter
+Click here to load the "Hunter 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter 7.2 Order Hall Quests" |only Hunter
 Complete the 7.2 Order Hall quest line |q 46337 |future
 |only Hunter
 step
@@ -1357,7 +1357,7 @@ _Congratulations!_
 You are now the proud owner of Huntmaster's Dire Wolfhawk.
 |only Hunter
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Hunter\\Huntmaster's Fierce Wolfhawk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Hunter\\Huntmaster's Fierce Wolfhawk",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"huntmaster's","Fierce","wolfhawk","mount","hunter"},
@@ -1371,13 +1371,13 @@ This mount is only available to Hunters |confirm
 |only if not Hunter
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Hunter
 step
 Once the Broken Shore Campaign is completed, you will then need to complete your Class Hall mount quest line
-Click here to load the "Hunter 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Hunter 7.2 Order Hall Quests" |only Hunter
+Click here to load the "Hunter 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Hunter\\Hunter 7.2 Order Hall Quests" |only Hunter
 Complete the 7.2 Order Hall quest line |q 46337 |future
 |only Hunter
 step
@@ -1397,7 +1397,7 @@ _Congratulations!_
 You are now the proud owner of Huntmaster's Fierce Wolfhawk.
 |only Hunter
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Hunter\\Huntmaster's Loyal Wolfhawk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Hunter\\Huntmaster's Loyal Wolfhawk",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"huntmaster's","loyal","wolfhawk","mount","hunter"},
@@ -1411,7 +1411,7 @@ This mount is only available to Hunters |confirm
 |only if not Hunter
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Hunter
@@ -1498,7 +1498,7 @@ _Congratulations!_
 You collected the _Huntmaster's Loyal Wolfhawk_ mount
 |only Hunter
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Mage\\Archmage's Prismatic Disc",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Mage\\Archmage's Prismatic Disc",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Archmage's","Prismatic","Disc","Mage","mount"},
@@ -1512,7 +1512,7 @@ This mount is only available to Mages |confirm
 |only if not Mage
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Mage
@@ -1617,7 +1617,7 @@ _Congratulations!_
 You collected the _Archmage's Prismatic Disc_ mount
 |only Mage
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Monk\\Ban-Lu, Grandmaster's Companion",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Monk\\Ban-Lu, Grandmaster's Companion",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Ban-Lu","Grandmaster's","Companion","Monk","mount"},
@@ -1631,7 +1631,7 @@ This mount is only available to Monks |confirm
 |only if not Monk
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Monk
@@ -1772,7 +1772,7 @@ _Congratulations!_
 You collected the _Ban-Lu, Grandmaster's Companion_ mount
 |only Monk
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Paladin\\Highlord's Golden Charger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Paladin\\Highlord's Golden Charger",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Highlord's","Golden","Charger","Paladin","mount"},
@@ -1786,7 +1786,7 @@ This mount is only available to Paladins |confirm
 |only if not Paladin
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Paladin
@@ -1937,7 +1937,7 @@ _Congratulations!_
 You collected the _Highlord's Golden Charger_ mount
 |only Paladin
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Paladin\\Highlord's Valorous Charger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Paladin\\Highlord's Valorous Charger",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Highlord's","Valorous","Charger","Paladin","mount"},
@@ -1951,13 +1951,13 @@ This mount is only available to Paladins |confirm
 |only if not Paladin
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Paladin
 step
 Once the Broken Shore Campaign is completed, you will then need to complete your Class Hall mount quest line
-Click here to load the "Paladin 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin 7.2 Order Hall Quests" |only Paladin
+Click here to load the "Paladin 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin 7.2 Order Hall Quests" |only Paladin
 Complete the 7.2 Order Hall quest line |q 45770 |future
 |only Paladin
 step
@@ -1977,7 +1977,7 @@ _Congratulations!_
 You are now the proud owner of Highlord's Valorous Charger.
 |only Paladin
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Paladin\\Highlord's Vengeful Charger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Paladin\\Highlord's Vengeful Charger",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Highlord's","Vengeful","Charger","Paladin","mount"},
@@ -1991,13 +1991,13 @@ This mount is only available to Paladins |confirm
 |only if not Paladin
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Paladin
 step
 Once the Broken Shore Campaign is completed, you will then need to complete your Class Hall mount quest line
-Click here to load the "Paladin 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin 7.2 Order Hall Quests" |only Paladin
+Click here to load the "Paladin 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin 7.2 Order Hall Quests" |only Paladin
 Complete the 7.2 Order Hall quest line |q 45770 |future
 |only Paladin
 step
@@ -2017,7 +2017,7 @@ _Congratulations!_
 You are now the proud owner of Highlord's Vengeful Charger.
 |only Paladin
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Paladin\\Highlord's Vigilant Charger",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Paladin\\Highlord's Vigilant Charger",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Highlord's","Vigilant","Charger","Paladin","mount"},
@@ -2031,13 +2031,13 @@ This mount is only available to Paladins |confirm
 |only if not Paladin
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Paladin
 step
 Once the Broken Shore Campaign is completed, you will then need to complete your Class Hall mount quest line
-Click here to load the "Paladin 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Paladin 7.2 Order Hall Quests" |only Paladin
+Click here to load the "Paladin 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Paladin\\Paladin 7.2 Order Hall Quests" |only Paladin
 Complete the 7.2 Order Hall quest line |q 45770 |future
 |only Paladin
 step
@@ -2057,7 +2057,7 @@ _Congratulations!_
 You are now the proud owner of Highlord's Vigilant Charger.
 |only Paladin
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Priest\\High Priest's Lightsworn Seeker",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Priest\\High Priest's Lightsworn Seeker",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"high","priest's","lightsworn","seeker","mount","priest"},
@@ -2071,7 +2071,7 @@ This mount is only available to Priests |confirm
 |only if not Priest
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Priest
@@ -2122,7 +2122,7 @@ _Congratulations!_
 You collected the _High Priest's Lightsworn Seeker_ mount
 |only Priest
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Rogue\\Shadowblade's Baneful Omen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Rogue\\Shadowblade's Baneful Omen",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Shadowblade's","Baneful","Omen","Rogue","mount"},
@@ -2136,13 +2136,13 @@ This mount is only available to Rogues |confirm
 |only if not Rogue
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Rogue
 step
 Once the Broken Shore Campaign is completed, you will then need to complete your Class Hall mount quest line
-Click here to load the "Rogue 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue 7.2 Order Hall Quests" |only Rogue
+Click here to load the "Rogue 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue 7.2 Order Hall Quests" |only Rogue
 Complete the 7.2 Order Hall quest line |q 46178 |future
 |only Rogue
 step
@@ -2162,7 +2162,7 @@ _Congratulations!_
 You are now the proud owner of Shadowblade's Baneful Omen.
 |only Rogue
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Rogue\\Shadowblade's Crimson Omen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Rogue\\Shadowblade's Crimson Omen",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Shadowblade's","Crimson","Omen","Rogue","mount"},
@@ -2176,13 +2176,13 @@ This mount is only available to Rogues |confirm
 |only if not Rogue
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Rogue
 step
 Once the Broken Shore Campaign is completed, you will then need to complete your Class Hall mount quest line
-Click here to load the "Rogue 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue 7.2 Order Hall Quests" |only Rogue
+Click here to load the "Rogue 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue 7.2 Order Hall Quests" |only Rogue
 Complete the 7.2 Order Hall quest line |q 46178 |future
 |only Rogue
 step
@@ -2202,7 +2202,7 @@ _Congratulations!_
 You are now the proud owner of Shadowblade's Crimson Omen.
 |only Rogue
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Rogue\\Shadowblade's Lethal Omen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Rogue\\Shadowblade's Lethal Omen",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Shadowblade's","Lethal","Omen","Rogue","mount"},
@@ -2216,13 +2216,13 @@ This mount is only available to Rogues |confirm
 |only if not Rogue
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Rogue
 step
 Once the Broken Shore Campaign is completed, you will then need to complete your Class Hall mount quest line
-Click here to load the "Rogue 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue 7.2 Order Hall Quests" |only Rogue
+Click here to load the "Rogue 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Rogue\\Rogue 7.2 Order Hall Quests" |only Rogue
 Complete the 7.2 Order Hall quest line |q 46178 |future
 |only Rogue
 step
@@ -2242,7 +2242,7 @@ _Congratulations!_
 You are now the proud owner of Shadowblade's Lethal Omen.
 |only Rogue
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Rogue\\Shadowblade's Murderous Omen",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Rogue\\Shadowblade's Murderous Omen",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Shadowblade's","Murderous","Omen","Rogue","mount"},
@@ -2256,7 +2256,7 @@ This mount is only available to Rogues |confirm
 |only if not Rogue
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Rogue
@@ -2310,7 +2310,7 @@ _Congratulations!_
 You collected the _Shadowblade's Murderous Omen_ mount
 |only Rogue
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Shaman\\Farseer's Raging Tempest",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Shaman\\Farseer's Raging Tempest",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Farseer's","Raging","Tempest","Shaman","mount"},
@@ -2324,7 +2324,7 @@ This mount is only available to Shamans |confirm
 |only if not Shaman
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Shaman
@@ -2378,7 +2378,7 @@ _Congratulations!_
 You collected the _Farseer's Raging Tempest_ mount
 |only Shaman
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Warlock\\Netherlord's Accursed Wrathsteed",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Warlock\\Netherlord's Accursed Wrathsteed",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"netherlord's","Accursed","wrathsteed","wrath","steed","warlock","mount"},
@@ -2392,13 +2392,13 @@ This mount is only available to Warlocks |confirm
 |only if not Warlock
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Warlock
 step
 Once the Broken Shore Campaign is completed, you will then need to complete your Class Hall mount quest line
-Click here to load the "Warlock 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock 7.2 Order Hall Quests" |only Warlock
+Click here to load the "Warlock 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock 7.2 Order Hall Quests" |only Warlock
 Complete the 7.2 Order Hall quest line |q 46243 |future
 |only Warlock
 step
@@ -2412,7 +2412,7 @@ _Congratulations!_
 You are now the proud owner of Netherlord's Accursed Wrathsteed.
 |only Warlock
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Warlock\\Netherlord's Brimstone Wrathsteed",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Warlock\\Netherlord's Brimstone Wrathsteed",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"netherlord's","Brimstone","wrathsteed","wrath","steed","warlock","mount"},
@@ -2426,13 +2426,13 @@ This mount is only available to Warlocks |confirm
 |only if not Warlock
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Warlock
 step
 Once the Broken Shore Campaign is completed, you will then need to complete your Class Hall mount quest line
-Click here to load the "Warlock 7.2 Order Hall Quest" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Warlock 7.2 Order Hall Quests" |only Warlock
+Click here to load the "Warlock 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (100-110)\\Warlock\\Warlock 7.2 Order Hall Quests" |only Warlock
 Complete the 7.2 Order Hall quest line |q 46243 |future
 |only Warlock
 step
@@ -2452,7 +2452,7 @@ _Congratulations!_
 You are now the proud owner of Netherlord's Brimstone Wrathsteed.
 |only Warlock
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Warlock\\Netherlord's Chaotic Wrathsteed",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Warlock\\Netherlord's Chaotic Wrathsteed",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"netherlord's","chaotic","wrathsteed","wrath","steed","warlock","mount"},
@@ -2466,7 +2466,7 @@ This mount is only available to Warlocks |confirm
 |only if not Warlock
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Warlock
@@ -2567,7 +2567,7 @@ _Congratulations!_
 You collected the _Netherlord's Chaotic Wrathsteed_ mount
 |only Warlock
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Warrior\\Battlelord's Bloodthirsty War Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Class Mounts\\Warrior\\Battlelord's Bloodthirsty War Wyrm",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Battlelord's","Bloodthirsty","War","Wyrm","Warrior","mount"},
@@ -2581,7 +2581,7 @@ This mount is only available to Warriors |confirm
 |only if not Warrior
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 |only Warrior
@@ -2646,7 +2646,7 @@ _Congratulations!_
 You collected the _Battlelord's Bloodthirsty War Wyrm_ mount
 |only Warrior
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Class Mounts\\Demon Hunter\\Felsaber",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Class Mounts\\Demon Hunter\\Felsaber",{
 author="support@zygorguides.com",
 startlevel=98.0,
 keywords={"ground","Felsaber","demon","hunter","mount"},
@@ -2658,7 +2658,7 @@ step
 This mount is only available to Demon Hunters
 |only if not DemonHunter
 step
-Click here to load the "Demon Hunter Intro & Artifacts" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Demon Hunter Intro & Artifacts"
+Click here to load the "Demon Hunter Intro & Artifacts" guide |confirm |next "Leveling Guides\\Legion (100-110)\\Demon Hunter\\Demon Hunter Intro & Artifacts"
 |tip This mount is a reward given to all Demon Hunters within the first few quests in Demon Hunter starting area.
 learnmount Felsaber##200175
 |only DemonHunter
@@ -2667,7 +2667,7 @@ _Congratulations!_
 You are now the proud owner of a Felsaber.
 |only DemonHunter
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Luminous Starseeker",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Luminous Starseeker",{
 author="support@zygorguides.com",
 keywords={"blizzard","store","luminous","starseeker","flying","mount"},
 mounts={243512},
@@ -2683,7 +2683,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Luminous Starseeker.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Orgrimmar Interceptor",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Orgrimmar Interceptor",{
 author="support@zygorguides.com",
 keywords={"blizzard","store","orgrimmar","interceptor","flying","mount"},
 mounts={245725},
@@ -2700,7 +2700,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Orgrimmar Interceptor.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Shu-zen, the Divine Sentinel",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Shu-zen, the Divine Sentinel",{
 author="support@zygorguides.com",
 keywords={"blizzard, store, flying, mount"},
 mounts={259395},
@@ -2715,7 +2715,7 @@ step
 _Congratulations!_
 You Collected the "Shu-zen, the Divine Sentinel" Mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Stormwind Skychaser",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Stormwind Skychaser",{
 author="support@zygorguides.com",
 keywords={"blizzard","store","stormwind","skychaser","flying","mount"},
 mounts={245723},
@@ -2732,7 +2732,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Stormwind Skychaser.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Abyss Worm",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Abyss Worm",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Abyss","Worm","flying","mount"},
@@ -2752,7 +2752,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Abyss Worm_.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Acid Belcher",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Acid Belcher",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","skreeg","the","devourer"},
@@ -2778,7 +2778,7 @@ step
 _Congratulations!_
 You Collected the _Acid Belcher_.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Antoran Charhound",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Antoran Charhound",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","hounds","of","sargeras"},
@@ -2798,7 +2798,7 @@ step
 _Congratulations!_
 You Collected the _Antoran Charhound_ Mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Biletooth Gnasher",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Biletooth Gnasher",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","argus"},
@@ -2865,7 +2865,7 @@ label "congratz"
 _Congratulations!_
 You are now the proud owner of a _Biletooth Gnasher_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Crimson Slavermaw",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Crimson Slavermaw",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","blistermaw","antoran","wastes"},
@@ -2897,7 +2897,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Crimson Slavermaw_.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Darkspore Mana Ray",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Darkspore Mana Ray",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","fel-spotted","egg"},
@@ -2980,7 +2980,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Darkspore Mana Ray_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Felglow Mana Ray",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Felglow Mana Ray",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","fel-spotted","egg"},
@@ -3063,7 +3063,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Felglow Mana Ray_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Lambent Mana Ray",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Lambent Mana Ray",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","venomtail","skyfin","mac'aree"},
@@ -3087,7 +3087,7 @@ step
 _Congratulations!_
 You collected the _Lambent Mana Ray_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Living Infernal Core",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Living Infernal Core",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"living","infernal","core","flying","mount"},
@@ -3109,7 +3109,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Felblaze Infernal.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Fiendish Hellfire Core",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Fiendish Hellfire Core",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"fiendish","hellfire","core","flying","mount"},
@@ -3131,7 +3131,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Hellfire Infernal.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Scintillating Mana Ray",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Scintillating Mana Ray",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","fel-spotted","egg"},
@@ -3214,7 +3214,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Scintillating Mana Ray_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Smoldering Ember Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Smoldering Ember Wyrm",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"smoldering","ember","wyrm","flying","mount"},
@@ -3223,20 +3223,89 @@ model={74104},
 description="This guide will help you acquire the Smoldering Ember Wyrm.",
 },[[
 step
-Enter Karazhan with you group |goto Karazhan L/6 63.9,61.3
-|tip This mount can only drop on Mythic Difficulty.
+_Warning_
+To get to summon Nightbane you must collect all 5 Soul Fragments in a short amount of time
+You will have 8 minuites once inside to click the first Soul Fragment, once the first one is clicked within the required time you will recieve a 6 minuite buff, for each crystal after that you will get 5 more minuites added on
 confirm
 step
-kill Nightbane##114895 |goto Karazhan L/6 45.8,92.5
-|tip Check out our Karazhan guide to accomplish this.
-|tip This mount has a 100 percent chance to drop.
-collect Smoldering Ember Wyrm##142552 |use Smoldering Ember Wyrm##142552
+Enter Karazhan with you group |goto Karazhan L/6 63.9,61.3 < 1000 |c
+|tip This mount can only drop on Mythic Difficulty.
+step
+Once Inside go to your right and follow the stairs down to the Opera room clearing trash along the way
+talk Barnes##114339
+|tip This will begin the event.
+The Opera Event can be one of 3 bosses
+Click here for the Opera Hall: Wikket |confirm |next "Wikket_2"
+Click here for the Opera Hall: Westfall Story |confirm |next "Westfall_Story_2"
+Click here for the Opera Hall: Beautiful Beast |confirm |next "Beautiful_Beast_2"
+step
+label "Wikket_2"
+kill Elfyra##114284, Galindre##114251
+|tip Use the "Return to Karazhan" dungeon guide to accomplish this.
+Defeat the Wikket Event |killboss 1651/2
+|next "First_Crystal_2"
+step
+label "Westfall_Story_2"
+kill Toe Knee##114261, Mrrgria##114260
+|tip Use the "Return to Karazhan" dungeon guide to accomplish this.
+Defeat the Westfall Story Event |killboss 1651/2
+|next "First_Crystal_2"
+step
+label "Beautiful_Beast_2"
+kill Coggleston##114328
+You must defeat all 3 mini bosses before you can attack Coggleston
+|tip Use the "Return to Karazhan" dungeon guide to accomplish this.
+Defeat the Beautiful Beast Event |killboss 1651/2
+|next "First_Crystal_2"
+step
+label "First_Crystal_2"
+The First Crystal is in the Audience after defeating the Opera event
+Aquire the Opera Hall Soul Fragment
+|tip Don't move while the spell is channeling.
+confirm
+step
+The Second Crystal is in the left most room just before Maiden of Virtue
+Aquire the Guest Chambers Soul Fragment
+|tip Don't move while the spell is channeling.
+confirm
+step
+kill Moroes##15687
+|tip Use the "Return to Karazhan" dungeon guide to accomplish this.
+Defeat Moroes |killboss 1651/16
+step
+The Third Crystal is located behind Moroes
+Aquire the Banquet Hall Soul Fragment
+|tip Don't move while the spell is channeling.
+confirm
+step
+The Fourth Crystal is located in a room filled with spiders to the north of Attumen the Huntsman
+Aquire the Servent's Quarters Soul Fragment
+|tip Don't move while the spell is channeling.
+Once this is obtained click the portal to Karazhan's Entrance next to the Fragment
+confirm
+step
+kill Curator##114247
+|tip Use the "Return to Karazhan" dungeon guide to accomplish this.
+Defeat the Curator |killboss 1651/32
+step
+Curator will drop the last Soul Fragment
+Aquire the Menagerie Soul Fragment
+|tip Don't move while the spell is channeling.
+confirm
+step
+talk Image of Medivah##115038
+|tip This will start the encounter.
+|tip He is located on the outdoor circular platform in the southern section of the Master's Terrace.
+kill Nightbane##114895
+|tip Use the "Return to Karazhan" dungeon guide to accomplish this.
+collect Smoldering Ember Wyrm##142552 |n
+use the Smoldering Ember Wyrm##142552
 learnmount Smoldering Ember Wyrm##231428
 step
 _Congratulations!_
-You are now the proud owner of a Smoldering Ember Wyrm.
+You Collected the "Smoldering Ember Wyrm" Mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Vibrant Mana Ray",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Vibrant Mana Ray",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","fel-spotted","egg"},
@@ -3319,7 +3388,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Vibrant Mana Ray_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Vile Fiend",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Vile Fiend",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","houndmaster","kerrax","antoran","wastes"},
@@ -3351,7 +3420,7 @@ step
 _Congratulations!_
 You collected the _Vile Fiend_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Lucid Nightmare",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Lucid Nightmare",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount","puzzler's","desire"},
@@ -3374,7 +3443,7 @@ step
 click the Rusty Lever##187562 |goto Ulduar/1 45.6,12.3
 |tip It is on top of the robot head.
 |tip To get to it you must kill Flame Leviathan and XT-002.
-Check out our Ulduar guide if you need any help with these bosses or with navigation through the dungeon |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar" |or
+Check out our Ulduar guide if you need any help with these bosses or with navigation through the dungeon |confirm |next "Dungeon Guides\\Northrend Raids\\Ulduar" |or
 Click here to continue |confirm |or
 step
 This first puzzle requires that you light up a specifc pattern
@@ -3392,7 +3461,7 @@ Enter the Temple of Ahn'Qiraj |goto Ahn'Qiraj/2 51.4,26.5 < 1000 |c
 step
 To get to the next note you must defeat all of the bosses up to and including the last boss
 |tip You do not need to kill any of the optional bosses.
-Check out our AQ40 guide if you need any help with these bosses or with navigation through the dungeon |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj" |or
+Check out our AQ40 guide if you need any help with these bosses or with navigation through the dungeon |confirm |next "Dungeon Guides\\Classic Raids\\Temple of Ahn'Qiraj" |or
 Click here to continue |confirm |or
 step
 Once you kill the last boss run out of that room and go to this location
@@ -3487,8 +3556,14 @@ You will be teleported into the Endless Halls
 |tip This maze takes a long time to complete.
 |tip You must navigate through collecting each of the 5 color orbs and take them to their respected colored runes.
 |tip It is recommended to create your own map while navigating through, noting where orbs and runes are located.
-|tip If you need any help, check out Wowhead. There are links to a few addons that may be of use.
+|tip If you need any help, check out Wowhead.
+|tip There are links to a few addons that may be of use.
 _Warning:_ If you DC or log out it will reset the Endless Halls, meaning you will have to start all over again!
+Click here to continue |confirm
+step
+Exit the Endless Halls through the Final Room of the Maze
+|tip This is mandatory.
+|tip If you leave without leaving properly, you will need to complete the previous step again.
 Click here to continue |confirm
 step
 Enter the Tomb |goto Deadwind Pass/0 39.85,73.59 < 5 |walk
@@ -3500,7 +3575,7 @@ step
 _Congratulations!_
 You collected the _Lucid Nightmare_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Maddened Chaosrunner",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Maddened Chaosrunner",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount","wrangler","kravos","mac'aree","talbuk"},
@@ -3520,7 +3595,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Maddened Chaosrunner_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Midnight's Eternal Reins",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Midnight's Eternal Reins",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"midnight","eternal","rein","ground","mount"},
@@ -3541,7 +3616,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Midnight's Eternal Reins.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Shackled Ur'zul",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Shackled Ur'zul",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","argus","the","unmaker","antorus","burning","throne"},
@@ -3560,272 +3635,194 @@ step
 _Congratulations!_
 You Collected the _Shackled Ur'zul_ Mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Long-Forgotten Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Long-Forgotten Hippogryph",{
 author="support@zygorguides.com",
 startlevel=110.0,
-keywords={"long","forgotten","ground","hippogryph","mount"},
+keywords={"ground","mount"},
 mounts={215159},
 model={29361},
 description="This guide will help you acquire the Long-Forgotten Hippogryph Mount.",
 },[[
 step
-label "Loop"
-This mount is hard to attain
-You collect Ephemeral Crystals found in Azsuna, that spawn at random locations
-You _MUST NOT DIE_ or you will have to collect the Crystals all over
-You _MUST NOT LOG OFF_, or you will have to start over
-You _MUST NOT LEAVE AZSUNA_, or you will have to start over
-Note that if another player gets the spawn before you, you will have to wait for the crystals to reset
-Click here to continue |confirm
-stickystart "Crystal"
+label "Begin_Guide"
+You _must not die, log off, or leave Azsuna_ or you will have to collect the Crystals all over
+|tip If another player gets them first, you will have to wait for the crystals to reset.
+|tip Collect five Ephemeral Crystals around Azsuna to collect this mount.
+Click Here to Continue |confirm
+stickystart "Ephemeral_Crystal_Information"
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto Azsuna/0 45.5,45.4
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 45.50,45.40 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 46.95,48.93
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 46.95,48.93 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Carefully jump down |goto 48.27,47.63 < 5 |only if walking
 Continue jumping down the ledge |goto 48.31,48.29 < 5 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 48.7,48.5
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 48.70,48.50 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Enter the cave |goto 50.11,48.88 < 10 |walk
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 50.73,49.89
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 50.73,49.89 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
-Leave the cave |goto 50.19,49.12 < 10 |walk
 Follow the path |goto 48.29,45.89 < 20 |only if walking
 Follow the path |goto 46.35,45.77 < 25 |only if walking
 Follow the path |goto 46.29,50.36 < 25 |only if walking
 Carefully jump down |goto 45.45,53.95 < 10 |only if walking
 Follow the path |goto 44.76,58.47 < 25 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 44.1,59.8
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 44.10,59.80 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 45.46,58.68 < 20 |only if walking
 Follow the path |goto 46.84,59.88 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 47.1,61.7
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 47.10,61.70 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 48.56,61.09 < 30 |only if walking
 Follow the path |goto 50.70,60.66 < 5 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 51,61
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 51.00,61.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 52.47,62.39 < 25 |only if walking
 Follow the path |goto 53.89,65.87 < 25 |only if walking
 Follow the path |goto 52.98,67.64 < 25 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 52,71
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 52.00,71.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
-step
-fpath Wardens' Redoubt |goto 48.19,72.96
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 57.30,56.49 < 25 |only if walking
 Follow the path |goto 58.61,54.15 < 25 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 60,54
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 60.00,54.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 60.1,53.2
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 60.10,53.20 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 62,54
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 62.00,54.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 62.53,52.36
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 62.53,52.36 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 61.58,50.98 < 30 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 60,49
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 60.00,49.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 61.46,50.96 < 30 |only if walking
 Follow the path |goto 63.55,51.24 < 30 |only if walking
 Follow the path |goto 66.55,51.60 < 5 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 67,52
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 67.00,52.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 65.87,48.45 < 30 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 67,46
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 67.00,46.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path down |goto Azsuna/0 65.97,42.66 < 10 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 65.49,42.47
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 65.49,42.47 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path up |goto 65.11,38.93 < 15 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 64.8,37.9
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 64.80,37.90 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 67,33.7
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 67.00,33.70 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 67.15,32.32 < 20 |only if walking
 Follow the path |goto 68.39,29.33 < 20 |only if walking
 Follow the path |goto 68.67,26.91 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 68.19,24.03
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 68.19,24.03 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 68,23
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 68.00,23.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 65.4,29.5
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 65.40,29.50 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 63.48,31.76 < 25 |only if walking
 Follow the path |goto 61.37,34.64 < 25 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 59.37,38.33
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 59.37,38.33 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 59.7,38.6
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 59.70,38.60 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 61.1,38.9
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 61.10,38.90 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 59.18,42.32 < 20 |only if walking
 Follow the path |goto 61.12,45.12 < 20 |only if walking
@@ -3835,253 +3832,181 @@ Follow the path |goto 59.88,48.78 < 20 |only if walking
 Follow the path |goto 58.41,48.70 < 20 |only if walking
 Carefully jump down |goto 58.91,45.66 < 5 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 58.7,45
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 58.70,45.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 59.08,44.88
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 59.08,44.88 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Carefully drop down |goto 58.58,45.19 < 5 |only if walking
-Jump down |goto 57.26,46.99 < 10
+Jump down |goto 57.26,46.99 < 10 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 57.9,42.6
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 57.90,42.60 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Jump down |goto 58.70,42.87 < 15 |only if walking
 Follow the path |goto 57.05,41.27 < 30 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, under water.
-Collect the Ephemeral Crystal |goto 56,40
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground underwater.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 56.00,40.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 54.82,39.12 < 20 |only if walking
 Follow the path |goto 53.16,37.67 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, under water.
-Collect the Ephemeral Crystal |goto 51.4,37.6
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground underwater.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 51.40,37.60 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, under water.
-Collect the Ephemeral Crystal |goto 53.08,36.03
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground underwater.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 53.08,36.03 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object.
-Collect the Ephemeral Crystal |goto 54.5,33.5
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 54.50,33.50 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 54.84,33.35 < 20 |only if walking
 Follow the path |goto 56.21,33.12 < 25 |only if walking
 Follow the path |goto 59.24,31.08 < 25 |only if walking
+Enter the cave |goto 60.88,30.50 < 10 |walk
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 61.15,30.42
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground inside the cave.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 61.15,30.42 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 59.55,29.48 < 20 |only if walking
 Follow the path |goto 58.31,27.92 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 57.5,26.6
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 57.50,26.60 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 54.1,27.6
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 54.10,27.60 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 53.4,27.9
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 53.40,27.90 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 52.95,28.46 < 20 |only if walking
 Follow the path |goto 51.72,26.63 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 52.29,25.24
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 52.29,25.24 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 51.06,24.49 < 20 |only if walking
 Follow the path |goto 50.86,22.63 < 20 |only if walking
 Follow the path |goto 50.77,19.94 < 20 |only if walking
 Follow the path |goto 51.15,15.75 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 52.41,13.44
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 52.41,13.44 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 51.32,10.70 < 20 |only if walking
 Follow the path |goto 50.18,8.75 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 50.4,7.8
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 50.40,7.80 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path up |goto 49.37,7.22 < 20 |only if walking
 Follow the path |goto 48.58,10.76 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 45.7,9.2
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 45.70,9.20 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 45.5,17.2
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 45.50,17.20 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Enter the cave |goto 44.15,17.57 < 20 |walk
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 43.0,18.0
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground inside the cave.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 43.00,18.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
-Leave the cave |goto Azsuna/0 44.16,17.61 |walk
 Follow the path |goto Azsuna/0 43.04,10.96 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 42.4,8.8
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 42.40,8.80 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 42.2,8.5
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 42.20,8.50 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 40.74,10.36 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 38.76,9.29
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 38.76,9.29 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 38.41,12.52 < 20 |only if walking
-Follow the path |goto 37.8,14.8 < 20 |only if walking
+Follow the path |goto 37.80,14.80 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 34.85,17.14
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 34.85,17.14 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 35,22
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 35.00,22.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 35.41,26.83 < 20 |only if walking
 Follow the path |goto 32.89,30.60 < 20 |only if walking
 Follow the path |goto 31.68,33.59 < 20 |only if walking
 Follow the path |goto 30.51,35.39 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 29.9,36.0
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 29.90,36.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 30.98,34.37 < 20 |only if walking
 Enter the cave |goto 32.94,34.38 < 20 |walk
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 34.8,35.3
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground inside the cave.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 34.80,35.30 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Leave the cave |goto 34.37,36.00 < 20 |walk
 Follow the path |goto 34.5,36.7 < 20 |only if walking
@@ -4089,64 +4014,52 @@ Follow the path |goto 38.1,37.9 < 20 |only if walking
 Follow the path |goto 41.4,35.5 < 20 |only if walking
 Follow the path up |goto 40.6,34.6 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 40.3,32.8
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground inside the cave.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 40.30,32.80 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 37.4,32.2
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground inside the cave.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 370.4,32.20 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path up |goto 39.53,34.34 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 36.0,36.0
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground inside the cave.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 36.00,36.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 Follow the path |goto 42.09,34.06 < 20 |only if walking
 Follow the path |goto 44.18,32.17 < 20 |only if walking
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 47.2,33.0
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground inside the cave.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 47.20,33.00 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
 click Ephemeral Crystal##251187
-|tip It's a purple-ish blue object, inside of the cave.
-Collect the Ephemeral Crystal |goto 49.93,32.95
-collect Reins of the Long-Forgotten Hippogryph##138258 |n
-Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159 |next "Crystal"
+|tip It looks like a large purple crystal floating above the ground inside the cave.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto 49.93,32.95 |condition hasmount(215159) |or
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click here if there isn't an Ephemeral Crystal present |confirm
+Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
 step
-Click here to return to the start |confirm |next "Loop"
+Click Here to Return to the Start |confirm |next "Begin_Guide" |condition hasmount(215159) or itemcount(138258) >= 1
 step
-label "Crystal"
-When you or another player have collected 5 Ephemeral Crystals, the following message appears:
+label "Ephemeral_Crystal_Information"
+When anyone collects 5 Ephemeral Crystals, the following message appears in chat:
 _You hear a faint caw in the distance and then silence._
-You will have to wait at least 4 hours before the Crystals respawn
+|tip You will have to wait at least 4 hours before the Crystals respawn.
+step
+use the Reins of the Long-Forgotten Hippogryph##138258
+learnmount Long-Forgotten Hippogryph##215159
 step
 _Congratulations!_
 You collected the _Long-Forgotten Hippogryph_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Riddler's Mind-Worm",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Riddler's Mind-Worm",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"riddler","mind","flying","mount","worm"},
@@ -4211,7 +4124,7 @@ step
 _Congratulations!_
 You collected the _Riddler's Mind-Worm_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Brawler's Burly Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Brawler's Burly Basilisk",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"guild","brawler","burly","ground","mount","basilisk"},
@@ -4221,7 +4134,7 @@ description="This guide will help you acquire the Brawler's Burly Basilisk.",
 },[[
 step
 You will need to gain _Rank 8_ with the Legion Brawler's Guild
-Click here to be taken to the Brawler's guild event guide. This will show you strategies on how to defeat each boss |confirm |next "Zygor's Events Guides\\Brawler's Guild\\Legion Brawler's Guild"
+Click here to be taken to the Brawler's guild event guide. This will show you strategies on how to defeat each boss |confirm |next "Events Guides\\Brawler's Guild\\Legion Brawler's Guild"
 confirm
 only if ZGV:GetReputation(2010).friendRep<7000
 step
@@ -4234,7 +4147,7 @@ step
 _Congratulations!_
 You collected the _Brawler's Burly Basilisk_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Fathom Dweller",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Fathom Dweller",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"fathom","dweller","ground","mount"},
@@ -4383,7 +4296,7 @@ step
 _Congratulations!_
 You collected the _Fathom Dweller_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Ratstallion",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Ratstallion",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ratstallion","quest","ground","mount"},
@@ -4427,7 +4340,7 @@ step
 _Congratulations!_
 You collected the _Ratstallion_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Player vs. Player Mounts\\Cruel Gladiator's Storm Dragon",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Player vs. Player Mounts\\Cruel Gladiator's Storm Dragon",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Cruel","Gladiator's","Storm","Dragon","flying","mount"},
@@ -4440,7 +4353,7 @@ This mount was a reward given to players that obtained the Gladiator rank during
 |tip This achievement was given to the top 0.5 percent of players in Arena pvp during this season.
 |tip This mount is no longer available, as Legion PvP season 3 has ended.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Player vs. Player Mounts\\Dominant Gladiator's Storm Dragon",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Player vs. Player Mounts\\Dominant Gladiator's Storm Dragon",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","pvp","arena","battleground"},
@@ -4460,7 +4373,7 @@ step
 _Congratulations!_
 You Collected the _Dominant Gladiator's Storm Dragon_ Mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Player vs. Player Mounts\\Fearless Gladiator's Storm Dragon",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Player vs. Player Mounts\\Fearless Gladiator's Storm Dragon",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Fearless","Gladiator's","Storm","Dragon","flying","mount"},
@@ -4473,7 +4386,7 @@ This mount was a reward given to players that obtained the Gladiator rank during
 |tip This achievement was given to the top 0.5 percent of players in Arena pvp during this season.
 |tip This mount is no longer available, as Legion PvP season 2 has ended.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Player vs. Player Mounts\\Ferocious Gladiator's Storm Dragon",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Player vs. Player Mounts\\Ferocious Gladiator's Storm Dragon",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Ferocious","Gladiator's","Storm","Dragon","flying","mount"},
@@ -4493,7 +4406,7 @@ step
 _Congratulations!_
 You collected the _Ferocious Gladiator's Storm Dragon_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Player vs. Player Mounts\\Fierce Gladiator's Storm Dragon",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Player vs. Player Mounts\\Fierce Gladiator's Storm Dragon",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","pvp","arena","battleground"},
@@ -4514,7 +4427,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Fierce Gladiator's Storm Dragon_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Player vs. Player Mounts\\Vindictive Gladiator's Storm Dragon",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Player vs. Player Mounts\\Vindictive Gladiator's Storm Dragon",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Vindictive","Gladiator's","Storm","Dragon","flying","mount"},
@@ -4527,7 +4440,7 @@ This mount was a reward given to players that obtained the Gladiator rank during
 |tip This achievement was given to the top 0.5 percent of players in Arena pvp during this season.
 |tip This mount is no longer available, as Legion PvP season 1 has ended.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Ivory Hawkstrider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Ivory Hawkstrider",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ivory","hawkstrider","ground","mount"},
@@ -4565,7 +4478,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Ivory Hawkstrider.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Prestigious Azure Courser",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Prestigious Azure Courser",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Prestigious","Azure","Courser","ground","mount"},
@@ -4586,7 +4499,7 @@ step
 _Congratulations!_
 You collected the _Prestigious Azure Courser_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Prestigious Bronze Courser",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Prestigious Bronze Courser",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Prestigious","Bronze","Courser","ground","mount"},
@@ -4607,7 +4520,7 @@ step
 _Congratulations!_
 You collected the _Prestigious Bronze Courser_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Prestigious Forest Courser",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Prestigious Forest Courser",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Prestigious","Forest","Courser","ground","mount"},
@@ -4628,7 +4541,7 @@ step
 _Congratulations!_
 You collected the _Prestigious Forest Courser_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Prestigious Ivory Courser",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Prestigious Ivory Courser",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Prestigious","Ivory","Courser","ground","mount"},
@@ -4649,7 +4562,7 @@ step
 _Congratulations!_
 You collected the _Prestigious Ivory Courser_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Prestigious Midnight Courser",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Prestigious Midnight Courser",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Prestigious","Midnight","Courser","ground","mount"},
@@ -4664,7 +4577,7 @@ This mount is currently not available but will most likely be another Prestige r
 |tip For each Prestige level, you will need to first get 50 levels of honor. Once this happens, you have the option to reset these levels and gain one Prestige level.
 confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Prestigious Royal Courser",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Prestigious Royal Courser",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Prestigious","Royal","Courser","ground","mount"},
@@ -4679,7 +4592,7 @@ This mount is currently not available but will most likely be another Prestige r
 |tip For each Prestige level, you will need to first get 50 levels of honor. Once this happens, you have the option to reset these levels and gain one Prestige level.
 confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Prestigious War Wolf",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Prestigious War Wolf",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Prestigious","War","Wolf","ground","mount"},
@@ -4692,7 +4605,7 @@ This is a Horde mount reward for completing the achievement "Free for All, More 
 |tip This achievement requires you to complete each of the 4 differenet PvP related world quests 20 times each.
 |tip These being: Operation Murloc Freedom located in Aszuna, Bareback Brawl located in Stormheim, Black Rook Rumble located in Val'sharah, and Darkbrul Arena located in Highmountain.
 |tip Check out our World Quests guide to complete these.
-Click here to load our "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+Click here to load our "World Quests" guide |confirm |next "Dailies Guides\\Legion\\World Quests" |or
 |achieve 11474 |or
 step
 collect Reins of the Prestigious War Wolf##143864 |n
@@ -4702,7 +4615,7 @@ step
 _Congratulations!_
 You collected the _Prestigious War Wolf_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Bear",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Bear",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount","pvp","arena","battleground"},
@@ -4725,7 +4638,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Vicious War Bear_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Fox",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Fox",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount"},
@@ -4748,7 +4661,7 @@ step
 _Congratulations!_
 You Collected the "Vicious War Fox" Mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Scorpion",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Scorpion",{
 keywords={"vicious","war","scorpion","ground","mount"},
 mounts={230988},
 model={74034},
@@ -4769,7 +4682,7 @@ step
 _Congratulations!_
 You collected the _Vicious War Scorpion_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Trike",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Trike",{
 keywords={"vicious","war","Trike","ground","mount"},
 mounts={223354},
 model={71816},
@@ -4790,7 +4703,7 @@ step
 _Congratulations!_
 You collected the _Vicious War Trike_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Turtle",{
 keywords={"vicious","war","turtle","ground","mount"},
 mounts={232525},
 model={74321},
@@ -4811,7 +4724,7 @@ step
 _Congratulations!_
 You collected the _Vicious War Turtle_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious Warstrider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious Warstrider",{
 keywords={"vicious","warstrider","ground","mount"},
 mounts={223363},
 model={71975},
@@ -4832,7 +4745,7 @@ step
 _Congratulations!_
 You collected the _Vicious Warstrider_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Aquatic Mounts\\Profession Mounts\\Pond Nettle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Aquatic Mounts\\Profession Mounts\\Pond Nettle",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"aquatic","mount","fishing"},
@@ -4854,7 +4767,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Pond Nettle_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Brinedeep Bottom-Feeder",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Brinedeep Bottom-Feeder",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"brinedeep","bottom","feeder","quest","ground","mount"},
@@ -4895,7 +4808,7 @@ step
 _Congratulations!_
 You collected the _Brinedeep Bottom-Feeder_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Great Northern Elderhorn",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Great Northern Elderhorn",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"great","northern","elderhorn","leatherworking","ground","mount"},
@@ -4940,7 +4853,7 @@ step
 _Congratulations!_
 You collected the _Great Northern Elderhorn_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Spirit of Eche'ro",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Spirit of Eche'ro",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"spirit","eche'ro","archaeology","ground","mount"},
@@ -4976,7 +4889,7 @@ step
 _Congratulations!_
 You collected the _Spirit of Eche'ro_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Steelbound Devourer",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Steelbound Devourer",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"steelbound","devourer","ground","mount"},
@@ -5023,7 +4936,7 @@ label "Steelbound Grats"
 _Congratulations!_
 You collected the _Steelbound Devourer_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Quest Mounts\\Violet Spellwing",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Quest Mounts\\Violet Spellwing",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","argus","the","unmaker","antorus","burning","throne"},
@@ -5048,7 +4961,7 @@ step
 _Congratulations!_
 You Collected the "Violet Spellwing" Mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Quest Mounts\\Llothien Prowler",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Quest Mounts\\Llothien Prowler",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"llothian","prowler","world","quest","ground","mount"},
@@ -5160,7 +5073,7 @@ step
 _Congratulations!_
 You collected the _Llothian Prowler_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Arcanist's Manasaber",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Arcanist's Manasaber",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"arcanist","manasaber","flying","mount"},
@@ -5183,7 +5096,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Arcanist's Manasaber.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Cloudwing Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Cloudwing Hippogryph",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"cloudwing","hippogryph","flying","mount"},
@@ -5218,7 +5131,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Cloudwing Hippogryph.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Leywoven Flying Carpet",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Leywoven Flying Carpet",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"leywoven","carpet","flying","mount"},
@@ -5253,7 +5166,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Leywoven Flying Carpet.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Lightforged Warframe",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Lightforged Warframe",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","army","of","the","light"},
@@ -5262,7 +5175,7 @@ model={75585},
 description="This guide will help you acquire a \"Lightforged Warframe\" mount.",
 },[[
 step
-Click here to load the "Army of the Light" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Army of the Light"
+Click here to load the "Army of the Light" reputation guide |confirm |next "Reputations Guides\\Legion Reputations\\Army of the Light"
 |tip Use it to earn reputation with the Argussian Reach.
 Earn Exalted reputation with the Army of the Light |condition rep("Army of the Light")>=Exalted
 step
@@ -5274,7 +5187,7 @@ step
 _Congratulations!_
 You collected the _Lightforged Warframe_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Valarjar Stormwing",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Valarjar Stormwing",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"valarjar","stormwing","flying","mount"},
@@ -5309,7 +5222,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Valarjar Stormwing.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Amethyst Ruinstrider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Amethyst Ruinstrider",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount","argussian","reach","exalted"},
@@ -5318,7 +5231,7 @@ model={79443},
 description="This guide will help you acquire a \"Amethyst Ruinstrider\" mount.",
 },[[
 step
-Click here to load the "Argussian Reach" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Argussian Reach"
+Click here to load the "Argussian Reach" reputation guide |confirm |next "Reputations Guides\\Legion Reputations\\Argussian Reach"
 |tip Use it to earn reputation with the Argussian Reach.
 Earn Exalted reputation with the Argussian Reach |condition rep("Argussian Reach")>=Exalted
 step
@@ -5330,7 +5243,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Amethyst Ruinstrider_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Avenging Felcrusher",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Avenging Felcrusher",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount","army","of","the","light","gleaming","footlocker","paragon"},
@@ -5339,12 +5252,12 @@ model={79790},
 description="This guide will help you acquire a \"Avenging Felcrusher\" mount.",
 },[[
 step
-Click here to load the "Army of the Light" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Army of the Light"
+Click here to load the "Army of the Light" reputation guide |confirm |next "Reputations Guides\\Legion Reputations\\Army of the Light"
 |tip Use it to earn reputation with the Argussian Reach.
 Earn Exalted reputation with the Army of the Light |condition rep("Army of the Light")>=Exalted
 step
 Once exalted you will need to obtain 10,000 more reputation
-Click here to load the "Army of the Light" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Army of the Light"
+Click here to load the "Army of the Light" reputation guide |confirm |next "Reputations Guides\\Legion Reputations\\Army of the Light"
 |tip Use it to earn reputation with the Argussian Reach.
 confirm
 step
@@ -5363,7 +5276,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Avenging Felcrusher_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Beryl Ruinstrider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Beryl Ruinstrider",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount","argussian","reach","exalted"},
@@ -5372,7 +5285,7 @@ model={79441},
 description="This guide will help you acquire a \"Beryl Ruinstrider\" mount.",
 },[[
 step
-Click here to load the "Argussian Reach" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Argussian Reach"
+Click here to load the "Argussian Reach" reputation guide |confirm |next "Reputations Guides\\Legion Reputations\\Argussian Reach"
 |tip Use it to earn reputation with the Argussian Reach.
 Earn Exalted reputation with the Argussian Reach |condition rep("Argussian Reach")>=Exalted
 step
@@ -5384,7 +5297,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Beryl Ruinstrider_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Blessed Felcrusher",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Blessed Felcrusher",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount","army","of","the","light","gleaming","footlocker","paragon"},
@@ -5393,12 +5306,12 @@ model={79789},
 description="This guide will help you acquire a \"Blessed Felcrusher\" mount.",
 },[[
 step
-Click here to load the "Army of the Light" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Army of the Light"
+Click here to load the "Army of the Light" reputation guide |confirm |next "Reputations Guides\\Legion Reputations\\Army of the Light"
 |tip Use it to earn reputation with the Argussian Reach.
 Earn Exalted reputation with the Army of the Light |condition rep("Army of the Light")>=Exalted
 step
 Once exalted you will need to obtain 10,000 more reputation
-Click here to load the "Army of the Light" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Army of the Light"
+Click here to load the "Army of the Light" reputation guide |confirm |next "Reputations Guides\\Legion Reputations\\Army of the Light"
 |tip Use it to earn reputation with the Argussian Reach.
 confirm
 step
@@ -5417,7 +5330,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Blessed Felcrusher_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Cerulean Ruinstrider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Cerulean Ruinstrider",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount","argussian","reach","exalted"},
@@ -5426,7 +5339,7 @@ model={79437},
 description="This guide will help you acquire a \"Cerulean Ruinstrider\" mount.",
 },[[
 step
-Click here to load the "Argussian Reach" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Argussian Reach"
+Click here to load the "Argussian Reach" reputation guide |confirm |next "Reputations Guides\\Legion Reputations\\Argussian Reach"
 |tip Use it to earn reputation with the Argussian Reach.
 Earn Exalted reputation with the Argussian Reach |condition rep("Argussian Reach")>=Exalted
 step
@@ -5438,7 +5351,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Cerulean Ruinstrider_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Glorious Felcrusher",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Glorious Felcrusher",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount","army","of","the","light","gleaming","footlocker","paragon"},
@@ -5447,12 +5360,12 @@ model={79732},
 description="This guide will help you acquire a \"Glorious Felcrusher\" mount.",
 },[[
 step
-Click here to load the "Army of the Light" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Army of the Light"
+Click here to load the "Army of the Light" reputation guide |confirm |next "Reputations Guides\\Legion Reputations\\Army of the Light"
 |tip Use it to earn reputation with the Argussian Reach.
 Earn Exalted reputation with the Army of the Light |condition rep("Army of the Light")>=Exalted
 step
 Once exalted you will need to obtain 10,000 more reputation
-Click here to load the "Army of the Light" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Army of the Light"
+Click here to load the "Army of the Light" reputation guide |confirm |next "Reputations Guides\\Legion Reputations\\Army of the Light"
 |tip Use it to earn reputation with the Argussian Reach.
 confirm
 step
@@ -5471,7 +5384,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Glorious Felcrusher_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Highmountain Elderhorn",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Highmountain Elderhorn",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"highmountain","elderhorn","ground","mount"},
@@ -5506,7 +5419,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Highmountain Elderhorn.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Russet Ruinstrider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Russet Ruinstrider",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount","argussian","reach","exalted"},
@@ -5515,7 +5428,7 @@ model={79444},
 description="This guide will help you acquire a \"Russet Ruinstrider\" mount.",
 },[[
 step
-Click here to load the "Argussian Reach" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Argussian Reach"
+Click here to load the "Argussian Reach" reputation guide |confirm |next "Reputations Guides\\Legion Reputations\\Argussian Reach"
 |tip Use it to earn reputation with the Argussian Reach.
 Earn Exalted reputation with the Argussian Reach |condition rep("Argussian Reach")>=Exalted
 step
@@ -5527,7 +5440,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Russet Ruinstrider_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Sable Ruinstrider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Sable Ruinstrider",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount","argussian","reach","exalted"},
@@ -5549,7 +5462,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Sable Ruinstrider_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Umber Ruinstrider",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Umber Ruinstrider",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ground","mount","argussian","reach","exalted"},
@@ -5558,7 +5471,7 @@ model={79438},
 description="This guide will help you acquire a \"Umber Ruinstrider\" mount.",
 },[[
 step
-Click here to load the "Argussian Reach" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Argussian Reach"
+Click here to load the "Argussian Reach" reputation guide |confirm |next "Reputations Guides\\Legion Reputations\\Argussian Reach"
 |tip Use it to earn reputation with the Argussian Reach.
 Earn Exalted reputation with the Argussian Reach |condition rep("Argussian Reach")>=Exalted
 step
@@ -5570,7 +5483,7 @@ step
 _Congratulations!_
 You are now the proud owner of a _Umber Ruinstrider_ mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Wild Dreamrunner",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Wild Dreamrunner",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"wild","dreamrunner","ground","mount"},
@@ -5605,7 +5518,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Wild Dreamrunner.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Aquatic Mounts\\Vendor Mounts\\Darkwater Skate",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Aquatic Mounts\\Vendor Mounts\\Darkwater Skate",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"darkwater","darkmoon","faire","water","mount","skate"},
@@ -5624,7 +5537,7 @@ step
 _Congratulations!_
 You collected the _Darkwater Skate_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Yu'lei, Daughter of Jade",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Yu'lei, Daughter of Jade",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"yu'lei","daughter","jade","flying","mount"},
@@ -5646,7 +5559,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Yu'lei, Daughter of Jade.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Arcadian War Turtle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Arcadian War Turtle",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"arcadian","war","turtle","quest","ground","mount"},
@@ -5670,7 +5583,7 @@ step
 _Congratulations!_
 You collected the _Arcadian War Turtle_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Bloodfang Widow",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Bloodfang Widow",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"bloodfang","widow","ground","mount"},
@@ -5689,7 +5602,7 @@ step
 _Congratulations!_
 You collected the _Bloodfang Widow_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\World Event Mounts\\Darkmoon Dirigible",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Mounts\\Flying Mounts\\World Event Mounts\\Darkmoon Dirigible",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"flying","mount","faire"},
@@ -5702,8 +5615,8 @@ This mount can be bought either on the release of 7.3 or shortly after from the 
 |tip You will need 1,000 tickets to purchase this mount.
 confirm
 step
-Check out our Darmoon Faire Quests guide to help collect these tickets |confirm |next "Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests" |or
-Check out our Darmoon Faire Dailies guide to help collect these tickets |confirm |next "Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies" |or
+Check out our Darmoon Faire Quests guide to help collect these tickets |confirm |next "Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests" |or
+Check out our Darmoon Faire Dailies guide to help collect these tickets |confirm |next "Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies" |or
 |tip You will not be able to collect all 1,000 tickets in one week.
 |tip The Darkmoon Faire is only available for one week every month beginning on the first Sunday.
 collect 1000 Darkmoon Prize Ticket##515 |or

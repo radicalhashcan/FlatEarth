@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("DungeonALEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Darkheart Thicket",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Legion Dungeons\\Darkheart Thicket",{
 mapid=1067,
 achieveid={10783},
 condition_suggested=function() return level>=98 and level<=110 and _G.GetAverageItemLevel()>500 end,
@@ -91,7 +91,7 @@ step
 _Congratulations!_
 You completed the Darkheart Thicket dungeon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Eye of Azshara",{
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Legion Dungeons\\Eye of Azshara",{
 mapid=713,
 achieveid={10780},
 condition_suggested=function() return level>=98 and level<=110 and _G.GetAverageItemLevel()>500 end,

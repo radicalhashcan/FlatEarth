@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("DailiesAMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Anglers Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\The Anglers Dailies",{
 completion={"quests",1,2,4},
 startlevel=90,
 description="This guide will take you through The Anglers dailies Becoming Exalted with The Anglers allows you to purchase a companion pet, fishing poles, and water mounts.",
@@ -167,7 +167,7 @@ step
 You have reached the end of this guide
 Click here to go back to the dailies |confirm |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The August Celestials Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\The August Celestials Dailies",{
 completion={"quests"},
 startlevel=90,
 description="This guide will take you through The August Celestials dailies Becoming Exalted with The August Celestials allows you to purchase flying mounts and armor for your character.",
@@ -595,7 +595,7 @@ step
 label "end"
 This is the end of the current guide. Click here to go back to the beginning |confirm |next "startaug"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Order of the Cloud Serpent Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\The Order of the Cloud Serpent Dailies",{
 completion={"quests",10,11,18},
 startlevel=90,
 description="This guide will take you through the Order of the Cloud Serpent dailies Becoming Exalted with The Order of the Cloud Serpent allows you to purchase flying mounts and designs for companion pets.",
@@ -1055,7 +1055,7 @@ label "end"
 This the end of our daily guide
 Click here to go back to the beginning |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies",{
 completion={"quests"},
 startlevel=90,
 description="This guide will take you through the Shado-Pan dailies Becoming Exalted with The Shado-Pan allows you to purchase ground mounts and armor for your character.",
@@ -1583,7 +1583,7 @@ step
 You have reached the end of this daily guide
 Click here to return to the start of the dailies |next "shado_dailies" |confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies",{
 startlevel=90,
 completion={"quests"},
 description="This guide will take you through The Tillers dailies Becoming Exalted with The Tillers allows you to purchase ground mounts and recipes for your character.",
@@ -1591,7 +1591,7 @@ description="This guide will take you through The Tillers dailies Becoming Exalt
 step
 #include "Tillers_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Golden Lotus Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\The Golden Lotus Dailies",{
 achieveid={7315,6546},
 startlevel=90,
 description="This guide will take you through The Golden Lotus dailies Becoming Exalted with the Golden Lotus allows you to purchase a crowd control trinket and some armor. At Revered, you can purchase epic chest armor, rings, and shoulders. At Exalted, you can purchase 3 ground mounts.",
@@ -1627,9 +1627,9 @@ Tell him "Let's find out!" |q 31512/1 |only if havequest(31512) |goto 55.5,91.3
 Tell him "Let's find out!" |q 31511/1 |only if havequest(31511) |goto 55.5,91.3
 step
 talk Matron Vi Vinh##64149
-turnin A Witness to History##31511 |goto Vale of Eternal Blossoms/3 35.4,65.9
+turnin A Witness to History##31511 |goto Shrine of Seven Stars/1 35.4,65.9
 or
-turnin A Witness to History##31512 |goto Vale of Eternal Blossoms/3 35.4,65.9
+turnin A Witness to History##31512 |goto Shrine of Seven Stars/1 35.4,65.9
 step
 label "dailies"
 talk Kun Autumnlight##58920
@@ -1698,12 +1698,12 @@ Traverse the following rooms by only stepping on the _green_ or _red_ tiles, oth
 confirm
 only if havequest(30280) or havequest(30277)
 step
-kill Milau##64965 |q 30280/1 |goto Vale of Eternal Blossoms/18 53.9,68.3
+kill Milau##64965 |q 30280/1 |goto Vale of Eternal Blossoms/1 53.9,68.3
 |tip Milau has several deadly abilities. He will cast a Lightning Breath in any direction, do not be in front of him when he does this. He also starts casting Lightning Pools, constantly move until he is done. Periodically he will pull you to the middle of the room and cast Lightning Sweep. While he is casting get as much distance on him as you can.
 only if havequest(30280)
 step
 click Deactivate Final Spirit Wall##214477
-Deactivate the Final Spirit Wall |q 30277/1 |goto Vale of Eternal Blossoms/18 42.1,27.2
+Deactivate the Final Spirit Wall |q 30277/1 |goto Vale of Eternal Blossoms/1 42.1,27.2
 only if havequest(30277)
 step
 click Ancient Guo-Lai Artifact##214394
@@ -1730,7 +1730,7 @@ label "end"
 You have reached the end of the guide for today
 Click here to go back to the beginning of the dailies |confirm |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Klaxxi Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\The Klaxxi Dailies",{
 startlevel=90,
 completion={"quests"},
 description="This guide will take you through The Klaxxi dailies Becoming Exalted with The Klaxxi allows you to purchase ground mounts, plans for blacksmithing, armor, and weapons for your character.",
@@ -1743,7 +1743,7 @@ Falling to Pieces |achieve 6540/2
 Blood of Ancients |achieve 6540/3
 Mazu's Bounty |achieve 6540/4
 Please refer to Zygor's Leveling and Loremaster guides for assistance in completing these questlines
-Click here to go to Zygor's Leveling and Loremaster guides for assistance in completing these questlines |confirm |next "Zygor's Leveling Guides\\Pandaria (80-90)\\Dread Wastes (84-90)"
+Click here to go to Zygor's Leveling and Loremaster guides for assistance in completing these questlines |confirm |next "Leveling Guides\\Pandaria (80-90)\\Dread Wastes (84-90)"
 confirm
 step
 label "klaxxi start"
@@ -2186,7 +2186,7 @@ label "end"
 This is the end of this guide.
 Click here to return to the beginning of the dailies |confirm |next "klaxxi start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Pandaria Cooking Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\Pandaria Cooking Dailies",{
 completion={"quests"},
 description="This guide will take you through the Cooking dailies",
 },[[
@@ -2200,7 +2200,7 @@ step
 label "cookday"
 #include "MoP_Cooking_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Operation: Shieldwall",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\Operation: Shieldwall",{
 startlevel=90,
 description="This guide will take you through quests for Operation: Shieldwall. Becoming Exalted with Operation: Shieldwall allows you to purchase an epic flying mount, epic armor, and battle pets for your character.",
 },[[
@@ -2646,8 +2646,8 @@ only if havequest(32315)
 step
 talk Anduin Wrynn##67948
 Find Anduin |q 32315/1
-turnin Anduin's Plea##32315 |goto Vale of Eternal Blossoms/4 65.8,32.9
-accept Heart Of The Alliance##32316 |goto Vale of Eternal Blossoms/4 65.8,32.9
+turnin Anduin's Plea##32315 |goto Shrine of Seven Stars/2 65.8,32.9
+accept Heart Of The Alliance##32316 |goto Shrine of Seven Stars/2 65.8,32.9
 only if not completedq(32316)
 step
 Walk around the shrine clicking Sha-Touched Footmen
@@ -2656,7 +2656,7 @@ kill Sha-Touched Footman##68006+
 only if havequest(32316)
 step
 talk King Varian Wrynn##68242
-turnin Heart Of The Alliance##32316 |goto Vale of Eternal Blossoms/4 67.4,43.5
+turnin Heart Of The Alliance##32316 |goto Shrine of Seven Stars/2 67.4,43.5
 only if havequest(32316)
 |next "endg"
 step
@@ -2970,7 +2970,7 @@ step
 You have reached the end of the guide
 Click here to go back to the start |confirm |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Beastmaster Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\Beastmaster Dailies",{
 startlevel=90,
 description="This guide will take you through the bonus quests for Operation: Shieldwall.",
 },[[
@@ -3121,7 +3121,7 @@ label "EOG"
 You have reached the end of the guide
 Click here to return to the beginning |confirm |next "route"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Kirin Tor Offensive Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\Kirin Tor Offensive Dailies",{
 startlevel=90,
 description="This guide will take you through the bonus quests for the Kirin Tor.",
 },[[
@@ -4052,7 +4052,7 @@ You have reached the end of the dailies for today
 Click here to go back to the beginning of the guide |confirm |next "start"
 Congratulations, you are now _Exalted_ with the _Kirin Tor Offensive_! |only if rep("Kirin Tor Offensive")==Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Timeless Isle Dailies",{
+ZygorGuidesViewer:RegisterGuide("Dailies Guides\\Mists of Pandaria Dailies\\Timeless Isle Dailies",{
 startlevel=90,
 description="This guide will help you complete the dailies on the Timeless Isle. Completing these dailies awards you with Timeless Coins.",
 },[[

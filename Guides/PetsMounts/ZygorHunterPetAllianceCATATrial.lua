@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("HunterPetA") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Silithids\\Silithid Colossi\\Pink Silithid Colossi",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Silithids\\Silithid Colossi\\Pink Silithid Colossi",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Pink Silithid Colossi pet.",
 model={37549},
@@ -19,7 +19,7 @@ Search for Ainamiss the Hive Queen around the area.
 |tip It is level 48.
 Use your Tame Beast ability on _Ainamiss the Hive Queen_. |cast Tame Beast##1515 |goto Tanaris,34.2,46.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Beetles\\Scarabs\\Red-Spotted Green Scarab",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Beetles\\Scarabs\\Red-Spotted Green Scarab",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Red-Spotted Green Scarab pet.",
 model={34912},
@@ -32,7 +32,7 @@ Search for Emerald Scarab around the area.
 |tip They are level 83.
 Use your Tame Beast ability on a _Emerald Scarab_. |cast Tame Beast##1515 |goto Uldum,65.6,32.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Wolves\\Worgs\\Brown and Gray Worg",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Wolves\\Worgs\\Brown and Gray Worg",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Brown and Gray Worg pet.",
 model={18063},
@@ -45,7 +45,7 @@ Search for Ironjaw around the area.
 |tip It is level 63 - 64.
 Use your Tame Beast ability on _Ironjaw_. |cast Tame Beast##1515 |goto Terokkar Forest,66.6,35.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two-Headed Vultures\\White Two-Headed Vulture",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two-Headed Vultures\\White Two-Headed Vulture",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a White Two-Headed Vulture pet.",
 model={20348},
@@ -59,7 +59,7 @@ Search for Trachela around this area.
 |tip They are level 65.
 Use your Tame Beast ability on _Trachela_. |cast Tame Beast##1515 |goto Terokkar Forest,43.2,51.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Sporebats\\Brown Sporebat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Sporebats\\Brown Sporebat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining a Brown Sporebat pet.",
 model={18029},

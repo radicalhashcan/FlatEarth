@@ -43,12 +43,13 @@ local DEFAULTWIDTH = 150
 --]]
 
 
-function DropDown:New(parent,style,frameLevel)
+function DropDown:New(parent,style,frameLevel,multi)
 	style = style or 1
 
 	local dropdownObj = CHAIN(AceGUI:Create("Dropdown-Z"))
 		:SetWidth(DEFAULTWIDTH)
 		:SetText("")
+		:SetMultiselect(multi)
 	.__END
 
 	local dropdown = dropdownObj.dropdown
@@ -242,7 +243,9 @@ function DropDown:UpdatePulloutSize()
 		if len > maxlen then maxlen = len end
 
 		-- Only 1 item is selected at a time.
-		item:SetValue(self.pullout.curItemSelected == item)
+		if not self.multiselect then
+			item:SetValue(self.pullout.curItemSelected == item)
+		end
 	end
 	
 	-- Change the size of the frames inside of the pullout to make less space above and below items

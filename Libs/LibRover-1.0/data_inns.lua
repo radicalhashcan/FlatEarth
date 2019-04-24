@@ -179,7 +179,7 @@ data.basenodes.inns = {
 	},
 	['Eversong Woods']={
 		{name="Falconwing Inn",faction="H",npc="Innkeeper Delaniel",npcid=15433,x=48.1,y=47.7},
-		{name="Fairbreeze Village",faction="H",npc="Thersa Windsong",npcid=8393,x=49.6,y=70.6},
+		{name="Fairbreeze Village",faction="H",npc="Marniel Amberlight",npcid=15397,x=43.67,y=71.32},
 	},
 	['Orgrimmar']={
 		{name="Orgrimmar",faction="H",npc="Innkeeper Gryshka",npcid=6929,x=53.6,y=78.8},
@@ -238,7 +238,7 @@ data.basenodes.inns = {
 	},
 	['The Cape of Stranglethorn']={
 		{name="Booty Bay",faction="B",npc="Innkeeper Skindle",npcid=6807,x=40.8,y=73.8},
-		{name="Hardwrench Hideaway",faction="H",npc="Innkeeper Draxle",npcid=44190,x=35.0,y=27.2},
+		{name="Hardwrench Hideaway",faction="H",npc="Innkeeper Draxle",npcid=44190,x=35.08,y=27.20},
 	},
 	['Swamp of Sorrows']={
 		{name="Bogpaddle",faction="B",npc="Cap'n Geech",npcid=47334,x=71.7,y=13.9},
@@ -408,13 +408,14 @@ data.basenodes.inns = {
 		{name="Thunderfoot Inn",faction="B",npc="Nan Thunderfoot",npcid=65528,x=83.7,y=20.3},
 	},
 	['Vale of Eternal Blossoms']={
-		{name="The Golden Lantern",f=3,faction="A",npc="Matron Vi Vinh",npcid=64149,x=36.4,y=66.8},
-		{name="The Golden Rose",faction="B",npc="Bartender Tomro",npcid=58691,x=35.3,y=77.6},
-		{name="Shrine of Seven Stars",faction="A",npc="",npcid=0,x=84.3,y=59.0}, --Can you set your hearth to these? It is default location on PTR
-		{name="Shrine of Two Moons",faction="H",npc="",npcid=0,x=62.0,y=25.7},
+		{name="The Golden Rose",faction="B",npc="Bartender Tomro",npcid=58691,x=35.34,y=77.64},
+	},
+	['Shrine of Seven Stars']={
+		{name="The Golden Lantern",f=1,faction="H",npc="Matron Vi Vinh",npcid=64149,x=36.38,y=66.70},
 	},
 	['Shrine of Two Moons']={
-		{name="Summer's Rest",f=1,faction="H",npc="Madam Vee Luo",npcid=62996,x=69.0,y=49.2},
+		{name="Summer's Rest",f=1,faction="H",npc="Madam Vee Luo",npcid=62996,x=68.42,y=47.72},
+		{name="Hall of the Crescent Moon",f=2,faction="H",npc="Brewmaster Skye",npcid=63008,x=60.30,y=77.09},
 	},
 	['The Veiled Stair']={
 		{name="Tavern in the Mists",faction="B",npc="Tong the Fixer",npcid=62917,x=55.0,y=72.4},
@@ -773,6 +774,11 @@ data.basenodes.inns = {
 
 		-- The Swine's Larder (Fallhaven)
 			{name="The Swine's Larder",faction="A",npc="Dinah Wellard",npcid=129992,f=0,x=55.50,y=34.26},
+	},
+
+	["Mechagon Island"] = {
+		-- Rustbolt
+			{name="Rustbolt",faction="B",npc="Smiles Cracklekey",npcid=150628,f=0,x=71.28,y=35.75},
 	},
 
 }

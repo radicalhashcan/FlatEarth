@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ReputationsAWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Arakkoa Outcasts faction.",
 condition_suggested=function() return level >= 90 and level <= 100 and rep('Arakkoa Outcasts') < Exalted end,
@@ -34,7 +34,7 @@ _Honored_ |only if rep('Arakkoa Outcasts')==Honored
 _Revered_ |only if rep('Arakkoa Outcasts')==Revered
 _Exalted_ |only if rep('Arakkoa Outcasts')==Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Council of Exarchs",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\Council of Exarchs",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Council of Exarchs faction.",
 condition_suggested=function() return level >= 90 and level <= 100 and rep('Council of Exarchs') < Exalted end,
@@ -66,7 +66,7 @@ _Honored_ |only if rep('Council of Exarchs')==Honored
 _Revered_ |only if rep('Council of Exarchs')==Revered
 _Exalted_ |only if rep('Council of Exarchs')==Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Hand of the Prophet",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\Hand of the Prophet",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Hand of the Prophet faction.",
 achieveid={10350},
@@ -254,7 +254,7 @@ step
 You've completed the dailies for today
 Click to restart the dailies run |confirm |next "hand_prophet_start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Order of the Awakened",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\Order of the Awakened",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Order of the Awakened faction.",
 achieveid={10350},
@@ -262,7 +262,7 @@ achieveid={10350},
 step
 Complete the following guide before continuing:
 _Tanaan Jungle (100) Main Questline_
-Click here to check out our Tanaan Jungle Questline guide |next "Zygor's Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (100)" |confirm |or
+Click here to check out our Tanaan Jungle Questline guide |next "Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (100)" |confirm |or
 confirm |only if not completedq(38578) |or
 step
 label "order_awakened_start"
@@ -354,7 +354,7 @@ step
 You've completed the daily for today
 Click to restart the dailies run |confirm |next "order_awakened_start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\The Saberstalkers",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\The Saberstalkers",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Saberstalkers faction.",
 achieveid={10350},
@@ -422,7 +422,7 @@ step
 You've completed the dailies for today
 Click to restart the dailies run |confirm |next "saberstalkers_start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Sha'tari Defense",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\Sha'tari Defense",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Sha'tari Defense faction.",
 achieveid={9476},
@@ -459,7 +459,7 @@ label "end"
 You must have at least a _level 2 Trading Post_ in your Garrison to gain Sha'tari Defense reputation!
 |tip Use the Garrison Buildings guide to accomplish this.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Steamwheedle Preservation Society faction.",
 condition_suggested=function() return level >= 90 and level <= 100 and rep('Steamwheedle Preservation Society') < Exalted end,
@@ -540,7 +540,7 @@ accept Xelganak's Stinger##37226 |or |only if itemcount(118661) >= 1 |instant |o
 accept Vileclaw's Claw##37520 |or |only if itemcount(120172) >= 1 |instant |or
 _Click_ to return to the menu |confirm always |next "menu" |only if default
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Wrynn's Vanguard",{
+ZygorGuidesViewer:RegisterGuide("Reputations Guides\\Warlords of Draenor\\Wrynn's Vanguard",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Wrynn's Vanguard faction.",
 achieveid={9474, 9214},

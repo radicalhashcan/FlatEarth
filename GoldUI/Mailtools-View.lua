@@ -454,24 +454,33 @@ function Mailtools:CreateSystemTab(target,text,num)
 		
 		MailFrameInset:Hide()
 		MailFramePortrait:Hide()
-		MailFramePortraitFrame:Hide()
-
 		MailFrameBg:Hide()
 		if MailFrameText then MailFrameText:Hide() end
-		MailFrameTitleBg:Hide()
 		MailFrameTitleText:Hide()
 		MailFrameCloseButton:Hide()
-		
-		MailFrameLeftBorder:Hide()
-		MailFrameTopBorder:Hide()
-		MailFrameRightBorder:Hide()
-		MailFrameBottomBorder:Hide()
-		MailFrameTopTileStreaks:Hide()
-		MailFrameTopRightCorner:Hide()
-		MailFrameBotLeftCorner:Hide()
-		MailFrameBotRightCorner:Hide()
-
 		if Mailtools.mailportrait then Mailtools.mailportrait:Hide() end
+
+		if MailFramePortraitFrame then
+			MailFramePortraitFrame:Hide()
+			MailFrameTitleBg:Hide()
+			MailFrameLeftBorder:Hide()
+			MailFrameTopBorder:Hide()
+			MailFrameRightBorder:Hide()
+			MailFrameBottomBorder:Hide()
+			MailFrameTopTileStreaks:Hide()
+			MailFrameTopRightCorner:Hide()
+			MailFrameBotLeftCorner:Hide()
+			MailFrameBotRightCorner:Hide()
+		end
+
+		if MailFrame.NineSlice then
+			for i,v in pairs(MailFrame.NineSlice) do
+				if type(v)=="table" and v.Hide then v:Hide() end
+			end
+			MailFrame.TitleBg:Hide()
+			MailFrame.TopTileStreaks:Hide()
+		end
+
 
 		MailFrame:SetFrameLevel(1)
 
@@ -479,29 +488,39 @@ function Mailtools:CreateSystemTab(target,text,num)
 			PanelTemplates_SetTab(MailFrame, self:GetID())
 			Mailtools.MainFrame:Show()
 			Mailtools:SetCurrentTab(self.target)
+			Mailtools.needToUpdate = true
 		end
 	end
 	
 	local function OnNonZygorClick()
-		MailFrameLeftBorder:Show()
-		MailFrameTopBorder:Show()
-		MailFrameRightBorder:Show()
-		MailFrameBottomBorder:Show()
-		MailFrameTopTileStreaks:Show()
-		MailFrameTopRightCorner:Show()
-		MailFrameBotLeftCorner:Show()
-		MailFrameBotRightCorner:Show()
-		
 		MailFrameInset:Show()
 		MailFramePortrait:Show()
-		MailFramePortraitFrame:Show()
 		MailFrameBg:Show()
 		if MailFrameText then MailFrameText:Show() end
-		MailFrameTitleBg:Show()
 		MailFrameTitleText:Show()
 		MailFrameCloseButton:Show()
-
 		if Mailtools.mailportrait then Mailtools.mailportrait:Show() end
+
+		if MailFramePortraitFrame then
+			MailFramePortraitFrame:Show()
+			MailFrameTitleBg:Show()
+			MailFrameLeftBorder:Show()
+			MailFrameTopBorder:Show()
+			MailFrameRightBorder:Show()
+			MailFrameBottomBorder:Show()
+			MailFrameTopTileStreaks:Show()
+			MailFrameTopRightCorner:Show()
+			MailFrameBotLeftCorner:Show()
+			MailFrameBotRightCorner:Show()
+		end
+
+		if MailFrame.NineSlice then
+			for i,v in pairs(MailFrame.NineSlice) do
+				if type(v)=="table" and v.Show then v:Show() end
+			end
+			MailFrame.TitleBg:Show()
+			MailFrame.TopTileStreaks:Show()
+		end
 		
 		if not Mailtools.MainFrame then return end
 		Mailtools.MainFrame:Hide()
@@ -528,6 +547,8 @@ function Mailtools:CreateSystemTab(target,text,num)
 	tab:SetPoint("LEFT", _G["MailFrameTab"..n-1], "RIGHT", -8, 0)
 	tab:Show()
 	tab:SetScript("OnClick", OnZygorTabClick)
+	tab.ZygorTab = true
+	
 	PanelTemplates_SetNumTabs(MailFrame, n)
 	PanelTemplates_EnableTab(MailFrame, n)
 
@@ -539,6 +560,49 @@ function Mailtools:CreateSystemTab(target,text,num)
 	end
 
 	return tab
+end
+
+function Mailtools:HideSystemTabs()
+	local last_zygor
+
+	for i=1, MailFrame.numTabs do
+		if _G["MailFrameTab"..i].ZygorTab then
+			last_zygor = i
+			_G["MailFrameTab"..i]:Hide()
+		end
+	end
+
+	if last_zygor and last_zygor~=MailFrame.numTabs then
+		if _G["MailFrameTab"..(last_zygor+1)] then
+			_G["MailFrameTab"..(last_zygor+1)]:SetPoint("LEFT", _G["MailFrameTab"..last_zygor-1], "RIGHT", -8, 0)
+		end
+	end
+
+	MailFrameTab1:Click()
+end
+
+function Mailtools:ShowSystemTabs()
+	local last_zygor
+
+	if not Mailtools.CollectorTab then
+		Mailtools.CollectorTab = Mailtools:CreateSystemTab("Collector","Collect",1)
+	end
+	if not Mailtools.SenderTab then
+		Mailtools.SenderTab = Mailtools:CreateSystemTab("Sender","Send",2)
+	end
+
+	for i=1, MailFrame.numTabs do
+		if _G["MailFrameTab"..i].ZygorTab and not _G["MailFrameTab"..i]:IsVisible() then
+			last_zygor = i
+			_G["MailFrameTab"..i]:Show()
+		end
+	end
+
+	if last_zygor and last_zygor~=MailFrame.numTabs then
+		if _G["MailFrameTab"..last_zygor+1] then
+			_G["MailFrameTab"..last_zygor+1]:SetPoint("LEFT", _G["MailFrameTab"..last_zygor], "RIGHT", -8, 0)
+		end
+	end
 end
 
 function Mailtools:TabKeyNavigation(parent,orderarray,field)

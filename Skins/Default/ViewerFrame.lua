@@ -736,12 +736,14 @@ function ZygorGuidesViewerFrame_OnUpdate(self,elapsed)
 	end
 
 	-- title button flash
-	if (not ZGV.CurrentGuide and not ZGV.loading) or ZGV.suggesting then
-		ZGV.Tabs.AddButton.flashing = true
-		ZGV.Tabs.AddButton:LockHighlight()
-	else
-		ZGV.Tabs.AddButton.flashing = nil
-		ZGV.Tabs.AddButton:UnlockHighlight()
+	if ZGV.Tabs.AddButton then
+		if (not ZGV.CurrentGuide and not ZGV.loading) or ZGV.suggesting then
+			ZGV.Tabs.AddButton.flashing = true
+			ZGV.Tabs.AddButton:LockHighlight()
+		else
+			ZGV.Tabs.AddButton.flashing = nil
+			ZGV.Tabs.AddButton:UnlockHighlight()
+		end
 	end
 
 	if ZGV.frameNeedsUpdating then

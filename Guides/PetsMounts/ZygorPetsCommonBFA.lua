@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if ZGV:DoMutex("PetsCBFA") then return end
 if not ZGV.CommonPets then return end
 ZygorGuidesViewer.GuideMenuTier = "BFA"
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Tottle",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Tottle",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"aquatic, pet, battle, of, azeroth, preorder, collector, edition"},

@@ -3,256 +3,589 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("LevelingABFA") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\World Events\\Battle for Azeroth (110-120)\\The Burning of Teldrassil",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Battle for Azeroth (110-120)\\Intro & Quest Zone Choice",{
 author="support@zygorguides.com",
-description="This guide will help to defend Teldrassil against the incoming Horde attack..",
-condition_suggested=function() return level == 110 and not completedq(53310) end,
+description="\nThis guide will assist you in completing the following:\n"..
+"\nBattle for Azeroth \"The Battle for Lordaeron\" introduction scenario\n"..
+"\nObtaining the Heart of Azeroth\n"..
+"\nChoosing which zones to complete quests in to level your character\n",
+condition_suggested=function() return level >= 110 and level <= 120 end,
+startlevel=110.0,
+endlevel=120.0,
+image=ZGV.DIR.."\\Guides\\Images\\BfAIntro",
 },[[
 step
-accept A Short-Lived Peace##52058
-|tip You will accept this quest automatically.
+Starting Guide |next "Fresh_Start_BFA" |only if not completedq(47189)
+Starting Guide |next "Choose_Next_Questing_Zone_BFA" |only if completedq(47189)
 step
-Enter the building |goto Stormwind City/0 80.69,37.80 < 5 |walk
-talk Anduin Wrynn##107574
-|tip Inside the building.
-turnin A Short-Lived Peace##52058 |goto 85.90,31.57
-accept The Horde Uprising##52060 |goto 85.90,31.57
+label "Fresh_Start_BFA"
+accept Hour of Reckoning##53370
+|tip Relog if you do not automatically accept this quest.
 step
-Watch the dialogue
 talk Master Mathias Shaw##139798
-|tip Inside the building.
-turnin The Horde Uprising##52060 |goto 85.15,32.35
-accept A Disturbance in Ashenvale##52062 |goto 85.15,32.35
+turnin Hour of Reckoning##53370 |goto Stormwind City/0 22.37,32.44
+accept The Battle for Lordaeron##51795 |goto Stormwind City/0 22.37,32.44
 step
-Follow the path |goto 83.88,30.57 < 5 |walk
-Run up the stairs |goto 83.48,29.81 < 5 |only if walking
-Follow the path |goto 83.34,29.54 < 5 |only if walking
-click Portal to Astranaar##297575
-Take the Portal to Astranaar |q 52062/1 |goto 82.68,26.84
+talk Captain Angelica##108920
+Tell her _"I am ready to sail to Lordaeron."_
+Travel to Lordaeron |scenariostart |goto 22.21,32.55 |q 51795 |or |next "Intro_Scenario"
+|tip It may take a moment to enter the scenario.
+_Or_
+Tell her _"I've heard this tale before... <Skip the scenario and begin your next mission.>"_
+|tip This will allow you to skip the intro scenario if you've already completed it on another character.
+Skip the Battle for Lordaeron |condition readyq(51795) |goto 22.21,32.55 |or |future |next "Intro_Scenario_Completed"
 step
-Find Delaryn Summermoon |q 52062/2 |goto Ashenvale/0 35.86,50.43
-step
-talk Captain Delaryn Summermoon##134578
-turnin A Disturbance in Ashenvale##52062 |goto 35.86,50.43
-accept The Light of Elune##52072 |goto 35.86,50.43
-accept Knives of the Forsaken##53616 |goto 35.86,50.43
-stickystart "Kill_Forsaken_Assassins"
-step
-clicknpc Astranaar Sentinel##144282+
-|tip They look like Night Elf corpses on the ground around this area.
-Honor #6# Fallen Soldiers |q 52072/1 |goto 35.88,50.20
-step
-label "Kill_Forsaken_Assassins"
-kill 8 Forsaken Assassin##140801 |q 53616/1 |goto 36.06,50.26
-|tip They are stealthed around this area.
-step
-talk Captain Delaryn Summermoon##134578
-turnin The Light of Elune##52072 |goto 35.86,50.43
-turnin Knives of the Forsaken##53616 |goto 35.86,50.43
-accept A Soft Glow##52116 |goto 35.86,50.43
-step
-Meet Malfurion at the Entrance to Darkshore |q 52116/1 |goto Darkshore/0 43.82,89.82
+label "Intro_Scenario"
+Find General Hammond Clay |goto Ruins of Lordaeron/0 51.55,18.80 < 10 |q 51795
 step
 Watch the dialogue
-talk Malfurion Stormrage##133693
-turnin A Soft Glow##52116 |goto 43.58,89.25
-accept Hidden Amongst the Leaves##52234 |goto 43.58,89.25
-accept Mercy for the Mad##53617 |goto 43.58,89.25
-stickystart "Kill_Frenzied_Blackwood_Furbolgs"
+|tip Follow General Hammond Clay as we walks.
+Follow Hammond Clay to Brill |scenariogoal 1/37049 |goto Ruins of Lordaeron/0 47.50,50.40 |q 51795
 step
-talk Druid of the Claw##140633+
-|tip They look like friendly NPC's on the ground around this area.
-|tip Some are shapeshifted in animal form and some look like night elves.
-Tell them _"You must defend the Grove of the Ancients!"_
-Dispatch #8# Druids |q 52234/1 |goto 42.07,77.29
+Find Genn Greymane |goto 46.96,51.07 < 10 |q 51795
 step
-label "Kill_Frenzied_Blackwood_Furbolgs"
-kill 10 Frenzied Blackwood Furbolg##140686 |q 53617/1 |goto 41.72,76.89
+Watch the dialogue
+|tip Follow Genn Greymane as he walks.
+Charge the Battlefield with Genn |scenariostage 1 |goto 48.13,53.51 |q 51795
 step
-talk Captain Delaryn Summermoon##134578
-turnin Hidden Amongst the Leaves##52234 |goto 43.41,75.56
-turnin Mercy for the Mad##53617 |goto 43.41,75.56
-accept Garden Grove##52240 |goto 43.41,75.56
+kill Goblin Shredder##134015 |goto 48.35,57.60 |scenariobonus 2/39783 |q 51795
 step
-kill Monstrous Shredder##143562 |q 52240/1 |goto 43.98,75.34
-|tip You may need help with this.
+Kill enemies around this area
+clicknpc Auchenai Ballista##134016+
+|tip They look like wooden artillery vehicles with purple crystals on them on the ground around this area.
+|tip You can use them to fight, if you wish.
+Defend the Siege Towers |scenariostage 2 |goto 47.89,61.22 |q 51795
 step
-talk Captain Delaryn Summermoon##134578
-turnin Garden Grove##52240 |goto 45.20,74.96
+Watch the dialogue
+kill Azerite War Machine##132079
+Defeat the Azerite War Machine |scenariostage 3 |goto 48.42,63.71 |q 51795
 step
-talk Onu##33072
-accept Enraged Furbolgs##52245 |goto 45.41,74.85
+Watch the dialogue
+Confront Sylvanas Windrunner |scenariostage 4 |goto 48.42,63.71 |q 51795
 step
-talk Elder Brolg##140719
-Tell him _"Come with us to safety. We will not harm you."_
-Rescue Elder Brolg |q 52245/1 |goto 43.54,81.08
+Kill enemies around this area
+talk Wounded Soldier##125622+
+|tip They look like Alliance soldiers standing with huge partially filled red bubbles above their heads around this area.
+|tip They will appear on your minimap as yellow dots.
+|tip Try to avoid the green blight areas on the ground.
+|tip You will have to keep moving north, try to stay near Anduin Wrynn as you walk, he will protect you from the blight.
+Defend King Anduin and Evacuate the Wounded |scenariostage 5 |goto 48.37,61.80 |q 51795
+step
+Watch the dialogue
+Fall Back with King Anduin Wrynn |scenariostage 6 |q 51795
+step
+Watch the dialogue
+Kill enemies around this area
+Assist Jaina |scenariogoal 7/37297 |goto 43.19,73.53 |q 51795
+step
+Watch the dialogue
+Infiltrate the Keep with King Anduin |scenariostage 7 |goto 42.14,74.46 |q 51795
+step
+Kill enemies around this area
+Defeat the Darkspear Trolls |scenariogoal 8/0 |goto 42.15,76.40 |q 51795
+step
+kill Windseeker Durja##126612
+Defeat Durja |scenariostage 8 |goto 42.09,81.08 |q 51795
+step
+Follow the path |goto 42.11,81.46 < 10 |only if walking
+Watch the dialogue
+|tip Follow Anduin Wrynn as he walks.
+Follow King Anduin |scenariostage 9 |goto 42.63,85.96 |q 51795
+step
+Watch the dialogue
+Kill enemies around this area
+|tip You can click the Flametron 5000 vehicles nearby to use them to fight, if you wish.
+|tip They look like mechanical spider vehicles on the ground around this area.
+Assault Lordaeron City |scenariostage 10 |goto 43.47,87.15 |q 51795
+step
+Watch the dialogue
+Find Sylvanas Windrunner |scenariostage 11 |goto 49.29,89.41 |q 51795
+step
+Watch the dialogue
+clicknpc Gnomish Gyrocopter##126795
+|tip They look like metal helicopters hovering low to the ground around this area.
+Ride in the Gnomish Gyrocopter |invehicle |goto 49.02,88.72 |q 51795
+step
+Watch the dialogue
+Use the Gyrocopter to Pursue Sylvanas |scenariostage 12 |goto 48.62,72.66 |q 51795
+step
+Watch the dialogue
+kill High Overlord Saurfang##129179
+|tip He will eventually surrender.
+Watch the dialogue
+Confront High Overlord Saurfang |scenariostage 13 |goto 48.11,74.23 |q 51795
+step
+Watch the dialogue
+|tip Inside the building.
+|tip Follow Anduin Wrynn as he walks.
+Confront Sylvanas Windrunner |scenarioend |goto 48.10,78.26 |q 51795
+step
+Complete the "The Battle for Lordaeron" Scenario |q 51795/2
+step
+label "Intro_Scenario_Completed"
+talk Halford Wyrmbane##142930
+turnin The Battle for Lordaeron##51795 |goto Stormwind City/0 27.64,21.29
+accept A Dying World##52946 |goto Stormwind City/0 27.64,21.29
+step
+click Portal to Uldum
+Take the Portal to Uldum to Get Closer to Silithus |q 52946/1 |goto 75.24,20.49
+step
+Reach Silithus |q 52946/2 |goto Silithus/0 42.22,44.27
+step
+talk Magni Bronzebeard##142322
+turnin A Dying World##52946 |goto 42.22,44.27
+accept The Heart of Azeroth##51211 |goto 42.22,44.27
+step
+click Titan Translocator
+Use the Device in Silithus to Travel to the Chamber of the Heart |q 51211/1 |goto 43.20,44.49
+step
+Travel to the Chamber of Heart |goto Chamber Of Heart/0 50.12,30.35 < 10 |noway |c |q 51211
+step
+click Titan Console
+|tip Inside the building.
+Choose _(View events that led to Azeroth's wound)_
+Watch the dialogue
+Witness Past Events on the Titan Console |q 51211/2 |goto 50.16,55.19
+step
+Watch the dialogue
+talk Magni Bronzebeard##136907
+|tip Inside the building.
+Ask him _"What does Azeroth want of me, Magni?"_
+Watch the dialogue
+Speak to Magni Within the Chamber of Heart |q 51211/3 |goto 50.15,53.76
+step
+talk Magni Bronzebeard##136907
+|tip Inside the building.
+turnin The Heart of Azeroth##51211 |goto 50.14,53.76
+accept Infusing the Heart##52428 |goto 50.14,53.76
+step
+Use the Heart of Azeroth
+|tip Use it next to Azerite Cracks around this area.
+|tip They look like blue glowing rock stumps inside the building on the ground around this area.
+|tip It appears as a button on the screen.
+Absorb the Azerite Wounds |q 52428/1 |goto 50.18,59.01
+step
+Use the Heart of Azeroth
+|tip It appears as a button on the screen.
+|tip Inside the building.
+Watch the dialogue
+Use the Heart of Azeroth to Mend the Seal |q 52428/3 |goto 50.14,63.94
+step
+talk Magni Bronzebeard##136907
+|tip Inside the building.
+turnin Infusing the Heart##52428 |goto 50.14,53.75
+accept To Matters at Hand##51403 |goto 50.14,53.75
+step
+click Teleport Pad
+|tip Inside the building.
+Return to Stormwind |q 51403/1 |goto goto 50.12,30.40
+step
+talk Halford Wyrmbane##142930
+turnin The Speaker's Imperative##51403 |goto Stormwind City/0 27.64,21.29
+accept Tides of War##46727 |goto Stormwind City/0 27.64,21.29
+step
+Enter the building |goto 80.62,37.86 < 10 |walk
+Watch the dialogue
+|tip Inside the building.
+Attend the War Council |q 46727/1 |goto 85.04,32.65
+step
+clicknpc Vision of Sailor's Memory##139645
+|tip Inside the building.
+Watch the dialogue
+Witness the Vision of the Sailor's Memory |q 46727/2 |goto 85.04,32.65
+step
+talk Anduin Wrynn##120756
+|tip Inside the building.
+turnin Tides of War##46727 |goto 85.30,32.28
+accept The Nation of Kul Tiras##46728 |goto 85.30,32.28
+step
+Leave the building |goto 80.66,37.83 < 10 |walk
+talk Lady Jaina Proudmoore##120590 |goto 22.80,24.69
+Tell her _"I'm ready to set sail!"_
+Speak with Lady Jaina Proudmoore |goto Boralus/0 65.57,50.74 < 50 |noway |c |q 46728 |or |next "Kul_Tiras_Intro_Quests"
+_Or_
+Tell her _"I've heard this tale before... <Skip the Kul Tiras introductory quests and begin your journey in Boralus.>"_
+Skip the Kul Tiras Introductory Quests |condition completedq(46728) |or |next "Skip_Kul_Tiras_Intro_Quests"
+step
+label "Kul_Tiras_Intro_Quests"
+talk Lady Jaina Proudmoore##120922
+turnin The Nation of Kul Tiras##46728 |goto 65.58,50.73
+accept Daughter of the Sea##51341 |goto 65.58,50.73
+step
+Watch the dialogue
+Attend the Audience with Katherine Proudmoore |q 51341/1
+step
+Travel to Tol Dagor |goto Tol Dagor/7 46.51,47.97 < 10 |noway |c |q 51341
+step
+talk Flynn Fairwind##121239
+|tip Inside the building.
+turnin Daughter of the Sea##51341 |goto Tol Dagor/7 47.38,46.26
+accept Out Like Flynn##47098 |goto Tol Dagor/7 47.38,46.26
+step
+Watch the dialogue
+clicknpc Flynn Fairwind##121239
+|tip Inside the building.
+Watch the dialogue
+Punch Flynn |q 47098/1 |goto 46.63,45.52
+step
+click Cell Block Lever
+|tip Inside the building.
+Watch the dialogue
+Pull the Cell Block Lever |q 47098/2 |goto 46.60,41.15
+step
+click Equipment Locker##213651
+|tip Inside the building.
+Recover the Equipment |q 47098/3 |goto 46.95,44.47
+step
+kill Block Warden Carmine##124024 |q 47098/4 |goto 40.28,54.77
+|tip Inside the building.
+step
+click Glittering Gunpowder
+|tip Inside the building.
+collect Glittering Gunpowder##160326 |q 47098/5 |goto 43.57,54.08
+step
+click Cell Block Gate
+|tip Inside the building.
+Watch the dialogue
+Open the Cell Block Gate |q 47098/6 |goto 43.09,36.95
+step
+Run down the stairs |goto 44.58,35.82 < 10 |walk
+Follow the path |goto 47.92,43.91 < 10 |walk
+Enter the Sewers |q 47098/7 |goto 39.10,51.40
+|tip Inside the building.
+step
+Follow the path |goto 38.00,54.68 < 10
+Leave the tunnel |goto 51.12,47.46 < 10 |walk
+Follow the path |goto 62.12,48.11 < 15 |only if walking
+clicknpc Getaway Boat##124030
+Board the Getaway Boat |q 47098/8 |goto 60.98,26.32
+step
+Watch the dialogue
+Travel to Boralus |goto Boralus/0 75.87,23.40 < 50 |noway |q 47098
+step
+label "Skip_Kul_Tiras_Intro_Quests"
+talk Taelia##121235
+turnin Out Like Flynn##47098 |goto 75.70,23.59
+accept Get Your Bearings##47099 |goto 75.70,23.59
+step
+Watch the dialogue
+Visit the Ferry Dock |q 47099/1 |goto 74.25,24.58
+step
+Run up the stairs |goto 73.74,21.70 < 10 |only if walking
+Run up the stairs |goto 74.97,22.98 < 10 |only if walking
+Enter the building |goto 75.57,19.08 < 10 |walk
+Watch the dialogue
+|tip Inside the building.
+Visit the Tradewinds Counting House |q 47099/2 |goto 75.57,17.92
+step
+Run up the stairs |goto 74.55,18.45 < 10 |only if walking
+Enter the building |goto 73.55,13.71 < 10 |walk
+Watch the dialogue
+|tip Inside the building.
+Visit the Snug Harbor Tavern |q 47099/3 |goto 73.63,13.05
+step
+talk Wesley Rockhold##135153
+|tip Inside the building.
+home The Snug Harbor |goto 74.12,12.68 |q 47189 |future
+step
+Watch the dialogue
+Visit the Flight Master |q 47099/4 |goto 67.14,15.35
+step
+talk Joan Weber##124725
+fpath Tradewinds Market |goto 66.97,15.01
 step
 _Next to you:_
-talk Captain Delaryn Summermoon##140728
-accept Elves in the Machine##53551
-stickystart "Sabotage_Horde_Demolishers"
+talk Taelia
+turnin Get Your Bearings##47099
+accept The Old Knight##46729
 step
-Enter the cave |goto 46.27,83.60 < 5 |walk
-talk Gren Tornfur##140720
-|tip Inside the cave.
-Tell him _"Come with us to safety. We will not harm you."_
-Rescue Gren Tornfur |q 52245/2 |goto 46.63,83.90
-step
-Leave the cave |goto 46.27,83.60 < 5 |walk
-talk Elder Brownpaw##140721
-Tell him _"Come with us to safety. We will not harm you."_
-Rescue Elder Brownpaw |q 52245/3 |goto 46.47,85.73
-step
-label "Sabotage_Horde_Demolishers"
-clicknpc Horde Demolisher##144103+
-|tip They look like large siege vehicles on the ground around this area.
-|tip Run away from them after you click them.
-|tip Use the "Sleeping Powder" ability to put enemies to sleep.
-|tip It appears as a button on the screen.
-Sabotage #5# Horde Demolishers |q 53551/1 |goto 45.02,84.22
-step
-_Next to you:_
-talk Captain Delaryn Summermoon##140728
-turnin Elves in the Machine##53551
-step
-talk Onu##33072
-turnin Enraged Furbolgs##52245 |goto 45.41,74.85
-accept The Wake of Something New##52242 |goto 45.41,74.85
-step
-click Azerite Deposit##292886
-Discover the Source of Onu's Pain |q 52242/1 |goto 34.66,85.17
-step
-talk Captain Delaryn Summermoon##134578
-turnin The Wake of Something New##52242 |goto 34.73,85.11
-accept Azerite Denial##53619 |goto 34.73,85.11
-accept No Horde Allowed##53621 |goto 34.73,85.11
-stickystart "Slay_Horde_Combatants"
-step
-click Azerite Deposit##292886+
-|tip They look like black and silver rock clusters on the ground around this area.
-Collect #6# Azerite |q 53619/1 |goto 32.63,84.08
-step
-label "Slay_Horde_Combatants"
-Kill enemies around this area
-Slay #10# Horde Combatants |q 53621/1 |goto 32.63,84.08
-step
-talk Captain Delaryn Summermoon##134578
-turnin Azerite Denial##53619 |goto 34.73,85.11
-turnin No Horde Allowed##53621 |goto 34.73,85.11
-accept Malfurion Returns##52256 |goto 34.73,85.11
-step
-talk Malfurion Stormrage##133693
-turnin Malfurion Returns##52256 |goto 42.30,66.80
-accept "Rock" The World##52257 |goto 42.30,66.80
-step
-clicknpc Tree of Life##143861
-Speak with Tree of Life |q 52257/1 |goto 42.09,66.86
-step
-Kill enemies around this area
-|tip Use the abilities on your action bar.
-Slay #50# Horde Enemies |q 52257/2 |goto 42.17,69.08
-step
-Return to Malfurion Stormrage |goto 42.07,66.87 < 7 |noway |c |q 52257
-step
-talk Malfurion Stormrage##133693
-turnin "Rock" The World##52257 |goto 42.30,66.80
-accept Long Away##52197 |goto 42.30,66.80
-step
-talk Captain Delaryn Summermoon##134578
-turnin Long Away##52197 |goto Darnassus/0 40.00,50.42
-accept A Looming Threat##52279 |goto Darnassus/0 40.00,50.42
-step
-talk Janthes Shadeleaf##144146
-Tell him _"The Horde have halted their advance at the Wildbend River! We must push them back at once!"_
-Rally the Druids of the Claw |q 52279/2 |goto 45.61,35.93
-step
-talk Myara Sunsong##140498
-Tell her _"Captain, the Horde have reached the Wildbend River! We cannot hold them for long!"_
-Rally the Kaldorei Forces |q 52279/3 |goto 61.00,49.41
-step
-talk Astarii Starseeker##4090
-Tell her _"Priestess, we require your aid to hold the Horde at Wildbend River."_
-Rally the Priestesses of the Moon |q 52279/1 |goto 42.99,73.06
-step
-talk Malfurion Stormrage##140877
-turnin A Looming Threat##52279 |goto Teldrassil/0 58.47,89.49
-step
-talk Captain Delaryn Summermoon##134578
-accept A Threat from the North##52973 |goto 58.48,89.41
-step
-talk Malfurion Stormrage##140877
-turnin A Threat from the North##52973 |goto Darkshore/0 50.42,20.01
-accept Rescue Effort##52974 |goto 50.42,20.01
-accept Defending Lor'danel##53622 |goto 50.42,20.01
-step
-talk Captain Delaryn Summermoon##134578
-|tip She sometimes runs around this area fighting.
-|tip You may have to search for her.
-accept Action This Day##52975 |goto 50.43,19.68
-stickystart "Slay_Horde_Attackers"
-step
-talk Lor'danel Citizen##142408+
-|tip They look like friendly NPCs cowering in fear on the ground around this area.
-Tell them _"I have cleared a path - - you must escape now!"_
-Rescue #8# Lor'danel Citizens |q 52974/1 |goto 50.80,19.30
-step
-kill Gormok Axefall##144364 |q 52975/1 |goto 47.67,20.42
-step
-kill Ragash Bloodwish##144365 |q 52975/2 |goto 46.82,18.82
-step
-label "Slay_Horde_Attackers"
-Kill enemies around this area
-Slay #15# Horde Attackers |q 53622/1 |goto 49.00,19.56
-step
-talk Captain Delaryn Summermoon##134578
-|tip She sometimes runs around this area fighting.
-|tip You may have to search for her.
-turnin Rescue Effort##52974 |goto 50.43,19.68
-turnin Defending Lor'danel##53622 |goto 50.43,19.68
-turnin Action This Day##52975 |goto 50.43,19.68
-accept The Guidance of Our Shan'do##52977 |goto 50.43,19.68
-step
-talk Zidormi##141489
-Ask her _"Can you return me to the present time?"_
-Travel to the Present |nobuff 609811 |goto 48.07,25.67 |q 52977
-step
-Find Malfurion in Darkshore |q 52977/1 |goto 46.17,24.42
+Jump down here |goto 70.30,17.54 < 10 |only if walking
+Enter the building |goto 68.83,21.11 < 10 |walk
+Watch the dialogue
+Find Cyrus Crestfall |q 46729/1 |goto 67.08,23.47
 step
 Watch the dialogue
-Assist Malfurion |q 52977/2 |goto 45.94,24.47
-step
-clicknpc Tamed Hippogryph##142110
-Use Tyrande's Mount |q 52977/3 |goto 45.96,24.96
-step
-Return to Darnassus |goto Darnassus/0 43.01,73.09 < 7 |c |q 52977 |notravel
-step
-Enter the building |goto 43.01,74.83 < 5 |walk
-talk Mia Greymane##142978
+talk Cyrus Crestfall##122370
 |tip Inside the building.
-turnin The Guidance of Our Shan'do##52977 |goto 43.09,78.62
-accept A Flicker of Hope##53095 |goto 43.09,78.62 |only if not completedq(53310)
-step
-Leave the building |goto 43.01,74.80 < 3 |walk
-talk Darnassian Citizen##143409+
-Tell them _"The flames are clear! Get to the Temple of the Moon!"_
-Evacuate #982# Darnassian Citizens |q 53095/1 |goto 58.76,68.28 |only if not completedq(53310)
-|tip Use the "Douse" ability on on fires around this area.
-|tip It appears as a button on the screen.
-|tip It is impossible to complete this objective, you will fail.
-step
-Return to the Temple of the Moon |goto 43.37,78.31 < 7 |c |q 53095 |notravel
+Choose _<Shake his hand.>_
+Speak with Cyrus Crestfall |q 46729/2 |goto 68.01,21.89
 step
 Watch the dialogue
-turnin A Flicker of Hope##53095 |goto 43.37,78.31
-|tip You will turn in this quest automatically.
-accept From the Ashes...##53310 |goto 43.37,78.31
-|tip You will accept this quest automatically.
-step
-click Portal to Stormwind##303144 |goto 43.91,78.68
-Teleport to Stormwind City |goto Stormwind City/0 49.59,86.53 < 7 |noway |c |q 53310
-step
-Enter the building |goto 80.69,37.80 < 5 |walk
-talk Anduin Wrynn##107574
 |tip Inside the building.
-turnin From the Ashes...##53310 |goto 85.90,31.57
+Hear Cyrus' Tale |q 46729/3 |goto 68.01,21.89
+step
+talk Taelia##121235
+|tip Inside the building.
+turnin The Old Knight##46729 |goto 68.17,21.97
+accept Sanctum of the Sages##47186 |goto 68.17,21.97
+step
+Watch the dialogue
+talk Cyrus Crestfall##122370
+|tip Inside the building.
+accept Ferry Pass##52128 |goto 68.01,21.89
+step
+talk Cyrus Crestfall##122370
+|tip Inside the building.
+turnin Ferry Pass##52128 |goto 68.01,21.89
+step
+talk Cyrus Crestfall##122370
+|tip Inside the building.
+turnin Ferry Pass##52128 |goto 68.01,21.89
+step
+Leave the building |goto 68.79,21.11 < 10 |walk
+Enter the building |goto 70.40,17.68 < 10 |walk
+talk 7th Legion Magus##137066
+|tip Inside the building.
+Tell her _"The local authority has given us permission to open portals here."_
+Speak with the 7th Legion Magus |q 47186/1 |goto 70.74,16.31
+step
+Enter the building |goto 68.83,21.11 < 10 |walk
+talk Taelia##121235
+|tip Inside the building.
+turnin Sanctum of the Sages##47186 |goto  68.17,21.97
+accept A Nation Divided##47189 |goto 68.17,21.97
+step
+Watch the dialogue
+click Scouting Map
+|tip Inside the building.
+Inspect the Scouting Map |q 47189/1 |goto 68.38,22.10
+step
+talk Taelia##121235
+|tip Inside the building.
+turnin A Nation Divided##47189 |goto 68.17,21.97
+step
+label "Choose_Next_Questing_Zone_BFA"
+click Scouting Map |goto Boralus/0 68.38,22.06
+|tip Inside the building.
+|tip You are choosing the zone you wish to do quests in next.
+|tip Pick whichever you like, it doesn't matter.
+accept Tiragarde Sound##47960 |or |next "Tiragarde_Sound_Start" |only if not completedq(47960)
+accept Drustvar##47961 |or |next "Drustvar_Start" |only if not completedq(47961)
+accept Stormsong Valley##47962 |or |next "Stormsong_Valley_Start" |only if not completedq(47962)
+Completing Guide |next "All_Zones_Completed_BFA" |only if completedq(47960) and completedq(47962) and completedq(47961)
+step
+label "Tiragarde_Sound_Start"
+talk Taelia##121235
+|tip Inside the building.
+turnin Tiragarde Sound##47960 |goto Boralus/0 68.17,21.97 |next "Leveling Guides\\Battle for Azeroth (110-120)\\Kul Tiras\\Tiragarde Sound"
+step
+label "Drustvar_Start"
+talk Taelia##121235
+|tip Inside the building.
+turnin Drustvar##47961 |goto Boralus/0 68.17,21.97 |next "Leveling Guides\\Battle for Azeroth (110-120)\\Kul Tiras\\Drustvar"
+step
+label "Stormsong_Valley_Start"
+talk Taelia##121235
+|tip Inside the building.
+turnin Stormsong Valley##47962 |goto Boralus/0 68.17,21.97 |next "Leveling Guides\\Battle for Azeroth (110-120)\\Kul Tiras\\Stormsong Valley"
+step
+label "All_Zones_Completed_BFA"
+_Congratulations!_
+You unlocked all of the questing zones.
+]])
+ZGV.BETASTART()
+ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Battle for Azeroth (110-120)\\War Campaign",{
+author="support@zygorguides.com",
+description="This guide will walk you through the Alliance War Campaign for Battle for Azeroth.",
+condition_suggested=function() return level >= 110 and level <= 120 and not completedq(52790) and completedq(47189) end,
+image=ZGV.DIR.."\\Guides\\Images\\WarCampaign",
+},[[
+step
+Unlock the War Campaign |condition completedq(47189)
+|tip Use the "Intro & Quest Zone Choice" guide to accomplish this.
+step
+talk Genn Greymane##120788
+|tip Inside the building.
+accept The War Campaign##52654 |goto Boralus/0 68.05,22.18 |q 52544 |future
+step
+talk Halford Wyrmbane##135612
+|tip On the ship.
+turnin The War Campaign##52654 |goto 69.27,27.01 |only if havequest(52654) or completedq(52654)
+accept The War Cache##52544 |goto 69.27,27.01
+step
+Gather #100# War Resources |q 52544/1
+|tip Gather these mainly from treasure chests.
+|tip You will also occasionally get some from completing quests as you level.
+|tip Treasure chests appear in random locations in leveling zones.
+|tip As you complete quests, look for silver treasure chest icons on your minimap.
+|tip Also look for silver arrows around the edge of your minimap.
+|tip These silver arrows point you to nearby treasure chests.
+step
+Click the Complete Quest Box:
+turnin The War Cache##52544
+accept Time for War##53332
+step
+talk Halford Wyrmbane##135612
+turnin Time for War##53332 |goto 69.27,27.00
+step
+talk Falstad Wildhammer##135618
+accept Mission from the King##51714 |goto 69.73,27.79
+step
+talk Master Mathias Shaw##135614
+turnin Mission from the King##51714 |goto 70.72,27.08
+accept War of Shadows##51715 |goto 70.72,27.08
+step
+click Mission Command Table
+|tip Click the "Missions" tab at the bottom of the window that appears.
+Complete the "War of Shadows" Mission |q 51715/1 |goto 70.56,27.19
+|tip This mission will take 2 hours to complete.
+step
+talk Master Mathias Shaw##135614
+turnin War of Shadows##51715 |goto 70.72,27.09
+accept Reinforcements##53074 |goto 70.72,27.09
+step
+talk Master Mathias Shaw##135614
+Tell him _"I require reinforcements."_
+|tip Recruit 1 Alliance Troop.
+Order Troops |q 53074/1 |goto 70.72,27.09
+step
+talk Master Mathias Shaw##135614
+turnin Reinforcements##53074 |goto 70.72,27.09
+step
+Reach Level 112 |ding 112
+|tip You must be at least level 112 to continue this questline.
+|tip Use the Leveling guides to accomplish this.
+step
+talk Halford Wyrmbane##135612
+accept The Zandalar Campaign##51569 |goto 69.27,26.99
+step
+click Zandalar Campaign
+|tip You will only be able to accept one of these quests.
+|tip Pick whichever one you like, it doesn't matter.
+#include "Choose_Foothold_1"
+step
+label "Zuldazar_Foothold_1"
+#include "Zuldazar_Foothold_Quests"
+step
+|next "Reach_Level_114"
+step
+label "Nazmir_Foothold_1"
+#include "Nazmir_Foothold_Quests"
+step
+|next "Reach_Level_114"
+step
+label "Voldun_Foothold_1"
+#include "Voldun_Foothold_Quests"
+step
+|next "Reach_Level_114"
+step
+label "Reach_Level_114"
+Reach Level 114 |ding 114
+|tip You must be at least level 114 to continue this questline.
+|tip Use the Leveling guides to accomplish this.
+step
+talk Alleria Windrunner##143846
+accept Adapting Our Tactics##53583 |goto Boralus/0 70.64,27.39
+step
+talk Alleria Windrunner##143846
+Tell her _"Show me our research options."_
+Choose an Upgrade to Pursue |q 53583/1 |goto 70.64,27.39
+step
+talk Alleria Windrunner##143846
+turnin Adapting Our Tactics##53583 |goto 70.64,27.39
+step
+talk Halford Wyrmbane##135612
+accept The Ongoing Campaign##51961 |goto 69.27,27.00
+step
+click Zandalar Campaign
+|tip You will only be able to accept one of these quests.
+|tip Pick whichever one you like, it doesn't matter.
+#include "Choose_Foothold_2"
+step
+label "Zuldazar_Foothold_2"
+#include "Zuldazar_Foothold_Quests"
+step
+|next "Reach_Level_116"
+step
+label "Nazmir_Foothold_2"
+#include "Nazmir_Foothold_Quests"
+step
+|next "Reach_Level_116"
+step
+label "Voldun_Foothold_2"
+#include "Voldun_Foothold_Quests"
+step
+|next "Reach_Level_116"
+step
+label "Reach_Level_116"
+Reach Level 116 |ding 116
+|tip You must be at least level 116 to continue this questline.
+|tip Use the Leveling guides to accomplish this.
+step
+talk Halford Wyrmbane##135612
+turnin The Azerite Advantage##53061 |goto Boralus/0 69.28,27.00 |only if havequest(53061) or completedq(53061)
+accept Island Expedition##51903 |goto Boralus/0 69.28,27.00 |or |next "Start_Island_Expedition_Intro"
+|tip
+_NOTE:_
+|tip You can only complete the Island Expedition introduction quest on one character.
+|tip You may not be able to accept this quest.
+Click Here If You Are Unable to Accept the Quest |confirm |q 52443 |future |or |next "Reach_Level_118"
+step
+label "Start_Island_Expedition_Intro"
+talk Flynn Fairwind##131290
+turnin Island Expedition##51903 |goto 66.86,33.24
+accept Island Expedition##51904 |goto 66.86,33.24
+step
+talk Flynn Fairwind##131290
+Tell him _"Let's go!"_
+Speak with Flynn Fairwind |q 51904/1 |goto 66.86,33.24
+step
+Watch the dialogue
+|tip The waypoint arrow does not work on island expedition maps.
+|tip Use your world map and minimap to complete the scenario objectives.
+|tip The scenario is simple to do, everything is nearby and easy to find.
+Explore the Uncharted Island |q 51904/2
+step
+Return to Boralus |goto Boralus/0 70.73,32.75 < 10 |noway |c |q 51904
+step
+talk Flynn Fairwind##131290
+turnin Island Expedition##51904 |goto Boralus/0 66.87,33.23
+step
+label "Reach_Level_118"
+Reach Level 118 |ding 118
+|tip You must be at least level 118 to continue this questline.
+|tip Use the Leveling guides to accomplish this.
+step
+talk Halford Wyrmbane##135612
+accept The Final Foothold##52443 |goto Boralus/0 69.28,26.99
+step
+click Zandalar Campaign
+|tip Pick the last available quest.
+#include "Choose_Foothold_3"
+step
+label "Zuldazar_Foothold_3"
+#include "Zuldazar_Foothold_Quests"
+step
+|next "Reach_Level_120"
+step
+label "Nazmir_Foothold_3"
+#include "Nazmir_Foothold_Quests"
+step
+|next "Reach_Level_120"
+step
+label "Voldun_Foothold_3"
+#include "Voldun_Foothold_Quests"
+step
+|next "Reach_Level_120"
+step
+label "Reach_Level_120"
+Reach Level 120 |ding 120
+|tip You must be at least level 120 to continue this questline.
+|tip Use the Leveling guides to accomplish this.
+step
+talk Halford Wyrmbane##135612
+accept Uniting Kul Tiras##51918 |goto 69.28,27.00
+step
+Reach Friendly Reputation with the Proudmoore Admiralty in Tiragarde Sound |q 51918/1
+|tip Use the "Tiragarde Sound" leveling guide to accomplish this.
+step
+Reach Friendly Reputation with the Storm's Wake in Stormsong Valley |q 51918/2
+|tip Use the "Stormsong Valley" leveling guide to accomplish this.
+step
+Reach Friendly Reputation with the Order of Embers in Drustvar |q 51918/3
+|tip Use the "Drustvar" leveling guide to accomplish this.
+step
+talk Halford Wyrmbane##135612
+turnin Uniting Kul Tiras##51918 |goto 69.28,27.00
 ]])

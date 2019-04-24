@@ -4,3 +4,5 @@ if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("PetsABFA") then return end
 ZGV.CommonPets=true
 ZygorGuidesViewer.GuideMenuTier = "TRI"
+ZGV.BETASTART()
+ZGV.BETAEND()

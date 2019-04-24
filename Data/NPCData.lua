@@ -6256,7 +6256,7 @@ D.E.N.T.##67130 - Shrine of Two Moons/1 - x = 59.2 - y = 42.4 (requires Engineer
 ALLIANCE
 Auctioneer Kalaren##50139 - Shattrath City - x = 57.6 - y = 62.6 (Scryers)
 Auctioneer Itoran##50143 - Shattrath City - x = 50.8 - y = 26.6 (Aldor)
-H.A.R.V.E.Y.##65599 - Vale of Eternal Blossoms/3 - x = 57.1 - y = 51.7 (requires Engineering)
+H.A.R.V.E.Y.##65599 - Shrine of Seven Stars/1 - x = 57.1 - y = 51.7 (requires Engineering)
 
 Shat - 481
 2 moon - 903

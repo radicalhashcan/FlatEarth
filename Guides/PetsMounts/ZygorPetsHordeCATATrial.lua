@@ -4,7 +4,7 @@ if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("PetsHCATA") then return end
 ZGV.CommonPets=true
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Small Frog",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Small Frog",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Small Frog.",
 model={6297},
@@ -15,7 +15,7 @@ Challenge one to a pet battle and capture it
 |tip The Small Frog is level 3.
 learnpet Small Frog##61071 |goto Northern Barrens 36.2,44.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Bombay Cat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Bombay Cat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Bombay Cat.",
 model={5556},
@@ -28,7 +28,7 @@ buy 1 Cat Carrier (Bombay)##8485
 step
 learnpet Bombay Cat##7385  |use Cat Carrier (Bombay)##8485
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Cornish Rex Cat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Cornish Rex Cat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Cornish Rex Cat.",
 model={5586},
@@ -41,7 +41,7 @@ buy 1 Cat Carrier (Cornish Rex)##8486
 step
 learnpet Cornish Rex Cat##7384 |use Cat Carrier (Cornish Rex)##8486
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Orange Tabby Cat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Orange Tabby Cat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Orange Tabby Cat.",
 model={5554},
@@ -54,7 +54,7 @@ buy 1 Cat Carrier (Orange Tabby)##8487
 step
 learnpet Orange Tabby Cat##7382 |use Cat Carrier (Orange Tabby)##8487
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Silver Tabby Cat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Silver Tabby Cat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Silver Tabby Cat.",
 model={5555},
@@ -67,7 +67,7 @@ tip This pet must be bought with an Alliance character or through the Auction Ho
 step
 learnpet Silver Tabby Cat##7381 |use Cat Carrier (Silver Tabby)##8488
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Hare",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Hare",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Hare.",
 model={1560},
@@ -78,7 +78,7 @@ Challenge one to a pet battle and capture it
 |tip The Hares around this area are level 1.
 learnpet Hare##61751 |goto Durotar 47.3,30.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Snowshoe Rabbit",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Snowshoe Rabbit",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Snowshoe Rabbit.",
 model={328},
@@ -91,7 +91,7 @@ buy 1 Rabbit Crate (Snowshoe)##8497
 step
 learnpet Snowshoe Rabbit##7560 |use Rabbit Crate (Snowshoe)##8497
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Undercity Rat",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Undercity Rat",{
 author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Undercity Rat.",
 model={1141},
